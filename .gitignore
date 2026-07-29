@@ -1,0 +1,12 @@
+# Local Claude Code state (skills here are shared on disk; commit intentionally if wanted)
+.claude/settings.local.json
+
+# Scratch / exports
+/exports/
+*.pdf
+*.tmp
+
+# OS noise
+Thumbs.db
+.DS_Store
+desktop.ini
