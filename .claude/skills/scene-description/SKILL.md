@@ -1,6 +1,6 @@
 ---
 name: scene-description
-description: Write atmospheric read-aloud "boxed text" and sensory scene/location detail for Call of Cthulhu — the flavour paragraphs the Keeper reads when players enter a place or meet a horror. Use when the user wants scene-setting prose, boxed text, a location's mood, or a monster/discovery reveal. Writes into the campaign's scenes/ folder.
+description: Write the atmospheric read-aloud prose for Call of Cthulhu — "boxed text", the flavour paragraphs the Keeper reads out loud when players enter a location or a horror is revealed, plus a scene's sensory detail. Use whenever the user wants scene-setting prose, flavour/atmosphere text, a "read-aloud" or "boxed" paragraph, or a dramatic reveal described ("describe the flooded crypt", "write what they see when the door opens", "boxed text for the lighthouse"). For a place's structure and lore use build-world; for the whole mystery use design-scenario. Writes into the campaign's scenes/ folder.
 version: "1.0.0"
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: create-npc
-description: Create a Call of Cthulhu 7th Edition NPC — a full stat block plus personality, a secret, roleplaying voice, and the clues they can give. Use whenever the user wants a character the investigators meet — ally, obstacle, witness, victim, red herring, or villain. Writes into the campaign's npcs/ folder.
+description: Create a Call of Cthulhu 7th Edition NPC — a human (or human-like) character the investigators meet, with a full 7e stat block, personality, a hidden secret, a roleplaying voice, and the clues they can give. Use whenever the user wants a person, character, contact, witness, or human villain ("make the town doctor", "I need a cult leader", "a shopkeeper who knows something") — ally, obstacle, red herring, or victim. For non-human creatures and Mythos entities use create-monster instead. Writes into the campaign's npcs/ folder.
 version: "1.0.0"
 ---
 

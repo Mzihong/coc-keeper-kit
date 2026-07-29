@@ -1,6 +1,6 @@
 ---
 name: create-puzzle
-description: Design a Call of Cthulhu investigation puzzle, clue chain, or cipher with fair, multi-path solutions and a hint ladder — so the mystery is solvable without stalling the game. Use when the user wants a puzzle, code, riddle, locked mechanism, or a clue the players must work out. Writes into the campaign's puzzles/ folder.
+description: Design a single Call of Cthulhu investigation obstacle — a puzzle, cipher or code, riddle, locked mechanism, or clue chain — with fair multi-path solutions and a hint ladder so it can never hard-stop the game. Use whenever the user wants a puzzle, code, cipher, riddle, lock, or "a clue the players have to work out" ("a cipher from a torn ledger", "a locked door puzzle", "how do they figure out the ritual"). For the whole mystery's clue map and structure use design-scenario. Writes into the campaign's puzzles/ folder.
 version: "1.0.0"
 ---
 

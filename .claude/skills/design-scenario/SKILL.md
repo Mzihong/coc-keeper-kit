@@ -1,6 +1,6 @@
 ---
 name: design-scenario
-description: Structure a whole Call of Cthulhu scenario — hook, the hidden truth, a clue map obeying the three-clue rule, a web of scenes, cast, threats, and branching endings. Use when the user wants to design a one-shot or multi-session mystery, or to give a loose idea a runnable spine. Writes into the campaign folder and links the pieces together.
+description: Structure a WHOLE Call of Cthulhu scenario or mystery end-to-end — the hook, the hidden truth, a clue map obeying the three-clue rule, a web of scenes, cast, threats, and branching endings. Use whenever the user wants to design or outline a one-shot, adventure, mystery, or campaign arc, or turn a loose idea into a runnable spine ("design a scenario about a missing lighthouse keeper", "plan a one-shot", "outline the mystery"). This is the top-level glue skill that calls the others (build-world, create-npc, create-monster, create-puzzle, scene-description, create-handout) for the pieces. Writes into the campaign folder and links everything together.
 version: "1.0.0"
 ---
 
