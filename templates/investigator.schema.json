@@ -2,48 +2,116 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "investigator.schema.json",
   "title": "CoC 7e Investigator",
-  "description": "Source-of-truth record for a pregen investigator or a mechanically-full elite NPC. See core/13-create-investigator.md.",
+  "description": "Source-of-truth record for a pregen investigator or a mechanically-full elite NPC. Field model follows a full 7e character sheet, not just the stat block. See core/13-create-investigator.md and reference/rules/character-creation.md. Only name/occupation/characteristics/derived/skills are required — a thin elite-NPC record stays legal.",
   "type": "object",
   "required": ["name", "occupation", "characteristics", "derived", "skills"],
   "properties": {
     "name": { "type": "string" },
     "type": { "type": "string", "enum": ["pregen", "elite-npc"], "default": "pregen" },
+    "player": { "type": "string", "description": "Who is playing them. Omit for elite NPCs." },
     "occupation": { "type": "string" },
+    "occupation_detail": {
+      "type": "object",
+      "description": "The occupation's mechanical contract. Record it so the point ledger can be audited without reopening the rulebook.",
+      "properties": {
+        "skill_points_formula": {
+          "type": "string",
+          "description": "e.g. \"EDU x 4\" or \"EDU x 2 + DEX x 2\"."
+        },
+        "credit_rating_band": {
+          "type": "string",
+          "description": "The occupation's declared min-max, e.g. \"30-60\"."
+        },
+        "occupation_skills": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "The occupation's own skill list, including any free-choice slots (\"any one other skill\")."
+        },
+        "contacts": { "type": "string", "description": "Typical professional contacts — a ready-made hook source." }
+      }
+    },
     "era_locale": { "type": "string" },
+    "era_year": { "type": "integer", "description": "In-fiction year. Gates period-appropriate skills, gear, and weapons." },
     "concept": { "type": "string" },
+    "age": { "type": "integer", "minimum": 0 },
+    "sex": { "type": "string" },
+    "residence": { "type": "string" },
+    "birthplace": { "type": "string" },
     "characteristics": {
       "type": "object",
+      "description": "Final values after age modifiers. Halves and fifths are derived at the table, never stored.",
       "required": ["STR", "CON", "SIZ", "DEX", "APP", "INT", "POW", "EDU"],
       "properties": {
         "STR": { "type": "integer", "minimum": 0, "maximum": 100 },
         "CON": { "type": "integer", "minimum": 0, "maximum": 100 },
-        "SIZ": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "SIZ": { "type": "integer", "minimum": 0, "maximum": 200 },
         "DEX": { "type": "integer", "minimum": 0, "maximum": 100 },
         "APP": { "type": "integer", "minimum": 0, "maximum": 100 },
         "INT": { "type": "integer", "minimum": 0, "maximum": 100 },
-        "POW": { "type": "integer", "minimum": 0, "maximum": 100 },
-        "EDU": { "type": "integer", "minimum": 0, "maximum": 100 }
+        "POW": { "type": "integer", "minimum": 0, "maximum": 200 },
+        "EDU": { "type": "integer", "minimum": 0, "maximum": 99 }
+      }
+    },
+    "age_modifiers": {
+      "type": "object",
+      "description": "What the age band actually cost. Recorded so a reviewer can re-derive the final characteristics from the rolls.",
+      "properties": {
+        "band": { "type": "string", "description": "e.g. \"40-49\"." },
+        "physical_deduction": { "type": "integer", "description": "Total points removed across STR/CON/DEX (or STR/SIZ for 15-19)." },
+        "deduction_split": { "type": "string", "description": "How that total was split, e.g. \"STR -3, CON -2\"." },
+        "app_penalty": { "type": "integer" },
+        "edu_penalty": { "type": "integer", "description": "15-19 only." },
+        "edu_improvement_checks": { "type": "integer" },
+        "edu_gained": { "type": "integer", "description": "Points actually gained from those checks." },
+        "move_penalty": { "type": "integer" },
+        "luck_rolls": { "type": "integer", "description": "15-19 rolls Luck twice and keeps the better." }
       }
     },
     "derived": {
       "type": "object",
       "required": ["HP", "MP", "SAN", "Luck", "Move", "Build", "DamageBonus", "Dodge"],
       "properties": {
-        "HP": { "type": "integer" },
-        "MP": { "type": "integer" },
-        "SAN": { "type": "integer" },
-        "Luck": { "type": "integer" },
+        "HP": { "type": "integer", "description": "Maximum: (CON + SIZ) / 10, rounded down." },
+        "HP_current": { "type": "integer" },
+        "major_wound": { "type": "integer", "description": "Half of maximum HP, rounded down." },
+        "MP": { "type": "integer", "description": "Maximum: POW / 5, rounded down." },
+        "MP_current": { "type": "integer" },
+        "SAN": { "type": "integer", "description": "Starting Sanity = POW." },
+        "SAN_current": { "type": "integer" },
+        "SAN_max": { "type": "integer", "description": "99 - Cthulhu Mythos%." },
+        "Luck": { "type": "integer", "description": "Rolled 3D6 x 5, not derived from anything." },
         "Move": { "type": "integer" },
         "Build": { "type": "integer" },
         "DamageBonus": { "type": "string" },
-        "Dodge": { "type": "integer" }
+        "Dodge": { "type": "integer", "description": "Starts at DEX / 2; may be raised with skill points like any other skill." },
+        "Armor": { "type": "string", "description": "Worn armour and the points it stops. Omit or \"none\" for most investigators." }
       }
     },
     "credit_rating": {
       "type": "object",
       "properties": {
         "value": { "type": "integer", "minimum": 0, "maximum": 99 },
-        "band": { "type": "string" }
+        "band": { "type": "string" },
+        "lifestyle": {
+          "type": "string",
+          "enum": ["penniless", "poor", "average", "wealthy", "rich", "super rich"]
+        },
+        "currency": { "type": "string", "description": "e.g. \"USD 1920s\". Cash and assets are era-scaled — see reference/rules/character-creation.md." },
+        "cash": { "type": "number" },
+        "assets": { "type": "number", "description": "Value of everything not immediately spendable." },
+        "spending_level": { "type": "number", "description": "What they can spend casually without accounting for it." },
+        "asset_notes": { "type": "string", "description": "What the assets actually are — property, vehicle, holdings." }
+      }
+    },
+    "skill_points": {
+      "type": "object",
+      "description": "The point ledger. If spent does not equal total, the sheet is wrong.",
+      "properties": {
+        "occupation_total": { "type": "integer" },
+        "occupation_spent": { "type": "integer" },
+        "interest_total": { "type": "integer", "description": "INT x 2." },
+        "interest_spent": { "type": "integer" },
+        "cap": { "type": "string", "description": "Any table-declared cap, e.g. \"occupation 70 / interest 60\". Default is the rulebook's 90." }
       }
     },
     "skills": {
@@ -53,7 +121,17 @@
         "required": ["name", "value"],
         "properties": {
           "name": { "type": "string" },
-          "value": { "type": "integer", "minimum": 0, "maximum": 99 }
+          "specialization": {
+            "type": "string",
+            "description": "For the umbrella skills — Art/Craft, Science, Survival, Fighting, Firearms, Pilot, Language, Lore. The generic parent is never bought on its own. Put the family in `name` and the specific here; do not repeat it inside `name`."
+          },
+          "base": { "type": "integer", "description": "The skill's starting value before any points." },
+          "occupation_points": { "type": "integer" },
+          "interest_points": { "type": "integer" },
+          "growth_points": { "type": "integer", "description": "Gained in play, after creation." },
+          "value": { "type": "integer", "minimum": 0, "description": "Final percentage. Must equal base + occupation + interest + growth." },
+          "occupation_skill": { "type": "boolean", "description": "True if it is on the occupation's list — the only skills occupation points may buy." },
+          "checked": { "type": "boolean", "description": "Carries a growth check mark from play." }
         }
       }
     },
@@ -64,15 +142,83 @@
         "required": ["name", "skill_pct", "damage"],
         "properties": {
           "name": { "type": "string" },
+          "type": { "type": "string", "description": "e.g. melee, handgun, rifle, thrown." },
+          "skill": { "type": "string", "description": "The skill it is rolled against, e.g. \"Fighting (Brawl)\"." },
           "skill_pct": { "type": "integer" },
-          "damage": { "type": "string" }
+          "damage": { "type": "string" },
+          "range": { "type": "string" },
+          "attacks": { "type": "string", "description": "Attacks per round." },
+          "ammo": { "type": "integer" },
+          "malfunction": { "type": "integer" },
+          "impale": { "type": "boolean" }
         }
       }
     },
-    "spells": { "type": "array", "items": { "type": "string" } },
+    "gear": {
+      "type": "array",
+      "description": "Carried equipment. Keep it to what the scenario can actually use.",
+      "items": {
+        "oneOf": [
+          { "type": "string" },
+          {
+            "type": "object",
+            "required": ["name"],
+            "properties": {
+              "name": { "type": "string" },
+              "notes": { "type": "string" }
+            }
+          }
+        ]
+      }
+    },
+    "spells": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          { "type": "string" },
+          {
+            "type": "object",
+            "required": ["name"],
+            "properties": {
+              "name": { "type": "string" },
+              "cost": { "type": "string", "description": "MP / SAN / casting time." },
+              "effect": { "type": "string" }
+            }
+          }
+        ]
+      }
+    },
     "cthulhu_mythos": { "type": "integer", "minimum": 0, "maximum": 99, "default": 0 },
+    "experience_packages": {
+      "type": "array",
+      "description": "Optional pre-play history (a war, a beat, a stretch inside, a Mythos brush) bought with starting Sanity. Each one buys a mechanical edge and mandates a matching backstory entry — see reference/rules/character-creation.md.",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": { "type": "string" },
+          "san_cost": { "type": "string", "description": "e.g. \"1D10+5 = 9\"." },
+          "grants": { "type": "string", "description": "What it gives mechanically." },
+          "requires": { "type": "string", "description": "Constraints it imposes — minimum age, a mandatory scar/phobia backstory entry." }
+        }
+      }
+    },
+    "mythos_encounters": {
+      "type": "array",
+      "description": "What they have already met and what it cost. Elite NPCs and veteran pregens only.",
+      "items": {
+        "type": "object",
+        "required": ["entity"],
+        "properties": {
+          "entity": { "type": "string" },
+          "result": { "type": "string", "description": "e.g. \"Cthulhu Mythos +3, SAN -6\"." },
+          "notes": { "type": "string" }
+        }
+      }
+    },
     "backstory": {
       "type": "object",
+      "description": "The 7e backstory prompts. Fill every one, then cut what the campaign cannot use.",
       "properties": {
         "description": { "type": "string" },
         "ideology_beliefs": { "type": "string" },
@@ -82,6 +228,58 @@
         "traits": { "type": "string" },
         "injuries_scars": { "type": "string" },
         "phobias_manias": { "type": "string" }
+      }
+    },
+    "backstory_keys": {
+      "type": "array",
+      "description": "Which backstory entries are marked KEY — the ones tied hardest to who they are. Values are backstory field names. A key entry restores Sanity when its bond is honoured, and is lost for good when the bond breaks.",
+      "items": {
+        "type": "string",
+        "enum": [
+          "description",
+          "ideology_beliefs",
+          "significant_people",
+          "meaningful_locations",
+          "treasured_possessions",
+          "traits",
+          "injuries_scars",
+          "phobias_manias"
+        ]
+      }
+    },
+    "status": {
+      "type": "object",
+      "description": "Live condition. Starts clean on a fresh pregen; tracked by core/12-canon-update.md thereafter.",
+      "properties": {
+        "physical": { "type": "string", "description": "e.g. healthy, wounded, major wound, unconscious, dying." },
+        "mental": { "type": "string", "description": "e.g. sane, temporary insanity, indefinite insanity, permanently insane." },
+        "phobias": { "type": "array", "items": { "type": "string" } },
+        "manias": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "party": {
+      "type": "array",
+      "description": "Fellow investigators and how they know each other — the cheapest way to make a one-shot party cohere.",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": { "type": "string" },
+          "player": { "type": "string" },
+          "relationship": { "type": "string" }
+        }
+      }
+    },
+    "growth_log": {
+      "type": "array",
+      "description": "What play changed, newest last. Append only.",
+      "items": {
+        "type": "object",
+        "required": ["change"],
+        "properties": {
+          "session": { "type": "string" },
+          "change": { "type": "string", "description": "e.g. \"SAN -6, HP -2, Spot Hidden +2\"." }
+        }
       }
     },
     "hooks": {

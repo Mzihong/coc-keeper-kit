@@ -58,6 +58,38 @@ Rules:
 | Damage Bonus | 伤害加值 |
 | Move Rate | 移动力 |
 | Armour | 护甲 |
+| Major wound | 重伤值 |
+
+## 人物创建
+
+| English | 简体中文 |
+|---|---|
+| Investigator | 调查员 |
+| Pregen(erated investigator) | 预生成调查员 |
+| Characteristic | 属性 |
+| Characteristic roll | 属性骰 |
+| Age modifier | 年龄补正 |
+| EDU improvement check | 教育进步检定 |
+| Occupation skill points | 本职技能点 |
+| Personal interest points | 兴趣技能点 |
+| Occupation skill | 本职技能 |
+| Base value | 基础值 |
+| Specialisation | 专精 |
+| Free-choice slot | 自由技能槽 |
+| Credit Rating band | 信用评级区间 |
+| Living standard | 生活水平 |
+| Spending level | 消费水平 |
+| Backstory | 背景故事 |
+| Key backstory entry | 关键背景条目 |
+| Personal description | 形象描述 |
+| Ideology/beliefs | 思想与信念 |
+| Significant people | 重要之人 |
+| Meaningful locations | 意义非凡之地 |
+| Treasured possessions | 宝贵之物 |
+| Traits | 特质 |
+| Injuries and scars | 伤口和疤痕 |
+| Phobias and manias | 恐惧症和躁狂症 |
+| Experience package | 经历包 |
 
 ## 检定
 

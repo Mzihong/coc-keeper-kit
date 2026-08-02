@@ -27,10 +27,18 @@ BACKSTORY_FIELDS = [
 CHARACTERISTICS = ["STR", "CON", "SIZ", "DEX", "APP", "INT", "POW", "EDU"]
 
 
+def skill_label(skill):
+    """Umbrella skills (Science, Art/Craft, Fighting, ...) are meaningless without their
+    specialisation — two "Science" entries on one card are indistinguishable otherwise."""
+    name = skill.get("name", "?")
+    spec = skill.get("specialization")
+    return f"{name} ({spec})" if spec else name
+
+
 def fmt_skills(skills):
     if not skills:
         return PLACEHOLDER
-    return ", ".join(f"{s.get('name', '?')} {s.get('value', '?')}%" for s in skills)
+    return ", ".join(f"{skill_label(s)} {s.get('value', '?')}%" for s in skills)
 
 
 def fmt_weapons(weapons):

@@ -1,0 +1,157 @@
+{
+  "name": "Lev Arkadyevich Sokolov",
+  "type": "pregen",
+  "player": "<player name>",
+  "occupation": "Engineer",
+  "occupation_detail": {
+    "skill_points_formula": "EDU x 4",
+    "credit_rating_band": "30-60",
+    "occupation_skills": [
+      "Art/Craft (Technical Drawing)",
+      "Electrical Repair",
+      "Library Use",
+      "Mechanical Repair",
+      "Operate Heavy Machinery",
+      "Science (Engineering)",
+      "Science (Physics)",
+      "any one other personal or era speciality -> taken as Drive Auto"
+    ],
+    "contacts": "Former army engineering corps, municipal works department, architects"
+  },
+  "era_locale": "1923, Providence, Rhode Island",
+  "era_year": 1923,
+  "concept": "A Russian emigre engineer who reads a collapsed building the way other men read a face, and who took this contract because the plans do not add up.",
+  "age": 39,
+  "sex": "male",
+  "residence": "Providence, Rhode Island",
+  "birthplace": "Petrograd",
+  "characteristics": {
+    "STR": 40,
+    "CON": 60,
+    "SIZ": 50,
+    "DEX": 45,
+    "APP": 50,
+    "INT": 80,
+    "POW": 55,
+    "EDU": 78
+  },
+  "age_modifiers": {
+    "band": "20-39",
+    "physical_deduction": 0,
+    "app_penalty": 0,
+    "edu_improvement_checks": 1,
+    "edu_gained": 8,
+    "move_penalty": 0,
+    "luck_rolls": 1
+  },
+  "derived": {
+    "HP": 11,
+    "HP_current": 11,
+    "major_wound": 6,
+    "MP": 11,
+    "MP_current": 11,
+    "SAN": 55,
+    "SAN_current": 55,
+    "SAN_max": 99,
+    "Luck": 60,
+    "Move": 7,
+    "Build": 0,
+    "DamageBonus": "none",
+    "Dodge": 30,
+    "Armor": "none"
+  },
+  "credit_rating": {
+    "value": 30,
+    "band": "30-60",
+    "lifestyle": "average",
+    "currency": "USD 1920s",
+    "cash": 60,
+    "assets": 1500,
+    "spending_level": 10,
+    "asset_notes": "A half-share in a drafting office on Weybosset Street, and his father's tools."
+  },
+  "skill_points": {
+    "occupation_total": 312,
+    "occupation_spent": 312,
+    "interest_total": 160,
+    "interest_spent": 160,
+    "cap": "rulebook default: 90"
+  },
+  "skills": [
+    { "name": "Credit Rating", "base": 0, "occupation_points": 30, "value": 30, "occupation_skill": true },
+    { "name": "Art/Craft", "specialization": "Technical Drawing", "base": 5, "occupation_points": 45, "value": 50, "occupation_skill": true },
+    { "name": "Electrical Repair", "base": 10, "occupation_points": 40, "value": 50, "occupation_skill": true },
+    { "name": "Library Use", "base": 20, "occupation_points": 40, "value": 60, "occupation_skill": true },
+    { "name": "Mechanical Repair", "base": 10, "occupation_points": 35, "value": 45, "occupation_skill": true },
+    { "name": "Operate Heavy Machinery", "base": 1, "occupation_points": 29, "value": 30, "occupation_skill": true },
+    { "name": "Science", "specialization": "Engineering", "base": 1, "occupation_points": 50, "value": 51, "occupation_skill": true },
+    { "name": "Science", "specialization": "Physics", "base": 1, "occupation_points": 29, "value": 30, "occupation_skill": true },
+    { "name": "Drive Auto", "base": 20, "occupation_points": 14, "interest_points": 0, "value": 34, "occupation_skill": true },
+    { "name": "Language", "specialization": "English", "base": 1, "interest_points": 50, "value": 51 },
+    { "name": "Spot Hidden", "base": 25, "interest_points": 20, "value": 45 },
+    { "name": "Listen", "base": 20, "interest_points": 15, "value": 35 },
+    { "name": "Persuade", "base": 10, "interest_points": 15, "value": 25 },
+    { "name": "Stealth", "base": 20, "interest_points": 12, "value": 32 },
+    { "name": "First Aid", "base": 30, "interest_points": 10, "value": 40 },
+    { "name": "Psychology", "base": 10, "interest_points": 10, "value": 20 },
+    { "name": "Accounting", "base": 5, "interest_points": 10, "value": 15 },
+    { "name": "History", "base": 5, "interest_points": 10, "value": 15 },
+    { "name": "Dodge", "base": 22, "interest_points": 8, "value": 30 },
+    { "name": "Own Language", "specialization": "Russian", "base": 78, "value": 78 },
+    { "name": "Fighting", "specialization": "Brawl", "base": 25, "value": 25 }
+  ],
+  "weapons": [
+    {
+      "name": "Unarmed",
+      "type": "melee",
+      "skill": "Fighting (Brawl)",
+      "skill_pct": 25,
+      "damage": "1D3",
+      "attacks": "1",
+      "impale": false
+    },
+    {
+      "name": "Heavy spanner",
+      "type": "melee",
+      "skill": "Fighting (Brawl)",
+      "skill_pct": 25,
+      "damage": "1D6",
+      "attacks": "1",
+      "impale": false
+    }
+  ],
+  "gear": [
+    { "name": "Drafting case", "notes": "Rules, dividers, and a roll of tracing paper. Turns a hunch about a floor plan into a check." },
+    { "name": "Pocket torch" },
+    { "name": "Father's pocket watch", "notes": "Treasured possession — see backstory." }
+  ],
+  "cthulhu_mythos": 0,
+  "backstory": {
+    "description": "Ordinary build, slightly stooped from years over a drawing board. Ink under the fingernails.",
+    "ideology_beliefs": "Anything built by hands can be understood by hands. There is no such thing as an unexplainable structure — only an unread one.",
+    "significant_people": "His wife Anna, who stayed in Petrograd and writes twice a year.",
+    "meaningful_locations": "His parents' grave, which he has never been able to visit.",
+    "treasured_possessions": "His father's pocket watch, the only thing that came out of Russia with him.",
+    "traits": "Ambitious to the point of rudeness — he will correct a client mid-sentence.",
+    "injuries_scars": "None yet.",
+    "phobias_manias": "None yet."
+  },
+  "backstory_keys": ["significant_people", "treasured_possessions"],
+  "status": {
+    "physical": "healthy",
+    "mental": "sane",
+    "phobias": [],
+    "manias": []
+  },
+  "party": [
+    { "name": "<fellow investigator>", "player": "<player name>", "relationship": "Client turned friend — hired him to survey the property." }
+  ],
+  "growth_log": [],
+  "hooks": [
+    "The drawings he was hired to check were signed by an architect who has been dead for six years.",
+    "Anna's last letter mentioned a man asking after him by his full patronymic — a name he uses with no one here.",
+    "His half-share in the drafting office is co-owned by someone with an interest in the central mystery."
+  ],
+  "notes": "Worked example for templates/investigator.schema.json. A fresh pregen leaves spells, mythos_encounters, experience_packages, and growth_log empty by definition — Cthulhu Mythos is 0 and Sanity maximum is therefore 99. Elite NPCs are where those sections earn their keep. Ledger: occupation EDU x 4 = 312 spent exactly; interest INT x 2 = 160 spent exactly.",
+  "links": []
+}

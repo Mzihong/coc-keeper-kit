@@ -5,7 +5,13 @@ in `campaigns/<slug>/`, not here.
 
 - **`rules/`** — CoC 7th Edition mechanics cheat-sheets. The source of truth for difficulty
   bands, Sanity, and combat used by every generator. See `core/02-rules-reference.md`, which
-  points back here.
+  points back here. **Sourcing convention:** cheat-sheets that distill a rulebook or a
+  reference character-sheet workbook carry a `来源`/`Source` line per section — a *pointer*
+  (which rulebook chapter/appendix, or which sheet of the source workbook), never a quote.
+  Cite only what's actually been verified: if the source material itself names a chapter,
+  reuse that citation; otherwise cite the traceable intermediate source and mark the
+  rulebook chapter as unconfirmed rather than guessing a number. This keeps provenance
+  checkable without weakening the no-reproduction rule below.
 - **`bestiary/`** — reusable monsters and Mythos entities you can drop into any game.
   Produced by `core/07-create-monster.md`. One creature per file. Written in **English**,
   since they're shared across campaigns that may output in different languages.

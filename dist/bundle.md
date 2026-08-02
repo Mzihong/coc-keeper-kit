@@ -1293,19 +1293,36 @@ The JSON record is the source of truth; the Markdown card is a rendered view for
 - Read the campaign `CLAUDE.md` for era, tone, and premise — every surviving backstory hook
   must tie into it; a hook that connects to nothing in the campaign is decoration, not prep.
 - Use `templates/investigator.schema.json` (data) and `templates/investigator.md` (view).
+  `templates/investigator.example.json` is a complete, arithmetically-audited record — copy
+  its shape rather than guessing which fields a full card needs.
 
 ## Build in this order
 
+The order matters: age moves characteristics, characteristics set the point budgets, and the
+budgets decide what the backstory can plausibly claim. Working out of order means redoing it.
+
 1. **Concept.** One line: who they are, what they want out of this case.
-2. **Occupation.** Pick or invent one; it sets the occupation skill list, the point split, and
-   the Credit Rating band.
-3. **Numbers.** Roll or assign characteristics; derive HP/MP/SAN/Luck/Move/Build/Damage
-   Bonus/Dodge; spend occupation and personal-interest skill points. Recompute — don't eyeball.
-4. **Backstory hooks.** Fill every 7e backstory prompt (ideology, significant people,
-   locations, possessions, traits), then keep only the ones that could plausibly matter to
-   this campaign — cut the rest rather than pad the file. Each surviving hook should point at
-   something the Keeper can actually pull on: an NPC, a faction, a location, or the central
-   mystery.
+2. **Occupation.** Pick or invent one. It supplies exactly three things — the skill-point
+   formula, the Credit Rating band, and the occupation skill list (including its free-choice
+   slots). Record all three in `occupation_detail`; an invented occupation needs the Keeper's
+   sign-off before points are spent.
+3. **Age.** Choose it, then pay for it: physical deduction, APP penalty, EDU improvement
+   checks, Move penalty. Do this **before** computing skill points — most formulas pay out of
+   EDU, and the improvement checks change EDU. Record what was applied in `age_modifiers`.
+4. **Characteristics and derived stats.** Roll or assign, then derive HP, major wound, MP,
+   SAN (start and max), Move, Build, Damage Bonus, Dodge. Recompute — don't eyeball.
+5. **Skill points.** Occupation points onto occupation-list skills only (Credit Rating first,
+   up to at least the band's lower bound), then INT × 2 personal-interest points anywhere.
+   Name every umbrella specialisation. Keep the ledger in `skill_points` and make it balance.
+6. **Wealth.** Credit Rating → lifestyle, cash, assets, casual spending, in the campaign's
+   declared currency and era scale.
+7. **Backstory.** Fill every 7e prompt (description, ideology, significant people, locations,
+   possessions, traits, scars, phobias/manias), then keep only what this campaign can pull on
+   — cut the rest rather than pad the file. Mark the one or two entries the investigator
+   genuinely *is* in `backstory_keys`; those are what Sanity rewards and punishes.
+8. **Hooks and kit.** Turn the surviving backstory and the occupation's contacts into `hooks`
+   that each name something real: an NPC, a faction, a location, or the central mystery. Add
+   only the weapons and gear the scenario can actually use.
 
 ## Storage
 
@@ -1331,10 +1348,15 @@ complete stats) may use this schema instead of a lighter NPC stat block — set
 ## Quality bar
 
 - The JSON validates against `templates/investigator.schema.json`.
-- Every derived stat traces back correctly to the rolled characteristics
+- Every derived stat traces back correctly to the **post-age** characteristics
   (`reference/rules/character-creation.md`) — recompute, don't eyeball.
-- Skill points spent match the EDU×4 / INT×2 (or occupation-split) formula.
-- Every surviving backstory hook ties into something the campaign can actually use.
+- The point ledger balances: occupation points spent = the formula's total, interest points
+  spent = INT × 2, and each skill's `value` = base + occupation + interest + growth.
+- Occupation points touched only occupation-list skills; free-choice slots are named;
+  every umbrella skill carries a specialisation.
+- Credit Rating sits inside the occupation's band, or the deviation is deliberate and noted.
+- Every surviving backstory hook ties into something the campaign can actually use, and at
+  least one entry is marked key.
 - The `.md` view and the `.json` source agree; no stat appears in one but not the other.
 
 
@@ -1790,7 +1812,13 @@ in `campaigns/<slug>/`, not here.
 
 - **`rules/`** — CoC 7th Edition mechanics cheat-sheets. The source of truth for difficulty
   bands, Sanity, and combat used by every generator. See `core/02-rules-reference.md`, which
-  points back here.
+  points back here. **Sourcing convention:** cheat-sheets that distill a rulebook or a
+  reference character-sheet workbook carry a `来源`/`Source` line per section — a *pointer*
+  (which rulebook chapter/appendix, or which sheet of the source workbook), never a quote.
+  Cite only what's actually been verified: if the source material itself names a chapter,
+  reuse that citation; otherwise cite the traceable intermediate source and mark the
+  rulebook chapter as unconfirmed rather than guessing a number. This keeps provenance
+  checkable without weakening the no-reproduction rule below.
 - **`bestiary/`** — reusable monsters and Mythos entities you can drop into any game.
   Produced by `core/07-create-monster.md`. One creature per file. Written in **English**,
   since they're shared across campaigns that may output in different languages.
@@ -1881,6 +1909,38 @@ Rules:
 | Damage Bonus | 伤害加值 |
 | Move Rate | 移动力 |
 | Armour | 护甲 |
+| Major wound | 重伤值 |
+
+## 人物创建
+
+| English | 简体中文 |
+|---|---|
+| Investigator | 调查员 |
+| Pregen(erated investigator) | 预生成调查员 |
+| Characteristic | 属性 |
+| Characteristic roll | 属性骰 |
+| Age modifier | 年龄补正 |
+| EDU improvement check | 教育进步检定 |
+| Occupation skill points | 本职技能点 |
+| Personal interest points | 兴趣技能点 |
+| Occupation skill | 本职技能 |
+| Base value | 基础值 |
+| Specialisation | 专精 |
+| Free-choice slot | 自由技能槽 |
+| Credit Rating band | 信用评级区间 |
+| Living standard | 生活水平 |
+| Spending level | 消费水平 |
+| Backstory | 背景故事 |
+| Key backstory entry | 关键背景条目 |
+| Personal description | 形象描述 |
+| Ideology/beliefs | 思想与信念 |
+| Significant people | 重要之人 |
+| Meaningful locations | 意义非凡之地 |
+| Treasured possessions | 宝贵之物 |
+| Traits | 特质 |
+| Injuries and scars | 伤口和疤痕 |
+| Phobias and manias | 恐惧症和躁狂症 |
+| Experience package | 经历包 |
 
 ## 检定
 
@@ -2190,55 +2250,250 @@ Rules:
 
 # 7e Character Creation — cheat-sheet
 
-> Quick-fire pregen/investigator reference. Not a rules reproduction — see the *Keeper
-> Rulebook* for the full character-creation chapter and occupation list.
+> Quick-fire pregen/investigator reference. **Mechanics only** — formulas, bands, and the
+> shape of each field. It is not a rules reproduction: the occupation list, the skill
+> descriptions, and the phobia/mania tables stay in the *Keeper Rulebook* and
+> *Investigator Handbook*. Look them up there; record the *numbers* here.
+>
+> The data model that holds all of this is `templates/investigator.schema.json`.
+> The build order is `core/13-create-investigator.md`.
+>
+> **Sourcing convention:** every section below carries a **来源** line — a pointer to where
+> the numbers came from, never a quote. Precision is capped at what's actually been verified:
+> - Where a rulebook chapter/appendix number is cited, it's because the source material
+>   itself named it explicitly (traced, not guessed).
+>   Nothing here is invented as fact.
+> - Everything else cites the traceable intermediate source — which sheet of the reference
+>   character sheet workbook it was extracted from — and is marked **章节号未核实**
+>   (rulebook chapter number not yet confirmed). Filling those in requires an actual read of
+>   the *Keeper Rulebook*'s character-creation chapters, which hasn't happened yet — tracked
+>   in `update_plan/2026-08-02-investigator-cards.md`. Until then, treat the sheet-level
+>   citation as the honest ceiling of what's confirmed.
 
-## Characteristics
-- Roll **3D6 × 5** for STR, CON, DEX, APP, POW.
-- Roll **(2D6+6) × 5** for SIZ, INT, EDU.
+## 1. Characteristics
+
+- **3D6 × 5** — STR, CON, DEX, APP, POW, and **Luck**.
+- **(2D6+6) × 5** — SIZ, INT, EDU.
 - Point-buy is a valid alternative when a table wants control over randomness.
-- Average human ≈ 50; the normal human range is roughly 15–90.
+- Reading the scale: 15 = feeble, 50 = average adult, 90 = the best you have ever met,
+  99 = human ceiling. **SIZ and POW are the only two that may exceed 99**; EDU caps at 99.
+- Luck is rolled, not derived. It is a resource in play — see
+  `reference/rules/skill-checks.md`.
 
-## Derived stats
-- **HP** = (CON+SIZ) ÷ 10 · **MP** = POW ÷ 5 · **SAN** starts = POW (max 99 − Cthulhu Mythos%)
-- **Move** ≈ 7–9 for a typical adult — see `reference/rules/combat.md` and
-  `reference/rules/chases.md` for situational Move.
-- **Build / Damage Bonus** from STR+SIZ — table in `reference/rules/combat.md`.
-- **Dodge** = ½ DEX.
-- **Luck** = roll 3D6×5 (or take a flat 50); spendable per `reference/rules/skill-checks.md`.
+来源:`COC apolo.xlsx`『属性注释』sheet(章节号未核实)。
 
-## Skill points
-- **Occupation points:** typically **EDU × 4**, or an occupation-specific split — e.g.
-  EDU×2 + a relevant characteristic×2 (a detective might use EDU×2 + DEX×2, a con artist
-  EDU×2 + APP×2). Pick whichever split fits the concept; assign only to that occupation's
-  skill list.
-- **Personal interest points:** **INT × 2**, assignable to any skill.
-- No skill exceeds **90%** at creation. Cthulhu Mythos starts at **0** (or an occupation's
-  stated starting value, if any) — it is never bought up at creation.
-- **Credit Rating** has an occupation-defined min–max band; pick within it to match the
-  concept, not automatically the midpoint.
+## 2. Age — pick the age first, then pay for it
 
-## Backstory hooks
-7e's standard prompts — fill each one, don't skip it:
-- **Personal description** — one visual line.
-- **Ideology/beliefs, significant people, meaningful locations, treasured possessions,
-  traits** — each is a lever the Keeper can pull mid-game.
-- **Injuries/scars, phobias/manias** — optional, but a gift to a Keeper reaching for personal
-  horror.
+Age is not flavour; it moves characteristics before anything is derived.
 
-## Pregens vs. elite NPCs
-- A **pregen** built for a specific scenario should have Credit Rating, skills, and backstory
-  hooks tuned to the plot — every surviving hook should be something the scenario can actually
-  use, not decoration. See `core/13-create-investigator.md`.
-- An **elite NPC** (a named cultist, a rival investigator) can reuse the same mechanical
-  skeleton (`templates/investigator.schema.json`) and skip the player-facing hooks section.
+| Age | Physical deduction | APP | EDU | Move |
+|-----|--------------------|-----|-----|------|
+| 15–19 | −5 split across STR **and SIZ** | — | −5, and roll Luck **twice, keep the better** | — |
+| 20–39 | — | — | 1 EDU improvement check | — |
+| 40–49 | −5 split across STR/CON/DEX | −5 | 2 checks | −1 |
+| 50–59 | −10 | −10 | 3 checks | −2 |
+| 60–69 | −20 | −15 | 4 checks | −3 |
+| 70–79 | −40 | −20 | 4 checks | −4 |
+| 80–89 | −80 | −25 | 4 checks | −5 |
 
-## Quality bar
-- Skill points spent match the EDU×4 / INT×2 (or occupation-split) formula — recompute, don't
-  eyeball.
-- Every derived stat (HP, MP, SAN, Build, Damage Bonus, Dodge, Move, Luck) traces back
-  correctly to the rolled characteristics.
-- Credit Rating sits inside the occupation's declared band.
+- **EDU improvement check:** roll D100. Over current EDU → EDU gains 1D10 (cap 99).
+  Under or equal → no change. Do this *before* computing occupation skill points, since
+  most occupations pay out of EDU.
+- Record what was applied in `age_modifiers` — a reviewer must be able to re-derive the
+  final characteristics from the rolls.
+
+来源:`COC apolo.xlsx`『附表』sheet 的年龄补正区(隐藏 sheet;章节号未核实)。
+
+## 3. Derived stats
+
+| Stat | Formula |
+|------|---------|
+| **HP** | (CON + SIZ) ÷ 10, round down |
+| **Major wound** | half maximum HP — a single hit at or above it is a major wound |
+| **MP** | POW ÷ 5, round down |
+| **SAN (start)** | = POW |
+| **SAN (max)** | 99 − Cthulhu Mythos% |
+| **Move** | 8 base; **7** if STR *and* DEX are both below SIZ; **9** if both are above; then apply the age penalty |
+| **Dodge** | DEX ÷ 2 (a skill — it can be raised with points like any other) |
+| **Own Language** | = EDU |
+| **Build / Damage Bonus** | from STR + SIZ, below |
+
+| STR+SIZ | Damage Bonus | Build |
+|---------|--------------|-------|
+| 2–64 | −2 | −2 |
+| 65–84 | −1 | −1 |
+| 85–124 | none | 0 |
+| 125–164 | +1D4 | 1 |
+| 165–204 | +1D6 | 2 |
+| 205–284 | +2D6 | 3 |
+| 285–364 | +3D6 | 4 |
+| 365–444 | +4D6 | 5 |
+
+Above 444, every further 80 points adds +1D6 and +1 Build.
+
+来源:`COC apolo.xlsx`『属性注释』sheet(HP/MP/SAN/Move/Build/DB 各公式区;章节号未核实)。
+
+## 4. Occupation — three things, always
+
+An occupation is not a job title. It supplies exactly three mechanical things; if you invent
+one, invent all three and get the Keeper's sign-off before the numbers are spent.
+
+1. **A skill-point formula.** The families in play:
+   - `EDU × 4` — the academic/professional default.
+   - `EDU × 2 + X × 2` where X is the characteristic the job leans on — DEX for
+     acrobats and thieves, STR for brawlers and labourers, APP for performers and
+     confidence artists, POW for the devout.
+   - The formula is a *ceiling*, not a target: 78 EDU on `EDU × 4` = 312 points.
+2. **A Credit Rating band**, e.g. 30–60. Occupation points must bring Credit Rating to at
+   least the band's **lower bound** before anything else is bought. Sitting outside the band
+   is allowed when the concept demands it — a broke doctor, a rich drifter — but it is a
+   deliberate call, not an accident.
+3. **A skill list.** Occupation points may only be spent on this list. Most lists carry one
+   or more **free-choice slots** ("any one other skill", "two personal or era specialities") —
+   name them explicitly on the sheet so the Keeper can audit the card at a glance.
+
+The occupation also implies **contacts** — the professional circle the job puts them in
+touch with. That is the cheapest hook source on the whole sheet; harvest it in step 4.
+
+来源:`COC apolo.xlsx`『职业列表』sheet(230 个职业行,含信用区间/职业属性/技能点/
+本职技能/推荐关系人各列;章节号未核实)。
+
+## 5. Skill points
+
+- **Occupation points:** per the formula above. Occupation-list skills only.
+- **Personal interest points:** **INT × 2**. Any skill.
+- **Cap:** no skill exceeds **90%** at creation. Many tables announce a tighter cap up front
+  (e.g. "70 occupation / 60 interest") — if the campaign declares one, put it in
+  `skill_points.cap`.
+- **Cthulhu Mythos** starts at **0** and is never bought at creation. Raising it lowers
+  maximum Sanity permanently.
+- **Credit Rating** is bought with occupation points like any other skill, from a base of 0.
+
+**Base values.** A skill's `base` is where it starts before a single point is spent — the
+ledger check in §10 needs it, so record it.
+
+| Base | Skills |
+|------|--------|
+| **1%** | Anthropology · Archaeology · Artillery · Demolitions · Diving · Electronics · Hypnosis · Lip Reading · Locksmith · Medicine · Operate Heavy Machinery · Psychoanalysis · Pilot (any) · Language (Other) · Science (any) · Lore (any) |
+| **5%** | Accounting · Animal Handling · Appraise · Art/Craft (any) · Computer Use · Disguise · Fast Talk · History · Law · Occult · Ride |
+| **10%** | Electrical Repair · Mechanical Repair · Natural World · Navigate · Persuade · Psychology · Sleight of Hand · Survival (any) · Track |
+| **15%** | Charm · Intimidate · Fighting (Axe) |
+| **20%** | Climb · Drive Auto · Firearms (Handgun) · Jump · Library Use · Listen · Stealth · Swim · Throw |
+| **25%** | Fighting (Brawl) · Firearms (Rifle/Shotgun) · Spot Hidden |
+| **30%** | First Aid |
+| **special** | Dodge = DEX ÷ 2 · Own Language = EDU · Credit Rating = 0 · Cthulhu Mythos = 0 |
+
+来源:`COC apolo.xlsx`『技能注释』sheet,逐项技能的"基础成功率"列。这个 sheet 自己的
+表头写明"详见规则书**第四章:技能**"——是源材料自带的章节引用,直接沿用,非推测。
+
+### Umbrella skills
+
+Art/Craft, Science, Survival, Fighting, Firearms, Pilot, Language (Other), and Lore are
+**never bought generically**. Buy a named specialisation — `Science (Physics)`,
+`Fighting (Brawl)`, `Language (Russian)` — and each one carries its own base value and grows
+on its own.
+
+In the JSON, put the **family** in `name` and the **specific** in `specialization`
+(`name: "Science"`, `specialization: "Physics"`). Don't repeat the specialisation inside
+`name`; the card renderer composes the two.
+
+Two optional spillovers a table may run (settle before cards are built):
+
+- **Art/Craft and Science:** taking one specialisation to 50% raises sibling specialisations
+  by +10 (never past 50); at 90% they rise +10 again (never past 90).
+- **Language:** the same, applied across languages in the same family.
+
+来源:`COC apolo.xlsx`『技能注释』sheet「技能可选规则」区(专业技能可转移的优势;
+章节号未核实——同一 sheet 的第四章引用是针对技能主表,不确定是否覆盖这条可选规则)。
+
+## 6. Credit Rating → what they can actually afford
+
+Credit Rating is the only economic stat. It converts to a lifestyle, not to a budget
+spreadsheet. **1920s USD**:
+
+| Lifestyle | CR | Cash | Assets | Casual spending |
+|-----------|-----|------|--------|-----------------|
+| Penniless | 0 | $0.50 | none | $0.50 |
+| Poor | 1–9 | CR × 1 | CR × 10 | $2 |
+| Average | 10–49 | CR × 2 | CR × 50 | $10 |
+| Wealthy | 50–89 | CR × 5 | CR × 500 | $50 |
+| Rich | 90–98 | CR × 20 | CR × 2,000 | $250 |
+| Super rich | 99 | $50,000 | $5,000,000+ | $5,000 |
+
+Other eras keep the same bands and rescale the multipliers — a modern-USD game runs roughly
+20× the 1920s figures. Set the campaign's currency and scale once in
+`campaigns/<slug>/CLAUDE.md`, then record the resulting numbers in `credit_rating`.
+
+Below "casual spending", don't roll and don't itemise. Above it, the purchase is a scene.
+
+来源:`COC apolo.xlsx`『资产及物价参考』sheet「资产参考表」区(CR→生活水平/现金/
+其他资产/消费水平换算,含 1920s 美元/现代美元/2010s 人民币等多套换算;此表本身
+章节号未核实。**注意区分**:同一 sheet 里另有一张「现代物价参考表」(单品价格,
+本文件未收录)明确标注来源为『守秘人规则书:附录Ⅲ:物价表』——那条引用属于那张
+单品价表,不属于这里的 CR 换算表,不要混用)。
+
+## 7. Backstory — eight prompts, then a cut
+
+Fill **all eight**, then keep only what this campaign can pull on:
+
+Personal description · Ideology/beliefs · Significant people · Meaningful locations ·
+Treasured possessions · Traits · Injuries & scars · Phobias & manias
+
+Two rules that make them worth the ink:
+
+- **Mark the key entries.** One or two entries are the ones the investigator *is* — record
+  them in `backstory_keys`. Honouring a key bond restores Sanity; losing it costs Sanity for
+  good. An unmarked backstory is decoration.
+- **Every surviving entry names something in the campaign** — an NPC, a faction, a location,
+  the central mystery. "His wife" is not a hook. "His wife, who works the switchboard at the
+  cannery" is.
+
+Insanity feeds directly off this list: madness episodes reach for significant people,
+ideology, and treasured possessions by name. A thin backstory makes a thin breakdown.
+
+来源:`COC apolo.xlsx`『人物卡』sheet「背景故事」栏(八项 + 每项旁的"关键"勾选框);
+章节号未核实。
+
+## 8. Optional pre-play history ("experience packages")
+
+Some tables let an investigator buy a slice of history with starting Sanity — a war, a beat,
+a stretch inside, a hospital ward, a Mythos brush. The shape is always the same:
+
+**pay Sanity → gain a mechanical edge → accept a constraint and a mandated backstory entry.**
+
+Typical trade: 1D10 Sanity for immunity to Sanity loss from corpses, plus a minimum starting
+age and a mandatory war/job-related scar, phobia, or mania. A Mythos brush instead grants
+Cthulhu Mythos points and mandates two backstory entries.
+
+This is a house option, not core 7e. If the campaign uses it, declare it in the campaign's
+`CLAUDE.md` and record each package in `experience_packages` — including the constraint, so a
+reviewer can check the age and backstory actually honour it.
+
+来源:`COC apolo.xlsx`『附表』sheet「经历包」表(战场/警务/罪犯/医务/神话经历包五种)。
+源材料自己把这张表标成"**可选规则**:有故事的调查员"——「house option, not core 7e」
+这个定性直接取自源材料的标签,不是我加的判断。规则书对应章节未核实。
+
+## 9. Pregens vs. elite NPCs
+
+- A **pregen** built for a specific scenario has Credit Rating, skills, and backstory hooks
+  tuned to the plot. See `core/13-create-investigator.md`.
+- An **elite NPC** (a named cultist, a rival investigator) reuses the same schema, sets
+  `"type": "elite-npc"`, and skips the player-facing backstory prompts. It may legitimately
+  carry `spells`, `cthulhu_mythos`, and `mythos_encounters`, which a starting pregen may not.
+
+## 10. Quality bar — the ledger has to balance
+
+- **Point ledger:** occupation points spent = the formula's total; interest points spent =
+  INT × 2. Recompute; don't eyeball. Record both in `skill_points`.
+- **Per skill:** `value` = base + occupation + interest + growth. If one skill doesn't add
+  up, the card is wrong.
+- **Every derived stat** traces back to the final characteristics — after age modifiers, not
+  before.
+- **Credit Rating** sits inside the occupation's band, or the deviation is deliberate and
+  noted.
+- **Occupation points** touched only occupation-list skills, and free-choice slots are named.
+- **No skill over the declared cap**; Cthulhu Mythos is 0 on a pregen.
+- **Umbrella skills** all carry a specialisation.
 
 
 === FILE: reference/rules/chases.md ===

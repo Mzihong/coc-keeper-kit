@@ -10,19 +10,36 @@ The JSON record is the source of truth; the Markdown card is a rendered view for
 - Read the campaign `CLAUDE.md` for era, tone, and premise — every surviving backstory hook
   must tie into it; a hook that connects to nothing in the campaign is decoration, not prep.
 - Use `templates/investigator.schema.json` (data) and `templates/investigator.md` (view).
+  `templates/investigator.example.json` is a complete, arithmetically-audited record — copy
+  its shape rather than guessing which fields a full card needs.
 
 ## Build in this order
 
+The order matters: age moves characteristics, characteristics set the point budgets, and the
+budgets decide what the backstory can plausibly claim. Working out of order means redoing it.
+
 1. **Concept.** One line: who they are, what they want out of this case.
-2. **Occupation.** Pick or invent one; it sets the occupation skill list, the point split, and
-   the Credit Rating band.
-3. **Numbers.** Roll or assign characteristics; derive HP/MP/SAN/Luck/Move/Build/Damage
-   Bonus/Dodge; spend occupation and personal-interest skill points. Recompute — don't eyeball.
-4. **Backstory hooks.** Fill every 7e backstory prompt (ideology, significant people,
-   locations, possessions, traits), then keep only the ones that could plausibly matter to
-   this campaign — cut the rest rather than pad the file. Each surviving hook should point at
-   something the Keeper can actually pull on: an NPC, a faction, a location, or the central
-   mystery.
+2. **Occupation.** Pick or invent one. It supplies exactly three things — the skill-point
+   formula, the Credit Rating band, and the occupation skill list (including its free-choice
+   slots). Record all three in `occupation_detail`; an invented occupation needs the Keeper's
+   sign-off before points are spent.
+3. **Age.** Choose it, then pay for it: physical deduction, APP penalty, EDU improvement
+   checks, Move penalty. Do this **before** computing skill points — most formulas pay out of
+   EDU, and the improvement checks change EDU. Record what was applied in `age_modifiers`.
+4. **Characteristics and derived stats.** Roll or assign, then derive HP, major wound, MP,
+   SAN (start and max), Move, Build, Damage Bonus, Dodge. Recompute — don't eyeball.
+5. **Skill points.** Occupation points onto occupation-list skills only (Credit Rating first,
+   up to at least the band's lower bound), then INT × 2 personal-interest points anywhere.
+   Name every umbrella specialisation. Keep the ledger in `skill_points` and make it balance.
+6. **Wealth.** Credit Rating → lifestyle, cash, assets, casual spending, in the campaign's
+   declared currency and era scale.
+7. **Backstory.** Fill every 7e prompt (description, ideology, significant people, locations,
+   possessions, traits, scars, phobias/manias), then keep only what this campaign can pull on
+   — cut the rest rather than pad the file. Mark the one or two entries the investigator
+   genuinely *is* in `backstory_keys`; those are what Sanity rewards and punishes.
+8. **Hooks and kit.** Turn the surviving backstory and the occupation's contacts into `hooks`
+   that each name something real: an NPC, a faction, a location, or the central mystery. Add
+   only the weapons and gear the scenario can actually use.
 
 ## Storage
 
@@ -48,8 +65,13 @@ complete stats) may use this schema instead of a lighter NPC stat block — set
 ## Quality bar
 
 - The JSON validates against `templates/investigator.schema.json`.
-- Every derived stat traces back correctly to the rolled characteristics
+- Every derived stat traces back correctly to the **post-age** characteristics
   (`reference/rules/character-creation.md`) — recompute, don't eyeball.
-- Skill points spent match the EDU×4 / INT×2 (or occupation-split) formula.
-- Every surviving backstory hook ties into something the campaign can actually use.
+- The point ledger balances: occupation points spent = the formula's total, interest points
+  spent = INT × 2, and each skill's `value` = base + occupation + interest + growth.
+- Occupation points touched only occupation-list skills; free-choice slots are named;
+  every umbrella skill carries a specialisation.
+- Credit Rating sits inside the occupation's band, or the deviation is deliberate and noted.
+- Every surviving backstory hook ties into something the campaign can actually use, and at
+  least one entry is marked key.
 - The `.md` view and the `.json` source agree; no stat appears in one but not the other.
