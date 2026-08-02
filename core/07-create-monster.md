@@ -26,6 +26,35 @@ live through it. In CoC the monster is usually an obstacle to survive, not a bos
 - **Weakness = a clue.** The out should be findable through investigation (a tome, a survivor,
   an experiment) — hand that thread to `core/08-create-puzzle.md` / `core/04-design-scenario.md`.
 
+### Lovecraftian design craft
+
+`reference/lovecraft-craft-notes-zh.md` §三 distills how H. P. Lovecraft's own monsters and
+entities are built and revealed, from a full read of his original stories. A few techniques
+map directly onto the bullets above:
+
+- **Reaction over anatomy.** The strongest reveals never fully describe the creature — they
+  describe what witnessing it *does* to a witness (collapse, permanent insomnia, a crew
+  driven mad). Write the reveal sentences as effect-on-observer before you write what the
+  thing looks like; it's a stronger, more efficient version of "the reveal first" above.
+- **Precise numbers, then broken biology.** Establish credibility with a concrete measurement
+  (height, limb count, a stat) before the one detail that breaks known anatomy (a joint that
+  folds the wrong way, an eye where a joint should be). The concreteness makes the wrongness
+  land harder than vagueness would.
+- **Society, not specimen.** For threats meant to feel bigger than a single encounter, give
+  the creature a culture — taboos, a hierarchy, things it worships or fears. This is a cheap
+  way to make a `mythic` or plot-recurring entity feel like an iceberg instead of a boss fight.
+- **Refuses to manifest.** For things the party genuinely cannot fight, consider never staging
+  a direct encounter — only its environmental effects (cold, silence, an unlocatable sound).
+  This *is* a form of "the fair out": if it's never seen, running is the only sane response,
+  and that's a legitimate design.
+- **Polite and orderly, not just hostile.** For a god-tier or highly intelligent entity,
+  bureaucratic courtesy (it explains itself, offers a choice, keeps its word) is more
+  unsettling than aggression, and reads as more dangerous — malice would at least be
+  understandable.
+
+Use one or two of these per creature, not all of them — the point is a sharper reveal, not a
+checklist.
+
 ## Stat guidance (7e)
 
 - Give **average characteristics** (note "roll/scale per individual" if many appear).

@@ -69,7 +69,7 @@ model's output. Assume the material is wrong until each line checks out.
 
 - [ ] Everything is in the campaign's declared **output language** — no drifted-back-to-English
       paragraphs.
-- [ ] 繁體中文 material uses `reference/glossary-zh.md` terms consistently; no 简体 characters;
+- [ ] 简体中文 material uses `reference/glossary-zh.md` terms consistently; no 繁体 characters;
       no two translations of the same game term.
 - [ ] Filenames are English `kebab-case.md`.
 - [ ] Any cipher or wordplay actually works in the script it's written in.

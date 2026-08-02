@@ -22,7 +22,7 @@ the skill, read the spec it names, follow the spec. Never generate from the wrap
 | `create-npc`          | `core/06-create-npc.md`       | Produce a full 7e NPC — stats, want, secret, lie, clues. |
 | `create-monster`      | `core/07-create-monster.md`   | Stat a Mythos entity — attacks, SAN loss, and its fair out. |
 | `create-puzzle`       | `core/08-create-puzzle.md`    | Design fair, multi-path investigation obstacles. |
-| `scene-description`   | `core/09-scene-description.md`| Write read-aloud boxed text and sensory detail. |
+| `description`         | `core/09-description.md`      | Write read-aloud boxed text, sensory detail, or an investigator's action narrated. |
 | `create-handout`      | `core/10-create-handout.md`   | Write player-facing props — letters, clippings, reports. |
 | `review-material`     | `core/11-review.md`           | Audit material before the table. |
 | `update-canon`        | `core/12-canon-update.md`     | Record what happened and update campaign state. |
@@ -35,7 +35,7 @@ the skill, read the spec it names, follow the spec. Never generate from the wrap
 - **Each session** → `design-scenario` against that state → `review-material` → play →
   `update-canon`.
 - **Output language is per campaign**, declared in `campaigns/<slug>/CLAUDE.md`. Generated
-  content follows it; kit scaffolding and filenames stay English. For 繁體中文, follow
+  content follows it; kit scaffolding and filenames stay English. For 简体中文, follow
   `reference/glossary-zh.md`.
 - **Continuity is not optional.** Read the campaign's `CLAUDE.md` and `canon-log.md` before
   generating into it.

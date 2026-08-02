@@ -76,10 +76,10 @@ start-campaign  →  world  →  event clock  →  cast
 ## Language
 
 Output language is set **per campaign**, in that campaign's `CLAUDE.md`. The template ships
-with 繁體中文（香港）; change it to whatever your table speaks. Kit scaffolding, specs, and
+with 简体中文; change it to whatever your table speaks. Kit scaffolding, specs, and
 filenames stay English so the repo stays navigable.
 
-When generating 繁體中文, everything follows `reference/glossary-zh.md` — one locked
+When generating 简体中文, everything follows `reference/glossary-zh.md` — one locked
 translation per game term, so 理智 doesn't become 精神值 three sessions later.
 
 ## Editing the kit

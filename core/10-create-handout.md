@@ -29,14 +29,14 @@ clue is inside, the solution is not. A good handout is evidence the players get 
 A handout is the place where language and era are most visible, so get both right:
 
 - Write the prop in the campaign's **output language**. A 1930s 上海 newspaper clipping should
-  read like a period Chinese newspaper — 直排 conventions noted, 民國紀年 dates, period
+  read like a period Chinese newspaper — 直排 conventions noted, 民国纪年 dates, period
   place-names — not like a translated English one.
-- Match the writing system to the writer and the era: a 1920s letter uses 舊式書信 openings and
+- Match the writing system to the writer and the era: a 1920s letter uses 旧式书信 openings and
   closings; a modern text message does not.
 - Where the fiction plausibly mixes languages (a colonial港英 police report, a foreign
   scholar's marginalia), mix them — it's texture and it can carry a clue.
 - **When the writer wouldn't have written in the output language at all** — a Norwegian
-  widow's 1919 diary in a 繁體中文 campaign — write the prop in the **output language** and
+  widow's 1919 diary in a 简体中文 campaign — write the prop in the **output language** and
   put the in-fiction device in the presentation note: a translation read aloud by the owner,
   an investigator translating live, a consular clerk's transcript, a mission-school copy.
   The table must be able to read the prop. Never hand over a page nobody present can read,

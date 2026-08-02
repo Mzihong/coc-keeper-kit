@@ -21,7 +21,7 @@ Open the file and follow it to the letter, including its Quality bar.
 | a person — ally, witness, villain, contact | `core/06-create-npc.md` |
 | a non-human threat, creature, Mythos entity | `core/07-create-monster.md` |
 | a puzzle, cipher, code, lock, riddle | `core/08-create-puzzle.md` |
-| read-aloud / boxed text, atmosphere, a reveal | `core/09-scene-description.md` |
+| read-aloud / boxed text, atmosphere, a reveal, or an investigator's action narrated | `core/09-description.md` |
 | a prop the players physically receive | `core/10-create-handout.md` |
 | "check this", "is this ready" | `core/11-review.md` |
 | "here's what happened last session" | `core/12-canon-update.md` |
@@ -45,7 +45,7 @@ telling the Keeper where to save output.
   committing any number.
 - **Output language is per campaign**, declared in `campaigns/<slug>/CLAUDE.md`. Generated
   content follows it; kit scaffolding and filenames stay English `kebab-case.md`. For
-  繁體中文, follow `reference/glossary-zh.md` and never mix 简体.
+  简体中文, follow `reference/glossary-zh.md` and never mix 繁体.
 - **Continuity.** Read the campaign's `CLAUDE.md` and `canon-log.md` before generating into
   it. Never contradict established canon.
 - **Fair play.** Three independent clues per must-know fact; no single roll can hard-stop the

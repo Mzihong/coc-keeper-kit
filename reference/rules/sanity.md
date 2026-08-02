@@ -8,7 +8,7 @@
 - A Sanity loss is written **X/Y** — lose **X** on a successful SAN roll, **Y** on a failure
   (e.g. `0/1D6`, `1/1D8`, `1D4/1D10`). Roll SAN (d100 ≤ current SAN) to resist.
 
-## Typical loss values (guidance for `create-monster` / `scene-description`)
+## Typical loss values (guidance for `create-monster` / `description`)
 | Trigger | Loss |
 |---------|------|
 | Surprised by a corpse; awful but mundane sight | 0/1D2 – 0/1D4 |

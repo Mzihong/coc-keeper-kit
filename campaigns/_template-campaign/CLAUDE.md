@@ -18,12 +18,12 @@
 - **Timeframe:** <a season, a year, an open-ended chronicle>
 
 ## Output language
-- **Generated content:** 繁體中文（香港）
+- **Generated content:** 简体中文
 - Everything the table sees — prose, NPC names, boxed text, handouts — is written in this
   language. Kit scaffolding, filenames, and stat-block notation (`STR 60`, `1D6/2D10`) stay
   English.
-- When this is 繁體中文, every game term follows `reference/glossary-zh.md`. Do not improvise
-  translations; do not mix 简体.
+- When this is 简体中文, every game term follows `reference/glossary-zh.md`. Do not improvise
+  translations; do not mix 繁体.
 - *Change this line to whatever your table speaks.*
 
 ## Tone & style

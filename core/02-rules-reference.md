@@ -32,7 +32,7 @@ numbers. It references mechanics — it does not reproduce the rulebook.
 
 Stat blocks stay in **English notation** regardless of the campaign's output language —
 `STR 60`, `HP 12`, `1D6/2D10`, `Fighting (Brawl) 45%`. Only the surrounding prose, names, and
-labels are translated. When writing 繁體中文, use `reference/glossary-zh.md` for skill and
+labels are translated. When writing 简体中文, use `reference/glossary-zh.md` for skill and
 mechanic names; never translate a skill name ad hoc.
 
 ## Quality bar for anything with stats

@@ -27,7 +27,7 @@ Ask all of these. They are the ones that actually change downstream output.
    Hong Kong, 1890s Gaslight London)
 2. **Premise** — one line. What's wrong, or what's the promise to the players?
 3. **Output language** — what language should the generated material be in?
-   *Default: 繁體中文（香港）.* Filenames and kit scaffolding stay English regardless.
+   *Default: 简体中文.* Filenames and kit scaffolding stay English regardless.
 
 **B. The feel**
 4. **Mood** — slow dread / folk horror / pulp action / cosmic bleakness / noir investigation.
@@ -69,8 +69,8 @@ When a question is unanswered, resolve it in this order:
 
 | Field | Default |
 |---|---|
-| Era & place | 1920s, a small coastal town — the genre's home ground. **Site the town somewhere the output language is actually spoken**, unless the Keeper asked otherwise: a 繁體中文 campaign defaulting to New England makes every NPC name a translation problem. 1920s 北戴河, 香港, 上海, 廈門 are all the genre's home ground too. |
-| Output language | 繁體中文（香港） |
+| Era & place | 1920s, a small coastal town — the genre's home ground. **Site the town somewhere the output language is actually spoken**, unless the Keeper asked otherwise: a 简体中文 campaign defaulting to New England makes every NPC name a translation problem. 1920s 北戴河, 香港, 上海, 厦门 are all the genre's home ground too. |
+| Output language | 简体中文 |
 | Mood | slow dread |
 | Horror dial | creeping and psychological |
 | Lethality | standard 7e |

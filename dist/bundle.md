@@ -40,7 +40,7 @@ Open the file and follow it to the letter, including its Quality bar.
 | a person — ally, witness, villain, contact | `core/06-create-npc.md` |
 | a non-human threat, creature, Mythos entity | `core/07-create-monster.md` |
 | a puzzle, cipher, code, lock, riddle | `core/08-create-puzzle.md` |
-| read-aloud / boxed text, atmosphere, a reveal | `core/09-scene-description.md` |
+| read-aloud / boxed text, atmosphere, a reveal, or an investigator's action narrated | `core/09-description.md` |
 | a prop the players physically receive | `core/10-create-handout.md` |
 | "check this", "is this ready" | `core/11-review.md` |
 | "here's what happened last session" | `core/12-canon-update.md` |
@@ -64,7 +64,7 @@ telling the Keeper where to save output.
   committing any number.
 - **Output language is per campaign**, declared in `campaigns/<slug>/CLAUDE.md`. Generated
   content follows it; kit scaffolding and filenames stay English `kebab-case.md`. For
-  繁體中文, follow `reference/glossary-zh.md` and never mix 简体.
+  简体中文, follow `reference/glossary-zh.md` and never mix 繁体.
 - **Continuity.** Read the campaign's `CLAUDE.md` and `canon-log.md` before generating into
   it. Never contradict established canon.
 - **Fair play.** Three independent clues per must-know fact; no single roll can hard-stop the
@@ -119,7 +119,7 @@ Generate in this order. Each step reads what came before.
 | 3 | **Event clock** — the threat and its timeline | `core/05-event-clock.md` | `world/event-clock.md` |
 | 4 | **Cast** — the people and the things | `core/06-create-npc.md`, `core/07-create-monster.md` | `npcs/`, `reference/bestiary/` |
 | 5 | **Scenario** — one session at a time, on demand | `core/04-design-scenario.md` | `<scenario-slug>.md`, `scenes/` |
-| 6 | **Props** — puzzles, boxed text, handouts | `core/08`, `core/09`, `core/10` | `puzzles/`, `scenes/`, `handouts/` |
+| 6 | **Props** — puzzles, descriptions, handouts | `core/08`, `core/09`, `core/10` | `puzzles/`, `scenes/`, `handouts/` |
 | 7 | **Review** — check it before the table | `core/11-review.md` | fixes |
 | 8 | **Canon update** — after play | `core/12-canon-update.md` | `canon-log.md` |
 
@@ -142,7 +142,7 @@ writing any stat block, difficulty, or Sanity cost.
 | a person — ally, witness, villain, contact | `core/06-create-npc.md` |
 | a non-human threat, creature, Mythos entity | `core/07-create-monster.md` |
 | a puzzle, cipher, code, lock, riddle | `core/08-create-puzzle.md` |
-| read-aloud / boxed text, atmosphere, a reveal | `core/09-scene-description.md` |
+| read-aloud / boxed text, atmosphere, a reveal, or an investigator's action narrated | `core/09-description.md` |
 | a prop the players physically receive | `core/10-create-handout.md` |
 | "check this", "is this ready", before a session | `core/11-review.md` |
 | "here's what happened last session" | `core/12-canon-update.md` |
@@ -156,13 +156,13 @@ writing any stat block, difficulty, or Sanity cost.
 - **Output language: per campaign.** The campaign's `CLAUDE.md` declares an **Output
   language**. All generated content — prose, NPC names, handouts, boxed text — is written in
   that language. Kit scaffolding, specs, and filenames stay in English. When the output
-  language is 繁體中文, follow `reference/glossary-zh.md` for every game term; do not
-  improvise translations and do not mix 简体.
+  language is 简体中文, follow `reference/glossary-zh.md` for every game term; do not
+  improvise translations and do not mix 繁体.
   - **Files inside `campaigns/` follow the campaign's output language for their *values*,
     but keep the template's English headings.** A Keeper skims headings to find things and
     the specs reference them by name; the content underneath is what the table reads.
   - **When an in-fiction document wouldn't plausibly be in the output language** — a
-    Norwegian widow's diary in a 繁體中文 campaign — write the handout in the output language
+    Norwegian widow's diary in a 简体中文 campaign — write the handout in the output language
     and state the in-fiction device in the presentation note (a translation read aloud, an
     investigator translating live, a consular clerk's transcript). Don't break the table's
     language for verisimilitude, and don't pretend the original was written in it.
@@ -209,7 +209,7 @@ coc-keeper-kit/
 │   ├── bestiary/            ← reusable monsters & Mythos entities
 │   ├── mythos/              ← Great Old Ones, tomes, spells, cults
 │   ├── tables/              ← roll tables, incl. the seed tables intake uses
-│   └── glossary-zh.md       ← EN ↔ 繁體中文 term lock
+│   └── glossary-zh.md       ← EN ↔ 简体中文 term lock
 ├── templates/               ← the blank shapes each spec fills in
 ├── campaigns/
 │   ├── _template-campaign/  ← copy this to start a new game
@@ -250,7 +250,7 @@ Ask all of these. They are the ones that actually change downstream output.
    Hong Kong, 1890s Gaslight London)
 2. **Premise** — one line. What's wrong, or what's the promise to the players?
 3. **Output language** — what language should the generated material be in?
-   *Default: 繁體中文（香港）.* Filenames and kit scaffolding stay English regardless.
+   *Default: 简体中文.* Filenames and kit scaffolding stay English regardless.
 
 **B. The feel**
 4. **Mood** — slow dread / folk horror / pulp action / cosmic bleakness / noir investigation.
@@ -292,8 +292,8 @@ When a question is unanswered, resolve it in this order:
 
 | Field | Default |
 |---|---|
-| Era & place | 1920s, a small coastal town — the genre's home ground. **Site the town somewhere the output language is actually spoken**, unless the Keeper asked otherwise: a 繁體中文 campaign defaulting to New England makes every NPC name a translation problem. 1920s 北戴河, 香港, 上海, 廈門 are all the genre's home ground too. |
-| Output language | 繁體中文（香港） |
+| Era & place | 1920s, a small coastal town — the genre's home ground. **Site the town somewhere the output language is actually spoken**, unless the Keeper asked otherwise: a 简体中文 campaign defaulting to New England makes every NPC name a translation problem. 1920s 北戴河, 香港, 上海, 厦门 are all the genre's home ground too. |
+| Output language | 简体中文 |
 | Mood | slow dread |
 | Horror dial | creeping and psychological |
 | Lethality | standard 7e |
@@ -379,7 +379,7 @@ numbers. It references mechanics — it does not reproduce the rulebook.
 
 Stat blocks stay in **English notation** regardless of the campaign's output language —
 `STR 60`, `HP 12`, `1D6/2D10`, `Fighting (Brawl) 45%`. Only the surrounding prose, names, and
-labels are translated. When writing 繁體中文, use `reference/glossary-zh.md` for skill and
+labels are translated. When writing 简体中文, use `reference/glossary-zh.md` for skill and
 mechanic names; never translate a skill name ad hoc.
 
 ## Quality bar for anything with stats
@@ -703,6 +703,35 @@ live through it. In CoC the monster is usually an obstacle to survive, not a bos
 - **Weakness = a clue.** The out should be findable through investigation (a tome, a survivor,
   an experiment) — hand that thread to `core/08-create-puzzle.md` / `core/04-design-scenario.md`.
 
+### Lovecraftian design craft
+
+`reference/lovecraft-craft-notes-zh.md` §三 distills how H. P. Lovecraft's own monsters and
+entities are built and revealed, from a full read of his original stories. A few techniques
+map directly onto the bullets above:
+
+- **Reaction over anatomy.** The strongest reveals never fully describe the creature — they
+  describe what witnessing it *does* to a witness (collapse, permanent insomnia, a crew
+  driven mad). Write the reveal sentences as effect-on-observer before you write what the
+  thing looks like; it's a stronger, more efficient version of "the reveal first" above.
+- **Precise numbers, then broken biology.** Establish credibility with a concrete measurement
+  (height, limb count, a stat) before the one detail that breaks known anatomy (a joint that
+  folds the wrong way, an eye where a joint should be). The concreteness makes the wrongness
+  land harder than vagueness would.
+- **Society, not specimen.** For threats meant to feel bigger than a single encounter, give
+  the creature a culture — taboos, a hierarchy, things it worships or fears. This is a cheap
+  way to make a `mythic` or plot-recurring entity feel like an iceberg instead of a boss fight.
+- **Refuses to manifest.** For things the party genuinely cannot fight, consider never staging
+  a direct encounter — only its environmental effects (cold, silence, an unlocatable sound).
+  This *is* a form of "the fair out": if it's never seen, running is the only sane response,
+  and that's a legitimate design.
+- **Polite and orderly, not just hostile.** For a god-tier or highly intelligent entity,
+  bureaucratic courtesy (it explains itself, offers a choice, keeps its word) is more
+  unsettling than aggression, and reads as more dangerous — malice would at least be
+  understandable.
+
+Use one or two of these per creature, not all of them — the point is a sharper reveal, not a
+checklist.
+
 ## Stat guidance (7e)
 
 - Give **average characteristics** (note "roll/scale per individual" if many appear).
@@ -787,68 +816,119 @@ investigation game a stuck puzzle is a dead session — build in redundancy and 
 - No single die roll can end the investigation.
 
 
-=== FILE: core/09-scene-description.md ===
+=== FILE: core/09-description.md ===
 
-# 09 — Scene Description
+# 09 — Description
 
-Write the prose a Keeper reads aloud — dread built from concrete, ordinary detail with one
+Write the prose a Keeper says aloud — dread built from concrete, ordinary detail with one
 thing quietly wrong. Evocative but *tight*: players stop listening after a few sentences.
+
+Two modes share this craft:
+
+- **A. Scene description** — the boxed text for a place: what the investigators see, hear,
+  and feel when they arrive somewhere, or the reveal of a horror.
+- **B. Investigator action description** — the prose for what *an investigator does*: picking
+  the lock, wading into the flooded cellar, reading the ritual aloud. Same senses, same
+  restraint, but the camera is on the character's body and choices, not the room.
+
+Both draw on `reference/lovecraft-craft-notes-zh.md` — §一 (tone) applies to either mode, §二
+splits into scene-description and investigator-action technique sections specifically for
+this file.
 
 ## First
 
 - Read the campaign `CLAUDE.md` for **era, tone, register, output language, content lines** —
   period-true detail only.
-- Know the scene's **purpose**: a clue, a choice, a shock, or a breather. Purpose sets length
-  and where the paragraph "points."
-- Use `templates/scene.md` (full scene) or just draft the boxed text if that's all that's
-  asked.
+- Decide which mode is being asked for, and the passage's **purpose**: a clue, a choice, a
+  shock, a breather, or (for Mode B) a moment of competence, risk, or discovery. Purpose sets
+  length and where the paragraph "points."
+- For Mode A, use `templates/scene.md` (full scene) or just draft the boxed text if that's all
+  that's asked. Mode B rarely needs its own file — see Output below.
 
-## The craft of boxed text
+## The shared craft
 
 - **3–6 sentences.** Long enough to immerse, short enough to keep the table's attention.
 - **Multi-sensory:** always beyond sight — sound, smell, temperature, the feel of the air,
-  the quality of the light. Two or three senses per box.
+  the quality of the light. Two or three senses per passage. `reference/lovecraft-craft-notes-zh.md`
+  §二's most consistent finding: **smell and sound arrive before sight**, often replacing it
+  entirely — lead with what's heard or smelled, let the visual confirmation lag or never come.
 - **Concrete over abstract.** "The wallpaper is furred with damp" beats "it feels creepy."
+  Precise numbers (a stair count, a measurement) read as more credible than adjectives, and
+  make the eventual wrongness land harder — see §二's "精確測量製造真實的巨大感".
   Let players draw the dread; don't tell them they're scared.
-- **One wrong detail.** A single off-key note (a clock stopped at the same time in every room)
-  does more than a pile of adjectives.
+- **One wrong detail** for a scene, or **one telling action** for an investigator — a single
+  off-key note (a clock stopped at the same time in every room; an animal that won't come
+  near) does more than a pile of adjectives. §二 calls this "以缺席/否定定義異樣" — absence
+  and refusal read as more unsettling than an added monster.
 - **End on a hook, not a full stop** — something that invites action ("the cellar door stands
   open") rather than closing the moment down.
 - **Say only what they perceive.** Keep interpretation, mechanics, and secrets *out* of the
-  boxed text — those go in keeper notes below it.
+  read-aloud text — those go in keeper notes below it.
 
-## Writing boxed text in 繁體中文
+## Mode A: Scene description
 
-- Read it aloud in your head. Boxed text is **spoken**, so favour 口語書面語 that a Keeper can
-  say naturally; avoid dense 文言 and long attributive chains that need a second pass to parse.
-- Keep sentences short. Chinese tolerates fewer subordinate clauses than English before a
-  reader loses the thread out loud.
-- Sensory vocabulary carries the weight — 潮、腥、黏、鏽、悶、發霉 — not adjective stacking.
-- Period register matters: 1920s 上海 and present-day 香港 should not sound alike.
-- Follow `reference/glossary-zh.md` for any game term that appears.
+- Everything above, aimed at a place. If it's a full scene, assemble it (see below); if it's
+  just the boxed text, draft that alone.
+- **For a horror reveal**, lead with the **image and motion**, then hand off the Sanity roll
+  to the monster's entry (`core/07-create-monster.md`). Describe wrongness through effect
+  (what it does to the light, the smell it brings) rather than a full anatomy dump — see
+  `reference/lovecraft-craft-notes-zh.md` §三 for how HPL stages a reveal before this handoff.
 
-## For a horror reveal
-
-- Lead with the **image and motion**, then hand off the Sanity roll to the monster's entry
-  (`core/07-create-monster.md`). Describe wrongness through effect (what it does to the light,
-  the smell it brings) rather than a full anatomy dump.
-
-## Assemble the scene (if full)
+### Assemble the scene (if full)
 
 Boxed text → what's here (clues, NPCs, features) → "if the players…" branches → the checks
 that might come up (set difficulty, never gate the only path) → `> **KEEPER ONLY**` truth and
 escalation.
 
+## Mode B: Investigator action description
+
+Use this when the Keeper asks what happens *when an investigator does something* — picks a
+lock, reaches into dark water, reads the incantation aloud — rather than what a place looks
+like.
+
+- **Describe the act, not just the outcome.** A procedural, almost mechanical detail (counting
+  stairs, checking a knot, re-reading a line before speaking it) works as a psychological
+  anchor for the character and for the reader — `reference/lovecraft-craft-notes-zh.md` §二's
+  "程序化動作作為對抗恐懼的心理防線". If that detail breaks off mid-action, that break *is*
+  the tension beat — don't narrate the fear directly, let the interruption carry it.
+- **Physical symptom over stated emotion.** A hand that won't stop shaking, a breath held too
+  long, hearing your own voice crack before you register you're afraid — show the body, not
+  the feeling word. See §二's "生理徵狀外顯心理狀態".
+- **Competence is a lens, not armour.** If the investigator has a relevant skill or profession,
+  let their expertise shape *how* they describe what they're doing (a doctor's clinical
+  vocabulary, a sailor's knot-work) — it makes the eventual failure or wrongness land harder
+  by contrast, not softer.
+- **Keep it to 2–4 sentences** unless the action is the climax of a scene. This is a beat, not
+  a set-piece.
+- **Don't resolve the mechanics inside the prose.** Narrate the attempt and its sensory
+  texture; the dice/skill roll that determines success sits outside this text, same spoiler
+  discipline as Mode A.
+
+## Writing in 简体中文 (both modes)
+
+- Read it aloud in your head. This prose is **spoken**, so favour 口语书面语 that a Keeper can
+  say naturally; avoid dense 文言 and long attributive chains that need a second pass to parse.
+- Keep sentences short. Chinese tolerates fewer subordinate clauses than English before a
+  reader loses the thread out loud.
+- Sensory vocabulary carries the weight — 潮、腥、黏、锈、闷、发霉 — not adjective stacking.
+- Period register matters: 1920s 上海 and present-day 香港 should not sound alike.
+- Follow `reference/glossary-zh.md` for any game term that appears.
+
 ## Output
 
-- Save to `campaigns/<slug>/scenes/<name>.md`, `kebab-case.md` in English.
-- Boxed text goes in a `>` blockquote so it's obvious what to read aloud.
-- Cross-link NPCs, monsters, puzzles, and handouts present.
+- **Mode A:** save to `campaigns/<slug>/scenes/<name>.md`, `kebab-case.md` in English. Boxed
+  text goes in a `>` blockquote so it's obvious what to read aloud. Cross-link NPCs, monsters,
+  puzzles, and handouts present.
+- **Mode B:** usually returned inline, not saved — it's a live-play beat, not a standing
+  artifact. If it belongs to a specific prepared scene (e.g. what happens when they try the
+  risky thing), fold it into that scene file's "If the players…" branch instead of creating a
+  separate file.
 
 ## Quality bar
 
 - Reads aloud smoothly in ~20–30 seconds; no tongue-twisters or stage directions mid-prose.
-- At least two senses and one "wrong" detail; ends on a hook.
+- At least two senses and one "wrong" detail (Mode A) or one telling physical/procedural beat
+  (Mode B); ends on a hook.
 - No secrets, mechanics, or player interpretation leaked into the read-aloud text.
 
 
@@ -885,14 +965,14 @@ clue is inside, the solution is not. A good handout is evidence the players get 
 A handout is the place where language and era are most visible, so get both right:
 
 - Write the prop in the campaign's **output language**. A 1930s 上海 newspaper clipping should
-  read like a period Chinese newspaper — 直排 conventions noted, 民國紀年 dates, period
+  read like a period Chinese newspaper — 直排 conventions noted, 民国纪年 dates, period
   place-names — not like a translated English one.
-- Match the writing system to the writer and the era: a 1920s letter uses 舊式書信 openings and
+- Match the writing system to the writer and the era: a 1920s letter uses 旧式书信 openings and
   closings; a modern text message does not.
 - Where the fiction plausibly mixes languages (a colonial港英 police report, a foreign
   scholar's marginalia), mix them — it's texture and it can carry a clue.
 - **When the writer wouldn't have written in the output language at all** — a Norwegian
-  widow's 1919 diary in a 繁體中文 campaign — write the prop in the **output language** and
+  widow's 1919 diary in a 简体中文 campaign — write the prop in the **output language** and
   put the in-fiction device in the presentation note: a translation read aloud by the owner,
   an investigator translating live, a consular clerk's transcript, a mission-school copy.
   The table must be able to read the prop. Never hand over a page nobody present can read,
@@ -998,7 +1078,7 @@ model's output. Assume the material is wrong until each line checks out.
 
 - [ ] Everything is in the campaign's declared **output language** — no drifted-back-to-English
       paragraphs.
-- [ ] 繁體中文 material uses `reference/glossary-zh.md` terms consistently; no 简体 characters;
+- [ ] 简体中文 material uses `reference/glossary-zh.md` terms consistently; no 繁体 characters;
       no two translations of the same game term.
 - [ ] Filenames are English `kebab-case.md`.
 - [ ] Any cipher or wordplay actually works in the script it's written in.
@@ -1519,9 +1599,21 @@ in `campaigns/<slug>/`, not here.
 - **`tables/`** — roll tables. Includes the four **seed tables** (`hooks`, `locations`,
   `mythos-angles`, `npc-quirks`) that `core/01-intake.md` rolls against when the Keeper gives
   little or no input — the anti-generic layer.
-- **`glossary-zh.md`** — the EN ↔ 繁體中文 term lock. One translation per game term, for the
+- **`glossary-zh.md`** — the EN ↔ 简体中文 term lock. One translation per game term, for the
   whole kit. Every generator writing Chinese follows it; new terms get added *here* first,
-  never invented inside a campaign.
+  never invented inside a campaign. Built on top of the community
+  [大译名表](https://www.goddessfantasy.net/bbs/index.php?topic=95256.0) term set.
+- **`og_Norval/`** — H. P. Lovecraft's original stories (82 works), kept for craft research
+  only, same non-reproduction rule as `external/` below. **`lovecraft-craft-notes-zh.md`** is
+  the distilled output — tone, scene/action description, and monster-design techniques pulled
+  from a full read of the corpus, in 简体中文. `core/09-description.md` and
+  `core/07-create-monster.md` both read it.
+- **`external/`** — third-party repos kept as git submodules, not kit content. `coc-zh` is a
+  collection of CoC novels/scenario source material for inspiration and research only — it is
+  **not** part of the kit's own canon, and generators must not copy or reproduce its text
+  (see this repo's `CLAUDE.md`: the kit doesn't reproduce copyrighted material). Treat it the
+  same way you'd treat a physical bookshelf: read it, then write original content informed by
+  it.
 
 Keep entries generic here (no campaign plot). When a creature or cult becomes tangled in one
 campaign's plot, copy it into that campaign and add the secrets there.
@@ -1529,17 +1621,20 @@ campaign's plot, copy it into that campaign and add the secrets there.
 
 === FILE: reference/glossary-zh.md ===
 
-# 詞彙對照表 — EN ↔ 繁體中文
+# 词汇对照表 — EN ↔ 简体中文
 
-**This file is a lock, not a dictionary.** When a campaign's output language is 繁體中文,
-every generator uses *these* terms and no others. Without it, the same skill becomes 偵查 in
-one file and 觀察 in the next, and the Keeper can't search their own campaign.
+**This file is a lock, not a dictionary.** When a campaign's output language is 简体中文,
+every generator uses *这些* terms and no others. Without it, the same skill becomes 侦查 in
+one file and 观察 in the next, and the Keeper can't search their own campaign.
 
-It is this kit's working convention, **not an official Chaosium translation**. If your table
-already uses different terms, edit this file — that's the point of it being one file.
+It is this kit's working convention, **not an official 中文版 Chaosium translation**. Core
+role/attribute/skill terms are built on the community
+[《Call of Cthulhu》大译名表](https://www.goddessfantasy.net/bbs/index.php?topic=95256.0)
+(纯美苹果园 forum). If your table already uses different terms, edit this file — that's the
+point of it being one file.
 
 Rules:
-- Never mix 简体字.
+- Never mix 繁体字.
 - Stat-block notation stays English: `STR 60`, `HP 12`, `1D6/2D10`, `Fighting (Brawl) 45%`.
   Only prose and labels are translated.
 - On first use of a Mythos proper noun in a document, write `中文（English）`; plain 中文
@@ -1547,192 +1642,348 @@ Rules:
 
 ## 核心角色
 
-| English | 繁體中文 |
+| English | 简体中文 |
 |---|---|
-| Keeper (of Arcane Lore) | 守密人 |
-| Investigator | 調查員 |
+| Keeper (of Arcane Lore) | 守秘人 |
+| Investigator | 调查员 |
 | Player | 玩家 |
 | Non-player character (NPC) | 非玩家角色 |
-| Scenario | 劇本 |
-| Campaign | 戰役 |
-| One-shot | 單元劇本 |
-| Session | 場次 |
-| Session zero | 前置討論 |
+| Scenario | 模组 |
+| Campaign | 战役 |
+| One-shot | 单元模组 |
+| Session | 场次 |
+| Session zero | 前置讨论 |
 | Handout | 道具 |
-| Boxed text / read-aloud | 朗讀文 |
+| Boxed text / read-aloud | 朗读文 |
 
-## 屬性
+## 属性
 
-| English | 繁體中文 | 縮寫 |
+| English | 简体中文 | 缩写 |
 |---|---|---|
 | Strength | 力量 | STR |
-| Constitution | 體質 | CON |
-| Size | 體型 | SIZ |
+| Constitution | 体质 | CON |
+| Size | 体型 | SIZ |
 | Dexterity | 敏捷 | DEX |
 | Appearance | 外貌 | APP |
 | Intelligence | 智力 | INT |
 | Power | 意志 | POW |
 | Education | 教育 | EDU |
-| Luck | 幸運 | — |
+| Luck | 幸运 | — |
 
-## 衍生數值
+## 衍生数值
 
-| English | 繁體中文 |
+| English | 简体中文 |
 |---|---|
 | Hit Points | 耐久值 |
 | Magic Points | 魔法值 |
 | Sanity | 理智值 |
-| Build | 體格 |
-| Damage Bonus | 傷害加值 |
-| Move Rate | 移動力 |
-| Armour | 護甲 |
+| Build | 体格 |
+| Damage Bonus | 伤害加值 |
+| Move Rate | 移动力 |
+| Armour | 护甲 |
 
-## 檢定
+## 检定
 
-| English | 繁體中文 |
+| English | 简体中文 |
 |---|---|
-| Skill check / roll | 技能檢定 |
+| Skill check / roll | 技能检定 |
 | Regular success | 普通成功 |
-| Hard success | 困難成功 |
-| Extreme success | 極限成功 |
+| Hard success | 困难成功 |
+| Extreme success | 极限成功 |
 | Critical success | 大成功 |
-| Fumble | 大失敗 |
-| Failure | 失敗 |
-| Bonus die | 獎勵骰 |
-| Penalty die | 懲罰骰 |
-| Push roll | 孤注一擲 |
-| Opposed roll | 對抗檢定 |
-| Luck spend | 消費幸運 |
-| Difficulty level | 難度 |
+| Fumble | 大失败 |
+| Failure | 失败 |
+| Bonus die | 奖励骰 |
+| Penalty die | 惩罚骰 |
+| Push roll | 孤注一掷 |
+| Opposed roll | 对抗检定 |
+| Luck spend | 消费幸运 |
+| Difficulty level | 难度 |
 
 ## 理智
 
-| English | 繁體中文 |
+| English | 简体中文 |
 |---|---|
-| Sanity roll | 理智檢定 |
-| Sanity loss | 理智損失 |
-| Bout of madness | 瘋狂發作 |
-| Temporary insanity | 臨時瘋狂 |
-| Indefinite insanity | 不定期瘋狂 |
-| Underlying insanity | 潛在瘋狂 |
-| Phobia | 恐懼症 |
+| Sanity roll | 理智检定 |
+| Sanity loss | 理智损失 |
+| Bout of madness | 疯狂发作 |
+| Temporary insanity | 临时疯狂 |
+| Indefinite insanity | 不定期疯狂 |
+| Underlying insanity | 潜在疯狂 |
+| Phobia | 恐惧症 |
 | Mania | 狂躁症 |
 | Delusion | 妄想 |
-| Reality check | 現實檢定 |
+| Reality check | 现实检定 |
 
-## 戰鬥
+## 战斗
 
-| English | 繁體中文 |
+| English | 简体中文 |
 |---|---|
-| Combat round | 戰鬥輪 |
-| Fighting back | 反擊 |
-| Dodge | 閃避 |
-| Manoeuvre | 戰技 |
-| Major wound | 重傷 |
-| Dying | 瀕死 |
+| Combat round | 战斗轮 |
+| Fighting back | 反击 |
+| Dodge | 闪避 |
+| Manoeuvre | 战技 |
+| Major wound | 重伤 |
+| Dying | 濒死 |
 | Unconscious | 昏迷 |
-| Outnumbering | 人數優勢 |
+| Outnumbering | 人数优势 |
 | Chase | 追逐 |
+| Impale | 贯穿 |
+| Surprise | 突袭 |
 
 ## 技能
 
-| English | 繁體中文 |
+| English | 简体中文 |
 |---|---|
-| Accounting | 會計 |
-| Anthropology | 人類學 |
-| Appraise | 估價 |
-| Archaeology | 考古學 |
-| Art/Craft | 藝術與手藝 |
+| Accounting | 会计 |
+| Anthropology | 人类学 |
+| Appraise | 估价 |
+| Archaeology | 考古学 |
+| Art/Craft | 艺术与手艺 |
 | Charm | 魅惑 |
 | Climb | 攀爬 |
-| Credit Rating | 信用評級 |
-| Cthulhu Mythos | 克蘇魯神話 |
-| Disguise | 喬裝 |
-| Drive Auto | 汽車駕駛 |
-| Electrical Repair | 電氣維修 |
-| Fast Talk | 話術 |
-| Fighting | 格鬥 |
-| Firearms | 射擊 |
+| Credit Rating | 信用评级 |
+| Cthulhu Mythos | 克苏鲁神话 |
+| Disguise | 乔装 |
+| Drive Auto | 汽车驾驶 |
+| Electrical Repair | 电气维修 |
+| Fast Talk | 话术 |
+| Fighting | 格斗 |
+| Firearms | 射击 |
 | First Aid | 急救 |
-| History | 歷史 |
-| Intimidate | 恐嚇 |
-| Jump | 跳躍 |
-| Language (Other) | 外語 |
-| Language (Own) | 母語 |
+| History | 历史 |
+| Intimidate | 恐吓 |
+| Jump | 跳跃 |
+| Language (Other) | 外语 |
+| Language (Own) | 母语 |
 | Law | 法律 |
-| Library Use | 圖書館使用 |
-| Listen | 聆聽 |
-| Locksmith | 鎖匠 |
-| Mechanical Repair | 機械維修 |
-| Medicine | 醫學 |
-| Natural World | 博物學 |
-| Navigate | 導航 |
-| Occult | 神秘學 |
-| Operate Heavy Machinery | 操作重機械 |
-| Persuade | 說服 |
-| Pilot | 駕駛 |
+| Library Use | 图书馆使用 |
+| Listen | 聆听 |
+| Locksmith | 锁匠 |
+| Mechanical Repair | 机械维修 |
+| Medicine | 医学 |
+| Natural World | 博物学 |
+| Navigate | 导航 |
+| Occult | 神秘学 |
+| Operate Heavy Machinery | 操作重机械 |
+| Persuade | 说服 |
+| Pilot | 驾驶 |
 | Psychoanalysis | 精神分析 |
-| Psychology | 心理學 |
-| Ride | 騎乘 |
-| Science | 科學 |
+| Psychology | 心理学 |
+| Ride | 骑乘 |
+| Science | 科学 |
 | Sleight of Hand | 妙手 |
-| Spot Hidden | 偵查 |
-| Stealth | 潛行 |
+| Spot Hidden | 侦查 |
+| Stealth | 潜行 |
 | Survival | 生存 |
 | Swim | 游泳 |
-| Throw | 投擲 |
-| Track | 追蹤 |
+| Throw | 投掷 |
+| Track | 追踪 |
 
-> 注意：**Spot Hidden 一律譯作「偵查」**，不要用「觀察」。**Listen 一律「聆聽」**，不要用
-> 「聽覺」。這兩個是最常漂移的詞。
+> 注意：**Spot Hidden 一律译作「侦查」**，不要用「观察」。**Listen 一律「聆听」**，不要用
+> 「听觉」。这两个是最常漂移的词。
 
-## 神話
+### 补充技能与武器细分（大译名表，按需使用）
 
-| English | 繁體中文 |
+本套件的技能表刻意保持精简（上表）。若模组需要更细的武器/专业技能分类，`大译名表` 提供了
+第七版官方粒度，按需取用，不必全部搬入战役文件：
+
+| English | 简体中文 |
 |---|---|
-| Cthulhu Mythos | 克蘇魯神話 |
-| Great Old One | 舊日支配者 |
+| Acting | 表演 |
+| Animal Handling | 动物驯养 |
+| Artillery | 炮术 |
+| Astronomy | 天文学 |
+| Biology | 生物学 |
+| Botany | 植物学 |
+| Chemistry | 化学 |
+| Computer Use | 计算机使用 |
+| Cryptography | 密码学 |
+| Demolitions | 爆破 |
+| Diving | 潜水 |
+| Electronics | 电子学 |
+| Fine Art | 美术 |
+| Forensics | 司法科学 |
+| Forgery | 伪造 |
+| Geology | 地质学 |
+| Handgun | 手枪 |
+| Rifle/Shotgun | 步枪／霰弹枪 |
+| Machine Gun | 机关枪 |
+| Submachine Gun | 冲锋枪 |
+| Heavy Weapons | 重武器 |
+| Hypnosis | 催眠 |
+| Mathematics | 数学 |
+| Meteorology | 气象学 |
+| Pharmacy | 药学 |
+| Photography | 摄影 |
+| Physics | 物理学 |
+| Read Lips | 读唇 |
+
+## 补充规则术语（大译名表）
+
+上面「检定 / 战斗」两节是本套件生成器最常用到的词；以下补充几个 `core/01-intake.md`、
+`core/04-design-scenario.md`、`core/06-create-npc.md` 常涉及、但原表未收录的概念：
+
+| English | 简体中文 |
+|---|---|
+| Adventure | 冒险（等同「模组」Scenario） |
+| Occupation / Profession | 职业 |
+| Cash | 现金 |
+| Assets | 资产 |
+| Investigator Development Phase | 调查员幕间成长 |
+| Idea Roll | 灵感检定 |
+| Foreshadowing | 揭示预兆 |
+| Obvious Clue | 显明线索 |
+| Obscure Clue | 隐秘线索 |
+| Human Limits | 人类极限 |
+| Diving for Cover | 寻找掩体 |
+
+## 神话
+
+| English | 简体中文 |
+|---|---|
+| Cthulhu Mythos | 克苏鲁神话 |
+| Great Old One | 旧日支配者 |
 | Outer God | 外神 |
 | Elder God | 古神 |
-| Servitor race | 侍奉種族 |
-| Independent race | 獨立種族 |
-| Cult | 教團 |
+| Servitor race | 侍奉种族 |
+| Independent race | 独立种族 |
+| Cult | 教团 |
 | Cultist | 教徒 |
-| Spell | 法術 |
-| Tome | 魔法書 |
-| Elder Sign | 古神印記 |
-| Gate | 門 |
-| Sanity-blasting | 撼動理智的 |
+| Spell | 法术 |
+| Tome | 魔法书 |
+| Elder Sign | 古神印记 |
+| Gate | 门 |
+| Sanity-blasting | 撼动理智的 |
 
-## 專有名詞
+## 专有名词
 
-| English | 繁體中文 |
+| English | 简体中文 |
 |---|---|
-| Cthulhu | 克蘇魯 |
-| Azathoth | 阿撒托斯 |
-| Nyarlathotep | 奈亞拉托提普 |
-| Yog-Sothoth | 猶格·索托斯 |
-| Shub-Niggurath | 莎布·尼古拉絲 |
-| Hastur | 哈斯特 |
-| Dagon | 大袞 |
-| Deep One | 深潛者 |
+| Cthulhu | 克苏鲁 |
+| Azathoth | 阿萨托斯 |
+| Nyarlathotep | 奈亚拉托提普 |
+| Yog-Sothoth | 犹格·索托斯 |
+| Shub-Niggurath | 莎布·尼古拉丝 |
+| Hastur | 哈斯塔 |
+| Dagon | 达贡 |
+| Deep One | 深潜者 |
 | Mi-Go | 米·戈 |
 | Shoggoth | 修格斯 |
-| Byakhee | 拜亞基 |
-| Nightgaunt | 夜魘 |
-| Ghoul | 食屍鬼 |
-| Necronomicon | 死靈之書 |
-| Miskatonic University | 米斯卡塔尼克大學 |
+| Byakhee | 拜亚基 |
+| Nightgaunt | 夜魇 |
+| Ghoul | 食尸鬼 |
+| Necronomicon | 死灵之书 |
+| Miskatonic University | 密斯卡塔尼克大学 |
 | Arkham | 阿卡姆 |
 | Innsmouth | 印斯茅斯 |
 | Dunwich | 敦威治 |
 | Kingsport | 金斯波特 |
-| R'lyeh | 拉萊耶 |
+| R'lyeh | 拉莱耶 |
 
-## 加詞的規矩
+### 神话生物（大译名表，扩充）
 
-需要新詞時：先加到這裡，再寫進戰役檔案。**不要在戰役裡臨時翻譯。**
-新詞放到對應的表，保持字母順序，並在該場次的 `canon-log.md` 註明加了什麼。
+`create-monster` 设计原创生物时不必受限于此表，但引用 HPL 正典生物时统一用这些译名：
+
+| English | 简体中文 |
+|---|---|
+| Chthonians | 钻地魔虫 |
+| Colours Out of Space | 星之彩 |
+| Dark Young | 黑山羊幼崽 |
+| Deep One Hybrid | 混种深潜者 |
+| Dhole | 巨噬蠕虫 |
+| Dimensional Shambler | 空鬼 |
+| Elder Thing | 古老者 |
+| Fire Vampire | 炎之精 |
+| Flying Polyp | 飞水螅 |
+| Formless Spawn | 无形眷族 |
+| Ghast | 妖鬼 |
+| Gnoph-Keh | 诺弗·刻 |
+| Great Race of Yith | 伊斯之伟大种族 |
+| Hound of Tindalos | 庭达罗斯之猎犬 |
+| Hunting Horror | 恐怖猎手 |
+| Lloigor | 罗伊格尔 |
+| Rat-Thing | 人面鼠 |
+| Sand-Dweller | 潜沙怪 |
+| Serpent People | 蛇人 |
+| Servitor of the Outer Gods | 外神仆役 |
+| Shantak | 夏塔克鸟 |
+| Star-Spawn of Cthulhu | 克苏鲁的星之眷族 |
+| Star Vampire | 星之精 |
+| Tcho-Tcho | 乔乔人 |
+
+### 旧日支配者与外神（大译名表，扩充）
+
+| English | 简体中文 |
+|---|---|
+| Abhoth | 阿布霍斯 |
+| Atlach-Nacha | 阿特拉克·纳克亚 |
+| Bast | 芭丝特 |
+| Chaugnar Faugn | 昌格纳·方庚 |
+| Cthugha | 克图格亚 |
+| Cyaegha | 赛伊格亚 |
+| Daoloth | 道罗斯 |
+| Eihort | 埃霍尔特 |
+| Ghatanothoa | 加塔诺托亚 |
+| Gla'aki | 格拉基 |
+| Ithaqua | 伊塔库亚 |
+| King in Yellow (Avatar of Hastur) | 黄衣之王（哈斯塔的化身） |
+| Nodens | 诺登斯 |
+| Nyogtha | 尼约格萨 |
+| Rhan-Tegoth | 兰-提格斯 |
+| Shudde M'ell | 修德·梅尔 |
+| Tsathoggua | 撒托古亚 |
+| Tulzscha | 图尔兹查 |
+| Ubbo-Sathla | 乌波·萨斯拉 |
+| Y'golonac | 伊戈罗纳克 |
+| Yibb-Tstll | 伊波·兹特尔 |
+| Yig | 伊格 |
+| Zoth-Ommog | 佐斯·奥摩格 |
+
+### 常用法术（大译名表，选录）
+
+只收本套件生成器较可能用到的常见/仪式类法术；完整法术表远不止这些，遇到未收录的法术，按
+「XX + 术」或「XX之XX」的既有命名节奏自行翻译，并把新词加回本表。
+
+| English | 简体中文 |
+|---|---|
+| Bind (Monster) | （怪物名）束缚术 |
+| Call/Dismiss Deity | 请神术／送神术 |
+| Cause/Cure Blindness | 致盲术／复明术 |
+| Cloud Memory | 记忆模糊术 |
+| Contact (Entity) | （存在名）联络术 |
+| Contact Deity | 通神术 |
+| Create Zombie | 僵尸制造术 |
+| Dominate | 支配术 |
+| Elder Sign | 旧印开光术 |
+| Enchant (Item) | （物品名）附魔术 |
+| Enthrall Victim | 迷身术 |
+| Evil Eye | 邪眼术 |
+| Find Gate | 时空门搜寻术 |
+| Implant Fear | 恐惧注入术 |
+| Melt Flesh | 血肉熔解术 |
+| Mental Suggestion | 心理暗示术 |
+| Mindblast | 精神震爆术 |
+| Mind Exchange / Transfer | 精神交换术／精神转移术 |
+| Resurrection | 复活术 |
+| Shrivelling | 枯萎术 |
+| Summon (Monster) | （怪物名）召唤术 |
+| Voorish Sign | 维瑞之印 |
+| Warding | 守卫术 |
+| Wither Limb | 肢体凋萎术 |
+| Words of Power | 真言术 |
+| Wrack | 折磨术 |
+
+## 加词的规矩
+
+需要新词时：先加到这里，再写进战役文件。**不要在战役里临时翻译。**
+新词放到对应的表，保持字母顺序，并在该场次的 `canon-log.md` 注明加了什么。
+
+## 关于本表的历史注记
+
+`campaigns/beidaihe-winter/`（已开团的战役）早于本表改为简体中文之前建立，沿用旧版繁体
+词汇（如「守密人」而非「守秘人」）。这是刻意保留的例外，不代表新战役也该跟随——新战役一律
+从本表取词。
 
 
 === FILE: reference/rules/combat.md ===
@@ -1798,7 +2049,7 @@ cinematic beats without dealing damage.
 - A Sanity loss is written **X/Y** — lose **X** on a successful SAN roll, **Y** on a failure
   (e.g. `0/1D6`, `1/1D8`, `1D4/1D10`). Roll SAN (d100 ≤ current SAN) to resist.
 
-## Typical loss values (guidance for `create-monster` / `scene-description`)
+## Typical loss values (guidance for `create-monster` / `description`)
 | Trigger | Loss |
 |---------|------|
 | Surprised by a corpse; awful but mundane sight | 0/1D2 – 0/1D4 |
@@ -2147,12 +2398,12 @@ Roll a second time for anyone the players will meet more than once. See `core/06
 - **Timeframe:** <a season, a year, an open-ended chronicle>
 
 ## Output language
-- **Generated content:** 繁體中文（香港）
+- **Generated content:** 简体中文
 - Everything the table sees — prose, NPC names, boxed text, handouts — is written in this
   language. Kit scaffolding, filenames, and stat-block notation (`STR 60`, `1D6/2D10`) stay
   English.
-- When this is 繁體中文, every game term follows `reference/glossary-zh.md`. Do not improvise
-  translations; do not mix 简体.
+- When this is 简体中文, every game term follows `reference/glossary-zh.md`. Do not improvise
+  translations; do not mix 繁体.
 - *Change this line to whatever your table speaks.*
 
 ## Tone & style

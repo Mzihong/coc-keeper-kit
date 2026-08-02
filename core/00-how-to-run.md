@@ -25,7 +25,7 @@ Generate in this order. Each step reads what came before.
 | 3 | **Event clock** — the threat and its timeline | `core/05-event-clock.md` | `world/event-clock.md` |
 | 4 | **Cast** — the people and the things | `core/06-create-npc.md`, `core/07-create-monster.md` | `npcs/`, `reference/bestiary/` |
 | 5 | **Scenario** — one session at a time, on demand | `core/04-design-scenario.md` | `<scenario-slug>.md`, `scenes/` |
-| 6 | **Props** — puzzles, boxed text, handouts | `core/08`, `core/09`, `core/10` | `puzzles/`, `scenes/`, `handouts/` |
+| 6 | **Props** — puzzles, descriptions, handouts | `core/08`, `core/09`, `core/10` | `puzzles/`, `scenes/`, `handouts/` |
 | 7 | **Review** — check it before the table | `core/11-review.md` | fixes |
 | 8 | **Canon update** — after play | `core/12-canon-update.md` | `canon-log.md` |
 
@@ -48,7 +48,7 @@ writing any stat block, difficulty, or Sanity cost.
 | a person — ally, witness, villain, contact | `core/06-create-npc.md` |
 | a non-human threat, creature, Mythos entity | `core/07-create-monster.md` |
 | a puzzle, cipher, code, lock, riddle | `core/08-create-puzzle.md` |
-| read-aloud / boxed text, atmosphere, a reveal | `core/09-scene-description.md` |
+| read-aloud / boxed text, atmosphere, a reveal, or an investigator's action narrated | `core/09-description.md` |
 | a prop the players physically receive | `core/10-create-handout.md` |
 | "check this", "is this ready", before a session | `core/11-review.md` |
 | "here's what happened last session" | `core/12-canon-update.md` |
@@ -62,13 +62,13 @@ writing any stat block, difficulty, or Sanity cost.
 - **Output language: per campaign.** The campaign's `CLAUDE.md` declares an **Output
   language**. All generated content — prose, NPC names, handouts, boxed text — is written in
   that language. Kit scaffolding, specs, and filenames stay in English. When the output
-  language is 繁體中文, follow `reference/glossary-zh.md` for every game term; do not
-  improvise translations and do not mix 简体.
+  language is 简体中文, follow `reference/glossary-zh.md` for every game term; do not
+  improvise translations and do not mix 繁体.
   - **Files inside `campaigns/` follow the campaign's output language for their *values*,
     but keep the template's English headings.** A Keeper skims headings to find things and
     the specs reference them by name; the content underneath is what the table reads.
   - **When an in-fiction document wouldn't plausibly be in the output language** — a
-    Norwegian widow's diary in a 繁體中文 campaign — write the handout in the output language
+    Norwegian widow's diary in a 简体中文 campaign — write the handout in the output language
     and state the in-fiction device in the presentation note (a translation read aloud, an
     investigator translating live, a consular clerk's transcript). Don't break the table's
     language for verisimilitude, and don't pretend the original was written in it.
@@ -115,7 +115,7 @@ coc-keeper-kit/
 │   ├── bestiary/            ← reusable monsters & Mythos entities
 │   ├── mythos/              ← Great Old Ones, tomes, spells, cults
 │   ├── tables/              ← roll tables, incl. the seed tables intake uses
-│   └── glossary-zh.md       ← EN ↔ 繁體中文 term lock
+│   └── glossary-zh.md       ← EN ↔ 简体中文 term lock
 ├── templates/               ← the blank shapes each spec fills in
 ├── campaigns/
 │   ├── _template-campaign/  ← copy this to start a new game
