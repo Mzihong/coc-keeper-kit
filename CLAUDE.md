@@ -50,7 +50,14 @@ the skill, read the spec it names, follow the spec. Never generate from the wrap
 
 ## Maintenance
 
-- 版本更新需要填 changelog 或者更新 README。
+改动这个 kit(而不是用它生成内容)时:
+
+- **每次改动都要在根 `CHANGELOG.md` 追加一条**;影响到用户入口时同时更新 `README.md`。
+- 改动来自 `update_plan/` 里的某个计划时,完结前逐条走 **`update_plan/README.md` 的
+  「完结清单」**——状态两处同步、changelog、重跑 `scripts/build-bundle.sh`、
+  三适配器一致性、归档。
+- 动过 `core/` / `templates/` / `reference/` 就必须重跑 `scripts/build-bundle.sh`,
+  并把 `dist/bundle.md` 与源文件放在同一个 commit。
 
 ## Portability
 

@@ -65,6 +65,18 @@ Print the full file content with a header naming its path:
 
 Never downgrade an artifact to a summary of an artifact.
 
+## Maintenance
+
+改动这个 kit(而不是用它生成内容)时:
+
+- **每次改动都要在根 `CHANGELOG.md` 追加一条**;影响到用户入口时同时更新 `README.md`。
+- 改动来自 `update_plan/` 里的某个计划时,完结前逐条走 **`update_plan/README.md` 的
+  「完结清单」**——状态两处同步、changelog、重跑 `scripts/build-bundle.sh`、
+  三适配器一致性、归档。
+- 动过 `core/` / `templates/` / `reference/` 就必须重跑 `scripts/build-bundle.sh`,
+  并把 `dist/bundle.md` 与源文件放在同一个 commit。
+- ChatGPT 用户拿到的是 `dist/bundle.md` 快照——不重建 bundle,他们就永远用着旧规则。
+
 ## Portability
 
 This kit is read by Claude, Gemini, and ChatGPT. `CLAUDE.md`, `GEMINI.md`, and `AGENTS.md`
