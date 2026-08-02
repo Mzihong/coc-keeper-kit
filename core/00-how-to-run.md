@@ -12,7 +12,11 @@ read-aloud prose — mechanically correct for **CoC 7th Edition** and filed so n
 between sessions.
 
 It is **not** a rules SRD and not a substitute for the published rulebooks. It references
-mechanics so generated numbers are correct; it reproduces no copyrighted text.
+mechanics so generated numbers are correct; **nothing it generates reproduces copyrighted
+text**.
+
+Official third-party material may be *filed* under `reference/decks/` as source material to
+draw on — but only under the citation rule below, and never copied into generated output.
 
 ## The pipeline
 
@@ -53,6 +57,7 @@ writing any stat block, difficulty, or Sanity cost.
 | a prop the players physically receive | `core/10-create-handout.md` |
 | "check this", "is this ready", before a session | `core/11-review.md` |
 | "here's what happened last session" | `core/12-canon-update.md` |
+| a deck/book/PDF to file, "归档这份资料", loose files in `reference/` | `core/14-archive-reference.md` |
 
 ## Ground rules for everything you generate
 
@@ -83,6 +88,18 @@ writing any stat block, difficulty, or Sanity cost.
 - **Continuity.** Before generating into an existing campaign, read its `CLAUDE.md` and
   `canon-log.md`. Never contradict established canon. If you must, say so explicitly and
   offer the retcon as a choice rather than writing it in.
+- **Citing official material.** Files under `reference/decks/` are transcriptions of published
+  Chaosium products, kept as source material. Two rules, both hard:
+  1. **Any official material filed in this repo carries a `## 引用出处` section at the end of
+     the file** — work, rights holder, edition, where this text came from, scope, and what
+     it's filed for. See `reference/decks/README.md` for the table. No citation, no file.
+  2. **Take structure and scale, never text.** Use a deck to calibrate a stat line or see how
+     long a usable secret runs. Generated NPCs get their own names, backstories, and secrets.
+     Copying a card into `campaigns/` is both a plagiarism problem and a table problem.
+
+  Archives are **local files, absent from `dist/bundle.md`** — every spec that points at one
+  says "if present". Nothing may depend on them. To file new material, follow
+  `core/14-archive-reference.md`; `reference/index.json` maps what is archived and who reads it.
 
 ## Conventions
 
@@ -116,6 +133,10 @@ coc-keeper-kit/
 │   ├── bestiary/            ← reusable monsters & Mythos entities
 │   ├── mythos/              ← Great Old Ones, tomes, spells, cults
 │   ├── tables/              ← roll tables, incl. the seed tables intake uses
+│   ├── craft/               ← how to *write* it (rules/ is what the numbers are)
+│   ├── decks/               ← official card decks — cited, local only, not kit canon
+│   ├── sourcebooks/         ← official books, transcribed — same rule, bigger
+│   ├── index.json           ← reverse index over both (build-reference-index.py)
 │   └── glossary-zh.md       ← EN ↔ 简体中文 term lock
 ├── templates/               ← the blank shapes each spec fills in
 ├── campaigns/

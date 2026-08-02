@@ -3,6 +3,11 @@
 Roll **1D10** when an investigator suffers a bout of madness (lost ≥ 5 SAN in one roll and
 made the INT realisation). Lasts ~1D10 rounds. Pick if a roll doesn't fit the fiction.
 
+For the longer aftermath — summary symptoms, and the phobia or mania the investigator is left
+carrying — `reference/decks/phobias-and-manias-zh.md` (local only) is the official *Phobias*
+deck: 9 real-time symptoms, 6 summary ones, and 32 named conditions written out at
+hand-to-the-player length.
+
 | d10 | Effect |
 |----|--------|
 | 1 | **Amnesia** — comes to with no memory of the last few minutes; the horror is a blank. |

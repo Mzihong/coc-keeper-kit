@@ -26,6 +26,7 @@ Open the file and follow it to the letter, including its Quality bar.
 | a prop the players physically receive | `core/10-create-handout.md` |
 | "check this", "is this ready" | `core/11-review.md` |
 | "here's what happened last session" | `core/12-canon-update.md` |
+| a deck/book/PDF to file, "归档这份资料", loose files in `reference/` | `core/14-archive-reference.md` |
 
 ## Using this in ChatGPT (no repo access)
 
@@ -73,6 +74,7 @@ Never downgrade an artifact to a summary of an artifact.
 - 改动来自 `update_plan/` 里的某个计划时,完结前逐条走 **`update_plan/README.md` 的
   「完结清单」**——状态两处同步、changelog、重跑 `scripts/build-bundle.sh`、
   三适配器一致性、归档。
+- 改动结构、硬约定或计划状态时,顺手更新 `WORKLOG.md`——它是给接手会话的上手速览,过期比不存在更糟。
 - 动过 `core/` / `templates/` / `reference/` 就必须重跑 `scripts/build-bundle.sh`,
   并把 `dist/bundle.md` 与源文件放在同一个 commit。
 - ChatGPT 用户拿到的是 `dist/bundle.md` 快照——不重建 bundle,他们就永远用着旧规则。

@@ -1,0 +1,186 @@
+{
+  "directory": "reference/sourcebooks",
+  "role": "full official books — deep reference, looked up a chapter at a time",
+  "kind": "third-party-source-material",
+  "governed_by": "reference/sourcebooks/README.md",
+  "citation_rule": "every file ends with a `## 引用出处` block; no citation, no file",
+  "usage_rule": "take structure and scale, never text (core/00-how-to-run.md)",
+  "in_bundle": false,
+  "generated_by": "scripts/build-reference-index.py — do not edit by hand",
+  "entry_count": 3,
+  "entries": [
+    {
+      "file": "grand-grimoire-zh.md",
+      "path": "reference/sourcebooks/grand-grimoire-zh.md",
+      "title": "克苏鲁神话魔法大典 — 官方法术全书(中译收录)",
+      "lines": 13731,
+      "declared_consumers": [
+        "core/06-create-npc.md",
+        "core/07-create-monster.md",
+        "reference/sourcebooks/README.md",
+        "update_plan/2026-08-02-magic-quickref.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "CHANGELOG.md",
+          "line": 54,
+          "context": "- **Keeper 现在能查到法术、怪物和规则原文了。** 造 spellcaster 查 `grand-grimoire-zh.md`(550+ 法术)、造神话生物查 `malleus-monstrorum-zh.md`、速查表说不清的数值回 `keeper-rulebook-7e-zh.md` 查原文;疯狂后遗症"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "line": 57,
+          "context": "- **`update_plan` 的 P7 魔法速查解除阻塞** —— 它等了一整轮的\"魔法书转换稿\"就是现在的 `reference/sourcebooks/grand-grimoire-zh.md`,可以开工;P6 补章节号的后续项也从\"翻 PDF\"变成\"搜转录稿\";P9 的来源红线问题因转载规则改动而部分有解。"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 68,
+          "context": "`reference/sourcebooks/grand-grimoire-zh.md`,可以开工了。"
+        },
+        {
+          "file": "core/06-create-npc.md",
+          "line": 58,
+          "context": "`reference/sourcebooks/grand-grimoire-zh.md` is the official grimoire, if you have it locally."
+        },
+        {
+          "file": "core/07-create-monster.md",
+          "line": 16,
+          "context": "before inventing your own. `reference/sourcebooks/grand-grimoire-zh.md` covers spells for"
+        },
+        {
+          "file": "reference/mythos/README.md",
+          "line": 16,
+          "context": "Source material for tomes and spells: `reference/sourcebooks/grand-grimoire-zh.md` (the"
+        },
+        {
+          "file": "update_plan/2026-08-02-magic-quickref.md",
+          "line": 5,
+          "context": "> `reference/sourcebooks/grand-grimoire-zh.md`(13731 行,全书转录,带 `## 引用出处`)"
+        },
+        {
+          "file": "update_plan/2026-08-02-magic-quickref.md",
+          "line": 26,
+          "context": "`reference/sourcebooks/grand-grimoire-zh.md`,可直接切块通读(同教团 docx 的阶段 0 方法)。"
+        },
+        {
+          "file": "update_plan/2026-08-02-magic-quickref.md",
+          "line": 31,
+          "context": "- [x] ~~等 Keeper 提供转换后的文档~~ —— 已归档为 `reference/sourcebooks/grand-grimoire-zh.md`"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 15,
+          "context": "| P7 | [magic-quickref](2026-08-02-magic-quickref.md) | 魔法速查 `reference/rules/magic.md`:施法通则、tome/spell 数值惯例 | **待执行(阻塞已解除 2026-08-02)** | 转换稿已归档为 `reference/so"
+        }
+      ],
+      "reference_count": 10,
+      "cited": true,
+      "provenance": {
+        "work": "《克苏鲁神话魔法大典》(The Grand Grimoire of Cthulhu Mythos Magic)",
+        "rights_holder": "Chaosium Inc.",
+        "edition": "适配 CoC 7th Edition",
+        "source": "简体中文译本 PDF 的文字转录,未署译者名,译本出处不详。",
+        "scope": "全书逐字转录,未改写(含目录与索引页码残留)",
+        "purpose": "法术数值标尺 —— 供 core/07-create-monster.md、core/06-create-npc.md、reference/mythos/,以及 update_plan/2026-08-02-magic-quickref.md 的提炼工作",
+        "known_issues": "目录与索引的页码行混在正文中(PDF 转录残留)"
+      }
+    },
+    {
+      "file": "keeper-rulebook-7e-zh.md",
+      "path": "reference/sourcebooks/keeper-rulebook-7e-zh.md",
+      "title": "克苏鲁的呼唤 第七版规则书 — 官方规则书全文(中译收录)",
+      "lines": 28443,
+      "declared_consumers": [
+        "core/02-rules-reference.md",
+        "reference/rules/character-creation.md",
+        "reference/sourcebooks/README.md",
+        "update_plan/2026-08-02-investigator-cards.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "CHANGELOG.md",
+          "line": 54,
+          "context": "- **Keeper 现在能查到法术、怪物和规则原文了。** 造 spellcaster 查 `grand-grimoire-zh.md`(550+ 法术)、造神话生物查 `malleus-monstrorum-zh.md`、速查表说不清的数值回 `keeper-rulebook-7e-zh.md` 查原文;疯狂后遗症"
+        },
+        {
+          "file": "core/02-rules-reference.md",
+          "line": 7,
+          "context": "When a cheat-sheet doesn't settle it, `reference/sourcebooks/keeper-rulebook-7e-zh.md` is the"
+        },
+        {
+          "file": "update_plan/2026-08-02-investigator-cards.md",
+          "line": 95,
+          "context": "`reference/sourcebooks/keeper-rulebook-7e-zh.md`(28443 行中译转录),不必再从 PDF 里翻——"
+        },
+        {
+          "file": "update_plan/2026-08-02-investigator-cards.md",
+          "line": 99,
+          "context": "- [ ] 通读 `reference/sourcebooks/keeper-rulebook-7e-zh.md` 的人物创建相关章节,把"
+        }
+      ],
+      "reference_count": 4,
+      "cited": true,
+      "provenance": {
+        "work": "《克苏鲁的呼唤》第七版规则书(Call of Cthulhu 7th Edition Keeper Rulebook)",
+        "rights_holder": "Chaosium Inc. — Call of Cthulhu © 1981–2014 Chaosium Inc.,Call of Cthulhu® 为 Chaosium 注册商标",
+        "edition": "CoC 7th Edition",
+        "source": "简体中文译本的文字转录。译本首发于纯美苹果园,第十一章译名表译者署七宫涟;译文自带声明「仅做学习交流之用,禁止用于商业用途」。",
+        "scope": "全书逐字转录,未改写",
+        "purpose": "规则原文核查 —— 供 core/02-rules-reference.md 与 reference/rules/ 各速查表溯源",
+        "known_issues": "页码为英文原书页码;原译文自述部分章节未系统校对"
+      }
+    },
+    {
+      "file": "malleus-monstrorum-zh.md",
+      "path": "reference/sourcebooks/malleus-monstrorum-zh.md",
+      "title": "怪物之锤 Malleus Monstrorum — 官方怪物图鉴(中译收录)",
+      "lines": 11703,
+      "declared_consumers": [
+        "core/07-create-monster.md",
+        "reference/sourcebooks/README.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "CHANGELOG.md",
+          "line": 54,
+          "context": "- **Keeper 现在能查到法术、怪物和规则原文了。** 造 spellcaster 查 `grand-grimoire-zh.md`(550+ 法术)、造神话生物查 `malleus-monstrorum-zh.md`、速查表说不清的数值回 `keeper-rulebook-7e-zh.md` 查原文;疯狂后遗症"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 70,
+          "context": "`reference/sourcebooks/malleus-monstrorum-zh.md` 已可读;剩下要 Keeper 定的是范围。"
+        },
+        {
+          "file": "core/07-create-monster.md",
+          "line": 14,
+          "context": "dependency): `reference/sourcebooks/malleus-monstrorum-zh.md` is the official creature"
+        },
+        {
+          "file": "core/14-archive-reference.md",
+          "line": 48,
+          "context": "Prefer the published English title: `malleus-monstrorum-zh.md`, not `怪物之锤.md`."
+        },
+        {
+          "file": "reference/bestiary/README.md",
+          "line": 6,
+          "context": "Calibrate against `reference/sourcebooks/malleus-monstrorum-zh.md` (the official creature"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 17,
+          "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:种类阶梯的档位区间、按 type 分的模板、词条(强化)系统与其存储格式 | 待讨论(五项待定,尚无执行清单) | 从 P4 待讨论 2 拆出。骨架已由"
+        }
+      ],
+      "reference_count": 6,
+      "cited": true,
+      "provenance": {
+        "work": "《怪物之锤》(Malleus Monstrorum)",
+        "rights_holder": "Chaosium Inc.",
+        "edition": "适配 CoC 7th Edition",
+        "source": "简体中文译本 PDF 的文字转录,未署译者名,译本出处不详。",
+        "scope": "全书逐字转录,未改写;文末 PDF 转换工具的残留提示行已删除",
+        "purpose": "神话生物数值标尺 —— 供 core/07-create-monster.md、reference/bestiary/",
+        "known_issues": "PDF 转录导致属性行断字、表格错行,数值需人工判读"
+      }
+    }
+  ]
+}

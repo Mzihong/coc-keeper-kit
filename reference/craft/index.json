@@ -1,0 +1,108 @@
+{
+  "directory": "reference/craft",
+  "role": "distilled craft knowledge — how to write it, as opposed to what the numbers are",
+  "kind": "kit-original-content",
+  "governed_by": "reference/craft/README.md",
+  "citation_rule": null,
+  "usage_rule": "authored by this kit — read and used directly, no citation required",
+  "in_bundle": true,
+  "generated_by": "scripts/build-reference-index.py — do not edit by hand",
+  "entry_count": 1,
+  "entries": [
+    {
+      "file": "lovecraft-zh.md",
+      "path": "reference/craft/lovecraft-zh.md",
+      "title": "洛夫克拉夫特笔法笔记 — 简体中文",
+      "lines": 90,
+      "declared_consumers": [],
+      "referenced_by": [
+        {
+          "file": "CHANGELOG.md",
+          "line": 51,
+          "context": "- **新增 `reference/craft/`,存放「手法提炼稿」**(怎么写),与 `reference/rules/`(数字是多少)分工:两边都是 kit 原创、都进 bundle,但 rules 错了数值不对,craft 错了文字平庸。洛夫克拉夫特笔法笔记移入为 `craft/lovecraft-zh.md`"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 40,
+          "context": "├ og_Norval/      洛夫克拉夫特全集 82 篇 → 提炼稿 craft/lovecraft-zh.md"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 125,
+          "context": "`lovecraft-craft-notes-zh.md` → `craft/lovecraft-zh.md`。理由不是\"根目录要干净\",而是"
+        },
+        {
+          "file": "core/07-create-monster.md",
+          "line": 37,
+          "context": "`reference/craft/lovecraft-zh.md` §三 distills how H. P. Lovecraft's own monsters and"
+        },
+        {
+          "file": "core/09-description.md",
+          "line": 14,
+          "context": "Both draw on `reference/craft/lovecraft-zh.md` — §一 (tone) applies to either mode, §二"
+        },
+        {
+          "file": "core/09-description.md",
+          "line": 32,
+          "context": "the quality of the light. Two or three senses per passage. `reference/craft/lovecraft-zh.md`"
+        },
+        {
+          "file": "core/09-description.md",
+          "line": 55,
+          "context": "`reference/craft/lovecraft-zh.md` §三 for how HPL stages a reveal before this handoff."
+        },
+        {
+          "file": "core/09-description.md",
+          "line": 71,
+          "context": "anchor for the character and for the reader — `reference/craft/lovecraft-zh.md` §二's"
+        },
+        {
+          "file": "reference/README.md",
+          "line": 18,
+          "context": "section*. `lovecraft-zh.md` (distilled from `og_Norval/`) is read by `core/09-description.md`"
+        },
+        {
+          "file": "reference/README.md",
+          "line": 54,
+          "context": "`craft/lovecraft-zh.md` (above) — the corpus is the raw material, the craft note is what"
+        },
+        {
+          "file": "reference/craft/README.md",
+          "line": 14,
+          "context": "| `lovecraft-zh.md` | `reference/og_Norval/`(洛夫克拉夫特原著 82 篇通读) | `core/09-description.md`(§一 基调、§二 场景/行动)、`core/07-create-monster.md`(§三 怪物设计) |"
+        },
+        {
+          "file": "reference/craft/README.md",
+          "line": 26,
+          "context": "4. **篇幅克制。** `lovecraft-zh.md` 90 行覆盖了 82 篇小说。生成时模型要整份读进上下文,"
+        },
+        {
+          "file": "reference/craft/README.md",
+          "line": 34,
+          "context": "落点 `craft/cult-design-zh.md`,定位对标 `lovecraft-zh.md`。"
+        },
+        {
+          "file": "scripts/build-reference-index.py",
+          "line": 281,
+          "context": "\"research only; distilled into reference/craft/lovecraft-zh.md\","
+        },
+        {
+          "file": "update_plan/2026-08-02-cult-doc-integration.md",
+          "line": 99,
+          "context": "定位对标 `reference/craft/lovecraft-zh.md`(90 行,按\"哪个 spec 读哪一节\"分节)。"
+        },
+        {
+          "file": "update_plan/2026-08-02-cult-doc-integration.md",
+          "line": 212,
+          "context": "1. skill 是动词,这两章是知识;kit 已有先例(`craft/lovecraft-zh.md`"
+        },
+        {
+          "file": ".claude/skills/description/SKILL.md",
+          "line": 12,
+          "context": "`reference/craft/lovecraft-zh.md`."
+        }
+      ],
+      "reference_count": 17
+    }
+  ]
+}

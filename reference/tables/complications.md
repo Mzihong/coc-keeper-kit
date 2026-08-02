@@ -6,6 +6,10 @@ it's pressure that makes the investigators' *choices* cost something.
 Good complications constrain time, attention, resources, or reputation. They never remove the
 path forward. See `core/04-design-scenario.md`.
 
+Need more than 20? `reference/decks/miseries-zh.md` (local only) is the official *Miseries*
+deck — same job, a deeper pile. Heed its own advice: **pick the card, don't draw it**. Each
+one is written for a specific situation and lands badly anywhere else.
+
 | d20 | Complication |
 |---|---|
 | 1 | Someone competent is investigating the same thing, and doesn't want help |

@@ -45,6 +45,7 @@ Open the file and follow it to the letter, including its Quality bar.
 | a prop the players physically receive | `core/10-create-handout.md` |
 | "check this", "is this ready" | `core/11-review.md` |
 | "here's what happened last session" | `core/12-canon-update.md` |
+| a deck/book/PDF to file, "归档这份资料", loose files in `reference/` | `core/14-archive-reference.md` |
 
 ## Using this in ChatGPT (no repo access)
 
@@ -92,6 +93,7 @@ Never downgrade an artifact to a summary of an artifact.
 - 改动来自 `update_plan/` 里的某个计划时,完结前逐条走 **`update_plan/README.md` 的
   「完结清单」**——状态两处同步、changelog、重跑 `scripts/build-bundle.sh`、
   三适配器一致性、归档。
+- 改动结构、硬约定或计划状态时,顺手更新 `WORKLOG.md`——它是给接手会话的上手速览,过期比不存在更糟。
 - 动过 `core/` / `templates/` / `reference/` 就必须重跑 `scripts/build-bundle.sh`,
   并把 `dist/bundle.md` 与源文件放在同一个 commit。
 - ChatGPT 用户拿到的是 `dist/bundle.md` 快照——不重建 bundle,他们就永远用着旧规则。
@@ -119,7 +121,11 @@ read-aloud prose — mechanically correct for **CoC 7th Edition** and filed so n
 between sessions.
 
 It is **not** a rules SRD and not a substitute for the published rulebooks. It references
-mechanics so generated numbers are correct; it reproduces no copyrighted text.
+mechanics so generated numbers are correct; **nothing it generates reproduces copyrighted
+text**.
+
+Official third-party material may be *filed* under `reference/decks/` as source material to
+draw on — but only under the citation rule below, and never copied into generated output.
 
 ## The pipeline
 
@@ -160,6 +166,7 @@ writing any stat block, difficulty, or Sanity cost.
 | a prop the players physically receive | `core/10-create-handout.md` |
 | "check this", "is this ready", before a session | `core/11-review.md` |
 | "here's what happened last session" | `core/12-canon-update.md` |
+| a deck/book/PDF to file, "归档这份资料", loose files in `reference/` | `core/14-archive-reference.md` |
 
 ## Ground rules for everything you generate
 
@@ -190,6 +197,18 @@ writing any stat block, difficulty, or Sanity cost.
 - **Continuity.** Before generating into an existing campaign, read its `CLAUDE.md` and
   `canon-log.md`. Never contradict established canon. If you must, say so explicitly and
   offer the retcon as a choice rather than writing it in.
+- **Citing official material.** Files under `reference/decks/` are transcriptions of published
+  Chaosium products, kept as source material. Two rules, both hard:
+  1. **Any official material filed in this repo carries a `## 引用出处` section at the end of
+     the file** — work, rights holder, edition, where this text came from, scope, and what
+     it's filed for. See `reference/decks/README.md` for the table. No citation, no file.
+  2. **Take structure and scale, never text.** Use a deck to calibrate a stat line or see how
+     long a usable secret runs. Generated NPCs get their own names, backstories, and secrets.
+     Copying a card into `campaigns/` is both a plagiarism problem and a table problem.
+
+  Archives are **local files, absent from `dist/bundle.md`** — every spec that points at one
+  says "if present". Nothing may depend on them. To file new material, follow
+  `core/14-archive-reference.md`; `reference/index.json` maps what is archived and who reads it.
 
 ## Conventions
 
@@ -223,6 +242,10 @@ coc-keeper-kit/
 │   ├── bestiary/            ← reusable monsters & Mythos entities
 │   ├── mythos/              ← Great Old Ones, tomes, spells, cults
 │   ├── tables/              ← roll tables, incl. the seed tables intake uses
+│   ├── craft/               ← how to *write* it (rules/ is what the numbers are)
+│   ├── decks/               ← official card decks — cited, local only, not kit canon
+│   ├── sourcebooks/         ← official books, transcribed — same rule, bigger
+│   ├── index.json           ← reverse index over both (build-reference-index.py)
 │   └── glossary-zh.md       ← EN ↔ 简体中文 term lock
 ├── templates/               ← the blank shapes each spec fills in
 ├── campaigns/
@@ -368,6 +391,11 @@ the Keeper skims); the values are written in the campaign's output language.
 Keep generated content mechanically correct for **Call of Cthulhu 7th Edition**. This spec
 points to the cheat-sheets in `reference/rules/`; read the relevant one before you commit
 numbers. It references mechanics — it does not reproduce the rulebook.
+
+When a cheat-sheet doesn't settle it, `reference/sourcebooks/keeper-rulebook-7e-zh.md` is the
+7e rulebook itself, transcribed (local file, absent from `dist/bundle.md`). It is the last
+word on any number here — and it is a *transcription*, so cross-check anything surprising
+before you commit it. **If it contradicts a cheat-sheet, fix the cheat-sheet.**
 
 ## Read this before you
 
@@ -678,6 +706,11 @@ tell — mechanically correct for 7e.
 - Read the campaign `CLAUDE.md` for era/tone/output language; match name, dress, speech, and
   job to the era and the place. Check `canon-log.md` — this person may already exist.
 - Use `templates/npc.md`.
+- **If `reference/decks/busybodies-zh.md` is present, skim the card closest to this NPC's
+  job before writing the stat block.** 47 official 1920s NPC cards — use them to calibrate:
+  what EDU an antiquarian actually carries, where a zealot's Intimidate sits, which six or
+  seven skills a card bothers to list. Optional, not a dependency: the deck is a local file
+  and Keepers working from `dist/bundle.md` won't have it.
 
 ## Ask (or infer sensibly)
 
@@ -700,6 +733,15 @@ tell — mechanically correct for 7e.
 Roll `reference/tables/npc-quirks.md` for at least the mannerism. A rolled tic beats the
 model's default "nervous, wrings hands."
 
+For the **secret**, the busybodies deck is the length calibration: every one of its 47 cards
+carries exactly one, in one or two sentences, and each is a *lever* — a debt, a lie already
+told, a dream that keeps recurring — not a plot summary. Match that scale. Anything longer is
+backstory, and backstory doesn't survive contact with a table.
+
+> **Take structure and scale, never text** (`core/00-how-to-run.md` → ground rules). Copy a
+> card's shape; invent the person. A deck NPC pasted into `campaigns/` is plagiarism *and* a
+> character every other Keeper using the deck already knows the twist to.
+
 ## Stat guidance (7e)
 
 - Average human characteristic ≈ 50; scale to concept (a dockworker's STR high, a scholar's
@@ -708,7 +750,11 @@ model's default "nervous, wrings hands."
 - List **only skills likely to matter** at 7e values (e.g. Persuade 60, Spot Hidden 45,
   Fighting (Brawl) 45, Firearms (Handgun) 35). Non-combatants: note it and skip the weapons.
 - Villains/cultists: consider Cthulhu Mythos %, spells (cross-link `reference/mythos/`), and
-  the SAN implications of what they've done.
+  the SAN implications of what they've done. For actual spell numbers,
+  `reference/sourcebooks/grand-grimoire-zh.md` is the official grimoire, if you have it locally.
+- Arming someone: `reference/decks/weapons-and-artifacts-zh.md` gives skill, base chance,
+  damage, range, malfunction, and era availability per weapon — the deck is built to pair with
+  the busybodies cards for exactly this.
 
 ## Output
 
@@ -740,6 +786,12 @@ live through it. In CoC the monster is usually an obstacle to survive, not a bos
 - Decide **type** (human / beast / undead / mythos servitor / independent race / great old
   one) and **threat** (trivial / moderate / deadly / mythic). Threat sets stat scale and SAN.
 - Use `templates/monster.md`.
+- **Source material, if present locally** (neither is in `dist/bundle.md`, so neither is a
+  dependency): `reference/sourcebooks/malleus-monstrorum-zh.md` is the official creature
+  compendium — read the nearest published entry to calibrate stat scale, armour, and SAN cost
+  before inventing your own. `reference/sourcebooks/grand-grimoire-zh.md` covers spells for
+  anything that casts. Both are PDF transcriptions with known garbling; judge every number by
+  eye, and take **structure and scale, never text**.
 
 ## Design the horror
 
@@ -758,7 +810,7 @@ live through it. In CoC the monster is usually an obstacle to survive, not a bos
 
 ### Lovecraftian design craft
 
-`reference/lovecraft-craft-notes-zh.md` §三 distills how H. P. Lovecraft's own monsters and
+`reference/craft/lovecraft-zh.md` §三 distills how H. P. Lovecraft's own monsters and
 entities are built and revealed, from a full read of his original stories. A few techniques
 map directly onto the bullets above:
 
@@ -884,7 +936,7 @@ Two modes share this craft:
   the lock, wading into the flooded cellar, reading the ritual aloud. Same senses, same
   restraint, but the camera is on the character's body and choices, not the room.
 
-Both draw on `reference/lovecraft-craft-notes-zh.md` — §一 (tone) applies to either mode, §二
+Both draw on `reference/craft/lovecraft-zh.md` — §一 (tone) applies to either mode, §二
 splits into scene-description and investigator-action technique sections specifically for
 this file.
 
@@ -902,7 +954,7 @@ this file.
 
 - **3–6 sentences.** Long enough to immerse, short enough to keep the table's attention.
 - **Multi-sensory:** always beyond sight — sound, smell, temperature, the feel of the air,
-  the quality of the light. Two or three senses per passage. `reference/lovecraft-craft-notes-zh.md`
+  the quality of the light. Two or three senses per passage. `reference/craft/lovecraft-zh.md`
   §二's most consistent finding: **smell and sound arrive before sight**, often replacing it
   entirely — lead with what's heard or smelled, let the visual confirmation lag or never come.
 - **Concrete over abstract.** "The wallpaper is furred with damp" beats "it feels creepy."
@@ -925,7 +977,7 @@ this file.
 - **For a horror reveal**, lead with the **image and motion**, then hand off the Sanity roll
   to the monster's entry (`core/07-create-monster.md`). Describe wrongness through effect
   (what it does to the light, the smell it brings) rather than a full anatomy dump — see
-  `reference/lovecraft-craft-notes-zh.md` §三 for how HPL stages a reveal before this handoff.
+  `reference/craft/lovecraft-zh.md` §三 for how HPL stages a reveal before this handoff.
 
 ### Assemble the scene (if full)
 
@@ -941,7 +993,7 @@ like.
 
 - **Describe the act, not just the outcome.** A procedural, almost mechanical detail (counting
   stairs, checking a knot, re-reading a line before speaking it) works as a psychological
-  anchor for the character and for the reader — `reference/lovecraft-craft-notes-zh.md` §二's
+  anchor for the character and for the reader — `reference/craft/lovecraft-zh.md` §二's
   "程序化動作作為對抗恐懼的心理防線". If that detail breaks off mid-action, that break *is*
   the tension beat — don't narrate the fear directly, let the interruption carry it.
 - **Physical symptom over stated emotion.** A hand that won't stop shaking, a breath held too
@@ -1295,6 +1347,18 @@ The JSON record is the source of truth; the Markdown card is a rendered view for
 - Use `templates/investigator.schema.json` (data) and `templates/investigator.md` (view).
   `templates/investigator.example.json` is a complete, arithmetically-audited record — copy
   its shape rather than guessing which fields a full card needs.
+- **`reference/decks/busybodies-zh.md`, if present, is 47 worked examples of a finished 1920s
+  card** — occupation, stat spread, the six or seven skills worth listing, and every 7e
+  backstory prompt filled at usable length. Read the nearest occupation before rolling; it
+  settles "how much is enough" faster than the schema does. Its own guidance for pressing a
+  card into service as a **replacement PC** — hand the player 100 extra points on
+  free-choice skills, let them rewrite the backstory — is a sound emergency pregen recipe.
+  Optional: the deck is a local file, absent from `dist/bundle.md`.
+  Its numbers are transcription, not gospel — SIZ and MOV are known to be off on some cards.
+  Recompute every derived stat yourself; never copy a card's arithmetic forward.
+- Two more local-only decks feed specific fields: `reference/decks/phobias-and-manias-zh.md`
+  for the backstory `phobias` / `manias` entries (32 written-out conditions rather than a bare
+  name), and `reference/decks/weapons-and-artifacts-zh.md` for anything in the gear list.
 
 ## Build in this order
 
@@ -1358,6 +1422,144 @@ complete stats) may use this schema instead of a lighter NPC stat block — set
 - Every surviving backstory hook ties into something the campaign can actually use, and at
   least one entry is marked key.
 - The `.md` view and the `.json` source agree; no stat appears in one but not the other.
+
+
+=== FILE: core/14-archive-reference.md ===
+
+# 14 — Archive Reference Material
+
+Take a piece of **third-party material the Keeper hands you** — an official deck, a book, a
+transcription — and file it under `reference/` so it is findable, cited, and wired into the
+specs that can use it. Doing this by hand always misses a step; follow the checklist.
+
+This spec is about **filing other people's material**. Material the kit writes itself
+(cheat-sheets, bestiary entries, roll tables) does not come through here.
+
+## First
+
+- Read the ground rule this implements: `core/00-how-to-run.md` → **Citing official material**.
+  Two hard requirements — a `## 引用出处` block on every file, and generators take
+  **structure and scale, never text**.
+- Read the target directory's README: `reference/decks/README.md` or
+  `reference/sourcebooks/README.md`.
+
+## Ask (or infer sensibly)
+
+- **What is it** — which published product, which edition, which language.
+- **Where did it come from** — official PDF, a fan translation, a community transcription.
+  Ask the Keeper if it isn't in the file. **Never invent a translator or a publisher.**
+- **What it is for** — which spec would read it, and to do what. Material nothing will ever
+  read does not get archived; say so rather than filing it.
+
+## The checklist
+
+Work in order. Steps 5–7 are the ones people skip, and they are what make the archive usable
+rather than a dumping ground.
+
+### 1. Classify
+
+| It is… | Goes to |
+|---|---|
+| an official card deck — discrete, ready-to-use entries | `reference/decks/` |
+| a whole book — read a chapter at a time | `reference/sourcebooks/` |
+| a third-party git repo | `reference/external/` as a submodule |
+| **the kit's own writing** distilled from any of the above | `reference/rules/`, `bestiary/`, `mythos/`, `tables/` — **not here** |
+
+If it fits none of these, propose a new sibling directory and give it a README stating its
+role, its citation rule, and whether it enters `dist/bundle.md`. Don't quietly widen the
+meaning of an existing directory.
+
+### 2. Name and normalise
+
+- Filename **English `kebab-case.md`, ASCII only**, even though the content is Chinese
+  (`core/00-how-to-run.md` → Conventions). Suffix `-zh` for a Chinese text.
+  Prefer the published English title: `malleus-monstrorum-zh.md`, not `怪物之锤.md`.
+- Normalise line endings to **LF**.
+- Strip conversion artifacts that are not part of the work — PDF-tool banners, page-furniture
+  garbage. **Note what you stripped** in the citation block's 收录范围 row. Never silently
+  edit the work's actual content.
+- If the source PDF is kept, give it the **same basename** next to the transcription
+  (`*.pdf` is gitignored, so it stays local).
+
+### 3. Head it
+
+Open the file with a block that tells the next reader what they're holding:
+
+```markdown
+# <标题> — <类型>(中译收录)
+
+> **这是第三方官方资料的收录件,不是本 kit 生成的内容。** 出处见文末「引用出处」。
+> <一到三行:里面有什么,多少条>
+>
+> **本 kit 怎么用它**(详见 `reference/<dir>/README.md`):
+> - `core/NN-xxx.md` —— <拿它来做什么>
+>
+> **<警示:已知的转录问题、页码口径、不要照抄的部分>**
+
+---
+
+## 原文转录
+```
+
+The warning line is not decoration. Transcriptions are wrong in specific ways — garbled stat
+lines, page numbers that point at a different edition, uncorrected chapters. A reader who
+doesn't know that will copy a bad number into a stat block.
+
+### 4. Cite it
+
+End the file with a `## 引用出处` section — the exact table in `reference/decks/README.md`:
+作品 / 版权方 / 版本 / 本文来源 / 收录范围 / 收录用途, plus a 已知问题 row where one applies,
+plus the no-rights-claimed sentence.
+
+**Unknown is a valid value; a guess is not.** If the translator isn't named, write
+「未署译者名,译本出处不详」. The point of the citation is that it can be checked.
+
+`scripts/build-reference-index.py` parses this table — it is the single source of truth for
+the file's provenance. Get the row labels exactly right or the index will read as empty.
+
+### 5. Wire it in
+
+An archived file nothing points at is invisible; the index reports it as **orphaned** and that
+is a failure, not a warning. For each spec that can use it, add a pointer saying *what to take
+from it*, not just that it exists.
+
+Every pointer must be phrased as **optional**: archives are local files, absent from
+`dist/bundle.md`. A Keeper working from the bundle has to be able to follow the spec without
+them. "If present locally" is the standard hedge.
+
+### 6. Rebuild the index
+
+```bash
+python scripts/build-reference-index.py
+```
+
+Writes `reference/<dir>/index.json` per archive directory and the cross-directory chain in
+`reference/index.json`. It fails loudly on a missing citation block, a missing row, or an
+orphan. **Fix what it reports; never hand-edit the JSON.**
+
+### 7. Close it out
+
+- Update the target directory's README table (the human-readable view of the same facts).
+- Append to root `CHANGELOG.md` — what the Keeper can now do that they couldn't.
+- Re-run `scripts/build-bundle.sh` (any `reference/` change requires it) and commit
+  `dist/bundle.md` with the source files.
+- Check `update_plan/` for anything this material unblocks, and update that plan's 状态.
+  Material often arrives precisely because something was waiting on it.
+
+## Output
+
+Report to the Keeper: where it landed and why that directory, what the citation says
+(especially anything that came back **不详**), which specs now point at it, and what the index
+run said.
+
+## Quality bar
+
+- Filed in the right directory, ASCII `kebab-case.md`, LF endings.
+- Header block states what it is, what reads it, and its known defects.
+- `## 引用出处` complete, with unknowns marked as unknown rather than guessed.
+- At least one spec points at it, phrased as optional.
+- `python scripts/build-reference-index.py` reports **no problems**.
+- `dist/bundle.md` rebuilt; `CHANGELOG.md` appended; any unblocked `update_plan/` entry updated.
 
 
 === FILE: templates/event-clock.md ===
@@ -1819,6 +2021,11 @@ in `campaigns/<slug>/`, not here.
   reuse that citation; otherwise cite the traceable intermediate source and mark the
   rulebook chapter as unconfirmed rather than guessing a number. This keeps provenance
   checkable without weakening the no-reproduction rule below.
+- **`craft/`** — distilled **craft** knowledge: how to *write* the thing, as opposed to what
+  the numbers are. Split from `rules/` on purpose — `rules/` errors make the mechanics wrong,
+  `craft/` errors make the prose generic. Each file is sectioned by *which spec reads which
+  section*. `lovecraft-zh.md` (distilled from `og_Norval/`) is read by `core/09-description.md`
+  and `core/07-create-monster.md`. Ships in `dist/bundle.md`.
 - **`bestiary/`** — reusable monsters and Mythos entities you can drop into any game.
   Produced by `core/07-create-monster.md`. One creature per file. Written in **English**,
   since they're shared across campaigns that may output in different languages.
@@ -1827,21 +2034,45 @@ in `campaigns/<slug>/`, not here.
 - **`tables/`** — roll tables. Includes the four **seed tables** (`hooks`, `locations`,
   `mythos-angles`, `npc-quirks`) that `core/01-intake.md` rolls against when the Keeper gives
   little or no input — the anti-generic layer.
+- **`decks/`** — transcriptions of **official published card decks**, kept as source material
+  for the generators (`busybodies-zh.md` is Chaosium's *Busybodies* NPC deck, 47 cards).
+  Unlike everything else here this is **not the kit's own content and not kit canon** — it is
+  third-party text we cite. Two hard rules, both in `reference/decks/README.md`: every file
+  ends with a `## 引用出处` block naming work, rights holder, source, scope, and purpose; and
+  generators take **structure and scale, never text**. Not included in `dist/bundle.md`, so
+  nothing may depend on it.
+- **`sourcebooks/`** — **official books, transcribed in full** (the 7e rulebook, the *Grand
+  Grimoire*, *Malleus Monstrorum*). Same third-party status and citation rule as `decks/`;
+  the difference is bulk and use — a deck you draw from, a book you look a chapter up in.
+  Not `rules/`: that folder is the kit's *own* condensed cheat-sheets. Where the two disagree,
+  the sourcebook wins and the cheat-sheet gets fixed.
+- **`index.json`** — the **reverse index** over all six indexed directories (`decks/`,
+  `sourcebooks/`, `rules/`, `craft/`, `bestiary/`, `tables/`, `mythos/`), generated by
+  `scripts/build-reference-index.py`. Answers both directions: what is here and where it came
+  from, and — the useful one — **which specs reference a given file, with line numbers**, so
+  you can see what breaks before retiring or replacing something. Per-directory copies live at
+  `<dir>/index.json`. Generated; never hand-edited. The script also validates: a missing
+  citation block on third-party material, or a file nothing points at, is an error — except in
+  `bestiary/` and `mythos/`, which are content libraries where being unreferenced is normal.
 - **`glossary-zh.md`** — the EN ↔ 简体中文 term lock. One translation per game term, for the
   whole kit. Every generator writing Chinese follows it; new terms get added *here* first,
   never invented inside a campaign. Built on top of the community
   [大译名表](https://www.goddessfantasy.net/bbs/index.php?topic=95256.0) term set.
 - **`og_Norval/`** — H. P. Lovecraft's original stories (82 works), kept for craft research
-  only, same non-reproduction rule as `external/` below. **`lovecraft-craft-notes-zh.md`** is
-  the distilled output — tone, scene/action description, and monster-design techniques pulled
-  from a full read of the corpus, in 简体中文. `core/09-description.md` and
-  `core/07-create-monster.md` both read it.
+  only, same non-reproduction rule as `external/` below. Its distilled output lives in
+  `craft/lovecraft-zh.md` (above) — the corpus is the raw material, the craft note is what
+  the generators actually read.
 - **`external/`** — third-party repos kept as git submodules, not kit content. `coc-zh` is a
   collection of CoC novels/scenario source material for inspiration and research only — it is
   **not** part of the kit's own canon, and generators must not copy or reproduce its text
-  (see this repo's `CLAUDE.md`: the kit doesn't reproduce copyrighted material). Treat it the
+  (same rule as `decks/`: cite the source, take structure, never text). Treat it the
   same way you'd treat a physical bookshelf: read it, then write original content informed by
   it.
+
+**Filing new third-party material** — a deck, a book, a converted PDF — goes through
+`core/14-archive-reference.md` (skill: `archive-reference`). It covers classification, naming,
+the citation block, wiring it into the specs that can use it, and the reindex. Doing it by
+hand reliably drops one of those.
 
 Keep entries generic here (no campaign plot). When a creature or cult becomes tangled in one
 campaign's plot, copy it into that campaign and add the secrets there.
@@ -2714,6 +2945,137 @@ Charm 15 · Intimidate 15 · Occult 5 · Cthulhu Mythos 0 · First Aid 30 · Ste
 Dodge = ½ DEX · Language (Own) = EDU · Track 10 · Drive Auto 20.
 
 
+=== FILE: reference/craft/README.md ===
+
+# craft/ — 手法知识提炼稿
+
+**从大部头里提炼出来的「怎么写」,按「哪个 spec 读哪一节」分节。**
+
+和 `rules/` 的分工是本目录存在的理由:`rules/` 管**数字**——难度带、SAN 损失、伤害加值;
+`craft/` 管**写法**——怎么揭示一个怪物、一段读稿从哪个感官切入、一个邪教为什么可怕。
+两边都是 kit 原创提炼稿,都进 `dist/bundle.md`,但一个错了会让数值不对,另一个错了会让
+文字平庸。别把手法写进 `rules/`,也别把公式写进这里。
+
+## 现有条目
+
+| 文件 | 提炼自 | 谁在读 |
+|---|---|---|
+| `lovecraft-zh.md` | `reference/og_Norval/`(洛夫克拉夫特原著 82 篇通读) | `core/09-description.md`(§一 基调、§二 场景/行动)、`core/07-create-monster.md`(§三 怪物设计) |
+
+机器可读版本是 `index.json`,由 `scripts/build-reference-index.py` 生成。
+
+## 写一份新的
+
+1. **分节按消费方组织,不按源材料的目录组织。** 每一节要能被某个 spec 指名去读
+   ——「`core/09` 读 §一和 §二」,而不是「第三章的读书笔记」。spec 里也要写上是哪一节。
+2. **只记「他怎么做到的」,不复述「他写了什么」。** 这是技法字典,不是文摘。
+   源材料若受版权保护,适用 `core/00-how-to-run.md` 的口径:**取结构和手法,不取文字**;
+   指认技法所需的最短范例是上限,不可延伸引用。
+3. **每条技法附出处**,便于追溯查证。
+4. **篇幅克制。** `lovecraft-zh.md` 90 行覆盖了 82 篇小说。生成时模型要整份读进上下文,
+   写成一本书就没人读得起。
+5. 收尾:接线进要读它的 spec → 重跑 `scripts/build-reference-index.py`(没人引用会报
+   orphaned)→ 重跑 `scripts/build-bundle.sh` → 记 `CHANGELOG.md`。
+
+## 已排期的下一份
+
+`update_plan/2026-08-02-cult-doc-integration.md` 第三章 A 项要产出邪教设计手法稿,
+落点 `craft/cult-design-zh.md`,定位对标 `lovecraft-zh.md`。
+
+
+=== FILE: reference/craft/lovecraft-zh.md ===
+
+# 洛夫克拉夫特笔法笔记 — 简体中文
+
+从 `reference/og_Norval/`（H. P. Lovecraft 原著全集，82 篇）通读后蒸馏出的**技法**笔记，供 `description`
+（场景与行动描写）与 `create-monster`（怪物／存在设计）两个技能共用。
+
+**这不是文摘,是技法字典。** 只记录「他怎么做到的」,不重制他写了什么——依本套件 `CLAUDE.md` 的原则,
+生成内容不得重现受版权保护的原文;偶尔出现的引号片语仅止于指认技法所需的最短范例(通常不超过八个字),
+不可再延伸引用。读 `og_Norval/` 就像逛一座书架:进去读,出来后写你自己的东西。
+
+每条技法附出处(故事英文原名,依 `glossary-zh.md` 惯例保留英文),供追溯查证;同一技法若在多篇作品
+重复出现,只列代表性的二至四篇。
+
+---
+
+## 一、基调与叙事声音 (Tone & Narrative Voice)
+
+两个技能共用——场景描写的口吻、怪物揭露的语气、调查员自述的心理状态,都源自这里。
+
+- **伪文献装框** — 用书信、日记、剪报、族谱考据、审讯记录等「档案外壳」包裹核心恐怖叙事,让荒诞内容因文献形式的严肃感而显得可信、且带有一层转述的疏离感。`(History of the Necronomicon)` `(The Whisperer in Darkness)` `(The Mound)`
+- **怀疑论者的瓦解** — 叙事者开场即以理性、唯物主义姿态自居,随情节推进被自己搜集的证据一步步瓦解;瓦解的速度就是恐怖强度的量尺,比任何形容词都有效。`(The Rats in the Walls)` `(The Call of Cthulhu)` `(The Mound)`
+- **事后具状,结局先行** — 叙事者一开始就坦承自己已知结局(已逃出、朋友已死、自己仍怕),读者带着「已知结果」读完全程,恐惧因此是缓慢逼近的宿命而非意外惊吓。`(The Shadow Over Innsmouth)` `(The Thing on the Doorstep)`
+- **理性语域与情绪爆裂的落差** — 全篇维持冷静、近乎报告文体的措辞(测量、日期、分类),直到某个瞬间句子忽然破碎、堆满惊叹与破折号;语域的转变本身就是理智防线崩溃的标记,不需要旁白告知。`(At the Mountains of Madness)` `(The Shunned House)`
+- **崩溃语言标记疯狂** — 角色精神溃散时,语言本身失序:重复同一个词直到失去语意、句子缩短成破碎惊呼、字迹潦草难辨。用形式模拟崩溃,而非用形容词描述崩溃。`(The Diary of Alonzo Typer)` `(The Mound)`
+- **自我审查式留白** — 叙事者在关键揭露点明言「我不能、也不敢描述」,用叙述的中断取代具体描写,把最恐怖的画面留给读者自己完成。`(The Green Meadow)` `(Medusa's Coil)` `(The Statement of Randolph Carter)`
+- **语气骤然「正常化」即危险讯号** — 一连串惊恐潦草的纪录后,突然出现一封措辞愉快、字迹工整的信;读者从这种不合时宜的平静里读出更深的危险,而非放心。`(The Whisperer in Darkness)`
+- **身体征状取代情绪陈述** — 不写「我很害怕」,而写手在发抖、腿发软、忘记自己在尖叫;恐惧透过可观察的生理反应间接传达,比直接告知更可信。`(The Thing on the Doorstep)` `(Medusa's Coil)`
+- **多重转述延后确定感** — 直接经验被推到全篇后段,前面先透过谣言、旁人转述、彼此矛盾的证词堆叠出恐惧的轮廓;确定感被刻意延后到全篇将尽才给出,甚至始终不给。`(The Dunwich Horror)` `(The Hoard of the Wizard-Beast)`
+- **命名作为认知的自我保护** — 角色一遇到无法归类的存在便急于为它命名分类,这种近乎强迫性的科学命名,是把不可理解之物硬塞进已知框架以维持心智稳定的手段——描写时可让这个「命名」动作本身泄漏角色的恐惧。`(At the Mountains of Madness)`
+- **拒绝给出最终解释** — 结尾刻意保留一部分秘密不揭晓,只留下破碎词语让读者自行拼凑;恐惧因缺乏封闭性延续到故事之外。`(At the Mountains of Madness)` `(The Music of Erich Zann)`
+- **反讽式收尾** — 用一句克制、甚至带黑色幽默的话收束全篇阴森基调(揭穿身分、道德警世、轻描淡写带过尸体),落差本身即是最后一记寒意。`(The Terrible Old Man)` `(Old Bugs)`
+
+---
+
+## 二、场景与行动描写技法 — 供 `description` 技能使用
+
+涵盖两种输出:朗读文/氛围描写(对应原 `scene-description`),以及调查员自身行动的描写。两者共用同一套
+感官与节奏原则,差别只在「镜头对准地点」还是「镜头对准角色的动作」。
+
+### 场景描写
+
+- **嗅觉与听觉先于视觉** — 进入危险空间前先闻到气味、听见声音,视觉确认永远慢半拍甚至缺席;读者被迫「用鼻子和耳朵探路」。这是全部故事中最一致出现的技法,直接呼应 `core/09` 既有的「多重感官」原则——这里补上的是**顺序**:嗅觉／听觉先,视觉最后或完全不给。`(At the Mountains of Madness)` `(The Shadow Over Innsmouth)` `(The Horror at Red Hook)`
+- **精确测量制造真实的巨大感** — 不用「巨大」「难以想像」堆形容词,而是持续给出具体数字(英尺、阶梯数、年代);超乎常理的尺度因为「精确」而更可信、更骇人。与 `core/09` 现有的「具体胜过抽象」原则同源,是它的加强版。`(At the Mountains of Madness)` `(The Shadow Out of Time)`
+- **几何/对称的轻微失常** — 用「太过圆整」「角度不对」这类近乎无害的测量词汇描写建筑或地形,让违和感建立在数学层面而非怪异形象上,比任何「诡异」的形容词更有效。`(The Dunwich Horror)` `(The Dreams in the Witch House)`
+- **以缺席/否定定义异样** — 用「没有回声」「动物拒绝靠近」「积雪上没有脚印」这类反常的缺失,而非增添怪异物件,让熟悉的场景产生错位感。`(The Festival)` `(The Haunter of the Dark)`
+- **尘封、未被打扰的痕迹本身即是恐怖证据** — 厚厚积尘、蛛网完整无损,暗示「这里曾经有人来过却没有离开的痕迹」;用「静止太久」本身制造悬念,不必描写动态的怪物。`(The Haunter of the Dark)` `(Pickman's Model)`
+- **感官由美转腐的渐变 / 同景双重曝光** — 场景先以诱人的花香、月光或怀旧语调开场,随叙事推进被腐败气味取代,或同一地点分别在白昼/深夜两种光照下各写一次,用同一空间的反差揭露表象之下的腐朽。`(What the Moon Brings)` `(He)`
+- **单一违和细节锚定整个场景** — 场景陈设完全正常,唯独一个孤立的异状(一绺会动的头发、一幅画的视线在跟随、方向相反的涟漪);孤立的违和点比全面异化的场景更令人毛骨悚然。`(The Tree on the Hill)` `(Medusa's Coil)` `(The Horror at Martin's Beach)`
+- **相对尺度而非绝对数字** — 用「连城市和群山在它脚下都显得渺小如蚂蚁」这类比较,而非直接给出长度单位,让巨大感建立在读者熟悉的对照物消失或缩小上。`(The Dream-Quest of Unknown Kadath)`
+- **建筑逐层深入,恐怖随深度递增** — 地窖→中殿→阶梯→无窗尖顶,每深入一层解锁一层新线索;场景结构本身就是节奏骨架,适合拿来规划一段完整场景(对应 `core/09` 的「Assemble the scene」段)。`(The Haunter of the Dark)`
+
+### 调查员行动描写
+
+- **程序化动作作为对抗恐惧的心理防线** — 默数阶梯、在灰尘中刻意留下脚印、逐项核对装备清单:这类机械性的自我提醒动作,是角色用来压住恐惧的心理锚点。一旦这个动作被打断(数到一半被吓断),就是崩溃的讯号,比直接写「他慌了」更有力。`(The Case of Charles Dexter Ward)` `(In the Walls of Eryx)`
+- **生理征状外显心理状态,先于角色自己意识到** — 让角色「先听到自己尖叫,才意识到自己在害怕」,或用惯用手改变、忘记如何说母语等具体、可验证的身体细节取代心理描写。`(Trap)` `(Pickman's Model)`
+- **好奇心持续压过生存本能,且被角色自己合理化** — 即使已目睹同伴惨死,角色仍用「科学精神」「这是我毕生最重要的发现」说服自己前进;这种心理拉锯本身是推动情节的引擎,写的时候让角色的自我说服「听起来很合理」,恐怖感才立得住。`(At the Mountains of Madness)` `(The Mound)`
+- **知情却缄默 / 事后编造谎言掩盖真相** — 角色明知真相不可信,主动替旁人编一套「可以说的」版本;「我知道的」与「我能说的」之间的缝隙,就是角色被永久改变的证据。适合作为调查后、回报前的收尾描写。`(The Thing on the Doorstep)` `(Medusa's Coil)`
+- **逃亡段落叙事失控,语句破碎、记忆出现空白** — 用「我不知道自己是怎么跑出来的」这类跳接、缺乏因果连结的短句模拟意识断裂,而不是完整描述逃跑的每一步动作。`(Medusa's Coil)` `(The Haunter of the Dark)`
+- **随手带走的物证延迟引爆** — 角色在现场几乎无意识地带走一件小物,事后才在安全处发现它的真正含义;把最大恐怖延后到「事后独自检视」的私密时刻,而不是案发现场。`(Pickman's Model)` `(Medusa's Coil)`
+- **职业/专业技能成为理解或对抗异常的工具** — 让角色的既有专业(医生的解剖学知识、逃脱术师的解绳技巧、学者的文献考据)成为面对异常时的第一反应,异常因此被拉进角色能理解的框架,读者也更容易代入。`(Under the Pyramids)` `(The Case of Charles Dexter Ward)`
+- **销毁证据作为最终行动** — 调查行动的最终高潮不是揭露而是主动烧毁文件、图纸或照片,暗示角色相信「知识本身即是危险」;这是比开枪更沉重的收尾动作。`(The Tree on the Hill)` `(The Call of Cthulhu)`
+
+---
+
+## 三、怪物／存在设计技法 — 供 `create-monster` 技能使用
+
+呼应 `core/07` 既有原则(「反应强度取代外貌描述」「攻击要有质感」「一定要有活路」),这里补上 HPL 用来
+**揭露**与**塑造**怪物的具体手法。
+
+- **多层转述后才真正登场** — 怪物先透过雕塑、偶像、口述神话等中介物侧面现身,直接目击只是印证,而非首次揭露。设计时可以先写「这东西留下的痕迹/艺术品/传说」,把正面遭遇留到最后。`(The Call of Cthulhu)` `(The Shadow Over Innsmouth)`
+- **见证者反应强度取代外貌描述** — 对怪物本体放弃形容词堆砌,改用目击者当场发狂、终身失眠、船员被吓死等反应强度,让读者自己想像其恐怖——这正是 `core/07`「反应先于形状」原则的源头写法。`(The Call of Cthulhu)` `(The Dunwich Horror)`
+- **排除法/否定式定义存在** — 用连续的「既不像 A,也不像 B,更不是 C」句式列出一串熟悉生物再逐一划掉,让读者的想像力自己填补那个「都不是」的空白,比正面描述更难被想像力「用完」。`(The Festival)` `(The Horror in the Museum)`
+- **局部先于整体的渐进实体化** — 先让爪子、触手、轮廓在阴影中若隐若现,细节分批释放、逐次更具体,恐惧随细节颗粒度提高而递增,而非一次到位。`(The Dream-Quest of Unknown Kadath)` `(The Diary of Alonzo Typer)`
+- **精确数字之后立刻背叛生物常识** — 先用「十英尺高」「触手分叉数」等看似科学的测量建立可信度,紧接着给出违反解剖逻辑的细节(可折叠的肘部、非地球式对称);「精确」本身变成恐怖的载体。设计怪物条目时,可以先写扎实的体型/HP/伤害数字,再让一两个具体细节打破玩家对「正常生物」的预期。`(The Shadow Out of Time)` `(At the Mountains of Madness)`
+- **赋予怪物文明与规则,放大宇宙尺度** — 怪物不是孤立个体,而有社会结构、禁忌、崇拜体系;恐怖从「一只怪物」扩张为「一整个隐藏世界」。适合 mythic 等级的存在,或需要跨场景延展的敌对势力。`(The Dream-Quest of Unknown Kadath)` `(The Mound)`
+- **拒绝显形,只用环境效应暗示存在** — 真正的威胁自始至终未被正面描写,只透过温度骤降、光源异常、声音无法定位等环境效应暗示;对于「调查者永远打不过、只能逃或躲」的存在特别有用。`(The Rats in the Walls)` `(The Music of Erich Zann)`
+- **以数量规模取代单体恐怖** — 恐怖的强度来自密度与涌现感(千万只老鼠、成群的仆从),而非单一生物的猎奇设计;适合当作「不能力战、只能撤退或封锁」的群体威胁。`(The Rats in the Walls)` `(The Dream-Quest of Unknown Kadath)`
+- **礼貌与秩序比敌意更令人不安** — 位阶极高的存在以正式、近乎官僚化的礼节迎接闯入者(致意、询问意愿、给予退出的选择),这种「讲理」剥夺了用纯粹恶意理解它的舒适感——可用于神格级或高智慧的存在,取代单纯的攻击描述。`(Through the Gates of Silver Key)`
+- **功能先于外形的世界观式设计** — 介绍一个种族时先交代它如何运作(如何交换心灵、如何审讯、如何存档知识),外形描述反而简短或延后;异质性建立在概念层面,而非单纯视觉猎奇。可用于需要大段「特殊能力」而非战斗数值的存在。`(The Shadow Out of Time)`
+- **血缘揭晓式反转** — 结局才揭露怪物与某个人类角色有血缘或身分关联(祖先、双胞胎、后代);把家族史或 NPC 背景考据转化成最终刺点,适合与 `create-npc` 产出的角色交叉设计。`(The Dunwich Horror)` `(Facts Concerning the Late Arthur Jermyn and His Family)`
+- **惩罚性轮回设计** — 失败的入侵者被改造成残缺的新看守者,站回原本困住自己的位置;适合设计「前人痕迹」线索(某个消失已久的调查者的装备、日记)时使用,暗示反抗徒劳,同时给出视觉化的警告物。`(The Mound)`
+
+---
+
+## 使用方式
+
+- `core/09-description.md` 撰写朗读文或调查员行动描写时,优先读「一、基调」与「二、场景与行动描写技法」。
+- `core/07-create-monster.md` 设计怪物的「揭露段」与特殊能力时,优先读「一、基调」与「三、怪物／存在设计技法」。
+- 这里的技法是**启发**,不是套版——每次只挑一到两条真正适合当下场景的技法用深,胜过把整份清单塞进同一段文字。
+- 新增技法时延续本文件的格式:**技法名称** — 说明技法与为何有效 — `(出处故事,英文原名)`。
+
+
 === FILE: reference/tables/README.md ===
 
 # tables/ — random tables
@@ -2759,6 +3121,10 @@ it's pressure that makes the investigators' *choices* cost something.
 
 Good complications constrain time, attention, resources, or reputation. They never remove the
 path forward. See `core/04-design-scenario.md`.
+
+Need more than 20? `reference/decks/miseries-zh.md` (local only) is the official *Miseries*
+deck — same job, a deeper pile. Heed its own advice: **pick the card, don't draw it**. Each
+one is written for a specific situation and lands badly anywhere else.
 
 | d20 | Complication |
 |---|---|
@@ -2863,6 +3229,11 @@ somewhere new. See `core/03-build-world.md`.
 Roll **1D10** when an investigator suffers a bout of madness (lost ≥ 5 SAN in one roll and
 made the INT realisation). Lasts ~1D10 rounds. Pick if a roll doesn't fit the fiction.
 
+For the longer aftermath — summary symptoms, and the phobia or mania the investigator is left
+carrying — `reference/decks/phobias-and-manias-zh.md` (local only) is the official *Phobias*
+deck: 9 real-time symptoms, 6 summary ones, and 32 named conditions written out at
+hand-to-the-player length.
+
 | d10 | Effect |
 |----|--------|
 | 1 | **Amnesia** — comes to with no memory of the last few minutes; the horror is a blank. |
@@ -2949,6 +3320,10 @@ Roll a second time for anyone the players will meet more than once. See `core/06
 | 18 | Habitually early, and resents everyone else for not being |
 | 19 | Chews, smokes, drinks, or eats through every conversation |
 | 20 | Watches the exit, or a window, more than the person they're speaking to |
+
+Want more range than 20 entries? `reference/decks/busybodies-zh.md` (if you have it locally)
+carries a 个人特质 line on each of its 47 cards — a second well of tics, written at the same
+one-line performable scale. Read it for ideas; roll here for the actual result.
 
 > Pair the quirk with the **lie** the NPC tells (see `core/06-create-npc.md`). The quirk is
 > how the Keeper plays them; the lie is what they say when the players push. An NPC with a

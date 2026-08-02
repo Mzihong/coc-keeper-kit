@@ -1,0 +1,262 @@
+{
+  "directory": "reference/rules",
+  "role": "kit's own CoC 7e mechanics cheat-sheets — checks, Sanity, combat, character creation",
+  "kind": "kit-original-content",
+  "governed_by": "reference/rules/README.md",
+  "citation_rule": null,
+  "usage_rule": "authored by this kit — read and used directly, no citation required",
+  "in_bundle": true,
+  "generated_by": "scripts/build-reference-index.py — do not edit by hand",
+  "entry_count": 5,
+  "entries": [
+    {
+      "file": "character-creation.md",
+      "path": "reference/rules/character-creation.md",
+      "title": "7e Character Creation — cheat-sheet",
+      "lines": 247,
+      "declared_consumers": [
+        "core/13-create-investigator.md",
+        "reference/rules/skill-checks.md",
+        "update_plan/2026-08-02-investigator-cards.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "CHANGELOG.md",
+          "line": 41,
+          "context": "- 新增**追逐速查** `reference/rules/chases.md`,以及**人物创建与理智速查** `reference/rules/character-creation.md`、`reference/rules/sanity.md`。"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "line": 46,
+          "context": "- **建卡知识大幅补齐** `reference/rules/character-creation.md`:年龄七档补正表、Build/伤害加值表、MOV 判定、重伤值、技能基础值表、职业的三要素(点数公式家族/信用区间/本职技能表含自由槽)、信用评级→生活水平/现金/资产/消费水平换算表、伞技能专精写法、可选规则("
+        },
+        {
+          "file": "CHANGELOG.md",
+          "line": 60,
+          "context": "- `reference/rules/character-creation.md` 每个小节加**来源指路**:标明数据是从 `COC apolo.xlsx` 哪个 sheet 提炼的,不摘原文、只给定位信息——技能基础值表的\"规则书第四章:技能\"是源材料自带的引用,其余小节如实标注\"章节号未核实\"而非编号瞎猜。`re"
+        },
+        {
+          "file": "core/13-create-investigator.md",
+          "line": 9,
+          "context": "- **Read `reference/rules/character-creation.md`** before rolling anything."
+        },
+        {
+          "file": "core/13-create-investigator.md",
+          "line": 81,
+          "context": "(`reference/rules/character-creation.md`) — recompute, don't eyeball."
+        },
+        {
+          "file": "templates/investigator.schema.json",
+          "line": 5,
+          "context": "\"description\": \"Source-of-truth record for a pregen investigator or a mechanically-full elite NPC. Field model follows a full 7e character sheet, not just the s"
+        },
+        {
+          "file": "templates/investigator.schema.json",
+          "line": 99,
+          "context": "\"currency\": { \"type\": \"string\", \"description\": \"e.g. \\\"USD 1920s\\\". Cash and assets are era-scaled — see reference/rules/character-creation.md.\" },"
+        },
+        {
+          "file": "templates/investigator.schema.json",
+          "line": 194,
+          "context": "\"description\": \"Optional pre-play history (a war, a beat, a stretch inside, a Mythos brush) bought with starting Sanity. Each one buys a mechanical edge and man"
+        },
+        {
+          "file": "update_plan/2026-08-02-antagonist-budget.md",
+          "line": 96,
+          "context": "| A. 新建 `reference/rules/antagonist-budget.md` | 与 `sanity.md`/`chases.md`/`character-creation.md` 同级,`core/02` 登记一行即可;主题独立好找 | `reference/rules/` 再添一份,速查文件数量继续"
+        },
+        {
+          "file": "update_plan/2026-08-02-antagonist-budget.md",
+          "line": 97,
+          "context": "| B. 追加进 `reference/rules/character-creation.md` | 造调查员与造反派共用一套点数概念,同一份文件里对照最直观 | 该文件现在是**玩家侧**车卡速查;混入反派预算会模糊定位 |"
+        },
+        {
+          "file": "update_plan/2026-08-02-antagonist-budget.md",
+          "line": 147,
+          "context": "→ 待办(定位选甲或丙才做):拿 `reference/rules/character-creation.md` 已有的车卡速查实算一遍,"
+        },
+        {
+          "file": "update_plan/2026-08-02-antagonist-budget.md",
+          "line": 211,
+          "context": "- `reference/rules/character-creation.md` 是**玩家侧车卡**流程,产出的是调查员(高于平均),"
+        },
+        {
+          "file": "update_plan/2026-08-02-antagonist-budget.md",
+          "line": 255,
+          "context": "- [ ] `reference/rules/character-creation.md` 是否已含职业点/兴趣点公式(用于待讨论 3 自验)"
+        },
+        {
+          "file": "update_plan/2026-08-02-investigator-cards.md",
+          "line": 22,
+          "context": "- [x] `reference/rules/character-creation.md` — 车卡速查:特征骰法、"
+        },
+        {
+          "file": "update_plan/2026-08-02-investigator-cards.md",
+          "line": 47,
+          "context": "- [x] `reference/rules/character-creation.md` **重写**:补上原来缺的"
+        },
+        {
+          "file": "update_plan/2026-08-02-investigator-cards.md",
+          "line": 61,
+          "context": "- [x] `reference/rules/character-creation.md` 补**来源指路**:每个小节加一行「来源」,"
+        },
+        {
+          "file": "update_plan/2026-08-02-investigator-cards.md",
+          "line": 90,
+          "context": "`reference/rules/character-creation.md` 现在的「来源」只到 `COC apolo.xlsx` 的 sheet 级别"
+        },
+        {
+          "file": "update_plan/2026-08-02-investigator-cards.md",
+          "line": 100,
+          "context": "`character-creation.md` 里标\"章节号未核实\"的引用替换成实际章节号/附录号"
+        }
+      ],
+      "reference_count": 18
+    },
+    {
+      "file": "chases.md",
+      "path": "reference/rules/chases.md",
+      "title": "7e Chases — cheat-sheet",
+      "lines": 49,
+      "declared_consumers": [],
+      "referenced_by": [
+        {
+          "file": "CHANGELOG.md",
+          "line": 41,
+          "context": "- 新增**追逐速查** `reference/rules/chases.md`,以及**人物创建与理智速查** `reference/rules/character-creation.md`、`reference/rules/sanity.md`。"
+        },
+        {
+          "file": "core/02-rules-reference.md",
+          "line": 26,
+          "context": "- `reference/rules/chases.md` — round structure; Move rates; obstacles & mishaps; ending a"
+        },
+        {
+          "file": "core/04-design-scenario.md",
+          "line": 30,
+          "context": "If a scene is a pursuit or an escape, read `reference/rules/chases.md` before writing it."
+        },
+        {
+          "file": "update_plan/2026-08-02-antagonist-budget.md",
+          "line": 96,
+          "context": "| A. 新建 `reference/rules/antagonist-budget.md` | 与 `sanity.md`/`chases.md`/`character-creation.md` 同级,`core/02` 登记一行即可;主题独立好找 | `reference/rules/` 再添一份,速查文件数量继续"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-conventions-gaps.md",
+          "line": 75,
+          "context": "- [x] `reference/rules/chases.md` — 从 7e 规则提炼:速度对比、行动点、"
+        }
+      ],
+      "reference_count": 5
+    },
+    {
+      "file": "combat.md",
+      "path": "reference/rules/combat.md",
+      "title": "7e Combat — cheat-sheet",
+      "lines": 48,
+      "declared_consumers": [],
+      "referenced_by": [
+        {
+          "file": "core/02-rules-reference.md",
+          "line": 24,
+          "context": "- `reference/rules/combat.md` — DEX order; dodge vs fight back; Build & Damage Bonus table;"
+        },
+        {
+          "file": "core/07-create-monster.md",
+          "line": 8,
+          "context": "- **Read `core/02-rules-reference.md`** — especially `reference/rules/combat.md` (Build,"
+        },
+        {
+          "file": "reference/decks/weapons-and-artifacts-zh.md",
+          "line": 12,
+          "context": "> **数值以英文原版为准**;取用前对照 `reference/rules/combat.md` 确认与 7e 一致。"
+        },
+        {
+          "file": ".claude/skills-eval-workspace/benchmark.json",
+          "line": 144,
+          "context": "\"evidence\": \"Answer computes STR 70 + SIZ 65 = 135 and reports Damage Bonus +1D4, Build +1, citing the 125-164 band from reference/rules/combat.md. NOTE: this i"
+        },
+        {
+          "file": ".claude/skills-eval-workspace/benchmark.json",
+          "line": 154,
+          "context": "\"evidence\": \"The entire answer is paraphrased summary/table lookups in the assistant's own words (short dice-notation fragments and derived numbers only), with "
+        }
+      ],
+      "reference_count": 5
+    },
+    {
+      "file": "sanity.md",
+      "path": "reference/rules/sanity.md",
+      "title": "7e Sanity — cheat-sheet",
+      "lines": 57,
+      "declared_consumers": [],
+      "referenced_by": [
+        {
+          "file": "CHANGELOG.md",
+          "line": 41,
+          "context": "- 新增**追逐速查** `reference/rules/chases.md`,以及**人物创建与理智速查** `reference/rules/character-creation.md`、`reference/rules/sanity.md`。"
+        },
+        {
+          "file": "core/02-rules-reference.md",
+          "line": 22,
+          "context": "- `reference/rules/sanity.md` — SAN = POW; X/Y loss notation; typical loss table; bout of"
+        },
+        {
+          "file": "core/04-design-scenario.md",
+          "line": 34,
+          "context": "each ending with a **suggested SAN reward** per `reference/rules/sanity.md`'s scenario-end"
+        },
+        {
+          "file": "core/07-create-monster.md",
+          "line": 9,
+          "context": "Damage Bonus, HP) and `reference/rules/sanity.md` (X/Y loss). Numbers must be 7e-correct."
+        },
+        {
+          "file": "core/12-canon-update.md",
+          "line": 57,
+          "context": "`reference/rules/sanity.md`'s scenario-end table instead)."
+        },
+        {
+          "file": "templates/scenario.md",
+          "line": 44,
+          "context": "- **Best:** <…> — *suggested SAN reward:* <e.g. +1D6, per `reference/rules/sanity.md`>"
+        },
+        {
+          "file": "update_plan/2026-08-02-antagonist-budget.md",
+          "line": 96,
+          "context": "| A. 新建 `reference/rules/antagonist-budget.md` | 与 `sanity.md`/`chases.md`/`character-creation.md` 同级,`core/02` 登记一行即可;主题独立好找 | `reference/rules/` 再添一份,速查文件数量继续"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-conventions-gaps.md",
+          "line": 42,
+          "context": "- [x] `reference/rules/sanity.md` — 补一节\"剧本结算 SAN 奖励惯例\"数值参考"
+        },
+        {
+          "file": ".claude/skills-eval-workspace/benchmark.json",
+          "line": 154,
+          "context": "\"evidence\": \"The entire answer is paraphrased summary/table lookups in the assistant's own words (short dice-notation fragments and derived numbers only), with "
+        }
+      ],
+      "reference_count": 9
+    },
+    {
+      "file": "skill-checks.md",
+      "path": "reference/rules/skill-checks.md",
+      "title": "7e Skill Checks — cheat-sheet",
+      "lines": 52,
+      "declared_consumers": [],
+      "referenced_by": [
+        {
+          "file": "core/02-rules-reference.md",
+          "line": 20,
+          "context": "- `reference/rules/skill-checks.md` — d100 under target; Regular/Hard/Extreme; fumbles;"
+        },
+        {
+          "file": "reference/rules/character-creation.md",
+          "line": 31,
+          "context": "`reference/rules/skill-checks.md`."
+        }
+      ],
+      "reference_count": 2
+    }
+  ]
+}

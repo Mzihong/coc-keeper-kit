@@ -12,6 +12,18 @@ The JSON record is the source of truth; the Markdown card is a rendered view for
 - Use `templates/investigator.schema.json` (data) and `templates/investigator.md` (view).
   `templates/investigator.example.json` is a complete, arithmetically-audited record — copy
   its shape rather than guessing which fields a full card needs.
+- **`reference/decks/busybodies-zh.md`, if present, is 47 worked examples of a finished 1920s
+  card** — occupation, stat spread, the six or seven skills worth listing, and every 7e
+  backstory prompt filled at usable length. Read the nearest occupation before rolling; it
+  settles "how much is enough" faster than the schema does. Its own guidance for pressing a
+  card into service as a **replacement PC** — hand the player 100 extra points on
+  free-choice skills, let them rewrite the backstory — is a sound emergency pregen recipe.
+  Optional: the deck is a local file, absent from `dist/bundle.md`.
+  Its numbers are transcription, not gospel — SIZ and MOV are known to be off on some cards.
+  Recompute every derived stat yourself; never copy a card's arithmetic forward.
+- Two more local-only decks feed specific fields: `reference/decks/phobias-and-manias-zh.md`
+  for the backstory `phobias` / `manias` entries (32 written-out conditions rather than a bare
+  name), and `reference/decks/weapons-and-artifacts-zh.md` for anything in the gear list.
 
 ## Build in this order
 

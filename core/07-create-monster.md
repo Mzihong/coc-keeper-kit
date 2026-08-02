@@ -10,6 +10,12 @@ live through it. In CoC the monster is usually an obstacle to survive, not a bos
 - Decide **type** (human / beast / undead / mythos servitor / independent race / great old
   one) and **threat** (trivial / moderate / deadly / mythic). Threat sets stat scale and SAN.
 - Use `templates/monster.md`.
+- **Source material, if present locally** (neither is in `dist/bundle.md`, so neither is a
+  dependency): `reference/sourcebooks/malleus-monstrorum-zh.md` is the official creature
+  compendium — read the nearest published entry to calibrate stat scale, armour, and SAN cost
+  before inventing your own. `reference/sourcebooks/grand-grimoire-zh.md` covers spells for
+  anything that casts. Both are PDF transcriptions with known garbling; judge every number by
+  eye, and take **structure and scale, never text**.
 
 ## Design the horror
 
@@ -28,7 +34,7 @@ live through it. In CoC the monster is usually an obstacle to survive, not a bos
 
 ### Lovecraftian design craft
 
-`reference/lovecraft-craft-notes-zh.md` §三 distills how H. P. Lovecraft's own monsters and
+`reference/craft/lovecraft-zh.md` §三 distills how H. P. Lovecraft's own monsters and
 entities are built and revealed, from a full read of his original stories. A few techniques
 map directly onto the bullets above:
 

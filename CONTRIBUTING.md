@@ -12,8 +12,13 @@ unofficial fan tooling (see the disclaimer in the [README](README.md)).
 - Fixes to mechanics accuracy, wording, or structure.
 
 ## Ground rules
-- **Reproduce no copyrighted text.** Reference mechanics in your own words; never paste
-  passages from Chaosium's rulebooks or published scenarios.
+- **Write no copyrighted text into the kit's own content.** Reference mechanics in your own
+  words; never paste rulebook or published-scenario passages into `core/`, `templates/`,
+  `campaigns/`, or the rest of `reference/`.
+- **Official source material goes in `reference/decks/`, and only with a citation.** Every
+  such file ends with a `## 引用出处` block naming the work, rights holder, edition, where the
+  text came from, its scope, and what it's filed for (`reference/decks/README.md` has the
+  table). No citation, no merge. Generators then take **structure and scale, never text**.
 - **7th Edition mechanics** for anything with stats — see `reference/rules/`.
 - **Keep content generic** in `reference/` (no one campaign's plot); campaign-specific
   material stays in `campaigns/`.

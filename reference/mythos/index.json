@@ -1,0 +1,12 @@
+{
+  "directory": "reference/mythos",
+  "role": "Great Old Ones, tomes, spells, cults, and factions — slow-growing shared lore",
+  "kind": "kit-original-content",
+  "governed_by": "reference/mythos/README.md",
+  "citation_rule": null,
+  "usage_rule": "authored by this kit — read and used directly, no citation required",
+  "in_bundle": false,
+  "generated_by": "scripts/build-reference-index.py — do not edit by hand",
+  "entry_count": 0,
+  "entries": []
+}

@@ -6,6 +6,10 @@ A preparation workbench for a Call of Cthulhu **Keeper**, for **CoC 7th Edition*
 > Read **`core/00-how-to-run.md`** before doing anything else — it holds the pipeline, the
 > routing table, the ground rules, and the layout. If this file ever disagrees with `core/`,
 > `core/` wins.
+>
+> **Working *on* the kit rather than with it?** Read `WORKLOG.md` too — structure, hard
+> conventions, where the plans currently stand. It exists so you don't have to re-derive the
+> layout by walking the tree. It's a digest, not authority: `core/` still wins.
 
 ## Skills
 
@@ -27,6 +31,7 @@ the skill, read the spec it names, follow the spec. Never generate from the wrap
 | `create-handout`      | `core/10-create-handout.md`   | Write player-facing props — letters, clippings, reports. |
 | `review-material`     | `core/11-review.md`           | Audit material before the table. |
 | `update-canon`        | `core/12-canon-update.md`     | Record what happened and update campaign state. |
+| `archive-reference`   | `core/14-archive-reference.md` | File third-party material (a deck, a rulebook) into `reference/` — classify, cite, wire in, reindex. |
 
 ## The short version
 
@@ -46,7 +51,10 @@ the skill, read the spec it names, follow the spec. Never generate from the wrap
 - **IS** an authoring kit. Reusable canon, templates, and specs live at the root; each game
   lives in its own folder under `campaigns/`.
 - **ISN'T** a rules SRD or a substitute for the published rulebooks. It references mechanics
-  so generated content is correct; it does not reproduce copyrighted text.
+  so generated content is correct; **nothing it generates reproduces copyrighted text**.
+- **Official material filed under `reference/decks/`** is source material, not kit canon. It
+  must carry a `## 引用出处` block, and generators take **structure and scale, never text** —
+  see `core/00-how-to-run.md` → ground rules and `reference/decks/README.md`.
 
 ## Maintenance
 
@@ -56,6 +64,7 @@ the skill, read the spec it names, follow the spec. Never generate from the wrap
 - 改动来自 `update_plan/` 里的某个计划时,完结前逐条走 **`update_plan/README.md` 的
   「完结清单」**——状态两处同步、changelog、重跑 `scripts/build-bundle.sh`、
   三适配器一致性、归档。
+- 改动结构、硬约定或计划状态时,顺手更新 `WORKLOG.md`——它是给接手会话的上手速览,过期比不存在更糟。
 - 动过 `core/` / `templates/` / `reference/` 就必须重跑 `scripts/build-bundle.sh`,
   并把 `dist/bundle.md` 与源文件放在同一个 commit。
 

@@ -1,7 +1,8 @@
 # Update Plan — 魔法速查(magic.md)
 
 > 日期:2026-08-02
-> 状态:阻塞(等 Keeper 交付魔法书转换稿——repo 内仅有原始 PDF)
+> 状态:**待执行(阻塞已解除 2026-08-02)** —— 转换稿已归档为
+> `reference/sourcebooks/grand-grimoire-zh.md`(13731 行,全书转录,带 `## 引用出处`)
 > 来源:从 `Archived/2026-08-02-conventions-gaps.md` §3 拆出独立跟踪(2026-08-02)
 > 关联:`2026-08-02-cult-doc-integration.md` 第四章(造物含法术/仪式时以本计划为前置)
 
@@ -11,20 +12,24 @@ kit 现在能造 NPC、怪物、剧本,唯独**写不了法术、仪式、魔法
 `core/07-create-monster.md` 里 spellcaster 的法术、`reference/mythos/` 里 tome 的
 研读时间与 SAN 损失,目前全靠模型现编。
 
-## 红线(同 og_Norval 的处理口径)
+## 红线
 
-`reference/rules/COC Magic.pdf` 是官方魔法全书,**受版权保护**。
-**只提炼机制惯例与数值区间,不复制条目原文**——产出是速查表,不是法术合集的转录。
+原书**受版权保护**。转载规则 2026-08-02 已改(见 `core/00-how-to-run.md` → ground rules →
+Citing official material):**原文转录可以收录**,前提是归入 `reference/sourcebooks/` 并带
+`## 引用出处`——这一步已完成。但本计划的产出口径不变:
+**只提炼机制惯例与数值区间,不复制条目原文**——`reference/rules/magic.md` 是速查表,
+不是法术合集的转录。550 条法术原文已经在 sourcebook 里了,速查表再抄一遍没有意义。
 
-## 阻塞点
+## 阻塞点(已解除)
 
-Keeper 将 PDF 自行转换为 Word 后交给模型处理(同教团 docx 的阶段 0 方法:切块通读)。
-在拿到转换稿之前本计划无法推进——2026-08-02 检查时 `reference/rules/` 下
-只有原始 `COC Magic.pdf`,未见转换稿。
+~~等 Keeper 交付转换稿~~ —— 2026-08-02 转换稿已归档为
+`reference/sourcebooks/grand-grimoire-zh.md`,可直接切块通读(同教团 docx 的阶段 0 方法)。
+注意该转录件目录与索引的页码行混在正文中,切块时先跳过。
 
 ## 改动清单
 
-- [ ] 等 Keeper 提供转换后的文档,切块处理(同教团 docx 的阶段 0 方法)
+- [x] ~~等 Keeper 提供转换后的文档~~ —— 已归档为 `reference/sourcebooks/grand-grimoire-zh.md`
+- [ ] 切块通读该 sourcebook(同教团 docx 的阶段 0 方法)
 - [ ] 产出 `reference/rules/magic.md` 速查:施法通则(MP/SAN/POW 消耗、
       施法时间、对抗)、tome 数值惯例(研读时间、SAN 损失、Mythos 增益区间)、
       法术设计的成本换算惯例

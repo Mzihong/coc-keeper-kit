@@ -11,7 +11,7 @@ Two modes share this craft:
   the lock, wading into the flooded cellar, reading the ritual aloud. Same senses, same
   restraint, but the camera is on the character's body and choices, not the room.
 
-Both draw on `reference/lovecraft-craft-notes-zh.md` — §一 (tone) applies to either mode, §二
+Both draw on `reference/craft/lovecraft-zh.md` — §一 (tone) applies to either mode, §二
 splits into scene-description and investigator-action technique sections specifically for
 this file.
 
@@ -29,7 +29,7 @@ this file.
 
 - **3–6 sentences.** Long enough to immerse, short enough to keep the table's attention.
 - **Multi-sensory:** always beyond sight — sound, smell, temperature, the feel of the air,
-  the quality of the light. Two or three senses per passage. `reference/lovecraft-craft-notes-zh.md`
+  the quality of the light. Two or three senses per passage. `reference/craft/lovecraft-zh.md`
   §二's most consistent finding: **smell and sound arrive before sight**, often replacing it
   entirely — lead with what's heard or smelled, let the visual confirmation lag or never come.
 - **Concrete over abstract.** "The wallpaper is furred with damp" beats "it feels creepy."
@@ -52,7 +52,7 @@ this file.
 - **For a horror reveal**, lead with the **image and motion**, then hand off the Sanity roll
   to the monster's entry (`core/07-create-monster.md`). Describe wrongness through effect
   (what it does to the light, the smell it brings) rather than a full anatomy dump — see
-  `reference/lovecraft-craft-notes-zh.md` §三 for how HPL stages a reveal before this handoff.
+  `reference/craft/lovecraft-zh.md` §三 for how HPL stages a reveal before this handoff.
 
 ### Assemble the scene (if full)
 
@@ -68,7 +68,7 @@ like.
 
 - **Describe the act, not just the outcome.** A procedural, almost mechanical detail (counting
   stairs, checking a knot, re-reading a line before speaking it) works as a psychological
-  anchor for the character and for the reader — `reference/lovecraft-craft-notes-zh.md` §二's
+  anchor for the character and for the reader — `reference/craft/lovecraft-zh.md` §二's
   "程序化動作作為對抗恐懼的心理防線". If that detail breaks off mid-action, that break *is*
   the tension beat — don't narrate the fear directly, let the interruption carry it.
 - **Physical symptom over stated emotion.** A hand that won't stop shaking, a breath held too

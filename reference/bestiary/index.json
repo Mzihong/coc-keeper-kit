@@ -1,0 +1,28 @@
+{
+  "directory": "reference/bestiary",
+  "role": "reusable monsters and Mythos entities, portable across campaigns",
+  "kind": "kit-original-content",
+  "governed_by": "reference/bestiary/README.md",
+  "citation_rule": null,
+  "usage_rule": "authored by this kit — read and used directly, no citation required",
+  "in_bundle": false,
+  "generated_by": "scripts/build-reference-index.py — do not edit by hand",
+  "entry_count": 1,
+  "entries": [
+    {
+      "file": "the-bell-keeper.md",
+      "path": "reference/bestiary/the-bell-keeper.md",
+      "title": "The Bell-Keeper",
+      "lines": 72,
+      "declared_consumers": [],
+      "referenced_by": [
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 36,
+          "context": "| `reference/bestiary/` | **只有 1 个文件**(`the-bell-keeper.md`)。README 建议 `threat`/`type`/`sanity` 三个 tag | 没有对标库。想\"照着现成的改\"目前无从改起 |"
+        }
+      ],
+      "reference_count": 1
+    }
+  ]
+}

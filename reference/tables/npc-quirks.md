@@ -28,6 +28,10 @@ Roll a second time for anyone the players will meet more than once. See `core/06
 | 19 | Chews, smokes, drinks, or eats through every conversation |
 | 20 | Watches the exit, or a window, more than the person they're speaking to |
 
+Want more range than 20 entries? `reference/decks/busybodies-zh.md` (if you have it locally)
+carries a 个人特质 line on each of its 47 cards — a second well of tics, written at the same
+one-line performable scale. Read it for ideas; roll here for the actual result.
+
 > Pair the quirk with the **lie** the NPC tells (see `core/06-create-npc.md`). The quirk is
 > how the Keeper plays them; the lie is what they say when the players push. An NPC with a
 > quirk and no lie is a prop; with both, they're a scene.

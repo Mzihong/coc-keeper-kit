@@ -12,9 +12,9 @@
 | P4 | [antagonist-budget](2026-08-02-antagonist-budget.md) | 反派强度预算(**仅人类侧**):普通人类模板 + 增量、技能点预算带(降级为审计上限)、法术数量、NPC SAN、致命性倒推口径 | 待讨论(九项中 2、4 已定案;第二轮定案 B 改了主机制:预算带不再是生成方法;尚无执行清单) | 等 Keeper 定归属(1)、预算带定位(3)、致命性口径是否纳入(5)、**普通人类模板基线(8,定案 B 硬前置)**;待讨论 9(生成时提问的落点)挂起等角色创建知识蒸馏;卡着 P1 第四章 |
 | P5 | [low-cost-maps](2026-08-02-low-cost-maps.md) | 低成本地图:mermaid 关系图 + DSL→SVG 平面图渲染器 + 手绘要点清单 | 阻塞(等 Keeper 定视觉风格与 DSL 范围) | 三个待拍板问题见计划文件;原型尚未落盘 |
 | P6 | [investigator-cards](2026-08-02-investigator-cards.md) | 玩家卡(投资者):JSON 唯一真源 + md 卡面 + `create-investigator` 技能 | 进行中(基线 e0d026b;第二轮「照真实车卡表重建 schema」已交付;剩跨 P1 复用 1 条 + 可选 1 条) | 跨计划条目等 P1 第四章。schema 已按真实车卡表重建并被 `templates/investigator.example.json` 压过(算术已核);重建暴露的新渲染缺口记入 P8 缺陷 4 |
-| P7 | [magic-quickref](2026-08-02-magic-quickref.md) | 魔法速查 `reference/rules/magic.md`:施法通则、tome/spell 数值惯例 | 阻塞(等 Keeper 交付魔法书转换稿) | repo 内仅有原始 `COC Magic.pdf`,未见转换稿;卡着 P1 第四章 |
+| P7 | [magic-quickref](2026-08-02-magic-quickref.md) | 魔法速查 `reference/rules/magic.md`:施法通则、tome/spell 数值惯例 | **待执行(阻塞已解除 2026-08-02)** | 转换稿已归档为 `reference/sourcebooks/grand-grimoire-zh.md`(13731 行);仍卡着 P1 第四章 |
 | P8 | [investigator-render-gaps](2026-08-02-investigator-render-gaps.md) | 投资者卡渲染缺口:`spells`/`cthulhu_mythos`/`notes` 未渲染、`elite-npc` 仍渲 Hooks、P6 重建后新增字段无卡面出口 | 待讨论(缺陷 1/2/4 已实测确认,修法形状等待讨论 1;缺陷 3 已直接修) | 等 Keeper 定卡面受众——P6 重建后受众可能是**三**种(玩家/守秘人/审卡),不止两种;影响 P1 第四章的卡面可用性 |
-| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:种类阶梯的档位区间、按 type 分的模板、词条(强化)系统与其存储格式 | 待讨论(五项待定,尚无执行清单) | 从 P4 待讨论 2 拆出。骨架已由 P4 定案 A 给出(`人类<怪物<古神眷族<古神`),本计划填第二层;并接手 P4 待讨论 7(阶梯与 type 六类/threat 四档咬合)。等 Keeper 定来源红线(仓库是否公开 / A/B/C)、"具体模板"读法、词条语义;**不卡 P1 第四章**,只回填 `core/07` 一句 |
+| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:种类阶梯的档位区间、按 type 分的模板、词条(强化)系统与其存储格式 | 待讨论(五项待定,尚无执行清单) | 从 P4 待讨论 2 拆出。骨架已由 P4 定案 A 给出(`人类<怪物<古神眷族<古神`),本计划填第二层;并接手 P4 待讨论 7(阶梯与 type 六类/threat 四档咬合)。等 Keeper 定来源红线(仓库是否公开 / A/B/C)、"具体模板"读法、词条语义;**不卡 P1 第四章**,只回填 `core/07` 一句。**2026-08-02:红线问题部分有答案了**——转载规则已改(收录须标注出处、产出只取结构不取文字,见 `core/00-how-to-run.md`),且 `reference/sourcebooks/malleus-monstrorum-zh.md` 已在仓库里可读;剩下要定的是"具体模板"的读法与范围 |
 
 **状态取值:** `待讨论(<待定什么>)` / `待执行` / `进行中(<当前所在步骤>)` / `阻塞(<等什么>)` /
 `已完成(<commit>)`
@@ -147,6 +147,10 @@ ChatGPT 用户拿到旧规则。
       `dist/bundle.md` 与源文件**同一个 commit** 提交
 - [ ] 动过 `templates/investigator.schema.json` → 重跑 `scripts/render-investigator.py`
       验证卡面还能渲染
+- [ ] 动过 `reference/decks/`、`reference/sourcebooks/`(增删改归档件或其引用出处)→
+      重跑 `python scripts/build-reference-index.py`,**必须报 no problems**;
+      报「orphaned」说明归档件没接进任何 spec,先接线再提交(见 `core/14-archive-reference.md`)
+- [ ] 改动了目录结构、硬约定或计划状态 → 更新 `WORKLOG.md`(给接手会话的上手速览)
 
 ### 4. 三适配器一致性
 

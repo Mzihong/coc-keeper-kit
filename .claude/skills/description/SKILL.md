@@ -9,6 +9,6 @@ version: "3.0.0"
 Read **`core/09-description.md`** and follow it. It covers both scene description and
 investigator action description — decide which mode the request needs, and the file tells you
 how to write it, including the distilled Lovecraft craft notes in
-`reference/lovecraft-craft-notes-zh.md`.
+`reference/craft/lovecraft-zh.md`.
 
 Read `core/00-how-to-run.md` first if you haven't this session.

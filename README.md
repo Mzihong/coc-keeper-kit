@@ -60,6 +60,7 @@ start-campaign  →  world  →  event clock  →  cast
 - "Make a 1923 newspaper-clipping handout hinting at the disappearances."
 - "What happens if they just leave town and never come back?"
 - "Check this session prep before Saturday."
+- "I converted the rulebook PDF to text — file it in reference."
 
 ## What's in here
 
@@ -68,7 +69,7 @@ start-campaign  →  world  →  event clock  →  cast
 | `core/` | **Every instruction the kit has.** Start at `core/00-how-to-run.md`. |
 | `CLAUDE.md`, `GEMINI.md`, `AGENTS.md` | Thin adapters — routing only, no content. |
 | `.claude/skills/` | Claude Code wrappers; each points at its `core/` spec. |
-| `reference/` | Shared canon: 7e cheat-sheets, bestiary, Mythos lore, roll tables, `glossary-zh.md`. |
+| `reference/` | Shared canon: 7e cheat-sheets, bestiary, Mythos lore, roll tables, `glossary-zh.md`. Third-party material you supply is filed and cited in `decks/` and `sourcebooks/`, indexed by `reference/index.json`. |
 | `templates/` | The blank shapes each spec fills in. |
 | `campaigns/` | One folder per game, plus `_template-campaign/` to copy. |
 | `dist/bundle.md` | Build artifact — the whole kit in one file, for ChatGPT. |
@@ -107,8 +108,16 @@ Released under the [MIT License](LICENSE) © 2026 Mzihong. Contributions are wel
 This is an **unofficial, fan-made** preparation kit. *Call of Cthulhu* is a trademark of
 **Chaosium Inc.**; this project is **not affiliated with, endorsed, or sponsored by
 Chaosium**. It **references** 7th Edition mechanics so generated material is correct but
-**reproduces no copyrighted text** from any rulebook or published scenario — you need the
-official *Call of Cthulhu Keeper Rulebook* to actually play. The Chinese terms in
+**nothing it generates reproduces copyrighted text** — you need the
+official *Call of Cthulhu Keeper Rulebook* to actually play.
+
+`reference/decks/` holds transcribed **official card decks**, kept as source material for the
+generators to calibrate against. Those files are third-party text: each carries a `## 引用出处`
+block naming the work and its rights holder, this project claims no rights in them, and the
+kit's generated output never reproduces them. If you are a rights holder and want a file
+removed, open an issue and it will be taken down.
+
+The Chinese terms in
 `reference/glossary-zh.md` are this kit's own working convention, not an official
 translation. The Cthulhu Mythos was created by H. P. Lovecraft. All original content
 generated with this kit is yours.

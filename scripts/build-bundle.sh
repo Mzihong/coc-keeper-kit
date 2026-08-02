@@ -39,6 +39,7 @@ HEADER
            reference/README.md \
            reference/glossary-zh.md \
            reference/rules/*.md \
+           reference/craft/*.md \
            reference/tables/*.md \
            campaigns/_template-campaign/CLAUDE.md \
            campaigns/_template-campaign/canon-log.md \

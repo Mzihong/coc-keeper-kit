@@ -88,11 +88,15 @@
 ## 后续:来源指路精确到规则书章节(不阻塞任何人)
 
 `reference/rules/character-creation.md` 现在的「来源」只到 `COC apolo.xlsx` 的 sheet 级别
-(2026-08-02 补的引用,见上面第二轮的最后一条)。这够用,但不是终点——
-`reference/rules/COC Rule book 7e.pdf` 就在仓库里,没有通读过,大部分小节标了
+(2026-08-02 补的引用,见上面第二轮的最后一条)。这够用,但不是终点——大部分小节标了
 「章节号未核实」。
 
-- [ ] 通读 `reference/rules/COC Rule book 7e.pdf` 的人物创建相关章节,把
+**2026-08-02 更新:这件事现在好做多了。** 规则书全文已归档为
+`reference/sourcebooks/keeper-rulebook-7e-zh.md`(28443 行中译转录),不必再从 PDF 里翻——
+可以直接搜。两点注意:该译本页码是**英文原书页码**,标章节时用章节名而非页码;
+且原译者自述部分章节未系统校对,发现与提炼稿冲突时不要盲从转录稿。
+
+- [ ] 通读 `reference/sourcebooks/keeper-rulebook-7e-zh.md` 的人物创建相关章节,把
       `character-creation.md` 里标"章节号未核实"的引用替换成实际章节号/附录号
       (**只填章节定位,不摘原文**——不改变现在"只提炼公式"的方针,只是把引用精度
       从「xlsx sheet」提到「规则书章节」)

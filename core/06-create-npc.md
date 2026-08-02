@@ -10,6 +10,11 @@ tell — mechanically correct for 7e.
 - Read the campaign `CLAUDE.md` for era/tone/output language; match name, dress, speech, and
   job to the era and the place. Check `canon-log.md` — this person may already exist.
 - Use `templates/npc.md`.
+- **If `reference/decks/busybodies-zh.md` is present, skim the card closest to this NPC's
+  job before writing the stat block.** 47 official 1920s NPC cards — use them to calibrate:
+  what EDU an antiquarian actually carries, where a zealot's Intimidate sits, which six or
+  seven skills a card bothers to list. Optional, not a dependency: the deck is a local file
+  and Keepers working from `dist/bundle.md` won't have it.
 
 ## Ask (or infer sensibly)
 
@@ -32,6 +37,15 @@ tell — mechanically correct for 7e.
 Roll `reference/tables/npc-quirks.md` for at least the mannerism. A rolled tic beats the
 model's default "nervous, wrings hands."
 
+For the **secret**, the busybodies deck is the length calibration: every one of its 47 cards
+carries exactly one, in one or two sentences, and each is a *lever* — a debt, a lie already
+told, a dream that keeps recurring — not a plot summary. Match that scale. Anything longer is
+backstory, and backstory doesn't survive contact with a table.
+
+> **Take structure and scale, never text** (`core/00-how-to-run.md` → ground rules). Copy a
+> card's shape; invent the person. A deck NPC pasted into `campaigns/` is plagiarism *and* a
+> character every other Keeper using the deck already knows the twist to.
+
 ## Stat guidance (7e)
 
 - Average human characteristic ≈ 50; scale to concept (a dockworker's STR high, a scholar's
@@ -40,7 +54,11 @@ model's default "nervous, wrings hands."
 - List **only skills likely to matter** at 7e values (e.g. Persuade 60, Spot Hidden 45,
   Fighting (Brawl) 45, Firearms (Handgun) 35). Non-combatants: note it and skip the weapons.
 - Villains/cultists: consider Cthulhu Mythos %, spells (cross-link `reference/mythos/`), and
-  the SAN implications of what they've done.
+  the SAN implications of what they've done. For actual spell numbers,
+  `reference/sourcebooks/grand-grimoire-zh.md` is the official grimoire, if you have it locally.
+- Arming someone: `reference/decks/weapons-and-artifacts-zh.md` gives skill, base chance,
+  damage, range, malfunction, and era availability per weapon — the deck is built to pair with
+  the busybodies cards for exactly this.
 
 ## Output
 

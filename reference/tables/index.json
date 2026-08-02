@@ -1,0 +1,307 @@
+{
+  "directory": "reference/tables",
+  "role": "roll tables for prep and live improv, including the four seed tables",
+  "kind": "kit-original-content",
+  "governed_by": "reference/tables/README.md",
+  "citation_rule": null,
+  "usage_rule": "authored by this kit — read and used directly, no citation required",
+  "in_bundle": true,
+  "generated_by": "scripts/build-reference-index.py — do not edit by hand",
+  "entry_count": 6,
+  "entries": [
+    {
+      "file": "complications.md",
+      "path": "reference/tables/complications.md",
+      "title": "complications.md — what goes sideways this session",
+      "lines": 38,
+      "declared_consumers": [
+        "core/04-design-scenario.md",
+        "reference/decks/miseries-zh.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "core/01-intake.md",
+          "line": 66,
+          "context": "`mythos-angles.md`, `complications.md`. Roll; don't pick the first plausible thing you"
+        },
+        {
+          "file": "core/04-design-scenario.md",
+          "line": 47,
+          "context": "`reference/tables/complications.md`), and likely stopping points."
+        },
+        {
+          "file": "reference/decks/miseries-zh.md",
+          "line": 9,
+          "context": "> - `reference/tables/complications.md` —— 扩充「一场里出什么岔子」的样本池。"
+        },
+        {
+          "file": "reference/decks/miseries-zh.md",
+          "line": 414,
+          "context": "| 收录用途 | 并发症与戏剧性转折取材 —— 供 `core/04-design-scenario.md`、`reference/tables/complications.md` |"
+        },
+        {
+          "file": "reference/decks/README.md",
+          "line": 17,
+          "context": "| `miseries-zh.md` | 惨事 *Miseries* | 现成的「当场出事」事件卡,含空白卡 | `core/04-design-scenario.md`、`reference/tables/complications.md` |"
+        },
+        {
+          "file": "reference/tables/README.md",
+          "line": 22,
+          "context": "- `complications.md` (1d20) — what goes sideways in a session; roll twice at session prep."
+        },
+        {
+          "file": "campaigns/beidaihe-winter/references.md",
+          "line": 11,
+          "context": "路條都是日常摩擦，適合當作 `complications.md` 2 的燃料。"
+        },
+        {
+          "file": "campaigns/beidaihe-winter/sessions/01-the-guest-who-came-back.md",
+          "line": 42,
+          "context": "6. **金山嘴**（若他們往那走）— 趙德海的禁令；`complications.md` 2 最好在這裡引爆。"
+        },
+        {
+          "file": "campaigns/beidaihe-winter/sessions/01-the-guest-who-came-back.md",
+          "line": 48,
+          "context": "- **`complications.md` 2 — 身分被查而站不住**：山海關的稽查員本月正好來巡。外國人／外地人冬天"
+        },
+        {
+          "file": "campaigns/beidaihe-winter/sessions/01-the-guest-who-came-back.md",
+          "line": 50,
+          "context": "- **`complications.md` 16 — 兩條線同時到期**：費太太只在下午見客（她晚上不開門），而退大潮在"
+        },
+        {
+          "file": "campaigns/beidaihe-winter/world/event-clock.md",
+          "line": 63,
+          "context": "| T6 | 外人不信：調查員被當成冬天關瘋了的一種，`complications.md` 2 直接觸發 |"
+        }
+      ],
+      "reference_count": 11
+    },
+    {
+      "file": "hooks.md",
+      "path": "reference/tables/hooks.md",
+      "title": "hooks.md — how the investigators get pulled in",
+      "lines": 31,
+      "declared_consumers": [
+        "core/01-intake.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "core/01-intake.md",
+          "line": 65,
+          "context": "2. **Roll the seed tables** in `reference/tables/` — `hooks.md`, `locations.md`,"
+        },
+        {
+          "file": "core/01-intake.md",
+          "line": 91,
+          "context": "- Roll `hooks.md` for the way the investigators are pulled in."
+        },
+        {
+          "file": "reference/tables/README.md",
+          "line": 15,
+          "context": "- `hooks.md` (1d20) — how the investigators get pulled in."
+        },
+        {
+          "file": "campaigns/beidaihe-winter/CLAUDE.md",
+          "line": 72,
+          "context": "| Premise / hook | 舊病人回來了 `[auto]` | 擲出 `hooks.md` 18「調查員的舊案主／病人再度出現，但變了」 |"
+        },
+        {
+          "file": "campaigns/_template-campaign/CLAUDE.md",
+          "line": 84,
+          "context": "| <field> | <value> `[auto]` | <rolled hooks.md 14 / inferred from era> |"
+        },
+        {
+          "file": ".claude/skills-eval-workspace/benchmark.json",
+          "line": 59,
+          "context": "\"evidence\": \"Premise centers on Camas Dubh, a storm-locked Skye fishing hamlet bound to a mistranslated century-old rite ('Tàmh na Mara') that unknowingly feeds"
+        }
+      ],
+      "reference_count": 6
+    },
+    {
+      "file": "locations.md",
+      "path": "reference/tables/locations.md",
+      "title": "locations.md — where it happens",
+      "lines": 32,
+      "declared_consumers": [
+        "core/03-build-world.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "core/01-intake.md",
+          "line": 65,
+          "context": "2. **Roll the seed tables** in `reference/tables/` — `hooks.md`, `locations.md`,"
+        },
+        {
+          "file": "core/01-intake.md",
+          "line": 90,
+          "context": "- Roll `locations.md` for at least one place that isn't the obvious one."
+        },
+        {
+          "file": "core/03-build-world.md",
+          "line": 13,
+          "context": "- If this is the campaign's first world-building pass, roll `reference/tables/locations.md`"
+        },
+        {
+          "file": "reference/tables/hooks.md",
+          "line": 7,
+          "context": "Pair with `locations.md` and `mythos-angles.md` at intake. See `core/01-intake.md`."
+        },
+        {
+          "file": "reference/tables/README.md",
+          "line": 16,
+          "context": "- `locations.md` (1d20) — where it happens; breaks the default fishing-village gravity."
+        },
+        {
+          "file": "campaigns/beidaihe-winter/CLAUDE.md",
+          "line": 71,
+          "context": "| Region | 北戴河海濱 `[auto]` | 擲出 `locations.md` 13「過季的渡假地，有人看守而空無一人」；因輸出語言為繁體中文，取民國時期真實的中式海濱避暑地而非新英格蘭漁村 |"
+        },
+        {
+          "file": ".claude/skills-eval-workspace/benchmark.json",
+          "line": 59,
+          "context": "\"evidence\": \"Premise centers on Camas Dubh, a storm-locked Skye fishing hamlet bound to a mistranslated century-old rite ('Tàmh na Mara') that unknowingly feeds"
+        }
+      ],
+      "reference_count": 7
+    },
+    {
+      "file": "madness.md",
+      "path": "reference/tables/madness.md",
+      "title": "Table — Bout of Madness (real-time)",
+      "lines": 26,
+      "declared_consumers": [
+        "reference/decks/phobias-and-manias-zh.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "reference/decks/phobias-and-manias-zh.md",
+          "line": 8,
+          "context": "> - `core/02-rules-reference.md` —— 判定疯狂结果时的症状取材,补 `reference/tables/madness.md` 的粗粒度。"
+        },
+        {
+          "file": "reference/rules/sanity.md",
+          "line": 25,
+          "context": "summary ~1D10 hours). Roll or choose an effect (see `reference/tables/madness.md`)."
+        },
+        {
+          "file": "reference/tables/README.md",
+          "line": 23,
+          "context": "- `madness.md` (1D10) — bout-of-madness effects."
+        }
+      ],
+      "reference_count": 3
+    },
+    {
+      "file": "mythos-angles.md",
+      "path": "reference/tables/mythos-angles.md",
+      "title": "mythos-angles.md — what the wrongness actually is",
+      "lines": 35,
+      "declared_consumers": [
+        "core/01-intake.md",
+        "core/05-event-clock.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "core/01-intake.md",
+          "line": 66,
+          "context": "`mythos-angles.md`, `complications.md`. Roll; don't pick the first plausible thing you"
+        },
+        {
+          "file": "core/01-intake.md",
+          "line": 88,
+          "context": "- Roll `mythos-angles.md` and take what you get. If the result is not obviously compatible"
+        },
+        {
+          "file": "core/03-build-world.md",
+          "line": 14,
+          "context": "and `reference/tables/mythos-angles.md` before writing. Take what you roll."
+        },
+        {
+          "file": "reference/tables/hooks.md",
+          "line": 7,
+          "context": "Pair with `locations.md` and `mythos-angles.md` at intake. See `core/01-intake.md`."
+        },
+        {
+          "file": "reference/tables/README.md",
+          "line": 17,
+          "context": "- `mythos-angles.md` (1d20) — what the wrongness actually is. The most important one."
+        },
+        {
+          "file": "campaigns/beidaihe-winter/CLAUDE.md",
+          "line": 53,
+          "context": "> - **The rolled angle:** `mythos-angles.md` 14 —「這東西按自己的邏輯是善意的，傷害只是附帶」。"
+        },
+        {
+          "file": "campaigns/beidaihe-winter/CLAUDE.md",
+          "line": 73,
+          "context": "| Mythos angle | 善意的存在，傷害是附帶 `[auto]` | 擲出 `mythos-angles.md` 14 |"
+        },
+        {
+          "file": "campaigns/beidaihe-winter/references.md",
+          "line": 27,
+          "context": "- 教團、祭壇、召喚儀式。這個戰役沒有教徒（`mythos-angles.md` 14）。"
+        },
+        {
+          "file": "campaigns/_template-campaign/CLAUDE.md",
+          "line": 66,
+          "context": "> - **The rolled angle:** <which `mythos-angles.md` result this came from, if any>"
+        },
+        {
+          "file": "update_plan/2026-08-02-cult-doc-integration.md",
+          "line": 185,
+          "context": "(无人类反派)、auto。**默认 auto = 掷 `reference/tables/mythos-angles.md`**,"
+        },
+        {
+          "file": ".claude/skills-eval-workspace/benchmark.json",
+          "line": 59,
+          "context": "\"evidence\": \"Premise centers on Camas Dubh, a storm-locked Skye fishing hamlet bound to a mistranslated century-old rite ('Tàmh na Mara') that unknowingly feeds"
+        }
+      ],
+      "reference_count": 11
+    },
+    {
+      "file": "npc-quirks.md",
+      "path": "reference/tables/npc-quirks.md",
+      "title": "npc-quirks.md — the tell that makes them playable",
+      "lines": 38,
+      "declared_consumers": [
+        "core/06-create-npc.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "core/06-create-npc.md",
+          "line": 37,
+          "context": "Roll `reference/tables/npc-quirks.md` for at least the mannerism. A rolled tic beats the"
+        },
+        {
+          "file": "reference/decks/README.md",
+          "line": 15,
+          "context": "| `busybodies-zh.md` | 好事者 *Busybodies* | 47 张 1920 年代 NPC 卡,含属性、技能、武器、完整背景字段和**一个秘密** | `core/06-create-npc.md`、`core/13-create-investigator.md`、`reference/tab"
+        },
+        {
+          "file": "reference/tables/README.md",
+          "line": 18,
+          "context": "- `npc-quirks.md` (1d20) — the tell that makes an NPC playable."
+        },
+        {
+          "file": "campaigns/beidaihe-winter/npcs/li-shuchun.md",
+          "line": 19,
+          "context": "- **習慣**（`npc-quirks.md` 8）：**不停解釋自己有多在行**。「這房子潮不潮我一摸牆就知道，你們"
+        },
+        {
+          "file": "campaigns/beidaihe-winter/npcs/mrs-fee.md",
+          "line": 19,
+          "context": "- **習慣**（`npc-quirks.md` 9）：**對不在場的人說話**。「Henrik，我們有客人了。」——她一邊倒茶"
+        },
+        {
+          "file": "update_plan/2026-08-02-cult-doc-integration.md",
+          "line": 129,
+          "context": "且与现有 `npc-quirks.md`(d20 举止)部分重叠。压缩重写成 d20 外貌/气质表,"
+        }
+      ],
+      "reference_count": 6
+    }
+  ]
+}

@@ -95,8 +95,10 @@ docx 的原始转换稿放在会话 scratchpad,**不进仓库**;仓库里只留�
 > **已通读(2026-08-02)。** 本章不是单一散文体——它是「手法散文 + 5 张骰表 +
 > 2 组数值惯例 + 1 套空白表格 + 1 条设计流程」。一份 notes 文件装不下,按料分流。
 
-**A. 手法散文 → `reference/cult-design-notes-zh.md`**
-定位对标 `reference/lovecraft-craft-notes-zh.md`(89 行,按"哪个 spec 读哪一节"分节)。
+**A. 手法散文 → `reference/craft/cult-design-zh.md`**
+定位对标 `reference/craft/lovecraft-zh.md`(90 行,按"哪个 spec 读哪一节"分节)。
+**2026-08-02:落点已从 `reference/` 根目录改到新建的 `craft/` 目录**——该目录就是为这类
+「手法知识提炼稿」建的,写法规范见 `reference/craft/README.md`,产出后会自动进 bundle。
 - [ ] §一 邪教为何是最好的反派:邪教徒是人;背叛自己的文化去安抚一个不在乎人类的东西;
       "我们对邪教的恐惧,是恐惧自己也成为那样的人"
 - [ ] §二 克苏鲁邪教的独特性:与犹格-索托斯/奈亚拉托提普教派的区别;卡斯特罗预言的
@@ -183,7 +185,7 @@ SAN 惯例。这些**不是邪教专属,是反派强度预算**——归属与�
       (无人类反派)、auto。**默认 auto = 掷 `reference/tables/mythos-angles.md`**,
       反套路规则不变——问题给 Keeper 开正门,不给模型开"默认写邪教"的后门
 - [ ] `core/01-intake.md` auto-fill 表:答"邪教"时指向
-      `reference/cult-design-notes-zh.md` 与 `reference/mythos/cults/`,
+      `reference/craft/cult-design-zh.md` 与 `reference/mythos/cults/`,
       **并掷 `reference/tables/cult-goals.md`(愿望 × 手段)**——答"邪教"不等于允许
       写一个泛用邪教,落地的目标必须是掷出来的
 - [ ] `campaigns/_template-campaign/CLAUDE.md` — 新增 `Threat` 字段,
@@ -194,7 +196,7 @@ SAN 惯例。这些**不是邪教专属,是反派强度预算**——归属与�
 
 ## 阶段 3 — 收尾
 
-- [ ] 更新 `reference/README.md`:登记 `cult-design-notes-zh.md`、`mythos/cults/` 条目、
+- [ ] 更新 `reference/README.md`:登记 `craft/cult-design-zh.md`、`mythos/cults/` 条目、
       `tables/cult-goals.md`、`tables/cult-leader-positions.md`、
       `tables/cult-power-sources.md`、d20 外貌/气质表、`tables/cultist-archetypes.md`
 - [ ] 更新 `reference/tables/README.md`:新表按既有分组(seed / prep & play)归位
@@ -207,7 +209,7 @@ SAN 惯例。这些**不是邪教专属,是反派强度预算**——归属与�
 ## 设计决定备忘(为什么不做成 skill)
 
 第三、四章不做新 skill,理由:
-1. skill 是动词,这两章是知识;kit 已有先例(`lovecraft-craft-notes-zh.md`
+1. skill 是动词,这两章是知识;kit 已有先例(`craft/lovecraft-zh.md`
    由 `core/09`/`core/07` 在生成时去读)。
 2. 新增 design-cult skill 会与 `build-world` faction 模式触发重叠,路由抖动。
 3. `.claude/skills/` 只有 Claude 可见;`core/` + `reference/` 三模型共用,

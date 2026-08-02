@@ -1,0 +1,569 @@
+{
+  "generated_by": "scripts/build-reference-index.py — do not edit by hand",
+  "what": "reverse index over reference/ — third-party archives (citation required) plus the kit's own rules/craft/bestiary/mythos/tables content (referenced_by / orphan check only, no citation)",
+  "rules": {
+    "citation": "core/00-how-to-run.md → ground rules → Citing official material",
+    "process": "core/14-archive-reference.md (skill: archive-reference)"
+  },
+  "kit_original_loose_files": {
+    "note": "authored by this kit and deliberately left at reference/ root — a spine document, a peer of reference/README.md rather than a member of any category. Not covered by this index.",
+    "files": [
+      "reference/glossary-zh.md"
+    ]
+  },
+  "third_party_elsewhere": {
+    "reference/og_Norval": "H.P. Lovecraft corpus (82 stories), public domain, craft research only; distilled into reference/craft/lovecraft-zh.md",
+    "reference/external": "third-party repos as git submodules (see .gitmodules)"
+  },
+  "directories": [
+    {
+      "directory": "reference/decks",
+      "role": "official card decks — ready-made entries, drawn from directly",
+      "kind": "third-party-source-material",
+      "in_bundle": false,
+      "entry_count": 4,
+      "index": "reference/decks/index.json",
+      "files": [
+        "reference/decks/busybodies-zh.md",
+        "reference/decks/miseries-zh.md",
+        "reference/decks/phobias-and-manias-zh.md",
+        "reference/decks/weapons-and-artifacts-zh.md"
+      ]
+    },
+    {
+      "directory": "reference/sourcebooks",
+      "role": "full official books — deep reference, looked up a chapter at a time",
+      "kind": "third-party-source-material",
+      "in_bundle": false,
+      "entry_count": 3,
+      "index": "reference/sourcebooks/index.json",
+      "files": [
+        "reference/sourcebooks/grand-grimoire-zh.md",
+        "reference/sourcebooks/keeper-rulebook-7e-zh.md",
+        "reference/sourcebooks/malleus-monstrorum-zh.md"
+      ]
+    },
+    {
+      "directory": "reference/rules",
+      "role": "kit's own CoC 7e mechanics cheat-sheets — checks, Sanity, combat, character creation",
+      "kind": "kit-original-content",
+      "in_bundle": true,
+      "entry_count": 5,
+      "index": "reference/rules/index.json",
+      "files": [
+        "reference/rules/character-creation.md",
+        "reference/rules/chases.md",
+        "reference/rules/combat.md",
+        "reference/rules/sanity.md",
+        "reference/rules/skill-checks.md"
+      ]
+    },
+    {
+      "directory": "reference/craft",
+      "role": "distilled craft knowledge — how to write it, as opposed to what the numbers are",
+      "kind": "kit-original-content",
+      "in_bundle": true,
+      "entry_count": 1,
+      "index": "reference/craft/index.json",
+      "files": [
+        "reference/craft/lovecraft-zh.md"
+      ]
+    },
+    {
+      "directory": "reference/bestiary",
+      "role": "reusable monsters and Mythos entities, portable across campaigns",
+      "kind": "kit-original-content",
+      "in_bundle": false,
+      "entry_count": 1,
+      "index": "reference/bestiary/index.json",
+      "files": [
+        "reference/bestiary/the-bell-keeper.md"
+      ]
+    },
+    {
+      "directory": "reference/mythos",
+      "role": "Great Old Ones, tomes, spells, cults, and factions — slow-growing shared lore",
+      "kind": "kit-original-content",
+      "in_bundle": false,
+      "entry_count": 0,
+      "index": "reference/mythos/index.json",
+      "files": []
+    },
+    {
+      "directory": "reference/tables",
+      "role": "roll tables for prep and live improv, including the four seed tables",
+      "kind": "kit-original-content",
+      "in_bundle": true,
+      "entry_count": 6,
+      "index": "reference/tables/index.json",
+      "files": [
+        "reference/tables/complications.md",
+        "reference/tables/hooks.md",
+        "reference/tables/locations.md",
+        "reference/tables/madness.md",
+        "reference/tables/mythos-angles.md",
+        "reference/tables/npc-quirks.md"
+      ]
+    }
+  ],
+  "reverse_index": {
+    "note": "file -> everything in the repo that references it, with line numbers — spans both third-party archives and the kit's own indexed content",
+    "by_source": {
+      "reference/decks/busybodies-zh.md": {
+        "title": "好事者卡组 Busybodies — 官方 NPC 卡组(中译收录)",
+        "rights_holder": "Chaosium Inc.",
+        "referenced_by": [
+          "CHANGELOG.md:59",
+          "core/06-create-npc.md:13",
+          "core/13-create-investigator.md:15",
+          "reference/README.md:29",
+          "reference/decks/README.md:15",
+          "reference/tables/npc-quirks.md:31"
+        ]
+      },
+      "reference/decks/miseries-zh.md": {
+        "title": "惨事卡组 Miseries — 官方事件卡组(中译收录)",
+        "rights_holder": "Chaosium Inc.",
+        "referenced_by": [
+          "reference/decks/README.md:17",
+          "reference/tables/complications.md:9"
+        ]
+      },
+      "reference/decks/phobias-and-manias-zh.md": {
+        "title": "恐惧症卡组 Phobias — 官方疯狂/恐惧症卡组(中译收录)",
+        "rights_holder": "Chaosium Inc.",
+        "referenced_by": [
+          "core/13-create-investigator.md:24",
+          "reference/decks/README.md:16",
+          "reference/tables/madness.md:7"
+        ]
+      },
+      "reference/decks/weapons-and-artifacts-zh.md": {
+        "title": "武器与造物卡组 Weapons & Artifacts — 官方装备卡组(中译收录)",
+        "rights_holder": "Chaosium Inc.",
+        "referenced_by": [
+          "core/06-create-npc.md:59",
+          "core/13-create-investigator.md:26",
+          "reference/decks/README.md:18"
+        ]
+      },
+      "reference/sourcebooks/grand-grimoire-zh.md": {
+        "title": "克苏鲁神话魔法大典 — 官方法术全书(中译收录)",
+        "rights_holder": "Chaosium Inc.",
+        "referenced_by": [
+          "CHANGELOG.md:54",
+          "CHANGELOG.md:57",
+          "WORKLOG.md:68",
+          "core/06-create-npc.md:58",
+          "core/07-create-monster.md:16",
+          "reference/mythos/README.md:16",
+          "update_plan/2026-08-02-magic-quickref.md:5",
+          "update_plan/2026-08-02-magic-quickref.md:26",
+          "update_plan/2026-08-02-magic-quickref.md:31",
+          "update_plan/README.md:15"
+        ]
+      },
+      "reference/sourcebooks/keeper-rulebook-7e-zh.md": {
+        "title": "克苏鲁的呼唤 第七版规则书 — 官方规则书全文(中译收录)",
+        "rights_holder": "Chaosium Inc. — Call of Cthulhu © 1981–2014 Chaosium Inc.,Call of Cthulhu® 为 Chaosium 注册商标",
+        "referenced_by": [
+          "CHANGELOG.md:54",
+          "core/02-rules-reference.md:7",
+          "update_plan/2026-08-02-investigator-cards.md:95",
+          "update_plan/2026-08-02-investigator-cards.md:99"
+        ]
+      },
+      "reference/sourcebooks/malleus-monstrorum-zh.md": {
+        "title": "怪物之锤 Malleus Monstrorum — 官方怪物图鉴(中译收录)",
+        "rights_holder": "Chaosium Inc.",
+        "referenced_by": [
+          "CHANGELOG.md:54",
+          "WORKLOG.md:70",
+          "core/07-create-monster.md:14",
+          "core/14-archive-reference.md:48",
+          "reference/bestiary/README.md:6",
+          "update_plan/README.md:17"
+        ]
+      },
+      "reference/rules/character-creation.md": {
+        "title": "7e Character Creation — cheat-sheet",
+        "rights_holder": null,
+        "referenced_by": [
+          "CHANGELOG.md:41",
+          "CHANGELOG.md:46",
+          "CHANGELOG.md:60",
+          "core/13-create-investigator.md:9",
+          "core/13-create-investigator.md:81",
+          "templates/investigator.schema.json:5",
+          "templates/investigator.schema.json:99",
+          "templates/investigator.schema.json:194",
+          "update_plan/2026-08-02-antagonist-budget.md:96",
+          "update_plan/2026-08-02-antagonist-budget.md:97",
+          "update_plan/2026-08-02-antagonist-budget.md:147",
+          "update_plan/2026-08-02-antagonist-budget.md:211",
+          "update_plan/2026-08-02-antagonist-budget.md:255",
+          "update_plan/2026-08-02-investigator-cards.md:22",
+          "update_plan/2026-08-02-investigator-cards.md:47",
+          "update_plan/2026-08-02-investigator-cards.md:61",
+          "update_plan/2026-08-02-investigator-cards.md:90",
+          "update_plan/2026-08-02-investigator-cards.md:100"
+        ]
+      },
+      "reference/rules/chases.md": {
+        "title": "7e Chases — cheat-sheet",
+        "rights_holder": null,
+        "referenced_by": [
+          "CHANGELOG.md:41",
+          "core/02-rules-reference.md:26",
+          "core/04-design-scenario.md:30",
+          "update_plan/2026-08-02-antagonist-budget.md:96",
+          "update_plan/Archived/2026-08-02-conventions-gaps.md:75"
+        ]
+      },
+      "reference/rules/combat.md": {
+        "title": "7e Combat — cheat-sheet",
+        "rights_holder": null,
+        "referenced_by": [
+          "core/02-rules-reference.md:24",
+          "core/07-create-monster.md:8",
+          "reference/decks/weapons-and-artifacts-zh.md:12",
+          ".claude/skills-eval-workspace/benchmark.json:144",
+          ".claude/skills-eval-workspace/benchmark.json:154"
+        ]
+      },
+      "reference/rules/sanity.md": {
+        "title": "7e Sanity — cheat-sheet",
+        "rights_holder": null,
+        "referenced_by": [
+          "CHANGELOG.md:41",
+          "core/02-rules-reference.md:22",
+          "core/04-design-scenario.md:34",
+          "core/07-create-monster.md:9",
+          "core/12-canon-update.md:57",
+          "templates/scenario.md:44",
+          "update_plan/2026-08-02-antagonist-budget.md:96",
+          "update_plan/Archived/2026-08-02-conventions-gaps.md:42",
+          ".claude/skills-eval-workspace/benchmark.json:154"
+        ]
+      },
+      "reference/rules/skill-checks.md": {
+        "title": "7e Skill Checks — cheat-sheet",
+        "rights_holder": null,
+        "referenced_by": [
+          "core/02-rules-reference.md:20",
+          "reference/rules/character-creation.md:31"
+        ]
+      },
+      "reference/craft/lovecraft-zh.md": {
+        "title": "洛夫克拉夫特笔法笔记 — 简体中文",
+        "rights_holder": null,
+        "referenced_by": [
+          "CHANGELOG.md:51",
+          "WORKLOG.md:40",
+          "WORKLOG.md:125",
+          "core/07-create-monster.md:37",
+          "core/09-description.md:14",
+          "core/09-description.md:32",
+          "core/09-description.md:55",
+          "core/09-description.md:71",
+          "reference/README.md:18",
+          "reference/README.md:54",
+          "reference/craft/README.md:14",
+          "reference/craft/README.md:26",
+          "reference/craft/README.md:34",
+          "scripts/build-reference-index.py:281",
+          "update_plan/2026-08-02-cult-doc-integration.md:99",
+          "update_plan/2026-08-02-cult-doc-integration.md:212",
+          ".claude/skills/description/SKILL.md:12"
+        ]
+      },
+      "reference/bestiary/the-bell-keeper.md": {
+        "title": "The Bell-Keeper",
+        "rights_holder": null,
+        "referenced_by": [
+          "update_plan/2026-08-02-monster-templates-traits.md:36"
+        ]
+      },
+      "reference/tables/complications.md": {
+        "title": "complications.md — what goes sideways this session",
+        "rights_holder": null,
+        "referenced_by": [
+          "core/01-intake.md:66",
+          "core/04-design-scenario.md:47",
+          "reference/decks/miseries-zh.md:9",
+          "reference/decks/miseries-zh.md:414",
+          "reference/decks/README.md:17",
+          "reference/tables/README.md:22",
+          "campaigns/beidaihe-winter/references.md:11",
+          "campaigns/beidaihe-winter/sessions/01-the-guest-who-came-back.md:42",
+          "campaigns/beidaihe-winter/sessions/01-the-guest-who-came-back.md:48",
+          "campaigns/beidaihe-winter/sessions/01-the-guest-who-came-back.md:50",
+          "campaigns/beidaihe-winter/world/event-clock.md:63"
+        ]
+      },
+      "reference/tables/hooks.md": {
+        "title": "hooks.md — how the investigators get pulled in",
+        "rights_holder": null,
+        "referenced_by": [
+          "core/01-intake.md:65",
+          "core/01-intake.md:91",
+          "reference/tables/README.md:15",
+          "campaigns/beidaihe-winter/CLAUDE.md:72",
+          "campaigns/_template-campaign/CLAUDE.md:84",
+          ".claude/skills-eval-workspace/benchmark.json:59"
+        ]
+      },
+      "reference/tables/locations.md": {
+        "title": "locations.md — where it happens",
+        "rights_holder": null,
+        "referenced_by": [
+          "core/01-intake.md:65",
+          "core/01-intake.md:90",
+          "core/03-build-world.md:13",
+          "reference/tables/hooks.md:7",
+          "reference/tables/README.md:16",
+          "campaigns/beidaihe-winter/CLAUDE.md:71",
+          ".claude/skills-eval-workspace/benchmark.json:59"
+        ]
+      },
+      "reference/tables/madness.md": {
+        "title": "Table — Bout of Madness (real-time)",
+        "rights_holder": null,
+        "referenced_by": [
+          "reference/decks/phobias-and-manias-zh.md:8",
+          "reference/rules/sanity.md:25",
+          "reference/tables/README.md:23"
+        ]
+      },
+      "reference/tables/mythos-angles.md": {
+        "title": "mythos-angles.md — what the wrongness actually is",
+        "rights_holder": null,
+        "referenced_by": [
+          "core/01-intake.md:66",
+          "core/01-intake.md:88",
+          "core/03-build-world.md:14",
+          "reference/tables/hooks.md:7",
+          "reference/tables/README.md:17",
+          "campaigns/beidaihe-winter/CLAUDE.md:53",
+          "campaigns/beidaihe-winter/CLAUDE.md:73",
+          "campaigns/beidaihe-winter/references.md:27",
+          "campaigns/_template-campaign/CLAUDE.md:66",
+          "update_plan/2026-08-02-cult-doc-integration.md:185",
+          ".claude/skills-eval-workspace/benchmark.json:59"
+        ]
+      },
+      "reference/tables/npc-quirks.md": {
+        "title": "npc-quirks.md — the tell that makes them playable",
+        "rights_holder": null,
+        "referenced_by": [
+          "core/06-create-npc.md:37",
+          "reference/decks/README.md:15",
+          "reference/tables/README.md:18",
+          "campaigns/beidaihe-winter/npcs/li-shuchun.md:19",
+          "campaigns/beidaihe-winter/npcs/mrs-fee.md:19",
+          "update_plan/2026-08-02-cult-doc-integration.md:129"
+        ]
+      }
+    },
+    "by_consumer": {
+      ".claude/skills-eval-workspace/benchmark.json": [
+        "reference/rules/combat.md",
+        "reference/rules/sanity.md",
+        "reference/tables/hooks.md",
+        "reference/tables/locations.md",
+        "reference/tables/mythos-angles.md"
+      ],
+      ".claude/skills/description/SKILL.md": [
+        "reference/craft/lovecraft-zh.md"
+      ],
+      "CHANGELOG.md": [
+        "reference/craft/lovecraft-zh.md",
+        "reference/decks/busybodies-zh.md",
+        "reference/rules/character-creation.md",
+        "reference/rules/chases.md",
+        "reference/rules/sanity.md",
+        "reference/sourcebooks/grand-grimoire-zh.md",
+        "reference/sourcebooks/keeper-rulebook-7e-zh.md",
+        "reference/sourcebooks/malleus-monstrorum-zh.md"
+      ],
+      "WORKLOG.md": [
+        "reference/craft/lovecraft-zh.md",
+        "reference/sourcebooks/grand-grimoire-zh.md",
+        "reference/sourcebooks/malleus-monstrorum-zh.md"
+      ],
+      "campaigns/_template-campaign/CLAUDE.md": [
+        "reference/tables/hooks.md",
+        "reference/tables/mythos-angles.md"
+      ],
+      "campaigns/beidaihe-winter/CLAUDE.md": [
+        "reference/tables/hooks.md",
+        "reference/tables/locations.md",
+        "reference/tables/mythos-angles.md"
+      ],
+      "campaigns/beidaihe-winter/npcs/li-shuchun.md": [
+        "reference/tables/npc-quirks.md"
+      ],
+      "campaigns/beidaihe-winter/npcs/mrs-fee.md": [
+        "reference/tables/npc-quirks.md"
+      ],
+      "campaigns/beidaihe-winter/references.md": [
+        "reference/tables/complications.md",
+        "reference/tables/mythos-angles.md"
+      ],
+      "campaigns/beidaihe-winter/sessions/01-the-guest-who-came-back.md": [
+        "reference/tables/complications.md"
+      ],
+      "campaigns/beidaihe-winter/world/event-clock.md": [
+        "reference/tables/complications.md"
+      ],
+      "core/01-intake.md": [
+        "reference/tables/complications.md",
+        "reference/tables/hooks.md",
+        "reference/tables/locations.md",
+        "reference/tables/mythos-angles.md"
+      ],
+      "core/02-rules-reference.md": [
+        "reference/rules/chases.md",
+        "reference/rules/combat.md",
+        "reference/rules/sanity.md",
+        "reference/rules/skill-checks.md",
+        "reference/sourcebooks/keeper-rulebook-7e-zh.md"
+      ],
+      "core/03-build-world.md": [
+        "reference/tables/locations.md",
+        "reference/tables/mythos-angles.md"
+      ],
+      "core/04-design-scenario.md": [
+        "reference/rules/chases.md",
+        "reference/rules/sanity.md",
+        "reference/tables/complications.md"
+      ],
+      "core/06-create-npc.md": [
+        "reference/decks/busybodies-zh.md",
+        "reference/decks/weapons-and-artifacts-zh.md",
+        "reference/sourcebooks/grand-grimoire-zh.md",
+        "reference/tables/npc-quirks.md"
+      ],
+      "core/07-create-monster.md": [
+        "reference/craft/lovecraft-zh.md",
+        "reference/rules/combat.md",
+        "reference/rules/sanity.md",
+        "reference/sourcebooks/grand-grimoire-zh.md",
+        "reference/sourcebooks/malleus-monstrorum-zh.md"
+      ],
+      "core/09-description.md": [
+        "reference/craft/lovecraft-zh.md"
+      ],
+      "core/12-canon-update.md": [
+        "reference/rules/sanity.md"
+      ],
+      "core/13-create-investigator.md": [
+        "reference/decks/busybodies-zh.md",
+        "reference/decks/phobias-and-manias-zh.md",
+        "reference/decks/weapons-and-artifacts-zh.md",
+        "reference/rules/character-creation.md"
+      ],
+      "core/14-archive-reference.md": [
+        "reference/sourcebooks/malleus-monstrorum-zh.md"
+      ],
+      "reference/README.md": [
+        "reference/craft/lovecraft-zh.md",
+        "reference/decks/busybodies-zh.md"
+      ],
+      "reference/bestiary/README.md": [
+        "reference/sourcebooks/malleus-monstrorum-zh.md"
+      ],
+      "reference/craft/README.md": [
+        "reference/craft/lovecraft-zh.md"
+      ],
+      "reference/decks/README.md": [
+        "reference/decks/busybodies-zh.md",
+        "reference/decks/miseries-zh.md",
+        "reference/decks/phobias-and-manias-zh.md",
+        "reference/decks/weapons-and-artifacts-zh.md",
+        "reference/tables/complications.md",
+        "reference/tables/npc-quirks.md"
+      ],
+      "reference/decks/miseries-zh.md": [
+        "reference/tables/complications.md"
+      ],
+      "reference/decks/phobias-and-manias-zh.md": [
+        "reference/tables/madness.md"
+      ],
+      "reference/decks/weapons-and-artifacts-zh.md": [
+        "reference/rules/combat.md"
+      ],
+      "reference/mythos/README.md": [
+        "reference/sourcebooks/grand-grimoire-zh.md"
+      ],
+      "reference/rules/character-creation.md": [
+        "reference/rules/skill-checks.md"
+      ],
+      "reference/rules/sanity.md": [
+        "reference/tables/madness.md"
+      ],
+      "reference/tables/README.md": [
+        "reference/tables/complications.md",
+        "reference/tables/hooks.md",
+        "reference/tables/locations.md",
+        "reference/tables/madness.md",
+        "reference/tables/mythos-angles.md",
+        "reference/tables/npc-quirks.md"
+      ],
+      "reference/tables/complications.md": [
+        "reference/decks/miseries-zh.md"
+      ],
+      "reference/tables/hooks.md": [
+        "reference/tables/locations.md",
+        "reference/tables/mythos-angles.md"
+      ],
+      "reference/tables/madness.md": [
+        "reference/decks/phobias-and-manias-zh.md"
+      ],
+      "reference/tables/npc-quirks.md": [
+        "reference/decks/busybodies-zh.md"
+      ],
+      "scripts/build-reference-index.py": [
+        "reference/craft/lovecraft-zh.md"
+      ],
+      "templates/investigator.schema.json": [
+        "reference/rules/character-creation.md"
+      ],
+      "templates/scenario.md": [
+        "reference/rules/sanity.md"
+      ],
+      "update_plan/2026-08-02-antagonist-budget.md": [
+        "reference/rules/character-creation.md",
+        "reference/rules/chases.md",
+        "reference/rules/sanity.md"
+      ],
+      "update_plan/2026-08-02-cult-doc-integration.md": [
+        "reference/craft/lovecraft-zh.md",
+        "reference/tables/mythos-angles.md",
+        "reference/tables/npc-quirks.md"
+      ],
+      "update_plan/2026-08-02-investigator-cards.md": [
+        "reference/rules/character-creation.md",
+        "reference/sourcebooks/keeper-rulebook-7e-zh.md"
+      ],
+      "update_plan/2026-08-02-magic-quickref.md": [
+        "reference/sourcebooks/grand-grimoire-zh.md"
+      ],
+      "update_plan/2026-08-02-monster-templates-traits.md": [
+        "reference/bestiary/the-bell-keeper.md"
+      ],
+      "update_plan/Archived/2026-08-02-conventions-gaps.md": [
+        "reference/rules/chases.md",
+        "reference/rules/sanity.md"
+      ],
+      "update_plan/README.md": [
+        "reference/sourcebooks/grand-grimoire-zh.md",
+        "reference/sourcebooks/malleus-monstrorum-zh.md"
+      ]
+    }
+  },
+  "validation": {
+    "clean": true,
+    "problems": []
+  }
+}
