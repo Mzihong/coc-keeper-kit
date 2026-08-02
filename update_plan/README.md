@@ -7,7 +7,7 @@
 | # | 计划 | 范围 | 状态 | 阻塞/等待 |
 |---|---|---|---|---|
 | P1 | [cult-doc-integration](2026-08-02-cult-doc-integration.md) | 克苏鲁教团 docx 四章提炼进 kit + 敌对势力 intake 问题 | 待执行 | 源 docx 已确认在 Desktop;第四章含法术时依赖 P3-3(magic 速查) |
-| P2 | [multi-arc-and-branching](2026-08-02-multi-arc-and-branching.md) | 多章 campaign(续作/时间跳跃)与平行世界分支的结构惯例 | 进行中(内容已完成,等提交) | 无 |
+| P2 | [multi-arc-and-branching](Archived/2026-08-02-multi-arc-and-branching.md) | 多章 campaign(续作/时间跳跃)与平行世界分支的结构惯例 | 已完成(e0d026b) | 无 |
 | P3 | [conventions-gaps](2026-08-02-conventions-gaps.md) | 七项出版惯例缺口:结算奖励、成长阶段、魔法速查、低成本地图、玩家卡、追逐速查、人数缩放 | 进行中(1/2/5/6/7 已完成;4 原型已做,等 Keeper 确认视觉风格/DSL 范围;3 阻塞) | P3-3 等 Keeper 交付魔法书转换稿(仅有原始 PDF,未见转换稿) |
 
 **状态取值:** `待执行` / `进行中(<当前所在步骤>)` / `阻塞(<等什么>)` / `已完成(<commit>)`
