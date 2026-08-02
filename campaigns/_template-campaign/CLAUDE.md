@@ -9,6 +9,15 @@
 > Read alongside `canon-log.md` (what has actually happened) and `world/event-clock.md`
 > (where the threat currently stands).
 
+## Lineage
+> **Optional — delete this section for a standalone campaign (the default).** Only fill it in
+> if this campaign is a parallel-world/branching offshoot of another campaign in `campaigns/`.
+> See `campaigns/README.md` → "Multi-arc & branching campaigns".
+
+- **Forked from:** <parent-slug> @ session <n> / <in-fiction date>
+- Canon before the fork is read-only inherited from the parent's `canon-log.md`; this
+  campaign's own `canon-log.md` never writes back to the parent.
+
 ## Premise (one paragraph)
 <What this campaign is about — the situation, the dread, the promise to the players.>
 

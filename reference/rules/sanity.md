@@ -33,6 +33,23 @@ summary ~1D10 hours). Roll or choose an effect (see `reference/tables/madness.md
 SAN returns slowly — resolving a scenario's threat, therapy, downtime, or a successful
 Cthulhu Mythos-free rationalisation. Never a quick heal; dread should linger.
 
+## Scenario-end SAN rewards
+
+7e published scenarios routinely close with a small, deliberate SAN award for meaningful
+outcomes — not a heal-up, a *this mattered* signal. Use these as a starting point when
+`core/12-canon-update.md` proposes rewards; adjust for how hard-won the outcome actually was.
+
+| Outcome | Typical award |
+|---|---|
+| Minor local win (rescued a victim, exposed a lesser scheme, no cosmic stakes) | +1D3 SAN |
+| Solid win (stopped the ritual, closed the cult's local operation) | +1D6 SAN |
+| Major win (destroyed/banished a significant entity, ended the threat for good) | +1D10 SAN |
+| Defeated a Great Old One or averted world-ending stakes | +1D20 SAN, Keeper's discretion |
+
+Stack at most one award per investigator per scenario — pick the single greatest qualifying
+outcome, don't sum several. A muddled or grim ending earns no award (the dread is the point).
+Never award SAN for combat kills alone; the award is for closing the threat, not for violence.
+
 ## Keeper habits
 - Announce the SAN cost only *after* the sight is described — lead with the image.
 - Track each investigator's phobias/manias; call them back for personalised horror.

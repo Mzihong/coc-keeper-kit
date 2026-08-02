@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "investigator.schema.json",
+  "title": "CoC 7e Investigator",
+  "description": "Source-of-truth record for a pregen investigator or a mechanically-full elite NPC. See core/13-create-investigator.md.",
+  "type": "object",
+  "required": ["name", "occupation", "characteristics", "derived", "skills"],
+  "properties": {
+    "name": { "type": "string" },
+    "type": { "type": "string", "enum": ["pregen", "elite-npc"], "default": "pregen" },
+    "occupation": { "type": "string" },
+    "era_locale": { "type": "string" },
+    "concept": { "type": "string" },
+    "characteristics": {
+      "type": "object",
+      "required": ["STR", "CON", "SIZ", "DEX", "APP", "INT", "POW", "EDU"],
+      "properties": {
+        "STR": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "CON": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "SIZ": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "DEX": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "APP": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "INT": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "POW": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "EDU": { "type": "integer", "minimum": 0, "maximum": 100 }
+      }
+    },
+    "derived": {
+      "type": "object",
+      "required": ["HP", "MP", "SAN", "Luck", "Move", "Build", "DamageBonus", "Dodge"],
+      "properties": {
+        "HP": { "type": "integer" },
+        "MP": { "type": "integer" },
+        "SAN": { "type": "integer" },
+        "Luck": { "type": "integer" },
+        "Move": { "type": "integer" },
+        "Build": { "type": "integer" },
+        "DamageBonus": { "type": "string" },
+        "Dodge": { "type": "integer" }
+      }
+    },
+    "credit_rating": {
+      "type": "object",
+      "properties": {
+        "value": { "type": "integer", "minimum": 0, "maximum": 99 },
+        "band": { "type": "string" }
+      }
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "value"],
+        "properties": {
+          "name": { "type": "string" },
+          "value": { "type": "integer", "minimum": 0, "maximum": 99 }
+        }
+      }
+    },
+    "weapons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "skill_pct", "damage"],
+        "properties": {
+          "name": { "type": "string" },
+          "skill_pct": { "type": "integer" },
+          "damage": { "type": "string" }
+        }
+      }
+    },
+    "spells": { "type": "array", "items": { "type": "string" } },
+    "cthulhu_mythos": { "type": "integer", "minimum": 0, "maximum": 99, "default": 0 },
+    "backstory": {
+      "type": "object",
+      "properties": {
+        "description": { "type": "string" },
+        "ideology_beliefs": { "type": "string" },
+        "significant_people": { "type": "string" },
+        "meaningful_locations": { "type": "string" },
+        "treasured_possessions": { "type": "string" },
+        "traits": { "type": "string" },
+        "injuries_scars": { "type": "string" },
+        "phobias_manias": { "type": "string" }
+      }
+    },
+    "hooks": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Each hook must tie into something the campaign can actually use — an NPC, faction, location, or the central mystery."
+    },
+    "notes": { "type": "string" },
+    "links": { "type": "array", "items": { "type": "string" } }
+  }
+}

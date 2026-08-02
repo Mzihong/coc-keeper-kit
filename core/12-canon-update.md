@@ -47,6 +47,23 @@ Your job is to turn that into durable campaign state that every later generation
 **`sessions/<n>-<slug>.md`**:
 - Fill in the template's "After the session" block.
 
+## Session-end rewards
+
+Only when this session closed out a scenario's central threat — reaching one of the endings
+sketched in the scenario file, not every session:
+
+1. Read which ending was actually reached and its suggested SAN reward (`templates/scenario.md`
+   tags each ending with one; if the scenario predates this convention, use
+   `reference/rules/sanity.md`'s scenario-end table instead).
+2. **Suggest, then ask, then adjust** — never write a number silently:
+   - Propose the SAN award and note which skills are eligible for a 7e development roll (any
+     skill an investigator successfully used at least once this session).
+   - Ask the Keeper to accept, adjust, or skip the award.
+   - This kit doesn't track investigator sheets — development rolls happen at the table; the
+     reminder is informational.
+3. Record the confirmed number (or "none — muddled/grim ending") in the session's canon-log
+   entry's `Rewards` line.
+
 ## Rules
 
 - **Append, never revise.** If the table contradicted something written, the *table* is
@@ -62,6 +79,23 @@ Your job is to turn that into durable campaign state that every later generation
 - **Flag contradictions** you notice between the account and existing canon. Ask; don't
   silently pick one.
 - Write in the campaign's **output language**, matching the rest of the campaign.
+
+## Closing an arc (multi-arc campaigns only)
+
+See `campaigns/README.md` → "Multi-arc & branching campaigns" for when this applies — a
+sequel or time-skip that stays in the same campaign folder rather than forking to a new one.
+
+- **If time skips before the next arc starts**, write an **Interlude** entry instead of a
+  session entry — same append-only rules, using the Interlude shape in `canon-log.md`: elapsed
+  time, what happened off-screen, cast status swept forward, what carries into the new arc.
+- **Archive the closed arc's clock:** move `world/event-clock.md` to
+  `world/archive/event-clock-<arc-slug>.md`, then build a fresh live `world/event-clock.md` for
+  the new arc's threat per `core/05-event-clock.md`. The live path never changes.
+- **Cast state sweep:** update every recurring NPC's status for the time elapsed — ages,
+  deaths, relocations, allegiance shifts — in `canon-log.md`'s Cast status table.
+- **Update `overview.md`'s Arcs index** with the closed arc's status and archived-clock link.
+- **Update `CLAUDE.md`'s Canon so far block** only if something structural changed for the new
+  arc (a new central threat, a new premise layer) — same rule as any other structural update.
 
 ## Then
 

@@ -10,6 +10,16 @@
 2. **<Scenario 2>** — <…>
 3. **<Finale>** — <the confrontation or choice>
 
+## Arcs
+> **Optional — delete for a single-arc campaign (the default).** Only needed once a sequel or
+> time-skip opens a second arc in this same folder. See `campaigns/README.md` → "Multi-arc &
+> branching campaigns". Scenario files are numbered `<arc>-<slug>.md`; session numbering stays
+> global across all arcs.
+
+| Arc | Scenarios | Status | Archived clock |
+|---|---|---|---|
+| 01 — <label> | `01-<slug>.md`, `01-<slug-2>.md` | <active / closed> | `world/archive/event-clock-01-<label>.md` (once closed) |
+
 ## The spine (keeper truth)
 > **KEEPER ONLY**
 > 1. <underlying fact>

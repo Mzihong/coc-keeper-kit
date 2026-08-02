@@ -21,6 +21,7 @@ the skill, read the spec it names, follow the spec. Never generate from the wrap
 | `build-event-clock`   | `core/05-event-clock.md`      | Build the doom track and the trigger table. |
 | `create-npc`          | `core/06-create-npc.md`       | Produce a full 7e NPC — stats, want, secret, lie, clues. |
 | `create-monster`      | `core/07-create-monster.md`   | Stat a Mythos entity — attacks, SAN loss, and its fair out. |
+| `create-investigator` | `core/13-create-investigator.md` | Build a pregen or elite NPC — JSON source of truth + rendered card. |
 | `create-puzzle`       | `core/08-create-puzzle.md`    | Design fair, multi-path investigation obstacles. |
 | `description`         | `core/09-description.md`      | Write read-aloud boxed text, sensory detail, or an investigator's action narrated. |
 | `create-handout`      | `core/10-create-handout.md`   | Write player-facing props — letters, clippings, reports. |
@@ -46,6 +47,10 @@ the skill, read the spec it names, follow the spec. Never generate from the wrap
   lives in its own folder under `campaigns/`.
 - **ISN'T** a rules SRD or a substitute for the published rulebooks. It references mechanics
   so generated content is correct; it does not reproduce copyrighted text.
+
+## Maintenance
+
+- 版本更新需要填 changelog 或者更新 README。
 
 ## Portability
 

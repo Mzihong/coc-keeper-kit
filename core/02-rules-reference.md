@@ -18,6 +18,8 @@ numbers. It references mechanics — it does not reproduce the rulebook.
   madness; temporary vs indefinite insanity; recovery.
 - `reference/rules/combat.md` — DEX order; dodge vs fight back; Build & Damage Bonus table;
   HP = (CON+SIZ)/10; major wounds; manoeuvres.
+- `reference/rules/chases.md` — round structure; Move rates; obstacles & mishaps; ending a
+  chase. Read before writing any pursuit or escape scene.
 
 ## Fast facts (verify against the sheets)
 

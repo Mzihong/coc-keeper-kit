@@ -20,6 +20,7 @@ Open the file and follow it to the letter, including its Quality bar.
 | what happens if the players do nothing; triggers | `core/05-event-clock.md` |
 | a person — ally, witness, villain, contact | `core/06-create-npc.md` |
 | a non-human threat, creature, Mythos entity | `core/07-create-monster.md` |
+| a pregen, ready-to-play investigator, elite NPC with full stats | `core/13-create-investigator.md` |
 | a puzzle, cipher, code, lock, riddle | `core/08-create-puzzle.md` |
 | read-aloud / boxed text, atmosphere, a reveal, or an investigator's action narrated | `core/09-description.md` |
 | a prop the players physically receive | `core/10-create-handout.md` |

@@ -48,6 +48,8 @@ model's output. Assume the material is wrong until each line checks out.
 - [ ] Scenes form a web — at least one scene is reachable in more than one order.
 - [ ] Boxed text: 3–6 sentences, ≥2 senses, one wrong detail, ends on a hook.
 - [ ] SAN hits are spaced, not stacked; the biggest lands at the reveal.
+- [ ] Scenario-level material: each ending carries a suggested SAN reward (or explicitly none
+      for muddled/grim), and a Scaling sidebar exists if the table's size differs from baseline.
 
 ### Mechanics
 
@@ -56,6 +58,8 @@ model's output. Assume the material is wrong until each line checks out.
 - [ ] Difficulties (Regular/Hard/Extreme) are set deliberately and only where failure is
       interesting.
 - [ ] Sanity costs are proportionate to the horror, not to the gore.
+- [ ] Any `investigators/*.json` validates against `templates/investigator.schema.json`; its
+      derived stats are internally consistent and its `.md` view agrees with the JSON.
 
 ### Safety & spoilers
 

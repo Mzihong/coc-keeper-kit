@@ -41,7 +41,15 @@ Structure is a **web, not a line** — most scenes should be reachable in more t
 - **What changes in the world:** <consequences that carry forward>
 
 ## The three endings (sketch)
-- **Best:** <…> · **Muddled:** <…> · **Grim:** <…>
+- **Best:** <…> — *suggested SAN reward:* <e.g. +1D6, per `reference/rules/sanity.md`>
+- **Muddled:** <…> — *suggested SAN reward:* none
+- **Grim:** <…> — *suggested SAN reward:* none
+
+## Scaling
+<only if actual party size differs from the campaign's declared party size — how opposition
+numbers, clue redundancy, and total SAN pressure shift up or down>
+- **Fewer investigators than baseline:** <…>
+- **More investigators than baseline:** <…>
 
 ## Prep checklist
 - [ ] Clue map has 3 routes per key fact

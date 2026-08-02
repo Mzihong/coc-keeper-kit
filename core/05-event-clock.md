@@ -72,6 +72,15 @@ one row and know what is different.
 - After each session, update the "current stage" line and mark fired triggers with the
   session number — see `core/12-canon-update.md`.
 
+## Archiving (multi-arc campaigns)
+
+When an arc's threat is fully resolved and a new arc opens in the same campaign folder
+(`campaigns/README.md` → "Multi-arc & branching campaigns"), move the settled clock to
+`world/archive/event-clock-<arc-slug>.md` and build a fresh clock at the live path for the new
+arc's threat, following "Build it" above from scratch. **The live path never changes** — every
+other spec always reads `world/event-clock.md` for "current," so nothing else needs to know an
+archive happened. This step belongs to `core/12-canon-update.md`'s arc-close checklist.
+
 ## Quality bar
 
 - The threat's goal is concrete and dated. Someone could ask "what day is it and what's

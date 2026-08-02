@@ -39,6 +39,7 @@ Open the file and follow it to the letter, including its Quality bar.
 | what happens if the players do nothing; triggers | `core/05-event-clock.md` |
 | a person — ally, witness, villain, contact | `core/06-create-npc.md` |
 | a non-human threat, creature, Mythos entity | `core/07-create-monster.md` |
+| a pregen, ready-to-play investigator, elite NPC with full stats | `core/13-create-investigator.md` |
 | a puzzle, cipher, code, lock, riddle | `core/08-create-puzzle.md` |
 | read-aloud / boxed text, atmosphere, a reveal, or an investigator's action narrated | `core/09-description.md` |
 | a prop the players physically receive | `core/10-create-handout.md` |
@@ -117,7 +118,7 @@ Generate in this order. Each step reads what came before.
 | 1 | **Intake** — establish the campaign | `core/01-intake.md` | the whole `campaigns/<slug>/` folder |
 | 2 | **World** — region, places, factions | `core/03-build-world.md` | `world/` |
 | 3 | **Event clock** — the threat and its timeline | `core/05-event-clock.md` | `world/event-clock.md` |
-| 4 | **Cast** — the people and the things | `core/06-create-npc.md`, `core/07-create-monster.md` | `npcs/`, `reference/bestiary/` |
+| 4 | **Cast** — the people and the things | `core/06-create-npc.md`, `core/07-create-monster.md`, `core/13-create-investigator.md` | `npcs/`, `reference/bestiary/`, `investigators/` |
 | 5 | **Scenario** — one session at a time, on demand | `core/04-design-scenario.md` | `<scenario-slug>.md`, `scenes/` |
 | 6 | **Props** — puzzles, descriptions, handouts | `core/08`, `core/09`, `core/10` | `puzzles/`, `scenes/`, `handouts/` |
 | 7 | **Review** — check it before the table | `core/11-review.md` | fixes |
@@ -141,6 +142,7 @@ writing any stat block, difficulty, or Sanity cost.
 | what happens if the players do nothing; triggers | `core/05-event-clock.md` |
 | a person — ally, witness, villain, contact | `core/06-create-npc.md` |
 | a non-human threat, creature, Mythos entity | `core/07-create-monster.md` |
+| a pregen, ready-to-play investigator, elite NPC with full stats | `core/13-create-investigator.md` |
 | a puzzle, cipher, code, lock, riddle | `core/08-create-puzzle.md` |
 | read-aloud / boxed text, atmosphere, a reveal, or an investigator's action narrated | `core/09-description.md` |
 | a prop the players physically receive | `core/10-create-handout.md` |
@@ -214,6 +216,10 @@ coc-keeper-kit/
 ├── campaigns/
 │   ├── _template-campaign/  ← copy this to start a new game
 │   └── <your-campaign>/
+│       ├── <arc>-<scenario-slug>.md  ← scenario files, numbered by arc once multi-arc
+│       ├── investigators/   ← <name>.json (source of truth) + <name>.md (rendered card)
+│       └── world/archive/   ← closed arcs' event-clocks; live clock never moves
+│                               (see campaigns/README.md → multi-arc & branching)
 ├── .claude/skills/          ← Claude Code wrappers (thin; body lives in core/)
 └── dist/bundle.md           ← every core/ + template + table file, concatenated
 ```
@@ -365,6 +371,8 @@ numbers. It references mechanics — it does not reproduce the rulebook.
   madness; temporary vs indefinite insanity; recovery.
 - `reference/rules/combat.md` — DEX order; dodge vs fight back; Build & Damage Bonus table;
   HP = (CON+SIZ)/10; major wounds; manoeuvres.
+- `reference/rules/chases.md` — round structure; Move rates; obstacles & mishaps; ending a
+  chase. Read before writing any pursuit or escape scene.
 
 ## Fast facts (verify against the sheets)
 
@@ -484,9 +492,13 @@ fill in the pieces.
    two remain. Lay this out as a table — it's the anti-stall guarantee.
 6. **The scenes as a web.** Key each node by *purpose* (clue / choice / shock / breather).
    Most scenes should be reachable in more than one order — avoid a single required sequence.
+   If a scene is a pursuit or an escape, read `reference/rules/chases.md` before writing it.
 7. **Cast & threats.** Name the NPCs and creatures (hand to `core/06` / `core/07`); ensure
    each monster has its fair "out."
-8. **Endings.** Sketch best / muddled / grim outcomes and the world-fallout each leaves.
+8. **Endings.** Sketch best / muddled / grim outcomes and the world-fallout each leaves. Tag
+   each ending with a **suggested SAN reward** per `reference/rules/sanity.md`'s scenario-end
+   table — a starting number for `core/12-canon-update.md` to propose, adjust, and confirm with
+   the Keeper after play. A muddled/grim ending gets no award.
 
 ## Generating one session against an existing campaign
 
@@ -502,6 +514,22 @@ now?"* In that case:
   A session can end on a partial revelation.
 - Save to `campaigns/<slug>/sessions/<n>-<slug>.md` using `templates/session-prep.md`.
 
+## Opening a new arc in an existing campaign
+
+A sequel or time-skip ("a year later, new threat") that stays in the same campaign folder —
+see `campaigns/README.md` → "Multi-arc & branching campaigns" for when this applies rather
+than forking to a new campaign.
+
+- Read `CLAUDE.md`, the **full** `canon-log.md` (all prior arcs and any Interlude entries),
+  and every archived clock in `world/archive/` — not just the live one, which now tracks the
+  *new* arc's threat.
+- Number the new arc's scenario files `<arc>-<scenario-slug>.md`; add the arc to `overview.md`'s
+  Arcs index.
+- **Don't rebuild the world.** `world/` is standing state that carries forward; extend it (new
+  locations, evolved factions) rather than re-generating what already exists.
+- Otherwise follow "Build in this order" above as normal — the new arc gets its own truth,
+  clock, hook, and clue map; it just inherits everything upstream instead of starting cold.
+
 ## Principles
 
 - **Investigation, not a corridor.** Give agency; let players skip, reorder, and surprise you.
@@ -509,6 +537,10 @@ now?"* In that case:
 - **At least one non-combat resolution** to the central threat.
 - **Sanity as pacing.** Space the big SAN hits; let dread build, then spike at the reveal.
 - **Content care.** Honour the campaign's declared lines/veils; flag heavy material.
+- **Scale to the table.** If the actual party size differs from the campaign's declared party
+  size (`CLAUDE.md`), add a **Scaling** sidebar: how opposition numbers, clue redundancy, and
+  total SAN pressure shift up or down. A 3-investigator table needs fewer simultaneous threats
+  and *more* clue redundancy (fewer skill points spread across more must-know facts), not less.
 
 ## Output
 
@@ -600,6 +632,15 @@ one row and know what is different.
 - The doom track's hidden progress and the whole trigger table are `> **KEEPER ONLY**`.
 - After each session, update the "current stage" line and mark fired triggers with the
   session number — see `core/12-canon-update.md`.
+
+## Archiving (multi-arc campaigns)
+
+When an arc's threat is fully resolved and a new arc opens in the same campaign folder
+(`campaigns/README.md` → "Multi-arc & branching campaigns"), move the settled clock to
+`world/archive/event-clock-<arc-slug>.md` and build a fresh clock at the live path for the new
+arc's threat, following "Build it" above from scratch. **The live path never changes** — every
+other spec always reads `world/event-clock.md` for "current," so nothing else needs to know an
+archive happened. This step belongs to `core/12-canon-update.md`'s arc-close checklist.
 
 ## Quality bar
 
@@ -1057,6 +1098,8 @@ model's output. Assume the material is wrong until each line checks out.
 - [ ] Scenes form a web — at least one scene is reachable in more than one order.
 - [ ] Boxed text: 3–6 sentences, ≥2 senses, one wrong detail, ends on a hook.
 - [ ] SAN hits are spaced, not stacked; the biggest lands at the reveal.
+- [ ] Scenario-level material: each ending carries a suggested SAN reward (or explicitly none
+      for muddled/grim), and a Scaling sidebar exists if the table's size differs from baseline.
 
 ### Mechanics
 
@@ -1065,6 +1108,8 @@ model's output. Assume the material is wrong until each line checks out.
 - [ ] Difficulties (Regular/Hard/Extreme) are set deliberately and only where failure is
       interesting.
 - [ ] Sanity costs are proportionate to the horror, not to the gore.
+- [ ] Any `investigators/*.json` validates against `templates/investigator.schema.json`; its
+      derived stats are internally consistent and its `.md` view agrees with the JSON.
 
 ### Safety & spoilers
 
@@ -1157,6 +1202,23 @@ Your job is to turn that into durable campaign state that every later generation
 **`sessions/<n>-<slug>.md`**:
 - Fill in the template's "After the session" block.
 
+## Session-end rewards
+
+Only when this session closed out a scenario's central threat — reaching one of the endings
+sketched in the scenario file, not every session:
+
+1. Read which ending was actually reached and its suggested SAN reward (`templates/scenario.md`
+   tags each ending with one; if the scenario predates this convention, use
+   `reference/rules/sanity.md`'s scenario-end table instead).
+2. **Suggest, then ask, then adjust** — never write a number silently:
+   - Propose the SAN award and note which skills are eligible for a 7e development roll (any
+     skill an investigator successfully used at least once this session).
+   - Ask the Keeper to accept, adjust, or skip the award.
+   - This kit doesn't track investigator sheets — development rolls happen at the table; the
+     reminder is informational.
+3. Record the confirmed number (or "none — muddled/grim ending") in the session's canon-log
+   entry's `Rewards` line.
+
 ## Rules
 
 - **Append, never revise.** If the table contradicted something written, the *table* is
@@ -1173,6 +1235,23 @@ Your job is to turn that into durable campaign state that every later generation
   silently pick one.
 - Write in the campaign's **output language**, matching the rest of the campaign.
 
+## Closing an arc (multi-arc campaigns only)
+
+See `campaigns/README.md` → "Multi-arc & branching campaigns" for when this applies — a
+sequel or time-skip that stays in the same campaign folder rather than forking to a new one.
+
+- **If time skips before the next arc starts**, write an **Interlude** entry instead of a
+  session entry — same append-only rules, using the Interlude shape in `canon-log.md`: elapsed
+  time, what happened off-screen, cast status swept forward, what carries into the new arc.
+- **Archive the closed arc's clock:** move `world/event-clock.md` to
+  `world/archive/event-clock-<arc-slug>.md`, then build a fresh live `world/event-clock.md` for
+  the new arc's threat per `core/05-event-clock.md`. The live path never changes.
+- **Cast state sweep:** update every recurring NPC's status for the time elapsed — ages,
+  deaths, relocations, allegiance shifts — in `canon-log.md`'s Cast status table.
+- **Update `overview.md`'s Arcs index** with the closed arc's status and archived-clock link.
+- **Update `CLAUDE.md`'s Canon so far block** only if something structural changed for the new
+  arc (a new central threat, a new premise layer) — same rule as any other structural update.
+
 ## Then
 
 Offer the obvious next step: *"Prep session `<n+1>`?"* — which runs
@@ -1186,6 +1265,65 @@ Offer the obvious next step: *"Prep session `<n+1>`?"* — which runs
 - No existing entry was edited or deleted; contradictions are marked, not resolved silently.
 - A model reading only `canon-log.md` could generate the next session without contradicting
   anything that happened.
+
+
+=== FILE: core/13-create-investigator.md ===
+
+# 13 — Create Investigator
+
+Build a player investigator — usually a **pregen** for a one-shot or a new player, sometimes an
+**elite NPC** (a named cultist, a rival investigator) reusing the same mechanical skeleton.
+The JSON record is the source of truth; the Markdown card is a rendered view for the table.
+
+## First
+
+- **Read `reference/rules/character-creation.md`** before rolling anything.
+- Read the campaign `CLAUDE.md` for era, tone, and premise — every surviving backstory hook
+  must tie into it; a hook that connects to nothing in the campaign is decoration, not prep.
+- Use `templates/investigator.schema.json` (data) and `templates/investigator.md` (view).
+
+## Build in this order
+
+1. **Concept.** One line: who they are, what they want out of this case.
+2. **Occupation.** Pick or invent one; it sets the occupation skill list, the point split, and
+   the Credit Rating band.
+3. **Numbers.** Roll or assign characteristics; derive HP/MP/SAN/Luck/Move/Build/Damage
+   Bonus/Dodge; spend occupation and personal-interest skill points. Recompute — don't eyeball.
+4. **Backstory hooks.** Fill every 7e backstory prompt (ideology, significant people,
+   locations, possessions, traits), then keep only the ones that could plausibly matter to
+   this campaign — cut the rest rather than pad the file. Each surviving hook should point at
+   something the Keeper can actually pull on: an NPC, a faction, a location, or the central
+   mystery.
+
+## Storage
+
+- **Source of truth:** `campaigns/<slug>/investigators/<name>.json`, validated against
+  `templates/investigator.schema.json`.
+- **Rendered view:** `campaigns/<slug>/investigators/<name>.md` — generate it with
+  `scripts/render-investigator.py`, or write it directly from the JSON. The two must never
+  disagree; regenerate the `.md` whenever the `.json` changes.
+- An optional `campaigns/<slug>/investigators/roster.csv` can index name/occupation/status for
+  a quick glance at the table; it is always derived, never the source of truth.
+
+## Pregens vs. elite NPCs
+
+Elite cultists or other mechanically-full villains (`core/06-create-npc.md` NPCs who need
+complete stats) may use this schema instead of a lighter NPC stat block — set
+`"type": "elite-npc"` in the JSON and skip the player-facing backstory-hooks section.
+
+## Output
+
+- Write prose fields in the campaign's declared **output language**. Stat notation (`STR 60`,
+  skill percentages) stays English per `core/02-rules-reference.md`.
+
+## Quality bar
+
+- The JSON validates against `templates/investigator.schema.json`.
+- Every derived stat traces back correctly to the rolled characteristics
+  (`reference/rules/character-creation.md`) — recompute, don't eyeball.
+- Skill points spent match the EDU×4 / INT×2 (or occupation-split) formula.
+- Every surviving backstory hook ties into something the campaign can actually use.
+- The `.md` view and the `.json` source agree; no stat appears in one but not the other.
 
 
 === FILE: templates/event-clock.md ===
@@ -1291,6 +1429,48 @@ smudge if it should be partly illegible.>
 
 ## Links
 <relative link back to the scene/puzzle this belongs to>
+
+
+=== FILE: templates/investigator.md ===
+
+# <Investigator Name>
+
+*<one-line concept — who they are at a glance>*
+
+- **Occupation:** <occupation> · **Era/locale:** <match the campaign>
+- **Type:** <pregen / elite NPC>
+
+## Characteristics
+| STR | CON | SIZ | DEX | APP | INT | POW | EDU |
+|-----|-----|-----|-----|-----|-----|-----|-----|
+| 00  | 00  | 00  | 00  | 00  | 00  | 00  | 00  |
+
+- **HP** 0 · **MP** 0 · **SAN** 0 · **Luck** 0 · **Move** 0 · **Build** 0 · **Damage Bonus** 0
+  · **Dodge** 0
+- **Credit Rating:** 0 (<occupation band>)
+
+## Skills
+<skill 60%, skill 45%, skill 35% — only what the sheet needs at the table>
+
+## Weapons
+- <weapon, skill %, damage> *(omit if unarmed/non-combatant)*
+
+## Backstory
+- **Description:** <one visual line>
+- **Ideology/beliefs:** <…>
+- **Significant people:** <…>
+- **Meaningful locations:** <…>
+- **Treasured possessions:** <…>
+- **Traits:** <…>
+- **Injuries/scars:** <…>
+- **Phobias/manias:** <…>
+
+## Hooks tying them to this campaign
+- <hook 1 — must connect to an NPC, faction, location, or the central mystery>
+- <hook 2>
+
+## Links
+<relative links to related NPCs, factions, or scenes>
 
 
 === FILE: templates/location.md ===
@@ -1498,7 +1678,15 @@ Structure is a **web, not a line** — most scenes should be reachable in more t
 - **What changes in the world:** <consequences that carry forward>
 
 ## The three endings (sketch)
-- **Best:** <…> · **Muddled:** <…> · **Grim:** <…>
+- **Best:** <…> — *suggested SAN reward:* <e.g. +1D6, per `reference/rules/sanity.md`>
+- **Muddled:** <…> — *suggested SAN reward:* none
+- **Grim:** <…> — *suggested SAN reward:* none
+
+## Scaling
+<only if actual party size differs from the campaign's declared party size — how opposition
+numbers, clue redundancy, and total SAN pressure shift up or down>
+- **Fewer investigators than baseline:** <…>
+- **More investigators than baseline:** <…>
 
 ## Prep checklist
 - [ ] Clue map has 3 routes per key fact
@@ -1986,6 +2174,113 @@ Rules:
 从本表取词。
 
 
+=== FILE: reference/rules/character-creation.md ===
+
+# 7e Character Creation — cheat-sheet
+
+> Quick-fire pregen/investigator reference. Not a rules reproduction — see the *Keeper
+> Rulebook* for the full character-creation chapter and occupation list.
+
+## Characteristics
+- Roll **3D6 × 5** for STR, CON, DEX, APP, POW.
+- Roll **(2D6+6) × 5** for SIZ, INT, EDU.
+- Point-buy is a valid alternative when a table wants control over randomness.
+- Average human ≈ 50; the normal human range is roughly 15–90.
+
+## Derived stats
+- **HP** = (CON+SIZ) ÷ 10 · **MP** = POW ÷ 5 · **SAN** starts = POW (max 99 − Cthulhu Mythos%)
+- **Move** ≈ 7–9 for a typical adult — see `reference/rules/combat.md` and
+  `reference/rules/chases.md` for situational Move.
+- **Build / Damage Bonus** from STR+SIZ — table in `reference/rules/combat.md`.
+- **Dodge** = ½ DEX.
+- **Luck** = roll 3D6×5 (or take a flat 50); spendable per `reference/rules/skill-checks.md`.
+
+## Skill points
+- **Occupation points:** typically **EDU × 4**, or an occupation-specific split — e.g.
+  EDU×2 + a relevant characteristic×2 (a detective might use EDU×2 + DEX×2, a con artist
+  EDU×2 + APP×2). Pick whichever split fits the concept; assign only to that occupation's
+  skill list.
+- **Personal interest points:** **INT × 2**, assignable to any skill.
+- No skill exceeds **90%** at creation. Cthulhu Mythos starts at **0** (or an occupation's
+  stated starting value, if any) — it is never bought up at creation.
+- **Credit Rating** has an occupation-defined min–max band; pick within it to match the
+  concept, not automatically the midpoint.
+
+## Backstory hooks
+7e's standard prompts — fill each one, don't skip it:
+- **Personal description** — one visual line.
+- **Ideology/beliefs, significant people, meaningful locations, treasured possessions,
+  traits** — each is a lever the Keeper can pull mid-game.
+- **Injuries/scars, phobias/manias** — optional, but a gift to a Keeper reaching for personal
+  horror.
+
+## Pregens vs. elite NPCs
+- A **pregen** built for a specific scenario should have Credit Rating, skills, and backstory
+  hooks tuned to the plot — every surviving hook should be something the scenario can actually
+  use, not decoration. See `core/13-create-investigator.md`.
+- An **elite NPC** (a named cultist, a rival investigator) can reuse the same mechanical
+  skeleton (`templates/investigator.schema.json`) and skip the player-facing hooks section.
+
+## Quality bar
+- Skill points spent match the EDU×4 / INT×2 (or occupation-split) formula — recompute, don't
+  eyeball.
+- Every derived stat (HP, MP, SAN, Build, Damage Bonus, Dodge, Move, Luck) traces back
+  correctly to the rolled characteristics.
+- Credit Rating sits inside the occupation's declared band.
+
+
+=== FILE: reference/rules/chases.md ===
+
+# 7e Chases — cheat-sheet
+
+> Chases are combat's faster, more mobile cousin — same round structure, distance instead of
+> hit points. See the *Keeper Rulebook* for full rules.
+
+## When to run a chase
+Use it when escape or pursuit is genuinely uncertain and failure is interesting — not for
+every fleeing NPC. A single Stealth/Dodge roll to slip away is fine when the outcome doesn't
+matter to the plot.
+
+## Setup
+- Give every participant (investigator on foot, vehicle, monster) a **Move rate**.
+- Track the gap as an abstract, simple number — 0 = caught, rising = further behind — not
+  literal yards. "Close / medium / far / out of sight" works just as well at the table.
+- Decide the start position: who has the head start, and by how much.
+
+## Round structure
+- Same **DEX order** as combat (vehicle chases: the driver/pilot's DEX).
+- Each round, every participant either **moves** — compare Move rates; the faster side closes
+  or opens the gap by the difference — or **resolves an obstacle** the Keeper has placed on the
+  route this round (a locked gate, a crowded street, a hairpin turn), via the relevant skill
+  (Climb, Jump, Dodge, Drive Auto, Pilot, Stealth…).
+- **Obstacle failure** costs ground — the gap shifts against whoever failed — or, for vehicles,
+  risks a **mishap**: a crash, a stall, a blown tire, usually its own damage roll.
+- A **fumble** while driving or piloting during a chase is always a mishap, not just a stall.
+
+## Typical Move rates (guidance — adjust for terrain, weather, and local knowledge)
+| Mover | Move |
+|---|---|
+| Adult on foot, sprinting | 8–10 |
+| Adult on foot, fit/trained | 10–12 |
+| Bicycle | 12–15 |
+| Motorcycle | 25–35 |
+| Car, city driving | 15–25 |
+| Car, open road | 25–40 |
+| Boat / launch | 10–20 (current-dependent) |
+
+## Ending a chase
+- **Caught:** the gap reaches 0 — pursuer is in melee/grapple/firing range.
+- **Escaped:** the quarry breaks line of sight or reaches safety while the gap is open —
+  Stealth or Luck can seal it.
+- **Called off:** either side can bail; make the cost of quitting concrete ("lost the trail,
+  but drops the film canister" / "caught, but the alarm's raised").
+
+## Keeper habits
+- Alternate a move round with an obstacle round — pure movement math gets stale fast.
+- Let the environment double as a clue or complication, not just a bare skill check.
+- Aim for **3–5 rounds**; don't let a chase drag once the outcome is clear.
+
+
 === FILE: reference/rules/combat.md ===
 
 # 7e Combat — cheat-sheet
@@ -2073,6 +2368,23 @@ summary ~1D10 hours). Roll or choose an effect (see `reference/tables/madness.md
 ## Recovery
 SAN returns slowly — resolving a scenario's threat, therapy, downtime, or a successful
 Cthulhu Mythos-free rationalisation. Never a quick heal; dread should linger.
+
+## Scenario-end SAN rewards
+
+7e published scenarios routinely close with a small, deliberate SAN award for meaningful
+outcomes — not a heal-up, a *this mattered* signal. Use these as a starting point when
+`core/12-canon-update.md` proposes rewards; adjust for how hard-won the outcome actually was.
+
+| Outcome | Typical award |
+|---|---|
+| Minor local win (rescued a victim, exposed a lesser scheme, no cosmic stakes) | +1D3 SAN |
+| Solid win (stopped the ritual, closed the cult's local operation) | +1D6 SAN |
+| Major win (destroyed/banished a significant entity, ended the threat for good) | +1D10 SAN |
+| Defeated a Great Old One or averted world-ending stakes | +1D20 SAN, Keeper's discretion |
+
+Stack at most one award per investigator per scenario — pick the single greatest qualifying
+outcome, don't sum several. A muddled or grim ending earns no award (the dread is the point).
+Never award SAN for combat kills alone; the award is for closing the threat, not for violence.
 
 ## Keeper habits
 - Announce the SAN cost only *after* the sight is described — lead with the image.
@@ -2389,6 +2701,15 @@ Roll a second time for anyone the players will meet more than once. See `core/06
 > Read alongside `canon-log.md` (what has actually happened) and `world/event-clock.md`
 > (where the threat currently stands).
 
+## Lineage
+> **Optional — delete this section for a standalone campaign (the default).** Only fill it in
+> if this campaign is a parallel-world/branching offshoot of another campaign in `campaigns/`.
+> See `campaigns/README.md` → "Multi-arc & branching campaigns".
+
+- **Forked from:** <parent-slug> @ session <n> / <in-fiction date>
+- Canon before the fork is read-only inherited from the parent's `canon-log.md`; this
+  campaign's own `canon-log.md` never writes back to the parent.
+
 ## Premise (one paragraph)
 <What this campaign is about — the situation, the dread, the promise to the players.>
 
@@ -2505,9 +2826,27 @@ below so nothing has to be reconstructed by reading the whole log.
 
 **Clock:** advanced to stage <n>; triggers fired: <T1 (branch: …)>
 
+**Rewards:** <SAN award if a scenario concluded this session, confirmed with the Keeper — or
+"none" if no ending was reached, or "none — muddled/grim ending">
+
 **Threads opened:** <…> · **Threads closed:** <…>
 
 **Unclear — confirm:** <anything the Keeper's account left ambiguous>
+
+---
+
+## Interlude — <in-fiction span skipped, e.g. "one year later"> — <real date>
+
+> Used when a new arc opens in this same campaign after a time-skip (`campaigns/README.md` →
+> "Multi-arc & branching campaigns"), instead of a session entry. Same append-only rules apply.
+
+**Time elapsed:** <span, in-fiction>
+
+**What happened off-screen:** <world changes that occurred without the investigators>
+
+**Cast status swept forward:** <who aged, died, moved on, or changed status during the gap>
+
+**Carried into the new arc:** <which consequences/threads from the closed arc persist>
 
 ---
 
@@ -2527,6 +2866,16 @@ below so nothing has to be reconstructed by reading the whole log.
 1. **<Scenario 1>** — <hook → purpose> · file: `<slug>.md`
 2. **<Scenario 2>** — <…>
 3. **<Finale>** — <the confrontation or choice>
+
+## Arcs
+> **Optional — delete for a single-arc campaign (the default).** Only needed once a sequel or
+> time-skip opens a second arc in this same folder. See `campaigns/README.md` → "Multi-arc &
+> branching campaigns". Scenario files are numbered `<arc>-<slug>.md`; session numbering stays
+> global across all arcs.
+
+| Arc | Scenarios | Status | Archived clock |
+|---|---|---|---|
+| 01 — <label> | `01-<slug>.md`, `01-<slug-2>.md` | <active / closed> | `world/archive/event-clock-01-<label>.md` (once closed) |
 
 ## The spine (keeper truth)
 > **KEEPER ONLY**

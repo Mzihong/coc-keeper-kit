@@ -23,7 +23,7 @@ Generate in this order. Each step reads what came before.
 | 1 | **Intake** — establish the campaign | `core/01-intake.md` | the whole `campaigns/<slug>/` folder |
 | 2 | **World** — region, places, factions | `core/03-build-world.md` | `world/` |
 | 3 | **Event clock** — the threat and its timeline | `core/05-event-clock.md` | `world/event-clock.md` |
-| 4 | **Cast** — the people and the things | `core/06-create-npc.md`, `core/07-create-monster.md` | `npcs/`, `reference/bestiary/` |
+| 4 | **Cast** — the people and the things | `core/06-create-npc.md`, `core/07-create-monster.md`, `core/13-create-investigator.md` | `npcs/`, `reference/bestiary/`, `investigators/` |
 | 5 | **Scenario** — one session at a time, on demand | `core/04-design-scenario.md` | `<scenario-slug>.md`, `scenes/` |
 | 6 | **Props** — puzzles, descriptions, handouts | `core/08`, `core/09`, `core/10` | `puzzles/`, `scenes/`, `handouts/` |
 | 7 | **Review** — check it before the table | `core/11-review.md` | fixes |
@@ -47,6 +47,7 @@ writing any stat block, difficulty, or Sanity cost.
 | what happens if the players do nothing; triggers | `core/05-event-clock.md` |
 | a person — ally, witness, villain, contact | `core/06-create-npc.md` |
 | a non-human threat, creature, Mythos entity | `core/07-create-monster.md` |
+| a pregen, ready-to-play investigator, elite NPC with full stats | `core/13-create-investigator.md` |
 | a puzzle, cipher, code, lock, riddle | `core/08-create-puzzle.md` |
 | read-aloud / boxed text, atmosphere, a reveal, or an investigator's action narrated | `core/09-description.md` |
 | a prop the players physically receive | `core/10-create-handout.md` |
@@ -120,6 +121,10 @@ coc-keeper-kit/
 ├── campaigns/
 │   ├── _template-campaign/  ← copy this to start a new game
 │   └── <your-campaign>/
+│       ├── <arc>-<scenario-slug>.md  ← scenario files, numbered by arc once multi-arc
+│       ├── investigators/   ← <name>.json (source of truth) + <name>.md (rendered card)
+│       └── world/archive/   ← closed arcs' event-clocks; live clock never moves
+│                               (see campaigns/README.md → multi-arc & branching)
 ├── .claude/skills/          ← Claude Code wrappers (thin; body lives in core/)
 └── dist/bundle.md           ← every core/ + template + table file, concatenated
 ```

@@ -46,9 +46,27 @@ below so nothing has to be reconstructed by reading the whole log.
 
 **Clock:** advanced to stage <n>; triggers fired: <T1 (branch: …)>
 
+**Rewards:** <SAN award if a scenario concluded this session, confirmed with the Keeper — or
+"none" if no ending was reached, or "none — muddled/grim ending">
+
 **Threads opened:** <…> · **Threads closed:** <…>
 
 **Unclear — confirm:** <anything the Keeper's account left ambiguous>
+
+---
+
+## Interlude — <in-fiction span skipped, e.g. "one year later"> — <real date>
+
+> Used when a new arc opens in this same campaign after a time-skip (`campaigns/README.md` →
+> "Multi-arc & branching campaigns"), instead of a session entry. Same append-only rules apply.
+
+**Time elapsed:** <span, in-fiction>
+
+**What happened off-screen:** <world changes that occurred without the investigators>
+
+**Cast status swept forward:** <who aged, died, moved on, or changed status during the gap>
+
+**Carried into the new arc:** <which consequences/threads from the closed arc persist>
 
 ---
 

@@ -27,9 +27,13 @@ fill in the pieces.
    two remain. Lay this out as a table — it's the anti-stall guarantee.
 6. **The scenes as a web.** Key each node by *purpose* (clue / choice / shock / breather).
    Most scenes should be reachable in more than one order — avoid a single required sequence.
+   If a scene is a pursuit or an escape, read `reference/rules/chases.md` before writing it.
 7. **Cast & threats.** Name the NPCs and creatures (hand to `core/06` / `core/07`); ensure
    each monster has its fair "out."
-8. **Endings.** Sketch best / muddled / grim outcomes and the world-fallout each leaves.
+8. **Endings.** Sketch best / muddled / grim outcomes and the world-fallout each leaves. Tag
+   each ending with a **suggested SAN reward** per `reference/rules/sanity.md`'s scenario-end
+   table — a starting number for `core/12-canon-update.md` to propose, adjust, and confirm with
+   the Keeper after play. A muddled/grim ending gets no award.
 
 ## Generating one session against an existing campaign
 
@@ -45,6 +49,22 @@ now?"* In that case:
   A session can end on a partial revelation.
 - Save to `campaigns/<slug>/sessions/<n>-<slug>.md` using `templates/session-prep.md`.
 
+## Opening a new arc in an existing campaign
+
+A sequel or time-skip ("a year later, new threat") that stays in the same campaign folder —
+see `campaigns/README.md` → "Multi-arc & branching campaigns" for when this applies rather
+than forking to a new campaign.
+
+- Read `CLAUDE.md`, the **full** `canon-log.md` (all prior arcs and any Interlude entries),
+  and every archived clock in `world/archive/` — not just the live one, which now tracks the
+  *new* arc's threat.
+- Number the new arc's scenario files `<arc>-<scenario-slug>.md`; add the arc to `overview.md`'s
+  Arcs index.
+- **Don't rebuild the world.** `world/` is standing state that carries forward; extend it (new
+  locations, evolved factions) rather than re-generating what already exists.
+- Otherwise follow "Build in this order" above as normal — the new arc gets its own truth,
+  clock, hook, and clue map; it just inherits everything upstream instead of starting cold.
+
 ## Principles
 
 - **Investigation, not a corridor.** Give agency; let players skip, reorder, and surprise you.
@@ -52,6 +72,10 @@ now?"* In that case:
 - **At least one non-combat resolution** to the central threat.
 - **Sanity as pacing.** Space the big SAN hits; let dread build, then spike at the reveal.
 - **Content care.** Honour the campaign's declared lines/veils; flag heavy material.
+- **Scale to the table.** If the actual party size differs from the campaign's declared party
+  size (`CLAUDE.md`), add a **Scaling** sidebar: how opposition numbers, clue redundancy, and
+  total SAN pressure shift up or down. A 3-investigator table needs fewer simultaneous threats
+  and *more* clue redundancy (fewer skill points spread across more must-know facts), not less.
 
 ## Output
 
