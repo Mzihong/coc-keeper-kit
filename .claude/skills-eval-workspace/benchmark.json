@@ -1,0 +1,1093 @@
+{
+  "metadata": {
+    "skill_name": "coc-keeper-kit (12 skills)",
+    "skill_path": "personal/coc-keeper-kit/.claude/skills",
+    "executor_model": "claude-sonnet-5",
+    "analyzer_model": "claude-sonnet-5",
+    "timestamp": "2026-08-01T00:00:00Z",
+    "evals_run": [
+      "start-campaign",
+      "coc-rules-reference",
+      "build-world",
+      "design-scenario",
+      "build-event-clock",
+      "create-npc",
+      "create-monster",
+      "create-puzzle",
+      "scene-description",
+      "create-handout",
+      "review-material",
+      "update-canon"
+    ],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "eval_name": "start-campaign",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 345,
+        "tokens": 73191,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "A new campaign folder is created under campaigns/<slug>/ with the standard sub-structure (world/, npcs/, scenes/, handouts/, sessions/, canon-log.md, overview.md, CLAUDE.md)",
+          "passed": true,
+          "evidence": "campaigns/camas-dubh/ contains world/, npcs/, scenes/, puzzles/, handouts/, sessions/ (each with a README.md stub copied verbatim from campaigns/_template-campaign/), plus canon-log.md, overview.md, references.md, and CLAUDE.md at the top level. _changed_files.txt confirms all ten files as NEW. This matches core/01-intake.md's checklist exactly ('Create every one of these... subfolders: world/ npcs/ scenes/ puzzles/ handouts/ sessions/'), which only requires the subfolders to exist at intake, not be populated."
+        },
+        {
+          "text": "The campaign's CLAUDE.md declares era (1920s), a Scottish/Isle of Skye setting, tone (folk-horror/moody), and an output language",
+          "passed": true,
+          "evidence": "campaigns/camas-dubh/CLAUDE.md: 'Era: 1920s — autumn 1926'; 'Region / base of operations: Camas Dubh (\"Black Bay\"), a fictional hamlet on the Duirinish coast of the Isle of Skye, Inner Hebrides, Scotland'; 'Mood: folk horror [given by the Keeper]'; 'Output language: English [auto — overrides the kit's default of 繁體中文（香港）]'."
+        },
+        {
+          "text": "Every auto-filled choice (things the user didn't specify, e.g. lethality, length, content lines) is explicitly disclosed for approval, not silently assumed",
+          "passed": true,
+          "evidence": "CLAUDE.md ends with a full 'Auto-filled at intake' table listing 14 fields (year, hamlet/geography, output language, horror dial, lethality, combat frequency, boxed-text register, length, party size, investigator names, mythos angle roll, secondary location roll, inciting hook roll, touchstones) each tagged [auto] or [rolled] with a one-line reason. Content lines/veils are explicitly left '<not declared — confirm at session zero>' and the report.md poses the required open question back to the Keeper rather than guessing. The run also stopped after intake exactly as core/01-intake.md's step 5 requires ('Do not proceed to the world until they accept'), rather than building further on unapproved assumptions."
+        },
+        {
+          "text": "The premise reflects an isolated fishing village and folk-horror mood rather than a generic template",
+          "passed": true,
+          "evidence": "Premise centers on Camas Dubh, a storm-locked Skye fishing hamlet bound to a mistranslated century-old rite ('Tàmh na Mara') that unknowingly feeds a literal entity bound to a shipwreck's ballast-stone. Report.md shows this was built from live 1d20 rolls against reference/tables/mythos-angles.md (12), locations.md (12), and hooks.md (4) specifically to avoid 'the same campaign: Arkham, a cult, a Great Old One stirring' the intake spec warns against — the rolled results visibly shape the plot (mistranslation angle, records-store location, dead-man's-letter hook)."
+        },
+        {
+          "text": "No CoC 7e rules text is reproduced verbatim from copyrighted material",
+          "passed": true,
+          "evidence": "No file contains rulebook prose. references.md cites 'Call of Cthulhu 7th Edition Keeper Rulebook — standard rules only; no published scenario reused,' and CLAUDE.md's 'House rules' section says only 'run standard CoC 7e Sanity, Luck, and pushed-roll rules as written' without quoting them. Since this run only completed the intake stage, no stat blocks or mechanical text were generated at all."
+        }
+      ],
+      "notes": [
+        "This assertion passes for a folder tree containing nothing but six unmodified template README stubs plus four real files. That is actually correct behavior for this skill (intake is scoped to stop before world-building per core/01-intake.md), but the assertion wording alone can't distinguish 'correctly scoped to intake' from 'gave up early' — a rubric author should decide explicitly whether intake-only output is the intended contract for 'start a new campaign,' and if so, add an assertion that the run explicitly states this is intake-only and names the next steps (as this run did in overview.md and report.md, but the current assertions don't check for it).",
+        "No assertion checks the intake spec's approval gate ('Do not proceed to the world until they accept'). This run correctly stopped after intake and disclosed choices for approval; the baseline run (no skill) barrelled straight through to a fully populated world/NPCs/event-clock without ever pausing for approval. That process difference is arguably the single clearest demonstration of the skill's value in this eval, and no assertion captures it — recommend adding one like 'the run stops after presenting auto-filled choices rather than building out world/NPC content in the same turn, unless the user has already said to proceed.'",
+        "The assertion about verbatim CoC 7e rules text is easy to pass by accident here, since an intake-only run never touches mechanics or stat blocks at all. It would be more discriminating in an eval that specifically exercises a step likely to quote rules (e.g. create-npc or coc-rules-reference) rather than start-campaign."
+      ]
+    },
+    {
+      "eval_id": 1,
+      "eval_name": "start-campaign",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "total": 5,
+        "time_seconds": 613.3,
+        "tokens": 93869,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "A new campaign folder is created under campaigns/<slug>/ with the standard sub-structure (world/, npcs/, scenes/, handouts/, sessions/, canon-log.md, overview.md, CLAUDE.md)",
+          "passed": false,
+          "evidence": "campaigns/the-quiet-tide/ contains CLAUDE.md, canon-log.md, overview.md, references.md, world/ (kilfeather.md, event-clock.md), npcs/ (3 files), scenes/ (the-tide-stone.md), and sessions/ (session-01-prep.md) — but there is no handouts/ folder anywhere in the tree (confirmed via full directory listing and _changed_files.txt, which lists 11 NEW files, none under handouts/). puzzles/ is also absent. report.md itself acknowledges: 'puzzles/ and handouts/ folders intentionally not created yet.' The assertion explicitly requires handouts/ to exist, so this fails."
+        },
+        {
+          "text": "The campaign's CLAUDE.md declares era (1920s), a Scottish/Isle of Skye setting, tone (folk-horror/moody), and an output language",
+          "passed": true,
+          "evidence": "campaigns/the-quiet-tide/CLAUDE.md: 'Era: 1920s — Autumn 1923'; 'Region / base of operations: Kilfeather, a fishing village on the (invented) Loch Sgàthan, west coast of Skye, Inverness-shire'; 'Mood: folk horror — slow dread, communal complicity, cold coastal beauty'; 'Generated content: English [auto]'."
+        },
+        {
+          "text": "Every auto-filled choice (things the user didn't specify, e.g. lethality, length, content lines) is explicitly disclosed for approval, not silently assumed",
+          "passed": true,
+          "evidence": "CLAUDE.md's 'Auto-filled at intake' table discloses decade/year, village/loch name, Mythos angle, premise hook, timeframe, output language, mood/horror-dial/lethality/combat-frequency/register, length/party size, investigator shape, and lines & veils, each with a reason. Content lines/veils are marked '<not declared — confirm at session zero>' with a specific flagged concern about the premise's closeness to community-enabled suicide. Note, however, that this disclosure happened only in the final report/file rather than as an interactive check-in before building further — this run explicitly skipped reading the skill/spec and never paused for the Keeper to accept or reroll before generating the full world, NPCs, and event clock, unlike what core/01-intake.md's process requires. The assertion as worded (disclosure, not gating) is still satisfied."
+        },
+        {
+          "text": "The premise reflects an isolated fishing village and folk-horror mood rather than a generic template",
+          "passed": true,
+          "evidence": "Premise centers on Kilfeather, a forty-person Skye fishing village bound to a generational tithe bargain with 'the Grey Neighbour,' where the village quietly isolates and sacrifices whoever has drifted furthest from the community. This is specific and non-generic — built around complicity and silence rather than a monster to fight, with named local geography, an event clock, and three original NPCs, not a reskinned template."
+        },
+        {
+          "text": "No CoC 7e rules text is reproduced verbatim from copyrighted material",
+          "passed": true,
+          "evidence": "NPC files (e.g. npcs/cailean-mackinnon.md) use only standard attribute/skill notation (STR, CON, SIZ, HP, MP, SAN, skill percentages) which is generic game-mechanic shorthand, not copyrighted prose. CLAUDE.md's 'House rules' section paraphrases guidance ('Consider allowing Pushed rolls more freely... keep the Pushed-roll failure consequences genuinely worse, per the rulebook') without quoting rulebook text. No file contains extended verbatim passages from reference/rules/ or the bundled PDFs."
+        }
+      ],
+      "notes": [
+        "This assertion is a good discriminator here — it caught a real gap (missing handouts/) in the baseline that the with_skill run, by following core/01-intake.md's explicit checklist, did not have. Consider also asserting puzzles/ explicitly, since the spec requires it too and baseline skipped both.",
+        "No assertion checks whether the run paused for the Keeper's approval before building past intake. Baseline generated a fully realized world, three NPCs, and an event clock in one shot without ever reading the skill's explicit 'do not proceed to the world until they accept' instruction — arguably more content than the user asked for at this stage, and content the Keeper never got a chance to redirect (e.g. the sensitive suicide-adjacent premise) before it was already written into three interlocking files. This is a meaningful process risk that no current assertion surfaces, since baseline still 'discloses' its choices after the fact."
+      ]
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "coc-rules-reference",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 24.4,
+        "tokens": 37736,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Sanity loss is expressed in the X/Y format (e.g. 1/1D6) matching 7e convention",
+          "passed": true,
+          "evidence": "Answer states: 'Sanity loss is always written as X/Y — lose X SAN on a successful SAN roll, Y SAN on a failure.' Uses the format consistently in examples: '0/1D4 - 1/1D6', '0/1D6-1/1D8', '1D10/1D100', '1/1D10-1D6/2D10'. X (success) / Y (failure) ordering matches actual 7e convention."
+        },
+        {
+          "text": "Damage Bonus and Build are correctly derived from STR+SIZ=135 per the 7e table (Damage Bonus none/+0, Build 0)",
+          "passed": true,
+          "evidence": "Answer computes STR 70 + SIZ 65 = 135 and reports Damage Bonus +1D4, Build +1, citing the 125-164 band from reference/rules/combat.md. NOTE: this is the objectively correct 7e table result for STR+SIZ=135 (the real table is 85-124 -> DB 0/Build 0; 125-164 -> DB +1D4/Build +1). The assertion's own parenthetical ('Damage Bonus none/+0, Build 0') appears to be a factual error in the eval itself — it describes the band one tier below 135, not the band 135 actually falls in. Grading against real-world CoC 7e correctness (per grader instructions) rather than the eval's incorrect parenthetical: the answer's math and table lookup are correct. See eval_feedback for this discrepancy."
+        },
+        {
+          "text": "The answer distinguishes Regular/Hard/Extreme-style severity for the Sanity comparison rather than giving one flat number",
+          "passed": true,
+          "evidence": "Answer gives a graduated scale rather than one number: 'a milder surprised-by-a-corpse sight is 0/1D2-0/1D4', moderately disturbing '0/1D4 - 1/1D6', 'a minor Mythos entity/undead sits a step up at 0/1D6-1/1D8', mind-shattering '1D10/1D100', with 'a major/unnatural entity one tier below' at '1/1D10-1D6/2D10'. At least four distinct severity tiers are given, directly answering the moderate-vs-mind-shattering comparison with surrounding context."
+        },
+        {
+          "text": "No large verbatim block of copyrighted rulebook text is reproduced",
+          "passed": true,
+          "evidence": "The entire answer is paraphrased summary/table lookups in the assistant's own words (short dice-notation fragments and derived numbers only), with citations to internal cheat-sheet files (reference/rules/sanity.md, reference/rules/combat.md) rather than any quoted rulebook prose."
+        }
+      ],
+      "notes": [
+        "This assertion's parenthetical appears to state the wrong expected value. The real CoC 7e STR+SIZ table gives 'none/+0, Build 0' for the 85-124 band, not for 135 (which falls in 125-164, yielding +1D4/+1). Both the with-skill and baseline runs independently computed +1D4/+1, which is the objectively correct answer -- so a literal string-match against the assertion's stated expectation would incorrectly fail two correct answers. Recommend fixing the assertion to read 'Damage Bonus +1D4, Build +1' so future grading doesn't penalize correct answers or (worse) reward an answer that wrongly claims none/+0."
+      ]
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "coc-rules-reference",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 44.2,
+        "tokens": 28307,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Sanity loss is expressed in the X/Y format (e.g. 1/1D6) matching 7e convention",
+          "passed": true,
+          "evidence": "Answer states: 'CoC 7e writes SAN loss as X/Y (e.g. 1/1D6, 1D6/1D10, 1D10/1D100). Success on the SAN roll -> lose X (left of slash); failure -> lose Y (right of slash).' Correct format and correct success/failure ordering."
+        },
+        {
+          "text": "Damage Bonus and Build are correctly derived from STR+SIZ=135 per the 7e table (Damage Bonus none/+0, Build 0)",
+          "passed": true,
+          "evidence": "Answer computes STR 70 + SIZ 65 = 135 and reports 'Standard 7e table: 125-164 -> Damage Bonus +1D4, Build +1.' This is the objectively correct 7e table result for 135 (the real table gives DB 0/Build 0 only for 85-124, one band lower). The assertion's parenthetical appears to contain a factual error — grading against actual CoC 7e rules (as instructed) rather than the eval's incorrect parenthetical, the answer's derivation and table lookup are correct. See eval_feedback."
+        },
+        {
+          "text": "The answer distinguishes Regular/Hard/Extreme-style severity for the Sanity comparison rather than giving one flat number",
+          "passed": true,
+          "evidence": "Answer gives four graduated tiers: 'Mundane/unpleasant... 0/1D2, 0/1D3, 1/1D4', 'Moderately disturbing... roughly 1/1D6 up to 1D3/1D6 or 1D6/1D8', 'Severely disturbing... 1D6/1D10 to 1D8/1D20', 'Mind-shattering... 1D10/1D100, sometimes a flat huge loss'. Directly answers the moderate-vs-mind-shattering comparison with intermediate context, not a single number."
+        },
+        {
+          "text": "No large verbatim block of copyrighted rulebook text is reproduced",
+          "passed": true,
+          "evidence": "Entire answer is the assistant's own paraphrased summary and dice-notation shorthand; no quoted rulebook prose of any length appears."
+        }
+      ],
+      "notes": [
+        "Same issue as flagged in the with_skill grading: the assertion's parenthetical expected value (none/+0, Build 0) does not match the real CoC 7e table for STR+SIZ=135 (that value belongs to the 85-124 band). Both runs answered +1D4/+1, the objectively correct value, so this assertion should be corrected to avoid penalizing correct answers in future eval runs.",
+        "No assertion distinguishes 'answer backed by a fixed, cited source' from 'answer self-described as an approximate/typical range.' The baseline explicitly hedges its SAN dice ranges as 'not fixed universal constants' and 'typical, not exact,' while the with-skill run cites specific cheat-sheet files and states no uncertainty. Both pass the current severity-tiering assertion, but the eval as written can't distinguish a precision-committed answer from a hedged approximation -- which is arguably the main value proposition of the skill (giving Keepers a fast, confident, table-backed answer instead of a caveated guess). Consider adding an assertion checking whether the answer cites a specific source/table for its SAN figures versus presenting them as approximate."
+      ]
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "build-world",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 541.2,
+        "tokens": 102768,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Output is written into campaigns/beidaihe-winter/world/ (not a new campaign, not reference/)",
+          "passed": true,
+          "evidence": "New file created at campaigns/beidaihe-winter/world/ludang-hui.md; the only modified file is campaigns/beidaihe-winter/world/beidaihe-seaside.md (per _changed_files.txt). No new campaign directory, no writes into reference/. This run is stricter than the baseline in that it touched nothing outside world/ (baseline also modified overview.md at the campaign root)."
+        },
+        {
+          "text": "The new faction is explicitly placed in tension with the harbourmaster or other existing canon from beidaihe-winter's world/ or canon-log.md",
+          "passed": true,
+          "evidence": "ludang-hui.md section '跟港務局／海關緝私隊的過節' builds a multi-decade rivalry with '秦皇島港務局' (port authority) and names its chief 何文濤 plus the previously-anonymous 'a customs inspector who lives in Shanhaiguan, visits monthly' from beidaihe-seaside.md (now named 麻季驊, tied to event-clock.md T5 and session 1's complication 2). The report explicitly flags that no 'harbourmaster' faction previously existed in canon and that this was built from the one hard fact already there (the monthly inspector)."
+        },
+        {
+          "text": "Existing established facts (e.g. names/places already in beidaihe-seaside.md or canon-log.md) are not contradicted",
+          "passed": true,
+          "evidence": "The edit to beidaihe-seaside.md is purely additive (new gazetteer row, one new person, one new rumour row, kerosene detail explained) with no changed wording of prior established facts -- confirmed by diff against the master copy. The KEEPER ONLY section in ludang-hui.md is careful to respect the entity's established rule ('long-term solitude only') by writing the missing subordinate's death as a one-night, non-resident death that explicitly does NOT become a 10th duplicate, preserving the fixed roster of 9 established in beidaihe-seaside.md and event-clock.md."
+        },
+        {
+          "text": "Includes a hidden wrongness / Mythos-adjacent hook, not just mundane faction politics",
+          "passed": true,
+          "evidence": "KEEPER ONLY section: the gang's taboo about the water near Lotus Rock is real fear with an invented reason, but the true cause is that a member went missing there and encountered the entity (without becoming a duplicate, per the 'long-term solitude' rule). This deliberately manufactures a red herring adjacent to the true Mythos threat, exactly matching the campaign's declared style (no cultists, no summonable villain) from references.md."
+        }
+      ],
+      "notes": [
+        "This assertion would also pass for a much weaker hook (e.g. merely restating the existing Lotus Rock rumour). Consider requiring the hook to be *new* -- i.e. tie a *new* named element of the faction (not just the pre-existing rumour) to the Mythos undercurrent, which is what distinguishes a genuinely good answer from a superficial one.",
+        "No assertion checks whether the new file matches core/03-build-world.md's own stated quality bar: 'at least one honest red herring AND one true lead among the rumours', and 'hand full NPC stats to create-npc, not build-world'. Both are meaningful, discriminating checks that this run satisfies but that a weaker run (see baseline, which omits any explicit false/red-herring rumour and instead adds full 7e stat blocks out of build-world's stated scope) would fail. Since both runs are being compared, this gap let a real quality difference go unmeasured by the assertions.",
+        "No assertion checks integration back into overview.md's recurring-cast list. This run left the overview.md placeholder for 趙德海 ('‹未寫›') untouched even though a directly relevant file now exists, a minor missed cross-link that a stricter eval could catch."
+      ]
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "build-world",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 289.2,
+        "tokens": 66732,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Output is written into campaigns/beidaihe-winter/world/ (not a new campaign, not reference/)",
+          "passed": true,
+          "evidence": "New file created at campaigns/beidaihe-winter/world/qinhuangdao-salt-gang.md (per _changed_files.txt). No new campaign directory, nothing written into reference/. Note: this run also modified campaigns/beidaihe-winter/overview.md (outside world/), a reasonable cross-link update (replacing a '<未寫>' placeholder and adding a recurring-threats bullet) rather than a violation of the assertion's intent, but strictly it is a file outside world/."
+        },
+        {
+          "text": "The new faction is explicitly placed in tension with the harbourmaster or other existing canon from beidaihe-winter's world/ or canon-log.md",
+          "passed": true,
+          "evidence": "The file opens with an explicit Keeper-judgment header: no 'harbourmaster' is named in canon, so 趙德海 and Jinshanzui fishing village (the closest existing analog -- the person who decides where boats do/don't go) is read as 'the harbourmaster's people.' The gang (秦皇島鹽幫) is built in direct territorial tension with him over Bailongkou cove, with a documented friction log (cut fishing net, a beaten villager, footprints at the salt shed) escalating toward violence."
+        },
+        {
+          "text": "Existing established facts (e.g. names/places already in beidaihe-seaside.md or canon-log.md) are not contradicted",
+          "passed": true,
+          "evidence": "The edit to beidaihe-seaside.md only adds detail (a reason behind 趙德海's ban, names the previously-anonymous Shanhaiguan inspector as 官守誠 and flags him as bribed, adds two rumour rows) without altering any existing line. overview.md's edit keeps the pre-existing text 'his ban is right, the reason is wrong' verbatim and only swaps the '<未寫>' placeholder for a real file pointer. The alternate reading offered for the nephew's disappearance (Stage 3 of event-clock.md, previously unexplained) is explicitly presented as an optional, table-time choice ('both can be true'), not a rewrite of the established (and already ambiguous) trigger."
+        },
+        {
+          "text": "Includes a hidden wrongness / Mythos-adjacent hook, not just mundane faction politics",
+          "passed": true,
+          "evidence": "KEEPER ONLY section explicitly offers a second, optional reading of the nephew's disappearance that ties the gang's territorial push directly to the entity ('he may have been beaten and fallen into the sea, then repaired by that thing'), plus an unresolved detail of the gang's own scouts seeing 'a light near Lotus Rock that wasn't a fishing light' that they are too afraid to investigate further -- a genuine Mythos-adjacent hook layered under otherwise mundane gang politics."
+        }
+      ],
+      "notes": [
+        "This run's rumour table (in qinhuangdao-salt-gang.md and its addition to beidaihe-seaside.md) contains no rumour explicitly marked false/red-herring -- every row is 'true' or 'half-true, Keeper's choice.' core/03-build-world.md's own quality bar requires 'at least one honest red herring and one true lead among the rumours.' No given assertion catches this, and it's a real, if minor, spec gap that the with_skill run does not have (it includes two explicitly false rumours).",
+        "This run produced full 7e mechanical stat blocks (STR/CON/DEX/etc., weapon %, HP, Build, Dodge) for the new faction's leader and mooks. core/03-build-world.md explicitly scopes that out of build-world ('hand to core/06-create-npc.md for full stats'). No assertion checks scope adherence, so a run that quietly does another skill's job unprompted is graded identically to one that stays in scope."
+      ]
+    },
+    {
+      "eval_id": 4,
+      "eval_name": "design-scenario",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 645.8,
+        "tokens": 111148,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "The scenario explicitly builds on canon-log.md / session 1 events (diary found, suspicion of Li Shuchun) rather than ignoring prior play",
+          "passed": true,
+          "evidence": "canon-log.md (previously an unfilled template) was appended with a real 'Session 1' entry: 'Where they ended: ...取得費太太的 1919 年日記後，調查員把懷疑焦點轉向李樹春，但尚未正面對質他，也尚未進過蓮花石石縫' plus Standing Canon entries for the diary and Li Shuchun's suspected status. sessions/02-old-zhao-does-not-sweat.md opens with an explicit 'Keeper — align with actual table state' box restating exactly this premise (diary in hand, doorplates + Li Shuchun's inconsistent story pointing suspicion at him) and explicitly says if the real table state differs, reorder the scenes — it does not ignore or overwrite prior play, it flags the ambiguity in canon-log.md's 'Unclear — confirm' section instead of inventing facts."
+        },
+        {
+          "text": "Includes a clue map obeying the three-clue rule (at least 3 independent paths/clues to the key discovery)",
+          "passed": true,
+          "evidence": "sessions/02-old-zhao-does-not-sweat.md 'Fact C' table gives three independent, differently-sourced clues (C1: confronting/breaking down Li Shuchun via Persuade/Psychology; C2: cross-referencing the postal registry via Persuade or Accounting/Library Use; C3: casual conversation with Mrs Fee, no roll needed) to the key discovery that 'Li Shuchun's secret is negligence, not being the antagonist.' This directly operationalizes a hint already planted in the pre-existing npcs/li-shuchun.md KEEPER ONLY note ('他不是唯一的來源：門牌的事在郵政掛號簿也查得到；老趙的異常費太太也看得出來'), i.e. genuine continuity-aware design, not an invented pattern. The session also reuses Session 1's three-clue B1-B3 table for the Lotus Rock fact rather than duplicating it."
+        },
+        {
+          "text": "No single die roll can hard-stop the mystery's forward progress",
+          "passed": true,
+          "evidence": "scenes/the-stone-room.md's check table ends with the explicit line: '沒有任何一條路被單一擲骰擋住。這一場的存在本身就是三線索（事實 B，Session 1 的 B1–B3）匯聚後的必然結果，不是另一個需要檢定才能觸發的秘密' (no path is blocked by a single roll; the scene's existence is the necessary result of the 3-clue convergence, not another gate needing a check). Concretely: entering the crevice requires no skill check at all; the only failure state (misjudging the tide and getting trapped for 6 hours) costs extra SAN and time but does not block the discovery, which has already happened by the time that check matters. Fact C's three clues (C1-C3) each use alternate skills (Persuade OR carousing OR Psychology for C1; Persuade OR Accounting/Library Use for C2; no roll at all for C3), so no single failed roll can block Fact C either."
+        },
+        {
+          "text": "Output is written into the beidaihe-winter campaign folder and links to existing npcs/world files rather than duplicating them",
+          "passed": true,
+          "evidence": "All new/modified files live under campaigns/beidaihe-winter/ (sessions/02-old-zhao-does-not-sweat.md, npcs/old-zhao.md, scenes/the-stone-room.md; canon-log.md and overview.md modified in place). Files use relative markdown links to existing npcs/li-shuchun.md, npcs/mrs-fee.md, world/event-clock.md, handouts/fee-diary-1919.md, world/beidaihe-seaside.md rather than re-stating their content. overview.md's 'Recurring cast' line for old-zhao.md was added as one bullet with a link, not a duplicate write-up."
+        }
+      ],
+      "notes": [
+        "This assertion is easy to satisfy on paper (a report can simply assert it) but hard to verify without reading the actual scene file's check table line by line, which is what the parent task asked for. Consider having the eval explicitly require quoting the specific failure-branch language for the climax scene's entry point, since that's the single spot most likely to silently reintroduce a hard gate (as happened in the baseline run's equivalent scene)."
+      ]
+    },
+    {
+      "eval_id": 4,
+      "eval_name": "design-scenario",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 540.5,
+        "tokens": 85744,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "The scenario explicitly builds on canon-log.md / session 1 events (diary found, suspicion of Li Shuchun) rather than ignoring prior play",
+          "passed": true,
+          "evidence": "canon-log.md (previously an unfilled template) was appended with a 'Session 1' entry explicitly marked as a retroactive backfill ('本欄位於原場次記錄留白，現依守密人回顧口述回填'), recording the diary and the doorplate/postal-registry inconsistency that points suspicion at Li Shuchun. sessions/02-the-chamber.md's opening explicitly recaps: '費太太交出了日記...門牌被重寫、老趙變得客氣，兩件事都繞著同一個人轉...李樹春。' The run additionally (and beyond what was strictly asked) filled in session 1's own blank 'After the session' section, again flagged as retroactive."
+        },
+        {
+          "text": "Includes a clue map obeying the three-clue rule (at least 3 independent paths/clues to the key discovery)",
+          "passed": true,
+          "evidence": "sessions/02-the-chamber.md provides two three-clue tables: Fact C (C1: postal registry contradicts Li Shuchun's own account, via Library Use/Persuade; C2: contradictions under questioning, via Psychology; C3: Mrs Fee's independent testimony, no roll needed) and Fact D (D1: detail in Li Shuchun's confession, no roll — 'only needs the players to hear it'; D2: re-reading the already-held diary; D3: Zhao Dehai's testimony, via Persuade). It also includes an explicit branch swapping D1 for an alternate clue (a ghost-written letter) if the party doesn't push Li Shuchun to confession, preserving 3 routes under either play style."
+        },
+        {
+          "text": "No single die roll can hard-stop the mystery's forward progress",
+          "passed": true,
+          "evidence": "Fact C and Fact D's clues each have alternate skills/sources (no single failed roll blocks either fact, as above). However, the grader flags a real weakness: scenes/lotus-rock-chamber.md's 'Getting in' section gates physical entry to the climax behind a Climb (Hard) check ('攀爬（困難）'), plus an additional DEX roll for larger/encumbered characters, with no stated fail-forward branch for a failed climb (the file's only documented failure branch, '如果算錯', covers staying too long once inside, not failing to get in at all). This is a genuine, if narrow, single-roll gate on the session's climax that the report does not mention and that core/04-design-scenario.md's own quality bar ('no roll or missed scene can hard-stop the game') would flag. It does not fail the assertion outright because (a) the three clue-facts that constitute 'the mystery' are never gated by a single roll, and (b) a failed Hard climb in actual play would very likely just mean 'try again' within the 6-hour tide window rather than a permanent block — but it is weaker than it could be, and weaker than the with_skill run's equivalent scene, which explicitly designs the entry with zero required check and states the no-hard-stop principle outright."
+        },
+        {
+          "text": "Output is written into the beidaihe-winter campaign folder and links to existing npcs/world files rather than duplicating them",
+          "passed": true,
+          "evidence": "All new/modified files live under campaigns/beidaihe-winter/ (sessions/02-the-chamber.md, npcs/zhao-dehai.md, npcs/copies-generic.md, scenes/lotus-rock-chamber.md; canon-log.md, overview.md, and sessions/01-the-guest-who-came-back.md modified in place). npcs/zhao-dehai.md and npcs/copies-generic.md fill stubs overview.md had explicitly marked as missing ('趙德海 ... `<未寫ゝ`' and '複製品 ... `<未寫 — 需要 core/07 出一份數值>`') rather than duplicating anything; all cross-references use relative links."
+        }
+      ],
+      "notes": [
+        "Good catch surfaced by reading the actual scene file rather than trusting the report: scenes/lotus-rock-chamber.md requires a Climb (Hard) check to enter the climax location with no stated fail-forward branch (unlike the equivalent with_skill scene, which explicitly has zero entry check and states 'no path is blocked by a single roll'). The report never mentions this, and a grader relying only on report.md would have missed it entirely. Recommend the eval instructions permanently require reading the actual climax scene's check table, not just the session file's clue tables, since that's where single-roll gates most often hide.",
+        "No assertion checks output-language consistency. The campaign's CLAUDE.md strictly mandates Traditional Chinese (Hong Kong) and forbids mixing in Simplified characters ('不得混用简体'). The grader spot-checked this run's changed files for simplified-only characters and found none, so this run is not at fault — but the with_skill run's report explicitly called out having caught and fixed one such contamination, while this baseline run's report makes no mention of checking for it at all. That difference (self-auditing for a stated campaign constraint vs. not mentioning it) is invisible to the current assertions and might be worth adding as a discriminating check in a future iteration."
+      ]
+    },
+    {
+      "eval_id": 5,
+      "eval_name": "build-event-clock",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 3,
+        "failed": 0,
+        "total": 3,
+        "time_seconds": 153.5,
+        "tokens": 58097,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Reads and preserves the existing event-clock.md content (existing stages/triggers not deleted or overwritten wholesale)",
+          "passed": true,
+          "evidence": "Line-level diff of the original vs. with_skill output (`diff -u`) shows only two added lines (+), zero removed or changed lines. The header, goal section, full doom-track table (stages 1-5), hidden-progress KEEPER-ONLY block, T1-T8 in both the Triggers table and Fail/half-success table, 'Pushing back', and 'Notes' are byte-identical to the original (81 lines preserved verbatim, file grew to 83 lines by pure appends)."
+        },
+        {
+          "text": "A new trigger entry specifically for 'investigators let Li Shuchun go' is added with a concrete world-state consequence",
+          "passed": true,
+          "evidence": "New row T9 added to the Triggers table: condition '調查員在金山嘴碼頭當面拆穿李樹春的謊言...並選擇放他走——不通報稽查員、不脅迫、不利用他'. Concrete consequence: he breaks down and confesses fully, then becomes an active informant, but keeps sleeping alone (explicitly tied back to T1's solitary-sleeping condition) -- a matching fail/half-success row (T9) was also added covering the case where he's let go without reassurance."
+        },
+        {
+          "text": "The doom track / threat progression stays consistent with the campaign's established threat rather than introducing an unrelated one",
+          "passed": true,
+          "evidence": "The doom-track table (stages 1-5) and hidden-progress block are completely untouched by the diff. The new T9 trigger is framed as a human-trust consequence for Li Shuchun personally, and its 'Reversible?' column explicitly loops back into the existing T1 mechanic (his solitary-sleeping status), rather than inventing a new threat or altering the entity's stage progression."
+        }
+      ],
+      "notes": [
+        "Assertion 2 checks for a 'concrete world-state consequence' but not whether that consequence is psychologically consistent with the target NPC. A run that invented an out-of-character reaction for Li Shuchun (e.g. him turning hostile, or instantly revealing unrelated secrets) would still satisfy the current wording. Consider adding an assertion that the new trigger's outcome must be consistent with npcs/li-shuchun.md's established fears/behavior under pressure.",
+        "No assertion checks that the run refrained from touching canon-log.md or the header's 'Current stage' line when no session has actually resolved this confrontation yet. Both runs got this right, but it's an easy mistake (prematurely advancing state) that the eval doesn't currently guard against."
+      ]
+    },
+    {
+      "eval_id": 5,
+      "eval_name": "build-event-clock",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 3,
+        "failed": 0,
+        "total": 3,
+        "time_seconds": 148.2,
+        "tokens": 57584,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Reads and preserves the existing event-clock.md content (existing stages/triggers not deleted or overwritten wholesale)",
+          "passed": true,
+          "evidence": "Line-level diff of the original vs. baseline output shows only added lines (+), zero removed or changed lines. Header, goal section, full doom-track table, hidden-progress block, T1-T8 in both tables, 'Pushing back', and the original three Notes bullets are byte-identical to the original (81 lines preserved verbatim; file grew to 86 lines via three additive hunks: T9 row, T9 fail row, and one new Notes bullet)."
+        },
+        {
+          "text": "A new trigger entry specifically for 'investigators let Li Shuchun go' is added with a concrete world-state consequence",
+          "passed": true,
+          "evidence": "New row T9 added: condition '調查員在碼頭當面對質李樹春...卻放他走——不告發、不逼問到底、不拿這件事要脅他'. Concrete consequence: he treats being spared as unprecedented mercy and starts proactively approaching/informing the investigators, but explicitly still withholds the full truth about the three days he left old Zhao alone (flagged as his 'last line of defense', with a cross-reference to npcs/li-shuchun.md). A matching fail/half-success row (T9) and a new Notes bullet clarifying the trigger's scope were also added."
+        },
+        {
+          "text": "The doom track / threat progression stays consistent with the campaign's established threat rather than introducing an unrelated one",
+          "passed": true,
+          "evidence": "The doom-track table (stages 1-5) is completely untouched. The run went further than the with_skill run by adding an explicit Notes bullet stating: 'T9 是人情，不是怪物的規則。碼頭那場對質不會讓時鐘跳動或減速' (T9 is a human matter, not the monster's rule; it does not advance or slow the clock), directly confirming the new trigger is deliberately kept out of the entity's doom-track mechanics."
+        }
+      ],
+      "notes": [
+        "Same gap as the with_skill run: assertion 2 doesn't verify the new trigger's outcome is psychologically consistent with the target NPC's established fears/behavior -- it happens to hold here, but the assertion wouldn't catch a run that got this wrong.",
+        "The report claims a specific location assumption ('Jinshanzui dock') that isn't actually written into the file's T9 row (which just says '碼頭' with no place name) -- a small report/output mismatch that no assertion currently catches. Not a failure of the core task, but worth flagging since report claims should match the artifact."
+      ]
+    },
+    {
+      "eval_id": 6,
+      "eval_name": "create-npc",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 357.4,
+        "tokens": 86993,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Full 7e stat block present: characteristics, HP, Build, Damage Bonus, at least a few skill values, all internally consistent (e.g. HP = (CON+SIZ)/10 rounded down)",
+          "passed": true,
+          "evidence": "xu-wenbin.md gives all 8 characteristics (STR 45, CON 55, SIZ 55, DEX 60, APP 55, INT 70, POW 50, EDU 80) plus HP 11, MP 10, SAN 50, Build 0, Damage Bonus none, Move 8, Dodge 30%, and 12 skill values. Recomputed independently: HP = floor((55+55)/10) = 11 (matches). STR+SIZ = 45+55 = 100, which falls in the 85-124 band -> Build 0 / DB none (matches). Dodge = DEX/2 = 60/2 = 30 (matches). MP = POW/5 = 50/5 = 10 (matches). SAN = POW (no Cthulhu Mythos) = 50 (matches). Move: STR(45) < SIZ(55) but DEX(60) >= SIZ(55), i.e. one below/one at-or-above SIZ -> MOV 8 by the standard rule (matches, and stated age ~38 is under the aging-penalty threshold so no adjustment is owed). Every derived value checks out against the raw characteristics."
+        },
+        {
+          "text": "Has a stated secret and a lie distinct from each other, plus at least one clue the investigators can get from them",
+          "passed": true,
+          "evidence": "KEEPER ONLY block gives a secret ('他藏著的': he's been paid off by a smuggling ring led by '馬老大' and sloppily copy-pasted last month's patrol log over the exact week the duplication spike occurred) that is clearly distinct from the stated lie ('他說的謊': his rehearsed line 'the coastline has been calm the whole closed season,' which unravels under detail questioning). A 4-row clue table ('他能給的線索') gives investigators concrete, independently obtainable clues, e.g. odd boats moving at night, the duplicated log week, a lantern signal method, and word that Qinhuangdao HQ is already auditing coastal stations."
+        },
+        {
+          "text": "Written into campaigns/beidaihe-winter/npcs/ as its own file",
+          "passed": true,
+          "evidence": "_changed_files.txt shows 'NEW: campaigns/beidaihe-winter/npcs/xu-wenbin.md' as the only change; the file exists at that path with full NPC content and nothing else was touched."
+        },
+        {
+          "text": "Does not contradict existing beidaihe-winter NPCs or canon (e.g. Li Shuchun, Mrs Fee, harbourmaster)",
+          "passed": true,
+          "evidence": "world/beidaihe-seaside.md already references an unnamed 'Shanhaiguan customs inspector who visits once a month' in its 小圈子 list, and event-clock.md's T5 trigger says a 'Shanhaiguan inspector' gets involved if investigators harm a duplicate. xu-wenbin.md explicitly identifies Xu as that same previously-unnamed figure and cross-references both documents by name, rather than inventing a conflicting second official. His smuggling secret is explicitly declared unconnected to the Lotus Rock entity ('他跟蓮花石底下的那件事完全無關'), consistent with event-clock.md's design note that 'all concealment is human, not the creature's doing.' His clue about the duplicated log week is cross-corroborated by the post-office ledger and Li Shuchun's rewritten door-plates, matching the campaign's stated fair-play rule (no single-source clues) rather than overwriting or conflicting with either existing NPC file."
+        }
+      ],
+      "notes": [
+        "The prompt's 'harbour customs officer' premise doesn't literally fit this campaign (Beidaihe in winter has no active harbor, just a fishing village and a monthly-visiting inspector from Shanhaiguan). Both runs handled this gracefully by reusing the existing unnamed inspector hook, but the eval doesn't explicitly reward or test for this canon-research step — an assertion like 'the new NPC is grounded in or reconciled with the campaign's existing mention of a customs role, rather than inventing a redundant duplicate official' would make this a more discriminating, harder-to-fake test.",
+        "Assertion 4 checks for absence of contradiction but not for positive integration (e.g., whether the world file or other canon docs get updated to link back to the new NPC). This run left world/beidaihe-seaside.md's inspector reference unnamed and unlinked, while the baseline run in the same eval updated that file to name and link the character. Both pass the current non-contradiction bar, but only one actually closes the loop — worth a separate assertion if back-linking/integration quality matters to the eval author."
+      ]
+    },
+    {
+      "eval_id": 6,
+      "eval_name": "create-npc",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 214.8,
+        "tokens": 56252,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Full 7e stat block present: characteristics, HP, Build, Damage Bonus, at least a few skill values, all internally consistent (e.g. HP = (CON+SIZ)/10 rounded down)",
+          "passed": true,
+          "evidence": "zhen-haisheng.md gives all 8 characteristics (STR 50, CON 55, SIZ 55, DEX 50, APP 60, INT 70, POW 55, EDU 65) plus HP 11, MP 11, SAN 55, Build 0, Damage Bonus none, Move 7, Dodge 25%, and 14 skill values. Recomputed independently: HP = floor((55+55)/10) = 11 (matches). STR+SIZ = 50+55 = 105, in the 85-124 band -> Build 0 / DB none (matches). Dodge = DEX/2 = 50/2 = 25 (matches). MP = POW/5 = 55/5 = 11 (matches). SAN = POW (no Cthulhu Mythos) = 55 (matches). Move: STR(50) < SIZ(55) and DEX(50) < SIZ(55), both below SIZ -> MOV 7 by the standard rule (matches). Every derived value checks out against the raw characteristics."
+        },
+        {
+          "text": "Has a stated secret and a lie distinct from each other, plus at least one clue the investigators can get from them",
+          "passed": true,
+          "evidence": "KEEPER ONLY block states a secret ('他藏著的': he takes bribes from some Jinshanzui fishermen, not Zhao Dehai, to let smuggled goods transit via the empty beach/tramcar shed) that is distinct from the stated lie ('他說的謊': his rehearsed line 'this is the quietest winter I've had in this job,' delivered too smoothly/quickly under questioning). A 5-row clue table ('他能給的線索') gives concrete obtainable clues: this month's report being near-verbatim identical to last month's, his patrol route avoiding Lotus Rock, his boots/watch/tips being inconsistent with his official salary, fishermen's asides, and his 'no anomaly' claim about the tram shed's dwindling kerosene."
+        },
+        {
+          "text": "Written into campaigns/beidaihe-winter/npcs/ as its own file",
+          "passed": true,
+          "evidence": "_changed_files.txt shows 'NEW: campaigns/beidaihe-winter/npcs/zhen-haisheng.md'; the file exists at that path with full NPC content as its own standalone file."
+        },
+        {
+          "text": "Does not contradict existing beidaihe-winter NPCs or canon (e.g. Li Shuchun, Mrs Fee, harbourmaster)",
+          "passed": true,
+          "evidence": "world/beidaihe-seaside.md originally listed an unnamed 'Shanhaiguan customs inspector who visits once a month' in its 小圈子 list; this run modified that single line to name him Zhen Haisheng and link to his new file, rather than inventing a conflicting second official. His KEEPER ONLY section explicitly reuses the canon phrase '理由錯但決定對' (wrong reason, right decision) to explain why Zhao Dehai's fishing ban still holds for an unrelated second reason, and states he is 'completely unaware' of the Lotus Rock entity — consistent with event-clock.md's design note that all concealment in this campaign is human in origin, not the creature's doing. No detail conflicts with li-shuchun.md or mrs-fee.md."
+        }
+      ],
+      "notes": [
+        "Same as noted for the with_skill run: the eval doesn't have an explicit assertion rewarding reuse of the already-implied Shanhaiguan inspector role over inventing a redundant new official, even though this is arguably the highest-value discriminator in this eval — both runs happened to find it, so the eval isn't yet distinguishing models that would invent a duplicate.",
+        "This baseline run (with no skill) produced output that is very close in depth and canon-fidelity to the with_skill run — including citing the campaign's own 'concealment is human, not the creature's' design principle from event-clock.md, which is not a trivial thing to notice. This eval item does not appear to strongly discriminate between with-skill and baseline performance; the report-writing task itself may be simple enough, or the underlying model capable enough, that the skill's added structure (spec-following, quirks tables, locked skill-name glossary) isn't producing a visible quality gap here. Worth checking other create-npc eval scenarios for a case where the skill's guardrails (e.g. the locked glossary-zh.md skill names, fair-play clue redundancy) actually catch a baseline failure."
+      ]
+    },
+    {
+      "eval_id": 7,
+      "eval_name": "create-monster",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 235.9,
+        "tokens": 67016,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Stat block includes average characteristics, attack(s), armour (or explicit none), and Sanity loss to witness in X/Y format",
+          "passed": true,
+          "evidence": "reference/bestiary/drowned-revenant.md has a full STR/CON/SIZ/DEX/INT/POW table plus HP 14, Build +1, DB +1D4, Move 6/10; two attacks (Drowning grip, Claw) with skill% and damage; Armour '2 points ... against impaling weapons and firearms', with explicit exceptions (chopping/blunt ignore it, fire ignores it entirely); Sanity to see listed as '1/1D8' at the top of the file. All four required elements present and internally consistent (STR+SIZ=135 correctly yields Build +1/DB +1D4 per the 7e table)."
+        },
+        {
+          "text": "A concrete, discoverable weakness or way to survive/avoid it is stated (not just 'run away')",
+          "passed": true,
+          "evidence": "'Behaviour & weakness' section gives four distinct, non-'just flee' outs: stay paired (it won't approach 2+ people), a raised lit flame forces it back without a roll, it must submerge before dawn, and a named permanent-removal method ('speaking its true name aloud at the waterline and returning what was taken ... lays it to rest permanently') that the report says is meant to be 'discoverable through a fisherman's account, a harbour-master's log, or a grieving relative' -- i.e. clued, not stumbled into."
+        },
+        {
+          "text": "Fits the beidaihe-winter setting (harbour/winter/1919 era) rather than being generic",
+          "passed": true,
+          "evidence": "File is explicitly cross-linked into the campaign: 'Using this in campaigns/beidaihe-winter/' lore block, a 'Links' section pointing to overview.md and world/beidaihe-seaside.md, and a specific note distinguishing it from Jinshanzui village's existing 'hidden current' taboo so the two aren't conflated. It uses the campaign's harbour/tideline geography. It was deliberately kept origin-agnostic (not tied to the Lotus Rock entity) as a reasoned, disclosed design choice rather than genericness by omission -- see assertion below and eval_feedback."
+        },
+        {
+          "text": "Saved to a sensible location (reference/bestiary/ or the campaign, per the skill's own routing rule) with a rationale implied by the choice",
+          "passed": true,
+          "evidence": "Saved to reference/bestiary/drowned-revenant.md. Report section (d) gives an explicit, skill-grounded rationale: core/07-create-monster.md's own routing rule ('Reusable, campaign-neutral -> reference/bestiary/ ... Plot-bound -> campaigns/<slug>/world/') plus the direct quote from event-clock.md ('這裡沒有可以殺的東西' / 'there is no monster to kill here') as the reason NOT to fold this combat-survivable revenant into the campaign's actual antagonist. Verified: event-clock.md line 78 does contain that exact phrase."
+        }
+      ],
+      "notes": [
+        "This assertion doesn't distinguish between 'generic because unaware of the setting' and 'deliberately decoupled from the setting's core antagonist for good continuity reasons.' Both this run and the baseline run reached opposite placement decisions and both can defend 'fits the setting' -- the assertion as worded would pass almost any submission that name-drops the harbour. A sharper version would explicitly ask whether the tension with the campaign's 'nothing to kill' canon was noticed and handled (flagged/reconciled) rather than silently ignored, since that is the actual hard part of this eval per the task's own framing.",
+        "No assertion checks numeric correctness of derived stats (Build/Damage Bonus from STR+SIZ, HP from CON+SIZ). This run got them right, but nothing in the eval would have caught it if it hadn't -- worth adding a spot-check assertion since the skill's own quality bar states 'Numbers must be 7e-correct.'"
+      ]
+    },
+    {
+      "eval_id": 7,
+      "eval_name": "create-monster",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 226.4,
+        "tokens": 49009,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Stat block includes average characteristics, attack(s), armour (or explicit none), and Sanity loss to witness in X/Y format",
+          "passed": true,
+          "evidence": "campaigns/beidaihe-winter/world/drowned-revenant.md has a STR/CON/SIZ/DEX/INT/POW table, HP 15, Move 5/8, DB +1D6, Build +2; two attacks (Grapple 50%, Slam 40%) plus Dodge 15%; Armour '2 點' with an explicit fire exception; Sanity loss '1/1D6' (with a conditional +0/1D4 add-on). All four required elements are present, though see the quality claim below -- the Build/DB derivation itself is not 7e-correct."
+        },
+        {
+          "text": "A concrete, discoverable weakness or way to survive/avoid it is stated (not just 'run away')",
+          "passed": true,
+          "evidence": "Section '為什麼它打不死，但你能活下來' lists four specific, clued rules: never attacks groups of 2+ (inferable from victim pattern), can't move far past the tideline (STR drains -1D6/round, confirmable via old caretakers'/fishermen's taboos), retreats from fire, and a name-assertion trick that causes one round of hesitation. Each rule is paired with an in-fiction way investigators could learn it (footprints, dog behaviour, frost handprints, etc. in the clue-trail section), not just 'flee.'"
+        },
+        {
+          "text": "Fits the beidaihe-winter setting (harbour/winter/1919 era) rather than being generic",
+          "passed": true,
+          "evidence": "Tightly embedded in campaign specifics: explicitly the 'hand' of the entity under Lotus Rock (蓮花石), cross-referenced to the overview.md 'Recurring threats' 複製品 entry, framed around the tideline/harbour geography, and its Keeper notes tie destruction of the body to forensic clues that point toward the March 15 deadline. Not generic."
+        },
+        {
+          "text": "Saved to a sensible location (reference/bestiary/ or the campaign, per the skill's own routing rule) with a rationale implied by the choice",
+          "passed": true,
+          "evidence": "Saved to campaigns/beidaihe-winter/world/drowned-revenant.md, plus overview.md updated with a one-line 'Recurring threats' entry pointing to it. Report gives a rationale ('reference/bestiary/README.md says bestiary is for portable, campaign-neutral creatures, and this one is deliberately plot-entangled') that matches the actual README.md content, verified. Note: this run did not have the create-monster skill's own routing rule available (report states it read only CLAUDE.md, overview.md, and reference/bestiary/README.md) so the rationale was independently reconstructed rather than sourced from the skill -- it still arrives at the same place the skill's rule would have dictated."
+        }
+      ],
+      "notes": [
+        "This run never had the create-monster skill's actual routing rule in context (it wasn't invoked), yet the assertion credits it as if satisfying 'the skill's own routing rule.' The location choice happens to match what the rule would prescribe, but that's because both runs converged on similar reasoning independently, not because this run followed the skill. Consider clarifying whether the assertion is meant to test 'ended up in a sensible place' (which this satisfies) vs. 'demonstrably applied the skill's documented rule' (which it does not, since no skill was used here).",
+        "No assertion checks numeric correctness of derived stats. This run has a genuine Build/Damage Bonus derivation error (STR+SIZ 155 should map to +1/+1D4, not +2/+1D6) that all four current assertions pass right through, since they only check presence of the categories, not internal consistency."
+      ]
+    },
+    {
+      "eval_id": 8,
+      "eval_name": "create-puzzle",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 438.6,
+        "tokens": 93559,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Includes a working, describable cipher/code with an actual solution (not just 'they must decode it')",
+          "passed": true,
+          "evidence": "puzzles/fee-coded-ledger.md gives a full player-facing ledger table (10 '什物' rows with 4-digit numbers) plus a torn telegraph-codebook fragment (20 number->character entries). I independently traced the decode: dates 初三,初四,初九,十二,十三,十五,十七,十九,二十,廿二 map via the codebook to 2948->退, 6809->潮, 6631->見, 4767->石, 5145->縫, 0413->不, 3352->止, 0110->他, 0122->一, 0086->人, giving the exact claimed sentence '退潮見石縫，不止他一人。' The 10 decoy entries in the codebook are unused, and the mapping is unambiguous (one entry per number, no collisions). This is a genuinely checkable, working cipher, not an asserted one."
+        },
+        {
+          "text": "Has a hint ladder -- multiple escalating hint levels, not a single all-or-nothing hint",
+          "passed": true,
+          "evidence": "puzzles/fee-coded-ledger.md 'Hints ladder' section has 3 escalating rungs: Nudge (re-point at the formatting anomaly), Lead (point at the codebook fragment as the key), Gift (hand over the decoded sentence, or have Mrs. Fee read it aloud post-T8)."
+        },
+        {
+          "text": "Explicitly ties to the existing fee-diary-1919.md handout or Mrs Fee's established material rather than inventing an unrelated ledger",
+          "passed": true,
+          "evidence": "The puzzle states the ledger page is 'tucked in the same diary volume as fee-diary-1919.md' and is discovered by re-examining that handout's binding. The decoded message ('at ebb tide the crevice appears, not just him alone') directly extends the diary's Jan 19 1919 entry (Henrik seen standing at the 蓮花石 crevice at low tide) and npcs/mrs-fee.md's established clue ('蓮花石在特定潮汐會露出石縫'). It also correctly cross-references event-clock.md's T3 trigger (蓮花石縫 at ebb tide) and T8 (Mrs Fee's breakdown), and the report explicitly checks this doesn't contradict the Stage-1 hidden progress ('nine replicated so far' as of 1926, vs. an unspecified 1919 sighting)."
+        },
+        {
+          "text": "States what happens if the players never solve it (a fail-forward / bypass path), consistent with 'never hard-stop the game'",
+          "passed": true,
+          "evidence": "Fair-play routes item 3 (Bypass/mercy): if investigators are stuck on this page for a full scene, Mrs Fee notices them puzzling over the ledger and volunteers her own private shorthand explanation unprompted -- an explicit, scene-triggered mercy path, not gated on a roll."
+        }
+      ],
+      "notes": [
+        "None of the four assertions explicitly test the language-appropriateness rule from core/08-create-puzzle.md (no Latin-letter substitution in Chinese campaigns), even though it's clearly a central design constraint the skill is supposed to enforce. This run passed it cleanly, but an assertion like 'the cipher uses only forms that work in Chinese script (no bare Latin-letter substitution)' would make the eval discriminating on exactly the failure mode the paired baseline run actually exhibited."
+      ]
+    },
+    {
+      "eval_id": 8,
+      "eval_name": "create-puzzle",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 528,
+        "tokens": 81492,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Includes a working, describable cipher/code with an actual solution (not just 'they must decode it')",
+          "passed": true,
+          "evidence": "puzzles/fee-ledger-cipher.md and handouts/fee-ledger-page.md give a keyword-substitution cipher on the keyword KJAERLIGHET (10 distinct letters -> digits 0-9: K=0,J=1,AE=2,R=3,L=4,I=5,G=6,H=7,E=8,T=9). I traced all four ciphertext lines myself: KR.JAE-R -> 03.12-3; JH.JAE-I -> 17.12-5; KT.KJ-H -> 09.01-7; KAE.KAE-T... -> 02.02-9. All four decode consistently against the stated table with no contradictions, so the cipher is genuinely solvable and checkable, not merely asserted."
+        },
+        {
+          "text": "Has a hint ladder -- multiple escalating hint levels, not a single all-or-nothing hint",
+          "passed": true,
+          "evidence": "puzzles/fee-ledger-cipher.md has a 5-rung ladder (0-4): free noticing of letters-where-numbers-belong, Spot Hidden to notice the repeated-letter pattern, the embroidery-as-key (visible for free), an independent date-matching route not requiring the key, then a full Keeper readout as a stuck/time-boxed fallback."
+        },
+        {
+          "text": "Explicitly ties to the existing fee-diary-1919.md handout or Mrs Fee's established material rather than inventing an unrelated ledger",
+          "passed": true,
+          "evidence": "The puzzle opens by quoting the diary's actual closing line ('我決定不再記這件事...', from fee-diary-1919.md, Feb 1) and builds directly on npcs/mrs-fee.md's established clue ('哪幾戶今年冬天多了人--她記得每一扇窗每一晚亮不亮') and her established quirk of setting two places at the table. However, the physical ledger itself, the embroidery, and the KJAERLIGHET keyword are wholly new inventions -- the run's own 'Assumptions' section admits '這頁帳本、繡布、以及KJAERLIGHET這個鑰匙詞都是本次新增的內容...原文都沒有提到.' This passes on the strength of the thematic/personality tie-in, but it is a materially weaker connection than tying into the diary handout itself."
+        },
+        {
+          "text": "States what happens if the players never solve it (a fail-forward / bypass path), consistent with 'never hard-stop the game'",
+          "passed": true,
+          "evidence": "Hint ladder rung 4 ('保底，讀給玩家聽') has the Keeper read out the full solution directly if the table is stuck or time is limited, and the file states no rung requires the players to guess the key correctly."
+        }
+      ],
+      "notes": [
+        "This is the clearest and most important finding from the paired comparison: none of the four assertions check cipher-form appropriateness for the campaign's declared output language, so a Latin-letter substitution cipher embedded in a Traditional Chinese handout passes all four assertions cleanly despite being exactly the mistake the with-skill spec (core/08-create-puzzle.md) singles out as a non-negotiable rule for Chinese-language campaigns. Recommend adding an assertion such as 'the cipher's player-facing form fits the campaign's declared output language (no bare Latin-letter substitution in a Chinese-language campaign)' -- this is precisely the kind of outcome the skill exists to improve on over baseline, and right now it is invisible to the grading.",
+        "As written this assertion is satisfiable by tone/personality echoes alone even when the actual prop (ledger, embroidery, keyword) is 100% new invention, as happened here. Consider tightening to require a concrete link to the diary handout itself (shared object, shared date range, or a decoded fact that directly extends a specific diary entry), which the with-skill run met and this run did not."
+      ]
+    },
+    {
+      "eval_id": 9,
+      "eval_name": "scene-description",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 198.3,
+        "tokens": 61977,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Reads as read-aloud atmospheric prose (present/second-person, sensory, evocative) rather than GM notes or a bullet list",
+          "passed": true,
+          "evidence": "The boxed text in campaigns/beidaihe-winter/scenes/frozen-beach-arrival.md is a single continuous blockquote paragraph, second-person plural ('你們的腳印一路清清楚楚印在雪上'), with no bullets, headings, or mechanical language inside it. It reads: '潮聲很遠，遠得像是被凍住了。踏上沙灘，凍住的沙脆得像壓碎的糖...' — pure sensory narration. GM material (clues, checks, Keeper-only truth) is correctly segregated into separate sections below the boxed text ('What's here', 'Checks that may come up', '> KEEPER ONLY')."
+        },
+        {
+          "text": "Reflects the winter/beach/night setting specifically, with concrete sensory detail rather than generic horror boilerplate",
+          "passed": true,
+          "evidence": "Concrete, setting-specific detail throughout: frozen sand described as brittle 'like crushed sugar' sinking half an inch underfoot, wind carrying frozen sea-brine numbing the cheeks, no moon, the Pigeon-Nest bluff as 'a blob of darker black,' and Lotus Rock's reef tip showing grey-white under ice. These are specific to this campaign's named locations (蓮花石/Lotus Rock, 鴿子窩) rather than stock horror phrasing, and cover touch/temperature, smell, sound (the sea sounding 'frozen'/distant), and sight."
+        },
+        {
+          "text": "Contains no Keeper-only secrets or spoilers -- safe to read straight to players",
+          "passed": true,
+          "evidence": "The boxed text itself only reports what investigators would perceive (an older line of footprints walking into the sea with none returning) without explaining the cause. The actual secret -- that the footprints belong to a 'repaired copy' that periodically returns to the underwater stone chamber -- is confined entirely to the separate '> **KEEPER ONLY**' block below the read-aloud text, which is clearly marked as not for player consumption. No Fact A/B labels or mythos terminology leak into the boxed text."
+        },
+        {
+          "text": "Written into campaigns/beidaihe-winter/scenes/",
+          "passed": true,
+          "evidence": "File confirmed at campaigns/beidaihe-winter/scenes/frozen-beach-arrival.md (also listed as 'NEW:' in outputs/_changed_files.txt). No other files were modified, matching the report's own claim ('No other files modified')."
+        }
+      ],
+      "notes": [
+        "This assertion doesn't discriminate on conciseness/pacing, which the skill's own spec treats as a first-class craft criterion ('3-6 sentences,' 'reads aloud in ~20-30 seconds'). The with_skill run hit this target (5 sentences); the baseline run produced roughly 9 sentences across 5 paragraphs. Both currently pass the assertion as worded, so the eval can't reward the skill for enforcing brevity -- a length/pacing check (e.g., 'boxed text is a short, tight paragraph, not a multi-paragraph scene-setting essay') would better separate skill-guided output from an unguided one.",
+        "No assertion checks for the 'one wrong/off-key detail that invites action' craft the skill explicitly teaches. The with_skill run nailed this (footprints walking into the sea, none returning -- a genuine investigative hook); the baseline's ending ('you are the only thing moving tonight; no one came to meet you') is atmospheric but is a mood note rather than an actionable anomaly. This is a meaningful, hard-to-fake quality signal the current 4 assertions don't test for."
+      ]
+    },
+    {
+      "eval_id": 9,
+      "eval_name": "scene-description",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 141.1,
+        "tokens": 49521,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Reads as read-aloud atmospheric prose (present/second-person, sensory, evocative) rather than GM notes or a bullet list",
+          "passed": true,
+          "evidence": "The boxed text under '## 朗讀文' in campaigns/beidaihe-winter/scenes/frozen-beach-arrival.md is continuous narrative prose in a blockquote, second-person plural ('你們是今晚唯一在動的東西'), with no bullets or mechanics inside it. GM material (no-clue notice, branches, Keeper-only tone calibration) is kept in separate sections below, clearly out of the read-aloud block."
+        },
+        {
+          "text": "Reflects the winter/beach/night setting specifically, with concrete sensory detail rather than generic horror boilerplate",
+          "passed": true,
+          "evidence": "Highly specific imagery: the light rail stopping at a closed-for-winter platform, snow with no footprints, sand 'frozen through, hard like stepping on wooden planks,' a tide line locked in grey-white ice with muffled wave-sound coming from beneath it 'like through a wall,' Lotus Rock's silhouette by starlight looking 'shorter and closer than remembered,' the dark villa district on Dongjing Road outlined only by snow on the roof edges, and dry snow powder blown by ground-level wind leaving no trace. This is concrete and location-specific, not generic horror phrasing."
+        },
+        {
+          "text": "Contains no Keeper-only secrets or spoilers -- safe to read straight to players",
+          "passed": true,
+          "evidence": "The boxed text describes only observable absence (no lit windows, no one waiting, no footprints) with no named mythos entity, no Fact A/B content, and no interpretation. The '## KEEPER ONLY' block (tone calibration: 'this isn't a story with a monster that jumps out, it's a story with too much quiet'; instruction not to describe the stone chamber or reef crevice contents yet) is fully separated below the read-aloud section and does not leak into it."
+        },
+        {
+          "text": "Written into campaigns/beidaihe-winter/scenes/",
+          "passed": true,
+          "evidence": "File confirmed at campaigns/beidaihe-winter/scenes/frozen-beach-arrival.md, listed as 'NEW:' in outputs/_changed_files.txt alongside 'MODIFIED: campaigns/beidaihe-winter/sessions/01-the-guest-who-came-back.md' (the session file's scene list and quick-reference list were updated to point to the new scene, matching the report's claim)."
+        }
+      ],
+      "notes": [
+        "The boxed text here runs to roughly 9 sentences across 5 short paragraphs, noticeably longer than the with_skill run's 5-sentence version (which follows the skill's own '3-6 sentences, ~20-30 seconds aloud' rule). The assertion as worded passes both equally and can't reward the tighter, more speakable pacing that the skill is specifically designed to enforce -- a conciseness/pacing check would surface this gap between runs.",
+        "The ending beat ('you are the only thing moving tonight; no one came to meet you') is melancholy atmosphere rather than a concrete, actionable anomaly investigators can act on -- compare the with_skill run's older line of footprints walking into the sea with none returning, which is a genuine investigative hook. No assertion currently checks for the presence of this kind of 'one wrong detail that invites action,' so this qualitative difference in scene-craft between the two runs goes unmeasured."
+      ]
+    },
+    {
+      "eval_id": 10,
+      "eval_name": "create-handout",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 381.3,
+        "tokens": 75925,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Formatted like an actual period telegram (terse, STOP conventions or period-appropriate telegram style), not a modern letter",
+          "passed": true,
+          "evidence": "fee-telegram-1919.md presents a Republican-era railway telegraph stub (類別/發報局/發字第/發報時刻/收報人/字數 fields for the Beidaihe station of the Jing-Feng Railway) containing an English cable in period STOP style: 'WELL NOW STOP ROSE THIRD DAY STOP DOCTOR NOT TILL FOURTEENTH DO NOT WAIT STOP COME WHEN YOU CAN STOP HENRIK', plus a separately-pasted forwarding tag with a smudged date stamp. Terse, form-based, nothing resembling a modern letter."
+        },
+        {
+          "text": "Contains a clue buried in natural in-period detail rather than stating the mystery's solution outright",
+          "passed": true,
+          "evidence": "The buried anomaly is a date mismatch: the telegram is dispatched Jan 8 with Henrik already stating 'DOCTOR NOT TILL FOURTEENTH', but the campaign's existing fee-diary-1919.md only has Mrs Fee learning that exact date from the doctor in person on Jan 9 (diary jumps 一月四日 → 一月九日, no Jan 8 entry). The handout never explains or flags this; the report explicitly notes 'No solution given outright — the telegram never names Lotus Rock, duplication, or a cult.' Confirmed by grep: neither '教團'/'邪教'/'cult' nor any mention of the entity/duplication mechanism appears in the file."
+        },
+        {
+          "text": "Is self-contained and player-safe -- no KEEPER ONLY spoiler blockquotes or bracketed GM notes leak into it",
+          "passed": true,
+          "evidence": "File follows templates/handout.md exactly: a 'PLAYER-FACING. Everything below the divider is safe to show or print' banner up top, the one spoiler-adjacent line ('What it plants') explicitly marked '*(keeper note — 不印出)*' and placed before the divider, then the printable telegram stub and forwarding tag between dividers with zero meta-commentary mixed in, then a 'Presentation note (not printed)' and a Links section after a second divider. The actual prop text a keeper would read aloud or hand over is clean of any GM-only material."
+        },
+        {
+          "text": "Written into campaigns/beidaihe-winter/handouts/ as its own file",
+          "passed": true,
+          "evidence": "_changed_files.txt shows only 'NEW: campaigns/beidaihe-winter/handouts/fee-telegram-1919.md' — a single new file, nothing else touched, matching the report's claim ('Nothing else modified')."
+        }
+      ],
+      "notes": [
+        "The assertion is worded to catch a literal keyword ('KEEPER ONLY' text, bracketed notes). A run could pass this literal check while still mixing unmarked GM explanation into the printable section, as the baseline run for this same eval does to a lesser degree. Consider tightening the assertion to require an explicit structural separator (a banner/divider convention) between GM-only setup and the printable prop text, not just the absence of a specific keyword.",
+        "No assertion checks that invented in-fill details (institution names, dates, addresses) are consistent with already-established NPC/world files. Both runs did this diligence voluntarily and unprompted, but nothing in the eval would catch a run that invented a detail contradicting canon (e.g., a location or relationship that conflicts with npcs/mrs-fee.md). Worth adding a consistency-check assertion."
+      ]
+    },
+    {
+      "eval_id": 10,
+      "eval_name": "create-handout",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 186.2,
+        "tokens": 47455,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Formatted like an actual period telegram (terse, STOP conventions or period-appropriate telegram style), not a modern letter",
+          "passed": true,
+          "evidence": "fee-telegram-1919.md renders the message as a cable from 'THE GREAT NORTHERN TELEGRAPH CO. — TIENTSIN OFFICE' with No./RECD/VIA routing lines, TO/FROM header, body in full-caps STOP style ('MRS FEE STOP GLAD TO HAVE NEWS MR FEE MENDING STOP DR NILSEN CANCELS THURSDAY VISIT... STOP'), and a closing '= END ='. Terse and period-correct (the Great Northern Telegraph Co. was a real historical operator in Tientsin); not a modern letter."
+        },
+        {
+          "text": "Contains a clue buried in natural in-period detail rather than stating the mystery's solution outright",
+          "passed": true,
+          "evidence": "The clue is embedded in the hospital's own bureaucratic phrasing: the telegram notes it has 'HAD NO WORD FROM YOU SINCE THE NINTH' yet is 'GLAD TO HAVE NEWS MR FEE MENDING' and asks her to 'CONFIRM ... WHO SENT NOTICE OF RECOVERY AND ON WHAT DATE ... FOR OUR RECORDS ONLY ... NO CAUSE ALARM' — a genuinely unsettling gap phrased as routine paperwork. The mystery's actual mechanism (duplication, the entity, Lotus Rock) is never named; grep confirms no 'cult'/'教團'/'邪教' text appears anywhere in the file."
+        },
+        {
+          "text": "Is self-contained and player-safe -- no KEEPER ONLY spoiler blockquotes or bracketed GM notes leak into it",
+          "passed": true,
+          "evidence": "No bracketed or 'KEEPER ONLY'-labeled text appears, and the printed telegram + hand-translation block itself is clean. However, this file does not use the campaign's own templates/handout.md convention (no 'PLAYER-FACING' banner, no explicit 'not printed' labels): the opening '種下什麼' section and closing '桌上的縫隙' section are meta/GM material sitting directly beside the prop text separated only by a bare '---', with no marking that they should be stripped before use. The closing section goes further than the with_skill run's equivalent note by spelling out the implication in plain prose ('在她能通知任何人之前，醫院已經先一步知道 Henrik「好了」... 這正是不對勁的地方'). It stops short of naming the actual solution, so it does not fail the letter of the assertion, but it is a materially weaker spoiler-hygiene structure than the sibling run and would require a keeper to manually trim the file before handing it to players — flagged as a concern rather than a failure."
+        },
+        {
+          "text": "Written into campaigns/beidaihe-winter/handouts/ as its own file",
+          "passed": true,
+          "evidence": "_changed_files.txt confirms 'NEW: campaigns/beidaihe-winter/handouts/fee-telegram-1919.md'. (The run also made an unrequested one-line edit to campaigns/beidaihe-winter/npcs/mrs-fee.md, adding a cross-reference to the new handout in its existing 'KEEPER ONLY' 相關 section — harmless and not itself a spoiler leak since it's inside an already-keeper-only file, but outside the scope of what was asked.)"
+        }
+      ],
+      "notes": [
+        "This run passes the assertion as literally worded but exposes a real gap in how it's phrased: it checks for a specific keyword/bracket pattern rather than for genuine structural separation between keeper setup, the printable prop, and keeper wrap-up. This run's closing section explains the anomaly in plain unlabeled prose immediately after the prop text with only a bare '---' between them — a weaker safety margin than the sibling with_skill run's explicit 'PLAYER-FACING' banner and 'not printed' labels, yet both would score identically under the current assertion. Recommend requiring an explicit print-safety marker/divider convention, not just absence of a keyword.",
+        "The eval doesn't check whether the run stayed scoped to only the requested file. This run made an incidental edit to npcs/mrs-fee.md; harmless here, but nothing would flag a run that made a riskier out-of-scope edit (e.g., altering an existing clue or stat block) while still passing every assertion."
+      ]
+    },
+    {
+      "eval_id": 11,
+      "eval_name": "review-material",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "total": 4,
+        "time_seconds": 449,
+        "tokens": 101808,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Explicitly checks the three-clue rule and whether any single die roll can hard-stop progress",
+          "passed": true,
+          "evidence": "Report's pass-list states: 'three-clue rule (both Facts A and B have 3 independent sources each); no single-roll gates'. Verified against sessions/01-the-guest-who-came-back.md: Fact A has routes A1/A2/A3, Fact B has routes B1/B2/B3, and scenes/night-count.md line 37 explicitly says '沒有任何一條路被單一擲骰擋住' (no path is blocked by a single roll). The check is explicit and its content is factually correct."
+        },
+        {
+          "text": "Explicitly checks stat-block arithmetic (HP/Build/Damage Bonus consistency) on existing NPCs",
+          "passed": true,
+          "evidence": "Report states: 'stat-block arithmetic recomputed correct for both existing NPCs (Li Shuchun and Mrs. Fee)'. Independently recomputed from npcs/li-shuchun.md (CON 70, SIZ 60 -> HP 13 matches; STR+SIZ=120 -> Build 0/DB none matches) and npcs/mrs-fee.md (CON 55, SIZ 50 -> HP 10 matches; STR+SIZ=90 -> Build 0/DB none matches). Both are correct per 7e tables, so the explicit claim is verified true, not just asserted."
+        },
+        {
+          "text": "Explicitly checks spoiler hygiene -- that player-facing files (handouts, scenes) don't leak Keeper-only secrets",
+          "passed": false,
+          "evidence": "No sentence in the report addresses spoiler hygiene, leakage, or player-facing-vs-Keeper-only separation explicitly (grep for 'spoiler', 'leak', 'player-facing' finds nothing). The (a) spec-followed line and the pass-list cover clue redundancy, boxed-text quality, glossary, cross-links, arithmetic, etc., but never states that handouts/fee-diary-1919.md or scenes/night-count.md were checked for leaked KEEPER ONLY content, even though both files were reviewed. Manual spot-check shows the underlying files ARE properly separated (night-count.md's KEEPER ONLY block is below the player-facing content; the handout is entirely player-safe), so the material passes -- but the report never says this check was performed, so the expectation of an explicit check is not met."
+        },
+        {
+          "text": "Reports findings most-severe-first with concrete fixes, and does not silently rewrite/change any campaign files without approval",
+          "passed": true,
+          "evidence": "Findings are explicitly labeled and ordered (Critical/safety, Continuity, Craft/mechanics, Language, then Minor), each with a 'Fix:' line. Section (c) states 'No campaign files were modified — only Read, Glob, Grep were used throughout', and outputs/_changed_files.txt for this run is empty, confirming no writes occurred."
+        }
+      ],
+      "notes": [
+        "Neither the with_skill nor the baseline report contains any explicit statement about checking handouts/scenes for leaked Keeper-only content, even though both reviewed those files and the underlying material happens to be fine (KEEPER ONLY blocks are correctly segregated). This assertion currently fails for a genuinely good run, which suggests it isn't being exercised/reported by the skill even when the skill is followed -- either core/11-review.md's spec should be checked to see if it actually prompts this check (and the report template should be nudged to surface it explicitly), or the assertion should be loosened to accept implicit evidence (e.g., the report noting handouts were reviewed and found clean) rather than requiring an explicit named callout.",
+        "No assertion in this eval checks claim accuracy/hallucination -- I found the baseline report contains a clearly false claim ('overview.md references a puzzles/ folder that doesn't exist') when campaigns/beidaihe-winter/puzzles/ in fact exists on disk (empty but present), and an overstated claim about a Clue B1/Trigger T3 staging overlap that the source material (sessions/01, line ~33) already explicitly resolves. A discriminating assertion like 'every specific factual claim in the report can be verified against the actual campaign files' would have caught both issues and rewarded with_skill's report, whose specific claims (heading violations, HP/Build arithmetic, the 11-vs-7 lights count, the housekeeper-count scoping mismatch) all independently verified as accurate."
+      ]
+    },
+    {
+      "eval_id": 11,
+      "eval_name": "review-material",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.25,
+        "passed": 1,
+        "failed": 3,
+        "total": 4,
+        "time_seconds": 208.3,
+        "tokens": 51286,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Explicitly checks the three-clue rule and whether any single die roll can hard-stop progress",
+          "passed": false,
+          "evidence": "The report never mentions the three-clue rule or single-die-roll gating anywhere (grep for 'three-clue' / 'single roll' / 'hard-stop' finds nothing). Finding #4 ('Clue B1... and event-clock trigger T3... may describe the same physical action') is about a staging ambiguity, not a three-clue-rule audit or a single-roll-gate check. The clue redundancy is only praised in passing ('strong clue redundancy') in the Overall verdict, with no verification method or specifics shown."
+        },
+        {
+          "text": "Explicitly checks stat-block arithmetic (HP/Build/Damage Bonus consistency) on existing NPCs",
+          "passed": false,
+          "evidence": "The report never mentions HP, Build, Damage Bonus, or any stat-block arithmetic check anywhere. NPCs are only praised qualitatively ('well-realized NPCs') in the Overall verdict; no computation or consistency check on Li Shuchun's or Mrs. Fee's 7e stat blocks is shown or claimed."
+        },
+        {
+          "text": "Explicitly checks spoiler hygiene -- that player-facing files (handouts, scenes) don't leak Keeper-only secrets",
+          "passed": false,
+          "evidence": "No sentence addresses spoiler hygiene, leakage, or player-facing-vs-Keeper-only separation (grep for 'spoiler', 'leak', 'player-facing', 'KEEPER ONLY' finds nothing in this report). The only 'KEEPER ONLY' reference is finding #9's note that the Keeper should improvise 'from KEEPER-ONLY lore if pacing runs fast' -- unrelated to checking handouts/scenes for leaks."
+        },
+        {
+          "text": "Reports findings most-severe-first with concrete fixes, and does not silently rewrite/change any campaign files without approval",
+          "passed": true,
+          "evidence": "Findings 1-10 are explicitly labeled by severity (Critical safety, Critical structural, High, Medium-High, Medium, ..., Info) and descend in that order, each with a 'Fix:' line. The Confirmation section states 'No campaign files were modified, added, or deleted — only Read and a directory listing were used,' and outputs/_changed_files.txt for this run is empty, confirming no writes occurred."
+        }
+      ],
+      "notes": [
+        "These two assertions cleanly separate the runs: baseline is a competent, generic 'read everything and list problems' pass that never touches the specific mechanical checks (three-clue redundancy, HP/Build/DB arithmetic) that the CoC-specific skill is meant to enforce. That's exactly the kind of discriminating assertion the eval should have -- good design, keep it.",
+        "The baseline report contains a demonstrably false claim (the puzzles/ folder 'doesn't exist' when it exists, just empty) and an overstated one (the B1/T3 staging overlap, which the source material already resolves in a line the report should have read). No assertion in this eval checks claim accuracy against the source files, so a report that pads its findings list with plausible-sounding but unverified or incorrect items scores the same as one that doesn't. Consider adding an assertion like 'every specific factual claim about the campaign files can be verified against those files' -- it would have caught this and rewarded with_skill's report, whose equivalent specific claims (heading-language violations, stat arithmetic, the 9-vs-27 housekeeper scoping mismatch, the 11-vs-7 lights count) all independently checked out as accurate."
+      ]
+    },
+    {
+      "eval_id": 12,
+      "eval_name": "update-canon",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 278.2,
+        "tokens": 75126,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "canon-log.md is appended to (existing entries preserved) rather than overwritten",
+          "passed": true,
+          "evidence": "The original canon-log.md was an unfilled template (all placeholder text, verified byte-identical to campaigns/_template-campaign/canon-log.md). The run's output keeps the header, the append-only warning block, and the trailing '<!-- Newest sessions go at the bottom. Append; never revise. -->' comment verbatim, fills the 'Standing canon' placeholders with real content (the template's intended use), and replaces the single '## Session <n>' placeholder slot with a real '## Session 1' entry rather than adding a second copy. Nothing that was actual session data existed to lose, so 'preserved' reduces to 'scaffold/structure respected' -- which it was. Report.md explicitly notes: 'canon-log.md previously contained only the unfilled template scaffold ... nothing real existed to preserve.'"
+        },
+        {
+          "text": "Distinguishes established facts from what the players/characters currently believe (e.g. blood found vs. guilt not proven)",
+          "passed": true,
+          "evidence": "canon-log.md has separate 'Established facts (true in the world)' and 'Player knowledge (what the investigators have actually learned)' lists, and explicitly calls out the gap: player knowledge includes '兩者對不上——玩家已注意到這個矛盾' (players noticed blood and denial don't match). The Unclear section separately states the blood-guilt link is not established: '先如實記錄血跡存在，意涵留待守密人確認，不代入結論' (record that blood exists as fact; don't infer guilt)."
+        },
+        {
+          "text": "Any relevant world/cast/event-clock state is updated to reflect the session",
+          "passed": true,
+          "evidence": "world/event-clock.md: in-fiction date advanced 二月十一日 -> 二月十三日, 'Last updated' filled with session-1 rationale, and T8's Fired column marked 'Session 1（部分：崩潰已發生...是否進入合作與交出第一手記錄待確認）' -- a partial, non-invented fire. canon-log.md's Cast status table updates both Li Shuchun (relationship strained, suspected) and Mrs Fee (breakdown, T8 outcome unconfirmed). sessions/01-...md's 'After the session' block is filled in with what happened, threads, and flagged unknowns."
+        },
+        {
+          "text": "Any apparent contradiction with prior canon is flagged rather than silently resolved (note if none arose)",
+          "passed": true,
+          "evidence": "Report.md and canon-log.md both flag: (1) blood on Li Shuchun's coat vs. his established non-violent characterization and the campaign's 'nothing here that can be killed' design note -- recorded as fact, cause left open, explicitly 'not concluded'; (2) the pier as confrontation site vs. his established location (villa district, not harbour) -- flagged as improvised/new; (3) diary shown to force a breakdown vs. the handout's design note that she gives it after trust is built -- flagged as an alternate path, not silently assumed; (4) T8's documented payoff includes 'cooperation', but the recap only confirms the breakdown -- fired as 'partial', cooperation explicitly marked unconfirmed rather than assumed complete."
+        }
+      ],
+      "notes": [
+        "Because the sandbox's canon-log.md started as a fully-blank template, this assertion cannot actually discriminate 'appended correctly' from 'overwrote the placeholder' in this fixture -- both would look like a plausible pass since there was no real prior content to check for survival. A more discriminating version of this eval would seed canon-log.md with one genuine prior session entry (not just template placeholders) and then check that entry's exact text survives untouched in the new output, in addition to the new entry being appended after it.",
+        "No assertion directly checks whether the run invents/asserts unconfirmed outcomes as established fact (as opposed to flagging a contradiction). The baseline run (no skill) asserted Mrs Fee's full cooperation and handover of a specific in-world document as an 'established fact' when the prompt only supports a breakdown -- a real failure mode (canon rot via invented plot beats) that assertion 4 ('contradiction... flagged') does not squarely cover, since it's an invention/gap-filling problem rather than a contradiction with prior canon. Worth a fifth assertion along the lines of 'the update does not present unconfirmed session outcomes (e.g. a trigger's full payoff) as established fact when the account only supports a partial result.'"
+      ]
+    },
+    {
+      "eval_id": 12,
+      "eval_name": "update-canon",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 292.2,
+        "tokens": 68321,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "canon-log.md is appended to (existing entries preserved) rather than overwritten",
+          "passed": true,
+          "evidence": "Structurally append-only: header, warning block, and trailing comment all preserved verbatim. Unusually, the run left the original '## Session <n> — <in-fiction date range> — <real date>' placeholder block completely untouched in place, and inserted its real '## Session 1' entry as a *second* section after it, rather than replacing the placeholder. Nothing was deleted or edited, so this passes literally, but it leaves an inert, unfilled template stanza (literal '<location and situation>' text) permanently mixed into the real record -- a real quality issue distinct from the pass/fail question, noted under eval_feedback."
+        },
+        {
+          "text": "Distinguishes established facts from what the players/characters currently believe (e.g. blood found vs. guilt not proven)",
+          "passed": true,
+          "evidence": "canon-log.md has separate 'Established facts' and 'Player knowledge' sections, and correctly keeps the blood-found/perpetrator-unknown split ('來源、是誰的血尚未確定' under established facts). However, the established-facts list also states as fact that Mrs Fee 'is now cooperating' and that this 'triggered T8' with its full documented payoff (obtaining the first-hand 1919 record pointing to Lotus Rock) -- none of which the prompt states (the prompt only says she had a breakdown). That specific claim is an invention presented as settled fact rather than as a distinguished player-belief/uncertain item. Passes on the blood/guilt axis the assertion names, but see claims section for the cooperation-outcome issue."
+        },
+        {
+          "text": "Any relevant world/cast/event-clock state is updated to reflect the session",
+          "passed": true,
+          "evidence": "world/event-clock.md: in-fiction date advanced to Feb 13, T8 Fired column marked 'S1（成功：出示日記後她崩潰並合作...）'. sessions/01-...md 'After the session' block filled in. canon-log.md Cast status table updated for both NPCs. In addition (beyond the four files the skill's spec names), npcs/li-shuchun.md and npcs/mrs-fee.md each got a new '## Session 1 更新' section recording the same cast-state changes a second time."
+        },
+        {
+          "text": "Any apparent contradiction with prior canon is flagged rather than silently resolved (note if none arose)",
+          "passed": true,
+          "evidence": "The blood-vs-non-violent-characterization tension is flagged thoroughly and in three separate files (canon-log.md, npcs/li-shuchun.md 'Session 1 更新', sessions/01-...md), including non-violent alternative explanations for the Keeper to pick from. The diary-via-trust vs. diary-shown-directly tension is also flagged as an open question in both canon-log.md and npcs/mrs-fee.md. This assertion is satisfied for the contradictions the run recognized as contradictions. It does not, however, flag its own invented assumption (that T8 fired the full success branch including cooperation and document handover) as a gap at all -- that's presented as settled fact with no '<unclear>' marker, which is a distinct failure mode (unflagged invention rather than an unflagged contradiction) that this assertion's wording doesn't quite reach. See eval_feedback."
+        }
+      ],
+      "notes": [
+        "This run leaves the unfilled '## Session <n>' template placeholder sitting untouched inside the permanent log, followed by the real Session 1 entry as a duplicate section. That technically satisfies 'nothing was edited or deleted' but produces a worse artifact than the with_skill run, which replaced the placeholder with real content. The assertion as worded can't distinguish 'correctly used the template slot' from 'left dead scaffold cluttering the real record' -- both pass. Consider phrasing that also checks the placeholder text (e.g. literal '<location and situation>') does not appear in the final file.",
+        "No assertion catches this run's most consequential defect: asserting an unconfirmed outcome (Mrs Fee's full cooperation and document handover) as an established fact rather than flagging it. This is a bigger deal than any of the four assertions individually check, because it's precisely the 'canon rot' failure mode the skill's description promises to prevent, and it went undetected by the current assertion set. Recommend adding: 'the update does not present a trigger's/event's full designed outcome as fact when the account only supports a partial or ambiguous result.'",
+        "Neither assertion evaluates whether the run stayed within the skill's own defined scope (the four files core/12-canon-update.md names). The baseline (run without the skill, so it had no way to know this) additionally edited two NPC files, duplicating cast-state facts that canon-log.md's Cast status table is specifically designed to centralize. This is a meaningful with-skill vs. without-skill differentiator that the current assertion set doesn't reward or penalize either way -- worth an explicit scope-discipline assertion if the eval wants to measure this."
+      ]
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 0.9791666666666666,
+        "stddev": 0.06909634979907082,
+        "min": 0.75,
+        "max": 1
+      },
+      "time_seconds": {
+        "mean": 337.3833333333334,
+        "stddev": 164.99239292228663,
+        "min": 24.4,
+        "max": 645.8
+      },
+      "tokens": {
+        "mean": 78778.66666666667,
+        "stddev": 20463.669295987842,
+        "min": 37736,
+        "max": 111148
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.9208333333333334,
+        "stddev": 0.20962102046842113,
+        "min": 0.25,
+        "max": 1
+      },
+      "time_seconds": {
+        "mean": 286.0333333333333,
+        "stddev": 171.65353347821173,
+        "min": 44.2,
+        "max": 613.3
+      },
+      "tokens": {
+        "mean": 61297.666666666664,
+        "stddev": 17921.991873734965,
+        "min": 28307,
+        "max": 93869
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.058",
+      "time_seconds": "+51.4",
+      "tokens": "+17481"
+    }
+  },
+  "notes": [
+    "Literal assertion pass-rate is close between configurations (with_skill ~98% mean, baseline ~92% mean) because most assertions were written as a quality floor both a skilled baseline and the skill can clear -- the real differentiation shows up in the qualitative eval-critique notes graders filed on nearly every case, not in raw pass/fail counts.",
+    "review-material shows the largest literal gap: with_skill 3/4 (0.75) vs baseline 1/4 (0.25) -- baseline skipped the mandated three-clue-rule and stat-arithmetic checks entirely and made one factually wrong claim (said puzzles/ folder doesn't exist; it does, just empty).",
+    "start-campaign: with_skill 5/5 vs baseline 4/5 -- baseline never created a handouts/ folder. More importantly (not captured by any assertion): baseline barreled straight through to a fully-realized world, three NPCs, and sensitive suicide-adjacent content in one shot, never honoring the intake spec's 'stop for Keeper approval before building the world' gate that with_skill correctly respected.",
+    "create-monster baseline made a real CoC 7e arithmetic error: STR+SIZ=155 should give Damage Bonus +1D4/Build +1, but it computed +1D6/+2 (the wrong band). with_skill's math was correct.",
+    "create-puzzle baseline built a cipher using a Latin-letter keyword (Norwegian 'KJAERLIGHET') substitution inside an otherwise all-Traditional-Chinese document -- exactly what the skill's own spec (core/08-create-puzzle.md) explicitly bans for Chinese-language campaigns. No assertion caught this since none tested language-fit; flagged as a real, table-visible defect the baseline had no way to know to avoid.",
+    "update-canon baseline asserted an unconfirmed outcome (Mrs Fee's full cooperation/handover) as established fact in canon-log.md, when the source prompt never said this happened -- exactly the 'canon rot' failure mode this skill exists to prevent. with_skill correctly flagged the same event as unconfirmed.",
+    "create-handout baseline placed its Keeper-only explanation of the handout's buried clue directly beside the player-facing prop text with no structural separation, unlike with_skill's clean PLAYER-FACING banner / KEEPER note split from templates/handout.md -- a real spoiler-hygiene risk no current assertion catches.",
+    "scene-description: both passed, but with_skill hit the spec's own pacing target (3-6 sentences, one wrong detail, ends on a hook) while baseline ran nearly double-length with a mood-only, non-actionable closing line.",
+    "build-event-clock, create-npc, build-world, design-scenario, coc-rules-reference: baseline performed close to par with with_skill on these tasks -- the underlying model is capable enough to reconstruct much of the skill's guidance from context (e.g. finding existing canon hooks unprompted), which is a genuine and useful finding about where this kit's skills add the most marginal value (safety gates, language-specific mechanics, canon-integrity discipline) versus where a strong baseline model already does fine (stat blocks, world-building prose).",
+    "No assertion in this pass tested process-safety behaviors (approval gates, unconfirmed-outcome flagging) or craft-precision behaviors (pacing targets, language-appropriate cipher mechanics, structural spoiler separation) directly -- these were the dimensions where with_skill measurably outperformed baseline, and a future eval iteration should add explicit assertions for them."
+  ]
+}
