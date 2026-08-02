@@ -69,7 +69,7 @@ When a question is unanswered, resolve it in this order:
 
 | Field | Default |
 |---|---|
-| Era & place | 1920s, a small coastal town — the genre's home ground |
+| Era & place | 1920s, a small coastal town — the genre's home ground. **Site the town somewhere the output language is actually spoken**, unless the Keeper asked otherwise: a 繁體中文 campaign defaulting to New England makes every NPC name a translation problem. 1920s 北戴河, 香港, 上海, 廈門 are all the genre's home ground too. |
 | Output language | 繁體中文（香港） |
 | Mood | slow dread |
 | Horror dial | creeping and psychological |
@@ -94,10 +94,20 @@ stirring. **You must roll**, and the roll must survive into the output.
 
 ## Output
 
-- Write `campaigns/<slug>/CLAUDE.md`, filled completely — no `<placeholder>` text left.
-- `<slug>` is English kebab-case, derived from the premise (`dagon-bay`, `the-red-tide`).
-- Copy the rest of `campaigns/_template-campaign/` alongside it, including `canon-log.md`.
-- Report every auto-filled field, marked `[auto]`, with a one-line reason.
+`<slug>` is English kebab-case, derived from the premise (`dagon-bay`, `beidaihe-winter`).
+
+**Create every one of these. Intake is not done until all five exist:**
+
+- [ ] `campaigns/<slug>/CLAUDE.md` — filled completely, no `<placeholder>` text left
+- [ ] `campaigns/<slug>/canon-log.md` — copied from the template, empty of sessions
+- [ ] `campaigns/<slug>/overview.md` — the arc at a glance (skip only for a one-shot)
+- [ ] `campaigns/<slug>/references.md` — touchstones, or a stub saying none were given
+- [ ] `campaigns/<slug>/` subfolders: `world/ npcs/ scenes/ puzzles/ handouts/ sessions/`
+
+Then report every auto-filled field, marked `[auto]`, with a one-line reason.
+
+Headings in the campaign `CLAUDE.md` stay English (they're what the specs reference and what
+the Keeper skims); the values are written in the campaign's output language.
 
 ## Quality bar
 

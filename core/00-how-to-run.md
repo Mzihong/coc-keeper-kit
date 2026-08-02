@@ -20,7 +20,7 @@ Generate in this order. Each step reads what came before.
 
 | # | Step | Spec | Produces |
 |---|------|------|----------|
-| 1 | **Intake** — establish the campaign | `core/01-intake.md` | `campaigns/<slug>/CLAUDE.md` |
+| 1 | **Intake** — establish the campaign | `core/01-intake.md` | the whole `campaigns/<slug>/` folder |
 | 2 | **World** — region, places, factions | `core/03-build-world.md` | `world/` |
 | 3 | **Event clock** — the threat and its timeline | `core/05-event-clock.md` | `world/event-clock.md` |
 | 4 | **Cast** — the people and the things | `core/06-create-npc.md`, `core/07-create-monster.md` | `npcs/`, `reference/bestiary/` |
@@ -64,6 +64,14 @@ writing any stat block, difficulty, or Sanity cost.
   that language. Kit scaffolding, specs, and filenames stay in English. When the output
   language is 繁體中文, follow `reference/glossary-zh.md` for every game term; do not
   improvise translations and do not mix 简体.
+  - **Files inside `campaigns/` follow the campaign's output language for their *values*,
+    but keep the template's English headings.** A Keeper skims headings to find things and
+    the specs reference them by name; the content underneath is what the table reads.
+  - **When an in-fiction document wouldn't plausibly be in the output language** — a
+    Norwegian widow's diary in a 繁體中文 campaign — write the handout in the output language
+    and state the in-fiction device in the presentation note (a translation read aloud, an
+    investigator translating live, a consular clerk's transcript). Don't break the table's
+    language for verisimilitude, and don't pretend the original was written in it.
 - **Fair play.** Every mystery must be solvable. Follow the three-clue rule; never gate
   forward progress behind a single die roll.
 - **Spoiler hygiene.** Keeper-only secrets stay in Keeper files, marked with a

@@ -114,7 +114,7 @@ Generate in this order. Each step reads what came before.
 
 | # | Step | Spec | Produces |
 |---|------|------|----------|
-| 1 | **Intake** — establish the campaign | `core/01-intake.md` | `campaigns/<slug>/CLAUDE.md` |
+| 1 | **Intake** — establish the campaign | `core/01-intake.md` | the whole `campaigns/<slug>/` folder |
 | 2 | **World** — region, places, factions | `core/03-build-world.md` | `world/` |
 | 3 | **Event clock** — the threat and its timeline | `core/05-event-clock.md` | `world/event-clock.md` |
 | 4 | **Cast** — the people and the things | `core/06-create-npc.md`, `core/07-create-monster.md` | `npcs/`, `reference/bestiary/` |
@@ -158,6 +158,14 @@ writing any stat block, difficulty, or Sanity cost.
   that language. Kit scaffolding, specs, and filenames stay in English. When the output
   language is 繁體中文, follow `reference/glossary-zh.md` for every game term; do not
   improvise translations and do not mix 简体.
+  - **Files inside `campaigns/` follow the campaign's output language for their *values*,
+    but keep the template's English headings.** A Keeper skims headings to find things and
+    the specs reference them by name; the content underneath is what the table reads.
+  - **When an in-fiction document wouldn't plausibly be in the output language** — a
+    Norwegian widow's diary in a 繁體中文 campaign — write the handout in the output language
+    and state the in-fiction device in the presentation note (a translation read aloud, an
+    investigator translating live, a consular clerk's transcript). Don't break the table's
+    language for verisimilitude, and don't pretend the original was written in it.
 - **Fair play.** Every mystery must be solvable. Follow the three-clue rule; never gate
   forward progress behind a single die roll.
 - **Spoiler hygiene.** Keeper-only secrets stay in Keeper files, marked with a
@@ -284,7 +292,7 @@ When a question is unanswered, resolve it in this order:
 
 | Field | Default |
 |---|---|
-| Era & place | 1920s, a small coastal town — the genre's home ground |
+| Era & place | 1920s, a small coastal town — the genre's home ground. **Site the town somewhere the output language is actually spoken**, unless the Keeper asked otherwise: a 繁體中文 campaign defaulting to New England makes every NPC name a translation problem. 1920s 北戴河, 香港, 上海, 廈門 are all the genre's home ground too. |
 | Output language | 繁體中文（香港） |
 | Mood | slow dread |
 | Horror dial | creeping and psychological |
@@ -309,10 +317,20 @@ stirring. **You must roll**, and the roll must survive into the output.
 
 ## Output
 
-- Write `campaigns/<slug>/CLAUDE.md`, filled completely — no `<placeholder>` text left.
-- `<slug>` is English kebab-case, derived from the premise (`dagon-bay`, `the-red-tide`).
-- Copy the rest of `campaigns/_template-campaign/` alongside it, including `canon-log.md`.
-- Report every auto-filled field, marked `[auto]`, with a one-line reason.
+`<slug>` is English kebab-case, derived from the premise (`dagon-bay`, `beidaihe-winter`).
+
+**Create every one of these. Intake is not done until all five exist:**
+
+- [ ] `campaigns/<slug>/CLAUDE.md` — filled completely, no `<placeholder>` text left
+- [ ] `campaigns/<slug>/canon-log.md` — copied from the template, empty of sessions
+- [ ] `campaigns/<slug>/overview.md` — the arc at a glance (skip only for a one-shot)
+- [ ] `campaigns/<slug>/references.md` — touchstones, or a stub saying none were given
+- [ ] `campaigns/<slug>/` subfolders: `world/ npcs/ scenes/ puzzles/ handouts/ sessions/`
+
+Then report every auto-filled field, marked `[auto]`, with a one-line reason.
+
+Headings in the campaign `CLAUDE.md` stay English (they're what the specs reference and what
+the Keeper skims); the values are written in the campaign's output language.
 
 ## Quality bar
 
@@ -873,6 +891,12 @@ A handout is the place where language and era are most visible, so get both righ
   closings; a modern text message does not.
 - Where the fiction plausibly mixes languages (a colonial港英 police report, a foreign
   scholar's marginalia), mix them — it's texture and it can carry a clue.
+- **When the writer wouldn't have written in the output language at all** — a Norwegian
+  widow's 1919 diary in a 繁體中文 campaign — write the prop in the **output language** and
+  put the in-fiction device in the presentation note: a translation read aloud by the owner,
+  an investigator translating live, a consular clerk's transcript, a mission-school copy.
+  The table must be able to read the prop. Never hand over a page nobody present can read,
+  and never quietly pretend the original was written in a language it wasn't.
 - Keep proper nouns consistent with what's already in the campaign; check `canon-log.md`.
 
 ## Player-safe discipline (critical)

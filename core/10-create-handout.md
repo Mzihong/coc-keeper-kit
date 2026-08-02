@@ -35,6 +35,12 @@ A handout is the place where language and era are most visible, so get both righ
   closings; a modern text message does not.
 - Where the fiction plausibly mixes languages (a colonial港英 police report, a foreign
   scholar's marginalia), mix them — it's texture and it can carry a clue.
+- **When the writer wouldn't have written in the output language at all** — a Norwegian
+  widow's 1919 diary in a 繁體中文 campaign — write the prop in the **output language** and
+  put the in-fiction device in the presentation note: a translation read aloud by the owner,
+  an investigator translating live, a consular clerk's transcript, a mission-school copy.
+  The table must be able to read the prop. Never hand over a page nobody present can read,
+  and never quietly pretend the original was written in a language it wasn't.
 - Keep proper nouns consistent with what's already in the campaign; check `canon-log.md`.
 
 ## Player-safe discipline (critical)
