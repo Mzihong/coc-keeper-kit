@@ -1,74 +1,55 @@
 # CLAUDE.md — CoC Keeper Kit
 
-## Vision
-A preparation workbench for a Call of Cthulhu **Keeper**. Turn a spark of an idea into
-table-ready material — worlds, NPCs, Mythos entities, investigation puzzles, player
-handouts, and read-aloud scene text — all mechanically correct for **Call of Cthulhu
-7th Edition** and organized so nothing is lost between sessions.
+A preparation workbench for a Call of Cthulhu **Keeper**, for **CoC 7th Edition**.
+
+> **All instructions live in `core/`. This file is a pointer, not a copy.**
+> Read **`core/00-how-to-run.md`** before doing anything else — it holds the pipeline, the
+> routing table, the ground rules, and the layout. If this file ever disagrees with `core/`,
+> `core/` wins.
+
+## Skills
+
+The skills in `.claude/skills/` are thin wrappers: each one points at its `core/` spec. Load
+the skill, read the spec it names, follow the spec. Never generate from the wrapper alone.
+
+| Skill | Spec | Use it to |
+|-------|------|-----------|
+| `start-campaign`      | `core/01-intake.md`           | Begin a new campaign — full intake, or `auto` for everything. |
+| `coc-rules-reference` | `core/02-rules-reference.md`  | Look up 7e mechanics. **Read first** before any stat block or check. |
+| `build-world`         | `core/03-build-world.md`      | Generate a setting, region, town, faction, or timeline. |
+| `design-scenario`     | `core/04-design-scenario.md`  | Structure a whole mystery, or prep the next session. |
+| `build-event-clock`   | `core/05-event-clock.md`      | Build the doom track and the trigger table. |
+| `create-npc`          | `core/06-create-npc.md`       | Produce a full 7e NPC — stats, want, secret, lie, clues. |
+| `create-monster`      | `core/07-create-monster.md`   | Stat a Mythos entity — attacks, SAN loss, and its fair out. |
+| `create-puzzle`       | `core/08-create-puzzle.md`    | Design fair, multi-path investigation obstacles. |
+| `scene-description`   | `core/09-scene-description.md`| Write read-aloud boxed text and sensory detail. |
+| `create-handout`      | `core/10-create-handout.md`   | Write player-facing props — letters, clippings, reports. |
+| `review-material`     | `core/11-review.md`           | Audit material before the table. |
+| `update-canon`        | `core/12-canon-update.md`     | Record what happened and update campaign state. |
+
+## The short version
+
+- **New campaign** → `start-campaign`. The Keeper can answer everything, some things, or
+  nothing at all (`all auto`); every auto-filled choice gets disclosed for approval.
+- **Then** → world → event clock → cast. Those are the campaign's standing state.
+- **Each session** → `design-scenario` against that state → `review-material` → play →
+  `update-canon`.
+- **Output language is per campaign**, declared in `campaigns/<slug>/CLAUDE.md`. Generated
+  content follows it; kit scaffolding and filenames stay English. For 繁體中文, follow
+  `reference/glossary-zh.md`.
+- **Continuity is not optional.** Read the campaign's `CLAUDE.md` and `canon-log.md` before
+  generating into it.
 
 ## What this is / isn't
-- **IS** a private authoring kit. Reusable canon, templates, and skills live at the root;
-  each game you run lives in its own folder under `campaigns/`.
-- **ISN'T** a rules SRD or a substitute for the published rulebooks. It references
-  mechanics so generated content is correct; it does not reproduce copyrighted text.
 
-## Ground rules for generated content
-- **System: CoC 7th Edition.** Every stat block, skill value, and Sanity cost uses 7e.
-  Read `reference/rules/` — or load the `coc-rules-reference` skill — before writing any
-  stat block or setting a difficulty.
-- **Era: per-campaign.** Templates are era-agnostic. Each campaign declares its era, tone,
-  and content lines in its own `CLAUDE.md`; match that campaign's era when generating for it.
-- **Language: English** for all content and scaffolding.
-- **Fair play.** Every mystery must be solvable. Follow the three-clue rule; never gate
-  forward progress behind a single die roll.
-- **Spoiler hygiene.** Keeper-only secrets stay in Keeper files. Player-facing material
-  (handouts, boxed read-aloud text) is clearly marked and self-contained — safe to print
-  or hand over without leaking the solution.
-- **Session-zero safety.** Respect each campaign's declared content lines/veils. Flag,
-  don't silently include, extreme content.
+- **IS** an authoring kit. Reusable canon, templates, and specs live at the root; each game
+  lives in its own folder under `campaigns/`.
+- **ISN'T** a rules SRD or a substitute for the published rulebooks. It references mechanics
+  so generated content is correct; it does not reproduce copyrighted text.
 
-## Layout
-```
-coc-keeper-kit/
-├── CLAUDE.md                 ← this file — vision + house rules
-├── README.md                 ← human quick-start
-├── .claude/skills/           ← the authoring skills (auto-discovered)
-├── reference/                ← shared, reusable canon across ALL campaigns
-│   ├── rules/                ← 7e mechanics cheat-sheets (checks, sanity, combat)
-│   ├── bestiary/             ← reusable monsters & Mythos entities
-│   ├── mythos/               ← Great Old Ones, tomes, spells, cults, factions
-│   └── tables/               ← random roll tables (names, madness, rumours, loot)
-├── templates/                ← blank fill-in templates the skills produce
-└── campaigns/
-    ├── _template-campaign/   ← copy this to start a new game
-    └── <your-campaign>/      ← one folder per campaign
-```
+## Portability
 
-## Skills (load with the Skill tool)
-| Skill | Use it to |
-|-------|-----------|
-| `coc-rules-reference` | Look up 7e mechanics — difficulty, Sanity, combat, skill bases. **Load first** whenever writing a stat block or setting a check. |
-| `build-world`         | Generate a setting, region, town, faction, or timeline. |
-| `create-npc`          | Produce a full 7e NPC — stat block, personality, secret, roleplaying notes. |
-| `create-monster`      | Stat a Mythos entity or monster — attacks, Sanity loss, special abilities. |
-| `scene-description`   | Write read-aloud "boxed" text and sensory scene/location detail. |
-| `create-puzzle`       | Design investigation puzzles, clues, and ciphers with fair, multi-path solutions. |
-| `design-scenario`     | Structure a whole mystery — hook, spine, act structure, clue map. |
-| `create-handout`      | Write player-facing props — letters, clippings, journal pages, reports. |
-
-## Starting a new campaign
-1. Copy `campaigns/_template-campaign/` → `campaigns/<slug>/`.
-2. Fill in that campaign's `CLAUDE.md` (era, tone, premise, content lines, canon).
-3. Generate material into its subfolders. Skills read the campaign `CLAUDE.md` for tone,
-   and `reference/` + `templates/` for correctness and shape.
-
-## Typical workflow
-`design-scenario` (skeleton) → `build-world` (places) → `create-npc` / `create-monster`
-(cast) → `create-puzzle` (obstacles) → `scene-description` + `create-handout` (table-ready
-prose) → save into the campaign folder → prep per session in `sessions/`.
-
-## Conventions
-- One entity per file; name files `kebab-case.md`. Cross-link with relative Markdown links.
-- Anything reusable across campaigns belongs in `reference/`, not inside a campaign.
-- Mark Keeper-only sections with a `> **KEEPER ONLY**` blockquote so they never get printed
-  onto a handout by mistake.
+This kit is read by Claude, Gemini, and ChatGPT. `CLAUDE.md`, `GEMINI.md`, and `AGENTS.md`
+are three thin adapters over the same `core/`. **When changing how the kit behaves, change
+`core/` — never a root adapter.** An instruction that exists in only one adapter is a bug:
+the other two models will not follow it.

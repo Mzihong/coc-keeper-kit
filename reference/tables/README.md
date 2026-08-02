@@ -1,11 +1,32 @@
 # tables/ — random tables
 
-Roll tables for prep and live improv: names, madness, rumours, ephemera, minor loot, weird
-details. Keep them era-agnostic where possible; put era-specific tables in the campaign that
-needs them.
+Roll tables for prep and live improv. Keep them era-agnostic where possible; put era-specific
+tables in the campaign that needs them.
 
-Format: a short intro (what to roll), then a table with a `dN` column and results. Ships with:
-- `madness.md` — bout-of-madness effects (1D10).
+Format: a short intro (what to roll and when), then a table with a `dN` column and results.
 
-Ideas to add over time: `rumours.md`, `investigator-names.md`, `weird-details.md`,
+## Seed tables — the anti-generic layer
+
+These four are **not optional flavour**. `core/01-intake.md` requires them whenever the Keeper
+gives little or no input. Without rolling, every model converges on the same campaign: Arkham,
+a cult, a Great Old One stirring. Rolling and *keeping the result* is what makes a low-context
+campaign specific.
+
+- `hooks.md` (1d20) — how the investigators get pulled in.
+- `locations.md` (1d20) — where it happens; breaks the default fishing-village gravity.
+- `mythos-angles.md` (1d20) — what the wrongness actually is. The most important one.
+- `npc-quirks.md` (1d20) — the tell that makes an NPC playable.
+
+## Prep & play tables
+
+- `complications.md` (1d20) — what goes sideways in a session; roll twice at session prep.
+- `madness.md` (1D10) — bout-of-madness effects.
+
+## Adding tables
+
+One subject per file, `kebab-case.md`. State the die and when to roll it in the first two
+lines. Prefer 20 concrete entries over 100 vague ones — a table you actually read beats a
+table you skim.
+
+Ideas: `rumours.md`, `investigator-names.md`, `weird-details.md`,
 `what-the-cultist-carries.md`, `sounds-in-the-dark.md`.

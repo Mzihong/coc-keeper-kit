@@ -1,50 +1,114 @@
 # CoC Keeper Kit
 
 A preparation workbench for running **Call of Cthulhu 7th Edition** as the Keeper.
-Ask Claude Code (from inside this folder) to build worlds, NPCs, monsters, puzzles,
-handouts, and read-aloud scene text — mechanically correct and filed where you can find it.
+
+Answer as many or as few questions as you like — down to none at all — and get a campaign
+world, an event clock, a cast, and then session scenarios generated against them that stay
+consistent from session 1 to session 20.
+
+Works with **Claude**, **Gemini**, and **ChatGPT**: all the instructions live in `core/`, and
+`CLAUDE.md` / `GEMINI.md` / `AGENTS.md` are thin adapters over the same content.
 
 ## Quick start
 
-1. **Start a campaign**
-   ```
-   Copy campaigns/_template-campaign/  →  campaigns/my-campaign/
-   ```
-   Then fill in `campaigns/my-campaign/CLAUDE.md` (era, tone, premise, content lines).
+### Claude Code
+Open this folder and say what you want. Skills load automatically.
+```
+"I want to start a new campaign"        → start-campaign
+"design a one-shot about a missing lighthouse keeper"
+"we finished session 3, here's what happened"
+```
 
-2. **Ask for material.** Examples:
-   - "Design a one-shot scenario about a missing lighthouse keeper for `my-campaign`."
-   - "Create an NPC: the town doctor who secretly feeds the cult. Full 7e stats."
-   - "Stat a shambling drowned-sailor monster, moderate threat."
-   - "Write read-aloud boxed text for the players entering the flooded crypt."
-   - "Build a cipher puzzle the investigators solve from a torn ledger."
-   - "Make a 1923 newspaper-clipping handout hinting at the disappearances."
+### Gemini CLI
+Open this folder. `GEMINI.md` routes each request to the right `core/` spec.
 
-3. **Where it lands.** Generated files go into the campaign's subfolders
-   (`npcs/`, `scenes/`, `puzzles/`, `handouts/`, `world/`, `sessions/`).
-   Reusable monsters/lore/tables go in the root `reference/`.
+### ChatGPT (Projects / custom GPT)
+Upload **`dist/bundle.md`** — every spec, template, and table in one file — and paste
+`AGENTS.md` into the project instructions. Ask for output, then save what it prints into the
+paths it names.
+
+## The flow
+
+```
+start-campaign  →  world  →  event clock  →  cast
+                                  ↓
+                   ┌──────────────────────────────┐
+   every session:  │  design scenario  →  review  │
+                   │        ↑              ↓      │
+                   │   update canon  ←   play     │
+                   └──────────────────────────────┘
+```
+
+1. **Start.** You get a detailed intake — era, place, premise, mood, lethality, length,
+   party, content lines. Answer what you care about; reply `auto` to any question or
+   `all auto` to the whole thing. Everything auto-filled is rolled from the seed tables and
+   shown to you, marked `[auto]`, to accept or reroll.
+2. **Standing state.** The world, the event clock (what the threat achieves if you do
+   nothing, plus what fires when players act), and the cast. Built once.
+3. **Per session.** *"Last time they went to the docks — what now?"* generates one session
+   against the current state. Review it, run it, then log what actually happened.
+4. **Continuity.** `canon-log.md` keeps what's true separate from what the players know, so
+   session 8 never contradicts session 1.
+
+## Examples
+
+- "Design a one-shot about a missing lighthouse keeper."
+- "Create an NPC: the town doctor who secretly feeds the cult. Full 7e stats."
+- "Stat a shambling drowned-sailor monster, moderate threat."
+- "Write read-aloud boxed text for the players entering the flooded crypt."
+- "Build a cipher puzzle they solve from a torn ledger."
+- "Make a 1923 newspaper-clipping handout hinting at the disappearances."
+- "What happens if they just leave town and never come back?"
+- "Check this session prep before Saturday."
 
 ## What's in here
 
-- **`CLAUDE.md`** — project vision and the house rules Claude follows.
-- **`.claude/skills/`** — the authoring skills (rules lookup, NPC/monster/scene/puzzle/
-  handout/world/scenario generators). Loaded automatically when relevant.
-- **`reference/`** — shared canon: 7e rules cheat-sheets, a growing bestiary, Mythos lore,
-  and random tables — usable by every campaign.
-- **`templates/`** — the blank shapes each skill fills in.
-- **`campaigns/`** — one folder per game, plus `_template-campaign/` to copy from.
+| Path | What |
+|---|---|
+| `core/` | **Every instruction the kit has.** Start at `core/00-how-to-run.md`. |
+| `CLAUDE.md`, `GEMINI.md`, `AGENTS.md` | Thin adapters — routing only, no content. |
+| `.claude/skills/` | Claude Code wrappers; each points at its `core/` spec. |
+| `reference/` | Shared canon: 7e cheat-sheets, bestiary, Mythos lore, roll tables, `glossary-zh.md`. |
+| `templates/` | The blank shapes each spec fills in. |
+| `campaigns/` | One folder per game, plus `_template-campaign/` to copy. |
+| `dist/bundle.md` | Build artifact — the whole kit in one file, for ChatGPT. |
+
+## Language
+
+Output language is set **per campaign**, in that campaign's `CLAUDE.md`. The template ships
+with 繁體中文（香港）; change it to whatever your table speaks. Kit scaffolding, specs, and
+filenames stay English so the repo stays navigable.
+
+When generating 繁體中文, everything follows `reference/glossary-zh.md` — one locked
+translation per game term, so 理智 doesn't become 精神值 three sessions later.
+
+## Editing the kit
+
+**Change `core/`, never a root adapter.** The adapters exist so three models read one source;
+an instruction added to only `CLAUDE.md` is a bug the other two won't follow.
+
+After editing `core/`, `templates/`, or `reference/tables/`, rebuild the ChatGPT bundle:
+
+```bash
+bash scripts/build-bundle.sh
+```
 
 ## Notes
+
 - Keeper-only secrets are marked `> **KEEPER ONLY**` and kept out of player-facing files.
 
 ## License
+
 Released under the [MIT License](LICENSE) © 2026 Mzihong. Contributions are welcome — see
 [CONTRIBUTING.md](CONTRIBUTING.md) and the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## Disclaimer
+
 This is an **unofficial, fan-made** preparation kit. *Call of Cthulhu* is a trademark of
 **Chaosium Inc.**; this project is **not affiliated with, endorsed, or sponsored by
 Chaosium**. It **references** 7th Edition mechanics so generated material is correct but
 **reproduces no copyrighted text** from any rulebook or published scenario — you need the
-official *Call of Cthulhu Keeper Rulebook* to actually play. The Cthulhu Mythos was created
-by H. P. Lovecraft. All original content generated with this kit is yours.
+official *Call of Cthulhu Keeper Rulebook* to actually play. The Chinese terms in
+`reference/glossary-zh.md` are this kit's own working convention, not an official
+translation. The Cthulhu Mythos was created by H. P. Lovecraft. All original content
+generated with this kit is yours.
