@@ -27,7 +27,7 @@ third-party ones.
 Validation (always on, and the whole point of --check):
   - every .md in a third-party dir (`decks/`, `sourcebooks/`) carries a `## 引用出处` section
     with every required row filled
-  - no file in ANY of the six indexed directories is orphaned (nothing references it) without
+  - no file in ANY of the seven indexed directories is orphaned (nothing references it) without
     saying so — this applies to the kit's own content too, not just archived material
 """
 import json
@@ -162,15 +162,32 @@ def find_references(relpath, basename, targets, self_path):
     return hits
 
 
+def list_md_files_recursive(dirpath):
+    """Sorted relative paths (posix-style, e.g. 'great-old-ones/cthulhu.md') of every .md
+    file under dirpath, at any depth — README.md and index.json excluded at every level."""
+    out = []
+    for sub, dirnames, filenames in os.walk(dirpath):
+        dirnames.sort()
+        for name in sorted(filenames):
+            if name == "index.json" or name == "README.md" or not name.endswith(".md"):
+                continue
+            rel = os.path.relpath(os.path.join(sub, name), dirpath).replace(os.sep, "/")
+            out.append(rel)
+    return sorted(out)
+
+
 def build_entry(dirname, name, path, targets, require_citation):
-    """One file's index entry, plus any problems found in it."""
+    """One file's index entry, plus any problems found in it. `name` may be a nested
+    relative path (e.g. 'great-old-ones/cthulhu.md'); references also match the bare
+    leaf filename so a loose in-text mention doesn't have to spell out the subdirectory."""
     text = read(path)
     relpath = "reference/%s/%s" % (dirname, name)
     file_problems = []
     prov = None
     if require_citation:
         prov, file_problems = parse_citation(text)
-    refs = find_references(relpath, name, targets, path)
+    leaf = name.rsplit("/", 1)[-1]
+    refs = find_references(relpath, leaf, targets, path)
     if not refs and ORPHAN_IS_ERROR.get(dirname, True):
         file_problems.append("orphaned: nothing in the repo references it")
     entry = {
@@ -227,10 +244,8 @@ def build():
         if not os.path.isdir(dirpath):
             continue
         entries = []
-        for name in sorted(os.listdir(dirpath)):
-            if not name.endswith(".md") or name == "README.md":
-                continue
-            path = os.path.join(dirpath, name)
+        for name in list_md_files_recursive(dirpath):
+            path = os.path.join(dirpath, *name.split("/"))
             entry, file_problems = build_entry(dirname, name, path, targets, require_citation=False)
             problems.extend("%s: %s" % (entry["path"], p) for p in file_problems)
             entries.append(entry)
