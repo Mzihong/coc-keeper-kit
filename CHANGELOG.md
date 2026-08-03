@@ -16,14 +16,6 @@
 
 ## 2026-08-03 (c5dbaf1, ca17e5d, 4cc63ef, 84dba55, 3f7225e, d9e1fef)
 
-对应计划:[P4 antagonist-budget](update_plan/Archived/2026-08-02-antagonist-budget.md)、
-[P6 investigator-cards](update_plan/Archived/2026-08-02-investigator-cards.md)——两者内容
-均已在 2026-08-02 落盘完成,本轮只是收尾归档,无新增用户可见能力。
-
-对应计划:[P7 magic-quickref](update_plan/Archived/2026-08-02-magic-quickref.md)。
-
-对应计划:[P8 investigator-render-gaps](update_plan/Archived/2026-08-02-investigator-render-gaps.md)。
-
 ### 修复问题
 
 - P4/P6 的计划文件头、`update_plan/README.md` 状态表在内容早已提交完成后仍停留在
@@ -56,13 +48,6 @@
 ---
 
 ## 2026-08-02 (713cd1c, 9c011f3, a7cb4f6, 97c87d8, 39d1625, 0769902, 610dd3b, 9c47d98, 7e42d2a, ef4936a, e34d3db, 0c736ee, 66d32d2, d91f487, e0d026b, aceddf9)
-
-对应计划:[P2 multi-arc-and-branching](update_plan/Archived/2026-08-02-multi-arc-and-branching.md)、
-[P3 conventions-gaps](update_plan/Archived/2026-08-02-conventions-gaps.md) 第 1/2/5/6/7 项
-(第 5 项玩家卡后续拆出为 [P6 investigator-cards](update_plan/2026-08-02-investigator-cards.md))、
-[P6 investigator-cards](update_plan/2026-08-02-investigator-cards.md) 第二轮、
-[P4 antagonist-budget](update_plan/Archived/2026-08-02-antagonist-budget.md)(人类侧,已完成并归档)、
-[P1 cult-doc-integration](update_plan/Archived/2026-08-02-cult-doc-integration.md)(全部四章 + 阶段 2 + NPC 互动史附加项,阶段 0-2 已归档;阶段 3 收尾拆出为 [cult-doc-wrapup](update_plan/2026-08-02-cult-doc-wrapup.md))
 
 ### 修复问题
 

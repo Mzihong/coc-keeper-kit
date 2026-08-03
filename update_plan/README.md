@@ -4,20 +4,17 @@
 
 ## 状态索引
 
+只列**未完成**的计划。已完成并归档的计划不在本表出现,索引见
+[Archived/README.md](Archived/README.md)。
+
 | # | 计划 | 范围 | 状态 | 阻塞/等待 |
 |---|---|---|---|---|
 | P1 | [cult-doc-wrapup](2026-08-02-cult-doc-wrapup.md) | 克苏鲁教团文档整合的阶段 3 收尾(索引登记、review-material 审计、提交)。阶段 0/1/2 与附加项已完成并归档,详情见 [Archived/README.md](Archived/README.md) | 待执行 | 无——纯收尾工作量,无外部依赖 |
-| P2 | [multi-arc-and-branching](Archived/2026-08-02-multi-arc-and-branching.md) | 已归档,详情见 [Archived/README.md](Archived/README.md) | 已完成(e0d026b) | 无 |
-| P3 | [conventions-gaps](Archived/2026-08-02-conventions-gaps.md) | 已归档,详情见 [Archived/README.md](Archived/README.md) | 已完成(e0d026b) | 无 |
-| P4 | [antagonist-budget](Archived/2026-08-02-antagonist-budget.md) | 已归档,详情见 [Archived/README.md](Archived/README.md) | 已完成(610dd3b) | 无 |
 | P5 | [low-cost-maps](2026-08-02-low-cost-maps.md) | 低成本地图:mermaid 关系图 + DSL→SVG 平面图渲染器 + 手绘要点清单 | 阻塞(等 Keeper 定视觉风格与 DSL 范围) | 三个待拍板问题见计划文件;原型尚未落盘 |
-| P6 | [investigator-cards](Archived/2026-08-02-investigator-cards.md) | 已归档,详情见 [Archived/README.md](Archived/README.md) | 已完成(97c87d8) | 无 |
-| P7 | [magic-quickref](Archived/2026-08-02-magic-quickref.md) | 已归档,详情见 [Archived/README.md](Archived/README.md) | 已完成(84dba55) | 无 |
-| P8 | [investigator-render-gaps](Archived/2026-08-02-investigator-render-gaps.md) | 已归档,详情见 [Archived/README.md](Archived/README.md) | 已完成(d9e1fef) | 无 |
-| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:种类阶梯的档位区间、按 type 分的模板、词条(强化)系统与其存储格式 | 待讨论(五项待定,尚无执行清单) | 从 P4 待讨论 2 拆出。骨架已由 P4 定案 A 给出(`人类<怪物<古神眷族<古神`),本计划填第二层;并接手 P4 待讨论 7(阶梯与 type 六类/threat 四档咬合)。等 Keeper 定来源红线(仓库是否公开 / A/B/C)、"具体模板"读法、词条语义;**不卡 P1 第四章**,只回填 `core/07` 一句。**2026-08-02:红线问题部分有答案了**——转载规则已改(收录须标注出处、产出只取结构不取文字,见 `core/00-how-to-run.md`),且 `reference/sourcebooks/malleus-monstrorum-zh.md` 已在仓库里可读;剩下要定的是"具体模板"的读法与范围 |
+| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:种类阶梯的档位区间、按 type 分的模板、词条(强化)系统与其存储格式 | 待讨论(五项待定,尚无执行清单) | 从 P4(已归档)待讨论 2 拆出。骨架已由 P4 定案 A 给出(`人类<怪物<古神眷族<古神`),本计划填第二层;并接手 P4 待讨论 7(阶梯与 type 六类/threat 四档咬合)。等 Keeper 定来源红线(仓库是否公开 / A/B/C)、"具体模板"读法、词条语义;**不卡 P1 第四章**,只回填 `core/07` 一句。**2026-08-02:红线问题部分有答案了**——转载规则已改(收录须标注出处、产出只取结构不取文字,见 `core/00-how-to-run.md`),且 `reference/sourcebooks/malleus-monstrorum-zh.md` 已在仓库里可读;剩下要定的是"具体模板"的读法与范围 |
 
 **状态取值:** `待讨论(<待定什么>)` / `待执行` / `进行中(<当前所在步骤>)` / `阻塞(<等什么>)` /
-`已完成(<commit>)`
+`已完成(<commit>)`(完结后移除本表,见完结清单第 7 项)
 
 `待讨论` 用于只摆事实、列选项、提问题,尚未产出 `- [ ]` 执行清单的计划——它没有条目可勾,
 定案后先补执行清单再转 `待执行`。
@@ -28,42 +25,24 @@
 
 ```mermaid
 graph LR
-    P3["✅ P3 惯例缺口<br/>(结算+成长+追逐+缩放)"]
-    P7["✅ P7 magic 速查<br/>(已完成)"]
     P5["P5 低成本地图<br/>(等 Keeper 定风格)"]
-    P6["✅ P6 玩家卡<br/>(已归档 97c87d8)"]
     P1a["P1 阶段3收尾<br/>(0-2+附加项已归档)"]
-    P2["✅ P2 多章/分支结构"]
-    P4["✅ P4 反派强度预算<br/>(人类侧,已归档 610dd3b)"]
-    P8["✅ P8 卡渲染缺口<br/>(全渲染+自校验,已完成)"]
     P9["P9 怪物模板/词条<br/>(待讨论 红线+读法+语义)"]
     KeeperMap["⏳ Keeper 定地图风格/DSL 范围"]
     KeeperRed["⏳ Keeper 定 P9 来源红线<br/>(仓库是否公开)"]
 
     KeeperMap --> P5
     KeeperRed --> P9
-    P4 -.怪物侧拆出;P9 结论回填 core/07 一句(占位句已落盘).-> P9
-    P6 -.实跑+schema 重建暴露渲染缺口(历史因果,已发生).-> P8
     P5 -.邪教关系图当 mermaid 样例.-> P1a
-    P2
-    P3
 ```
 
 **P1 阶段 0/1/2 与附加项已完成并归档**(见 [Archived/README.md](Archived/README.md))
-——第四章(邪教徒/怪物/造物)只用了自身需要的 7 个新法术,没有等 P7 的完整速查;
-阶段 2(敌对势力 intake 问题、campaign `Threat` 字段)也已接线完毕。剩下的阶段 3 收尾
-(README 登记、review-material 审计、归档)拆成独立计划
+——剩下的阶段 3 收尾(README 登记、review-material 审计、归档)拆成独立计划
 [`2026-08-02-cult-doc-wrapup.md`](2026-08-02-cult-doc-wrapup.md) 继续跟踪。
-P8 已完成(全渲染+自校验,`core/13`/`character-creation.md`/`core/01` 已接线);
-P9 也不是任何硬前置——`core/07` 的占位句已落盘。P6 已归档
-(精英邪教徒满卡按需生成、`roster.csv` 暂不做,均非阻塞性决定)。
+P9 不是任何硬前置——`core/07` 的占位句已落盘。
 活动计划中仍在等 Keeper 的只剩 P5(风格/范围)、P9(范围)。
 
 ## 建议执行顺序
-
-~~P2 多章/分支~~ ~~P3 惯例缺口(结算+成长+追逐+缩放)~~ ~~P4 反派强度预算(人类侧)~~
-~~P6 玩家卡收尾~~ ~~P1 阶段 0/1/2 + 附加项~~ ~~P7 魔法速查~~ ~~P8 卡渲染缺口~~
-—— 已完成/已落盘。剩下的:
 
 1. **P1 阶段 3(收尾)** —— 已拆成独立计划 [`2026-08-02-cult-doc-wrapup.md`](2026-08-02-cult-doc-wrapup.md):
    README 登记、review-material 审计、提交,纯收尾工作量,无外部依赖
@@ -77,14 +56,6 @@ P9 也不是任何硬前置——`core/07` 的占位句已落盘。P6 已归档
 
 上面的「建议执行顺序」按**依赖**排,本表按**工作量**排。**新开窗口从本表第 1 条往下挑**——
 挑第一个「现在能动」为「是」的,能在一个上下文里做完并走完完结清单,不必先加载整条依赖链。
-
-~~P4 反派强度预算~~ —— 已完成(人类侧,2026-08-02 第五轮),移出本表。
-~~P6 玩家卡收尾~~ —— 已完成(2026-08-03:跨 P1 项确认无需动作、
-`roster.csv` 判断暂不做),移出本表。
-~~P7 魔法速查~~ —— 已完成(`reference/rules/magic.md` + 3 处登记 + 重跑 bundle/index),
-移出本表。
-~~P8 卡渲染缺口~~ —— 已完成(全渲染出口补全 + 硬性算术/阈值型双层自校验 + `core/13`/
-`character-creation.md`/`core/01` 接线),移出本表。剩下的:
 
 | # | 计划 | 复杂度 | 工作量实测 | 为什么是这个档 | 现在能动 |
 |---|---|---|---|---|---|
@@ -165,9 +136,9 @@ ChatGPT 用户拿到旧规则。
 
 - [ ] commit 信息与 changelog 条目对得上;拿到 hash 后**回填**状态表和计划文件头
       (hash 是提交后才有的,这两处必然是二次提交或 amend)
-- [ ] 整个计划(不是单个阶段)完结后,把文件移进 `Archived/`;本文件状态表对应行
-      改成指向 `Archived/...` 的极简指针(链接 + 极简状态),范围描述挪进
-      `Archived/README.md` 并加一行索引——细节别留在本文件
+- [ ] 整个计划(不是单个阶段)完结后,把文件移进 `Archived/`;**本文件状态索引表
+      对应行整行删除**(只列未完成的计划),范围描述挪进 `Archived/README.md`
+      并加一行索引——细节别留在本文件
 - [ ] 提交前 `git status` 确认没有漏掉 `dist/` 或 `.claude/` 下的联动改动
 
 ## 已完成归档
@@ -177,6 +148,6 @@ ChatGPT 用户拿到旧规则。
 **归档不等于完结**——先走完上面的完结清单,最后一步才是移动文件。
 
 **归档计划的范围描述、设计理由等细节记在 [`Archived/README.md`](Archived/README.md),
-不在本文件重复。** 本文件的状态索引表对归档条目只留一行指针(链接 + 极简状态),
-理由是归档计划只会越来越多,细节留在这里会让每次读本文件的 token 成本一直涨。
+不在本文件重复。** 本文件的状态索引表**只列未完成的计划**,归档条目整行删除
+——理由是归档计划只会越来越多,留着指针行也会让每次读本文件的 token 成本一直涨。
 新增归档时,除了走上面的完结清单,还要在 `Archived/README.md` 加一行索引。
