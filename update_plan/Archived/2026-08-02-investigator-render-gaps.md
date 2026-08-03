@@ -1,8 +1,9 @@
 # Update Plan — 投资者卡渲染缺口(待讨论)
 
 > 日期:2026-08-02
-> 状态:**待执行** —— 2026-08-02 Keeper 定案(见「Keeper 定案」节):渲染受众唯一 = KP,
-> 全渲染不分受众;渲染器加自校验,阈值在 intake 提醒 KP。执行清单已补
+> 状态:**已完成(commit 待回填)** —— 2026-08-03 执行清单全部落地:渲染器补全全部缺失
+> 字段、自校验(硬性算术+阈值型)、`core/13`/`character-creation.md` 改 spec、
+> `core/01` 接线、模板重写。详见文末「执行记录」
 > (缺陷 3 与受众正交,2026-08-02 已直接修掉)
 > 起因:`2026-08-02-investigator-cards.md`(P6)的「未验证」条目——
 > `scripts/render-investigator.py` 首次实跑。跑通了,但跑出两个代码复核没看出来的缺口
@@ -94,24 +95,33 @@ P6 第二轮新增的字段里,除 `specialization` 外**全部**没有卡面出
 
 ## 执行清单(依据上述定案)
 
-- [ ] **补全渲染出口(缺陷 1 + 缺陷 4,一次做完):** `scripts/render-investigator.py` 与
+- [x] **补全渲染出口(缺陷 1 + 缺陷 4,一次做完):** `scripts/render-investigator.py` 与
       `templates/investigator.md` 补齐全部缺失段落——`spells`、`cthulhu_mythos`、`notes`、
       `occupation_detail`、`age_modifiers`、`skill_points` 点数账本、`credit_rating` 细目、
       `gear`/`status`/`party`/`backstory_keys`、`experience_packages`/`mythos_encounters`/
-      `growth_log`。全渲染,不看 `type`
-- [ ] **改 `core/13-create-investigator.md`:** 删"elite-npc 跳过 Hooks"规则(41 行),
-      换成受众声明——输出只面向 KP;玩家自建卡、KP 审录;预制卡需求由 intake 决定
-- [ ] **自校验(硬性算术,无条件跑):** 渲染时默认校验派生值公式、点数账本必须平、
+      `growth_log`。全渲染,不看 `type`。必填形状的字段(角色核心信息)缺失仍占位
+      `<...>`;这批新增的多是可选数组/对象字段,JSON 里没有就整节省略,不铺一堆空标题
+- [x] **改 `core/13-create-investigator.md`:** 删"elite-npc 跳过 Hooks"规则(41 行),
+      换成受众声明——输出只面向 KP;玩家自建卡、KP 审录;预制卡需求由 intake 决定。
+      顺带发现并修了 `reference/rules/character-creation.md` §9 同一处的措辞分歧
+      (原文写的是"跳过 backstory 提示"而非"跳过 Hooks"——两处从未真正一致过,现已
+      统一为同一句话)
+- [x] **自校验(硬性算术,无条件跑):** 渲染时默认校验派生值公式、点数账本必须平、
       每技能 `value = base+职业+兴趣+成长`、信用评级落职业区间;违规打到 stderr
       **警告但照渲**(推荐默认;`--strict` 开关改为拒渲)
-- [ ] **自校验(阈值型,按战役配置):** 创建期技能上限(默认 7e RAW 75%)、特征区间等;
-      配置存 `campaigns/<slug>/investigators/validation.json`(intake 生成,KP 可改),
-      渲染器 stdlib-only 读 JSON,不引新依赖。后续 P4 预算带定案后,
-      反派技能总点数/法术数量上限可作为新阈值接进同一文件
-- [ ] **`core/01-intake.md` 接线:** intake 加车卡校验阈值提醒(展示默认值,KP 可改),
-      并顺带问"是否需要给玩家预制卡"。**注意与 P1 阶段 2 新增的 Threat 问题一起
-      同步问题编号引用**("never invent a fourteenth question" 一类)
-- [ ] 动了 `core/` 与 `templates/` → 重跑 `scripts/build-bundle.sh`
+- [x] **自校验(阈值型,按战役配置):** 创建期技能上限、特征区间;配置存
+      `campaigns/<slug>/investigators/validation.json`(intake 生成,KP 可改),渲染器
+      stdlib-only 读 JSON,不引新依赖。**技能上限改为 90%,不是本文件早先写的"7e RAW
+      75%"**——`reference/rules/character-creation.md` §5 已经落盘的权威数字是 90%
+      (「no skill exceeds 90% at creation」),75% 是这份计划文件定案时的未核实猜测,
+      现在有了已核实的数字,以它为准。`Own Language` 豁免该上限(它只是镜像 EDU,不是
+      拿点数买的)。后续 P4 预算带定案后,反派技能总点数/法术数量上限可作为新阈值接进
+      同一文件
+- [x] **`core/01-intake.md` 接线:** intake 新增问题 14「Investigator cards」,展示阈值
+      默认值(KP 可改)并顺带问"是否需要给玩家预制卡"。已与 P1 阶段 2 的 Threat 问题
+      共用同一次问题编号重排(9/10 已占用,本次是 13 之后插入第 14 题,D/E 组顺移
+      15–18,"never invent a nineteenth question")
+- [x] 动了 `core/` 与 `templates/` → 重跑 `scripts/build-bundle.sh`
 - [ ] 完结走 `update_plan/README.md` 完结清单(状态两处同步、changelog、归档)
 
 ## 待讨论 1 — 卡面受众:一套模板还是两套?(已定案,存档)
@@ -154,11 +164,17 @@ pregen 卡是**玩家**拿的,elite-npc 卡是**守秘人**拿的。现在两者
 
 ## 需要先查清的事(执行前)
 
-- [ ] `core/07-create-monster.md` 与 `core/06-create-npc.md` 的守秘人侧卡面
-      有没有既成栏位惯例(法术/弱点怎么摆),避免 elite-npc 卡自成一格
-- [ ] `reference/rules/` 是否已有法术表述格式(与 P7 魔法速查重叠,可能要等 P7)
-- [ ] `dist/bundle.md` 是否收录了 `templates/investigator.md`——决定改模板后
-      是否必须重跑 `scripts/build-bundle.sh`
+- [x] `core/07-create-monster.md` 与 `core/06-create-npc.md` 的守秘人侧卡面——两处都只是
+      散文指导("list spells and their MP/SAN costs"),没有一个具体的"法术怎么排版"栏位
+      惯例可参照,不存在冲突;`spells` 渲染直接用 schema 自带的 `name`/`cost`/`effect`
+      三字段,不依赖任何外部格式约定
+- [x] `reference/rules/` 当时(2026-08-03 执行时)还没有 `magic.md`——P7 与本计划各自
+      独立,不互相阻塞。执行期间发现 P7 已由另一会话并行完成并落盘,但两者改动的文件
+      完全不重叠(P7 动 `core/02`/`core/07`/`reference/mythos/README.md`,本计划动
+      `core/13`/`core/01`/`reference/rules/character-creation.md` §9),按 Keeper 要求
+      本轮未去动 P7 的任何产出
+- [x] `dist/bundle.md` 确认收录 `templates/*.md`(含 `investigator.md`)——改模板后
+      必须重跑 `scripts/build-bundle.sh`,已执行
 
 ## 影响与时机
 

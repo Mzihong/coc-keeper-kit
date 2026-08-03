@@ -73,6 +73,14 @@
 
 *If unknown, write `<party-agnostic>` and the world will be built to accept any group.*
 
+## Investigator cards
+- **Pre-built pregens:** <not needed yet / name who needs one — built via
+  `core/13-create-investigator.md`>
+- **Creation-time validation:** <default (see `investigators/validation.json`) / overridden,
+  see that file>
+- Config lives in `investigators/validation.json`, read by `scripts/render-investigator.py`;
+  edit it directly to change the thresholds later.
+
 ## Canon so far (truth — keeper only)
 > **KEEPER ONLY**
 > - **The real situation:** <the Mythos truth beneath the campaign>

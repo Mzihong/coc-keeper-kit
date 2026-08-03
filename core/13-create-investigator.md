@@ -67,7 +67,33 @@ budgets decide what the backstory can plausibly claim. Working out of order mean
 
 Elite cultists or other mechanically-full villains (`core/06-create-npc.md` NPCs who need
 complete stats) may use this schema instead of a lighter NPC stat block — set
-`"type": "elite-npc"` in the JSON and skip the player-facing backstory-hooks section.
+`"type": "elite-npc"` in the JSON.
+
+**The rendered card is always KP-facing, for both types.** This tool builds player sheets for
+the Keeper to hand-review, not something that goes to a player unedited — players build their
+own characters, and the Keeper enters the agreed sheet as JSON. Nothing is held back by
+`type`: `scripts/render-investigator.py` renders every populated section (spells, notes,
+the skill-point ledger, `mythos_encounters`, all of it) the same way for a pregen and an
+elite NPC — there is no separate "player view" to strip spoilers from. If a campaign wants
+a pre-built card actually handed to a player, that's decided once at intake
+(`core/01-intake.md`), not solved by the renderer guessing the audience.
+
+## Self-validation
+
+`scripts/render-investigator.py` checks the record on every run and reports to stderr —
+default is **warn but still render**; `--strict` turns any violation into a hard failure:
+
+- **Arithmetic (unconditional):** derived-stat formulas, the skill-point ledger balancing,
+  each skill's `value = base + occupation + interest + growth`, Credit Rating sitting in the
+  occupation's band.
+- **Thresholds (configurable):** the creation-time skill cap and characteristic ranges, read
+  from `campaigns/<slug>/investigators/validation.json` if present (intake writes this file
+  with the campaign's declared numbers; falls back to `reference/rules/character-creation.md`
+  defaults otherwise — see the script's `DEFAULT_VALIDATION`).
+
+This doesn't replace `core/11-review.md` — it catches the mechanical typos a reviewer would
+otherwise have to recompute by hand; continuity, three-clue coverage, and spoiler hygiene are
+still a human read.
 
 ## Output
 

@@ -22,12 +22,18 @@
 
 对应计划:[P7 magic-quickref](update_plan/Archived/2026-08-02-magic-quickref.md)。
 
+对应计划:[P8 investigator-render-gaps](update_plan/Archived/2026-08-02-investigator-render-gaps.md)。
+
 ### 修复问题
 
 - P4/P6 的计划文件头、`update_plan/README.md` 状态表在内容早已提交完成后仍停留在
   "等提交"/"进行中"措辞,现已回填 commit hash 并归档进 `update_plan/Archived/`。
 - `CHANGELOG.md` 2026-08-02 条目头部的 commit 列表此前只列了 4 个(含一个"待提交"
   占位),现已核实补全为当天实际的全部 16 个 commit。
+- 造精英邪教徒/反派 NPC 卡时,法术、克苏鲁神话值、KP 备注(`notes`)三个字段一律
+  渲染不出来——`scripts/render-investigator.py` 直接把它们丢了,`.md` 卡面和 `.json`
+  源数据不一致。P6 重建 schema 后新增的一批字段(职业细节、年龄补正、点数账本、
+  信用评级细目、装备、状态、经历包、神话接触、成长记录)同样没有卡面出口。
 
 ### 更新内容
 
@@ -36,6 +42,16 @@
   会破坏平衡,以及魔法书的研读机制(泛读/精读两阶段、CMI/CMF/MR 三值、重复精读耗时翻倍)。
   之前造 spellcaster 怪物或者写魔法书全靠现编,现在 `core/07-create-monster.md` 与
   `reference/mythos/README.md` 都指向这份速查表。
+- **投资者卡渲染器补全,精英 NPC 的法术和 KP 备注终于上卡了。** `scripts/render-investigator.py`
+  与 `templates/investigator.md` 一次性补齐全部缺失字段;渲染不再区分 pregen/elite-npc
+  受众——工具始终是给 KP 审卡的,玩家自己建卡、KP 审后录入 JSON,预制卡需求改在
+  intake 一次性问清楚(新增问题 14)。
+- **渲染时自动核对算术,不用再手算点数账本对不对。** 每次渲染都会检查派生值公式、
+  技能点账本是否平、每条技能的数值是否等于 base+职业+兴趣+成长、信用评级是否落在
+  职业区间;还会按创建期技能上限(默认 90%)和特征取值区间给出提醒。默认只警告、
+  照常渲卡;`--strict` 可以改成直接拒绝渲染。阈值可在
+  `campaigns/<slug>/investigators/validation.json` 按战役调整,intake 会在新问题 14
+  里先展示默认值再问是否要改。
 
 ---
 

@@ -48,12 +48,13 @@
       "role": "kit's own CoC 7e mechanics cheat-sheets — checks, Sanity, combat, character creation",
       "kind": "kit-original-content",
       "in_bundle": true,
-      "entry_count": 5,
+      "entry_count": 6,
       "index": "reference/rules/index.json",
       "files": [
         "reference/rules/character-creation.md",
         "reference/rules/chases.md",
         "reference/rules/combat.md",
+        "reference/rules/magic.md",
         "reference/rules/sanity.md",
         "reference/rules/skill-checks.md"
       ]
@@ -143,22 +144,20 @@
         "title": "好事者卡组 Busybodies — 官方 NPC 卡组(中译收录)",
         "rights_holder": "Chaosium Inc.",
         "referenced_by": [
-          "CHANGELOG.md:61",
-          "CHANGELOG.md:64",
-          "WORKLOG.md:69",
-          "WORKLOG.md:258",
-          "WORKLOG.md:363",
+          "CHANGELOG.md:102",
+          "WORKLOG.md:262",
+          "WORKLOG.md:367",
           "core/06-create-npc.md:13",
           "core/13-create-investigator.md:15",
           "reference/README.md:30",
           "reference/decks/README.md:15",
-          "reference/rules/character-creation.md:258",
+          "reference/rules/character-creation.md:259",
           "reference/tables/npc-appearance.md:34",
           "reference/tables/npc-quirks.md:31",
-          "update_plan/2026-08-02-antagonist-budget.md:274",
-          "update_plan/2026-08-02-antagonist-budget.md:278",
-          "update_plan/2026-08-02-antagonist-budget.md:287",
-          "update_plan/README.md:12"
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:277",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:281",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:290",
+          "update_plan/Archived/README.md:16"
         ]
       },
       "reference/decks/miseries-zh.md": {
@@ -167,7 +166,7 @@
         "referenced_by": [
           "reference/decks/README.md:17",
           "reference/tables/complications.md:9",
-          "update_plan/2026-08-02-antagonist-budget.md:278"
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:281"
         ]
       },
       "reference/decks/phobias-and-manias-zh.md": {
@@ -177,95 +176,98 @@
           "core/13-create-investigator.md:24",
           "reference/decks/README.md:16",
           "reference/tables/madness.md:7",
-          "update_plan/2026-08-02-antagonist-budget.md:279"
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:282"
         ]
       },
       "reference/decks/weapons-and-artifacts-zh.md": {
         "title": "武器与造物卡组 Weapons & Artifacts — 官方装备卡组(中译收录)",
         "rights_holder": "Chaosium Inc.",
         "referenced_by": [
-          "CHANGELOG.md:64",
-          "WORKLOG.md:259",
+          "WORKLOG.md:263",
           "core/06-create-npc.md:76",
           "core/13-create-investigator.md:26",
           "reference/decks/README.md:18",
-          "reference/rules/character-creation.md:271",
-          "update_plan/2026-08-02-antagonist-budget.md:95",
-          "update_plan/2026-08-02-antagonist-budget.md:279",
-          "update_plan/2026-08-02-antagonist-budget.md:281"
+          "reference/rules/character-creation.md:272",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:98",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:282",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:284"
         ]
       },
       "reference/sourcebooks/grand-grimoire-zh.md": {
         "title": "克苏鲁神话魔法大典 — 官方法术全书(中译收录)",
         "rights_holder": "Chaosium Inc.",
         "referenced_by": [
-          "CHANGELOG.md:56",
-          "CHANGELOG.md:59",
-          "CHANGELOG.md:64",
-          "WORKLOG.md:184",
-          "WORKLOG.md:259",
+          "CHANGELOG.md:100",
+          "WORKLOG.md:188",
+          "WORKLOG.md:263",
+          "WORKLOG.md:548",
           "core/06-create-npc.md:70",
           "core/07-create-monster.md:22",
-          "reference/mythos/README.md:16",
-          "reference/rules/character-creation.md:270",
+          "reference/mythos/README.md:19",
+          "reference/rules/character-creation.md:271",
+          "reference/rules/magic.md:7",
           "reference/tables/cultist-archetypes.md:266",
-          "update_plan/2026-08-02-antagonist-budget.md:289",
-          "update_plan/2026-08-02-magic-quickref.md:5",
-          "update_plan/2026-08-02-magic-quickref.md:27",
-          "update_plan/2026-08-02-magic-quickref.md:32",
-          "update_plan/README.md:12",
-          "update_plan/README.md:15"
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:292",
+          "update_plan/Archived/2026-08-02-magic-quickref.md:32",
+          "update_plan/Archived/2026-08-02-magic-quickref.md:37",
+          "update_plan/Archived/README.md:16",
+          "update_plan/Archived/README.md:18"
         ]
       },
       "reference/sourcebooks/keeper-rulebook-7e-zh.md": {
         "title": "克苏鲁的呼唤 第七版规则书 — 官方规则书全文(中译收录)",
         "rights_holder": "Chaosium Inc. — Call of Cthulhu © 1981–2014 Chaosium Inc.,Call of Cthulhu® 为 Chaosium 注册商标",
         "referenced_by": [
-          "CHANGELOG.md:56",
+          "WORKLOG.md:75",
+          "WORKLOG.md:553",
           "core/02-rules-reference.md:7",
           "reference/mythos/artifacts-zh.md:18",
           "reference/mythos/spells/call-father-dagon-and-mother-hydra.md:4",
+          "reference/rules/magic.md:5",
           "reference/tables/cultist-archetypes.md:265",
-          "update_plan/2026-08-02-investigator-cards.md:95",
-          "update_plan/2026-08-02-investigator-cards.md:99"
+          "update_plan/Archived/2026-08-02-investigator-cards.md:104",
+          "update_plan/Archived/2026-08-02-investigator-cards.md:108",
+          "update_plan/Archived/2026-08-02-magic-quickref.md:41",
+          "update_plan/Archived/README.md:18"
         ]
       },
       "reference/sourcebooks/malleus-monstrorum-zh.md": {
         "title": "怪物之锤 Malleus Monstrorum — 官方怪物图鉴(中译收录)",
         "rights_holder": "Chaosium Inc.",
         "referenced_by": [
-          "CHANGELOG.md:56",
-          "WORKLOG.md:80",
+          "WORKLOG.md:84",
           "core/07-create-monster.md:20",
           "core/14-archive-reference.md:48",
           "reference/bestiary/deep-one-hybrid.md:60",
           "reference/bestiary/README.md:6",
-          "update_plan/2026-08-02-antagonist-budget.md:248",
-          "update_plan/README.md:17"
+          "update_plan/README.md:17",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:251"
         ]
       },
       "reference/rules/character-creation.md": {
         "title": "7e Character Creation — cheat-sheet",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:43",
-          "CHANGELOG.md:48",
-          "CHANGELOG.md:62",
-          "CHANGELOG.md:64",
-          "WORKLOG.md:71",
-          "WORKLOG.md:78",
-          "WORKLOG.md:257",
-          "WORKLOG.md:279",
-          "WORKLOG.md:287",
+          "CHANGELOG.md:89",
+          "CHANGELOG.md:103",
+          "WORKLOG.md:81",
+          "WORKLOG.md:261",
+          "WORKLOG.md:283",
+          "WORKLOG.md:291",
+          "WORKLOG.md:558",
+          "WORKLOG.md:598",
+          "WORKLOG.md:608",
           "core/01-intake.md:48",
+          "core/01-intake.md:67",
           "core/02-rules-reference.md:18",
-          "core/02-rules-reference.md:30",
+          "core/02-rules-reference.md:32",
           "core/06-create-npc.md:45",
           "core/06-create-npc.md:72",
           "core/07-create-monster.md:13",
           "core/11-review.md:62",
           "core/13-create-investigator.md:9",
-          "core/13-create-investigator.md:81",
+          "core/13-create-investigator.md:91",
+          "core/13-create-investigator.md:107",
           "templates/investigator.schema.json:5",
           "templates/investigator.schema.json:99",
           "templates/investigator.schema.json:194",
@@ -273,42 +275,49 @@
           "reference/tables/cultist-archetypes.md:11",
           "reference/tables/cultist-archetypes.md:185",
           "campaigns/_template-campaign/CLAUDE.md:53",
-          "update_plan/2026-08-02-antagonist-budget.md:11",
-          "update_plan/2026-08-02-antagonist-budget.md:114",
-          "update_plan/2026-08-02-antagonist-budget.md:115",
-          "update_plan/2026-08-02-antagonist-budget.md:120",
-          "update_plan/2026-08-02-antagonist-budget.md:148",
-          "update_plan/2026-08-02-antagonist-budget.md:172",
-          "update_plan/2026-08-02-antagonist-budget.md:258",
-          "update_plan/2026-08-02-antagonist-budget.md:296",
-          "update_plan/2026-08-02-antagonist-budget.md:300",
-          "update_plan/2026-08-02-antagonist-budget.md:345",
-          "update_plan/2026-08-02-antagonist-budget.md:356",
-          "update_plan/2026-08-02-antagonist-budget.md:362",
-          "update_plan/2026-08-02-antagonist-budget.md:366",
-          "update_plan/2026-08-02-antagonist-budget.md:387",
-          "update_plan/2026-08-02-antagonist-budget.md:393",
-          "update_plan/2026-08-02-cult-doc-integration.md:145",
-          "update_plan/2026-08-02-cult-doc-integration.md:170",
-          "update_plan/2026-08-02-cult-doc-integration.md:173",
-          "update_plan/2026-08-02-cult-doc-integration.md:199",
-          "update_plan/2026-08-02-investigator-cards.md:22",
-          "update_plan/2026-08-02-investigator-cards.md:47",
-          "update_plan/2026-08-02-investigator-cards.md:61",
-          "update_plan/2026-08-02-investigator-cards.md:90",
-          "update_plan/2026-08-02-investigator-cards.md:100",
-          "update_plan/README.md:12",
-          "update_plan/README.md:71"
+          "scripts/render-investigator.py:20",
+          "scripts/render-investigator.py:58",
+          "scripts/render-investigator.py:429",
+          "update_plan/2026-08-02-investigator-render-gaps.md:5",
+          "update_plan/2026-08-02-investigator-render-gaps.md:106",
+          "update_plan/2026-08-02-investigator-render-gaps.md:115",
+          "update_plan/2026-08-02-investigator-render-gaps.md:174",
+          "update_plan/README.md:57",
+          "update_plan/README.md:87",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:11",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:117",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:118",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:123",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:151",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:175",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:261",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:299",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:303",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:348",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:359",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:365",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:369",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:387",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:393",
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:147",
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:172",
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:175",
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:201",
+          "update_plan/Archived/2026-08-02-investigator-cards.md:23",
+          "update_plan/Archived/2026-08-02-investigator-cards.md:48",
+          "update_plan/Archived/2026-08-02-investigator-cards.md:62",
+          "update_plan/Archived/2026-08-02-investigator-cards.md:99",
+          "update_plan/Archived/2026-08-02-investigator-cards.md:109",
+          "update_plan/Archived/README.md:16"
         ]
       },
       "reference/rules/chases.md": {
         "title": "7e Chases — cheat-sheet",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:43",
-          "core/02-rules-reference.md:28",
+          "core/02-rules-reference.md:30",
           "core/04-design-scenario.md:38",
-          "update_plan/2026-08-02-antagonist-budget.md:114",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:117",
           "update_plan/Archived/2026-08-02-conventions-gaps.md:75"
         ]
       },
@@ -316,25 +325,60 @@
         "title": "7e Combat — cheat-sheet",
         "rights_holder": null,
         "referenced_by": [
-          "core/02-rules-reference.md:26",
+          "core/02-rules-reference.md:28",
           "core/07-create-monster.md:8",
           "reference/decks/weapons-and-artifacts-zh.md:12",
           ".claude/skills-eval-workspace/benchmark.json:144",
           ".claude/skills-eval-workspace/benchmark.json:154"
         ]
       },
+      "reference/rules/magic.md": {
+        "title": "7e Magic — cheat-sheet",
+        "rights_holder": null,
+        "referenced_by": [
+          "CHANGELOG.md:40",
+          "WORKLOG.md:73",
+          "WORKLOG.md:77",
+          "WORKLOG.md:205",
+          "WORKLOG.md:229",
+          "WORKLOG.md:238",
+          "WORKLOG.md:547",
+          "WORKLOG.md:560",
+          "WORKLOG.md:562",
+          "WORKLOG.md:631",
+          "core/02-rules-reference.md:19",
+          "core/02-rules-reference.md:35",
+          "core/07-create-monster.md:75",
+          "reference/mythos/README.md:16",
+          "update_plan/2026-08-02-investigator-render-gaps.md:171",
+          "update_plan/README.md:84",
+          "update_plan/Archived/2026-08-02-conventions-gaps.md:16",
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:9",
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:174",
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:203",
+          "update_plan/Archived/2026-08-02-magic-quickref.md:1",
+          "update_plan/Archived/2026-08-02-magic-quickref.md:5",
+          "update_plan/Archived/2026-08-02-magic-quickref.md:26",
+          "update_plan/Archived/2026-08-02-magic-quickref.md:45",
+          "update_plan/Archived/2026-08-02-magic-quickref.md:48",
+          "update_plan/Archived/2026-08-02-magic-quickref.md:51",
+          "update_plan/Archived/2026-08-02-magic-quickref.md:52",
+          "update_plan/Archived/2026-08-02-magic-quickref.md:56",
+          "update_plan/Archived/README.md:18"
+        ]
+      },
       "reference/rules/sanity.md": {
         "title": "7e Sanity — cheat-sheet",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:43",
-          "core/02-rules-reference.md:24",
+          "core/02-rules-reference.md:26",
           "core/04-design-scenario.md:42",
           "core/07-create-monster.md:9",
           "core/12-canon-update.md:67",
           "templates/scenario.md:44",
           "reference/mythos/artifacts-zh.md:67",
-          "update_plan/2026-08-02-antagonist-budget.md:114",
+          "reference/rules/magic.md:23",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:117",
           "update_plan/Archived/2026-08-02-conventions-gaps.md:42",
           ".claude/skills-eval-workspace/benchmark.json:154"
         ]
@@ -343,7 +387,7 @@
         "title": "7e Skill Checks — cheat-sheet",
         "rights_holder": null,
         "referenced_by": [
-          "core/02-rules-reference.md:22",
+          "core/02-rules-reference.md:24",
           "reference/rules/character-creation.md:31"
         ]
       },
@@ -351,11 +395,9 @@
         "title": "邪教设计手法笔记 — 简体中文",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:53",
-          "CHANGELOG.md:65",
-          "WORKLOG.md:73",
-          "WORKLOG.md:142",
-          "WORKLOG.md:267",
+          "CHANGELOG.md:106",
+          "WORKLOG.md:146",
+          "WORKLOG.md:271",
           "core/01-intake.md:42",
           "core/03-build-world.md:44",
           "core/04-design-scenario.md:31",
@@ -376,18 +418,17 @@
           "reference/tables/cultist-archetypes.md:9",
           "reference/tables/cultist-archetypes.md:184",
           "reference/tables/README.md:27",
-          "update_plan/2026-08-02-cult-doc-integration.md:108",
-          "update_plan/2026-08-02-cult-doc-integration.md:219",
-          "update_plan/2026-08-02-cult-doc-integration.md:248"
+          "update_plan/2026-08-02-cult-doc-wrapup.md:18",
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:110",
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:219"
         ]
       },
       "reference/craft/lovecraft-zh.md": {
         "title": "洛夫克拉夫特笔法笔记 — 简体中文",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:53",
           "WORKLOG.md:41",
-          "WORKLOG.md:139",
+          "WORKLOG.md:143",
           "core/07-create-monster.md:43",
           "core/09-description.md:14",
           "core/09-description.md:32",
@@ -398,8 +439,8 @@
           "reference/craft/README.md:14",
           "reference/craft/README.md:27",
           "scripts/build-reference-index.py:296",
-          "update_plan/2026-08-02-cult-doc-integration.md:109",
-          "update_plan/2026-08-02-cult-doc-integration.md:261",
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:111",
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:256",
           ".claude/skills/description/SKILL.md:12"
         ]
       },
@@ -449,7 +490,7 @@
         "title": "The Bell-Keeper",
         "rights_holder": null,
         "referenced_by": [
-          "WORKLOG.md:381",
+          "WORKLOG.md:385",
           "update_plan/2026-08-02-monster-templates-traits.md:36"
         ]
       },
@@ -469,29 +510,27 @@
         "title": "造物与神器 — 速查",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:64",
-          "CHANGELOG.md:85",
-          "WORKLOG.md:259",
-          "WORKLOG.md:384",
+          "WORKLOG.md:263",
+          "WORKLOG.md:388",
+          "WORKLOG.md:455",
           "core/06-create-npc.md:76",
           "core/13-create-investigator.md:26",
           "reference/bestiary/fellrock.md:53",
           "reference/bestiary/sedecim.md:38",
           "reference/bestiary/sedecim.md:52",
           "reference/decks/README.md:18",
-          "reference/rules/character-creation.md:271",
-          "update_plan/2026-08-02-antagonist-budget.md:95",
-          "update_plan/2026-08-02-antagonist-budget.md:279",
-          "update_plan/2026-08-02-antagonist-budget.md:281",
-          "update_plan/2026-08-02-cult-doc-integration.md:193"
+          "reference/rules/character-creation.md:272",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:98",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:282",
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:284",
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:195"
         ]
       },
       "reference/mythos/cthulhu-cult-history-zh.md": {
         "title": "克苏鲁邪教史 — 可复用历史条目表",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:69",
-          "WORKLOG.md:320",
+          "WORKLOG.md:324",
           "core/03-build-world.md:55",
           "reference/bestiary/black-wing.md:68",
           "reference/mythos/cults/church-of-perfect-science.md:38",
@@ -501,7 +540,7 @@
           "reference/mythos/great-old-ones/cthulhu.md:43",
           "reference/mythos/great-old-ones/cthulhu.md:54",
           "reference/tables/cultist-archetypes.md:235",
-          "update_plan/2026-08-02-cult-doc-integration.md:88"
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:90"
         ]
       },
       "reference/mythos/cults/church-of-perfect-science.md": {
@@ -558,12 +597,11 @@
         "title": "Cthulhu（克苏鲁）",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:67",
-          "WORKLOG.md:319",
-          "WORKLOG.md:332",
+          "WORKLOG.md:323",
+          "WORKLOG.md:336",
           "scripts/build-reference-index.py:166",
           "scripts/build-reference-index.py:181",
-          "update_plan/2026-08-02-cult-doc-integration.md:87"
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:89"
         ]
       },
       "reference/mythos/spells/black-wing-call.md": {
@@ -615,7 +653,7 @@
         "title": "complications.md — what goes sideways this session",
         "rights_holder": null,
         "referenced_by": [
-          "core/01-intake.md:80",
+          "core/01-intake.md:92",
           "core/04-design-scenario.md:55",
           "reference/decks/miseries-zh.md:9",
           "reference/decks/miseries-zh.md:414",
@@ -632,9 +670,7 @@
         "title": "cult-goals.md — 邪教目标:愿望 × 手段",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:65",
-          "WORKLOG.md:74",
-          "WORKLOG.md:270",
+          "WORKLOG.md:274",
           "core/01-intake.md:44",
           "core/03-build-world.md:47",
           "templates/cult.md:8",
@@ -647,37 +683,33 @@
           "reference/mythos/cults/society-of-the-divine-children.md:18",
           "reference/tables/cult-power-sources.md:5",
           "reference/tables/README.md:26",
-          "update_plan/2026-08-02-cult-doc-integration.md:130",
-          "update_plan/2026-08-02-cult-doc-integration.md:164",
-          "update_plan/2026-08-02-cult-doc-integration.md:220",
-          "update_plan/2026-08-02-cult-doc-integration.md:249"
+          "update_plan/2026-08-02-cult-doc-wrapup.md:19",
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:132",
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:166",
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:220"
         ]
       },
       "reference/tables/cult-leader-positions.md": {
         "title": "cult-leader-positions.md — 首领的社会定位",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:65",
-          "WORKLOG.md:74",
-          "WORKLOG.md:271",
-          "WORKLOG.md:279",
+          "WORKLOG.md:275",
+          "WORKLOG.md:283",
           "core/03-build-world.md:48",
           "core/06-create-npc.md:43",
           "templates/cult.md:11",
           "reference/tables/README.md:28",
-          "update_plan/2026-08-02-cult-doc-integration.md:132",
-          "update_plan/2026-08-02-cult-doc-integration.md:164",
-          "update_plan/2026-08-02-cult-doc-integration.md:169",
-          "update_plan/2026-08-02-cult-doc-integration.md:249"
+          "update_plan/2026-08-02-cult-doc-wrapup.md:19",
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:134",
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:166",
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:171"
         ]
       },
       "reference/tables/cult-power-sources.md": {
         "title": "cult-power-sources.md — 力量来源",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:65",
-          "WORKLOG.md:74",
-          "WORKLOG.md:272",
+          "WORKLOG.md:276",
           "templates/cult.md:7",
           "reference/mythos/cults/church-of-perfect-science.md:15",
           "reference/mythos/cults/esoteric-order-of-dagon.md:15",
@@ -685,31 +717,31 @@
           "reference/mythos/cults/order-of-morpheus.md:12",
           "reference/mythos/cults/society-of-the-divine-children.md:15",
           "reference/tables/README.md:29",
-          "update_plan/2026-08-02-cult-doc-integration.md:135",
-          "update_plan/2026-08-02-cult-doc-integration.md:250"
+          "update_plan/2026-08-02-cult-doc-wrapup.md:20",
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:137"
         ]
       },
       "reference/tables/cultist-archetypes.md": {
         "title": "cultist-archetypes.md — 邪教徒范型速查",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:78",
-          "WORKLOG.md:370",
+          "WORKLOG.md:374",
+          "WORKLOG.md:456",
           "core/06-create-npc.md:47",
           "reference/mythos/spells/call-father-dagon-and-mother-hydra.md:23",
-          "update_plan/2026-08-02-cult-doc-integration.md:183",
-          "update_plan/2026-08-02-cult-doc-integration.md:250"
+          "update_plan/2026-08-02-cult-doc-wrapup.md:20",
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:185"
         ]
       },
       "reference/tables/hooks.md": {
         "title": "hooks.md — how the investigators get pulled in",
         "rights_holder": null,
         "referenced_by": [
-          "core/01-intake.md:79",
-          "core/01-intake.md:107",
+          "core/01-intake.md:91",
+          "core/01-intake.md:120",
           "reference/tables/README.md:15",
           "campaigns/beidaihe-winter/CLAUDE.md:72",
-          "campaigns/_template-campaign/CLAUDE.md:97",
+          "campaigns/_template-campaign/CLAUDE.md:105",
           ".claude/skills-eval-workspace/benchmark.json:59"
         ]
       },
@@ -717,8 +749,8 @@
         "title": "locations.md — where it happens",
         "rights_holder": null,
         "referenced_by": [
-          "core/01-intake.md:79",
-          "core/01-intake.md:106",
+          "core/01-intake.md:91",
+          "core/01-intake.md:119",
           "core/03-build-world.md:15",
           "reference/tables/hooks.md:7",
           "reference/tables/README.md:16",
@@ -739,19 +771,20 @@
         "title": "mythos-angles.md — what the wrongness actually is",
         "rights_holder": null,
         "referenced_by": [
-          "WORKLOG.md:207",
+          "WORKLOG.md:211",
+          "WORKLOG.md:422",
           "core/01-intake.md:41",
-          "core/01-intake.md:80",
-          "core/01-intake.md:93",
-          "core/01-intake.md:104",
+          "core/01-intake.md:92",
+          "core/01-intake.md:105",
+          "core/01-intake.md:117",
           "core/03-build-world.md:16",
           "reference/tables/hooks.md:7",
           "reference/tables/README.md:17",
           "campaigns/beidaihe-winter/CLAUDE.md:53",
           "campaigns/beidaihe-winter/CLAUDE.md:73",
           "campaigns/beidaihe-winter/references.md:27",
-          "campaigns/_template-campaign/CLAUDE.md:79",
-          "update_plan/2026-08-02-cult-doc-integration.md:216",
+          "campaigns/_template-campaign/CLAUDE.md:87",
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:215",
           ".claude/skills-eval-workspace/benchmark.json:59"
         ]
       },
@@ -759,22 +792,19 @@
         "title": "npc-appearance.md — what they look like",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:65",
-          "WORKLOG.md:75",
-          "WORKLOG.md:273",
-          "WORKLOG.md:278",
+          "WORKLOG.md:277",
+          "WORKLOG.md:282",
           "core/06-create-npc.md:41",
           "reference/tables/README.md:24",
-          "update_plan/2026-08-02-cult-doc-integration.md:138",
-          "update_plan/2026-08-02-cult-doc-integration.md:168"
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:140",
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:170"
         ]
       },
       "reference/tables/npc-quirks.md": {
         "title": "npc-quirks.md — the tell that makes them playable",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:65",
-          "WORKLOG.md:273",
+          "WORKLOG.md:277",
           "core/06-create-npc.md:40",
           "reference/decks/README.md:15",
           "reference/tables/npc-appearance.md:4",
@@ -783,7 +813,7 @@
           "reference/tables/README.md:25",
           "campaigns/beidaihe-winter/npcs/li-shuchun.md:19",
           "campaigns/beidaihe-winter/npcs/mrs-fee.md:19",
-          "update_plan/2026-08-02-cult-doc-integration.md:139"
+          "update_plan/Archived/2026-08-02-cult-doc-integration.md:141"
         ]
       }
     },
@@ -800,24 +830,10 @@
       ],
       "CHANGELOG.md": [
         "reference/craft/cult-design-zh.md",
-        "reference/craft/lovecraft-zh.md",
         "reference/decks/busybodies-zh.md",
-        "reference/decks/weapons-and-artifacts-zh.md",
-        "reference/mythos/artifacts-zh.md",
-        "reference/mythos/cthulhu-cult-history-zh.md",
-        "reference/mythos/great-old-ones/cthulhu.md",
         "reference/rules/character-creation.md",
-        "reference/rules/chases.md",
-        "reference/rules/sanity.md",
-        "reference/sourcebooks/grand-grimoire-zh.md",
-        "reference/sourcebooks/keeper-rulebook-7e-zh.md",
-        "reference/sourcebooks/malleus-monstrorum-zh.md",
-        "reference/tables/cult-goals.md",
-        "reference/tables/cult-leader-positions.md",
-        "reference/tables/cult-power-sources.md",
-        "reference/tables/cultist-archetypes.md",
-        "reference/tables/npc-appearance.md",
-        "reference/tables/npc-quirks.md"
+        "reference/rules/magic.md",
+        "reference/sourcebooks/grand-grimoire-zh.md"
       ],
       "WORKLOG.md": [
         "reference/bestiary/the-bell-keeper.md",
@@ -829,7 +845,9 @@
         "reference/mythos/cthulhu-cult-history-zh.md",
         "reference/mythos/great-old-ones/cthulhu.md",
         "reference/rules/character-creation.md",
+        "reference/rules/magic.md",
         "reference/sourcebooks/grand-grimoire-zh.md",
+        "reference/sourcebooks/keeper-rulebook-7e-zh.md",
         "reference/sourcebooks/malleus-monstrorum-zh.md",
         "reference/tables/cult-goals.md",
         "reference/tables/cult-leader-positions.md",
@@ -878,6 +896,7 @@
         "reference/rules/character-creation.md",
         "reference/rules/chases.md",
         "reference/rules/combat.md",
+        "reference/rules/magic.md",
         "reference/rules/sanity.md",
         "reference/rules/skill-checks.md",
         "reference/sourcebooks/keeper-rulebook-7e-zh.md"
@@ -911,6 +930,7 @@
         "reference/craft/lovecraft-zh.md",
         "reference/rules/character-creation.md",
         "reference/rules/combat.md",
+        "reference/rules/magic.md",
         "reference/rules/sanity.md",
         "reference/sourcebooks/grand-grimoire-zh.md",
         "reference/sourcebooks/malleus-monstrorum-zh.md"
@@ -997,6 +1017,7 @@
         "reference/rules/combat.md"
       ],
       "reference/mythos/README.md": [
+        "reference/rules/magic.md",
         "reference/sourcebooks/grand-grimoire-zh.md"
       ],
       "reference/mythos/artifacts-zh.md": [
@@ -1077,6 +1098,11 @@
         "reference/rules/skill-checks.md",
         "reference/sourcebooks/grand-grimoire-zh.md"
       ],
+      "reference/rules/magic.md": [
+        "reference/rules/sanity.md",
+        "reference/sourcebooks/grand-grimoire-zh.md",
+        "reference/sourcebooks/keeper-rulebook-7e-zh.md"
+      ],
       "reference/rules/sanity.md": [
         "reference/tables/madness.md"
       ],
@@ -1132,6 +1158,9 @@
         "reference/craft/lovecraft-zh.md",
         "reference/mythos/great-old-ones/cthulhu.md"
       ],
+      "scripts/render-investigator.py": [
+        "reference/rules/character-creation.md"
+      ],
       "templates/cult.md": [
         "reference/tables/cult-goals.md",
         "reference/tables/cult-leader-positions.md",
@@ -1143,7 +1172,21 @@
       "templates/scenario.md": [
         "reference/rules/sanity.md"
       ],
-      "update_plan/2026-08-02-antagonist-budget.md": [
+      "update_plan/2026-08-02-cult-doc-wrapup.md": [
+        "reference/craft/cult-design-zh.md",
+        "reference/tables/cult-goals.md",
+        "reference/tables/cult-leader-positions.md",
+        "reference/tables/cult-power-sources.md",
+        "reference/tables/cultist-archetypes.md"
+      ],
+      "update_plan/2026-08-02-investigator-render-gaps.md": [
+        "reference/rules/character-creation.md",
+        "reference/rules/magic.md"
+      ],
+      "update_plan/2026-08-02-monster-templates-traits.md": [
+        "reference/bestiary/the-bell-keeper.md"
+      ],
+      "update_plan/Archived/2026-08-02-antagonist-budget.md": [
         "reference/decks/busybodies-zh.md",
         "reference/decks/miseries-zh.md",
         "reference/decks/phobias-and-manias-zh.md",
@@ -1155,13 +1198,19 @@
         "reference/sourcebooks/grand-grimoire-zh.md",
         "reference/sourcebooks/malleus-monstrorum-zh.md"
       ],
-      "update_plan/2026-08-02-cult-doc-integration.md": [
+      "update_plan/Archived/2026-08-02-conventions-gaps.md": [
+        "reference/rules/chases.md",
+        "reference/rules/magic.md",
+        "reference/rules/sanity.md"
+      ],
+      "update_plan/Archived/2026-08-02-cult-doc-integration.md": [
         "reference/craft/cult-design-zh.md",
         "reference/craft/lovecraft-zh.md",
         "reference/mythos/artifacts-zh.md",
         "reference/mythos/cthulhu-cult-history-zh.md",
         "reference/mythos/great-old-ones/cthulhu.md",
         "reference/rules/character-creation.md",
+        "reference/rules/magic.md",
         "reference/tables/cult-goals.md",
         "reference/tables/cult-leader-positions.md",
         "reference/tables/cult-power-sources.md",
@@ -1170,24 +1219,25 @@
         "reference/tables/npc-appearance.md",
         "reference/tables/npc-quirks.md"
       ],
-      "update_plan/2026-08-02-investigator-cards.md": [
+      "update_plan/Archived/2026-08-02-investigator-cards.md": [
         "reference/rules/character-creation.md",
         "reference/sourcebooks/keeper-rulebook-7e-zh.md"
       ],
-      "update_plan/2026-08-02-magic-quickref.md": [
-        "reference/sourcebooks/grand-grimoire-zh.md"
+      "update_plan/Archived/2026-08-02-magic-quickref.md": [
+        "reference/rules/magic.md",
+        "reference/sourcebooks/grand-grimoire-zh.md",
+        "reference/sourcebooks/keeper-rulebook-7e-zh.md"
       ],
-      "update_plan/2026-08-02-monster-templates-traits.md": [
-        "reference/bestiary/the-bell-keeper.md"
-      ],
-      "update_plan/Archived/2026-08-02-conventions-gaps.md": [
-        "reference/rules/chases.md",
-        "reference/rules/sanity.md"
-      ],
-      "update_plan/README.md": [
+      "update_plan/Archived/README.md": [
         "reference/decks/busybodies-zh.md",
         "reference/rules/character-creation.md",
+        "reference/rules/magic.md",
         "reference/sourcebooks/grand-grimoire-zh.md",
+        "reference/sourcebooks/keeper-rulebook-7e-zh.md"
+      ],
+      "update_plan/README.md": [
+        "reference/rules/character-creation.md",
+        "reference/rules/magic.md",
         "reference/sourcebooks/malleus-monstrorum-zh.md"
       ]
     }

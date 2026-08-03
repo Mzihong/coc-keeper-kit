@@ -24,24 +24,19 @@
       ],
       "referenced_by": [
         {
-          "file": "CHANGELOG.md",
-          "line": 64,
-          "context": "- **人类反派终于有了\"该多强\"的答案。** 原来 `core/06`/`core/07`/`core/13` 能造反派,但没有任何地方回答强度——一个技能全 90% 的邪教首领能毫发无伤地通过既有审计。现在 `reference/rules/character-creation.md` §11 给出:普通人类反派直"
-        },
-        {
-          "file": "CHANGELOG.md",
-          "line": 85,
-          "context": "克苏鲁受祝者、克苏鲁之隶。新增 `reference/mythos/artifacts-zh.md`(拉莱耶偶像、克苏菇、"
-        },
-        {
           "file": "WORKLOG.md",
-          "line": 259,
+          "line": 263,
           "context": "数值查 `grand-grimoire-zh.md`;非法术型按装备总价,查 `weapons-and-artifacts-zh.md`);"
         },
         {
           "file": "WORKLOG.md",
-          "line": 384,
+          "line": 388,
           "context": "硬塞进\"生物图鉴\"文体不对,改开 `reference/mythos/artifacts-zh.md` 单独收。"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 455,
+          "context": "`reference/mythos/artifacts-zh.md`/`reference/mythos/spells/`/`reference/tables/"
         },
         {
           "file": "core/06-create-npc.md",
@@ -75,31 +70,31 @@
         },
         {
           "file": "reference/rules/character-creation.md",
-          "line": 271,
+          "line": 272,
           "context": "| **非法术型**(帮派头目、雇佣兵、纯世俗势力) | 装备总价定强度,直接对接 `reference/decks/weapons-and-artifacts-zh.md` 的价格栏 | 武器/防具/载具的档次 |"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 95,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 98,
           "context": ">   `reference/decks/weapons-and-artifacts-zh.md`(已接入 `core/06`)——该卡组本身"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 279,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 282,
           "context": ">    `phobias-and-manias-zh.md`、`weapons-and-artifacts-zh.md`)均 `cited: true`"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 281,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 284,
           "context": ">    `reference/tables/` 速查,反向索引脚本没有报 orphan。`weapons-and-artifacts-zh.md`"
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 193,
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
+          "line": 195,
           "context": "\"生物\",改落 `reference/mythos/artifacts-zh.md`,不硬塞进 bestiary"
         }
       ],
-      "reference_count": 15
+      "reference_count": 14
     },
     {
       "file": "cthulhu-cult-history-zh.md",
@@ -111,13 +106,8 @@
       ],
       "referenced_by": [
         {
-          "file": "CHANGELOG.md",
-          "line": 69,
-          "context": "`reference/mythos/cthulhu-cult-history-zh.md`(27 条压缩历史条目,前 2000 年苏美尔教团到"
-        },
-        {
           "file": "WORKLOG.md",
-          "line": 320,
+          "line": 324,
           "context": "setting 级 lore)与 `reference/mythos/cthulhu-cult-history-zh.md`(历史条目表 + 三条"
         },
         {
@@ -166,12 +156,12 @@
           "context": "见 `reference/mythos/cthulhu-cult-history-zh.md` 的\"永生大师线\"了解这个概念在本 kit"
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 88,
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
+          "line": 90,
           "context": "`reference/mythos/cthulhu-cult-history-zh.md`(27 条历史条目表,不逐条散文重述)"
         }
       ],
-      "reference_count": 12
+      "reference_count": 11
     },
     {
       "file": "cults/church-of-perfect-science.md",
@@ -362,18 +352,13 @@
       ],
       "referenced_by": [
         {
-          "file": "CHANGELOG.md",
-          "line": 67,
-          "context": "新增 `reference/mythos/great-old-ones/cthulhu.md`(克苏鲁本体的 setting 级 lore:苏醒"
-        },
-        {
           "file": "WORKLOG.md",
-          "line": 319,
+          "line": 323,
           "context": "理由见下),拆成两个文件:`reference/mythos/great-old-ones/cthulhu.md`(克苏鲁本体的"
         },
         {
           "file": "WORKLOG.md",
-          "line": 332,
+          "line": 336,
           "context": "用 `os.walk()` 递归。落盘 `cthulhu.md` 后重建索引才发现它完全没被收录、连 orphan 都"
         },
         {
@@ -387,12 +372,12 @@
           "context": "relative path (e.g. 'great-old-ones/cthulhu.md'); references also match the bare"
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 87,
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
+          "line": 89,
           "context": "—— `reference/mythos/great-old-ones/cthulhu.md`(实体条目)+"
         }
       ],
-      "reference_count": 6
+      "reference_count": 5
     },
     {
       "file": "spells/black-wing-call.md",

@@ -21,7 +21,7 @@
       "referenced_by": [
         {
           "file": "core/01-intake.md",
-          "line": 80,
+          "line": 92,
           "context": "`mythos-angles.md`, `complications.md`. Roll; don't pick the first plausible thing you"
         },
         {
@@ -89,18 +89,8 @@
       ],
       "referenced_by": [
         {
-          "file": "CHANGELOG.md",
-          "line": 65,
-          "context": "- **邪教终于有一套\"怎么设计\"的方法论,不用每次现编。** 新增 `reference/craft/cult-design-zh.md`:为什么邪教是最好的反派、克苏鲁邪教和其他神话教团的区别、一条十一步的有序设计流程(概念→首领→目标→组织→成员→入会→财源→神话接触分层→弱点→敌人→关系图)、财源六项作为线索引"
-        },
-        {
           "file": "WORKLOG.md",
-          "line": 74,
-          "context": "四张骰表(`cult-goals.md`/`cult-leader-positions.md`/`cult-power-sources.md`/"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 270,
+          "line": 274,
           "context": "配套四张骰表:`cult-goals.md`(愿望 1D10 × 手段 1D8,两表相乘才是完整目标;源表"
         },
         {
@@ -164,27 +154,27 @@
           "context": "- `cult-goals.md` (1D10 × 1D8) — a cult's want × its means; roll both, they multiply. See"
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 130,
+          "file": "update_plan/2026-08-02-cult-doc-wrapup.md",
+          "line": 19,
+          "context": "`tables/cult-goals.md`、`tables/cult-leader-positions.md`、"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
+          "line": 132,
           "context": "- [x] `cult-goals.md` —— 愿望(1D10)× 手段(1D8)。**两表相乘才是本章的生成引擎**,"
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 164,
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
+          "line": 166,
           "context": "**邪教子路径**(指向 notes §一–§三流程 + `cult-goals.md`、`cult-leader-positions.md`,"
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
           "line": 220,
           "context": "**并掷 `reference/tables/cult-goals.md`(愿望 × 手段)**——答\"邪教\"不等于允许"
-        },
-        {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 249,
-          "context": "`tables/cult-goals.md`、`tables/cult-leader-positions.md`、"
         }
       ],
-      "reference_count": 19
+      "reference_count": 17
     },
     {
       "file": "cult-leader-positions.md",
@@ -197,23 +187,13 @@
       ],
       "referenced_by": [
         {
-          "file": "CHANGELOG.md",
-          "line": 65,
-          "context": "- **邪教终于有一套\"怎么设计\"的方法论,不用每次现编。** 新增 `reference/craft/cult-design-zh.md`:为什么邪教是最好的反派、克苏鲁邪教和其他神话教团的区别、一条十一步的有序设计流程(概念→首领→目标→组织→成员→入会→财源→神话接触分层→弱点→敌人→关系图)、财源六项作为线索引"
-        },
-        {
           "file": "WORKLOG.md",
-          "line": 74,
-          "context": "四张骰表(`cult-goals.md`/`cult-leader-positions.md`/`cult-power-sources.md`/"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 271,
+          "line": 275,
           "context": "标称手段 1D10 实际只有 8 条,骰值区间已诚实重建为 1D8)、`cult-leader-positions.md`"
         },
         {
           "file": "WORKLOG.md",
-          "line": 279,
+          "line": 283,
           "context": "`cult-leader-positions.md` + `character-creation.md` §11 两处指路。"
         },
         {
@@ -237,27 +217,27 @@
           "context": "- `cult-leader-positions.md` (1d10) — a cult leader's social front and the access it buys."
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 132,
+          "file": "update_plan/2026-08-02-cult-doc-wrapup.md",
+          "line": 19,
+          "context": "`tables/cult-goals.md`、`tables/cult-leader-positions.md`、"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
+          "line": 134,
           "context": "- [x] `cult-leader-positions.md` —— 首领的社会定位(1D10:商人/族长/帮派头领/宗教"
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 164,
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
+          "line": 166,
           "context": "**邪教子路径**(指向 notes §一–§三流程 + `cult-goals.md`、`cult-leader-positions.md`,"
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 169,
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
+          "line": 171,
           "context": "并为邪教首领指向 `cult-leader-positions.md` 与"
-        },
-        {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 249,
-          "context": "`tables/cult-goals.md`、`tables/cult-leader-positions.md`、"
         }
       ],
-      "reference_count": 12
+      "reference_count": 10
     },
     {
       "file": "cult-power-sources.md",
@@ -269,18 +249,8 @@
       ],
       "referenced_by": [
         {
-          "file": "CHANGELOG.md",
-          "line": 65,
-          "context": "- **邪教终于有一套\"怎么设计\"的方法论,不用每次现编。** 新增 `reference/craft/cult-design-zh.md`:为什么邪教是最好的反派、克苏鲁邪教和其他神话教团的区别、一条十一步的有序设计流程(概念→首领→目标→组织→成员→入会→财源→神话接触分层→弱点→敌人→关系图)、财源六项作为线索引"
-        },
-        {
           "file": "WORKLOG.md",
-          "line": 74,
-          "context": "四张骰表(`cult-goals.md`/`cult-leader-positions.md`/`cult-power-sources.md`/"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 272,
+          "line": 276,
           "context": "(首领社会定位 1D10,每条保留\"带来什么便利\")、`cult-power-sources.md`(力量来源"
         },
         {
@@ -319,17 +289,17 @@
           "context": "- `cult-power-sources.md` (1d4) — where a cult's claimed supernatural backing comes from."
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 135,
-          "context": "- [x] `cult-power-sources.md` —— 力量来源(1D4:神话怪物 / 造物 / 科技 / 受赐力量),"
+          "file": "update_plan/2026-08-02-cult-doc-wrapup.md",
+          "line": 20,
+          "context": "`tables/cult-power-sources.md`、d20 外貌/气质表、`tables/cultist-archetypes.md`"
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 250,
-          "context": "`tables/cult-power-sources.md`、d20 外貌/气质表、`tables/cultist-archetypes.md`"
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
+          "line": 137,
+          "context": "- [x] `cult-power-sources.md` —— 力量来源(1D4:神话怪物 / 造物 / 科技 / 受赐力量),"
         }
       ],
-      "reference_count": 12
+      "reference_count": 10
     },
     {
       "file": "cultist-archetypes.md",
@@ -348,14 +318,14 @@
       ],
       "referenced_by": [
         {
-          "file": "CHANGELOG.md",
-          "line": 78,
-          "context": "- **教团文档第四章落盘,P1 全部四章完成。** 新增 `reference/tables/cultist-archetypes.md`:"
+          "file": "WORKLOG.md",
+          "line": 374,
+          "context": "1. **12 组人类邪教徒范型 + 祝福菜单 + 永生大师工具包落盘** `reference/tables/cultist-archetypes.md`。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 370,
-          "context": "1. **12 组人类邪教徒范型 + 祝福菜单 + 永生大师工具包落盘** `reference/tables/cultist-archetypes.md`。"
+          "line": 456,
+          "context": "cultist-archetypes.md`/八个 bestiary 条目、走一遍 `review-material` 审计新增内容、"
         },
         {
           "file": "core/06-create-npc.md",
@@ -368,14 +338,14 @@
           "context": "`reference/tables/cultist-archetypes.md` 的\"永生大师\"常见法术之一。"
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 183,
-          "context": "- [x] 邪教徒原型 → `reference/tables/cultist-archetypes.md`(中文)——12 组基础数值"
+          "file": "update_plan/2026-08-02-cult-doc-wrapup.md",
+          "line": 20,
+          "context": "`tables/cult-power-sources.md`、d20 外貌/气质表、`tables/cultist-archetypes.md`"
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 250,
-          "context": "`tables/cult-power-sources.md`、d20 外貌/气质表、`tables/cultist-archetypes.md`"
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
+          "line": 185,
+          "context": "- [x] 邪教徒原型 → `reference/tables/cultist-archetypes.md`(中文)——12 组基础数值"
         }
       ],
       "reference_count": 6
@@ -391,12 +361,12 @@
       "referenced_by": [
         {
           "file": "core/01-intake.md",
-          "line": 79,
+          "line": 91,
           "context": "2. **Roll the seed tables** in `reference/tables/` — `hooks.md`, `locations.md`,"
         },
         {
           "file": "core/01-intake.md",
-          "line": 107,
+          "line": 120,
           "context": "- Roll `hooks.md` for the way the investigators are pulled in."
         },
         {
@@ -411,7 +381,7 @@
         },
         {
           "file": "campaigns/_template-campaign/CLAUDE.md",
-          "line": 97,
+          "line": 105,
           "context": "| <field> | <value> `[auto]` | <rolled hooks.md 14 / inferred from era> |"
         },
         {
@@ -433,12 +403,12 @@
       "referenced_by": [
         {
           "file": "core/01-intake.md",
-          "line": 79,
+          "line": 91,
           "context": "2. **Roll the seed tables** in `reference/tables/` — `hooks.md`, `locations.md`,"
         },
         {
           "file": "core/01-intake.md",
-          "line": 106,
+          "line": 119,
           "context": "- Roll `locations.md` for at least one place that isn't the obvious one."
         },
         {
@@ -508,8 +478,13 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 207,
+          "line": 211,
           "context": "打断后果→触发表、〔驱〕〔保〕类反查公平出路;`tables/mythos-angles.md` 20 个角度"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 422,
+          "context": "或家族/独立怪物/场所本身/自然或宇宙现象,auto 默认掷 `mythos-angles.md` 再反推"
         },
         {
           "file": "core/01-intake.md",
@@ -518,17 +493,17 @@
         },
         {
           "file": "core/01-intake.md",
-          "line": 80,
+          "line": 92,
           "context": "`mythos-angles.md`, `complications.md`. Roll; don't pick the first plausible thing you"
         },
         {
           "file": "core/01-intake.md",
-          "line": 93,
+          "line": 105,
           "context": "| The threat | roll `mythos-angles.md`, infer the category (see question 9) |"
         },
         {
           "file": "core/01-intake.md",
-          "line": 104,
+          "line": 117,
           "context": "- Roll `mythos-angles.md` and take what you get. If the result is not obviously compatible"
         },
         {
@@ -563,13 +538,13 @@
         },
         {
           "file": "campaigns/_template-campaign/CLAUDE.md",
-          "line": 79,
+          "line": 87,
           "context": "> - **The rolled angle:** <which `mythos-angles.md` result this came from, if any>"
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 216,
-          "context": "(无人类反派)、auto。**默认 auto = 掷 `reference/tables/mythos-angles.md`**,"
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
+          "line": 215,
+          "context": "(无人类反派)、auto。**默认 auto = 掷 `reference/tables/mythos-angles.md`,"
         },
         {
           "file": ".claude/skills-eval-workspace/benchmark.json",
@@ -577,7 +552,7 @@
           "context": "\"evidence\": \"Premise centers on Camas Dubh, a storm-locked Skye fishing hamlet bound to a mistranslated century-old rite ('Tàmh na Mara') that unknowingly feeds"
         }
       ],
-      "reference_count": 14
+      "reference_count": 15
     },
     {
       "file": "npc-appearance.md",
@@ -589,23 +564,13 @@
       ],
       "referenced_by": [
         {
-          "file": "CHANGELOG.md",
-          "line": 65,
-          "context": "- **邪教终于有一套\"怎么设计\"的方法论,不用每次现编。** 新增 `reference/craft/cult-design-zh.md`:为什么邪教是最好的反派、克苏鲁邪教和其他神话教团的区别、一条十一步的有序设计流程(概念→首领→目标→组织→成员→入会→财源→神话接触分层→弱点→敌人→关系图)、财源六项作为线索引"
-        },
-        {
           "file": "WORKLOG.md",
-          "line": 75,
-          "context": "`npc-appearance.md`)+ `templates/cult.md` + `core/03/04/06` 接线。同样**尚未提交**。"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 273,
+          "line": 277,
           "context": "1D4)、`npc-appearance.md`(外貌/气质 1D20,与既有 `npc-quirks.md` 分工:quirks 管"
         },
         {
           "file": "WORKLOG.md",
-          "line": 278,
+          "line": 282,
           "context": "六项财源当独立线索来源;`06` 加 `npc-appearance.md`(外貌骰表)与邪教首领指向"
         },
         {
@@ -619,17 +584,17 @@
           "context": "- `npc-appearance.md` (1d20) — first physical impression + temperament; companion to"
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 138,
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
+          "line": 140,
           "context": "`reference/tables/npc-appearance.md`(1d20 外貌/气质表),挂"
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 168,
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
+          "line": 170,
           "context": "- [x] `core/06-create-npc.md` —— 指向新的 `npc-appearance.md`(d20 外貌/气质),"
         }
       ],
-      "reference_count": 8
+      "reference_count": 6
     },
     {
       "file": "npc-quirks.md",
@@ -641,13 +606,8 @@
       ],
       "referenced_by": [
         {
-          "file": "CHANGELOG.md",
-          "line": 65,
-          "context": "- **邪教终于有一套\"怎么设计\"的方法论,不用每次现编。** 新增 `reference/craft/cult-design-zh.md`:为什么邪教是最好的反派、克苏鲁邪教和其他神话教团的区别、一条十一步的有序设计流程(概念→首领→目标→组织→成员→入会→财源→神话接触分层→弱点→敌人→关系图)、财源六项作为线索引"
-        },
-        {
           "file": "WORKLOG.md",
-          "line": 273,
+          "line": 277,
           "context": "1D4)、`npc-appearance.md`(外貌/气质 1D20,与既有 `npc-quirks.md` 分工:quirks 管"
         },
         {
@@ -691,12 +651,12 @@
           "context": "- **習慣**（`npc-quirks.md` 9）：**對不在場的人說話**。「Henrik，我們有客人了。」——她一邊倒茶"
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 139,
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
+          "line": 141,
           "context": "`core/06-create-npc.md`;与 `npc-quirks.md` 分工:quirks 是**怎么演**,这张是"
         }
       ],
-      "reference_count": 11
+      "reference_count": 10
     }
   ]
 }

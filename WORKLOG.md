@@ -77,6 +77,9 @@ dist/bundle.md      构建产物:整个 kit 拼成一份,给没有仓库的 Chat
   三值、泛读/精读两阶段、重复精读耗时翻倍),`magic.md` 的魔法书章节改成从这份规则书
   抽样 20+ 本典籍算出的真实区间,而不是估算。之前"当前状态"没点名这份文件,接手时
   别漏看。
+- **P8 投资者卡渲染缺口也已完成**——`scripts/render-investigator.py`/`templates/investigator.md`
+  补全全部缺失字段,加了硬性算术+阈值型双层自校验;`core/13`/`character-creation.md`/
+  `core/01`(新增问题 14)已接线。现在 P1–P8 只剩 P1 阶段 3(纯收尾)未动,P5/P9 等 Keeper。
 - **P9 怪物模板的"来源红线"部分有答案** —— 转载规则已改,且
   `reference/sourcebooks/malleus-monstrorum-zh.md` 已可读;剩下要 Keeper 定的是范围。
 - **三份 sourcebook 的手动重译已随第六轮批量提交落地**(9c47d98);误建的空文件
@@ -576,3 +579,56 @@ P6 的 `roster.csv` 判断没有去问 Keeper,是因为答案能从仓库现状�
   `Archived/README.md` 三处,作为同一次提交后的第二次小提交——完结清单第 7 步当次做完,
   没有留到下一次 touch 这些文件的时候。
 - **计划文件已 `git mv` 进 `Archived/`**,`Archived/README.md` 加了一行索引。
+
+### 2026-08-03 — 第三轮:P8 投资者卡渲染缺口落盘(与上一轮的 P7 是同一次并行,各自独立完成)
+
+紧接第二轮记录的情况:Keeper 同时开了两段会话,本轮就是那段跑 P8 的会话。两边全程没有
+碰对方的源文件,过程与结果和第二轮记录的判断一致——先只提交各自确实拥有的文件,
+`dist/bundle.md`/`index.json` 等共享生成产物留到两边都提交完源文件后再统一收尾。
+
+**做了什么**
+
+1. **补全渲染出口(缺陷 1+4)**:`scripts/render-investigator.py` 与 `templates/investigator.md`
+   一次性补齐 `spells`/`cthulhu_mythos`/`notes`/`occupation_detail`/`age_modifiers`/
+   `skill_points`/`credit_rating` 细目/`gear`/`status`/`party`/`backstory_keys`/
+   `experience_packages`/`mythos_encounters`/`growth_log`——全渲染,不再按 `type` 分支。
+   必填形状的字段缺失仍占位 `<...>`;这批新增大多是可选数组/对象,JSON 里没有就整节
+   省略,不给 pregen 卡铺一堆空标题。
+2. **`core/13-create-investigator.md` 改 spec,不是改脚本**:删掉"elite-npc 跳过 Hooks"
+   规则,换成"渲染永远面向 KP"的声明。顺带发现 `reference/rules/character-creation.md`
+   §9 对同一件事的措辞和 `core/13` 从来没对齐过(一个说"跳过 Hooks",一个说"跳过
+   backstory 提示"),两处一并统一。
+3. **自校验分两层,都实测过**:硬性算术(派生值公式、点数账本平衡、每技能
+   `value=base+职业+兴趣+成长`、信用评级区间)无条件跑;阈值型(创建期技能上限、
+   特征取值区间)读 `campaigns/<slug>/investigators/validation.json`,没有就退回脚本内建
+   默认值。默认警告但照渲,`--strict` 改拒渲。用 `templates/investigator.example.json`
+   (已知算术正确的 fixture)验证零告警,又手工构造了破坏算术的 fixture 验证两种模式
+   都能正确抓到、正确拒渲。
+4. **`skill_cap` 阈值改成 90%,不是本计划文件早先猜的"7e RAW 75%"**——
+   `reference/rules/character-creation.md` §5 已经落盘的权威数字是 90%,75% 是这份计划
+   定案时的未核实猜测。同时发现默认 90% 会对每个 EDU>90 的角色的 `Own Language` 技能
+   误报(Own Language 只是镜像 EDU,不是拿点数买的),加了一条豁免。
+5. **`core/01-intake.md` 新增问题 14**(预制卡需求 + 校验阈值展示),插在原第 13 题
+   之后,D/E 组顺移 15→18,"never invent a sixteenth question" 改成"a nineteenth"
+   ——顺手发现这句话在插入前就已经和实际题数(17 题时写"sixteenth")对不上,是和
+   第四轮记录的"六个目录"同类的漂移,这次一并订正。新建
+   `campaigns/_template-campaign/investigators/validation.json` 作为默认阈值的唯一
+   落盘副本,`core/01` 输出清单第六项改成"从这份模板复制"而不是在 spec 里重复一份
+   JSON,避免两处同数字以后各自漂移。
+
+**为什么这么分**:P6 的"审卡视图"讨论(缺陷 4 记录里提过的"第三种受众")最后没有真的
+拆出player/KP/审计三套模板——Keeper 2026-08-02 就定过"受众唯一是 KP",所以这批新字段
+全部挤进同一张卡,只是分节组织(`occupation_detail`/`age_modifiers`/`skill_points` 归进
+一个"Creation ledger (KP audit)"标题下),不是拆文件。拆文件的成本(两份模板互相同步)
+在受众已经唯一的前提下没有对应的收益。
+
+**留下的判断**
+
+- **`dist/bundle.md` 与全部 `reference/**/index.json` 现在可以安全地重跑并提交了**——
+  第二轮记录的"等两边都提交完"的条件此刻已满足(P7 已提交 84dba55/3f7225e,P8 即本轮
+  即将提交)。本轮收尾会重跑两个脚本并把结果纳入自己的提交。
+- **P8 计划文件的"需要先查清的事"三条在 P7 落盘前就已查过**——当时 `reference/rules/`
+  还没有 `magic.md`,答案是"两者互不阻塞";P7 落盘后复核确认两边改动的文件确实没有
+  重叠,判断依然成立,原样记录在计划文件里,不追溯改写。
+- **本批改动尚未提交**——commit hash 回填、`Archived/` 归档留到 Keeper 确认可以提交
+  之后处理。

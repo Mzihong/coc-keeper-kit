@@ -13,7 +13,7 @@ Any question can be answered `auto` and you will decide it well.
    > Answer any subset. Reply **`auto`** to any question and I'll choose. Reply
    > **`all auto`** and I'll build the whole thing and show you the result to accept or reroll.
 3. For every unanswered question, resolve it with **Auto-fill** (below) — never leave a
-   template field blank and never invent a sixteenth question.
+   template field blank and never invent a nineteenth question.
 4. Write `campaigns/<slug>/CLAUDE.md` from `campaigns/_template-campaign/CLAUDE.md`.
 5. Show the Keeper a **summary of every auto-filled choice**, marked `[auto]`, and offer:
    *accept* / *reroll this one* / *reroll all*. Do not proceed to the world until they accept.
@@ -55,20 +55,32 @@ Ask all of these. They are the ones that actually change downstream output.
 12. **Party size** — how many investigators?
 13. **The investigators** — names, occupations, and one hook each tying them to the premise.
     (If unknown, say so — the world will be built to accept any party.)
+14. **Investigator cards** — two small settled-once questions for
+    `core/13-create-investigator.md`:
+    - **Pre-built pregens for the players?** If yes, name who needs one now; otherwise cards
+      get built on demand as the campaign needs them (an elite NPC villain, a replacement
+      character). *Default: not needed yet.*
+    - **Creation-time validation thresholds**, shown so the Keeper can tighten or loosen them
+      rather than silently inherit the rulebook defaults: skill cap **90%** (Own Language is
+      exempt — it just mirrors EDU), characteristic ranges **15–90** for STR/CON/DEX/APP/POW/
+      Luck and **40–90** for SIZ/INT (**40–99** for EDU), per
+      `reference/rules/character-creation.md` §1 and §5. *Default: accept as shown.* These
+      become `campaigns/<slug>/investigators/validation.json`, read by
+      `scripts/render-investigator.py` — the Keeper can hand-edit that file later too.
 
 **D. Safety — never auto-filled**
-14. **Lines** — content that never appears at your table.
-15. **Veils** — content that happens off-screen or fades to black.
+15. **Lines** — content that never appears at your table.
+16. **Veils** — content that happens off-screen or fades to black.
 
-> **Question 14 and 15 have no default and are never auto-filled.** If the Keeper skips them,
+> **Question 15 and 16 have no default and are never auto-filled.** If the Keeper skips them,
 > ask once more, plainly: *"I won't guess at safety content — what's off the table?"* If they
 > decline again, write `<not declared — confirm at session zero>` into the campaign file and
 > generate conservatively: no on-screen harm to children or animals, no sexual violence, no
 > detailed self-harm.
 
 **E. Optional, ask only if they're engaged**
-16. **House rules** — anything you run differently from 7e default.
-17. **Touchstones** — films, books, or real history this should feel like.
+17. **House rules** — anything you run differently from 7e default.
+18. **Touchstones** — films, books, or real history this should feel like.
 
 ## Auto-fill
 
@@ -95,6 +107,7 @@ When a question is unanswered, resolve it in this order:
 | Length | short arc, 3–5 sessions |
 | Party size | 4 |
 | Investigators | unknown — build the world party-agnostic |
+| Investigator cards | no pregens needed yet; validation thresholds as shown in question 14 |
 
 ### The anti-generic rule
 
@@ -112,13 +125,17 @@ stirring. **You must roll**, and the roll must survive into the output.
 
 `<slug>` is English kebab-case, derived from the premise (`dagon-bay`, `beidaihe-winter`).
 
-**Create every one of these. Intake is not done until all five exist:**
+**Create every one of these. Intake is not done until all six exist:**
 
 - [ ] `campaigns/<slug>/CLAUDE.md` — filled completely, no `<placeholder>` text left
 - [ ] `campaigns/<slug>/canon-log.md` — copied from the template, empty of sessions
 - [ ] `campaigns/<slug>/overview.md` — the arc at a glance (skip only for a one-shot)
 - [ ] `campaigns/<slug>/references.md` — touchstones, or a stub saying none were given
 - [ ] `campaigns/<slug>/` subfolders: `world/ npcs/ scenes/ puzzles/ handouts/ sessions/`
+- [ ] `campaigns/<slug>/investigators/validation.json` — copied from
+      `campaigns/_template-campaign/investigators/validation.json` (already carries the
+      defaults quoted in question 14), edited to match any overrides the Keeper gave, so
+      `scripts/render-investigator.py` has a campaign config to read from day one
 
 Then report every auto-filled field, marked `[auto]`, with a one-line reason.
 

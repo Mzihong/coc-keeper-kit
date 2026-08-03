@@ -281,7 +281,7 @@ Any question can be answered `auto` and you will decide it well.
    > Answer any subset. Reply **`auto`** to any question and I'll choose. Reply
    > **`all auto`** and I'll build the whole thing and show you the result to accept or reroll.
 3. For every unanswered question, resolve it with **Auto-fill** (below) — never leave a
-   template field blank and never invent a sixteenth question.
+   template field blank and never invent a nineteenth question.
 4. Write `campaigns/<slug>/CLAUDE.md` from `campaigns/_template-campaign/CLAUDE.md`.
 5. Show the Keeper a **summary of every auto-filled choice**, marked `[auto]`, and offer:
    *accept* / *reroll this one* / *reroll all*. Do not proceed to the world until they accept.
@@ -323,20 +323,32 @@ Ask all of these. They are the ones that actually change downstream output.
 12. **Party size** — how many investigators?
 13. **The investigators** — names, occupations, and one hook each tying them to the premise.
     (If unknown, say so — the world will be built to accept any party.)
+14. **Investigator cards** — two small settled-once questions for
+    `core/13-create-investigator.md`:
+    - **Pre-built pregens for the players?** If yes, name who needs one now; otherwise cards
+      get built on demand as the campaign needs them (an elite NPC villain, a replacement
+      character). *Default: not needed yet.*
+    - **Creation-time validation thresholds**, shown so the Keeper can tighten or loosen them
+      rather than silently inherit the rulebook defaults: skill cap **90%** (Own Language is
+      exempt — it just mirrors EDU), characteristic ranges **15–90** for STR/CON/DEX/APP/POW/
+      Luck and **40–90** for SIZ/INT (**40–99** for EDU), per
+      `reference/rules/character-creation.md` §1 and §5. *Default: accept as shown.* These
+      become `campaigns/<slug>/investigators/validation.json`, read by
+      `scripts/render-investigator.py` — the Keeper can hand-edit that file later too.
 
 **D. Safety — never auto-filled**
-14. **Lines** — content that never appears at your table.
-15. **Veils** — content that happens off-screen or fades to black.
+15. **Lines** — content that never appears at your table.
+16. **Veils** — content that happens off-screen or fades to black.
 
-> **Question 14 and 15 have no default and are never auto-filled.** If the Keeper skips them,
+> **Question 15 and 16 have no default and are never auto-filled.** If the Keeper skips them,
 > ask once more, plainly: *"I won't guess at safety content — what's off the table?"* If they
 > decline again, write `<not declared — confirm at session zero>` into the campaign file and
 > generate conservatively: no on-screen harm to children or animals, no sexual violence, no
 > detailed self-harm.
 
 **E. Optional, ask only if they're engaged**
-16. **House rules** — anything you run differently from 7e default.
-17. **Touchstones** — films, books, or real history this should feel like.
+17. **House rules** — anything you run differently from 7e default.
+18. **Touchstones** — films, books, or real history this should feel like.
 
 ## Auto-fill
 
@@ -363,6 +375,7 @@ When a question is unanswered, resolve it in this order:
 | Length | short arc, 3–5 sessions |
 | Party size | 4 |
 | Investigators | unknown — build the world party-agnostic |
+| Investigator cards | no pregens needed yet; validation thresholds as shown in question 14 |
 
 ### The anti-generic rule
 
@@ -380,13 +393,17 @@ stirring. **You must roll**, and the roll must survive into the output.
 
 `<slug>` is English kebab-case, derived from the premise (`dagon-bay`, `beidaihe-winter`).
 
-**Create every one of these. Intake is not done until all five exist:**
+**Create every one of these. Intake is not done until all six exist:**
 
 - [ ] `campaigns/<slug>/CLAUDE.md` — filled completely, no `<placeholder>` text left
 - [ ] `campaigns/<slug>/canon-log.md` — copied from the template, empty of sessions
 - [ ] `campaigns/<slug>/overview.md` — the arc at a glance (skip only for a one-shot)
 - [ ] `campaigns/<slug>/references.md` — touchstones, or a stub saying none were given
 - [ ] `campaigns/<slug>/` subfolders: `world/ npcs/ scenes/ puzzles/ handouts/ sessions/`
+- [ ] `campaigns/<slug>/investigators/validation.json` — copied from
+      `campaigns/_template-campaign/investigators/validation.json` (already carries the
+      defaults quoted in question 14), edited to match any overrides the Keeper gave, so
+      `scripts/render-investigator.py` has a campaign config to read from day one
 
 Then report every auto-filled field, marked `[auto]`, with a one-line reason.
 
@@ -424,6 +441,8 @@ before you commit it. **If it contradicts a cheat-sheet, fix the cheat-sheet.**
 - Assign a **Sanity cost** → keep it proportionate to the horror.
 - Build a **human antagonist stronger than an ordinary person** (a cult leader, a gang boss)
   → read `reference/rules/character-creation.md` §11 before assigning skills or gear.
+- Write any **spell, ritual, or magic book/tome** → read `reference/rules/magic.md` before
+  setting an MP/SAN/POW cost or a study time.
 
 ## Cheat-sheets (source of truth)
 
@@ -438,6 +457,9 @@ before you commit it. **If it contradicts a cheat-sheet, fix the cheat-sheet.**
 - `reference/rules/character-creation.md` — attribute rolls, the standard-pool skill-point
   formula, base skill values; §11 is human antagonist strength (baseline + increment — no
   separate power-budget table). Read it whenever the antagonist is a person, not a monster.
+- `reference/rules/magic.md` — MP/SAN/POW cost notation, casting time, opposed POW rolls,
+  spell cost-tier ladder, tome study time/SAN/Cthulhu Mythos conventions, and the
+  cost-conversion rule for designing a new spell.
 
 ## Fast facts (verify against the sheets)
 
@@ -915,7 +937,8 @@ checklist.
 - Give **average characteristics** (note "roll/scale per individual" if many appear).
 - Derive **HP = (CON+SIZ)/10**, **Build & Damage Bonus** from STR+SIZ, **Move** to fit the body.
 - Big entities have high SIZ → high Build → hard to grapple and heavy Damage Bonus; reflect it.
-- Spellcasters: list spells and their MP/SAN costs; cross-link `reference/mythos/`.
+- Spellcasters: list spells and their MP/SAN costs — read `reference/rules/magic.md` for the
+  cost-tier ladder before assigning numbers; cross-link `reference/mythos/`.
 
 ## Output
 
@@ -1493,7 +1516,33 @@ budgets decide what the backstory can plausibly claim. Working out of order mean
 
 Elite cultists or other mechanically-full villains (`core/06-create-npc.md` NPCs who need
 complete stats) may use this schema instead of a lighter NPC stat block — set
-`"type": "elite-npc"` in the JSON and skip the player-facing backstory-hooks section.
+`"type": "elite-npc"` in the JSON.
+
+**The rendered card is always KP-facing, for both types.** This tool builds player sheets for
+the Keeper to hand-review, not something that goes to a player unedited — players build their
+own characters, and the Keeper enters the agreed sheet as JSON. Nothing is held back by
+`type`: `scripts/render-investigator.py` renders every populated section (spells, notes,
+the skill-point ledger, `mythos_encounters`, all of it) the same way for a pregen and an
+elite NPC — there is no separate "player view" to strip spoilers from. If a campaign wants
+a pre-built card actually handed to a player, that's decided once at intake
+(`core/01-intake.md`), not solved by the renderer guessing the audience.
+
+## Self-validation
+
+`scripts/render-investigator.py` checks the record on every run and reports to stderr —
+default is **warn but still render**; `--strict` turns any violation into a hard failure:
+
+- **Arithmetic (unconditional):** derived-stat formulas, the skill-point ledger balancing,
+  each skill's `value = base + occupation + interest + growth`, Credit Rating sitting in the
+  occupation's band.
+- **Thresholds (configurable):** the creation-time skill cap and characteristic ranges, read
+  from `campaigns/<slug>/investigators/validation.json` if present (intake writes this file
+  with the campaign's declared numbers; falls back to `reference/rules/character-creation.md`
+  defaults otherwise — see the script's `DEFAULT_VALIDATION`).
+
+This doesn't replace `core/11-review.md` — it catches the mechanical typos a reviewer would
+otherwise have to recompute by hand; continuity, three-clue coverage, and spoiler hygiene are
+still a human read.
 
 ## Output
 
@@ -1903,6 +1952,81 @@ smudge if it should be partly illegible.>
 <relative link back to the scene/puzzle this belongs to>
 
 
+=== FILE: templates/investigator.example.md ===
+
+# Lev Arkadyevich Sokolov
+
+*A Russian emigre engineer who reads a collapsed building the way other men read a face, and who took this contract because the plans do not add up.*
+
+- **Occupation:** Engineer · **Era/locale:** 1923, Providence, Rhode Island
+- **Type:** pregen
+
+## Characteristics
+| STR | CON | SIZ | DEX | APP | INT | POW | EDU |
+|-----|-----|-----|-----|-----|-----|-----|-----|
+| 40 | 60 | 50 | 45 | 50 | 80 | 55 | 78 |
+
+- **HP** 11 · **MP** 11 · **SAN** 55 · **Luck** 60 · **Move** 7 · **Build** 0 · **Damage Bonus** none · **Dodge** 30
+- **Cthulhu Mythos:** 0% · **SAN max:** 99
+- **Armor:** none
+
+## Credit Rating
+- **Value:** 30 (30-60) · **Lifestyle:** average
+- **Cash:** 60 · **Assets:** 1500 · **Spending level:** 10 (USD 1920s)
+- **Assets are:** A half-share in a drafting office on Weybosset Street, and his father's tools.
+
+## Occupation detail
+- **Skill points formula:** EDU x 4
+- **Credit Rating band:** 30-60
+- **Occupation skills:** Art/Craft (Technical Drawing), Electrical Repair, Library Use, Mechanical Repair, Operate Heavy Machinery, Science (Engineering), Science (Physics), any one other personal or era speciality -> taken as Drive Auto
+- **Contacts:** Former army engineering corps, municipal works department, architects
+
+## Creation ledger (KP audit)
+- **Age band:** 20-39 · **Physical deduction:** 0
+- **APP penalty:** 0 · **EDU penalty:** 0 · **EDU checks:** 1 (gained 8) · **Move penalty:** 0 · **Luck rolls:** 1
+- **Occupation points:** 312 / 312 · **Interest points:** 160 / 160 · **Cap:** rulebook default: 90
+
+## Skills
+Credit Rating 30%, Art/Craft (Technical Drawing) 50%, Electrical Repair 50%, Library Use 60%, Mechanical Repair 45%, Operate Heavy Machinery 30%, Science (Engineering) 51%, Science (Physics) 30%, Drive Auto 34%, Language (English) 51%, Spot Hidden 45%, Listen 35%, Persuade 25%, Stealth 32%, First Aid 40%, Psychology 20%, Accounting 15%, History 15%, Dodge 30%, Own Language (Russian) 78%, Fighting (Brawl) 25%
+
+## Weapons
+- Unarmed, 25%, 1D3
+- Heavy spanner, 25%, 1D6
+
+## Gear
+- Drafting case — Rules, dividers, and a roll of tracing paper. Turns a hunch about a floor plan into a check.
+- Pocket torch
+- Father's pocket watch — Treasured possession — see backstory.
+
+## Status
+- **Physical:** healthy · **Mental:** sane
+
+## Backstory
+- **Description:** Ordinary build, slightly stooped from years over a drawing board. Ink under the fingernails.
+- **Ideology/beliefs:** Anything built by hands can be understood by hands. There is no such thing as an unexplainable structure — only an unread one.
+- **Significant people:** His wife Anna, who stayed in Petrograd and writes twice a year.
+- **Meaningful locations:** His parents' grave, which he has never been able to visit.
+- **Treasured possessions:** His father's pocket watch, the only thing that came out of Russia with him.
+- **Traits:** Ambitious to the point of rudeness — he will correct a client mid-sentence.
+- **Injuries/scars:** None yet.
+- **Phobias/manias:** None yet.
+- **Key entries:** significant_people, treasured_possessions
+
+## Party
+- <fellow investigator> (player: <player name>) — Client turned friend — hired him to survey the property.
+
+## Hooks tying them to this campaign
+- The drawings he was hired to check were signed by an architect who has been dead for six years.
+- Anna's last letter mentioned a man asking after him by his full patronymic — a name he uses with no one here.
+- His half-share in the drafting office is co-owned by someone with an interest in the central mystery.
+
+## Notes
+Worked example for templates/investigator.schema.json. A fresh pregen leaves spells, mythos_encounters, experience_packages, and growth_log empty by definition — Cthulhu Mythos is 0 and Sanity maximum is therefore 99. Elite NPCs are where those sections earn their keep. Ledger: occupation EDU x 4 = 312 spent exactly; interest INT x 2 = 160 spent exactly.
+
+## Links
+- <...>
+
+
 === FILE: templates/investigator.md ===
 
 # <Investigator Name>
@@ -1910,7 +2034,7 @@ smudge if it should be partly illegible.>
 *<one-line concept — who they are at a glance>*
 
 - **Occupation:** <occupation> · **Era/locale:** <match the campaign>
-- **Type:** <pregen / elite NPC>
+- **Type:** <pregen / elite-npc>
 
 ## Characteristics
 | STR | CON | SIZ | DEX | APP | INT | POW | EDU |
@@ -1919,13 +2043,47 @@ smudge if it should be partly illegible.>
 
 - **HP** 0 · **MP** 0 · **SAN** 0 · **Luck** 0 · **Move** 0 · **Build** 0 · **Damage Bonus** 0
   · **Dodge** 0
-- **Credit Rating:** 0 (<occupation band>)
+- **Cthulhu Mythos:** 0% · **SAN max:** 99
+- **Armor:** <omit unless worn>
+
+## Credit Rating
+- **Value:** 0 (<occupation band>) · **Lifestyle:** <penniless/poor/average/wealthy/rich/super rich>
+- **Cash:** <…> · **Assets:** <…> · **Spending level:** <…> (<currency, era-scaled>)
+- **Assets are:** <what they actually are — property, vehicle, holdings> *(omit if none)*
+
+## Occupation detail
+*(omit this section for a thin elite-NPC record that skips it)*
+- **Skill points formula:** <e.g. "EDU x 4">
+- **Credit Rating band:** <e.g. "30-60">
+- **Occupation skills:** <the list, including named free-choice slots>
+- **Contacts:** <the occupation's professional circle — a ready-made hook source>
+
+## Creation ledger (KP audit)
+*(omit this section if age/skill-point bookkeeping wasn't recorded)*
+- **Age band:** <…> · **Physical deduction:** <n> (<split, e.g. "STR -3, CON -2">)
+- **APP penalty:** <n> · **EDU penalty:** <n, 15-19 only> · **EDU checks:** <n> (gained <n>)
+  · **Move penalty:** <n> · **Luck rolls:** <n, 15-19 only>
+- **Occupation points:** <spent> / <total> · **Interest points:** <spent> / <total>
+  · **Cap:** <any table-declared cap>
 
 ## Skills
 <skill 60%, skill 45%, skill 35% — only what the sheet needs at the table>
 
 ## Weapons
 - <weapon, skill %, damage> *(omit if unarmed/non-combatant)*
+
+## Gear
+*(omit if nothing beyond the obvious)*
+- <item — notes>
+
+## Spells
+*(omit for a pregen with none — this is where elite-NPC spellcasters earn their keep)*
+- <name (MP/SAN/casting-time cost) — effect>
+
+## Status
+*(omit for a fresh, clean pregen; core/12-canon-update.md keeps this current in play)*
+- **Physical:** <healthy/wounded/major wound/unconscious/dying> · **Mental:** <sane/…>
+- **Phobias:** <…> · **Manias:** <…>
 
 ## Backstory
 - **Description:** <one visual line>
@@ -1936,10 +2094,30 @@ smudge if it should be partly illegible.>
 - **Traits:** <…>
 - **Injuries/scars:** <…>
 - **Phobias/manias:** <…>
+- **Key entries:** <one or two field names — what Sanity rewards and punishes>
+
+## Experience packages
+*(omit unless the campaign uses this house option)*
+- <name (SAN cost) — grants: …; requires: …>
+
+## Mythos encounters
+*(omit for a fresh pregen; elite NPCs and veterans only)*
+- <entity — result — notes>
+
+## Growth log
+*(omit until play has happened; append only, newest last)*
+- [<session>] <what changed>
+
+## Party
+*(omit for a solo elite NPC)*
+- <name> (player: <player name>) — <how they know each other>
 
 ## Hooks tying them to this campaign
 - <hook 1 — must connect to an NPC, faction, location, or the central mystery>
 - <hook 2>
+
+## Notes
+*(omit if empty — KP-only free text)*
 
 ## Links
 <relative links to related NPCs, factions, or scenes>
@@ -2965,9 +3143,10 @@ reviewer can check the age and backstory actually honour it.
 
 - A **pregen** built for a specific scenario has Credit Rating, skills, and backstory hooks
   tuned to the plot. See `core/13-create-investigator.md`.
-- An **elite NPC** (a named cultist, a rival investigator) reuses the same schema, sets
-  `"type": "elite-npc"`, and skips the player-facing backstory prompts. It may legitimately
-  carry `spells`, `cthulhu_mythos`, and `mythos_encounters`, which a starting pregen may not.
+- An **elite NPC** (a named cultist, a rival investigator) reuses the same schema and sets
+  `"type": "elite-npc"`. It may legitimately carry `spells`, `cthulhu_mythos`, and
+  `mythos_encounters`, which a starting pregen may not. The rendered card is KP-facing for
+  both types — nothing is skipped by `type`; see `core/13-create-investigator.md`.
 
 ## 10. Quality bar — the ledger has to balance
 
@@ -3140,6 +3319,123 @@ cinematic beats without dealing damage.
 - Most monsters should be **outrun, tricked, warded, or endured**, not defeated in a fair
   fight. Let combat be the *failure* branch, not the goal.
 - Track ammo and light; scarcity is scarier than tough enemies.
+
+
+=== FILE: reference/rules/magic.md ===
+
+# 7e Magic — cheat-sheet
+
+> Casting mechanics, tome conventions, and spell-design cost scaling — not a spell list.
+> Distilled from two local sources (both absent from `dist/bundle.md`): the tome/study rules
+> in `reference/sourcebooks/keeper-rulebook-7e-zh.md` (the 7e core rulebook — last word on any
+> number here), and the spell cost/casting-time patterns sampled across
+> `reference/sourcebooks/grand-grimoire-zh.md` (550+ spells, official supplement). This sheet
+> keeps the mechanics and number ranges, never the source text.
+
+## Casting a spell
+
+- **Cost is written `X 点魔法值；Y 点理智值`** (MP, then SAN), with **POW** added as a third
+  cost only when the spell demands a permanent sacrifice. `可变`(variable) means the caster
+  chooses how much MP/POW to invest — more investment buys a bigger or more likely effect.
+- **Casting time sets initiative.** 即时 (instant) resolves at the caster's DEX**+50** this
+  round (like a readied gun). **1 轮** resolves at the caster's own DEX this round; **N 轮**
+  resolves at DEX on the caster's Nth round from now. Ritual spells instead run
+  minutes/hours/days, and the caster is exposed and interruptible for the whole span.
+- **Resisted effects use an opposed POW roll** — POW vs. the target's POW, or (for wards,
+  barriers, and thresholds) POW vs. **5× the MP invested** — never a skill check. Cthulhu
+  Mythos/Occult only gate *learning* or *diagnosing* a spell, never casting it.
+- **SAN loss on a cast is a flat number**, not the X/Y success/failure notation used for
+  witnessing something (`reference/rules/sanity.md`) — it's paid whether or not the spell
+  succeeds. Casters at SAN 0 are conventionally written as ignoring it.
+
+## Cost tiers (calibration ladder, sampled across the grand-grimoire)
+
+Pick the tier matching the effect's reach when inventing a spell or a caster's known list,
+then round to a number that feels earned — don't default to the cheapest end. Four tiers,
+**小术/中术/大术/仪式级**, so any future spell-strength tooling (indexing, tagging) has one
+shared vocabulary instead of a second incompatible ladder:
+
+| Tier | MP | SAN | POW | Casting time | Example |
+|---|---|---|---|---|---|
+| 小术 (minor) | 1–6 | 0–1D4 | — | rounds–minutes | detect, ward an object, small curse |
+| 中术 (moderate) | 变 or 5–15 | 1D4–1D8 | — | 即时–1 轮 | direct harm, mind-affecting, most Bind/Summon (creature) |
+| 大术 (major) | 10–25 | 1D6–2D10 | 5–15 (often permanent) | hours–1 天 | shapechange, life-extension, a curse that sticks |
+| 仪式级 (ritual-tier) | 20–100+ | 1D10–3D6 | 15–350 | hours–days, always ritual | Call/Summon (Great Old One) |
+
+## Spell design — the cost-conversion convention
+
+- **Power and cost move together.** Doubling an effect (damage, duration, range) should
+  roughly double its MP/SAN — a cheap-and-strong spell breaks the action economy.
+- **Permanent effects cost permanent POW, not MP.** MP recovers overnight; a bound servitor
+  or a curse that never lifts shouldn't be payable in something the caster gets back by
+  sleeping.
+- **God-taught spells break the curve on purpose** — lower MP for the same effect, but
+  usually a steeper SAN cost, a POW sacrifice, or a string attached (the deity remembers).
+  That difference is what makes a Nyarlathotep-taught spell feel unlike one reverse-engineered
+  from a stolen page.
+- **Investigators get the weak end of every curve.** A PC-only discount on a spell's cost
+  quietly turns them into a superhero — an NPC casting the same effect should pay the same.
+- **Flavour is free.** The description (sound, smell, visual) can be reskinned at no
+  mechanical cost; only the cost and effect are the levers that matter for balance.
+- **A counter-spell must cost at least one tier less than the spell it counters.** This is a
+  hard design law, not a guideline: a ward or banishing that costs as much (or more) than the
+  attack it stops is a fair-out in name only — see `core/07-create-monster.md`'s "the fair
+  out" and `core/08-create-puzzle.md`. A 大术-tier curse needs a 中术-or-cheaper counter
+  somewhere in the world, discoverable through play.
+
+## Tomes / grimoires
+
+Every tome carries five fixed values, decided once when the tome is written and never
+changed by who reads it: **SAN loss** (a flat die roll, not X/Y), **CMI** (Cthulhu Mythos
+Initial — the % gained on skimming), **CMF** (Cthulhu Mythos Full — the % gained on full
+study), **MR** (Mythos Rating — see below), and **study time** in weeks.
+
+- **泛读 (skim) first, always.** Cover, script, and a read of the language tell the reader
+  whether they can read it at all. A **reading check** (the relevant Language skill, or the
+  reader's Occult/CM if no check is called for) may be required — difficulty scales with the
+  tome's condition: **Regular** for a clean modern print, **Hard** for a handwritten or old
+  copy, **Extreme** for a decayed original with mixed marginalia. Failure costs nothing (no
+  SAN, no Mythos) — just a wasted attempt. Success grants **CMI immediately**, the flat SAN
+  roll (believers only — a declared non-believer's *max* SAN drops but current SAN doesn't),
+  a sense of what spells the tome holds, and how long full study will take.
+- **精读 (full study) is the real gate** — commonly weeks for a minor text, months to over a
+  year for a dense one; a *Necronomicon*-class tome runs 30–70 weeks. No reading check (it
+  was already resolved at the skim). On completion, roll the SAN loss again, then compare the
+  reader's current Cthulhu Mythos skill to the tome's **MR**: below MR → the reader gains the
+  full **CMF**; at or above MR → only **CMI** again (diminishing returns once the reader has
+  outgrown the tome). Re-studying the same tome is allowed — each subsequent pass **doubles
+  the previous study time** but pays the same SAN/CM rules, so a tome keeps paying out (worse
+  and worse per hour) until the reader's CM skill clears its MR.
+- **A translated/abridged copy** of the same work typically has a **lower MR, faster study
+  time, and a smaller CMI/CMF** than the original manuscript, and usually teaches fewer of the
+  spells — the trade-off that makes collecting multiple editions of one tome worthwhile.
+- Only **one tome can be under active study at a time** per reader.
+
+| Weight | Study time | SAN loss | CMI / CMF | MR |
+|---|---|---|---|---|
+| Minor / cult pamphlet | 1–14 weeks | 1D3–1D6 | +1/+2 – +4/+9 | 9–18 |
+| Standard grimoire | 6–36 weeks | 1D6–2D6 | +2/+4 – +4/+8 | 18–36 |
+| Major tome (*Necronomicon*-class) | 32–68 weeks | 2D8–2D10 | +4/+8 – +5/+12 | 36–51 |
+
+## Spell entry format & categories (for `reference/mythos/spells/`)
+
+Each entry: **消耗**(cost) → **施法用时**(casting time) → **效果**(effect) → optional
+**深层魔法**(a stronger variant for SAN-0 casters and Mythos entities) → **别名**(aliases —
+useful so players can't pattern-match a spell by name alone). Tag loosely with the
+sourcebook's own categories, more than one where it fits: 驱逐和控制、召唤怪物和神祇、战斗、
+交流、幻梦境、附魔、环境、续命、民俗魔法、加害魔法(战斗外)、支配他人、制造怪物、其他、保护、
+时间相关、变形、旅行和交通。
+
+## Quality bar
+
+- Cost (MP/SAN, +POW if the effect is permanent) matches the tier table for what the spell
+  actually does — no MP-only immortality, no discount spells for PCs.
+- Casting time is stated in 即时/N 轮/duration notation, never "takes a while".
+- A tome states all five values together — SAN loss, CMI, CMF, MR, study time — not just a
+  single "Mythos gain" number.
+- A resisted effect names exactly what it's opposed against (POW vs. POW, or vs. 5× MP).
+- Any spell written as "the fair out" for another spell costs at least one tier less than
+  the spell it counters.
 
 
 === FILE: reference/rules/sanity.md ===
@@ -4295,6 +4591,14 @@ one-line performable scale. Read it for ideas; roll here for the actual result.
 - <name — occupation — hook>
 
 *If unknown, write `<party-agnostic>` and the world will be built to accept any group.*
+
+## Investigator cards
+- **Pre-built pregens:** <not needed yet / name who needs one — built via
+  `core/13-create-investigator.md`>
+- **Creation-time validation:** <default (see `investigators/validation.json`) / overridden,
+  see that file>
+- Config lives in `investigators/validation.json`, read by `scripts/render-investigator.py`;
+  edit it directly to change the thresholds later.
 
 ## Canon so far (truth — keeper only)
 > **KEEPER ONLY**

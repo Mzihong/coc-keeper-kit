@@ -22,27 +22,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 53,
-          "context": "- **新增 `reference/craft/`,存放「手法提炼稿」**(怎么写),与 `reference/rules/`(数字是多少)分工:两边都是 kit 原创、都进 bundle,但 rules 错了数值不对,craft 错了文字平庸。洛夫克拉夫特笔法笔记移入为 `craft/lovecraft-zh.md`"
-        },
-        {
-          "file": "CHANGELOG.md",
-          "line": 65,
-          "context": "- **邪教终于有一套\"怎么设计\"的方法论,不用每次现编。** 新增 `reference/craft/cult-design-zh.md`:为什么邪教是最好的反派、克苏鲁邪教和其他神话教团的区别、一条十一步的有序设计流程(概念→首领→目标→组织→成员→入会→财源→神话接触分层→弱点→敌人→关系图)、财源六项作为线索引"
+          "line": 106,
+          "context": "- 新增邪教设计方法论 `craft/cult-design-zh.md`,配四张骰表与 `templates/cult.md` 模板。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 73,
-          "context": "- **P1 第三章(设计一个克苏鲁邪教方法论)已落盘。** `reference/craft/cult-design-zh.md` +"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 142,
+          "line": 146,
           "context": "该计划的落点已同步改成 `craft/cult-design-zh.md`。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 267,
+          "line": 271,
           "context": "3. **P1 第三章(设计一个克苏鲁邪教方法论)落盘**:`reference/craft/cult-design-zh.md`"
         },
         {
@@ -146,22 +136,22 @@
           "context": "`reference/craft/cult-design-zh.md` §三."
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 108,
+          "file": "update_plan/2026-08-02-cult-doc-wrapup.md",
+          "line": 18,
+          "context": "- [ ] 更新 `reference/README.md`:登记 `craft/cult-design-zh.md`、`mythos/cults/` 条目、"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
+          "line": 110,
           "context": "**A. 手法散文 → `reference/craft/cult-design-zh.md`**(2026-08-02 落盘)"
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
           "line": 219,
           "context": "`reference/craft/cult-design-zh.md` 与 `reference/mythos/cults/`,"
-        },
-        {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 248,
-          "context": "- [ ] 更新 `reference/README.md`:登记 `craft/cult-design-zh.md`、`mythos/cults/` 条目、"
         }
       ],
-      "reference_count": 28
+      "reference_count": 26
     },
     {
       "file": "lovecraft-zh.md",
@@ -171,18 +161,13 @@
       "declared_consumers": [],
       "referenced_by": [
         {
-          "file": "CHANGELOG.md",
-          "line": 53,
-          "context": "- **新增 `reference/craft/`,存放「手法提炼稿」**(怎么写),与 `reference/rules/`(数字是多少)分工:两边都是 kit 原创、都进 bundle,但 rules 错了数值不对,craft 错了文字平庸。洛夫克拉夫特笔法笔记移入为 `craft/lovecraft-zh.md`"
-        },
-        {
           "file": "WORKLOG.md",
           "line": 41,
           "context": "├ og_Norval/      洛夫克拉夫特全集 82 篇 → 提炼稿 craft/lovecraft-zh.md"
         },
         {
           "file": "WORKLOG.md",
-          "line": 139,
+          "line": 143,
           "context": "`lovecraft-craft-notes-zh.md` → `craft/lovecraft-zh.md`。理由不是\"根目录要干净\",而是"
         },
         {
@@ -236,13 +221,13 @@
           "context": "\"research only; distilled into reference/craft/lovecraft-zh.md\","
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 109,
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
+          "line": 111,
           "context": "定位对标 `reference/craft/lovecraft-zh.md`(90 行,按\"哪个 spec 读哪一节\"分节)。"
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 261,
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
+          "line": 256,
           "context": "1. skill 是动词,这两章是知识;kit 已有先例(`craft/lovecraft-zh.md`"
         },
         {
@@ -251,7 +236,7 @@
           "context": "`reference/craft/lovecraft-zh.md`."
         }
       ],
-      "reference_count": 16
+      "reference_count": 15
     }
   ]
 }

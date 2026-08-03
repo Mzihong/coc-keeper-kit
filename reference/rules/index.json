@@ -7,13 +7,13 @@
   "usage_rule": "authored by this kit — read and used directly, no citation required",
   "in_bundle": true,
   "generated_by": "scripts/build-reference-index.py — do not edit by hand",
-  "entry_count": 5,
+  "entry_count": 6,
   "entries": [
     {
       "file": "character-creation.md",
       "path": "reference/rules/character-creation.md",
       "title": "7e Character Creation — cheat-sheet",
-      "lines": 302,
+      "lines": 303,
       "declared_consumers": [
         "core/13-create-investigator.md",
         "reference/rules/skill-checks.md",
@@ -22,53 +22,58 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 43,
-          "context": "- 新增**追逐速查** `reference/rules/chases.md`,以及**人物创建与理智速查** `reference/rules/character-creation.md`、`reference/rules/sanity.md`。"
+          "line": 89,
+          "context": "- `character-creation.md` 补齐年龄补正、Build/伤害加值、技能基础值等建卡数据,可用来审核他人交的卡。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 48,
-          "context": "- **建卡知识大幅补齐** `reference/rules/character-creation.md`:年龄七档补正表、Build/伤害加值表、MOV 判定、重伤值、技能基础值表、职业的三要素(点数公式家族/信用区间/本职技能表含自由槽)、信用评级→生活水平/现金/资产/消费水平换算表、伞技能专精写法、可选规则("
-        },
-        {
-          "file": "CHANGELOG.md",
-          "line": 62,
-          "context": "- `reference/rules/character-creation.md` 每个小节加**来源指路**:标明数据是从 `COC apolo.xlsx` 哪个 sheet 提炼的,不摘原文、只给定位信息——技能基础值表的\"规则书第四章:技能\"是源材料自带的引用,其余小节如实标注\"章节号未核实\"而非编号瞎猜。`re"
-        },
-        {
-          "file": "CHANGELOG.md",
-          "line": 64,
-          "context": "- **人类反派终于有了\"该多强\"的答案。** 原来 `core/06`/`core/07`/`core/13` 能造反派,但没有任何地方回答强度——一个技能全 90% 的邪教首领能毫发无伤地通过既有审计。现在 `reference/rules/character-creation.md` §11 给出:普通人类反派直"
+          "line": 103,
+          "context": "- `character-creation.md` 各小节补上数据来源指路(标明取自哪个源文件/章节)。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 71,
-          "context": "`reference/rules/character-creation.md` §11;`core/02/06/07/11` 已接线。**尚未提交**"
+          "line": 81,
+          "context": "补全全部缺失字段,加了硬性算术+阈值型双层自校验;`core/13`/`character-creation.md`/"
         },
         {
           "file": "WORKLOG.md",
-          "line": 78,
-          "context": "(`character-creation.md` §11),之前那句校验一直是空转的。"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 257,
+          "line": 261,
           "context": "`reference/rules/character-creation.md`**(新增 §11)。内容:普通人类基线 = 照"
         },
         {
           "file": "WORKLOG.md",
-          "line": 279,
+          "line": 283,
           "context": "`cult-leader-positions.md` + `character-creation.md` §11 两处指路。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 287,
+          "line": 291,
           "context": "P4 的落点没有另开新文件——`reference/rules/character-creation.md` 已经是\"KP 专用的"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 558,
+          "context": "会话对 `core/13`/`core/01`/`character-creation.md`/`templates/investigator.md`/"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 598,
+          "context": "规则,换成\"渲染永远面向 KP\"的声明。顺带发现 `reference/rules/character-creation.md`"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 608,
+          "context": "`reference/rules/character-creation.md` §5 已经落盘的权威数字是 90%,75% 是这份计划"
         },
         {
           "file": "core/01-intake.md",
           "line": 48,
           "context": "background-first split in `reference/rules/character-creation.md` §11? *Default: not"
+        },
+        {
+          "file": "core/01-intake.md",
+          "line": 67,
+          "context": "`reference/rules/character-creation.md` §1 and §5. *Default: accept as shown.* These"
         },
         {
           "file": "core/02-rules-reference.md",
@@ -77,7 +82,7 @@
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 30,
+          "line": 32,
           "context": "- `reference/rules/character-creation.md` — attribute rolls, the standard-pool skill-point"
         },
         {
@@ -107,7 +112,12 @@
         },
         {
           "file": "core/13-create-investigator.md",
-          "line": 81,
+          "line": 91,
+          "context": "with the campaign's declared numbers; falls back to `reference/rules/character-creation.md`"
+        },
+        {
+          "file": "core/13-create-investigator.md",
+          "line": 107,
           "context": "(`reference/rules/character-creation.md`) — recompute, don't eyeball."
         },
         {
@@ -146,137 +156,177 @@
           "context": "`reference/rules/character-creation.md` §11. Delete this line if category has no human"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
+          "file": "scripts/render-investigator.py",
+          "line": 20,
+          "context": "below, which mirror reference/rules/character-creation.md, if that file is absent)."
+        },
+        {
+          "file": "scripts/render-investigator.py",
+          "line": 58,
+          "context": "# (min STR+SIZ, max STR+SIZ, Build, DamageBonus labels) — reference/rules/character-creation.md §3"
+        },
+        {
+          "file": "scripts/render-investigator.py",
+          "line": 429,
+          "context": "# Own Language just mirrors EDU (character-creation.md §5's \"special\" row) — it isn't"
+        },
+        {
+          "file": "update_plan/2026-08-02-investigator-render-gaps.md",
+          "line": 5,
+          "context": "> 字段、自校验(硬性算术+阈值型)、`core/13`/`character-creation.md` 改 spec、"
+        },
+        {
+          "file": "update_plan/2026-08-02-investigator-render-gaps.md",
+          "line": 106,
+          "context": "顺带发现并修了 `reference/rules/character-creation.md` §9 同一处的措辞分歧"
+        },
+        {
+          "file": "update_plan/2026-08-02-investigator-render-gaps.md",
+          "line": 115,
+          "context": "75%\"**——`reference/rules/character-creation.md` §5 已经落盘的权威数字是 90%"
+        },
+        {
+          "file": "update_plan/2026-08-02-investigator-render-gaps.md",
+          "line": 174,
+          "context": "`core/13`/`core/01`/`reference/rules/character-creation.md` §9),按 Keeper 要求"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 57,
+          "context": "P8 已完成(全渲染+自校验,`core/13`/`character-creation.md`/`core/01` 已接线);"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 87,
+          "context": "`character-creation.md`/`core/01` 接线),移出本表。剩下的:"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
           "line": 11,
           "context": "> 2026-08-02 第五轮:待讨论 8 的落点拍板为 `reference/rules/character-creation.md`"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 114,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 117,
           "context": "| A. 新建 `reference/rules/antagonist-budget.md` | 与 `sanity.md`/`chases.md`/`character-creation.md` 同级,`core/02` 登记一行即可;主题独立好找 | `reference/rules/` 再添一份,速查文件数量继续"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 115,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 118,
           "context": "| B. 追加进 `reference/rules/character-creation.md` | 造调查员与造反派共用一套点数概念,同一份文件里对照最直观 | 该文件现在是**玩家侧**车卡速查;混入反派预算会模糊定位 |"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 120,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 123,
           "context": "> **Keeper 定案(2026-08-02 第三轮):选 B——追加进 `reference/rules/character-creation.md`。**"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 148,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 151,
           "context": "已把内容落进 `reference/rules/character-creation.md`,本计划文件的文件名不再对应任何"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 172,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 175,
           "context": ">   而是**走 `character-creation.md` 里已有的标准角色创建规则**——和造调查员用"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 258,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 261,
           "context": "- `reference/rules/character-creation.md` 是**玩家侧车卡**流程,产出的是调查员(高于平均),"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 296,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 299,
           "context": "> `reference/rules/character-creation.md`,基线大概率跟着落同一份,但这点 Keeper"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 300,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 303,
           "context": "> `reference/rules/character-creation.md` §11 收了这一整节(基线 = busybodies、"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 345,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 348,
           "context": "- [ ] `reference/rules/character-creation.md` 是否已含职业点/兴趣点公式(用于待讨论 3 自验)"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 356,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 359,
           "context": "- [x] `reference/rules/character-creation.md` 新增 §11「Human antagonists — baseline +"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 362,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 365,
           "context": "「Cheat-sheets」登记 `character-creation.md` 及其 §11。"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 366,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 369,
           "context": "`character-creation.md` §11\";非人类的种类阶梯细节指向 P9,现阶段仍按 threat"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
           "line": 387,
           "context": "| 待讨论 1(归属) | ✅ 已定案:B(追进 `character-creation.md`) |"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
           "line": 393,
           "context": "| 待讨论 8(普通人类模板基线) | ✅ 已定案:内容(busybodies+grand-grimoire)与落点(`character-creation.md` §11)均已落盘 |"
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 145,
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
+          "line": 147,
           "context": "2026-08-02 第五轮定案并落盘到 `reference/rules/character-creation.md` §11,详见该计划"
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 170,
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
+          "line": 172,
           "context": "`reference/rules/character-creation.md` §11"
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 173,
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
+          "line": 175,
           "context": "`character-creation.md` §11),未涉及法术条目本身。P7 魔法速查仍是第四章造物的"
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 199,
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
+          "line": 201,
           "context": "数值,不需要再套 `character-creation.md` §11 的预算逐条反推——那套预算是给"
         },
         {
-          "file": "update_plan/2026-08-02-investigator-cards.md",
-          "line": 22,
+          "file": "update_plan/Archived/2026-08-02-investigator-cards.md",
+          "line": 23,
           "context": "- [x] `reference/rules/character-creation.md` — 车卡速查:特征骰法、"
         },
         {
-          "file": "update_plan/2026-08-02-investigator-cards.md",
-          "line": 47,
+          "file": "update_plan/Archived/2026-08-02-investigator-cards.md",
+          "line": 48,
           "context": "- [x] `reference/rules/character-creation.md` **重写**:补上原来缺的"
         },
         {
-          "file": "update_plan/2026-08-02-investigator-cards.md",
-          "line": 61,
+          "file": "update_plan/Archived/2026-08-02-investigator-cards.md",
+          "line": 62,
           "context": "- [x] `reference/rules/character-creation.md` 补**来源指路**:每个小节加一行「来源」,"
         },
         {
-          "file": "update_plan/2026-08-02-investigator-cards.md",
-          "line": 90,
+          "file": "update_plan/Archived/2026-08-02-investigator-cards.md",
+          "line": 99,
           "context": "`reference/rules/character-creation.md` 现在的「来源」只到 `COC apolo.xlsx` 的 sheet 级别"
         },
         {
-          "file": "update_plan/2026-08-02-investigator-cards.md",
-          "line": 100,
+          "file": "update_plan/Archived/2026-08-02-investigator-cards.md",
+          "line": 109,
           "context": "`character-creation.md` 里标\"章节号未核实\"的引用替换成实际章节号/附录号"
         },
         {
-          "file": "update_plan/README.md",
-          "line": 12,
-          "context": "| P4 | [antagonist-budget](2026-08-02-antagonist-budget.md) | 反派强度预算(**仅人类侧**):普通人类模板(取材 busybodies-zh.md,法术型另取材 grand-grimoire-zh.md)+ 增量(法术型走资历法术表 / 非法术型走装备总价"
-        },
-        {
-          "file": "update_plan/README.md",
-          "line": 71,
-          "context": "(`character-creation.md` §11 之外还没做的部分)之前做完,否则精英卡要返工重渲"
+          "file": "update_plan/Archived/README.md",
+          "line": 16,
+          "context": "| P4 | [antagonist-budget](2026-08-02-antagonist-budget.md) | 反派强度预算(仅人类侧):普通人类模板取材 `busybodies-zh.md`,法术型首领增量取材 `grand-grimoire-zh.md` 资历法术表 / 非法术型走装备总价,属性技能走标"
         }
       ],
-      "reference_count": 51
+      "reference_count": 61
     },
     {
       "file": "chases.md",
@@ -286,13 +336,8 @@
       "declared_consumers": [],
       "referenced_by": [
         {
-          "file": "CHANGELOG.md",
-          "line": 43,
-          "context": "- 新增**追逐速查** `reference/rules/chases.md`,以及**人物创建与理智速查** `reference/rules/character-creation.md`、`reference/rules/sanity.md`。"
-        },
-        {
           "file": "core/02-rules-reference.md",
-          "line": 28,
+          "line": 30,
           "context": "- `reference/rules/chases.md` — round structure; Move rates; obstacles & mishaps; ending a"
         },
         {
@@ -301,8 +346,8 @@
           "context": "If a scene is a pursuit or an escape, read `reference/rules/chases.md` before writing it."
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 114,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 117,
           "context": "| A. 新建 `reference/rules/antagonist-budget.md` | 与 `sanity.md`/`chases.md`/`character-creation.md` 同级,`core/02` 登记一行即可;主题独立好找 | `reference/rules/` 再添一份,速查文件数量继续"
         },
         {
@@ -311,7 +356,7 @@
           "context": "- [x] `reference/rules/chases.md` — 从 7e 规则提炼:速度对比、行动点、"
         }
       ],
-      "reference_count": 5
+      "reference_count": 4
     },
     {
       "file": "combat.md",
@@ -322,7 +367,7 @@
       "referenced_by": [
         {
           "file": "core/02-rules-reference.md",
-          "line": 26,
+          "line": 28,
           "context": "- `reference/rules/combat.md` — DEX order; dodge vs fight back; Build & Damage Bonus table;"
         },
         {
@@ -349,6 +394,165 @@
       "reference_count": 5
     },
     {
+      "file": "magic.md",
+      "path": "reference/rules/magic.md",
+      "title": "7e Magic — cheat-sheet",
+      "lines": 114,
+      "declared_consumers": [
+        "reference/rules/sanity.md",
+        "reference/sourcebooks/grand-grimoire-zh.md",
+        "reference/sourcebooks/keeper-rulebook-7e-zh.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "CHANGELOG.md",
+          "line": 40,
+          "context": "- **法术、仪式、魔法书终于有了数值标尺。** 新增 `reference/rules/magic.md`:施法消耗"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 73,
+          "context": "`reference/rules/magic.md`,`core/02`/`core/07`/`reference/mythos/README.md` 已接线。"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 77,
+          "context": "三值、泛读/精读两阶段、重复精读耗时翻倍),`magic.md` 的魔法书章节改成从这份规则书"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 205,
+          "context": "与 `build-reference-index.py` 的行号惯例同族)→ L2 `rules/magic.md`(P7 既定产出,"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 229,
+          "context": "两条路(退轴级浏览 / 按 `magic.md` 区间自造入 `mythos/spells/`)。`all auto` 走反向:"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 238,
+          "context": "调查员公平出路。**设计铁律(进 magic.md):反制法术的代价必须比被反制法术低至少一档**,"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 547,
+          "context": "1. **`reference/rules/magic.md` 落盘**:施法通则(消耗记法、施法用时的 DEX+50/N轮 规则、"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 560,
+          "context": "397 行变化,远超 magic.md 一个文件该有的量)。提交它们等于替 P8 提前定稿一份它自己"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 562,
+          "context": "4. **提交范围限定为本计划确实拥有的文件**:`reference/rules/magic.md`(新增)、"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 631,
+          "context": "还没有 `magic.md`,答案是\"两者互不阻塞\";P7 落盘后复核确认两边改动的文件确实没有"
+        },
+        {
+          "file": "core/02-rules-reference.md",
+          "line": 19,
+          "context": "- Write any **spell, ritual, or magic book/tome** → read `reference/rules/magic.md` before"
+        },
+        {
+          "file": "core/02-rules-reference.md",
+          "line": 35,
+          "context": "- `reference/rules/magic.md` — MP/SAN/POW cost notation, casting time, opposed POW rolls,"
+        },
+        {
+          "file": "core/07-create-monster.md",
+          "line": 75,
+          "context": "- Spellcasters: list spells and their MP/SAN costs — read `reference/rules/magic.md` for the"
+        },
+        {
+          "file": "reference/mythos/README.md",
+          "line": 16,
+          "context": "**Read `reference/rules/magic.md` first** — it's the distilled cost-tier ladder, casting-time"
+        },
+        {
+          "file": "update_plan/2026-08-02-investigator-render-gaps.md",
+          "line": 171,
+          "context": "- [x] `reference/rules/` 当时(2026-08-03 执行时)还没有 `magic.md`——P7 与本计划各自"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 84,
+          "context": "~~P7 魔法速查~~ —— 已完成(`reference/rules/magic.md` + 3 处登记 + 重跑 bundle/index),"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-conventions-gaps.md",
+          "line": 16,
+          "context": "| 3 | 魔法速查 magic.md | → **P7** [magic-quickref](../2026-08-02-magic-quickref.md) |"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
+          "line": 9,
+          "context": "> 关联:`2026-08-02-magic-quickref.md`(P7,magic.md 是第四章前置,已解除)"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
+          "line": 174,
+          "context": "- [x] **未被 magic.md 阻塞:** 本轮只落了\"法术数量\"惯例(按资历掷骰,已并入"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
+          "line": 203,
+          "context": "- [x] **前置依赖 2(P7 magic.md)按缩小范围处理**:没有等完整的 550+ 法术速查,只把"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-magic-quickref.md",
+          "line": 1,
+          "context": "# Update Plan — 魔法速查(magic.md)"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-magic-quickref.md",
+          "line": 5,
+          "context": "> 产出:`reference/rules/magic.md`;`core/02`/`core/07`/`reference/mythos/README.md` 接线。"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-magic-quickref.md",
+          "line": 26,
+          "context": "**只提炼机制惯例与数值区间,不复制条目原文**——`reference/rules/magic.md` 是速查表,"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-magic-quickref.md",
+          "line": 45,
+          "context": "- [x] 产出 `reference/rules/magic.md` 速查:施法通则(MP/SAN/POW 消耗、"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-magic-quickref.md",
+          "line": 48,
+          "context": "- [x] `core/02-rules-reference.md` — cheat-sheets 清单登记 magic.md,"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-magic-quickref.md",
+          "line": 51,
+          "context": "spellcaster/tome 数值指向 magic.md"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-magic-quickref.md",
+          "line": 52,
+          "context": "- [x] 新术语进 `reference/glossary-zh.md` —— 核对后未新增:magic.md 用到的术语"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-magic-quickref.md",
+          "line": 56,
+          "context": "同时重跑了 `scripts/build-reference-index.py`(新增 `reference/rules/magic.md`),"
+        },
+        {
+          "file": "update_plan/Archived/README.md",
+          "line": 18,
+          "context": "| P7 | [magic-quickref](2026-08-02-magic-quickref.md) | 魔法速查 `reference/rules/magic.md`:施法通则(消耗记法、施法用时、POW 对抗)、按 `grand-grimoire-zh.md` 抽样得出的四档消耗区间(小术/中术/大术/仪式级"
+        }
+      ],
+      "reference_count": 29
+    },
+    {
       "file": "sanity.md",
       "path": "reference/rules/sanity.md",
       "title": "7e Sanity — cheat-sheet",
@@ -356,13 +560,8 @@
       "declared_consumers": [],
       "referenced_by": [
         {
-          "file": "CHANGELOG.md",
-          "line": 43,
-          "context": "- 新增**追逐速查** `reference/rules/chases.md`,以及**人物创建与理智速查** `reference/rules/character-creation.md`、`reference/rules/sanity.md`。"
-        },
-        {
           "file": "core/02-rules-reference.md",
-          "line": 24,
+          "line": 26,
           "context": "- `reference/rules/sanity.md` — SAN = POW; X/Y loss notation; typical loss table; bout of"
         },
         {
@@ -391,8 +590,13 @@
           "context": "`reference/rules/sanity.md` 里\"治疗性对话恢复理智\"的机制,守秘人可另立替代规则)。"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 114,
+          "file": "reference/rules/magic.md",
+          "line": 23,
+          "context": "witnessing something (`reference/rules/sanity.md`) — it's paid whether or not the spell"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 117,
           "context": "| A. 新建 `reference/rules/antagonist-budget.md` | 与 `sanity.md`/`chases.md`/`character-creation.md` 同级,`core/02` 登记一行即可;主题独立好找 | `reference/rules/` 再添一份,速查文件数量继续"
         },
         {
@@ -417,7 +621,7 @@
       "referenced_by": [
         {
           "file": "core/02-rules-reference.md",
-          "line": 22,
+          "line": 24,
           "context": "- `reference/rules/skill-checks.md` — d100 under target; Regular/Hard/Extreme; fumbles;"
         },
         {

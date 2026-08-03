@@ -22,27 +22,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 61,
-          "context": "- **新增 `reference/decks/` 与首份收录件 `busybodies-zh.md`(官方《好事者卡组》47 张 NPC 卡)**。建 NPC 时可先翻同职业的卡校准数值刻度、技能取舍与\"秘密\"该写多长(`core/06-create-npc.md`);建调查员时它是 47 份填满字段的样卡,并给出把"
-        },
-        {
-          "file": "CHANGELOG.md",
-          "line": 64,
-          "context": "- **人类反派终于有了\"该多强\"的答案。** 原来 `core/06`/`core/07`/`core/13` 能造反派,但没有任何地方回答强度——一个技能全 90% 的邪教首领能毫发无伤地通过既有审计。现在 `reference/rules/character-creation.md` §11 给出:普通人类反派直"
+          "line": 102,
+          "context": "- 新增 `reference/decks/` 与首份收录件 `busybodies-zh.md`(官方好事者卡组,47 张 NPC 卡)。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 69,
-          "context": "基线(`busybodies-zh.md`)、首领增量(法术型资历表 / 非法术型装备总价)、技能选择 vs"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 258,
+          "line": 262,
           "context": "`busybodies-zh.md` 校准;首领 = 基线 + 增量,增量二选一(法术型按资历掷法术数量,"
         },
         {
           "file": "WORKLOG.md",
-          "line": 363,
+          "line": 367,
           "context": "人类邪教徒原型 + 变体、8 只怪物,类比已归档的 `busybodies-zh.md` 官方 NPC 卡组),"
         },
         {
@@ -67,7 +57,7 @@
         },
         {
           "file": "reference/rules/character-creation.md",
-          "line": 258,
+          "line": 259,
           "context": "`reference/decks/busybodies-zh.md` 的 47 张已配平数值 NPC 卡就是\"普通人类\"的数值"
         },
         {
@@ -81,27 +71,27 @@
           "context": "Want more range than 20 entries? `reference/decks/busybodies-zh.md` (if you have it locally)"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 274,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 277,
           "context": "> 2. **Keeper 指了一个候选取材源:`reference/decks/busybodies-zh.md`**(好事者卡组,"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 278,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 281,
           "context": ">    `reference/decks/index.json`,四份收录件(`busybodies-zh.md`、`miseries-zh.md`、"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 287,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 290,
           "context": "> - **`reference/decks/busybodies-zh.md` 就是基线模板**——47 张已配平数值的路人卡,"
         },
         {
-          "file": "update_plan/README.md",
-          "line": 12,
-          "context": "| P4 | [antagonist-budget](2026-08-02-antagonist-budget.md) | 反派强度预算(**仅人类侧**):普通人类模板(取材 busybodies-zh.md,法术型另取材 grand-grimoire-zh.md)+ 增量(法术型走资历法术表 / 非法术型走装备总价"
+          "file": "update_plan/Archived/README.md",
+          "line": 16,
+          "context": "| P4 | [antagonist-budget](2026-08-02-antagonist-budget.md) | 反派强度预算(仅人类侧):普通人类模板取材 `busybodies-zh.md`,法术型首领增量取材 `grand-grimoire-zh.md` 资历法术表 / 非法术型走装备总价,属性技能走标"
         }
       ],
-      "reference_count": 16,
+      "reference_count": 14,
       "cited": true,
       "provenance": {
         "work": "《克苏鲁的呼唤》守秘人卡组 —— 好事者卡组(Call of Cthulhu Keeper Deck: Busybodies)",
@@ -134,8 +124,8 @@
           "context": "Need more than 20? `reference/decks/miseries-zh.md` (local only) is the official *Miseries*"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 278,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 281,
           "context": ">    `reference/decks/index.json`,四份收录件(`busybodies-zh.md`、`miseries-zh.md`、"
         }
       ],
@@ -178,8 +168,8 @@
           "context": "carrying — `reference/decks/phobias-and-manias-zh.md` (local only) is the official *Phobias*"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 279,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 282,
           "context": ">    `phobias-and-manias-zh.md`、`weapons-and-artifacts-zh.md`)均 `cited: true`"
         }
       ],
@@ -209,13 +199,8 @@
       ],
       "referenced_by": [
         {
-          "file": "CHANGELOG.md",
-          "line": 64,
-          "context": "- **人类反派终于有了\"该多强\"的答案。** 原来 `core/06`/`core/07`/`core/13` 能造反派,但没有任何地方回答强度——一个技能全 90% 的邪教首领能毫发无伤地通过既有审计。现在 `reference/rules/character-creation.md` §11 给出:普通人类反派直"
-        },
-        {
           "file": "WORKLOG.md",
-          "line": 259,
+          "line": 263,
           "context": "数值查 `grand-grimoire-zh.md`;非法术型按装备总价,查 `weapons-and-artifacts-zh.md`);"
         },
         {
@@ -235,26 +220,26 @@
         },
         {
           "file": "reference/rules/character-creation.md",
-          "line": 271,
+          "line": 272,
           "context": "| **非法术型**(帮派头目、雇佣兵、纯世俗势力) | 装备总价定强度,直接对接 `reference/decks/weapons-and-artifacts-zh.md` 的价格栏 | 武器/防具/载具的档次 |"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 95,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 98,
           "context": ">   `reference/decks/weapons-and-artifacts-zh.md`(已接入 `core/06`)——该卡组本身"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 279,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 282,
           "context": ">    `phobias-and-manias-zh.md`、`weapons-and-artifacts-zh.md`)均 `cited: true`"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 281,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 284,
           "context": ">    `reference/tables/` 速查,反向索引脚本没有报 orphan。`weapons-and-artifacts-zh.md`"
         }
       ],
-      "reference_count": 9,
+      "reference_count": 8,
       "cited": true,
       "provenance": {
         "work": "《克苏鲁的呼唤》守秘人卡组 —— 武器与造物卡组(Call of Cthulhu Keeper Deck: Weapons & Artifacts)",

@@ -23,28 +23,23 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 56,
-          "context": "- **Keeper 现在能查到法术、怪物和规则原文了。** 造 spellcaster 查 `grand-grimoire-zh.md`(550+ 法术)、造神话生物查 `malleus-monstrorum-zh.md`、速查表说不清的数值回 `keeper-rulebook-7e-zh.md` 查原文;疯狂后遗症"
-        },
-        {
-          "file": "CHANGELOG.md",
-          "line": 59,
-          "context": "- **`update_plan` 的 P7 魔法速查解除阻塞** —— 它等了一整轮的\"魔法书转换稿\"就是现在的 `reference/sourcebooks/grand-grimoire-zh.md`,可以开工;P6 补章节号的后续项也从\"翻 PDF\"变成\"搜转录稿\";P9 的来源红线问题因转载规则改动而部分有解。"
-        },
-        {
-          "file": "CHANGELOG.md",
-          "line": 64,
-          "context": "- **人类反派终于有了\"该多强\"的答案。** 原来 `core/06`/`core/07`/`core/13` 能造反派,但没有任何地方回答强度——一个技能全 90% 的邪教首领能毫发无伤地通过既有审计。现在 `reference/rules/character-creation.md` §11 给出:普通人类反派直"
+          "line": 100,
+          "context": "- P7 魔法速查阻塞解除(转换稿已归档为 `grand-grimoire-zh.md`)。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 184,
+          "line": 188,
           "context": "**实际核对法术全在 `grand-grimoire-zh.md`**——\"深层魔法\"在 grand 出现 121 处、在 malleus"
         },
         {
           "file": "WORKLOG.md",
-          "line": 259,
+          "line": 263,
           "context": "数值查 `grand-grimoire-zh.md`;非法术型按装备总价,查 `weapons-and-artifacts-zh.md`);"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 548,
+          "context": "POW 对抗检定、SAN 是定值不是 X/Y)、按 `grand-grimoire-zh.md` 抽样约 300 条法术条目"
         },
         {
           "file": "core/06-create-npc.md",
@@ -58,13 +53,18 @@
         },
         {
           "file": "reference/mythos/README.md",
-          "line": 16,
-          "context": "Source material for tomes and spells: `reference/sourcebooks/grand-grimoire-zh.md` (the"
+          "line": 19,
+          "context": "`reference/sourcebooks/grand-grimoire-zh.md` (the official grimoire, 550+ spells) — local"
         },
         {
           "file": "reference/rules/character-creation.md",
-          "line": 270,
+          "line": 271,
           "context": "| **法术型**(施法、通神类首领) | 按资历掷 `1D4+1`(年轻)/ `1D6+1D4+2`(标准)/ `3D6+4`(成熟)/ `4D6+10`(古老)条法术;法术本身的 MP/SAN 成本查 `reference/sourcebooks/grand-grimoire-zh.md`(若本地存在) | 法术数"
+        },
+        {
+          "file": "reference/rules/magic.md",
+          "line": 7,
+          "context": "> `reference/sourcebooks/grand-grimoire-zh.md` (550+ spells, official supplement). This sheet"
         },
         {
           "file": "reference/tables/cultist-archetypes.md",
@@ -72,37 +72,32 @@
           "context": "`reference/sourcebooks/grand-grimoire-zh.md`;请神术的父神达贡/母神海德拉版本是本轮"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 289,
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 292,
           "context": "> - **法术型敌人的模板更详细的来源是 `reference/sourcebooks/grand-grimoire-zh.md`**"
         },
         {
-          "file": "update_plan/2026-08-02-magic-quickref.md",
-          "line": 5,
-          "context": "> `reference/sourcebooks/grand-grimoire-zh.md`(Keeper 手动重译后现为 5366 行,全书转录,"
-        },
-        {
-          "file": "update_plan/2026-08-02-magic-quickref.md",
-          "line": 27,
+          "file": "update_plan/Archived/2026-08-02-magic-quickref.md",
+          "line": 32,
           "context": "`reference/sourcebooks/grand-grimoire-zh.md`,可直接切块通读(同教团 docx 的阶段 0 方法)。"
         },
         {
-          "file": "update_plan/2026-08-02-magic-quickref.md",
-          "line": 32,
+          "file": "update_plan/Archived/2026-08-02-magic-quickref.md",
+          "line": 37,
           "context": "- [x] ~~等 Keeper 提供转换后的文档~~ —— 已归档为 `reference/sourcebooks/grand-grimoire-zh.md`"
         },
         {
-          "file": "update_plan/README.md",
-          "line": 12,
-          "context": "| P4 | [antagonist-budget](2026-08-02-antagonist-budget.md) | 反派强度预算(**仅人类侧**):普通人类模板(取材 busybodies-zh.md,法术型另取材 grand-grimoire-zh.md)+ 增量(法术型走资历法术表 / 非法术型走装备总价"
+          "file": "update_plan/Archived/README.md",
+          "line": 16,
+          "context": "| P4 | [antagonist-budget](2026-08-02-antagonist-budget.md) | 反派强度预算(仅人类侧):普通人类模板取材 `busybodies-zh.md`,法术型首领增量取材 `grand-grimoire-zh.md` 资历法术表 / 非法术型走装备总价,属性技能走标"
         },
         {
-          "file": "update_plan/README.md",
-          "line": 15,
-          "context": "| P7 | [magic-quickref](2026-08-02-magic-quickref.md) | 魔法速查 `reference/rules/magic.md`:施法通则、tome/spell 数值惯例 | **待执行(阻塞已解除 2026-08-02)** | 转换稿已归档为 `reference/so"
+          "file": "update_plan/Archived/README.md",
+          "line": 18,
+          "context": "| P7 | [magic-quickref](2026-08-02-magic-quickref.md) | 魔法速查 `reference/rules/magic.md`:施法通则(消耗记法、施法用时、POW 对抗)、按 `grand-grimoire-zh.md` 抽样得出的四档消耗区间(小术/中术/大术/仪式级"
         }
       ],
-      "reference_count": 16,
+      "reference_count": 15,
       "cited": true,
       "provenance": {
         "work": "《克苏鲁神话魔法大典》(The Grand Grimoire of Cthulhu Mythos Magic)",
@@ -127,9 +122,14 @@
       ],
       "referenced_by": [
         {
-          "file": "CHANGELOG.md",
-          "line": 56,
-          "context": "- **Keeper 现在能查到法术、怪物和规则原文了。** 造 spellcaster 查 `grand-grimoire-zh.md`(550+ 法术)、造神话生物查 `malleus-monstrorum-zh.md`、速查表说不清的数值回 `keeper-rulebook-7e-zh.md` 查原文;疯狂后遗症"
+          "file": "WORKLOG.md",
+          "line": 75,
+          "context": "- **`reference/sourcebooks/keeper-rulebook-7e-zh.md`(规则书全文重译,17470 行)已确认"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 553,
+          "context": "2. **发现 `reference/sourcebooks/keeper-rulebook-7e-zh.md` 已可用**,魔法书章节改用它"
         },
         {
           "file": "core/02-rules-reference.md",
@@ -147,22 +147,37 @@
           "context": "> `reference/sourcebooks/keeper-rulebook-7e-zh.md` 既有\"请神/送神术\"框架下的新变体"
         },
         {
+          "file": "reference/rules/magic.md",
+          "line": 5,
+          "context": "> in `reference/sourcebooks/keeper-rulebook-7e-zh.md` (the 7e core rulebook — last word on any"
+        },
+        {
           "file": "reference/tables/cultist-archetypes.md",
           "line": 265,
           "context": "深潜者召唤/束缚术。数值查 `reference/sourcebooks/keeper-rulebook-7e-zh.md` /"
         },
         {
-          "file": "update_plan/2026-08-02-investigator-cards.md",
-          "line": 95,
+          "file": "update_plan/Archived/2026-08-02-investigator-cards.md",
+          "line": 104,
           "context": "`reference/sourcebooks/keeper-rulebook-7e-zh.md`(28443 行中译转录),不必再从 PDF 里翻——"
         },
         {
-          "file": "update_plan/2026-08-02-investigator-cards.md",
-          "line": 99,
+          "file": "update_plan/Archived/2026-08-02-investigator-cards.md",
+          "line": 108,
           "context": "- [ ] 通读 `reference/sourcebooks/keeper-rulebook-7e-zh.md` 的人物创建相关章节,把"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-magic-quickref.md",
+          "line": 41,
+          "context": "`reference/sourcebooks/keeper-rulebook-7e-zh.md`(规则书原文转录)已在本地存在,"
+        },
+        {
+          "file": "update_plan/Archived/README.md",
+          "line": 18,
+          "context": "| P7 | [magic-quickref](2026-08-02-magic-quickref.md) | 魔法速查 `reference/rules/magic.md`:施法通则(消耗记法、施法用时、POW 对抗)、按 `grand-grimoire-zh.md` 抽样得出的四档消耗区间(小术/中术/大术/仪式级"
         }
       ],
-      "reference_count": 7,
+      "reference_count": 11,
       "cited": true,
       "provenance": {
         "work": "《克苏鲁的呼唤》第七版规则书(Call of Cthulhu 7th Edition Keeper Rulebook)",
@@ -178,20 +193,15 @@
       "file": "malleus-monstrorum-zh.md",
       "path": "reference/sourcebooks/malleus-monstrorum-zh.md",
       "title": "怪物之锤 Malleus Monstrorum — 官方怪物图鉴(中译收录)",
-      "lines": 8760,
+      "lines": 8759,
       "declared_consumers": [
         "core/07-create-monster.md",
         "reference/sourcebooks/README.md"
       ],
       "referenced_by": [
         {
-          "file": "CHANGELOG.md",
-          "line": 56,
-          "context": "- **Keeper 现在能查到法术、怪物和规则原文了。** 造 spellcaster 查 `grand-grimoire-zh.md`(550+ 法术)、造神话生物查 `malleus-monstrorum-zh.md`、速查表说不清的数值回 `keeper-rulebook-7e-zh.md` 查原文;疯狂后遗症"
-        },
-        {
           "file": "WORKLOG.md",
-          "line": 80,
+          "line": 84,
           "context": "`reference/sourcebooks/malleus-monstrorum-zh.md` 已可读;剩下要 Keeper 定的是范围。"
         },
         {
@@ -215,23 +225,23 @@
           "context": "Calibrate against `reference/sourcebooks/malleus-monstrorum-zh.md` (the official creature"
         },
         {
-          "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 248,
-          "context": "> `reference/sourcebooks/malleus-monstrorum-zh.md`(怪物之锤重译稿,现已可读,"
-        },
-        {
           "file": "update_plan/README.md",
           "line": 17,
           "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:种类阶梯的档位区间、按 type 分的模板、词条(强化)系统与其存储格式 | 待讨论(五项待定,尚无执行清单) | 从 P4 待讨论 2 拆出。骨架已由"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
+          "line": 251,
+          "context": "> `reference/sourcebooks/malleus-monstrorum-zh.md`(怪物之锤重译稿,现已可读,"
         }
       ],
-      "reference_count": 8,
+      "reference_count": 7,
       "cited": true,
       "provenance": {
         "work": "《怪物之锤》(Malleus Monstrorum)",
         "rights_holder": "Chaosium Inc.",
         "edition": "适配 CoC 7th Edition",
-        "source": "简体中文译本 PDF 的文字转录,未署译者名,译本出处不详。",
+        "source": "译本 PDF 的文字转录,自译。",
         "scope": "全书逐字转录,未改写;文末 PDF 转换工具的残留提示行已删除",
         "purpose": "神话生物数值标尺 —— 供 core/07-create-monster.md、reference/bestiary/",
         "known_issues": "PDF 转录导致属性行断字、表格错行,数值需人工判读"

@@ -227,9 +227,10 @@ reviewer can check the age and backstory actually honour it.
 
 - A **pregen** built for a specific scenario has Credit Rating, skills, and backstory hooks
   tuned to the plot. See `core/13-create-investigator.md`.
-- An **elite NPC** (a named cultist, a rival investigator) reuses the same schema, sets
-  `"type": "elite-npc"`, and skips the player-facing backstory prompts. It may legitimately
-  carry `spells`, `cthulhu_mythos`, and `mythos_encounters`, which a starting pregen may not.
+- An **elite NPC** (a named cultist, a rival investigator) reuses the same schema and sets
+  `"type": "elite-npc"`. It may legitimately carry `spells`, `cthulhu_mythos`, and
+  `mythos_encounters`, which a starting pregen may not. The rendered card is KP-facing for
+  both types — nothing is skipped by `type`; see `core/13-create-investigator.md`.
 
 ## 10. Quality bar — the ledger has to balance
 
