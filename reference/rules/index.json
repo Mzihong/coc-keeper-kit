@@ -171,26 +171,6 @@
           "context": "# Own Language just mirrors EDU (character-creation.md §5's \"special\" row) — it isn't"
         },
         {
-          "file": "update_plan/2026-08-02-investigator-render-gaps.md",
-          "line": 5,
-          "context": "> 字段、自校验(硬性算术+阈值型)、`core/13`/`character-creation.md` 改 spec、"
-        },
-        {
-          "file": "update_plan/2026-08-02-investigator-render-gaps.md",
-          "line": 106,
-          "context": "顺带发现并修了 `reference/rules/character-creation.md` §9 同一处的措辞分歧"
-        },
-        {
-          "file": "update_plan/2026-08-02-investigator-render-gaps.md",
-          "line": 115,
-          "context": "75%\"**——`reference/rules/character-creation.md` §5 已经落盘的权威数字是 90%"
-        },
-        {
-          "file": "update_plan/2026-08-02-investigator-render-gaps.md",
-          "line": 174,
-          "context": "`core/13`/`core/01`/`reference/rules/character-creation.md` §9),按 Keeper 要求"
-        },
-        {
           "file": "update_plan/README.md",
           "line": 57,
           "context": "P8 已完成(全渲染+自校验,`core/13`/`character-creation.md`/`core/01` 已接线);"
@@ -321,12 +301,37 @@
           "context": "`character-creation.md` 里标\"章节号未核实\"的引用替换成实际章节号/附录号"
         },
         {
+          "file": "update_plan/Archived/2026-08-02-investigator-render-gaps.md",
+          "line": 5,
+          "context": "> 字段、自校验(硬性算术+阈值型)、`core/13`/`character-creation.md` 改 spec、"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-investigator-render-gaps.md",
+          "line": 106,
+          "context": "顺带发现并修了 `reference/rules/character-creation.md` §9 同一处的措辞分歧"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-investigator-render-gaps.md",
+          "line": 115,
+          "context": "75%\"**——`reference/rules/character-creation.md` §5 已经落盘的权威数字是 90%"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-investigator-render-gaps.md",
+          "line": 174,
+          "context": "`core/13`/`core/01`/`reference/rules/character-creation.md` §9),按 Keeper 要求"
+        },
+        {
           "file": "update_plan/Archived/README.md",
           "line": 16,
           "context": "| P4 | [antagonist-budget](2026-08-02-antagonist-budget.md) | 反派强度预算(仅人类侧):普通人类模板取材 `busybodies-zh.md`,法术型首领增量取材 `grand-grimoire-zh.md` 资历法术表 / 非法术型走装备总价,属性技能走标"
+        },
+        {
+          "file": "update_plan/Archived/README.md",
+          "line": 19,
+          "context": "| P8 | [investigator-render-gaps](2026-08-02-investigator-render-gaps.md) | 投资者卡渲染缺口:`spells`/`cthulhu_mythos`/`notes`/P6 重建后新增字段(`occupation_detail`/`age_modif"
         }
       ],
-      "reference_count": 61
+      "reference_count": 62
     },
     {
       "file": "chases.md",
@@ -475,11 +480,6 @@
           "context": "**Read `reference/rules/magic.md` first** — it's the distilled cost-tier ladder, casting-time"
         },
         {
-          "file": "update_plan/2026-08-02-investigator-render-gaps.md",
-          "line": 171,
-          "context": "- [x] `reference/rules/` 当时(2026-08-03 执行时)还没有 `magic.md`——P7 与本计划各自"
-        },
-        {
           "file": "update_plan/README.md",
           "line": 84,
           "context": "~~P7 魔法速查~~ —— 已完成(`reference/rules/magic.md` + 3 处登记 + 重跑 bundle/index),"
@@ -503,6 +503,11 @@
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
           "line": 203,
           "context": "- [x] **前置依赖 2(P7 magic.md)按缩小范围处理**:没有等完整的 550+ 法术速查,只把"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-investigator-render-gaps.md",
+          "line": 171,
+          "context": "- [x] `reference/rules/` 当时(2026-08-03 执行时)还没有 `magic.md`——P7 与本计划各自"
         },
         {
           "file": "update_plan/Archived/2026-08-02-magic-quickref.md",

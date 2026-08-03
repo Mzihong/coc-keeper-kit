@@ -278,10 +278,6 @@
           "scripts/render-investigator.py:20",
           "scripts/render-investigator.py:58",
           "scripts/render-investigator.py:429",
-          "update_plan/2026-08-02-investigator-render-gaps.md:5",
-          "update_plan/2026-08-02-investigator-render-gaps.md:106",
-          "update_plan/2026-08-02-investigator-render-gaps.md:115",
-          "update_plan/2026-08-02-investigator-render-gaps.md:174",
           "update_plan/README.md:57",
           "update_plan/README.md:87",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:11",
@@ -308,7 +304,12 @@
           "update_plan/Archived/2026-08-02-investigator-cards.md:62",
           "update_plan/Archived/2026-08-02-investigator-cards.md:99",
           "update_plan/Archived/2026-08-02-investigator-cards.md:109",
-          "update_plan/Archived/README.md:16"
+          "update_plan/Archived/2026-08-02-investigator-render-gaps.md:5",
+          "update_plan/Archived/2026-08-02-investigator-render-gaps.md:106",
+          "update_plan/Archived/2026-08-02-investigator-render-gaps.md:115",
+          "update_plan/Archived/2026-08-02-investigator-render-gaps.md:174",
+          "update_plan/Archived/README.md:16",
+          "update_plan/Archived/README.md:19"
         ]
       },
       "reference/rules/chases.md": {
@@ -350,12 +351,12 @@
           "core/02-rules-reference.md:35",
           "core/07-create-monster.md:75",
           "reference/mythos/README.md:16",
-          "update_plan/2026-08-02-investigator-render-gaps.md:171",
           "update_plan/README.md:84",
           "update_plan/Archived/2026-08-02-conventions-gaps.md:16",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:9",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:174",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:203",
+          "update_plan/Archived/2026-08-02-investigator-render-gaps.md:171",
           "update_plan/Archived/2026-08-02-magic-quickref.md:1",
           "update_plan/Archived/2026-08-02-magic-quickref.md:5",
           "update_plan/Archived/2026-08-02-magic-quickref.md:26",
@@ -1179,10 +1180,6 @@
         "reference/tables/cult-power-sources.md",
         "reference/tables/cultist-archetypes.md"
       ],
-      "update_plan/2026-08-02-investigator-render-gaps.md": [
-        "reference/rules/character-creation.md",
-        "reference/rules/magic.md"
-      ],
       "update_plan/2026-08-02-monster-templates-traits.md": [
         "reference/bestiary/the-bell-keeper.md"
       ],
@@ -1222,6 +1219,10 @@
       "update_plan/Archived/2026-08-02-investigator-cards.md": [
         "reference/rules/character-creation.md",
         "reference/sourcebooks/keeper-rulebook-7e-zh.md"
+      ],
+      "update_plan/Archived/2026-08-02-investigator-render-gaps.md": [
+        "reference/rules/character-creation.md",
+        "reference/rules/magic.md"
       ],
       "update_plan/Archived/2026-08-02-magic-quickref.md": [
         "reference/rules/magic.md",
