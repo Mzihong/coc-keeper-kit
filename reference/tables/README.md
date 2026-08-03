@@ -21,6 +21,12 @@ campaign specific.
 
 - `complications.md` (1d20) — what goes sideways in a session; roll twice at session prep.
 - `madness.md` (1D10) — bout-of-madness effects.
+- `npc-appearance.md` (1d20) — first physical impression + temperament; companion to
+  `npc-quirks.md` (appearance vs. mannerism).
+- `cult-goals.md` (1D10 × 1D8) — a cult's want × its means; roll both, they multiply. See
+  `reference/craft/cult-design-zh.md` §三.
+- `cult-leader-positions.md` (1d10) — a cult leader's social front and the access it buys.
+- `cult-power-sources.md` (1d4) — where a cult's claimed supernatural backing comes from.
 
 ## Adding tables
 

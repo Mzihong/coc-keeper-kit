@@ -13,7 +13,7 @@
       "file": "grand-grimoire-zh.md",
       "path": "reference/sourcebooks/grand-grimoire-zh.md",
       "title": "克苏鲁神话魔法大典 — 官方法术全书(中译收录)",
-      "lines": 13731,
+      "lines": 5366,
       "declared_consumers": [
         "core/06-create-npc.md",
         "core/07-create-monster.md",
@@ -23,33 +23,53 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 54,
+          "line": 56,
           "context": "- **Keeper 现在能查到法术、怪物和规则原文了。** 造 spellcaster 查 `grand-grimoire-zh.md`(550+ 法术)、造神话生物查 `malleus-monstrorum-zh.md`、速查表说不清的数值回 `keeper-rulebook-7e-zh.md` 查原文;疯狂后遗症"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 57,
+          "line": 59,
           "context": "- **`update_plan` 的 P7 魔法速查解除阻塞** —— 它等了一整轮的\"魔法书转换稿\"就是现在的 `reference/sourcebooks/grand-grimoire-zh.md`,可以开工;P6 补章节号的后续项也从\"翻 PDF\"变成\"搜转录稿\";P9 的来源红线问题因转载规则改动而部分有解。"
         },
         {
+          "file": "CHANGELOG.md",
+          "line": 64,
+          "context": "- **人类反派终于有了\"该多强\"的答案。** 原来 `core/06`/`core/07`/`core/13` 能造反派,但没有任何地方回答强度——一个技能全 90% 的邪教首领能毫发无伤地通过既有审计。现在 `reference/rules/character-creation.md` §11 给出:普通人类反派直"
+        },
+        {
           "file": "WORKLOG.md",
-          "line": 68,
-          "context": "`reference/sourcebooks/grand-grimoire-zh.md`,可以开工了。"
+          "line": 184,
+          "context": "**实际核对法术全在 `grand-grimoire-zh.md`**——\"深层魔法\"在 grand 出现 121 处、在 malleus"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 259,
+          "context": "数值查 `grand-grimoire-zh.md`;非法术型按装备总价,查 `weapons-and-artifacts-zh.md`);"
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 58,
+          "line": 62,
           "context": "`reference/sourcebooks/grand-grimoire-zh.md` is the official grimoire, if you have it locally."
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 16,
+          "line": 22,
           "context": "before inventing your own. `reference/sourcebooks/grand-grimoire-zh.md` covers spells for"
         },
         {
           "file": "reference/mythos/README.md",
           "line": 16,
           "context": "Source material for tomes and spells: `reference/sourcebooks/grand-grimoire-zh.md` (the"
+        },
+        {
+          "file": "reference/rules/character-creation.md",
+          "line": 270,
+          "context": "| **法术型**(施法、通神类首领) | 按资历掷 `1D4+1`(年轻)/ `1D6+1D4+2`(标准)/ `3D6+4`(成熟)/ `4D6+10`(古老)条法术;法术本身的 MP/SAN 成本查 `reference/sourcebooks/grand-grimoire-zh.md`(若本地存在) | 法术数"
+        },
+        {
+          "file": "update_plan/2026-08-02-antagonist-budget.md",
+          "line": 289,
+          "context": "> - **法术型敌人的模板更详细的来源是 `reference/sourcebooks/grand-grimoire-zh.md`**"
         },
         {
           "file": "update_plan/2026-08-02-magic-quickref.md",
@@ -68,11 +88,16 @@
         },
         {
           "file": "update_plan/README.md",
+          "line": 12,
+          "context": "| P4 | [antagonist-budget](2026-08-02-antagonist-budget.md) | 反派强度预算(**仅人类侧**):普通人类模板(取材 busybodies-zh.md,法术型另取材 grand-grimoire-zh.md)+ 增量(法术型走资历法术表 / 非法术型走装备总价"
+        },
+        {
+          "file": "update_plan/README.md",
           "line": 15,
           "context": "| P7 | [magic-quickref](2026-08-02-magic-quickref.md) | 魔法速查 `reference/rules/magic.md`:施法通则、tome/spell 数值惯例 | **待执行(阻塞已解除 2026-08-02)** | 转换稿已归档为 `reference/so"
         }
       ],
-      "reference_count": 10,
+      "reference_count": 15,
       "cited": true,
       "provenance": {
         "work": "《克苏鲁神话魔法大典》(The Grand Grimoire of Cthulhu Mythos Magic)",
@@ -88,7 +113,7 @@
       "file": "keeper-rulebook-7e-zh.md",
       "path": "reference/sourcebooks/keeper-rulebook-7e-zh.md",
       "title": "克苏鲁的呼唤 第七版规则书 — 官方规则书全文(中译收录)",
-      "lines": 28443,
+      "lines": 17470,
       "declared_consumers": [
         "core/02-rules-reference.md",
         "reference/rules/character-creation.md",
@@ -98,7 +123,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 54,
+          "line": 56,
           "context": "- **Keeper 现在能查到法术、怪物和规则原文了。** 造 spellcaster 查 `grand-grimoire-zh.md`(550+ 法术)、造神话生物查 `malleus-monstrorum-zh.md`、速查表说不清的数值回 `keeper-rulebook-7e-zh.md` 查原文;疯狂后遗症"
         },
         {
@@ -133,7 +158,7 @@
       "file": "malleus-monstrorum-zh.md",
       "path": "reference/sourcebooks/malleus-monstrorum-zh.md",
       "title": "怪物之锤 Malleus Monstrorum — 官方怪物图鉴(中译收录)",
-      "lines": 11703,
+      "lines": 8760,
       "declared_consumers": [
         "core/07-create-monster.md",
         "reference/sourcebooks/README.md"
@@ -141,17 +166,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 54,
+          "line": 56,
           "context": "- **Keeper 现在能查到法术、怪物和规则原文了。** 造 spellcaster 查 `grand-grimoire-zh.md`(550+ 法术)、造神话生物查 `malleus-monstrorum-zh.md`、速查表说不清的数值回 `keeper-rulebook-7e-zh.md` 查原文;疯狂后遗症"
         },
         {
           "file": "WORKLOG.md",
-          "line": 70,
+          "line": 80,
           "context": "`reference/sourcebooks/malleus-monstrorum-zh.md` 已可读;剩下要 Keeper 定的是范围。"
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 14,
+          "line": 20,
           "context": "dependency): `reference/sourcebooks/malleus-monstrorum-zh.md` is the official creature"
         },
         {
@@ -165,12 +190,17 @@
           "context": "Calibrate against `reference/sourcebooks/malleus-monstrorum-zh.md` (the official creature"
         },
         {
+          "file": "update_plan/2026-08-02-antagonist-budget.md",
+          "line": 248,
+          "context": "> `reference/sourcebooks/malleus-monstrorum-zh.md`(怪物之锤重译稿,现已可读,"
+        },
+        {
           "file": "update_plan/README.md",
           "line": 17,
           "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:种类阶梯的档位区间、按 type 分的模板、词条(强化)系统与其存储格式 | 待讨论(五项待定,尚无执行清单) | 从 P4 待讨论 2 拆出。骨架已由"
         }
       ],
-      "reference_count": 6,
+      "reference_count": 7,
       "cited": true,
       "provenance": {
         "work": "《怪物之锤》(Malleus Monstrorum)",

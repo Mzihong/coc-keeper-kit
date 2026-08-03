@@ -12,6 +12,7 @@
 | 文件 | 提炼自 | 谁在读 |
 |---|---|---|
 | `lovecraft-zh.md` | `reference/og_Norval/`(洛夫克拉夫特原著 82 篇通读) | `core/09-description.md`(§一 基调、§二 场景/行动)、`core/07-create-monster.md`(§三 怪物设计) |
+| `cult-design-zh.md` | 克苏鲁邪教设计指南第三章(网络汇编,158 页,通读后提炼) | `core/03-build-world.md`(邪教 faction 子路径)、`core/04-design-scenario.md`(§四 财源线索引擎、§五 弱点/敌人)、`core/01-intake.md`(auto-fill 答"邪教"时) |
 
 机器可读版本是 `index.json`,由 `scripts/build-reference-index.py` 生成。
 
@@ -28,7 +29,3 @@
 5. 收尾:接线进要读它的 spec → 重跑 `scripts/build-reference-index.py`(没人引用会报
    orphaned)→ 重跑 `scripts/build-bundle.sh` → 记 `CHANGELOG.md`。
 
-## 已排期的下一份
-
-`update_plan/2026-08-02-cult-doc-integration.md` 第三章 A 项要产出邪教设计手法稿,
-落点 `craft/cult-design-zh.md`,定位对标 `lovecraft-zh.md`。

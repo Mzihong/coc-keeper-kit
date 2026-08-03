@@ -14,12 +14,14 @@
 
 ---
 
-## 2026-08-02 (713cd1c, e0d026b, aceddf9)
+## 2026-08-02 (713cd1c, e0d026b, aceddf9, 待提交)
 
 对应计划:[P2 multi-arc-and-branching](update_plan/Archived/2026-08-02-multi-arc-and-branching.md)、
 [P3 conventions-gaps](update_plan/Archived/2026-08-02-conventions-gaps.md) 第 1/2/5/6/7 项
 (第 5 项玩家卡后续拆出为 [P6 investigator-cards](update_plan/2026-08-02-investigator-cards.md))、
-[P6 investigator-cards](update_plan/2026-08-02-investigator-cards.md) 第二轮
+[P6 investigator-cards](update_plan/2026-08-02-investigator-cards.md) 第二轮、
+[P4 antagonist-budget](update_plan/2026-08-02-antagonist-budget.md)(人类侧,已完成)、
+[P1 cult-doc-integration](update_plan/2026-08-02-cult-doc-integration.md) 第三章(方法论/骰表/模板/接线)
 
 ### 修复问题
 
@@ -49,7 +51,7 @@
 - **kit 的转载规则改了,现在允许收录官方资料,但必须标注引用源。** 原规则一刀切"不复制任何受版权文本",实际挡住了官方卡组这类有用的取材源。新规则分两层:kit **生成的内容**照旧不含任何原文;官方资料可以收进 `reference/decks/`,但文件末尾**必须有 `## 引用出处`** 一节(作品、版权方、版本、来源、收录范围、收录用途),没有就不许进仓库,并且生成器**只取结构和数值刻度,不取文字**。规则本体在 `core/00-how-to-run.md` 的 ground rules,`CLAUDE.md`、`CONTRIBUTING.md`、`README.md` 的免责声明同步。
 - **修了一个 bundle 缺件**:`core/09-description.md` 让你去读洛夫克拉夫特笔法笔记,但那份文件从来没进过 `dist/bundle.md`——用 bundle 的 Keeper 被指去读一份手上没有的文件。现已随新目录一并进 bundle。
 - **新增 `reference/craft/`,存放「手法提炼稿」**(怎么写),与 `reference/rules/`(数字是多少)分工:两边都是 kit 原创、都进 bundle,但 rules 错了数值不对,craft 错了文字平庸。洛夫克拉夫特笔法笔记移入为 `craft/lovecraft-zh.md`;P1 计划中的邪教设计手法稿落点同步改到 `craft/cult-design-zh.md`。`glossary-zh.md` 仍留在 `reference/` 根目录——它是被二十余处引用的脊梁文件,不属于任何分类。
-- **反向索引扩到全部六个目录**(原本只管 decks/sourcebooks):`rules/`、`craft/`、`tables/` 里没人引用的文件现在会被报为 orphaned;`bestiary/`、`mythos/` 是内容库,没人引用属正常,不计为错误。
+- **反向索引扩到全部七个目录**(原本只管 decks/sourcebooks):`rules/`、`craft/`、`tables/` 里没人引用的文件现在会被报为 orphaned;`bestiary/`、`mythos/` 是内容库,没人引用属正常,不计为错误。
 - **`reference/` 下的第三方资料现在有固定去处和固定流程了。** 卡组进 `reference/decks/`,整本书进 `reference/sourcebooks/`(卡组是现成条目随取随用,书是深查——用法不同所以分开);kit 自己写的速查表仍在 `reference/rules/`,两者冲突以 sourcebook 为准并回头修速查表。本轮归位 7 份:好事者、恐惧症、惨事、武器与造物 4 份卡组,7e 规则书、魔法大典、怪物之锤 3 本书。
 - **Keeper 现在能查到法术、怪物和规则原文了。** 造 spellcaster 查 `grand-grimoire-zh.md`(550+ 法术)、造神话生物查 `malleus-monstrorum-zh.md`、速查表说不清的数值回 `keeper-rulebook-7e-zh.md` 查原文;疯狂后遗症查恐惧症卡组、给 NPC 配武器查武器卡组、场景意外查惨事卡组。**这些都是本地文件,不进 `dist/bundle.md`**——所有 spec 的引用都写成可选,用 bundle 的 Keeper 照样能按 spec 工作。转录稿有断字错行,取数值前先人工判读。
 - **新增「归档第三方资料」技能 `archive-reference`(`core/14-archive-reference.md`)**:Keeper 把一份卡组或转换好的 PDF 文本丢过来,一句"归档这份资料"即可,七步走完——分类、改英文文件名、写头部导读(含已知缺陷警示)、补 `## 引用出处`、接线进能用它的 spec、重建索引、收尾。手工搬必漏步骤。
@@ -58,6 +60,21 @@
 - **新增 `WORKLOG.md`** —— 给接手会话/协作者的上手速览(结构、硬约定、当前卡点),和面向 Keeper 的 `CHANGELOG.md` 分工不同。改结构或约定时要顺手更新,已写进三份适配器的 Maintenance 与完结清单。
 - **新增 `reference/decks/` 与首份收录件 `busybodies-zh.md`(官方《好事者卡组》47 张 NPC 卡)**。建 NPC 时可先翻同职业的卡校准数值刻度、技能取舍与"秘密"该写多长(`core/06-create-npc.md`);建调查员时它是 47 份填满字段的样卡,并给出把卡当**替补 PC** 用的现成办法(另给 100 点自选技能)(`core/13-create-investigator.md`)。卡组**不进 `dist/bundle.md`**,所有引用都是加分项而非前置依赖——用 bundle 的 ChatGPT/Gemini Keeper 没有它照样能工作。卡上 SIZ/MOV 有已知转录偏差,衍生值一律自己重算。
 - `reference/rules/character-creation.md` 每个小节加**来源指路**:标明数据是从 `COC apolo.xlsx` 哪个 sheet 提炼的,不摘原文、只给定位信息——技能基础值表的"规则书第四章:技能"是源材料自带的引用,其余小节如实标注"章节号未核实"而非编号瞎猜。`reference/README.md` 记录了这条惯例本身,供以后其他速查文件照做。
+- **新增「收尾维护会话」技能 `close-session`(`core/15-close-session.md`)**:没有对应 `update_plan/` 计划文件、也不是归档第三方资料的临时改动,收尾时用它——比只说"更新 WORKLOG"多一步硬性核对:把刚写进日志里的数量词/路径/清单回头 grep 对照实际仓库状态,而不是凭记忆断言。促成原因:`WORKLOG.md`、`CHANGELOG.md`、`reference/README.md`、`scripts/build-reference-index.py` 五处曾经同时写错"六个目录"(加了 `craft/` 后实际是七个),没有任何收尾步骤会主动核对这类数字,直到下一个会话 grep 出来。已改成"七个",并在 `core/00`、`CLAUDE.md`、`GEMINI.md`、`AGENTS.md` 四处登记新技能。
+- **人类反派终于有了"该多强"的答案。** 原来 `core/06`/`core/07`/`core/13` 能造反派,但没有任何地方回答强度——一个技能全 90% 的邪教首领能毫发无伤地通过既有审计。现在 `reference/rules/character-creation.md` §11 给出:普通人类反派直接照 `busybodies-zh.md` 的 47 张官方 NPC 卡校准(不再凭空定"均值 50");首领 = 这个基线 + 一层增量,法术型首领按资历掷法术数量(法术数值查 `grand-grimoire-zh.md`)、非法术型首领按装备总价(查 `weapons-and-artifacts-zh.md`)二选一;技能**选哪些**由背景决定,**给多高**由致命性倒推,不是背景越硬数值越高。原计划设想的一整套"技能点预算带 300–1000"表和四组预设属性/技能数组**确认作废**,反派和调查员共用同一套标准创建流程,不再开小灶。`core/02/06/07/11` 同步接上入口与审计题。
+- **邪教终于有一套"怎么设计"的方法论,不用每次现编。** 新增 `reference/craft/cult-design-zh.md`:为什么邪教是最好的反派、克苏鲁邪教和其他神话教团的区别、一条十一步的有序设计流程(概念→首领→目标→组织→成员→入会→财源→神话接触分层→弱点→敌人→关系图)、财源六项作为线索引擎(每项都答"谁付账、谁看见、留下什么痕迹")、弱点与敌人的写法("平淡才可信")。配套四张新骰表:`cult-goals.md`(愿望×手段,两表相乘才是完整目标)、`cult-leader-positions.md`(首领的社会定位与它带来的便利)、`cult-power-sources.md`(力量来源)、`npc-appearance.md`(外貌与气质,和已有的 `npc-quirks.md` 举止表分工互补)。新增 `templates/cult.md` 空白模板,字段对齐 `core/03` 既有的 faction 结构。`core/03`/`core/04`/`core/06` 三处接线:起草邪教 faction 时按流程走、铺线索地图时直接拿六项财源当独立线索来源、造 NPC 时能一并掷外貌表和首领定位表。**教团第四章(11 个邪教徒原型/怪物/造物)的两个前置——反派强度预算与魔法速查——现在都已解除**,可以直接开工。
+- **教团文档第一/二章落盘,克苏鲁与五个具体教团现在有现成资料可以直接拿来用。**
+  新增 `reference/mythos/great-old-ones/cthulhu.md`(克苏鲁本体的 setting 级 lore:苏醒
+  条件、征兆、教团怎么崇拜它、留给守秘人的裁定空间)与
+  `reference/mythos/cthulhu-cult-history-zh.md`(27 条压缩历史条目,前 2000 年苏美尔教团到
+  2001 年俄勒冈对峙,外加"永生大师线"/"黑翼者线"/"深潜者混种线"三条可直接用作多章战役
+  主心骨的贯穿线索)。`reference/mythos/cults/` 新增五个教团全档(摩耳甫斯崇高会、路易斯安那
+  沼泽教派、神子社、达贡密教团、完美科学教会),各含起源、首领、组织结构、财源(线索引擎)、
+  弱点、敌人、成员钩子与故事种子——起战役时可以直接改皮拿来用,不必从零设计。`core/03` 的
+  timeline 与 faction 分支都已接线指向这批新资料。
+- **修了 `scripts/build-reference-index.py` 的一个真实 bug**:`mythos/` 的
+  `great-old-ones/`、`cults/` 子目录此前完全不进反向索引(脚本只扫每个目录的顶层文件,不递归)
+  ——加了子目录结构后新文件会静默漏检。现在按 `mythos/README.md` 记录的子目录惯例递归扫描。
 
 ---
 

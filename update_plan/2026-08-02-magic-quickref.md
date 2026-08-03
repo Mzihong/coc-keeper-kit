@@ -2,7 +2,8 @@
 
 > 日期:2026-08-02
 > 状态:**待执行(阻塞已解除 2026-08-02)** —— 转换稿已归档为
-> `reference/sourcebooks/grand-grimoire-zh.md`(13731 行,全书转录,带 `## 引用出处`)
+> `reference/sourcebooks/grand-grimoire-zh.md`(Keeper 手动重译后现为 5366 行,全书转录,
+> 带 `## 引用出处`)
 > 来源:从 `Archived/2026-08-02-conventions-gaps.md` §3 拆出独立跟踪(2026-08-02)
 > 关联:`2026-08-02-cult-doc-integration.md` 第四章(造物含法术/仪式时以本计划为前置)
 

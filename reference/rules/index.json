@@ -13,7 +13,7 @@
       "file": "character-creation.md",
       "path": "reference/rules/character-creation.md",
       "title": "7e Character Creation — cheat-sheet",
-      "lines": 247,
+      "lines": 302,
       "declared_consumers": [
         "core/13-create-investigator.md",
         "reference/rules/skill-checks.md",
@@ -22,18 +22,78 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 41,
+          "line": 43,
           "context": "- 新增**追逐速查** `reference/rules/chases.md`,以及**人物创建与理智速查** `reference/rules/character-creation.md`、`reference/rules/sanity.md`。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 46,
+          "line": 48,
           "context": "- **建卡知识大幅补齐** `reference/rules/character-creation.md`:年龄七档补正表、Build/伤害加值表、MOV 判定、重伤值、技能基础值表、职业的三要素(点数公式家族/信用区间/本职技能表含自由槽)、信用评级→生活水平/现金/资产/消费水平换算表、伞技能专精写法、可选规则("
         },
         {
           "file": "CHANGELOG.md",
-          "line": 60,
+          "line": 62,
           "context": "- `reference/rules/character-creation.md` 每个小节加**来源指路**:标明数据是从 `COC apolo.xlsx` 哪个 sheet 提炼的,不摘原文、只给定位信息——技能基础值表的\"规则书第四章:技能\"是源材料自带的引用,其余小节如实标注\"章节号未核实\"而非编号瞎猜。`re"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "line": 64,
+          "context": "- **人类反派终于有了\"该多强\"的答案。** 原来 `core/06`/`core/07`/`core/13` 能造反派,但没有任何地方回答强度——一个技能全 90% 的邪教首领能毫发无伤地通过既有审计。现在 `reference/rules/character-creation.md` §11 给出:普通人类反派直"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 71,
+          "context": "`reference/rules/character-creation.md` §11;`core/02/06/07/11` 已接线。**尚未提交**"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 78,
+          "context": "(`character-creation.md` §11),之前那句校验一直是空转的。"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 257,
+          "context": "`reference/rules/character-creation.md`**(新增 §11)。内容:普通人类基线 = 照"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 279,
+          "context": "`cult-leader-positions.md` + `character-creation.md` §11 两处指路。"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 287,
+          "context": "P4 的落点没有另开新文件——`reference/rules/character-creation.md` 已经是\"KP 专用的"
+        },
+        {
+          "file": "core/02-rules-reference.md",
+          "line": 18,
+          "context": "→ read `reference/rules/character-creation.md` §11 before assigning skills or gear."
+        },
+        {
+          "file": "core/02-rules-reference.md",
+          "line": 30,
+          "context": "- `reference/rules/character-creation.md` — attribute rolls, the standard-pool skill-point"
+        },
+        {
+          "file": "core/06-create-npc.md",
+          "line": 42,
+          "context": "`reference/rules/character-creation.md` §11 for how strong to make them."
+        },
+        {
+          "file": "core/06-create-npc.md",
+          "line": 64,
+          "context": "is not a separate power tier — it's `reference/rules/character-creation.md` §11: the same"
+        },
+        {
+          "file": "core/07-create-monster.md",
+          "line": 13,
+          "context": "villain is built with `reference/rules/character-creation.md` §11 (baseline + increment),"
+        },
+        {
+          "file": "core/11-review.md",
+          "line": 62,
+          "context": "(`reference/rules/character-creation.md` §11). Cross-check against the campaign"
         },
         {
           "file": "core/13-create-investigator.md",
@@ -61,29 +121,104 @@
           "context": "\"description\": \"Optional pre-play history (a war, a beat, a stretch inside, a Mythos brush) bought with starting Sanity. Each one buys a mechanical edge and man"
         },
         {
+          "file": "reference/tables/cult-leader-positions.md",
+          "line": 5,
+          "context": "掩盖邪教活动)。造首领时(`core/06-create-npc.md`、`reference/rules/character-creation.md`"
+        },
+        {
           "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 96,
+          "line": 11,
+          "context": "> 2026-08-02 第五轮:待讨论 8 的落点拍板为 `reference/rules/character-creation.md`"
+        },
+        {
+          "file": "update_plan/2026-08-02-antagonist-budget.md",
+          "line": 114,
           "context": "| A. 新建 `reference/rules/antagonist-budget.md` | 与 `sanity.md`/`chases.md`/`character-creation.md` 同级,`core/02` 登记一行即可;主题独立好找 | `reference/rules/` 再添一份,速查文件数量继续"
         },
         {
           "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 97,
+          "line": 115,
           "context": "| B. 追加进 `reference/rules/character-creation.md` | 造调查员与造反派共用一套点数概念,同一份文件里对照最直观 | 该文件现在是**玩家侧**车卡速查;混入反派预算会模糊定位 |"
         },
         {
           "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 147,
-          "context": "→ 待办(定位选甲或丙才做):拿 `reference/rules/character-creation.md` 已有的车卡速查实算一遍,"
+          "line": 120,
+          "context": "> **Keeper 定案(2026-08-02 第三轮):选 B——追加进 `reference/rules/character-creation.md`。**"
         },
         {
           "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 211,
+          "line": 148,
+          "context": "已把内容落进 `reference/rules/character-creation.md`,本计划文件的文件名不再对应任何"
+        },
+        {
+          "file": "update_plan/2026-08-02-antagonist-budget.md",
+          "line": 172,
+          "context": ">   而是**走 `character-creation.md` 里已有的标准角色创建规则**——和造调查员用"
+        },
+        {
+          "file": "update_plan/2026-08-02-antagonist-budget.md",
+          "line": 258,
           "context": "- `reference/rules/character-creation.md` 是**玩家侧车卡**流程,产出的是调查员(高于平均),"
         },
         {
           "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 255,
+          "line": 296,
+          "context": "> `reference/rules/character-creation.md`,基线大概率跟着落同一份,但这点 Keeper"
+        },
+        {
+          "file": "update_plan/2026-08-02-antagonist-budget.md",
+          "line": 300,
+          "context": "> `reference/rules/character-creation.md` §11 收了这一整节(基线 = busybodies、"
+        },
+        {
+          "file": "update_plan/2026-08-02-antagonist-budget.md",
+          "line": 345,
           "context": "- [ ] `reference/rules/character-creation.md` 是否已含职业点/兴趣点公式(用于待讨论 3 自验)"
+        },
+        {
+          "file": "update_plan/2026-08-02-antagonist-budget.md",
+          "line": 356,
+          "context": "- [x] `reference/rules/character-creation.md` 新增 §11「Human antagonists — baseline +"
+        },
+        {
+          "file": "update_plan/2026-08-02-antagonist-budget.md",
+          "line": 362,
+          "context": "「Cheat-sheets」登记 `character-creation.md` 及其 §11。"
+        },
+        {
+          "file": "update_plan/2026-08-02-antagonist-budget.md",
+          "line": 366,
+          "context": "`character-creation.md` §11\";非人类的种类阶梯细节指向 P9,现阶段仍按 threat"
+        },
+        {
+          "file": "update_plan/2026-08-02-antagonist-budget.md",
+          "line": 387,
+          "context": "| 待讨论 1(归属) | ✅ 已定案:B(追进 `character-creation.md`) |"
+        },
+        {
+          "file": "update_plan/2026-08-02-antagonist-budget.md",
+          "line": 393,
+          "context": "| 待讨论 8(普通人类模板基线) | ✅ 已定案:内容(busybodies+grand-grimoire)与落点(`character-creation.md` §11)均已落盘 |"
+        },
+        {
+          "file": "update_plan/2026-08-02-cult-doc-integration.md",
+          "line": 7,
+          "context": "> P4 已解除(人类侧已完成,`character-creation.md` §11 可直接校验第四章邪教徒数值)"
+        },
+        {
+          "file": "update_plan/2026-08-02-cult-doc-integration.md",
+          "line": 137,
+          "context": "2026-08-02 第五轮定案并落盘到 `reference/rules/character-creation.md` §11,详见该计划"
+        },
+        {
+          "file": "update_plan/2026-08-02-cult-doc-integration.md",
+          "line": 162,
+          "context": "`reference/rules/character-creation.md` §11"
+        },
+        {
+          "file": "update_plan/2026-08-02-cult-doc-integration.md",
+          "line": 165,
+          "context": "`character-creation.md` §11),未涉及法术条目本身。P7 魔法速查仍是第四章造物的"
         },
         {
           "file": "update_plan/2026-08-02-investigator-cards.md",
@@ -109,9 +244,14 @@
           "file": "update_plan/2026-08-02-investigator-cards.md",
           "line": 100,
           "context": "`character-creation.md` 里标\"章节号未核实\"的引用替换成实际章节号/附录号"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 12,
+          "context": "| P4 | [antagonist-budget](2026-08-02-antagonist-budget.md) | 反派强度预算(**仅人类侧**):普通人类模板(取材 busybodies-zh.md,法术型另取材 grand-grimoire-zh.md)+ 增量(法术型走资历法术表 / 非法术型走装备总价"
         }
       ],
-      "reference_count": 18
+      "reference_count": 46
     },
     {
       "file": "chases.md",
@@ -122,22 +262,22 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 41,
+          "line": 43,
           "context": "- 新增**追逐速查** `reference/rules/chases.md`,以及**人物创建与理智速查** `reference/rules/character-creation.md`、`reference/rules/sanity.md`。"
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 26,
+          "line": 28,
           "context": "- `reference/rules/chases.md` — round structure; Move rates; obstacles & mishaps; ending a"
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 30,
+          "line": 35,
           "context": "If a scene is a pursuit or an escape, read `reference/rules/chases.md` before writing it."
         },
         {
           "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 96,
+          "line": 114,
           "context": "| A. 新建 `reference/rules/antagonist-budget.md` | 与 `sanity.md`/`chases.md`/`character-creation.md` 同级,`core/02` 登记一行即可;主题独立好找 | `reference/rules/` 再添一份,速查文件数量继续"
         },
         {
@@ -157,7 +297,7 @@
       "referenced_by": [
         {
           "file": "core/02-rules-reference.md",
-          "line": 24,
+          "line": 26,
           "context": "- `reference/rules/combat.md` — DEX order; dodge vs fight back; Build & Damage Bonus table;"
         },
         {
@@ -192,17 +332,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 41,
+          "line": 43,
           "context": "- 新增**追逐速查** `reference/rules/chases.md`,以及**人物创建与理智速查** `reference/rules/character-creation.md`、`reference/rules/sanity.md`。"
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 22,
+          "line": 24,
           "context": "- `reference/rules/sanity.md` — SAN = POW; X/Y loss notation; typical loss table; bout of"
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 34,
+          "line": 39,
           "context": "each ending with a **suggested SAN reward** per `reference/rules/sanity.md`'s scenario-end"
         },
         {
@@ -222,7 +362,7 @@
         },
         {
           "file": "update_plan/2026-08-02-antagonist-budget.md",
-          "line": 96,
+          "line": 114,
           "context": "| A. 新建 `reference/rules/antagonist-budget.md` | 与 `sanity.md`/`chases.md`/`character-creation.md` 同级,`core/02` 登记一行即可;主题独立好找 | `reference/rules/` 再添一份,速查文件数量继续"
         },
         {
@@ -247,7 +387,7 @@
       "referenced_by": [
         {
           "file": "core/02-rules-reference.md",
-          "line": 20,
+          "line": 22,
           "context": "- `reference/rules/skill-checks.md` — d100 under target; Regular/Hard/Extreme; fumbles;"
         },
         {

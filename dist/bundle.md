@@ -46,6 +46,7 @@ Open the file and follow it to the letter, including its Quality bar.
 | "check this", "is this ready" | `core/11-review.md` |
 | "here's what happened last session" | `core/12-canon-update.md` |
 | a deck/book/PDF to file, "归档这份资料", loose files in `reference/` | `core/14-archive-reference.md` |
+| closing out a maintenance session on the kit itself, "write a work log", "收尾" | `core/15-close-session.md` |
 
 ## Using this in ChatGPT (no repo access)
 
@@ -94,6 +95,8 @@ Never downgrade an artifact to a summary of an artifact.
   「完结清单」**——状态两处同步、changelog、重跑 `scripts/build-bundle.sh`、
   三适配器一致性、归档。
 - 改动结构、硬约定或计划状态时,顺手更新 `WORKLOG.md`——它是给接手会话的上手速览,过期比不存在更糟。
+  没有对应计划文件、也不是归档第三方资料的临时改动,收尾时读 `core/15-close-session.md`
+  ——它比这条一句话多一步:把刚写进日志里的数字/路径/清单回头 grep 核对一遍,而不是凭记忆断言。
 - 动过 `core/` / `templates/` / `reference/` 就必须重跑 `scripts/build-bundle.sh`,
   并把 `dist/bundle.md` 与源文件放在同一个 commit。
 - ChatGPT 用户拿到的是 `dist/bundle.md` 快照——不重建 bundle,他们就永远用着旧规则。
@@ -167,6 +170,7 @@ writing any stat block, difficulty, or Sanity cost.
 | "check this", "is this ready", before a session | `core/11-review.md` |
 | "here's what happened last session" | `core/12-canon-update.md` |
 | a deck/book/PDF to file, "归档这份资料", loose files in `reference/` | `core/14-archive-reference.md` |
+| closing out a maintenance session on the kit itself, "write a work log", "收尾" | `core/15-close-session.md` |
 
 ## Ground rules for everything you generate
 
@@ -402,6 +406,8 @@ before you commit it. **If it contradicts a cheat-sheet, fix the cheat-sheet.**
 - Write any NPC or monster **stat block** → confirm characteristics, HP, Build, Damage Bonus.
 - Set a **skill check difficulty** → pick Regular / Hard / Extreme deliberately.
 - Assign a **Sanity cost** → keep it proportionate to the horror.
+- Build a **human antagonist stronger than an ordinary person** (a cult leader, a gang boss)
+  → read `reference/rules/character-creation.md` §11 before assigning skills or gear.
 
 ## Cheat-sheets (source of truth)
 
@@ -413,6 +419,9 @@ before you commit it. **If it contradicts a cheat-sheet, fix the cheat-sheet.**
   HP = (CON+SIZ)/10; major wounds; manoeuvres.
 - `reference/rules/chases.md` — round structure; Move rates; obstacles & mishaps; ending a
   chase. Read before writing any pursuit or escape scene.
+- `reference/rules/character-creation.md` — attribute rolls, the standard-pool skill-point
+  formula, base skill values; §11 is human antagonist strength (baseline + increment — no
+  separate power-budget table). Read it whenever the antagonist is a person, not a monster.
 
 ## Fast facts (verify against the sheets)
 
@@ -482,7 +491,22 @@ their tensions; a short timeline of what led here; the Mythos undercurrent.
 For a **faction**: goal, structure, membership, iconography, methods, and the ordinary face
 vs the true agenda.
 
-For a **timeline**: dated beats (public record vs the hidden truth) leading to the present.
+**Cult sub-path.** When the faction is a cult, don't just point at the craft note — walk its
+build order. Read `reference/craft/cult-design-zh.md` §一–§三 first (why a cult works as a
+villain, what makes a *Cthulhu* cult specific, then the ordered build: concept → leader →
+goal → structure → membership → induction → funding → Mythos-exposure tiers → weaknesses →
+enemies → relationship diagram). Roll `reference/tables/cult-goals.md` (want × means) and
+`reference/tables/cult-leader-positions.md` (the leader's social front) rather than inventing
+either. Use `templates/cult.md`, which mirrors this same faction structure with the cult
+build order folded in. `reference/mythos/cults/` also has five fully-worked cult dossiers
+(same shape as this template) — reskin one directly (era/place/name) rather than building
+from zero when one fits the campaign's needs.
+
+For a **timeline**: dated beats (public record vs the hidden truth) leading to the present. If
+the throughline is Cthulhu-cult history, `reference/mythos/cthulhu-cult-history-zh.md` has
+27 reusable historical beats (plus an "immortal masters" throughline spanning three of them) —
+pull dated entries from there rather than inventing a history from nothing, and reframe/relocate
+freely to fit the campaign's era and place.
 
 ## Output
 
@@ -530,6 +554,11 @@ fill in the pieces.
 5. **The clue map (three-clue rule).** For **every** fact the players *must* realise, provide
    **three independent** clues from different sources. If any one is missed or a roll fails,
    two remain. Lay this out as a table — it's the anti-stall guarantee.
+   - **When the threat is a cult**, `reference/craft/cult-design-zh.md` §四 gives six ready-made
+     independent sources — property, tomes & artefacts, illicit supply, legal/business front,
+     bribery, security — each ending in "who pays, who sees, what trace it leaves." Three
+     clues for a cult-related fact usually come from three different funding lines, not three
+     variations on the same one.
 6. **The scenes as a web.** Key each node by *purpose* (clue / choice / shock / breather).
    Most scenes should be reachable in more than one order — avoid a single required sequence.
    If a scene is a pursuit or an escape, read `reference/rules/chases.md` before writing it.
@@ -730,8 +759,12 @@ tell — mechanically correct for 7e.
 - **The lie they tell.** What do they say when asked directly? Every NPC with a secret needs
   a prepared cover story, or the Keeper has to invent one mid-scene.
 
-Roll `reference/tables/npc-quirks.md` for at least the mannerism. A rolled tic beats the
-model's default "nervous, wrings hands."
+Roll `reference/tables/npc-quirks.md` for at least the mannerism, and
+`reference/tables/npc-appearance.md` for the first physical impression. A rolled tic beats
+the model's default "nervous, wrings hands," and a rolled appearance beats "middle-aged,
+tired-looking." For a cult leader specifically, `reference/tables/cult-leader-positions.md`
+rolls their social front and what access it buys — read
+`reference/rules/character-creation.md` §11 for how strong to make them.
 
 For the **secret**, the busybodies deck is the length calibration: every one of its 47 cards
 carries exactly one, in one or two sentences, and each is a *lever* — a debt, a lie already
@@ -752,6 +785,11 @@ backstory, and backstory doesn't survive contact with a table.
 - Villains/cultists: consider Cthulhu Mythos %, spells (cross-link `reference/mythos/`), and
   the SAN implications of what they've done. For actual spell numbers,
   `reference/sourcebooks/grand-grimoire-zh.md` is the official grimoire, if you have it locally.
+- **A cult leader or other human antagonist meant to be stronger than an ordinary person**
+  is not a separate power tier — it's `reference/rules/character-creation.md` §11: the same
+  baseline (busybodies deck) plus one increment (spell count for a spellcaster, gear price
+  for a non-spellcaster). Skill *choice* comes from backstory; skill *height* is
+  lethality-derived — see §11 for the split and `core/11-review.md` for the audit question.
 - Arming someone: `reference/decks/weapons-and-artifacts-zh.md` gives skill, base chance,
   damage, range, malfunction, and era availability per weapon — the deck is built to pair with
   the busybodies cards for exactly this.
@@ -785,6 +823,12 @@ live through it. In CoC the monster is usually an obstacle to survive, not a bos
   Damage Bonus, HP) and `reference/rules/sanity.md` (X/Y loss). Numbers must be 7e-correct.
 - Decide **type** (human / beast / undead / mythos servitor / independent race / great old
   one) and **threat** (trivial / moderate / deadly / mythic). Threat sets stat scale and SAN.
+- **Human antagonists don't use this spec.** A cultist, a cult leader, or any other human
+  villain is built with `reference/rules/character-creation.md` §11 (baseline + increment),
+  not this spec's type/threat scale. The cross-type ladder for non-human threats
+  (`human < 怪物 < 古神眷族 < 古神`) is still being worked out in
+  `update_plan/2026-08-02-monster-templates-traits.md` (P9) — until that lands, treat this
+  spec's threat four-band as a qualitative guide only, not a numeric one.
 - Use `templates/monster.md`.
 - **Source material, if present locally** (neither is in `dist/bundle.md`, so neither is a
   dependency): `reference/sourcebooks/malleus-monstrorum-zh.md` is the official creature
@@ -1169,6 +1213,12 @@ model's output. Assume the material is wrong until each line checks out.
 
 - [ ] Stat blocks internally consistent: HP = (CON+SIZ)/10, Dodge = ½ DEX, Build and Damage
       Bonus derived from STR+SIZ. **Recompute them; don't eyeball.**
+- [ ] **Human antagonists: skill height is lethality-derived, not background-derived.**
+      Background picks *which* skills a villain has; it never justifies *how high* one goes.
+      If a skill value would land a single successful roll as an unrecoverable outcome on an
+      investigator, that's the ceiling regardless of the character's backstory
+      (`reference/rules/character-creation.md` §11). Cross-check against the campaign
+      `CLAUDE.md`'s declared **lethality** field.
 - [ ] Difficulties (Regular/Hard/Extreme) are set deliberately and only where failure is
       interesting.
 - [ ] Sanity costs are proportionate to the horror, not to the gore.
@@ -1560,6 +1610,151 @@ run said.
 - At least one spec points at it, phrased as optional.
 - `python scripts/build-reference-index.py` reports **no problems**.
 - `dist/bundle.md` rebuilt; `CHANGELOG.md` appended; any unblocked `update_plan/` entry updated.
+
+
+=== FILE: core/15-close-session.md ===
+
+# 15 — Close Out a Working Session
+
+Take a session that changed the kit itself — structure, behaviour, a spec, a convention — and
+close it out so the next session (yours or someone else's) can pick it up without re-deriving
+what happened. Skipping this is how `WORKLOG.md` goes stale, which is worse than it not
+existing at all.
+
+This spec is for **everything that isn't already covered by a more specific closing flow**:
+
+- Finishing a whole `update_plan/PNN-*.md` plan → use `update_plan/README.md`'s **完结清单**
+  instead. It has extra steps (status sync in two places, plan-graph unlocking, archiving) this
+  spec doesn't repeat.
+- Filing third-party material → use `core/14-archive-reference.md` step 7 ("Close it out")
+  instead. It's the same idea, scoped to one archived file.
+- An ad-hoc session that touched `core/`, `templates/`, `reference/`, `scripts/`, or a
+  cross-cutting convention **without** a plan file behind it — that's this spec.
+
+If a session is *both* (e.g. closing a plan that also touched `reference/`), follow the more
+specific checklist (`update_plan/README.md` or `core/14`) — it's a superset of this one.
+
+## First
+
+Read `git status` / `git diff` (or recall from the session if nothing's staged yet) before
+writing anything down. Build the list of touched files first; a session log written from memory
+drifts from what actually changed.
+
+## The checklist
+
+### 1. Append a `WORKLOG.md` session entry
+
+Add a dated entry under **会话记录**, following the existing entries' shape (**做了什么** /
+**为什么这么分** / **留下的判断**, whichever subsections actually apply — don't force all three
+if there's nothing to say). If another entry already exists for today, add a new subsection
+under it rather than a second top-level date heading — same rule `CHANGELOG.md` uses.
+
+### 2. Fact-check what you just wrote
+
+**This is the step a plain "update the docs" pass skips, and it's why this spec exists.**
+Before treating the WORKLOG/CHANGELOG entry as done, grep the repo for every count,
+enumeration, or path you named in it — "six directories," "47 cards," "three sourcebooks" — and
+confirm each one against the actual filesystem or a generated artifact (`reference/index.json`,
+a script's own output), never against memory or against what an earlier entry said. Numbers
+copy forward silently and go stale the moment a directory gets added or removed.
+
+Concrete example this caught: a session added `reference/craft/` as a seventh indexed
+directory and wrote up the change correctly in both `WORKLOG.md` and `CHANGELOG.md` — but wrote
+"六个目录" (six directories) in both places, plus `reference/README.md` and the script's own
+docstring. Nobody re-counted against `python scripts/build-reference-index.py --check`'s actual
+output ("indexed ... across 7 directories") until a later session grepped for the literal string
+and found it in five places at once.
+
+### 3. Sync affected `README.md`s
+
+If the change added, removed, or renamed a file, directory, or convention that a `README.md`
+describes — `reference/README.md`, a subdirectory `README.md`, root `README.md` — update the
+description in the same pass. A stale directory listing is the same class of bug as step 2's
+stale count; check both together.
+
+### 4. Run the applicable parts of `update_plan/README.md`'s 完结清单
+
+Sections **2 (Changelog)**, **3 (产物重建)**, **4 (三适配器一致性)**, and **5 (术语与语言)**
+apply to any structural change regardless of whether a plan file exists. Skip section 1
+(状态同步) and section 6 (计划间关系) — those are plan-specific; if this session actually is
+closing a plan, go use the full checklist there instead of this one.
+
+In short, for a change touching `core/`, `templates/`, or `reference/`:
+
+- `CHANGELOG.md` gets an entry (merged into today's if one exists).
+- `bash scripts/build-bundle.sh` reruns; `dist/bundle.md` ships in the same commit.
+- `python scripts/build-reference-index.py --check` reports clean if `reference/`'s archive
+  directories changed.
+- `CLAUDE.md` / `GEMINI.md` / `AGENTS.md` stay consistent if any adapter-visible routing changed
+  (new skill, new spec, new top-level convention).
+- New rules terminology goes into `reference/glossary-zh.md`.
+
+### 5. Report
+
+Tell the Keeper/collaborator: what changed, what got fact-checked in step 2 (and what it caught,
+if anything), what's still open, and whether anything needs sign-off before a commit. Don't
+commit unless asked — this spec closes out the working tree, not the git history.
+
+## Quality bar
+
+- `WORKLOG.md` has a dated session entry for this session, appended not overwritten.
+- Every count, enumeration, or path written this session has been grep-verified against actual
+  repo state or generated output — not asserted from memory or copied from an earlier entry.
+- `CHANGELOG.md` has an entry (or an addition to today's).
+- Every `README.md` describing the changed structure matches it.
+- `dist/bundle.md` rebuilt if `core/`, `templates/`, or `reference/` changed.
+- `python scripts/build-reference-index.py --check` clean if `reference/`'s archives changed.
+- The three root adapters still agree with each other and with `core/`.
+
+
+=== FILE: templates/cult.md ===
+
+# Cult — <name>
+
+*<one-line identity — what they believe, what they want>*
+
+- **Region / campaign:** <link>
+- **Power source:** <mythos creature / artefact / technology / bestowed ability —
+  `reference/tables/cult-power-sources.md`>
+- **Goal:** <want × means — `reference/tables/cult-goals.md`>
+
+## Leader
+- **Social front / position:** <`reference/tables/cult-leader-positions.md`>
+- **Motivation:** <what they're really after>
+- **Madness level:** <barely functional / concealing well / fully lost — sets how many
+  loose ends the organisation leaves behind>
+
+## Structure & membership
+- **Tiers:** <new recruit → member → inner circle → leader — what each tier can see/do>
+- **Membership:** <who joins, why they stay; the more varied, the more seams show>
+- **Induction:** <the staircase of small steps from "reasonable" to "no way back">
+- **Mythos exposure by tier:** <who actually knows the truth, and how much>
+
+## Ordinary face vs. true agenda
+- **What outsiders see:** <the mundane cover — a club, a church, a company>
+- **What it actually is:** <the Keeper-only truth>
+
+## Funding (the clue engine — one line each: who pays, who sees, what trace it leaves)
+- **Property:** <>
+- **Tomes & artefacts:** <>
+- **Illicit supply:** <>
+- **Legal / business front:** <>
+- **Bribery:** <>
+- **Security:** <>
+
+## Weaknesses
+- <the seams in structure/membership/funding above that an investigator can pull on>
+
+## Enemies
+- <who's already working against this cult, and why — prefer mundane friction over grand
+  rivalries: a suspicious neighbour, an undercut competitor, a spurned ex-member>
+
+## Relationship diagram
+> Build with the mermaid faction-map convention (`update_plan/2026-08-02-low-cost-maps.md`).
+> Every line needs a label — what connects the two nodes, not just that they're connected.
+
+## Links
+<relative links to NPCs, locations, scenes, and the event clock>
 
 
 === FILE: templates/event-clock.md ===
@@ -2025,7 +2220,8 @@ in `campaigns/<slug>/`, not here.
   the numbers are. Split from `rules/` on purpose — `rules/` errors make the mechanics wrong,
   `craft/` errors make the prose generic. Each file is sectioned by *which spec reads which
   section*. `lovecraft-zh.md` (distilled from `og_Norval/`) is read by `core/09-description.md`
-  and `core/07-create-monster.md`. Ships in `dist/bundle.md`.
+  and `core/07-create-monster.md`; `cult-design-zh.md` (cult design methodology) is read by
+  `core/03-build-world.md` and `core/04-design-scenario.md`. Ships in `dist/bundle.md`.
 - **`bestiary/`** — reusable monsters and Mythos entities you can drop into any game.
   Produced by `core/07-create-monster.md`. One creature per file. Written in **English**,
   since they're shared across campaigns that may output in different languages.
@@ -2046,7 +2242,7 @@ in `campaigns/<slug>/`, not here.
   the difference is bulk and use — a deck you draw from, a book you look a chapter up in.
   Not `rules/`: that folder is the kit's *own* condensed cheat-sheets. Where the two disagree,
   the sourcebook wins and the cheat-sheet gets fixed.
-- **`index.json`** — the **reverse index** over all six indexed directories (`decks/`,
+- **`index.json`** — the **reverse index** over all seven indexed directories (`decks/`,
   `sourcebooks/`, `rules/`, `craft/`, `bestiary/`, `tables/`, `mythos/`), generated by
   `scripts/build-reference-index.py`. Answers both directions: what is here and where it came
   from, and — the useful one — **which specs reference a given file, with line numbers**, so
@@ -2726,6 +2922,61 @@ reviewer can check the age and backstory actually honour it.
 - **No skill over the declared cap**; Cthulhu Mythos is 0 on a pregen.
 - **Umbrella skills** all carry a specialisation.
 
+## 11. Human antagonists — baseline + increment, no separate budget table
+
+kit 里"这个反派该多强"曾经差点长出一套独立的技能点预算带(300–1000)和四组预设属性/
+技能数组。**这条路已被否决**:反派(邪教徒、邪教首领、其他人类反派)走**和调查员完全
+相同的创建流程**(上面 §1–§5)——3D6×5 / (2D6+6)×5 属性、标准池公式
+(`EDU×4 + INT×2 + 200`,或按概念替换成对应属性组合的等价公式)、§5 的 base value 表、
+90% 硬上限。不给反派开小灶,也不从一张数字表里直接抄数。
+
+### 基线:普通人类 = busybodies 卡组
+
+`reference/decks/busybodies-zh.md` 的 47 张已配平数值 NPC 卡就是"普通人类"的数值
+参照——不必另造一张抽象的"均值 50"占位表。造一个非首领级的人类反派(普通成员、
+打手、路人)时,直接照最接近职业的那张卡校准属性与技能刻度,和
+`core/06-create-npc.md` 现有做法一致。
+
+### 首领 = 基线 + 增量,增量按类型二选一
+
+首领(以及其他"明显强于普通人"的人类反派)= 上面的基线创建流程,**再叠加一层
+增量**。增量的形式由首领类型决定,二选一,不混用:
+
+| 类型 | 增量来源 | 增量形式 |
+|---|---|---|
+| **法术型**(施法、通神类首领) | 按资历掷 `1D4+1`(年轻)/ `1D6+1D4+2`(标准)/ `3D6+4`(成熟)/ `4D6+10`(古老)条法术;法术本身的 MP/SAN 成本查 `reference/sourcebooks/grand-grimoire-zh.md`(若本地存在) | 法术数量 + 随之水涨船高的克苏鲁神话技能值 |
+| **非法术型**(帮派头目、雇佣兵、纯世俗势力) | 装备总价定强度,直接对接 `reference/decks/weapons-and-artifacts-zh.md` 的价格栏 | 武器/防具/载具的档次 |
+
+原始文档给出的"技能点预算带 300–1000"表、四组预设属性数组(A 平均/B 高于平均/
+C 强大/D 长者)、五组预设技能点数组(A–E)**整段不落盘、不重建**——它们的历史记录
+留在 [`update_plan/2026-08-02-antagonist-budget.md`](../../update_plan/2026-08-02-antagonist-budget.md),
+本节是唯一落盘的生成方法。
+
+### 技能怎么选,数值怎么定:背景选技能,致命性定数值
+
+首领的技能列表**按故事背景分配**——当过军医的首领有 Medicine / First Aid /
+Firearms,学者首领没有。但同一个技能给多高,**不由背景正推,由致命性倒推**:同样
+是 Firearms,给 45% 还是 85%,取决于这个数值一旦命中调查员会造成什么后果,不是
+"他当过兵所以应该很高"。背景在数值定完后**反向追加解释力**即可(例如"boss 是
+老兵,但身负不可治愈的创伤"),不改变数值本身的来源。这条分工的审计口径见
+`core/11-review.md`。
+
+### 生成时是否强化战斗能力
+
+生成首领(或同级人类反派)时,**默认不强化战斗方面能力**——技能分配走上面"背景
+选技能"的路子就够。是否强化是 Keeper 的开关,但这个开关**不在这里问**:落点是
+intake,一次性问、写进 campaign `CLAUDE.md` 当默认,随
+`update_plan/2026-08-02-cult-doc-integration.md` 阶段 2("敌对势力问题")一起接线。
+
+### 与人数缩放(P3 Scaling)的关系
+
+不给换算公式。人数低于基准时优先降**数量**;数量已经降到 1 还嫌重,才去动**单体
+强度**——这是判断口径,不是公式。上面"是否强化战斗"那个开关就是这条口径在生成
+时的落点。
+
+来源:kit 原创综合,定案过程见 `update_plan/2026-08-02-antagonist-budget.md`
+(非规则书转录,原始素材已按上面的说明弃用)。
+
 
 === FILE: reference/rules/chases.md ===
 
@@ -2961,6 +3212,7 @@ Dodge = ½ DEX · Language (Own) = EDU · Track 10 · Drive Auto 20.
 | 文件 | 提炼自 | 谁在读 |
 |---|---|---|
 | `lovecraft-zh.md` | `reference/og_Norval/`(洛夫克拉夫特原著 82 篇通读) | `core/09-description.md`(§一 基调、§二 场景/行动)、`core/07-create-monster.md`(§三 怪物设计) |
+| `cult-design-zh.md` | 克苏鲁邪教设计指南第三章(网络汇编,158 页,通读后提炼) | `core/03-build-world.md`(邪教 faction 子路径)、`core/04-design-scenario.md`(§四 财源线索引擎、§五 弱点/敌人)、`core/01-intake.md`(auto-fill 答"邪教"时) |
 
 机器可读版本是 `index.json`,由 `scripts/build-reference-index.py` 生成。
 
@@ -2977,10 +3229,121 @@ Dodge = ½ DEX · Language (Own) = EDU · Track 10 · Drive Auto 20.
 5. 收尾:接线进要读它的 spec → 重跑 `scripts/build-reference-index.py`(没人引用会报
    orphaned)→ 重跑 `scripts/build-bundle.sh` → 记 `CHANGELOG.md`。
 
-## 已排期的下一份
 
-`update_plan/2026-08-02-cult-doc-integration.md` 第三章 A 项要产出邪教设计手法稿,
-落点 `craft/cult-design-zh.md`,定位对标 `lovecraft-zh.md`。
+
+=== FILE: reference/craft/cult-design-zh.md ===
+
+# 邪教设计手法笔记 — 简体中文
+
+从一份克苏鲁邪教设计指南(网络论坛汇编,158 页,原书第三章「设计一个克苏鲁邪教」)通读后
+蒸馏出的**设计方法论 + 叙事技法**笔记,供 `core/03-build-world.md`(faction 分支的邪教
+子路径)、`core/04-design-scenario.md`(以邪教为核心威胁时的线索引擎)、`core/01-intake.md`
+(auto-fill 答"邪教"时的落点)三处共用。
+
+**这不是文摘,是方法论字典。** 只记录「怎么设计一个可信的邪教」,不复述原书写了什么——
+依 `CLAUDE.md` 的原则,生成内容不得重现受版权保护的原文;原书用来示范流程的三个虚构邪教
+案例(雷切尔/安德鲁/查德)**刻意不收录**,唯一可提取的价值(设计顺序)已被 §三 吸收。
+配套的骰表(愿望×手段、首领定位、力量来源)独立成 `reference/tables/`,不要把可掷表内容
+塞回这份散文——两者分工是「这里教怎么想,骰表给一个具体起点」。
+
+---
+
+## 一、邪教为何是最好的反派 (Why a cult)
+
+供 `core/01-intake.md` auto-fill 答"邪教"时理解"为什么选它",也供 `core/03` 起草
+faction 时定调。
+
+- **邪教徒是人,不是怪物。** 一个邪教最恐怖的地方不是它信仰的东西,而是相信它的都是普通
+  人——邻居、同事、家人。把邪教徒写成面目可憎的反派牌,恐怖感就丢了一半。
+- **背叛的核心是"用文化换安全感"。** 邪教徒的驱动力通常不是纯粹的恶,而是拿自己的文化、
+  伦理、甚至人性去交换一个根本不在乎人类死活的东西给出的承诺(力量、答案、永生、归属)。
+  写邪教徒的动机时,先问"他们放弃了什么去交换这个",而不是"他们想要毁灭世界"。
+- **恐惧的落点是"我会不会也这样"。** 对邪教最深的恐惧,不是"他们会伤害我",而是"换一种
+  处境,我是否也会一步步走到这里"。设计入会流程(见 §三)时预留这种"合理的第一步"——
+  每一步单独看都不算疯狂,合起来才是深渊。
+
+## 二、克苏鲁邪教的独特性 (What makes it *Cthulhu's* cult)
+
+- **区别于其他神话教团。** 犹格-索托斯教团常围绕"打开门"「跨越边界」的仪式;奈亚拉托提普
+  教团常围绕"揭露真相"「传播疯狂」的煽动。克苏鲁教团的独特之处在于**等待**而非**行动**——
+  信徒的核心工作不是召唤,是"维持",等一个已经存在、只是沉睡的东西自己醒来。设计克苏鲁
+  邪教的仪式与日常时,让"等待与维持"(记录征兆、保护要地、传承预言)比"主动召唤"占更大
+  比例,这是它和其他神话教团在质感上的差别。
+- **预言可自由解释,这才是手法本身。** 原书给出的卡斯特罗预言(克苏鲁苏醒时"世界将毁灭 /
+  人类将启蒙 / 万物将进化"三种互斥解读)本身不必照搬,但**"同一预言允许多重、互斥的解读,
+  且没有一种是错的"**这个手法值得复用:它让邪教内部天然产生派系(毁灭派 vs 启蒙派 vs 进化
+  派),不需要外部反派制造冲突;调查员揭穿"邪教相信的事"和揭穿"邪教内部谁的解读会赢"是
+  两个可以分开推进的线索层。设计任何邪教目标(见 §三)时,给核心信条留至少两种合理解读,
+  再决定这场戏该激活哪一种冲突。
+
+## 三、设计流程(有序) (Build order)
+
+供 `core/03` 起草邪教 faction、`core/04` 把邪教定为剧本核心威胁时follow 的顺序——
+这是原书最有复用价值的部分:一条**必须按序做**的流程,后一步依赖前一步的产出。
+
+1. **概念** — 一句话:这个邪教信什么、要什么。
+2. **首领** — 来源(谁、为什么是他)、动机、疯狂程度。首领的疯狂程度决定组织的容错率:
+   一个还算清醒的首领会隐藏痕迹、约束成员;一个已经深度疯狂的首领会留下更多可供调查员
+   拼凑的破绽。
+3. **目标** — **愿望 × 手段**两轴相乘(见 `reference/tables/cult-goals.md`),而不是
+   凭空想一个"毁灭世界"式的空洞目标。愿望回答"要什么",手段回答"打算怎么拿到"，两者
+   相乘才是一个可执行、可被调查员打断的具体计划。
+4. **组织结构** — 分级(新兵→正式成员→核心圈→首领),每级的门槛与特权都不同,决定
+   调查员渗透时"卧底能看到什么、看不到什么"。
+5. **成员构成** — 这些人是谁招来的、为什么留下。构成越异质(不同阶层、职业、动机),
+   邪教在调查员面前露出的破绽面就越多。
+6. **入会流程** — 从"合理的第一步"到"无法回头的一步"要有台阶,呼应 §一 的恐惧核心。
+   每一级台阶都该是一个可以在剧本里被调查员目睹或还原的场景。
+7. **财源** — 六项资金来源(见 §四),财源即线索引擎,不是背景装饰。
+8. **神话接触度分层** — 不同层级的成员知道多少真相,是设计"审讯谁能问出什么"的骨架。
+9. **弱点** — 邪教的破绽在哪(见 §五)。
+10. **敌人** — 谁在跟这个邪教作对,为什么(见 §五)。
+11. **关系图** — 用一张图把以上元素连起来:元素画圈、连线,并**在线上写下连接二者的
+    东西是什么**(债务、血缘、共同的秘密、货物往来)——图上的连线才是可执行的线索,
+    孤立的圈没有用。这一步与 `2026-08-02-low-cost-maps.md`(P5)的 mermaid 势力图
+    工具合流,不在这里另建一套画图惯例。
+
+## 四、财源即线索引擎 (Funding as a clue engine)
+
+供 `core/04-design-scenario.md` 铺三线索规则时取用——**这不是背景 lore,是素材库**。
+六项资金来源,每一项都以"谁付账、谁看见了、留下什么痕迹"收尾,痕迹就是可被调查员找到
+的线索:
+
+- **地产** — 谁名下的物业、谁签的租约、邻居见过谁进出。
+- **典籍与造物** — 从谁那买的、经手的古董商/拍卖行、运输记录。
+- **非法物资** — 供货商、走私路线、被截获或举报的一次意外。
+- **法务与商务** — 挂在哪家公司名下、谁是登记的法人、税务或诉讼留下的公开记录。
+- **行贿** — 被买通的是谁(警察、官员、记者),对方开始反常沉默或反常帮忙的时间点。
+- **安保** — 雇的是什么人(保镖、打手、看门狗),他们平时在哪露面、认不认识调查员。
+
+每一项都能单独拆成一条调查线;三线索规则要求的"独立来源",天然可以从这六项里各挑
+互不重叠的两三项拼出来。
+
+## 五、弱点与敌人 (Weaknesses and enemies)
+
+供 `core/03`/`core/04` 设计邪教的可攻破性。
+
+- **弱点是调查员的落脚点。** 一个"完美无缺"的邪教没法被调查员打，也没法被玩家理解。
+  组织结构、财源、成员构成里的每一处异质与冗余,都天然是弱点的候选——不必额外发明。
+- **敌人往往"平淡才合理"。** 极端罪行(绑架、谋杀)会被邪教主动掩盖、清理痕迹;真正
+  会被人抱怨出来的,是"半夜有人抄近路穿过我家后面的树林"这种小事。设计邪教在地方上
+  的敌人(多疑的邻居、被抢生意的对手、被拒绝入会心怀怨恨的前成员)时,优先选**平淡、
+  具体、任何人都会为此抱怨**的摩擦,而不是戏剧化的世仇——平淡的摩擦更可信,也更容易
+  被调查员当成"不起眼的第一条线索"发现。
+
+---
+
+## 使用方式
+
+- `core/03-build-world.md` 起草邪教这一类 faction 时,先读 §一、§二 定调,再走 §三
+  的流程顺序;`reference/tables/cult-goals.md` 是 §三 第 3 步的掷表配套。
+- `core/04-design-scenario.md` 铺设以邪教为核心威胁的线索地图时,优先读 §四(财源
+  线索引擎)与 §五(弱点/敌人)。
+- `core/01-intake.md` auto-fill 答"邪教"时,指向本文件与 `reference/mythos/cults/`,
+  并掷 `reference/tables/cult-goals.md`——不允许落地一个从未掷过的泛用邪教。
+- 这里的手法是**启发**,不是套版——一次设计挑真正用得上的几条深挖,好过把整份清单
+  塞进同一份 faction 文档。
+- 新增手法时延续本文件的格式:**手法名称** — 说明手法与为何有效,不复述原书文字。
 
 
 === FILE: reference/craft/lovecraft-zh.md ===
@@ -3101,6 +3464,12 @@ campaign specific.
 
 - `complications.md` (1d20) — what goes sideways in a session; roll twice at session prep.
 - `madness.md` (1D10) — bout-of-madness effects.
+- `npc-appearance.md` (1d20) — first physical impression + temperament; companion to
+  `npc-quirks.md` (appearance vs. mannerism).
+- `cult-goals.md` (1D10 × 1D8) — a cult's want × its means; roll both, they multiply. See
+  `reference/craft/cult-design-zh.md` §三.
+- `cult-leader-positions.md` (1d10) — a cult leader's social front and the access it buys.
+- `cult-power-sources.md` (1d4) — where a cult's claimed supernatural backing comes from.
 
 ## Adding tables
 
@@ -3151,6 +3520,100 @@ one is written for a specific situation and lands badly anywhere else.
 
 > Check the roll against `world/event-clock.md` before using it. If a complication would
 > duplicate or contradict a trigger that's already primed, reroll — the clock takes priority.
+
+
+=== FILE: reference/tables/cult-goals.md ===
+
+# cult-goals.md — 邪教目标:愿望 × 手段
+
+一个可执行的邪教目标 = **一个愿望 + 一种手段**,不是凭空想一句"毁灭世界"式的空洞目标。
+造邪教或其首领时(`core/03-build-world.md` 邪教子路径、`core/01-intake.md` auto-fill 答
+"邪教"时),掷 1D10 愿望、1D8 手段,**两张表必须成对使用**——单独一张不构成目标。
+用法见 `reference/craft/cult-design-zh.md` §三 第 3 步。
+
+## 愿望(1D10)——要什么
+
+| d10 | 愿望 |
+|---|---|
+| 1 | 金钱与物质积累 |
+| 2 | 超自然力量本身 |
+| 3 | 满足某种执念或欲望 |
+| 4 | 救赎——洗刷一桩罪或一段过去 |
+| 5 | 掌控他人的意志或命运 |
+| 6 | 理解宇宙的真相,哪怕代价是理智 |
+| 7 | 施加暴力,报复具体的某人或某个群体 |
+| 8 | 找到解决一个具体困境的办法(绝症、破产、诅咒) |
+| 9 | 满足一种瘾头——痛苦、感官、崇拜带来的迷醉 |
+| 10 | 爱——留住、复活,或占有一个特定的人 |
+
+## 手段(1D8)——打算怎么拿到
+
+| d8 | 手段 |
+|---|---|
+| 1 | 献祭——用生命或痛苦换取回应 |
+| 2 | 仪式——按古老的程式一步步执行 |
+| 3 | 搜集——典籍、圣物、失落的知识碎片 |
+| 4 | 侍奉——长期、恭顺地服务于某个存在,换取眷顾 |
+| 5 | 创造——制造造物、繁育异种、培育某种力量 |
+| 6 | 破坏——拆解、亵渎、终结某个既有秩序 |
+| 7 | 转化——把自己或他人变成别的东西 |
+| 8 | 猎杀——追捕、消灭特定的目标 |
+
+## 怎么用
+
+掷出的两项相乘才是目标:例如"愿望 6(理解宇宙真相)+ 手段 3(搜集)"= 一个执着于
+搜罗禁书与失落知识、试图拼出宇宙全貌的学者型邪教,和"愿望 6 + 手段 1(献祭)"是完全
+不同的邪教——**同一个愿望换一种手段,整个组织的日常行为、财源(见
+`reference/craft/cult-design-zh.md` §四)、破绽都会跟着变**。掷到不搭的组合(如
+"愿望 10 · 爱 + 手段 8 · 猎杀"——为爱而猎杀)不要重掷,那种张力往往比"合理"的组合
+更有戏剧性,是本节存在的意义(呼应 `core/01-intake.md` 的反套路规则)。
+
+
+=== FILE: reference/tables/cult-leader-positions.md ===
+
+# cult-leader-positions.md — 首领的社会定位
+
+掷 **1D10** 决定邪教首领在正常社会里的身份。每条的价值不在职业名本身,而在**这个位置
+带来什么便利**——接触面(能自然接近谁)、豁免(什么行为不会招来怀疑)、掩护(用什么名义
+掩盖邪教活动)。造首领时(`core/06-create-npc.md`、`reference/rules/character-creation.md`
+§11)先掷这张,再决定具体人物细节。
+
+| d10 | 定位 | 便利(接触面 / 豁免 / 掩护) |
+|---|---|---|
+| 1 | 商人 | 接触面广(客户、供应商、跨城市网络);大额现金往来不惹眼;库房与运输是天然掩护 |
+| 2 | 家族族长 | 对家族成员有近乎无条件的权威;家族内部事务外人不便过问;祖宅/祖产是活动场所 |
+| 3 | 帮派头领 | 已有一支不会追问命令来源的人手;暴力与恐吓不会被当成异常;地下经济渠道现成 |
+| 4 | 宗教领袖 | 聚众、布道、深夜集会天然不启人疑;信众的绝对信任;教产账目外人难查 |
+| 5 | 教授/学者 | 出入图书馆、档案馆、考古现场理所当然;学术圈的封闭性提供筛选新成员的场域 |
+| 6 | 政治家/官员 | 能调用行政资源、压下调查;体面的公开身份是最强的伪装;人脉能捂住小事 |
+| 7 | 蓝领工人/工头 | 不惹人注意,底层网络反而消息灵通;掌握场地、工具、运输的实际调度权 |
+| 8 | 军官 | 纪律与保密对下属是常态,组织服从性天然高;军械与场地的调用权是稀缺资源 |
+| 9 | 船长/航运业者 | 定期往返偏僻港口不启疑;货舱是运送违禁物与人员的现成掩护;船员流动性大,好招募也好灭口 |
+| 10 | 边缘人(隐士、流浪者、被放逐者) | 没有社会身份可查,官方记录里几乎不存在;居所偏僻,活动不受打扰;唯一的代价是缺少上面九种定位的资源与豁免 |
+
+首领的定位决定了邪教在剧本里"看起来正常"的那一面(呼应
+`reference/craft/cult-design-zh.md` §一);调查员揭穿的往往不是这个身份本身,而是
+这个身份提供的便利被用来做了什么。
+
+
+=== FILE: reference/tables/cult-power-sources.md ===
+
+# cult-power-sources.md — 力量来源
+
+掷 **1D4** 决定邪教声称(或确实)拥有的超自然力量来自哪里。这决定了邪教的"证据长什么
+样"——调查员能找到的物证、目击、以及首领用来维系信徒忠诚的手段都由此而来。与
+`reference/tables/cult-goals.md`(愿望×手段)搭配使用:力量来源解释"他们凭什么相信
+自己能做到",目标解释"他们想做什么"。
+
+| d4 | 来源 | 留下什么证据 |
+|---|---|---|
+| 1 | 神话怪物——邪教与某个具体的 Mythos 生物或存在有直接接触 | 目击者证词、异常的动物行为、尸体或残骸上的反常伤口(交给 `core/07-create-monster.md` 定案具体是什么) |
+| 2 | 造物——依赖某件特定的神器、器具或炼制物 | 造物本身的实物线索(交给 `core/07-create-monster.md` 的「造物」输出)、失窃或交易记录 |
+| 3 | 科技——伪装成或确实是某种超出时代的技术手段 | 图纸、设备、异常的电力/化学品消耗、被解雇或失踪的技术人员 |
+| 4 | 受赐力量——首领或核心成员本身被"赐予"了某种异能(非造物、非怪物,来自直接的神话接触) | 首领本人生理或行为上的渐进变化、旁人眼中"他变了个人"式的证词 |
+
+来源决定了 §四(财源即线索引擎)里"典籍与造物"这一项该怎么落地:1、4 两种来源通常
+更依赖典籍与仪式知识,2、3 两种更依赖实体采购与技术人力,财源记录会因此长得不一样。
 
 
 === FILE: reference/tables/hooks.md ===
@@ -3287,6 +3750,50 @@ Roll once at intake. See `core/01-intake.md` and `core/05-event-clock.md`.
 > Whatever you roll, the Keeper's truth must answer three questions concretely: **what does it
 > want, what is it doing about that this week, and what does an ordinary person notice?**
 > An angle without those three is atmosphere, not a campaign.
+
+
+=== FILE: reference/tables/npc-appearance.md ===
+
+# npc-appearance.md — what they look like
+
+Roll **1d20** for a physical impression and a temperament, whenever an NPC needs a first
+look before dialogue starts. This is the companion to `npc-quirks.md`: **quirks is how they
+perform, this is what a player sees before either of them says a word.** Roll both for anyone
+who gets more than a one-line appearance — a rolled pair beats "middle-aged, tired-looking"
+every time.
+
+See `core/06-create-npc.md`.
+
+| d20 | Appearance + temperament |
+|---|---|
+| 1 | Immaculately dressed for an occasion nobody else is dressed for — and visibly proud of it |
+| 2 | Big hands, a quiet voice; the mismatch makes people underestimate them |
+| 3 | Moves like every joint aches, but never slows down for it |
+| 4 | Eyes that fix on the middle distance even mid-conversation, as if watching for something |
+| 5 | Immaculate hygiene, threadbare clothes — money is going somewhere else |
+| 6 | A face built for smiling that hasn't in a long time |
+| 7 | Dresses a decade out of fashion, deliberately, like a small refusal |
+| 8 | Restless hands that go still and heavy the moment the talk turns serious |
+| 9 | Soft-spoken to strangers, sharp-tongued the instant they're comfortable |
+| 10 | Carries themself like someone twice their size, and mostly gets away with it |
+| 11 | A voice pitched to carry across a room, used even one-on-one |
+| 12 | Flinches at sudden movement, covers it instantly with a joke |
+| 13 | Dressed with military precision even in civilian clothes |
+| 14 | Perpetually a little cold — extra layers, hands tucked away, even indoors |
+| 15 | Warm and solicitous with everyone, and somehow still unreadable |
+| 16 | A scar or old injury they narrate unprompted, in a story that doesn't quite add up |
+| 17 | Dresses to be forgettable, and has clearly practiced doing it |
+| 18 | Laughs easily, a beat too early, before the funny part |
+| 19 | Meticulous about their own appearance, indifferent to their surroundings |
+| 20 | Looks exactly like their occupation says they should — and that itself feels staged |
+
+Want more range than 20 entries? `reference/decks/busybodies-zh.md` (if you have it locally)
+carries a **形象描述** line on each of its 47 cards — a second well of first impressions,
+written at the same one-line scale. Read it for ideas; roll here for the actual result.
+
+> Pair the appearance with the **mannerism** (`npc-quirks.md`) and the **lie**
+> (`core/06-create-npc.md`). Appearance is the first ten seconds; the quirk is how they hold
+> up under a whole scene; the lie is what breaks if the players push.
 
 
 === FILE: reference/tables/npc-quirks.md ===

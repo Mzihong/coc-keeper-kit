@@ -7,6 +7,185 @@
   "usage_rule": "authored by this kit — read and used directly, no citation required",
   "in_bundle": false,
   "generated_by": "scripts/build-reference-index.py — do not edit by hand",
-  "entry_count": 0,
-  "entries": []
+  "entry_count": 7,
+  "entries": [
+    {
+      "file": "cthulhu-cult-history-zh.md",
+      "path": "reference/mythos/cthulhu-cult-history-zh.md",
+      "title": "克苏鲁邪教史 — 可复用历史条目表",
+      "lines": 100,
+      "declared_consumers": [
+        "reference/mythos/cults/<name>.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "core/03-build-world.md",
+          "line": 51,
+          "context": "the throughline is Cthulhu-cult history, `reference/mythos/cthulhu-cult-history-zh.md` has"
+        },
+        {
+          "file": "reference/mythos/cults/church-of-perfect-science.md",
+          "line": 38,
+          "context": "`reference/mythos/cthulhu-cult-history-zh.md` 的\"永生大师线\"——CPS 是永生大师"
+        },
+        {
+          "file": "reference/mythos/cults/louisiana-swamp-cult.md",
+          "line": 20,
+          "context": "`reference/mythos/cthulhu-cult-history-zh.md` 的\"永生大师线\")。慧强以卡斯特罗弑友"
+        },
+        {
+          "file": "reference/mythos/cults/louisiana-swamp-cult.md",
+          "line": 71,
+          "context": "(呼应 `reference/mythos/cthulhu-cult-history-zh.md` 的\"永生大师线\")"
+        },
+        {
+          "file": "reference/mythos/cults/order-of-morpheus.md",
+          "line": 99,
+          "context": "(见 `reference/mythos/cthulhu-cult-history-zh.md` 的\"永生大师线\")"
+        },
+        {
+          "file": "reference/mythos/great-old-ones/cthulhu.md",
+          "line": 43,
+          "context": "只是被外人统称。相关记录见 `reference/mythos/cthulhu-cult-history-zh.md` 的"
+        },
+        {
+          "file": "reference/mythos/great-old-ones/cthulhu.md",
+          "line": 54,
+          "context": "- 历史上记录过的克苏鲁邪教事件 → `reference/mythos/cthulhu-cult-history-zh.md`"
+        }
+      ],
+      "reference_count": 7
+    },
+    {
+      "file": "cults/church-of-perfect-science.md",
+      "path": "reference/mythos/cults/church-of-perfect-science.md",
+      "title": "完美科学教会（Church of Perfect Science, CPS）",
+      "lines": 117,
+      "declared_consumers": [
+        "core/13-create-investigator.md",
+        "reference/craft/cult-design-zh.md",
+        "reference/mythos/cthulhu-cult-history-zh.md",
+        "reference/tables/cult-goals.md",
+        "reference/tables/cult-power-sources.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "reference/mythos/cthulhu-cult-history-zh.md",
+          "line": 25,
+          "context": "| 完美科学教会 | 1952 至今,纽约 | `reference/mythos/cults/church-of-perfect-science.md` |"
+        },
+        {
+          "file": "reference/mythos/cthulhu-cult-history-zh.md",
+          "line": 46,
+          "context": "**现代分支:** `reference/mythos/cults/church-of-perfect-science.md`(完美科学教会)"
+        }
+      ],
+      "reference_count": 2
+    },
+    {
+      "file": "cults/esoteric-order-of-dagon.md",
+      "path": "reference/mythos/cults/esoteric-order-of-dagon.md",
+      "title": "达贡密教团（Esoteric Order of Dagon）",
+      "lines": 104,
+      "declared_consumers": [
+        "core/13-create-investigator.md",
+        "reference/craft/cult-design-zh.md",
+        "reference/tables/cult-goals.md",
+        "reference/tables/cult-power-sources.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "reference/mythos/cthulhu-cult-history-zh.md",
+          "line": 24,
+          "context": "| 达贡密教团 | 1838,印斯茅斯 | `reference/mythos/cults/esoteric-order-of-dagon.md` |"
+        }
+      ],
+      "reference_count": 1
+    },
+    {
+      "file": "cults/louisiana-swamp-cult.md",
+      "path": "reference/mythos/cults/louisiana-swamp-cult.md",
+      "title": "路易斯安那沼泽教派（Louisiana Swamp Cult）",
+      "lines": 95,
+      "declared_consumers": [
+        "core/13-create-investigator.md",
+        "reference/craft/cult-design-zh.md",
+        "reference/mythos/cthulhu-cult-history-zh.md",
+        "reference/tables/cult-power-sources.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "reference/mythos/cthulhu-cult-history-zh.md",
+          "line": 22,
+          "context": "| 路易斯安那沼泽教派 | 1907,路易斯安那 | `reference/mythos/cults/louisiana-swamp-cult.md` |"
+        }
+      ],
+      "reference_count": 1
+    },
+    {
+      "file": "cults/order-of-morpheus.md",
+      "path": "reference/mythos/cults/order-of-morpheus.md",
+      "title": "摩耳甫斯崇高会（Order of Morpheus）",
+      "lines": 101,
+      "declared_consumers": [
+        "core/06-create-npc.md",
+        "core/13-create-investigator.md",
+        "reference/craft/cult-design-zh.md",
+        "reference/mythos/cthulhu-cult-history-zh.md",
+        "reference/tables/cult-goals.md",
+        "reference/tables/cult-power-sources.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "reference/mythos/cthulhu-cult-history-zh.md",
+          "line": 21,
+          "context": "| 摩耳甫斯崇高会 | 1890 年代,伦敦 | `reference/mythos/cults/order-of-morpheus.md` |"
+        }
+      ],
+      "reference_count": 1
+    },
+    {
+      "file": "cults/society-of-the-divine-children.md",
+      "path": "reference/mythos/cults/society-of-the-divine-children.md",
+      "title": "神子社（Society of the Divine Children）",
+      "lines": 103,
+      "declared_consumers": [
+        "reference/craft/cult-design-zh.md",
+        "reference/tables/cult-goals.md",
+        "reference/tables/cult-power-sources.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "reference/mythos/cthulhu-cult-history-zh.md",
+          "line": 23,
+          "context": "| 神子社 | 1919 正式成立,加州 | `reference/mythos/cults/society-of-the-divine-children.md` |"
+        }
+      ],
+      "reference_count": 1
+    },
+    {
+      "file": "great-old-ones/cthulhu.md",
+      "path": "reference/mythos/great-old-ones/cthulhu.md",
+      "title": "Cthulhu（克苏鲁）",
+      "lines": 56,
+      "declared_consumers": [
+        "core/02-rules-reference.md",
+        "reference/craft/cult-design-zh.md",
+        "reference/mythos/cthulhu-cult-history-zh.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "scripts/build-reference-index.py",
+          "line": 166,
+          "context": "\"\"\"Sorted relative paths (posix-style, e.g. 'great-old-ones/cthulhu.md') of every .md"
+        },
+        {
+          "file": "scripts/build-reference-index.py",
+          "line": 181,
+          "context": "relative path (e.g. 'great-old-ones/cthulhu.md'); references also match the bare"
+        }
+      ],
+      "reference_count": 2
+    }
+  ]
 }
