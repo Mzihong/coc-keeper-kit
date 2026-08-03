@@ -60,28 +60,25 @@ dist/bundle.md      构建产物:整个 kit 拼成一份,给没有仓库的 Chat
    **只取结构和数值刻度,不取文字**。规则本体在 `core/00-how-to-run.md` → ground rules。
 7. **归档件不进 bundle**,所以任何 spec 引用它们都要写成可选("if present locally")。
 
-## 当前状态(2026-08-02)
+## 当前状态(2026-08-02,第九轮后)
 
 计划 P1–P9 的权威状态在 `update_plan/README.md` 的状态索引表,**不要在这里读状态**,
 只记几条容易漏的:
 
-- **P4 反派强度预算(人类侧)已完成,内容已落盘。** 生成方法(标准创建规则+标准池公式)、
-  基线(`busybodies-zh.md`)、首领增量(法术型资历表 / 非法术型装备总价)、技能选择 vs
-  数值上限的分工(背景选技能,致命性定数值)全部落在
-  `reference/rules/character-creation.md` §11;`core/02/06/07/11` 已接线。**尚未提交**
-  ——commit hash 待回填进 `update_plan/README.md` 状态表与该计划文件头。
-- **P1 第三章(设计一个克苏鲁邪教方法论)已落盘。** `reference/craft/cult-design-zh.md` +
-  四张骰表(`cult-goals.md`/`cult-leader-positions.md`/`cult-power-sources.md`/
-  `npc-appearance.md`)+ `templates/cult.md` + `core/03/04/06` 接线。同样**尚未提交**。
-- **P1 第四章的两个硬前置(P4、P7)现在都已解除**,可以直接开工——不再是"等谁拍板",
-  纯粹是工作量。接手时注意:第四章的"先过 `core/02` 校验"现在真的有标尺可查了
-  (`character-creation.md` §11),之前那句校验一直是空转的。
+- **P1–P4 当天全部产出均已提交并归档完毕**(commit 列表见下方会话记录第九轮之前各轮,
+  或 `CHANGELOG.md` 2026-08-02 条目头部的完整 commit 列表)。P4 归档于
+  `update_plan/Archived/2026-08-02-antagonist-budget.md`(610dd3b 落盘,66d32d2 补上
+  最后一项 intake 接线)。**不存在"待提交"的当日改动了**——下一个会话不用再找
+  scratchpad 或未提交的工作区改动。
+- **P1 第四章的两个硬前置(P4、P7)现在都已解除**,`core/02` 的数值校验现在真的有标尺可查了
+  (`character-creation.md` §11)。P1 阶段 0-2 已归档,只剩阶段 3 收尾
+  (`update_plan/2026-08-02-cult-doc-wrapup.md`)。
 - **P9 怪物模板的"来源红线"部分有答案** —— 转载规则已改,且
   `reference/sourcebooks/malleus-monstrorum-zh.md` 已可读;剩下要 Keeper 定的是范围。
-- **三份 sourcebook 的手动重译在工作区未提交**(Keeper 于 2026-08-02 完成)。随重译一起
-  提交时要清的账:P7 计划第 5 行的行数(写 13731,现为 5365)、`sourcebooks/index.json`
-  的行数字段、三份文件头部的"转录质量"警示按新文本复核(malleus 开头仍有噪声)、
-  删掉误建的空文件 `reference/sourcebooks/新建 Text Document.txt`(0 字节、非 ASCII 命名)。
+- **三份 sourcebook 的手动重译已随第六轮批量提交落地**(9c47d98);误建的空文件
+  `reference/sourcebooks/新建 Text Document.txt` 已核实不存在(已清理或从未提交)。
+  仍未清的账:P7 计划第 5 行的行数(写 13731,现为 5365)、`sourcebooks/index.json`
+  的行数字段、三份文件头部的"转录质量"警示按新文本复核(malleus 开头仍有噪声)。
 
 `update_plan/README.md` 末尾还有一张**按可动性排序的表**(哪个计划现在能动、卡在等谁),
 接手时先看那张。
@@ -478,3 +475,38 @@ Keeper 直接要求把 P1 拆成"已完成部分归档 + 未完成部分新计�
 只是**主索引不再复述它们**。这条分工只影响"哪份文件装描述",不改变"归档=完结的
 只读记录"这条既有铁律。往后新计划归档时,记得两处都改:移文件 + `Archived/README.md`
 加一行;漏了后者会导致归档文件"查无索引"。
+
+### 2026-08-02 — 第十轮:P4 收尾回填 + changelog/WORKLOG 漂移修正
+
+新会话接手,Keeper 要求"继续执行计划"。核对 `update_plan/README.md` 时发现 P4
+的执行清单其实已经全部做完(最后一项 intake 提问已随 P1 阶段 2 在 66d32d2 接线),
+但状态表、计划文件头、`CHANGELOG.md`、`WORKLOG.md` 四处都还停在"等提交"/"待提交"的
+措辞——git log 显示当天 16 个 commit 早就全部落地(`git status` 干净),这些措辞纯粹是
+**没人回头做完结清单第 7 步"回填 commit"**留下的漂移,同类问题第四轮记录里已经点过名
+(复杂度表/依赖图漂移),这次是同一根因在 changelog/WORKLOG 上的另一处发作。
+
+**做了什么**
+
+1. **P4 走完完结清单并归档**:计划文件头加第八轮回填记录、勾掉最后一项执行清单
+   (标注 commit)、`git mv` 进 `Archived/`,`Archived/README.md` 加一行范围描述,
+   `update_plan/README.md` 状态表行改成指针形式,依赖图 P4 节点文字同步。
+2. **`CHANGELOG.md` 2026-08-02 条目头部的 commit 列表从占位的
+   `(713cd1c, e0d026b, aceddf9, 待提交)` 补全成当天全部 16 个 commit**(用
+   `git log --since/--until` 核实,不是凭记忆列)。
+3. **`WORKLOG.md` 的"当前状态"节整段重写**——原文写的"P4/P1 第三章尚未提交"、
+   "三份 sourcebook 手动重译在工作区未提交"三条,在本轮开始前其实早就是假的(第六轮
+   批量提交时就已清空);顺手核实了同一节提到的误建空文件确实已不存在,不再留
+   悬空提醒。
+
+**为什么这么分**:没有新建一份"回填流程"文档——完结清单第 7 步已经写了这条规则,
+缺的不是规则而是**执行**。真正暴露的问题是:归档/批量提交类的收尾动作(第六轮那种
+"全天积压一次性提交")容易只顾着让 commit 落地,不回头把"待提交"这三个字从文档里
+摘掉。这轮没有加新规则,只是把欠的账还了——如果之后还反复出现,才值得考虑在完结
+清单里加一条强制项。
+
+**留下的判断**
+
+- **P4 是本轮唯一有实质内容变动的计划**;P1/P2/P3 的状态表与归档记录核对后确认
+  commit hash 和措辞都已经是对的,没有需要回填的漂移。
+- **接下来按 `update_plan/README.md` 复杂度排序表第 1 条(P6 玩家卡收尾)继续**——
+  P4 完结后表格没有变化,P6 仍是"现在能动"里最简单的一项。

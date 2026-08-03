@@ -9,7 +9,7 @@
 | P1 | [cult-doc-wrapup](2026-08-02-cult-doc-wrapup.md) | 克苏鲁教团文档整合的阶段 3 收尾(索引登记、review-material 审计、提交)。阶段 0/1/2 与附加项已完成并归档,详情见 [Archived/README.md](Archived/README.md) | 待执行 | 无——纯收尾工作量,无外部依赖 |
 | P2 | [multi-arc-and-branching](Archived/2026-08-02-multi-arc-and-branching.md) | 已归档,详情见 [Archived/README.md](Archived/README.md) | 已完成(e0d026b) | 无 |
 | P3 | [conventions-gaps](Archived/2026-08-02-conventions-gaps.md) | 已归档,详情见 [Archived/README.md](Archived/README.md) | 已完成(e0d026b) | 无 |
-| P4 | [antagonist-budget](2026-08-02-antagonist-budget.md) | 反派强度预算(**仅人类侧**):普通人类模板(取材 busybodies-zh.md,法术型另取材 grand-grimoire-zh.md)+ 增量(法术型走资历法术表 / 非法术型走装备总价)、属性/技能走标准创建规则 + 标准池公式(预算带表已删)、法术数量、NPC SAN、致命性倒推口径 | 进行中(内容已全部落盘到 `character-creation.md` §11 + `core/02/06/07/11` 接线;等提交后回填 commit、走完结清单归档) | 无——九项中 1/2/3/4/5/8/9 已定案并落盘;待讨论 7(阶梯与 type/threat 咬合)已转交 P9,不卡本计划完结 |
+| P4 | [antagonist-budget](Archived/2026-08-02-antagonist-budget.md) | 已归档,详情见 [Archived/README.md](Archived/README.md) | 已完成(610dd3b) | 无 |
 | P5 | [low-cost-maps](2026-08-02-low-cost-maps.md) | 低成本地图:mermaid 关系图 + DSL→SVG 平面图渲染器 + 手绘要点清单 | 阻塞(等 Keeper 定视觉风格与 DSL 范围) | 三个待拍板问题见计划文件;原型尚未落盘 |
 | P6 | [investigator-cards](2026-08-02-investigator-cards.md) | 玩家卡(投资者):JSON 唯一真源 + md 卡面 + `create-investigator` 技能 | 进行中(基线 e0d026b;第二轮「照真实车卡表重建 schema」已交付;剩跨 P1 复用 1 条 + 可选 1 条) | 跨计划条目等 P1 第四章。schema 已按真实车卡表重建并被 `templates/investigator.example.json` 压过(算术已核);重建暴露的新渲染缺口记入 P8 缺陷 4 |
 | P7 | [magic-quickref](2026-08-02-magic-quickref.md) | 魔法速查 `reference/rules/magic.md`:施法通则、tome/spell 数值惯例 | **待执行(阻塞已解除 2026-08-02)** | 转换稿已归档为 `reference/sourcebooks/grand-grimoire-zh.md`(重译后 5366 行);P1 第四章已改为只落盘自身需要的 7 个法术,不再卡它,但完整速查仍待做 |
@@ -34,7 +34,7 @@ graph LR
     P6["P6 玩家卡<br/>(基线✅ schema 重建✅<br/>剩跨计划/可选)"]
     P1a["P1 阶段3收尾<br/>(0-2+附加项已归档)"]
     P2["✅ P2 多章/分支结构"]
-    P4["✅ P4 反派强度预算<br/>(人类侧,已落盘,等提交)"]
+    P4["✅ P4 反派强度预算<br/>(人类侧,已归档 610dd3b)"]
     P8["P8 卡渲染缺口<br/>(定案✅ 全渲染+自校验;待执行)"]
     P9["P9 怪物模板/词条<br/>(待讨论 红线+读法+语义)"]
     KeeperMap["⏳ Keeper 定地图风格/DSL 范围"]
