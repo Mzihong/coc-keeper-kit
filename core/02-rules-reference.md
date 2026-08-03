@@ -14,6 +14,8 @@ before you commit it. **If it contradicts a cheat-sheet, fix the cheat-sheet.**
 - Write any NPC or monster **stat block** → confirm characteristics, HP, Build, Damage Bonus.
 - Set a **skill check difficulty** → pick Regular / Hard / Extreme deliberately.
 - Assign a **Sanity cost** → keep it proportionate to the horror.
+- Build a **human antagonist stronger than an ordinary person** (a cult leader, a gang boss)
+  → read `reference/rules/character-creation.md` §11 before assigning skills or gear.
 
 ## Cheat-sheets (source of truth)
 
@@ -25,6 +27,9 @@ before you commit it. **If it contradicts a cheat-sheet, fix the cheat-sheet.**
   HP = (CON+SIZ)/10; major wounds; manoeuvres.
 - `reference/rules/chases.md` — round structure; Move rates; obstacles & mishaps; ending a
   chase. Read before writing any pursuit or escape scene.
+- `reference/rules/character-creation.md` — attribute rolls, the standard-pool skill-point
+  formula, base skill values; §11 is human antagonist strength (baseline + increment — no
+  separate power-budget table). Read it whenever the antagonist is a person, not a monster.
 
 ## Fast facts (verify against the sheets)
 

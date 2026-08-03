@@ -9,6 +9,12 @@ live through it. In CoC the monster is usually an obstacle to survive, not a bos
   Damage Bonus, HP) and `reference/rules/sanity.md` (X/Y loss). Numbers must be 7e-correct.
 - Decide **type** (human / beast / undead / mythos servitor / independent race / great old
   one) and **threat** (trivial / moderate / deadly / mythic). Threat sets stat scale and SAN.
+- **Human antagonists don't use this spec.** A cultist, a cult leader, or any other human
+  villain is built with `reference/rules/character-creation.md` §11 (baseline + increment),
+  not this spec's type/threat scale. The cross-type ladder for non-human threats
+  (`human < 怪物 < 古神眷族 < 古神`) is still being worked out in
+  `update_plan/2026-08-02-monster-templates-traits.md` (P9) — until that lands, treat this
+  spec's threat four-band as a qualitative guide only, not a numeric one.
 - Use `templates/monster.md`.
 - **Source material, if present locally** (neither is in `dist/bundle.md`, so neither is a
   dependency): `reference/sourcebooks/malleus-monstrorum-zh.md` is the official creature

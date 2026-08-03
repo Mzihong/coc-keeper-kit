@@ -244,3 +244,58 @@ reviewer can check the age and backstory actually honour it.
 - **Occupation points** touched only occupation-list skills, and free-choice slots are named.
 - **No skill over the declared cap**; Cthulhu Mythos is 0 on a pregen.
 - **Umbrella skills** all carry a specialisation.
+
+## 11. Human antagonists — baseline + increment, no separate budget table
+
+kit 里"这个反派该多强"曾经差点长出一套独立的技能点预算带(300–1000)和四组预设属性/
+技能数组。**这条路已被否决**:反派(邪教徒、邪教首领、其他人类反派)走**和调查员完全
+相同的创建流程**(上面 §1–§5)——3D6×5 / (2D6+6)×5 属性、标准池公式
+(`EDU×4 + INT×2 + 200`,或按概念替换成对应属性组合的等价公式)、§5 的 base value 表、
+90% 硬上限。不给反派开小灶,也不从一张数字表里直接抄数。
+
+### 基线:普通人类 = busybodies 卡组
+
+`reference/decks/busybodies-zh.md` 的 47 张已配平数值 NPC 卡就是"普通人类"的数值
+参照——不必另造一张抽象的"均值 50"占位表。造一个非首领级的人类反派(普通成员、
+打手、路人)时,直接照最接近职业的那张卡校准属性与技能刻度,和
+`core/06-create-npc.md` 现有做法一致。
+
+### 首领 = 基线 + 增量,增量按类型二选一
+
+首领(以及其他"明显强于普通人"的人类反派)= 上面的基线创建流程,**再叠加一层
+增量**。增量的形式由首领类型决定,二选一,不混用:
+
+| 类型 | 增量来源 | 增量形式 |
+|---|---|---|
+| **法术型**(施法、通神类首领) | 按资历掷 `1D4+1`(年轻)/ `1D6+1D4+2`(标准)/ `3D6+4`(成熟)/ `4D6+10`(古老)条法术;法术本身的 MP/SAN 成本查 `reference/sourcebooks/grand-grimoire-zh.md`(若本地存在) | 法术数量 + 随之水涨船高的克苏鲁神话技能值 |
+| **非法术型**(帮派头目、雇佣兵、纯世俗势力) | 装备总价定强度,直接对接 `reference/decks/weapons-and-artifacts-zh.md` 的价格栏 | 武器/防具/载具的档次 |
+
+原始文档给出的"技能点预算带 300–1000"表、四组预设属性数组(A 平均/B 高于平均/
+C 强大/D 长者)、五组预设技能点数组(A–E)**整段不落盘、不重建**——它们的历史记录
+留在 [`update_plan/2026-08-02-antagonist-budget.md`](../../update_plan/2026-08-02-antagonist-budget.md),
+本节是唯一落盘的生成方法。
+
+### 技能怎么选,数值怎么定:背景选技能,致命性定数值
+
+首领的技能列表**按故事背景分配**——当过军医的首领有 Medicine / First Aid /
+Firearms,学者首领没有。但同一个技能给多高,**不由背景正推,由致命性倒推**:同样
+是 Firearms,给 45% 还是 85%,取决于这个数值一旦命中调查员会造成什么后果,不是
+"他当过兵所以应该很高"。背景在数值定完后**反向追加解释力**即可(例如"boss 是
+老兵,但身负不可治愈的创伤"),不改变数值本身的来源。这条分工的审计口径见
+`core/11-review.md`。
+
+### 生成时是否强化战斗能力
+
+生成首领(或同级人类反派)时,**默认不强化战斗方面能力**——技能分配走上面"背景
+选技能"的路子就够。是否强化是 Keeper 的开关,但这个开关**不在这里问**:落点是
+intake,一次性问、写进 campaign `CLAUDE.md` 当默认,随
+`update_plan/2026-08-02-cult-doc-integration.md` 阶段 2("敌对势力问题")一起接线。
+
+### 与人数缩放(P3 Scaling)的关系
+
+不给换算公式。人数低于基准时优先降**数量**;数量已经降到 1 还嫌重,才去动**单体
+强度**——这是判断口径,不是公式。上面"是否强化战斗"那个开关就是这条口径在生成
+时的落点。
+
+来源:kit 原创综合,定案过程见 `update_plan/2026-08-02-antagonist-budget.md`
+(非规则书转录,原始素材已按上面的说明弃用)。

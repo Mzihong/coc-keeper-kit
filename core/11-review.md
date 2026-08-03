@@ -55,6 +55,12 @@ model's output. Assume the material is wrong until each line checks out.
 
 - [ ] Stat blocks internally consistent: HP = (CON+SIZ)/10, Dodge = ½ DEX, Build and Damage
       Bonus derived from STR+SIZ. **Recompute them; don't eyeball.**
+- [ ] **Human antagonists: skill height is lethality-derived, not background-derived.**
+      Background picks *which* skills a villain has; it never justifies *how high* one goes.
+      If a skill value would land a single successful roll as an unrecoverable outcome on an
+      investigator, that's the ceiling regardless of the character's backstory
+      (`reference/rules/character-creation.md` §11). Cross-check against the campaign
+      `CLAUDE.md`'s declared **lethality** field.
 - [ ] Difficulties (Regular/Hard/Extreme) are set deliberately and only where failure is
       interesting.
 - [ ] Sanity costs are proportionate to the horror, not to the gore.

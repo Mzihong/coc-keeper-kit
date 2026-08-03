@@ -25,6 +25,11 @@ fill in the pieces.
 5. **The clue map (three-clue rule).** For **every** fact the players *must* realise, provide
    **three independent** clues from different sources. If any one is missed or a roll fails,
    two remain. Lay this out as a table — it's the anti-stall guarantee.
+   - **When the threat is a cult**, `reference/craft/cult-design-zh.md` §四 gives six ready-made
+     independent sources — property, tomes & artefacts, illicit supply, legal/business front,
+     bribery, security — each ending in "who pays, who sees, what trace it leaves." Three
+     clues for a cult-related fact usually come from three different funding lines, not three
+     variations on the same one.
 6. **The scenes as a web.** Key each node by *purpose* (clue / choice / shock / breather).
    Most scenes should be reachable in more than one order — avoid a single required sequence.
    If a scene is a pursuit or an escape, read `reference/rules/chases.md` before writing it.

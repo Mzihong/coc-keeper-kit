@@ -38,7 +38,22 @@ their tensions; a short timeline of what led here; the Mythos undercurrent.
 For a **faction**: goal, structure, membership, iconography, methods, and the ordinary face
 vs the true agenda.
 
-For a **timeline**: dated beats (public record vs the hidden truth) leading to the present.
+**Cult sub-path.** When the faction is a cult, don't just point at the craft note — walk its
+build order. Read `reference/craft/cult-design-zh.md` §一–§三 first (why a cult works as a
+villain, what makes a *Cthulhu* cult specific, then the ordered build: concept → leader →
+goal → structure → membership → induction → funding → Mythos-exposure tiers → weaknesses →
+enemies → relationship diagram). Roll `reference/tables/cult-goals.md` (want × means) and
+`reference/tables/cult-leader-positions.md` (the leader's social front) rather than inventing
+either. Use `templates/cult.md`, which mirrors this same faction structure with the cult
+build order folded in. `reference/mythos/cults/` also has five fully-worked cult dossiers
+(same shape as this template) — reskin one directly (era/place/name) rather than building
+from zero when one fits the campaign's needs.
+
+For a **timeline**: dated beats (public record vs the hidden truth) leading to the present. If
+the throughline is Cthulhu-cult history, `reference/mythos/cthulhu-cult-history-zh.md` has
+27 reusable historical beats (plus an "immortal masters" throughline spanning three of them) —
+pull dated entries from there rather than inventing a history from nothing, and reframe/relocate
+freely to fit the campaign's era and place.
 
 ## Output
 

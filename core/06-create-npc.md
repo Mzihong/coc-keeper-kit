@@ -34,8 +34,12 @@ tell — mechanically correct for 7e.
 - **The lie they tell.** What do they say when asked directly? Every NPC with a secret needs
   a prepared cover story, or the Keeper has to invent one mid-scene.
 
-Roll `reference/tables/npc-quirks.md` for at least the mannerism. A rolled tic beats the
-model's default "nervous, wrings hands."
+Roll `reference/tables/npc-quirks.md` for at least the mannerism, and
+`reference/tables/npc-appearance.md` for the first physical impression. A rolled tic beats
+the model's default "nervous, wrings hands," and a rolled appearance beats "middle-aged,
+tired-looking." For a cult leader specifically, `reference/tables/cult-leader-positions.md`
+rolls their social front and what access it buys — read
+`reference/rules/character-creation.md` §11 for how strong to make them.
 
 For the **secret**, the busybodies deck is the length calibration: every one of its 47 cards
 carries exactly one, in one or two sentences, and each is a *lever* — a debt, a lie already
@@ -56,6 +60,11 @@ backstory, and backstory doesn't survive contact with a table.
 - Villains/cultists: consider Cthulhu Mythos %, spells (cross-link `reference/mythos/`), and
   the SAN implications of what they've done. For actual spell numbers,
   `reference/sourcebooks/grand-grimoire-zh.md` is the official grimoire, if you have it locally.
+- **A cult leader or other human antagonist meant to be stronger than an ordinary person**
+  is not a separate power tier — it's `reference/rules/character-creation.md` §11: the same
+  baseline (busybodies deck) plus one increment (spell count for a spellcaster, gear price
+  for a non-spellcaster). Skill *choice* comes from backstory; skill *height* is
+  lethality-derived — see §11 for the split and `core/11-review.md` for the audit question.
 - Arming someone: `reference/decks/weapons-and-artifacts-zh.md` gives skill, base chance,
   damage, range, malfunction, and era availability per weapon — the deck is built to pair with
   the busybodies cards for exactly this.
