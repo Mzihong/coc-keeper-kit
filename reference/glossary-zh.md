@@ -289,6 +289,8 @@ Rules:
 | Dunwich | 敦威治 |
 | Kingsport | 金斯波特 |
 | R'lyeh | 拉莱耶 |
+| Hydra (Mother Hydra) | 海德拉(母神海德拉) |
+| Immortal Master | 永生大师 |
 
 ### 神话生物（大译名表，扩充）
 
@@ -320,6 +322,13 @@ Rules:
 | Star-Spawn of Cthulhu | 克苏鲁的星之眷族 |
 | Star Vampire | 星之精 |
 | Tcho-Tcho | 乔乔人 |
+| Black Wing | 黑翼者 |
+| Fellrock | 费尔罗克 |
+| Scarlet Orb | 猩红者 |
+| Vermisyn Worm | 弗米森蠕虫 |
+| Sedecim | 塞德西姆 |
+| Thrall of Cthulhu | 克苏鲁之隶 |
+| Cthulhu-Blessed | 克苏鲁受祝者 |
 
 ### 旧日支配者与外神（大译名表，扩充）
 

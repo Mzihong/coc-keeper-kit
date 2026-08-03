@@ -75,10 +75,18 @@
       "role": "reusable monsters and Mythos entities, portable across campaigns",
       "kind": "kit-original-content",
       "in_bundle": false,
-      "entry_count": 1,
+      "entry_count": 9,
       "index": "reference/bestiary/index.json",
       "files": [
-        "reference/bestiary/the-bell-keeper.md"
+        "reference/bestiary/black-wing.md",
+        "reference/bestiary/cthulhu-blessed.md",
+        "reference/bestiary/deep-one-hybrid.md",
+        "reference/bestiary/fellrock.md",
+        "reference/bestiary/scarlet-orb.md",
+        "reference/bestiary/sedecim.md",
+        "reference/bestiary/the-bell-keeper.md",
+        "reference/bestiary/thrall-of-cthulhu.md",
+        "reference/bestiary/vermisyn-worm.md"
       ]
     },
     {
@@ -86,16 +94,24 @@
       "role": "Great Old Ones, tomes, spells, cults, and factions — slow-growing shared lore",
       "kind": "kit-original-content",
       "in_bundle": false,
-      "entry_count": 7,
+      "entry_count": 15,
       "index": "reference/mythos/index.json",
       "files": [
+        "reference/mythos/artifacts-zh.md",
         "reference/mythos/cthulhu-cult-history-zh.md",
         "reference/mythos/cults/church-of-perfect-science.md",
         "reference/mythos/cults/esoteric-order-of-dagon.md",
         "reference/mythos/cults/louisiana-swamp-cult.md",
         "reference/mythos/cults/order-of-morpheus.md",
         "reference/mythos/cults/society-of-the-divine-children.md",
-        "reference/mythos/great-old-ones/cthulhu.md"
+        "reference/mythos/great-old-ones/cthulhu.md",
+        "reference/mythos/spells/black-wing-call.md",
+        "reference/mythos/spells/call-father-dagon-and-mother-hydra.md",
+        "reference/mythos/spells/fellrock-call-bind.md",
+        "reference/mythos/spells/oil-of-silence.md",
+        "reference/mythos/spells/rapture.md",
+        "reference/mythos/spells/scarlet-orb-call.md",
+        "reference/mythos/spells/vermisyn-worm-call-bind.md"
       ]
     },
     {
@@ -103,13 +119,14 @@
       "role": "roll tables for prep and live improv, including the four seed tables",
       "kind": "kit-original-content",
       "in_bundle": true,
-      "entry_count": 10,
+      "entry_count": 11,
       "index": "reference/tables/index.json",
       "files": [
         "reference/tables/complications.md",
         "reference/tables/cult-goals.md",
         "reference/tables/cult-leader-positions.md",
         "reference/tables/cult-power-sources.md",
+        "reference/tables/cultist-archetypes.md",
         "reference/tables/hooks.md",
         "reference/tables/locations.md",
         "reference/tables/madness.md",
@@ -168,7 +185,7 @@
         "referenced_by": [
           "CHANGELOG.md:64",
           "WORKLOG.md:259",
-          "core/06-create-npc.md:68",
+          "core/06-create-npc.md:73",
           "core/13-create-investigator.md:26",
           "reference/decks/README.md:18",
           "reference/rules/character-creation.md:271",
@@ -186,14 +203,15 @@
           "CHANGELOG.md:64",
           "WORKLOG.md:184",
           "WORKLOG.md:259",
-          "core/06-create-npc.md:62",
+          "core/06-create-npc.md:67",
           "core/07-create-monster.md:22",
           "reference/mythos/README.md:16",
           "reference/rules/character-creation.md:270",
+          "reference/tables/cultist-archetypes.md:266",
           "update_plan/2026-08-02-antagonist-budget.md:289",
           "update_plan/2026-08-02-magic-quickref.md:5",
-          "update_plan/2026-08-02-magic-quickref.md:26",
-          "update_plan/2026-08-02-magic-quickref.md:31",
+          "update_plan/2026-08-02-magic-quickref.md:27",
+          "update_plan/2026-08-02-magic-quickref.md:32",
           "update_plan/README.md:12",
           "update_plan/README.md:15"
         ]
@@ -204,6 +222,9 @@
         "referenced_by": [
           "CHANGELOG.md:56",
           "core/02-rules-reference.md:7",
+          "reference/mythos/artifacts-zh.md:18",
+          "reference/mythos/spells/call-father-dagon-and-mother-hydra.md:4",
+          "reference/tables/cultist-archetypes.md:265",
           "update_plan/2026-08-02-investigator-cards.md:95",
           "update_plan/2026-08-02-investigator-cards.md:99"
         ]
@@ -216,6 +237,7 @@
           "WORKLOG.md:80",
           "core/07-create-monster.md:20",
           "core/14-archive-reference.md:48",
+          "reference/bestiary/deep-one-hybrid.md:60",
           "reference/bestiary/README.md:6",
           "update_plan/2026-08-02-antagonist-budget.md:248",
           "update_plan/README.md:17"
@@ -237,7 +259,7 @@
           "core/02-rules-reference.md:18",
           "core/02-rules-reference.md:30",
           "core/06-create-npc.md:42",
-          "core/06-create-npc.md:64",
+          "core/06-create-npc.md:69",
           "core/07-create-monster.md:13",
           "core/11-review.md:62",
           "core/13-create-investigator.md:9",
@@ -246,6 +268,8 @@
           "templates/investigator.schema.json:99",
           "templates/investigator.schema.json:194",
           "reference/tables/cult-leader-positions.md:5",
+          "reference/tables/cultist-archetypes.md:11",
+          "reference/tables/cultist-archetypes.md:185",
           "update_plan/2026-08-02-antagonist-budget.md:11",
           "update_plan/2026-08-02-antagonist-budget.md:114",
           "update_plan/2026-08-02-antagonist-budget.md:115",
@@ -261,16 +285,17 @@
           "update_plan/2026-08-02-antagonist-budget.md:366",
           "update_plan/2026-08-02-antagonist-budget.md:387",
           "update_plan/2026-08-02-antagonist-budget.md:393",
-          "update_plan/2026-08-02-cult-doc-integration.md:7",
-          "update_plan/2026-08-02-cult-doc-integration.md:137",
-          "update_plan/2026-08-02-cult-doc-integration.md:162",
-          "update_plan/2026-08-02-cult-doc-integration.md:165",
+          "update_plan/2026-08-02-cult-doc-integration.md:145",
+          "update_plan/2026-08-02-cult-doc-integration.md:170",
+          "update_plan/2026-08-02-cult-doc-integration.md:173",
+          "update_plan/2026-08-02-cult-doc-integration.md:199",
           "update_plan/2026-08-02-investigator-cards.md:22",
           "update_plan/2026-08-02-investigator-cards.md:47",
           "update_plan/2026-08-02-investigator-cards.md:61",
           "update_plan/2026-08-02-investigator-cards.md:90",
           "update_plan/2026-08-02-investigator-cards.md:100",
-          "update_plan/README.md:12"
+          "update_plan/README.md:12",
+          "update_plan/README.md:71"
         ]
       },
       "reference/rules/chases.md": {
@@ -305,6 +330,7 @@
           "core/07-create-monster.md:9",
           "core/12-canon-update.md:57",
           "templates/scenario.md:44",
+          "reference/mythos/artifacts-zh.md:67",
           "update_plan/2026-08-02-antagonist-budget.md:114",
           "update_plan/Archived/2026-08-02-conventions-gaps.md:42",
           ".claude/skills-eval-workspace/benchmark.json:154"
@@ -331,6 +357,8 @@
           "core/04-design-scenario.md:28",
           "reference/README.md:19",
           "reference/craft/README.md:15",
+          "reference/mythos/artifacts-zh.md:4",
+          "reference/mythos/artifacts-zh.md:46",
           "reference/mythos/cults/church-of-perfect-science.md:4",
           "reference/mythos/cults/esoteric-order-of-dagon.md:4",
           "reference/mythos/cults/louisiana-swamp-cult.md:4",
@@ -341,10 +369,12 @@
           "reference/tables/cult-goals.md:6",
           "reference/tables/cult-goals.md:41",
           "reference/tables/cult-leader-positions.md:22",
+          "reference/tables/cultist-archetypes.md:9",
+          "reference/tables/cultist-archetypes.md:184",
           "reference/tables/README.md:27",
-          "update_plan/2026-08-02-cult-doc-integration.md:100",
-          "update_plan/2026-08-02-cult-doc-integration.md:198",
-          "update_plan/2026-08-02-cult-doc-integration.md:227"
+          "update_plan/2026-08-02-cult-doc-integration.md:108",
+          "update_plan/2026-08-02-cult-doc-integration.md:219",
+          "update_plan/2026-08-02-cult-doc-integration.md:248"
         ]
       },
       "reference/craft/lovecraft-zh.md": {
@@ -364,9 +394,51 @@
           "reference/craft/README.md:14",
           "reference/craft/README.md:27",
           "scripts/build-reference-index.py:296",
-          "update_plan/2026-08-02-cult-doc-integration.md:101",
-          "update_plan/2026-08-02-cult-doc-integration.md:240",
+          "update_plan/2026-08-02-cult-doc-integration.md:109",
+          "update_plan/2026-08-02-cult-doc-integration.md:261",
           ".claude/skills/description/SKILL.md:12"
+        ]
+      },
+      "reference/bestiary/black-wing.md": {
+        "title": "Black Wing (黑翼者)",
+        "rights_holder": null,
+        "referenced_by": [
+          "reference/mythos/spells/black-wing-call.md:11"
+        ]
+      },
+      "reference/bestiary/cthulhu-blessed.md": {
+        "title": "Cthulhu-Blessed (克苏鲁受祝者)",
+        "rights_holder": null,
+        "referenced_by": []
+      },
+      "reference/bestiary/deep-one-hybrid.md": {
+        "title": "Deep One Hybrid (混种深潜者)",
+        "rights_holder": null,
+        "referenced_by": [
+          "reference/bestiary/cthulhu-blessed.md:51"
+        ]
+      },
+      "reference/bestiary/fellrock.md": {
+        "title": "Fellrock (费尔罗克)",
+        "rights_holder": null,
+        "referenced_by": [
+          "reference/mythos/spells/fellrock-call-bind.md:11",
+          "reference/mythos/spells/oil-of-silence.md:10"
+        ]
+      },
+      "reference/bestiary/scarlet-orb.md": {
+        "title": "Scarlet Orb (猩红者)",
+        "rights_holder": null,
+        "referenced_by": [
+          "reference/mythos/spells/scarlet-orb-call.md:11"
+        ]
+      },
+      "reference/bestiary/sedecim.md": {
+        "title": "Sedecim (塞德西姆, \"the Five\")",
+        "rights_holder": null,
+        "referenced_by": [
+          "reference/mythos/artifacts-zh.md:78",
+          "reference/mythos/artifacts-zh.md:98"
         ]
       },
       "reference/bestiary/the-bell-keeper.md": {
@@ -376,23 +448,61 @@
           "update_plan/2026-08-02-monster-templates-traits.md:36"
         ]
       },
+      "reference/bestiary/thrall-of-cthulhu.md": {
+        "title": "Thrall of Cthulhu (克苏鲁之隶)",
+        "rights_holder": null,
+        "referenced_by": []
+      },
+      "reference/bestiary/vermisyn-worm.md": {
+        "title": "Vermisyn Worm (弗米森蠕虫)",
+        "rights_holder": null,
+        "referenced_by": [
+          "reference/mythos/spells/vermisyn-worm-call-bind.md:11"
+        ]
+      },
+      "reference/mythos/artifacts-zh.md": {
+        "title": "造物与神器 — 速查",
+        "rights_holder": null,
+        "referenced_by": [
+          "CHANGELOG.md:64",
+          "WORKLOG.md:259",
+          "core/06-create-npc.md:73",
+          "core/13-create-investigator.md:26",
+          "reference/bestiary/fellrock.md:53",
+          "reference/bestiary/sedecim.md:38",
+          "reference/bestiary/sedecim.md:52",
+          "reference/decks/README.md:18",
+          "reference/rules/character-creation.md:271",
+          "update_plan/2026-08-02-antagonist-budget.md:95",
+          "update_plan/2026-08-02-antagonist-budget.md:279",
+          "update_plan/2026-08-02-antagonist-budget.md:281",
+          "update_plan/2026-08-02-cult-doc-integration.md:193"
+        ]
+      },
       "reference/mythos/cthulhu-cult-history-zh.md": {
         "title": "克苏鲁邪教史 — 可复用历史条目表",
         "rights_holder": null,
         "referenced_by": [
-          "core/03-build-world.md:51",
+          "CHANGELOG.md:69",
+          "WORKLOG.md:320",
+          "core/03-build-world.md:53",
+          "reference/bestiary/black-wing.md:68",
           "reference/mythos/cults/church-of-perfect-science.md:38",
           "reference/mythos/cults/louisiana-swamp-cult.md:20",
           "reference/mythos/cults/louisiana-swamp-cult.md:71",
           "reference/mythos/cults/order-of-morpheus.md:99",
           "reference/mythos/great-old-ones/cthulhu.md:43",
-          "reference/mythos/great-old-ones/cthulhu.md:54"
+          "reference/mythos/great-old-ones/cthulhu.md:54",
+          "reference/tables/cultist-archetypes.md:235",
+          "update_plan/2026-08-02-cult-doc-integration.md:88"
         ]
       },
       "reference/mythos/cults/church-of-perfect-science.md": {
         "title": "完美科学教会（Church of Perfect Science, CPS）",
         "rights_holder": null,
         "referenced_by": [
+          "reference/bestiary/sedecim.md:75",
+          "reference/mythos/artifacts-zh.md:62",
           "reference/mythos/cthulhu-cult-history-zh.md:25",
           "reference/mythos/cthulhu-cult-history-zh.md:46"
         ]
@@ -401,14 +511,21 @@
         "title": "达贡密教团（Esoteric Order of Dagon）",
         "rights_holder": null,
         "referenced_by": [
-          "reference/mythos/cthulhu-cult-history-zh.md:24"
+          "reference/bestiary/cthulhu-blessed.md:52",
+          "reference/bestiary/deep-one-hybrid.md:53",
+          "reference/mythos/cthulhu-cult-history-zh.md:24",
+          "reference/mythos/spells/call-father-dagon-and-mother-hydra.md:22"
         ]
       },
       "reference/mythos/cults/louisiana-swamp-cult.md": {
         "title": "路易斯安那沼泽教派（Louisiana Swamp Cult）",
         "rights_holder": null,
         "referenced_by": [
-          "reference/mythos/cthulhu-cult-history-zh.md:22"
+          "reference/bestiary/black-wing.md:70",
+          "reference/mythos/artifacts-zh.md:88",
+          "reference/mythos/cthulhu-cult-history-zh.md:22",
+          "reference/mythos/spells/black-wing-call.md:28",
+          "reference/tables/cultist-archetypes.md:294"
         ]
       },
       "reference/mythos/cults/order-of-morpheus.md": {
@@ -422,15 +539,69 @@
         "title": "神子社（Society of the Divine Children）",
         "rights_holder": null,
         "referenced_by": [
-          "reference/mythos/cthulhu-cult-history-zh.md:23"
+          "reference/bestiary/fellrock.md:73",
+          "reference/bestiary/scarlet-orb.md:72",
+          "reference/mythos/cthulhu-cult-history-zh.md:23",
+          "reference/mythos/spells/fellrock-call-bind.md:32",
+          "reference/mythos/spells/oil-of-silence.md:25",
+          "reference/mythos/spells/scarlet-orb-call.md:25"
         ]
       },
       "reference/mythos/great-old-ones/cthulhu.md": {
         "title": "Cthulhu（克苏鲁）",
         "rights_holder": null,
         "referenced_by": [
+          "CHANGELOG.md:67",
+          "WORKLOG.md:319",
+          "WORKLOG.md:332",
           "scripts/build-reference-index.py:166",
-          "scripts/build-reference-index.py:181"
+          "scripts/build-reference-index.py:181",
+          "update_plan/2026-08-02-cult-doc-integration.md:87"
+        ]
+      },
+      "reference/mythos/spells/black-wing-call.md": {
+        "title": "Call Black Wing (黑翼者召唤术)",
+        "rights_holder": null,
+        "referenced_by": [
+          "reference/bestiary/black-wing.md:56"
+        ]
+      },
+      "reference/mythos/spells/call-father-dagon-and-mother-hydra.md": {
+        "title": "Call Father Dagon and Mother Hydra (请神术:父神达贡和母神海德拉)",
+        "rights_holder": null,
+        "referenced_by": []
+      },
+      "reference/mythos/spells/fellrock-call-bind.md": {
+        "title": "Call/Bind Fellrock (费尔罗克召唤/束缚术)",
+        "rights_holder": null,
+        "referenced_by": [
+          "reference/bestiary/fellrock.md:76"
+        ]
+      },
+      "reference/mythos/spells/oil-of-silence.md": {
+        "title": "Oil of Silence (沉默之油)",
+        "rights_holder": null,
+        "referenced_by": [
+          "reference/mythos/spells/fellrock-call-bind.md:17"
+        ]
+      },
+      "reference/mythos/spells/rapture.md": {
+        "title": "Rapture (狂喜术)",
+        "rights_holder": null,
+        "referenced_by": []
+      },
+      "reference/mythos/spells/scarlet-orb-call.md": {
+        "title": "Call Scarlet Orb (猩红者召唤/束缚术)",
+        "rights_holder": null,
+        "referenced_by": [
+          "reference/bestiary/scarlet-orb.md:66"
+        ]
+      },
+      "reference/mythos/spells/vermisyn-worm-call-bind.md": {
+        "title": "Call/Bind Vermisyn Worm (弗米森蠕虫召唤/束缚术)",
+        "rights_holder": null,
+        "referenced_by": [
+          "reference/bestiary/vermisyn-worm.md:69"
         ]
       },
       "reference/tables/complications.md": {
@@ -468,10 +639,10 @@
           "reference/mythos/cults/society-of-the-divine-children.md:18",
           "reference/tables/cult-power-sources.md:5",
           "reference/tables/README.md:26",
-          "update_plan/2026-08-02-cult-doc-integration.md:122",
-          "update_plan/2026-08-02-cult-doc-integration.md:156",
-          "update_plan/2026-08-02-cult-doc-integration.md:199",
-          "update_plan/2026-08-02-cult-doc-integration.md:228"
+          "update_plan/2026-08-02-cult-doc-integration.md:130",
+          "update_plan/2026-08-02-cult-doc-integration.md:164",
+          "update_plan/2026-08-02-cult-doc-integration.md:220",
+          "update_plan/2026-08-02-cult-doc-integration.md:249"
         ]
       },
       "reference/tables/cult-leader-positions.md": {
@@ -486,10 +657,10 @@
           "core/06-create-npc.md:40",
           "templates/cult.md:11",
           "reference/tables/README.md:28",
-          "update_plan/2026-08-02-cult-doc-integration.md:124",
-          "update_plan/2026-08-02-cult-doc-integration.md:156",
-          "update_plan/2026-08-02-cult-doc-integration.md:161",
-          "update_plan/2026-08-02-cult-doc-integration.md:228"
+          "update_plan/2026-08-02-cult-doc-integration.md:132",
+          "update_plan/2026-08-02-cult-doc-integration.md:164",
+          "update_plan/2026-08-02-cult-doc-integration.md:169",
+          "update_plan/2026-08-02-cult-doc-integration.md:249"
         ]
       },
       "reference/tables/cult-power-sources.md": {
@@ -506,8 +677,18 @@
           "reference/mythos/cults/order-of-morpheus.md:12",
           "reference/mythos/cults/society-of-the-divine-children.md:15",
           "reference/tables/README.md:29",
-          "update_plan/2026-08-02-cult-doc-integration.md:127",
-          "update_plan/2026-08-02-cult-doc-integration.md:229"
+          "update_plan/2026-08-02-cult-doc-integration.md:135",
+          "update_plan/2026-08-02-cult-doc-integration.md:250"
+        ]
+      },
+      "reference/tables/cultist-archetypes.md": {
+        "title": "cultist-archetypes.md — 邪教徒范型速查",
+        "rights_holder": null,
+        "referenced_by": [
+          "core/06-create-npc.md:44",
+          "reference/mythos/spells/call-father-dagon-and-mother-hydra.md:23",
+          "update_plan/2026-08-02-cult-doc-integration.md:183",
+          "update_plan/2026-08-02-cult-doc-integration.md:250"
         ]
       },
       "reference/tables/hooks.md": {
@@ -558,7 +739,7 @@
           "campaigns/beidaihe-winter/CLAUDE.md:73",
           "campaigns/beidaihe-winter/references.md:27",
           "campaigns/_template-campaign/CLAUDE.md:66",
-          "update_plan/2026-08-02-cult-doc-integration.md:195",
+          "update_plan/2026-08-02-cult-doc-integration.md:216",
           ".claude/skills-eval-workspace/benchmark.json:59"
         ]
       },
@@ -572,8 +753,8 @@
           "WORKLOG.md:278",
           "core/06-create-npc.md:38",
           "reference/tables/README.md:24",
-          "update_plan/2026-08-02-cult-doc-integration.md:130",
-          "update_plan/2026-08-02-cult-doc-integration.md:160"
+          "update_plan/2026-08-02-cult-doc-integration.md:138",
+          "update_plan/2026-08-02-cult-doc-integration.md:168"
         ]
       },
       "reference/tables/npc-quirks.md": {
@@ -590,7 +771,7 @@
           "reference/tables/README.md:25",
           "campaigns/beidaihe-winter/npcs/li-shuchun.md:19",
           "campaigns/beidaihe-winter/npcs/mrs-fee.md:19",
-          "update_plan/2026-08-02-cult-doc-integration.md:131"
+          "update_plan/2026-08-02-cult-doc-integration.md:139"
         ]
       }
     },
@@ -610,6 +791,9 @@
         "reference/craft/lovecraft-zh.md",
         "reference/decks/busybodies-zh.md",
         "reference/decks/weapons-and-artifacts-zh.md",
+        "reference/mythos/artifacts-zh.md",
+        "reference/mythos/cthulhu-cult-history-zh.md",
+        "reference/mythos/great-old-ones/cthulhu.md",
         "reference/rules/character-creation.md",
         "reference/rules/chases.md",
         "reference/rules/sanity.md",
@@ -627,6 +811,9 @@
         "reference/craft/lovecraft-zh.md",
         "reference/decks/busybodies-zh.md",
         "reference/decks/weapons-and-artifacts-zh.md",
+        "reference/mythos/artifacts-zh.md",
+        "reference/mythos/cthulhu-cult-history-zh.md",
+        "reference/mythos/great-old-ones/cthulhu.md",
         "reference/rules/character-creation.md",
         "reference/sourcebooks/grand-grimoire-zh.md",
         "reference/sourcebooks/malleus-monstrorum-zh.md",
@@ -693,9 +880,11 @@
       "core/06-create-npc.md": [
         "reference/decks/busybodies-zh.md",
         "reference/decks/weapons-and-artifacts-zh.md",
+        "reference/mythos/artifacts-zh.md",
         "reference/rules/character-creation.md",
         "reference/sourcebooks/grand-grimoire-zh.md",
         "reference/tables/cult-leader-positions.md",
+        "reference/tables/cultist-archetypes.md",
         "reference/tables/npc-appearance.md",
         "reference/tables/npc-quirks.md"
       ],
@@ -720,6 +909,7 @@
         "reference/decks/busybodies-zh.md",
         "reference/decks/phobias-and-manias-zh.md",
         "reference/decks/weapons-and-artifacts-zh.md",
+        "reference/mythos/artifacts-zh.md",
         "reference/rules/character-creation.md"
       ],
       "core/14-archive-reference.md": [
@@ -733,6 +923,35 @@
       "reference/bestiary/README.md": [
         "reference/sourcebooks/malleus-monstrorum-zh.md"
       ],
+      "reference/bestiary/black-wing.md": [
+        "reference/mythos/cthulhu-cult-history-zh.md",
+        "reference/mythos/cults/louisiana-swamp-cult.md",
+        "reference/mythos/spells/black-wing-call.md"
+      ],
+      "reference/bestiary/cthulhu-blessed.md": [
+        "reference/bestiary/deep-one-hybrid.md",
+        "reference/mythos/cults/esoteric-order-of-dagon.md"
+      ],
+      "reference/bestiary/deep-one-hybrid.md": [
+        "reference/mythos/cults/esoteric-order-of-dagon.md",
+        "reference/sourcebooks/malleus-monstrorum-zh.md"
+      ],
+      "reference/bestiary/fellrock.md": [
+        "reference/mythos/artifacts-zh.md",
+        "reference/mythos/cults/society-of-the-divine-children.md",
+        "reference/mythos/spells/fellrock-call-bind.md"
+      ],
+      "reference/bestiary/scarlet-orb.md": [
+        "reference/mythos/cults/society-of-the-divine-children.md",
+        "reference/mythos/spells/scarlet-orb-call.md"
+      ],
+      "reference/bestiary/sedecim.md": [
+        "reference/mythos/artifacts-zh.md",
+        "reference/mythos/cults/church-of-perfect-science.md"
+      ],
+      "reference/bestiary/vermisyn-worm.md": [
+        "reference/mythos/spells/vermisyn-worm-call-bind.md"
+      ],
       "reference/craft/README.md": [
         "reference/craft/cult-design-zh.md",
         "reference/craft/lovecraft-zh.md"
@@ -745,6 +964,7 @@
         "reference/decks/miseries-zh.md",
         "reference/decks/phobias-and-manias-zh.md",
         "reference/decks/weapons-and-artifacts-zh.md",
+        "reference/mythos/artifacts-zh.md",
         "reference/tables/complications.md",
         "reference/tables/npc-quirks.md"
       ],
@@ -759,6 +979,14 @@
       ],
       "reference/mythos/README.md": [
         "reference/sourcebooks/grand-grimoire-zh.md"
+      ],
+      "reference/mythos/artifacts-zh.md": [
+        "reference/bestiary/sedecim.md",
+        "reference/craft/cult-design-zh.md",
+        "reference/mythos/cults/church-of-perfect-science.md",
+        "reference/mythos/cults/louisiana-swamp-cult.md",
+        "reference/rules/sanity.md",
+        "reference/sourcebooks/keeper-rulebook-7e-zh.md"
       ],
       "reference/mythos/cthulhu-cult-history-zh.md": [
         "reference/mythos/cults/church-of-perfect-science.md",
@@ -798,9 +1026,35 @@
         "reference/craft/cult-design-zh.md",
         "reference/mythos/cthulhu-cult-history-zh.md"
       ],
+      "reference/mythos/spells/black-wing-call.md": [
+        "reference/bestiary/black-wing.md",
+        "reference/mythos/cults/louisiana-swamp-cult.md"
+      ],
+      "reference/mythos/spells/call-father-dagon-and-mother-hydra.md": [
+        "reference/mythos/cults/esoteric-order-of-dagon.md",
+        "reference/sourcebooks/keeper-rulebook-7e-zh.md",
+        "reference/tables/cultist-archetypes.md"
+      ],
+      "reference/mythos/spells/fellrock-call-bind.md": [
+        "reference/bestiary/fellrock.md",
+        "reference/mythos/cults/society-of-the-divine-children.md",
+        "reference/mythos/spells/oil-of-silence.md"
+      ],
+      "reference/mythos/spells/oil-of-silence.md": [
+        "reference/bestiary/fellrock.md",
+        "reference/mythos/cults/society-of-the-divine-children.md"
+      ],
+      "reference/mythos/spells/scarlet-orb-call.md": [
+        "reference/bestiary/scarlet-orb.md",
+        "reference/mythos/cults/society-of-the-divine-children.md"
+      ],
+      "reference/mythos/spells/vermisyn-worm-call-bind.md": [
+        "reference/bestiary/vermisyn-worm.md"
+      ],
       "reference/rules/character-creation.md": [
         "reference/decks/busybodies-zh.md",
         "reference/decks/weapons-and-artifacts-zh.md",
+        "reference/mythos/artifacts-zh.md",
         "reference/rules/skill-checks.md",
         "reference/sourcebooks/grand-grimoire-zh.md"
       ],
@@ -832,6 +1086,14 @@
       ],
       "reference/tables/cult-power-sources.md": [
         "reference/tables/cult-goals.md"
+      ],
+      "reference/tables/cultist-archetypes.md": [
+        "reference/craft/cult-design-zh.md",
+        "reference/mythos/cthulhu-cult-history-zh.md",
+        "reference/mythos/cults/louisiana-swamp-cult.md",
+        "reference/rules/character-creation.md",
+        "reference/sourcebooks/grand-grimoire-zh.md",
+        "reference/sourcebooks/keeper-rulebook-7e-zh.md"
       ],
       "reference/tables/hooks.md": [
         "reference/tables/locations.md",
@@ -867,6 +1129,7 @@
         "reference/decks/miseries-zh.md",
         "reference/decks/phobias-and-manias-zh.md",
         "reference/decks/weapons-and-artifacts-zh.md",
+        "reference/mythos/artifacts-zh.md",
         "reference/rules/character-creation.md",
         "reference/rules/chases.md",
         "reference/rules/sanity.md",
@@ -876,10 +1139,14 @@
       "update_plan/2026-08-02-cult-doc-integration.md": [
         "reference/craft/cult-design-zh.md",
         "reference/craft/lovecraft-zh.md",
+        "reference/mythos/artifacts-zh.md",
+        "reference/mythos/cthulhu-cult-history-zh.md",
+        "reference/mythos/great-old-ones/cthulhu.md",
         "reference/rules/character-creation.md",
         "reference/tables/cult-goals.md",
         "reference/tables/cult-leader-positions.md",
         "reference/tables/cult-power-sources.md",
+        "reference/tables/cultist-archetypes.md",
         "reference/tables/mythos-angles.md",
         "reference/tables/npc-appearance.md",
         "reference/tables/npc-quirks.md"

@@ -48,7 +48,7 @@
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 62,
+          "line": 67,
           "context": "`reference/sourcebooks/grand-grimoire-zh.md` is the official grimoire, if you have it locally."
         },
         {
@@ -67,6 +67,11 @@
           "context": "| **法术型**(施法、通神类首领) | 按资历掷 `1D4+1`(年轻)/ `1D6+1D4+2`(标准)/ `3D6+4`(成熟)/ `4D6+10`(古老)条法术;法术本身的 MP/SAN 成本查 `reference/sourcebooks/grand-grimoire-zh.md`(若本地存在) | 法术数"
         },
         {
+          "file": "reference/tables/cultist-archetypes.md",
+          "line": 266,
+          "context": "`reference/sourcebooks/grand-grimoire-zh.md`;请神术的父神达贡/母神海德拉版本是本轮"
+        },
+        {
           "file": "update_plan/2026-08-02-antagonist-budget.md",
           "line": 289,
           "context": "> - **法术型敌人的模板更详细的来源是 `reference/sourcebooks/grand-grimoire-zh.md`**"
@@ -74,16 +79,16 @@
         {
           "file": "update_plan/2026-08-02-magic-quickref.md",
           "line": 5,
-          "context": "> `reference/sourcebooks/grand-grimoire-zh.md`(13731 行,全书转录,带 `## 引用出处`)"
+          "context": "> `reference/sourcebooks/grand-grimoire-zh.md`(Keeper 手动重译后现为 5366 行,全书转录,"
         },
         {
           "file": "update_plan/2026-08-02-magic-quickref.md",
-          "line": 26,
+          "line": 27,
           "context": "`reference/sourcebooks/grand-grimoire-zh.md`,可直接切块通读(同教团 docx 的阶段 0 方法)。"
         },
         {
           "file": "update_plan/2026-08-02-magic-quickref.md",
-          "line": 31,
+          "line": 32,
           "context": "- [x] ~~等 Keeper 提供转换后的文档~~ —— 已归档为 `reference/sourcebooks/grand-grimoire-zh.md`"
         },
         {
@@ -97,7 +102,7 @@
           "context": "| P7 | [magic-quickref](2026-08-02-magic-quickref.md) | 魔法速查 `reference/rules/magic.md`:施法通则、tome/spell 数值惯例 | **待执行(阻塞已解除 2026-08-02)** | 转换稿已归档为 `reference/so"
         }
       ],
-      "reference_count": 15,
+      "reference_count": 16,
       "cited": true,
       "provenance": {
         "work": "《克苏鲁神话魔法大典》(The Grand Grimoire of Cthulhu Mythos Magic)",
@@ -132,6 +137,21 @@
           "context": "When a cheat-sheet doesn't settle it, `reference/sourcebooks/keeper-rulebook-7e-zh.md` is the"
         },
         {
+          "file": "reference/mythos/artifacts-zh.md",
+          "line": 18,
+          "context": "`reference/sourcebooks/keeper-rulebook-7e-zh.md` 施法检定\"孤注一掷失败\"的规则)。"
+        },
+        {
+          "file": "reference/mythos/spells/call-father-dagon-and-mother-hydra.md",
+          "line": 4,
+          "context": "> `reference/sourcebooks/keeper-rulebook-7e-zh.md` 既有\"请神/送神术\"框架下的新变体"
+        },
+        {
+          "file": "reference/tables/cultist-archetypes.md",
+          "line": 265,
+          "context": "深潜者召唤/束缚术。数值查 `reference/sourcebooks/keeper-rulebook-7e-zh.md` /"
+        },
+        {
           "file": "update_plan/2026-08-02-investigator-cards.md",
           "line": 95,
           "context": "`reference/sourcebooks/keeper-rulebook-7e-zh.md`(28443 行中译转录),不必再从 PDF 里翻——"
@@ -142,7 +162,7 @@
           "context": "- [ ] 通读 `reference/sourcebooks/keeper-rulebook-7e-zh.md` 的人物创建相关章节,把"
         }
       ],
-      "reference_count": 4,
+      "reference_count": 7,
       "cited": true,
       "provenance": {
         "work": "《克苏鲁的呼唤》第七版规则书(Call of Cthulhu 7th Edition Keeper Rulebook)",
@@ -185,6 +205,11 @@
           "context": "Prefer the published English title: `malleus-monstrorum-zh.md`, not `怪物之锤.md`."
         },
         {
+          "file": "reference/bestiary/deep-one-hybrid.md",
+          "line": 60,
+          "context": "> `reference/sourcebooks/malleus-monstrorum-zh.md` — this entry's numbers are this kit's own"
+        },
+        {
           "file": "reference/bestiary/README.md",
           "line": 6,
           "context": "Calibrate against `reference/sourcebooks/malleus-monstrorum-zh.md` (the official creature"
@@ -200,7 +225,7 @@
           "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:种类阶梯的档位区间、按 type 分的模板、词条(强化)系统与其存储格式 | 待讨论(五项待定,尚无执行清单) | 从 P4 待讨论 2 拆出。骨架已由"
         }
       ],
-      "reference_count": 7,
+      "reference_count": 8,
       "cited": true,
       "provenance": {
         "work": "《怪物之锤》(Malleus Monstrorum)",

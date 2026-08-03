@@ -41,6 +41,11 @@ tired-looking." For a cult leader specifically, `reference/tables/cult-leader-po
 rolls their social front and what access it buys — read
 `reference/rules/character-creation.md` §11 for how strong to make them.
 
+**Rank-and-file cultists** — `reference/tables/cultist-archetypes.md` has twelve ready-to-use
+statted archetypes (academic, blue-collar, criminal, law-enforcement, medical, military,
+youth, priest, leader) plus a menu of "Blessing of Cthulhu" powers to sprinkle on one or two
+— use one as-is for a faceless NPC, or as the numeric baseline when building a named one.
+
 For the **secret**, the busybodies deck is the length calibration: every one of its 47 cards
 carries exactly one, in one or two sentences, and each is a *lever* — a debt, a lie already
 told, a dream that keeps recurring — not a plot summary. Match that scale. Anything longer is

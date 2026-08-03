@@ -82,7 +82,7 @@
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 64,
+          "line": 69,
           "context": "is not a separate power tier — it's `reference/rules/character-creation.md` §11: the same"
         },
         {
@@ -124,6 +124,16 @@
           "file": "reference/tables/cult-leader-positions.md",
           "line": 5,
           "context": "掩盖邪教活动)。造首领时(`core/06-create-npc.md`、`reference/rules/character-creation.md`"
+        },
+        {
+          "file": "reference/tables/cultist-archetypes.md",
+          "line": 11,
+          "context": "`reference/rules/character-creation.md` §11 的反派强度预算,不在本表重复定义。"
+        },
+        {
+          "file": "reference/tables/cultist-archetypes.md",
+          "line": 185,
+          "context": "`reference/rules/character-creation.md` §11 塑造成独一无二的角色,而不是原样照用。"
         },
         {
           "file": "update_plan/2026-08-02-antagonist-budget.md",
@@ -202,23 +212,23 @@
         },
         {
           "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 7,
-          "context": "> P4 已解除(人类侧已完成,`character-creation.md` §11 可直接校验第四章邪教徒数值)"
-        },
-        {
-          "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 137,
+          "line": 145,
           "context": "2026-08-02 第五轮定案并落盘到 `reference/rules/character-creation.md` §11,详见该计划"
         },
         {
           "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 162,
+          "line": 170,
           "context": "`reference/rules/character-creation.md` §11"
         },
         {
           "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 165,
+          "line": 173,
           "context": "`character-creation.md` §11),未涉及法术条目本身。P7 魔法速查仍是第四章造物的"
+        },
+        {
+          "file": "update_plan/2026-08-02-cult-doc-integration.md",
+          "line": 199,
+          "context": "数值,不需要再套 `character-creation.md` §11 的预算逐条反推——那套预算是给"
         },
         {
           "file": "update_plan/2026-08-02-investigator-cards.md",
@@ -249,9 +259,14 @@
           "file": "update_plan/README.md",
           "line": 12,
           "context": "| P4 | [antagonist-budget](2026-08-02-antagonist-budget.md) | 反派强度预算(**仅人类侧**):普通人类模板(取材 busybodies-zh.md,法术型另取材 grand-grimoire-zh.md)+ 增量(法术型走资历法术表 / 非法术型走装备总价"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 71,
+          "context": "(`character-creation.md` §11 之外还没做的部分)之前做完,否则精英卡要返工重渲"
         }
       ],
-      "reference_count": 46
+      "reference_count": 49
     },
     {
       "file": "chases.md",
@@ -361,6 +376,11 @@
           "context": "- **Best:** <…> — *suggested SAN reward:* <e.g. +1D6, per `reference/rules/sanity.md`>"
         },
         {
+          "file": "reference/mythos/artifacts-zh.md",
+          "line": 67,
+          "context": "`reference/rules/sanity.md` 里\"治疗性对话恢复理智\"的机制,守秘人可另立替代规则)。"
+        },
+        {
           "file": "update_plan/2026-08-02-antagonist-budget.md",
           "line": 114,
           "context": "| A. 新建 `reference/rules/antagonist-budget.md` | 与 `sanity.md`/`chases.md`/`character-creation.md` 同级,`core/02` 登记一行即可;主题独立好找 | `reference/rules/` 再添一份,速查文件数量继续"
@@ -376,7 +396,7 @@
           "context": "\"evidence\": \"The entire answer is paraphrased summary/table lookups in the assistant's own words (short dice-notation fragments and derived numbers only), with "
         }
       ],
-      "reference_count": 9
+      "reference_count": 10
     },
     {
       "file": "skill-checks.md",

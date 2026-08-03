@@ -7,7 +7,7 @@
   "usage_rule": "authored by this kit — read and used directly, no citation required",
   "in_bundle": true,
   "generated_by": "scripts/build-reference-index.py — do not edit by hand",
-  "entry_count": 10,
+  "entry_count": 11,
   "entries": [
     {
       "file": "complications.md",
@@ -160,22 +160,22 @@
         },
         {
           "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 122,
+          "line": 130,
           "context": "- [x] `cult-goals.md` —— 愿望(1D10)× 手段(1D8)。**两表相乘才是本章的生成引擎**,"
         },
         {
           "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 156,
+          "line": 164,
           "context": "**邪教子路径**(指向 notes §一–§三流程 + `cult-goals.md`、`cult-leader-positions.md`,"
         },
         {
           "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 199,
+          "line": 220,
           "context": "**并掷 `reference/tables/cult-goals.md`(愿望 × 手段)**——答\"邪教\"不等于允许"
         },
         {
           "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 228,
+          "line": 249,
           "context": "`tables/cult-goals.md`、`tables/cult-leader-positions.md`、"
         }
       ],
@@ -233,22 +233,22 @@
         },
         {
           "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 124,
+          "line": 132,
           "context": "- [x] `cult-leader-positions.md` —— 首领的社会定位(1D10:商人/族长/帮派头领/宗教"
         },
         {
           "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 156,
+          "line": 164,
           "context": "**邪教子路径**(指向 notes §一–§三流程 + `cult-goals.md`、`cult-leader-positions.md`,"
         },
         {
           "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 161,
+          "line": 169,
           "context": "并为邪教首领指向 `cult-leader-positions.md` 与"
         },
         {
           "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 228,
+          "line": 249,
           "context": "`tables/cult-goals.md`、`tables/cult-leader-positions.md`、"
         }
       ],
@@ -315,16 +315,55 @@
         },
         {
           "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 127,
+          "line": 135,
           "context": "- [x] `cult-power-sources.md` —— 力量来源(1D4:神话怪物 / 造物 / 科技 / 受赐力量),"
         },
         {
           "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 229,
+          "line": 250,
           "context": "`tables/cult-power-sources.md`、d20 外貌/气质表、`tables/cultist-archetypes.md`"
         }
       ],
       "reference_count": 12
+    },
+    {
+      "file": "cultist-archetypes.md",
+      "path": "reference/tables/cultist-archetypes.md",
+      "title": "cultist-archetypes.md — 邪教徒范型速查",
+      "lines": 318,
+      "declared_consumers": [
+        "core/02-rules-reference.md",
+        "core/06-create-npc.md",
+        "reference/craft/cult-design-zh.md",
+        "reference/mythos/cthulhu-cult-history-zh.md",
+        "reference/mythos/cults/louisiana-swamp-cult.md",
+        "reference/rules/character-creation.md",
+        "reference/sourcebooks/grand-grimoire-zh.md",
+        "reference/sourcebooks/keeper-rulebook-7e-zh.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "core/06-create-npc.md",
+          "line": 44,
+          "context": "**Rank-and-file cultists** — `reference/tables/cultist-archetypes.md` has twelve ready-to-use"
+        },
+        {
+          "file": "reference/mythos/spells/call-father-dagon-and-mother-hydra.md",
+          "line": 23,
+          "context": "`reference/tables/cultist-archetypes.md` 的\"永生大师\"常见法术之一。"
+        },
+        {
+          "file": "update_plan/2026-08-02-cult-doc-integration.md",
+          "line": 183,
+          "context": "- [x] 邪教徒原型 → `reference/tables/cultist-archetypes.md`(中文)——12 组基础数值"
+        },
+        {
+          "file": "update_plan/2026-08-02-cult-doc-integration.md",
+          "line": 250,
+          "context": "`tables/cult-power-sources.md`、d20 外貌/气质表、`tables/cultist-archetypes.md`"
+        }
+      ],
+      "reference_count": 4
     },
     {
       "file": "hooks.md",
@@ -504,7 +543,7 @@
         },
         {
           "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 195,
+          "line": 216,
           "context": "(无人类反派)、auto。**默认 auto = 掷 `reference/tables/mythos-angles.md`**,"
         },
         {
@@ -556,12 +595,12 @@
         },
         {
           "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 130,
+          "line": 138,
           "context": "`reference/tables/npc-appearance.md`(1d20 外貌/气质表),挂"
         },
         {
           "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 160,
+          "line": 168,
           "context": "- [x] `core/06-create-npc.md` —— 指向新的 `npc-appearance.md`(d20 外貌/气质),"
         }
       ],
@@ -628,7 +667,7 @@
         },
         {
           "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 131,
+          "line": 139,
           "context": "`core/06-create-npc.md`;与 `npc-quirks.md` 分工:quirks 是**怎么演**,这张是"
         }
       ],

@@ -7,8 +7,102 @@
   "usage_rule": "authored by this kit — read and used directly, no citation required",
   "in_bundle": false,
   "generated_by": "scripts/build-reference-index.py — do not edit by hand",
-  "entry_count": 1,
+  "entry_count": 9,
   "entries": [
+    {
+      "file": "black-wing.md",
+      "path": "reference/bestiary/black-wing.md",
+      "title": "Black Wing (黑翼者)",
+      "lines": 75,
+      "declared_consumers": [],
+      "referenced_by": [
+        {
+          "file": "reference/mythos/spells/black-wing-call.md",
+          "line": 11,
+          "context": "召来 1D6 只黑翼者(`reference/bestiary/black-wing.md`)。需要六人协力——施法者加另外"
+        }
+      ],
+      "reference_count": 1
+    },
+    {
+      "file": "cthulhu-blessed.md",
+      "path": "reference/bestiary/cthulhu-blessed.md",
+      "title": "Cthulhu-Blessed (克苏鲁受祝者)",
+      "lines": 57,
+      "declared_consumers": [],
+      "referenced_by": [],
+      "reference_count": 0
+    },
+    {
+      "file": "deep-one-hybrid.md",
+      "path": "reference/bestiary/deep-one-hybrid.md",
+      "title": "Deep One Hybrid (混种深潜者)",
+      "lines": 65,
+      "declared_consumers": [],
+      "referenced_by": [
+        {
+          "file": "reference/bestiary/cthulhu-blessed.md",
+          "line": 51,
+          "context": "> normally produce ordinary hybrids (`deep-one-hybrid.md`) — see"
+        }
+      ],
+      "reference_count": 1
+    },
+    {
+      "file": "fellrock.md",
+      "path": "reference/bestiary/fellrock.md",
+      "title": "Fellrock (费尔罗克)",
+      "lines": 81,
+      "declared_consumers": [],
+      "referenced_by": [
+        {
+          "file": "reference/mythos/spells/fellrock-call-bind.md",
+          "line": 11,
+          "context": "召来一只费尔罗克(`reference/bestiary/fellrock.md`)——只在距目标费尔罗克 3 公里内"
+        },
+        {
+          "file": "reference/mythos/spells/oil-of-silence.md",
+          "line": 10,
+          "context": "炼制出一种能驱避费尔罗克(`reference/bestiary/fellrock.md`)的魔法油膏——费尔罗克"
+        }
+      ],
+      "reference_count": 2
+    },
+    {
+      "file": "scarlet-orb.md",
+      "path": "reference/bestiary/scarlet-orb.md",
+      "title": "Scarlet Orb (猩红者)",
+      "lines": 78,
+      "declared_consumers": [],
+      "referenced_by": [
+        {
+          "file": "reference/mythos/spells/scarlet-orb-call.md",
+          "line": 11,
+          "context": "召来 3D4 个猩红者(`reference/bestiary/scarlet-orb.md`)。仪式需要一支特制的笛子"
+        }
+      ],
+      "reference_count": 1
+    },
+    {
+      "file": "sedecim.md",
+      "path": "reference/bestiary/sedecim.md",
+      "title": "Sedecim (塞德西姆, \"the Five\")",
+      "lines": 82,
+      "declared_consumers": [],
+      "referenced_by": [
+        {
+          "file": "reference/mythos/artifacts-zh.md",
+          "line": 78,
+          "context": "(`reference/bestiary/sedecim.md`)一类怪物的特权,具体怎么在游戏里体现由守秘人裁定。"
+        },
+        {
+          "file": "reference/mythos/artifacts-zh.md",
+          "line": 98,
+          "context": "塞德西姆(`reference/bestiary/sedecim.md`)制造并使用的手持设备,外观是覆盖着不规则"
+        }
+      ],
+      "reference_count": 2
+    },
     {
       "file": "the-bell-keeper.md",
       "path": "reference/bestiary/the-bell-keeper.md",
@@ -20,6 +114,30 @@
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
           "line": 36,
           "context": "| `reference/bestiary/` | **只有 1 个文件**(`the-bell-keeper.md`)。README 建议 `threat`/`type`/`sanity` 三个 tag | 没有对标库。想\"照着现成的改\"目前无从改起 |"
+        }
+      ],
+      "reference_count": 1
+    },
+    {
+      "file": "thrall-of-cthulhu.md",
+      "path": "reference/bestiary/thrall-of-cthulhu.md",
+      "title": "Thrall of Cthulhu (克苏鲁之隶)",
+      "lines": 75,
+      "declared_consumers": [],
+      "referenced_by": [],
+      "reference_count": 0
+    },
+    {
+      "file": "vermisyn-worm.md",
+      "path": "reference/bestiary/vermisyn-worm.md",
+      "title": "Vermisyn Worm (弗米森蠕虫)",
+      "lines": 73,
+      "declared_consumers": [],
+      "referenced_by": [
+        {
+          "file": "reference/mythos/spells/vermisyn-worm-call-bind.md",
+          "line": 11,
+          "context": "召来一只弗米森蠕虫(`reference/bestiary/vermisyn-worm.md`)。施法者一边吟诵一边在"
         }
       ],
       "reference_count": 1

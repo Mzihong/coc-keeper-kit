@@ -66,6 +66,16 @@
           "context": "| `cult-design-zh.md` | 克苏鲁邪教设计指南第三章(网络汇编,158 页,通读后提炼) | `core/03-build-world.md`(邪教 faction 子路径)、`core/04-design-scenario.md`(§四 财源线索引擎、§五 弱点/敌人)、`core/01-inta"
         },
         {
+          "file": "reference/mythos/artifacts-zh.md",
+          "line": 4,
+          "context": "> `reference/craft/cult-design-zh.md`。"
+        },
+        {
+          "file": "reference/mythos/artifacts-zh.md",
+          "line": 46,
+          "context": "菌盖五颜六色、油光水滑,约 5 厘米高。见 `reference/craft/cult-design-zh.md`(第三章"
+        },
+        {
           "file": "reference/mythos/cults/church-of-perfect-science.md",
           "line": 4,
           "context": "> 不含原文文字,处理规则同 `reference/craft/cult-design-zh.md`。原文三个完整冒险案例"
@@ -116,27 +126,37 @@
           "context": "`reference/craft/cult-design-zh.md` §一);调查员揭穿的往往不是这个身份本身,而是"
         },
         {
+          "file": "reference/tables/cultist-archetypes.md",
+          "line": 9,
+          "context": "造具名 NPC 时把这里的数值当基线,按第三章的方法论(`reference/craft/cult-design-zh.md`)"
+        },
+        {
+          "file": "reference/tables/cultist-archetypes.md",
+          "line": 184,
+          "context": "通用的邪教首领基线;建议按 `reference/craft/cult-design-zh.md` §三与"
+        },
+        {
           "file": "reference/tables/README.md",
           "line": 27,
           "context": "`reference/craft/cult-design-zh.md` §三."
         },
         {
           "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 100,
+          "line": 108,
           "context": "**A. 手法散文 → `reference/craft/cult-design-zh.md`**(2026-08-02 落盘)"
         },
         {
           "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 198,
+          "line": 219,
           "context": "`reference/craft/cult-design-zh.md` 与 `reference/mythos/cults/`,"
         },
         {
           "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 227,
+          "line": 248,
           "context": "- [ ] 更新 `reference/README.md`:登记 `craft/cult-design-zh.md`、`mythos/cults/` 条目、"
         }
       ],
-      "reference_count": 23
+      "reference_count": 27
     },
     {
       "file": "lovecraft-zh.md",
@@ -212,12 +232,12 @@
         },
         {
           "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 101,
+          "line": 109,
           "context": "定位对标 `reference/craft/lovecraft-zh.md`(90 行,按\"哪个 spec 读哪一节\"分节)。"
         },
         {
           "file": "update_plan/2026-08-02-cult-doc-integration.md",
-          "line": 240,
+          "line": 261,
           "context": "1. skill 是动词,这两章是知识;kit 已有先例(`craft/lovecraft-zh.md`"
         },
         {
