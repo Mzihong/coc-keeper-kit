@@ -32,6 +32,7 @@ the skill, read the spec it names, follow the spec. Never generate from the wrap
 | `review-material`     | `core/11-review.md`           | Audit material before the table. |
 | `update-canon`        | `core/12-canon-update.md`     | Record what happened and update campaign state. |
 | `archive-reference`   | `core/14-archive-reference.md` | File third-party material (a deck, a rulebook) into `reference/` — classify, cite, wire in, reindex. |
+| `close-session`       | `core/15-close-session.md`    | Close out an ad-hoc kit-maintenance session — WORKLOG entry, fact-checked counts, README/changelog/bundle sync. |
 
 ## The short version
 
@@ -65,6 +66,9 @@ the skill, read the spec it names, follow the spec. Never generate from the wrap
   「完结清单」**——状态两处同步、changelog、重跑 `scripts/build-bundle.sh`、
   三适配器一致性、归档。
 - 改动结构、硬约定或计划状态时,顺手更新 `WORKLOG.md`——它是给接手会话的上手速览,过期比不存在更糟。
+  没有对应计划文件、也不是归档第三方资料的临时改动,收尾时走 `close-session` 技能
+  (`core/15-close-session.md`)——它比这条一句话多一步:把刚写进日志里的数字/路径/清单
+  回头 grep 核对一遍,而不是凭记忆断言。
 - 动过 `core/` / `templates/` / `reference/` 就必须重跑 `scripts/build-bundle.sh`,
   并把 `dist/bundle.md` 与源文件放在同一个 commit。
 

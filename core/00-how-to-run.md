@@ -58,6 +58,7 @@ writing any stat block, difficulty, or Sanity cost.
 | "check this", "is this ready", before a session | `core/11-review.md` |
 | "here's what happened last session" | `core/12-canon-update.md` |
 | a deck/book/PDF to file, "归档这份资料", loose files in `reference/` | `core/14-archive-reference.md` |
+| closing out a maintenance session on the kit itself, "write a work log", "收尾" | `core/15-close-session.md` |
 
 ## Ground rules for everything you generate
 

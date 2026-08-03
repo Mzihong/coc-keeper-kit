@@ -27,6 +27,7 @@ Open the file and follow it to the letter, including its Quality bar.
 | "check this", "is this ready" | `core/11-review.md` |
 | "here's what happened last session" | `core/12-canon-update.md` |
 | a deck/book/PDF to file, "归档这份资料", loose files in `reference/` | `core/14-archive-reference.md` |
+| closing out a maintenance session on the kit itself, "write a work log", "收尾" | `core/15-close-session.md` |
 
 ## Using this in ChatGPT (no repo access)
 
@@ -75,6 +76,8 @@ Never downgrade an artifact to a summary of an artifact.
   「完结清单」**——状态两处同步、changelog、重跑 `scripts/build-bundle.sh`、
   三适配器一致性、归档。
 - 改动结构、硬约定或计划状态时,顺手更新 `WORKLOG.md`——它是给接手会话的上手速览,过期比不存在更糟。
+  没有对应计划文件、也不是归档第三方资料的临时改动,收尾时读 `core/15-close-session.md`
+  ——它比这条一句话多一步:把刚写进日志里的数字/路径/清单回头 grep 核对一遍,而不是凭记忆断言。
 - 动过 `core/` / `templates/` / `reference/` 就必须重跑 `scripts/build-bundle.sh`,
   并把 `dist/bundle.md` 与源文件放在同一个 commit。
 - ChatGPT 用户拿到的是 `dist/bundle.md` 快照——不重建 bundle,他们就永远用着旧规则。
