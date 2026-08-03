@@ -44,6 +44,16 @@ Your job is to turn that into durable campaign state that every later generation
   secret is now known, a main antagonist is dead, the premise has shifted.
 - Update the investigator list for deaths, replacements, and SAN state worth remembering.
 
+**`npcs/<name>.md`** — for every NPC the party actually interacted with this session (not
+every NPC mentioned): overwrite that NPC's **current attitude** to reflect where things now
+stand, and append one line to the **interaction history log** (`> **KEEPER ONLY —
+Interaction history**` block in `templates/npc.md`) — facts and relationship changes only, no
+narration; the narration already lives in this session's `canon-log.md` entry, cross-link the
+session number instead of repeating it. **This is a required step, not an optional one** — the
+whole point of the log is that "does this NPC know/trust the party" stays answerable from that
+NPC's own file without rereading the campaign's full canon-log, and it silently rots the first
+time a session update skips it.
+
 **`sessions/<n>-<slug>.md`**:
 - Fill in the template's "After the session" block.
 
@@ -107,6 +117,8 @@ Offer the obvious next step: *"Prep session `<n+1>`?"* — which runs
 - Every improvised detail the Keeper mentioned is now written down somewhere findable.
 - True-vs-known is separated, not merged.
 - The event clock's current stage is correct and fired triggers are marked.
+- Every NPC who actually interacted with the party this session has an updated attitude and a
+  new interaction-history log line — not just the ones with plot-critical secrets.
 - No existing entry was edited or deleted; contradictions are marked, not resolved silently.
 - A model reading only `canon-log.md` could generate the next session without contradicting
   anything that happened.

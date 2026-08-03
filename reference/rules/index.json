@@ -66,6 +66,11 @@
           "context": "P4 的落点没有另开新文件——`reference/rules/character-creation.md` 已经是\"KP 专用的"
         },
         {
+          "file": "core/01-intake.md",
+          "line": 48,
+          "context": "background-first split in `reference/rules/character-creation.md` §11? *Default: not"
+        },
+        {
           "file": "core/02-rules-reference.md",
           "line": 18,
           "context": "→ read `reference/rules/character-creation.md` §11 before assigning skills or gear."
@@ -77,12 +82,12 @@
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 42,
+          "line": 45,
           "context": "`reference/rules/character-creation.md` §11 for how strong to make them."
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 69,
+          "line": 72,
           "context": "is not a separate power tier — it's `reference/rules/character-creation.md` §11: the same"
         },
         {
@@ -134,6 +139,11 @@
           "file": "reference/tables/cultist-archetypes.md",
           "line": 185,
           "context": "`reference/rules/character-creation.md` §11 塑造成独一无二的角色,而不是原样照用。"
+        },
+        {
+          "file": "campaigns/_template-campaign/CLAUDE.md",
+          "line": 53,
+          "context": "`reference/rules/character-creation.md` §11. Delete this line if category has no human"
         },
         {
           "file": "update_plan/2026-08-02-antagonist-budget.md",
@@ -266,7 +276,7 @@
           "context": "(`character-creation.md` §11 之外还没做的部分)之前做完,否则精英卡要返工重渲"
         }
       ],
-      "reference_count": 49
+      "reference_count": 51
     },
     {
       "file": "chases.md",
@@ -287,7 +297,7 @@
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 35,
+          "line": 38,
           "context": "If a scene is a pursuit or an escape, read `reference/rules/chases.md` before writing it."
         },
         {
@@ -357,7 +367,7 @@
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 39,
+          "line": 42,
           "context": "each ending with a **suggested SAN reward** per `reference/rules/sanity.md`'s scenario-end"
         },
         {
@@ -367,7 +377,7 @@
         },
         {
           "file": "core/12-canon-update.md",
-          "line": 57,
+          "line": 67,
           "context": "`reference/rules/sanity.md`'s scenario-end table instead)."
         },
         {

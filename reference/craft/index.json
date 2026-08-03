@@ -46,13 +46,18 @@
           "context": "3. **P1 第三章(设计一个克苏鲁邪教方法论)落盘**:`reference/craft/cult-design-zh.md`"
         },
         {
-          "file": "core/03-build-world.md",
+          "file": "core/01-intake.md",
           "line": 42,
+          "context": "default to \"cult\" out of habit.* If the answer is a cult, `reference/craft/cult-design-zh.md`"
+        },
+        {
+          "file": "core/03-build-world.md",
+          "line": 44,
           "context": "build order. Read `reference/craft/cult-design-zh.md` §一–§三 first (why a cult works as a"
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 28,
+          "line": 31,
           "context": "- **When the threat is a cult**, `reference/craft/cult-design-zh.md` §四 gives six ready-made"
         },
         {
@@ -156,7 +161,7 @@
           "context": "- [ ] 更新 `reference/README.md`:登记 `craft/cult-design-zh.md`、`mythos/cults/` 条目、"
         }
       ],
-      "reference_count": 27
+      "reference_count": 28
     },
     {
       "file": "lovecraft-zh.md",

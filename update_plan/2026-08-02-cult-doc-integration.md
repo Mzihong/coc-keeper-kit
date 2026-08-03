@@ -2,8 +2,9 @@
 
 > 日期:2026-08-02
 > 来源文档:`C:\Users\User\Desktop\克苏鲁教团.docx`(158 页,正文四章 + 三个剧本 + 附录)
-> 状态:阶段 0 完成;阶段 1 全部四章均已落盘(第三章 D 第二项与 E 明确留给阶段 2 / P5,
-> 不阻塞完结)。剩阶段 2(敌对势力 intake 问题)与附加项(NPC 互动史)。内容全部待提交。
+> 状态:阶段 0/1/2 与附加项全部落盘(第三章 D 第二项 campaign `Threat` 字段随阶段 2
+> 一并完成;E 关系图惯例仍留给 P5)。**只剩阶段 3 收尾**(README 登记、review-material
+> 审计、归档进 Archived/)。内容全部待提交。
 > 关联:`2026-08-02-magic-quickref.md`(P7,magic.md 是第四章前置,已解除)
 > 关联:`2026-08-02-investigator-cards.md`(P6,精英邪教徒复用同一 schema)
 > 关联:`2026-08-02-antagonist-budget.md`(P4,第三章数值惯例的去向,已完成)
@@ -206,42 +207,42 @@ SAN 惯例。这些**不是邪教专属,是反派强度预算**——归属与�
       留给真正需要一张具名精英邪教徒满卡时按需生成(P6 `investigator-cards.md` 与
       本计划都已就绪,不阻塞完结)
 
-## 阶段 2 — 敌对势力问题(依赖阶段 1 完成)
+## 阶段 2 — 敌对势力问题(2026-08-02 落盘)
 
-> 排在提取内化之后:auto-fill 答"邪教"时要指向阶段 1 产出的笔记和 cults 库,
-> 先有库,后有问。
-
-- [ ] `core/01-intake.md` — B 组后新增一问 **"The threat"**:威胁背后站着什么?
+- [x] `core/01-intake.md` — B 组后新增第 9 问 **"The threat"**:威胁背后站着什么?
       选项:邪教/组织、独行术士或家族、独立怪物、场所本身作祟、自然或宇宙现象
-      (无人类反派)、auto。**默认 auto = 掷 `reference/tables/mythos-angles.md`**,
+      (无人类反派)、auto。**默认 auto = 掷 `reference/tables/mythos-angles.md`,
+      再从掷出的角度反推属于哪一类**,不直接映射骰表(两张表本就不是一一对应关系)。
       反套路规则不变——问题给 Keeper 开正门,不给模型开"默认写邪教"的后门
-- [ ] `core/01-intake.md` auto-fill 表:答"邪教"时指向
+- [x] `core/01-intake.md` 第 9 问文字里已直接点出:答"邪教"时指向
       `reference/craft/cult-design-zh.md` 与 `reference/mythos/cults/`,
       **并掷 `reference/tables/cult-goals.md`(愿望 × 手段)**——答"邪教"不等于允许
       写一个泛用邪教,落地的目标必须是掷出来的
-- [ ] `campaigns/_template-campaign/CLAUDE.md` — 新增 `Threat` 字段,
-      答案落成 campaign 持久状态;字段结构对齐 `templates/cult.md`
-- [ ] `core/04-design-scenario.md` — "First" 一节加半句:构建 the truth 前读
-      campaign `CLAUDE.md` 的 Threat 字段并遵守(**不**在此 spec 加提问)
-- [ ] 检查问题编号引用(如 "never invent a fourteenth question")随新增问题同步更新
-- [ ] 同一轮一起加:「生成人类反派首领时是否默认强化战斗能力」一问,写进
-      campaign `CLAUDE.md` 当默认(来自 `2026-08-02-antagonist-budget.md` 待讨论 9 的
-      落点决定;与「The threat」一问一起接线,避免同一份 spec 的编号在两轮里各改一次)
+- [x] `campaigns/_template-campaign/CLAUDE.md` — 新增 `## The threat` 字段(类别 +
+      人类反派战斗强度 + 名字/一句话身份 + 指向 `world/` 全档的链接),
+      结构对齐 `templates/cult.md` 的身份/力量来源/目标三行
+- [x] `core/04-design-scenario.md` — "First" 一节的"1. The truth"加半句:campaign
+      `CLAUDE.md` 声明了 Threat 时,truth 必须与它一致,本 spec 不重复提问
+- [x] `core/03-build-world.md` 也顺手接了一句:已声明 Threat 时,造 faction 就是造
+      *那一个*,不能另起炉灶(第三章接线时没想到这条,阶段 2 补上)
+- [x] 问题编号引用已同步更新:C/D/E 组从 9/10/11/12/13/14/15 顺移到
+      11/12/13/14/15/16/17,"never invent a fourteenth question" 改成
+      "never invent a sixteenth question"
+- [x] 同一轮一起加了第 10 问「人类反派首领是否默认强化战斗能力」,默认不强化
+      (来自 `2026-08-02-antagonist-budget.md` 待讨论 9 的落点决定,与「The threat」
+      一问相邻,只改了一次编号)
 
-## 附加 — NPC 互动史(Keeper 指定挂入本计划,2026-08-02)
+## 附加 — NPC 互动史(2026-08-02 落盘)
 
-kit 通用惯例改动,与教团主线无直接依赖,Keeper 拍板寄放在本计划一起收。
-问题:普通 NPC 文件建完即冻结(`core/12` 现在完全不写 `npcs/`),互动只进 canon-log
-按时间排的流水——"这个 NPC 认不认识调查员"要通读整份 canon-log 才能回答,且随战役
-无限变贵。修法是把该查询按人预先切片,token 上是净省:
-
-- [ ] `templates/npc.md` KEEPER ONLY 侧加「互动史」节:**「当前态度」一个词(覆盖式)**
-      + 一场一行、只记事实与关系变化(追加式)。叙事仍留 canon-log,此处只是索引;
-      超一行的内容写场次号回 canon-log 查
-- [ ] `core/12-canon-update.md` 更新清单加一步:做 Cast status 扫掠时,给本场互动过的
-      每个 NPC 文件追加一行互动史——**必须写成流程**,不写就没人更新
-- [ ] `core/06-create-npc.md` 提一句:新建 NPC 此节只填「当前态度=陌生」,历史留空
-- [ ] 动了 `core/` 与 `templates/` → 随本计划收尾一起重跑 bundle
+- [x] `templates/npc.md` 新增 `> **KEEPER ONLY — Interaction history**` 节:
+      **「当前态度」一个词(覆盖式)** + 一场一行、只记事实与关系变化(追加式)。
+      叙事仍留 canon-log,此处只是索引;超一行的内容写场次号回 canon-log 查
+- [x] `core/12-canon-update.md` 更新清单新增 `npcs/<name>.md` 一节:本场互动过的
+      每个 NPC 都要覆盖当前态度、追加一行互动史——写成必需步骤,Quality bar 也加了
+      对应检查项,不是可选的
+- [x] `core/06-create-npc.md` 加一句:新建 NPC 此节只填中性默认态度(如"陌生人"),
+      历史留空,回填是 `core/12` 的事,不是建卡时的事
+- [x] 已重跑 `scripts/build-bundle.sh`(核对索引 `--check` 干净通过)
 
 ## 阶段 3 — 收尾
 

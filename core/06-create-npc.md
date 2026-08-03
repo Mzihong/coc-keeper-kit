@@ -33,6 +33,9 @@ tell — mechanically correct for 7e.
   never make one NPC the *only* source of a key clue).
 - **The lie they tell.** What do they say when asked directly? Every NPC with a secret needs
   a prepared cover story, or the Keeper has to invent one mid-scene.
+- **Interaction history block:** on a brand-new NPC, set current attitude to a neutral default
+  (e.g. "stranger") and leave the log empty. `core/12-canon-update.md` is what appends to it
+  after play — this spec never backfills sessions that haven't happened yet.
 
 Roll `reference/tables/npc-quirks.md` for at least the mannerism, and
 `reference/tables/npc-appearance.md` for the first physical impression. A rolled tic beats

@@ -406,3 +406,51 @@ P1 第三章的"关系图"(§三第 11 步)和 D 项第二条(campaign `Threat` 
   第四章清单里唯一留白的条目,判断是"真正需要一张具名精英卡时按需生成",不是提前
   批量造卡占地方。P6/P1 都已就绪,不构成阻塞。
 - **本批改动尚未提交**——按上一轮的教训,commit hash 回填留给提交完成后处理。
+
+### 2026-08-02 — 第八轮:P1 阶段 2 + NPC 互动史附加项落盘,只剩阶段 3
+
+紧接第七轮提交完第四章后,同一会话继续做阶段 2(敌对势力 intake 问题)和挂在本计划
+里的附加项(NPC 互动史)。Keeper 明确要求这两块做完,阶段 3 收尾留到下次。
+
+**做了什么**
+
+1. **`core/01-intake.md` 新增两问**:第 9 问"The threat"(威胁背后是邪教/独行术士
+   或家族/独立怪物/场所本身/自然或宇宙现象,auto 默认掷 `mythos-angles.md` 再反推
+   属于哪一类——两张表不是一一对应,是"掷出来的角度暗示了哪种威胁类型"这一步需要
+   模型自己判断,不是查表映射);第 10 问"人类反派首领是否默认强化战斗能力"(默认
+   否)。两问紧邻插在 B 组之后,C/D/E 组问题编号整体顺移(9→11 … 15→17),
+   "never invent a fourteenth question" 跟着改成"a sixteenth"。
+2. **`campaigns/_template-campaign/CLAUDE.md` 新增 `## The threat` 字段**:类别 + 
+   人类反派战斗强度 + 名字/一句话身份 + 指向 `world/` 全档的链接,结构对齐
+   `templates/cult.md` 的身份/力量来源/目标三行。
+3. **`core/04-design-scenario.md`/`core/03-build-world.md` 各加半句**:声明了 Threat
+   字段的战役,写 truth 和造 faction 都要读它、顺着它走,不重复提问、不另起炉灶。
+   `core/03` 这半句是阶段 2 才补上的——第三章接线核心 faction 分支时还没有这个字段,
+   补丁挂在这里而不是回头改第三章的 commit。
+4. **NPC 互动史**:`templates/npc.md` 加一个新的 KEEPER ONLY 节(当前态度覆盖式 +
+   逐场追加式的一行日志);`core/06-create-npc.md` 提一句新建 NPC 只填中性默认态度;
+   `core/12-canon-update.md` 的更新清单加一整节 `npcs/<name>.md`,并在 Quality bar
+   里加了对应检查项——这条明确按 Keeper 原话"必须写成流程,不写就没人更新"处理,
+   不是可选建议。
+5. **重跑了 bundle 与索引**,两者都干净通过。
+
+**为什么这么分**
+
+第 9、10 两问挨在一起插入,是为了只改一次问题编号——如果分两轮做,C/D/E 组的编号
+要跟着改两次,`update_plan/2026-08-02-antagonist-budget.md` 待讨论 9 早就预见到这
+个问题并明确要求"与 The threat 一问一起接线"。
+
+`core/03` 补的那句不属于阶段 2 清单原文,是执行时发现的真实缺口:Threat 字段存在
+的意义是"造世界的时候别答非所问",但第三章接线 faction 分支时这个字段还不存在,
+没有理由预判到要写这句话——这类"下游动作暴露上游遗漏"的缺口,发现了就地补,不用
+为了"改动归属于哪一轮"而拖延。
+
+**留下的判断**
+
+- **P1 现在只剩阶段 3(收尾)**:`reference/README.md` 登记新增的
+  `reference/mythos/artifacts-zh.md`/`reference/mythos/spells/`/`reference/tables/
+  cultist-archetypes.md`/八个 bestiary 条目、走一遍 `review-material` 审计新增内容、
+  归档进 `Archived/`。Keeper 已表示这部分留到下次会话。
+- **第三章 D 第二项(campaign `Threat` 字段)随阶段 2 一并完成**,原计划文件里
+  "留给阶段 2"的标注现在可以勾掉了;E 项(关系图惯例)仍然卡在 P5。
+- **本批改动尚未提交。**

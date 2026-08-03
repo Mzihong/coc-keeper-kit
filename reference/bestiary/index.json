@@ -111,12 +111,17 @@
       "declared_consumers": [],
       "referenced_by": [
         {
+          "file": "WORKLOG.md",
+          "line": 381,
+          "context": "与已有的 `the-bell-keeper.md` 同一约定。"
+        },
+        {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
           "line": 36,
           "context": "| `reference/bestiary/` | **只有 1 个文件**(`the-bell-keeper.md`)。README 建议 `threat`/`type`/`sanity` 三个 tag | 没有对标库。想\"照着现成的改\"目前无从改起 |"
         }
       ],
-      "reference_count": 1
+      "reference_count": 2
     },
     {
       "file": "thrall-of-cthulhu.md",

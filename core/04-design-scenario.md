@@ -16,6 +16,9 @@ fill in the pieces.
 
 1. **The truth.** Write what's *really* happening — the situation the mystery conceals. Start
    from the horror and work backwards to how a normal person would first brush against it.
+   If the campaign `CLAUDE.md` declares a **Threat** (category, and for a cult/organisation
+   or named antagonist, a link to its `world/` file), the truth must be built consistent with
+   it — read that field first; this spec doesn't re-ask what the threat is.
 2. **The clock.** Decide what the antagonist achieves if the investigators do nothing, and
    when. Pressure, not railroad — the world moves whether they act or not. For a campaign
    this is a standing artifact: build or update `world/event-clock.md` per

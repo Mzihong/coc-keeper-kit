@@ -46,6 +46,19 @@
 - **Length:** <one-shot (3–4h) / short arc (3–5 sessions) / open-ended chronicle>
 - **Party size:** <n>
 
+## The threat
+- **Category:** <cult/organisation / lone sorcerer or family / independent monster /
+  the place itself / natural or cosmic phenomenon — no human antagonist>
+- **Human antagonist strength:** <combat-emphasised / background-first (default) — see
+  `reference/rules/character-creation.md` §11. Delete this line if category has no human
+  antagonist.>
+- <If category is a cult/organisation: name + one-line identity + link to its full
+  `world/<name>.md` (built via `core/03-build-world.md`'s cult sub-path, structure mirrors
+  `templates/cult.md`). Otherwise: one line naming the antagonist/monster/phenomenon and a
+  link to where it's built out.>
+- `core/04-design-scenario.md` reads this before constructing the Keeper's truth — it does
+  not re-ask this question.
+
 ## Content lines & veils (session-zero safety)
 > **Never auto-filled.** If undeclared, generators write `<not declared — confirm at session
 > zero>` here and generate conservatively.

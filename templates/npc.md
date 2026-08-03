@@ -20,6 +20,17 @@
 > - **Leverage:** <what makes them talk, lie, or flip>
 > - **If pushed:** <how they react to pressure, exposure, or violence>
 
+> **KEEPER ONLY — Interaction history**
+> - **Current attitude toward the investigators:** <one word — overwrite each update, don't
+>   accumulate a history of moods here>
+> - **Log** (append one line per session this NPC actually interacted with the party; facts
+>   and relationship changes only, not scene narration — that lives in `canon-log.md`):
+>   - `<session #>` — <what happened between them, one line. e.g. "lied about the ledger and
+>     wasn't caught">
+> A line over one sentence belongs in `canon-log.md` instead — look the session number up
+> there, don't duplicate the narration here. This section exists so "does this NPC know/trust
+> the party" is answerable from this file alone, without rereading the whole canon-log.
+
 ## Stat block (CoC 7e)
 > Full stats only if they may fight or resist. For a pure social NPC, keep just the skills
 > that matter and note "non-combatant".

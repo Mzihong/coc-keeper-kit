@@ -147,6 +147,7 @@
           "CHANGELOG.md:64",
           "WORKLOG.md:69",
           "WORKLOG.md:258",
+          "WORKLOG.md:363",
           "core/06-create-npc.md:13",
           "core/13-create-investigator.md:15",
           "reference/README.md:30",
@@ -185,7 +186,7 @@
         "referenced_by": [
           "CHANGELOG.md:64",
           "WORKLOG.md:259",
-          "core/06-create-npc.md:73",
+          "core/06-create-npc.md:76",
           "core/13-create-investigator.md:26",
           "reference/decks/README.md:18",
           "reference/rules/character-creation.md:271",
@@ -203,7 +204,7 @@
           "CHANGELOG.md:64",
           "WORKLOG.md:184",
           "WORKLOG.md:259",
-          "core/06-create-npc.md:67",
+          "core/06-create-npc.md:70",
           "core/07-create-monster.md:22",
           "reference/mythos/README.md:16",
           "reference/rules/character-creation.md:270",
@@ -256,10 +257,11 @@
           "WORKLOG.md:257",
           "WORKLOG.md:279",
           "WORKLOG.md:287",
+          "core/01-intake.md:48",
           "core/02-rules-reference.md:18",
           "core/02-rules-reference.md:30",
-          "core/06-create-npc.md:42",
-          "core/06-create-npc.md:69",
+          "core/06-create-npc.md:45",
+          "core/06-create-npc.md:72",
           "core/07-create-monster.md:13",
           "core/11-review.md:62",
           "core/13-create-investigator.md:9",
@@ -270,6 +272,7 @@
           "reference/tables/cult-leader-positions.md:5",
           "reference/tables/cultist-archetypes.md:11",
           "reference/tables/cultist-archetypes.md:185",
+          "campaigns/_template-campaign/CLAUDE.md:53",
           "update_plan/2026-08-02-antagonist-budget.md:11",
           "update_plan/2026-08-02-antagonist-budget.md:114",
           "update_plan/2026-08-02-antagonist-budget.md:115",
@@ -304,7 +307,7 @@
         "referenced_by": [
           "CHANGELOG.md:43",
           "core/02-rules-reference.md:28",
-          "core/04-design-scenario.md:35",
+          "core/04-design-scenario.md:38",
           "update_plan/2026-08-02-antagonist-budget.md:114",
           "update_plan/Archived/2026-08-02-conventions-gaps.md:75"
         ]
@@ -326,9 +329,9 @@
         "referenced_by": [
           "CHANGELOG.md:43",
           "core/02-rules-reference.md:24",
-          "core/04-design-scenario.md:39",
+          "core/04-design-scenario.md:42",
           "core/07-create-monster.md:9",
-          "core/12-canon-update.md:57",
+          "core/12-canon-update.md:67",
           "templates/scenario.md:44",
           "reference/mythos/artifacts-zh.md:67",
           "update_plan/2026-08-02-antagonist-budget.md:114",
@@ -353,8 +356,9 @@
           "WORKLOG.md:73",
           "WORKLOG.md:142",
           "WORKLOG.md:267",
-          "core/03-build-world.md:42",
-          "core/04-design-scenario.md:28",
+          "core/01-intake.md:42",
+          "core/03-build-world.md:44",
+          "core/04-design-scenario.md:31",
           "reference/README.md:19",
           "reference/craft/README.md:15",
           "reference/mythos/artifacts-zh.md:4",
@@ -445,6 +449,7 @@
         "title": "The Bell-Keeper",
         "rights_holder": null,
         "referenced_by": [
+          "WORKLOG.md:381",
           "update_plan/2026-08-02-monster-templates-traits.md:36"
         ]
       },
@@ -465,8 +470,10 @@
         "rights_holder": null,
         "referenced_by": [
           "CHANGELOG.md:64",
+          "CHANGELOG.md:85",
           "WORKLOG.md:259",
-          "core/06-create-npc.md:73",
+          "WORKLOG.md:384",
+          "core/06-create-npc.md:76",
           "core/13-create-investigator.md:26",
           "reference/bestiary/fellrock.md:53",
           "reference/bestiary/sedecim.md:38",
@@ -485,7 +492,7 @@
         "referenced_by": [
           "CHANGELOG.md:69",
           "WORKLOG.md:320",
-          "core/03-build-world.md:53",
+          "core/03-build-world.md:55",
           "reference/bestiary/black-wing.md:68",
           "reference/mythos/cults/church-of-perfect-science.md:38",
           "reference/mythos/cults/louisiana-swamp-cult.md:20",
@@ -608,8 +615,8 @@
         "title": "complications.md — what goes sideways this session",
         "rights_holder": null,
         "referenced_by": [
-          "core/01-intake.md:66",
-          "core/04-design-scenario.md:52",
+          "core/01-intake.md:80",
+          "core/04-design-scenario.md:55",
           "reference/decks/miseries-zh.md:9",
           "reference/decks/miseries-zh.md:414",
           "reference/decks/README.md:17",
@@ -628,7 +635,8 @@
           "CHANGELOG.md:65",
           "WORKLOG.md:74",
           "WORKLOG.md:270",
-          "core/03-build-world.md:45",
+          "core/01-intake.md:44",
+          "core/03-build-world.md:47",
           "templates/cult.md:8",
           "reference/craft/cult-design-zh.md:53",
           "reference/craft/cult-design-zh.md:104",
@@ -653,8 +661,8 @@
           "WORKLOG.md:74",
           "WORKLOG.md:271",
           "WORKLOG.md:279",
-          "core/03-build-world.md:46",
-          "core/06-create-npc.md:40",
+          "core/03-build-world.md:48",
+          "core/06-create-npc.md:43",
           "templates/cult.md:11",
           "reference/tables/README.md:28",
           "update_plan/2026-08-02-cult-doc-integration.md:132",
@@ -685,7 +693,9 @@
         "title": "cultist-archetypes.md — 邪教徒范型速查",
         "rights_holder": null,
         "referenced_by": [
-          "core/06-create-npc.md:44",
+          "CHANGELOG.md:78",
+          "WORKLOG.md:370",
+          "core/06-create-npc.md:47",
           "reference/mythos/spells/call-father-dagon-and-mother-hydra.md:23",
           "update_plan/2026-08-02-cult-doc-integration.md:183",
           "update_plan/2026-08-02-cult-doc-integration.md:250"
@@ -695,11 +705,11 @@
         "title": "hooks.md — how the investigators get pulled in",
         "rights_holder": null,
         "referenced_by": [
-          "core/01-intake.md:65",
-          "core/01-intake.md:91",
+          "core/01-intake.md:79",
+          "core/01-intake.md:107",
           "reference/tables/README.md:15",
           "campaigns/beidaihe-winter/CLAUDE.md:72",
-          "campaigns/_template-campaign/CLAUDE.md:84",
+          "campaigns/_template-campaign/CLAUDE.md:97",
           ".claude/skills-eval-workspace/benchmark.json:59"
         ]
       },
@@ -707,9 +717,9 @@
         "title": "locations.md — where it happens",
         "rights_holder": null,
         "referenced_by": [
-          "core/01-intake.md:65",
-          "core/01-intake.md:90",
-          "core/03-build-world.md:13",
+          "core/01-intake.md:79",
+          "core/01-intake.md:106",
+          "core/03-build-world.md:15",
           "reference/tables/hooks.md:7",
           "reference/tables/README.md:16",
           "campaigns/beidaihe-winter/CLAUDE.md:71",
@@ -730,15 +740,17 @@
         "rights_holder": null,
         "referenced_by": [
           "WORKLOG.md:207",
-          "core/01-intake.md:66",
-          "core/01-intake.md:88",
-          "core/03-build-world.md:14",
+          "core/01-intake.md:41",
+          "core/01-intake.md:80",
+          "core/01-intake.md:93",
+          "core/01-intake.md:104",
+          "core/03-build-world.md:16",
           "reference/tables/hooks.md:7",
           "reference/tables/README.md:17",
           "campaigns/beidaihe-winter/CLAUDE.md:53",
           "campaigns/beidaihe-winter/CLAUDE.md:73",
           "campaigns/beidaihe-winter/references.md:27",
-          "campaigns/_template-campaign/CLAUDE.md:66",
+          "campaigns/_template-campaign/CLAUDE.md:79",
           "update_plan/2026-08-02-cult-doc-integration.md:216",
           ".claude/skills-eval-workspace/benchmark.json:59"
         ]
@@ -751,7 +763,7 @@
           "WORKLOG.md:75",
           "WORKLOG.md:273",
           "WORKLOG.md:278",
-          "core/06-create-npc.md:38",
+          "core/06-create-npc.md:41",
           "reference/tables/README.md:24",
           "update_plan/2026-08-02-cult-doc-integration.md:138",
           "update_plan/2026-08-02-cult-doc-integration.md:168"
@@ -763,7 +775,7 @@
         "referenced_by": [
           "CHANGELOG.md:65",
           "WORKLOG.md:273",
-          "core/06-create-npc.md:37",
+          "core/06-create-npc.md:40",
           "reference/decks/README.md:15",
           "reference/tables/npc-appearance.md:4",
           "reference/tables/npc-appearance.md:38",
@@ -803,10 +815,12 @@
         "reference/tables/cult-goals.md",
         "reference/tables/cult-leader-positions.md",
         "reference/tables/cult-power-sources.md",
+        "reference/tables/cultist-archetypes.md",
         "reference/tables/npc-appearance.md",
         "reference/tables/npc-quirks.md"
       ],
       "WORKLOG.md": [
+        "reference/bestiary/the-bell-keeper.md",
         "reference/craft/cult-design-zh.md",
         "reference/craft/lovecraft-zh.md",
         "reference/decks/busybodies-zh.md",
@@ -820,11 +834,13 @@
         "reference/tables/cult-goals.md",
         "reference/tables/cult-leader-positions.md",
         "reference/tables/cult-power-sources.md",
+        "reference/tables/cultist-archetypes.md",
         "reference/tables/mythos-angles.md",
         "reference/tables/npc-appearance.md",
         "reference/tables/npc-quirks.md"
       ],
       "campaigns/_template-campaign/CLAUDE.md": [
+        "reference/rules/character-creation.md",
         "reference/tables/hooks.md",
         "reference/tables/mythos-angles.md"
       ],
@@ -850,7 +866,10 @@
         "reference/tables/complications.md"
       ],
       "core/01-intake.md": [
+        "reference/craft/cult-design-zh.md",
+        "reference/rules/character-creation.md",
         "reference/tables/complications.md",
+        "reference/tables/cult-goals.md",
         "reference/tables/hooks.md",
         "reference/tables/locations.md",
         "reference/tables/mythos-angles.md"

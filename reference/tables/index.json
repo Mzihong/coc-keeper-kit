@@ -21,12 +21,12 @@
       "referenced_by": [
         {
           "file": "core/01-intake.md",
-          "line": 66,
+          "line": 80,
           "context": "`mythos-angles.md`, `complications.md`. Roll; don't pick the first plausible thing you"
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 52,
+          "line": 55,
           "context": "`reference/tables/complications.md`), and likely stopping points."
         },
         {
@@ -104,8 +104,13 @@
           "context": "配套四张骰表:`cult-goals.md`(愿望 1D10 × 手段 1D8,两表相乘才是完整目标;源表"
         },
         {
+          "file": "core/01-intake.md",
+          "line": 44,
+          "context": "cult's concrete goal is still rolled from `reference/tables/cult-goals.md`, not invented,"
+        },
+        {
           "file": "core/03-build-world.md",
-          "line": 45,
+          "line": 47,
           "context": "enemies → relationship diagram). Roll `reference/tables/cult-goals.md` (want × means) and"
         },
         {
@@ -179,7 +184,7 @@
           "context": "`tables/cult-goals.md`、`tables/cult-leader-positions.md`、"
         }
       ],
-      "reference_count": 18
+      "reference_count": 19
     },
     {
       "file": "cult-leader-positions.md",
@@ -213,12 +218,12 @@
         },
         {
           "file": "core/03-build-world.md",
-          "line": 46,
+          "line": 48,
           "context": "`reference/tables/cult-leader-positions.md` (the leader's social front) rather than inventing"
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 40,
+          "line": 43,
           "context": "tired-looking.\" For a cult leader specifically, `reference/tables/cult-leader-positions.md`"
         },
         {
@@ -343,8 +348,18 @@
       ],
       "referenced_by": [
         {
+          "file": "CHANGELOG.md",
+          "line": 78,
+          "context": "- **教团文档第四章落盘,P1 全部四章完成。** 新增 `reference/tables/cultist-archetypes.md`:"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 370,
+          "context": "1. **12 组人类邪教徒范型 + 祝福菜单 + 永生大师工具包落盘** `reference/tables/cultist-archetypes.md`。"
+        },
+        {
           "file": "core/06-create-npc.md",
-          "line": 44,
+          "line": 47,
           "context": "**Rank-and-file cultists** — `reference/tables/cultist-archetypes.md` has twelve ready-to-use"
         },
         {
@@ -363,7 +378,7 @@
           "context": "`tables/cult-power-sources.md`、d20 外貌/气质表、`tables/cultist-archetypes.md`"
         }
       ],
-      "reference_count": 4
+      "reference_count": 6
     },
     {
       "file": "hooks.md",
@@ -376,12 +391,12 @@
       "referenced_by": [
         {
           "file": "core/01-intake.md",
-          "line": 65,
+          "line": 79,
           "context": "2. **Roll the seed tables** in `reference/tables/` — `hooks.md`, `locations.md`,"
         },
         {
           "file": "core/01-intake.md",
-          "line": 91,
+          "line": 107,
           "context": "- Roll `hooks.md` for the way the investigators are pulled in."
         },
         {
@@ -396,7 +411,7 @@
         },
         {
           "file": "campaigns/_template-campaign/CLAUDE.md",
-          "line": 84,
+          "line": 97,
           "context": "| <field> | <value> `[auto]` | <rolled hooks.md 14 / inferred from era> |"
         },
         {
@@ -418,17 +433,17 @@
       "referenced_by": [
         {
           "file": "core/01-intake.md",
-          "line": 65,
+          "line": 79,
           "context": "2. **Roll the seed tables** in `reference/tables/` — `hooks.md`, `locations.md`,"
         },
         {
           "file": "core/01-intake.md",
-          "line": 90,
+          "line": 106,
           "context": "- Roll `locations.md` for at least one place that isn't the obvious one."
         },
         {
           "file": "core/03-build-world.md",
-          "line": 13,
+          "line": 15,
           "context": "- If this is the campaign's first world-building pass, roll `reference/tables/locations.md`"
         },
         {
@@ -498,17 +513,27 @@
         },
         {
           "file": "core/01-intake.md",
-          "line": 66,
+          "line": 41,
+          "context": "`reference/tables/mythos-angles.md` and infer the category the rolled angle implies; don't"
+        },
+        {
+          "file": "core/01-intake.md",
+          "line": 80,
           "context": "`mythos-angles.md`, `complications.md`. Roll; don't pick the first plausible thing you"
         },
         {
           "file": "core/01-intake.md",
-          "line": 88,
+          "line": 93,
+          "context": "| The threat | roll `mythos-angles.md`, infer the category (see question 9) |"
+        },
+        {
+          "file": "core/01-intake.md",
+          "line": 104,
           "context": "- Roll `mythos-angles.md` and take what you get. If the result is not obviously compatible"
         },
         {
           "file": "core/03-build-world.md",
-          "line": 14,
+          "line": 16,
           "context": "and `reference/tables/mythos-angles.md` before writing. Take what you roll."
         },
         {
@@ -538,7 +563,7 @@
         },
         {
           "file": "campaigns/_template-campaign/CLAUDE.md",
-          "line": 66,
+          "line": 79,
           "context": "> - **The rolled angle:** <which `mythos-angles.md` result this came from, if any>"
         },
         {
@@ -552,7 +577,7 @@
           "context": "\"evidence\": \"Premise centers on Camas Dubh, a storm-locked Skye fishing hamlet bound to a mistranslated century-old rite ('Tàmh na Mara') that unknowingly feeds"
         }
       ],
-      "reference_count": 12
+      "reference_count": 14
     },
     {
       "file": "npc-appearance.md",
@@ -585,7 +610,7 @@
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 38,
+          "line": 41,
           "context": "`reference/tables/npc-appearance.md` for the first physical impression. A rolled tic beats"
         },
         {
@@ -627,7 +652,7 @@
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 37,
+          "line": 40,
           "context": "Roll `reference/tables/npc-quirks.md` for at least the mannerism, and"
         },
         {

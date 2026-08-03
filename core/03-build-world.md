@@ -7,6 +7,8 @@ for **usable texture**, not an encyclopedia: enough for the Keeper to improvise 
 
 - Read the campaign's `CLAUDE.md` for **era, tone, output language, and content lines** —
   match them. Read `canon-log.md` if the campaign has been played.
+- If the campaign already declares a **Threat** (category + name), building that faction
+  means building *that one* — don't roll or invent a competing threat instead.
 - Decide the scope requested: **region**, **town/locale**, **faction/organisation**, or
   **timeline**.
 - Use `templates/location.md` for a place; for a region or faction, adapt its headings.
