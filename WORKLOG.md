@@ -630,5 +630,6 @@ P6 的 `roster.csv` 判断没有去问 Keeper,是因为答案能从仓库现状�
 - **P8 计划文件的"需要先查清的事"三条在 P7 落盘前就已查过**——当时 `reference/rules/`
   还没有 `magic.md`,答案是"两者互不阻塞";P7 落盘后复核确认两边改动的文件确实没有
   重叠,判断依然成立,原样记录在计划文件里,不追溯改写。
-- **本批改动尚未提交**——commit hash 回填、`Archived/` 归档留到 Keeper 确认可以提交
-  之后处理。
+- **本批改动已提交(d9e1fef)并归档**——Keeper 确认后直接提交,计划文件已 `git mv`
+  进 `Archived/`,hash 回填进计划文件头、`update_plan/README.md`、`Archived/README.md`
+  三处,当次做完,没有留到下一次 touch 这些文件的时候。

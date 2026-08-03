@@ -14,7 +14,7 @@
 
 ---
 
-## 2026-08-03 (c5dbaf1, ca17e5d)
+## 2026-08-03 (c5dbaf1, ca17e5d, 4cc63ef, 84dba55, 3f7225e, d9e1fef)
 
 对应计划:[P4 antagonist-budget](update_plan/Archived/2026-08-02-antagonist-budget.md)、
 [P6 investigator-cards](update_plan/Archived/2026-08-02-investigator-cards.md)——两者内容
