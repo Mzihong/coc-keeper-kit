@@ -14,6 +14,21 @@
 
 ---
 
+## 2026-08-03 (c5dbaf1, 待提交)
+
+对应计划:[P4 antagonist-budget](update_plan/Archived/2026-08-02-antagonist-budget.md)、
+[P6 investigator-cards](update_plan/Archived/2026-08-02-investigator-cards.md)——两者内容
+均已在 2026-08-02 落盘完成,本轮只是收尾归档,无新增用户可见能力。
+
+### 修复问题
+
+- P4/P6 的计划文件头、`update_plan/README.md` 状态表在内容早已提交完成后仍停留在
+  "等提交"/"进行中"措辞,现已回填 commit hash 并归档进 `update_plan/Archived/`。
+- `CHANGELOG.md` 2026-08-02 条目头部的 commit 列表此前只列了 4 个(含一个"待提交"
+  占位),现已核实补全为当天实际的全部 16 个 commit。
+
+---
+
 ## 2026-08-02 (713cd1c, 9c011f3, a7cb4f6, 97c87d8, 39d1625, 0769902, 610dd3b, 9c47d98, 7e42d2a, ef4936a, e34d3db, 0c736ee, 66d32d2, d91f487, e0d026b, aceddf9)
 
 对应计划:[P2 multi-arc-and-branching](update_plan/Archived/2026-08-02-multi-arc-and-branching.md)、
