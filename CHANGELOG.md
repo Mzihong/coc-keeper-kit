@@ -21,84 +21,52 @@
 (第 5 项玩家卡后续拆出为 [P6 investigator-cards](update_plan/2026-08-02-investigator-cards.md))、
 [P6 investigator-cards](update_plan/2026-08-02-investigator-cards.md) 第二轮、
 [P4 antagonist-budget](update_plan/2026-08-02-antagonist-budget.md)(人类侧,已完成)、
-[P1 cult-doc-integration](update_plan/2026-08-02-cult-doc-integration.md) 第三章(方法论/骰表/模板/接线)
+[P1 cult-doc-integration](update_plan/Archived/2026-08-02-cult-doc-integration.md) 第三章(方法论/骰表/模板/接线)
 
 ### 修复问题
 
-- 维护规则一直要求"填 changelog",但仓库里根本没有 `CHANGELOG.md`,现已补上本文件。
-- 已归档的 P2 计划文件头仍写着"状态:待执行",与状态表里的"已完成(e0d026b)"矛盾,现已同步。
-- Maintenance 规则此前只存在于 `CLAUDE.md`,`GEMINI.md` 与 `AGENTS.md` 里缺失(只存在于一个适配器的指令本身就是 bug),现三份适配器一致。
-- **投资者卡的建卡顺序原本是错的**:先算技能点再定年龄。年龄的教育进步检定会改 EDU,而多数职业公式吃 EDU——照原顺序建出来的卡点数必然对不上。现在年龄排在算点数之前。
-- 投资者卡渲染时会丢掉技能专精,同一张卡上两条 `Science` 渲成一模一样,读卡的人分不出哪条是工程学、哪条是物理。现已合成显示为 `Science (Engineering)`。
+- 维护规则要求填 changelog,但仓库里没有 `CHANGELOG.md`,现已补上。
+- 已归档的 P2 计划文件头与状态表不一致,现已同步为"已完成(e0d026b)"。
+- Maintenance 规则此前只写在 `CLAUDE.md`,现三份适配器已同步一致。
+- 投资者建卡顺序颠倒(先算技能点再定年龄,年龄会改 EDU),现改为先定年龄再算点数。
+- 投资者卡渲染会丢失技能专精(两条 `Science` 渲成一样),现合成显示为 `Science (Engineering)`。
+- `build-reference-index.py` 不递归扫描,`mythos/` 子目录下的文件此前完全漏检,现已改为递归扫描。
 
 ### 更新内容
 
-- `update_plan/README.md` 增加**完结清单(Definition of Done)**:状态两处同步、changelog、产物重建、三适配器一致性、术语、计划间关系、提交与归档共七组。
-- 新增**同一 campaign 内的多章(arc)惯例**:剧本骨架编号 `01-<slug>.md`、`02-...`,`overview.md` 增加 Arcs 索引,`sessions/` 全局连续编号不按章清零。
-- 新增 **canon-log 的 Interlude(幕间)条目**:时间跳跃时记录流逝时长、幕后世界变化、人物状态清扫与带进下一章的后果。
-- 新增**平行世界分支 campaign**:兄弟文件夹加 campaign `CLAUDE.md` 的可选 `Lineage` 字段(`Forked from: <parent-slug> @ session <n>`),分叉点前的父线 canon 只读继承、永不写回,共享实体 copy-on-write。
-- 新增 **event-clock 归档惯例**:一章威胁结清后归档到 `world/archive/event-clock-<arc>.md` 并重建 `world/event-clock.md`,live clock 路径不变、现有 spec 引用零改动。
-- 新增**结算奖励与成长阶段**:剧本结束时的 SAN 回复与成长判定写进 spec,`templates/scenario.md` 增加对应小节。
-- 新增**投资者(玩家卡)生成**:`create-investigator` 技能加 `core/13-create-investigator.md`,以 `templates/investigator.schema.json` 为唯一真相源,`scripts/render-investigator.py` 渲染成 `templates/investigator.md` 卡面。
-- 新增**追逐速查** `reference/rules/chases.md`,以及**人物创建与理智速查** `reference/rules/character-creation.md`、`reference/rules/sanity.md`。
-- `core/04-design-scenario.md` 增加"在既有 campaign 开新章"路径:读全部前章 canon 与归档钟,不重建世界。
-- `core/00-how-to-run.md` 的 Layout 图补上 `world/archive/` 与编号骨架。
-- 人数缩放惯例并入 `core/04-design-scenario.md` 与 `core/11-review.md` 的审查项。
-- **投资者卡现在照一张真实车卡建模,不再只是个属性块**:`templates/investigator.schema.json` 重建,补上年龄补正、点数账本、技能的基础值/职业点/兴趣点/专精、信用评级对应的生活水平与现金资产、装备、经历包、神话遭遇、背景「关键」标记、伙伴与成长记录。旧记录仍然合法——新字段全部可选。
-- **建卡知识大幅补齐** `reference/rules/character-creation.md`:年龄七档补正表、Build/伤害加值表、MOV 判定、重伤值、技能基础值表、职业的三要素(点数公式家族/信用区间/本职技能表含自由槽)、信用评级→生活水平/现金/资产/消费水平换算表、伞技能专精写法、可选规则(技能上限、艺术/科学/语言外溢、经历包)。**用它可以逐条审一张别人交上来的卡**。
-- `core/13-create-investigator.md` 的建卡顺序改为八步,并加上**点数账本必须平**的验收口径:职业点花完 = 公式总额、兴趣点花完 = INT×2、每条技能 `value = 基础值+职业点+兴趣点+成长点`。
-- 新增 `templates/investigator.example.json` —— 一张字段填满、算术已逐条核过的样卡。建卡时照它的形状抄,不用猜一张满卡需要哪些字段。
-- **kit 的转载规则改了,现在允许收录官方资料,但必须标注引用源。** 原规则一刀切"不复制任何受版权文本",实际挡住了官方卡组这类有用的取材源。新规则分两层:kit **生成的内容**照旧不含任何原文;官方资料可以收进 `reference/decks/`,但文件末尾**必须有 `## 引用出处`** 一节(作品、版权方、版本、来源、收录范围、收录用途),没有就不许进仓库,并且生成器**只取结构和数值刻度,不取文字**。规则本体在 `core/00-how-to-run.md` 的 ground rules,`CLAUDE.md`、`CONTRIBUTING.md`、`README.md` 的免责声明同步。
-- **修了一个 bundle 缺件**:`core/09-description.md` 让你去读洛夫克拉夫特笔法笔记,但那份文件从来没进过 `dist/bundle.md`——用 bundle 的 Keeper 被指去读一份手上没有的文件。现已随新目录一并进 bundle。
-- **新增 `reference/craft/`,存放「手法提炼稿」**(怎么写),与 `reference/rules/`(数字是多少)分工:两边都是 kit 原创、都进 bundle,但 rules 错了数值不对,craft 错了文字平庸。洛夫克拉夫特笔法笔记移入为 `craft/lovecraft-zh.md`;P1 计划中的邪教设计手法稿落点同步改到 `craft/cult-design-zh.md`。`glossary-zh.md` 仍留在 `reference/` 根目录——它是被二十余处引用的脊梁文件,不属于任何分类。
-- **反向索引扩到全部七个目录**(原本只管 decks/sourcebooks):`rules/`、`craft/`、`tables/` 里没人引用的文件现在会被报为 orphaned;`bestiary/`、`mythos/` 是内容库,没人引用属正常,不计为错误。
-- **`reference/` 下的第三方资料现在有固定去处和固定流程了。** 卡组进 `reference/decks/`,整本书进 `reference/sourcebooks/`(卡组是现成条目随取随用,书是深查——用法不同所以分开);kit 自己写的速查表仍在 `reference/rules/`,两者冲突以 sourcebook 为准并回头修速查表。本轮归位 7 份:好事者、恐惧症、惨事、武器与造物 4 份卡组,7e 规则书、魔法大典、怪物之锤 3 本书。
-- **Keeper 现在能查到法术、怪物和规则原文了。** 造 spellcaster 查 `grand-grimoire-zh.md`(550+ 法术)、造神话生物查 `malleus-monstrorum-zh.md`、速查表说不清的数值回 `keeper-rulebook-7e-zh.md` 查原文;疯狂后遗症查恐惧症卡组、给 NPC 配武器查武器卡组、场景意外查惨事卡组。**这些都是本地文件,不进 `dist/bundle.md`**——所有 spec 的引用都写成可选,用 bundle 的 Keeper 照样能按 spec 工作。转录稿有断字错行,取数值前先人工判读。
-- **新增「归档第三方资料」技能 `archive-reference`(`core/14-archive-reference.md`)**:Keeper 把一份卡组或转换好的 PDF 文本丢过来,一句"归档这份资料"即可,七步走完——分类、改英文文件名、写头部导读(含已知缺陷警示)、补 `## 引用出处`、接线进能用它的 spec、重建索引、收尾。手工搬必漏步骤。
-- **新增反向索引 `reference/index.json`** 与各归档目录的 `index.json`,由 `scripts/build-reference-index.py` 生成:出处从各文件的 `## 引用出处` 表解析(引用块是唯一真源),引用关系全仓库扫描到行号。**要换掉或删掉一份资料前先看它被谁引用**,免得打断 spec。脚本同时是校验器,缺引用块或归档件没人引用会报错。
-- **`update_plan` 的 P7 魔法速查解除阻塞** —— 它等了一整轮的"魔法书转换稿"就是现在的 `reference/sourcebooks/grand-grimoire-zh.md`,可以开工;P6 补章节号的后续项也从"翻 PDF"变成"搜转录稿";P9 的来源红线问题因转载规则改动而部分有解。
-- **新增 `WORKLOG.md`** —— 给接手会话/协作者的上手速览(结构、硬约定、当前卡点),和面向 Keeper 的 `CHANGELOG.md` 分工不同。改结构或约定时要顺手更新,已写进三份适配器的 Maintenance 与完结清单。
-- **新增 `reference/decks/` 与首份收录件 `busybodies-zh.md`(官方《好事者卡组》47 张 NPC 卡)**。建 NPC 时可先翻同职业的卡校准数值刻度、技能取舍与"秘密"该写多长(`core/06-create-npc.md`);建调查员时它是 47 份填满字段的样卡,并给出把卡当**替补 PC** 用的现成办法(另给 100 点自选技能)(`core/13-create-investigator.md`)。卡组**不进 `dist/bundle.md`**,所有引用都是加分项而非前置依赖——用 bundle 的 ChatGPT/Gemini Keeper 没有它照样能工作。卡上 SIZ/MOV 有已知转录偏差,衍生值一律自己重算。
-- `reference/rules/character-creation.md` 每个小节加**来源指路**:标明数据是从 `COC apolo.xlsx` 哪个 sheet 提炼的,不摘原文、只给定位信息——技能基础值表的"规则书第四章:技能"是源材料自带的引用,其余小节如实标注"章节号未核实"而非编号瞎猜。`reference/README.md` 记录了这条惯例本身,供以后其他速查文件照做。
-- **新增「收尾维护会话」技能 `close-session`(`core/15-close-session.md`)**:没有对应 `update_plan/` 计划文件、也不是归档第三方资料的临时改动,收尾时用它——比只说"更新 WORKLOG"多一步硬性核对:把刚写进日志里的数量词/路径/清单回头 grep 对照实际仓库状态,而不是凭记忆断言。促成原因:`WORKLOG.md`、`CHANGELOG.md`、`reference/README.md`、`scripts/build-reference-index.py` 五处曾经同时写错"六个目录"(加了 `craft/` 后实际是七个),没有任何收尾步骤会主动核对这类数字,直到下一个会话 grep 出来。已改成"七个",并在 `core/00`、`CLAUDE.md`、`GEMINI.md`、`AGENTS.md` 四处登记新技能。
-- **人类反派终于有了"该多强"的答案。** 原来 `core/06`/`core/07`/`core/13` 能造反派,但没有任何地方回答强度——一个技能全 90% 的邪教首领能毫发无伤地通过既有审计。现在 `reference/rules/character-creation.md` §11 给出:普通人类反派直接照 `busybodies-zh.md` 的 47 张官方 NPC 卡校准(不再凭空定"均值 50");首领 = 这个基线 + 一层增量,法术型首领按资历掷法术数量(法术数值查 `grand-grimoire-zh.md`)、非法术型首领按装备总价(查 `weapons-and-artifacts-zh.md`)二选一;技能**选哪些**由背景决定,**给多高**由致命性倒推,不是背景越硬数值越高。原计划设想的一整套"技能点预算带 300–1000"表和四组预设属性/技能数组**确认作废**,反派和调查员共用同一套标准创建流程,不再开小灶。`core/02/06/07/11` 同步接上入口与审计题。
-- **邪教终于有一套"怎么设计"的方法论,不用每次现编。** 新增 `reference/craft/cult-design-zh.md`:为什么邪教是最好的反派、克苏鲁邪教和其他神话教团的区别、一条十一步的有序设计流程(概念→首领→目标→组织→成员→入会→财源→神话接触分层→弱点→敌人→关系图)、财源六项作为线索引擎(每项都答"谁付账、谁看见、留下什么痕迹")、弱点与敌人的写法("平淡才可信")。配套四张新骰表:`cult-goals.md`(愿望×手段,两表相乘才是完整目标)、`cult-leader-positions.md`(首领的社会定位与它带来的便利)、`cult-power-sources.md`(力量来源)、`npc-appearance.md`(外貌与气质,和已有的 `npc-quirks.md` 举止表分工互补)。新增 `templates/cult.md` 空白模板,字段对齐 `core/03` 既有的 faction 结构。`core/03`/`core/04`/`core/06` 三处接线:起草邪教 faction 时按流程走、铺线索地图时直接拿六项财源当独立线索来源、造 NPC 时能一并掷外貌表和首领定位表。**教团第四章(11 个邪教徒原型/怪物/造物)的两个前置——反派强度预算与魔法速查——现在都已解除**,可以直接开工。
-- **教团文档第一/二章落盘,克苏鲁与五个具体教团现在有现成资料可以直接拿来用。**
-  新增 `reference/mythos/great-old-ones/cthulhu.md`(克苏鲁本体的 setting 级 lore:苏醒
-  条件、征兆、教团怎么崇拜它、留给守秘人的裁定空间)与
-  `reference/mythos/cthulhu-cult-history-zh.md`(27 条压缩历史条目,前 2000 年苏美尔教团到
-  2001 年俄勒冈对峙,外加"永生大师线"/"黑翼者线"/"深潜者混种线"三条可直接用作多章战役
-  主心骨的贯穿线索)。`reference/mythos/cults/` 新增五个教团全档(摩耳甫斯崇高会、路易斯安那
-  沼泽教派、神子社、达贡密教团、完美科学教会),各含起源、首领、组织结构、财源(线索引擎)、
-  弱点、敌人、成员钩子与故事种子——起战役时可以直接改皮拿来用,不必从零设计。`core/03` 的
-  timeline 与 faction 分支都已接线指向这批新资料。
-- **修了 `scripts/build-reference-index.py` 的一个真实 bug**:`mythos/` 的
-  `great-old-ones/`、`cults/` 子目录此前完全不进反向索引(脚本只扫每个目录的顶层文件,不递归)
-  ——加了子目录结构后新文件会静默漏检。现在按 `mythos/README.md` 记录的子目录惯例递归扫描。
-- **教团文档第四章落盘,P1 全部四章完成。** 新增 `reference/tables/cultist-archetypes.md`:
-  12 组可直接使用的邪教徒数值(基础邪教徒、学术/显贵/蓝领/罪犯×2/执法/医护/士兵×2/
-  青年×3/祭司/首领),全部数值已过 `core/02-rules-reference.md` 校验(HP/伤害加值/体格/
-  魔法值逐条核对通过);外加"克苏鲁的祝福"异能菜单(~20 条,可给邪教徒加一两项)和
-  "永生大师"设计工具包(角色定位、常见/独特异能与法术菜单、基础模板,配一个具名范例
-  慧强)。`core/06-create-npc.md` 接线指路。新增 8 个怪物条目进 `reference/bestiary/`:
-  黑翼者、费尔罗克、猩红者、弗米森蠕虫、塞德西姆(完美科学教会"五者")、混种深潜者、
-  克苏鲁受祝者、克苏鲁之隶。新增 `reference/mythos/artifacts-zh.md`(拉莱耶偶像、克苏菇、
-  处理器、非欧几里得建筑学、黑滴、疼痛诱导器)与 `reference/mythos/spells/` 七个新法术
-  (请神术达贡/海德拉变体、狂喜术、沉默之油,以及黑翼者/费尔罗克/弗米森蠕虫/猩红者各自
-  的召唤/束缚术)——只做了本章自身需要的这七个,没有等 P7 完整的法术速查。
-  **原文档第二个"永生大师"范例是混沌元素官方战役《犹格-索托斯之影》(1982)里的具名角色
-  卡尔·斯坦福,判定为版权问题(命名角色绑定商业产品,不是"取结构不取文字"能覆盖的),
-  未收录。**
-- **新战役 intake 现在会问"威胁背后是什么"了,答案会一路传下去,后面的 spec 不用
-  再猜或者重复问。** `core/01-intake.md` 新增两问:第 9 问"The threat"(邪教/独行
-  术士或家族/独立怪物/场所本身作祟/自然或宇宙现象——auto 默认掷神话角度表反推,不
-  是硬编码映射);第 10 问"人类反派首领默认要不要强化战斗"(默认不强化)。答案写进
-  campaign `CLAUDE.md` 新增的 `## The threat` 字段,`core/04-design-scenario.md` 写
-  剧本真相、`core/03-build-world.md` 造势力时都会先读这个字段、顺着它走,不重新提问
-  或另起一个不相关的威胁。
-- **NPC 档案现在能记住"这个人认不认识调查员",不用每次翻遍整份场次记录去查。**
-  `templates/npc.md` 新增互动史小节(当前态度一个词 + 逐场一行事实记录);
-  `core/12-canon-update.md` 收尾清单里这一步是必需项,不是可选的。
+- 新增 `update_plan/README.md` 的完结清单(状态同步、changelog、产物重建等七组收尾检查项)。
+- 新增同一 campaign 内的多章(arc)编号与索引惯例。
+- canon-log 新增 Interlude(幕间)条目,记录章节间的时间跳跃与世界变化。
+- 新增平行世界分支 campaign 惯例(`Lineage` 字段 + 父线只读继承)。
+- 新增章节结清后归档 event-clock 的惯例。
+- 新增剧本结束时的 SAN 回复与成长判定惯例。
+- 新增 `create-investigator` 技能:JSON 唯一真源 + 渲染投资者卡面。
+- 新增追逐、人物创建、理智三份速查表。
+- `design-scenario` 新增在既有 campaign 开新章的路径。
+- 人数缩放惯例并入 `design-scenario` 与 `review-material` 的审查项。
+- 投资者卡 schema 按真实车卡表重建,补齐年龄补正、点数账本、装备、背景等字段(旧记录仍合法)。
+- `character-creation.md` 补齐年龄补正、Build/伤害加值、技能基础值等建卡数据,可用来审核他人交的卡。
+- `create-investigator` 建卡顺序改为八步,并加上点数账本必须平的验收口径。
+- 新增 `investigator.example.json` 一张字段填满、算术已核对的样卡。
+- kit 转载规则改为分层:生成内容不含原文,官方资料可收录但须标注 `## 引用出处`、只取结构不取文字。
+- 补上一个 bundle 缺件:洛夫克拉夫特笔法笔记此前从未进 `dist/bundle.md`,现已收进 bundle。
+- 新增 `reference/craft/`(手法提炼稿),与 `reference/rules/`(数值速查)分工。
+- 反向索引扩到全部七个目录,新增 orphan(无人引用)检查。
+- `reference/decks/`(卡组)与 `reference/sourcebooks/`(整书)分类归位,本轮收录 7 份官方资料。
+- 官方法术、怪物、规则原文本地可查(卡组/书本身不进 `dist/bundle.md`,所有引用按可选处理)。
+- 新增归档第三方资料的技能 `archive-reference`,七步走完分类、命名、引用、接线、重建索引。
+- 新增反向索引 `reference/index.json`(按 `## 引用出处` 解析出处、全仓库扫描引用行号)。
+- P7 魔法速查阻塞解除(转换稿已归档为 `grand-grimoire-zh.md`)。
+- 新增 `WORKLOG.md`,给接手会话的协作者用的结构与约定速览。
+- 新增 `reference/decks/` 与首份收录件 `busybodies-zh.md`(官方好事者卡组,47 张 NPC 卡)。
+- `character-creation.md` 各小节补上数据来源指路(标明取自哪个源文件/章节)。
+- 新增收尾维护会话技能 `close-session`,收尾时强制 grep 核对日志里的数量词/路径。
+- 新增人类反派强度预算:普通人类照官方 NPC 卡校准,首领按法术资历或装备总价加增量。
+- 新增邪教设计方法论 `craft/cult-design-zh.md`,配四张骰表与 `templates/cult.md` 模板。
+- 教团文档第一/二章落盘:新增克苏鲁本体 lore、历史条目表与五个具体教团全档。
+- 教团文档第四章落盘(P1 四章全部完成):新增邪教徒原型速查、8 个怪物、造物与配套法术。
+- intake 新增"The threat"与反派强化两问,答案写入 campaign `Threat` 字段供后续 spec 读取。
+- NPC 档案新增互动史记录节(当前态度 + 逐场一行事实),`update-canon` 收尾清单纳入必需项。
 
 ---
 

@@ -2,9 +2,10 @@
 
 > 日期:2026-08-02
 > 来源文档:`C:\Users\User\Desktop\克苏鲁教团.docx`(158 页,正文四章 + 三个剧本 + 附录)
-> 状态:阶段 0/1/2 与附加项全部落盘(第三章 D 第二项 campaign `Threat` 字段随阶段 2
-> 一并完成;E 关系图惯例仍留给 P5)。**只剩阶段 3 收尾**(README 登记、review-material
-> 审计、归档进 Archived/)。内容全部待提交。
+> 状态:**阶段 0/1/2 与附加项已完成**(第三章 D 第二项 campaign `Threat` 字段随阶段 2
+> 一并完成;E 关系图惯例仍留给 P5)。**阶段 3(收尾)拆分为独立计划
+> `update_plan/2026-08-02-cult-doc-wrapup.md`**,不在本文件继续跟踪;本文件作为设计
+> 记录归档,内容不再更新。
 > 关联:`2026-08-02-magic-quickref.md`(P7,magic.md 是第四章前置,已解除)
 > 关联:`2026-08-02-investigator-cards.md`(P6,精英邪教徒复用同一 schema)
 > 关联:`2026-08-02-antagonist-budget.md`(P4,第三章数值惯例的去向,已完成)
@@ -246,15 +247,8 @@ SAN 惯例。这些**不是邪教专属,是反派强度预算**——归属与�
 
 ## 阶段 3 — 收尾
 
-- [ ] 更新 `reference/README.md`:登记 `craft/cult-design-zh.md`、`mythos/cults/` 条目、
-      `tables/cult-goals.md`、`tables/cult-leader-positions.md`、
-      `tables/cult-power-sources.md`、d20 外貌/气质表、`tables/cultist-archetypes.md`
-- [ ] 更新 `reference/tables/README.md`:新表按既有分组(seed / prep & play)归位
-- [ ] 登记 `templates/cult.md`
-- [ ] 重跑 `scripts/build-bundle.sh` 更新 `dist/bundle.md`
-- [ ] 用 `review-material` 对新增材料做一次审计(数值、剧透卫生、术语一致性)
-- [ ] 按仓库维护规则填 changelog / 更新 README
-- [ ] 提交:阶段 1 每章一个 commit,阶段 2 单独一个 commit
+拆分为独立计划 `update_plan/2026-08-02-cult-doc-wrapup.md`,执行清单不在本文件重复
+维护——本文件已归档,阶段 3 完成后也不会回填到这里。
 
 ## 设计决定备忘(为什么不做成 skill)
 
