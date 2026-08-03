@@ -633,3 +633,32 @@ P6 的 `roster.csv` 判断没有去问 Keeper,是因为答案能从仓库现状�
 - **本批改动已提交(d9e1fef)并归档**——Keeper 确认后直接提交,计划文件已 `git mv`
   进 `Archived/`,hash 回填进计划文件头、`update_plan/README.md`、`Archived/README.md`
   三处,当次做完,没有留到下一次 touch 这些文件的时候。
+
+### 2026-08-03 — 第四轮:生成产物收尾核对(P7+P8 同步实际已在 d9e1fef 完成)
+
+接手时按第二轮留下的判断去做"P7+P8 都提交完后重跑一次生成产物"收尾,核对后发现
+**这一步在 P8 落盘时(d9e1fef)就已经做完**——P8 那轮收尾重跑脚本时 P7 的
+`magic.md`(84dba55)已经提交,所以 `dist/bundle.md` 与全部 `reference/**/index.json`
+的那次提交就是两边源文件都落地后的一次干净重跑,不是只含 P8 自己的改动。第二轮记录里
+"本轮收尾会重跑两个脚本并把结果纳入自己的提交"这句其实已经预告了这一点,只是没有
+在第三轮的"做了什么"里单独点出来,容易让下一个会话误以为还欠着。
+
+**做了什么**
+
+1. 确认 P8 源文件(`core/13`、`templates/investigator.md`、
+   `scripts/render-investigator.py`、`reference/rules/character-creation.md` 等)工作区
+   干净,`git status` 只剩一份与 P7/P8 无关的 `reference/sourcebooks/malleus-monstrorum-zh.md`
+   小改动(5 行,未处理,不在本轮范围内)。
+2. 重跑 `build-bundle.sh`(4746 行/56 文件,与已提交版本零 diff)与
+   `build-reference-index.py`("nothing that should be wired in is orphaned")。
+3. 发现残留小漂移:P8 的 hash 回填提交(3345848)把
+   `update_plan/2026-08-02-investigator-render-gaps.md` `git mv` 进了 `Archived/`,
+   但那次提交没有连带重跑索引,所以 `reference/index.json`/`reference/rules/index.json`
+   里还留着旧路径引用。本轮重跑后这两个文件各有约 20~60 行的路径更新 diff,已提交
+   (845e26a)。`dist/bundle.md` 无需改动。
+
+**留下的判断**
+
+- **P7+P8 的生成产物同步问题到此彻底了结**,不需要再有下一轮"补一次重跑"。以后
+  再看到 `dist/bundle.md`/`index.json` 是 modified,按常规单会话流程处理(改了源文件
+  就该重跑并同提交),不用再套第二轮的"等对方"逻辑。
