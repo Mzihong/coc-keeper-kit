@@ -662,3 +662,47 @@ P6 的 `roster.csv` 判断没有去问 Keeper,是因为答案能从仓库现状�
 - **P7+P8 的生成产物同步问题到此彻底了结**,不需要再有下一轮"补一次重跑"。以后
   再看到 `dist/bundle.md`/`index.json` 是 modified,按常规单会话流程处理(改了源文件
   就该重跑并同提交),不用再套第二轮的"等对方"逻辑。
+
+### 2026-08-03 — 第五轮:P1 阶段 3(收尾)落盘,P1 全部完结归档
+
+新会话接手,Keeper 要求"finish P1 in the plan"。开工前先处理了工作区里遗留的三份
+未提交改动(上一会话留下的 `CHANGELOG.md` 措辞修正、`update_plan/README.md` 的
+"只列未完成计划"惯例落地、`malleus-monstrorum-zh.md` 的引用出处更正)——这些和 P1
+无关,单独提交(503f223)后再开始阶段 3。
+
+**做了什么**
+
+1. **核对 `2026-08-02-cult-doc-wrapup.md` 的六条收尾待办**,发现四张骰表、
+   `craft/cult-design-zh.md`、`mythos/cults/`、`templates/cult.md` 早前落盘时其实已经
+   顺手接线完毕,真正没做的只有两处:`reference/tables/README.md` 漏登记
+   `tables/cultist-archetypes.md`(第四章的邪教徒范型表从未进过这份索引);
+   `reference/README.md` 的 `mythos/` 一行没有点名 `cults/` 子目录与新增的
+   `artifacts-zh.md`(造物道具类,不属于原有五类任何一类)。两处已补。
+2. **`review-material` 审计四章全部落盘内容**(教团史、五教团档案、设计方法论、
+   邪教徒范型表、8 只怪物、造物、7 个新法术)。20 组数值(8 怪物 + 12 邪教徒范型)
+   逐条复核 HP/Build/DB/MP 公式,**全部正确**;交叉引用逐条核对文件是否存在,
+   发现一处真实错误——`reference/bestiary/fellrock.md` 的"沉默之油"反查指向了
+   `mythos/artifacts-zh.md`,但沉默之油实际是 `mythos/spells/oil-of-silence.md` 的
+   法术(该法术文件反查 Fellrock 是对的,只有 Fellrock 反查错了),已改正。
+3. **重跑 `build-bundle.sh`(4751 行/56 文件)与 `build-reference-index.py`**,后者报告
+   "nothing that should be wired in is orphaned",无需人工修补。
+4. **核实"提交"这条待办其实早就做完**:阶段 1 四章内容分别落在 `ef4936a`(第一/二章)、
+   `610dd3b`(第三章)、`0c736ee`(第四章),阶段 2 在 `66d32d2`——`git log` 确认符合
+   计划要求的"每章一个 commit",不是本轮遗留的账。
+5. **P1 全部完结**:`2026-08-02-cult-doc-wrapup.md` 六条待办勾完,`git mv` 进
+   `Archived/`;`update_plan/README.md` 状态索引表整行删除 P1;`Archived/README.md`
+   的 P1 行更新为同时指向 `cult-doc-integration`(阶段 0-2)与 `cult-doc-wrapup`
+   (阶段 3)两份文件,归档时状态改成"全部完成"。
+
+**为什么这么分**:两处真实缺口都是"新内容落盘时接了大部分线,但没有回头核对索引
+文件本身有没有漏掉自己"——`cultist-archetypes.md` 是第四章最后落盘的一批内容之一
+(第七轮),当时的接线清单点名了 `core/06` 但没有点名 `reference/tables/README.md`
+自己的表格清单,属于同一类"接线覆盖不全"的问题,而不是这次审计凭空发现的新坑。
+
+**留下的判断**
+
+- **P1(克苏鲁教团文档整合)从这一轮起完全归档,不再出现在 `update_plan/README.md`
+  的状态索引表里。** 需要背景时读 `Archived/README.md` 的 P1 行,细节在两份归档文件里。
+- **`fellrock.md` 的交叉引用错误是本轮审计唯一发现的问题**——其余检查项(20 组数值
+  算术、SAN 记法、术语表覆盖、`reference/README.md`/`reference/tables/README.md` 之外
+  的其他登记点)均通过,没有需要 Keeper 拍板的遗留项。

@@ -22,12 +22,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 89,
+          "line": 74,
           "context": "- `character-creation.md` 补齐年龄补正、Build/伤害加值、技能基础值等建卡数据,可用来审核他人交的卡。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 103,
+          "line": 88,
           "context": "- `character-creation.md` 各小节补上数据来源指路(标明取自哪个源文件/章节)。"
         },
         {
@@ -64,6 +64,11 @@
           "file": "WORKLOG.md",
           "line": 608,
           "context": "`reference/rules/character-creation.md` §5 已经落盘的权威数字是 90%,75% 是这份计划"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 649,
+          "context": "`scripts/render-investigator.py`、`reference/rules/character-creation.md` 等)工作区"
         },
         {
           "file": "core/01-intake.md",
@@ -169,16 +174,6 @@
           "file": "scripts/render-investigator.py",
           "line": 429,
           "context": "# Own Language just mirrors EDU (character-creation.md §5's \"special\" row) — it isn't"
-        },
-        {
-          "file": "update_plan/README.md",
-          "line": 57,
-          "context": "P8 已完成(全渲染+自校验,`core/13`/`character-creation.md`/`core/01` 已接线);"
-        },
-        {
-          "file": "update_plan/README.md",
-          "line": 87,
-          "context": "`character-creation.md`/`core/01` 接线),移出本表。剩下的:"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -331,7 +326,7 @@
           "context": "| P8 | [investigator-render-gaps](2026-08-02-investigator-render-gaps.md) | 投资者卡渲染缺口:`spells`/`cthulhu_mythos`/`notes`/P6 重建后新增字段(`occupation_detail`/`age_modif"
         }
       ],
-      "reference_count": 62
+      "reference_count": 61
     },
     {
       "file": "chases.md",
@@ -411,7 +406,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 40,
+          "line": 32,
           "context": "- **法术、仪式、魔法书终于有了数值标尺。** 新增 `reference/rules/magic.md`:施法消耗"
         },
         {
@@ -460,6 +455,11 @@
           "context": "还没有 `magic.md`,答案是\"两者互不阻塞\";P7 落盘后复核确认两边改动的文件确实没有"
         },
         {
+          "file": "WORKLOG.md",
+          "line": 641,
+          "context": "`magic.md`(84dba55)已经提交,所以 `dist/bundle.md` 与全部 `reference/**/index.json`"
+        },
+        {
           "file": "core/02-rules-reference.md",
           "line": 19,
           "context": "- Write any **spell, ritual, or magic book/tome** → read `reference/rules/magic.md` before"
@@ -478,11 +478,6 @@
           "file": "reference/mythos/README.md",
           "line": 16,
           "context": "**Read `reference/rules/magic.md` first** — it's the distilled cost-tier ladder, casting-time"
-        },
-        {
-          "file": "update_plan/README.md",
-          "line": 84,
-          "context": "~~P7 魔法速查~~ —— 已完成(`reference/rules/magic.md` + 3 处登记 + 重跑 bundle/index),"
         },
         {
           "file": "update_plan/Archived/2026-08-02-conventions-gaps.md",

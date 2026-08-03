@@ -49,9 +49,9 @@
           "context": "name), and `reference/decks/weapons-and-artifacts-zh.md` for anything in the gear list."
         },
         {
-          "file": "reference/bestiary/fellrock.md",
-          "line": 53,
-          "context": "- **Oil of Silence** (see `reference/mythos/artifacts-zh.md`) repels them by smell; someone"
+          "file": "reference/README.md",
+          "line": 26,
+          "context": "file (origin, leadership, funding, weakness); `artifacts-zh.md` covers Mythos objects and"
         },
         {
           "file": "reference/bestiary/sedecim.md",
@@ -440,12 +440,17 @@
       ],
       "referenced_by": [
         {
+          "file": "reference/bestiary/fellrock.md",
+          "line": 53,
+          "context": "- **Oil of Silence** (see `reference/mythos/spells/oil-of-silence.md`) repels them by smell; someone"
+        },
+        {
           "file": "reference/mythos/spells/fellrock-call-bind.md",
           "line": 17,
           "context": "或召唤者本人)。聪明的召唤者会预先涂好 `reference/mythos/spells/oil-of-silence.md`"
         }
       ],
-      "reference_count": 1
+      "reference_count": 2
     },
     {
       "file": "spells/rapture.md",

@@ -338,6 +338,11 @@
           "context": "`reference/tables/cultist-archetypes.md` 的\"永生大师\"常见法术之一。"
         },
         {
+          "file": "reference/tables/README.md",
+          "line": 30,
+          "context": "- `cultist-archetypes.md` — 12 ready-to-use rank-and-file cultist stat blocks (grouped by"
+        },
+        {
           "file": "update_plan/2026-08-02-cult-doc-wrapup.md",
           "line": 20,
           "context": "`tables/cult-power-sources.md`、d20 外貌/气质表、`tables/cultist-archetypes.md`"
@@ -348,7 +353,7 @@
           "context": "- [x] 邪教徒原型 → `reference/tables/cultist-archetypes.md`(中文)——12 组基础数值"
         }
       ],
-      "reference_count": 6
+      "reference_count": 7
     },
     {
       "file": "hooks.md",

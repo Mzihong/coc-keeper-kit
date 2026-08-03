@@ -22,7 +22,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 102,
+          "line": 87,
           "context": "- 新增 `reference/decks/` 与首份收录件 `busybodies-zh.md`(官方好事者卡组,47 张 NPC 卡)。"
         },
         {
@@ -47,7 +47,7 @@
         },
         {
           "file": "reference/README.md",
-          "line": 30,
+          "line": 32,
           "context": "for the generators (`busybodies-zh.md` is Chaosium's *Busybodies* NPC deck, 47 cards)."
         },
         {

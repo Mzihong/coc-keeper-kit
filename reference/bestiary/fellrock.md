@@ -50,7 +50,7 @@ you ends not in a nostril but in a fringed, working mouth.
   human-sized creature) can sustain it for months of digestion. Groups of four to eight,
   centuries-long lifespans, and rare — deaths are rare enough that reproduction is tied to
   losing a group member.
-- **Oil of Silence** (see `reference/mythos/artifacts-zh.md`) repels them by smell; someone
+- **Oil of Silence** (see `reference/mythos/spells/oil-of-silence.md`) repels them by smell; someone
   coated head to toe is safe from an unprovoked Fellrock, though provoking one still draws an
   attack (at a penalty die).
 

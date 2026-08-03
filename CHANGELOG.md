@@ -26,6 +26,9 @@
   渲染不出来——`scripts/render-investigator.py` 直接把它们丢了,`.md` 卡面和 `.json`
   源数据不一致。P6 重建 schema 后新增的一批字段(职业细节、年龄补正、点数账本、
   信用评级细目、装备、状态、经历包、神话接触、成长记录)同样没有卡面出口。
+- 怪物图鉴 `fellrock.md` 的"沉默之油"反查链接指向了 `artifacts-zh.md`,但那份文件里
+  根本没有这一条——沉默之油实际是 `reference/mythos/spells/oil-of-silence.md` 的法术,
+  已改正指向。
 
 ### 更新内容
 
@@ -44,6 +47,10 @@
   照常渲卡;`--strict` 可以改成直接拒绝渲染。阈值可在
   `campaigns/<slug>/investigators/validation.json` 按战役调整,intake 会在新问题 14
   里先展示默认值再问是否要改。
+- **克苏鲁教团文档整合(P1)全部完成并归档。** 四章内容(教团史、五个教团全档、设计
+  方法论、邪教徒范型与怪物图鉴)现在都能从 `reference/README.md`/
+  `reference/tables/README.md` 的目录说明里找到入口,不用翻文件树摸索;
+  `reference-index` 审计确认没有孤儿文件。
 
 ---
 

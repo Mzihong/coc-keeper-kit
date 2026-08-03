@@ -27,6 +27,9 @@ campaign specific.
   `reference/craft/cult-design-zh.md` §三.
 - `cult-leader-positions.md` (1d10) — a cult leader's social front and the access it buys.
 - `cult-power-sources.md` (1d4) — where a cult's claimed supernatural backing comes from.
+- `cultist-archetypes.md` — 12 ready-to-use rank-and-file cultist stat blocks (grouped by
+  role, not a die table) plus an Immortal Master toolkit. Companion to `create-npc`; see
+  `core/06-create-npc.md`.
 
 ## Adding tables
 

@@ -144,12 +144,12 @@
         "title": "好事者卡组 Busybodies — 官方 NPC 卡组(中译收录)",
         "rights_holder": "Chaosium Inc.",
         "referenced_by": [
-          "CHANGELOG.md:102",
+          "CHANGELOG.md:87",
           "WORKLOG.md:262",
           "WORKLOG.md:367",
           "core/06-create-npc.md:13",
           "core/13-create-investigator.md:15",
-          "reference/README.md:30",
+          "reference/README.md:32",
           "reference/decks/README.md:15",
           "reference/rules/character-creation.md:259",
           "reference/tables/npc-appearance.md:34",
@@ -197,7 +197,7 @@
         "title": "克苏鲁神话魔法大典 — 官方法术全书(中译收录)",
         "rights_holder": "Chaosium Inc.",
         "referenced_by": [
-          "CHANGELOG.md:100",
+          "CHANGELOG.md:85",
           "WORKLOG.md:188",
           "WORKLOG.md:263",
           "WORKLOG.md:548",
@@ -236,11 +236,12 @@
         "rights_holder": "Chaosium Inc.",
         "referenced_by": [
           "WORKLOG.md:84",
+          "WORKLOG.md:650",
           "core/07-create-monster.md:20",
           "core/14-archive-reference.md:48",
           "reference/bestiary/deep-one-hybrid.md:60",
           "reference/bestiary/README.md:6",
-          "update_plan/README.md:17",
+          "update_plan/README.md:14",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:251"
         ]
       },
@@ -248,8 +249,8 @@
         "title": "7e Character Creation — cheat-sheet",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:89",
-          "CHANGELOG.md:103",
+          "CHANGELOG.md:74",
+          "CHANGELOG.md:88",
           "WORKLOG.md:81",
           "WORKLOG.md:261",
           "WORKLOG.md:283",
@@ -257,6 +258,7 @@
           "WORKLOG.md:558",
           "WORKLOG.md:598",
           "WORKLOG.md:608",
+          "WORKLOG.md:649",
           "core/01-intake.md:48",
           "core/01-intake.md:67",
           "core/02-rules-reference.md:18",
@@ -278,8 +280,6 @@
           "scripts/render-investigator.py:20",
           "scripts/render-investigator.py:58",
           "scripts/render-investigator.py:429",
-          "update_plan/README.md:57",
-          "update_plan/README.md:87",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:11",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:117",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:118",
@@ -337,7 +337,7 @@
         "title": "7e Magic — cheat-sheet",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:40",
+          "CHANGELOG.md:32",
           "WORKLOG.md:73",
           "WORKLOG.md:77",
           "WORKLOG.md:205",
@@ -347,11 +347,11 @@
           "WORKLOG.md:560",
           "WORKLOG.md:562",
           "WORKLOG.md:631",
+          "WORKLOG.md:641",
           "core/02-rules-reference.md:19",
           "core/02-rules-reference.md:35",
           "core/07-create-monster.md:75",
           "reference/mythos/README.md:16",
-          "update_plan/README.md:84",
           "update_plan/Archived/2026-08-02-conventions-gaps.md:16",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:9",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:174",
@@ -396,7 +396,7 @@
         "title": "邪教设计手法笔记 — 简体中文",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:106",
+          "CHANGELOG.md:91",
           "WORKLOG.md:146",
           "WORKLOG.md:271",
           "core/01-intake.md:42",
@@ -436,7 +436,7 @@
           "core/09-description.md:55",
           "core/09-description.md:71",
           "reference/README.md:18",
-          "reference/README.md:55",
+          "reference/README.md:57",
           "reference/craft/README.md:14",
           "reference/craft/README.md:27",
           "scripts/build-reference-index.py:296",
@@ -516,7 +516,7 @@
           "WORKLOG.md:455",
           "core/06-create-npc.md:76",
           "core/13-create-investigator.md:26",
-          "reference/bestiary/fellrock.md:53",
+          "reference/README.md:26",
           "reference/bestiary/sedecim.md:38",
           "reference/bestiary/sedecim.md:52",
           "reference/decks/README.md:18",
@@ -628,6 +628,7 @@
         "title": "Oil of Silence (沉默之油)",
         "rights_holder": null,
         "referenced_by": [
+          "reference/bestiary/fellrock.md:53",
           "reference/mythos/spells/fellrock-call-bind.md:17"
         ]
       },
@@ -730,6 +731,7 @@
           "WORKLOG.md:456",
           "core/06-create-npc.md:47",
           "reference/mythos/spells/call-father-dagon-and-mother-hydra.md:23",
+          "reference/tables/README.md:30",
           "update_plan/2026-08-02-cult-doc-wrapup.md:20",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:185"
         ]
@@ -958,7 +960,8 @@
       "reference/README.md": [
         "reference/craft/cult-design-zh.md",
         "reference/craft/lovecraft-zh.md",
-        "reference/decks/busybodies-zh.md"
+        "reference/decks/busybodies-zh.md",
+        "reference/mythos/artifacts-zh.md"
       ],
       "reference/bestiary/README.md": [
         "reference/sourcebooks/malleus-monstrorum-zh.md"
@@ -977,9 +980,9 @@
         "reference/sourcebooks/malleus-monstrorum-zh.md"
       ],
       "reference/bestiary/fellrock.md": [
-        "reference/mythos/artifacts-zh.md",
         "reference/mythos/cults/society-of-the-divine-children.md",
-        "reference/mythos/spells/fellrock-call-bind.md"
+        "reference/mythos/spells/fellrock-call-bind.md",
+        "reference/mythos/spells/oil-of-silence.md"
       ],
       "reference/bestiary/scarlet-orb.md": [
         "reference/mythos/cults/society-of-the-divine-children.md",
@@ -1113,6 +1116,7 @@
         "reference/tables/cult-goals.md",
         "reference/tables/cult-leader-positions.md",
         "reference/tables/cult-power-sources.md",
+        "reference/tables/cultist-archetypes.md",
         "reference/tables/hooks.md",
         "reference/tables/locations.md",
         "reference/tables/madness.md",
@@ -1237,8 +1241,6 @@
         "reference/sourcebooks/keeper-rulebook-7e-zh.md"
       ],
       "update_plan/README.md": [
-        "reference/rules/character-creation.md",
-        "reference/rules/magic.md",
         "reference/sourcebooks/malleus-monstrorum-zh.md"
       ]
     }

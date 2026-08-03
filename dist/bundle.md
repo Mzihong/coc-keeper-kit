@@ -2456,7 +2456,9 @@ in `campaigns/<slug>/`, not here.
   Produced by `core/07-create-monster.md`. One creature per file. Written in **English**,
   since they're shared across campaigns that may output in different languages.
 - **`mythos/`** — Great Old Ones, tomes, spells, cults, and factions. Slow-growing lore
-  you reference from multiple campaigns.
+  you reference from multiple campaigns. `cults/<name>.md` holds one full cult dossier per
+  file (origin, leadership, funding, weakness); `artifacts-zh.md` covers Mythos objects and
+  hazards that don't fit the creature or spell shape (idols, spores, non-Euclidean spaces).
 - **`tables/`** — roll tables. Includes the four **seed tables** (`hooks`, `locations`,
   `mythos-angles`, `npc-quirks`) that `core/01-intake.md` rolls against when the Keeper gives
   little or no input — the anti-generic layer.
@@ -3827,6 +3829,9 @@ campaign specific.
   `reference/craft/cult-design-zh.md` §三.
 - `cult-leader-positions.md` (1d10) — a cult leader's social front and the access it buys.
 - `cult-power-sources.md` (1d4) — where a cult's claimed supernatural backing comes from.
+- `cultist-archetypes.md` — 12 ready-to-use rank-and-file cultist stat blocks (grouped by
+  role, not a die table) plus an Immortal Master toolkit. Companion to `create-npc`; see
+  `core/06-create-npc.md`.
 
 ## Adding tables
 

@@ -23,7 +23,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 100,
+          "line": 85,
           "context": "- P7 魔法速查阻塞解除(转换稿已归档为 `grand-grimoire-zh.md`)。"
         },
         {
@@ -205,6 +205,11 @@
           "context": "`reference/sourcebooks/malleus-monstrorum-zh.md` 已可读;剩下要 Keeper 定的是范围。"
         },
         {
+          "file": "WORKLOG.md",
+          "line": 650,
+          "context": "干净,`git status` 只剩一份与 P7/P8 无关的 `reference/sourcebooks/malleus-monstrorum-zh.md`"
+        },
+        {
           "file": "core/07-create-monster.md",
           "line": 20,
           "context": "dependency): `reference/sourcebooks/malleus-monstrorum-zh.md` is the official creature"
@@ -226,8 +231,8 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 17,
-          "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:种类阶梯的档位区间、按 type 分的模板、词条(强化)系统与其存储格式 | 待讨论(五项待定,尚无执行清单) | 从 P4 待讨论 2 拆出。骨架已由"
+          "line": 14,
+          "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:种类阶梯的档位区间、按 type 分的模板、词条(强化)系统与其存储格式 | 待讨论(五项待定,尚无执行清单) | 从 P4(已归档)待讨论 2 拆出。"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -235,7 +240,7 @@
           "context": "> `reference/sourcebooks/malleus-monstrorum-zh.md`(怪物之锤重译稿,现已可读,"
         }
       ],
-      "reference_count": 7,
+      "reference_count": 8,
       "cited": true,
       "provenance": {
         "work": "《怪物之锤》(Malleus Monstrorum)",

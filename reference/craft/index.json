@@ -22,7 +22,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 106,
+          "line": 91,
           "context": "- 新增邪教设计方法论 `craft/cult-design-zh.md`,配四张骰表与 `templates/cult.md` 模板。"
         },
         {
@@ -202,7 +202,7 @@
         },
         {
           "file": "reference/README.md",
-          "line": 55,
+          "line": 57,
           "context": "`craft/lovecraft-zh.md` (above) — the corpus is the raw material, the craft note is what"
         },
         {
