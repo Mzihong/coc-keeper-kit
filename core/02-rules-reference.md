@@ -16,6 +16,8 @@ before you commit it. **If it contradicts a cheat-sheet, fix the cheat-sheet.**
 - Assign a **Sanity cost** → keep it proportionate to the horror.
 - Build a **human antagonist stronger than an ordinary person** (a cult leader, a gang boss)
   → read `reference/rules/character-creation.md` §11 before assigning skills or gear.
+- Write any **spell, ritual, or magic book/tome** → read `reference/rules/magic.md` before
+  setting an MP/SAN/POW cost or a study time.
 
 ## Cheat-sheets (source of truth)
 
@@ -30,6 +32,9 @@ before you commit it. **If it contradicts a cheat-sheet, fix the cheat-sheet.**
 - `reference/rules/character-creation.md` — attribute rolls, the standard-pool skill-point
   formula, base skill values; §11 is human antagonist strength (baseline + increment — no
   separate power-budget table). Read it whenever the antagonist is a person, not a monster.
+- `reference/rules/magic.md` — MP/SAN/POW cost notation, casting time, opposed POW rolls,
+  spell cost-tier ladder, tome study time/SAN/Cthulhu Mythos conventions, and the
+  cost-conversion rule for designing a new spell.
 
 ## Fast facts (verify against the sheets)
 

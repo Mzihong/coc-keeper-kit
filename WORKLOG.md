@@ -69,9 +69,14 @@ dist/bundle.md      构建产物:整个 kit 拼成一份,给没有仓库的 Chat
   2026-08-02 那批 16 个 commit(P1-P4 相关全部内容)与 2026-08-03 的收尾 commit
   均已提交,`git status` 干净。**不存在"待提交"的改动**——下一个会话不用再找
   scratchpad 或未提交的工作区改动。
-- **P1 第四章的两个硬前置(P4、P7)现在都已解除**,`core/02` 的数值校验现在真的有标尺可查了
-  (`character-creation.md` §11)。P1 阶段 0-2 已归档,只剩阶段 3 收尾
-  (`update_plan/2026-08-02-cult-doc-wrapup.md`)。
+- **P1 第四章的两个硬前置(P4、P7)现在都已解除,且 P7 本身也已完成**——新增
+  `reference/rules/magic.md`,`core/02`/`core/07`/`reference/mythos/README.md` 已接线。
+  P1 阶段 0-2 已归档,只剩阶段 3 收尾(`update_plan/2026-08-02-cult-doc-wrapup.md`)。
+- **`reference/sourcebooks/keeper-rulebook-7e-zh.md`(规则书全文重译,17470 行)已确认
+  可读**——P7 落盘时发现它比 grand-grimoire 更权威地给出了魔法书研读机制(CMI/CMF/MR
+  三值、泛读/精读两阶段、重复精读耗时翻倍),`magic.md` 的魔法书章节改成从这份规则书
+  抽样 20+ 本典籍算出的真实区间,而不是估算。之前"当前状态"没点名这份文件,接手时
+  别漏看。
 - **P9 怪物模板的"来源红线"部分有答案** —— 转载规则已改,且
   `reference/sourcebooks/malleus-monstrorum-zh.md` 已可读;剩下要 Keeper 定的是范围。
 - **三份 sourcebook 的手动重译已随第六轮批量提交落地**(9c47d98);误建的空文件
@@ -526,3 +531,48 @@ P6 的 `roster.csv` 判断没有去问 Keeper,是因为答案能从仓库现状�
   没有删除任何设计,以后有战役需要时不必重新讨论。
 - **接下来按 `update_plan/README.md` 复杂度排序表第 1 条(P8 卡渲染缺口)继续**——
   P4/P6 完结后表格前移一位,P8 现在是"现在能动"里最简单的一项。
+
+### 2026-08-03 — 第二轮:P7 魔法速查落盘(与另一会话并行执行 P8)
+
+背景:Keeper 同时开了两段会话,一段跑 P8(卡渲染缺口),本轮跑 P7(魔法速查)。两段
+会话共享同一个工作区(没有用 worktree 隔离),这带来一个新问题:生成产物
+(`dist/bundle.md`、`reference/**/index.json`)由双方各自的重跑脚本共同写入,任何一方
+提交这些文件都会把对方**未完成**的改动一起带进自己的 commit。
+
+**做了什么**
+
+1. **`reference/rules/magic.md` 落盘**:施法通则(消耗记法、施法用时的 DEX+50/N轮 规则、
+   POW 对抗检定、SAN 是定值不是 X/Y)、按 `grand-grimoire-zh.md` 抽样约 300 条法术条目
+   得出的四档消耗区间(小术/中术/大术/仪式级,与规划记录第四轮定下的档位名对齐)、法术
+   设计的成本换算惯例(含上一会话第四轮 Q3 定下但一直没有落处的"设计铁律:反制法术的
+   代价必须比被反制法术低至少一档")、魔法书研读机制。`core/02`/`core/07`/
+   `reference/mythos/README.md` 三处接线。
+2. **发现 `reference/sourcebooks/keeper-rulebook-7e-zh.md` 已可用**,魔法书章节改用它
+   的真实数据(CMI/CMF/MR + 泛读/精读机制)而不是"规则书之外只能现编"——见"当前状态"
+   新增条目。
+3. **重跑 `build-bundle.sh` 与 `build-reference-index.py` 确认无误**(索引脚本报告
+   "nothing orphaned"),但**没有提交这两个生成文件**——此刻它们的 diff 里混着 P8
+   会话对 `core/13`/`core/01`/`character-creation.md`/`templates/investigator.md`/
+   `scripts/render-investigator.py` 等文件的未提交改动(`reference/index.json` 一份就有
+   397 行变化,远超 magic.md 一个文件该有的量)。提交它们等于替 P8 提前定稿一份它自己
+   还没写完的东西。
+4. **提交范围限定为本计划确实拥有的文件**:`reference/rules/magic.md`(新增)、
+   `core/02-rules-reference.md`、`core/07-create-monster.md`、
+   `reference/mythos/README.md`、两份 `update_plan/` 文件、`CHANGELOG.md`、本节。
+   逐一用 `git diff` 核对这几个文件的改动范围确实只有本轮内容,没有被 P8 会话污染。
+
+**为什么这么分**:`git add -A` 或提交 `dist/`/`index.json` 在单会话场景下是完结清单要求
+的标准步骤,但两个会话共享工作区时,生成产物不再是"谁改了源文件就该谁提交"——它是两边
+共同的输出。宁可这次不满足"bundle 与源文件同一个 commit"这条惯例,也不要把另一段会话
+半成品的投资者卡改动焊进自己的提交历史。
+
+**留下的判断**
+
+- **`dist/bundle.md` 与全部 `index.json` 目前工作区有未提交改动,且这不是本轮遗漏
+  ——是刻意不提交。** 等 P8 那段会话也提交完它自己的源文件改动后,需要有一次干净的
+  "重跑 + 提交生成产物"收尾(可以是 P8 会话做,也可以是下一个新会话核对两边都已提交后
+  再补)。**接手时看到这两类文件是 modified 但没在下面提交范围里,不是 bug。**
+- **`update_plan/2026-08-02-magic-quickref.md` 与 `update_plan/README.md` 的状态行仍写
+  "commit 待回填"**——按完结清单第 7 步,这是拿到本轮 commit hash 后的下一步,本轮先不做
+  第二次提交去回填,留给下一次touch这两个文件的时候顺手办。
+- **计划文件已 `git mv` 进 `Archived/`**,`Archived/README.md` 加了一行索引。

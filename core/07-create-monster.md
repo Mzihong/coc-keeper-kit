@@ -72,7 +72,8 @@ checklist.
 - Give **average characteristics** (note "roll/scale per individual" if many appear).
 - Derive **HP = (CON+SIZ)/10**, **Build & Damage Bonus** from STR+SIZ, **Move** to fit the body.
 - Big entities have high SIZ → high Build → hard to grapple and heavy Damage Bonus; reflect it.
-- Spellcasters: list spells and their MP/SAN costs; cross-link `reference/mythos/`.
+- Spellcasters: list spells and their MP/SAN costs — read `reference/rules/magic.md` for the
+  cost-tier ladder before assigning numbers; cross-link `reference/mythos/`.
 
 ## Output
 
