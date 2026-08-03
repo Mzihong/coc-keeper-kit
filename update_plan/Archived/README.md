@@ -15,7 +15,7 @@
 | P3 | [conventions-gaps](2026-08-02-conventions-gaps.md) | 对 core/ 全部 13 份 spec 的出版惯例评估,一次性列出七项缺口。结算 SAN 奖励、成长阶段、追逐规则速查、人数缩放侧栏四项本计划内落盘;魔法速查、低成本地图、玩家卡生成三项体量与阻塞点不同,拆出为 P7/P5/P6 独立跟踪 | 已完成(e0d026b) |
 | P4 | [antagonist-budget](2026-08-02-antagonist-budget.md) | 反派强度预算(仅人类侧):普通人类模板取材 `busybodies-zh.md`,法术型首领增量取材 `grand-grimoire-zh.md` 资历法术表 / 非法术型走装备总价,属性技能走标准创建规则 + 标准池公式,技能选择由背景定、数值上限由致命性倒推。落盘于 `character-creation.md` §11,`core/02/06/07/11` 接线。怪物侧种类阶梯(待讨论 7)转交 P9,不卡本计划完结 | 已完成(610dd3b,intake 接线随 66d32d2) |
 | P6 | [investigator-cards](2026-08-02-investigator-cards.md) | 玩家卡(投资者):JSON 唯一真源(`campaigns/<slug>/investigators/<name>.json`)+ 渲染 md 卡面 + `create-investigator` 技能。schema 按真实车卡表(`COC apolo.xlsx`)重建,新增 `investigator.example.json` 完整核算样卡。收尾判断:精英邪教徒满卡化按需生成、不预造;`roster.csv` 花名册暂不做——唯一在跑战役目前零份投资者档案,没有对象可索引 | 已完成(97c87d8) |
-| P7 | [magic-quickref](2026-08-02-magic-quickref.md) | 魔法速查 `reference/rules/magic.md`:施法通则(消耗记法、施法用时、POW 对抗)、按 `grand-grimoire-zh.md` 抽样得出的四档消耗区间(小术/中术/大术/仪式级)、法术设计成本换算惯例(含"反制法术代价须低至少一档"设计铁律)、魔法书研读机制(据 `keeper-rulebook-7e-zh.md` 的 CMI/CMF/MR + 泛读/精读两阶段,比原计划设想的"现编"更准确)。`core/02`/`core/07`/`reference/mythos/README.md` 已接线 | 已完成(commit 待回填 —— 与并行的 P8 会话共享工作区,`dist/bundle.md`/`index.json` 暂未提交,见 `WORKLOG.md` 2026-08-03 第二轮) |
+| P7 | [magic-quickref](2026-08-02-magic-quickref.md) | 魔法速查 `reference/rules/magic.md`:施法通则(消耗记法、施法用时、POW 对抗)、按 `grand-grimoire-zh.md` 抽样得出的四档消耗区间(小术/中术/大术/仪式级)、法术设计成本换算惯例(含"反制法术代价须低至少一档"设计铁律)、魔法书研读机制(据 `keeper-rulebook-7e-zh.md` 的 CMI/CMF/MR + 泛读/精读两阶段,比原计划设想的"现编"更准确)。`core/02`/`core/07`/`reference/mythos/README.md` 已接线 | 已完成(84dba55)——`dist/bundle.md`/`index.json` 因与并行 P8 会话共享工作区暂未提交,见 `WORKLOG.md` 2026-08-03 第二轮 |
 
 ## 读法
 

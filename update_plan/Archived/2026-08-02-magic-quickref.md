@@ -1,9 +1,13 @@
 # Update Plan — 魔法速查(magic.md)
 
 > 日期:2026-08-02
-> 状态:**已完成(commit 待回填 —— 提交后二次提交同步本行与 `update_plan/README.md`)**
-> 产出:`reference/rules/magic.md`;`core/02`/`core/07`/`reference/mythos/README.md` 接线;
-> `dist/bundle.md` 与 `reference/index.json` 已重建
+> 状态:**已完成(84dba55)**
+> 产出:`reference/rules/magic.md`;`core/02`/`core/07`/`reference/mythos/README.md` 接线。
+> `dist/bundle.md` 与 `reference/index.json` 已在本地重建验证(索引脚本报告
+> "nothing orphaned")但**未随本次提交**——并行的 P8 会话共享工作区,此刻这两类生成
+> 文件的 diff 里混着 P8 尚未提交的改动,提交它们等于替 P8 提前定稿半成品。见
+> `WORKLOG.md` 2026-08-03 第二轮;bundle/index 需要等两边源文件都提交后再补一次收尾
+> 提交
 > 来源:从 `Archived/2026-08-02-conventions-gaps.md` §3 拆出独立跟踪(2026-08-02)
 > 关联:`2026-08-02-cult-doc-integration.md` 第四章(造物含法术/仪式时以本计划为前置)——
 > 本计划完成后该前置已解除

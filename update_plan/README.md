@@ -12,7 +12,7 @@
 | P4 | [antagonist-budget](Archived/2026-08-02-antagonist-budget.md) | 已归档,详情见 [Archived/README.md](Archived/README.md) | 已完成(610dd3b) | 无 |
 | P5 | [low-cost-maps](2026-08-02-low-cost-maps.md) | 低成本地图:mermaid 关系图 + DSL→SVG 平面图渲染器 + 手绘要点清单 | 阻塞(等 Keeper 定视觉风格与 DSL 范围) | 三个待拍板问题见计划文件;原型尚未落盘 |
 | P6 | [investigator-cards](Archived/2026-08-02-investigator-cards.md) | 已归档,详情见 [Archived/README.md](Archived/README.md) | 已完成(97c87d8) | 无 |
-| P7 | [magic-quickref](Archived/2026-08-02-magic-quickref.md) | 已归档,详情见 [Archived/README.md](Archived/README.md) | 已完成(commit 待回填) | 无 |
+| P7 | [magic-quickref](Archived/2026-08-02-magic-quickref.md) | 已归档,详情见 [Archived/README.md](Archived/README.md) | 已完成(84dba55) | 无 |
 | P8 | [investigator-render-gaps](2026-08-02-investigator-render-gaps.md) | 投资者卡渲染缺口:`spells`/`cthulhu_mythos`/`notes` 未渲染、`elite-npc` 仍渲 Hooks、P6 重建后新增字段无卡面出口;+自校验 | 待执行(2026-08-02 定案:受众唯一=KP、全渲染;缺陷 2 反转为改 `core/13` spec;自校验纳入,阈值挂 intake;执行清单已补) | 无硬阻塞,可开工;建议在 P1 第四章落盘前完成,免精英卡返工 |
 | P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:种类阶梯的档位区间、按 type 分的模板、词条(强化)系统与其存储格式 | 待讨论(五项待定,尚无执行清单) | 从 P4 待讨论 2 拆出。骨架已由 P4 定案 A 给出(`人类<怪物<古神眷族<古神`),本计划填第二层;并接手 P4 待讨论 7(阶梯与 type 六类/threat 四档咬合)。等 Keeper 定来源红线(仓库是否公开 / A/B/C)、"具体模板"读法、词条语义;**不卡 P1 第四章**,只回填 `core/07` 一句。**2026-08-02:红线问题部分有答案了**——转载规则已改(收录须标注出处、产出只取结构不取文字,见 `core/00-how-to-run.md`),且 `reference/sourcebooks/malleus-monstrorum-zh.md` 已在仓库里可读;剩下要定的是"具体模板"的读法与范围 |
 

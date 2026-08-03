@@ -572,7 +572,7 @@ P6 的 `roster.csv` 判断没有去问 Keeper,是因为答案能从仓库现状�
   ——是刻意不提交。** 等 P8 那段会话也提交完它自己的源文件改动后,需要有一次干净的
   "重跑 + 提交生成产物"收尾(可以是 P8 会话做,也可以是下一个新会话核对两边都已提交后
   再补)。**接手时看到这两类文件是 modified 但没在下面提交范围里,不是 bug。**
-- **`update_plan/2026-08-02-magic-quickref.md` 与 `update_plan/README.md` 的状态行仍写
-  "commit 待回填"**——按完结清单第 7 步,这是拿到本轮 commit hash 后的下一步,本轮先不做
-  第二次提交去回填,留给下一次touch这两个文件的时候顺手办。
+- **commit hash(84dba55)已回填**进计划文件头、`update_plan/README.md`、
+  `Archived/README.md` 三处,作为同一次提交后的第二次小提交——完结清单第 7 步当次做完,
+  没有留到下一次 touch 这些文件的时候。
 - **计划文件已 `git mv` 进 `Archived/`**,`Archived/README.md` 加了一行索引。
