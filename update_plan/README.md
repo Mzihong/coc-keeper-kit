@@ -10,7 +10,7 @@
 | # | 计划 | 范围 | 状态 | 阻塞/等待 |
 |---|---|---|---|---|
 | P5 | [low-cost-maps](2026-08-02-low-cost-maps.md) | 低成本地图:mermaid 关系图 + DSL→SVG 平面图渲染器 + 手绘要点清单 | 阻塞(等 Keeper 定视觉风格与 DSL 范围) | 三个待拍板问题见计划文件;原型尚未落盘 |
-| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:五级阶梯的档位区间、按 malleus 四类重排的 type、数值词条(强化)系统与其负载预算 | 进行中(阶段 A + B 已完成,阶段 C 待开始;等提交) | **阶段 A+B 均已交付**:`reference/rules/monster-scale.md`/`monster-traits.md`(阶段 A)+ `reference/tables/monster-index.md`(阶段 B,由扩过的 `build-reference-index.py` 从转录稿 + 人写的 `monster-index-data.json` + 现有 9 只 bestiary 条目合并生成,进 bundle)——**ChatGPT 链路第一次能查到怪物**。现有 9 只已按新标尺重标(2 处 threat 改判、1 处 type 改判),`cthulhu.md` 补了反向眷族小节,`core/07`/`core/04` 已接检索入口。**下一步是阶段 C(神格铺设)**:约 6 个新神格 + 8–10 眷族——kit 现在几乎是克苏鲁专用(克苏鲁提及 135 次,哈斯塔 **0** 次),阶段 A/B 的标尺与索引机制已就绪,无等待项。 |
+| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:五级阶梯的档位区间、按 malleus 四类重排的 type、数值词条(强化)系统与其负载预算 | 进行中(阶段 A + B 已完成 059ba63,阶段 C 待开始) | **阶段 A+B 均已交付**:`reference/rules/monster-scale.md`/`monster-traits.md`(阶段 A)+ `reference/tables/monster-index.md`(阶段 B,由扩过的 `build-reference-index.py` 从转录稿 + 人写的 `monster-index-data.json` + 现有 9 只 bestiary 条目合并生成,进 bundle)——**ChatGPT 链路第一次能查到怪物**。现有 9 只已按新标尺重标(2 处 threat 改判、1 处 type 改判),`cthulhu.md` 补了反向眷族小节,`core/07`/`core/04` 已接检索入口。**下一步是阶段 C(神格铺设)**:约 6 个新神格 + 8–10 眷族——kit 现在几乎是克苏鲁专用(克苏鲁提及 135 次,哈斯塔 **0** 次),阶段 A/B 的标尺与索引机制已就绪,无等待项。 |
 
 **状态取值:** `待讨论(<待定什么>)` / `待执行` / `进行中(<当前所在步骤>)` / `阻塞(<等什么>)` /
 `已完成(<commit>)`(完结后移除本表,见完结清单第 7 项)

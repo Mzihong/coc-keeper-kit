@@ -1,7 +1,7 @@
 # Update Plan — 怪物模板与词条系统
 
 > 日期:2026-08-02
-> 状态:**进行中(阶段 A + B 已完成,阶段 C 待开始)** —— 2026-08-03 阶段 B 落盘,等提交。
+> 状态:**进行中(阶段 A + B 已完成,阶段 C 待开始)** —— 2026-08-03 阶段 B 落盘(059ba63)。
 > 阶段 A:`reference/rules/monster-scale.md` + `reference/tables/monster-traits.md`,
 > 5 处接线(`core/07`/`core/02`/`core/11`/`templates/monster.md`/bestiary README)全部完成。
 > 阶段 B:`scripts/build-reference-index.py` 扩了 `parse_malleus_entries()` +
@@ -625,7 +625,7 @@ Keeper 交付了 `reference/sourcebooks/malleus-monstrorum-zh.md` 的重排版�
 - [x] **8. 改 `reference/bestiary/README.md`。** tag 换新分类;加古神级条目归
       `mythos/great-old-ones/` 的分工说明。
 
-### 阶段 B — 索引层机制(全部完成,2026-08-03,等提交)
+### 阶段 B — 索引层机制(全部完成,2026-08-03,059ba63)
 
 **⚠️ 阶段 B 按定案 9 拆成机制(9–10)与内容(10.5)两半**——索引表覆盖 223 只,
 但只有 9 只有 bestiary 条目,其余 214 只的 `Serves` 与摘要**必须人写**。
