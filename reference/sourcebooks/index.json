@@ -23,27 +23,27 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 85,
+          "line": 103,
           "context": "- P7 魔法速查阻塞解除(转换稿已归档为 `grand-grimoire-zh.md`)。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 188,
+          "line": 235,
           "context": "**实际核对法术全在 `grand-grimoire-zh.md`**——\"深层魔法\"在 grand 出现 121 处、在 malleus"
         },
         {
           "file": "WORKLOG.md",
-          "line": 263,
+          "line": 310,
           "context": "数值查 `grand-grimoire-zh.md`;非法术型按装备总价,查 `weapons-and-artifacts-zh.md`);"
         },
         {
           "file": "WORKLOG.md",
-          "line": 548,
+          "line": 595,
           "context": "POW 对抗检定、SAN 是定值不是 X/Y)、按 `grand-grimoire-zh.md` 抽样约 300 条法术条目"
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 70,
+          "line": 71,
           "context": "`reference/sourcebooks/grand-grimoire-zh.md` is the official grimoire, if you have it locally."
         },
         {
@@ -123,12 +123,12 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 75,
+          "line": 87,
           "context": "- **`reference/sourcebooks/keeper-rulebook-7e-zh.md`(规则书全文重译,17470 行)已确认"
         },
         {
           "file": "WORKLOG.md",
-          "line": 553,
+          "line": 600,
           "context": "2. **发现 `reference/sourcebooks/keeper-rulebook-7e-zh.md` 已可用**,魔法书章节改用它"
         },
         {
@@ -193,21 +193,33 @@
       "file": "malleus-monstrorum-zh.md",
       "path": "reference/sourcebooks/malleus-monstrorum-zh.md",
       "title": "怪物之锤 Malleus Monstrorum — 官方怪物图鉴(中译收录)",
-      "lines": 8759,
+      "lines": 10160,
       "declared_consumers": [
         "core/07-create-monster.md",
+        "reference/glossary-zh.md",
+        "reference/rules/monster-scale.md",
         "reference/sourcebooks/README.md"
       ],
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 84,
-          "context": "`reference/sourcebooks/malleus-monstrorum-zh.md` 已可读;剩下要 Keeper 定的是范围。"
+          "line": 96,
+          "context": "`reference/sourcebooks/malleus-monstrorum-zh.md` 重排版转录稿(第十轮),"
         },
         {
           "file": "WORKLOG.md",
-          "line": 650,
+          "line": 697,
           "context": "干净,`git status` 只剩一份与 P7/P8 无关的 `reference/sourcebooks/malleus-monstrorum-zh.md`"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 717,
+          "context": "\"只列未完成计划\"惯例落地、`malleus-monstrorum-zh.md` 的引用出处更正)——这些和 P1"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 761,
+          "context": "定案的落盘,以及 Keeper 自己手工替换的 `malleus-monstrorum-zh.md`(8758 行 PDF 提取稿"
         },
         {
           "file": "core/07-create-monster.md",
@@ -216,7 +228,7 @@
         },
         {
           "file": "core/14-archive-reference.md",
-          "line": 48,
+          "line": 49,
           "context": "Prefer the published English title: `malleus-monstrorum-zh.md`, not `怪物之锤.md`."
         },
         {
@@ -227,12 +239,32 @@
         {
           "file": "reference/bestiary/README.md",
           "line": 6,
-          "context": "Calibrate against `reference/sourcebooks/malleus-monstrorum-zh.md` (the official creature"
+          "context": "Work from `reference/sourcebooks/malleus-monstrorum-zh.md` (the official creature compendium,"
         },
         {
-          "file": "update_plan/README.md",
-          "line": 14,
-          "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:种类阶梯的档位区间、按 type 分的模板、词条(强化)系统与其存储格式 | 待讨论(五项待定,尚无执行清单) | 从 P4(已归档)待讨论 2 拆出。"
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 4,
+          "context": "> 状态:**待执行**——阻塞已解除,2026-08-03 Keeper 交付 `malleus-monstrorum-zh.md`"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 62,
+          "context": "**二、`malleus-monstrorum-zh.md` 的实际形态:数值可提取,但不可脚本化。**"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 393,
+          "context": "- [x] 《怪物之书》PDF 在不在仓库里、以什么形式 —— **转录稿 `malleus-monstrorum-zh.md`"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 435,
+          "context": "Keeper 交付了 `reference/sourcebooks/malleus-monstrorum-zh.md` 的重排版转录稿"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 474,
+          "context": "- [ ] **1. 抽样定区间。** 从 `reference/sourcebooks/malleus-monstrorum-zh.md` **人工判读**"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -240,16 +272,16 @@
           "context": "> `reference/sourcebooks/malleus-monstrorum-zh.md`(怪物之锤重译稿,现已可读,"
         }
       ],
-      "reference_count": 8,
+      "reference_count": 14,
       "cited": true,
       "provenance": {
         "work": "《怪物之锤》(Malleus Monstrorum)",
         "rights_holder": "Chaosium Inc.",
         "edition": "适配 CoC 7th Edition",
-        "source": "译本 PDF 的文字转录,自译。",
-        "scope": "全书逐字转录,未改写;文末 PDF 转换工具的残留提示行已删除",
-        "purpose": "神话生物数值标尺 —— 供 core/07-create-monster.md、reference/bestiary/",
-        "known_issues": "PDF 转录导致属性行断字、表格错行,数值需人工判读"
+        "source": "中文社群翻译整理稿,分章署名译者(全文 102 处「译者：」,如\"凉凉\"\"Setarium\");非官方中文版。2026-08-03 由 Keeper 手工重排版本替换早先的 PDF 提取稿",
+        "scope": "全书转录,未改写。含分类通则、神话生物、神话中的神格两大章;保留原稿的分章译者署名",
+        "purpose": "神话生物数值标尺 —— 供 core/07-create-monster.md、reference/rules/monster-scale.md、reference/bestiary/",
+        "known_issues": "同义术语两套并存(理智值丧失 / 损失、装甲 / 护甲);属性表两种格式;少量译名不统一;残留  与 <br/> 标记。数值本身可直接读"
       }
     }
   ]

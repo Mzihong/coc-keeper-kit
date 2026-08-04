@@ -90,7 +90,7 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 274,
+          "line": 321,
           "context": "配套四张骰表:`cult-goals.md`(愿望 1D10 × 手段 1D8,两表相乘才是完整目标;源表"
         },
         {
@@ -154,11 +154,6 @@
           "context": "- `cult-goals.md` (1D10 × 1D8) — a cult's want × its means; roll both, they multiply. See"
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-wrapup.md",
-          "line": 19,
-          "context": "`tables/cult-goals.md`、`tables/cult-leader-positions.md`、"
-        },
-        {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
           "line": 132,
           "context": "- [x] `cult-goals.md` —— 愿望(1D10)× 手段(1D8)。**两表相乘才是本章的生成引擎**,"
@@ -172,6 +167,11 @@
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
           "line": 220,
           "context": "**并掷 `reference/tables/cult-goals.md`(愿望 × 手段)**——答\"邪教\"不等于允许"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-cult-doc-wrapup.md",
+          "line": 19,
+          "context": "`tables/cult-goals.md`、`tables/cult-leader-positions.md`、"
         }
       ],
       "reference_count": 17
@@ -188,12 +188,12 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 275,
+          "line": 322,
           "context": "标称手段 1D10 实际只有 8 条,骰值区间已诚实重建为 1D8)、`cult-leader-positions.md`"
         },
         {
           "file": "WORKLOG.md",
-          "line": 283,
+          "line": 330,
           "context": "`cult-leader-positions.md` + `character-creation.md` §11 两处指路。"
         },
         {
@@ -217,11 +217,6 @@
           "context": "- `cult-leader-positions.md` (1d10) — a cult leader's social front and the access it buys."
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-wrapup.md",
-          "line": 19,
-          "context": "`tables/cult-goals.md`、`tables/cult-leader-positions.md`、"
-        },
-        {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
           "line": 134,
           "context": "- [x] `cult-leader-positions.md` —— 首领的社会定位(1D10:商人/族长/帮派头领/宗教"
@@ -235,6 +230,11 @@
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
           "line": 171,
           "context": "并为邪教首领指向 `cult-leader-positions.md` 与"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-cult-doc-wrapup.md",
+          "line": 19,
+          "context": "`tables/cult-goals.md`、`tables/cult-leader-positions.md`、"
         }
       ],
       "reference_count": 10
@@ -250,7 +250,7 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 276,
+          "line": 323,
           "context": "(首领社会定位 1D10,每条保留\"带来什么便利\")、`cult-power-sources.md`(力量来源"
         },
         {
@@ -289,14 +289,14 @@
           "context": "- `cult-power-sources.md` (1d4) — where a cult's claimed supernatural backing comes from."
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-wrapup.md",
-          "line": 20,
-          "context": "`tables/cult-power-sources.md`、d20 外貌/气质表、`tables/cultist-archetypes.md`"
-        },
-        {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
           "line": 137,
           "context": "- [x] `cult-power-sources.md` —— 力量来源(1D4:神话怪物 / 造物 / 科技 / 受赐力量),"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-cult-doc-wrapup.md",
+          "line": 20,
+          "context": "`tables/cult-power-sources.md`、d20 外貌/气质表、`tables/cultist-archetypes.md`"
         }
       ],
       "reference_count": 10
@@ -305,8 +305,9 @@
       "file": "cultist-archetypes.md",
       "path": "reference/tables/cultist-archetypes.md",
       "title": "cultist-archetypes.md — 邪教徒范型速查",
-      "lines": 318,
+      "lines": 319,
       "declared_consumers": [
+        "core/00-how-to-run.md",
         "core/02-rules-reference.md",
         "core/06-create-npc.md",
         "reference/craft/cult-design-zh.md",
@@ -319,13 +320,28 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 374,
+          "line": 71,
+          "context": "**③ 具名角色 + 绑定商业产品**(如 `cultist-archetypes.md` 里那位\"卡尔·斯坦福\")"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 421,
           "context": "1. **12 组人类邪教徒范型 + 祝福菜单 + 永生大师工具包落盘** `reference/tables/cultist-archetypes.md`。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 456,
+          "line": 503,
           "context": "cultist-archetypes.md`/八个 bestiary 条目、走一遍 `review-material` 审计新增内容、"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 725,
+          "context": "`tables/cultist-archetypes.md`(第四章的邪教徒范型表从未进过这份索引);"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 745,
+          "context": "文件本身有没有漏掉自己\"——`cultist-archetypes.md` 是第四章最后落盘的一批内容之一"
         },
         {
           "file": "core/06-create-npc.md",
@@ -343,17 +359,42 @@
           "context": "- `cultist-archetypes.md` — 12 ready-to-use rank-and-file cultist stat blocks (grouped by"
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-wrapup.md",
-          "line": 20,
-          "context": "`tables/cult-power-sources.md`、d20 外貌/气质表、`tables/cultist-archetypes.md`"
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 119,
+          "context": "> `reference/tables/cultist-archetypes.md`。要点:"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 130,
+          "context": ">    (如 `cultist-archetypes.md` 里的\"卡尔·斯坦福\")仍不收录。**这条三分法是执行时"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 382,
+          "context": "> 且 `reference/tables/` 已有中文表(`cultist-archetypes.md`)。"
         },
         {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
           "line": 185,
           "context": "- [x] 邪教徒原型 → `reference/tables/cultist-archetypes.md`(中文)——12 组基础数值"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-cult-doc-wrapup.md",
+          "line": 20,
+          "context": "`tables/cult-power-sources.md`、d20 外貌/气质表、`tables/cultist-archetypes.md`"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-cult-doc-wrapup.md",
+          "line": 37,
+          "context": "`reference/tables/README.md` 的 Prep & play 表列表漏了 `tables/cultist-archetypes.md`"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-cult-doc-wrapup.md",
+          "line": 45,
+          "context": "按 STR+SIZ 表、MP=POW/5,**全部正确**,与 `cultist-archetypes.md` 头部\"12 组基础数值"
         }
       ],
-      "reference_count": 7
+      "reference_count": 15
     },
     {
       "file": "hooks.md",
@@ -483,12 +524,12 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 211,
+          "line": 258,
           "context": "打断后果→触发表、〔驱〕〔保〕类反查公平出路;`tables/mythos-angles.md` 20 个角度"
         },
         {
           "file": "WORKLOG.md",
-          "line": 422,
+          "line": 469,
           "context": "或家族/独立怪物/场所本身/自然或宇宙现象,auto 默认掷 `mythos-angles.md` 再反推"
         },
         {
@@ -570,12 +611,12 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 277,
+          "line": 324,
           "context": "1D4)、`npc-appearance.md`(外貌/气质 1D20,与既有 `npc-quirks.md` 分工:quirks 管"
         },
         {
           "file": "WORKLOG.md",
-          "line": 282,
+          "line": 329,
           "context": "六项财源当独立线索来源;`06` 加 `npc-appearance.md`(外貌骰表)与邪教首领指向"
         },
         {
@@ -612,7 +653,7 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 277,
+          "line": 324,
           "context": "1D4)、`npc-appearance.md`(外貌/气质 1D20,与既有 `npc-quirks.md` 分工:quirks 管"
         },
         {

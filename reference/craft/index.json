@@ -22,18 +22,23 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 91,
+          "line": 109,
           "context": "- 新增邪教设计方法论 `craft/cult-design-zh.md`,配四张骰表与 `templates/cult.md` 模板。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 146,
+          "line": 193,
           "context": "该计划的落点已同步改成 `craft/cult-design-zh.md`。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 271,
+          "line": 318,
           "context": "3. **P1 第三章(设计一个克苏鲁邪教方法论)落盘**:`reference/craft/cult-design-zh.md`"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 723,
+          "context": "`craft/cult-design-zh.md`、`mythos/cults/`、`templates/cult.md` 早前落盘时其实已经"
         },
         {
           "file": "core/01-intake.md",
@@ -136,11 +141,6 @@
           "context": "`reference/craft/cult-design-zh.md` §三."
         },
         {
-          "file": "update_plan/2026-08-02-cult-doc-wrapup.md",
-          "line": 18,
-          "context": "- [ ] 更新 `reference/README.md`:登记 `craft/cult-design-zh.md`、`mythos/cults/` 条目、"
-        },
-        {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
           "line": 110,
           "context": "**A. 手法散文 → `reference/craft/cult-design-zh.md`**(2026-08-02 落盘)"
@@ -149,9 +149,19 @@
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
           "line": 219,
           "context": "`reference/craft/cult-design-zh.md` 与 `reference/mythos/cults/`,"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-cult-doc-wrapup.md",
+          "line": 18,
+          "context": "- [x] 更新 `reference/README.md`:登记 `craft/cult-design-zh.md`、`mythos/cults/` 条目、"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-cult-doc-wrapup.md",
+          "line": 33,
+          "context": "**登记情况核对**:`craft/cult-design-zh.md`、四张骰表(`cult-goals`/`cult-leader-positions`/"
         }
       ],
-      "reference_count": 26
+      "reference_count": 28
     },
     {
       "file": "lovecraft-zh.md",
@@ -167,12 +177,12 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 143,
+          "line": 190,
           "context": "`lovecraft-craft-notes-zh.md` → `craft/lovecraft-zh.md`。理由不是\"根目录要干净\",而是"
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 43,
+          "line": 45,
           "context": "`reference/craft/lovecraft-zh.md` §三 distills how H. P. Lovecraft's own monsters and"
         },
         {
@@ -202,7 +212,7 @@
         },
         {
           "file": "reference/README.md",
-          "line": 57,
+          "line": 58,
           "context": "`craft/lovecraft-zh.md` (above) — the corpus is the raw material, the craft note is what"
         },
         {
@@ -212,7 +222,7 @@
         },
         {
           "file": "reference/craft/README.md",
-          "line": 27,
+          "line": 28,
           "context": "4. **篇幅克制。** `lovecraft-zh.md` 90 行覆盖了 82 篇小说。生成时模型要整份读进上下文,"
         },
         {

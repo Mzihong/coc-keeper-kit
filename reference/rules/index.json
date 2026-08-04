@@ -22,52 +22,52 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 74,
+          "line": 92,
           "context": "- `character-creation.md` 补齐年龄补正、Build/伤害加值、技能基础值等建卡数据,可用来审核他人交的卡。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 88,
+          "line": 106,
           "context": "- `character-creation.md` 各小节补上数据来源指路(标明取自哪个源文件/章节)。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 81,
+          "line": 93,
           "context": "补全全部缺失字段,加了硬性算术+阈值型双层自校验;`core/13`/`character-creation.md`/"
         },
         {
           "file": "WORKLOG.md",
-          "line": 261,
+          "line": 308,
           "context": "`reference/rules/character-creation.md`**(新增 §11)。内容:普通人类基线 = 照"
         },
         {
           "file": "WORKLOG.md",
-          "line": 283,
+          "line": 330,
           "context": "`cult-leader-positions.md` + `character-creation.md` §11 两处指路。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 291,
+          "line": 338,
           "context": "P4 的落点没有另开新文件——`reference/rules/character-creation.md` 已经是\"KP 专用的"
         },
         {
           "file": "WORKLOG.md",
-          "line": 558,
+          "line": 605,
           "context": "会话对 `core/13`/`core/01`/`character-creation.md`/`templates/investigator.md`/"
         },
         {
           "file": "WORKLOG.md",
-          "line": 598,
+          "line": 645,
           "context": "规则,换成\"渲染永远面向 KP\"的声明。顺带发现 `reference/rules/character-creation.md`"
         },
         {
           "file": "WORKLOG.md",
-          "line": 608,
+          "line": 655,
           "context": "`reference/rules/character-creation.md` §5 已经落盘的权威数字是 90%,75% 是这份计划"
         },
         {
           "file": "WORKLOG.md",
-          "line": 649,
+          "line": 696,
           "context": "`scripts/render-investigator.py`、`reference/rules/character-creation.md` 等)工作区"
         },
         {
@@ -97,7 +97,7 @@
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 72,
+          "line": 73,
           "context": "is not a separate power tier — it's `reference/rules/character-creation.md` §11: the same"
         },
         {
@@ -174,6 +174,26 @@
           "file": "scripts/render-investigator.py",
           "line": 429,
           "context": "# Own Language just mirrors EDU (character-creation.md §5's \"special\" row) — it isn't"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 252,
+          "context": "> | 档位区间 + 词条负载上限 | **`reference/rules/monster-scale.md`**(新建) | 与人类侧成对。P4 最终落进 `reference/rules/character-creation.md` §11,两份并列在 `reference/rules/` 下,`core/02`"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 257,
+          "context": "> 依附于已有的车卡流程(§1–§5);怪物侧**没有可依附的宿主**(`character-creation.md`"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 274,
+          "context": "> | 人类 | (书不收) | `human` | **不在本尺内**,走 `character-creation.md` §11(P4 已落盘) |"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 478,
+          "context": "样本量与选样理由写进产物的「来源」注(样板见 `reference/rules/character-creation.md`)。"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -326,7 +346,7 @@
           "context": "| P8 | [investigator-render-gaps](2026-08-02-investigator-render-gaps.md) | 投资者卡渲染缺口:`spells`/`cthulhu_mythos`/`notes`/P6 重建后新增字段(`occupation_detail`/`age_modif"
         }
       ],
-      "reference_count": 61
+      "reference_count": 65
     },
     {
       "file": "chases.md",
@@ -406,57 +426,57 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 32,
+          "line": 35,
           "context": "- **法术、仪式、魔法书终于有了数值标尺。** 新增 `reference/rules/magic.md`:施法消耗"
         },
         {
           "file": "WORKLOG.md",
-          "line": 73,
+          "line": 85,
           "context": "`reference/rules/magic.md`,`core/02`/`core/07`/`reference/mythos/README.md` 已接线。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 77,
+          "line": 89,
           "context": "三值、泛读/精读两阶段、重复精读耗时翻倍),`magic.md` 的魔法书章节改成从这份规则书"
         },
         {
           "file": "WORKLOG.md",
-          "line": 205,
+          "line": 252,
           "context": "与 `build-reference-index.py` 的行号惯例同族)→ L2 `rules/magic.md`(P7 既定产出,"
         },
         {
           "file": "WORKLOG.md",
-          "line": 229,
+          "line": 276,
           "context": "两条路(退轴级浏览 / 按 `magic.md` 区间自造入 `mythos/spells/`)。`all auto` 走反向:"
         },
         {
           "file": "WORKLOG.md",
-          "line": 238,
+          "line": 285,
           "context": "调查员公平出路。**设计铁律(进 magic.md):反制法术的代价必须比被反制法术低至少一档**,"
         },
         {
           "file": "WORKLOG.md",
-          "line": 547,
+          "line": 594,
           "context": "1. **`reference/rules/magic.md` 落盘**:施法通则(消耗记法、施法用时的 DEX+50/N轮 规则、"
         },
         {
           "file": "WORKLOG.md",
-          "line": 560,
+          "line": 607,
           "context": "397 行变化,远超 magic.md 一个文件该有的量)。提交它们等于替 P8 提前定稿一份它自己"
         },
         {
           "file": "WORKLOG.md",
-          "line": 562,
+          "line": 609,
           "context": "4. **提交范围限定为本计划确实拥有的文件**:`reference/rules/magic.md`(新增)、"
         },
         {
           "file": "WORKLOG.md",
-          "line": 631,
+          "line": 678,
           "context": "还没有 `magic.md`,答案是\"两者互不阻塞\";P7 落盘后复核确认两边改动的文件确实没有"
         },
         {
           "file": "WORKLOG.md",
-          "line": 641,
+          "line": 688,
           "context": "`magic.md`(84dba55)已经提交,所以 `dist/bundle.md` 与全部 `reference/**/index.json`"
         },
         {
@@ -471,13 +491,18 @@
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 75,
+          "line": 77,
           "context": "- Spellcasters: list spells and their MP/SAN costs — read `reference/rules/magic.md` for the"
         },
         {
           "file": "reference/mythos/README.md",
           "line": 16,
           "context": "**Read `reference/rules/magic.md` first** — it's the distilled cost-tier ladder, casting-time"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 68,
+          "context": "`reference/rules/magic.md` 是同一条路,不是新方法"
         },
         {
           "file": "update_plan/Archived/2026-08-02-conventions-gaps.md",
@@ -550,7 +575,7 @@
           "context": "| P7 | [magic-quickref](2026-08-02-magic-quickref.md) | 魔法速查 `reference/rules/magic.md`:施法通则(消耗记法、施法用时、POW 对抗)、按 `grand-grimoire-zh.md` 抽样得出的四档消耗区间(小术/中术/大术/仪式级"
         }
       ],
-      "reference_count": 29
+      "reference_count": 30
     },
     {
       "file": "sanity.md",

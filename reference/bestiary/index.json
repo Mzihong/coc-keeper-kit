@@ -20,9 +20,14 @@
           "file": "reference/mythos/spells/black-wing-call.md",
           "line": 11,
           "context": "召来 1D6 只黑翼者(`reference/bestiary/black-wing.md`)。需要六人协力——施法者加另外"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 328,
+          "context": "| 2 | 关联信息**存在,但埋在散文里** | `black-wing.md` 的 Lore 写了 \"loyal to Cthulhu rather than Nodens\",但不是字段;反过来 `great-old-ones/cthulhu.md` 的「挂钩」链了教团、手法、史料,**唯独不链自己的眷族**。双向"
         }
       ],
-      "reference_count": 1
+      "reference_count": 2
     },
     {
       "file": "cthulhu-blessed.md",
@@ -44,9 +49,24 @@
           "file": "reference/bestiary/cthulhu-blessed.md",
           "line": 51,
           "context": "> normally produce ordinary hybrids (`deep-one-hybrid.md`) — see"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 77,
+          "context": "**顺带查出一个校准 bug:** kit 的 `deep-one-hybrid.md` 标 `independent race`,但 malleus"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 452,
+          "context": "(`core/07`、`core/14`、两份 README、`bestiary/deep-one-hybrid.md`、`WORKLOG`、"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 516,
+          "context": "补 `Serves:` 与索引摘要。已知必改的两处:`deep-one-hybrid.md` 的"
         }
       ],
-      "reference_count": 1
+      "reference_count": 4
     },
     {
       "file": "fellrock.md",
@@ -56,6 +76,21 @@
       "declared_consumers": [],
       "referenced_by": [
         {
+          "file": "CHANGELOG.md",
+          "line": 29,
+          "context": "- 怪物图鉴 `fellrock.md` 的\"沉默之油\"反查链接指向了 `artifacts-zh.md`,但那份文件里"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 731,
+          "context": "发现一处真实错误——`reference/bestiary/fellrock.md` 的\"沉默之油\"反查指向了"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 753,
+          "context": "- **`fellrock.md` 的交叉引用错误是本轮审计唯一发现的问题**——其余检查项(20 组数值"
+        },
+        {
           "file": "reference/mythos/spells/fellrock-call-bind.md",
           "line": 11,
           "context": "召来一只费尔罗克(`reference/bestiary/fellrock.md`)——只在距目标费尔罗克 3 公里内"
@@ -64,9 +99,14 @@
           "file": "reference/mythos/spells/oil-of-silence.md",
           "line": 10,
           "context": "炼制出一种能驱避费尔罗克(`reference/bestiary/fellrock.md`)的魔法油膏——费尔罗克"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-cult-doc-wrapup.md",
+          "line": 47,
+          "context": "`reference/bestiary/fellrock.md` 的\"沉默之油\"词条指向了 `reference/mythos/artifacts-zh.md`,"
         }
       ],
-      "reference_count": 2
+      "reference_count": 6
     },
     {
       "file": "scarlet-orb.md",
@@ -112,13 +152,13 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 385,
+          "line": 432,
           "context": "与已有的 `the-bell-keeper.md` 同一约定。"
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 36,
-          "context": "| `reference/bestiary/` | **只有 1 个文件**(`the-bell-keeper.md`)。README 建议 `threat`/`type`/`sanity` 三个 tag | 没有对标库。想\"照着现成的改\"目前无从改起 |"
+          "line": 282,
+          "context": "> 这正是 `the-bell-keeper.md` 已经在做的事(它写的是 `mythos servitor / undead`),"
         }
       ],
       "reference_count": 2

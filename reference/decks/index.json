@@ -22,17 +22,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 87,
+          "line": 105,
           "context": "- 新增 `reference/decks/` 与首份收录件 `busybodies-zh.md`(官方好事者卡组,47 张 NPC 卡)。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 262,
+          "line": 309,
           "context": "`busybodies-zh.md` 校准;首领 = 基线 + 增量,增量二选一(法术型按资历掷法术数量,"
         },
         {
           "file": "WORKLOG.md",
-          "line": 367,
+          "line": 414,
           "context": "人类邪教徒原型 + 变体、8 只怪物,类比已归档的 `busybodies-zh.md` 官方 NPC 卡组),"
         },
         {
@@ -200,12 +200,12 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 263,
+          "line": 310,
           "context": "数值查 `grand-grimoire-zh.md`;非法术型按装备总价,查 `weapons-and-artifacts-zh.md`);"
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 76,
+          "line": 77,
           "context": "- Arming someone: `reference/decks/weapons-and-artifacts-zh.md` gives skill, base chance,"
         },
         {
