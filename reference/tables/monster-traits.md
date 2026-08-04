@@ -1,0 +1,34 @@
+# monster-traits.md — numeric trait menu
+
+Bolt-on numeric traits for a `reference/bestiary/` or `campaigns/` monster entry — the layer
+that turns a tier baseline (`reference/rules/monster-scale.md`) into a specific creature
+without hand-inventing a new mechanic every time. Kit-original design, not sourced from any
+transcription.
+
+**Every trait carries a 破解口 (counter-play). This column is mandatory, not a nice-to-have** —
+a numeric trait doesn't come with a built-in weakness the way a behavioural quirk does (a cult
+leader's pride, a ghoul's hunger), so if the counter-play column is left blank the trait is
+just raw power and `core/07`'s fair-out rule quietly erodes as traits stack. Don't add a trait
+without one; don't strip a trait's counter-play to make an entry scarier.
+
+**Load points** feed the tier ceilings in `monster-scale.md` (L2/L3 = 2, L4 = 3, L5 = 4) —
+sum a creature's trait loads and stay at or under its tier's ceiling.
+
+| 词条 | 效果(数值) | 负载点 | 破解口 | 备注 |
+|---|---|---|---|---|
+| 再生 (Regeneration) | 回合开始时回复 1D6 HP,除非上回合受到「克星」伤害 | 2 | 必须指定至少一种「克星」伤害(火、圣物、特定武器)——没有克星的再生是不可战胜 | 与「分裂」不要同时使用,两者叠加基本取消战斗选项 |
+| 分裂 (Split on damage) | 单次受到 ≥10 点伤害时分裂为 2 个 HP 减半的个体,直到 HP 低于阈值(如 5)才不再分裂 | 2 | 分裂后的个体总攻击次数不变(平分而非各自满攻击),且钝器/火焰造成的伤害不触发分裂 | 适合"越打越多"式的恐怖,不适合终极 boss(会拖慢战斗) |
+| damage reduction(减伤)| 每次受到伤害先扣除 N 点(N=2 或 4,按等级选) | 1(N=2)/2(N=4)| 声明至少一种绕过方式(穿刺、魔法伤害、特定部位) | 与厚甲(数值护甲)效果类似,二选一,不叠加 |
+| 免疫常规武器 (Conventional immunity) | 非附魔/非特殊材质武器造成最小伤害(1点) | 2 | 必须点名至少一种能正常伤害它的手段,且这手段要能被调查员找到 | L4/L5 常见,是"数值免疫"的标准写法,见 `monster-scale.md` 护甲惯例 |
+| 抓握/拖拽 (Grapple & drag) | 命中后目标被抓住,下回合自动承受抓握伤害,除非用 STR 对抗挣脱 | 1 | 挣脱检定用普通 STR 对抗(非 Extreme),给逃脱留出真实概率 | 常配合"拖入巢穴/异境"的场景效果 |
+| 汲取属性 (Drain a characteristic) | 命中后目标损失 1D3 点指定属性(STR/CON/INT/POW 择一),归零后触发特定后果 | 2 | 被汲取的属性每周自然恢复 1 点(卧床或休整时);该恢复速度必须写进条目 | 归零后果不应是当场死亡(除非属性是 CON)——POW 归零可以是"被夺走做梦的能力"而非死亡 |
+| 疯狂凝视 (Maddening gaze) | 目视接触时额外承受一次 SAN 检定(独立于遭遇本体的 SAN 检定) | 1 | 闭眼/移开视线/隔着反射面观察可以完全规避,且这个规避方式在场景里要能被发现 | 不要和"目睹即损失"的基础 SAN 检定重复计算,是額外一次,不是加倍同一次 |
+| 恐惧光环 (Terror aura) | 进入近距离(约 10 码)的人类每回合额外损失固定 1 点 SAN,直到离开范围 | 1 | 光环范围外无效,且光环不影响已经理智值为 0 的角色(无更多可失去的) | 适合让"靠近"本身变成有代价的战术选择,不需要额外掷骰 |
+| 疾病/诅咒接触 (Disease or curse on hit) | 命中后目标感染,若干天后发作(具体效果由条目自定,如属性衰减、变形前兆) | 2 | 发作前必须有可被发现的窗口期与可被找到的疗法/仪式,否则等同判处死刑而非危机 | 与"汲取属性"效果接近,不要同时给同一目标用,除非目的是慢性凌迟式的战役级威胁 |
+| 多重攻击型态 (Extra attack form) | 每回合可以额外发动一次不同类型的攻击(如物理+异能各一次) | 1 | 两次攻击若共用同一防御手段(如同时被同一护符克制)则破解口没有被稀释;若不共用,视为两个负载点 | 这是"每回合攻击次数"从 1 提到 2 的标准做法,别直接把伤害骰翻倍 |
+| 高速/连续行动 (Extra initiative action) | 每轮多行动一次(如两次 DEX 顺位各算一次) | 2 | 声明一种能让它"慢下来"或"失去先攻"的手段(地形、特定法术、疲劳阈值) | 谨慎使用——这是最容易让战斗失控的词条,L2/L3 基本不该出现 |
+| 心灵感应/远程侦测 (Telepathy / remote sense) | 无需视线即可锁定特定范围内的人类,穿墙感知 | 1 | 声明至少一种能屏蔽/欺骗这种感知的手段(特定材质、仪式、心理状态) | 更适合驱动剧情("它已经知道你藏在哪")而非战斗本身 |
+| 飞行/穿地 (Flight or burrow) | 移动不受地形限制,可无视大部分物理阻挡 | 1 | 声明至少一种能限制它移动的手段(密闭空间、特定符文、水下) | 常和"多重攻击"配合写游击战式的怪物,单独使用不需要额外破解 |
+| 变形 (Shapeshifting) | 可切换 2–3 种预设形态,各自有不同的攻击/防御数值 | 2 | 每次变形消耗一个明确资源(回合、MP、或需要特定条件触发),不能无限次自由切换 | 变形后的每个形态各自独立走减伤/攻击词条预算,不要叠加计算 |
+| 附身/夺舍 (Possession) | 可尝试占据一名人类躯体(通常需 POW 对抗),占据后以宿主外表活动 | 2 | 宿主本人的意志检定成功可以夺回身体,或有明确驱逐仪式;必须给出至少一种识别附身状态的线索 | 是"敌人可能是任何人"式剧情的标准引擎,慎用在纯战斗遭遇里 |
+| 环境操控 (Environmental control) | 可改变周边小范围环境(温度骤降、光线扭曲、声音消失) | 1 | 环境效果本身可以被察觉并预警(温度计、动物异常反应),不是无预兆突袭 | 适合"遭遇前的征兆"设计,和 `core/09-description.md` 的读白配合最好 |

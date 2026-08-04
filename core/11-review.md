@@ -66,6 +66,15 @@ model's output. Assume the material is wrong until each line checks out.
 - [ ] Sanity costs are proportionate to the horror, not to the gore.
 - [ ] Any `investigators/*.json` validates against `templates/investigator.schema.json`; its
       derived stats are internally consistent and its `.md` view agrees with the JSON.
+- [ ] **Non-human monsters: every numeric trait has a discoverable counter-play.** For each
+      trait listed under "Special abilities (traits)", confirm the entry (or a linked file)
+      states how a player could find or use that trait's 破解口 — a counter-play that exists
+      only in `reference/tables/monster-traits.md` and never reaches the table doesn't count.
+      N traits demand N *findable* answers; one missing is a broken fair-out, not a nitpick.
+- [ ] **Non-human monsters: trait load is at or under the tier ceiling.** Sum the loads on
+      "Trait load total" against `reference/rules/monster-scale.md`'s ceiling for that tier
+      (L2/L3 = 2, L4 = 3, L5 = 4). Over budget means the entry reads as the wrong tier wearing
+      a costume, not a legitimately scarier version of its actual tier.
 
 ### Safety & spoilers
 

@@ -7,23 +7,39 @@ live through it. In CoC the monster is usually an obstacle to survive, not a bos
 
 - **Read `core/02-rules-reference.md`** — especially `reference/rules/combat.md` (Build,
   Damage Bonus, HP) and `reference/rules/sanity.md` (X/Y loss). Numbers must be 7e-correct.
-- Decide **type** (human / beast / undead / mythos servitor / independent race / great old
-  one) and **threat** (trivial / moderate / deadly / mythic). Threat sets stat scale and SAN.
+- **Decide the tier**, then the threat band inside it — read
+  `reference/rules/monster-scale.md` before assigning any number. Five tiers, ordered by power:
+
+  | Tier | type value | Malleus category |
+  |---|---|---|
+  | L1 human | *(not this spec)* | — |
+  | L2 creature | `independent-race` (add `beast`/`undead` as a parenthetical modifier if it fits, e.g. `independent-race (undead)`) | 独立种族 / 传说生物 |
+  | L3 servitor | `servitor-race` | 仆从种族 |
+  | L4 unique | `unique-entity` | 唯一存在 |
+  | L5 deity | `great-old-one` | 旧神/旧日支配者/梦境诸神/外神/化身,全部记作这一档 |
+
+  `beast` and `undead` are no longer standalone types — they're descriptive modifiers on
+  whichever of L2/L3/L4 the creature actually is (a zombie is `independent-race (undead)`,
+  not a fourth category). **Threat** (trivial / moderate / deadly / mythic) is still the field
+  that sets fine-grained stat scale and SAN **inside** a tier — `monster-scale.md` has the
+  baseline ranges for both axes together. Adjacent tiers may overlap; never skip a tier.
+- **Filing by tier:** L5 entries go in `reference/mythos/great-old-ones/`, not
+  `reference/bestiary/` — a god's page is lore-shaped (origin, signs, how a cult worships it),
+  not a stat card. **L2/L3/L4 all go in `reference/bestiary/`.**
 - **Human antagonists don't use this spec.** A cultist, a cult leader, or any other human
   villain is built with `reference/rules/character-creation.md` §11 (baseline + increment),
-  not this spec's type/threat scale. The cross-type ladder for non-human threats
-  (`human < 怪物 < 古神眷族 < 古神`) is still being worked out in
-  `update_plan/2026-08-02-monster-templates-traits.md` (P9) — until that lands, treat this
-  spec's threat four-band as a qualitative guide only, not a numeric one.
+  not this spec's type/threat scale.
 - Use `templates/monster.md`.
 - **Source material, if present locally** (neither is in `dist/bundle.md`, so neither is a
   dependency): `reference/sourcebooks/malleus-monstrorum-zh.md` is the official creature
   compendium — read the nearest published entry to calibrate stat scale, armour, and SAN cost
-  before inventing your own. `reference/sourcebooks/grand-grimoire-zh.md` covers spells for
-  anything that casts. Both are PDF transcriptions with known garbling; **judge every number
-  by eye** — the OCR mangles stat lines. Published numbers may be taken directly into a
-  `reference/bestiary/` entry with the source named; the reveal, lore, and behaviour prose is
-  written fresh (`core/00-how-to-run.md` → ground rules).
+  before inventing your own; its stat tables are clean, but check its own header for the
+  current list of known small defects (mixed synonymous terms, a few inconsistent renderings).
+  `reference/sourcebooks/grand-grimoire-zh.md` covers spells for anything that casts and is
+  still a PDF-extraction transcription with known garbling — judge every number there by eye.
+  Published numbers may be taken directly into a `reference/bestiary/` entry with the source
+  named; the reveal, lore, and behaviour prose is written fresh (`core/00-how-to-run.md` →
+  ground rules).
 
 ## Design the horror
 

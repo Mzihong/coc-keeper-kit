@@ -2,8 +2,10 @@
 
 *<one-line impression — the thing in a breath>*
 
-- **Type:** <human / beast / undead / mythos servitor / independent race / great old one>
-- **Threat:** <trivial / moderate / deadly / mythic>
+- **Type:** <independent-race / servitor-race / unique-entity / great-old-one — add a
+  `(beast)`/`(undead)` modifier if it fits, e.g. `independent-race (undead)`>
+- **Tier:** <L2 creature / L3 servitor / L4 unique / L5 deity — see `reference/rules/monster-scale.md`>
+- **Threat:** <trivial / moderate / deadly / mythic — the ± inside the tier, not a replacement for it>
 - **Sanity to see:** <X/Y>
 
 ## Reveal (say this out loud, before the SAN roll)
@@ -24,8 +26,10 @@ for the Sanity roll.>
 - **Dodge:** 00% *(or "cannot dodge / does not evade")*
 - **Armour:** <points, or immunity — e.g. "impaling weapons do minimum damage">
 
-### Special abilities
-- <e.g. regeneration, incorporeality, terror aura, spellcasting, only harmed by fire>
+### Special abilities (traits)
+- <one bullet per trait from `reference/tables/monster-traits.md` — name, its stated 效果 and
+  破解口 in your own words, not a bare table lookup>
+- **Trait load total:** 0 / <tier ceiling — L2/L3 = 2, L4 = 3, L5 = 4, see `monster-scale.md`>
 
 ## Behaviour & weakness
 - **Wants / drive:** <why it acts>

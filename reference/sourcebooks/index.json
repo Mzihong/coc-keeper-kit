@@ -48,8 +48,8 @@
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 22,
-          "context": "before inventing your own. `reference/sourcebooks/grand-grimoire-zh.md` covers spells for"
+          "line": 38,
+          "context": "`reference/sourcebooks/grand-grimoire-zh.md` covers spells for anything that casts and is"
         },
         {
           "file": "reference/mythos/README.md",
@@ -223,7 +223,7 @@
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 20,
+          "line": 34,
           "context": "dependency): `reference/sourcebooks/malleus-monstrorum-zh.md` is the official creature"
         },
         {
@@ -238,8 +238,13 @@
         },
         {
           "file": "reference/bestiary/README.md",
-          "line": 6,
+          "line": 11,
           "context": "Work from `reference/sourcebooks/malleus-monstrorum-zh.md` (the official creature compendium,"
+        },
+        {
+          "file": "reference/rules/monster-scale.md",
+          "line": 4,
+          "context": "> Distilled by sampling `reference/sourcebooks/malleus-monstrorum-zh.md` (local only, absent"
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
@@ -272,7 +277,7 @@
           "context": "> `reference/sourcebooks/malleus-monstrorum-zh.md`(怪物之锤重译稿,现已可读,"
         }
       ],
-      "reference_count": 14,
+      "reference_count": 15,
       "cited": true,
       "provenance": {
         "work": "《怪物之锤》(Malleus Monstrorum)",

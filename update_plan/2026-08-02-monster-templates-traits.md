@@ -1,10 +1,10 @@
 # Update Plan — 怪物模板与词条系统
 
 > 日期:2026-08-02
-> 状态:**待执行**——阻塞已解除,2026-08-03 Keeper 交付 `malleus-monstrorum-zh.md`
-> 重排版转录稿(10113 行,属性表已还原为 Markdown 表格,数值可直接读)。
-> **定案 1/2/3/4/5/7/8 全部拍板,决策上没有任何等待项**;执行清单 17 项分
-> A(标尺与词条)/ B(索引层)/ C(神格铺设)三阶段,现在全部可以开工。
+> 状态:**进行中(阶段 A 已完成,阶段 B 待开始)** —— 2026-08-03 第七轮落盘
+> `reference/rules/monster-scale.md` + `reference/tables/monster-traits.md`,
+> 5 处接线(`core/07`/`core/02`/`core/11`/`templates/monster.md`/bestiary README)
+> 全部完成。**三阶段全完才归档**,阶段 B(索引层机制)是下一步。
 > 起因:`2026-08-02-antagonist-budget.md`(P4)待讨论 2 定案——怪物/神话实体不走技能点
 > 预算。那么它走什么?P4 里那个空着的 **X** 就是本计划要回答的东西。Keeper 同时给出了
 > 一个具体想法(怪物之书模板 + 词条强化 + CSV 存储),内容量超出 P4 的一节,拆出独立计划
@@ -469,35 +469,32 @@ Keeper 交付了 `reference/sourcebooks/malleus-monstrorum-zh.md` 的重排版�
 **阶段内顺序:** A 的 1 → 2 → 3 是硬串行(没有基线区间就定不了"+2 护甲值几点负载"),
 4–8 可并行。B 的 9(改脚本)必须在 10、11 之前。C 依赖 A、B 全部完成。
 
-### 阶段 A — 标尺与词条
+### 阶段 A — 标尺与词条(全部完成,2026-08-03 第六轮)
 
-- [ ] **1. 抽样定区间。** 从 `reference/sourcebooks/malleus-monstrorum-zh.md` **人工判读**
-      抽样(约 200 条理智损失行 + 属性行),按五级分类各取足量样本,算出
-      SAN(X/Y)、属性、HP、护甲、每回合攻击次数的**真实区间**。
-      **不脚本化**——转录 OCR 损坏严重(`体敌`/`报甲`/`理智毁失`),必须逐条判读。
-      样本量与选样理由写进产物的「来源」注(样板见 `reference/rules/character-creation.md`)。
-- [ ] **2. 新建 `reference/rules/monster-scale.md`。** 五级基线区间 + threat 四档在级内的
-      ± 幅度 + 跨级重叠规则(相邻可重叠、不可跨两级)+ **各级/各档的词条负载上限**。
-      标注取材源指向 malleus 的哪一章,不摘原文。
-- [ ] **3. 新建 `reference/tables/monster-traits.md`。** 数值词条表,列 =
-      `词条 / 效果(数值) / 负载点 / **破解口** / 备注`。**「破解口」是必填列,不许留空**
-      ——这是定案 3 ③ 的红线载体。
-- [ ] **4. 改 `core/07-create-monster.md`。**(a) type 六类 → malleus 四类 + 唯一存在,
-      `beast`/`undead` 写成修饰标签;(b) 删掉现有那段"threat 四档只作定性指引、
-      等 P9 落地"的占位文字(第 14–17 行),改指 `monster-scale.md`;
-      (c) **回填 P4 留的 X**——把"人类反派不走本预算"那句补完整:怪物走
-      「阶梯基线 + 档位区间 + 词条负载」;(d) 写清**哪一级的条目写进哪个目录**
-      (古神级 → `reference/mythos/great-old-ones/`,其余 → `reference/bestiary/`)。
-- [ ] **5. 改 `templates/monster.md`。** header 的 `Type`/`Threat` 取值换成新分类;
-      `Special abilities` 一栏改成**词条挂载点**(指向 `monster-traits.md`),
-      并加一行**负载合计**,让审计能一眼看出有没有超上限。
-- [ ] **6. 改 `core/02-rules-reference.md`。** Cheat-sheets 登记 `monster-scale.md`;
-      「Read this before you」加一条怪物侧入口(与 P4 加的人类侧那条并列)。
-- [ ] **7. 改 `core/11-review.md` 的 Mechanics 一节。** 加两条审计题:
-      (a) 挂了 N 条词条是否有 N 条**可发现的**应对(缺一条即红线破损);
-      (b) 词条负载是否超出该级/该档上限。现有清单怪物侧一条都没有,这是首次补上。
-- [ ] **8. 改 `reference/bestiary/README.md`。** 建议 tag 换成新分类;
-      补一句古神级条目归 `mythos/great-old-ones/` 的分工。
+- [x] **1. 抽样定区间。** 转录稿换新后属性表已是干净的 Markdown 表格(不再是原计划写
+      这条时假设的 OCR 损坏状态),改用脚本抽取全书 238 处分类标签(独立种族/仆从种族/
+      唯一存在/五类神格)覆盖的全部 SAN 损失骰式、HP、护甲点数、攻击技能百分比,按四类
+      分桶算出真实分布(四分位数),再人工抽样核对分桶结果是否合理。**不是原计划设想的
+      "200 行人工逐条判读"**,但达成同一目的(真实区间、不是估算)——旧稿状态下脚本
+      会读出乱码,新稿状态下脚本读数可靠,人工判读的必要性随转录质量一起降低了。
+- [x] **2. 新建 `reference/rules/monster-scale.md`。** 五级阶梯(human 不在表内 +
+      creature/servitor/unique/deity 四档实际有数据)、threat 四档在级内的区间(取样本
+      四分位数)、跨级重叠规则、各级词条负载上限(L2/L3=2、L4=3、L5=4)。取材源标注为
+      "抽样约 240 个属性块",不摘原文。
+- [x] **3. 新建 `reference/tables/monster-traits.md`。** 18 条数值词条,kit 原创设计
+      (不取材于转录稿——书里没有这类抽象词条系统)。每条破解口列非空。
+- [x] **4. 改 `core/07-create-monster.md`。** type 五值(独立种族/仆从种族/唯一存在/
+      古神,human 不在此表)+ beast/undead 降级修饰标签;占位文字换成阶梯表;X 回填为
+      "阶梯基线 + 词条负载,封顶于该级负载上限";filing 分工写清。
+- [x] **5. 改 `templates/monster.md`。** header 加 Tier 字段;Special abilities 改成
+      词条挂载点 + 负载合计行。**`Serves:` 字段未加**——那是阶段 B(第 10 项)的范围,
+      本轮刻意不越界,避免和阶段 B 的执行清单重复记账。
+- [x] **6. 改 `core/02-rules-reference.md`。** Cheat-sheets 登记 `monster-scale.md`;
+      「Read this before you」加怪物侧入口。
+- [x] **7. 改 `core/11-review.md` 的 Mechanics 一节。** 加两条审计题(词条破解口
+      可发现性、词条负载是否超预算)。
+- [x] **8. 改 `reference/bestiary/README.md`。** tag 换新分类;加古神级条目归
+      `mythos/great-old-ones/` 的分工说明。
 
 ### 阶段 B — 索引层机制
 

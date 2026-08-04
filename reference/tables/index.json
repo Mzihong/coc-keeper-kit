@@ -7,7 +7,7 @@
   "usage_rule": "authored by this kit — read and used directly, no citation required",
   "in_bundle": true,
   "generated_by": "scripts/build-reference-index.py — do not edit by hand",
-  "entry_count": 11,
+  "entry_count": 12,
   "entries": [
     {
       "file": "complications.md",
@@ -511,6 +511,83 @@
         }
       ],
       "reference_count": 3
+    },
+    {
+      "file": "monster-traits.md",
+      "path": "reference/tables/monster-traits.md",
+      "title": "monster-traits.md — numeric trait menu",
+      "lines": 35,
+      "declared_consumers": [
+        "reference/rules/monster-scale.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "core/02-rules-reference.md",
+          "line": 42,
+          "context": "threat band, and the trait load ceiling that caps `reference/tables/monster-traits.md`."
+        },
+        {
+          "file": "core/11-review.md",
+          "line": 72,
+          "context": "only in `reference/tables/monster-traits.md` and never reaches the table doesn't count."
+        },
+        {
+          "file": "templates/monster.md",
+          "line": 30,
+          "context": "- <one bullet per trait from `reference/tables/monster-traits.md` — name, its stated 效果 and"
+        },
+        {
+          "file": "reference/bestiary/README.md",
+          "line": 26,
+          "context": "`reference/tables/monster-traits.md` and must stay at or under the tier's load ceiling."
+        },
+        {
+          "file": "reference/rules/monster-scale.md",
+          "line": 98,
+          "context": "## Trait load budget (feeds `reference/tables/monster-traits.md`)"
+        },
+        {
+          "file": "reference/rules/monster-scale.md",
+          "line": 111,
+          "context": "A trait's load cost is defined per-trait in `monster-traits.md`; **sum the loads, don't just"
+        },
+        {
+          "file": "reference/rules/monster-scale.md",
+          "line": 119,
+          "context": "**Monster strength = tier baseline (this sheet) + trait load (`monster-traits.md`), capped by"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 240,
+          "context": "- 词条表:`reference/tables/monster-traits.md`(与现有速查同级)/ `.csv` / `reference/bestiary/_traits.md`"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 253,
+          "context": "> | 词条表 | **`reference/tables/monster-traits.md`**(新建) | 与现有 12 张速查同级。它是**查表件**(生成时逐条挑),不是**规则件**(读一遍就懂),归 `tables/` 不归 `rules/` |"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 429,
+          "context": "| 5 落点 | `reference/rules/monster-scale.md` + `reference/tables/monster-traits.md` + 分类定义进 `core/07` |"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 482,
+          "context": "- [ ] **3. 新建 `reference/tables/monster-traits.md`。** 数值词条表,列 ="
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 492,
+          "context": "`Special abilities` 一栏改成**词条挂载点**(指向 `monster-traits.md`),"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 13,
+          "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:五级阶梯的档位区间、按 malleus 四类重排的 type、数值词条(强化)系统与其负载预算 | 待执行(阻塞已解除,2026-08-03 Keepe"
+        }
+      ],
+      "reference_count": 13
     },
     {
       "file": "mythos-angles.md",

@@ -12,6 +12,8 @@ before you commit it. **If it contradicts a cheat-sheet, fix the cheat-sheet.**
 ## Read this before you
 
 - Write any NPC or monster **stat block** → confirm characteristics, HP, Build, Damage Bonus.
+- Stat a **non-human monster** (creature, servitor, unique entity, or deity) → read
+  `reference/rules/monster-scale.md` before picking a tier or a threat band.
 - Set a **skill check difficulty** → pick Regular / Hard / Extreme deliberately.
 - Assign a **Sanity cost** → keep it proportionate to the horror.
 - Build a **human antagonist stronger than an ordinary person** (a cult leader, a gang boss)
@@ -35,6 +37,9 @@ before you commit it. **If it contradicts a cheat-sheet, fix the cheat-sheet.**
 - `reference/rules/magic.md` — MP/SAN/POW cost notation, casting time, opposed POW rolls,
   spell cost-tier ladder, tome study time/SAN/Cthulhu Mythos conventions, and the
   cost-conversion rule for designing a new spell.
+- `reference/rules/monster-scale.md` — the five-tier non-human threat ladder (creature /
+  servitor / unique entity / deity), baseline SAN/HP/armour/attack-skill ranges per tier and
+  threat band, and the trait load ceiling that caps `reference/tables/monster-traits.md`.
 
 ## Fast facts (verify against the sheets)
 

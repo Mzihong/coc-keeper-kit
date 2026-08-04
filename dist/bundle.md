@@ -454,6 +454,8 @@ before you commit it. **If it contradicts a cheat-sheet, fix the cheat-sheet.**
 ## Read this before you
 
 - Write any NPC or monster **stat block** → confirm characteristics, HP, Build, Damage Bonus.
+- Stat a **non-human monster** (creature, servitor, unique entity, or deity) → read
+  `reference/rules/monster-scale.md` before picking a tier or a threat band.
 - Set a **skill check difficulty** → pick Regular / Hard / Extreme deliberately.
 - Assign a **Sanity cost** → keep it proportionate to the horror.
 - Build a **human antagonist stronger than an ordinary person** (a cult leader, a gang boss)
@@ -477,6 +479,9 @@ before you commit it. **If it contradicts a cheat-sheet, fix the cheat-sheet.**
 - `reference/rules/magic.md` — MP/SAN/POW cost notation, casting time, opposed POW rolls,
   spell cost-tier ladder, tome study time/SAN/Cthulhu Mythos conventions, and the
   cost-conversion rule for designing a new spell.
+- `reference/rules/monster-scale.md` — the five-tier non-human threat ladder (creature /
+  servitor / unique entity / deity), baseline SAN/HP/armour/attack-skill ranges per tier and
+  threat band, and the trait load ceiling that caps `reference/tables/monster-traits.md`.
 
 ## Fast facts (verify against the sheets)
 
@@ -890,23 +895,39 @@ live through it. In CoC the monster is usually an obstacle to survive, not a bos
 
 - **Read `core/02-rules-reference.md`** — especially `reference/rules/combat.md` (Build,
   Damage Bonus, HP) and `reference/rules/sanity.md` (X/Y loss). Numbers must be 7e-correct.
-- Decide **type** (human / beast / undead / mythos servitor / independent race / great old
-  one) and **threat** (trivial / moderate / deadly / mythic). Threat sets stat scale and SAN.
+- **Decide the tier**, then the threat band inside it — read
+  `reference/rules/monster-scale.md` before assigning any number. Five tiers, ordered by power:
+
+  | Tier | type value | Malleus category |
+  |---|---|---|
+  | L1 human | *(not this spec)* | — |
+  | L2 creature | `independent-race` (add `beast`/`undead` as a parenthetical modifier if it fits, e.g. `independent-race (undead)`) | 独立种族 / 传说生物 |
+  | L3 servitor | `servitor-race` | 仆从种族 |
+  | L4 unique | `unique-entity` | 唯一存在 |
+  | L5 deity | `great-old-one` | 旧神/旧日支配者/梦境诸神/外神/化身,全部记作这一档 |
+
+  `beast` and `undead` are no longer standalone types — they're descriptive modifiers on
+  whichever of L2/L3/L4 the creature actually is (a zombie is `independent-race (undead)`,
+  not a fourth category). **Threat** (trivial / moderate / deadly / mythic) is still the field
+  that sets fine-grained stat scale and SAN **inside** a tier — `monster-scale.md` has the
+  baseline ranges for both axes together. Adjacent tiers may overlap; never skip a tier.
+- **Filing by tier:** L5 entries go in `reference/mythos/great-old-ones/`, not
+  `reference/bestiary/` — a god's page is lore-shaped (origin, signs, how a cult worships it),
+  not a stat card. **L2/L3/L4 all go in `reference/bestiary/`.**
 - **Human antagonists don't use this spec.** A cultist, a cult leader, or any other human
   villain is built with `reference/rules/character-creation.md` §11 (baseline + increment),
-  not this spec's type/threat scale. The cross-type ladder for non-human threats
-  (`human < 怪物 < 古神眷族 < 古神`) is still being worked out in
-  `update_plan/2026-08-02-monster-templates-traits.md` (P9) — until that lands, treat this
-  spec's threat four-band as a qualitative guide only, not a numeric one.
+  not this spec's type/threat scale.
 - Use `templates/monster.md`.
 - **Source material, if present locally** (neither is in `dist/bundle.md`, so neither is a
   dependency): `reference/sourcebooks/malleus-monstrorum-zh.md` is the official creature
   compendium — read the nearest published entry to calibrate stat scale, armour, and SAN cost
-  before inventing your own. `reference/sourcebooks/grand-grimoire-zh.md` covers spells for
-  anything that casts. Both are PDF transcriptions with known garbling; **judge every number
-  by eye** — the OCR mangles stat lines. Published numbers may be taken directly into a
-  `reference/bestiary/` entry with the source named; the reveal, lore, and behaviour prose is
-  written fresh (`core/00-how-to-run.md` → ground rules).
+  before inventing your own; its stat tables are clean, but check its own header for the
+  current list of known small defects (mixed synonymous terms, a few inconsistent renderings).
+  `reference/sourcebooks/grand-grimoire-zh.md` covers spells for anything that casts and is
+  still a PDF-extraction transcription with known garbling — judge every number there by eye.
+  Published numbers may be taken directly into a `reference/bestiary/` entry with the source
+  named; the reveal, lore, and behaviour prose is written fresh (`core/00-how-to-run.md` →
+  ground rules).
 
 ## Design the horror
 
@@ -1296,6 +1317,15 @@ model's output. Assume the material is wrong until each line checks out.
 - [ ] Sanity costs are proportionate to the horror, not to the gore.
 - [ ] Any `investigators/*.json` validates against `templates/investigator.schema.json`; its
       derived stats are internally consistent and its `.md` view agrees with the JSON.
+- [ ] **Non-human monsters: every numeric trait has a discoverable counter-play.** For each
+      trait listed under "Special abilities (traits)", confirm the entry (or a linked file)
+      states how a player could find or use that trait's 破解口 — a counter-play that exists
+      only in `reference/tables/monster-traits.md` and never reaches the table doesn't count.
+      N traits demand N *findable* answers; one missing is a broken fair-out, not a nitpick.
+- [ ] **Non-human monsters: trait load is at or under the tier ceiling.** Sum the loads on
+      "Trait load total" against `reference/rules/monster-scale.md`'s ceiling for that tier
+      (L2/L3 = 2, L4 = 3, L5 = 4). Over budget means the entry reads as the wrong tier wearing
+      a costume, not a legitimately scarier version of its actual tier.
 
 ### Safety & spoilers
 
@@ -2184,8 +2214,10 @@ Worked example for templates/investigator.schema.json. A fresh pregen leaves spe
 
 *<one-line impression — the thing in a breath>*
 
-- **Type:** <human / beast / undead / mythos servitor / independent race / great old one>
-- **Threat:** <trivial / moderate / deadly / mythic>
+- **Type:** <independent-race / servitor-race / unique-entity / great-old-one — add a
+  `(beast)`/`(undead)` modifier if it fits, e.g. `independent-race (undead)`>
+- **Tier:** <L2 creature / L3 servitor / L4 unique / L5 deity — see `reference/rules/monster-scale.md`>
+- **Threat:** <trivial / moderate / deadly / mythic — the ± inside the tier, not a replacement for it>
 - **Sanity to see:** <X/Y>
 
 ## Reveal (say this out loud, before the SAN roll)
@@ -2206,8 +2238,10 @@ for the Sanity roll.>
 - **Dodge:** 00% *(or "cannot dodge / does not evade")*
 - **Armour:** <points, or immunity — e.g. "impaling weapons do minimum damage">
 
-### Special abilities
-- <e.g. regeneration, incorporeality, terror aura, spellcasting, only harmed by fire>
+### Special abilities (traits)
+- <one bullet per trait from `reference/tables/monster-traits.md` — name, its stated 效果 and
+  破解口 in your own words, not a bare table lookup>
+- **Trait load total:** 0 / <tier ceiling — L2/L3 = 2, L4 = 3, L5 = 4, see `monster-scale.md`>
 
 ## Behaviour & weakness
 - **Wants / drive:** <why it acts>
@@ -3463,6 +3497,131 @@ sourcebook's own categories, more than one where it fits: 驱逐和控制、召�
   the spell it counters.
 
 
+=== FILE: reference/rules/monster-scale.md ===
+
+# Monster Scale — cheat-sheet
+
+> The strength ladder for non-human threats, and the numeric baseline each rung sits at.
+> Distilled by sampling `reference/sourcebooks/malleus-monstrorum-zh.md` (local only, absent
+> from `dist/bundle.md`) — roughly 240 stat blocks across its four creature classes and five
+> deity classes. This sheet keeps the mechanics and number ranges, never the source text.
+> **Human antagonists don't use this ladder** — `reference/rules/character-creation.md` §11.
+
+## The five-tier ladder
+
+Five rungs, ordered by what a Keeper can throw at a table and how badly it goes:
+
+| Tier | Malleus category | What it looks like at the table |
+|---|---|---|
+| **L1 — human** | *(not covered here)* | A cult leader, a hired gun, an obsessed academic. `character-creation.md` §11. |
+| **L2 — creature** | 独立种族 (independent race) / 传说生物 (fabulous creature) | The baseline monster: dangerous on its own, doesn't answer to anything. Most "one scary thing in the basement" encounters live here. |
+| **L3 — servitor** | 仆从种族 (servitor race) | A god's guard dog, kidnapper, or messenger. Similar raw power to L2 — the difference is *purpose*, not necessarily strength — so **L2 and L3 overlap heavily**; a tough independent race can out-threat a weak servitor. |
+| **L4 — unique** | 唯一存在 (unique entity) | A named individual, not a species — a particularly powerful cult idol, a rogue member of a race, a rising demigod. Clear step up from L2/L3. |
+| **L5 — deity** | 旧神 / 旧日支配者 / 梦境诸神 / 外神 / 化身 (all five deity classes, one tier) | Cthulhu-scale. Encountering it directly is rarely a fair fight — see `core/07-create-monster.md`'s "the fair out". |
+
+**Overlap rule:** adjacent tiers may overlap (a mythic-threat L2 can rival a trivial-threat L3
+or L4) — **non-adjacent tiers may never overlap** (an L2 creature, however built up, does not
+reach L4 unique-entity numbers). This is what makes the ladder a ladder and not a suggestion.
+
+## Threat bands within a tier
+
+The existing four-band `threat` field (trivial / moderate / deadly / mythic) still applies —
+it's the **± inside a tier**, not a replacement for it. Within each tier below, `trivial` sits
+at the low end of the range and `mythic` at the high end; `moderate` and `deadly` split the
+middle. A tier's `trivial` can land inside the tier below it's `mythic` — that's the overlap
+rule above, working as intended.
+
+## Baseline ranges per tier
+
+Ranges below come from the sampled distribution's rough quartiles, then rounded to numbers a
+Keeper would actually write down. **Sanity loss** is X/Y notation (success/failure); the
+X-side (success) is usually 0–1 at L2/L3 and climbs at L4/L5 — even *surviving* the sight of
+something that size costs a little. **HP** for Mythos entities is usually stated directly
+rather than derived from CON+SIZ (many have no CON, or an N/A SIZ) — treat the HP figure as
+canon for the tier, not something to recompute.
+
+### L2 — creature (独立种族 / 传说生物)
+
+| Threat | Sanity loss (typical) | HP | Armour | Attack skill |
+|---|---|---|---|---|
+| trivial | 0/1D3 – 0/1D4 | 8–15 | 0–3, often none | 25–40% |
+| moderate | 0/1D6 | 15–20 | 2–5 | 40–55% |
+| deadly | 0/1D6 – 0/1D8 | 20–30 | 4–10 | 50–70% |
+| mythic | 1D3/1D20 – 1D6/2D20 | 30–60 (rare outliers past 300 — a handful of huge, ancient members of a race) | 8–30, or a named immunity clause | 65–90% |
+
+### L3 — servitor (仆从种族)
+
+| Threat | Sanity loss (typical) | HP | Armour | Attack skill |
+|---|---|---|---|---|
+| trivial | 0/1 – 0/1D2 | 8–12 | 0–2, often none | 15–30% |
+| moderate | 0/1D4 – 0/1D6 | 12–16 | 2–4 | 30–45% |
+| deadly | 0/1D6 – 1/1D6 | 16–25 | 3–7 | 45–65% |
+| mythic | 1D3/1D20 – 1D6/1D20 | 25–60 | 5–10, or an immunity clause | 60–100% |
+
+### L4 — unique (唯一存在)
+
+Thin sample in the source (8 named individuals) — treat these as a shape to calibrate against,
+not a tight statistical range.
+
+| Threat | Sanity loss (typical) | HP | Armour | Attack skill |
+|---|---|---|---|---|
+| trivial | 0/1D4 – 1/1D8 | 13–25 | usually a narrative immunity, not a point value | 20–40% |
+| moderate | 1/1D8 – 0/1D10 | 25–45 | same | 35–55% |
+| deadly | 1/1D10 – 1D6/1D20 | 45–61 | 6+ or immunity | 55–80% |
+| mythic | 1D10/1D100 | 55–65+ | immunity to most conventional weapons | 75–100% |
+
+### L5 — deity (神格, all five deity classes)
+
+| Threat | Sanity loss (typical) | HP | Armour | Attack skill |
+|---|---|---|---|---|
+| trivial | 0/1 – 0/1D3 | 15–35 | 0–5, or a narrative immunity | 40–60% |
+| moderate | 1/1D10 – 1D4/1D10 | 35–60 | 5–10 | 55–75% |
+| deadly | 1D3/1D20 – 1D8/1D20 | 60–110 | 8–20, or "only magic/enchanted weapons harm it" | 70–90% |
+| mythic | 1D10/1D100 – 1D20/1D100 | 100–420+ | usually a full immunity clause, not a point value | 85–100% |
+
+## Attacks per round
+
+Most entries carry **1–3 distinct attack forms** (a grab, a bite, a special effect) regardless
+of tier — tier changes how dangerous each one is, not how many there are. A single form used
+repeatedly (e.g. one crushing attack at a flat skill %) is normal at L2/L3; L4/L5 entries are
+more likely to have 2–3 forms with distinct effects (physical + a mind/POW-draining option).
+
+## Armour convention
+
+Roughly **28% of sampled entries carry no armour at all** — raw HP and a high attack skill do
+the work instead. Where armour is stated, it's overwhelmingly either (a) a flat point value
+(sampled median 8, most entries 2–10, deity-tier outliers up to 50) subtracted from damage like
+a human's armour, or (b) a **narrative immunity clause** ("only fire and enchanted weapons
+harm it", "impaling weapons do minimum damage") rather than a number. Prefer (b) for anything
+L4 or above — a point value implies conventional weapons can grind it down, which undercuts
+"the fair out" being something other than a bigger gun.
+
+## Trait load budget (feeds `reference/tables/monster-traits.md`)
+
+Each tier has a rough ceiling on how many numeric traits (from the traits table) a single
+entry should carry before it stops reading as "this tier, pumped up" and starts reading as
+"the wrong tier with a costume on":
+
+| Tier | Load ceiling | Why |
+|---|---|---|
+| L2 creature | 2 traits | Base monsters stay simple — texture comes from the attack/reveal, not a trait stack. |
+| L3 servitor | 2 traits | Same budget as L2 (the tiers overlap; the budget should too). |
+| L4 unique | 3 traits | A named individual earns one extra trait over its base race/tier — that's *why* it's unique. |
+| L5 deity | 4 traits | Gods can stack the most, but even here more than 4 usually means the entry needs a rewrite, not another trait. |
+
+A trait's load cost is defined per-trait in `monster-traits.md`; **sum the loads, don't just
+count traits** — a cheap trait and an expensive one both count as "1 trait" for flavour
+purposes but not for budget purposes.
+
+## `core/07`'s strength formula, in full
+
+`core/07-create-monster.md` used to leave this as a placeholder. The full answer:
+
+**Monster strength = tier baseline (this sheet) + trait load (`monster-traits.md`), capped by
+the tier's load ceiling above.** Pick the tier, pick the threat band inside it, read the
+baseline ranges, then layer on traits until the entry feels right — never past the ceiling.
+
+
 === FILE: reference/rules/sanity.md ===
 
 # 7e Sanity — cheat-sheet
@@ -4420,6 +4579,44 @@ hand-to-the-player length.
 
 New phobias/manias earned this way should **come back** — note them on the investigator and
 call them at the worst moment later.
+
+
+=== FILE: reference/tables/monster-traits.md ===
+
+# monster-traits.md — numeric trait menu
+
+Bolt-on numeric traits for a `reference/bestiary/` or `campaigns/` monster entry — the layer
+that turns a tier baseline (`reference/rules/monster-scale.md`) into a specific creature
+without hand-inventing a new mechanic every time. Kit-original design, not sourced from any
+transcription.
+
+**Every trait carries a 破解口 (counter-play). This column is mandatory, not a nice-to-have** —
+a numeric trait doesn't come with a built-in weakness the way a behavioural quirk does (a cult
+leader's pride, a ghoul's hunger), so if the counter-play column is left blank the trait is
+just raw power and `core/07`'s fair-out rule quietly erodes as traits stack. Don't add a trait
+without one; don't strip a trait's counter-play to make an entry scarier.
+
+**Load points** feed the tier ceilings in `monster-scale.md` (L2/L3 = 2, L4 = 3, L5 = 4) —
+sum a creature's trait loads and stay at or under its tier's ceiling.
+
+| 词条 | 效果(数值) | 负载点 | 破解口 | 备注 |
+|---|---|---|---|---|
+| 再生 (Regeneration) | 回合开始时回复 1D6 HP,除非上回合受到「克星」伤害 | 2 | 必须指定至少一种「克星」伤害(火、圣物、特定武器)——没有克星的再生是不可战胜 | 与「分裂」不要同时使用,两者叠加基本取消战斗选项 |
+| 分裂 (Split on damage) | 单次受到 ≥10 点伤害时分裂为 2 个 HP 减半的个体,直到 HP 低于阈值(如 5)才不再分裂 | 2 | 分裂后的个体总攻击次数不变(平分而非各自满攻击),且钝器/火焰造成的伤害不触发分裂 | 适合"越打越多"式的恐怖,不适合终极 boss(会拖慢战斗) |
+| damage reduction(减伤)| 每次受到伤害先扣除 N 点(N=2 或 4,按等级选) | 1(N=2)/2(N=4)| 声明至少一种绕过方式(穿刺、魔法伤害、特定部位) | 与厚甲(数值护甲)效果类似,二选一,不叠加 |
+| 免疫常规武器 (Conventional immunity) | 非附魔/非特殊材质武器造成最小伤害(1点) | 2 | 必须点名至少一种能正常伤害它的手段,且这手段要能被调查员找到 | L4/L5 常见,是"数值免疫"的标准写法,见 `monster-scale.md` 护甲惯例 |
+| 抓握/拖拽 (Grapple & drag) | 命中后目标被抓住,下回合自动承受抓握伤害,除非用 STR 对抗挣脱 | 1 | 挣脱检定用普通 STR 对抗(非 Extreme),给逃脱留出真实概率 | 常配合"拖入巢穴/异境"的场景效果 |
+| 汲取属性 (Drain a characteristic) | 命中后目标损失 1D3 点指定属性(STR/CON/INT/POW 择一),归零后触发特定后果 | 2 | 被汲取的属性每周自然恢复 1 点(卧床或休整时);该恢复速度必须写进条目 | 归零后果不应是当场死亡(除非属性是 CON)——POW 归零可以是"被夺走做梦的能力"而非死亡 |
+| 疯狂凝视 (Maddening gaze) | 目视接触时额外承受一次 SAN 检定(独立于遭遇本体的 SAN 检定) | 1 | 闭眼/移开视线/隔着反射面观察可以完全规避,且这个规避方式在场景里要能被发现 | 不要和"目睹即损失"的基础 SAN 检定重复计算,是額外一次,不是加倍同一次 |
+| 恐惧光环 (Terror aura) | 进入近距离(约 10 码)的人类每回合额外损失固定 1 点 SAN,直到离开范围 | 1 | 光环范围外无效,且光环不影响已经理智值为 0 的角色(无更多可失去的) | 适合让"靠近"本身变成有代价的战术选择,不需要额外掷骰 |
+| 疾病/诅咒接触 (Disease or curse on hit) | 命中后目标感染,若干天后发作(具体效果由条目自定,如属性衰减、变形前兆) | 2 | 发作前必须有可被发现的窗口期与可被找到的疗法/仪式,否则等同判处死刑而非危机 | 与"汲取属性"效果接近,不要同时给同一目标用,除非目的是慢性凌迟式的战役级威胁 |
+| 多重攻击型态 (Extra attack form) | 每回合可以额外发动一次不同类型的攻击(如物理+异能各一次) | 1 | 两次攻击若共用同一防御手段(如同时被同一护符克制)则破解口没有被稀释;若不共用,视为两个负载点 | 这是"每回合攻击次数"从 1 提到 2 的标准做法,别直接把伤害骰翻倍 |
+| 高速/连续行动 (Extra initiative action) | 每轮多行动一次(如两次 DEX 顺位各算一次) | 2 | 声明一种能让它"慢下来"或"失去先攻"的手段(地形、特定法术、疲劳阈值) | 谨慎使用——这是最容易让战斗失控的词条,L2/L3 基本不该出现 |
+| 心灵感应/远程侦测 (Telepathy / remote sense) | 无需视线即可锁定特定范围内的人类,穿墙感知 | 1 | 声明至少一种能屏蔽/欺骗这种感知的手段(特定材质、仪式、心理状态) | 更适合驱动剧情("它已经知道你藏在哪")而非战斗本身 |
+| 飞行/穿地 (Flight or burrow) | 移动不受地形限制,可无视大部分物理阻挡 | 1 | 声明至少一种能限制它移动的手段(密闭空间、特定符文、水下) | 常和"多重攻击"配合写游击战式的怪物,单独使用不需要额外破解 |
+| 变形 (Shapeshifting) | 可切换 2–3 种预设形态,各自有不同的攻击/防御数值 | 2 | 每次变形消耗一个明确资源(回合、MP、或需要特定条件触发),不能无限次自由切换 | 变形后的每个形态各自独立走减伤/攻击词条预算,不要叠加计算 |
+| 附身/夺舍 (Possession) | 可尝试占据一名人类躯体(通常需 POW 对抗),占据后以宿主外表活动 | 2 | 宿主本人的意志检定成功可以夺回身体,或有明确驱逐仪式;必须给出至少一种识别附身状态的线索 | 是"敌人可能是任何人"式剧情的标准引擎,慎用在纯战斗遭遇里 |
+| 环境操控 (Environmental control) | 可改变周边小范围环境(温度骤降、光线扭曲、声音消失) | 1 | 环境效果本身可以被察觉并预警(温度计、动物异常反应),不是无预兆突袭 | 适合"遭遇前的征兆"设计,和 `core/09-description.md` 的读白配合最好 |
 
 
 === FILE: reference/tables/mythos-angles.md ===

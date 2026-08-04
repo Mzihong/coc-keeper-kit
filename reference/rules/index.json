@@ -7,7 +7,7 @@
   "usage_rule": "authored by this kit — read and used directly, no citation required",
   "in_bundle": true,
   "generated_by": "scripts/build-reference-index.py — do not edit by hand",
-  "entry_count": 6,
+  "entry_count": 7,
   "entries": [
     {
       "file": "character-creation.md",
@@ -82,12 +82,12 @@
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 18,
+          "line": 20,
           "context": "→ read `reference/rules/character-creation.md` §11 before assigning skills or gear."
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 32,
+          "line": 34,
           "context": "- `reference/rules/character-creation.md` — attribute rolls, the standard-pool skill-point"
         },
         {
@@ -102,7 +102,7 @@
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 13,
+          "line": 30,
           "context": "villain is built with `reference/rules/character-creation.md` §11 (baseline + increment),"
         },
         {
@@ -139,6 +139,16 @@
           "file": "templates/investigator.schema.json",
           "line": 194,
           "context": "\"description\": \"Optional pre-play history (a war, a beat, a stretch inside, a Mythos brush) bought with starting Sanity. Each one buys a mechanical edge and man"
+        },
+        {
+          "file": "reference/rules/monster-scale.md",
+          "line": 7,
+          "context": "> **Human antagonists don't use this ladder** — `reference/rules/character-creation.md` §11."
+        },
+        {
+          "file": "reference/rules/monster-scale.md",
+          "line": 15,
+          "context": "| **L1 — human** | *(not covered here)* | A cult leader, a hired gun, an obsessed academic. `character-creation.md` §11. |"
         },
         {
           "file": "reference/tables/cult-leader-positions.md",
@@ -346,7 +356,7 @@
           "context": "| P8 | [investigator-render-gaps](2026-08-02-investigator-render-gaps.md) | 投资者卡渲染缺口:`spells`/`cthulhu_mythos`/`notes`/P6 重建后新增字段(`occupation_detail`/`age_modif"
         }
       ],
-      "reference_count": 65
+      "reference_count": 67
     },
     {
       "file": "chases.md",
@@ -357,7 +367,7 @@
       "referenced_by": [
         {
           "file": "core/02-rules-reference.md",
-          "line": 30,
+          "line": 32,
           "context": "- `reference/rules/chases.md` — round structure; Move rates; obstacles & mishaps; ending a"
         },
         {
@@ -387,7 +397,7 @@
       "referenced_by": [
         {
           "file": "core/02-rules-reference.md",
-          "line": 28,
+          "line": 30,
           "context": "- `reference/rules/combat.md` — DEX order; dodge vs fight back; Build & Damage Bonus table;"
         },
         {
@@ -481,17 +491,17 @@
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 19,
+          "line": 21,
           "context": "- Write any **spell, ritual, or magic book/tome** → read `reference/rules/magic.md` before"
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 35,
+          "line": 37,
           "context": "- `reference/rules/magic.md` — MP/SAN/POW cost notation, casting time, opposed POW rolls,"
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 77,
+          "line": 93,
           "context": "- Spellcasters: list spells and their MP/SAN costs — read `reference/rules/magic.md` for the"
         },
         {
@@ -578,6 +588,124 @@
       "reference_count": 30
     },
     {
+      "file": "monster-scale.md",
+      "path": "reference/rules/monster-scale.md",
+      "title": "Monster Scale — cheat-sheet",
+      "lines": 122,
+      "declared_consumers": [
+        "reference/rules/character-creation.md",
+        "reference/sourcebooks/malleus-monstrorum-zh.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "core/02-rules-reference.md",
+          "line": 16,
+          "context": "`reference/rules/monster-scale.md` before picking a tier or a threat band."
+        },
+        {
+          "file": "core/02-rules-reference.md",
+          "line": 40,
+          "context": "- `reference/rules/monster-scale.md` — the five-tier non-human threat ladder (creature /"
+        },
+        {
+          "file": "core/07-create-monster.md",
+          "line": 11,
+          "context": "`reference/rules/monster-scale.md` before assigning any number. Five tiers, ordered by power:"
+        },
+        {
+          "file": "core/07-create-monster.md",
+          "line": 24,
+          "context": "that sets fine-grained stat scale and SAN **inside** a tier — `monster-scale.md` has the"
+        },
+        {
+          "file": "core/11-review.md",
+          "line": 75,
+          "context": "\"Trait load total\" against `reference/rules/monster-scale.md`'s ceiling for that tier"
+        },
+        {
+          "file": "templates/monster.md",
+          "line": 7,
+          "context": "- **Tier:** <L2 creature / L3 servitor / L4 unique / L5 deity — see `reference/rules/monster-scale.md`>"
+        },
+        {
+          "file": "templates/monster.md",
+          "line": 32,
+          "context": "- **Trait load total:** 0 / <tier ceiling — L2/L3 = 2, L4 = 3, L5 = 4, see `monster-scale.md`>"
+        },
+        {
+          "file": "reference/bestiary/README.md",
+          "line": 24,
+          "context": "`reference/rules/monster-scale.md`), `threat` (trivial / moderate / deadly / mythic — the ±"
+        },
+        {
+          "file": "reference/tables/monster-traits.md",
+          "line": 4,
+          "context": "that turns a tier baseline (`reference/rules/monster-scale.md`) into a specific creature"
+        },
+        {
+          "file": "reference/tables/monster-traits.md",
+          "line": 14,
+          "context": "**Load points** feed the tier ceilings in `monster-scale.md` (L2/L3 = 2, L4 = 3, L5 = 4) —"
+        },
+        {
+          "file": "reference/tables/monster-traits.md",
+          "line": 22,
+          "context": "| 免疫常规武器 (Conventional immunity) | 非附魔/非特殊材质武器造成最小伤害(1点) | 2 | 必须点名至少一种能正常伤害它的手段,且这手段要能被调查员找到 | L4/L5 常见,是\"数值免疫\"的标准写法,见 `monster-scale.md` 护甲惯例 |"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 241,
+          "context": "- 档位区间:进 `core/07` 正文,还是新开 `reference/rules/monster-scale.md`"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 252,
+          "context": "> | 档位区间 + 词条负载上限 | **`reference/rules/monster-scale.md`**(新建) | 与人类侧成对。P4 最终落进 `reference/rules/character-creation.md` §11,两份并列在 `reference/rules/` 下,`core/02`"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 254,
+          "context": "> | type 重排后的**分类定义** | **`core/07-create-monster.md` 正文** | 分类是 spec 的一部分,不是数值。数值全在 `monster-scale.md`,`core/07` 只说\"有哪几类、各是什么\",并指路过去 |"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 290,
+          "context": "> 并在 `monster-scale.md` 里标为\"古神级下沿子档\"。"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 404,
+          "context": "`bestiary/`,所以 `monster-scale.md` 的古神级区间要同时覆盖那个目录,"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 429,
+          "context": "| 5 落点 | `reference/rules/monster-scale.md` + `reference/tables/monster-traits.md` + 分类定义进 `core/07` |"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 479,
+          "context": "- [ ] **2. 新建 `reference/rules/monster-scale.md`。** 五级基线区间 + threat 四档在级内的"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 487,
+          "context": "等 P9 落地\"的占位文字(第 14–17 行),改指 `monster-scale.md`;"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 494,
+          "context": "- [ ] **6. 改 `core/02-rules-reference.md`。** Cheat-sheets 登记 `monster-scale.md`;"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 13,
+          "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:五级阶梯的档位区间、按 malleus 四类重排的 type、数值词条(强化)系统与其负载预算 | 待执行(阻塞已解除,2026-08-03 Keepe"
+        }
+      ],
+      "reference_count": 21
+    },
+    {
       "file": "sanity.md",
       "path": "reference/rules/sanity.md",
       "title": "7e Sanity — cheat-sheet",
@@ -586,7 +714,7 @@
       "referenced_by": [
         {
           "file": "core/02-rules-reference.md",
-          "line": 26,
+          "line": 28,
           "context": "- `reference/rules/sanity.md` — SAN = POW; X/Y loss notation; typical loss table; bout of"
         },
         {
@@ -646,7 +774,7 @@
       "referenced_by": [
         {
           "file": "core/02-rules-reference.md",
-          "line": 24,
+          "line": 26,
           "context": "- `reference/rules/skill-checks.md` — d100 under target; Regular/Hard/Extreme; fumbles;"
         },
         {
