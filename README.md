@@ -107,15 +107,20 @@ Released under the [MIT License](LICENSE) © 2026 Mzihong. Contributions are wel
 
 This is an **unofficial, fan-made** preparation kit. *Call of Cthulhu* is a trademark of
 **Chaosium Inc.**; this project is **not affiliated with, endorsed, or sponsored by
-Chaosium**. It **references** 7th Edition mechanics so generated material is correct but
-**nothing it generates reproduces copyrighted text** — you need the
-official *Call of Cthulhu Keeper Rulebook* to actually play.
+Chaosium**. It is **non-commercial and not for redistribution**, and it **assumes you own the
+books it draws on** — you need the official *Call of Cthulhu Keeper Rulebook* to actually play,
+and this kit is no substitute for buying it.
 
-`reference/decks/` holds transcribed **official card decks**, kept as source material for the
-generators to calibrate against. Those files are third-party text: each carries a `## 引用出处`
-block naming the work and its rights holder, this project claims no rights in them, and the
-kit's generated output never reproduces them. If you are a rights holder and want a file
-removed, open an issue and it will be taken down.
+`reference/decks/` and `reference/sourcebooks/` hold transcriptions of **official Chaosium
+material** — card decks, and full-book transcriptions of the 7e Keeper Rulebook, the *Grand
+Grimoire*, and *Malleus Monstrorum* — kept as source material for the generators to work from.
+Those files are third-party text: each carries a `## 引用出处` block naming the work and its
+rights holder, and **this project claims no rights in any of them**. The kit's own reference
+files may quote or transcribe published rules content (stat lines, spell costs, damage values)
+with the source named; the material it generates for a campaign is written fresh.
+
+**If you are a rights holder and want a file removed, open an issue and it will be taken
+down.**
 
 The Chinese terms in
 `reference/glossary-zh.md` are this kit's own working convention, not an official

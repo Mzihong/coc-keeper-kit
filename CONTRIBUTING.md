@@ -12,13 +12,19 @@ unofficial fan tooling (see the disclaimer in the [README](README.md)).
 - Fixes to mechanics accuracy, wording, or structure.
 
 ## Ground rules
-- **Write no copyrighted text into the kit's own content.** Reference mechanics in your own
-  words; never paste rulebook or published-scenario passages into `core/`, `templates/`,
-  `campaigns/`, or the rest of `reference/`.
-- **Official source material goes in `reference/decks/`, and only with a citation.** Every
-  such file ends with a `## 引用出处` block naming the work, rights holder, edition, where the
-  text came from, its scope, and what it's filed for (`reference/decks/README.md` has the
-  table). No citation, no merge. Generators then take **structure and scale, never text**.
+- **Nothing you write into `campaigns/` is copied from a published product.** The characters,
+  creatures, and scenes a campaign gets are generated — that is the whole point of the kit,
+  and a pasted-in published NPC is one every other Keeper already knows the twist to.
+- **Reference files under `reference/` may quote or transcribe official rules content**
+  (a stat line, a spell cost, a damage value) **as long as the source is named in the file.**
+  Those are the rules; a Keeper needs the published numbers, not a paraphrase. Interim
+  boundary until P9 lands: transcribe numbers freely, keep descriptive prose original.
+- **Official source material goes in `reference/decks/` or `reference/sourcebooks/`, and only
+  with a citation.** Every such file ends with a `## 引用出处` block naming the work, rights
+  holder, edition, where the text came from, its scope, and what it's filed for
+  (`reference/decks/README.md` has the table). **No citation, no merge.**
+- **This project is non-commercial and not for redistribution**, and it assumes its users own
+  the books it draws on. Don't contribute material that would change that.
 - **7th Edition mechanics** for anything with stats — see `reference/rules/`.
 - **Keep content generic** in `reference/` (no one campaign's plot); campaign-specific
   material stays in `campaigns/`.

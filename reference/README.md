@@ -33,8 +33,9 @@ in `campaigns/<slug>/`, not here.
   Unlike everything else here this is **not the kit's own content and not kit canon** — it is
   third-party text we cite. Two hard rules, both in `reference/decks/README.md`: every file
   ends with a `## 引用出处` block naming work, rights holder, source, scope, and purpose; and
-  generators take **structure and scale, never text**. Not included in `dist/bundle.md`, so
-  nothing may depend on it.
+  **the numbers may be taken directly, the people may not** — a card's stats calibrate yours,
+  but its name, backstory, and secret never go into `campaigns/`. Not included in
+  `dist/bundle.md`, so nothing may depend on it.
 - **`sourcebooks/`** — **official books, transcribed in full** (the 7e rulebook, the *Grand
   Grimoire*, *Malleus Monstrorum*). Same third-party status and citation rule as `decks/`;
   the difference is bulk and use — a deck you draw from, a book you look a chapter up in.
@@ -58,10 +59,11 @@ in `campaigns/<slug>/`, not here.
   the generators actually read.
 - **`external/`** — third-party repos kept as git submodules, not kit content. `coc-zh` is a
   collection of CoC novels/scenario source material for inspiration and research only — it is
-  **not** part of the kit's own canon, and generators must not copy or reproduce its text
-  (same rule as `decks/`: cite the source, take structure, never text). Treat it the
-  same way you'd treat a physical bookshelf: read it, then write original content informed by
-  it.
+  **not** part of the kit's own canon, and generators must not copy or reproduce its text.
+  **This is fiction, not rules** — the relaxation that lets `decks/` and `sourcebooks/`
+  numbers be transcribed does **not** extend here: cite the source, take the technique, never
+  the text. Treat it the same way you'd treat a physical bookshelf: read it, then write
+  original content informed by it.
 
 **Filing new third-party material** — a deck, a book, a converted PDF — goes through
 `core/14-archive-reference.md` (skill: `archive-reference`). It covers classification, naming,

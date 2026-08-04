@@ -54,9 +54,10 @@ carries exactly one, in one or two sentences, and each is a *lever* — a debt, 
 told, a dream that keeps recurring — not a plot summary. Match that scale. Anything longer is
 backstory, and backstory doesn't survive contact with a table.
 
-> **Take structure and scale, never text** (`core/00-how-to-run.md` → ground rules). Copy a
-> card's shape; invent the person. A deck NPC pasted into `campaigns/` is plagiarism *and* a
-> character every other Keeper using the deck already knows the twist to.
+> **Take the numbers; invent the person** (`core/00-how-to-run.md` → ground rules). A card's
+> stat line and skill spread are calibration you can use directly. Its name, backstory, and
+> secret are not — a deck NPC pasted into `campaigns/` is a character every other Keeper
+> using that deck already knows the twist to.
 
 ## Stat guidance (7e)
 

@@ -55,9 +55,21 @@ dist/bundle.md      构建产物:整个 kit 拼成一份,给没有仓库的 Chat
 3. **每次改动在 `CHANGELOG.md` 追加**;同一天合并进同一条,不新开。
 4. **文件名一律英文 ASCII `kebab-case.md`**,哪怕内容是中文。
 5. **输出语言按战役声明**,kit 脚手架和文件名保持英文;写中文查 `reference/glossary-zh.md`。
-6. **转载规则(2026-08-02 改)**:kit *生成*的内容不含任何受版权原文;官方资料**可以收录**
-   进 `reference/decks/`、`sourcebooks/`,但文件末尾必须有 `## 引用出处` 表,且生成器
-   **只取结构和数值刻度,不取文字**。规则本体在 `core/00-how-to-run.md` → ground rules。
+6. **转载规则(2026-08-02 立,2026-08-03 二次放宽)**:官方资料**可以收录**进
+   `reference/decks/`、`sourcebooks/`,文件末尾必须有 `## 引用出处` 表。
+   **2026-08-03 改动**:原来那条"只取结构和数值刻度,不取文字"**已作废**——
+   kit 自己的 `reference/` 文件**可以引用或转录官方规则内容**(属性行、法术耗费、
+   武器伤害),标明是哪本书哪一章即可。过渡期边界(等 P9 定案):**数值随便转,
+   描述性文字保持原创**。**进 `campaigns/` 的内容仍然自己写**——这条留下来了,
+   但理由从"版权"改成"牌桌"(搬来的 NPC 是别人都知道底牌的人)。
+   kit 的定位同时写实为:**面向持有正版的 KP、不盈利、不用于传播**。
+   规则本体在 `core/00-how-to-run.md` → ground rules。
+   **⚠️ 放宽只覆盖「规则内容」,不覆盖「虚构内容」。** 改完之后仓库里是三分法,别混:
+   **① 规则内容**(数值、机制、法术耗费、武器伤害)→ 可转录,标出处;
+   **② 虚构散文**(小说、战役文本、`reference/craft/` 的源材料、`external/` 的子模块)
+   → 仍然**取手法不取文字**,`craft/README.md` 与 `reference/README.md` 已写明放宽不适用;
+   **③ 具名角色 + 绑定商业产品**(如 `cultist-archetypes.md` 里那位"卡尔·斯坦福")
+   → 仍不收录。
 7. **归档件不进 bundle**,所以任何 spec 引用它们都要写成可选("if present locally")。
 
 ## 当前状态(2026-08-03)
@@ -65,13 +77,13 @@ dist/bundle.md      构建产物:整个 kit 拼成一份,给没有仓库的 Chat
 计划 P1–P9 的权威状态在 `update_plan/README.md` 的状态索引表,**不要在这里读状态**,
 只记几条容易漏的:
 
-- **P2/P3/P4/P6 均已归档,P1 阶段 0-2 已归档、阶段 3 拆成独立计划仍待执行。**
+- **P1/P2/P3/P4/P6 均已归档**(P1 的阶段 0-2 与阶段 3 收尾两份计划都已进 `Archived/`)。
   2026-08-02 那批 16 个 commit(P1-P4 相关全部内容)与 2026-08-03 的收尾 commit
   均已提交,`git status` 干净。**不存在"待提交"的改动**——下一个会话不用再找
   scratchpad 或未提交的工作区改动。
 - **P1 第四章的两个硬前置(P4、P7)现在都已解除,且 P7 本身也已完成**——新增
   `reference/rules/magic.md`,`core/02`/`core/07`/`reference/mythos/README.md` 已接线。
-  P1 阶段 0-2 已归档,只剩阶段 3 收尾(`update_plan/2026-08-02-cult-doc-wrapup.md`)。
+  P1 阶段 0-2 与阶段 3 收尾均已归档,该计划全部完结。
 - **`reference/sourcebooks/keeper-rulebook-7e-zh.md`(规则书全文重译,17470 行)已确认
   可读**——P7 落盘时发现它比 grand-grimoire 更权威地给出了魔法书研读机制(CMI/CMF/MR
   三值、泛读/精读两阶段、重复精读耗时翻倍),`magic.md` 的魔法书章节改成从这份规则书
@@ -79,9 +91,47 @@ dist/bundle.md      构建产物:整个 kit 拼成一份,给没有仓库的 Chat
   别漏看。
 - **P8 投资者卡渲染缺口也已完成**——`scripts/render-investigator.py`/`templates/investigator.md`
   补全全部缺失字段,加了硬性算术+阈值型双层自校验;`core/13`/`character-creation.md`/
-  `core/01`(新增问题 14)已接线。现在 P1–P8 只剩 P1 阶段 3(纯收尾)未动,P5/P9 等 Keeper。
-- **P9 怪物模板的"来源红线"部分有答案** —— 转载规则已改,且
-  `reference/sourcebooks/malleus-monstrorum-zh.md` 已可读;剩下要 Keeper 定的是范围。
+  `core/01`(新增问题 14)已接线。**P1–P8 现已全部完成并归档**,活动计划只剩 P5 与 P9。
+- **P9 已于 2026-08-03 全部定案(七项),但状态是 `阻塞`——Keeper 要重做
+  `reference/sourcebooks/malleus-monstrorum-zh.md` 转录稿**("等我完善了怪物之锤所有
+  信息都有")。**卡的是数据源不是决策**;执行清单 4–8、9、10、12、13 其实不依赖转录稿,
+  但 Keeper 已表示先等,除非另有指示别动手。哪项卡哪项不卡见计划文件的「阻塞范围」一节。
+  **换转录稿时有三个坑**:`## 引用出处` 块必须活下来、头部"转录质量"警示要跟着重写
+  (过期警示会让后续会话不信任本来可信的数据)、11 处引用的行号会全变要重跑索引
+  ——正式做法走 `core/14-archive-reference.md`。
+  17 项执行清单分 A/B/C 三阶段,都在
+  `update_plan/2026-08-02-monster-templates-traits.md`。
+  **阶段 A** 标尺与词条 → **B** 索引层(改 `build-reference-index.py` + 生成
+  `reference/tables/monster-index.md`)→ **C** 铺约 6 个神格及其眷族。
+  **一次只做一个阶段,各自走一遍完结清单,三段全完才归档。** 接手前必看的四条:
+  1. **词条走数值侧、带强度预算**,「怪物强度 = 基础档位 + 词条负载」——这就是 P4 留在
+     `core/07` 的那个 **X 的完整答案**,占位句该回填了。
+  2. **词条表的「破解口」是必填列**,不是注释。数值词条不像行为词条那样天然带弱点,
+     不强制这一列,`core/07` 的 fair out 红线会随负载升高被系统性稀释。
+  3. **type 六类要按 malleus 的分类重排,阶梯从四级扩到五级**(眷族与古神之间插入
+     「唯一存在」)。`beast`/`undead` 降为修饰标签。这会连带改
+     `templates/monster.md`、`reference/bestiary/README.md` 和现有 9 只的 header。
+  4. **索引层是阶段 B 的核心,别当成"顺手加个字段"。** 起因是一个真实失败场景:
+     KP 问"黄衣之王是 boss,这里的精英怪应该是什么",kit 现在会答出伊斯之伟大种族这类
+     不相关的东西。要的是**关联数据**(`Serves:` 字段)+ **≤40 字索引摘要**,
+     由脚本生成 `reference/tables/monster-index.md`。**索引摘要 ≠ Reveal**——
+     前者给模型匹配,后者念给玩家,两段并存不合并。
+- **`reference/bestiary/` 现有 9 只的实测分布,是 P9 定案的主要依据**:threat 8/9 都是
+  `deadly`(`trivial`/`mythic` 从未用过),同为 `deadly` 的 SAN 从 `0` 到 `1D4/1D10`;
+  type 六类里 `beast`/`undead`/`great-old-one`/`human` 从未被单独用过,活着的两类有
+  3 只被迫加括号补充。**别把这 9 只当对标样板用**——它们是在没有标尺的状态下写的,
+  P9 执行清单第 9 项就是回头校准它们。
+- **古神级条目住在 `reference/mythos/great-old-ones/`(现有 `cthulhu.md`),不在
+  `bestiary/`。** 这条分工现在没写在任何 spec 里,P9 执行清单第 4 项负责补上。
+- **kit 现在几乎是一套克苏鲁专用工具。** 在 kit 自己写的文件里统计神格提及:
+  克苏鲁 **135** 次、达贡/海德拉 14/7 次(教团已立档但**神格本身没有文件**)、
+  犹格-索托斯/莎布-尼古拉斯/奈亚拉托提普/伊格 各 1–2 次、**哈斯塔 0 次**。
+  P9 阶段 C 是**拓宽**不是补漏,工作量按这个认。
+- **`dist/bundle.md` 不收 `reference/bestiary/` 也不收 `reference/mythos/`**
+  (白名单只有 `core/`、`templates/`、`reference/rules|craft|tables/`,见
+  `scripts/build-bundle.sh` 第 36–45 行)。**走 ChatGPT 链路的 KP 现在对怪物和神格
+  是全盲的**——这是 P9 阶段 B 把导航表放进 `reference/tables/` 的直接理由:
+  那是那条链路唯一的怪物知识通道。
 - **三份 sourcebook 的手动重译已随第六轮批量提交落地**(9c47d98);误建的空文件
   `reference/sourcebooks/新建 Text Document.txt` 已核实不存在(已清理或从未提交)。
   仍未清的账:P7 计划第 5 行的行数(写 13731,现为 5365)、`sourcebooks/index.json`

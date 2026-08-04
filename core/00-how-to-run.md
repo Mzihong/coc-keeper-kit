@@ -11,12 +11,13 @@ table-ready material — a world, an event clock, a cast, scenarios, puzzles, ha
 read-aloud prose — mechanically correct for **CoC 7th Edition** and filed so nothing is lost
 between sessions.
 
-It is **not** a rules SRD and not a substitute for the published rulebooks. It references
-mechanics so generated numbers are correct; **nothing it generates reproduces copyrighted
-text**.
+It is **not** a rules SRD and not a substitute for the published rulebooks — **it assumes the
+Keeper owns them.**
 
-Official third-party material may be *filed* under `reference/decks/` as source material to
-draw on — but only under the citation rule below, and never copied into generated output.
+Official third-party material may be *filed* under `reference/decks/` and
+`reference/sourcebooks/` as source material, and **kit reference files may quote or transcribe
+official rules content with the source named** — both only under the citation rule below.
+What reaches a `campaigns/` folder is still written fresh; see that rule for why.
 
 ## The pipeline
 
@@ -89,14 +90,30 @@ writing any stat block, difficulty, or Sanity cost.
 - **Continuity.** Before generating into an existing campaign, read its `CLAUDE.md` and
   `canon-log.md`. Never contradict established canon. If you must, say so explicitly and
   offer the retcon as a choice rather than writing it in.
-- **Citing official material.** Files under `reference/decks/` are transcriptions of published
-  Chaosium products, kept as source material. Two rules, both hard:
+- **Citing official material.** Files under `reference/decks/` and `reference/sourcebooks/`
+  are transcriptions of published Chaosium products, kept as source material. Three rules,
+  all hard:
   1. **Any official material filed in this repo carries a `## 引用出处` section at the end of
      the file** — work, rights holder, edition, where this text came from, scope, and what
      it's filed for. See `reference/decks/README.md` for the table. No citation, no file.
-  2. **Take structure and scale, never text.** Use a deck to calibrate a stat line or see how
-     long a usable secret runs. Generated NPCs get their own names, backstories, and secrets.
-     Copying a card into `campaigns/` is both a plagiarism problem and a table problem.
+  2. **Kit reference files may quote or transcribe official rules content, with the source
+     named.** A creature's stat line, a spell's cost, a weapon's damage — those *are* the
+     rules, and a Keeper needs the published numbers, not a paraphrase of them. Name the book
+     and chapter in the file.
+     *Interim boundary, until P9 lands* (`update_plan/2026-08-02-monster-templates-traits.md`):
+     **transcribe numbers freely, keep descriptive prose original.**
+     **This covers rules content only.** Published *fiction* — novels, scenario text, a named
+     character out of a commercial campaign — stays under the older, stricter rule: take the
+     technique, never the text. `reference/craft/` and `reference/external/` say so directly.
+  3. **What reaches a `campaigns/` folder is written fresh.** This one is not a copyright
+     rule — it's a table rule. A published NPC pasted into a campaign is a character every
+     other Keeper already knows the twist to, and generating that person is the entire reason
+     this kit exists. Take structure and scale from the source; write the character, the
+     creature, the scene.
+- **Who this kit is for.** It assumes the Keeper owns the books it draws on. It is
+  **non-commercial and not for redistribution** — the archived source material is here so a
+  legitimate owner can prep faster, never as a substitute for buying anything. Rights holders
+  can open an issue and any file will be taken down.
 
   Archives are **local files, absent from `dist/bundle.md`** — every spec that points at one
   says "if present". Nothing may depend on them. To file new material, follow

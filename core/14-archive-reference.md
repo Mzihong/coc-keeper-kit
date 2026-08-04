@@ -10,8 +10,9 @@ This spec is about **filing other people's material**. Material the kit writes i
 ## First
 
 - Read the ground rule this implements: `core/00-how-to-run.md` → **Citing official material**.
-  Two hard requirements — a `## 引用出处` block on every file, and generators take
-  **structure and scale, never text**.
+  Three hard requirements — a `## 引用出处` block on every file; kit reference files may
+  quote or transcribe official **rules** content with the source named; and what reaches
+  `campaigns/` is written fresh.
 - Read the target directory's README: `reference/decks/README.md` or
   `reference/sourcebooks/README.md`.
 

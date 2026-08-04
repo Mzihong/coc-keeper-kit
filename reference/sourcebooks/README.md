@@ -29,9 +29,15 @@
 
 ## 用法
 
-和 `decks/` 一样:**取结构和数值刻度,不取文字**(`core/00-how-to-run.md` → ground rules)。
+和 `decks/` 一样(`core/00-how-to-run.md` → ground rules):
+
+- **kit 自己的 `reference/` 文件可以引用或转录官方规则内容**——属性行、法术耗费、
+  武器伤害这些**就是规则本身**,KP 要的是书上的数而不是转述。**在文件里标明是哪本书、
+  哪一章。** 过渡期边界(等 P9 定案):**数值随便转,描述性文字保持原创。**
+- **进 `campaigns/` 的内容仍然自己写。** 这条不是版权规则,是牌桌规则。
+
 提炼出来的速查表写进 `reference/rules/`,并在每节标注 `来源` 指路——指到本目录的哪份书、
-哪一章,不摘原文。这条惯例的样板见 `reference/rules/character-creation.md`。
+哪一章。这条惯例的样板见 `reference/rules/character-creation.md`。
 
 ## 不进 bundle
 

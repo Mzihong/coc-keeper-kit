@@ -20,8 +20,10 @@ live through it. In CoC the monster is usually an obstacle to survive, not a bos
   dependency): `reference/sourcebooks/malleus-monstrorum-zh.md` is the official creature
   compendium — read the nearest published entry to calibrate stat scale, armour, and SAN cost
   before inventing your own. `reference/sourcebooks/grand-grimoire-zh.md` covers spells for
-  anything that casts. Both are PDF transcriptions with known garbling; judge every number by
-  eye, and take **structure and scale, never text**.
+  anything that casts. Both are PDF transcriptions with known garbling; **judge every number
+  by eye** — the OCR mangles stat lines. Published numbers may be taken directly into a
+  `reference/bestiary/` entry with the source named; the reveal, lore, and behaviour prose is
+  written fresh (`core/00-how-to-run.md` → ground rules).
 
 ## Design the horror
 

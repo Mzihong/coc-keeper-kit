@@ -51,11 +51,13 @@ the skill, read the spec it names, follow the spec. Never generate from the wrap
 
 - **IS** an authoring kit. Reusable canon, templates, and specs live at the root; each game
   lives in its own folder under `campaigns/`.
-- **ISN'T** a rules SRD or a substitute for the published rulebooks. It references mechanics
-  so generated content is correct; **nothing it generates reproduces copyrighted text**.
-- **Official material filed under `reference/decks/`** is source material, not kit canon. It
-  must carry a `## 引用出处` block, and generators take **structure and scale, never text** —
-  see `core/00-how-to-run.md` → ground rules and `reference/decks/README.md`.
+- **ISN'T** a rules SRD or a substitute for the published rulebooks — **it assumes you own
+  them**. Non-commercial, not for redistribution.
+- **Official material filed under `reference/decks/` and `reference/sourcebooks/`** is source
+  material, not kit canon. It must carry a `## 引用出处` block. **Kit reference files may
+  quote or transcribe official rules content with the source named**; what reaches a
+  `campaigns/` folder is written fresh — see `core/00-how-to-run.md` → ground rules and
+  `reference/decks/README.md`.
 
 ## Maintenance
 
