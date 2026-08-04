@@ -3,9 +3,12 @@
 *A sphere of red-white light, no bigger than a fist, drifts at head height — and the warmth
 coming off it feels like being forgiven for something you never did.*
 
-- **Type:** mythos servitor (extradimensional energy being)
+- **Type:** servitor-race (extradimensional energy being)
+- **Tier:** L3 servitor
 - **Threat:** moderate (deadly in aggregate — see Radiation)
 - **Sanity to see:** 0 (indirect — see Euphoric Vision)
+- **Serves:** Cthulhu (theorised, unconfirmed — see Lore)
+- **Index summary:** Drifting light; drains MP/SAN via euphoria and cumulative radiation
 
 ## Reveal (say this out loud, before the SAN roll)
 

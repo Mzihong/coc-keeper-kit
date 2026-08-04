@@ -2,8 +2,11 @@
 
 > The strength ladder for non-human threats, and the numeric baseline each rung sits at.
 > Distilled by sampling `reference/sourcebooks/malleus-monstrorum-zh.md` (local only, absent
-> from `dist/bundle.md`) — roughly 240 stat blocks across its four creature classes and five
-> deity classes. This sheet keeps the mechanics and number ranges, never the source text.
+> from `dist/bundle.md`) — **all 223 stat blocks** in it (129 dice-notation species entries +
+> 94 fixed-value deity/unique entries; the count is stated in that file's own header), matched
+> to the book's own classification label and bucketed per tier. Coverage of the sampled fields:
+> HP 87%, Sanity loss 92%, attack skill 88%, armour ~68% of the entries that state one.
+> This sheet keeps the mechanics and number ranges, never the source text.
 > **Human antagonists don't use this ladder** — `reference/rules/character-creation.md` §11.
 
 ## The five-tier ladder
@@ -29,6 +32,9 @@ it's the **± inside a tier**, not a replacement for it. Within each tier below,
 at the low end of the range and `mythic` at the high end; `moderate` and `deadly` split the
 middle. A tier's `trivial` can land inside the tier below it's `mythic` — that's the overlap
 rule above, working as intended.
+
+**At L2 and L3, check the source's 上级/下级 label first** — see the sub-tier section below.
+It picks the half of the band range for you, and it's more reliable than eyeballing.
 
 ## Baseline ranges per tier
 
@@ -56,6 +62,28 @@ canon for the tier, not something to recompute.
 | moderate | 0/1D4 – 0/1D6 | 12–16 | 2–4 | 30–45% |
 | deadly | 0/1D6 – 1/1D6 | 16–25 | 3–7 | 45–65% |
 | mythic | 1D3/1D20 – 1D6/1D20 | 25–60 | 5–10, or an immunity clause | 60–100% |
+
+### 上级 / 下级 — the book's own free calibration (L2 and L3 only)
+
+**Read this before picking a threat band at L2 or L3.** Malleus labels most species entries
+**上级** (greater) or **下级** (lesser), and that label separates them harder than the threat
+band does. Sampling the two groups apart:
+
+| Sub-tier | n | HP (median) | Attack skill (median) | Sanity loss (typical) |
+|---|---|---|---|---|
+| 下级独立种族 — lesser independent | 43 | **14** | **35%** | 0/1D3 – 0/1D8 (0/1D6 is by far the most common) |
+| 上级独立种族 — greater independent | 10 | **36** | **80%** | 1D3/1D20 – 1D6/1D20 |
+| 下级仆从种族 — lesser servitor | 56 | **14** | **35%** | 0/1D2 – 0/1D6 |
+| 上级仆从种族 — greater servitor | 15 | **27** | **75%** | 1/1D8 – 1D6/1D20 |
+
+**How to use it:** if the entry you're calibrating against is labelled **下级**, take the
+`trivial`/`moderate` rows of its tier below; if **上级**, take `deadly`/`mythic`. The greater
+group runs **2–2.6× the lesser group's HP and roughly double its attack skill** — a wider gap
+than the whole four-band spread within a pooled tier, which is why the pooled ranges below read
+broad in the middle. When the book gives you the label, it beats your judgement; use it.
+
+**Not split by sub-tier:** armour (too few entries state a value to split the sample honestly)
+and L4/L5 (no 上级/下级 labels there). Those stay pooled below.
 
 ### L4 — unique (唯一存在)
 

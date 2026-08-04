@@ -29,6 +29,9 @@
 - 怪物图鉴 `fellrock.md` 的"沉默之油"反查链接指向了 `artifacts-zh.md`,但那份文件里
   根本没有这一条——沉默之油实际是 `reference/mythos/spells/oil-of-silence.md` 的法术,
   已改正指向。
+- 建索引脚本解析怪物图鉴条目名称时,把段内加粗的小标题(如"**触肢攻击**")连同后面
+  无关的括号内容一起误认成条目名,导致索引表个别行显示的是攻击描述文字而不是怪物
+  名——已改成要求整行以 `**` 收尾才算标题,223 条全部核对无误。
 
 ### 更新内容
 
@@ -75,6 +78,28 @@
   武器、汲取属性、疯狂凝视等),每条都强制带一个可被调查员发现的破解口,并按等级设了
   负载上限,防止一只怪物被堆到"打不过也躲不掉"。`core/11-review.md` 新增两条对应的
   审计题。
+- **挑怪物强度时先看书上的「上级/下级」标签,它比自己估更准。** `monster-scale.md`
+  新增一节:怪物图鉴给绝大多数种族条目标了上级或下级,而这个标签分开强度的力度**大于
+  threat 四档的整个跨度**——上级组的耐久是下级组的 2–2.6 倍、攻击技能约两倍。
+  用法很直接:书标下级就取该级的 trivial/moderate 两行,标上级就取 deadly/mythic 两行。
+  同一轮把取样声明改成了真数(全书 223 个属性块,非"约 240"),并写明各字段的实际
+  覆盖率与两处不拆的理由(护甲样本太薄、L4/L5 书上没有上下级标签)。
+- **KP 现在能直接查"某神格的精英怪该用谁",不用翻一万行原文。** P9 阶段 B 落地:
+  新增 `reference/tables/monster-index.md`,覆盖怪物图鉴全部 223 个条目 + 现有 9 只
+  bestiary 条目,每条都标好服侍哪位神格(`Serves`)与一句区分摘要。这张表进
+  `dist/bundle.md`——**ChatGPT/Gemini 链路第一次能看到怪物**,此前 `bestiary/`
+  与图鉴都不在白名单里,那条链路对怪物完全空白。
+- **`reference/bestiary/` 现有 9 只按新标尺重新核过一遍。** `deep-one-hybrid.md` 的
+  type 从独立种族改成仆从种族(malleus 原文就是这么分类的);`fellrock.md` 的 threat
+  从 deadly 改成 mythic(体型与耐久数值早已过 deadly 上限)、`thrall-of-cthulhu.md`
+  从 deadly 改成 moderate(malleus 标它是"下级"仆从种族,按新标尺该取轻档);9 只都
+  补齐了 Tier 与 Serves/索引摘要两个新字段。
+- **神格文件现在要反向列出自己的眷族与仆从。** `cthulhu.md` 补了这一节(哪些怪物服侍
+  它、哪些是它的血亲),并写进 `reference/mythos/README.md` 定为新神格文件的必备小节
+  ——以后铺哈斯塔、奈亚拉托提普这些新神格(P9 阶段 C)照这个格式写,索引表才不会只有
+  半条查询路径。
+- `core/07-create-monster.md`、`core/04-design-scenario.md` 都接了一句:挑怪物先查
+  `reference/tables/monster-index.md` 再动手写,不用翻原文猜。
 
 ---
 

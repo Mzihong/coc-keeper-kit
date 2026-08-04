@@ -29,31 +29,6 @@
           "context": "- 怪物图鉴 `fellrock.md` 的\"沉默之油\"反查链接指向了 `artifacts-zh.md`,但那份文件里"
         },
         {
-          "file": "WORKLOG.md",
-          "line": 310,
-          "context": "数值查 `grand-grimoire-zh.md`;非法术型按装备总价,查 `weapons-and-artifacts-zh.md`);"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 435,
-          "context": "硬塞进\"生物图鉴\"文体不对,改开 `reference/mythos/artifacts-zh.md` 单独收。"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 502,
-          "context": "`reference/mythos/artifacts-zh.md`/`reference/mythos/spells/`/`reference/tables/"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 727,
-          "context": "`artifacts-zh.md`(造物道具类,不属于原有五类任何一类)。两处已补。"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 732,
-          "context": "`mythos/artifacts-zh.md`,但沉默之油实际是 `mythos/spells/oil-of-silence.md` 的"
-        },
-        {
           "file": "core/06-create-npc.md",
           "line": 77,
           "context": "- Arming someone: `reference/decks/weapons-and-artifacts-zh.md` gives skill, base chance,"
@@ -70,12 +45,12 @@
         },
         {
           "file": "reference/bestiary/sedecim.md",
-          "line": 38,
+          "line": 41,
           "context": "`reference/mythos/artifacts-zh.md`."
         },
         {
           "file": "reference/bestiary/sedecim.md",
-          "line": 52,
+          "line": 55,
           "context": "`reference/mythos/artifacts-zh.md` → Non-Euclidean Architecture. Humans encountering or"
         },
         {
@@ -90,7 +65,7 @@
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 400,
+          "line": 483,
           "context": "- [x] `reference/mythos/` 现状 —— **不是只有 README**:有 `artifacts-zh.md`、"
         },
         {
@@ -124,7 +99,7 @@
           "context": "`reference/bestiary/fellrock.md` 的\"沉默之油\"词条指向了 `reference/mythos/artifacts-zh.md`,"
         }
       ],
-      "reference_count": 20
+      "reference_count": 15
     },
     {
       "file": "cthulhu-cult-history-zh.md",
@@ -136,18 +111,13 @@
       ],
       "referenced_by": [
         {
-          "file": "WORKLOG.md",
-          "line": 371,
-          "context": "setting 级 lore)与 `reference/mythos/cthulhu-cult-history-zh.md`(历史条目表 + 三条"
-        },
-        {
           "file": "core/03-build-world.md",
           "line": 55,
           "context": "the throughline is Cthulhu-cult history, `reference/mythos/cthulhu-cult-history-zh.md` has"
         },
         {
           "file": "reference/bestiary/black-wing.md",
-          "line": 68,
+          "line": 71,
           "context": "> witch-coven entry in `reference/mythos/cthulhu-cult-history-zh.md`'s \"黑翼者线\" — usable as"
         },
         {
@@ -177,7 +147,7 @@
         },
         {
           "file": "reference/mythos/great-old-ones/cthulhu.md",
-          "line": 54,
+          "line": 75,
           "context": "- 历史上记录过的克苏鲁邪教事件 → `reference/mythos/cthulhu-cult-history-zh.md`"
         },
         {
@@ -187,7 +157,7 @@
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 401,
+          "line": 484,
           "context": "`cthulhu-cult-history-zh.md`、`cults/`(5 份)、`spells/`、"
         },
         {
@@ -196,7 +166,7 @@
           "context": "`reference/mythos/cthulhu-cult-history-zh.md`(27 条历史条目表,不逐条散文重述)"
         }
       ],
-      "reference_count": 12
+      "reference_count": 11
     },
     {
       "file": "cults/church-of-perfect-science.md",
@@ -213,7 +183,7 @@
       "referenced_by": [
         {
           "file": "reference/bestiary/sedecim.md",
-          "line": 75,
+          "line": 78,
           "context": "> Processing\" (see `reference/mythos/cults/church-of-perfect-science.md`) — five currently"
         },
         {
@@ -248,12 +218,12 @@
       "referenced_by": [
         {
           "file": "reference/bestiary/cthulhu-blessed.md",
-          "line": 52,
+          "line": 55,
           "context": "> `reference/mythos/cults/esoteric-order-of-dagon.md` for the community context this is most"
         },
         {
           "file": "reference/bestiary/deep-one-hybrid.md",
-          "line": 53,
+          "line": 57,
           "context": "> (see `reference/mythos/cults/esoteric-order-of-dagon.md`), though the pairing doesn't have"
         },
         {
@@ -268,12 +238,12 @@
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 344,
+          "line": 349,
           "context": "| 达贡 / 海德拉 | 14 / 7(`cults/esoteric-order-of-dagon.md` 已立档,**神格本身却没有文件**) |"
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 529,
+          "line": 677,
           "context": "**① 达贡与许德拉**(kit 提及 14/7 次、`cults/esoteric-order-of-dagon.md` 已立档、"
         }
       ],
@@ -293,7 +263,7 @@
       "referenced_by": [
         {
           "file": "reference/bestiary/black-wing.md",
-          "line": 70,
+          "line": 73,
           "context": "> The Louisiana Swamp Cult (`reference/mythos/cults/louisiana-swamp-cult.md`) keeps a standing"
         },
         {
@@ -354,12 +324,12 @@
       "referenced_by": [
         {
           "file": "reference/bestiary/fellrock.md",
-          "line": 73,
+          "line": 80,
           "context": "> Children` (`reference/mythos/cults/society-of-the-divine-children.md`) keeps a standing"
         },
         {
           "file": "reference/bestiary/scarlet-orb.md",
-          "line": 72,
+          "line": 75,
           "context": "> (`reference/mythos/cults/society-of-the-divine-children.md`) calls these \"children of fire\""
         },
         {
@@ -389,62 +359,104 @@
       "file": "great-old-ones/cthulhu.md",
       "path": "reference/mythos/great-old-ones/cthulhu.md",
       "title": "Cthulhu（克苏鲁）",
-      "lines": 56,
+      "lines": 77,
       "declared_consumers": [
         "core/02-rules-reference.md",
         "reference/craft/cult-design-zh.md",
-        "reference/mythos/cthulhu-cult-history-zh.md"
+        "reference/mythos/cthulhu-cult-history-zh.md",
+        "reference/sourcebooks/malleus-monstrorum-zh.md",
+        "reference/tables/monster-index.md"
       ],
       "referenced_by": [
         {
+          "file": "CHANGELOG.md",
+          "line": 94,
+          "context": "从 deadly 改成 mythic(体型与耐久数值早已过 deadly 上限)、`thrall-of-cthulhu.md`"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "line": 97,
+          "context": "- **神格文件现在要反向列出自己的眷族与仆从。** `cthulhu.md` 补了这一节(哪些怪物服侍"
+        },
+        {
           "file": "WORKLOG.md",
-          "line": 120,
+          "line": 110,
+          "context": "`cthulhu.md` 补了反向的眷族/仆从小节,`core/07`/`core/04` 已接线检索入口。"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 121,
           "context": "- **古神级条目住在 `reference/mythos/great-old-ones/`(现有 `cthulhu.md`),不在"
         },
         {
           "file": "WORKLOG.md",
-          "line": 370,
-          "context": "理由见下),拆成两个文件:`reference/mythos/great-old-ones/cthulhu.md`(克苏鲁本体的"
+          "line": 187,
+          "context": "战斗的庞然大物\");`thrall-of-cthulhu.md` 的 `Threat` 从 deadly 改判 moderate"
         },
         {
           "file": "WORKLOG.md",
-          "line": 383,
-          "context": "用 `os.walk()` 递归。落盘 `cthulhu.md` 后重建索引才发现它完全没被收录、连 orphan 都"
+          "line": 192,
+          "context": "6. **`reference/mythos/great-old-ones/cthulhu.md`** 补了\"眷族与仆从\"一节(哪些怪物"
+        },
+        {
+          "file": "reference/mythos/README.md",
+          "line": 12,
+          "context": "`## 眷族与仆从 (Servitors & kin)` section** (see `cthulhu.md` for the shape) — a few named"
+        },
+        {
+          "file": "reference/tables/monster-index.md",
+          "line": 81,
+          "context": "| 克苏鲁的仆役，伺奉克苏鲁的仆从（THRALLS OF CTHULHU, Servants of Cthulhu） | 1/1D8 (malleus's own figure for this entry — kept as-is; see Threat note above for why the label mo"
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 166,
+          "line": 178,
           "context": "\"\"\"Sorted relative paths (posix-style, e.g. 'great-old-ones/cthulhu.md') of every .md"
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 181,
+          "line": 193,
           "context": "relative path (e.g. 'great-old-ones/cthulhu.md'); references also match the bare"
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 328,
+          "line": 10,
+          "context": "> bestiary 条目重标,`cthulhu.md` 补眷族反链,`core/07`/`core/04` 接线检索入口。"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 333,
           "context": "| 2 | 关联信息**存在,但埋在散文里** | `black-wing.md` 的 Lore 写了 \"loyal to Cthulhu rather than Nodens\",但不是字段;反过来 `great-old-ones/cthulhu.md` 的「挂钩」链了教团、手法、史料,**唯独不链自己的眷族**。双向"
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 329,
+          "line": 334,
           "context": "| 3 | **哈斯塔在 kit 里根本不存在** | `great-old-ones/` 只有 `cthulhu.md`;`bestiary/` 无任何哈斯塔系怪物。**即便索引建好,那个查询仍返回空集**——而空集比错答案更容易让模型自由发挥 |"
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 402,
+          "line": 485,
           "context": "**`great-old-ones/`(1 份:`cthulhu.md`)**。"
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 519,
-          "context": "- [ ] **12. 反向接线:神格文件列出自己的眷族。** `reference/mythos/great-old-ones/cthulhu.md`"
+          "line": 665,
+          "context": "且设计本就是\"劝退不劝打\");`thrall-of-cthulhu.md` deadly → moderate(malleus"
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 533,
+          "line": 669,
+          "context": "- [x] **12. 反向接线:神格文件列出自己的眷族。** `cthulhu.md` 新增「眷族与仆从」一节,"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 681,
           "context": "体例照 `great-old-ones/cthulhu.md`(是什么 / 苏醒条件 / 征兆 / 邪教如何崇拜 /"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 13,
+          "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:五级阶梯的档位区间、按 malleus 四类重排的 type、数值词条(强化)系统与其负载预算 | 进行中(阶段 A + B 已完成,阶段 C 待开始;"
         },
         {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
@@ -452,7 +464,7 @@
           "context": "—— `reference/mythos/great-old-ones/cthulhu.md`(实体条目)+"
         }
       ],
-      "reference_count": 11
+      "reference_count": 19
     },
     {
       "file": "spells/black-wing-call.md",
@@ -466,7 +478,7 @@
       "referenced_by": [
         {
           "file": "reference/bestiary/black-wing.md",
-          "line": 56,
+          "line": 59,
           "context": "`reference/mythos/spells/black-wing-call.md`) — the only leverage over one is the standing"
         }
       ],
@@ -498,7 +510,7 @@
       "referenced_by": [
         {
           "file": "reference/bestiary/fellrock.md",
-          "line": 76,
+          "line": 83,
           "context": "> dreams, not sought them out. `reference/mythos/spells/fellrock-call-bind.md` has the"
         }
       ],
@@ -520,13 +532,8 @@
           "context": "根本没有这一条——沉默之油实际是 `reference/mythos/spells/oil-of-silence.md` 的法术,"
         },
         {
-          "file": "WORKLOG.md",
-          "line": 732,
-          "context": "`mythos/artifacts-zh.md`,但沉默之油实际是 `mythos/spells/oil-of-silence.md` 的"
-        },
-        {
           "file": "reference/bestiary/fellrock.md",
-          "line": 53,
+          "line": 60,
           "context": "- **Oil of Silence** (see `reference/mythos/spells/oil-of-silence.md`) repels them by smell; someone"
         },
         {
@@ -540,7 +547,7 @@
           "context": "但沉默之油实际收在 `reference/mythos/spells/oil-of-silence.md`(该法术文件本身反查"
         }
       ],
-      "reference_count": 5
+      "reference_count": 4
     },
     {
       "file": "spells/rapture.md",
@@ -563,7 +570,7 @@
       "referenced_by": [
         {
           "file": "reference/bestiary/scarlet-orb.md",
-          "line": 66,
+          "line": 69,
           "context": "`reference/mythos/spells/scarlet-orb-call.md`) — only summoned and endured until its MP"
         }
       ],
@@ -580,7 +587,7 @@
       "referenced_by": [
         {
           "file": "reference/bestiary/vermisyn-worm.md",
-          "line": 69,
+          "line": 72,
           "context": "> `reference/mythos/spells/vermisyn-worm-call-bind.md` has the summon/bind ritual."
         }
       ],

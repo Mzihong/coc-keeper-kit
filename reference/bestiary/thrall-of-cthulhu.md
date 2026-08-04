@@ -3,9 +3,16 @@
 *What used to be a devoted cultist is now a swollen grey-blue mass, hairless, slit-eyed,
 dragging itself forward on legs too short for the weight above them.*
 
-- **Type:** mythos servitor (formerly human)
-- **Threat:** deadly
-- **Sanity to see:** 1/1D8
+- **Type:** servitor-race (formerly human)
+- **Tier:** L3 servitor
+- **Threat:** moderate — recalibrated (2026-08-03): malleus files Thralls of Cthulhu as
+  下级仆从种族 (lesser servitor race); per `reference/rules/monster-scale.md`'s 上级/下级
+  guidance, a lesser sub-tier entry takes the `trivial`/`moderate` rows, not `deadly`. Its
+  practical danger comes from the *Undying* trait (regenerates, only magic ends it for good),
+  not raw stats — a `moderate` threat that's a genuine trap for a party without magic
+- **Sanity to see:** 1/1D8 (malleus's own figure for this entry — kept as-is; see Threat note above for why the label moved but the number didn't)
+- **Serves:** Cthulhu
+- **Index summary:** Converted cultist, undying regen; only magic damage ends it for good
 
 ## Reveal (say this out loud, before the SAN roll)
 

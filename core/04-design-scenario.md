@@ -37,7 +37,11 @@ fill in the pieces.
    Most scenes should be reachable in more than one order — avoid a single required sequence.
    If a scene is a pursuit or an escape, read `reference/rules/chases.md` before writing it.
 7. **Cast & threats.** Name the NPCs and creatures (hand to `core/06` / `core/07`); ensure
-   each monster has its fair "out."
+   each monster has its fair "out." **Choosing which Mythos creature fits a given role**
+   (especially "the boss is deity X — what's a fitting elite/servitor?") — check
+   `reference/tables/monster-index.md` before inventing one from scratch; it indexes all 223
+   `malleus-monstrorum-zh.md` entries by tier and `Serves` (who they answer to), so the search
+   is "who serves X" instead of reading the full transcript.
 8. **Endings.** Sketch best / muddled / grim outcomes and the world-fallout each leaves. Tag
    each ending with a **suggested SAN reward** per `reference/rules/sanity.md`'s scenario-end
    table — a starting number for `core/12-canon-update.md` to propose, adjust, and confirm with

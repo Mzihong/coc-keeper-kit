@@ -5,6 +5,13 @@ live through it. In CoC the monster is usually an obstacle to survive, not a bos
 
 ## First
 
+- **Picking WHICH creature, not just how strong** (e.g. "the campaign's boss is Hastur — what's
+  a fitting elite guard/servitor?") — read `reference/tables/monster-index.md` first. It covers
+  all 223 malleus entries plus this kit's own `reference/bestiary/`, each with a `Serves` field
+  (who it answers to) and a short index summary, so you don't have to read the full 10k-line
+  transcript to find a candidate. It's generated, in `dist/bundle.md`, and the only channel a
+  ChatGPT/Gemini user without the repo has into the bestiary — see
+  `scripts/build-reference-index.py`.
 - **Read `core/02-rules-reference.md`** — especially `reference/rules/combat.md` (Build,
   Damage Bonus, HP) and `reference/rules/sanity.md` (X/Y loss). Numbers must be 7e-correct.
 - **Decide the tier**, then the threat band inside it — read

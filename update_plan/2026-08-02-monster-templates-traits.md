@@ -1,10 +1,15 @@
 # Update Plan — 怪物模板与词条系统
 
 > 日期:2026-08-02
-> 状态:**进行中(阶段 A 已完成,阶段 B 待开始)** —— 2026-08-03 第七轮落盘
-> `reference/rules/monster-scale.md` + `reference/tables/monster-traits.md`,
-> 5 处接线(`core/07`/`core/02`/`core/11`/`templates/monster.md`/bestiary README)
-> 全部完成。**三阶段全完才归档**,阶段 B(索引层机制)是下一步。
+> 状态:**进行中(阶段 A + B 已完成,阶段 C 待开始)** —— 2026-08-03 阶段 B 落盘,等提交。
+> 阶段 A:`reference/rules/monster-scale.md` + `reference/tables/monster-traits.md`,
+> 5 处接线(`core/07`/`core/02`/`core/11`/`templates/monster.md`/bestiary README)全部完成。
+> 阶段 B:`scripts/build-reference-index.py` 扩了 `parse_malleus_entries()` +
+> `build_monster_index()`,新增 `reference/tables/monster-index.md`(生成)与
+> `reference/tables/monster-index-data.json`(223 条人写 `Serves`/摘要),现有 9 只
+> bestiary 条目重标,`cthulhu.md` 补眷族反链,`core/07`/`core/04` 接线检索入口。
+> **三阶段全完才归档**,阶段 C(神格铺设)是下一步——见 WORKLOG.md 会话记录了解阶段 B
+> 怎么做的、踩了什么坑。
 > 起因:`2026-08-02-antagonist-budget.md`(P4)待讨论 2 定案——怪物/神话实体不走技能点
 > 预算。那么它走什么?P4 里那个空着的 **X** 就是本计划要回答的东西。Keeper 同时给出了
 > 一个具体想法(怪物之书模板 + 词条强化 + CSV 存储),内容量超出 P4 的一节,拆出独立计划
@@ -384,6 +389,84 @@ P4 待讨论 7 原文见 `Archived/2026-08-02-antagonist-budget.md`;Keeper 当�
 > ——现有条目标题本来就是 `Black Wing (黑翼者)` 这种双语形式。执行时若 Keeper 另有偏好,
 > 以 Keeper 为准。
 
+## 待讨论 9 — 怪物之锤 223 只的存储形态(2026-08-03 第八轮新增)
+
+**起因(Keeper 提问):** 怪物之锤里的怪,是否要像现有 bestiary 条目那样**每只单独一个
+`.md`**,还是有其他形式?
+
+### 规模事实(新转录稿落地后实测)
+
+| 项 | 数量 |
+|---|---|
+| 转录稿里**带完整 Markdown 属性表**的条目 | **223 份** = 129 掷骰式(种族条目)+ 94 定值式(神格/唯一存在) |
+| 转录稿**自带**的分级标签 | 下级仆从 56 / 下级独立 45 / 唯一存在 18 / 上级仆从 17 / 上级独立 14 / 传说生物 10 / 独立种族 7 / 仆从种族 12 |
+| `reference/bestiary/` 现有 | **9 只** |
+
+"每只一个 `.md`"= **9 → 120+ 个文件**,且每只都要写原创 Reveal、fair out、索引摘要。
+
+### 核心矛盾:数值已经在仓库里了
+
+新转录稿有**真正的 Markdown 属性表**、干净可读、可 grep。把 223 只各抄一份 `.md`,
+得到的是**同一批数字的第二份副本**——转录稿以后改一个数,那 120 个文件里对应的那份
+会悄悄错,而且**没有任何机制会发现**。
+
+反过来问:bestiary 条目比转录稿**多给了什么**?
+
+- ✅ 原创 Reveal(念给玩家的)、fair out(可发现的活路)
+- ✅ tier / threat 标签、词条负载
+- ✅ `Serves:` 与索引摘要
+- ❌ **数值**——转录稿已经有了
+
+**多出来的这几项,只有"这只怪物真的要上桌"时才有价值。** 给 223 只全写 Reveal 和
+fair out,其中一百来只永远不会被用到。
+
+> **Keeper 定案(2026-08-03 第八轮):三层制 + 索引表带 SAN 一列。**
+>
+> | 层 | 存什么 | 覆盖 | 状态 |
+> |---|---|---|---|
+> | **L1 转录稿** `reference/sourcebooks/malleus-monstrorum-zh.md` | 全部原始数值 | 223 只 | ✅ 已完成 |
+> | **L2 索引表** `reference/tables/monster-index.md` | 名称 / tier / `Serves` / **SAN** / ≤40 字摘要 / 转录稿锚点 | **223 只全覆盖** | 阶段 B |
+> | **L3 完整条目** `reference/bestiary/*.md` | Reveal + fair out + 词条 + 完整档案 | **只装实际用到的** | 现有 9,按需长 |
+>
+> **① 覆盖全局的是 L2,不是 L3。** "黄衣之王的精英怪是什么"由索引表回答,
+> 不需要 223 个文件存在。第三个查询方向(按阵营找)由执行清单第 12 项覆盖
+> ——神格文件反向列出自己的眷族。
+>
+> **② 索引表带 SAN 一列。** 理由是 **`bestiary/` 与转录稿都不进 `dist/bundle.md`,
+> 只有 `reference/tables/` 进**——不带任何数值的话,走 ChatGPT 链路的 KP 能查到
+> "该用拜亚基",却拿不到拜亚基的数。SAN 是选怪物时最先要的那个数(直接决定桌上压力),
+> 且只占一列。**其余数值(HP/护甲/攻击)仍只在 L1 与 L3**,不做第二份副本。
+>
+> **③ `reference/bestiary/` 就此换了定位:从「图鉴」变成「用过的怪物档案」。**
+> 图鉴是转录稿,索引是索引表,bestiary 只装值得写 Reveal 的那些。
+> **这条必须写进 `bestiary/README.md`**,否则下一个会话还会以为它该长成全集
+> → 执行清单第 10 项。
+
+### ⚠️ 由此产生的后果:索引表不是纯生成物
+
+第 9 项原本写的是"从 bestiary 条目解析字段生成导航表"。**三层制之后这条不成立**
+——索引表要覆盖 223 只,而其中只有 9 只有 bestiary 条目。其余 214 只的数据来源:
+
+| 列 | 能不能从转录稿自动取 |
+|---|---|
+| 名称、转录稿锚点行号 | ✅ 能(加粗条目名可解析) |
+| tier | ✅ 能——**转录稿自带分级标签**(「下级仆从种族」这类紧跟在条目名后) |
+| SAN | 🟡 大致能,但措辞不统一(「理智损失」/「理智丧失」并存),要人工复核 |
+| `Serves`(服侍哪个神格) | ❌ **不能**——散在正文里("服务于克苏鲁及…父神达贡和母神海德拉") |
+| ≤40 字索引摘要 | ❌ **不能**——必须人写 |
+
+**所以阶段 B 要拆成机制与内容两半:** 脚本负责**脚手架**(从转录稿抽出名称/tier/SAN/锚点,
+生成待填的表)+ **校验**(`Serves` 或摘要为空就报错);223 条摘要与 `Serves`
+是**人写的一遍填充**。摘要 ≤40 字,总量约四千余字,一个专注上下文能做完,但**别当成
+"脚本跑一下就有"**。
+
+### 顺带发现:转录稿自带「上级/下级」,阶段 A 的阶梯没用上
+
+书把 L2、L3 各自再分上下(下级仆从 56 只 vs 上级仆从 17 只),而
+`reference/rules/monster-scale.md` 只有 tier + threat 四档。这不是错——threat 四档
+本来就管级内 ±——但**书已经免费给了一个比人工判断更硬的信号**,拿它来定 threat
+比逐只判断准且快。**不阻塞,阶段 B 生成脚手架时顺手接上** → 执行清单第 9 项。
+
 ## 需要先查清的事(执行前)
 
 **四条 2026-08-03 全部查完。**
@@ -429,6 +512,7 @@ P4 待讨论 7 原文见 `Archived/2026-08-02-antagonist-budget.md`;Keeper 当�
 | 5 落点 | `reference/rules/monster-scale.md` + `reference/tables/monster-traits.md` + 分类定义进 `core/07` |
 | 7(P4 转交) | **按 malleus 四类重排 type**,阶梯**扩为五级**(插入「唯一存在」);`beast`/`undead` 降为修饰标签;阶梯定基线、threat 级内做 ±、相邻级可重叠不可跨两级 |
 | 8 索引层(新增) | 条目 `Serves:` 字段 + ≤40 字索引摘要为**真源**,**扩 `build-reference-index.py`** 生成 `reference/tables/monster-index.md` 导航表(进 bundle);**P9 顺带铺一批神格** |
+| 9 存储形态(新增) | **三层制**:转录稿当图鉴(223 只)/ 索引表**全覆盖**并带 **SAN 一列** / `bestiary/` **只装实际用到的**——从「图鉴」改定位为「用过的怪物档案」。**不给 223 只各写一个 `.md`**,那是把同一批数值存两遍 |
 
 ## 阻塞已解除(2026-08-03)
 
@@ -471,13 +555,58 @@ Keeper 交付了 `reference/sourcebooks/malleus-monstrorum-zh.md` 的重排版�
 
 ### 阶段 A — 标尺与词条(全部完成,2026-08-03 第七轮,819971e)
 
+> **复核结论(2026-08-03 第八轮):阶段 A 的数字全部可复现,结论不推翻。**
+> Keeper 问是否需要重新评估,逐条独立核对如下:
+>
+> | 阶段 A 记的 | 独立核对 | 判定 |
+> |---|---|---|
+> | 223 个属性块 | `^\| *力量` 行 = 223 | ✅ |
+> | 129 掷骰式 + 94 定值式 | 带 `能力值/属性` + `掷骰/平均值` 表头 = 129;223 − 129 = 94 | ✅ |
+> | 238 处分类标签 | 条目级分级标签 205–231(视匹配严格度) | ✅ 同一量级 |
+> | L4「8 named individuals」 | 「唯一存在」条目级标签 9 处 | ✅ |
+>
+> **两处待修——Keeper 拍板「按上下级重算区间 + 改正样本数」,已于第八轮落盘:**
+>
+> 1. ✅ **样本数改正。** `monster-scale.md` 头部原写 "roughly 240 stat blocks",改为
+>    **223**(129 掷骰式 + 94 定值式)——这个数**转录稿自己的文件头就写着**,
+>    不是估算。同时补上各字段的实际覆盖率(HP 87% / SAN 92% / 攻击技能 88%)。
+> 2. ✅ **按上级/下级重新抽样。** 全部 223 个属性块重新归类到书自带的分级标签,
+>    L2/L3 拆开算。结果见下表——**这个分级比 threat 四档更能分开强度**:
+>
+> | 子档 | n | HP 中位 | 攻击技能中位 | SAN 典型 |
+> |---|---|---|---|---|
+> | 下级独立种族 | 43 | 14 | 35% | 0/1D3 – 0/1D8 |
+> | **上级独立种族** | 10 | **36** | **80%** | 1D3/1D20 – 1D6/1D20 |
+> | 下级仆从种族 | 56 | 14 | 35% | 0/1D2 – 0/1D6 |
+> | **上级仆从种族** | 15 | **27** | **75%** | 1/1D8 – 1D6/1D20 |
+>
+> **上级组的 HP 是下级组的 2–2.6 倍、攻击技能约两倍**——差距大于同一 tier 内 threat
+> 四档的整个跨度。这正解释了原来 L2/L3 中间两档为什么偏宽:上下级混在一个池子里取
+> 四分位数。`monster-scale.md` 新增「上级/下级」一节承载这条,用法是
+> **书标下级 → 取 trivial/moderate 两行;书标上级 → 取 deadly/mythic 两行**。
+>
+> **两处诚实的限制(已写进产物):**
+> - **护甲不按上下级拆**——L2 只有 3/53 个条目给出护甲值,样本太薄,拆了是假精度
+> - **L4/L5 不动**——书在这两级不标上级/下级;且本轮抽样对 L4 的捕获(3 条)
+>   反而不如阶段 A 原来的 8 条,不拿更差的数去覆盖更好的数
+>
+> **可选后续(未做,留给 Keeper 定):** 本轮的抽样脚本写在 scratchpad,没进 `scripts/`。
+> 产物现在声明了具体覆盖率,但**没人能重跑验证**。若要让出处真正可核对,
+> 可把它固化为 `scripts/sample-malleus.py`——代价是 `scripts/` 多一个一次性工具。
+>
+> **另记一处本轮自查出的错:** 第八轮讨论中一度把属性块数说成 "113",那是只匹配了
+> `| 能力值 |` 一种表头写法的漏数,已在本文件、`update_plan/README.md`、`WORKLOG.md`
+> 全部订正为 223。**定案 9 的结论不受影响**(223 比 113 更不该逐只建文件),
+> 但阶段 B 的人写量翻倍:索引摘要要填 **223 条**,不是 113 条。
+
 - [x] **1. 抽样定区间。** 转录稿换新后属性表已是干净的 Markdown 表格(不再是原计划写
       这条时假设的 OCR 损坏状态),改用脚本抽取全书 238 处分类标签(独立种族/仆从种族/
       唯一存在/五类神格)覆盖的全部 SAN 损失骰式、HP、护甲点数、攻击技能百分比,按四类
       分桶算出真实分布(四分位数),再人工抽样核对分桶结果是否合理。**不是原计划设想的
       "200 行人工逐条判读"**,但达成同一目的(真实区间、不是估算)——旧稿状态下脚本
       会读出乱码,新稿状态下脚本读数可靠,人工判读的必要性随转录质量一起降低了。
-- [x] **2. 新建 `reference/rules/monster-scale.md`。** 五级阶梯(human 不在表内 +
+- [x] **2. 新建 `reference/rules/monster-scale.md`。**(第八轮修订:样本数 240 → **223**、
+      补覆盖率声明、新增「上级/下级」一节。详见上面的复核结论。)五级阶梯(human 不在表内 +
       creature/servitor/unique/deity 四档实际有数据)、threat 四档在级内的区间(取样本
       四分位数)、跨级重叠规则、各级词条负载上限(L2/L3=2、L4=3、L5=4)。取材源标注为
       "抽样约 240 个属性块",不摘原文。
@@ -496,29 +625,51 @@ Keeper 交付了 `reference/sourcebooks/malleus-monstrorum-zh.md` 的重排版�
 - [x] **8. 改 `reference/bestiary/README.md`。** tag 换新分类;加古神级条目归
       `mythos/great-old-ones/` 的分工说明。
 
-### 阶段 B — 索引层机制
+### 阶段 B — 索引层机制(全部完成,2026-08-03,等提交)
 
-- [ ] **9. 扩 `scripts/build-reference-index.py`。** 解析 bestiary 条目 header 的
-      `Type` / `Threat` / `Serves` / `Sanity to see` 与索引摘要行,写进
-      `reference/bestiary/index.json` 的语义部分;并**生成**
-      `reference/tables/monster-index.md`。生成物顶部要写"由脚本生成,不要手改"
-      (与 `index.json` 同一条惯例)。**索引摘要缺失应当报错**,和缺 `## 引用出处`
-      一样是硬校验——否则字段会悄悄空着。
-- [ ] **10. 改 `templates/monster.md` 与 `reference/bestiary/README.md`,加两个新字段。**
-      header 加 **`Serves:`**(关联神格,或 `Independent — serves no god`);
-      加一行 **索引摘要(≤40 字)**。README 写清**索引摘要 ≠ Reveal**:
-      Reveal 念给玩家,索引摘要给模型匹配,写"是什么 / 谁的 / 关卡里什么角色 /
-      适配什么主题",**两段并存不合并**。
-- [ ] **11. 校准现有 9 只 + 补新字段。** 逐只重标 `type`/`threat`,按新区间核 SAN 与数值,
-      补 `Serves:` 与索引摘要。已知必改的两处:`deep-one-hybrid.md` 的
-      `independent race` → 仆从种族(malleus 归类);8/9 都是 `deadly` 的退化按新区间
-      重判。**逐只在本文件记一行改了什么**,别只勾这一个框。
-- [ ] **12. 反向接线:神格文件列出自己的眷族。** `reference/mythos/great-old-ones/cthulhu.md`
-      的「挂钩」一节现在链了教团、手法、史料却**不链眷族**——补上,并把这条写成
-      `reference/mythos/README.md` 里神格文件的必备小节,让后铺的神格照做。
-- [ ] **13. 改 `core/07-create-monster.md` 与 `core/04-design-scenario.md`,把检索入口接上。**
-      设计关卡挑怪物时**先读 `reference/tables/monster-index.md`**——这是整个索引层
-      的消费点,不接线等于白建。
+**⚠️ 阶段 B 按定案 9 拆成机制(9–10)与内容(10.5)两半**——索引表覆盖 223 只,
+但只有 9 只有 bestiary 条目,其余 214 只的 `Serves` 与摘要**必须人写**。
+**实际执行时机制与内容在同一个会话里一次做完**,内容部分用 8 个并行 subagent 分块
+读转录稿原文起草,没有按原计划拆两个上下文——详见 `WORKLOG.md` 会话记录。
+
+- [x] **9. 扩 `scripts/build-reference-index.py`——脚手架 + 校验两件事。**
+      新增 `parse_malleus_entries()`:纯正则逐行扫描,抓全部 223 处 `| 力量` 行
+      (与转录稿头部自报数字一致,逐一核对过),每处向上找最近的整行加粗名称标题
+      (踩过一个坑:最初"行内出现 `**` 和括号"就当标题,被段中加粗小标题
+      「**触肢攻击**:……(小数点后无条件省略)……」误配,已改成要求 `**` 锚定在行尾)、
+      向上找最近的分类标签(下级/上级 + 独立种族/仆从种族/唯一存在/五类神格,不设窗口,
+      取最近一个)、向下 150 行内找理智值丧失/损失行。SAN 有 11 条(约 5%)转录稿里确实
+      没有独立成行的数值,留空是真实缺失不是漏抓。
+      **(b) 合并:** `parse_bestiary_headers()` 解析 bestiary 条目 header 的
+      `Tier`/`Threat`/`Sanity to see`/`Serves`/`Index summary`,`mi_match_bestiary()`
+      按英文名整词匹配(要求 4 字以上单词全部命中,不是子串——子串匹配曾把 `Black Wing`
+      误配到 `BURROWING Horrors`)覆盖同名行,权威性:bestiary 条目 > 转录稿抽取。
+      **(c) 校验:** `build()` 把 `build_monster_index()` 的空值问题并入总 problems 列表,
+      与缺 `## 引用出处` 同级触发 `--check` 非零退出。
+      生成物顶部写"由脚本生成,不要手改"。
+      **顺手用书自带的上级/下级标签定 tier/subtier**,已接入。
+- [x] **10. 改 `templates/monster.md` 与 `reference/bestiary/README.md`。**
+      (a) header 加了 `Serves:` 与 `Index summary`(≤40 字符,英文,跟现有 bestiary
+      条目的英文惯例);
+      (b) README 写清索引摘要 ≠ Reveal,两段并存不合并;
+      (c) 写清 `bestiary/` 新定位("用过的怪物档案,不是图鉴")。
+- [x] **10.5. 填 223 条 `Serves` 与索引摘要。** 8 个并行 subagent 各带真实行号范围
+      读转录稿原文起草,汇总校验(行数/字段数/idx 连续性)一次通过,存进新文件
+      `reference/tables/monster-index-data.json`(JSON,不进 bundle,是脚本的数据源,
+      不是给人读的产物;真正给人读的产物是脚本生成的 `monster-index.md`)。
+      约一二十条 `Serves` 标了"推测:"前缀——转录稿本身语焉不详或自相矛盾的条目
+      (如 idx=219"暗之恶魔"疑似与 idx=213 重复),照实标注,不是本轮遗留问题。
+- [x] **11. 校准现有 9 只 + 补新字段。** `deep-one-hybrid.md` 的 `independent-race` →
+      `servitor-race`(malleus 归类,已知必改项)。threat 改判两处:`fellrock.md`
+      deadly → mythic(HP/SIZ/STR/CON 早过 `monster-scale.md` 的 L2 deadly 上限,
+      且设计本就是"劝退不劝打");`thrall-of-cthulhu.md` deadly → moderate(malleus
+      标它是"下级仆从种族",按上级/下级指南该取轻档,SAN 数值沿用原书数字未改)。
+      其余 6 只 threat 核对后与原标签一致,未改动。9 只全部补了 `Tier`/`Serves`/
+      `Index summary`。改动理由直接写在各文件的 header 里,不止存在这份计划文件中。
+- [x] **12. 反向接线:神格文件列出自己的眷族。** `cthulhu.md` 新增「眷族与仆从」一节,
+      `reference/mythos/README.md` 定为神格文件必备小节,供阶段 C 新神格照做。
+- [x] **13. 改 `core/07-create-monster.md` 与 `core/04-design-scenario.md`,把检索入口接上。**
+      两处都加了"挑怪物先查 `reference/tables/monster-index.md`"。
 
 ### 阶段 C — 神格铺设
 
@@ -534,10 +685,13 @@ Keeper 交付了 `reference/sourcebooks/malleus-monstrorum-zh.md` 的重排版�
 
 ### 收尾(每阶段各走一次)
 
-- [ ] **16. 重跑两个脚本。** `scripts/build-bundle.sh`(动了 `core/`、`templates/`、
-      `reference/`)与 `python scripts/build-reference-index.py`(**必须报 no problems**)。
-- [ ] **17. 走 `update_plan/README.md` 的完结清单。** CHANGELOG(写面向 Keeper 的变化)、
-      WORKLOG、三适配器一致性、状态两处同步;**三个阶段全部完成后**才归档。
+- [x] **16. 重跑两个脚本。**(阶段 B,2026-08-03)`scripts/build-bundle.sh`
+      (5291 行,59 个文件)与 `python scripts/build-reference-index.py --check`
+      均干净通过,无 problems。
+- [x] **17. 走 `update_plan/README.md` 的完结清单。**(阶段 B,2026-08-03)CHANGELOG、
+      WORKLOG 均已更新;三适配器本轮未改动行为(改动全在 `core/07`/`core/04` 加一句
+      指路,两份都已同步,无需碰 `CLAUDE.md`/`GEMINI.md`/`AGENTS.md`);状态表见
+      `update_plan/README.md`。**阶段 C 未完成,本计划暂不归档。**
 
 **本计划完结后解锁:** 无下游硬依赖(P1 第四章的造物内容可选用,但从来不是硬前置)。
 `update_plan/README.md` 依赖图里 `KeeperRed → P9` 这条箭头**已在本轮定案时删除**。

@@ -3,9 +3,12 @@
 *A drowned lighthouse-keeper's watch that never ended — and never will, as long as the bell
 above the rocks keeps ringing.*
 
-- **Type:** mythos servitor / undead
+- **Type:** servitor-race (undead)
+- **Tier:** L3 servitor
 - **Threat:** deadly
 - **Sanity to see:** 1D4/1D10
+- **Serves:** Independent — serves no god (bound to its lighthouse, not a cult or deity)
+- **Index summary:** Undead lighthouse keeper; banished by matching his true bell pattern
 
 ## Reveal (say this out loud, before the SAN roll)
 

@@ -8,7 +8,11 @@ what a tome contains and its Sanity/Cthulhu Mythos rewards — so any campaign c
 Plot hooks that tie a specific entity to a specific game live in that campaign.
 
 Suggested files as you grow:
-- `great-old-ones/<name>.md` — nature, cult, signs, what waking it costs.
+- `great-old-ones/<name>.md` — nature, cult, signs, what waking it costs. **Must include a
+  `## 眷族与仆从 (Servitors & kin)` section** (see `cthulhu.md` for the shape) — a few named
+  servitor races and family members plus a pointer to `reference/tables/monster-index.md`
+  (searchable by `Serves`) for the rest. Without it, "boss X — what's the elite guard?" has no
+  answer from this file alone; the index only has half the picture without the reverse link.
 - `tomes/<title>.md` — language, study time, SAN loss, Cthulhu Mythos gain, spells taught.
 - `spells/<name>.md` — cost (MP, SAN, POW), casting time, effect.
 - `cults/<name>.md` — goals, structure, membership, iconography.

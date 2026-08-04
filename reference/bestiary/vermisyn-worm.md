@@ -3,9 +3,12 @@
 *A hookworm the length of a car surfaces in the sewer light — segmented, eyeless, its small
 misshapen mouth working around something wet it's about to say to you.*
 
-- **Type:** independent race
+- **Type:** independent-race
+- **Tier:** L2 creature
 - **Threat:** deadly
 - **Sanity to see:** 1D2/1D8
+- **Serves:** Cthulhu (indirectly — serves his other servants more often than him directly; see Lore)
+- **Index summary:** Sewer worm with 6m reach; shares memory, feeds on Mythos knowledge
 
 ## Reveal (say this out loud, before the SAN roll)
 

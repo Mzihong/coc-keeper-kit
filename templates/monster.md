@@ -7,6 +7,12 @@
 - **Tier:** <L2 creature / L3 servitor / L4 unique / L5 deity — see `reference/rules/monster-scale.md`>
 - **Threat:** <trivial / moderate / deadly / mythic — the ± inside the tier, not a replacement for it>
 - **Sanity to see:** <X/Y>
+- **Serves:** <the deity/faction this creature answers to, e.g. "Cthulhu" — or exactly
+  "Independent — serves no god" if it doesn't. This is the field `reference/tables/monster-index.md`
+  reads to answer "what's this boss's elite guard?" — see `core/07-create-monster.md`.>
+- **Index summary:** <one clause, ≤40 characters, in English — what it is / whose it is / what
+  role it plays at the table. NOT the Reveal, NOT flavour prose — this is what a Keeper scans
+  to pick between similar-tier creatures without opening the file. The two never merge.>
 
 ## Reveal (say this out loud, before the SAN roll)
 <2–4 sensory sentences — wrongness, sound, smell, motion. Lead with the image, then call

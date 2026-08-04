@@ -3,9 +3,12 @@
 *A man-shaped thing unfolds leathery wings from arms too long to be arms, and the mouth under
 its eyeless face is an insect's mouth, wrong on a face that size.*
 
-- **Type:** mythos servitor
+- **Type:** servitor-race
+- **Tier:** L3 servitor
 - **Threat:** deadly
 - **Sanity to see:** 0/1D6
+- **Serves:** Cthulhu (contested — see Lore; also theorised as Star-Spawn offshoot or independent)
+- **Index summary:** Flying night hunter; snatches lone victims, can't be bound — only fed
 
 ## Reveal (say this out loud, before the SAN roll)
 

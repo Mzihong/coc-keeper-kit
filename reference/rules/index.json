@@ -22,53 +22,18 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 92,
+          "line": 130,
           "context": "- `character-creation.md` 补齐年龄补正、Build/伤害加值、技能基础值等建卡数据,可用来审核他人交的卡。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 106,
+          "line": 144,
           "context": "- `character-creation.md` 各小节补上数据来源指路(标明取自哪个源文件/章节)。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 93,
+          "line": 97,
           "context": "补全全部缺失字段,加了硬性算术+阈值型双层自校验;`core/13`/`character-creation.md`/"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 308,
-          "context": "`reference/rules/character-creation.md`**(新增 §11)。内容:普通人类基线 = 照"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 330,
-          "context": "`cult-leader-positions.md` + `character-creation.md` §11 两处指路。"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 338,
-          "context": "P4 的落点没有另开新文件——`reference/rules/character-creation.md` 已经是\"KP 专用的"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 605,
-          "context": "会话对 `core/13`/`core/01`/`character-creation.md`/`templates/investigator.md`/"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 645,
-          "context": "规则,换成\"渲染永远面向 KP\"的声明。顺带发现 `reference/rules/character-creation.md`"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 655,
-          "context": "`reference/rules/character-creation.md` §5 已经落盘的权威数字是 90%,75% 是这份计划"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 696,
-          "context": "`scripts/render-investigator.py`、`reference/rules/character-creation.md` 等)工作区"
         },
         {
           "file": "core/01-intake.md",
@@ -102,7 +67,7 @@
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 30,
+          "line": 37,
           "context": "villain is built with `reference/rules/character-creation.md` §11 (baseline + increment),"
         },
         {
@@ -142,12 +107,12 @@
         },
         {
           "file": "reference/rules/monster-scale.md",
-          "line": 7,
+          "line": 10,
           "context": "> **Human antagonists don't use this ladder** — `reference/rules/character-creation.md` §11."
         },
         {
           "file": "reference/rules/monster-scale.md",
-          "line": 15,
+          "line": 18,
           "context": "| **L1 — human** | *(not covered here)* | A cult leader, a hired gun, an obsessed academic. `character-creation.md` §11. |"
         },
         {
@@ -187,23 +152,18 @@
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 252,
+          "line": 257,
           "context": "> | 档位区间 + 词条负载上限 | **`reference/rules/monster-scale.md`**(新建) | 与人类侧成对。P4 最终落进 `reference/rules/character-creation.md` §11,两份并列在 `reference/rules/` 下,`core/02`"
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 257,
+          "line": 262,
           "context": "> 依附于已有的车卡流程(§1–§5);怪物侧**没有可依附的宿主**(`character-creation.md`"
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 274,
+          "line": 279,
           "context": "> | 人类 | (书不收) | `human` | **不在本尺内**,走 `character-creation.md` §11(P4 已落盘) |"
-        },
-        {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 478,
-          "context": "样本量与选样理由写进产物的「来源」注(样板见 `reference/rules/character-creation.md`)。"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -356,7 +316,7 @@
           "context": "| P8 | [investigator-render-gaps](2026-08-02-investigator-render-gaps.md) | 投资者卡渲染缺口:`spells`/`cthulhu_mythos`/`notes`/P6 重建后新增字段(`occupation_detail`/`age_modif"
         }
       ],
-      "reference_count": 67
+      "reference_count": 59
     },
     {
       "file": "chases.md",
@@ -402,7 +362,7 @@
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 8,
+          "line": 15,
           "context": "- **Read `core/02-rules-reference.md`** — especially `reference/rules/combat.md` (Build,"
         },
         {
@@ -436,58 +396,18 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 35,
+          "line": 38,
           "context": "- **法术、仪式、魔法书终于有了数值标尺。** 新增 `reference/rules/magic.md`:施法消耗"
         },
         {
           "file": "WORKLOG.md",
-          "line": 85,
+          "line": 89,
           "context": "`reference/rules/magic.md`,`core/02`/`core/07`/`reference/mythos/README.md` 已接线。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 89,
+          "line": 93,
           "context": "三值、泛读/精读两阶段、重复精读耗时翻倍),`magic.md` 的魔法书章节改成从这份规则书"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 252,
-          "context": "与 `build-reference-index.py` 的行号惯例同族)→ L2 `rules/magic.md`(P7 既定产出,"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 276,
-          "context": "两条路(退轴级浏览 / 按 `magic.md` 区间自造入 `mythos/spells/`)。`all auto` 走反向:"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 285,
-          "context": "调查员公平出路。**设计铁律(进 magic.md):反制法术的代价必须比被反制法术低至少一档**,"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 594,
-          "context": "1. **`reference/rules/magic.md` 落盘**:施法通则(消耗记法、施法用时的 DEX+50/N轮 规则、"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 607,
-          "context": "397 行变化,远超 magic.md 一个文件该有的量)。提交它们等于替 P8 提前定稿一份它自己"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 609,
-          "context": "4. **提交范围限定为本计划确实拥有的文件**:`reference/rules/magic.md`(新增)、"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 678,
-          "context": "还没有 `magic.md`,答案是\"两者互不阻塞\";P7 落盘后复核确认两边改动的文件确实没有"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 688,
-          "context": "`magic.md`(84dba55)已经提交,所以 `dist/bundle.md` 与全部 `reference/**/index.json`"
         },
         {
           "file": "core/02-rules-reference.md",
@@ -501,17 +421,17 @@
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 93,
+          "line": 100,
           "context": "- Spellcasters: list spells and their MP/SAN costs — read `reference/rules/magic.md` for the"
         },
         {
           "file": "reference/mythos/README.md",
-          "line": 16,
+          "line": 20,
           "context": "**Read `reference/rules/magic.md` first** — it's the distilled cost-tier ladder, casting-time"
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 68,
+          "line": 73,
           "context": "`reference/rules/magic.md` 是同一条路,不是新方法"
         },
         {
@@ -585,18 +505,48 @@
           "context": "| P7 | [magic-quickref](2026-08-02-magic-quickref.md) | 魔法速查 `reference/rules/magic.md`:施法通则(消耗记法、施法用时、POW 对抗)、按 `grand-grimoire-zh.md` 抽样得出的四档消耗区间(小术/中术/大术/仪式级"
         }
       ],
-      "reference_count": 30
+      "reference_count": 22
     },
     {
       "file": "monster-scale.md",
       "path": "reference/rules/monster-scale.md",
       "title": "Monster Scale — cheat-sheet",
-      "lines": 122,
+      "lines": 150,
       "declared_consumers": [
         "reference/rules/character-creation.md",
         "reference/sourcebooks/malleus-monstrorum-zh.md"
       ],
       "referenced_by": [
+        {
+          "file": "CHANGELOG.md",
+          "line": 72,
+          "context": "`reference/rules/monster-scale.md`:五级强度阶梯(独立种族 → 仆从种族 → 唯一存在 →"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "line": 81,
+          "context": "- **挑怪物强度时先看书上的「上级/下级」标签,它比自己估更准。** `monster-scale.md`"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 102,
+          "context": "- **阶段 A**(标尺与词条):`reference/rules/monster-scale.md` + 五级强度阶梯 +"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 149,
+          "context": "上级/下级重新抽样、`monster-scale.md` 改样本数)后没有提交就结束了。本轮没有单独处理"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 184,
+          "context": "`Threat` 从 deadly 改判 mythic(HP 40、SIZ/STR/CON 各 200,早已过 `monster-scale.md`"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 188,
+          "context": "(malleus 原文把这个条目标成\"下级仆从种族\",按 `monster-scale.md` 的上级/下级"
+        },
         {
           "file": "core/02-rules-reference.md",
           "line": 16,
@@ -609,12 +559,12 @@
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 11,
+          "line": 18,
           "context": "`reference/rules/monster-scale.md` before assigning any number. Five tiers, ordered by power:"
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 24,
+          "line": 31,
           "context": "that sets fine-grained stat scale and SAN **inside** a tier — `monster-scale.md` has the"
         },
         {
@@ -629,13 +579,23 @@
         },
         {
           "file": "templates/monster.md",
-          "line": 32,
+          "line": 38,
           "context": "- **Trait load total:** 0 / <tier ceiling — L2/L3 = 2, L4 = 3, L5 = 4, see `monster-scale.md`>"
         },
         {
+          "file": "reference/bestiary/fellrock.md",
+          "line": 8,
+          "context": "- **Threat:** mythic — recalibrated against `reference/rules/monster-scale.md`'s L2 bands"
+        },
+        {
           "file": "reference/bestiary/README.md",
-          "line": 24,
+          "line": 36,
           "context": "`reference/rules/monster-scale.md`), `threat` (trivial / moderate / deadly / mythic — the ±"
+        },
+        {
+          "file": "reference/bestiary/thrall-of-cthulhu.md",
+          "line": 9,
+          "context": "下级仆从种族 (lesser servitor race); per `reference/rules/monster-scale.md`'s 上级/下级"
         },
         {
           "file": "reference/tables/monster-traits.md",
@@ -653,57 +613,82 @@
           "context": "| 免疫常规武器 (Conventional immunity) | 非附魔/非特殊材质武器造成最小伤害(1点) | 2 | 必须点名至少一种能正常伤害它的手段,且这手段要能被调查员找到 | L4/L5 常见,是\"数值免疫\"的标准写法,见 `monster-scale.md` 护甲惯例 |"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "file": "scripts/build-reference-index.py",
           "line": 241,
+          "context": "# classification labels onto that ladder (reference/rules/monster-scale.md)."
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 5,
+          "context": "> 阶段 A:`reference/rules/monster-scale.md` + `reference/tables/monster-traits.md`,"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 246,
           "context": "- 档位区间:进 `core/07` 正文,还是新开 `reference/rules/monster-scale.md`"
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 252,
+          "line": 257,
           "context": "> | 档位区间 + 词条负载上限 | **`reference/rules/monster-scale.md`**(新建) | 与人类侧成对。P4 最终落进 `reference/rules/character-creation.md` §11,两份并列在 `reference/rules/` 下,`core/02`"
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 254,
+          "line": 259,
           "context": "> | type 重排后的**分类定义** | **`core/07-create-monster.md` 正文** | 分类是 spec 的一部分,不是数值。数值全在 `monster-scale.md`,`core/07` 只说\"有哪几类、各是什么\",并指路过去 |"
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 290,
+          "line": 295,
           "context": "> 并在 `monster-scale.md` 里标为\"古神级下沿子档\"。"
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 404,
-          "context": "`bestiary/`,所以 `monster-scale.md` 的古神级区间要同时覆盖那个目录,"
-        },
-        {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 429,
-          "context": "| 5 落点 | `reference/rules/monster-scale.md` + `reference/tables/monster-traits.md` + 分类定义进 `core/07` |"
-        },
-        {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 479,
-          "context": "- [ ] **2. 新建 `reference/rules/monster-scale.md`。** 五级基线区间 + threat 四档在级内的"
+          "line": 466,
+          "context": "`reference/rules/monster-scale.md` 只有 tier + threat 四档。这不是错——threat 四档"
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
           "line": 487,
-          "context": "等 P9 落地\"的占位文字(第 14–17 行),改指 `monster-scale.md`;"
+          "context": "`bestiary/`,所以 `monster-scale.md` 的古神级区间要同时覆盖那个目录,"
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 494,
-          "context": "- [ ] **6. 改 `core/02-rules-reference.md`。** Cheat-sheets 登记 `monster-scale.md`;"
+          "line": 512,
+          "context": "| 5 落点 | `reference/rules/monster-scale.md` + `reference/tables/monster-traits.md` + 分类定义进 `core/07` |"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 570,
+          "context": "> 1. ✅ **样本数改正。** `monster-scale.md` 头部原写 \"roughly 240 stat blocks\",改为"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 585,
+          "context": "> 四分位数。`monster-scale.md` 新增「上级/下级」一节承载这条,用法是"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 608,
+          "context": "- [x] **2. 新建 `reference/rules/monster-scale.md`。**(第八轮修订:样本数 240 → **223**、"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 621,
+          "context": "- [x] **6. 改 `core/02-rules-reference.md`。** Cheat-sheets 登记 `monster-scale.md`;"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 664,
+          "context": "deadly → mythic(HP/SIZ/STR/CON 早过 `monster-scale.md` 的 L2 deadly 上限,"
         },
         {
           "file": "update_plan/README.md",
           "line": 13,
-          "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:五级阶梯的档位区间、按 malleus 四类重排的 type、数值词条(强化)系统与其负载预算 | 待执行(阻塞已解除,2026-08-03 Keepe"
+          "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:五级阶梯的档位区间、按 malleus 四类重排的 type、数值词条(强化)系统与其负载预算 | 进行中(阶段 A + B 已完成,阶段 C 待开始;"
         }
       ],
-      "reference_count": 21
+      "reference_count": 34
     },
     {
       "file": "sanity.md",
@@ -719,12 +704,12 @@
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 42,
+          "line": 46,
           "context": "each ending with a **suggested SAN reward** per `reference/rules/sanity.md`'s scenario-end"
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 9,
+          "line": 16,
           "context": "Damage Bonus, HP) and `reference/rules/sanity.md` (X/Y loss). Numbers must be 7e-correct."
         },
         {

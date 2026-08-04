@@ -46,6 +46,27 @@
   干预的范围,登场应该始终是"教团的所作所为",而不是克苏鲁本身。这是设计取舍,不是规则
   限制
 
+## 眷族与仆从(Servitors & kin)
+
+查"黄衣之王是 boss,这里的精英怪应该是什么"这类问题,先查
+[`reference/tables/monster-index.md`](../../tables/monster-index.md)(`Serves` 一列全文可搜)——
+下面只列克苏鲁自己最常用得上的几档,不是全表复制。
+
+- **L3 仆从种族**(怪物/精英怪首选):深潜者 Deep Ones、混血深潜者 Deep One Hybrids、
+  克苏鲁的仆役 Thralls of Cthulhu、克苏鲁星之眷族 Star-Spawn of Cthulhu、
+  深渊之民 Dwellers in the Depths、爬行者 Crawling Ones(与伊索格达共享)——
+  均见 `reference/sourcebooks/malleus-monstrorum-zh.md`
+- **L5 血亲**(家族关系,不是仆从,场景里更像盟友/对手):克希拉 Cthylla(女)、
+  加塔诺托亚 Ghatanothoa、依托格萨 Ythogtha(子)、伊德·雅 Idh-Yaa(配偶)、
+  卡索格萨 Kassogtha(新娘)、克塔尼德 Kthanid(旧神阵营的"孪生兄弟",与克苏鲁对立)、
+  恩克托萨与恩克托鲁 Nctosa & Nctolhu(双生孙女)
+- **已在本 kit 写成完整条目**(`reference/bestiary/`,可直接上桌):
+  [Thrall of Cthulhu](../../bestiary/thrall-of-cthulhu.md)、
+  [Cthulhu-Blessed](../../bestiary/cthulhu-blessed.md)、
+  [Fellrock](../../bestiary/fellrock.md)(多数群体,非全部确认)、
+  [Vermisyn Worm](../../bestiary/vermisyn-worm.md)(间接,服侍其他仆从更常见)、
+  [Black Wing](../../bestiary/black-wing.md)(起源存疑,三种裁定之一即效忠克苏鲁)
+
 ## 挂钩
 
 - 目睹本体/征兆的 Sanity 损失、Cthulhu Mythos 增益由 `core/02-rules-reference.md` 定,

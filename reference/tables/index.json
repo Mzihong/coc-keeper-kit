@@ -7,7 +7,7 @@
   "usage_rule": "authored by this kit — read and used directly, no citation required",
   "in_bundle": true,
   "generated_by": "scripts/build-reference-index.py — do not edit by hand",
-  "entry_count": 12,
+  "entry_count": 13,
   "entries": [
     {
       "file": "complications.md",
@@ -26,7 +26,7 @@
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 55,
+          "line": 59,
           "context": "`reference/tables/complications.md`), and likely stopping points."
         },
         {
@@ -88,11 +88,6 @@
         "reference/craft/cult-design-zh.md"
       ],
       "referenced_by": [
-        {
-          "file": "WORKLOG.md",
-          "line": 321,
-          "context": "配套四张骰表:`cult-goals.md`(愿望 1D10 × 手段 1D8,两表相乘才是完整目标;源表"
-        },
         {
           "file": "core/01-intake.md",
           "line": 44,
@@ -174,7 +169,7 @@
           "context": "`tables/cult-goals.md`、`tables/cult-leader-positions.md`、"
         }
       ],
-      "reference_count": 17
+      "reference_count": 16
     },
     {
       "file": "cult-leader-positions.md",
@@ -186,16 +181,6 @@
         "reference/rules/character-creation.md"
       ],
       "referenced_by": [
-        {
-          "file": "WORKLOG.md",
-          "line": 322,
-          "context": "标称手段 1D10 实际只有 8 条,骰值区间已诚实重建为 1D8)、`cult-leader-positions.md`"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 330,
-          "context": "`cult-leader-positions.md` + `character-creation.md` §11 两处指路。"
-        },
         {
           "file": "core/03-build-world.md",
           "line": 48,
@@ -237,7 +222,7 @@
           "context": "`tables/cult-goals.md`、`tables/cult-leader-positions.md`、"
         }
       ],
-      "reference_count": 10
+      "reference_count": 8
     },
     {
       "file": "cult-power-sources.md",
@@ -248,11 +233,6 @@
         "reference/tables/cult-goals.md"
       ],
       "referenced_by": [
-        {
-          "file": "WORKLOG.md",
-          "line": 323,
-          "context": "(首领社会定位 1D10,每条保留\"带来什么便利\")、`cult-power-sources.md`(力量来源"
-        },
         {
           "file": "templates/cult.md",
           "line": 7,
@@ -299,7 +279,7 @@
           "context": "`tables/cult-power-sources.md`、d20 外貌/气质表、`tables/cultist-archetypes.md`"
         }
       ],
-      "reference_count": 10
+      "reference_count": 9
     },
     {
       "file": "cultist-archetypes.md",
@@ -320,28 +300,8 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 71,
+          "line": 75,
           "context": "**③ 具名角色 + 绑定商业产品**(如 `cultist-archetypes.md` 里那位\"卡尔·斯坦福\")"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 421,
-          "context": "1. **12 组人类邪教徒范型 + 祝福菜单 + 永生大师工具包落盘** `reference/tables/cultist-archetypes.md`。"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 503,
-          "context": "cultist-archetypes.md`/八个 bestiary 条目、走一遍 `review-material` 审计新增内容、"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 725,
-          "context": "`tables/cultist-archetypes.md`(第四章的邪教徒范型表从未进过这份索引);"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 745,
-          "context": "文件本身有没有漏掉自己\"——`cultist-archetypes.md` 是第四章最后落盘的一批内容之一"
         },
         {
           "file": "core/06-create-npc.md",
@@ -360,17 +320,17 @@
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 119,
+          "line": 124,
           "context": "> `reference/tables/cultist-archetypes.md`。要点:"
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 130,
+          "line": 135,
           "context": ">    (如 `cultist-archetypes.md` 里的\"卡尔·斯坦福\")仍不收录。**这条三分法是执行时"
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 382,
+          "line": 387,
           "context": "> 且 `reference/tables/` 已有中文表(`cultist-archetypes.md`)。"
         },
         {
@@ -394,7 +354,7 @@
           "context": "按 STR+SIZ 表、MP=POW/5,**全部正确**,与 `cultist-archetypes.md` 头部\"12 组基础数值"
         }
       ],
-      "reference_count": 15
+      "reference_count": 11
     },
     {
       "file": "hooks.md",
@@ -513,6 +473,171 @@
       "reference_count": 3
     },
     {
+      "file": "monster-index.md",
+      "path": "reference/tables/monster-index.md",
+      "title": "Monster Index — navigation table",
+      "lines": 262,
+      "declared_consumers": [
+        "core/04-design-scenario.md",
+        "core/07-create-monster.md",
+        "reference/bestiary/*.md",
+        "reference/sourcebooks/malleus-monstrorum-zh.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "CHANGELOG.md",
+          "line": 88,
+          "context": "新增 `reference/tables/monster-index.md`,覆盖怪物图鉴全部 223 个条目 + 现有 9 只"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "line": 102,
+          "context": "`reference/tables/monster-index.md` 再动手写,不用翻原文猜。"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 108,
+          "context": "`reference/tables/monster-index.md`(进 bundle)。校验和缺引用出处同级——"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 130,
+          "context": "`reference/tables/monster-index.md` **在** `tables/` 白名单里,已确认进 bundle。"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 173,
+          "context": "4. **`reference/tables/monster-index.md`(生成,不手改)**:合并转录稿抽取结果 + 上面"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 197,
+          "context": "`reference/tables/monster-index.md`。"
+        },
+        {
+          "file": "core/04-design-scenario.md",
+          "line": 42,
+          "context": "`reference/tables/monster-index.md` before inventing one from scratch; it indexes all 223"
+        },
+        {
+          "file": "core/07-create-monster.md",
+          "line": 9,
+          "context": "a fitting elite guard/servitor?\") — read `reference/tables/monster-index.md` first. It covers"
+        },
+        {
+          "file": "templates/monster.md",
+          "line": 11,
+          "context": "\"Independent — serves no god\" if it doesn't. This is the field `reference/tables/monster-index.md`"
+        },
+        {
+          "file": "reference/bestiary/README.md",
+          "line": 5,
+          "context": "searchable index over all 223 (plus everything here) is `reference/tables/monster-index.md`."
+        },
+        {
+          "file": "reference/bestiary/README.md",
+          "line": 16,
+          "context": "reasoning: transcript = full catalogue, `monster-index.md` = searchable summary, `bestiary/` ="
+        },
+        {
+          "file": "reference/bestiary/README.md",
+          "line": 40,
+          "context": "Two more header fields feed `reference/tables/monster-index.md` and are **mandatory** — a blank"
+        },
+        {
+          "file": "reference/mythos/README.md",
+          "line": 13,
+          "context": "servitor races and family members plus a pointer to `reference/tables/monster-index.md`"
+        },
+        {
+          "file": "reference/mythos/great-old-ones/cthulhu.md",
+          "line": 52,
+          "context": "[`reference/tables/monster-index.md`](../../tables/monster-index.md)(`Serves` 一列全文可搜)——"
+        },
+        {
+          "file": "scripts/build-reference-index.py",
+          "line": 18,
+          "context": "reference/tables/monster-index.md  the 223-entry malleus navigation table (see below)"
+        },
+        {
+          "file": "scripts/build-reference-index.py",
+          "line": 29,
+          "context": "`reference/tables/monster-index.md` is a special case within `tables/`: instead of citing one"
+        },
+        {
+          "file": "scripts/build-reference-index.py",
+          "line": 42,
+          "context": "- every row in `monster-index.md` has a non-empty `Serves` and index summary — a half-filled"
+        },
+        {
+          "file": "scripts/build-reference-index.py",
+          "line": 222,
+          "context": "MONSTER_INDEX_OUT_PATH = os.path.join(REF, \"tables\", \"monster-index.md\")"
+        },
+        {
+          "file": "scripts/build-reference-index.py",
+          "line": 378,
+          "context": "\"\"\"Generate reference/tables/monster-index.md — the navigation table over all 223 malleus"
+        },
+        {
+          "file": "scripts/build-reference-index.py",
+          "line": 421,
+          "context": "problems.append(\"reference/tables/monster-index.md: idx %d (%s) missing %s\" % ("
+        },
+        {
+          "file": "scripts/build-reference-index.py",
+          "line": 426,
+          "context": "problems.append(\"reference/bestiary/%s: missing %s (needed by monster-index.md)\" % ("
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 8,
+          "context": "> `build_monster_index()`,新增 `reference/tables/monster-index.md`(生成)与"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 361,
+          "context": ">   并生成 **`reference/tables/monster-index.md`** 导航表(神格 → 怪物 → 阶梯级/threat →"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 428,
+          "context": "> | **L2 索引表** `reference/tables/monster-index.md` | 名称 / tier / `Serves` / **SAN** / ≤40 字摘要 / 转录稿锚点 | **223 只全覆盖** | 阶段 B |"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 514,
+          "context": "| 8 索引层(新增) | 条目 `Serves:` 字段 + ≤40 字索引摘要为**真源**,**扩 `build-reference-index.py`** 生成 `reference/tables/monster-index.md` 导航表(进 bundle);**P9 顺带铺一批神格** |"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 659,
+          "context": "不是给人读的产物;真正给人读的产物是脚本生成的 `monster-index.md`)。"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 672,
+          "context": "两处都加了\"挑怪物先查 `reference/tables/monster-index.md`\"。"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 13,
+          "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:五级阶梯的档位区间、按 malleus 四类重排的 type、数值词条(强化)系统与其负载预算 | 进行中(阶段 A + B 已完成,阶段 C 待开始;"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 54,
+          "context": "`reference/tables/monster-index.md` 落盘并进 bundle,ChatGPT 链路第一次能看到怪物"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 70,
+          "context": "| 2 | ~~**P9 阶段 B** 索引层~~ | ★★★★☆ | 改 1 个脚本 + 2 个新增(`monster-index.md` 生成物 + `monster-index-data.json` 数据源)+ 回改 9 只 + 3 处接线 + 人写 223 条 `Serves`/摘要 | **已完成**(202"
+        }
+      ],
+      "reference_count": 30
+    },
+    {
       "file": "monster-traits.md",
       "path": "reference/tables/monster-traits.md",
       "title": "monster-traits.md — numeric trait menu",
@@ -521,6 +646,16 @@
         "reference/rules/monster-scale.md"
       ],
       "referenced_by": [
+        {
+          "file": "CHANGELOG.md",
+          "line": 77,
+          "context": "`reference/tables/monster-traits.md`:18 条可挂载的数值词条(再生、分裂、免疫常规"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 103,
+          "context": "`reference/tables/monster-traits.md` 的 18 条数值词条,`core/07` 的 X 已回填。"
+        },
         {
           "file": "core/02-rules-reference.md",
           "line": 42,
@@ -533,61 +668,61 @@
         },
         {
           "file": "templates/monster.md",
-          "line": 30,
+          "line": 36,
           "context": "- <one bullet per trait from `reference/tables/monster-traits.md` — name, its stated 效果 and"
         },
         {
           "file": "reference/bestiary/README.md",
-          "line": 26,
+          "line": 38,
           "context": "`reference/tables/monster-traits.md` and must stay at or under the tier's load ceiling."
         },
         {
           "file": "reference/rules/monster-scale.md",
-          "line": 98,
+          "line": 126,
           "context": "## Trait load budget (feeds `reference/tables/monster-traits.md`)"
         },
         {
           "file": "reference/rules/monster-scale.md",
-          "line": 111,
+          "line": 139,
           "context": "A trait's load cost is defined per-trait in `monster-traits.md`; **sum the loads, don't just"
         },
         {
           "file": "reference/rules/monster-scale.md",
-          "line": 119,
+          "line": 147,
           "context": "**Monster strength = tier baseline (this sheet) + trait load (`monster-traits.md`), capped by"
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 240,
+          "line": 5,
+          "context": "> 阶段 A:`reference/rules/monster-scale.md` + `reference/tables/monster-traits.md`,"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 245,
           "context": "- 词条表:`reference/tables/monster-traits.md`(与现有速查同级)/ `.csv` / `reference/bestiary/_traits.md`"
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 253,
+          "line": 258,
           "context": "> | 词条表 | **`reference/tables/monster-traits.md`**(新建) | 与现有 12 张速查同级。它是**查表件**(生成时逐条挑),不是**规则件**(读一遍就懂),归 `tables/` 不归 `rules/` |"
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 429,
+          "line": 512,
           "context": "| 5 落点 | `reference/rules/monster-scale.md` + `reference/tables/monster-traits.md` + 分类定义进 `core/07` |"
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 482,
-          "context": "- [ ] **3. 新建 `reference/tables/monster-traits.md`。** 数值词条表,列 ="
-        },
-        {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 492,
-          "context": "`Special abilities` 一栏改成**词条挂载点**(指向 `monster-traits.md`),"
+          "line": 613,
+          "context": "- [x] **3. 新建 `reference/tables/monster-traits.md`。** 18 条数值词条,kit 原创设计"
         },
         {
           "file": "update_plan/README.md",
           "line": 13,
-          "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:五级阶梯的档位区间、按 malleus 四类重排的 type、数值词条(强化)系统与其负载预算 | 待执行(阻塞已解除,2026-08-03 Keepe"
+          "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:五级阶梯的档位区间、按 malleus 四类重排的 type、数值词条(强化)系统与其负载预算 | 进行中(阶段 A + B 已完成,阶段 C 待开始;"
         }
       ],
-      "reference_count": 13
+      "reference_count": 15
     },
     {
       "file": "mythos-angles.md",
@@ -599,16 +734,6 @@
         "core/05-event-clock.md"
       ],
       "referenced_by": [
-        {
-          "file": "WORKLOG.md",
-          "line": 258,
-          "context": "打断后果→触发表、〔驱〕〔保〕类反查公平出路;`tables/mythos-angles.md` 20 个角度"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 469,
-          "context": "或家族/独立怪物/场所本身/自然或宇宙现象,auto 默认掷 `mythos-angles.md` 再反推"
-        },
         {
           "file": "core/01-intake.md",
           "line": 41,
@@ -675,7 +800,7 @@
           "context": "\"evidence\": \"Premise centers on Camas Dubh, a storm-locked Skye fishing hamlet bound to a mistranslated century-old rite ('Tàmh na Mara') that unknowingly feeds"
         }
       ],
-      "reference_count": 15
+      "reference_count": 13
     },
     {
       "file": "npc-appearance.md",
@@ -686,16 +811,6 @@
         "core/06-create-npc.md"
       ],
       "referenced_by": [
-        {
-          "file": "WORKLOG.md",
-          "line": 324,
-          "context": "1D4)、`npc-appearance.md`(外貌/气质 1D20,与既有 `npc-quirks.md` 分工:quirks 管"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 329,
-          "context": "六项财源当独立线索来源;`06` 加 `npc-appearance.md`(外貌骰表)与邪教首领指向"
-        },
         {
           "file": "core/06-create-npc.md",
           "line": 41,
@@ -717,7 +832,7 @@
           "context": "- [x] `core/06-create-npc.md` —— 指向新的 `npc-appearance.md`(d20 外貌/气质),"
         }
       ],
-      "reference_count": 6
+      "reference_count": 4
     },
     {
       "file": "npc-quirks.md",
@@ -728,11 +843,6 @@
         "core/06-create-npc.md"
       ],
       "referenced_by": [
-        {
-          "file": "WORKLOG.md",
-          "line": 324,
-          "context": "1D4)、`npc-appearance.md`(外貌/气质 1D20,与既有 `npc-quirks.md` 分工:quirks 管"
-        },
         {
           "file": "core/06-create-npc.md",
           "line": 40,
@@ -779,7 +889,7 @@
           "context": "`core/06-create-npc.md`;与 `npc-quirks.md` 分工:quirks 是**怎么演**,这张是"
         }
       ],
-      "reference_count": 10
+      "reference_count": 9
     }
   ]
 }

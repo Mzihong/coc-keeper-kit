@@ -3,9 +3,12 @@
 *Born to Deep One and human parents, but not a hybrid — this one came out already touched,
 already changed, already the thing the family stopped talking about.*
 
-- **Type:** independent race (human-Deep One offspring, mutant strain)
+- **Type:** independent-race (human-Deep One offspring, mutant strain)
+- **Tier:** L2 creature
 - **Threat:** deadly
 - **Sanity to see:** 1/1D8 to 1D4/1D10
+- **Serves:** Cthulhu (sacred to Deep Ones as his touched offspring)
+- **Index summary:** Mutant Deep One-Cthulhu hybrid; a directed weapon, not a schemer
 
 ## Reveal (say this out loud, before the SAN roll)
 

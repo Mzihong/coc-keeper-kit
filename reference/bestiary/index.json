@@ -13,67 +13,105 @@
       "file": "black-wing.md",
       "path": "reference/bestiary/black-wing.md",
       "title": "Black Wing (黑翼者)",
-      "lines": 75,
+      "lines": 78,
       "declared_consumers": [],
       "referenced_by": [
+        {
+          "file": "reference/mythos/great-old-ones/cthulhu.md",
+          "line": 68,
+          "context": "[Black Wing](../../bestiary/black-wing.md)(起源存疑,三种裁定之一即效忠克苏鲁)"
+        },
         {
           "file": "reference/mythos/spells/black-wing-call.md",
           "line": 11,
           "context": "召来 1D6 只黑翼者(`reference/bestiary/black-wing.md`)。需要六人协力——施法者加另外"
         },
         {
+          "file": "reference/tables/monster-index.md",
+          "line": 254,
+          "context": "| Black Wing (黑翼者) | L3 servitor | 0/1D6 | Cthulhu (contested — see Lore; also theorised as Star-Spawn offshoot or independent) | Flying night hunter; snatches "
+        },
+        {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 328,
+          "line": 333,
           "context": "| 2 | 关联信息**存在,但埋在散文里** | `black-wing.md` 的 Lore 写了 \"loyal to Cthulhu rather than Nodens\",但不是字段;反过来 `great-old-ones/cthulhu.md` 的「挂钩」链了教团、手法、史料,**唯独不链自己的眷族**。双向"
-        }
-      ],
-      "reference_count": 2
-    },
-    {
-      "file": "cthulhu-blessed.md",
-      "path": "reference/bestiary/cthulhu-blessed.md",
-      "title": "Cthulhu-Blessed (克苏鲁受祝者)",
-      "lines": 57,
-      "declared_consumers": [],
-      "referenced_by": [],
-      "reference_count": 0
-    },
-    {
-      "file": "deep-one-hybrid.md",
-      "path": "reference/bestiary/deep-one-hybrid.md",
-      "title": "Deep One Hybrid (混种深潜者)",
-      "lines": 65,
-      "declared_consumers": [],
-      "referenced_by": [
-        {
-          "file": "reference/bestiary/cthulhu-blessed.md",
-          "line": 51,
-          "context": "> normally produce ordinary hybrids (`deep-one-hybrid.md`) — see"
-        },
-        {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 77,
-          "context": "**顺带查出一个校准 bug:** kit 的 `deep-one-hybrid.md` 标 `independent race`,但 malleus"
-        },
-        {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 452,
-          "context": "(`core/07`、`core/14`、两份 README、`bestiary/deep-one-hybrid.md`、`WORKLOG`、"
-        },
-        {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 516,
-          "context": "补 `Serves:` 与索引摘要。已知必改的两处:`deep-one-hybrid.md` 的"
         }
       ],
       "reference_count": 4
     },
     {
+      "file": "cthulhu-blessed.md",
+      "path": "reference/bestiary/cthulhu-blessed.md",
+      "title": "Cthulhu-Blessed (克苏鲁受祝者)",
+      "lines": 60,
+      "declared_consumers": [],
+      "referenced_by": [
+        {
+          "file": "reference/mythos/great-old-ones/cthulhu.md",
+          "line": 65,
+          "context": "[Cthulhu-Blessed](../../bestiary/cthulhu-blessed.md)、"
+        },
+        {
+          "file": "reference/tables/monster-index.md",
+          "line": 255,
+          "context": "| Cthulhu-Blessed (克苏鲁受祝者) | L2 creature | 1/1D8 to 1D4/1D10 | Cthulhu (sacred to Deep Ones as his touched offspring) | Mutant Deep One-Cthulhu hybrid; a direct"
+        }
+      ],
+      "reference_count": 2
+    },
+    {
+      "file": "deep-one-hybrid.md",
+      "path": "reference/bestiary/deep-one-hybrid.md",
+      "title": "Deep One Hybrid (混种深潜者)",
+      "lines": 69,
+      "declared_consumers": [],
+      "referenced_by": [
+        {
+          "file": "CHANGELOG.md",
+          "line": 92,
+          "context": "- **`reference/bestiary/` 现有 9 只按新标尺重新核过一遍。** `deep-one-hybrid.md` 的"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 182,
+          "context": "新字段;`deep-one-hybrid.md` 的 `Type` 从 independent-race 改成 servitor-race(malleus"
+        },
+        {
+          "file": "reference/bestiary/cthulhu-blessed.md",
+          "line": 54,
+          "context": "> normally produce ordinary hybrids (`deep-one-hybrid.md`) — see"
+        },
+        {
+          "file": "reference/tables/monster-index.md",
+          "line": 85,
+          "context": "| 混血深潜者，印斯茅斯的污点与其他异性混血产物的载体（DEEP ONE HYBRIDS, Carriers of the Innsmouth Taint & Other Weird Hybrids） | 0/1D4 (higher for a visibly advanced individual — 1/1D6+)"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 82,
+          "context": "**顺带查出一个校准 bug:** kit 的 `deep-one-hybrid.md` 标 `independent race`,但 malleus"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 536,
+          "context": "(`core/07`、`core/14`、两份 README、`bestiary/deep-one-hybrid.md`、`WORKLOG`、"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 662,
+          "context": "- [x] **11. 校准现有 9 只 + 补新字段。** `deep-one-hybrid.md` 的 `independent-race` →"
+        }
+      ],
+      "reference_count": 7
+    },
+    {
       "file": "fellrock.md",
       "path": "reference/bestiary/fellrock.md",
       "title": "Fellrock (费尔罗克)",
-      "lines": 81,
-      "declared_consumers": [],
+      "lines": 88,
+      "declared_consumers": [
+        "reference/rules/monster-scale.md"
+      ],
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
@@ -81,14 +119,19 @@
           "context": "- 怪物图鉴 `fellrock.md` 的\"沉默之油\"反查链接指向了 `artifacts-zh.md`,但那份文件里"
         },
         {
-          "file": "WORKLOG.md",
-          "line": 731,
-          "context": "发现一处真实错误——`reference/bestiary/fellrock.md` 的\"沉默之油\"反查指向了"
+          "file": "CHANGELOG.md",
+          "line": 93,
+          "context": "type 从独立种族改成仆从种族(malleus 原文就是这么分类的);`fellrock.md` 的 threat"
         },
         {
           "file": "WORKLOG.md",
-          "line": 753,
-          "context": "- **`fellrock.md` 的交叉引用错误是本轮审计唯一发现的问题**——其余检查项(20 组数值"
+          "line": 183,
+          "context": "原文明确把混血深潜者归为仆从种族,这是 P9 定案时就点名的必改项);`fellrock.md` 的"
+        },
+        {
+          "file": "reference/mythos/great-old-ones/cthulhu.md",
+          "line": 66,
+          "context": "[Fellrock](../../bestiary/fellrock.md)(多数群体,非全部确认)、"
         },
         {
           "file": "reference/mythos/spells/fellrock-call-bind.md",
@@ -101,33 +144,48 @@
           "context": "炼制出一种能驱避费尔罗克(`reference/bestiary/fellrock.md`)的魔法油膏——费尔罗克"
         },
         {
+          "file": "reference/tables/monster-index.md",
+          "line": 256,
+          "context": "| Fellrock (费尔罗克) | L2 creature | 1D3/1D10 | Cthulhu (many groups; unconfirmed whether all do — see Lore) | Huge dormant burrower; avoid, ward with Oil of Silen"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 663,
+          "context": "`servitor-race`(malleus 归类,已知必改项)。threat 改判两处:`fellrock.md`"
+        },
+        {
           "file": "update_plan/Archived/2026-08-02-cult-doc-wrapup.md",
           "line": 47,
           "context": "`reference/bestiary/fellrock.md` 的\"沉默之油\"词条指向了 `reference/mythos/artifacts-zh.md`,"
         }
       ],
-      "reference_count": 6
+      "reference_count": 9
     },
     {
       "file": "scarlet-orb.md",
       "path": "reference/bestiary/scarlet-orb.md",
       "title": "Scarlet Orb (猩红者)",
-      "lines": 78,
+      "lines": 81,
       "declared_consumers": [],
       "referenced_by": [
         {
           "file": "reference/mythos/spells/scarlet-orb-call.md",
           "line": 11,
           "context": "召来 3D4 个猩红者(`reference/bestiary/scarlet-orb.md`)。仪式需要一支特制的笛子"
+        },
+        {
+          "file": "reference/tables/monster-index.md",
+          "line": 257,
+          "context": "| Scarlet Orb (猩红者) | L3 servitor | 0 (indirect — see Euphoric Vision) | Cthulhu (theorised, unconfirmed — see Lore) | Drifting light; drains MP/SAN via euphori"
         }
       ],
-      "reference_count": 1
+      "reference_count": 2
     },
     {
       "file": "sedecim.md",
       "path": "reference/bestiary/sedecim.md",
       "title": "Sedecim (塞德西姆, \"the Five\")",
-      "lines": 82,
+      "lines": 85,
       "declared_consumers": [],
       "referenced_by": [
         {
@@ -139,25 +197,30 @@
           "file": "reference/mythos/artifacts-zh.md",
           "line": 98,
           "context": "塞德西姆(`reference/bestiary/sedecim.md`)制造并使用的手持设备,外观是覆盖着不规则"
+        },
+        {
+          "file": "reference/tables/monster-index.md",
+          "line": 258,
+          "context": "| Sedecim (塞德西姆, \"the Five\") | L3 servitor | 0/1D6 | Independent — serves no god (answers to no one within the Church of Perfect Science either; see Lore) | Chu"
         }
       ],
-      "reference_count": 2
+      "reference_count": 3
     },
     {
       "file": "the-bell-keeper.md",
       "path": "reference/bestiary/the-bell-keeper.md",
       "title": "The Bell-Keeper",
-      "lines": 72,
+      "lines": 75,
       "declared_consumers": [],
       "referenced_by": [
         {
-          "file": "WORKLOG.md",
-          "line": 432,
-          "context": "与已有的 `the-bell-keeper.md` 同一约定。"
+          "file": "reference/tables/monster-index.md",
+          "line": 259,
+          "context": "| The Bell-Keeper | L3 servitor | 1D4/1D10 | Independent — serves no god (bound to its lighthouse, not a cult or deity) | Undead lighthouse keeper; banished by "
         },
         {
           "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 282,
+          "line": 287,
           "context": "> 这正是 `the-bell-keeper.md` 已经在做的事(它写的是 `mythos servitor / undead`),"
         }
       ],
@@ -167,25 +230,63 @@
       "file": "thrall-of-cthulhu.md",
       "path": "reference/bestiary/thrall-of-cthulhu.md",
       "title": "Thrall of Cthulhu (克苏鲁之隶)",
-      "lines": 75,
-      "declared_consumers": [],
-      "referenced_by": [],
-      "reference_count": 0
+      "lines": 82,
+      "declared_consumers": [
+        "reference/rules/monster-scale.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "CHANGELOG.md",
+          "line": 94,
+          "context": "从 deadly 改成 mythic(体型与耐久数值早已过 deadly 上限)、`thrall-of-cthulhu.md`"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 187,
+          "context": "战斗的庞然大物\");`thrall-of-cthulhu.md` 的 `Threat` 从 deadly 改判 moderate"
+        },
+        {
+          "file": "reference/mythos/great-old-ones/cthulhu.md",
+          "line": 64,
+          "context": "[Thrall of Cthulhu](../../bestiary/thrall-of-cthulhu.md)、"
+        },
+        {
+          "file": "reference/tables/monster-index.md",
+          "line": 81,
+          "context": "| 克苏鲁的仆役，伺奉克苏鲁的仆从（THRALLS OF CTHULHU, Servants of Cthulhu） | 1/1D8 (malleus's own figure for this entry — kept as-is; see Threat note above for why the label mo"
+        },
+        {
+          "file": "update_plan/2026-08-02-monster-templates-traits.md",
+          "line": 665,
+          "context": "且设计本就是\"劝退不劝打\");`thrall-of-cthulhu.md` deadly → moderate(malleus"
+        }
+      ],
+      "reference_count": 5
     },
     {
       "file": "vermisyn-worm.md",
       "path": "reference/bestiary/vermisyn-worm.md",
       "title": "Vermisyn Worm (弗米森蠕虫)",
-      "lines": 73,
+      "lines": 76,
       "declared_consumers": [],
       "referenced_by": [
+        {
+          "file": "reference/mythos/great-old-ones/cthulhu.md",
+          "line": 67,
+          "context": "[Vermisyn Worm](../../bestiary/vermisyn-worm.md)(间接,服侍其他仆从更常见)、"
+        },
         {
           "file": "reference/mythos/spells/vermisyn-worm-call-bind.md",
           "line": 11,
           "context": "召来一只弗米森蠕虫(`reference/bestiary/vermisyn-worm.md`)。施法者一边吟诵一边在"
+        },
+        {
+          "file": "reference/tables/monster-index.md",
+          "line": 260,
+          "context": "| Vermisyn Worm (弗米森蠕虫) | L2 creature | 1D2/1D8 | Cthulhu (indirectly — serves his other servants more often than him directly; see Lore) | Sewer worm with 6m r"
         }
       ],
-      "reference_count": 1
+      "reference_count": 3
     }
   ]
 }

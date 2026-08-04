@@ -2,9 +2,13 @@
 
 *Born looking entirely human, and for twenty-odd years, entirely human is what they are.*
 
-- **Type:** independent race (human-Deep One offspring)
+- **Type:** servitor-race (human-Deep One offspring) — malleus files Deep One Hybrids as a
+  servitor race, not independent; corrected from the earlier `independent-race` label
+- **Tier:** L3 servitor
 - **Threat:** moderate
 - **Sanity to see:** 0/1D4 (higher for a visibly advanced individual — 1/1D6+)
+- **Serves:** Cthulhu, Dagon & Hydra (the Deep Ones' patrons)
+- **Index summary:** Early-stage Deep One hybrid; passes as human, fights like one too
 
 ## Reveal (say this out loud, before the SAN roll)
 

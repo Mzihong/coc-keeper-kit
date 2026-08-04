@@ -24,6 +24,12 @@ Read `git status` / `git diff` (or recall from the session if nothing's staged y
 writing anything down. Build the list of touched files first; a session log written from memory
 drifts from what actually changed.
 
+**Prune before you add.** For every existing `会话记录` entry, check whether the files it
+describes are now committed (`git status` clean for them). If so, delete that entry —
+`git log`/`git show` is the authoritative record once something lands, and `WORKLOG.md` only
+needs to carry current state plus whatever is still sitting uncommitted in the working tree.
+Keep an entry only while part of what it describes hasn't been committed yet.
+
 ## The checklist
 
 ### 1. Append a `WORKLOG.md` session entry
@@ -82,6 +88,8 @@ commit unless asked — this spec closes out the working tree, not the git histo
 ## Quality bar
 
 - `WORKLOG.md` has a dated session entry for this session, appended not overwritten.
+- `WORKLOG.md`'s `会话记录` holds no entries for work that's already committed — those are
+  pruned, since `git log` already carries them.
 - Every count, enumeration, or path written this session has been grep-verified against actual
   repo state or generated output — not asserted from memory or copied from an earlier entry.
 - `CHANGELOG.md` has an entry (or an addition to today's).

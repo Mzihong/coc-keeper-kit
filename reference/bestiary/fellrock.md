@@ -3,9 +3,16 @@
 *An elephant-sized, armoured, six-legged thing hauls itself half out of a collapsed tunnel
 mouth, an eyeless trunk swinging toward the sound of your breathing.*
 
-- **Type:** independent race
-- **Threat:** deadly
+- **Type:** independent-race
+- **Tier:** L2 creature
+- **Threat:** mythic — recalibrated against `reference/rules/monster-scale.md`'s L2 bands
+  (2026-08-03): HP 40 and SIZ/STR/CON 200 sit past L2 `deadly`'s ceiling (HP 20–30) and into
+  `mythic` (HP 30–60); its low Fighting% is by design (see *Behaviour & weakness* — it's a
+  force of nature to avoid, not a skilled combatant), which fits `mythic`'s "rarely a fair
+  fight" framing better than `deadly` did
 - **Sanity to see:** 1D3/1D10
+- **Serves:** Cthulhu (many groups; unconfirmed whether all do — see Lore)
+- **Index summary:** Huge dormant burrower; avoid, ward with Oil of Silence, or feed it
 
 ## Reveal (say this out loud, before the SAN roll)
 

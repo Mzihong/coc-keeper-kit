@@ -22,23 +22,8 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 109,
+          "line": 147,
           "context": "- 新增邪教设计方法论 `craft/cult-design-zh.md`,配四张骰表与 `templates/cult.md` 模板。"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 193,
-          "context": "该计划的落点已同步改成 `craft/cult-design-zh.md`。"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 318,
-          "context": "3. **P1 第三章(设计一个克苏鲁邪教方法论)落盘**:`reference/craft/cult-design-zh.md`"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 723,
-          "context": "`craft/cult-design-zh.md`、`mythos/cults/`、`templates/cult.md` 早前落盘时其实已经"
         },
         {
           "file": "core/01-intake.md",
@@ -107,7 +92,7 @@
         },
         {
           "file": "reference/mythos/great-old-ones/cthulhu.md",
-          "line": 53,
+          "line": 74,
           "context": "- 教团设计方法论 → `reference/craft/cult-design-zh.md`"
         },
         {
@@ -161,7 +146,7 @@
           "context": "**登记情况核对**:`craft/cult-design-zh.md`、四张骰表(`cult-goals`/`cult-leader-positions`/"
         }
       ],
-      "reference_count": 28
+      "reference_count": 25
     },
     {
       "file": "lovecraft-zh.md",
@@ -172,17 +157,12 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 41,
+          "line": 45,
           "context": "├ og_Norval/      洛夫克拉夫特全集 82 篇 → 提炼稿 craft/lovecraft-zh.md"
         },
         {
-          "file": "WORKLOG.md",
-          "line": 190,
-          "context": "`lovecraft-craft-notes-zh.md` → `craft/lovecraft-zh.md`。理由不是\"根目录要干净\",而是"
-        },
-        {
           "file": "core/07-create-monster.md",
-          "line": 61,
+          "line": 68,
           "context": "`reference/craft/lovecraft-zh.md` §三 distills how H. P. Lovecraft's own monsters and"
         },
         {
@@ -227,7 +207,7 @@
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 296,
+          "line": 569,
           "context": "\"research only; distilled into reference/craft/lovecraft-zh.md\","
         },
         {
@@ -246,7 +226,7 @@
           "context": "`reference/craft/lovecraft-zh.md`."
         }
       ],
-      "reference_count": 15
+      "reference_count": 14
     }
   ]
 }

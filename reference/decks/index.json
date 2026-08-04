@@ -22,18 +22,8 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 105,
+          "line": 143,
           "context": "- 新增 `reference/decks/` 与首份收录件 `busybodies-zh.md`(官方好事者卡组,47 张 NPC 卡)。"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 309,
-          "context": "`busybodies-zh.md` 校准;首领 = 基线 + 增量,增量二选一(法术型按资历掷法术数量,"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 414,
-          "context": "人类邪教徒原型 + 变体、8 只怪物,类比已归档的 `busybodies-zh.md` 官方 NPC 卡组),"
         },
         {
           "file": "core/06-create-npc.md",
@@ -91,7 +81,7 @@
           "context": "| P4 | [antagonist-budget](2026-08-02-antagonist-budget.md) | 反派强度预算(仅人类侧):普通人类模板取材 `busybodies-zh.md`,法术型首领增量取材 `grand-grimoire-zh.md` 资历法术表 / 非法术型走装备总价,属性技能走标"
         }
       ],
-      "reference_count": 14,
+      "reference_count": 12,
       "cited": true,
       "provenance": {
         "work": "《克苏鲁的呼唤》守秘人卡组 —— 好事者卡组(Call of Cthulhu Keeper Deck: Busybodies)",
@@ -199,11 +189,6 @@
       ],
       "referenced_by": [
         {
-          "file": "WORKLOG.md",
-          "line": 310,
-          "context": "数值查 `grand-grimoire-zh.md`;非法术型按装备总价,查 `weapons-and-artifacts-zh.md`);"
-        },
-        {
           "file": "core/06-create-npc.md",
           "line": 77,
           "context": "- Arming someone: `reference/decks/weapons-and-artifacts-zh.md` gives skill, base chance,"
@@ -239,7 +224,7 @@
           "context": ">    `reference/tables/` 速查,反向索引脚本没有报 orphan。`weapons-and-artifacts-zh.md`"
         }
       ],
-      "reference_count": 8,
+      "reference_count": 7,
       "cited": true,
       "provenance": {
         "work": "《克苏鲁的呼唤》守秘人卡组 —— 武器与造物卡组(Call of Cthulhu Keeper Deck: Weapons & Artifacts)",

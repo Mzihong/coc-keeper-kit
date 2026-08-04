@@ -3,9 +3,12 @@
 *Two metres of hairless, grey-yellow skin, a skull twice the size it should be, and where a
 nose and mouth belong, eight thin tendrils moving in a rhythm that isn't breathing.*
 
-- **Type:** mythos servitor (formerly human)
+- **Type:** servitor-race (formerly human)
+- **Tier:** L3 servitor
 - **Threat:** deadly
 - **Sanity to see:** 0/1D6
+- **Serves:** Independent — serves no god (answers to no one within the Church of Perfect Science either; see Lore)
+- **Index summary:** Church of Perfect Science's alien-tech elite; telepathic, reclusive
 
 ## Reveal (say this out loud, before the SAN roll)
 
