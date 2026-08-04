@@ -505,16 +505,6 @@
           "context": "`reference/tables/monster-index.md` **在** `tables/` 白名单里,已确认进 bundle。"
         },
         {
-          "file": "WORKLOG.md",
-          "line": 173,
-          "context": "4. **`reference/tables/monster-index.md`(生成,不手改)**:合并转录稿抽取结果 + 上面"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 197,
-          "context": "`reference/tables/monster-index.md`。"
-        },
-        {
           "file": "core/04-design-scenario.md",
           "line": 42,
           "context": "`reference/tables/monster-index.md` before inventing one from scratch; it indexes all 223"
@@ -552,6 +542,31 @@
         {
           "file": "reference/mythos/great-old-ones/cthulhu.md",
           "line": 52,
+          "context": "[`reference/tables/monster-index.md`](../../tables/monster-index.md)(`Serves` 一列全文可搜)——"
+        },
+        {
+          "file": "reference/mythos/great-old-ones/dagon-and-hydra.md",
+          "line": 57,
+          "context": "[`reference/tables/monster-index.md`](../../tables/monster-index.md)(`Serves` 一列全文可搜)——"
+        },
+        {
+          "file": "reference/mythos/great-old-ones/hastur.md",
+          "line": 73,
+          "context": "[`reference/tables/monster-index.md`](../../tables/monster-index.md)（`Serves` 一列全文可"
+        },
+        {
+          "file": "reference/mythos/great-old-ones/nyarlathotep.md",
+          "line": 80,
+          "context": "[`reference/tables/monster-index.md`](../../tables/monster-index.md)(`Serves` 一列全文可搜)——"
+        },
+        {
+          "file": "reference/mythos/great-old-ones/shub-niggurath.md",
+          "line": 64,
+          "context": "[`reference/tables/monster-index.md`](../../tables/monster-index.md)(`Serves` 一列全文可"
+        },
+        {
+          "file": "reference/mythos/great-old-ones/yog-sothoth.md",
+          "line": 68,
           "context": "[`reference/tables/monster-index.md`](../../tables/monster-index.md)(`Serves` 一列全文可搜)——"
         },
         {
@@ -622,7 +637,7 @@
         {
           "file": "update_plan/README.md",
           "line": 13,
-          "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:五级阶梯的档位区间、按 malleus 四类重排的 type、数值词条(强化)系统与其负载预算 | 进行中(阶段 A + B 已完成,阶段 C 待开始;"
+          "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:五级阶梯的档位区间、按 malleus 四类重排的 type、数值词条(强化)系统与其负载预算 | 进行中(阶段 A + B 已完成 059ba63,阶"
         },
         {
           "file": "update_plan/README.md",
@@ -635,7 +650,7 @@
           "context": "| 2 | ~~**P9 阶段 B** 索引层~~ | ★★★★☆ | 改 1 个脚本 + 2 个新增(`monster-index.md` 生成物 + `monster-index-data.json` 数据源)+ 回改 9 只 + 3 处接线 + 人写 223 条 `Serves`/摘要 | **已完成**(202"
         }
       ],
-      "reference_count": 30
+      "reference_count": 33
     },
     {
       "file": "monster-traits.md",
@@ -672,9 +687,39 @@
           "context": "- <one bullet per trait from `reference/tables/monster-traits.md` — name, its stated 效果 and"
         },
         {
+          "file": "reference/bestiary/black-pharaoh.md",
+          "line": 56,
+          "context": "`reference/tables/monster-traits.md` were added — the native malleus abilities above"
+        },
+        {
+          "file": "reference/bestiary/dark-young.md",
+          "line": 54,
+          "context": "- **Conventional immunity** (`reference/tables/monster-traits.md`). Guns, fire, and every"
+        },
+        {
+          "file": "reference/bestiary/deep-one.md",
+          "line": 53,
+          "context": "None from `reference/tables/monster-traits.md` — a baseline Deep One is dangerous through"
+        },
+        {
+          "file": "reference/bestiary/hunting-horrors.md",
+          "line": 54,
+          "context": "- **Grapple & drag** (`monster-traits.md`) — a hit with the tail entangles the target, who"
+        },
+        {
+          "file": "reference/bestiary/hunting-horrors.md",
+          "line": 58,
+          "context": "- **Flight** (`monster-traits.md`) — ignores most ground obstacles at Fly 11, hunting from"
+        },
+        {
           "file": "reference/bestiary/README.md",
           "line": 38,
           "context": "`reference/tables/monster-traits.md` and must stay at or under the tier's load ceiling."
+        },
+        {
+          "file": "reference/bestiary/sons-of-yog-sothoth.md",
+          "line": 69,
+          "context": "- **Immunity to conventional weapons** (`reference/tables/monster-traits.md`'s 免疫常规武器) —"
         },
         {
           "file": "reference/rules/monster-scale.md",
@@ -719,10 +764,10 @@
         {
           "file": "update_plan/README.md",
           "line": 13,
-          "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:五级阶梯的档位区间、按 malleus 四类重排的 type、数值词条(强化)系统与其负载预算 | 进行中(阶段 A + B 已完成,阶段 C 待开始;"
+          "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:五级阶梯的档位区间、按 malleus 四类重排的 type、数值词条(强化)系统与其负载预算 | 进行中(阶段 A + B 已完成 059ba63,阶"
         }
       ],
-      "reference_count": 15
+      "reference_count": 21
     },
     {
       "file": "mythos-angles.md",

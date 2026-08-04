@@ -1,7 +1,8 @@
 # Update Plan — 怪物模板与词条系统
 
 > 日期:2026-08-02
-> 状态:**进行中(阶段 A + B 已完成,阶段 C 待开始)** —— 2026-08-03 阶段 B 落盘(059ba63)。
+> 状态:**已完成(阶段 C 落盘,commit 待回填)** —— 三阶段全部交付:2026-08-03 阶段 A/B
+> (819971e、059ba63),2026-08-04 阶段 C(神格铺设,5 神格 + 7 眷族)。
 > 阶段 A:`reference/rules/monster-scale.md` + `reference/tables/monster-traits.md`,
 > 5 处接线(`core/07`/`core/02`/`core/11`/`templates/monster.md`/bestiary README)全部完成。
 > 阶段 B:`scripts/build-reference-index.py` 扩了 `parse_malleus_entries()` +
@@ -673,25 +674,45 @@ Keeper 交付了 `reference/sourcebooks/malleus-monstrorum-zh.md` 的重排版�
 
 ### 阶段 C — 神格铺设
 
-- [ ] **14. 铺首批神格。** 建议首批(**范围待落地时确认**):
-      **① 达贡与许德拉**(kit 提及 14/7 次、`cults/esoteric-order-of-dagon.md` 已立档、
-      神格却没有文件——补漏最便宜,且按 malleus 归**唯一存在**级,正好当定案 7
-      新增那一级的样板);**② 哈斯塔/黄衣之王**(Keeper 点名的用例,kit 内提及 **0** 次);
-      **③ 奈亚拉托提普**(化身多、最常出场);**④ 莎布-尼古拉斯**;**⑤ 犹格-索托斯**。
-      体例照 `great-old-ones/cthulhu.md`(是什么 / 苏醒条件 / 征兆 / 邪教如何崇拜 /
-      裁定空间 / 挂钩)+ 第 12 项新增的眷族小节。
-- [ ] **15. 每个新神格配 1–2 只眷族怪物**,否则关联为空、索引仍答不出。
-      走阶段 A 定下的标尺与词条表写,数值可取书上的,文字自己写。
+- [x] **14. 铺首批神格。**(2026-08-04)五个神格文件全部落盘,体例照
+      `great-old-ones/cthulhu.md`(是什么 / 苏醒条件(或对应改写)/ 征兆 / 邪教如何崇拜 /
+      裁定空间 / 眷族与仆从 / 挂钩):
+      [`dagon-and-hydra.md`](../reference/mythos/great-old-ones/dagon-and-hydra.md)(唯一存在级,
+      原著自陈"并非真正的神明")、
+      [`hastur.md`](../reference/mythos/great-old-ones/hastur.md)(外神,黄衣之王作为化身写入
+      正文,不单开文件)、
+      [`nyarlathotep.md`](../reference/mythos/great-old-ones/nyarlathotep.md)(外神,举例
+      5 个化身而非穷举)、
+      [`shub-niggurath.md`](../reference/mythos/great-old-ones/shub-niggurath.md)(外神,
+      眷族与血亲双结构)、
+      [`yog-sothoth.md`](../reference/mythos/great-old-ones/yog-sothoth.md)(外神,"现身/召唤
+      条件"替代"苏醒条件")。执行时用 5 个并行 subagent 分神格研究转录稿并起草,体例见
+      `WORKLOG.md`。
+- [x] **15. 每个新神格配 1–2 只眷族怪物。**(2026-08-04)7 个新 `reference/bestiary/` 条目,
+      走阶段 A 的标尺与词条表,数值取自转录稿、文字自己写:
+      [Deep One](../reference/bestiary/deep-one.md)(达贡与许德拉)、
+      [Byakhee](../reference/bestiary/byakhee.md)、
+      [Spawn of Hastur](../reference/bestiary/spawn-of-hastur.md)(均哈斯塔)、
+      [Hunting Horrors](../reference/bestiary/hunting-horrors.md)、
+      [Black Pharaoh](../reference/bestiary/black-pharaoh.md)(均奈亚拉托提普,后者是化身本体
+      按 L4 唯一存在立档,`Serves` 字段诚实标注"是化身不是仆从"而非硬套服侍关系)、
+      [Dark Young](../reference/bestiary/dark-young.md)(莎布·尼古拉斯)、
+      [Sons of Yog-Sothoth](../reference/bestiary/sons-of-yog-sothoth.md)(犹格·索托斯)。
+      达贡与许德拉的眷族小节同时反链已有的 `deep-one-hybrid.md`,凑齐两条而不重复造轮子。
+      落地时修正一处索引脚本的匹配盲区(`mi_match_bestiary` 要求英文标题 2+ 个 4 字以上
+      单词才判定匹配,`Byakhee`/`Deep One` 因此没能覆盖转录稿原行,曾在 `monster-index.md`
+      产生重复行)——把两个文件的标题改成书本原名的完整形式
+      (`Byakhee, the Star-Steeds` / `Deep One, Gilled Humanoid`)绕开而非改共享算法,
+      重跑后确认全部 6 个匹配条目无重复行。
 
 ### 收尾(每阶段各走一次)
 
-- [x] **16. 重跑两个脚本。**(阶段 B,2026-08-03)`scripts/build-bundle.sh`
-      (5291 行,59 个文件)与 `python scripts/build-reference-index.py --check`
-      均干净通过,无 problems。
-- [x] **17. 走 `update_plan/README.md` 的完结清单。**(阶段 B,2026-08-03)CHANGELOG、
-      WORKLOG 均已更新;三适配器本轮未改动行为(改动全在 `core/07`/`core/04` 加一句
-      指路,两份都已同步,无需碰 `CLAUDE.md`/`GEMINI.md`/`AGENTS.md`);状态表见
-      `update_plan/README.md`。**阶段 C 未完成,本计划暂不归档。**
+- [x] **16. 重跑两个脚本。**(阶段 B,2026-08-03;阶段 C,2026-08-04)`scripts/build-bundle.sh`
+      与 `python scripts/build-reference-index.py --check` 均干净通过,无 problems。
+- [x] **17. 走 `update_plan/README.md` 的完结清单。**(阶段 B,2026-08-03;阶段 C,2026-08-04)
+      CHANGELOG、WORKLOG 均已更新;三适配器本轮未改动行为,无需碰
+      `CLAUDE.md`/`GEMINI.md`/`AGENTS.md`;状态表见 `update_plan/README.md`。**三阶段全部
+      完成,本计划归档。**
 
 **本计划完结后解锁:** 无下游硬依赖(P1 第四章的造物内容可选用,但从来不是硬前置)。
-`update_plan/README.md` 依赖图里 `KeeperRed → P9` 这条箭头**已在本轮定案时删除**。
+`update_plan/README.md` 依赖图里 `KeeperRed → P9` 这条箭头**已在阶段 A 定案时删除**。

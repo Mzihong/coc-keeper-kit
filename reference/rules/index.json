@@ -533,21 +533,6 @@
           "context": "- **阶段 A**(标尺与词条):`reference/rules/monster-scale.md` + 五级强度阶梯 +"
         },
         {
-          "file": "WORKLOG.md",
-          "line": 149,
-          "context": "上级/下级重新抽样、`monster-scale.md` 改样本数)后没有提交就结束了。本轮没有单独处理"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 184,
-          "context": "`Threat` 从 deadly 改判 mythic(HP 40、SIZ/STR/CON 各 200,早已过 `monster-scale.md`"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 188,
-          "context": "(malleus 原文把这个条目标成\"下级仆从种族\",按 `monster-scale.md` 的上级/下级"
-        },
-        {
           "file": "core/02-rules-reference.md",
           "line": 16,
           "context": "`reference/rules/monster-scale.md` before picking a tier or a threat band."
@@ -583,6 +568,26 @@
           "context": "- **Trait load total:** 0 / <tier ceiling — L2/L3 = 2, L4 = 3, L5 = 4, see `monster-scale.md`>"
         },
         {
+          "file": "reference/bestiary/byakhee.md",
+          "line": 9,
+          "context": "`reference/rules/monster-scale.md`'s 上级/下级 guidance, a lesser sub-tier entry takes the"
+        },
+        {
+          "file": "reference/bestiary/dark-young.md",
+          "line": 9,
+          "context": "`reference/rules/monster-scale.md`'s 上级/下级 guidance a greater sub-tier entry takes the"
+        },
+        {
+          "file": "reference/bestiary/dark-young.md",
+          "line": 34,
+          "context": "stated figures, taken as canon rather than re-derived, per `reference/rules/monster-scale.md`."
+        },
+        {
+          "file": "reference/bestiary/deep-one.md",
+          "line": 8,
+          "context": "`reference/rules/monster-scale.md`'s 上级/下级 guidance, a lesser sub-tier takes the"
+        },
+        {
           "file": "reference/bestiary/fellrock.md",
           "line": 8,
           "context": "- **Threat:** mythic — recalibrated against `reference/rules/monster-scale.md`'s L2 bands"
@@ -591,6 +596,31 @@
           "file": "reference/bestiary/README.md",
           "line": 36,
           "context": "`reference/rules/monster-scale.md`), `threat` (trivial / moderate / deadly / mythic — the ±"
+        },
+        {
+          "file": "reference/bestiary/sons-of-yog-sothoth.md",
+          "line": 8,
+          "context": "`reference/rules/monster-scale.md` treats as the L2/L3 signal (fixed values mark L4/L5"
+        },
+        {
+          "file": "reference/bestiary/sons-of-yog-sothoth.md",
+          "line": 46,
+          "context": "overriding the naive STR+SIZ calculation — treat it as canon per `monster-scale.md`) ·"
+        },
+        {
+          "file": "reference/bestiary/sons-of-yog-sothoth.md",
+          "line": 51,
+          "context": "of a big HP pool, per `monster-scale.md`'s armour convention: prefer a narrative immunity"
+        },
+        {
+          "file": "reference/bestiary/sons-of-yog-sothoth.md",
+          "line": 77,
+          "context": "- **Trait load total:** 2 / 2 (L3 servitor ceiling, per `monster-scale.md`)"
+        },
+        {
+          "file": "reference/bestiary/spawn-of-hastur.md",
+          "line": 9,
+          "context": "per `reference/rules/monster-scale.md`'s 上级/下级 guidance, a greater sub-tier entry takes"
         },
         {
           "file": "reference/bestiary/thrall-of-cthulhu.md",
@@ -685,10 +715,10 @@
         {
           "file": "update_plan/README.md",
           "line": 13,
-          "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:五级阶梯的档位区间、按 malleus 四类重排的 type、数值词条(强化)系统与其负载预算 | 进行中(阶段 A + B 已完成,阶段 C 待开始;"
+          "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:五级阶梯的档位区间、按 malleus 四类重排的 type、数值词条(强化)系统与其负载预算 | 进行中(阶段 A + B 已完成 059ba63,阶"
         }
       ],
-      "reference_count": 34
+      "reference_count": 40
     },
     {
       "file": "sanity.md",

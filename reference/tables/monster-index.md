@@ -70,7 +70,7 @@
 | 爱伊海伊人，乌素姆的火星奴仆（AIHAIS, Martian Servants of Vulthoom） | 0/1d8 | 乌素姆（Vulthoom） | 火星和平种族，乌素姆信徒持粉碎枪，伤口无法治愈。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:539 |
 | 阿尼米丘利，未知神祗之种（ANIMICULI, Seeds of an Unknown God） | — | 未知外神/旧日支配者（南极囚禁的无名神祗） | 南极囚禁神祗渗出的胶状生物，体型越大越危险，理智损失依体型分级。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:627 |
 | 阿特拉克-纳查之女，巨网编制者们（DAUGHTERS OF ATLACH-NACHA, Weavers of the Great Web) | 首次目击阿特拉克-纳查之女将造成1/1D8的理智丧失，如果看到人类蜕皮变化为阿特拉克-纳查之女将额外造成1/1D8的理智丧失 | 阿特拉克-纳查（Atlach-Nacha） | 由人类女性蜕变的巨型毒蜘蛛，撕咬麻痹后吸食脑浆致死。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:654 |
-| 拜亚基，星间之骏马（BYAKHEE, the Star-Steeds） | 初次目击拜亚基将1/1D6的理智丧失 | 哈斯塔（Hastur） | 服侍哈斯塔的星际坐骑，可载骑士穿越宇宙，撕咬吸取力量。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:683 |
+| 拜亚基，星间之骏马（BYAKHEE, the Star-Steeds） | 1/1D6 (malleus's own figure for this entry) | Hastur | Star-bat mount; drains STR on bite | `reference/bestiary/byakhee.md` |
 | 查寇塔，长满了人脸的精怪（CHAKOTA, Spirit of Many Faces） | 1D3/1D20首次目击查寇塔 | 推测：奈亚拉托提普（Nyarlathotep） | 由献祭仪式所创的多脸精怪，靠撕咬吞噬新脸而不断增殖。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:716 |
 | "当它呼唤的时候，他们将会从群山上下来加入到疯狂的捕猎中。夏乌戈纳尔和它的弟兄们通过思想就能进行交流。" | 1/1D4首次目击次级夏乌戈纳尔·法格恩的弟兄 | 夏乌戈纳尔·法格恩（Chaugnar Faugn） | 次级象头吸血怪，象鼻吸血每回合损体质，威胁低于上级弟兄。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:752 |
 | "当它呼唤的时候，他们将会从群山上下来加入到疯狂的捕猎中。夏乌戈纳尔和它的弟兄们通过思想就能进行交流。"（续/亚型） | 首次目击非活性的上级夏乌戈纳尔·法格恩的弟兄损失0/1D4San（译者：可怕的雕塑品）；如果首次目击活动的则是1D3/1D8San | 夏乌戈纳尔·法格恩（Chaugnar Faugn） | 上级象头吸血怪，与法格恩心灵相连，可施法召唤更多同类。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:774 |
@@ -81,7 +81,7 @@
 | 克苏鲁的仆役，伺奉克苏鲁的仆从（THRALLS OF CTHULHU, Servants of Cthulhu） | 1/1D8 (malleus's own figure for this entry — kept as-is; see Threat note above for why the label moved but the number didn't) | Cthulhu | Converted cultist, undying regen; only magic damage ends it for good | `reference/bestiary/thrall-of-cthulhu.md` |
 | 漆黑者，奇怪的黑暗种族（DARK ONES, The Strange Dark Folk） | 初次目击漆黑者损失0/1D2San，如果其占据的是调查员们已知死亡的某人的尸体，则增加为1/1D6+1。宿主的尸体在之后发生腐烂将会造成1/1D8甚至1/1D10的San损失 | 奈亚拉托提普与无极未名（Nyarlathotep & Magnum Innominandum） | 寄生尸体行动的矮人种族，借用神器开门驭械，本身无法施法。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:1098 |
 | 黯藻，潜伏在海洋中的黑山羊幼崽（DARK SARGASSUM, Ocean-Dwelling DarkYoung of | 初次目击黯藻损失1D6/1D20San | 莎布·尼古拉斯（Shub-Niggurath） | 莎布·尼古拉斯的海栖黑山羊幼崽，巨型海藻缠身吸取力量。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:1130 |
-| 深潜者，长鳃的亚人族（DEEP ONES, Gilled Humanoids） | 初次目击深潜者损失0/1D6的San | 克苏鲁、达贡与海德拉（Cthulhu, Dagon & Hydra） | 长鳃亚人族，可诱人类混血繁衍，祭司能驱使修格斯效忠。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:1169 |
+| 深潜者，长鳃的亚人族（DEEP ONES, Gilled Humanoids） | 0/1D6 (malleus's own figure for first sighting) | Cthulhu, Dagon & Hydra | Deep One; claw, spear, coastal ambush | `reference/bestiary/deep-one.md` |
 | 混血深潜者，印斯茅斯的污点与其他异性混血产物的载体（DEEP ONE HYBRIDS, Carriers of the Innsmouth Taint & Other Weird Hybrids） | 0/1D4 (higher for a visibly advanced individual — 1/1D6+) | Cthulhu, Dagon & Hydra (the Deep Ones' patrons) | Early-stage Deep One hybrid; passes as human, fights like one too | `reference/bestiary/deep-one-hybrid.md` |
 | 尘人，睡梦行者（DUST-MEN, Sleep-Walkers） | 幻梦境中初次目击一个尘人形态的亚人损失0/1D4San,现实世界中遭遇飘散的尘人不会损失理智 | 推测：无明确从属神格 | 幻梦境尘土亚人，可依附私人物品潜入梦境侵蚀受害者体质。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:1350 |
 | 深渊之民，深海中的恐怖（DWELLERS IN THE DEPTHS, Aquatic Horrors） | 初次目击深渊之民损失0/1D8San | 克苏鲁、达贡、海德拉等（Cthulhu, Dagon, Hydra, etc.） | 服侍诸海中旧日支配者的两栖种族，近乎免疫物理但脑核弱点致命。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:1379 |
@@ -94,9 +94,9 @@
 | 戈弗恩·胡帕德戈·莎布·尼古拉斯，莎布·尼古拉斯的赐福者，哥布林（GOF'NN HUPADGH SHUB-NIGGURATH, the blessed of Shub-Niggurath, goblins） | 目睹绝大多数的戈弗恩•胡帕德戈•莎布•尼古拉斯 0/1d4，目睹恐怖的变异体 1/1d6 | 莎布·尼古拉斯（Shub-Niggurath） | 黑山羊之母吞噬祭品所诞的哥布林仆役，能以赤红之圈开启临时传送门。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:1942 |
 | 绿神子嗣，变异兔族（CHILDREN OF THE GREEN GOD, Mutant Rabbit-Folk） | 0/1d4 | 绿神（Green God） | 被绿神变异的兔状退化人类，群居畏光，多数无害，成群时才主动攻击。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:2030 |
 | 盖艾·幽嘶，驮兽（Gyaa-Yoth，Beast of Burden） | 0/1D8 | 昆扬人（People of K'n-yan） | 昆扬人驯养的驮兽兼坐骑，与妖鬼近亲，力大智低，幻梦境偶可遇见。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:2148 |
-| 哈斯塔之眷族，不可名状者生于星辰之间的子嗣（SPAWN OF HASTUR, Star-Born Progeny of the Unspeakable One） | 1D6/1D20 | 哈斯塔（Hastur） | 栖息哈利湖的章鱼状眷族，触手压碎或活吞猎物，随毕宿五升起而临。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:2195 |
+| 哈斯塔之眷族，不可名状者生于星辰之间的子嗣（SPAWN OF HASTUR, Star-Born Progeny of the Unspeakable One） | 1D6/1D20 (malleus's own figure for this entry) | Hastur | Amphibious grappler; swallow = death | `reference/bestiary/spawn-of-hastur.md` |
 | 地狱植物，噩梦中诞生的藤蔓（HELL-PLANTS, Nightmare-Born Creepers） | 1/1D10 | 种植者（因个体而异，巫师或神话存在） | 潜伏宿主体内的种子，依设定时机破体而出，仅能施展种植者赋予的咒文。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:2240 |
-| 恐怖猎手，巨大的飞蛇（HUNTING HORRORS, Great Viperine Flyers） | 0/1d10 | 奈亚拉托提普（Nyarlathotep） | 奈亚拉托提普的猎犬，巨蛇形有翼夜行者，缠尾擒猎再噬咬，惧强光。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:2336 |
+| 恐怖猎手，巨大的飞蛇（HUNTING HORRORS, Great Viperine Flyers） | 0/1D10 | Nyarlathotep (used as his hunting hounds; will also answer an unrelated summons | Flying hound; shuns light, guns useless | `reference/bestiary/hunting-horrors.md` |
 | 伊伯生物与伊伯幽灵，波库鲁格的仆役（BEINGS OF IB & GHOST-BEINGS OF IB,Servants of Bokrug） | 0/1D6 | 波库鲁格（Bokrug） | 崇拜波库鲁格的月来蛙形生物，其亡魂靠吸取意志维生，物理免疫。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:2452 |
 | 流明，松灯，女巫火，鬼火，南瓜灯，有意识的磷火（LUMENS, Pine Lights, Witch Lights, Corpse Lights, Jack O'Lanterns, Will-0'-The-Wisps） | 0/1d4 | 独立 — 不服侍任何神格 | 连接点的灵体守护者，灼冷触碰致永久体质损失，惯于诱人深入险境。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:2761 |
 | 米里·尼格利，黑暗矮人（MIRI NIGRI, Dark Dwarves） | 0/1D2 | 夏乌戈纳尔·法格恩（Chaugnar Faugn） | 服侍夏乌戈纳尔·法格恩的黝黑矮人仆从，成群下山猎取童男童女献祭。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:3012 |
@@ -114,7 +114,7 @@
 | 斯格霍居民，活声音生物（DENIZENS OF S'GLHUO, Creatures of Living Sound） | 听到斯格霍居民0/1D2，目睹它们的蓝色鳞片形态0/1D4 | 特鲁宁布拉（Tru'Nembra） | 崇拜特鲁宁布拉的活声音生物，音爆攻击无视护甲且无法闪避。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:3838 |
 | 夏塔克鸟，大象般的座骑（SHANTAKS, Elephantine Mounts） | 0/1d6 | 推测：外神仆从驱使的坐骑，非直接侍奉特定神格 | 大象般巨鸟坐骑，惧夜魇，失控或将骑者带至阿撒托斯座前。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:3987 |
 | 修格斯, 黑亮的恶臭（SHOGGOTHS, Fetid Iridescences） | 1d6/1d20 | 推测：曾服侍创造者远古种族现已反叛，常受深潜者等召唤驱使 | 无定形黏液巨兽，力量惊人，可被深潜者等召唤驱使，曾弑创造者。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:4028 |
-| 黑山羊幼仔，莎波·尼古拉丝的子嗣（DARK YOUNG of Shub-Niggurath） | 1d3/1d10 | 莎布·尼古拉斯（Shub-Niggurath） | 莎布·尼古拉斯的代理者，接受献祭并吞食异教徒，触手吸干力量。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:4174 |
+| 黑山羊幼仔，莎波·尼古拉丝的子嗣（DARK YOUNG of Shub-Niggurath） | 1D3/1D10 (malleus's own figure — kept as-is) | Shub-Niggurath | Shub-Niggurath's tree-tentacle avatar | `reference/bestiary/dark-young.md` |
 | 肖格阮，两栖恐怖（SHUGORAN, Amphibious Horrors） | 0/1D6 | 奈亚拉托提普（Nyarlathotep） | 奈亚拉托提普化身的两栖仆从，吻管刺入口鼻致窒息死亡。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:4215 |
 | 风之眷属，伊塔库亚的孩子（SPAWN OF THE WINDS, Children of Ithaqua） | 目睹人类形态不会损失，目睹风之眷属的真实形态1D4/1D10 | 伊塔库亚（Ithaqua） | 伊塔库亚与人类所生的混血儿，能操控天气，狂怒时现真身猎杀。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:4312 |
 | 灵体猎手，怪物守卫（SPECTRAL HUNTERS, Monstrous Guardians） | 1/1D6+2 | 推测：受召唤仪式创造者役使，不效忠特定神格 | 受召唤仪式创造的看守怪，可化无形，只能被附魔武器伤害。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:4351 |
@@ -133,7 +133,7 @@
 | 柔透•米戈，王国的孩子（XO TL'MI-GO, the Children of the Kingdom） | 0/1D6 | 推测：无明确主神，或与地底古国（昆扬/幽嘶/恩凯）有关 | 苍白地底类人种族，掠夺强奸人类女性，传说为堕落的"神子"。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:5791 |
 | 伊戈隆纳克的仆从，黑暗中的无眼衣衫褴褛者（SERVANTS OF Y'GOLONAC, Tattered Eyeless Figures of the Dark） | 0/1D4 | 伊戈隆纳克（Y'Golonac） | 伊戈隆纳克的无眼仆从，盲目等待父神苏醒，手掌与面部三口齐咬。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:5934 |
 | 伊格的眷属，爬虫怪物（SPAWN OF YIG, Reptilian Monstrosities） | 2/2D4+1 | 伊格（Yig） | 伊格与人类或蛇人所生后裔，蛇身人脸群居猎食，毒液可直接致死。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:5989 |
-| 尤格·索托斯之子，外神的子嗣（SONS OF YOG-SOTHOTH, Progeny of an Outer Gods） | 目睹隐形的怪物子嗣1/1D8，目睹显形的怪物子嗣1D3/3D10。目睹怪物突变很少的人类子嗣0/1D2,目睹更加恐怖的人类子嗣1/1D6 | 尤格·索托斯（Yog-Sothoth） | 尤格·索托斯与人类混血之子，怪物形态隐身进食，渴求神话知识以助父神降世。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:6161 |
+| 尤格·索托斯之子，外神的子嗣（SONS OF YOG-SOTHOTH, Progeny of an Outer Gods） | 1/1D8 (sensing the unseen monstrous form) — see Stat block for the full | Yog-Sothoth | Yog-Sothoth's hybrid offspring, unseen | `reference/bestiary/sons-of-yog-sothoth.md` |
 | 于格，佐斯·奥摩格的蛞蝓奴仆（YUGGS, The Slug-Servants of Zoth-Ommog） | 0/1D6 | 佐斯·奥摩格（Zoth-Ommog） | 佐斯·奥摩格的深海蛞蝓奴仆，撕咬吸取受害者力量直至死亡。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:6205 |
 | 扎尔，自星辰而来的征服者（ZARR, Conquerors from the Stars） | 0/1D6 | 扎索格（Zathog） | 扎索格的星际征服者仆从，负责释放旧日支配者，配备蓝色热能武器。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:6262 |
 | 扎尔机器人，扎尔的钢铁仆人（ZARRIAN ROBOTS, Iron Servants of the Zarr） | 0/1 | 扎尔（Zarr） | 扎尔制造的钢铁仆从机器人，只服从扎尔语指令，装甲坚固战力强悍。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:6287 |
@@ -145,6 +145,7 @@
 | 星池潜伏者，奈亚拉托提普的百万蒙宠者之一（THE LURKER IN THE STAR POOL, One of the Million Favoured Ones of Nyarlathotep） | 1D10/1D100 | 推测：奈亚拉托提普（Nyarlathotep）之后裔 | 奈亚拉托提普宠儿之一，蛰伏星池，为漂浮恐怖祭祀吞食闯入者。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:4457 |
 | 蠕虫行者，腐化恐怖（THE WORM THAT WALKS, Putrefied Horror） | 目睹实体形态的蠕虫行者 0/1D10 | 独立 — 不服侍任何神格 | 伪装成人类偷取魔力的独立掠夺者，实体化后才可被物理攻击并猎杀受害者。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:5592 |
 | 伟大之不可言及者，无名之雾，虚空乳汁(THE MAGNUM INNOMINANDUM, The Nameless Mist, | 被伟大之不可言及者吞没，损失0/1D4理智值 | 阿撒托斯所造之物，其产物诞生了尤格·索托斯 | 无名之雾，吞没目标仅留触觉，内藏古革巨人等仆从生物。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:8899 |
+| 黑法老，古埃及之王（BLACK PHARAOH, Lord of Ancient Egypt） | 0/1D2 | Is an avatar of Nyarlathotep — not a separate servant answering to him. Treat | Avatar of Nyarlathotep; auto-hit blast | `reference/bestiary/black-pharaoh.md` |
 
 ## L5 — deity (旧神 / 旧日支配者 / 梦境诸神 / 外神 / 化身)
 
@@ -230,7 +231,6 @@
 | 黑色恶魔，奈亚拉托提普的较弱化身(BLACK DEMON, Lesser Avatar of Nyarlathotep) | 1/1D10 | 奈亚拉托提普的化身 | 较弱化身，凭红色护身符锁定目标伺机复仇杀戮，力量有限 | `reference/sourcebooks/malleus-monstrorum-zh.md`:9504 |
 | 黑狮子，埃及毁灭者(BLACK LION, Destroyer of Egypt) | 1D6/1D20 | 奈亚拉托提普的化身 | 曾几乎毁灭古埃及，遭封印于卡纳克，可无限吞噬受害者 | `reference/sourcebooks/malleus-monstrorum-zh.md`:9536 |
 | 黑色之人，女巫魔宴之神（BLACK MAN, God of the Witches' Sabbath） | — | 奈亚拉托提普的化身 | 女巫夜宴之神，携阿撒托斯之书收灵魂签名，接触吸取意志值 | `reference/sourcebooks/malleus-monstrorum-zh.md`:9565 |
-| 黑法老，古埃及之王（BLACK PHARAOH, Lord of Ancient Egypt） | — | 奈亚拉托提普的化身 | 黑法老，常伴两只隐形恐怖猎手，权杖自动命中轰击20点 | `reference/sourcebooks/malleus-monstrorum-zh.md`:9586 |
 | 黑风，饥荒与瘟疫的带来者(BLACK LION, Destroyer of Egypt) | 0/1D8 | 奈亚拉托提普的化身 | 无形风暴化身，每年降下瘟疫饥荒，携带疾病致体质渐失而死 | `reference/sourcebooks/malleus-monstrorum-zh.md`:9615 |
 | 肿胀之女，黑扇女神（BLOATED WOMAN, Goddess of the Black Fan） | 1d8/1d20 | 奈亚拉托提普的化身 | 黑扇可化身东方美女诱惑猎物，触手擒抱以吻吸食智力致死 | `reference/sourcebooks/malleus-monstrorum-zh.md`:9672 |
 | 血舌，向月而嚎者(BLOODY TONGUE, The Thing that Howls at the Moon) | 1D10/1D100 | 奈亚拉托提普的化身 | 最著名的化身之一，血舌教团行凶献祭，向月嚎叫慑心夺理智 | `reference/sourcebooks/malleus-monstrorum-zh.md`:9702 |

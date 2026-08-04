@@ -96,6 +96,36 @@
           "context": "- 教团设计方法论 → `reference/craft/cult-design-zh.md`"
         },
         {
+          "file": "reference/mythos/great-old-ones/dagon-and-hydra.md",
+          "line": 77,
+          "context": "- 教团设计方法论 → `reference/craft/cult-design-zh.md`"
+        },
+        {
+          "file": "reference/mythos/great-old-ones/hastur.md",
+          "line": 92,
+          "context": "- 教团设计方法论 → `reference/craft/cult-design-zh.md`"
+        },
+        {
+          "file": "reference/mythos/great-old-ones/nyarlathotep.md",
+          "line": 63,
+          "context": "- 参见 `reference/craft/cult-design-zh.md` 关于\"教团如何组织\"的通用方法论"
+        },
+        {
+          "file": "reference/mythos/great-old-ones/nyarlathotep.md",
+          "line": 98,
+          "context": "- 教团设计方法论 → `reference/craft/cult-design-zh.md`"
+        },
+        {
+          "file": "reference/mythos/great-old-ones/shub-niggurath.md",
+          "line": 83,
+          "context": "- 教团设计方法论 → `reference/craft/cult-design-zh.md`"
+        },
+        {
+          "file": "reference/mythos/great-old-ones/yog-sothoth.md",
+          "line": 85,
+          "context": "- 教团设计方法论 → `reference/craft/cult-design-zh.md`"
+        },
+        {
           "file": "reference/tables/cult-goals.md",
           "line": 6,
           "context": "用法见 `reference/craft/cult-design-zh.md` §三 第 3 步。"
@@ -146,7 +176,7 @@
           "context": "**登记情况核对**:`craft/cult-design-zh.md`、四张骰表(`cult-goals`/`cult-leader-positions`/"
         }
       ],
-      "reference_count": 25
+      "reference_count": 31
     },
     {
       "file": "lovecraft-zh.md",
@@ -206,6 +236,16 @@
           "context": "4. **篇幅克制。** `lovecraft-zh.md` 90 行覆盖了 82 篇小说。生成时模型要整份读进上下文,"
         },
         {
+          "file": "reference/mythos/great-old-ones/nyarlathotep.md",
+          "line": 75,
+          "context": "`reference/craft/lovecraft-zh.md` §三\"礼貌而有条不紊\"那条设计手法"
+        },
+        {
+          "file": "reference/mythos/great-old-ones/nyarlathotep.md",
+          "line": 100,
+          "context": "高智能存在) → `reference/craft/lovecraft-zh.md`"
+        },
+        {
           "file": "scripts/build-reference-index.py",
           "line": 569,
           "context": "\"research only; distilled into reference/craft/lovecraft-zh.md\","
@@ -226,7 +266,7 @@
           "context": "`reference/craft/lovecraft-zh.md`."
         }
       ],
-      "reference_count": 14
+      "reference_count": 16
     }
   ]
 }

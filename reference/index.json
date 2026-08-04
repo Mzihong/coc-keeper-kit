@@ -77,15 +77,22 @@
       "role": "reusable monsters and Mythos entities, portable across campaigns",
       "kind": "kit-original-content",
       "in_bundle": false,
-      "entry_count": 9,
+      "entry_count": 16,
       "index": "reference/bestiary/index.json",
       "files": [
+        "reference/bestiary/black-pharaoh.md",
         "reference/bestiary/black-wing.md",
+        "reference/bestiary/byakhee.md",
         "reference/bestiary/cthulhu-blessed.md",
+        "reference/bestiary/dark-young.md",
         "reference/bestiary/deep-one-hybrid.md",
+        "reference/bestiary/deep-one.md",
         "reference/bestiary/fellrock.md",
+        "reference/bestiary/hunting-horrors.md",
         "reference/bestiary/scarlet-orb.md",
         "reference/bestiary/sedecim.md",
+        "reference/bestiary/sons-of-yog-sothoth.md",
+        "reference/bestiary/spawn-of-hastur.md",
         "reference/bestiary/the-bell-keeper.md",
         "reference/bestiary/thrall-of-cthulhu.md",
         "reference/bestiary/vermisyn-worm.md"
@@ -96,7 +103,7 @@
       "role": "Great Old Ones, tomes, spells, cults, and factions — slow-growing shared lore",
       "kind": "kit-original-content",
       "in_bundle": false,
-      "entry_count": 15,
+      "entry_count": 20,
       "index": "reference/mythos/index.json",
       "files": [
         "reference/mythos/artifacts-zh.md",
@@ -107,6 +114,11 @@
         "reference/mythos/cults/order-of-morpheus.md",
         "reference/mythos/cults/society-of-the-divine-children.md",
         "reference/mythos/great-old-ones/cthulhu.md",
+        "reference/mythos/great-old-ones/dagon-and-hydra.md",
+        "reference/mythos/great-old-ones/hastur.md",
+        "reference/mythos/great-old-ones/nyarlathotep.md",
+        "reference/mythos/great-old-ones/shub-niggurath.md",
+        "reference/mythos/great-old-ones/yog-sothoth.md",
         "reference/mythos/spells/black-wing-call.md",
         "reference/mythos/spells/call-father-dagon-and-mother-hydra.md",
         "reference/mythos/spells/fellrock-call-bind.md",
@@ -235,10 +247,21 @@
           "core/04-design-scenario.md:43",
           "core/07-create-monster.md:41",
           "core/14-archive-reference.md:49",
+          "reference/bestiary/black-pharaoh.md:31",
           "reference/bestiary/deep-one-hybrid.md:64",
+          "reference/bestiary/deep-one.md:13",
+          "reference/bestiary/deep-one.md:89",
+          "reference/bestiary/hunting-horrors.md:28",
           "reference/bestiary/README.md:4",
           "reference/bestiary/README.md:23",
           "reference/mythos/great-old-ones/cthulhu.md:58",
+          "reference/mythos/great-old-ones/dagon-and-hydra.md:64",
+          "reference/mythos/great-old-ones/hastur.md:80",
+          "reference/mythos/great-old-ones/nyarlathotep.md:85",
+          "reference/mythos/great-old-ones/shub-niggurath.md:71",
+          "reference/mythos/great-old-ones/shub-niggurath.md:85",
+          "reference/mythos/great-old-ones/yog-sothoth.md:73",
+          "reference/mythos/great-old-ones/yog-sothoth.md:87",
           "reference/rules/monster-scale.md:4",
           "reference/tables/monster-index-data.json:4",
           "reference/tables/monster-index-data.json:5",
@@ -300,7 +323,6 @@
           "reference/tables/monster-index.md:70",
           "reference/tables/monster-index.md:71",
           "reference/tables/monster-index.md:72",
-          "reference/tables/monster-index.md:73",
           "reference/tables/monster-index.md:74",
           "reference/tables/monster-index.md:75",
           "reference/tables/monster-index.md:76",
@@ -310,7 +332,6 @@
           "reference/tables/monster-index.md:80",
           "reference/tables/monster-index.md:82",
           "reference/tables/monster-index.md:83",
-          "reference/tables/monster-index.md:84",
           "reference/tables/monster-index.md:86",
           "reference/tables/monster-index.md:87",
           "reference/tables/monster-index.md:88",
@@ -322,9 +343,7 @@
           "reference/tables/monster-index.md:94",
           "reference/tables/monster-index.md:95",
           "reference/tables/monster-index.md:96",
-          "reference/tables/monster-index.md:97",
           "reference/tables/monster-index.md:98",
-          "reference/tables/monster-index.md:99",
           "reference/tables/monster-index.md:100",
           "reference/tables/monster-index.md:101",
           "reference/tables/monster-index.md:102",
@@ -342,7 +361,6 @@
           "reference/tables/monster-index.md:114",
           "reference/tables/monster-index.md:115",
           "reference/tables/monster-index.md:116",
-          "reference/tables/monster-index.md:117",
           "reference/tables/monster-index.md:118",
           "reference/tables/monster-index.md:119",
           "reference/tables/monster-index.md:120",
@@ -361,14 +379,12 @@
           "reference/tables/monster-index.md:133",
           "reference/tables/monster-index.md:134",
           "reference/tables/monster-index.md:135",
-          "reference/tables/monster-index.md:136",
           "reference/tables/monster-index.md:137",
           "reference/tables/monster-index.md:138",
           "reference/tables/monster-index.md:139",
           "reference/tables/monster-index.md:145",
           "reference/tables/monster-index.md:146",
           "reference/tables/monster-index.md:147",
-          "reference/tables/monster-index.md:153",
           "reference/tables/monster-index.md:154",
           "reference/tables/monster-index.md:155",
           "reference/tables/monster-index.md:156",
@@ -597,9 +613,6 @@
           "CHANGELOG.md:72",
           "CHANGELOG.md:81",
           "WORKLOG.md:102",
-          "WORKLOG.md:149",
-          "WORKLOG.md:184",
-          "WORKLOG.md:188",
           "core/02-rules-reference.md:16",
           "core/02-rules-reference.md:40",
           "core/07-create-monster.md:18",
@@ -607,8 +620,17 @@
           "core/11-review.md:75",
           "templates/monster.md:7",
           "templates/monster.md:38",
+          "reference/bestiary/byakhee.md:9",
+          "reference/bestiary/dark-young.md:9",
+          "reference/bestiary/dark-young.md:34",
+          "reference/bestiary/deep-one.md:8",
           "reference/bestiary/fellrock.md:8",
           "reference/bestiary/README.md:36",
+          "reference/bestiary/sons-of-yog-sothoth.md:8",
+          "reference/bestiary/sons-of-yog-sothoth.md:46",
+          "reference/bestiary/sons-of-yog-sothoth.md:51",
+          "reference/bestiary/sons-of-yog-sothoth.md:77",
+          "reference/bestiary/spawn-of-hastur.md:9",
           "reference/bestiary/thrall-of-cthulhu.md:9",
           "reference/tables/monster-traits.md:4",
           "reference/tables/monster-traits.md:14",
@@ -673,6 +695,12 @@
           "reference/mythos/cults/society-of-the-divine-children.md:4",
           "reference/mythos/great-old-ones/cthulhu.md:37",
           "reference/mythos/great-old-ones/cthulhu.md:74",
+          "reference/mythos/great-old-ones/dagon-and-hydra.md:77",
+          "reference/mythos/great-old-ones/hastur.md:92",
+          "reference/mythos/great-old-ones/nyarlathotep.md:63",
+          "reference/mythos/great-old-ones/nyarlathotep.md:98",
+          "reference/mythos/great-old-ones/shub-niggurath.md:83",
+          "reference/mythos/great-old-ones/yog-sothoth.md:85",
           "reference/tables/cult-goals.md:6",
           "reference/tables/cult-goals.md:41",
           "reference/tables/cult-leader-positions.md:22",
@@ -699,10 +727,21 @@
           "reference/README.md:58",
           "reference/craft/README.md:14",
           "reference/craft/README.md:28",
+          "reference/mythos/great-old-ones/nyarlathotep.md:75",
+          "reference/mythos/great-old-ones/nyarlathotep.md:100",
           "scripts/build-reference-index.py:569",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:111",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:256",
           ".claude/skills/description/SKILL.md:12"
+        ]
+      },
+      "reference/bestiary/black-pharaoh.md": {
+        "title": "Black Pharaoh (黑法老)",
+        "rights_holder": null,
+        "referenced_by": [
+          "reference/bestiary/hunting-horrors.md:88",
+          "reference/mythos/great-old-ones/nyarlathotep.md:92",
+          "reference/tables/monster-index.md:148"
         ]
       },
       "reference/bestiary/black-wing.md": {
@@ -715,6 +754,14 @@
           "update_plan/2026-08-02-monster-templates-traits.md:333"
         ]
       },
+      "reference/bestiary/byakhee.md": {
+        "title": "Byakhee, the Star-Steeds (拜亚基)",
+        "rights_holder": null,
+        "referenced_by": [
+          "reference/mythos/great-old-ones/hastur.md:85",
+          "reference/tables/monster-index.md:73"
+        ]
+      },
       "reference/bestiary/cthulhu-blessed.md": {
         "title": "Cthulhu-Blessed (克苏鲁受祝者)",
         "rights_holder": null,
@@ -723,17 +770,35 @@
           "reference/tables/monster-index.md:255"
         ]
       },
+      "reference/bestiary/dark-young.md": {
+        "title": "Dark Young of Shub-Niggurath (黑山羊幼仔)",
+        "rights_holder": null,
+        "referenced_by": [
+          "reference/mythos/great-old-ones/shub-niggurath.md:73",
+          "reference/mythos/great-old-ones/shub-niggurath.md:84",
+          "reference/tables/monster-index.md:117"
+        ]
+      },
       "reference/bestiary/deep-one-hybrid.md": {
         "title": "Deep One Hybrid (混种深潜者)",
         "rights_holder": null,
         "referenced_by": [
           "CHANGELOG.md:92",
-          "WORKLOG.md:182",
           "reference/bestiary/cthulhu-blessed.md:54",
+          "reference/bestiary/deep-one.md:84",
+          "reference/mythos/great-old-ones/dagon-and-hydra.md:62",
           "reference/tables/monster-index.md:85",
           "update_plan/2026-08-02-monster-templates-traits.md:82",
           "update_plan/2026-08-02-monster-templates-traits.md:536",
           "update_plan/2026-08-02-monster-templates-traits.md:662"
+        ]
+      },
+      "reference/bestiary/deep-one.md": {
+        "title": "Deep One, Gilled Humanoid (深潜者)",
+        "rights_holder": null,
+        "referenced_by": [
+          "reference/mythos/great-old-ones/dagon-and-hydra.md:61",
+          "reference/tables/monster-index.md:84"
         ]
       },
       "reference/bestiary/fellrock.md": {
@@ -742,13 +807,21 @@
         "referenced_by": [
           "CHANGELOG.md:29",
           "CHANGELOG.md:93",
-          "WORKLOG.md:183",
           "reference/mythos/great-old-ones/cthulhu.md:66",
           "reference/mythos/spells/fellrock-call-bind.md:11",
           "reference/mythos/spells/oil-of-silence.md:10",
           "reference/tables/monster-index.md:256",
           "update_plan/2026-08-02-monster-templates-traits.md:663",
           "update_plan/Archived/2026-08-02-cult-doc-wrapup.md:47"
+        ]
+      },
+      "reference/bestiary/hunting-horrors.md": {
+        "title": "Hunting Horrors (恐怖猎手)",
+        "rights_holder": null,
+        "referenced_by": [
+          "reference/bestiary/black-pharaoh.md:61",
+          "reference/mythos/great-old-ones/nyarlathotep.md:91",
+          "reference/tables/monster-index.md:99"
         ]
       },
       "reference/bestiary/scarlet-orb.md": {
@@ -768,6 +841,22 @@
           "reference/tables/monster-index.md:258"
         ]
       },
+      "reference/bestiary/sons-of-yog-sothoth.md": {
+        "title": "Sons of Yog-Sothoth (犹格·索托斯之子)",
+        "rights_holder": null,
+        "referenced_by": [
+          "reference/mythos/great-old-ones/yog-sothoth.md:79",
+          "reference/tables/monster-index.md:136"
+        ]
+      },
+      "reference/bestiary/spawn-of-hastur.md": {
+        "title": "Spawn of Hastur (哈斯塔之眷族)",
+        "rights_holder": null,
+        "referenced_by": [
+          "reference/mythos/great-old-ones/hastur.md:86",
+          "reference/tables/monster-index.md:97"
+        ]
+      },
       "reference/bestiary/the-bell-keeper.md": {
         "title": "The Bell-Keeper",
         "rights_holder": null,
@@ -781,7 +870,6 @@
         "rights_holder": null,
         "referenced_by": [
           "CHANGELOG.md:94",
-          "WORKLOG.md:187",
           "reference/mythos/great-old-ones/cthulhu.md:64",
           "reference/tables/monster-index.md:81",
           "update_plan/2026-08-02-monster-templates-traits.md:665"
@@ -850,7 +938,10 @@
         "referenced_by": [
           "reference/bestiary/cthulhu-blessed.md:55",
           "reference/bestiary/deep-one-hybrid.md:57",
+          "reference/bestiary/deep-one.md:88",
           "reference/mythos/cthulhu-cult-history-zh.md:24",
+          "reference/mythos/great-old-ones/dagon-and-hydra.md:35",
+          "reference/mythos/great-old-ones/dagon-and-hydra.md:75",
           "reference/mythos/spells/call-father-dagon-and-mother-hydra.md:22",
           "update_plan/2026-08-02-monster-templates-traits.md:349",
           "update_plan/2026-08-02-monster-templates-traits.md:677"
@@ -894,9 +985,8 @@
           "CHANGELOG.md:97",
           "WORKLOG.md:110",
           "WORKLOG.md:121",
-          "WORKLOG.md:187",
-          "WORKLOG.md:192",
           "reference/mythos/README.md:12",
+          "reference/mythos/great-old-ones/dagon-and-hydra.md:67",
           "reference/tables/monster-index.md:81",
           "scripts/build-reference-index.py:178",
           "scripts/build-reference-index.py:193",
@@ -911,6 +1001,43 @@
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:89"
         ]
       },
+      "reference/mythos/great-old-ones/dagon-and-hydra.md": {
+        "title": "达贡与许德拉（Father Dagon & Mother Hydra）",
+        "rights_holder": null,
+        "referenced_by": [
+          "reference/bestiary/deep-one.md:86"
+        ]
+      },
+      "reference/mythos/great-old-ones/hastur.md": {
+        "title": "Hastur（哈斯塔）",
+        "rights_holder": null,
+        "referenced_by": [
+          "reference/tables/monster-index.md:97"
+        ]
+      },
+      "reference/mythos/great-old-ones/nyarlathotep.md": {
+        "title": "Nyarlathotep（奈亚拉托提普）",
+        "rights_holder": null,
+        "referenced_by": [
+          "reference/bestiary/black-pharaoh.md:17",
+          "reference/bestiary/black-pharaoh.md:89",
+          "reference/bestiary/hunting-horrors.md:85"
+        ]
+      },
+      "reference/mythos/great-old-ones/shub-niggurath.md": {
+        "title": "Shub-Niggurath（莎布·尼古拉丝）",
+        "rights_holder": null,
+        "referenced_by": [
+          "reference/bestiary/dark-young.md:84"
+        ]
+      },
+      "reference/mythos/great-old-ones/yog-sothoth.md": {
+        "title": "Yog-Sothoth（犹格·索托斯）",
+        "rights_holder": null,
+        "referenced_by": [
+          "reference/tables/monster-index.md:136"
+        ]
+      },
       "reference/mythos/spells/black-wing-call.md": {
         "title": "Call Black Wing (黑翼者召唤术)",
         "rights_holder": null,
@@ -921,7 +1048,9 @@
       "reference/mythos/spells/call-father-dagon-and-mother-hydra.md": {
         "title": "Call Father Dagon and Mother Hydra (请神术:父神达贡和母神海德拉)",
         "rights_holder": null,
-        "referenced_by": []
+        "referenced_by": [
+          "reference/mythos/great-old-ones/dagon-and-hydra.md:76"
+        ]
       },
       "reference/mythos/spells/fellrock-call-bind.md": {
         "title": "Call/Bind Fellrock (费尔罗克召唤/束缚术)",
@@ -1086,8 +1215,6 @@
           "CHANGELOG.md:102",
           "WORKLOG.md:108",
           "WORKLOG.md:130",
-          "WORKLOG.md:173",
-          "WORKLOG.md:197",
           "core/04-design-scenario.md:42",
           "core/07-create-monster.md:9",
           "templates/monster.md:11",
@@ -1096,6 +1223,11 @@
           "reference/bestiary/README.md:40",
           "reference/mythos/README.md:13",
           "reference/mythos/great-old-ones/cthulhu.md:52",
+          "reference/mythos/great-old-ones/dagon-and-hydra.md:57",
+          "reference/mythos/great-old-ones/hastur.md:73",
+          "reference/mythos/great-old-ones/nyarlathotep.md:80",
+          "reference/mythos/great-old-ones/shub-niggurath.md:64",
+          "reference/mythos/great-old-ones/yog-sothoth.md:68",
           "scripts/build-reference-index.py:18",
           "scripts/build-reference-index.py:29",
           "scripts/build-reference-index.py:42",
@@ -1123,7 +1255,13 @@
           "core/02-rules-reference.md:42",
           "core/11-review.md:72",
           "templates/monster.md:36",
+          "reference/bestiary/black-pharaoh.md:56",
+          "reference/bestiary/dark-young.md:54",
+          "reference/bestiary/deep-one.md:53",
+          "reference/bestiary/hunting-horrors.md:54",
+          "reference/bestiary/hunting-horrors.md:58",
           "reference/bestiary/README.md:38",
+          "reference/bestiary/sons-of-yog-sothoth.md:69",
           "reference/rules/monster-scale.md:126",
           "reference/rules/monster-scale.md:139",
           "reference/rules/monster-scale.md:147",
@@ -1209,9 +1347,6 @@
         "reference/tables/monster-traits.md"
       ],
       "WORKLOG.md": [
-        "reference/bestiary/deep-one-hybrid.md",
-        "reference/bestiary/fellrock.md",
-        "reference/bestiary/thrall-of-cthulhu.md",
         "reference/craft/lovecraft-zh.md",
         "reference/mythos/great-old-ones/cthulhu.md",
         "reference/rules/character-creation.md",
@@ -1339,24 +1474,52 @@
         "reference/tables/monster-index.md",
         "reference/tables/monster-traits.md"
       ],
+      "reference/bestiary/black-pharaoh.md": [
+        "reference/bestiary/hunting-horrors.md",
+        "reference/mythos/great-old-ones/nyarlathotep.md",
+        "reference/sourcebooks/malleus-monstrorum-zh.md",
+        "reference/tables/monster-traits.md"
+      ],
       "reference/bestiary/black-wing.md": [
         "reference/mythos/cthulhu-cult-history-zh.md",
         "reference/mythos/cults/louisiana-swamp-cult.md",
         "reference/mythos/spells/black-wing-call.md"
       ],
+      "reference/bestiary/byakhee.md": [
+        "reference/rules/monster-scale.md"
+      ],
       "reference/bestiary/cthulhu-blessed.md": [
         "reference/bestiary/deep-one-hybrid.md",
         "reference/mythos/cults/esoteric-order-of-dagon.md"
       ],
+      "reference/bestiary/dark-young.md": [
+        "reference/mythos/great-old-ones/shub-niggurath.md",
+        "reference/rules/monster-scale.md",
+        "reference/tables/monster-traits.md"
+      ],
       "reference/bestiary/deep-one-hybrid.md": [
         "reference/mythos/cults/esoteric-order-of-dagon.md",
         "reference/sourcebooks/malleus-monstrorum-zh.md"
+      ],
+      "reference/bestiary/deep-one.md": [
+        "reference/bestiary/deep-one-hybrid.md",
+        "reference/mythos/cults/esoteric-order-of-dagon.md",
+        "reference/mythos/great-old-ones/dagon-and-hydra.md",
+        "reference/rules/monster-scale.md",
+        "reference/sourcebooks/malleus-monstrorum-zh.md",
+        "reference/tables/monster-traits.md"
       ],
       "reference/bestiary/fellrock.md": [
         "reference/mythos/cults/society-of-the-divine-children.md",
         "reference/mythos/spells/fellrock-call-bind.md",
         "reference/mythos/spells/oil-of-silence.md",
         "reference/rules/monster-scale.md"
+      ],
+      "reference/bestiary/hunting-horrors.md": [
+        "reference/bestiary/black-pharaoh.md",
+        "reference/mythos/great-old-ones/nyarlathotep.md",
+        "reference/sourcebooks/malleus-monstrorum-zh.md",
+        "reference/tables/monster-traits.md"
       ],
       "reference/bestiary/scarlet-orb.md": [
         "reference/mythos/cults/society-of-the-divine-children.md",
@@ -1365,6 +1528,13 @@
       "reference/bestiary/sedecim.md": [
         "reference/mythos/artifacts-zh.md",
         "reference/mythos/cults/church-of-perfect-science.md"
+      ],
+      "reference/bestiary/sons-of-yog-sothoth.md": [
+        "reference/rules/monster-scale.md",
+        "reference/tables/monster-traits.md"
+      ],
+      "reference/bestiary/spawn-of-hastur.md": [
+        "reference/rules/monster-scale.md"
       ],
       "reference/bestiary/thrall-of-cthulhu.md": [
         "reference/rules/monster-scale.md"
@@ -1453,6 +1623,43 @@
         "reference/bestiary/vermisyn-worm.md",
         "reference/craft/cult-design-zh.md",
         "reference/mythos/cthulhu-cult-history-zh.md",
+        "reference/sourcebooks/malleus-monstrorum-zh.md",
+        "reference/tables/monster-index.md"
+      ],
+      "reference/mythos/great-old-ones/dagon-and-hydra.md": [
+        "reference/bestiary/deep-one-hybrid.md",
+        "reference/bestiary/deep-one.md",
+        "reference/craft/cult-design-zh.md",
+        "reference/mythos/cults/esoteric-order-of-dagon.md",
+        "reference/mythos/great-old-ones/cthulhu.md",
+        "reference/mythos/spells/call-father-dagon-and-mother-hydra.md",
+        "reference/sourcebooks/malleus-monstrorum-zh.md",
+        "reference/tables/monster-index.md"
+      ],
+      "reference/mythos/great-old-ones/hastur.md": [
+        "reference/bestiary/byakhee.md",
+        "reference/bestiary/spawn-of-hastur.md",
+        "reference/craft/cult-design-zh.md",
+        "reference/sourcebooks/malleus-monstrorum-zh.md",
+        "reference/tables/monster-index.md"
+      ],
+      "reference/mythos/great-old-ones/nyarlathotep.md": [
+        "reference/bestiary/black-pharaoh.md",
+        "reference/bestiary/hunting-horrors.md",
+        "reference/craft/cult-design-zh.md",
+        "reference/craft/lovecraft-zh.md",
+        "reference/sourcebooks/malleus-monstrorum-zh.md",
+        "reference/tables/monster-index.md"
+      ],
+      "reference/mythos/great-old-ones/shub-niggurath.md": [
+        "reference/bestiary/dark-young.md",
+        "reference/craft/cult-design-zh.md",
+        "reference/sourcebooks/malleus-monstrorum-zh.md",
+        "reference/tables/monster-index.md"
+      ],
+      "reference/mythos/great-old-ones/yog-sothoth.md": [
+        "reference/bestiary/sons-of-yog-sothoth.md",
+        "reference/craft/cult-design-zh.md",
         "reference/sourcebooks/malleus-monstrorum-zh.md",
         "reference/tables/monster-index.md"
       ],
@@ -1547,16 +1754,25 @@
         "reference/sourcebooks/malleus-monstrorum-zh.md"
       ],
       "reference/tables/monster-index.md": [
+        "reference/bestiary/black-pharaoh.md",
         "reference/bestiary/black-wing.md",
+        "reference/bestiary/byakhee.md",
         "reference/bestiary/cthulhu-blessed.md",
+        "reference/bestiary/dark-young.md",
         "reference/bestiary/deep-one-hybrid.md",
+        "reference/bestiary/deep-one.md",
         "reference/bestiary/fellrock.md",
+        "reference/bestiary/hunting-horrors.md",
         "reference/bestiary/scarlet-orb.md",
         "reference/bestiary/sedecim.md",
+        "reference/bestiary/sons-of-yog-sothoth.md",
+        "reference/bestiary/spawn-of-hastur.md",
         "reference/bestiary/the-bell-keeper.md",
         "reference/bestiary/thrall-of-cthulhu.md",
         "reference/bestiary/vermisyn-worm.md",
         "reference/mythos/great-old-ones/cthulhu.md",
+        "reference/mythos/great-old-ones/hastur.md",
+        "reference/mythos/great-old-ones/yog-sothoth.md",
         "reference/sourcebooks/malleus-monstrorum-zh.md"
       ],
       "reference/tables/monster-traits.md": [

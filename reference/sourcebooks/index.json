@@ -202,9 +202,29 @@
           "context": "Prefer the published English title: `malleus-monstrorum-zh.md`, not `怪物之锤.md`."
         },
         {
+          "file": "reference/bestiary/black-pharaoh.md",
+          "line": 31,
+          "context": "Source: malleus-monstrorum-zh.md, \"黑法老，古埃及之王 (BLACK PHARAOH, Lord of Ancient Egypt)\"."
+        },
+        {
           "file": "reference/bestiary/deep-one-hybrid.md",
           "line": 64,
           "context": "> `reference/sourcebooks/malleus-monstrorum-zh.md` — this entry's numbers are this kit's own"
+        },
+        {
+          "file": "reference/bestiary/deep-one.md",
+          "line": 13,
+          "context": "`reference/sourcebooks/malleus-monstrorum-zh.md`'s Deep One entry."
+        },
+        {
+          "file": "reference/bestiary/deep-one.md",
+          "line": 89,
+          "context": "> from `reference/sourcebooks/malleus-monstrorum-zh.md`'s Deep One entry, per"
+        },
+        {
+          "file": "reference/bestiary/hunting-horrors.md",
+          "line": 28,
+          "context": "Source: malleus-monstrorum-zh.md, \"恐怖猎手，巨大的飞蛇 (HUNTING HORRORS, Great Viperine"
         },
         {
           "file": "reference/bestiary/README.md",
@@ -220,6 +240,41 @@
           "file": "reference/mythos/great-old-ones/cthulhu.md",
           "line": 58,
           "context": "均见 `reference/sourcebooks/malleus-monstrorum-zh.md`"
+        },
+        {
+          "file": "reference/mythos/great-old-ones/dagon-and-hydra.md",
+          "line": 64,
+          "context": "Depths——均见 `reference/sourcebooks/malleus-monstrorum-zh.md`"
+        },
+        {
+          "file": "reference/mythos/great-old-ones/hastur.md",
+          "line": 80,
+          "context": "`reference/sourcebooks/malleus-monstrorum-zh.md`"
+        },
+        {
+          "file": "reference/mythos/great-old-ones/nyarlathotep.md",
+          "line": 85,
+          "context": "`reference/sourcebooks/malleus-monstrorum-zh.md`。他也常把某个化身专属的仆从一并"
+        },
+        {
+          "file": "reference/mythos/great-old-ones/shub-niggurath.md",
+          "line": 71,
+          "context": "均见 `reference/sourcebooks/malleus-monstrorum-zh.md`"
+        },
+        {
+          "file": "reference/mythos/great-old-ones/shub-niggurath.md",
+          "line": 85,
+          "context": "- 其余仆从/血亲的原始数据 → `reference/sourcebooks/malleus-monstrorum-zh.md`"
+        },
+        {
+          "file": "reference/mythos/great-old-ones/yog-sothoth.md",
+          "line": 73,
+          "context": "驱使,经特制雕像降临本位面)——均见 `reference/sourcebooks/malleus-monstrorum-zh.md`"
+        },
+        {
+          "file": "reference/mythos/great-old-ones/yog-sothoth.md",
+          "line": 87,
+          "context": "`reference/sourcebooks/malleus-monstrorum-zh.md` 中廷达罗斯词条,可作为反制或搅局的"
         },
         {
           "file": "reference/rules/monster-scale.md",
@@ -528,11 +583,6 @@
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 73,
-          "context": "| 拜亚基，星间之骏马（BYAKHEE, the Star-Steeds） | 初次目击拜亚基将1/1D6的理智丧失 | 哈斯塔（Hastur） | 服侍哈斯塔的星际坐骑，可载骑士穿越宇宙，撕咬吸取力量。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:683 |"
-        },
-        {
-          "file": "reference/tables/monster-index.md",
           "line": 74,
           "context": "| 查寇塔，长满了人脸的精怪（CHAKOTA, Spirit of Many Faces） | 1D3/1D20首次目击查寇塔 | 推测：奈亚拉托提普（Nyarlathotep） | 由献祭仪式所创的多脸精怪，靠撕咬吞噬新脸而不断增殖。 | `reference/sourcebooks/malleus-monstror"
         },
@@ -575,11 +625,6 @@
           "file": "reference/tables/monster-index.md",
           "line": 83,
           "context": "| 黯藻，潜伏在海洋中的黑山羊幼崽（DARK SARGASSUM, Ocean-Dwelling DarkYoung of | 初次目击黯藻损失1D6/1D20San | 莎布·尼古拉斯（Shub-Niggurath） | 莎布·尼古拉斯的海栖黑山羊幼崽，巨型海藻缠身吸取力量。 | `reference/sourceb"
-        },
-        {
-          "file": "reference/tables/monster-index.md",
-          "line": 84,
-          "context": "| 深潜者，长鳃的亚人族（DEEP ONES, Gilled Humanoids） | 初次目击深潜者损失0/1D6的San | 克苏鲁、达贡与海德拉（Cthulhu, Dagon & Hydra） | 长鳃亚人族，可诱人类混血繁衍，祭司能驱使修格斯效忠。 | `reference/sourcebooks/malleu"
         },
         {
           "file": "reference/tables/monster-index.md",
@@ -638,18 +683,8 @@
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 97,
-          "context": "| 哈斯塔之眷族，不可名状者生于星辰之间的子嗣（SPAWN OF HASTUR, Star-Born Progeny of the Unspeakable One） | 1D6/1D20 | 哈斯塔（Hastur） | 栖息哈利湖的章鱼状眷族，触手压碎或活吞猎物，随毕宿五升起而临。 | `reference/sourc"
-        },
-        {
-          "file": "reference/tables/monster-index.md",
           "line": 98,
           "context": "| 地狱植物，噩梦中诞生的藤蔓（HELL-PLANTS, Nightmare-Born Creepers） | 1/1D10 | 种植者（因个体而异，巫师或神话存在） | 潜伏宿主体内的种子，依设定时机破体而出，仅能施展种植者赋予的咒文。 | `reference/sourcebooks/malleus-monstro"
-        },
-        {
-          "file": "reference/tables/monster-index.md",
-          "line": 99,
-          "context": "| 恐怖猎手，巨大的飞蛇（HUNTING HORRORS, Great Viperine Flyers） | 0/1d10 | 奈亚拉托提普（Nyarlathotep） | 奈亚拉托提普的猎犬，巨蛇形有翼夜行者，缠尾擒猎再噬咬，惧强光。 | `reference/sourcebooks/malleus-monstror"
         },
         {
           "file": "reference/tables/monster-index.md",
@@ -735,11 +770,6 @@
           "file": "reference/tables/monster-index.md",
           "line": 116,
           "context": "| 修格斯, 黑亮的恶臭（SHOGGOTHS, Fetid Iridescences） | 1d6/1d20 | 推测：曾服侍创造者远古种族现已反叛，常受深潜者等召唤驱使 | 无定形黏液巨兽，力量惊人，可被深潜者等召唤驱使，曾弑创造者。 | `reference/sourcebooks/malleus-monstror"
-        },
-        {
-          "file": "reference/tables/monster-index.md",
-          "line": 117,
-          "context": "| 黑山羊幼仔，莎波·尼古拉丝的子嗣（DARK YOUNG of Shub-Niggurath） | 1d3/1d10 | 莎布·尼古拉斯（Shub-Niggurath） | 莎布·尼古拉斯的代理者，接受献祭并吞食异教徒，触手吸干力量。 | `reference/sourcebooks/malleus-monstror"
         },
         {
           "file": "reference/tables/monster-index.md",
@@ -833,11 +863,6 @@
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 136,
-          "context": "| 尤格·索托斯之子，外神的子嗣（SONS OF YOG-SOTHOTH, Progeny of an Outer Gods） | 目睹隐形的怪物子嗣1/1D8，目睹显形的怪物子嗣1D3/3D10。目睹怪物突变很少的人类子嗣0/1D2,目睹更加恐怖的人类子嗣1/1D6 | 尤格·索托斯（Yog-Sothoth） | 尤"
-        },
-        {
-          "file": "reference/tables/monster-index.md",
           "line": 137,
           "context": "| 于格，佐斯·奥摩格的蛞蝓奴仆（YUGGS, The Slug-Servants of Zoth-Ommog） | 0/1D6 | 佐斯·奥摩格（Zoth-Ommog） | 佐斯·奥摩格的深海蛞蝓奴仆，撕咬吸取受害者力量直至死亡。 | `reference/sourcebooks/malleus-monstrorum"
         },
@@ -868,408 +893,403 @@
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 153,
+          "line": 154,
           "context": "| 阿布霍斯，不净之源（ABHOTH, Source of Uncleanness） | 1D3/1D20 | — 自成一系的神格 | 恩凯深处不断产卵的滋生源体，不断吐出变异眷属守卫自身。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:6392 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 154,
+          "line": 155,
           "context": "| 上古者，终极之门（ANCIENT ONES, The Ultimate Gate） | 目睹上古者不会损失理智值；目睹上古者长袍下隐藏的真实形态被显露出来，1D20/1D100 | 尤格·索托斯的显现（Yog-Sothoth） | 终极之门守护者，尤格·索托斯的显现，知晓万法，赐福或毁灭寻门的旅人。 | `refe"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 155,
+          "line": 156,
           "context": "| 阿弗姆·扎，冰寒灰焰（APHOOM ZHAH, The Icy Gray Flame） | 1D3/1D20 | 推测：克图格亚的后裔（Cthugha，文本存疑） | 终北大陆冰河劫的元凶，接触即冻毙，笼罩极寒使敏捷类技能几近失效。 | `reference/sourcebooks/malleus-monstror"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 156,
+          "line": 157,
           "context": "| 阿里尔，真理传信者（ARIEL, The Truth Bearer） | 通常没有，但是依赖于阿里尔以何种形态出现而发生变化 | 梦境诸神（Dream Gods） | 幻梦境真理化身，说谎者被真理之光揭露原形，兼任梦境诸神的信使。 | `reference/sourcebooks/malleus-monstroru"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 157,
+          "line": 158,
           "context": "| 阿尔瓦萨，山峰上的静默嚎叫者（ARWASSA, The Silent Shouter of the Hill） | 目睹阿尔瓦萨1D10/1D100，此外，每5分钟在1英里范围内的所有人会由于阿尔瓦萨的静默嚎叫而自动损失1点理智值 | — 自成一系的神格 | 山巅静默嚎叫者，触手吞噬猎物，嚎叫范围内持续消磨理智。 "
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 158,
+          "line": 159,
           "context": "| 阿特拉克·纳查，蜘蛛之神（Atlach-Nacha, the Spider God) | 1/1D10 | — 自成一系的神格 | 蜘蛛之神，永恒织网连接现实与幻梦境，网成之日即为世界终末预兆。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:6607 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 159,
+          "line": 160,
           "context": "| 阿撒托斯，沸腾的混沌源核（AZATHOTH, Seething Nuclear Chaos） | 1d10/1d100 | — 自成一系的神格 | 外神之主，宇宙混沌源核，其怒火所过之处万物皆化为齑粉。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:6651 "
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 160,
+          "line": 161,
           "context": "| 撒达·赫格拉，混沌摇篮（XADA-HGLA, the Cradle of Chaos) | 1D10/5D10 | 阿撒托斯的化身（Azathoth） | 阿撒托斯罕见的化身之一，双壳绽放即引爆核焰，体型无限膨胀吞噬一切。 | `reference/sourcebooks/malleus-monstrorum-zh"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 161,
+          "line": 162,
           "context": "| 鲍特·祖卡莫格，瘟疫使者（BAOHT Z'UQQA-MOGG, The Bringer of Pestilence) | 1D8/2D20 | — 自成一系的神格 | 瘟疫与污秽之主，虫群感染致命疫病，常见于下水道与墓地废墟。 | `reference/sourcebooks/malleus-monstrorum-"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 162,
+          "line": 163,
           "context": "| 巴斯特，猫之女神 (Bast, Goddess of Cats) | 无 | — 自成一系的神格 | 旧神之一，猫科动物的守护女神，惩戒虐猫者，攻击无视护甲。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:6754 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 163,
+          "line": 164,
           "context": "| 来自群星的黑暗，下级外神（THE BLACKNESS FROM THE STARS, Lesser Outer God ) | 1D3/1D10+4 | — 自成一系的神格 | 惧光的下级外神，侵蚀梦境奴役心智，强光曝晒可致其死亡。 | `reference/sourcebooks/malleus-monstror"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 164,
+          "line": 165,
           "context": "| 波库鲁格，旧日支配者（Bokrug, Great Old One) | 0/1D8 | — 自成一系的神格 | 幻梦境水蜥蜴神，曾一夜灭萨尔纳斯城，出行常伴伊伯鬼魂随行。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:6820 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 165,
+          "line": 166,
           "context": "| 巴格·沙斯，来自黑暗者，黑体(BUGG-SHASH, He Who Comes in the Dark, The Black One) | 目睹巴格·沙斯1D6/1D20，目睹其不死奴隶1/1D8 | — 自成一系的神格 | 黑暗吞噬者，需五芒星缚拘方可控制，可役使尸体为不死奴隶。 | `reference/sou"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 166,
+          "line": 167,
           "context": "| 比亚提斯，蛇须(BYATIS, The Serpent-Bearded) | 1D6/1D20 | — 自成一系的神格 | 蛇须旧日支配者，独眼催眠猎物，长鼻触须缠绕撕咬，进食后持续增长。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:6908 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 167,
+          "line": 168,
           "context": "| 夏乌戈纳尔.法格恩，山岭中的恐怖 ( Chaugnar Faugn, Horror from the Hills) | 静止不动时，直视夏乌戈纳尔.法格恩将造成0/1D6点理智值损失；直视活动中的夏乌戈纳尔.法格恩将造成1D4/2D6+1点理智值损失。 目击其陪护变异将造成1/1D6点理智值损失 | — 自成一系的"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 168,
+          "line": 169,
           "context": "| 似云之物，无名外神(THE CLOUD-THING, Nameless Outer God) | 1/1D10 | 阿撒托斯的仆从，外神王廷的一员 | 阿撒托斯随从的紫色食人云，漏斗吸干受害者体液后随风飘散 | `reference/sourcebooks/malleus-monstrorum-zh.md`:700"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 169,
+          "line": 170,
           "context": "| 克希拉，克苏鲁之女 (CTHYLLA, Daughter of Cthulhu) | 1D6/1D20 | 克苏鲁之女 | 克苏鲁之女，父神死后由她诞下使克苏鲁重生，被诸神严密看守 | `reference/sourcebooks/malleus-monstrorum-zh.md`:7286 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 170,
+          "line": 171,
           "context": "| 克赛克修克鲁斯，阿撒托斯的双性后裔 (CXAXUKLUTH, Androgynous Offspring of Azathoth) | 1D10/1D100 | 阿撒托斯的后裔 | 阿撒托斯之裔，雌雄同体的原生质巨怪，伪足吞噬一切并孵化更多外神子嗣 | `reference/sourcebooks/malleus-"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 171,
+          "line": 172,
           "context": "| 赛伊格亚，旧日支配者 (Cyaegha, Great Old One) | 1D10/1D100 | 推测：与旧日支配者欧图伊格有关联 | 德国荒村信徒供奉的巨眼触肢旧日支配者，随兴碾压人类，别无所求 | `reference/sourcebooks/malleus-monstrorum-zh.md`:7347 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 172,
+          "line": 173,
           "context": "| 赛诺索格里斯，送葬者之神 (CYNOTHOGLYS, The Mortician God) | 1D10/1D100 | — 自成一系的神格 | 与死亡相连的送葬者之神，催眠受害者预见己死后亲至索命 | `reference/sourcebooks/malleus-monstrorum-zh.md`:7372 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 173,
+          "line": 174,
           "context": "| 父神达贡&母神许德拉，深潜者的统治者 (FATHER DAGON &MOTHER HYDRA, Rulers of the Deep Ones) | 1/1D10 | 深潜者的统治者，率众信奉克苏鲁（非真神） | 深潜者的统治者，率众信奉克苏鲁，二者几乎从不碰面 | `reference/sourcebooks/m"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 174,
+          "line": 175,
           "context": "| 道罗斯，面纱粉碎者（DAOLOTH, The Render of the Veils） | 目睹这位神祇的首轮将导致1D10/1D100的理智值丧失；若处于它的附近，则随后回合中会自动丧失1D10的理智值丧失 | — 自成一系的神格 | 掌维度真理的外神，注视即致命，形体可无限扩张吞噬万物 | `reference"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 175,
+          "line": 176,
           "context": "| 神圣之光，黑暗粉碎者 (THE SACRED LIGHT, the Render of the Darkness) | 1D6/1D10 | 道罗斯的化身 | 道罗斯的光之化身，赐予受害者真理之礼，令人渐盲渐疯至死 | `reference/sourcebooks/malleus-monstrorum-zh.md`"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 176,
+          "line": 177,
           "context": "| 多伊之眷属，幼体旧日支配者 (DHO-SPAWN, Larval Great Old One) | 1D6/1D10 | 推测：某位旧日支配者的幼体阶段，身份未明 | 身份未知的旧日支配者幼体，隐形触手寄生控制猎物为奴仆 | `reference/sourcebooks/malleus-monstrorum-zh."
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 177,
+          "line": 178,
           "context": "| 艾霍特，迷宫之神 (Eihort, God of Labyrinth) | 1D6/1D20 | — 自成一系的神格 | 塞文谷迷宫之神，胁迫俘虏立约孕育子嗣，数月后破体而出 | `reference/sourcebooks/malleus-monstrorum-zh.md`:7526 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 178,
+          "line": 179,
           "context": "| 下级旧神，戈利尤-乌霍之王 (Lesser Elder Gods, Lords of Glyu-Uho) | 0/1D3 | 诺登斯与克坦尼德麾下的士兵/仆从 | 旧神阵营的士兵，助人类对抗旧日支配者，光焰可放逐邪神仆从 | `reference/sourcebooks/malleus-monstrorum-zh."
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 179,
+          "line": 180,
           "context": "| 弗塔古亚，炎之精之主，克提恩加之王 (FTHAGGHUA, Lord of the Fire Vampires, Lord of Ktynga) | 1/1D8 | 推测：克图格亚的后裔，炎之精之主 | 炎之精之王，率群炎精随克图格亚巡游，投掷烈焰重创敌人 | `reference/sourcebooks/mall"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 180,
+          "line": 181,
           "context": "| 加达蒙，幼体旧日支配者 (GHADAMON, Larval Great Old One) | 1D3/1D20 | 犹格斯真菌的造物 | 犹格斯真菌造物，蛰伏幻梦境湖底，遇袭方醒，伪足擒猎入口 | `reference/sourcebooks/malleus-monstrorum-zh.md`:7620 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 181,
+          "line": 182,
           "context": "| 加塔诺托亚，火山之主 (GHATANOTHOA, Lord of the Volcano) | 目睹加塔诺托亚1D10/1D100，然而这只是调查员麻烦的开始 | 克苏鲁之子 | 克苏鲁之子，火山之主，直视者渐进石化仍存活受苦，求死不能 | `reference/sourcebooks/malleus-monstr"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 182,
+          "line": 183,
           "context": "| 基兹古斯，撒托古亚之父 (GHIZGUTH, Sire of Tsathoggua) | 1D8/1D20 | 克赛克修克鲁斯之子，撒托古亚之父 | 克赛克修克鲁斯之子，撒托古亚之父，巨口吞人后消化殆尽 | `reference/sourcebooks/malleus-monstrorum-zh.md`:7690 "
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 183,
+          "line": 184,
           "context": "| 格罗斯，审判之星，毁灭之先驱 (Ghroth, Nemesis, The Harbinger and Maker) | 目睹格罗斯将造成1D10/1D100点理智值损失 | — 自成一系的神格 | 行星级审判之星，途经星系唤醒旧日支配者，末日将至的先兆 | `reference/sourcebooks/malleu"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 184,
+          "line": 185,
           "context": "| 格拉基，湖中居民 (Glaaki, Inhabitant of the Lake) | 1D3/1D20 | 推测：与旧日支配者乌特乌尔斯·赫尔埃尔有关联 | 英国湖底旧日支配者，梦境诱人入教，脊刺注液化人为不死奴仆 | `reference/sourcebooks/malleus-monstrorum-zh.md"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 185,
+          "line": 186,
           "context": "| 格鲁恩，血肉堕落者 (GLOON, The Corruptor of Flesh) 格鲁恩的奴仆 | 一般没有，但目睹格鲁恩的真身损失1/1D10。目睹格鲁恩的奴仆1/1D10 | — 自成一系的神格 | 沉没亚特兰蒂斯神庙的旧日支配者，触碰即腐肉；奴仆形似小佐斯·奥莫格 | `reference/sourcebo"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 186,
+          "line": 187,
           "context": "| 诺弗刻斯，冰封北极的长眠恐怖 (GNOPHKEHS, Slumbering Terror of the Frozen North) | 1D8/1D20 | 推测：兰·提戈斯或克苏鲁的化身（存疑） | 封于格陵兰冰层，需活祭唤醒，制造暴风雪与致盲嚎叫 | `reference/sourcebooks/malleus"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 187,
+          "line": 188,
           "context": "| 高格·霍尔，疯狂食者 (THE GOG-HOOR, Eater on the Insane) | 1D10/1D100 | — 自成一系的神格 | 异次元噬疯者，专猎精神病患，触手切割猎物血肉供其吞食 | `reference/sourcebooks/malleus-monstrorum-zh.md`:7909 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 188,
+          "line": 189,
           "context": "| 戈尔·格罗斯，黑石之神(GOL-GOROTH, The God of the Black Stone) | 1D4/2D8 | — 自成一系的神格 | 黑石教团崇拜的蟾蜍状旧日支配者，触手擒抓后自动撕咬猎物 | `reference/sourcebooks/malleus-monstrorum-zh.md`:794"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 189,
+          "line": 190,
           "context": "| 绿神，植物型旧日支配者 (GREEN GOD, Botanical Great Old One) | 1D4/1D10 | — 自成一系的神格 | 英国地底植物型旧日支配者，强迫猎物吞食碎片以转化为眷属 | `reference/sourcebooks/malleus-monstrorum-zh.md`:7977 "
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 190,
+          "line": 191,
           "context": "| 格罗斯·高卡，恶魔鸟神 (GROTH-GOLKA, The Demon Bird-God) | 1D8/1D20 | 推测：与月球旧日支配者诺姆夸尔为兄弟 | 南极恶魔鸟神，尾钉可远程射击，塑像引发梦魇纠缠信徒 | `reference/sourcebooks/malleus-monstrorum-zh.md`:8"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 191,
+          "line": 192,
           "context": "| 哈格阿格·莱昂尼斯，等待埋伏者 (HAGARG RYONIS, The Lier-in-Wait) | 1/1D10 | 梦境诸神之一，受奈亚拉托提普庇护 | 梦境诸神的伏击化身，六眼毒爪，惩戒亵渎幻梦境的信徒 | `reference/sourcebooks/malleus-monstrorum-zh.md`:8"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 192,
+          "line": 193,
           "context": "| 汉，黑暗者 (HAN, The Dark One) | 1D8/2D10 | 伊格崇拜体系下的较弱旧日支配者 | 伊格系较弱旧日支配者，浓雾中触碰吸取意志，赐预言换崇拜 | `reference/sourcebooks/malleus-monstrorum-zh.md`:8085 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 193,
+          "line": 194,
           "context": "| 哈斯陶吕克，传染病 (HASTMYK, the Contagion) | 目睹哈斯陶吕克，1D4/1D8。但只有在显微镜下才能观察到它 | — 自成一系的神格 | 瘟疫具现的旧日支配者，寄宿病原体放大传染烈度，无实体不可控 | `reference/sourcebooks/malleus-monstrorum-zh"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 194,
+          "line": 195,
           "context": "| 哈斯塔，不可命名之神 (Hastur, He Who Is Not to Be Named) | 1D10/1D100 | — 自成一系的神格 | 卡尔克萨与黄衣之印的源头，拜亚基之主，抓住猎物后回合内杀死 | `reference/sourcebooks/malleus-monstrorum-zh.md`:813"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 195,
+          "line": 196,
           "context": "| 远方饕噬者，大脑吞噬者 (The Feaster from Afar, Devourer of Brains) | 1D8/1D20 | 哈斯塔的化身 | 钩爪刺穿颅骨吸食大脑并吸取智力，常伴拜亚基降临猎场。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:81"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 196,
+          "line": 197,
           "context": "| 翡翠喇嘛，精神散布者 (EMERALD LAMA, Infector of the Mind) | — | 哈斯塔的化身 | 以曼荼罗与幻境诱惑求知者，拥抱触手吸取意志体质换取神话知识。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:8204 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 197,
+          "line": 198,
           "context": "| 黄衣之王，王座形态 (The King in Yellow, Throne Form) | 直视王座形态下正戴面具的黄衣之王不会造成理智值损失；直视任何其他形态将造成1D3/1D10点理智值损失 | 哈斯塔的化身 | 舞蹈催眠后布条如刀切割，凝视吸魂，为哈斯塔最常现身的化身。 | `reference/source"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 198,
+          "line": 199,
           "context": "| 海德拉，千面之月 (HYDRA, The Thousand-Faced Moon) | 1D8/5D10 | — 自成一系的神格 | 潜伏精神位面，斩首通灵旅者并收纳其头颅存续的意识。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:8286 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 199,
+          "line": 200,
           "context": "| 修浦诺斯，旧神，睡梦之王 (Hypnos, Elder God, Lord of Sleep) | 直视修浦诺斯本体将造成1D6/1D20点理智值损失 | — 自成一系的神格 | 睡梦与现实的守门旧神，可将擅闯的入梦者随意重塑形体。 | `reference/sourcebooks/malleus-monstror"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 200,
+          "line": 201,
           "context": "| 赫祖尔夸伊耿扎，土星之主 (HZIULQUOIGMNZHAH, the God of Cykranosh) | 0/2D10 | 撒托古亚的近亲（形似其倒转形态） | 土星塞克拉诺修之主，酸液喷吐撕咬，性喜蛰居不主动攻击。 | `reference/sourcebooks/malleus-monstrorum-zh"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 201,
+          "line": 202,
           "context": "| 伊德·雅，克苏鲁的配偶，索斯星女主 (IDH-YAA, Cthulhds Mate, Xothic Matriarch) | 1D8/1D20 | 克苏鲁的配偶（三位之一），诞下多位旧日支配者 | 索斯星克苏鲁首任配偶，诞下佐斯·奥摩格等旧日支配者。 | `reference/sourcebooks/malleus"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 202,
+          "line": 203,
           "context": "| 伊欧德，灵魂猎手，闪光追猎者 (IOD, The Hunter of Souls, The Shining Pursuer) | 1D6/3D10 | — 自成一系的神格 | 触手吸魂猎手，受害者意志耗尽即死，逃脱者亦被梦境追猎。 | `reference/sourcebooks/malleus-monstroru"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 203,
+          "line": 204,
           "context": "| 伊西斯，旧神 (ISIS, Elder God) | 无 | — 自成一系的神格 | 化身预言师安抚调查员，非战斗型，触碰可令人平静2D20轮。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:8482 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 204,
+          "line": 205,
           "context": "| 伊塔库亚，风行者，食人雪怪 (Ithaqua, the Wind-Walker, the Wendigo) | 直视伊塔库亚将造成1D10/1D100点理智值损失；听闻北风中食人雪怪的嚎叫将造成1/1D6点理智值损失 | — 自成一系的神格 | 北地风行者，卷起猎物携至空中抛落，并掀起极地暴风雪。 | `refer"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 205,
+          "line": 206,
           "context": "| 死亡行者，狂怒风暴之神 (The Death-Walker, God of the Angry Storm) | 1D4/1D20 | 伊塔库亚的化身 | 伊塔库亚的风暴化身，龙卷冰雹闪电齐发，卷走猎物弃尸荒野。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 206,
+          "line": 207,
           "context": "| 雪之怪，寒冰之现身 (The Snow-Thing, Icy Manifestation) | 1D4/1D20 | 伊塔库亚的化身 | 有意识的雪团化身，低温冻伤猎物骨骼内脏而非皮肤表面。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:8558 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 207,
+          "line": 208,
           "context": "| 朱克·夏博，耶库伯之神(JUK-SHABB, God of Yekub) | 0/1D4 | — 自成一系的神格 | 耶库伯之神，纯精神体，精神爆震令人理智损失并陷入昏迷。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:8590 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 208,
+          "line": 209,
           "context": "| 卡拉卡尔，炎之主(KARAKAL, Master of the Flames) | 无 | — 自成一系的神格 | 幻梦境火神，居卡达斯神殿，掷火球焚身，筑火墙阻路。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:8620 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 209,
+          "line": 210,
           "context": "| 卡索格萨，克苏鲁的新娘(KASSOGTHA, Bride of Cthulhu) | 1D10/1D100 | 克苏鲁的姐妹与新娘，恩克托萨&恩克托鲁之母 | 克苏鲁的姐妹兼新娘，以里长盘节身躯缠绕挤碎猎物。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:86"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 210,
+          "line": 211,
           "context": "| 克塔尼德，卓越者(KTHANID, the Eminence) | 1D8/5D10 | 克苏鲁的\"孪生兄弟\"，旧神阵营中与其对立 | 旧神阵营，克苏鲁的镜像兄弟，暗中协助调查员对抗旧日支配者。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:8688 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 211,
+          "line": 212,
           "context": "| 库潘格亚，恶魔野犬(KURPANNGA, The Devil-Dingo) | 1/1D10 | — 自成一系的神格 | 梦幻时光孕生的毁灭化身，近身致体质流失，所过之地化为荒原。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:8738 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 212,
+          "line": 213,
           "context": "| 雷姆，小灰人(LAM, The Grey) | 1/1D6 | — 自成一系的神格 | 火星旧日支配者，形似灰人，精神支配受害者并抹除其记忆。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:8774 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 213,
+          "line": 214,
           "context": "| 莉莉丝，夜之女王 (LILITH, The Queen of the Night) | 看到女神形态不会有理智值丧失，看到古革巨人形态时损失0/1D10 | 推测：与奈亚拉托提普关系微妙，其默许她自由往来现实世界 | 梦境女王，催眠役使受害者，窃精液孕育畸形夜行生物。 | `reference/sourcebook"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 214,
+          "line": 215,
           "context": "| 洛本，萨尔纳斯的失落神明(LOBON, Lost Deity of Sarnath) | 无 | 塔马什与佐·卡拉尔的兄弟神 | 萨尔纳斯没落之神，厌战好退避，圣矛可挡伤害并助飞行。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:8869 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 215,
+          "line": 216,
           "context": "| 姆西斯哈，廷达罗斯的霸主(MH'ITHRHA, Arch-Lord of Tindalos) | 1D10/1D100 | 廷达罗斯诸领主之首，反抗外神阶序并与尤格·索托斯为敌 | 廷达罗斯霸主，四维视界加瞬间跨越加扭曲时空，猎杀效率极高。 | `reference/sourcebooks/malleus-mons"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 216,
+          "line": 217,
           "context": "| 姆纳加拉，吞噬者(M'NAGALAH, The Devourer) | 1D8/3D10 | — 自成一系的神格 | 肉团状旧日支配者，触手钻入受害者体腔并将其同化吸收。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:8973 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 217,
+          "line": 218,
           "context": "| 诺姆夸，月之凶兽(MNOMQUAH, The Monster in the Moon) | 1D3/1D20 | 与克苏鲁同期抵达地球的旧日支配者，曾被旧神封印于月中 | 被封印于月球的巨兽，长舌拖拽猎物入巨口，统御月兽教团。 | `reference/sourcebooks/malleus-monstrorum-"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 218,
+          "line": 219,
           "context": "| 莫尔迪基安，藏骸所之神(MORDIGGIAN, The Charnel God) | 1D8/1D20 | — 自成一系的神格 | 藏骸所之神，吞噬尸体与活人的生命及灵魂，忌讳死者复生。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:9047 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 219,
+          "line": 220,
           "context": "| 脓汁之母，下级外神，莎布·尼古拉斯的孙女(MOTHER OF PUS, Lesser Outer God, Granddaughter of | 1D3/2D10 | 莎布·尼古拉斯的孙女 | 唤醒即致周边理智损失，令女性诞下畸胎，触手吸取意志。 | `reference/sourcebooks/malleus-m"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 220,
+          "line": 221,
           "context": "| 纳斯·霍萨斯，塞勒菲斯之神(NATH-HORTHATH, God of Celephais) | 无 | — 自成一系的神格 | 塞勒菲斯守护神，率狮出征，掷火球挥附魔战锤，脾气火爆。 | `reference/sourcebooks/malleus-monstrorum-zh.md`:9127 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 221,
+          "line": 222,
           "context": "| 恩克托萨&恩克托鲁，克苏鲁的双子后裔 (NCTOSA & NCTOLHU, Twin Spawn of Cthulhu) | 1D8/1D20 | 克苏鲁与卡索格萨之女，恩克托萨&恩克托鲁 | 囚于木星大红斑的克苏鲁双生女，协同以剃刀螯钳猎杀。 | `reference/sourcebooks/malleus-mo"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 222,
+          "line": 223,
           "context": "| 诺登斯，崇高深渊之主 （Nodens ，Lord of the Great Abyss） | 无 | — 自成一系的神格 | 旧神，庇护被外神追猎之人，可召唤夜魇助战或以意志对抗驱逐强敌 | `reference/sourcebooks/malleus-monstrorum-zh.md`:9185 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 223,
+          "line": 224,
           "context": "| 纳茜·卡姆波尔，世界粉碎者(N'TSE-KAAMBL, Shatterer of Worlds) | 无 | — 自成一系的神格 | 旧神，铸旧印封印旧日支配者，长矛可轰击外神与旧日支配者 | `reference/sourcebooks/malleus-monstrorum-zh.md`:9227 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 224,
+          "line": 225,
           "context": "| 努格&耶布，亵渎之双子(NUG & YEB, The Twin Blasphemies) | 每见到两者中的一个，1D10/1D100 | 尤格·索托斯与莎布·尼古拉斯之孪生子 | 地底纵欲献祭仪式的旧日支配者，吞噬男性祭品、致孕女性祭品致死 | `reference/sourcebooks/malleus-mon"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 225,
+          "line": 226,
           "context": "| 阿图，畸变之主(AHTU, Lord of the Deformed) | 1D10/1D100 | 奈亚拉托提普的化身 | 从地底爆裂而出，灼烧冲击波炸飞周边，8条200尺触手可碾压践踏 | `reference/sourcebooks/malleus-monstrorum-zh.md`:9319 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 226,
+          "line": 227,
           "context": "| 惡心影，漆黑霸王 (AKU-SHIN KAGE, The Dark Warlord) | 看到人类形态的惡心影不会损失理智值，看到惡心影的真身会损失1/1d20点理智值 | 奈亚拉托提普的化身 | 日本战乱化身，惑众成一代大将，伪足撕咬淋强酸血腐蚀敌人 | `reference/sourcebooks/malleu"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 227,
+          "line": 228,
           "context": "| 萨麦迪男爵，死墓之主（BARON SAMEDI, Lord of the Cemetery） | — | 奈亚拉托提普的化身 | 巫毒死神，可附身信徒操控，接触对手即死，役使周边尸体为僵尸 | `reference/sourcebooks/malleus-monstrorum-zh.md`:9405 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 228,
+          "line": 229,
           "context": "| 野兽，凶蛮巨兽（BEAST, Beastly Behemoth） | — | 奈亚拉托提普的化身 | 狮身人面像唤出的暴力化身，近乎无心智，专事践踏毁灭一切 | `reference/sourcebooks/malleus-monstrorum-zh.md`:9429 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 229,
+          "line": 230,
           "context": "| 黑公牛，外神的铺路者和使节 (THE BLACK BULL, Ambassador and Preparer of the Way | 目睹类人形态1/1D6，目睹怪兽般的巨大黑公牛形态 1D10/1D100 | 奈亚拉托提普的化身 | 外神的铺路者与使节，诱人自相残杀求毁灭，可现宇宙真容惑人疯狂 | `refer"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 230,
+          "line": 231,
           "context": "| 黑色恶魔，奈亚拉托提普的较弱化身(BLACK DEMON, Lesser Avatar of Nyarlathotep) | 1/1D10 | 奈亚拉托提普的化身 | 较弱化身，凭红色护身符锁定目标伺机复仇杀戮，力量有限 | `reference/sourcebooks/malleus-monstrorum-zh."
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 231,
+          "line": 232,
           "context": "| 黑狮子，埃及毁灭者(BLACK LION, Destroyer of Egypt) | 1D6/1D20 | 奈亚拉托提普的化身 | 曾几乎毁灭古埃及，遭封印于卡纳克，可无限吞噬受害者 | `reference/sourcebooks/malleus-monstrorum-zh.md`:9536 |"
         },
         {
           "file": "reference/tables/monster-index.md",
-          "line": 232,
-          "context": "| 黑色之人，女巫魔宴之神（BLACK MAN, God of the Witches' Sabbath） | — | 奈亚拉托提普的化身 | 女巫夜宴之神，携阿撒托斯之书收灵魂签名，接触吸取意志值 | `reference/sourcebooks/malleus-monstrorum-zh.md`:9565 |"
-        },
-        {
-          "file": "reference/tables/monster-index.md",
           "line": 233,
-          "context": "| 黑法老，古埃及之王（BLACK PHARAOH, Lord of Ancient Egypt） | — | 奈亚拉托提普的化身 | 黑法老，常伴两只隐形恐怖猎手，权杖自动命中轰击20点 | `reference/sourcebooks/malleus-monstrorum-zh.md`:9586 |"
+          "context": "| 黑色之人，女巫魔宴之神（BLACK MAN, God of the Witches' Sabbath） | — | 奈亚拉托提普的化身 | 女巫夜宴之神，携阿撒托斯之书收灵魂签名，接触吸取意志值 | `reference/sourcebooks/malleus-monstrorum-zh.md`:9565 |"
         },
         {
           "file": "reference/tables/monster-index.md",
@@ -1397,7 +1417,7 @@
           "context": "> `reference/sourcebooks/malleus-monstrorum-zh.md`(怪物之锤重译稿,现已可读,"
         }
       ],
-      "reference_count": 243,
+      "reference_count": 247,
       "cited": true,
       "provenance": {
         "work": "《怪物之锤》(Malleus Monstrorum)",

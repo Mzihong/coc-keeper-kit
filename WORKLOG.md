@@ -76,7 +76,7 @@ dist/bundle.md      构建产物:整个 kit 拼成一份,给没有仓库的 Chat
    → 仍不收录。
 7. **归档件不进 bundle**,所以任何 spec 引用它们都要写成可选("if present locally")。
 
-## 当前状态(2026-08-03)
+## 当前状态(2026-08-04)
 
 计划 P1–P9 的权威状态在 `update_plan/README.md` 的状态索引表,**不要在这里读状态**,
 只记几条容易漏的:
@@ -95,35 +95,42 @@ dist/bundle.md      构建产物:整个 kit 拼成一份,给没有仓库的 Chat
   别漏看。
 - **P8 投资者卡渲染缺口也已完成**——`scripts/render-investigator.py`/`templates/investigator.md`
   补全全部缺失字段,加了硬性算术+阈值型双层自校验;`core/13`/`character-creation.md`/
-  `core/01`(新增问题 14)已接线。**P1–P8 现已全部完成并归档**,活动计划只剩 P5 与 P9。
-- **P9 阶段 A + B 均已完成(2026-08-03),阶段 C(神格铺设)是唯一剩下的**。
-  17 项执行清单在 `update_plan/2026-08-02-monster-templates-traits.md`,分 A/B/C 三段,
-  **三段全完才归档**——A/B 完成不等于计划完结,接手请直接做 C。
-  - **阶段 A**(标尺与词条):`reference/rules/monster-scale.md` + 五级强度阶梯 +
+  `core/01`(新增问题 14)已接线。**P1–P8 现已全部完成并归档**。
+- **P9(怪物强度标尺 + 索引层 + 神格铺设)三阶段已全部完成并归档(2026-08-04)**,
+  见 `update_plan/Archived/README.md` 对应条目;计划文件本体在
+  `update_plan/Archived/2026-08-02-monster-templates-traits.md`。**活动计划只剩 P5。**
+  - **阶段 A**(标尺与词条,2026-08-03):`reference/rules/monster-scale.md` + 五级强度阶梯 +
     `reference/tables/monster-traits.md` 的 18 条数值词条,`core/07` 的 X 已回填。
-  - **阶段 B**(索引层):扩了 `scripts/build-reference-index.py`,新增
+  - **阶段 B**(索引层,2026-08-03):扩了 `scripts/build-reference-index.py`,新增
     `parse_malleus_entries()`(从转录稿抽取全部 223 条的名称/tier/SAN/锚点)+
     `build_monster_index()`(合并 `reference/tables/monster-index-data.json` 里人写的
     223 条 `Serves`/摘要,再被匹配到的 `reference/bestiary/*.md` 条目覆盖),生成
     `reference/tables/monster-index.md`(进 bundle)。校验和缺引用出处同级——
-    `Serves`/摘要留空就报错。现有 9 只 bestiary 条目已按新标尺重标(见下一条),
-    `cthulhu.md` 补了反向的眷族/仆从小节,`core/07`/`core/04` 已接线检索入口。
-  - **接手做阶段 C 前必看**:阶段 B 的机制(脚本)与内容(人写 223 条)**在同一个会话
-    里一次做完了**,没有按原计划拆两个上下文——用 8 个并行 subagent 各分块读取转录稿、
-    写 `Serves` + ≤40 字摘要草稿,汇总校验后一次性合并进
-    `reference/tables/monster-index-data.json`,详情见下面「会话记录」。
-    **阶段 C(铺约 6 个神格 + 8–10 眷族)现在没有任何等待项,标尺、词条、索引机制都已就绪。**
-- **`reference/bestiary/` 现有 9 只的实测分布,是 P9 定案的主要依据**:threat 8/9 都是
-  `deadly`(`trivial`/`mythic` 从未用过),同为 `deadly` 的 SAN 从 `0` 到 `1D4/1D10`;
-  type 六类里 `beast`/`undead`/`great-old-one`/`human` 从未被单独用过,活着的两类有
-  3 只被迫加括号补充。**别把这 9 只当对标样板用**——它们是在没有标尺的状态下写的,
-  P9 执行清单第 9 项就是回头校准它们。
-- **古神级条目住在 `reference/mythos/great-old-ones/`(现有 `cthulhu.md`),不在
-  `bestiary/`。** 这条分工现在没写在任何 spec 里,P9 执行清单第 4 项负责补上。
-- **kit 现在几乎是一套克苏鲁专用工具。** 在 kit 自己写的文件里统计神格提及:
-  克苏鲁 **135** 次、达贡/海德拉 14/7 次(教团已立档但**神格本身没有文件**)、
-  犹格-索托斯/莎布-尼古拉斯/奈亚拉托提普/伊格 各 1–2 次、**哈斯塔 0 次**。
-  P9 阶段 C 是**拓宽**不是补漏,工作量按这个认。
+    `Serves`/摘要留空就报错。现有 9 只 bestiary 条目已按新标尺重标,`cthulhu.md`
+    补了反向的眷族/仆从小节,`core/07`/`core/04` 已接线检索入口。
+  - **阶段 C**(神格铺设,2026-08-04):新增 5 个神格页(`reference/mythos/great-old-ones/`
+    下的 `dagon-and-hydra.md`/`hastur.md`/`nyarlathotep.md`/`shub-niggurath.md`/
+    `yog-sothoth.md`,体例照 `cthulhu.md`,均含「眷族与仆从」反链)+ 7 个新眷族/化身
+    bestiary 条目(`deep-one.md`/`byakhee.md`/`spawn-of-hastur.md`/`hunting-horrors.md`/
+    `black-pharaoh.md`/`dark-young.md`/`sons-of-yog-sothoth.md`)。执行时用 5 个并行
+    subagent 分神格研究转录稿并起草——落地时发现并修正了 `mi_match_bestiary`
+    (`build-reference-index.py`)的一处匹配盲区:算法要求英文标题里有 2 个以上 4 字母+
+    单词才判定匹配转录稿原行,`Byakhee`/`Deep One` 这类短标题因此覆盖不到自己的转录稿行,
+    曾在 `monster-index.md` 里产生重复行(同一生物一行来自转录稿脚手架、一行来自新写的
+    bestiary 条目)。修法是把这两个文件的标题改成书本原名的完整形式(`Byakhee, the
+    Star-Steeds` / `Deep One, Gilled Humanoid`)绕开阈值,没有改动共享的匹配算法本身——
+    若以后再遇到同类短名字(如未来给"修格斯"单独立档),同一手法可以复用,也可以考虑
+    把算法的阈值本身放宽,但那需要针对全部 223 条重新跑一遍回归检查,本轮范围内没做。
+- **`reference/bestiary/` 现有条目的实测分布(P9 阶段 A 的主要依据,2026-08-03 复查时
+  仅有 9 只)**:threat 当时 8/9 都是 `deadly`(`trivial`/`mythic` 从未用过),
+  type 六类里 `beast`/`undead`/`great-old-one`/`human` 从未被单独用过。阶段 C 新增
+  7 只之后 threat/type 分布已明显更均衡(见新条目自身 header),不必再假设"全是 deadly"。
+- **古神级条目住在 `reference/mythos/great-old-ones/`(现有 6 份:`cthulhu.md` +
+  阶段 C 新增的 5 份),不在 `bestiary/`。**
+- **kit 的神格覆盖面(2026-08-04,阶段 C 完成后)**:除克苏鲁外,达贡与许德拉、哈斯塔、
+  奈亚拉托提普、莎布-尼古拉斯、犹格-索托斯五位主要外神现在都有独立的 `great-old-ones/`
+  页面与至少一只眷族/化身的完整 bestiary 条目。伊格等仍缺文件——kit 仍以克苏鲁系为主,
+  但不再是"只有克苏鲁一个入口"。
 - **`dist/bundle.md` 仍然不收 `reference/bestiary/` 也不收 `reference/mythos/`**
   (白名单只有 `core/`、`templates/`、`reference/rules|craft|tables/`,见
   `scripts/build-bundle.sh` 第 36–45 行)——但 P9 阶段 B 落地的
