@@ -1,37 +1,37 @@
-# complications.md — what goes sideways this session
+# complications.md — 这一场会出什么岔子
 
-Roll **1d20** twice when prepping a session. A complication is not a monster and not a clue —
-it's pressure that makes the investigators' *choices* cost something.
+备课时掷 **1d20** 两次。变数既不是怪物也不是线索——它是让调查员的**选择**开始有代价的
+那股压力。
 
-Good complications constrain time, attention, resources, or reputation. They never remove the
-path forward. See `core/04-design-scenario.md`.
+好的变数挤压时间、注意力、资源或名声,但**永远不掐断前进的路**。见
+`core/04-design-scenario.md`。
 
-Need more than 20? `reference/decks/miseries-zh.md` (local only) is the official *Miseries*
-deck — same job, a deeper pile. Heed its own advice: **pick the card, don't draw it**. Each
-one is written for a specific situation and lands badly anywhere else.
+20 条不够用?`reference/decks/miseries-zh.md`(仅本地)是官方 *Miseries* 卡组——干的是同
+一件事,只是堆得更深。照它自己的忠告办:**挑牌,别抽牌**。每张都是为某个具体处境写的,
+放错地方就砸场。
 
-| d20 | Complication |
+| d20 | 变数 |
 |---|---|
-| 1 | Someone competent is investigating the same thing, and doesn't want help |
-| 2 | An investigator's cover, credential, or story is checked and found wanting |
-| 3 | A witness recants, publicly, and the players look like the problem |
-| 4 | Weather, strike, curfew, or closure removes the obvious route |
-| 5 | An ally needs something urgently, now, unrelated to the case |
-| 6 | Evidence they hold is legally or physically deteriorating |
-| 7 | A local authority takes an interest — helpful, slow, and unshakeable |
-| 8 | Something they did last session has an unglamorous consequence: a bill, a grudge, a rumour |
-| 9 | A rival claims credit for what they've found and gets believed |
-| 10 | The one person who can explain it is unavailable for a specific, mundane reason |
-| 11 | An investigator is recognised somewhere they shouldn't be known |
-| 12 | Money runs out, or a payment is withdrawn |
-| 13 | A door that was open is now guarded, politely |
-| 14 | Someone offers exactly what they need in exchange for something they'd rather not give |
-| 15 | A bystander attaches themselves to the group and will not be shaken off |
-| 16 | Two leads come due at the same time in different places |
-| 17 | Something they left behind is found and traced back |
-| 18 | A member of the community they've been leaning on is hurt because of it |
-| 19 | The threat notices them and responds proportionately — not an attack, a *reply* |
-| 20 | They're offered a way to end this immediately that costs someone else |
+| 1 | 另有一个称职的人在查同一件事,而且不想要帮手 |
+| 2 | 某位调查员的身份、证件或说辞被查了,没兜住 |
+| 3 | 一名证人当众翻供,玩家反倒像是有问题的一方 |
+| 4 | 天气、罢工、宵禁或停业把最明显的那条路封了 |
+| 5 | 一位盟友现在就急需帮忙,而且和本案无关 |
+| 6 | 他们手里的证据正在法律上或物理上失效 |
+| 7 | 某个地方当局盯上了这件事——态度友善、动作缓慢、甩不掉 |
+| 8 | 上一场次做过的事结出了不体面的果:一笔账单、一份记恨、一条流言 |
+| 9 | 竞争者把他们查到的东西据为己功,而且被人信了 |
+| 10 | 唯一能解释这件事的人,因为一个具体而平淡的理由联系不上 |
+| 11 | 某位调查员在一个不该被认出来的地方被认了出来 |
+| 12 | 钱花光了,或者一笔款子被撤回 |
+| 13 | 原本敞着的一扇门,现在有人客客气气地守着 |
+| 14 | 有人愿意拿他们正需要的东西来换一样他们不太愿意给的东西 |
+| 15 | 一个不相干的人赖上了队伍,怎么都甩不掉 |
+| 16 | 两条线索在不同的地方同时到期 |
+| 17 | 他们留下的某样东西被人捡到,顺藤摸到了他们头上 |
+| 18 | 他们一直依靠的那个社群里,有人因此受了伤 |
+| 19 | 威胁注意到他们了,并按相称的分寸回应——不是袭击,是**回话** |
+| 20 | 有人给他们一条能立刻了结此事的路,代价由别人承担 |
 
-> Check the roll against `world/event-clock.md` before using it. If a complication would
-> duplicate or contradict a trigger that's already primed, reroll — the clock takes priority.
+> 掷出的结果先对一遍 `world/event-clock.md`。如果这条变数会和已经上膛的某个触发条件重复
+> 或打架,重掷——时钟优先。

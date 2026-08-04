@@ -63,6 +63,11 @@ freely to fit the campaign's era and place.
   in English, even when the content is Chinese.
 - Write the content in the campaign's declared **output language**.
 - Cross-link related places, factions, and NPCs with relative links.
+- **Add a mermaid diagram when the structure is the point** — a faction with more than a
+  handful of moving parts, or a region whose settlements need travel times. Follow
+  `reference/craft/diagram-conventions-zh.md`: §一 (general rules — every edge carries a
+  label naming what actually connects the two), §二 (faction diagrams), §四 (region
+  diagrams). Skip the diagram for 2–3 nodes; a sentence is faster.
 - End with **3–5 open hooks** a scenario could grab.
 
 ## Quality bar

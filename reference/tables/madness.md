@@ -1,25 +1,23 @@
-# Table — Bout of Madness (real-time)
+# madness.md — 疯狂发作(即时症状)
 
-Roll **1D10** when an investigator suffers a bout of madness (lost ≥ 5 SAN in one roll and
-made the INT realisation). Lasts ~1D10 rounds. Pick if a roll doesn't fit the fiction.
+调查员陷入疯狂发作时掷 **1D10**(单次检定损失 ≥5 点理智值,且通过了那次 INT 检定意识到
+自己看见了什么)。持续约 1D10 轮。掷出的结果和当下的剧情不搭时,直接挑一条。
 
-For the longer aftermath — summary symptoms, and the phobia or mania the investigator is left
-carrying — `reference/decks/phobias-and-manias-zh.md` (local only) is the official *Phobias*
-deck: 9 real-time symptoms, 6 summary ones, and 32 named conditions written out at
-hand-to-the-player length.
+更长的后续——概括性症状,以及调查员就此背上的那个恐惧症或狂躁症——见
+`reference/decks/phobias-and-manias-zh.md`(仅本地),官方 *Phobias* 卡组:9 条即时症状、
+6 条概括性症状,外加 32 种写到可以直接递给玩家的具名病症。
 
-| d10 | Effect |
+| d10 | 症状 |
 |----|--------|
-| 1 | **Amnesia** — comes to with no memory of the last few minutes; the horror is a blank. |
-| 2 | **Psychosomatic disability** — sudden blindness, deafness, or a limb that won't obey. |
-| 3 | **Violence** — lashes out at the nearest thing, friend or foe, until restrained. |
-| 4 | **Paralysis / faint** — freezes or drops; can only whimper. |
-| 5 | **Flee** — runs headlong away from the source, heedless of danger. |
-| 6 | **Hysterics** — uncontrollable laughing, weeping, or screaming. |
-| 7 | **Phobia** — gains a new phobia (roll/choose); it grips them now and recurs later. |
-| 8 | **Mania** — gains a new compulsion (collecting, cleansing, counting, confessing). |
-| 9 | **Delusion** — briefly believes something false and acts on it (they're fine; it's a dream; an ally is the monster). |
-| 10 | **Fugue** — takes purposeful but irrational action they won't remember (walks into the sea, buries an object, writes a warning). |
+| 1 | **失忆 (Amnesia)** — 醒过来时对刚才几分钟毫无记忆;恐怖的部分是一片空白。 |
+| 2 | **心因性失能 (Psychosomatic disability)** — 突发失明、失聪,或某条肢体不听使唤。 |
+| 3 | **暴力 (Violence)** — 扑向最近的目标,不分敌友,直到被制住。 |
+| 4 | **僵直/昏厥 (Paralysis / faint)** — 定住或直接倒下,只能发出呜咽。 |
+| 5 | **逃跑 (Flee)** — 不顾一切地远离来源,全然不管路上的危险。 |
+| 6 | **歇斯底里 (Hysterics)** — 无法自控地大笑、痛哭或尖叫。 |
+| 7 | **恐惧症 (Phobia)** — 获得一个新恐惧症(掷或选);当场发作,日后还会再犯。 |
+| 8 | **狂躁症 (Mania)** — 获得一种新的强迫行为(收集、清洁、计数、忏悔)。 |
+| 9 | **妄想 (Delusion)** — 短暂地相信某件不存在的事并照着做(自己没事;这是个梦;同伴才是怪物)。 |
+| 10 | **神游 (Fugue)** — 做出目的明确却不合理的行动,事后毫无记忆(走进海里、埋掉某样东西、写下一句警告)。 |
 
-New phobias/manias earned this way should **come back** — note them on the investigator and
-call them at the worst moment later.
+这样得来的新恐惧症/狂躁症**要让它回来**——记在调查员卡上,挑最糟的时机翻出来。

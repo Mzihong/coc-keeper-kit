@@ -32,8 +32,10 @@ Open the file and follow it to the letter, including its Quality bar.
 ## Using this in ChatGPT (no repo access)
 
 If you are running as a ChatGPT Project or GPT without the repository mounted, the Keeper
-should upload **`dist/bundle.md`** — every `core/` spec, template, and seed table concatenated
-into one file. Inside the bundle, each file is delimited by:
+generates **`dist/bundle.md`** with `bash scripts/build-bundle.sh` and uploads it — the whole
+kit minus the third-party archives, concatenated into one file (`reference/README.md` → 什么进
+bundle). It is not committed, so build it fresh right before uploading. Inside the bundle,
+each file is delimited by:
 
 ```
 === FILE: core/04-design-scenario.md ===
@@ -73,14 +75,10 @@ Never downgrade an artifact to a summary of an artifact.
 
 - **每次改动都要在根 `CHANGELOG.md` 追加一条**;影响到用户入口时同时更新 `README.md`。
 - 改动来自 `update_plan/` 里的某个计划时,完结前逐条走 **`update_plan/README.md` 的
-  「完结清单」**——状态两处同步、changelog、重跑 `scripts/build-bundle.sh`、
-  三适配器一致性、归档。
+  「完结清单」**——状态两处同步、changelog、三适配器一致性、归档。
 - 改动结构、硬约定或计划状态时,顺手更新 `WORKLOG.md`——它是给接手会话的上手速览,过期比不存在更糟。
   没有对应计划文件、也不是归档第三方资料的临时改动,收尾时读 `core/15-close-session.md`
   ——它比这条一句话多一步:把刚写进日志里的数字/路径/清单回头 grep 核对一遍,而不是凭记忆断言。
-- 动过 `core/` / `templates/` / `reference/` 就必须重跑 `scripts/build-bundle.sh`,
-  并把 `dist/bundle.md` 与源文件放在同一个 commit。
-- ChatGPT 用户拿到的是 `dist/bundle.md` 快照——不重建 bundle,他们就永远用着旧规则。
 
 ## Portability
 

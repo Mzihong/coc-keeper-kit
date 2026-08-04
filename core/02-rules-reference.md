@@ -5,9 +5,15 @@ points to the cheat-sheets in `reference/rules/`; read the relevant one before y
 numbers. It references mechanics — it does not reproduce the rulebook.
 
 When a cheat-sheet doesn't settle it, `reference/sourcebooks/keeper-rulebook-7e-zh.md` is the
-7e rulebook itself, transcribed (local file, absent from `dist/bundle.md`). It is the last
+7e rulebook itself, transcribed (local file, so treat it as optional). It is the last
 word on any number here — and it is a *transcription*, so cross-check anything surprising
 before you commit it. **If it contradicts a cheat-sheet, fix the cheat-sheet.**
+
+**Default era: 1920s.** Every cheat-sheet below — `character-creation.md` most of all — is
+written against the 1920s baseline unless a campaign declares otherwise. Before generating
+into a campaign whose `CLAUDE.md` declares a different **Era**, read
+`reference/rules/eras/README.md`: read the 1920s baseline first, then layer that era's delta
+on top. Never read an era delta file on its own — it only lists what changes.
 
 ## Read this before you
 
@@ -40,6 +46,10 @@ before you commit it. **If it contradicts a cheat-sheet, fix the cheat-sheet.**
 - `reference/rules/monster-scale.md` — the five-tier non-human threat ladder (creature /
   servitor / unique entity / deity), baseline SAN/HP/armour/attack-skill ranges per tier and
   threat band, and the trait load ceiling that caps `reference/tables/monster-traits.md`.
+- `reference/rules/eras/README.md` — **read only when the campaign declares an Era other
+  than 1920s.** Index of book-backed era packs, the delta convention each one follows, the
+  load order (baseline first, then the era file as an override), and the path A/B/C fallback
+  for eras the source material doesn't cover.
 
 ## Fast facts (verify against the sheets)
 

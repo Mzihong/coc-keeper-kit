@@ -5,7 +5,7 @@
   "governed_by": "reference/mythos/README.md",
   "citation_rule": null,
   "usage_rule": "authored by this kit — read and used directly, no citation required",
-  "in_bundle": false,
+  "in_bundle": true,
   "generated_by": "scripts/build-reference-index.py — do not edit by hand",
   "entry_count": 20,
   "entries": [
@@ -25,12 +25,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 29,
+          "line": 87,
           "context": "- 怪物图鉴 `fellrock.md` 的\"沉默之油\"反查链接指向了 `artifacts-zh.md`,但那份文件里"
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 77,
+          "line": 76,
           "context": "- Arming someone: `reference/decks/weapons-and-artifacts-zh.md` gives skill, base chance,"
         },
         {
@@ -40,7 +40,7 @@
         },
         {
           "file": "reference/README.md",
-          "line": 26,
+          "line": 29,
           "context": "file (origin, leadership, funding, weakness); `artifacts-zh.md` covers Mythos objects and"
         },
         {
@@ -60,13 +60,8 @@
         },
         {
           "file": "reference/rules/character-creation.md",
-          "line": 272,
+          "line": 277,
           "context": "| **非法术型**(帮派头目、雇佣兵、纯世俗势力) | 装备总价定强度,直接对接 `reference/decks/weapons-and-artifacts-zh.md` 的价格栏 | 武器/防具/载具的档次 |"
-        },
-        {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 483,
-          "context": "- [x] `reference/mythos/` 现状 —— **不是只有 README**:有 `artifacts-zh.md`、"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -97,6 +92,11 @@
           "file": "update_plan/Archived/2026-08-02-cult-doc-wrapup.md",
           "line": 47,
           "context": "`reference/bestiary/fellrock.md` 的\"沉默之油\"词条指向了 `reference/mythos/artifacts-zh.md`,"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 484,
+          "context": "- [x] `reference/mythos/` 现状 —— **不是只有 README**:有 `artifacts-zh.md`、"
         }
       ],
       "reference_count": 15
@@ -156,14 +156,14 @@
           "context": "见 `reference/mythos/cthulhu-cult-history-zh.md` 的\"永生大师线\"了解这个概念在本 kit"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 484,
-          "context": "`cthulhu-cult-history-zh.md`、`cults/`(5 份)、`spells/`、"
-        },
-        {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
           "line": 90,
           "context": "`reference/mythos/cthulhu-cult-history-zh.md`(27 条历史条目表,不逐条散文重述)"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 485,
+          "context": "`cthulhu-cult-history-zh.md`、`cults/`(5 份)、`spells/`、"
         }
       ],
       "reference_count": 11
@@ -252,17 +252,12 @@
           "context": "`reference/mythos/cults/esoteric-order-of-dagon.md` 的大祭司仪式核心法术;"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 349,
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 350,
           "context": "| 达贡 / 海德拉 | 14 / 7(`cults/esoteric-order-of-dagon.md` 已立档,**神格本身却没有文件**) |"
-        },
-        {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 677,
-          "context": "**① 达贡与许德拉**(kit 提及 14/7 次、`cults/esoteric-order-of-dagon.md` 已立档、"
         }
       ],
-      "reference_count": 9
+      "reference_count": 8
     },
     {
       "file": "cults/louisiana-swamp-cult.md",
@@ -385,23 +380,28 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 94,
+          "line": 152,
           "context": "从 deadly 改成 mythic(体型与耐久数值早已过 deadly 上限)、`thrall-of-cthulhu.md`"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 97,
+          "line": 155,
           "context": "- **神格文件现在要反向列出自己的眷族与仆从。** `cthulhu.md` 补了这一节(哪些怪物服侍"
         },
         {
           "file": "WORKLOG.md",
-          "line": 110,
-          "context": "`cthulhu.md` 补了反向的眷族/仆从小节,`core/07`/`core/04` 已接线检索入口。"
+          "line": 114,
+          "context": "`Serves`/摘要留空就报错。现有 9 只 bestiary 条目已按新标尺重标,`cthulhu.md`"
         },
         {
           "file": "WORKLOG.md",
-          "line": 121,
-          "context": "- **古神级条目住在 `reference/mythos/great-old-ones/`(现有 `cthulhu.md`),不在"
+          "line": 118,
+          "context": "`yog-sothoth.md`,体例照 `cthulhu.md`,均含「眷族与仆从」反链)+ 7 个新眷族/化身"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 199,
+          "context": "- **古神级条目住在 `reference/mythos/great-old-ones/`(现有 6 份:`cthulhu.md` +"
         },
         {
           "file": "reference/mythos/README.md",
@@ -429,49 +429,44 @@
           "context": "relative path (e.g. 'great-old-ones/cthulhu.md'); references also match the bare"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 10,
-          "context": "> bestiary 条目重标,`cthulhu.md` 补眷族反链,`core/07`/`core/04` 接线检索入口。"
-        },
-        {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 333,
-          "context": "| 2 | 关联信息**存在,但埋在散文里** | `black-wing.md` 的 Lore 写了 \"loyal to Cthulhu rather than Nodens\",但不是字段;反过来 `great-old-ones/cthulhu.md` 的「挂钩」链了教团、手法、史料,**唯独不链自己的眷族**。双向"
-        },
-        {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 334,
-          "context": "| 3 | **哈斯塔在 kit 里根本不存在** | `great-old-ones/` 只有 `cthulhu.md`;`bestiary/` 无任何哈斯塔系怪物。**即便索引建好,那个查询仍返回空集**——而空集比错答案更容易让模型自由发挥 |"
-        },
-        {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 485,
-          "context": "**`great-old-ones/`(1 份:`cthulhu.md`)**。"
-        },
-        {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 665,
-          "context": "且设计本就是\"劝退不劝打\");`thrall-of-cthulhu.md` deadly → moderate(malleus"
-        },
-        {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 669,
-          "context": "- [x] **12. 反向接线:神格文件列出自己的眷族。** `cthulhu.md` 新增「眷族与仆从」一节,"
-        },
-        {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 681,
-          "context": "体例照 `great-old-ones/cthulhu.md`(是什么 / 苏醒条件 / 征兆 / 邪教如何崇拜 /"
-        },
-        {
-          "file": "update_plan/README.md",
-          "line": 13,
-          "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:五级阶梯的档位区间、按 malleus 四类重排的 type、数值词条(强化)系统与其负载预算 | 进行中(阶段 A + B 已完成 059ba63,阶"
-        },
-        {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
           "line": 89,
           "context": "—— `reference/mythos/great-old-ones/cthulhu.md`(实体条目)+"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 11,
+          "context": "> bestiary 条目重标,`cthulhu.md` 补眷族反链,`core/07`/`core/04` 接线检索入口。"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 334,
+          "context": "| 2 | 关联信息**存在,但埋在散文里** | `black-wing.md` 的 Lore 写了 \"loyal to Cthulhu rather than Nodens\",但不是字段;反过来 `great-old-ones/cthulhu.md` 的「挂钩」链了教团、手法、史料,**唯独不链自己的眷族**。双向"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 335,
+          "context": "| 3 | **哈斯塔在 kit 里根本不存在** | `great-old-ones/` 只有 `cthulhu.md`;`bestiary/` 无任何哈斯塔系怪物。**即便索引建好,那个查询仍返回空集**——而空集比错答案更容易让模型自由发挥 |"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 486,
+          "context": "**`great-old-ones/`(1 份:`cthulhu.md`)**。"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 666,
+          "context": "且设计本就是\"劝退不劝打\");`thrall-of-cthulhu.md` deadly → moderate(malleus"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 670,
+          "context": "- [x] **12. 反向接线:神格文件列出自己的眷族。** `cthulhu.md` 新增「眷族与仆从」一节,"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 678,
+          "context": "`great-old-ones/cthulhu.md`(是什么 / 苏醒条件(或对应改写)/ 征兆 / 邪教如何崇拜 /"
         }
       ],
       "reference_count": 18
@@ -489,12 +484,22 @@
       ],
       "referenced_by": [
         {
+          "file": "WORKLOG.md",
+          "line": 117,
+          "context": "下的 `dagon-and-hydra.md`/`hastur.md`/`nyarlathotep.md`/`shub-niggurath.md`/"
+        },
+        {
           "file": "reference/bestiary/deep-one.md",
           "line": 86,
           "context": "> [Father Dagon & Mother Hydra](../mythos/great-old-ones/dagon-and-hydra.md), who rule them and"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 680,
+          "context": "[`dagon-and-hydra.md`](../reference/mythos/great-old-ones/dagon-and-hydra.md)(唯一存在级,"
         }
       ],
-      "reference_count": 1
+      "reference_count": 3
     },
     {
       "file": "great-old-ones/hastur.md",
@@ -510,12 +515,32 @@
       ],
       "referenced_by": [
         {
+          "file": "WORKLOG.md",
+          "line": 117,
+          "context": "下的 `dagon-and-hydra.md`/`hastur.md`/`nyarlathotep.md`/`shub-niggurath.md`/"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 119,
+          "context": "bestiary 条目(`deep-one.md`/`byakhee.md`/`spawn-of-hastur.md`/`hunting-horrors.md`/"
+        },
+        {
           "file": "reference/tables/monster-index.md",
           "line": 97,
           "context": "| 哈斯塔之眷族，不可名状者生于星辰之间的子嗣（SPAWN OF HASTUR, Star-Born Progeny of the Unspeakable One） | 1D6/1D20 (malleus's own figure for this entry) | Hastur | Amphibious grappl"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 682,
+          "context": "[`hastur.md`](../reference/mythos/great-old-ones/hastur.md)(外神,黄衣之王作为化身写入"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 695,
+          "context": "[Spawn of Hastur](../reference/bestiary/spawn-of-hastur.md)(均哈斯塔)、"
         }
       ],
-      "reference_count": 1
+      "reference_count": 5
     },
     {
       "file": "great-old-ones/nyarlathotep.md",
@@ -532,6 +557,11 @@
       ],
       "referenced_by": [
         {
+          "file": "WORKLOG.md",
+          "line": 117,
+          "context": "下的 `dagon-and-hydra.md`/`hastur.md`/`nyarlathotep.md`/`shub-niggurath.md`/"
+        },
+        {
           "file": "reference/bestiary/black-pharaoh.md",
           "line": 17,
           "context": "as meeting one of his subordinates (see `reference/mythos/great-old-ones/nyarlathotep.md`)."
@@ -545,9 +575,14 @@
           "file": "reference/bestiary/hunting-horrors.md",
           "line": 85,
           "context": "> `reference/mythos/great-old-ones/nyarlathotep.md`). They also turn up loose in Dreamlands"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 684,
+          "context": "[`nyarlathotep.md`](../reference/mythos/great-old-ones/nyarlathotep.md)(外神,举例"
         }
       ],
-      "reference_count": 3
+      "reference_count": 5
     },
     {
       "file": "great-old-ones/shub-niggurath.md",
@@ -563,12 +598,22 @@
       ],
       "referenced_by": [
         {
+          "file": "WORKLOG.md",
+          "line": 117,
+          "context": "下的 `dagon-and-hydra.md`/`hastur.md`/`nyarlathotep.md`/`shub-niggurath.md`/"
+        },
+        {
           "file": "reference/bestiary/dark-young.md",
           "line": 84,
           "context": "> **KEEPER ONLY** — See `reference/mythos/great-old-ones/shub-niggurath.md` for the deity this"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 686,
+          "context": "[`shub-niggurath.md`](../reference/mythos/great-old-ones/shub-niggurath.md)(外神,"
         }
       ],
-      "reference_count": 1
+      "reference_count": 3
     },
     {
       "file": "great-old-ones/yog-sothoth.md",
@@ -583,12 +628,32 @@
       ],
       "referenced_by": [
         {
+          "file": "WORKLOG.md",
+          "line": 118,
+          "context": "`yog-sothoth.md`,体例照 `cthulhu.md`,均含「眷族与仆从」反链)+ 7 个新眷族/化身"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 120,
+          "context": "`black-pharaoh.md`/`dark-young.md`/`sons-of-yog-sothoth.md`)。执行时用 5 个并行"
+        },
+        {
           "file": "reference/tables/monster-index.md",
           "line": 136,
           "context": "| 尤格·索托斯之子，外神的子嗣（SONS OF YOG-SOTHOTH, Progeny of an Outer Gods） | 1/1D8 (sensing the unseen monstrous form) — see Stat block for the full | Yog-Sothoth | Yog-So"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 688,
+          "context": "[`yog-sothoth.md`](../reference/mythos/great-old-ones/yog-sothoth.md)(外神,\"现身/召唤"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 700,
+          "context": "[Sons of Yog-Sothoth](../reference/bestiary/sons-of-yog-sothoth.md)(犹格·索托斯)。"
         }
       ],
-      "reference_count": 1
+      "reference_count": 5
     },
     {
       "file": "spells/black-wing-call.md",
@@ -658,7 +723,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 30,
+          "line": 88,
           "context": "根本没有这一条——沉默之油实际是 `reference/mythos/spells/oil-of-silence.md` 的法术,"
         },
         {

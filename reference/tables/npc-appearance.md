@@ -1,40 +1,37 @@
-# npc-appearance.md — what they look like
+# npc-appearance.md — 他看上去是什么样
 
-Roll **1d20** for a physical impression and a temperament, whenever an NPC needs a first
-look before dialogue starts. This is the companion to `npc-quirks.md`: **quirks is how they
-perform, this is what a player sees before either of them says a word.** Roll both for anyone
-who gets more than a one-line appearance — a rolled pair beats "middle-aged, tired-looking"
-every time.
+NPC 在开口之前需要一个第一印象时,掷 **1d20** 取一条外形加脾性。这是 `npc-quirks.md` 的
+姊妹表:**怪癖是他怎么演,这张是玩家在双方开口之前看到的东西。** 凡是外貌描写不止一行的
+人两张都掷——掷出来的这一对,任何时候都胜过"中年,一脸疲惫"。
 
-See `core/06-create-npc.md`.
+见 `core/06-create-npc.md`。
 
-| d20 | Appearance + temperament |
+| d20 | 外形 + 脾性 |
 |---|---|
-| 1 | Immaculately dressed for an occasion nobody else is dressed for — and visibly proud of it |
-| 2 | Big hands, a quiet voice; the mismatch makes people underestimate them |
-| 3 | Moves like every joint aches, but never slows down for it |
-| 4 | Eyes that fix on the middle distance even mid-conversation, as if watching for something |
-| 5 | Immaculate hygiene, threadbare clothes — money is going somewhere else |
-| 6 | A face built for smiling that hasn't in a long time |
-| 7 | Dresses a decade out of fashion, deliberately, like a small refusal |
-| 8 | Restless hands that go still and heavy the moment the talk turns serious |
-| 9 | Soft-spoken to strangers, sharp-tongued the instant they're comfortable |
-| 10 | Carries themself like someone twice their size, and mostly gets away with it |
-| 11 | A voice pitched to carry across a room, used even one-on-one |
-| 12 | Flinches at sudden movement, covers it instantly with a joke |
-| 13 | Dressed with military precision even in civilian clothes |
-| 14 | Perpetually a little cold — extra layers, hands tucked away, even indoors |
-| 15 | Warm and solicitous with everyone, and somehow still unreadable |
-| 16 | A scar or old injury they narrate unprompted, in a story that doesn't quite add up |
-| 17 | Dresses to be forgettable, and has clearly practiced doing it |
-| 18 | Laughs easily, a beat too early, before the funny part |
-| 19 | Meticulous about their own appearance, indifferent to their surroundings |
-| 20 | Looks exactly like their occupation says they should — and that itself feels staged |
+| 1 | 为一个别人都没盛装出席的场合穿得一丝不苟——而且看得出很得意 |
+| 2 | 一双大手,说话却很轻;这种反差让人容易低估他 |
+| 3 | 每个关节都像在疼,却从不因此放慢 |
+| 4 | 谈话中途眼神也定在中距离上,像在等什么出现 |
+| 5 | 洗漱一丝不苟,衣服却磨破了——钱花到别处去了 |
+| 6 | 一张为笑而生的脸,已经很久没笑过 |
+| 7 | 刻意穿得落后十年,像一种小小的拒绝 |
+| 8 | 手一刻不停,话一转到正经事上就沉沉地定住 |
+| 9 | 对生人轻声细语,一旦放松下来立刻嘴上不饶人 |
+| 10 | 把自己端得像大出一倍的人,而且多半端得住 |
+| 11 | 一副能压过整间屋子的嗓门,一对一时照用不误 |
+| 12 | 突然的动静会让他一惊,随即用一句玩笑立刻盖过去 |
+| 13 | 穿的是便装,收拾得却像军容 |
+| 14 | 总是有点冷——多穿一层、手揣起来,在室内也一样 |
+| 15 | 对谁都热络体贴,却仍然让人看不透 |
+| 16 | 有一处伤疤或旧伤,不问自说,配的故事经不起细想 |
+| 17 | 打扮得让人记不住,而且显然练过 |
+| 18 | 笑点很低,而且总早半拍,笑在好笑的地方之前 |
+| 19 | 对自己的仪表一丝不苟,对身边的环境毫不在意 |
+| 20 | 长得完全就是他那个职业该有的样子——而这本身就显得像演的 |
 
-Want more range than 20 entries? `reference/decks/busybodies-zh.md` (if you have it locally)
-carries a **形象描述** line on each of its 47 cards — a second well of first impressions,
-written at the same one-line scale. Read it for ideas; roll here for the actual result.
+觉得 20 条不够花?`reference/decks/busybodies-zh.md`(如果本地有)的 47 张卡每张都带一行
+**形象描述**——另一口第一印象的井,写在同样一行的尺度上。读它取灵感,实际结果还是在这
+里掷。
 
-> Pair the appearance with the **mannerism** (`npc-quirks.md`) and the **lie**
-> (`core/06-create-npc.md`). Appearance is the first ten seconds; the quirk is how they hold
-> up under a whole scene; the lie is what breaks if the players push.
+> 把外形和习惯动作(`npc-quirks.md`)、以及那个**谎**(`core/06-create-npc.md`)配起来。
+> 外形是头十秒;怪癖是他能不能撑住一整场戏;谎是玩家逼上来时最先裂开的地方。

@@ -24,7 +24,20 @@ Ask all of these. They are the ones that actually change downstream output.
 
 **A. The game**
 1. **Era & place** — when and where? (e.g. 1920s New England, 1930s Shanghai, present-day
-   Hong Kong, 1890s Gaslight London)
+   Hong Kong, 1890s Gaslight London). **Whatever era the Keeper names, resolve it against
+   `reference/rules/eras/README.md`'s index before writing anything else** — every era gets
+   played, none get turned away:
+   - **Path A** — the era matches an index entry (or is unnamed/"1920s", the baseline) →
+     write that file's slug into the campaign `CLAUDE.md`'s **Era** field.
+   - **Path B** — not indexed, but close enough in technological lineage to reason from a
+     covered era (a Keeper says "1970s" or "1990s") → construct the delta on the spot per
+     the five-section convention and save it to `campaigns/<slug>/rules-era.md`; write that
+     path into the **Era** field. **Tell the Keeper plainly this delta is derived, not
+     sourced**, and show it to them before play starts.
+   - **Path C** — no real lineage to reason from (far future, alien, fully invented) → keep
+     only the mechanical skeleton; **tell the Keeper the kit doesn't back these numbers at
+     all**.
+   Whichever path fires, **say so out loud** — this is not a silent auto-fill.
 2. **Premise** — one line. What's wrong, or what's the promise to the players?
 3. **Output language** — what language should the generated material be in?
    *Default: 简体中文.* Filenames and kit scaffolding stay English regardless.

@@ -1,7 +1,7 @@
 # 7e Magic — cheat-sheet
 
 > Casting mechanics, tome conventions, and spell-design cost scaling — not a spell list.
-> Distilled from two local sources (both absent from `dist/bundle.md`): the tome/study rules
+> Distilled from two local-only sources: the tome/study rules
 > in `reference/sourcebooks/keeper-rulebook-7e-zh.md` (the 7e core rulebook — last word on any
 > number here), and the spell cost/casting-time patterns sampled across
 > `reference/sourcebooks/grand-grimoire-zh.md` (550+ spells, official supplement). This sheet

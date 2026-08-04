@@ -22,7 +22,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 143,
+          "line": 201,
           "context": "- 新增 `reference/decks/` 与首份收录件 `busybodies-zh.md`(官方好事者卡组,47 张 NPC 卡)。"
         },
         {
@@ -37,7 +37,7 @@
         },
         {
           "file": "reference/README.md",
-          "line": 32,
+          "line": 38,
           "context": "for the generators (`busybodies-zh.md` is Chaosium's *Busybodies* NPC deck, 47 cards)."
         },
         {
@@ -47,18 +47,18 @@
         },
         {
           "file": "reference/rules/character-creation.md",
-          "line": 259,
+          "line": 264,
           "context": "`reference/decks/busybodies-zh.md` 的 47 张已配平数值 NPC 卡就是\"普通人类\"的数值"
         },
         {
           "file": "reference/tables/npc-appearance.md",
-          "line": 34,
-          "context": "Want more range than 20 entries? `reference/decks/busybodies-zh.md` (if you have it locally)"
+          "line": 32,
+          "context": "觉得 20 条不够花?`reference/decks/busybodies-zh.md`(如果本地有)的 47 张卡每张都带一行"
         },
         {
           "file": "reference/tables/npc-quirks.md",
           "line": 31,
-          "context": "Want more range than 20 entries? `reference/decks/busybodies-zh.md` (if you have it locally)"
+          "context": "觉得 20 条不够花?`reference/decks/busybodies-zh.md`(如果本地有)的 47 张卡每张都带一行"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -111,7 +111,7 @@
         {
           "file": "reference/tables/complications.md",
           "line": 9,
-          "context": "Need more than 20? `reference/decks/miseries-zh.md` (local only) is the official *Miseries*"
+          "context": "20 条不够用?`reference/decks/miseries-zh.md`(仅本地)是官方 *Miseries* 卡组——干的是同"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -155,7 +155,7 @@
         {
           "file": "reference/tables/madness.md",
           "line": 7,
-          "context": "carrying — `reference/decks/phobias-and-manias-zh.md` (local only) is the official *Phobias*"
+          "context": "`reference/decks/phobias-and-manias-zh.md`(仅本地),官方 *Phobias* 卡组:9 条即时症状、"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -190,7 +190,7 @@
       "referenced_by": [
         {
           "file": "core/06-create-npc.md",
-          "line": 77,
+          "line": 76,
           "context": "- Arming someone: `reference/decks/weapons-and-artifacts-zh.md` gives skill, base chance,"
         },
         {
@@ -205,7 +205,7 @@
         },
         {
           "file": "reference/rules/character-creation.md",
-          "line": 272,
+          "line": 277,
           "context": "| **非法术型**(帮派头目、雇佣兵、纯世俗势力) | 装备总价定强度,直接对接 `reference/decks/weapons-and-artifacts-zh.md` 的价格栏 | 武器/防具/载具的档次 |"
         },
         {

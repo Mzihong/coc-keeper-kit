@@ -1,37 +1,36 @@
-# npc-quirks.md — the tell that makes them playable
+# npc-quirks.md — 让 NPC 能被演出来的那个小动作
 
-Roll **1d20** for a mannerism whenever you create an NPC. A rolled tic beats the model's
-default ("nervous, wrings hands") and gives the Keeper something to *perform* at the table.
+每造一个 NPC 就掷 **1d20** 取一个习惯动作。掷出来的怪癖胜过模型的默认输出("紧张,
+搓手"),而且给守秘人一个能在桌上**演**的东西。
 
-Roll a second time for anyone the players will meet more than once. See `core/06-create-npc.md`.
+玩家会见到不止一次的人,掷第二次。见 `core/06-create-npc.md`。
 
-| d20 | Quirk |
+| d20 | 怪癖 |
 |---|---|
-| 1 | Answers a question with a slightly different question |
-| 2 | Tidies things while talking — straightens, stacks, aligns |
-| 3 | Uses your name too often, always in full |
-| 4 | Physically incapable of being rushed; finishes every sentence |
-| 5 | Laughs at the wrong moment and knows it |
-| 6 | Quotes scripture, poetry, or regulations as though they settle matters |
-| 7 | Never sits down, in any circumstance |
-| 8 | Overexplains their own competence, unprompted |
-| 9 | Talks to an absent person — a spouse, a superior, a dog |
-| 10 | Deflects to a third party who is never available |
-| 11 | Keeps score aloud: who owes whom, down to small favours |
-| 12 | Touches a specific object whenever uncomfortable |
-| 13 | Speaks about themselves in the third person when nervous |
-| 14 | Corrects other people's grammar, class, or facts, gently and constantly |
-| 15 | Answers honestly but only exactly what was asked |
-| 16 | Whispers when saying anything true |
-| 17 | Warm and open until a specific topic, then goes flat |
-| 18 | Habitually early, and resents everyone else for not being |
-| 19 | Chews, smokes, drinks, or eats through every conversation |
-| 20 | Watches the exit, or a window, more than the person they're speaking to |
+| 1 | 用一个略有出入的问题来回答你的问题 |
+| 2 | 一边说话一边收拾东西——扶正、码齐、对边 |
+| 3 | 太频繁地叫你的名字,而且每次都叫全名 |
+| 4 | 生理上无法被催,每句话都要说完 |
+| 5 | 在不该笑的时候笑,而且自己知道 |
+| 6 | 引经据典、背诗或搬条例,好像这样事情就定了 |
+| 7 | 任何场合都不坐下 |
+| 8 | 没人问就过度解释自己有多在行 |
+| 9 | 对一个不在场的人说话——配偶、上级、一条狗 |
+| 10 | 把话推给某个第三方,而那个人永远联系不上 |
+| 11 | 把账算在嘴上:谁欠谁,小到一个顺手人情都算 |
+| 12 | 一不自在就去摸某件特定的东西 |
+| 13 | 紧张时用第三人称说自己 |
+| 14 | 温和而不间断地纠正别人的语法、身份或事实 |
+| 15 | 老实回答,但只答被问到的那一点 |
+| 16 | 凡是说真话的时候都压低成耳语 |
+| 17 | 热情坦率,直到碰上某个话题,然后一下子变平 |
+| 18 | 习惯性早到,并因此记恨所有不早到的人 |
+| 19 | 整段对话里都在嚼、抽、喝或吃 |
+| 20 | 盯着出口或窗户的时间,比盯着说话对象还多 |
 
-Want more range than 20 entries? `reference/decks/busybodies-zh.md` (if you have it locally)
-carries a 个人特质 line on each of its 47 cards — a second well of tics, written at the same
-one-line performable scale. Read it for ideas; roll here for the actual result.
+觉得 20 条不够花?`reference/decks/busybodies-zh.md`(如果本地有)的 47 张卡每张都带一行
+个人特质——另一口小动作的井,写在同样"一行可演"的尺度上。读它取灵感,实际结果还是在这
+里掷。
 
-> Pair the quirk with the **lie** the NPC tells (see `core/06-create-npc.md`). The quirk is
-> how the Keeper plays them; the lie is what they say when the players push. An NPC with a
-> quirk and no lie is a prop; with both, they're a scene.
+> 把怪癖和这个 NPC 说的**谎**配起来(见 `core/06-create-npc.md`)。怪癖是守秘人怎么演他,
+> 谎是玩家逼上来时他会说什么。只有怪癖没有谎的 NPC 是道具;两样都有才是一场戏。

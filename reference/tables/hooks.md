@@ -1,30 +1,29 @@
-# hooks.md — how the investigators get pulled in
+# hooks.md — 调查员是怎么被卷进来的
 
-Roll **1d20**. This is the door into the scenario: the reason *these* people are standing in
-this place asking questions. Reroll only if the result is impossible for the campaign's era —
-not because it's inconvenient.
+掷 **1d20**。这是进入模组的那扇门:为什么是**这几个人**站在这个地方问问题。只有当结果
+在战役的年代里根本不可能成立时才重掷——不要因为"不顺手"就重掷。
 
-Pair with `locations.md` and `mythos-angles.md` at intake. See `core/01-intake.md`.
+intake 时与 `locations.md`、`mythos-angles.md` 配套使用。见 `core/01-intake.md`。
 
-| d20 | The hook |
+| d20 | 引子 |
 |---|---|
-| 1 | Someone the investigators owe a debt to calls it in — and won't say why they need *this*. |
-| 2 | A body has turned up with one of the investigators' names in its pocket, misspelled. |
-| 3 | They are hired to retrieve an object. The client lies about what it is, badly. |
-| 4 | A letter arrives from someone who has been dead for years, postmarked last week. |
-| 5 | An investigator inherits a property they didn't know existed, with conditions attached. |
-| 6 | They witness something ordinary that doesn't add up, and can't leave it alone. |
-| 7 | A friend asks them to find a missing person the police have already stopped looking for. |
-| 8 | They're the only outsiders present when a small community closes ranks over something. |
-| 9 | Professional obligation — a survey, an audit, an inspection, a claim to assess. |
-| 10 | They're being blamed for something they didn't do and must find who did. |
-| 11 | A stranger warns them off a place they'd never heard of, in detail. |
-| 12 | Someone is buying up something worthless, and paying far too much for it. |
-| 13 | An investigator's recurring dream matches a photograph they've just been handed. |
-| 14 | They're stranded — weather, breakdown, quarantine — somewhere they meant to pass through. |
-| 15 | A journalist's unfinished notes reach them after the journalist disappears. |
-| 16 | They're invited to something exclusive, and the invitation names them specifically. |
-| 17 | A child tells them something no child should know, and won't repeat it. |
-| 18 | An old case, patient, or client of an investigator resurfaces, changed. |
-| 19 | They are asked to translate, appraise, restore, or authenticate an object nobody will explain. |
-| 20 | A public event goes wrong in a way the official account cannot account for. |
+| 1 | 调查员欠着人情的某人来讨这份人情了,而且不肯说为什么非要**这件事** |
+| 2 | 出现了一具尸体,口袋里写着某位调查员的名字,还写错了一个字 |
+| 3 | 他们受雇去取回一件东西。雇主对那是什么撒了谎,而且撒得很拙劣 |
+| 4 | 一封信寄到了,署名者已经死了好几年,邮戳却是上周 |
+| 5 | 某位调查员继承了一处自己都不知道存在的房产,附带条件 |
+| 6 | 他们目睹了一件寻常的事,细节却对不上,从此放不下 |
+| 7 | 一位朋友请他们找一个失踪的人,警方早已停止搜寻 |
+| 8 | 一个小社群为某件事对外统一了口径,而在场的外人只有他们 |
+| 9 | 职务在身——一次勘测、一次审计、一次检查、一笔待核的索赔 |
+| 10 | 他们被指认做了没做过的事,只能自己找出真凶 |
+| 11 | 一个陌生人劝他们别去某个他们从没听说过的地方,还说得很具体 |
+| 12 | 有人在高价收购一样一文不值的东西,而且出价高得离谱 |
+| 13 | 某位调查员反复做的那个梦,和刚递到手上的一张照片对上了 |
+| 14 | 他们被困住了——天气、抛锚、检疫——困在一个本来只打算路过的地方 |
+| 15 | 一名记者失踪之后,他没写完的笔记辗转到了他们手里 |
+| 16 | 他们收到一份门槛很高的邀请,而且邀请上点名点到了他们 |
+| 17 | 一个孩子告诉他们一件孩子不该知道的事,之后再不肯重复第二遍 |
+| 18 | 某位调查员的旧案子、旧病人或旧客户又冒了出来,人已经不一样了 |
+| 19 | 有人请他们翻译、鉴定、修复或验真一件东西,却没人肯解释那是什么 |
+| 20 | 一场公开活动出了事,官方的说法怎么也圆不上 |

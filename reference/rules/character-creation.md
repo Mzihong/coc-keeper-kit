@@ -1,5 +1,10 @@
 # 7e Character Creation — cheat-sheet
 
+> **Era baseline: 1920s.** Every default below (occupations, skill assumptions, currency,
+> technology level) is the "classic" 1920s Call of Cthulhu setting. Running a different era?
+> Read `reference/rules/eras/README.md` first — it explains how to layer that era's delta on
+> top of this file rather than reading this file as if it were era-neutral.
+>
 > Quick-fire pregen/investigator reference. **Mechanics only** — formulas, bands, and the
 > shape of each field. It is not a rules reproduction: the occupation list, the skill
 > descriptions, and the phobia/mania tables stay in the *Keeper Rulebook* and

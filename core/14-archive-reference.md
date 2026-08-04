@@ -39,8 +39,9 @@ rather than a dumping ground.
 | **the kit's own writing** distilled from any of the above | `reference/rules/`, `bestiary/`, `mythos/`, `tables/` — **not here** |
 
 If it fits none of these, propose a new sibling directory and give it a README stating its
-role, its citation rule, and whether it enters `dist/bundle.md`. Don't quietly widen the
-meaning of an existing directory.
+role and its citation rule. Whether it enters `dist/bundle.md` is not a per-directory
+decision — third-party archives never do, see `reference/README.md` → 什么进 bundle.
+Don't quietly widen the meaning of an existing directory.
 
 ### 2. Name and normalise
 
@@ -96,9 +97,9 @@ An archived file nothing points at is invisible; the index reports it as **orpha
 is a failure, not a warning. For each spec that can use it, add a pointer saying *what to take
 from it*, not just that it exists.
 
-Every pointer must be phrased as **optional**: archives are local files, absent from
-`dist/bundle.md`. A Keeper working from the bundle has to be able to follow the spec without
-them. "If present locally" is the standard hedge.
+Every pointer must be phrased as **optional** — archives are local files and never ship
+(`reference/README.md` → 什么进 bundle). A Keeper without the repo has to be able to follow
+the spec without them. "If present locally" is the standard hedge.
 
 ### 6. Rebuild the index
 
@@ -114,8 +115,6 @@ orphan. **Fix what it reports; never hand-edit the JSON.**
 
 - Update the target directory's README table (the human-readable view of the same facts).
 - Append to root `CHANGELOG.md` — what the Keeper can now do that they couldn't.
-- Re-run `scripts/build-bundle.sh` (any `reference/` change requires it) and commit
-  `dist/bundle.md` with the source files.
 - Check `update_plan/` for anything this material unblocks, and update that plan's 状态.
   Material often arrives precisely because something was waiting on it.
 
@@ -132,4 +131,4 @@ run said.
 - `## 引用出处` complete, with unknowns marked as unknown rather than guessed.
 - At least one spec points at it, phrased as optional.
 - `python scripts/build-reference-index.py` reports **no problems**.
-- `dist/bundle.md` rebuilt; `CHANGELOG.md` appended; any unblocked `update_plan/` entry updated.
+- `CHANGELOG.md` appended; any unblocked `update_plan/` entry updated.

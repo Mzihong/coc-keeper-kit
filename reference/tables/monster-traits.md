@@ -1,18 +1,16 @@
-# monster-traits.md — numeric trait menu
+# monster-traits.md — 数值词条菜单
 
-Bolt-on numeric traits for a `reference/bestiary/` or `campaigns/` monster entry — the layer
-that turns a tier baseline (`reference/rules/monster-scale.md`) into a specific creature
-without hand-inventing a new mechanic every time. Kit-original design, not sourced from any
-transcription.
+给 `reference/bestiary/` 或 `campaigns/` 里的怪物条目加挂的数值词条——把一个等级基线
+(`reference/rules/monster-scale.md`)变成一只具体生物的那一层,不必每次都手搓一条新机制。
+本套件原创设计,不来自任何转录稿。
 
-**Every trait carries a 破解口 (counter-play). This column is mandatory, not a nice-to-have** —
-a numeric trait doesn't come with a built-in weakness the way a behavioural quirk does (a cult
-leader's pride, a ghoul's hunger), so if the counter-play column is left blank the trait is
-just raw power and `core/07`'s fair-out rule quietly erodes as traits stack. Don't add a trait
-without one; don't strip a trait's counter-play to make an entry scarier.
+**每条词条都必须带「破解口」。这一列是硬性要求,不是锦上添花**——数值词条不像行为怪癖
+那样自带弱点(邪教首领的傲慢、食尸鬼的饥饿),破解口一栏留空,词条就只剩纯粹的强度,
+`core/07` 的"公平出路"铁律会随着词条叠加悄悄失效。没有破解口就别加这条词条;也不要为了
+让条目更吓人而把破解口删掉。
 
-**Load points** feed the tier ceilings in `monster-scale.md` (L2/L3 = 2, L4 = 3, L5 = 4) —
-sum a creature's trait loads and stay at or under its tier's ceiling.
+**负载点**对应 `monster-scale.md` 里的等级上限(L2/L3 = 2,L4 = 3,L5 = 4)——把一只生物
+的词条负载相加,不得超过它那一级的上限。
 
 | 词条 | 效果(数值) | 负载点 | 破解口 | 备注 |
 |---|---|---|---|---|
@@ -22,7 +20,7 @@ sum a creature's trait loads and stay at or under its tier's ceiling.
 | 免疫常规武器 (Conventional immunity) | 非附魔/非特殊材质武器造成最小伤害(1点) | 2 | 必须点名至少一种能正常伤害它的手段,且这手段要能被调查员找到 | L4/L5 常见,是"数值免疫"的标准写法,见 `monster-scale.md` 护甲惯例 |
 | 抓握/拖拽 (Grapple & drag) | 命中后目标被抓住,下回合自动承受抓握伤害,除非用 STR 对抗挣脱 | 1 | 挣脱检定用普通 STR 对抗(非 Extreme),给逃脱留出真实概率 | 常配合"拖入巢穴/异境"的场景效果 |
 | 汲取属性 (Drain a characteristic) | 命中后目标损失 1D3 点指定属性(STR/CON/INT/POW 择一),归零后触发特定后果 | 2 | 被汲取的属性每周自然恢复 1 点(卧床或休整时);该恢复速度必须写进条目 | 归零后果不应是当场死亡(除非属性是 CON)——POW 归零可以是"被夺走做梦的能力"而非死亡 |
-| 疯狂凝视 (Maddening gaze) | 目视接触时额外承受一次 SAN 检定(独立于遭遇本体的 SAN 检定) | 1 | 闭眼/移开视线/隔着反射面观察可以完全规避,且这个规避方式在场景里要能被发现 | 不要和"目睹即损失"的基础 SAN 检定重复计算,是額外一次,不是加倍同一次 |
+| 疯狂凝视 (Maddening gaze) | 目视接触时额外承受一次 SAN 检定(独立于遭遇本体的 SAN 检定) | 1 | 闭眼/移开视线/隔着反射面观察可以完全规避,且这个规避方式在场景里要能被发现 | 不要和"目睹即损失"的基础 SAN 检定重复计算,是额外一次,不是加倍同一次 |
 | 恐惧光环 (Terror aura) | 进入近距离(约 10 码)的人类每回合额外损失固定 1 点 SAN,直到离开范围 | 1 | 光环范围外无效,且光环不影响已经理智值为 0 的角色(无更多可失去的) | 适合让"靠近"本身变成有代价的战术选择,不需要额外掷骰 |
 | 疾病/诅咒接触 (Disease or curse on hit) | 命中后目标感染,若干天后发作(具体效果由条目自定,如属性衰减、变形前兆) | 2 | 发作前必须有可被发现的窗口期与可被找到的疗法/仪式,否则等同判处死刑而非危机 | 与"汲取属性"效果接近,不要同时给同一目标用,除非目的是慢性凌迟式的战役级威胁 |
 | 多重攻击型态 (Extra attack form) | 每回合可以额外发动一次不同类型的攻击(如物理+异能各一次) | 1 | 两次攻击若共用同一防御手段(如同时被同一护符克制)则破解口没有被稀释;若不共用,视为两个负载点 | 这是"每回合攻击次数"从 1 提到 2 的标准做法,别直接把伤害骰翻倍 |

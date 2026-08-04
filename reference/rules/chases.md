@@ -25,6 +25,13 @@ matter to the plot.
 - A **fumble** while driving or piloting during a chase is always a mishap, not just a stall.
 
 ## Typical Move rates (guidance — adjust for terrain, weather, and local knowledge)
+
+> **Era baseline: 1920s.** The motorised rows below (motorcycle, car) assume the era has
+> them at all — running an era without internal combustion (Antiquity, the Dark Ages, Viking
+> Iceland) or a different one (near-future, post-apocalyptic), read
+> `reference/rules/eras/README.md` for that era's vehicle/Move delta before using this table
+> as-is.
+
 | Mover | Move |
 |---|---|
 | Adult on foot, sprinting | 8–10 |

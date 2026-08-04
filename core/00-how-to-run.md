@@ -115,9 +115,11 @@ writing any stat block, difficulty, or Sanity cost.
   legitimate owner can prep faster, never as a substitute for buying anything. Rights holders
   can open an issue and any file will be taken down.
 
-  Archives are **local files, absent from `dist/bundle.md`** — every spec that points at one
-  says "if present". Nothing may depend on them. To file new material, follow
-  `core/14-archive-reference.md`; `reference/index.json` maps what is archived and who reads it.
+  Archives are **local files**: every spec that points at one says "if present", and nothing
+  may depend on them. That optionality is the same rule as what does and doesn't enter
+  `dist/bundle.md` — stated once, with its reasoning, in `reference/README.md` → 什么进 bundle.
+  To file new material, follow `core/14-archive-reference.md`; `reference/index.json` maps
+  what is archived and who reads it.
 
 ## Conventions
 
@@ -165,5 +167,6 @@ coc-keeper-kit/
 │       └── world/archive/   ← closed arcs' event-clocks; live clock never moves
 │                               (see campaigns/README.md → multi-arc & branching)
 ├── .claude/skills/          ← Claude Code wrappers (thin; body lives in core/)
-└── dist/bundle.md           ← every core/ + template + table file, concatenated
+└── dist/bundle.md           ← build artifact, gitignored: the whole kit minus the
+                                third-party archives, concatenated for upload
 ```

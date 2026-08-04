@@ -39,7 +39,8 @@
   rivalries: a suspicious neighbour, an undercut competitor, a spurned ex-member>
 
 ## Relationship diagram
-> Build with the mermaid faction-map convention (`update_plan/2026-08-02-low-cost-maps.md`).
+> Build with the mermaid faction-map convention — `reference/craft/diagram-conventions-zh.md`
+> §一 (general rules) and §二 (faction diagrams).
 > Every line needs a label — what connects the two nodes, not just that they're connected.
 
 ## Links

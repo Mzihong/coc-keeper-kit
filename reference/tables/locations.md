@@ -1,31 +1,30 @@
-# locations.md — where it happens
+# locations.md — 事情发生在哪儿
 
-Roll **1d20**. Use it to break the default gravity toward "a small New England fishing town."
-Adapt freely to the campaign's era and region — a *sanatorium* works in 1890s Kent, 1920s
-Massachusetts, or present-day 大嶼山.
+掷 **1d20**。用它打断默认往"新英格兰小渔村"滑过去的那股引力。按战役的年代和地域自由
+改写——一家*疗养院*放在 1890 年代的肯特、1920 年代的马萨诸塞或当代的大屿山都成立。
 
-Roll at least one of these into every campaign at intake, and again whenever a scenario needs
-somewhere new. See `core/03-build-world.md`.
+每个战役在 intake 时至少掷一条进去;之后场景需要新地点时再掷。见
+`core/03-build-world.md`。
 
-| d20 | Place |
+| d20 | 地点 |
 |---|---|
-| 1 | A works or factory running a night shift nobody applied for |
-| 2 | A sanatorium or convalescent home, half-empty, well-funded |
-| 3 | A reclamation site — drained marsh, filled harbour, new land over old |
-| 4 | A boarding house whose long-term residents all arrived the same year |
-| 5 | A regional museum with a collection it can't afford and didn't buy |
-| 6 | A rail junction, ferry pier, or terminus where people change and are not observed |
-| 7 | A religious site shared uneasily by two congregations |
-| 8 | A quarry, mine, or excavation that has hit something and kept digging |
-| 9 | A private school, seminary, or academy with a closed alumni network |
-| 10 | A cold-storage house, ice works, or cannery |
-| 11 | An estate under probate, contents inventoried but not removed |
-| 12 | A hospital's records basement or a coroner's office |
-| 13 | A resort out of season, staffed and empty |
-| 14 | A tenement block or walled compound with one entrance |
-| 15 | A survey station, lighthouse, or relay post with a rotating two-person crew |
-| 16 | A market or bazaar where one stall never closes |
-| 17 | A shipyard, dry dock, or breaker's yard |
-| 18 | An observatory, weather station, or telegraph office logging something odd |
-| 19 | A cemetery undergoing relocation — graves opened lawfully |
-| 20 | An ordinary suburban street where one house is wrong |
+| 1 | 一座工厂或作坊,夜班在开,却没人应聘过那个班 |
+| 2 | 一所疗养院或休养所,床位空了一半,经费却很充足 |
+| 3 | 一处填筑地——排干的沼泽、填平的港湾,新地压着旧地 |
+| 4 | 一栋公寓,长住的房客全是同一年搬进来的 |
+| 5 | 一家地方博物馆,藏品既买不起也不是买来的 |
+| 6 | 一个铁路枢纽、渡口或终点站,人在这里换乘,没人留意 |
+| 7 | 一处宗教场所,两个会众别别扭扭地共用着 |
+| 8 | 一座采石场、矿井或发掘现场,挖到了什么,然后继续往下挖 |
+| 9 | 一所私立学校、神学院或学院,校友网络对外封闭 |
+| 10 | 一间冷库、制冰厂或罐头厂 |
+| 11 | 一处正在办遗产认证的宅邸,物品已造册,尚未搬走 |
+| 12 | 医院的档案地下室,或者验尸官办公室 |
+| 13 | 一处过季的度假地,人手齐全,客房全空 |
+| 14 | 一片只有一个出入口的贫民公寓楼或围墙大院 |
+| 15 | 一座勘测站、灯塔或中继站,两人一组轮班驻守 |
+| 16 | 一个市场或集市,其中一个摊位从不收摊 |
+| 17 | 一处船厂、干船坞或拆船场 |
+| 18 | 一座天文台、气象站或电报房,记录里有些不对劲的东西 |
+| 19 | 一片正在迁葬的墓地——坟是合法开的 |
+| 20 | 一条再普通不过的近郊街道,其中一栋房子不对 |

@@ -7,67 +7,93 @@
   "usage_rule": "authored by this kit — read and used directly, no citation required",
   "in_bundle": true,
   "generated_by": "scripts/build-reference-index.py — do not edit by hand",
-  "entry_count": 7,
+  "entry_count": 13,
   "entries": [
     {
       "file": "character-creation.md",
       "path": "reference/rules/character-creation.md",
       "title": "7e Character Creation — cheat-sheet",
-      "lines": 303,
+      "lines": 308,
       "declared_consumers": [
         "core/13-create-investigator.md",
+        "reference/rules/eras/README.md",
         "reference/rules/skill-checks.md",
         "update_plan/2026-08-02-investigator-cards.md"
       ],
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 130,
+          "line": 48,
+          "context": "- **kit 不再只服务 1920s 了。** `reference/rules/character-creation.md` 头部第一次"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "line": 188,
           "context": "- `character-creation.md` 补齐年龄补正、Build/伤害加值、技能基础值等建卡数据,可用来审核他人交的卡。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 144,
+          "line": 202,
           "context": "- `character-creation.md` 各小节补上数据来源指路(标明取自哪个源文件/章节)。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 97,
+          "line": 102,
           "context": "补全全部缺失字段,加了硬性算术+阈值型双层自校验;`core/13`/`character-creation.md`/"
         },
         {
+          "file": "WORKLOG.md",
+          "line": 169,
+          "context": "写成了纯中文正文,后来对照 `character-creation.md`/`magic.md` 才发现 kit 的既有惯例"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 348,
+          "context": "**阶段 1 — 声明基准:**`character-creation.md` 头部加了「本文是 1920s 基准」;"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 364,
+          "context": "`character-creation.md`/`magic.md` 才发现违反 kit 既有惯例(英文正文 + 中文术语括注,"
+        },
+        {
           "file": "core/01-intake.md",
-          "line": 48,
+          "line": 61,
           "context": "background-first split in `reference/rules/character-creation.md` §11? *Default: not"
         },
         {
           "file": "core/01-intake.md",
-          "line": 67,
+          "line": 80,
           "context": "`reference/rules/character-creation.md` §1 and §5. *Default: accept as shown.* These"
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 20,
+          "line": 12,
+          "context": "**Default era: 1920s.** Every cheat-sheet below — `character-creation.md` most of all — is"
+        },
+        {
+          "file": "core/02-rules-reference.md",
+          "line": 26,
           "context": "→ read `reference/rules/character-creation.md` §11 before assigning skills or gear."
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 34,
+          "line": 40,
           "context": "- `reference/rules/character-creation.md` — attribute rolls, the standard-pool skill-point"
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 45,
+          "line": 44,
           "context": "`reference/rules/character-creation.md` §11 for how strong to make them."
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 73,
+          "line": 72,
           "context": "is not a separate power tier — it's `reference/rules/character-creation.md` §11: the same"
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 37,
+          "line": 38,
           "context": "villain is built with `reference/rules/character-creation.md` §11 (baseline + increment),"
         },
         {
@@ -116,6 +142,71 @@
           "context": "| **L1 — human** | *(not covered here)* | A cult leader, a hired gun, an obsessed academic. `character-creation.md` §11. |"
         },
         {
+          "file": "reference/rules/eras/cthulhu-invictus.md",
+          "line": 4,
+          "context": "> for the loading order — read `reference/rules/character-creation.md` (the 1920s baseline)"
+        },
+        {
+          "file": "reference/rules/eras/dark-ages.md",
+          "line": 4,
+          "context": "> for the loading order — read `reference/rules/character-creation.md` (the 1920s baseline)"
+        },
+        {
+          "file": "reference/rules/eras/end-times.md",
+          "line": 4,
+          "context": "> for the loading order — read `reference/rules/character-creation.md` (the 1920s baseline)"
+        },
+        {
+          "file": "reference/rules/eras/gaslight.md",
+          "line": 4,
+          "context": "> for the loading order — read `reference/rules/character-creation.md` (the 1920s baseline)"
+        },
+        {
+          "file": "reference/rules/eras/gaslight.md",
+          "line": 29,
+          "context": "table of its own. Use `character-creation.md`'s weapon values, adjusted for availability:"
+        },
+        {
+          "file": "reference/rules/eras/icarus.md",
+          "line": 4,
+          "context": "> for the loading order — read `reference/rules/character-creation.md` (the 1920s baseline)"
+        },
+        {
+          "file": "reference/rules/eras/mystic-iceland.md",
+          "line": 4,
+          "context": "> for the loading order — read `reference/rules/character-creation.md` (the 1920s baseline)"
+        },
+        {
+          "file": "reference/rules/eras/README.md",
+          "line": 4,
+          "context": "(`reference/rules/character-creation.md`). Read this before reading any file in this"
+        },
+        {
+          "file": "reference/rules/eras/README.md",
+          "line": 10,
+          "context": "The baseline (`character-creation.md`, `combat.md`, `chases.md`, etc.) already covers"
+        },
+        {
+          "file": "reference/rules/eras/README.md",
+          "line": 38,
+          "context": "| *(未声明 = 1920s)* | 经典 1920s | 1920s | ✅ `character-creation.md` 本身 |"
+        },
+        {
+          "file": "reference/rules/eras/README.md",
+          "line": 78,
+          "context": "same **来源** convention `character-creation.md` already uses. Nothing here is invented; if"
+        },
+        {
+          "file": "reference/rules/eras/README.md",
+          "line": 84,
+          "context": "2. **Read `character-creation.md` (and any other baseline cheat-sheet touched by the era's"
+        },
+        {
+          "file": "reference/rules/eras/README.md",
+          "line": 115,
+          "context": "era (a Keeper's \"1970s\" campaign reasons forward from `character-creation.md`'s 1920s"
+        },
+        {
           "file": "reference/tables/cult-leader-positions.md",
           "line": 5,
           "context": "掩盖邪教活动)。造首领时(`core/06-create-npc.md`、`reference/rules/character-creation.md`"
@@ -132,7 +223,7 @@
         },
         {
           "file": "campaigns/_template-campaign/CLAUDE.md",
-          "line": 53,
+          "line": 58,
           "context": "`reference/rules/character-creation.md` §11. Delete this line if category has no human"
         },
         {
@@ -151,19 +242,44 @@
           "context": "# Own Language just mirrors EDU (character-creation.md §5's \"special\" row) — it isn't"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 257,
-          "context": "> | 档位区间 + 词条负载上限 | **`reference/rules/monster-scale.md`**(新建) | 与人类侧成对。P4 最终落进 `reference/rules/character-creation.md` §11,两份并列在 `reference/rules/` 下,`core/02`"
+          "file": "update_plan/2026-08-04-era-rule-packs.md",
+          "line": 30,
+          "context": "- 但 `reference/rules/character-creation.md`(302 行)整份是 1920s 的职业与技能假设,"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 262,
-          "context": "> 依附于已有的车卡流程(§1–§5);怪物侧**没有可依附的宿主**(`character-creation.md`"
+          "file": "update_plan/2026-08-04-era-rule-packs.md",
+          "line": 43,
+          "context": "reference/rules/character-creation.md   ← 头部声明:本文是 1920s 基准"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 279,
-          "context": "> | 人类 | (书不收) | `human` | **不在本尺内**,走 `character-creation.md` §11(P4 已落盘) |"
+          "file": "update_plan/2026-08-04-era-rule-packs.md",
+          "line": 133,
+          "context": "- [x] `reference/rules/character-creation.md` 头部加一句:**本文是 1920s 基准**。"
+        },
+        {
+          "file": "update_plan/2026-08-04-era-rule-packs.md",
+          "line": 151,
+          "context": "`character-creation.md`/`magic.md` 的既有体例,不是纯中文——初稿写成纯中文后"
+        },
+        {
+          "file": "update_plan/2026-08-04-era-rule-packs.md",
+          "line": 170,
+          "context": "`reference/rules/character-creation.md`」(`core/13:8`),不经 `core/02`——而"
+        },
+        {
+          "file": "update_plan/2026-08-04-era-rule-packs.md",
+          "line": 230,
+          "context": "- **阶段 1 在任何情况下都要做**——即使一个年代包都不建,给 `character-creation.md`"
+        },
+        {
+          "file": "update_plan/2026-08-04-era-rule-packs.md",
+          "line": 247,
+          "context": "- 阶段 1 的三处标注都在:`character-creation.md:3-6`(基准声明)、`chases.md:29-32`"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 55,
+          "context": "1. ~~**P11 阶段 1**(给 `character-creation.md` 标上\"这是 1920s 基准\")~~ —— **已完成"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -306,6 +422,21 @@
           "context": "`core/13`/`core/01`/`reference/rules/character-creation.md` §9),按 Keeper 要求"
         },
         {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 258,
+          "context": "> | 档位区间 + 词条负载上限 | **`reference/rules/monster-scale.md`**(新建) | 与人类侧成对。P4 最终落进 `reference/rules/character-creation.md` §11,两份并列在 `reference/rules/` 下,`core/02`"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 263,
+          "context": "> 依附于已有的车卡流程(§1–§5);怪物侧**没有可依附的宿主**(`character-creation.md`"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 280,
+          "context": "> | 人类 | (书不收) | `human` | **不在本尺内**,走 `character-creation.md` §11(P4 已落盘) |"
+        },
+        {
           "file": "update_plan/Archived/README.md",
           "line": 16,
           "context": "| P4 | [antagonist-budget](2026-08-02-antagonist-budget.md) | 反派强度预算(仅人类侧):普通人类模板取材 `busybodies-zh.md`,法术型首领增量取材 `grand-grimoire-zh.md` 资历法术表 / 非法术型走装备总价,属性技能走标"
@@ -316,24 +447,51 @@
           "context": "| P8 | [investigator-render-gaps](2026-08-02-investigator-render-gaps.md) | 投资者卡渲染缺口:`spells`/`cthulhu_mythos`/`notes`/P6 重建后新增字段(`occupation_detail`/`age_modif"
         }
       ],
-      "reference_count": 59
+      "reference_count": 85
     },
     {
       "file": "chases.md",
       "path": "reference/rules/chases.md",
       "title": "7e Chases — cheat-sheet",
-      "lines": 49,
-      "declared_consumers": [],
+      "lines": 56,
+      "declared_consumers": [
+        "reference/rules/eras/README.md"
+      ],
       "referenced_by": [
         {
+          "file": "WORKLOG.md",
+          "line": 349,
+          "context": "`chases.md` 的 Move 速率表(机动车/摩托车两行隐含机械时代假设)加了指向"
+        },
+        {
           "file": "core/02-rules-reference.md",
-          "line": 32,
+          "line": 38,
           "context": "- `reference/rules/chases.md` — round structure; Move rates; obstacles & mishaps; ending a"
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 38,
+          "line": 42,
           "context": "If a scene is a pursuit or an escape, read `reference/rules/chases.md` before writing it."
+        },
+        {
+          "file": "reference/rules/eras/README.md",
+          "line": 10,
+          "context": "The baseline (`character-creation.md`, `combat.md`, `chases.md`, etc.) already covers"
+        },
+        {
+          "file": "update_plan/2026-08-04-era-rule-packs.md",
+          "line": 136,
+          "context": "`chases.md`(载具)最可疑,有则同样标注。**结果:`combat.md` 本身不含武器/装备表"
+        },
+        {
+          "file": "update_plan/2026-08-04-era-rule-packs.md",
+          "line": 137,
+          "context": "(伤害加值、耐久值、DEX 排序等都是跨年代通用力学),不需要标注;`chases.md` 的"
+        },
+        {
+          "file": "update_plan/2026-08-04-era-rule-packs.md",
+          "line": 247,
+          "context": "- 阶段 1 的三处标注都在:`character-creation.md:3-6`(基准声明)、`chases.md:29-32`"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -346,7 +504,7 @@
           "context": "- [x] `reference/rules/chases.md` — 从 7e 规则提炼:速度对比、行动点、"
         }
       ],
-      "reference_count": 4
+      "reference_count": 9
     },
     {
       "file": "combat.md",
@@ -356,19 +514,39 @@
       "declared_consumers": [],
       "referenced_by": [
         {
+          "file": "WORKLOG.md",
+          "line": 350,
+          "context": "`eras/README.md` 的提示;`combat.md` 抽查后确认不含武器表(战斗力学本身跨年代通用),"
+        },
+        {
           "file": "core/02-rules-reference.md",
-          "line": 30,
+          "line": 36,
           "context": "- `reference/rules/combat.md` — DEX order; dodge vs fight back; Build & Damage Bonus table;"
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 15,
+          "line": 16,
           "context": "- **Read `core/02-rules-reference.md`** — especially `reference/rules/combat.md` (Build,"
         },
         {
           "file": "reference/decks/weapons-and-artifacts-zh.md",
           "line": 12,
           "context": "> **数值以英文原版为准**;取用前对照 `reference/rules/combat.md` 确认与 7e 一致。"
+        },
+        {
+          "file": "reference/rules/eras/README.md",
+          "line": 10,
+          "context": "The baseline (`character-creation.md`, `combat.md`, `chases.md`, etc.) already covers"
+        },
+        {
+          "file": "update_plan/2026-08-04-era-rule-packs.md",
+          "line": 135,
+          "context": "- [x] 抽查其余 `reference/rules/*.md` 有没有隐性年代假设——`combat.md`(武器表)与"
+        },
+        {
+          "file": "update_plan/2026-08-04-era-rule-packs.md",
+          "line": 136,
+          "context": "`chases.md`(载具)最可疑,有则同样标注。**结果:`combat.md` 本身不含武器/装备表"
         },
         {
           "file": ".claude/skills-eval-workspace/benchmark.json",
@@ -381,7 +559,185 @@
           "context": "\"evidence\": \"The entire answer is paraphrased summary/table lookups in the assistant's own words (short dice-notation fragments and derived numbers only), with "
         }
       ],
+      "reference_count": 9
+    },
+    {
+      "file": "eras/cthulhu-invictus.md",
+      "path": "reference/rules/eras/cthulhu-invictus.md",
+      "title": "Era Pack — Cthulhu Invictus (克苏鲁不败)",
+      "lines": 90,
+      "declared_consumers": [
+        "reference/rules/character-creation.md",
+        "reference/rules/eras/README.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "WORKLOG.md",
+          "line": 354,
+          "context": "A/B/C 判定表 + 六个年代文件:`cthulhu-invictus.md`/`dark-ages.md`/`mystic-iceland.md`/"
+        },
+        {
+          "file": "reference/rules/eras/dark-ages.md",
+          "line": 31,
+          "context": "`eras/cthulhu-invictus.md` and not repeated here — they're common to all three ancient"
+        },
+        {
+          "file": "reference/rules/eras/mystic-iceland.md",
+          "line": 38,
+          "context": "(values listed in `eras/cthulhu-invictus.md`, common to all three ancient eras). Armour"
+        },
+        {
+          "file": "reference/rules/eras/README.md",
+          "line": 32,
+          "context": "| `cthulhu-invictus.md` | 克苏鲁不败 | 罗马帝国(约 1–2 世纪) | ✅ 官方 |"
+        },
+        {
+          "file": "reference/rules/eras/README.md",
+          "line": 44,
+          "context": "settings above. Its content is folded into `cthulhu-invictus.md`,"
+        }
+      ],
       "reference_count": 5
+    },
+    {
+      "file": "eras/dark-ages.md",
+      "path": "reference/rules/eras/dark-ages.md",
+      "title": "Era Pack — Cthulhu Dark Age (克苏鲁黑暗时代)",
+      "lines": 76,
+      "declared_consumers": [
+        "reference/rules/character-creation.md",
+        "reference/rules/eras/README.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "WORKLOG.md",
+          "line": 354,
+          "context": "A/B/C 判定表 + 六个年代文件:`cthulhu-invictus.md`/`dark-ages.md`/`mystic-iceland.md`/"
+        },
+        {
+          "file": "reference/rules/eras/README.md",
+          "line": 33,
+          "context": "| `dark-ages.md` | 克苏鲁黑暗时代 | 欧洲 10–11 世纪 | ✅ 官方 |"
+        },
+        {
+          "file": "reference/rules/eras/README.md",
+          "line": 45,
+          "context": "`dark-ages.md`, and `mystic-iceland.md`'s own **装备与武器** / **可选机制** sections"
+        }
+      ],
+      "reference_count": 3
+    },
+    {
+      "file": "eras/end-times.md",
+      "path": "reference/rules/eras/end-times.md",
+      "title": "Era Pack — Cthulhu End Times: The Reaping (克苏鲁末日之收割)",
+      "lines": 95,
+      "declared_consumers": [
+        "reference/rules/character-creation.md",
+        "reference/rules/eras/README.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "WORKLOG.md",
+          "line": 355,
+          "context": "`gaslight.md`/`icarus.md`/`end-times.md`,每条改动都标了原书页码出处)。`core/02`"
+        },
+        {
+          "file": "reference/rules/eras/icarus.md",
+          "line": 77,
+          "context": "- The **Ranged (Energy)** skill is listed as optional in the `eras/end-times.md` era file"
+        },
+        {
+          "file": "reference/rules/eras/README.md",
+          "line": 37,
+          "context": "| `end-times.md` | 克苏鲁末日之收割 | 旧日支配者苏醒后的后启示录未来(时间点 KP 自定) | ✅ 官方 |"
+        }
+      ],
+      "reference_count": 3
+    },
+    {
+      "file": "eras/gaslight.md",
+      "path": "reference/rules/eras/gaslight.md",
+      "title": "Era Pack — Cthulhu Gaslight (克苏鲁煤气灯)",
+      "lines": 72,
+      "declared_consumers": [
+        "reference/rules/character-creation.md",
+        "reference/rules/eras/README.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "WORKLOG.md",
+          "line": 355,
+          "context": "`gaslight.md`/`icarus.md`/`end-times.md`,每条改动都标了原书页码出处)。`core/02`"
+        },
+        {
+          "file": "reference/rules/eras/README.md",
+          "line": 35,
+          "context": "| `gaslight.md` | 克苏鲁煤气灯 | 维多利亚伦敦,约 1890 年代 | ✅ 官方 |"
+        }
+      ],
+      "reference_count": 2
+    },
+    {
+      "file": "eras/icarus.md",
+      "path": "reference/rules/eras/icarus.md",
+      "title": "Era Pack — Cthulhu Icarus (克苏鲁伊卡洛斯)",
+      "lines": 80,
+      "declared_consumers": [
+        "reference/rules/character-creation.md",
+        "reference/rules/eras/README.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "WORKLOG.md",
+          "line": 355,
+          "context": "`gaslight.md`/`icarus.md`/`end-times.md`,每条改动都标了原书页码出处)。`core/02`"
+        },
+        {
+          "file": "reference/rules/eras/end-times.md",
+          "line": 37,
+          "context": "`eras/icarus.md`."
+        },
+        {
+          "file": "reference/rules/eras/end-times.md",
+          "line": 42,
+          "context": "this skill (and its example weapons) can be enabled by referencing `eras/icarus.md`"
+        },
+        {
+          "file": "reference/rules/eras/README.md",
+          "line": 36,
+          "context": "| `icarus.md` | 克苏鲁伊卡洛斯 | 近未来星际探索 | ✅ 官方 |"
+        }
+      ],
+      "reference_count": 4
+    },
+    {
+      "file": "eras/mystic-iceland.md",
+      "path": "reference/rules/eras/mystic-iceland.md",
+      "title": "Era Pack — Mystic Iceland (神秘冰岛)",
+      "lines": 91,
+      "declared_consumers": [
+        "reference/rules/character-creation.md",
+        "reference/rules/eras/README.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "WORKLOG.md",
+          "line": 354,
+          "context": "A/B/C 判定表 + 六个年代文件:`cthulhu-invictus.md`/`dark-ages.md`/`mystic-iceland.md`/"
+        },
+        {
+          "file": "reference/rules/eras/README.md",
+          "line": 34,
+          "context": "| `mystic-iceland.md` | 神秘冰岛 | 冰岛萨迦时代(约 930 年前后) | ✅ 官方 |"
+        },
+        {
+          "file": "reference/rules/eras/README.md",
+          "line": 45,
+          "context": "`dark-ages.md`, and `mystic-iceland.md`'s own **装备与武器** / **可选机制** sections"
+        }
+      ],
+      "reference_count": 3
     },
     {
       "file": "magic.md",
@@ -396,32 +752,42 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 38,
+          "line": 96,
           "context": "- **法术、仪式、魔法书终于有了数值标尺。** 新增 `reference/rules/magic.md`:施法消耗"
         },
         {
           "file": "WORKLOG.md",
-          "line": 89,
+          "line": 94,
           "context": "`reference/rules/magic.md`,`core/02`/`core/07`/`reference/mythos/README.md` 已接线。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 93,
+          "line": 98,
           "context": "三值、泛读/精读两阶段、重复精读耗时翻倍),`magic.md` 的魔法书章节改成从这份规则书"
         },
         {
+          "file": "WORKLOG.md",
+          "line": 169,
+          "context": "写成了纯中文正文,后来对照 `character-creation.md`/`magic.md` 才发现 kit 的既有惯例"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 364,
+          "context": "`character-creation.md`/`magic.md` 才发现违反 kit 既有惯例(英文正文 + 中文术语括注,"
+        },
+        {
           "file": "core/02-rules-reference.md",
-          "line": 21,
+          "line": 27,
           "context": "- Write any **spell, ritual, or magic book/tome** → read `reference/rules/magic.md` before"
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 37,
+          "line": 43,
           "context": "- `reference/rules/magic.md` — MP/SAN/POW cost notation, casting time, opposed POW rolls,"
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 100,
+          "line": 101,
           "context": "- Spellcasters: list spells and their MP/SAN costs — read `reference/rules/magic.md` for the"
         },
         {
@@ -430,9 +796,9 @@
           "context": "**Read `reference/rules/magic.md` first** — it's the distilled cost-tier ladder, casting-time"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 73,
-          "context": "`reference/rules/magic.md` 是同一条路,不是新方法"
+          "file": "update_plan/2026-08-04-era-rule-packs.md",
+          "line": 151,
+          "context": "`character-creation.md`/`magic.md` 的既有体例,不是纯中文——初稿写成纯中文后"
         },
         {
           "file": "update_plan/Archived/2026-08-02-conventions-gaps.md",
@@ -500,12 +866,17 @@
           "context": "同时重跑了 `scripts/build-reference-index.py`(新增 `reference/rules/magic.md`),"
         },
         {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 74,
+          "context": "`reference/rules/magic.md` 是同一条路,不是新方法"
+        },
+        {
           "file": "update_plan/Archived/README.md",
           "line": 18,
           "context": "| P7 | [magic-quickref](2026-08-02-magic-quickref.md) | 魔法速查 `reference/rules/magic.md`:施法通则(消耗记法、施法用时、POW 对抗)、按 `grand-grimoire-zh.md` 抽样得出的四档消耗区间(小术/中术/大术/仪式级"
         }
       ],
-      "reference_count": 22
+      "reference_count": 25
     },
     {
       "file": "monster-scale.md",
@@ -519,37 +890,47 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 72,
+          "line": 130,
           "context": "`reference/rules/monster-scale.md`:五级强度阶梯(独立种族 → 仆从种族 → 唯一存在 →"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 81,
+          "line": 139,
           "context": "- **挑怪物强度时先看书上的「上级/下级」标签,它比自己估更准。** `monster-scale.md`"
         },
         {
           "file": "WORKLOG.md",
-          "line": 102,
-          "context": "- **阶段 A**(标尺与词条):`reference/rules/monster-scale.md` + 五级强度阶梯 +"
+          "line": 107,
+          "context": "- **阶段 A**(标尺与词条,2026-08-03):`reference/rules/monster-scale.md` + 五级强度阶梯 +"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 239,
+          "context": "传说生物)`。那四行是照抄 `reference/rules/monster-scale.md` 的分级名,`rules/` 目前整体"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 240,
+          "context": "是英文;单方面改这边会让两份文件对不上号,要改得连 `monster-scale.md` 一起改。"
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 16,
+          "line": 22,
           "context": "`reference/rules/monster-scale.md` before picking a tier or a threat band."
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 40,
+          "line": 46,
           "context": "- `reference/rules/monster-scale.md` — the five-tier non-human threat ladder (creature /"
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 18,
+          "line": 19,
           "context": "`reference/rules/monster-scale.md` before assigning any number. Five tiers, ordered by power:"
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 31,
+          "line": 32,
           "context": "that sets fine-grained stat scale and SAN **inside** a tier — `monster-scale.md` has the"
         },
         {
@@ -630,17 +1011,22 @@
         {
           "file": "reference/tables/monster-traits.md",
           "line": 4,
-          "context": "that turns a tier baseline (`reference/rules/monster-scale.md`) into a specific creature"
+          "context": "(`reference/rules/monster-scale.md`)变成一只具体生物的那一层,不必每次都手搓一条新机制。"
         },
         {
           "file": "reference/tables/monster-traits.md",
-          "line": 14,
-          "context": "**Load points** feed the tier ceilings in `monster-scale.md` (L2/L3 = 2, L4 = 3, L5 = 4) —"
+          "line": 12,
+          "context": "**负载点**对应 `monster-scale.md` 里的等级上限(L2/L3 = 2,L4 = 3,L5 = 4)——把一只生物"
         },
         {
           "file": "reference/tables/monster-traits.md",
-          "line": 22,
+          "line": 20,
           "context": "| 免疫常规武器 (Conventional immunity) | 非附魔/非特殊材质武器造成最小伤害(1点) | 2 | 必须点名至少一种能正常伤害它的手段,且这手段要能被调查员找到 | L4/L5 常见,是\"数值免疫\"的标准写法,见 `monster-scale.md` 护甲惯例 |"
+        },
+        {
+          "file": "reference/tables/README.md",
+          "line": 35,
+          "context": "`reference/rules/monster-scale.md`。"
         },
         {
           "file": "scripts/build-reference-index.py",
@@ -648,77 +1034,77 @@
           "context": "# classification labels onto that ladder (reference/rules/monster-scale.md)."
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 5,
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 6,
           "context": "> 阶段 A:`reference/rules/monster-scale.md` + `reference/tables/monster-traits.md`,"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 246,
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 247,
           "context": "- 档位区间:进 `core/07` 正文,还是新开 `reference/rules/monster-scale.md`"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 257,
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 258,
           "context": "> | 档位区间 + 词条负载上限 | **`reference/rules/monster-scale.md`**(新建) | 与人类侧成对。P4 最终落进 `reference/rules/character-creation.md` §11,两份并列在 `reference/rules/` 下,`core/02`"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 259,
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 260,
           "context": "> | type 重排后的**分类定义** | **`core/07-create-monster.md` 正文** | 分类是 spec 的一部分,不是数值。数值全在 `monster-scale.md`,`core/07` 只说\"有哪几类、各是什么\",并指路过去 |"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 295,
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 296,
           "context": "> 并在 `monster-scale.md` 里标为\"古神级下沿子档\"。"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 466,
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 467,
           "context": "`reference/rules/monster-scale.md` 只有 tier + threat 四档。这不是错——threat 四档"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 487,
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 488,
           "context": "`bestiary/`,所以 `monster-scale.md` 的古神级区间要同时覆盖那个目录,"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 512,
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 513,
           "context": "| 5 落点 | `reference/rules/monster-scale.md` + `reference/tables/monster-traits.md` + 分类定义进 `core/07` |"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 570,
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 571,
           "context": "> 1. ✅ **样本数改正。** `monster-scale.md` 头部原写 \"roughly 240 stat blocks\",改为"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 585,
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 586,
           "context": "> 四分位数。`monster-scale.md` 新增「上级/下级」一节承载这条,用法是"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 608,
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 609,
           "context": "- [x] **2. 新建 `reference/rules/monster-scale.md`。**(第八轮修订:样本数 240 → **223**、"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 621,
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 622,
           "context": "- [x] **6. 改 `core/02-rules-reference.md`。** Cheat-sheets 登记 `monster-scale.md`;"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 664,
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 665,
           "context": "deadly → mythic(HP/SIZ/STR/CON 早过 `monster-scale.md` 的 L2 deadly 上限,"
         },
         {
-          "file": "update_plan/README.md",
-          "line": 13,
-          "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺:五级阶梯的档位区间、按 malleus 四类重排的 type、数值词条(强化)系统与其负载预算 | 进行中(阶段 A + B 已完成 059ba63,阶"
+          "file": "update_plan/Archived/README.md",
+          "line": 20,
+          "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺,三阶段。**阶段 A**(标尺与词条):`reference/rules/monster-scale.md` 五级阶梯(human/creature/s"
         }
       ],
-      "reference_count": 40
+      "reference_count": 43
     },
     {
       "file": "sanity.md",
@@ -728,18 +1114,23 @@
       "declared_consumers": [],
       "referenced_by": [
         {
+          "file": "WORKLOG.md",
+          "line": 243,
+          "context": "`core/06`、`reference/rules/sanity.md`、两份 deck README、战役文件里的「`complications.md`"
+        },
+        {
           "file": "core/02-rules-reference.md",
-          "line": 28,
+          "line": 34,
           "context": "- `reference/rules/sanity.md` — SAN = POW; X/Y loss notation; typical loss table; bout of"
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 46,
+          "line": 50,
           "context": "each ending with a **suggested SAN reward** per `reference/rules/sanity.md`'s scenario-end"
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 16,
+          "line": 17,
           "context": "Damage Bonus, HP) and `reference/rules/sanity.md` (X/Y loss). Numbers must be 7e-correct."
         },
         {
@@ -778,7 +1169,7 @@
           "context": "\"evidence\": \"The entire answer is paraphrased summary/table lookups in the assistant's own words (short dice-notation fragments and derived numbers only), with "
         }
       ],
-      "reference_count": 10
+      "reference_count": 11
     },
     {
       "file": "skill-checks.md",
@@ -789,12 +1180,12 @@
       "referenced_by": [
         {
           "file": "core/02-rules-reference.md",
-          "line": 26,
+          "line": 32,
           "context": "- `reference/rules/skill-checks.md` — d100 under target; Regular/Hard/Extreme; fumbles;"
         },
         {
           "file": "reference/rules/character-creation.md",
-          "line": 31,
+          "line": 36,
           "context": "`reference/rules/skill-checks.md`."
         }
       ],

@@ -22,7 +22,12 @@
 <What this campaign is about — the situation, the dread, the promise to the players.>
 
 ## Setting
-- **Era:** <e.g. 1920s / modern / 1890s Gaslight — this overrides the kit's per-campaign default>
+- **Era:** <fixed slug, matched against `reference/rules/eras/README.md`'s index —
+  `1920s` (baseline, the default) or one of `cthulhu-invictus` / `dark-ages` /
+  `mystic-iceland` / `gaslight` / `icarus` / `end-times`, or a Keeper-approved path-B slug
+  (see that file's three-path table). `core/02-rules-reference.md` reads this field
+  literally, so keep it to the slug — put "1890s London, fog-choked and gaslit" in the
+  Premise/Tone prose below instead, not here.>
 - **Region / base of operations:** <city, town, ship, expedition>
 - **Timeframe:** <a season, a year, an open-ended chronicle>
 

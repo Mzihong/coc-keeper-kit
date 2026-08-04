@@ -1,8 +1,8 @@
 # Monster Scale — cheat-sheet
 
 > The strength ladder for non-human threats, and the numeric baseline each rung sits at.
-> Distilled by sampling `reference/sourcebooks/malleus-monstrorum-zh.md` (local only, absent
-> from `dist/bundle.md`) — **all 223 stat blocks** in it (129 dice-notation species entries +
+> Distilled by sampling `reference/sourcebooks/malleus-monstrorum-zh.md` (local only)
+> — **all 223 stat blocks** in it (129 dice-notation species entries +
 > 94 fixed-value deity/unique entries; the count is stated in that file's own header), matched
 > to the book's own classification label and bucketed per tier. Coverage of the sampled fields:
 > HP 87%, Sanity loss 92%, attack skill 88%, armour ~68% of the entries that state one.

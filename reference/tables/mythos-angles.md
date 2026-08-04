@@ -1,34 +1,33 @@
-# mythos-angles.md — what the wrongness actually is
+# mythos-angles.md — 那份"不对劲"到底是什么
 
-Roll **1d20**. This is the anti-generic table. Left alone, every model writes "a cult is
-summoning a Great Old One." Roll, take the result, and make it work — the friction between an
-awkward angle and the campaign's premise is usually where the good campaign is.
+掷 **1d20**。这是反套路的那张表。放着不管,任何模型都会写出"一个邪教正在召唤旧日支配
+者"。掷,接受结果,然后让它成立——一个别扭的切入角和战役前提之间的摩擦,往往就是好战役
+长出来的地方。
 
-Roll once at intake. See `core/01-intake.md` and `core/05-event-clock.md`.
+intake 时掷一次。见 `core/01-intake.md` 与 `core/05-event-clock.md`。
 
-| d20 | The angle |
+| d20 | 切入角 |
 |---|---|
-| 1 | Nothing is being summoned. Something already arrived, long ago, and is *maintained*. |
-| 2 | A bargain, honoured correctly for generations, whose terms have just changed. |
-| 3 | Contamination — a place, a food source, a water table. No intent, no author. |
-| 4 | A method, not an entity: a technique that works and shouldn't, spreading between users. |
-| 5 | Two Mythos factions in conflict; the humans are terrain, not targets. |
-| 6 | Salvage — people are profiting from Mythos debris without understanding it. |
-| 7 | Something is trying to communicate and its attempts are causing the harm. |
-| 8 | An entity is dying, and its decline is the disaster. |
-| 9 | A containment built by earlier people is failing from neglect, not malice. |
-| 10 | An experiment run by people who are competent, careful, and completely wrong. |
-| 11 | Inheritance — a bloodline, a condition, a debt passing down bodies. |
-| 12 | A translation error in an old text has been faithfully acted on for a century. |
-| 13 | Time is wrong here — a recurrence, a delay, an event that hasn't finished happening. |
-| 14 | The entity is genuinely benign by its own logic; the harm is incidental. |
-| 15 | A cult that has lost its own knowledge and is performing rites it can't read. |
-| 16 | Something is being farmed, harvested, or bred — humans are the livestock or the crop. |
-| 17 | An object that must keep moving, and everyone who holds it passes it on. |
-| 18 | Displacement — something from elsewhere is here because its own place became untenable. |
-| 19 | A single person's capability, acquired accidentally, that they are using reasonably. |
-| 20 | The Mythos element is real but marginal; the true horror is what people do about it. |
+| 1 | 没有任何东西正在被召唤。某个东西很久以前就到了,而且一直**被人维持着** |
+| 2 | 一份世代如约履行的契约,条款刚刚变了 |
+| 3 | 污染——一个地方、一处食物来源、一层地下水。没有意图,没有作者 |
+| 4 | 是方法,不是存在:一种确实管用而本不该管用的手法,正在使用者之间扩散 |
+| 5 | 两个神话阵营在冲突,人类是地形,不是目标 |
+| 6 | 打捞——有人在从神话的残骸里牟利,却完全不懂那是什么 |
+| 7 | 某个东西正试图沟通,而它的每一次尝试都在造成伤害 |
+| 8 | 某个存在正在死去,它的衰亡本身就是灾难 |
+| 9 | 前人建起的一道封印正在失效,原因是疏于维护,不是恶意 |
+| 10 | 一项实验,做实验的人称职、审慎,而且彻底搞错了 |
+| 11 | 继承——一条血脉、一种体质、一笔债务,顺着身体往下传 |
+| 12 | 一部古籍里的一处误译,被人忠实地照着执行了一个世纪 |
+| 13 | 这里的时间不对——一次复现、一段延迟、一件还没发生完的事 |
+| 14 | 以那个存在自己的逻辑看,它是真心无害的;伤害只是副产物 |
+| 15 | 一个邪教丢失了自己的知识,正在举行连自己都读不懂的仪式 |
+| 16 | 有什么东西正在被养殖、收割或繁育——人类是牲口或作物 |
+| 17 | 一件必须不停易手的物品,拿到的人都会把它传出去 |
+| 18 | 迁徙——某个来自别处的东西之所以在这里,是因为它原来的地方待不下去了 |
+| 19 | 某一个人偶然获得的一种能力,而他正在合情合理地使用它 |
+| 20 | 神话的成分确实存在,但无足轻重;真正的恐怖是人为此做了什么 |
 
-> Whatever you roll, the Keeper's truth must answer three questions concretely: **what does it
-> want, what is it doing about that this week, and what does an ordinary person notice?**
-> An angle without those three is atmosphere, not a campaign.
+> 不管掷到哪一条,守秘人的真相都必须具体回答三个问题:**它想要什么、这一周它为此正在做
+> 什么、一个普通人会注意到什么?** 答不上这三条的切入角只是氛围,不是战役。

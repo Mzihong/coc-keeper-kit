@@ -28,6 +28,10 @@ fill in the pieces.
 5. **The clue map (three-clue rule).** For **every** fact the players *must* realise, provide
    **three independent** clues from different sources. If any one is missed or a roll fails,
    two remain. Lay this out as a table — it's the anti-stall guarantee.
+   - **Then draw it as a scene web** — `reference/craft/diagram-conventions-zh.md` §三.
+     Nodes are scenes, each edge labelled with *the clue that gets you there*. Any
+     must-reach scene with fewer than three inbound edges is a stall point, and counting
+     edges on the diagram is cheaper than catching it in review.
    - **When the threat is a cult**, `reference/craft/cult-design-zh.md` §四 gives six ready-made
      independent sources — property, tomes & artefacts, illicit supply, legal/business front,
      bribery, security — each ending in "who pays, who sees, what trace it leaves." Three

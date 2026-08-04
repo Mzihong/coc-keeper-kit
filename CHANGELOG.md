@@ -28,9 +28,54 @@
   接入了 `reference/tables/monster-index.md` 的 `Serves` 检索——之前这张表能查到怪物,
   但除了克苏鲁外没有别的神格有对应的仆从条目可查,问"哈斯塔的精英怪是什么"会得到空集。
   P9(怪物强度标尺 + 索引层 + 神格铺设)三阶段至此全部完成并归档。
+- **关系图终于有正式画法了。** 新增 `reference/craft/diagram-conventions-zh.md`,covers
+  势力/关系图、场景网、区域关系图三种,外加一张「什么时候不该画图」的对照表。
+  最硬的一条:**每条连线必须写清连接二者的是什么**——「欠 800 元赌债」「共用南码头
+  三号仓库」,而不是「敌对」「认识」。图上可执行的是连线,孤立的圈没有用。
+- **走 ChatGPT / Gemini 那条链路的 KP 终于拿得到怪物和神格本体了。** `dist/bundle.md`
+  现在收录 `reference/bestiary/`(17 只完整 stat block)与整个 `reference/mythos/`
+  (神格档案、邪教卷宗、法术),此前只能从 `monster-index.md` 看到一行摘要。bundle 从
+  60 文件涨到 98 文件。**仍然拿不到的只有第三方转录稿本体**——那是不再分发规则的边界,
+  要让 bundle 链路用上一份第三方资料,做法始终是给它写一份原创提炼稿。
+- **改完 kit 不必再重建 bundle 了。** `dist/` 已退出版本控制:bundle 是构建产物,
+  上传前跑一次 `bash scripts/build-bundle.sh` 现生成即可,不需要跟源文件同 commit。
+  原来那条"动过 `core/`/`templates/`/`reference/` 就必须重跑并同 commit"的硬约定作废,
+  维护一次改动少一个步骤,commit 里也不再有 5000 行的产物 diff。
+- **设计模组时会多出一张场景网。** `core/04` 现在要求把三线索规则画成图:节点是场景,
+  边标签是「靠哪条线索过去」,**任何必到场景若入边少于三条就是卡点**。在图上数边,
+  比跑完团才发现卡住便宜得多。造势力与区域时 `core/03` 也会按需附图(2–3 个节点的不画,
+  一句话更快)。
+- **kit 不再只服务 1920s 了。** `reference/rules/character-creation.md` 头部第一次
+  明说"本文是 1920s 基准"——之前这个假设从没被写下来过。新增
+  `reference/rules/eras/` 六个年代包(古罗马「克苏鲁不败」、10–11 世纪「黑暗时代」、
+  维京时代「神秘冰岛」、维多利亚「煤气灯」、近未来「伊卡洛斯」、后启示录「末日之
+  收割」),每份只写与基准的差集(技能/装备/技术水平/职业/可选机制五节,标出处)。
+  `core/01-intake.md` 报年代时现在会明说走的是哪条路径——**书本有的直接用;没有但
+  年代相近的(比如"我想跑 1970s")当场推导出一份 delta 并明确告知"未经书本背书,请
+  过目";完全体系外的(未来/架空)明说 kit 不为数值背书**。**年代口味漏检还没接上**
+  ——现在生成内容仍可能不小心带出错年代的科技细节,这是 P11 阶段 3(未做)才补的
+  安全网,先当手动留意。
+- **`reference/tables/` 现在整个目录都是中文,可以直接往表里手动加条目了。** 之前
+  `hooks`、`locations`、`mythos-angles`、`npc-quirks`、`npc-appearance`、
+  `complications`、`madness` 七张表和目录 README 仍是英文,守秘人自己续写的中文行会和
+  原有条目明显不是一批人写的。现已全部改写为中文(措辞按 `glossary-zh.md` 取词,路径、
+  文件名、`1D10`/`STR 60` 这类记法保持英文);`monster-index.md` 的表头与说明段随生成
+  脚本一起改中文,`monster-traits.md` 的引言段同。加新表的写法见
+  `reference/tables/README.md` 末节。
 
 ### 修复问题
 
+- 造邪教时,`templates/cult.md` 让你「照 mermaid 势力图惯例画」,但**那份惯例根本不存在**
+  ——它指向的是 `update_plan/` 里一份未执行的计划文件,而且 `update_plan/` 不进
+  `dist/bundle.md`,走 ChatGPT 的 KP 连点都点不进去。`reference/craft/cult-design-zh.md`
+  第 11 步有同样的问题。两处现已改指向新的 `craft/diagram-conventions-zh.md`。
+- `dist/bundle.md` 漏收 `reference/bestiary/` 与 `reference/mythos/`——这两个目录是 kit
+  自己写的原创内容,却因为打包脚本用的是手写白名单而被静默漏掉,不是设计取舍。同一个坑
+  P9 也踩过一次,现已把白名单改成连子目录一起收,新建子目录不会再被漏。
+- 「什么进 bundle」此前散落在六七个 README 和 spec 里各说一遍,措辞还不完全一致
+  (有的写体量太大,有的写第三方文本)。现已统一成 `reference/README.md` 的一节:
+  **kit 自己写的进,第三方转录的不进**,理由是不再分发而非体量;其余各处删掉重述、
+  改为指向它。
 - P4/P6 的计划文件头、`update_plan/README.md` 状态表在内容早已提交完成后仍停留在
   "等提交"/"进行中"措辞,现已回填 commit hash 并归档进 `update_plan/Archived/`。
 - `CHANGELOG.md` 2026-08-02 条目头部的 commit 列表此前只列了 4 个(含一个"待提交"

@@ -392,6 +392,37 @@ Rules:
 | Words of Power | 真言术 |
 | Wrack | 折磨术 |
 
+## 年代包专属术语(`reference/rules/eras/`)
+
+技能与机制名随年代包(`reference/rules/eras/*.md`,P11)一并引入,基准表(上面「技能」
+一节)不重复收录的年代专属技能/机制统一收在这里:
+
+| English | 简体中文 |
+|---|---|
+| Status | 地位 |
+| Ranged Weapons | 射击(年代包对前火器时代的用语,与「技能」表里 Firearms 共用「射击」这个中文词,不是两个词) |
+| Citizen | 公民 |
+| Empire Lore | 帝国知识 |
+| Outsider Lore | 外邦知识 |
+| Own Land Lore | 本国知识 |
+| Local Lore | 本地知识 |
+| Drive Cart | 驱车(驾驭马车/牛车) |
+| Mend/Mender | 修造 |
+| Second Sight | 灵视力 |
+| Prophesy | 预言 |
+| Skiing | 滑雪 |
+| Scavenging | 拾荒 |
+| Computer Maintenance | 计算机维护 |
+| Systems Operation | 系统操作 |
+| Technical Repair | 技术维修 |
+| Zero-G | 零重力 |
+| Ranged (Energy) | 射击〔能量武器〕 |
+| Social Class | 社会阶层 |
+| Clan | 宗族 |
+| Feud | 世仇 |
+| Strong Sanity | 强韧的理智 |
+| Barter assets (Credit Rating, End Times redefinition) | 以物易物资产(信用评级在末日之收割年代的重定义) |
+
 ## 加词的规矩
 
 需要新词时：先加到这里，再写进战役文件。**不要在战役里临时翻译。**

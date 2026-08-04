@@ -72,7 +72,6 @@ closing a plan, go use the full checklist there instead of this one.
 In short, for a change touching `core/`, `templates/`, or `reference/`:
 
 - `CHANGELOG.md` gets an entry (merged into today's if one exists).
-- `bash scripts/build-bundle.sh` reruns; `dist/bundle.md` ships in the same commit.
 - `python scripts/build-reference-index.py --check` reports clean if `reference/`'s archive
   directories changed.
 - `CLAUDE.md` / `GEMINI.md` / `AGENTS.md` stay consistent if any adapter-visible routing changed
@@ -94,6 +93,5 @@ commit unless asked — this spec closes out the working tree, not the git histo
   repo state or generated output — not asserted from memory or copied from an earlier entry.
 - `CHANGELOG.md` has an entry (or an addition to today's).
 - Every `README.md` describing the changed structure matches it.
-- `dist/bundle.md` rebuilt if `core/`, `templates/`, or `reference/` changed.
 - `python scripts/build-reference-index.py --check` clean if `reference/`'s archives changed.
 - The three root adapters still agree with each other and with `core/`.

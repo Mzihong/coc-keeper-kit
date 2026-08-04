@@ -1,10 +1,18 @@
 # Local Claude Code state (skills here are shared on disk; commit intentionally if wanted)
 .claude/settings.local.json
 
+# 构建产物:要上传给 ChatGPT/Gemini 时现跑 scripts/build-bundle.sh 生成
+/dist/
+
 # Scratch / exports
 /exports/
 *.pdf
+*.docx
 *.tmp
+
+# 第三方原件与从中抽出的素材:只在本地查阅,永不入库
+# (转录成 .md 后按 core/14-archive-reference.md 归档,入库的是文本不是原件)
+/reference/_source/
 
 # OS noise
 Thumbs.db

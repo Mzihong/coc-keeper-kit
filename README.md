@@ -23,9 +23,9 @@ Open this folder and say what you want. Skills load automatically.
 Open this folder. `GEMINI.md` routes each request to the right `core/` spec.
 
 ### ChatGPT (Projects / custom GPT)
-Upload **`dist/bundle.md`** — every spec, template, and table in one file — and paste
-`AGENTS.md` into the project instructions. Ask for output, then save what it prints into the
-paths it names.
+Run `bash scripts/build-bundle.sh`, upload the **`dist/bundle.md`** it writes — the whole kit
+in one file — and paste `AGENTS.md` into the project instructions. Ask for output, then save
+what it prints into the paths it names.
 
 ## The flow
 
@@ -72,7 +72,7 @@ start-campaign  →  world  →  event clock  →  cast
 | `reference/` | Shared canon: 7e cheat-sheets, bestiary, Mythos lore, roll tables, `glossary-zh.md`. Third-party material you supply is filed and cited in `decks/` and `sourcebooks/`, indexed by `reference/index.json`. |
 | `templates/` | The blank shapes each spec fills in. |
 | `campaigns/` | One folder per game, plus `_template-campaign/` to copy. |
-| `dist/bundle.md` | Build artifact — the whole kit in one file, for ChatGPT. |
+| `dist/bundle.md` | Build artifact, gitignored — generate it with `scripts/build-bundle.sh` when you need to upload the kit somewhere. |
 
 ## Language
 
@@ -88,11 +88,15 @@ translation per game term, so 理智 doesn't become 精神值 three sessions lat
 **Change `core/`, never a root adapter.** The adapters exist so three models read one source;
 an instruction added to only `CLAUDE.md` is a bug the other two won't follow.
 
-After editing `core/`, `templates/`, or `reference/tables/`, rebuild the ChatGPT bundle:
+`dist/bundle.md` needs no maintenance — it isn't committed. Generate it fresh whenever you
+are about to upload the kit:
 
 ```bash
 bash scripts/build-bundle.sh
 ```
+
+What it packs and what it deliberately leaves out is one rule, in `reference/README.md`
+→ 什么进 bundle: the kit's own work ships, third-party archives never do.
 
 ## Notes
 

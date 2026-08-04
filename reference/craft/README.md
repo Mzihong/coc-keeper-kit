@@ -4,8 +4,8 @@
 
 和 `rules/` 的分工是本目录存在的理由:`rules/` 管**数字**——难度带、SAN 损失、伤害加值;
 `craft/` 管**写法**——怎么揭示一个怪物、一段读稿从哪个感官切入、一个邪教为什么可怕。
-两边都是 kit 原创提炼稿,都进 `dist/bundle.md`,但一个错了会让数值不对,另一个错了会让
-文字平庸。别把手法写进 `rules/`,也别把公式写进这里。
+两边都是 kit 原创提炼稿,但一个错了会让数值不对,另一个错了会让文字平庸。
+别把手法写进 `rules/`,也别把公式写进这里。
 
 ## 现有条目
 
@@ -13,6 +13,12 @@
 |---|---|---|
 | `lovecraft-zh.md` | `reference/og_Norval/`(洛夫克拉夫特原著 82 篇通读) | `core/09-description.md`(§一 基调、§二 场景/行动)、`core/07-create-monster.md`(§三 怪物设计) |
 | `cult-design-zh.md` | 克苏鲁邪教设计指南第三章(网络汇编,158 页,通读后提炼) | `core/03-build-world.md`(邪教 faction 子路径)、`core/04-design-scenario.md`(§四 财源线索引擎、§五 弱点/敌人)、`core/01-intake.md`(auto-fill 答"邪教"时) |
+| `diagram-conventions-zh.md` | **kit 自订**(P1 关系图 + P5 低成本地图两个计划合并定案),非提炼稿 | `core/03-build-world.md`(§二 势力图、§四 区域图)、`core/04-design-scenario.md`(§三 场景网)、`templates/cult.md`(§二) |
+
+> **本目录有两类条目,别混。** 多数是**提炼稿**(从大部头蒸馏「怎么写」,受下面「取手法
+> 不取文字」那条管);`diagram-conventions-zh.md` 是**惯例规范**——没有源材料,是 kit 自己
+> 定的画法。两类都属"写法",但写新文件时先想清楚自己在写哪一类:
+> 提炼稿走下面六步,惯例规范只需要「按消费方分节 + 篇幅克制 + **术语自足** + 接线」四步。
 
 机器可读版本是 `index.json`,由 `scripts/build-reference-index.py` 生成。
 
@@ -27,6 +33,15 @@
 3. **每条技法附出处**,便于追溯查证。
 4. **篇幅克制。** `lovecraft-zh.md` 90 行覆盖了 82 篇小说。生成时模型要整份读进上下文,
    写成一本书就没人读得起。
-5. 收尾:接线进要读它的 spec → 重跑 `scripts/build-reference-index.py`(没人引用会报
-   orphaned)→ 重跑 `scripts/build-bundle.sh` → 记 `CHANGELOG.md`。
+5. **术语自足:文件里每个加粗术语,落盘前确认本仓库有定义。** 没有定义就两条路——
+   **当场定义,或删掉那句**;不许写「详见某某」指向 `update_plan/`(计划文档不进 bundle,
+   走 ChatGPT 链路的 KP 拿不到)。**这条两类条目都管。**
+   > **为什么单列一步:** `diagram-conventions-zh.md` §四 曾写下「出这张图 + **文字地图卡**」,
+   > 而「文字地图卡」当时只存在于两份 `update_plan/` 计划里,仓库中无定义。它逃过了所有既有
+   > 检查——`build-reference-index.py` 与完结清单查的都是**文件级**引用与孤儿,
+   > **一个没有路径的裸名词对它们不可见**,当时 `--check` 照样报 no problems。
+   > 成因是把一条尚未执行的计划 checkbox 的内容提前抄进了生产文件;
+   > **后续阶段还没做完时写"完成态"的惯例文件,就会产生这种前向引用。**
+6. 收尾:接线进要读它的 spec → 重跑 `scripts/build-reference-index.py`(没人引用会报
+   orphaned)→ 记 `CHANGELOG.md`。
 

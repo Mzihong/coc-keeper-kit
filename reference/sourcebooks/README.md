@@ -4,8 +4,8 @@
 同一套[引用标注规则](../decks/README.md#引用标注规则强制);区别只是**体量与用法**:
 卡组是现成条目、随取随用,书是深查——为一个数字翻一章。
 
-**这里不是 `rules/`。** `rules/` 是本 kit 自己写的 7e 速查表(原创、提炼、可进 bundle);
-`sourcebooks/` 是原文转录(第三方、逐字、不进 bundle)。**两者冲突时以本目录为准**,
+**这里不是 `rules/`。** `rules/` 是本 kit 自己写的 7e 速查表(原创、提炼);
+`sourcebooks/` 是原文转录(第三方、逐字)。**两者冲突时以本目录为准**,
 并且要回头修 `rules/` 里那份速查表。
 
 ## 现有条目
@@ -39,10 +39,9 @@
 提炼出来的速查表写进 `reference/rules/`,并在每节标注 `来源` 指路——指到本目录的哪份书、
 哪一章。这条惯例的样板见 `reference/rules/character-creation.md`。
 
-## 不进 bundle
-
-`scripts/build-bundle.sh` 不打包本目录 —— 三份加起来五万余行,且属第三方文本。
-用 `dist/bundle.md` 的 Keeper 读不到,所以**任何 spec 都不得把这里当前置依赖**。
+本目录是第三方资料,**不进 bundle**(通则见 [`../README.md`](../README.md) → 什么进 bundle):
+**任何 spec 都不得把这里当前置依赖**。要让 bundle 链路用上这三份书,做法是给它写一份
+原创提炼稿——`reference/rules/` 的速查表、`reference/tables/monster-index.md` 都是这么来的。
 
 ## 新增条目
 

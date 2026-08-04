@@ -9,9 +9,10 @@ live through it. In CoC the monster is usually an obstacle to survive, not a bos
   a fitting elite guard/servitor?") — read `reference/tables/monster-index.md` first. It covers
   all 223 malleus entries plus this kit's own `reference/bestiary/`, each with a `Serves` field
   (who it answers to) and a short index summary, so you don't have to read the full 10k-line
-  transcript to find a candidate. It's generated, in `dist/bundle.md`, and the only channel a
-  ChatGPT/Gemini user without the repo has into the bestiary — see
-  `scripts/build-reference-index.py`.
+  transcript to find a candidate. It's generated (see `scripts/build-reference-index.py`), and
+  it is the **only** channel a Keeper without the repo has into the 223 malleus entries — the
+  transcript itself never ships. `reference/bestiary/` does ship, so its creatures can be read
+  in full rather than through the index.
 - **Read `core/02-rules-reference.md`** — especially `reference/rules/combat.md` (Build,
   Damage Bonus, HP) and `reference/rules/sanity.md` (X/Y loss). Numbers must be 7e-correct.
 - **Decide the tier**, then the threat band inside it — read
@@ -37,8 +38,8 @@ live through it. In CoC the monster is usually an obstacle to survive, not a bos
   villain is built with `reference/rules/character-creation.md` §11 (baseline + increment),
   not this spec's type/threat scale.
 - Use `templates/monster.md`.
-- **Source material, if present locally** (neither is in `dist/bundle.md`, so neither is a
-  dependency): `reference/sourcebooks/malleus-monstrorum-zh.md` is the official creature
+- **Source material, if present locally** (neither is a dependency):
+  `reference/sourcebooks/malleus-monstrorum-zh.md` is the official creature
   compendium — read the nearest published entry to calibrate stat scale, armour, and SAN cost
   before inventing your own; its stat tables are clean, but check its own header for the
   current list of known small defects (mixed synonymous terms, a few inconsistent renderings).

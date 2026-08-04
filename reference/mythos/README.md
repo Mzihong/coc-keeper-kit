@@ -21,7 +21,7 @@ Suggested files as you grow:
 notation, opposed-POW convention, and tome study-time/SAN/Cthulhu-Mythos ranges, so you don't
 have to re-derive them per entry. Source material for tomes and spells:
 `reference/sourcebooks/grand-grimoire-zh.md` (the official grimoire, 550+ spells) — local
-only, absent from `dist/bundle.md`. Take the mechanical shape and the number ranges; write the
+only, so treat it as optional. Take the mechanical shape and the number ranges; write the
 entry yourself.
 
 Balance is the Keeper's: reward Mythos knowledge with power *and* the SAN/max-SAN cost that

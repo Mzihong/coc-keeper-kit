@@ -5,7 +5,7 @@
   "governed_by": "reference/bestiary/README.md",
   "citation_rule": null,
   "usage_rule": "authored by this kit — read and used directly, no citation required",
-  "in_bundle": false,
+  "in_bundle": true,
   "generated_by": "scripts/build-reference-index.py — do not edit by hand",
   "entry_count": 16,
   "entries": [
@@ -18,6 +18,11 @@
         "reference/mythos/great-old-ones/nyarlathotep.md"
       ],
       "referenced_by": [
+        {
+          "file": "WORKLOG.md",
+          "line": 120,
+          "context": "`black-pharaoh.md`/`dark-young.md`/`sons-of-yog-sothoth.md`)。执行时用 5 个并行"
+        },
         {
           "file": "reference/bestiary/hunting-horrors.md",
           "line": 88,
@@ -32,9 +37,14 @@
           "file": "reference/tables/monster-index.md",
           "line": 148,
           "context": "| 黑法老，古埃及之王（BLACK PHARAOH, Lord of Ancient Egypt） | 0/1D2 | Is an avatar of Nyarlathotep — not a separate servant answering to him. Treat | Avatar of Nyarlathot"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 697,
+          "context": "[Black Pharaoh](../reference/bestiary/black-pharaoh.md)(均奈亚拉托提普,后者是化身本体"
         }
       ],
-      "reference_count": 3
+      "reference_count": 5
     },
     {
       "file": "black-wing.md",
@@ -59,8 +69,8 @@
           "context": "| Black Wing (黑翼者) | L3 servitor | 0/1D6 | Cthulhu (contested — see Lore; also theorised as Star-Spawn offshoot or independent) | Flying night hunter; snatches "
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 333,
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 334,
           "context": "| 2 | 关联信息**存在,但埋在散文里** | `black-wing.md` 的 Lore 写了 \"loyal to Cthulhu rather than Nodens\",但不是字段;反过来 `great-old-ones/cthulhu.md` 的「挂钩」链了教团、手法、史料,**唯独不链自己的眷族**。双向"
         }
       ],
@@ -76,6 +86,11 @@
       ],
       "referenced_by": [
         {
+          "file": "WORKLOG.md",
+          "line": 119,
+          "context": "bestiary 条目(`deep-one.md`/`byakhee.md`/`spawn-of-hastur.md`/`hunting-horrors.md`/"
+        },
+        {
           "file": "reference/mythos/great-old-ones/hastur.md",
           "line": 85,
           "context": "[Byakhee](../../bestiary/byakhee.md)、"
@@ -84,9 +99,14 @@
           "file": "reference/tables/monster-index.md",
           "line": 73,
           "context": "| 拜亚基，星间之骏马（BYAKHEE, the Star-Steeds） | 1/1D6 (malleus's own figure for this entry) | Hastur | Star-bat mount; drains STR on bite | `reference/bestiary/byakhee."
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 694,
+          "context": "[Byakhee](../reference/bestiary/byakhee.md)、"
         }
       ],
-      "reference_count": 2
+      "reference_count": 4
     },
     {
       "file": "cthulhu-blessed.md",
@@ -118,6 +138,11 @@
       ],
       "referenced_by": [
         {
+          "file": "WORKLOG.md",
+          "line": 120,
+          "context": "`black-pharaoh.md`/`dark-young.md`/`sons-of-yog-sothoth.md`)。执行时用 5 个并行"
+        },
+        {
           "file": "reference/mythos/great-old-ones/shub-niggurath.md",
           "line": 73,
           "context": "[Dark Young](../../bestiary/dark-young.md)"
@@ -131,9 +156,14 @@
           "file": "reference/tables/monster-index.md",
           "line": 117,
           "context": "| 黑山羊幼仔，莎波·尼古拉丝的子嗣（DARK YOUNG of Shub-Niggurath） | 1D3/1D10 (malleus's own figure — kept as-is) | Shub-Niggurath | Shub-Niggurath's tree-tentacle avatar | `refe"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 699,
+          "context": "[Dark Young](../reference/bestiary/dark-young.md)(莎布·尼古拉斯)、"
         }
       ],
-      "reference_count": 3
+      "reference_count": 5
     },
     {
       "file": "deep-one-hybrid.md",
@@ -144,7 +174,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 92,
+          "line": 150,
           "context": "- **`reference/bestiary/` 现有 9 只按新标尺重新核过一遍。** `deep-one-hybrid.md` 的"
         },
         {
@@ -168,22 +198,27 @@
           "context": "| 混血深潜者，印斯茅斯的污点与其他异性混血产物的载体（DEEP ONE HYBRIDS, Carriers of the Innsmouth Taint & Other Weird Hybrids） | 0/1D4 (higher for a visibly advanced individual — 1/1D6+)"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 82,
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 83,
           "context": "**顺带查出一个校准 bug:** kit 的 `deep-one-hybrid.md` 标 `independent race`,但 malleus"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 536,
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 537,
           "context": "(`core/07`、`core/14`、两份 README、`bestiary/deep-one-hybrid.md`、`WORKLOG`、"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 662,
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 663,
           "context": "- [x] **11. 校准现有 9 只 + 补新字段。** `deep-one-hybrid.md` 的 `independent-race` →"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 701,
+          "context": "达贡与许德拉的眷族小节同时反链已有的 `deep-one-hybrid.md`,凑齐两条而不重复造轮子。"
         }
       ],
-      "reference_count": 8
+      "reference_count": 9
     },
     {
       "file": "deep-one.md",
@@ -196,6 +231,11 @@
       ],
       "referenced_by": [
         {
+          "file": "WORKLOG.md",
+          "line": 119,
+          "context": "bestiary 条目(`deep-one.md`/`byakhee.md`/`spawn-of-hastur.md`/`hunting-horrors.md`/"
+        },
+        {
           "file": "reference/mythos/great-old-ones/dagon-and-hydra.md",
           "line": 61,
           "context": "[`../../bestiary/deep-one.md`](../../bestiary/deep-one.md))、混血深潜者 Deep One Hybrids"
@@ -204,9 +244,14 @@
           "file": "reference/tables/monster-index.md",
           "line": 84,
           "context": "| 深潜者，长鳃的亚人族（DEEP ONES, Gilled Humanoids） | 0/1D6 (malleus's own figure for first sighting) | Cthulhu, Dagon & Hydra | Deep One; claw, spear, coastal ambush | `"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 693,
+          "context": "[Deep One](../reference/bestiary/deep-one.md)(达贡与许德拉)、"
         }
       ],
-      "reference_count": 2
+      "reference_count": 4
     },
     {
       "file": "fellrock.md",
@@ -219,12 +264,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 29,
+          "line": 87,
           "context": "- 怪物图鉴 `fellrock.md` 的\"沉默之油\"反查链接指向了 `artifacts-zh.md`,但那份文件里"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 93,
+          "line": 151,
           "context": "type 从独立种族改成仆从种族(malleus 原文就是这么分类的);`fellrock.md` 的 threat"
         },
         {
@@ -248,14 +293,14 @@
           "context": "| Fellrock (费尔罗克) | L2 creature | 1D3/1D10 | Cthulhu (many groups; unconfirmed whether all do — see Lore) | Huge dormant burrower; avoid, ward with Oil of Silen"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 663,
-          "context": "`servitor-race`(malleus 归类,已知必改项)。threat 改判两处:`fellrock.md`"
-        },
-        {
           "file": "update_plan/Archived/2026-08-02-cult-doc-wrapup.md",
           "line": 47,
           "context": "`reference/bestiary/fellrock.md` 的\"沉默之油\"词条指向了 `reference/mythos/artifacts-zh.md`,"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 664,
+          "context": "`servitor-race`(malleus 归类,已知必改项)。threat 改判两处:`fellrock.md`"
         }
       ],
       "reference_count": 8
@@ -267,6 +312,11 @@
       "lines": 93,
       "declared_consumers": [],
       "referenced_by": [
+        {
+          "file": "WORKLOG.md",
+          "line": 119,
+          "context": "bestiary 条目(`deep-one.md`/`byakhee.md`/`spawn-of-hastur.md`/`hunting-horrors.md`/"
+        },
         {
           "file": "reference/bestiary/black-pharaoh.md",
           "line": 61,
@@ -281,9 +331,14 @@
           "file": "reference/tables/monster-index.md",
           "line": 99,
           "context": "| 恐怖猎手，巨大的飞蛇（HUNTING HORRORS, Great Viperine Flyers） | 0/1D10 | Nyarlathotep (used as his hunting hounds; will also answer an unrelated summons | Flying hound; "
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 696,
+          "context": "[Hunting Horrors](../reference/bestiary/hunting-horrors.md)、"
         }
       ],
-      "reference_count": 3
+      "reference_count": 5
     },
     {
       "file": "scarlet-orb.md",
@@ -340,6 +395,11 @@
       ],
       "referenced_by": [
         {
+          "file": "WORKLOG.md",
+          "line": 120,
+          "context": "`black-pharaoh.md`/`dark-young.md`/`sons-of-yog-sothoth.md`)。执行时用 5 个并行"
+        },
+        {
           "file": "reference/mythos/great-old-ones/yog-sothoth.md",
           "line": 79,
           "context": "[Sons of Yog-Sothoth](../../bestiary/sons-of-yog-sothoth.md)"
@@ -348,9 +408,14 @@
           "file": "reference/tables/monster-index.md",
           "line": 136,
           "context": "| 尤格·索托斯之子，外神的子嗣（SONS OF YOG-SOTHOTH, Progeny of an Outer Gods） | 1/1D8 (sensing the unseen monstrous form) — see Stat block for the full | Yog-Sothoth | Yog-So"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 700,
+          "context": "[Sons of Yog-Sothoth](../reference/bestiary/sons-of-yog-sothoth.md)(犹格·索托斯)。"
         }
       ],
-      "reference_count": 2
+      "reference_count": 4
     },
     {
       "file": "spawn-of-hastur.md",
@@ -362,6 +427,11 @@
       ],
       "referenced_by": [
         {
+          "file": "WORKLOG.md",
+          "line": 119,
+          "context": "bestiary 条目(`deep-one.md`/`byakhee.md`/`spawn-of-hastur.md`/`hunting-horrors.md`/"
+        },
+        {
           "file": "reference/mythos/great-old-ones/hastur.md",
           "line": 86,
           "context": "[Spawn of Hastur](../../bestiary/spawn-of-hastur.md)"
@@ -370,9 +440,14 @@
           "file": "reference/tables/monster-index.md",
           "line": 97,
           "context": "| 哈斯塔之眷族，不可名状者生于星辰之间的子嗣（SPAWN OF HASTUR, Star-Born Progeny of the Unspeakable One） | 1D6/1D20 (malleus's own figure for this entry) | Hastur | Amphibious grappl"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 695,
+          "context": "[Spawn of Hastur](../reference/bestiary/spawn-of-hastur.md)(均哈斯塔)、"
         }
       ],
-      "reference_count": 2
+      "reference_count": 4
     },
     {
       "file": "the-bell-keeper.md",
@@ -387,8 +462,8 @@
           "context": "| The Bell-Keeper | L3 servitor | 1D4/1D10 | Independent — serves no god (bound to its lighthouse, not a cult or deity) | Undead lighthouse keeper; banished by "
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 287,
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 288,
           "context": "> 这正是 `the-bell-keeper.md` 已经在做的事(它写的是 `mythos servitor / undead`),"
         }
       ],
@@ -405,7 +480,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 94,
+          "line": 152,
           "context": "从 deadly 改成 mythic(体型与耐久数值早已过 deadly 上限)、`thrall-of-cthulhu.md`"
         },
         {
@@ -419,8 +494,8 @@
           "context": "| 克苏鲁的仆役，伺奉克苏鲁的仆从（THRALLS OF CTHULHU, Servants of Cthulhu） | 1/1D8 (malleus's own figure for this entry — kept as-is; see Threat note above for why the label mo"
         },
         {
-          "file": "update_plan/2026-08-02-monster-templates-traits.md",
-          "line": 665,
+          "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
+          "line": 666,
           "context": "且设计本就是\"劝退不劝打\");`thrall-of-cthulhu.md` deadly → moderate(malleus"
         }
       ],

@@ -13,8 +13,7 @@ tell — mechanically correct for 7e.
 - **If `reference/decks/busybodies-zh.md` is present, skim the card closest to this NPC's
   job before writing the stat block.** 47 official 1920s NPC cards — use them to calibrate:
   what EDU an antiquarian actually carries, where a zealot's Intimidate sits, which six or
-  seven skills a card bothers to list. Optional, not a dependency: the deck is a local file
-  and Keepers working from `dist/bundle.md` won't have it.
+  seven skills a card bothers to list. Optional, not a dependency: the deck is a local file.
 
 ## Ask (or infer sensibly)
 

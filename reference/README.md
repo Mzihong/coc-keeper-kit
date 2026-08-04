@@ -17,7 +17,10 @@ in `campaigns/<slug>/`, not here.
   `craft/` errors make the prose generic. Each file is sectioned by *which spec reads which
   section*. `lovecraft-zh.md` (distilled from `og_Norval/`) is read by `core/09-description.md`
   and `core/07-create-monster.md`; `cult-design-zh.md` (cult design methodology) is read by
-  `core/03-build-world.md` and `core/04-design-scenario.md`. Ships in `dist/bundle.md`.
+  `core/03-build-world.md` and `core/04-design-scenario.md`; `diagram-conventions-zh.md`
+  (the mermaid conventions for faction diagrams, scene webs, and region maps — a
+  kit-authored convention rather than a distillation) is read by `core/03-build-world.md`,
+  `core/04-design-scenario.md`, and `templates/cult.md`.
 - **`bestiary/`** — reusable monsters and Mythos entities you can drop into any game.
   Produced by `core/07-create-monster.md`. One creature per file. Written in **English**,
   since they're shared across campaigns that may output in different languages.
@@ -27,15 +30,17 @@ in `campaigns/<slug>/`, not here.
   hazards that don't fit the creature or spell shape (idols, spores, non-Euclidean spaces).
 - **`tables/`** — roll tables. Includes the four **seed tables** (`hooks`, `locations`,
   `mythos-angles`, `npc-quirks`) that `core/01-intake.md` rolls against when the Keeper gives
-  little or no input — the anti-generic layer.
+  little or no input — the anti-generic layer. Written in **简体中文** (unlike `bestiary/`):
+  the Keeper hand-extends these tables between sessions, and mixed-language rows make new
+  entries read as a different hand. Paths, filenames, and dice/stat notation stay English;
+  wording follows `glossary-zh.md`.
 - **`decks/`** — transcriptions of **official published card decks**, kept as source material
   for the generators (`busybodies-zh.md` is Chaosium's *Busybodies* NPC deck, 47 cards).
   Unlike everything else here this is **not the kit's own content and not kit canon** — it is
   third-party text we cite. Two hard rules, both in `reference/decks/README.md`: every file
   ends with a `## 引用出处` block naming work, rights holder, source, scope, and purpose; and
   **the numbers may be taken directly, the people may not** — a card's stats calibrate yours,
-  but its name, backstory, and secret never go into `campaigns/`. Not included in
-  `dist/bundle.md`, so nothing may depend on it.
+  but its name, backstory, and secret never go into `campaigns/`.
 - **`sourcebooks/`** — **official books, transcribed in full** (the 7e rulebook, the *Grand
   Grimoire*, *Malleus Monstrorum*). Same third-party status and citation rule as `decks/`;
   the difference is bulk and use — a deck you draw from, a book you look a chapter up in.
@@ -64,6 +69,31 @@ in `campaigns/<slug>/`, not here.
   numbers be transcribed does **not** extend here: cite the source, take the technique, never
   the text. Treat it the same way you'd treat a physical bookshelf: read it, then write
   original content informed by it.
+
+## 什么进 `dist/bundle.md`
+
+**一条线,不用逐目录记:kit 自己写的进,第三方转录的不进。**
+
+| 进 bundle | 不进 |
+|---|---|
+| `rules/` `craft/` `tables/` `bestiary/` `mythos/` `glossary-zh.md` `README.md`(本文件) | `decks/` `sourcebooks/` `og_Norval/` `external/` `_source/` |
+
+理由是同一条,不是体量:bundle 是给**没有仓库**的 ChatGPT/Gemini Keeper 上传用的副本,
+把第三方原文放进去就是再分发,撞 `core/00-how-to-run.md` 的「非商用、不再分发」。
+体量只是附带结果——`sourcebooks/` + `og_Norval/` 合计七百多万字符,本来也塞不进去。
+
+由此得出**写 spec 时唯一要记的那条**:
+
+> 指向右列任何目录的引用,一律写成可选(“if present locally”)。任何 spec 都不得把它
+> 当前置依赖,否则 bundle 链路的 Keeper 会被指去读一份他拿不到的文件。
+
+对应的正解是**提炼层进 bundle、本体留本地**:`og_Norval/` 82 篇 → `craft/lovecraft-zh.md`,
+`sourcebooks/malleus-monstrorum-zh.md` 223 条 → `tables/monster-index.md`。要让 bundle 链路
+用上一份第三方资料,做法是给它写一份原创提炼稿,而不是把原文塞进 bundle。
+
+`dist/` **不入库**(见 `.gitignore`)。bundle 是构建产物,上传前跑一次
+`bash scripts/build-bundle.sh` 现生成即可——所以改完 `core/`/`templates/`/`reference/`
+**不需要**重建它,也不需要把它和源文件放进同一个 commit。
 
 **Filing new third-party material** — a deck, a book, a converted PDF — goes through
 `core/14-archive-reference.md` (skill: `archive-reference`). It covers classification, naming,
