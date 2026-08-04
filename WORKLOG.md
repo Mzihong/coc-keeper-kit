@@ -134,7 +134,7 @@ dist/               构建产物,**已 gitignore**。要上传给 ChatGPT/Gemini
   两份都**不是**"把资料原样收进来":P10 的源材料是虚构内容,受硬约定 6 的三分法 ②③ 管,
   只能取手法;P11 的源材料是规则内容,可转录标出处。**两个计划的阶段 0 都是"转换+勘察",
   不需要 Keeper 拍板就能动。**
-- **P10 阶段 0 已完成(2026-08-04,未提交),复杂度降到三条计划里最低。** docx 已转
+- **P10 阶段 0 已完成(2026-08-04,13821ac),复杂度降到三条计划里最低。** docx 已转
   `reference/_source/阿卡姆.md`;勘察结论(章节行号表、地点条目字段体例、门牌编号法则、
   文末 299 条 11 分类的反查名录)写进了计划的「勘察结果」一节。两条对接手会话有用的结论:
   **一是决定不切分**——该文档标题体系规整(`## <编号>` 首位即区号),按行号跳读比切文件
@@ -163,9 +163,15 @@ dist/               构建产物,**已 gitignore**。要上传给 ChatGPT/Gemini
   确认仓库里有定义**,没有就当场定义或删掉那句,**不许指向 `update_plan/`**(计划文档不进
   bundle)。两类条目都管。**为什么需要它:`build-reference-index.py` 与完结清单查的都是
   文件级引用与孤儿,一个没有路径的裸名词对两者都不可见**,踩了照样报 no problems。
-- **P11 阶段 0–2 已完成(2026-08-04,未提交)——年代开放从计划变成了实际能用的六个年代
-  包。** 详见「会话记录」最新一条的文件清单;**阶段 3(`core/11` 年代串味审查)还没做**,
-  是这条计划唯一剩下的工作,做完才满足归档条件。踩过一次坑值得记一笔:年代文件初稿
+- **P11 阶段 0–2 已完成(2026-08-04,13821ac)——年代开放从计划变成了实际能用的六个年代
+  包。** 文件清单见 `git show 13821ac`。**同日复评又发现阶段 2 的接线漏了三处**,已单列成
+  计划里的**阶段 2b**(在阶段 3 之前做):①`core/13-create-investigator.md` 第一句直接读
+  `character-creation.md`、不经 `core/02`,所以年代加载顺序对全 kit 最吃职业表/货币的那个
+  spec 完全不生效;②**路径 B 有写无读**——`core/01` 让推导出的 delta 落到
+  `campaigns/<slug>/rules-era.md`,但没有任何地方说要去读它,索引里按定义也查不到路径 B 的
+  slug;③`eras/README.md` 的五节体例用中文节名,六份年代文件实际用英文节名,照体例造出来的
+  路径 B 包会与既有六份不同形。**阶段 3(`core/11` 年代串味审查)仍未做**,且它落地时要顺手
+  改掉两处"尚未接上"的自述(`eras/README.md` 末节、CHANGELOG 当天条目)。踩过一次坑值得记一笔:年代文件初稿
   写成了纯中文正文,后来对照 `character-creation.md`/`magic.md` 才发现 kit 的既有惯例
   是**英文正文 + 中文术语括注**,纯中文正文违反"kit 脚手架保持英文"——已重写六份,
   接手后续年代相关改动时留意这条,别重蹈同一个错。
@@ -219,226 +225,7 @@ dist/               构建产物,**已 gitignore**。要上传给 ChatGPT/Gemini
 
 ## 会话记录
 
-### 2026-08-04 — `reference/tables/` 全目录转中文(未提交,无对应计划文件)
-
-守秘人要在场次之间手动往骰表里续条目,中英混排会让新加的行一眼看出不是一批人写的。
-**`reference/tables/` 从此是中文目录**,这条约定写进了 `reference/tables/README.md` 头部
-和 `reference/README.md` 的 `tables/` 条目(与 `bestiary/` 那条「Written in **English**」
-对仗——bestiary 跨语言战役共用,tables 由守秘人手工续写,取向相反)。
-
-改写的七张表 + 一份 README(原先 CJK 占比 0%):`hooks.md`、`locations.md`、
-`mythos-angles.md`、`npc-quirks.md`(四张种子表)、`complications.md`、`madness.md`、
-`npc-appearance.md`、`README.md`。另外三处是残留英文的收尾:`monster-traits.md` 引言段、
-`monster-index.md` 的标题/说明/表头(**这份是生成的,改的是
-`scripts/build-reference-index.py` 的 `build_monster_index()` 里的字面量,不是文件本身**)、
-以及 `monster-traits.md` 里一个繁体字「額」→「额」。目录里原本就是中文的六份没动
-(`cult-goals`、`cult-leader-positions`、`cult-power-sources`、`cultist-archetypes`、
-`monster-traits` 表体、`monster-index` 数据行)。
-
-**刻意没改的一处:** `monster-index.md` 的分级标题仍是 `## L2 — creature (独立种族 /
-传说生物)`。那四行是照抄 `reference/rules/monster-scale.md` 的分级名,`rules/` 目前整体
-是英文;单方面改这边会让两份文件对不上号,要改得连 `monster-scale.md` 一起改。
-
-**没有跨文件引用被打断:** 全仓库对这七张表的引用**全部是路径级**(`core/01`、`core/03`、
-`core/06`、`reference/rules/sanity.md`、两份 deck README、战役文件里的「`complications.md`
-2 号」这种编号引用),没有任何地方引的是表内英文原文,所以正文改写不牵连别处。`madness.md`
-的一级标题从 `# Table — Bout of Madness (real-time)` 改成了 `# madness.md — 疯狂发作
-(即时症状)`,与目录内其余文件的 `# 文件名 — 中文小标题` 惯例对齐。
-
-改完跑了 `python scripts/build-reference-index.py`,`reference/index.json` 与
-`reference/tables/index.json` 里的 `title`/`context` 字段已随之更新,`--check` 无问题。
-`CHANGELOG.md` 补进了 2026-08-04 那条的「更新内容」(这条对 Keeper 有行为影响:现在可以
-直接往表里加中文行)。
-
-### 2026-08-04 — P10 整份复评 + 一条防悬空术语的新约定(未提交)
-
-对 P10 做了一次整份复评。**三条拍板结论全部维持**,改的是执行层六处,逐条记在计划文末的
-「复评记录」表里。**只有一个文件是 kit 内容改动**(`reference/craft/README.md`),其余全是
-计划文档。
-
-**最值得记的一条 —— 发现了一处新造的悬空引用,并补上了防复发约定:**
-
-`reference/craft/diagram-conventions-zh.md:69`(**进 bundle**)写着「出这张图 + **文字地图卡**」,
-但「文字地图卡」在仓库里**从未被定义过**——`git log -S"文字地图卡" --all` 为空,全仓库
-只有 `update_plan/` 里有这个词。成因:P5 阶段 3(未做)那条 checkbox 的内容,在 P5 阶段 0
-插队还债时被提前抄进了 §四。
-
-**为什么既有检查网兜不住(这条最要记住):** 与 P5 阶段 0 还的那笔债是同一类 bug,只是降了
-一级——那次是显式路径 `(update_plan/...)`,grep 得到、索引脚本查得出;这次是一个**裸名词**,
-`build-reference-index.py` 与完结清单查的都是**文件级**引用与孤儿,**没有路径的术语对两者
-都不可见**,当时 `--check` 照样报 no problems。
-
-据此给 `reference/craft/README.md`「写一份新的」加了**第 5 步「术语自足」**(原五步变六步,
-惯例规范那条路径三步变四步):**每个加粗术语落盘前确认仓库里有定义,没有就当场定义或删掉
-那句,不许写「详见某某」指向 `update_plan/`。两类条目都管。**
-
-改动文件:
-
-- `reference/craft/README.md` — 新增第 5 步「术语自足」+ 头部两类条目说明里三步改四步
-  (**本轮唯一的 kit 内容改动**)
-- `update_plan/2026-08-04-town-anatomy-from-arkham.md` — 头部加复评标注;产物表地图卡行
-  改落点;拍板结果 2 增复评修订 A/B(地图卡落 `diagram-conventions-zh.md` §六、建筑卡与
-  §五 冲突);拍板结果 3 增复评修订 C(d20 表剔掉神话典籍 33 + 恐怖生物 5 共 38 条,
-  20 行按世俗 261 条的配比分配);阶段 1 新增 §1.0 采料 + 复评修订 D(原 §三/§四 重复
-  `core/03`,换定义);阶段 1.2 接线拆成两处;阶段 2 增三条(`tables/README.md` 登记、
-  §四 第 69 行还债、§五 同步改);收尾补 `WORKLOG.md`;文末新增「复评记录」;
-  **订正备忘里「21 张」→ 20 张**(与本文件第 61–62 行及本 WORKLOG 矛盾,是 33→20 那次
-  订正的漏改)
-- `update_plan/2026-08-02-low-cost-maps.md`(P5)— 阶段 3 降级路径改指 §六 并记下越界成因;
-  **收尾第 1 条「重跑 bundle 且同 commit」划掉**——该硬约定 2026-08-04 已作废,这里是漏改残留
-- `update_plan/README.md` — P10 状态行范围与说明、建议执行顺序第 5 条、复杂度表 P10 行、
-  依赖图下方软耦合那段
-
-**没记 `CHANGELOG.md`。** 唯一的 kit 改动是给维护者看的写作约定,对 Keeper 而言没有任何
-行为变化;CHANGELOG 头部写明「只写**面向使用者**的变化」。同一判断上一条 P10 会话记录也用过。
-
-**一条修正了估算的结论:** d20 机构表比原估贵。"分类学是现成的"只对 20 行中的 8 行成立
-(小类各占 1 行),另 12 行要把 163 条「各行各业与专业人员」**重做一次子分类**——那 163 条
-本身不是一类东西。P10 整体仍是 ★★,只是工作量从"地图卡新建文件"挪到了这里。
-
-### 2026-08-04 — P10 阶段 0 勘察 + 三个拍板问题全部定案(未提交)
-
-Keeper 把 `reference/_source/阿卡姆.docx` 转成了 `阿卡姆.md`,据此完成 P10 阶段 0
-的勘察,并当场把三个待拍板问题全部定掉。**只改计划文档,没动 kit 内容**(故不记
-CHANGELOG——对 Keeper 而言没有任何行为变化)。
-
-改动文件:
-
-- `update_plan/2026-08-04-town-anatomy-from-arkham.md` — 状态转「进行中(阶段 0 已完成)」;
-  阶段 0 四条全部勾掉;新增「勘察结果」一节(§0 为什么不切分 / §1 章节—行号对照 /
-  §2 地点条目字段体例 / §3 门牌编号法则 / §4 反查名录即机构分类学 / §5 表格清单);
-  「待 Keeper 拍板」整节换成「拍板结果」;阶段 2 从"可选"转为必做并写死三条反模板化
-  挡法;阶段 1 补一条防具名泄漏的读法约束
-- `update_plan/README.md` — P10 状态行、依赖图节点、建议执行顺序第 3 条、复杂度表
-  (P10 ★★★→★★ 并升到第一)
-- `WORKLOG.md` — 本条 + 「当前状态」两处
-
-三条值得记住的勘察结论:
-
-1. **原计划的「按章切分」撤销。** 该约定的真实目的是"能跳读";这份文档标题体系规整
-   (4 个 L1;名录条目一律 `## <编号>`,首位数字即区号),按行号跳读已经够用,
-   切分只会在 gitignore 目录外多一份副本。
-2. **提炼只需读 9 段区导言(约 10 段),不必碰 300 个地点条目。** 条目里具名 NPC 与
-   具名机构密度很高,顺着通读必然把名字漏进提炼稿。
-3. **文末 6424–6723 行的反查名录(299 条 / 11 个分类)是 d20 机构表的现成骨架**,
-   也是一条独立手法(名录之外再挂按用途反查的索引层)。
-4. **「归档全文」这个选项其实一开始就不存在**——写计划时以为是 Keeper 的取舍,核过
-   `core/00` + `sourcebooks/README.md` 才发现硬约定已经答了。教训:**新立计划里凡是
-   写着"要不要收进 `sourcebooks/`"的,先去核三分法,别默认它是可选项。**
-
-核对过的数字:md 6723 行 / 140,640 字符 / 汉字 96,690 / 723 个标题 / 401 行表格 /
-0 张图;`arkham-maps/` **20 张**(此前 WORKLOG 记的 33 张有误,已改),8.2 MB,
-与 md 同源于那一份 docx。`git status` 确认 `_source/` 两份文件均未跟踪。
-
-### 2026-08-04 — P11 阶段 0–2:年代包全建(未提交)
-
-执行 `update_plan/README.md`「建议执行顺序」里排第一、二的两步:阶段 1(声明 1920s
-基准)先做,再做阶段 0(转换勘察)+ 阶段 2(建包接线)。**阶段 3(review 串味审查)
-不在本轮范围内,故意留着**。
-
-**阶段 0 — 转换与勘察:**`reference/_source/克苏鲁时空穿梭6.pdf`(52 页,已在
-`.gitignore` 内)用 `pdfplumber`(`uv run --with pdfplumber`,repo 本身没装这个包)
-逐页转文本落到 scratchpad,按英文分章标题(`Cthulhu Invictus`/`Cthulhu Dark Age`/
-`Mystic Iceland`/`Cthulhu Gaslight`/`Dreamlands`/`Cthulhu Icarus`/`Cthulhu End Times`)
-定位七个设定的页码边界,只读目录与各章首页,勘察结果写进了计划文件新增的「勘察结果」
-一节。**两个反直觉的发现**:「剑见箭 Swords and Arrows」不是独立年代,是给三个古代
-设定共用的近战规则附录;「幻梦境 Dreamlands」也不是年代,是任何年代都能进入的平行
-位面——两者都没建成年代文件,理由写在 `eras/README.md` 的索引表下面。
-
-**阶段 1 — 声明基准:**`character-creation.md` 头部加了「本文是 1920s 基准」;
-`chases.md` 的 Move 速率表(机动车/摩托车两行隐含机械时代假设)加了指向
-`eras/README.md` 的提示;`combat.md` 抽查后确认不含武器表(战斗力学本身跨年代通用),
-不需要改;`core/02-rules-reference.md` 补了「Default era: 1920s」段。
-
-**阶段 2 — 建包与接线:**新增 `reference/rules/eras/`(README.md 五节差集体例 + 路径
-A/B/C 判定表 + 六个年代文件:`cthulhu-invictus.md`/`dark-ages.md`/`mystic-iceland.md`/
-`gaslight.md`/`icarus.md`/`end-times.md`,每条改动都标了原书页码出处)。`core/02`
-登记了 `eras/README.md`;`core/01-intake.md` 问题 1 扩写成当场三路径判定,并要求
-明说走的是哪条;`campaigns/_template-campaign/CLAUDE.md` 的 Era 字段从自由文本改成
-固定 slug(对照 `eras/README.md` 索引);`reference/glossary-zh.md` 新增「年代包专属
-术语」一节(20+ 词条)。`python scripts/build-reference-index.py --check` 报 no
-problems(`reference/rules/index.json` 靠既有的 `list_md_files_recursive` 自动收录了
-`eras/*.md`,不用改脚本)。
-
-**踩过的坑:**六份年代文件初稿写成了纯中文正文,提交前对照
-`character-creation.md`/`magic.md` 才发现违反 kit 既有惯例(英文正文 + 中文术语括注,
-"来源"引用行例外保留中文)——已全部重写,以后再写 `reference/rules/` 下的文件先看一眼
-同目录现有文件的语言体例,不要想当然按"这是给中文战役用的"就整篇写中文。
-
-**决定不做的一件事:**没有把整本《克苏鲁时空穿梭6》转录进 `reference/sourcebooks/`——
-六份年代文件已经把规则内容(技能/装备/职业/机制)转换完并标了页码,原书又是粉丝汉化
-而非官方原文,没有必要另起一份整本转录,理由写在计划文件「收尾」一节。
-
-CHANGELOG.md 已补进当天已有条目;WORKLOG「当前状态」已加一条 P11 进度摘要。commit
-后需回填:`update_plan/2026-08-04-era-rule-packs.md` 状态表头、
-`update_plan/README.md` 状态索引表的 P11 行。**阶段 3 做完前不满足归档条件**,
-提交后这条记录先留着,别删。
-
-### 2026-08-04 — bundle 收编 bestiary/mythos + `dist/` 退出版本控制(未提交)
-
-起点是 Keeper 的一个质疑:「bundle 有必要么?reference 加不进去的话弱化好多」。查下来
-前提不成立——`reference/` 本来就是 bundle 的主体(重建前 351,793 字符里占 205k),
-真正被排除的是三类,理由各不相同,而**只有一类是没道理的**:
-
-- `og_Norval/` + `sourcebooks/` 合计约 740 万字符 —— 塞不进去,也不该进(第三方)
-- `decks/` —— 法律线:bundle 的用途就是上传给第三方,那正是不再分发规则挡的动作
-- **`bestiary/` + `mythos/` —— kit 自己写的,却被白名单静默漏掉**,这次收编
-
-**改动三件:**
-
-1. **`build-bundle.sh` 收 `bestiary/` 与整个 `mythos/`**(含 `cults/`、`great-old-ones/`、
-   `spells/` 三个子目录)。白名单同时全部改成 `<dir>/*.md` + `<dir>/*/*.md`,免得下次新建
-   子目录又被静默漏掉——P9 和本次踩的是同一个坑。bundle 5400 行 / 60 文件 → **8423 行 /
-   98 文件**(533,926 字符,+52%)。
-2. **`dist/` 进 `.gitignore`,`git rm --cached dist/bundle.md`。** 之前 42 个 commit 里有
-   16 个动了 bundle,每次都是 5000 行 diff 噪音。它是纯导出产物(没有任何 `core/` spec 读
-   它),上传前现跑即可。由此**硬约定「必须重跑 bundle 且同 commit」整条作废**,已从
-   三适配器、`core/14`、`core/15`、`update_plan/README.md` 完结清单、`craft/README.md`
-   收尾步骤里删除。
-3. **规则统一到一处**:`reference/README.md` 新增「什么进 `dist/bundle.md`」一节——
-   一条线(kit 原创的进、第三方转录的不进)+ 理由(再分发,不是体量)+ 唯一要记的推论
-   (指向不进 bundle 的目录一律写成可选)+ 正解(提炼层进 bundle、本体留本地)。
-   各目录 README、`core/` spec、两个脚本注释里的重复表述**全部删掉改成指向它**,
-   `decks/`/`sourcebooks/` 的两节「## 不进 bundle」压成一句话。
-
-**顺带解掉的待拍板项**:P11 的「bundle 取舍待阶段 0 实测行数后定」不存在了——
-`rules/eras/` 是原创目录,按通则整个自动进,脚本已经收得到。
-
-`build-reference-index.py` 的 `ORIGINAL_IN_BUNDLE` 里 bestiary/mythos 改 True,
-`--check` 报 no problems(66 文件 / 7 目录)。
-
-### 2026-08-04 — 新立 P10 / P11 + P5 定案 + P5 阶段 0 落地(未提交)
-
-**⚠️ 本轮动了 `core/`、`reference/`、`templates/`,bundle 与索引都已重跑**
-(`dist/bundle.md` 5400 行 / 60 文件;`build-reference-index.py` 报 no problems)。
-`CHANGELOG.md` 已在当天已有的 2026-08-04 条目下追加(更新内容 + 修复问题各一条)。
-**commit hash 待提交后回填三处**:`CHANGELOG.md` 该条标题、P5 计划文件头、
-`update_plan/README.md` 状态表。
-
-**P5 阶段 0(还债)已完成** —— 新增 `reference/craft/diagram-conventions-zh.md`(87 行,
-进 bundle):§一 通用规则 / §二 势力图 / §三 场景网 / §四 区域关系图 / §五 不该画图的情况。
-`templates/cult.md` 与 `reference/craft/cult-design-zh.md` 两处指向不存在规范的引用已改;
-`core/03`(Output)与 `core/04`(三线索规则 → 场景网,入边 < 3 即卡点)各接一行;
-`reference/craft/README.md` 现在写明**本目录有两类条目**——提炼稿(受「取手法不取文字」管)
-与惯例规范(kit 自订、无源材料),新写文件前先分清自己在写哪一类。
-
-其余改动:
-
-- 新建 `update_plan/2026-08-04-town-anatomy-from-arkham.md`(P10)、
-  `update_plan/2026-08-04-era-rule-packs.md`(P11)
-- 改写 `update_plan/2026-08-02-low-cost-maps.md`(P5):三个待拍板问题定案、拆两个功能、
-  阶段 0 补 mermaid 还债
-- `update_plan/README.md`:状态表 + 依赖图 + 执行顺序 + 复杂度表
-- `.gitignore`:补 `*.docx` 与 `/reference/_source/`
-- 文件移动(**都在 gitignore 内,git 看不到**):`reference/阿卡姆.docx` 与
-  `reference/rules/克苏鲁时空穿梭6.pdf` → `reference/_source/`;新增
-  `reference/_source/arkham-maps/`(33 张)
-
-提交后删掉这条记录。
-
----
-
-以上之外没有其他会话记录——其余改动全部已提交(见 `git log`)。P9 阶段 A+B 的落地细节
+目前没有未提交的会话记录——所有改动均已提交(见 `git log`)。P9 阶段 A+B 的落地细节
 (索引脚本怎么解析转录稿、踩过的名称解析坑、9 只 bestiary 条目的改判理由)已随
 commit 059ba63 落地,理由本身也直接写在了改动的文件里(各 bestiary 条目的 header、
 脚本的函数注释),不在这里重复背一份——要看当时怎么想的,`git show 059ba63` 或翻
