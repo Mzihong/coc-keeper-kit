@@ -1,8 +1,8 @@
 # Update Plan — 怪物模板与词条系统
 
 > 日期:2026-08-02
-> 状态:**已完成(阶段 C 落盘,commit 待回填)** —— 三阶段全部交付:2026-08-03 阶段 A/B
-> (819971e、059ba63),2026-08-04 阶段 C(神格铺设,5 神格 + 7 眷族)。
+> 状态:**已完成(e125ad1)** —— 三阶段全部交付:2026-08-03 阶段 A/B
+> (819971e、059ba63),2026-08-04 阶段 C(神格铺设,5 神格 + 7 眷族,e125ad1)。
 > 阶段 A:`reference/rules/monster-scale.md` + `reference/tables/monster-traits.md`,
 > 5 处接线(`core/07`/`core/02`/`core/11`/`templates/monster.md`/bestiary README)全部完成。
 > 阶段 B:`scripts/build-reference-index.py` 扩了 `parse_malleus_entries()` +
