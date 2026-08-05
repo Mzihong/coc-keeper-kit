@@ -243,7 +243,7 @@ codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-0
 
 ## 会话记录
 
-本节**只保留未提交的工作**。当前无未提交条目——P13(bundle 退役)已随 014ffe6 落地,
+本节**只保留未提交的工作**。当前无未提交条目——P13(bundle 退役)已随 7f85d9b 落地,
 「默认舞台改为美国」已随 d481713 落地,两条记录按 `core/15-close-session.md` 的
 "Prune before you add" 删除。
 
