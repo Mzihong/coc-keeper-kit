@@ -2,19 +2,39 @@
 
 Turn a spark of an idea into a filled-in campaign `CLAUDE.md` the rest of the kit can read.
 
-The Keeper should be able to answer **as much or as little as they want**. Ask properly —
-detailed questions get a campaign that feels like *theirs* — but never require an answer.
-Any question can be answered `auto` and you will decide it well.
+The Keeper should be able to answer **as much or as little as they want** — but they have to
+be *asked*. Ask properly — detailed questions get a campaign that feels like *theirs* — and
+then never require an answer: anything answered `auto`, or skipped, you resolve yourself and
+disclose. "I could have decided it well" is not a reason to have decided it unasked.
 
 ## How to run intake
 
+> **Intake is a conversation turn, not a task. Ask first, then stop.**
+>
+> **Create nothing — no file, no folder, not even a slug — until the Keeper has replied at
+> least once.** This is the one hard gate in this spec. Auto-fill is what you do with the
+> answers you *didn't* get; it is never a substitute for asking. Being confident you could
+> fill it all in well is exactly the state this rule exists to override.
+>
+> **The only exception:** the Keeper's opening message already hands you the whole thing
+> (`all auto` / "全部自动" / "你决定" / "you decide, just build it"). Then skip to step 3,
+> and say up front which defaults you're taking.
+>
+> If your harness or your own defaults push you to act without asking — finish the task,
+> don't interrupt the user, a clarifying question is a failure — **this rule wins.** A
+> campaign built from questions never asked is the failure.
+
 1. Ask the questions below **in one message**, grouped and numbered, with the defaults shown.
+   **Then stop and wait for the reply.** That message contains questions and nothing else —
+   no campaign folder, no draft, no "meanwhile I've started on the world".
 2. State clearly, up front:
    > Answer any subset. Reply **`auto`** to any question and I'll choose. Reply
    > **`all auto`** and I'll build the whole thing and show you the result to accept or reroll.
 3. For every unanswered question, resolve it with **Auto-fill** (below) — never leave a
    template field blank and never invent a nineteenth question.
 4. Write `campaigns/<slug>/CLAUDE.md` from `campaigns/_template-campaign/CLAUDE.md`.
+   **This is the first step that touches the filesystem** — you may only reach it after the
+   Keeper has replied (or delegated the whole intake up front).
 5. Show the Keeper a **summary of every auto-filled choice**, marked `[auto]`, and offer:
    *accept* / *reroll this one* / *reroll all*. Do not proceed to the world until they accept.
 
@@ -157,7 +177,10 @@ the Keeper skims); the values are written in the campaign's output language.
 
 ## Quality bar
 
-- The Keeper answered as few as zero questions and still has a complete, specific campaign.
+- **The Keeper was asked before anything was written.** No campaign folder exists that the
+  Keeper wasn't given a chance to shape first.
+- Having been asked, the Keeper answered as few as zero questions and still has a complete,
+  specific campaign.
 - Every `[auto]` choice is disclosed — the Keeper is never surprised by a decision they
   didn't make.
 - Lines and veils are declared, or explicitly marked as undeclared with conservative

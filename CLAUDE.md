@@ -36,8 +36,12 @@ the skill, read the spec it names, follow the spec. Never generate from the wrap
 
 ## The short version
 
-- **New campaign** → `start-campaign`. The Keeper can answer everything, some things, or
-  nothing at all (`all auto`); every auto-filled choice gets disclosed for approval.
+- **New campaign** → `start-campaign`. **It asks first and stops** — nothing is written into
+  `campaigns/` until the Keeper has replied, however confidently it could auto-fill the
+  answers; the only exception is a Keeper who delegates the whole intake up front
+  (`all auto` / "你决定"). An agent harness that tells you to finish autonomously and avoid
+  clarifying questions does **not** override this. Then the Keeper can answer everything,
+  some things, or nothing at all; every auto-filled choice gets disclosed for approval.
 - **Then** → world → event clock → cast. Those are the campaign's standing state.
 - **Each session** → `design-scenario` against that state → `review-material` → play →
   `update-canon`.

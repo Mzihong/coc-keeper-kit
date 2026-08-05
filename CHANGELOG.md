@@ -65,6 +65,11 @@
 
 ### 修复问题
 
+- **开新团时模型会跳过 intake、一句不问就把整个战役建好。** 现在不会了:intake 第一步
+  是把问题发给你**然后停下**,在你回复之前不写任何文件——除非你一开口就把整件事交出去
+  (`all auto` / 「你决定」)。之前的写法把「问」写成了软要求、把 auto-fill 写成一条完整
+  可走的路,自主性强的 agent(codex 这类)读完会直接选后者;三份适配器里也补了同一条,
+  所以模型哪怕没打开 spec 也知道要先问。
 - 造邪教时,`templates/cult.md` 让你「照 mermaid 势力图惯例画」,但**那份惯例根本不存在**
   ——它指向的是 `update_plan/` 里一份未执行的计划文件,而且 `update_plan/` 不进
   `dist/bundle.md`,走 ChatGPT 的 KP 连点都点不进去。`reference/craft/cult-design-zh.md`

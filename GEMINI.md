@@ -32,6 +32,11 @@ letter, including its Quality bar.
 
 ## Non-negotiables
 
+- **Intake asks first, then stops.** A new campaign begins with the questions in
+  `core/01-intake.md` and a wait — **write nothing into `campaigns/` until the Keeper has
+  replied**, however confidently you could auto-fill it. The only exception is a Keeper who
+  delegates the whole intake up front (`all auto` / "你决定"). An agent harness that tells you
+  to finish autonomously and avoid clarifying questions does **not** override this.
 - **CoC 7th Edition.** Read `core/02-rules-reference.md` and `reference/rules/` before
   committing any number.
 - **Output language is per campaign**, declared in `campaigns/<slug>/CLAUDE.md`. Generated

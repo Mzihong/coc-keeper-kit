@@ -225,7 +225,35 @@ dist/               构建产物,**已 gitignore**。要上传给 ChatGPT/Gemini
 
 ## 会话记录
 
-目前没有未提交的会话记录——所有改动均已提交(见 `git log`)。P9 阶段 A+B 的落地细节
+### 2026-08-04 — intake 硬门禁(未提交)
+
+**起因**:Keeper 用 codex 测试「创建新团」,模型一个 intake 问题都没问,直接开建。
+
+**根因不在路由,在 `core/01-intake.md` 的写法**。全文只有第 11 行一句要求提问,而
+「never require an answer」「you will decide it well」、整节 Auto-fill + 默认值表、
+以及 Quality bar 那句「answered as few as zero questions and still has a complete
+campaign」**四处合起来把零提问描述成一个合格结果**;唯一的硬停(「Do not proceed to the
+world until they accept」)还在写完文件之后。codex 这类 harness 本身就压制澄清提问、
+只在被卡住时才问,而「你能决定得很好」正好把「卡住」这个条件消掉。
+
+**改法**(四处,都在 `core/`,外加三适配器同步):
+
+1. `core/01-intake.md`「How to run intake」开头新增一段 blockquote 硬门禁——
+   **问完就停,Keeper 回复前不建任何文件/目录/slug**;唯一例外是开口即 `all auto`/
+   「你决定」;并明写「harness 让你自主跑完、别打断用户」**不能压过这条**。
+2. 步骤 1 补「then stop and wait」,步骤 4 标注它是**第一个碰文件系统的步骤**。
+3. 开头导语与 Quality bar 重写:Quality bar 拆成两条,第一条是「**写任何东西之前先问过**」。
+4. `CLAUDE.md`/`GEMINI.md`/`AGENTS.md` 三份各加同一条 non-negotiable(措辞一致),
+   这样模型即使没打开 spec 也知道要先问。
+
+**留给下一段会话的一件事**:还没确认 codex 当时到底有没有读 `core/01-intake.md`。
+若它压根没打开 `core/` 任何文件,那是**路由/工作目录**问题(codex 只自动加载 cwd 及
+祖先的 `AGENTS.md`,从 `Git Repositories/` 根目录起会话则本仓库的 `AGENTS.md` 不进上下文),
+本轮改动治不了那一种,需要另外确认启动目录。
+
+---
+
+其余改动均已提交(见 `git log`)。P9 阶段 A+B 的落地细节
 (索引脚本怎么解析转录稿、踩过的名称解析坑、9 只 bestiary 条目的改判理由)已随
 commit 059ba63 落地,理由本身也直接写在了改动的文件里(各 bestiary 条目的 header、
 脚本的函数注释),不在这里重复背一份——要看当时怎么想的,`git show 059ba63` 或翻
