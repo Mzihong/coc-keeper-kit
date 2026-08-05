@@ -21,32 +21,32 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 102,
+          "line": 111,
           "context": "`dist/bundle.md`,走 ChatGPT 的 KP 连点都点不进去。`reference/craft/cult-design-zh.md`"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 237,
+          "line": 246,
           "context": "- 新增邪教设计方法论 `craft/cult-design-zh.md`,配四张骰表与 `templates/cult.md` 模板。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 200,
+          "line": 201,
           "context": "(`craft/cult-design-zh.md` §四 的六项财源,而且住在邪教专属文件里,威胁不是邪教时"
         },
         {
           "file": "WORKLOG.md",
-          "line": 246,
+          "line": 247,
           "context": "**P5 阶段 0 是还债**:`templates/cult.md:42` 与 `reference/craft/cult-design-zh.md:68`"
         },
         {
           "file": "core/01-intake.md",
-          "line": 75,
-          "context": "default to \"cult\" out of habit.* If the answer is a cult, `reference/craft/cult-design-zh.md`"
+          "line": 81,
+          "context": "`reference/craft/cult-design-zh.md` and `reference/mythos/cults/` are where world-building"
         },
         {
           "file": "core/03-build-world.md",
-          "line": 44,
+          "line": 45,
           "context": "build order. Read `reference/craft/cult-design-zh.md` §一–§三 first (why a cult works as a"
         },
         {
@@ -171,7 +171,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 29,
+          "line": 34,
           "context": "`reference/craft/cult-design-zh.md` §三。"
         },
         {
@@ -216,7 +216,7 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 148,
+          "line": 145,
           "context": "`craft/cult-design-zh.md` 两处指向不存在规范的引用)。"
         },
         {
@@ -255,12 +255,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 41,
+          "line": 50,
           "context": "- **关系图终于有正式画法了。** 新增 `reference/craft/diagram-conventions-zh.md`,covers"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 103,
+          "line": 112,
           "context": "第 11 步有同样的问题。两处现已改指向新的 `craft/diagram-conventions-zh.md`。"
         },
         {
@@ -270,7 +270,7 @@
         },
         {
           "file": "core/03-build-world.md",
-          "line": 71,
+          "line": 73,
           "context": "`reference/craft/diagram-conventions-zh.md`: §一 (general rules — every edge carries a"
         },
         {
@@ -410,17 +410,17 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 76,
+          "line": 80,
           "context": "变成\"同一个文件\"**——地图卡直接扩进 P5 阶段 0 产出的 `craft/diagram-conventions-zh.md`"
         },
         {
           "file": "update_plan/README.md",
-          "line": 125,
+          "line": 122,
           "context": "`core/03` 两处接线)→ **阶段 2**(d20 机构表 + `diagram-conventions-zh.md` 扩 §六"
         },
         {
           "file": "update_plan/README.md",
-          "line": 127,
+          "line": 124,
           "context": "**阶段 2 里有一条债优先**:`diagram-conventions-zh.md:69` 的「文字地图卡」是个从未"
         },
         {
@@ -455,7 +455,7 @@
         },
         {
           "file": "core/00-how-to-run.md",
-          "line": 168,
+          "line": 174,
           "context": "│   ├── og_Norval/           ← Lovecraft's 82 stories (public domain) → craft/lovecraft-zh.md"
         },
         {

@@ -19,16 +19,6 @@
       ],
       "referenced_by": [
         {
-          "file": "core/01-intake.md",
-          "line": 125,
-          "context": "`mythos-angles.md`, `complications.md`. Roll; don't pick the first plausible thing you"
-        },
-        {
-          "file": "core/04-design-scenario.md",
-          "line": 63,
-          "context": "`reference/tables/complications.md`), and likely stopping points."
-        },
-        {
           "file": "reference/decks/miseries-zh.md",
           "line": 9,
           "context": "> - `reference/tables/complications.md` —— 扩充「一场里出什么岔子」的样本池。"
@@ -45,16 +35,16 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 24,
+          "line": 29,
           "context": "- `complications.md`(1d20)——这一场会出什么岔子;备课时掷两次。"
         },
         {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
-          "line": 174,
+          "line": 183,
           "context": "- [ ] `complications.md` → d50"
         }
       ],
-      "reference_count": 7
+      "reference_count": 5
     },
     {
       "file": "cult-goals.md",
@@ -68,14 +58,9 @@
       ],
       "referenced_by": [
         {
-          "file": "core/01-intake.md",
-          "line": 77,
-          "context": "cult's concrete goal is still rolled from `reference/tables/cult-goals.md`, not invented,"
-        },
-        {
-          "file": "core/03-build-world.md",
-          "line": 47,
-          "context": "enemies → relationship diagram). Roll `reference/tables/cult-goals.md` (want × means) and"
+          "file": "core/00-how-to-run.md",
+          "line": 90,
+          "context": "and how it handles two-dimensional tables like `cult-goals.md`."
         },
         {
           "file": "templates/cult.md",
@@ -124,13 +109,23 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 28,
+          "line": 13,
+          "context": "(如 `cult-goals.md`)一次调用就把两张都掷了。细节见 `scripts/roll.py` 的文件头注释,"
+        },
+        {
+          "file": "reference/tables/README.md",
+          "line": 33,
           "context": "- `cult-goals.md`(1D10 × 1D8)——邪教的愿望 × 手段;两张都掷,相乘才成立。见"
         },
         {
+          "file": "scripts/roll.py",
+          "line": 15,
+          "context": "table like cult-goals.md, one `## <label>(1DN)` heading per dimension — and roll.py parses"
+        },
+        {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
-          "line": 92,
-          "context": "- [ ] **两维表原生支持**:`cult-goals.md` 的 `## 愿望(1D10)` / `## 手段(1D8)`"
+          "line": 94,
+          "context": "- [x] **两维表原生支持**:`cult-goals.md` 的 `## 愿望(1D10)` / `## 手段(1D8)`"
         },
         {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
@@ -153,7 +148,7 @@
           "context": "`tables/cult-goals.md`、`tables/cult-leader-positions.md`、"
         }
       ],
-      "reference_count": 17
+      "reference_count": 18
     },
     {
       "file": "cult-leader-positions.md",
@@ -166,23 +161,13 @@
       ],
       "referenced_by": [
         {
-          "file": "core/03-build-world.md",
-          "line": 48,
-          "context": "`reference/tables/cult-leader-positions.md` (the leader's social front) rather than inventing"
-        },
-        {
-          "file": "core/06-create-npc.md",
-          "line": 43,
-          "context": "tired-looking.\" For a cult leader specifically, `reference/tables/cult-leader-positions.md`"
-        },
-        {
           "file": "templates/cult.md",
           "line": 11,
           "context": "- **Social front / position:** <`reference/tables/cult-leader-positions.md`>"
         },
         {
           "file": "reference/tables/README.md",
-          "line": 30,
+          "line": 35,
           "context": "- `cult-leader-positions.md`(1d10)——邪教首领的社会门面,以及这个位置换来的便利。"
         },
         {
@@ -206,7 +191,7 @@
           "context": "`tables/cult-goals.md`、`tables/cult-leader-positions.md`、"
         }
       ],
-      "reference_count": 8
+      "reference_count": 6
     },
     {
       "file": "cult-power-sources.md",
@@ -249,7 +234,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 31,
+          "line": 36,
           "context": "- `cult-power-sources.md`(1d4)——邪教声称的超自然背书从哪儿来。"
         },
         {
@@ -299,7 +284,7 @@
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 47,
+          "line": 49,
           "context": "**Rank-and-file cultists** — `reference/tables/cultist-archetypes.md` has twelve ready-to-use"
         },
         {
@@ -309,8 +294,13 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 32,
+          "line": 37,
           "context": "- `cultist-archetypes.md`——12 组现成的低阶邪教徒数值(按角色分组,不是骰表),外加一套"
+        },
+        {
+          "file": "scripts/roll.py",
+          "line": 30,
+          "context": "Some files in reference/tables/ are not dice tables at all (cultist-archetypes.md,"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
@@ -324,8 +314,8 @@
         },
         {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
-          "line": 109,
-          "context": "- [ ] **非骰表要报错不要硬掷**:`cultist-archetypes.md` / `monster-traits.md` /"
+          "line": 108,
+          "context": "- [x] **非骰表要报错不要硬掷**:`cultist-archetypes.md` / `monster-traits.md` /"
         },
         {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
@@ -363,7 +353,7 @@
           "context": "> 且 `reference/tables/` 已有中文表(`cultist-archetypes.md`)。"
         }
       ],
-      "reference_count": 14
+      "reference_count": 15
     },
     {
       "file": "hooks.md",
@@ -375,23 +365,13 @@
       ],
       "referenced_by": [
         {
-          "file": "core/01-intake.md",
-          "line": 124,
-          "context": "2. **Roll the seed tables** in `reference/tables/` — `hooks.md`, `locations.md`,"
-        },
-        {
-          "file": "core/01-intake.md",
-          "line": 156,
-          "context": "- Roll `hooks.md` for the way the investigators are pulled in."
-        },
-        {
           "file": "reference/tables/README.md",
-          "line": 17,
+          "line": 22,
           "context": "- `hooks.md`(1d20)——调查员是怎么被卷进来的。"
         },
         {
           "file": "campaigns/_template-campaign/CLAUDE.md",
-          "line": 110,
+          "line": 111,
           "context": "| <field> | <value> `[auto]` | <rolled hooks.md 14 / inferred from era> |"
         },
         {
@@ -400,7 +380,7 @@
           "context": "\"evidence\": \"Premise centers on Camas Dubh, a storm-locked Skye fishing hamlet bound to a mistranslated century-old rite ('Tàmh na Mara') that unknowingly feeds"
         }
       ],
-      "reference_count": 5
+      "reference_count": 3
     },
     {
       "file": "locations.md",
@@ -413,28 +393,8 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 87,
+          "line": 96,
           "context": "**\"默认美国不等于默认阿卡姆\"**——默认给的是国家,镇子照样掷 `locations.md` 再自己造,"
-        },
-        {
-          "file": "core/01-intake.md",
-          "line": 124,
-          "context": "2. **Roll the seed tables** in `reference/tables/` — `hooks.md`, `locations.md`,"
-        },
-        {
-          "file": "core/01-intake.md",
-          "line": 151,
-          "context": "not a town: roll `locations.md`, then invent the town. Lovecraft's own places (阿卡姆,"
-        },
-        {
-          "file": "core/01-intake.md",
-          "line": 155,
-          "context": "- Roll `locations.md` for at least one place that isn't the obvious one."
-        },
-        {
-          "file": "core/03-build-world.md",
-          "line": 15,
-          "context": "- If this is the campaign's first world-building pass, roll `reference/tables/locations.md`"
         },
         {
           "file": "reference/tables/hooks.md",
@@ -443,22 +403,17 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 18,
+          "line": 23,
           "context": "- `locations.md`(1d20)——事情发生在哪儿;打断默认往小渔村滑的引力。"
         },
         {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
-          "line": 68,
+          "line": 69,
           "context": "[`locations.md:6`](../reference/tables/locations.md) 自己写着\"之后场景需要新地点时再掷\","
         },
         {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
-          "line": 98,
-          "context": "locations.md      1d20 → 13   一处过季的度假地,人手齐全,客房全空"
-        },
-        {
-          "file": "update_plan/2026-08-04-scenario-diversity.md",
-          "line": 142,
+          "line": 151,
           "context": "- [ ] **接线:`locations.md` 掷到场景级。** `core/04` 第 6 步建 scene web 时,每个新地点"
         },
         {
@@ -517,7 +472,7 @@
           "context": "\"evidence\": \"Premise centers on Camas Dubh, a storm-locked Skye fishing hamlet bound to a mistranslated century-old rite ('Tàmh na Mara') that unknowingly feeds"
         }
       ],
-      "reference_count": 21
+      "reference_count": 16
     },
     {
       "file": "madness.md",
@@ -540,7 +495,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 25,
+          "line": 30,
           "context": "- `madness.md`(1D10)——疯狂发作的即时症状。"
         },
         {
@@ -580,12 +535,12 @@
         },
         {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
-          "line": 197,
+          "line": 206,
           "context": "5. **和 P12 的边界:`madness.md` 不归本计划**,它是规则书表VII 的转录,长度由书决定。"
         },
         {
           "file": "update_plan/README.md",
-          "line": 108,
+          "line": 104,
           "context": "`madness.md` 掷 4 号是另一件事),其余计划做的是新功能。"
         },
         {
@@ -610,22 +565,22 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 38,
+          "line": 47,
           "context": "接入了 `reference/tables/monster-index.md` 的 `Serves` 检索——之前这张表能查到怪物,"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 79,
+          "line": 88,
           "context": "文件名、`1D10`/`STR 60` 这类记法保持英文);`monster-index.md` 的表头与说明段随生成"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 178,
+          "line": 187,
           "context": "新增 `reference/tables/monster-index.md`,覆盖怪物图鉴全部 223 个条目 + 现有 9 只"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 192,
+          "line": 201,
           "context": "`reference/tables/monster-index.md` 再动手写,不用翻原文猜。"
         },
         {
@@ -640,7 +595,7 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 259,
+          "line": 260,
           "context": "- **`monster-index.md` 与 malleus 转录稿的关系已不再是「对外通道」。** P13 之后所有"
         },
         {
@@ -715,7 +670,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 36,
+          "line": 41,
           "context": "- `monster-index.md`——223 条神话生物的导航表,**脚本生成,不要手改**;数据源是"
         },
         {
@@ -759,6 +714,11 @@
           "context": "\"# monster-index.md — 神话生物导航表\","
         },
         {
+          "file": "scripts/roll.py",
+          "line": 31,
+          "context": "monster-traits.md, monster-index.md) — asking to roll one of those is a hard error naming why,"
+        },
+        {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
           "line": 403,
           "context": "标尺进 `rules/`,条目仍走 `tables/monster-index.md`)"
@@ -785,8 +745,8 @@
         },
         {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
-          "line": 110,
-          "context": "`monster-index.md` 走显式排除名单,给出\"这不是骰表\"的提示。"
+          "line": 109,
+          "context": "`monster-index.md` 三个走显式排除名单(`NOT_DICE_TABLES`),各自带一句不掷骰的理由。"
         },
         {
           "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
@@ -829,7 +789,7 @@
           "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺,三阶段。**阶段 A**(标尺与词条):`reference/rules/monster-scale.md` 五级阶梯(human/creature/s"
         }
       ],
-      "reference_count": 44
+      "reference_count": 45
     },
     {
       "file": "monster-traits.md",
@@ -842,12 +802,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 80,
+          "line": 89,
           "context": "脚本一起改中文,`monster-traits.md` 的引言段同。加新表的写法见"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 167,
+          "line": 176,
           "context": "`reference/tables/monster-traits.md`:18 条可挂载的数值词条(再生、分裂、免疫常规"
         },
         {
@@ -857,12 +817,12 @@
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 47,
+          "line": 72,
           "context": "threat band, and the trait load ceiling that caps `reference/tables/monster-traits.md`."
         },
         {
           "file": "core/11-review.md",
-          "line": 72,
+          "line": 83,
           "context": "only in `reference/tables/monster-traits.md` and never reaches the table doesn't count."
         },
         {
@@ -922,13 +882,18 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 34,
+          "line": 39,
           "context": "- `monster-traits.md`——给怪物条目加挂的数值词条菜单(带负载点与破解口),配"
         },
         {
+          "file": "scripts/roll.py",
+          "line": 31,
+          "context": "monster-traits.md, monster-index.md) — asking to roll one of those is a hard error naming why,"
+        },
+        {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
-          "line": 109,
-          "context": "- [ ] **非骰表要报错不要硬掷**:`cultist-archetypes.md` / `monster-traits.md` /"
+          "line": 108,
+          "context": "- [x] **非骰表要报错不要硬掷**:`cultist-archetypes.md` / `monster-traits.md` /"
         },
         {
           "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
@@ -961,7 +926,7 @@
           "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺,三阶段。**阶段 A**(标尺与词条):`reference/rules/monster-scale.md` 五级阶梯(human/creature/s"
         }
       ],
-      "reference_count": 24
+      "reference_count": 25
     },
     {
       "file": "mythos-angles.md",
@@ -974,49 +939,19 @@
       ],
       "referenced_by": [
         {
-          "file": "core/01-intake.md",
-          "line": 74,
-          "context": "`reference/tables/mythos-angles.md` and infer the category the rolled angle implies; don't"
-        },
-        {
-          "file": "core/01-intake.md",
-          "line": 125,
-          "context": "`mythos-angles.md`, `complications.md`. Roll; don't pick the first plausible thing you"
-        },
-        {
-          "file": "core/01-intake.md",
-          "line": 138,
-          "context": "| The threat | roll `mythos-angles.md`, infer the category (see question 9) |"
-        },
-        {
-          "file": "core/01-intake.md",
-          "line": 153,
-          "context": "- Roll `mythos-angles.md` and take what you get. If the result is not obviously compatible"
-        },
-        {
-          "file": "core/03-build-world.md",
-          "line": 16,
-          "context": "and `reference/tables/mythos-angles.md` before writing. Take what you roll."
-        },
-        {
           "file": "reference/tables/hooks.md",
           "line": 6,
           "context": "intake 时与 `locations.md`、`mythos-angles.md` 配套使用。见 `core/01-intake.md`。"
         },
         {
           "file": "reference/tables/README.md",
-          "line": 19,
+          "line": 24,
           "context": "- `mythos-angles.md`(1d20)——那份\"不对劲\"到底是什么。四张里最要紧的一张。"
         },
         {
           "file": "campaigns/_template-campaign/CLAUDE.md",
-          "line": 92,
+          "line": 93,
           "context": "> - **The rolled angle:** <which `mythos-angles.md` result this came from, if any>"
-        },
-        {
-          "file": "update_plan/2026-08-04-scenario-diversity.md",
-          "line": 99,
-          "context": "mythos-angles.md  1d20 →  8   某个存在正在死去,它的衰亡本身就是灾难"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
@@ -1034,7 +969,7 @@
           "context": "\"evidence\": \"Premise centers on Camas Dubh, a storm-locked Skye fishing hamlet bound to a mistranslated century-old rite ('Tàmh na Mara') that unknowingly feeds"
         }
       ],
-      "reference_count": 12
+      "reference_count": 6
     },
     {
       "file": "npc-appearance.md",
@@ -1046,13 +981,8 @@
       ],
       "referenced_by": [
         {
-          "file": "core/06-create-npc.md",
-          "line": 41,
-          "context": "`reference/tables/npc-appearance.md` for the first physical impression. A rolled tic beats"
-        },
-        {
           "file": "reference/tables/README.md",
-          "line": 26,
+          "line": 31,
           "context": "- `npc-appearance.md`(1d20)——第一眼的外形加脾性;`npc-quirks.md` 的姊妹表(外形对"
         },
         {
@@ -1066,7 +996,7 @@
           "context": "- [x] `core/06-create-npc.md` —— 指向新的 `npc-appearance.md`(d20 外貌/气质),"
         }
       ],
-      "reference_count": 4
+      "reference_count": 3
     },
     {
       "file": "npc-quirks.md",
@@ -1077,11 +1007,6 @@
         "core/06-create-npc.md"
       ],
       "referenced_by": [
-        {
-          "file": "core/06-create-npc.md",
-          "line": 40,
-          "context": "Roll `reference/tables/npc-quirks.md` for at least the mannerism, and"
-        },
         {
           "file": "reference/decks/README.md",
           "line": 15,
@@ -1099,17 +1024,17 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 20,
+          "line": 25,
           "context": "- `npc-quirks.md`(1d20)——让 NPC 能被演出来的那个小动作。"
         },
         {
           "file": "reference/tables/README.md",
-          "line": 26,
+          "line": 31,
           "context": "- `npc-appearance.md`(1d20)——第一眼的外形加脾性;`npc-quirks.md` 的姊妹表(外形对"
         },
         {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
-          "line": 173,
+          "line": 182,
           "context": "- [ ] `npc-quirks.md` → d50(按上面的口径,一个战役 8–15 个 NPC,最可能触发)"
         },
         {
@@ -1118,7 +1043,7 @@
           "context": "`core/06-create-npc.md`;与 `npc-quirks.md` 分工:quirks 是**怎么演**,这张是"
         }
       ],
-      "reference_count": 8
+      "reference_count": 7
     }
   ]
 }

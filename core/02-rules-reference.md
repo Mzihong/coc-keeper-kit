@@ -9,10 +9,35 @@ When a cheat-sheet doesn't settle it, `reference/sourcebooks/keeper-rulebook-7e-
 before you commit it. **If it contradicts a cheat-sheet, fix the cheat-sheet.**
 
 **Default era: 1920s.** Every cheat-sheet below — `character-creation.md` most of all — is
-written against the 1920s baseline unless a campaign declares otherwise. Before generating
-into a campaign whose `CLAUDE.md` declares a different **Era**, read
-`reference/rules/eras/README.md`: read the 1920s baseline first, then layer that era's delta
-on top. Never read an era delta file on its own — it only lists what changes.
+written against the 1920s baseline unless a campaign declares otherwise.
+
+**This section is the sole definition of the campaign `CLAUDE.md`'s Era field and how it
+resolves.** `reference/rules/eras/README.md` and `campaigns/_template-campaign/CLAUDE.md`
+restate this for convenience where a reader lands first; they don't define it independently
+— if either ever disagrees with the steps below, this file wins. The field itself is always a
+short slug-like label, never a file path. Resolve it in this order before generating anything:
+
+1. **Unset, or `1920s`** → the baseline only, exactly today's behaviour. Nothing else to load.
+2. **Matches a filename stem in `reference/rules/eras/README.md`'s index** (`cthulhu-invictus`,
+   `dark-ages`, `mystic-iceland`, `gaslight`, `icarus`, `end-times`) → **path A**. Read
+   `character-creation.md` (and any other baseline sheet the era's sections touch) in full,
+   then layer that era file's five sections on top as overrides.
+3. **Doesn't match the index, but `campaigns/<slug>/rules-era.md` exists** (`<slug>` being this
+   campaign's own folder) → **path B**. Load the baseline exactly as in path A, then layer
+   that file's five sections instead of an indexed era file. The Era field stays whatever short
+   label the Keeper used at intake (e.g. `1970s`) — path B never writes a file path into the
+   field, because the file's location is always that fixed pattern; nothing needs to encode it.
+4. **Doesn't match the index, and no `rules-era.md` exists** → **path C**. Keep only the
+   mechanical skeleton (checks, Sanity, combat) from the baseline; do not invent equipment,
+   occupation, or money numbers to look authoritative. Tell the Keeper plainly the kit isn't
+   backing these numbers. Any label the Keeper used lives in the Era field for the record —
+   there's no separate "no era" value, and there's nothing else to write.
+
+Never read an era delta file (an indexed one, or a path-B `rules-era.md`) without the baseline
+loaded first — a delta file only lists what changes, and reading one alone silently drops
+everything the era didn't bother to restate. `reference/rules/eras/README.md` holds the era
+index itself, the five-section delta convention, and the reasoning behind the diff format —
+read it whenever step 2 or 3 fires.
 
 ## Read this before you
 

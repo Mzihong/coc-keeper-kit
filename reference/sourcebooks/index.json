@@ -22,12 +22,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 231,
+          "line": 240,
           "context": "- P7 魔法速查阻塞解除(转换稿已归档为 `grand-grimoire-zh.md`)。"
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 71,
+          "line": 73,
           "context": "`reference/sourcebooks/grand-grimoire-zh.md`, the official grimoire."
         },
         {
@@ -124,11 +124,6 @@
           "file": "WORKLOG.md",
           "line": 152,
           "context": "便宜,`keeper-rulebook-7e-zh.md` 那笔\"单文件只能 grep\"的教训不适用;"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 291,
-          "context": "1. **`sourcebooks/keeper-rulebook-7e-zh.md` 与 `malleus-monstrorum-zh.md` 本来就在库里**"
         },
         {
           "file": "core/02-rules-reference.md",
@@ -236,7 +231,7 @@
           "context": "| P7 | [magic-quickref](2026-08-02-magic-quickref.md) | 魔法速查 `reference/rules/magic.md`:施法通则(消耗记法、施法用时、POW 对抗)、按 `grand-grimoire-zh.md` 抽样得出的四档消耗区间(小术/中术/大术/仪式级"
         }
       ],
-      "reference_count": 25,
+      "reference_count": 24,
       "cited": true,
       "provenance": {
         "work": "《克苏鲁的呼唤》第七版规则书(Call of Cthulhu 7th Edition Keeper Rulebook)",
@@ -262,13 +257,8 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 158,
+          "line": 167,
           "context": "- **怪物图鉴换了一份干净得多的转录稿。** `reference/sourcebooks/malleus-monstrorum-zh.md`"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 291,
-          "context": "1. **`sourcebooks/keeper-rulebook-7e-zh.md` 与 `malleus-monstrorum-zh.md` 本来就在库里**"
         },
         {
           "file": "core/04-design-scenario.md",
@@ -1521,7 +1511,7 @@
           "context": "Keeper 交付了 `reference/sourcebooks/malleus-monstrorum-zh.md` 的重排版转录稿"
         }
       ],
-      "reference_count": 252,
+      "reference_count": 251,
       "cited": true,
       "provenance": {
         "work": "《怪物之锤》(Malleus Monstrorum)",

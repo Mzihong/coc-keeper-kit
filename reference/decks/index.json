@@ -21,7 +21,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 233,
+          "line": 242,
           "context": "- 新增 `reference/decks/` 与首份收录件 `busybodies-zh.md`(官方好事者卡组,47 张 NPC 卡)。"
         },
         {
@@ -31,7 +31,7 @@
         },
         {
           "file": "core/13-create-investigator.md",
-          "line": 15,
+          "line": 20,
           "context": "- **`reference/decks/busybodies-zh.md` is 47 worked examples of a finished 1920s"
         },
         {
@@ -143,7 +143,7 @@
       "referenced_by": [
         {
           "file": "core/13-create-investigator.md",
-          "line": 23,
+          "line": 32,
           "context": "- Two more decks feed specific fields: `reference/decks/phobias-and-manias-zh.md`"
         },
         {
@@ -209,12 +209,12 @@
       "referenced_by": [
         {
           "file": "core/06-create-npc.md",
-          "line": 77,
+          "line": 79,
           "context": "- Arming someone: `reference/decks/weapons-and-artifacts-zh.md` gives skill, base chance,"
         },
         {
           "file": "core/13-create-investigator.md",
-          "line": 25,
+          "line": 34,
           "context": "name), and `reference/decks/weapons-and-artifacts-zh.md` for anything in the gear list."
         },
         {

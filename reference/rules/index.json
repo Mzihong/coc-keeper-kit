@@ -22,17 +22,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 65,
+          "line": 74,
           "context": "- **kit 不再只服务 1920s 了。** `reference/rules/character-creation.md` 头部第一次"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 220,
+          "line": 229,
           "context": "- `character-creation.md` 补齐年龄补正、Build/伤害加值、技能基础值等建卡数据,可用来审核他人交的卡。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 234,
+          "line": 243,
           "context": "- `character-creation.md` 各小节补上数据来源指路(标明取自哪个源文件/章节)。"
         },
         {
@@ -42,27 +42,27 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 180,
-          "context": "`character-creation.md`、不经 `core/02`,所以年代加载顺序对全 kit 最吃职业表/货币的那个"
+          "line": 179,
+          "context": "正文,后来对照 `character-creation.md`/`magic.md` 才发现 kit 的既有惯例是**英文正文 +"
         },
         {
           "file": "WORKLOG.md",
-          "line": 186,
-          "context": "写成了纯中文正文,后来对照 `character-creation.md`/`magic.md` 才发现 kit 的既有惯例"
+          "line": 300,
+          "context": "`character-creation.md`,现在先读战役 `CLAUDE.md` 拿 Era,再按 `core/02` 的解析顺序"
         },
         {
           "file": "core/01-intake.md",
-          "line": 81,
+          "line": 87,
           "context": "background-first split in `reference/rules/character-creation.md` §11? *Default: not"
         },
         {
           "file": "core/01-intake.md",
-          "line": 100,
+          "line": 106,
           "context": "`reference/rules/character-creation.md` §1 and §5. *Default: accept as shown.* These"
         },
         {
           "file": "core/01-intake.md",
-          "line": 131,
+          "line": 137,
           "context": "| Era & place | 1920s, a small coastal town — the genre's home ground, and the baseline `reference/rules/character-creation.md` is written against. **Place foll"
         },
         {
@@ -72,22 +72,27 @@
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 25,
+          "line": 23,
+          "context": "`character-creation.md` (and any other baseline sheet the era's sections touch) in full,"
+        },
+        {
+          "file": "core/02-rules-reference.md",
+          "line": 50,
           "context": "→ read `reference/rules/character-creation.md` §11 before assigning skills or gear."
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 39,
+          "line": 64,
           "context": "- `reference/rules/character-creation.md` — attribute rolls, the standard-pool skill-point"
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 45,
-          "context": "`reference/rules/character-creation.md` §11 for how strong to make them."
+          "line": 46,
+          "context": "social front and what access it buys — read `reference/rules/character-creation.md` §11 for"
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 73,
+          "line": 75,
           "context": "is not a separate power tier — it's `reference/rules/character-creation.md` §11: the same"
         },
         {
@@ -97,22 +102,27 @@
         },
         {
           "file": "core/11-review.md",
-          "line": 62,
+          "line": 66,
           "context": "(`reference/rules/character-creation.md` §11). Cross-check against the campaign"
         },
         {
           "file": "core/13-create-investigator.md",
-          "line": 9,
-          "context": "- **Read `reference/rules/character-creation.md`** before rolling anything."
+          "line": 11,
+          "context": "- **Don't read `reference/rules/character-creation.md` in isolation.** Follow"
         },
         {
           "file": "core/13-create-investigator.md",
-          "line": 90,
+          "line": 13,
+          "context": "reading `character-creation.md` in full, but a campaign that declared a non-1920s Era also"
+        },
+        {
+          "file": "core/13-create-investigator.md",
+          "line": 99,
           "context": "with the campaign's declared numbers; falls back to `reference/rules/character-creation.md`"
         },
         {
           "file": "core/13-create-investigator.md",
-          "line": 106,
+          "line": 115,
           "context": "(`reference/rules/character-creation.md`) — recompute, don't eyeball."
         },
         {
@@ -192,17 +202,12 @@
         },
         {
           "file": "reference/rules/eras/README.md",
-          "line": 78,
+          "line": 83,
           "context": "same **来源** convention `character-creation.md` already uses. Nothing here is invented; if"
         },
         {
           "file": "reference/rules/eras/README.md",
-          "line": 84,
-          "context": "2. **Read `character-creation.md` (and any other baseline cheat-sheet touched by the era's"
-        },
-        {
-          "file": "reference/rules/eras/README.md",
-          "line": 115,
+          "line": 122,
           "context": "era (a Keeper's \"1970s\" campaign reasons forward from `character-creation.md`'s 1920s"
         },
         {
@@ -222,7 +227,7 @@
         },
         {
           "file": "campaigns/_template-campaign/CLAUDE.md",
-          "line": 58,
+          "line": 59,
           "context": "`reference/rules/character-creation.md` §11. Delete this line if category has no human"
         },
         {
@@ -302,17 +307,17 @@
         },
         {
           "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 172,
-          "context": "`reference/rules/character-creation.md`」(`core/13:8`),不经 `core/02`——而"
+          "line": 173,
+          "context": "不再无条件只读 `character-creation.md`"
         },
         {
           "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 232,
+          "line": 225,
           "context": "- **阶段 1 在任何情况下都要做**——即使一个年代包都不建,给 `character-creation.md`"
         },
         {
           "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 249,
+          "line": 242,
           "context": "- 阶段 1 的三处标注都在:`character-creation.md:3-6`(基准声明)、`chases.md:29-32`"
         },
         {
@@ -491,7 +496,7 @@
           "context": "| P8 | [investigator-render-gaps](2026-08-02-investigator-render-gaps.md) | 投资者卡渲染缺口:`spells`/`cthulhu_mythos`/`notes`/P6 重建后新增字段(`occupation_detail`/`age_modif"
         }
       ],
-      "reference_count": 94
+      "reference_count": 95
     },
     {
       "file": "chases.md",
@@ -504,7 +509,7 @@
       "referenced_by": [
         {
           "file": "core/02-rules-reference.md",
-          "line": 37,
+          "line": 62,
           "context": "- `reference/rules/chases.md` — round structure; Move rates; obstacles & mishaps; ending a"
         },
         {
@@ -564,17 +569,17 @@
         },
         {
           "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 249,
+          "line": 242,
           "context": "- 阶段 1 的三处标注都在:`character-creation.md:3-6`(基准声明)、`chases.md:29-32`"
         },
         {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
-          "line": 156,
+          "line": 165,
           "context": "- [ ] 与 `reference/rules/chases.md` 划清边界:那份是**追逐的机制**,这张是**场面的选材**。"
         },
         {
           "file": "update_plan/README.md",
-          "line": 107,
+          "line": 103,
           "context": "它修的是**已经在牌桌上出错的数值**(`chases.md` 的载具 MOV 差一个数量级、"
         },
         {
@@ -604,7 +609,7 @@
       "referenced_by": [
         {
           "file": "core/02-rules-reference.md",
-          "line": 35,
+          "line": 60,
           "context": "- `reference/rules/combat.md` — DEX order; dodge vs fight back; Build & Damage Bonus table;"
         },
         {
@@ -841,7 +846,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 128,
+          "line": 137,
           "context": "- **法术、仪式、魔法书终于有了数值标尺。** 新增 `reference/rules/magic.md`:施法消耗"
         },
         {
@@ -856,17 +861,17 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 186,
-          "context": "写成了纯中文正文,后来对照 `character-creation.md`/`magic.md` 才发现 kit 的既有惯例"
+          "line": 179,
+          "context": "正文,后来对照 `character-creation.md`/`magic.md` 才发现 kit 的既有惯例是**英文正文 +"
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 26,
+          "line": 51,
           "context": "- Write any **spell, ritual, or magic book/tome** → read `reference/rules/magic.md` before"
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 42,
+          "line": 67,
           "context": "- `reference/rules/magic.md` — MP/SAN/POW cost notation, casting time, opposed POW rolls,"
         },
         {
@@ -1004,12 +1009,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 162,
+          "line": 171,
           "context": "`reference/rules/monster-scale.md`:五级强度阶梯(独立种族 → 仆从种族 → 唯一存在 →"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 171,
+          "line": 180,
           "context": "- **挑怪物强度时先看书上的「上级/下级」标签,它比自己估更准。** `monster-scale.md`"
         },
         {
@@ -1019,12 +1024,12 @@
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 21,
+          "line": 46,
           "context": "`reference/rules/monster-scale.md` before picking a tier or a threat band."
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 45,
+          "line": 70,
           "context": "- `reference/rules/monster-scale.md` — the five-tier non-human threat ladder (creature /"
         },
         {
@@ -1039,7 +1044,7 @@
         },
         {
           "file": "core/11-review.md",
-          "line": 75,
+          "line": 86,
           "context": "\"Trait load total\" against `reference/rules/monster-scale.md`'s ceiling for that tier"
         },
         {
@@ -1129,7 +1134,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 35,
+          "line": 40,
           "context": "`reference/rules/monster-scale.md`。"
         },
         {
@@ -1234,7 +1239,7 @@
       "referenced_by": [
         {
           "file": "core/02-rules-reference.md",
-          "line": 33,
+          "line": 58,
           "context": "- `reference/rules/sanity.md` — SAN = POW; X/Y loss notation; typical loss table; bout of"
         },
         {
@@ -1319,7 +1324,7 @@
       "referenced_by": [
         {
           "file": "core/02-rules-reference.md",
-          "line": 31,
+          "line": 56,
           "context": "- `reference/rules/skill-checks.md` — d100 under target; Regular/Hard/Extreme; fumbles;"
         },
         {

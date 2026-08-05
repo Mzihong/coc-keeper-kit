@@ -1,8 +1,8 @@
 # Update Plan — 年代开放:让 kit 不再只服务 1920s
 
 > 日期:2026-08-04
-> 状态:进行中(阶段 0–2 已完成 2026-08-04;**同日复评发现阶段 2 接线漏三处,新增阶段 2b**;
-> 阶段 3 校验待做,无硬阻塞)
+> 状态:进行中(阶段 0–2 已完成 2026-08-04;**阶段 2b 与阶段 3 已于 2026-08-05 完成,
+> 尚未提交**——完结清单与归档留到提交后再走)
 > 来源:Keeper 提出「手上有其他时代规则资料,是否加入」(2026-08-04 会话);
 > 同日按 Keeper 澄清**重写目标**——见下面「目标(已修正)」
 > 资料:`reference/rules/克苏鲁时空穿梭6.pdf`(3.9 MB / 52 页 / 仅 4 张图)。
@@ -168,40 +168,33 @@ reference/rules/eras/<era>.md           ← 书里覆盖的年代【全部建包
 下面三条不是新功能,是阶段 2 没接完的线——**优先于阶段 3**,因为阶段 3 的审查项要靠
 它们才有东西可审。
 
-- [ ] **`core/13-create-investigator.md` 绕过了加载顺序。** 它第一句是「Read
-      `reference/rules/character-creation.md`」(`core/13:8`),不经 `core/02`——而
-      「读战役 Era → 先基准后 delta」这条指令只写在 `core/02:12-16`。结果:全 kit 最吃
-      职业表/技能/货币的 spec,在声明了 `dark-ages` 的战役里照样生 1920s 职业。
-      `core/06` 没这个问题(它第一句就是读 `core/02`)。修法:`core/13` 的 First 一节
-      把那句改成「先读 `core/02` 的 Default era 段,按战役 Era 决定读不读 delta」
-- [ ] **busybodies 卡组在非 1920s 年代是串味源。** `core/13:15` 与 `core/06:14` 都把
-      那 47 张官方 **1920s** NPC 卡当校准基准。两处各加一句限定:非 1920s 战役只借
-      「一张卡该列几项、数值落在哪一档」,**不借职业、装备与技能选择**
-- [ ] **路径 B 写得出、读不回来。** `core/01:34` 让推导出的 delta 落到
-      `campaigns/<slug>/rules-era.md`,但 `core/02` 与 `eras/README.md` 的加载顺序只讲
-      「拿 slug 到索引里找文件」,而路径 B 的 slug 按定义不在索引里。全 repo 提到
-      `rules-era.md` 的只有 2 处,都是「怎么写」,没有一处「怎么读」。修法:
-      `eras/README.md` 的**加载顺序**加一步——索引里查无此 slug 时改读
-      `campaigns/<slug>/rules-era.md`,查无该文件才回落 1920s 基准并告知 KP;
-      `core/02` 的 Default era 段同步补一句。**这条最要紧**:计划自己说「路径 B 才是
-      年代开放的真正内容」,而这条路径目前是断的
-- [ ] **五节体例的节标题中英不一致。** `eras/README.md:61-75` 用中文节名(技能表增减/
-      装备与武器/技术与常识水平/职业表/可选机制),六份年代文件实际全用英文
-      (`## Skill table changes` / `## Equipment & weapons` / …)。路径 B 要靠这份体例
-      现场造包,照 README 造出来的文件会与既有六份不同形。**按 kit 惯例(英文正文 +
-      中文术语)统一到英文节名**,中文名留在括号里当对照
+- [x] **`core/13-create-investigator.md` 绕过了加载顺序。**(2026-08-05)First 一节
+      改成先读战役 `CLAUDE.md` 拿 Era,再按 `core/02` 的 Era 解析顺序决定读不读 delta,
+      不再无条件只读 `character-creation.md`
+- [x] **busybodies 卡组在非 1920s 年代是串味源。**(2026-08-05)`core/13`、`core/06`
+      各加一句限定:非 1920s 战役只借「一张卡该列几项、数值落在哪一档」,**不借职业、
+      装备与技能选择**
+- [x] **路径 B 写得出、读不回来。**(2026-08-05)**执行时和第三条一并扩成了「Era 字段的
+      定义收口到一处」**(见下,同 P15 问题 7 是同一条缝),而不是原计划写的「只在
+      `eras/README.md` 的加载顺序加一步」——**收口位置改落在 `core/02`,不是
+      `eras/README.md`**:`core/02` 新增权威的 Era 字段解析算法(未声明/`1920s`→基准;
+      匹配索引→路径 A;不匹配但 `campaigns/<slug>/rules-era.md` 存在→路径 B;都不是→
+      路径 C),`eras/README.md` 与 `_template-campaign/CLAUDE.md` 改成复述指向 `core/02`,
+      不再各自定义一半。路径 B 因此从"有写无读"变成"查无索引 slug 时自动去读
+      `rules-era.md`",顺带把 P15 问题 7 也一起解掉了
+- [x] **五节体例的节标题中英不一致。**(2026-08-05)`eras/README.md` 五节标题改成英文
+      (`Skill table changes` / `Equipment & weapons` / …),中文名挪进括号,与六份既有
+      年代文件的实际标题对齐
 
 ## 阶段 3 — 校验(本计划的价值所在,不能省)
 
-- [ ] `core/11-review.md` 增加一条审查项:生成内容里的技术水平、装备、常识是否越过
-      战役声明的年代。**没有这条,前面几阶段只是文档**——年代开放同时也把串味的口子
-      开大了(以前只有一个年代,谈不上串)
-- [ ] 路径 B 造出来的 `campaigns/<slug>/rules-era.md` 也要被这条审查覆盖,并检查它有
+- [x] `core/11-review.md` Mechanics 清单新增一条审查项(2026-08-05):生成内容里的技术
+      水平、装备、常识是否越过战役声明的年代
+- [x] 路径 B 造出来的 `campaigns/<slug>/rules-era.md` 已被同一条审查项覆盖,并检查它有
       没有标明"推导,未经书本背书"
-- [ ] **改掉 `eras/README.md` 末节「Where this should get checked」的自述**——那一段
-      (`eras/README.md:119-126`)现在明写着「nothing enforces it yet ... not yet done
-      as of this file's creation」。阶段 3 落地后不改它,文件就在骗读者
-- [ ] **CHANGELOG 那句"年代口味漏检还没接上"同步改掉**(2026-08-04 条目内,现写在
+- [x] **改掉 `eras/README.md` 末节「Where this should get checked」的自述**(2026-08-05)
+      ——改成指向 `core/11-review.md` 那条新审查项,不再写"nothing enforces it yet"
+- [x] **CHANGELOG 那句"年代口味漏检还没接上"同步改掉**(2026-08-05,补进现有条目内,现写在
       「更新内容」里)。按 changelog 惯例补进当天条目,不新开日期
 
 ## bundle 取舍 —— 整条问题已消失
@@ -222,8 +215,8 @@ reference/rules/eras/<era>.md           ← 书里覆盖的年代【全部建包
 - [x] `CHANGELOG.md` 追加(面向 Keeper:现在报任何年代都能开团,kit 会说清这个年代的
       数值是有书本背书、还是推导出来的)—— 已补进 2026-08-04 条目的「更新内容」一节,
       阶段 3 落地时如有面向 Keeper 的新变化再补一句,不新开日期
-- [ ] 走完 `update_plan/README.md` 的完结清单 —— **计划尚未整体完结(阶段 3 未做),
-      不满足归档条件**,此项留到阶段 3 结束后再走
+- [ ] 走完 `update_plan/README.md` 的完结清单 —— **阶段 2b、3 已于 2026-08-05 做完,
+      但改动尚未提交**;完结清单第 7 项要 commit hash 才能回填,此项留到提交后再走
 
 ## 备忘
 

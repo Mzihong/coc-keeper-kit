@@ -175,17 +175,12 @@ codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-0
   会移进 `Archived/`,链接当场就烂)。两类条目都管。**为什么需要它:`build-reference-index.py` 与完结清单查的都是
   文件级引用与孤儿,一个没有路径的裸名词对两者都不可见**,踩了照样报 no problems。
 - **P11 阶段 0–2 已完成(2026-08-04,13821ac)——年代开放从计划变成了实际能用的六个年代
-  包。** 文件清单见 `git show 13821ac`。**同日复评又发现阶段 2 的接线漏了三处**,已单列成
-  计划里的**阶段 2b**(在阶段 3 之前做):①`core/13-create-investigator.md` 第一句直接读
-  `character-creation.md`、不经 `core/02`,所以年代加载顺序对全 kit 最吃职业表/货币的那个
-  spec 完全不生效;②**路径 B 有写无读**——`core/01` 让推导出的 delta 落到
-  `campaigns/<slug>/rules-era.md`,但没有任何地方说要去读它,索引里按定义也查不到路径 B 的
-  slug;③`eras/README.md` 的五节体例用中文节名,六份年代文件实际用英文节名,照体例造出来的
-  路径 B 包会与既有六份不同形。**阶段 3(`core/11` 年代串味审查)仍未做**,且它落地时要顺手
-  改掉两处"尚未接上"的自述(`eras/README.md` 末节、CHANGELOG 当天条目)。踩过一次坑值得记一笔:年代文件初稿
-  写成了纯中文正文,后来对照 `character-creation.md`/`magic.md` 才发现 kit 的既有惯例
-  是**英文正文 + 中文术语括注**,纯中文正文违反"kit 脚手架保持英文"——已重写六份,
-  接手后续年代相关改动时留意这条,别重蹈同一个错。
+  包。** 文件清单见 `git show 13821ac`。踩过一次坑值得记一笔:年代文件初稿写成了纯中文
+  正文,后来对照 `character-creation.md`/`magic.md` 才发现 kit 的既有惯例是**英文正文 +
+  中文术语括注**,纯中文正文违反"kit 脚手架保持英文"——已重写六份,接手后续年代相关
+  改动时留意这条,别重蹈同一个错。**阶段 2b(接线补漏)与阶段 3(`core/11` 年代串味审查)
+  已于 2026-08-05 全部完成,尚未提交**——完整清单见上面「会话记录」;一次提交后这条摘要
+  会再精简一遍。P11 现在没有未完成的阶段,只差提交与走完结清单。
 - **P14 于 2026-08-04 换过一次方向,文件名也换了**:原
   `2026-08-04-tables-d20-to-d100.md`(随机表 d20 → d100,约 390 条)已整份重写为
   [`2026-08-04-scenario-diversity.md`](update_plan/2026-08-04-scenario-diversity.md)。
@@ -289,39 +284,42 @@ codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-0
 
 ## 会话记录
 
-### 未提交:`_source/` 入库边界改判(2026-08-04 晚)
+### 未提交:P11 阶段 2b + 阶段 3(年代开放收尾,2026-08-05)
 
-**起因**:Keeper 问「不入库的话现有 kit 功能是否会不完整」,并给了新规则
-**「可以 gitignore pdf,但是 md 一定要有」**。核查后事实分三层,接手时别混:
+按 `update_plan/2026-08-04-era-rule-packs.md` 阶段 2b、阶段 3 逐条落地,checkbox 已在
+计划文件里勾完,不重复背一份清单。接手时只需要这几条:
 
-1. **`sourcebooks/keeper-rulebook-7e-zh.md` 与 `malleus-monstrorum-zh.md` 本来就在库里**
-   (`git ls-files` 已确认),Keeper 担心的"没有"并不成立。**真正的风险在 P12**——
-   它的已定案 ② 计划 `git rm --cached` 规则书。**该决定已撤回**,P12 计划文件已改:
-   阶段 1.2 的前三项(rm、加 gitignore、改索引脚本忽略名单)整体取消,
-   只剩「8 处引用逐个改掉」。附带好处:P12 记的那个索引脚本坑(`os.listdir()` 不认
-   `.gitignore`,会让入库的 index.json 指向 clone 里不存在的文件)**自动消失,脚本零改动**。
-2. **`_source/` 从整目录 gitignore 改成只挡 `.pdf`/`.docx`**。新入库:`arkham-zh.md`
-   (351 KB)+ `arkham-maps/` 20 张(8.2 MB)。仍本地:`阿卡姆.docx`(12 MB)、
-   `克苏鲁时空穿梭6.pdf`(3.9 MB)。**新增 `reference/_source/README.md`** 记边界、
-   出处与版权声明。
-3. **入库 ≠ 转载放宽。** `core/00` 三分法一个字没改。这一点在 `core/00`、
-   `reference/README.md`、`core/14`、`_source/README.md`、P10 计划五处都写了,
-   因为以前是"看不见"在帮着挡,现在只剩文字在挡。
+- **Era 字段的定义收口到了 `core/02-rules-reference.md`**,不是原计划写的
+  `eras/README.md`——`core/02` 新增权威的解析算法(未声明/`1920s` → 基准;匹配
+  `eras/README.md` 索引 → 路径 A;不匹配但 `campaigns/<slug>/rules-era.md` 存在 → 路径
+  B;都不是 → 路径 C),`eras/README.md` 与 `_template-campaign/CLAUDE.md` 改成复述指向
+  `core/02`,不再各自定义一半。这条同时是 2b 第三条(路径 B 有写无读)与
+  P15 问题 7(路径 C 无合法值、A/B 的 slug-vs-路径不一致)的修法——两条本来就是同一条缝,
+  一次修完,**P15 计划文件的问题 7 已同步标注解决**。
+- **`core/13-create-investigator.md` 不再绕过加载顺序**——First 一节原来第一句直接读
+  `character-creation.md`,现在先读战役 `CLAUDE.md` 拿 Era,再按 `core/02` 的解析顺序
+  决定读不读 delta。`core/06` 本来就没这个问题,没动它的加载顺序,只加了 busybodies
+  非 1920s 限定(见下条)。
+- **busybodies 卡组(47 张官方 1920s NPC 卡)在 `core/13`、`core/06` 各加一句限定**:
+  非 1920s 战役只能借"一张卡该列几项、数值落在哪一档",不借职业、装备、技能选择。
+- **`eras/README.md` 五节体例标题改成英文**(`Skill table changes` 等,中文名挪进括号),
+  与六份既有年代文件的实际标题对齐——之前 README 写的是中文节名,和文件本体对不上。
+- **`core/11-review.md` Mechanics 清单新增一条年代串味审查项**,`eras/README.md` 末节
+  「Where this gets checked」与 CHANGELOG 里"年代口味漏检还没接上"的自述都已同步改掉。
 
-**同批改名**(硬约定 3,此前全仓非 ASCII 文件名为 0):`阿卡姆.md` → `arkham-zh.md`;
-20 张地图 → `district-*` / `region-*` / `city-*` / `interior-1..4` / `exterior-1..2` /
-`site-crowninshield-manor`。**引用这些旧名的 P5 计划、WORKLOG 已同步**,新旧对照表在
-`_source/README.md`。
+**验证**:改动后重跑 `python scripts/build-reference-index.py --check`,报 no problems;
+`reference/*/index.json` 的行号引用因此有变动,是脚本自动更新的,不是手改。
 
-**待办**:`update_plan/2026-08-04-core-spec-audit.md` 是本次之外的未跟踪文件,
-提交时注意别混进同一个 commit;`core/00` Layout 树的 `mythos/spells/` 一项仍缺。
+**待办**:提交时按 `update_plan/README.md` 完结清单走一遍——第 7 项要 commit hash 才能
+回填状态表和计划文件头,归档留到那时。P11 整个计划仍未到归档条件之外没有别的欠账。
 
 ---
 
 其余已提交条目已按 `core/15-close-session.md` 的 "Prune before you add" 删除:
 P13(bundle 退役)随 7f85d9b 落地,「默认舞台改为美国」随 d481713 落地,
-P14 阶段 1(`scripts/roll.py`)随 148bb91 落地——两处偏离计划字面描述的实现细节已经
-折进「当前状态」那条摘要,不在这里重复背一份。
+P14 阶段 1(`scripts/roll.py`)随 148bb91 落地,`_source/` 入库边界改判随 9666499 落地
+(该条此前漏剪,本轮一并清掉)——偏离计划字面描述的实现细节已经折进「当前状态」那条
+摘要,不在这里重复背一份。
 
 同理,P9 阶段 A+B 的落地细节(索引脚本怎么解析转录稿、踩过的名称解析坑、9 只 bestiary
 条目的改判理由)已随 commit 059ba63 落地,理由本身也直接写在了改动的文件里(各 bestiary

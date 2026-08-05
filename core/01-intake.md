@@ -47,16 +47,21 @@ Ask all of these. They are the ones that actually change downstream output.
    Hong Kong, 1890s Gaslight London). **Whatever era the Keeper names, resolve it against
    `reference/rules/eras/README.md`'s index before writing anything else** — every era gets
    played, none get turned away:
+   The **Era** field is always a short slug-like label, never a file path —
+   `core/02-rules-reference.md` is the authority on how it resolves; this is a summary of what
+   it means for intake:
    - **Path A** — the era matches an index entry (or is unnamed/"1920s", the baseline) →
      write that file's slug into the campaign `CLAUDE.md`'s **Era** field.
    - **Path B** — not indexed, but close enough in technological lineage to reason from a
      covered era (a Keeper says "1970s" or "1990s") → construct the delta on the spot per
-     the five-section convention and save it to `campaigns/<slug>/rules-era.md`; write that
-     path into the **Era** field. **Tell the Keeper plainly this delta is derived, not
-     sourced**, and show it to them before play starts.
+     the five-section convention and save it to `campaigns/<slug>/rules-era.md`; write a short
+     label (e.g. `1970s`) into the **Era** field — **never the file path**, `core/02` finds
+     the file automatically from the campaign's own slug. **Tell the Keeper plainly this
+     delta is derived, not sourced**, and show it to them before play starts.
    - **Path C** — no real lineage to reason from (far future, alien, fully invented) → keep
-     only the mechanical skeleton; **tell the Keeper the kit doesn't back these numbers at
-     all**.
+     only the mechanical skeleton; write a short label into the **Era** field for the record
+     (it won't match the index or any `rules-era.md`, so `core/02` resolves it as path C
+     automatically); **tell the Keeper the kit doesn't back these numbers at all**.
    Whichever path fires, **say so out loud** — this is not a silent auto-fill.
 2. **Premise** — one line. What's wrong, or what's the promise to the players?
 3. **Output language** — what language should the generated material be in?

@@ -68,6 +68,13 @@ model's output. Assume the material is wrong until each line checks out.
 - [ ] Difficulties (Regular/Hard/Extreme) are set deliberately and only where failure is
       interesting.
 - [ ] Sanity costs are proportionate to the horror, not to the gore.
+- [ ] **Content matches the campaign's declared Era.** Technology, equipment, and common
+      knowledge in stat blocks and prose don't leak in from the wrong period (a 1920s default
+      showing up in a `dark-ages` scene, cars where the era's Technology & common knowledge
+      section says there are none) — see `reference/rules/eras/README.md`. If the Era resolves
+      to path B, confirm `campaigns/<slug>/rules-era.md` exists, follows the five-section
+      convention, and is marked derived/not book-backed — and that the material actually
+      layers it rather than defaulting to the nearest indexed era or to 1920s.
 - [ ] Any `investigators/*.json` validates against `templates/investigator.schema.json`; its
       derived stats are internally consistent and its `.md` view agrees with the JSON.
 - [ ] **Non-human monsters: every numeric trait has a discoverable counter-play.** For each

@@ -6,9 +6,14 @@ The JSON record is the source of truth; the Markdown card is a rendered view for
 
 ## First
 
-- **Read `reference/rules/character-creation.md`** before rolling anything.
 - Read the campaign `CLAUDE.md` for era, tone, and premise — every surviving backstory hook
   must tie into it; a hook that connects to nothing in the campaign is decoration, not prep.
+- **Don't read `reference/rules/character-creation.md` in isolation.** Follow
+  `core/02-rules-reference.md`'s Era resolution before rolling anything: it always means
+  reading `character-creation.md` in full, but a campaign that declared a non-1920s Era also
+  means layering that era's delta (indexed file, or `campaigns/<slug>/rules-era.md` for path
+  B) on top — skipping straight to the baseline silently generates a 1920s investigator for a
+  `dark-ages` or `gaslight` campaign.
 - Use `templates/investigator.schema.json` (data) and `templates/investigator.md` (view).
   `templates/investigator.example.json` is a complete, arithmetically-audited record — copy
   its shape rather than guessing which fields a full card needs.
@@ -20,6 +25,10 @@ The JSON record is the source of truth; the Markdown card is a rendered view for
   free-choice skills, let them rewrite the backstory — is a sound emergency pregen recipe.
   Its numbers are transcription, not gospel — SIZ and MOV are known to be off on some cards.
   Recompute every derived stat yourself; never copy a card's arithmetic forward.
+  **These 47 cards are 1920s.** In a campaign with a different declared Era, borrow only the
+  shape — how many skills a card lists, what value range a stat lands in — never its
+  occupations, gear, or skill selections; those come from the era's own delta or, for path
+  B/C, from what you construct on the spot.
 - Two more decks feed specific fields: `reference/decks/phobias-and-manias-zh.md`
   for the backstory `phobias` / `manias` entries (32 written-out conditions rather than a bare
   name), and `reference/decks/weapons-and-artifacts-zh.md` for anything in the gear list.

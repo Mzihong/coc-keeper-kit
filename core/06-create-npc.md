@@ -14,7 +14,9 @@ tell — mechanically correct for 7e.
   writing the stat block.** 47 official 1920s NPC cards — use them to calibrate: what EDU an
   antiquarian actually carries, where a zealot's Intimidate sits, which six or seven skills a
   card bothers to list. The names, backstories, and secrets stay in the deck; only the scale
-  comes across.
+  comes across. **In a campaign with a different declared Era, that calibration is still
+  1920s** — borrow only the scale (how many skills, what value range), never the occupation,
+  gear, or skill choices; those follow the era's own delta.
 
 ## Ask (or infer sensibly)
 

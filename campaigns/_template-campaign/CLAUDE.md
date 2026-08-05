@@ -22,12 +22,13 @@
 <What this campaign is about — the situation, the dread, the promise to the players.>
 
 ## Setting
-- **Era:** <fixed slug, matched against `reference/rules/eras/README.md`'s index —
-  `1920s` (baseline, the default) or one of `cthulhu-invictus` / `dark-ages` /
-  `mystic-iceland` / `gaslight` / `icarus` / `end-times`, or a Keeper-approved path-B slug
-  (see that file's three-path table). `core/02-rules-reference.md` reads this field
-  literally, so keep it to the slug — put "1890s London, fog-choked and gaslit" in the
-  Premise/Tone prose below instead, not here.>
+- **Era:** <a short slug-like label, never a file path or free prose — `1920s` (baseline, the
+  default), one of `cthulhu-invictus` / `dark-ages` / `mystic-iceland` / `gaslight` / `icarus`
+  / `end-times`, or a Keeper-approved label for a path-B or path-C era from intake (e.g.
+  `1970s`). `core/02-rules-reference.md` is the sole authority on how this field resolves —
+  index match = path A, no index match but `rules-era.md` exists = path B, neither = path C;
+  `reference/rules/eras/README.md` restates the same three paths. Put "1890s London,
+  fog-choked and gaslit" in the Premise/Tone prose below instead, not here.>
 - **Region / base of operations:** <city, town, ship, expedition>
 - **Timeframe:** <a season, a year, an open-ended chronicle>
 
