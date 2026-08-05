@@ -109,9 +109,11 @@ reference/craft/cult-design-zh.md:68  → "与 P5 的 mermaid 势力图工具合
 
 ## 阶段 1 — 功能一:场景定位图(A 档)
 
-- [ ] **原型先行**:拿 `campaigns/beidaihe-winter/world/beidaihe-seaside.md` 与
-      `scenes/night-count.md` 各做一张,**看过 SVG 再定稿惯例**。原型不合格就回头改 DSL,
-      不要先写模板
+- [ ] **原型先行**:找一份**有实际内容的地点稿 + 一个场景稿**各做一张,**看过 SVG 再
+      定稿惯例**。原型不合格就回头改 DSL,不要先写模板。
+      (原定用 `campaigns/beidaihe-winter/` 的海滨与夜数场景当样本,**该战役已于
+      2026-08-04 删除**;现在仓库里没有在跑的战役,样本得先写一份或改用
+      `reference/_source/arkham-maps/` 的室内图当参照。)
 - [ ] `scripts/render-map.py` — DSL→SVG,**无外部依赖,stdlib 即可**;纯确定性
 - [ ] DSL 定型:房间 `{id, name, x, y, w, h, doors[], windows[]}`;门窗用「哪条边 + 边上位置」
       表达,不用绝对坐标(模型算绝对坐标必错)
