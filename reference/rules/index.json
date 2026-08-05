@@ -42,13 +42,8 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 179,
-          "context": "正文,后来对照 `character-creation.md`/`magic.md` 才发现 kit 的既有惯例是**英文正文 +"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 300,
-          "context": "`character-creation.md`,现在先读战役 `CLAUDE.md` 拿 Era,再按 `core/02` 的解析顺序"
+          "line": 186,
+          "context": "写成了纯中文正文,后来对照 `character-creation.md`/`magic.md` 才发现 kit 的既有惯例"
         },
         {
           "file": "core/01-intake.md",
@@ -197,17 +192,17 @@
         },
         {
           "file": "reference/rules/eras/README.md",
-          "line": 38,
+          "line": 39,
           "context": "| *(未声明 = 1920s)* | 经典 1920s | 1920s | ✅ `character-creation.md` 本身 |"
         },
         {
           "file": "reference/rules/eras/README.md",
-          "line": 83,
+          "line": 84,
           "context": "same **来源** convention `character-creation.md` already uses. Nothing here is invented; if"
         },
         {
           "file": "reference/rules/eras/README.md",
-          "line": 122,
+          "line": 123,
           "context": "era (a Keeper's \"1970s\" campaign reasons forward from `character-creation.md`'s 1920s"
         },
         {
@@ -286,44 +281,9 @@
           "context": "`reference/rules/character-creation.md` §2 正常扣完年龄惩罚、"
         },
         {
-          "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 30,
-          "context": "- 但 `reference/rules/character-creation.md`(302 行)整份是 1920s 的职业与技能假设,"
-        },
-        {
-          "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 43,
-          "context": "reference/rules/character-creation.md   ← 头部声明:本文是 1920s 基准"
-        },
-        {
-          "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 135,
-          "context": "- [x] `reference/rules/character-creation.md` 头部加一句:**本文是 1920s 基准**。"
-        },
-        {
-          "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 153,
-          "context": "`character-creation.md`/`magic.md` 的既有体例,不是纯中文——初稿写成纯中文后"
-        },
-        {
-          "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 173,
-          "context": "不再无条件只读 `character-creation.md`"
-        },
-        {
-          "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 225,
-          "context": "- **阶段 1 在任何情况下都要做**——即使一个年代包都不建,给 `character-creation.md`"
-        },
-        {
-          "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 242,
-          "context": "- 阶段 1 的三处标注都在:`character-creation.md:3-6`(基准声明)、`chases.md:29-32`"
-        },
-        {
           "file": "update_plan/README.md",
-          "line": 41,
-          "context": "P12 -. 阶段 2 动 character-creation.md 前须扫 eras/ 差集 .-> P11"
+          "line": 47,
+          "context": "`P12 阶段 2 动 character-creation.md 前须扫 eras/ 差集` 那条耦合已随之解除警戒:`eras/`"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -481,6 +441,41 @@
           "context": "> | 人类 | (书不收) | `human` | **不在本尺内**,走 `character-creation.md` §11(P4 已落盘) |"
         },
         {
+          "file": "update_plan/Archived/2026-08-04-era-rule-packs.md",
+          "line": 29,
+          "context": "- 但 `reference/rules/character-creation.md`(302 行)整份是 1920s 的职业与技能假设,"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-era-rule-packs.md",
+          "line": 42,
+          "context": "reference/rules/character-creation.md   ← 头部声明:本文是 1920s 基准"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-era-rule-packs.md",
+          "line": 134,
+          "context": "- [x] `reference/rules/character-creation.md` 头部加一句:**本文是 1920s 基准**。"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-era-rule-packs.md",
+          "line": 152,
+          "context": "`character-creation.md`/`magic.md` 的既有体例,不是纯中文——初稿写成纯中文后"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-era-rule-packs.md",
+          "line": 172,
+          "context": "不再无条件只读 `character-creation.md`"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-era-rule-packs.md",
+          "line": 223,
+          "context": "- **阶段 1 在任何情况下都要做**——即使一个年代包都不建,给 `character-creation.md`"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-era-rule-packs.md",
+          "line": 240,
+          "context": "- 阶段 1 的三处标注都在:`character-creation.md:3-6`(基准声明)、`chases.md:29-32`"
+        },
+        {
           "file": "update_plan/Archived/2026-08-04-retire-bundle.md",
           "line": 158,
           "context": "`reference/rules/character-creation.md:276`。后四处不是 spec 而是提炼稿头部的"
@@ -496,7 +491,7 @@
           "context": "| P8 | [investigator-render-gaps](2026-08-02-investigator-render-gaps.md) | 投资者卡渲染缺口:`spells`/`cthulhu_mythos`/`notes`/P6 重建后新增字段(`occupation_detail`/`age_modif"
         }
       ],
-      "reference_count": 95
+      "reference_count": 94
     },
     {
       "file": "chases.md",
@@ -558,34 +553,19 @@
           "context": "- [ ] `reference/rules/chases.md` — 按 7.1–7.5 **推倒重写**(现有版本机制是错的,不是补);"
         },
         {
-          "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 138,
-          "context": "`chases.md`(载具)最可疑,有则同样标注。**结果:`combat.md` 本身不含武器/装备表"
-        },
-        {
-          "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 139,
-          "context": "(伤害加值、耐久值、DEX 排序等都是跨年代通用力学),不需要标注;`chases.md` 的"
-        },
-        {
-          "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 242,
-          "context": "- 阶段 1 的三处标注都在:`character-creation.md:3-6`(基准声明)、`chases.md:29-32`"
-        },
-        {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
           "line": 165,
           "context": "- [ ] 与 `reference/rules/chases.md` 划清边界:那份是**追逐的机制**,这张是**场面的选材**。"
         },
         {
           "file": "update_plan/README.md",
-          "line": 103,
+          "line": 100,
           "context": "它修的是**已经在牌桌上出错的数值**(`chases.md` 的载具 MOV 差一个数量级、"
         },
         {
           "file": "update_plan/README.md",
-          "line": 160,
-          "context": "| 4 | **P12** 速查表自足化 | ★★★☆☆ | 源材料 2,402 行 / 21.3 万字符(第六、七、八章)+ 其余四章;4 份重写 + 2 份新建(恐惧症/躁狂症 d100、武器强度索引)+ 8 处引用改写 + 1 处脚本改动 + `.gitignore` + 索引重建 | **实现不难,难在刹车**"
+          "line": 159,
+          "context": "| 3 | **P12** 速查表自足化 | ★★★☆☆ | 源材料 2,402 行 / 21.3 万字符(第六、七、八章)+ 其余四章;4 份重写 + 2 份新建(恐惧症/躁狂症 d100、武器强度索引)+ 8 处引用改写 + 1 处脚本改动 + `.gitignore` + 索引重建 | **实现不难,难在刹车**"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -596,6 +576,21 @@
           "file": "update_plan/Archived/2026-08-02-conventions-gaps.md",
           "line": 75,
           "context": "- [x] `reference/rules/chases.md` — 从 7e 规则提炼:速度对比、行动点、"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-era-rule-packs.md",
+          "line": 137,
+          "context": "`chases.md`(载具)最可疑,有则同样标注。**结果:`combat.md` 本身不含武器/装备表"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-era-rule-packs.md",
+          "line": 138,
+          "context": "(伤害加值、耐久值、DEX 排序等都是跨年代通用力学),不需要标注;`chases.md` 的"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-era-rule-packs.md",
+          "line": 240,
+          "context": "- 阶段 1 的三处标注都在:`character-creation.md:3-6`(基准声明)、`chases.md:29-32`"
         }
       ],
       "reference_count": 18
@@ -663,13 +658,13 @@
           "context": "\"速查表\"三个字仍然是——一份 1,500 行的 `combat.md` 在牌桌上翻不动。挡法是阶段 0 的"
         },
         {
-          "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 137,
+          "file": "update_plan/Archived/2026-08-04-era-rule-packs.md",
+          "line": 136,
           "context": "- [x] 抽查其余 `reference/rules/*.md` 有没有隐性年代假设——`combat.md`(武器表)与"
         },
         {
-          "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 138,
+          "file": "update_plan/Archived/2026-08-04-era-rule-packs.md",
+          "line": 137,
           "context": "`chases.md`(载具)最可疑,有则同样标注。**结果:`combat.md` 本身不含武器/装备表"
         },
         {
@@ -707,12 +702,12 @@
         },
         {
           "file": "reference/rules/eras/README.md",
-          "line": 32,
+          "line": 33,
           "context": "| `cthulhu-invictus.md` | 克苏鲁不败 | 罗马帝国(约 1–2 世纪) | ✅ 官方 |"
         },
         {
           "file": "reference/rules/eras/README.md",
-          "line": 44,
+          "line": 45,
           "context": "settings above. Its content is folded into `cthulhu-invictus.md`,"
         }
       ],
@@ -730,12 +725,12 @@
       "referenced_by": [
         {
           "file": "reference/rules/eras/README.md",
-          "line": 33,
+          "line": 34,
           "context": "| `dark-ages.md` | 克苏鲁黑暗时代 | 欧洲 10–11 世纪 | ✅ 官方 |"
         },
         {
           "file": "reference/rules/eras/README.md",
-          "line": 45,
+          "line": 46,
           "context": "`dark-ages.md`, and `mystic-iceland.md`'s own **装备与武器** / **可选机制** sections"
         }
       ],
@@ -758,7 +753,7 @@
         },
         {
           "file": "reference/rules/eras/README.md",
-          "line": 37,
+          "line": 38,
           "context": "| `end-times.md` | 克苏鲁末日之收割 | 旧日支配者苏醒后的后启示录未来(时间点 KP 自定) | ✅ 官方 |"
         }
       ],
@@ -776,7 +771,7 @@
       "referenced_by": [
         {
           "file": "reference/rules/eras/README.md",
-          "line": 35,
+          "line": 36,
           "context": "| `gaslight.md` | 克苏鲁煤气灯 | 维多利亚伦敦,约 1890 年代 | ✅ 官方 |"
         }
       ],
@@ -804,7 +799,7 @@
         },
         {
           "file": "reference/rules/eras/README.md",
-          "line": 36,
+          "line": 37,
           "context": "| `icarus.md` | 克苏鲁伊卡洛斯 | 近未来星际探索 | ✅ 官方 |"
         }
       ],
@@ -822,12 +817,12 @@
       "referenced_by": [
         {
           "file": "reference/rules/eras/README.md",
-          "line": 34,
+          "line": 35,
           "context": "| `mystic-iceland.md` | 神秘冰岛 | 冰岛萨迦时代(约 930 年前后) | ✅ 官方 |"
         },
         {
           "file": "reference/rules/eras/README.md",
-          "line": 45,
+          "line": 46,
           "context": "`dark-ages.md`, and `mystic-iceland.md`'s own **装备与武器** / **可选机制** sections"
         }
       ],
@@ -861,8 +856,8 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 179,
-          "context": "正文,后来对照 `character-creation.md`/`magic.md` 才发现 kit 的既有惯例是**英文正文 +"
+          "line": 186,
+          "context": "写成了纯中文正文,后来对照 `character-creation.md`/`magic.md` 才发现 kit 的既有惯例"
         },
         {
           "file": "core/02-rules-reference.md",
@@ -908,11 +903,6 @@
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
           "line": 401,
           "context": "- [ ] `magic.md`(113 行)← 第九章 5770–6191 + 第十一章 典籍 7745 + 第十二章 法术 8393"
-        },
-        {
-          "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 153,
-          "context": "`character-creation.md`/`magic.md` 的既有体例,不是纯中文——初稿写成纯中文后"
         },
         {
           "file": "update_plan/Archived/2026-08-02-conventions-gaps.md",
@@ -983,6 +973,11 @@
           "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
           "line": 74,
           "context": "`reference/rules/magic.md` 是同一条路,不是新方法"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-era-rule-packs.md",
+          "line": 152,
+          "context": "`character-creation.md`/`magic.md` 的既有体例,不是纯中文——初稿写成纯中文后"
         },
         {
           "file": "update_plan/Archived/2026-08-04-retire-bundle.md",

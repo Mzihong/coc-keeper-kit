@@ -22,7 +22,8 @@ below exists to make sure nothing ever reads one alone.
 ## Index — eras covered by the source material
 
 Source: *Cthulhu Through the Ages* (官方设定合集,七宫涟个人汉化版,52 页,收录于
-`update_plan/2026-08-04-era-rule-packs.md` 的勘察结果一节). Every era the book covers is
+`update_plan/Archived/2026-08-04-era-rule-packs.md` 的勘察结果一节, archived after the plan
+completed). Every era the book covers is
 built here — **no filtering**; the source material is only 52 pages, so building all of them
 costs less than making a Keeper wait on a future ad-hoc request. See that plan file for full
 survey detail.

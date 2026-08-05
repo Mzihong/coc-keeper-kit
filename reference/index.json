@@ -236,7 +236,7 @@
         "referenced_by": [
           "WORKLOG.md:95",
           "WORKLOG.md:136",
-          "WORKLOG.md:152",
+          "WORKLOG.md:153",
           "core/02-rules-reference.md:7",
           "reference/mythos/artifacts-zh.md:18",
           "reference/mythos/spells/call-father-dagon-and-mother-hydra.md:4",
@@ -525,8 +525,7 @@
           "CHANGELOG.md:229",
           "CHANGELOG.md:243",
           "WORKLOG.md:101",
-          "WORKLOG.md:179",
-          "WORKLOG.md:300",
+          "WORKLOG.md:186",
           "core/01-intake.md:87",
           "core/01-intake.md:106",
           "core/01-intake.md:137",
@@ -556,9 +555,9 @@
           "reference/rules/eras/mystic-iceland.md:4",
           "reference/rules/eras/README.md:4",
           "reference/rules/eras/README.md:10",
-          "reference/rules/eras/README.md:38",
-          "reference/rules/eras/README.md:83",
-          "reference/rules/eras/README.md:122",
+          "reference/rules/eras/README.md:39",
+          "reference/rules/eras/README.md:84",
+          "reference/rules/eras/README.md:123",
           "reference/tables/cult-leader-positions.md:5",
           "reference/tables/cultist-archetypes.md:11",
           "reference/tables/cultist-archetypes.md:185",
@@ -574,14 +573,7 @@
           "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:399",
           "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:431",
           "update_plan/2026-08-04-core-spec-audit.md:179",
-          "update_plan/2026-08-04-era-rule-packs.md:30",
-          "update_plan/2026-08-04-era-rule-packs.md:43",
-          "update_plan/2026-08-04-era-rule-packs.md:135",
-          "update_plan/2026-08-04-era-rule-packs.md:153",
-          "update_plan/2026-08-04-era-rule-packs.md:173",
-          "update_plan/2026-08-04-era-rule-packs.md:225",
-          "update_plan/2026-08-04-era-rule-packs.md:242",
-          "update_plan/README.md:41",
+          "update_plan/README.md:47",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:11",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:117",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:118",
@@ -613,6 +605,13 @@
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:258",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:263",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:280",
+          "update_plan/Archived/2026-08-04-era-rule-packs.md:29",
+          "update_plan/Archived/2026-08-04-era-rule-packs.md:42",
+          "update_plan/Archived/2026-08-04-era-rule-packs.md:134",
+          "update_plan/Archived/2026-08-04-era-rule-packs.md:152",
+          "update_plan/Archived/2026-08-04-era-rule-packs.md:172",
+          "update_plan/Archived/2026-08-04-era-rule-packs.md:223",
+          "update_plan/Archived/2026-08-04-era-rule-packs.md:240",
           "update_plan/Archived/2026-08-04-retire-bundle.md:158",
           "update_plan/Archived/README.md:16",
           "update_plan/Archived/README.md:19"
@@ -632,14 +631,14 @@
           "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:255",
           "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:264",
           "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:345",
-          "update_plan/2026-08-04-era-rule-packs.md:138",
-          "update_plan/2026-08-04-era-rule-packs.md:139",
-          "update_plan/2026-08-04-era-rule-packs.md:242",
           "update_plan/2026-08-04-scenario-diversity.md:165",
-          "update_plan/README.md:103",
-          "update_plan/README.md:160",
+          "update_plan/README.md:100",
+          "update_plan/README.md:159",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:117",
-          "update_plan/Archived/2026-08-02-conventions-gaps.md:75"
+          "update_plan/Archived/2026-08-02-conventions-gaps.md:75",
+          "update_plan/Archived/2026-08-04-era-rule-packs.md:137",
+          "update_plan/Archived/2026-08-04-era-rule-packs.md:138",
+          "update_plan/Archived/2026-08-04-era-rule-packs.md:240"
         ]
       },
       "reference/rules/combat.md": {
@@ -657,8 +656,8 @@
           "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:263",
           "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:344",
           "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:425",
-          "update_plan/2026-08-04-era-rule-packs.md:137",
-          "update_plan/2026-08-04-era-rule-packs.md:138",
+          "update_plan/Archived/2026-08-04-era-rule-packs.md:136",
+          "update_plan/Archived/2026-08-04-era-rule-packs.md:137",
           ".claude/skills-eval-workspace/benchmark.json:144",
           ".claude/skills-eval-workspace/benchmark.json:154"
         ]
@@ -669,16 +668,16 @@
         "referenced_by": [
           "reference/rules/eras/dark-ages.md:31",
           "reference/rules/eras/mystic-iceland.md:38",
-          "reference/rules/eras/README.md:32",
-          "reference/rules/eras/README.md:44"
+          "reference/rules/eras/README.md:33",
+          "reference/rules/eras/README.md:45"
         ]
       },
       "reference/rules/eras/dark-ages.md": {
         "title": "Era Pack — Cthulhu Dark Age (克苏鲁黑暗时代)",
         "rights_holder": null,
         "referenced_by": [
-          "reference/rules/eras/README.md:33",
-          "reference/rules/eras/README.md:45"
+          "reference/rules/eras/README.md:34",
+          "reference/rules/eras/README.md:46"
         ]
       },
       "reference/rules/eras/end-times.md": {
@@ -686,14 +685,14 @@
         "rights_holder": null,
         "referenced_by": [
           "reference/rules/eras/icarus.md:77",
-          "reference/rules/eras/README.md:37"
+          "reference/rules/eras/README.md:38"
         ]
       },
       "reference/rules/eras/gaslight.md": {
         "title": "Era Pack — Cthulhu Gaslight (克苏鲁煤气灯)",
         "rights_holder": null,
         "referenced_by": [
-          "reference/rules/eras/README.md:35"
+          "reference/rules/eras/README.md:36"
         ]
       },
       "reference/rules/eras/icarus.md": {
@@ -702,15 +701,15 @@
         "referenced_by": [
           "reference/rules/eras/end-times.md:37",
           "reference/rules/eras/end-times.md:42",
-          "reference/rules/eras/README.md:36"
+          "reference/rules/eras/README.md:37"
         ]
       },
       "reference/rules/eras/mystic-iceland.md": {
         "title": "Era Pack — Mystic Iceland (神秘冰岛)",
         "rights_holder": null,
         "referenced_by": [
-          "reference/rules/eras/README.md:34",
-          "reference/rules/eras/README.md:45"
+          "reference/rules/eras/README.md:35",
+          "reference/rules/eras/README.md:46"
         ]
       },
       "reference/rules/magic.md": {
@@ -720,7 +719,7 @@
           "CHANGELOG.md:137",
           "WORKLOG.md:93",
           "WORKLOG.md:97",
-          "WORKLOG.md:179",
+          "WORKLOG.md:186",
           "core/02-rules-reference.md:51",
           "core/02-rules-reference.md:67",
           "core/07-create-monster.md:101",
@@ -730,7 +729,6 @@
           "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:297",
           "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:298",
           "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:401",
-          "update_plan/2026-08-04-era-rule-packs.md:153",
           "update_plan/Archived/2026-08-02-conventions-gaps.md:16",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:9",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:174",
@@ -745,6 +743,7 @@
           "update_plan/Archived/2026-08-02-magic-quickref.md:52",
           "update_plan/Archived/2026-08-02-magic-quickref.md:56",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:74",
+          "update_plan/Archived/2026-08-04-era-rule-packs.md:152",
           "update_plan/Archived/2026-08-04-retire-bundle.md:157",
           "update_plan/Archived/README.md:18"
         ]
@@ -837,8 +836,8 @@
         "referenced_by": [
           "CHANGELOG.md:111",
           "CHANGELOG.md:246",
-          "WORKLOG.md:201",
-          "WORKLOG.md:247",
+          "WORKLOG.md:206",
+          "WORKLOG.md:253",
           "core/01-intake.md:81",
           "core/03-build-world.md:45",
           "core/04-design-scenario.md:35",
@@ -873,8 +872,8 @@
           "update_plan/2026-08-04-clue-engines.md:82",
           "update_plan/2026-08-04-clue-engines.md:124",
           "update_plan/2026-08-04-clue-engines.md:201",
-          "update_plan/README.md:18",
-          "update_plan/README.md:145",
+          "update_plan/README.md:17",
+          "update_plan/README.md:142",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:110",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:219",
           "update_plan/Archived/2026-08-02-cult-doc-wrapup.md:18",
@@ -887,7 +886,7 @@
         "referenced_by": [
           "CHANGELOG.md:50",
           "CHANGELOG.md:112",
-          "WORKLOG.md:165",
+          "WORKLOG.md:166",
           "core/03-build-world.md:73",
           "core/04-design-scenario.md:31",
           "templates/cult.md:42",
@@ -916,9 +915,9 @@
           "update_plan/2026-08-04-town-anatomy-from-arkham.md:439",
           "update_plan/README.md:12",
           "update_plan/README.md:13",
-          "update_plan/README.md:80",
+          "update_plan/README.md:81",
+          "update_plan/README.md:120",
           "update_plan/README.md:122",
-          "update_plan/README.md:124",
           "update_plan/README.md:157",
           "update_plan/Archived/2026-08-04-retire-bundle.md:109"
         ]
@@ -928,7 +927,7 @@
         "rights_holder": null,
         "referenced_by": [
           "WORKLOG.md:46",
-          "WORKLOG.md:158",
+          "WORKLOG.md:159",
           "core/00-how-to-run.md:174",
           "core/07-create-monster.md:69",
           "core/09-description.md:14",
@@ -1222,7 +1221,7 @@
           "CHANGELOG.md:196",
           "WORKLOG.md:113",
           "WORKLOG.md:117",
-          "WORKLOG.md:254",
+          "WORKLOG.md:260",
           "reference/mythos/README.md:12",
           "reference/mythos/great-old-ones/dagon-and-hydra.md:67",
           "reference/tables/monster-index.md:81",
@@ -1475,8 +1474,8 @@
           "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:266",
           "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:349",
           "update_plan/2026-08-04-scenario-diversity.md:206",
-          "update_plan/README.md:104",
-          "update_plan/README.md:160"
+          "update_plan/README.md:101",
+          "update_plan/README.md:159"
         ]
       },
       "reference/tables/monster-index.md": {
@@ -1489,7 +1488,7 @@
           "CHANGELOG.md:201",
           "WORKLOG.md:112",
           "WORKLOG.md:123",
-          "WORKLOG.md:260",
+          "WORKLOG.md:266",
           "core/04-design-scenario.md:46",
           "core/07-create-monster.md:9",
           "templates/monster.md:11",
@@ -2163,12 +2162,6 @@
         "reference/sourcebooks/malleus-monstrorum-zh.md",
         "reference/tables/monster-index.md"
       ],
-      "update_plan/2026-08-04-era-rule-packs.md": [
-        "reference/rules/character-creation.md",
-        "reference/rules/chases.md",
-        "reference/rules/combat.md",
-        "reference/rules/magic.md"
-      ],
       "update_plan/2026-08-04-scenario-diversity.md": [
         "reference/rules/chases.md",
         "reference/tables/complications.md",
@@ -2272,6 +2265,12 @@
         "reference/tables/cultist-archetypes.md",
         "reference/tables/monster-index.md",
         "reference/tables/monster-traits.md"
+      ],
+      "update_plan/Archived/2026-08-04-era-rule-packs.md": [
+        "reference/rules/character-creation.md",
+        "reference/rules/chases.md",
+        "reference/rules/combat.md",
+        "reference/rules/magic.md"
       ],
       "update_plan/Archived/2026-08-04-retire-bundle.md": [
         "reference/craft/diagram-conventions-zh.md",

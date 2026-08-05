@@ -31,12 +31,12 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 201,
+          "line": 206,
           "context": "(`craft/cult-design-zh.md` §四 的六项财源,而且住在邪教专属文件里,威胁不是邪教时"
         },
         {
           "file": "WORKLOG.md",
-          "line": 247,
+          "line": 253,
           "context": "**P5 阶段 0 是还债**:`templates/cult.md:42` 与 `reference/craft/cult-design-zh.md:68`"
         },
         {
@@ -211,12 +211,12 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 18,
+          "line": 17,
           "context": "| P16 | [clue-engines](2026-08-04-clue-engines.md) | 线索引擎通用化(新表 `tables/clue-engines.md` d10,十台引擎各带一条独占结构属性)+ `cult-design-zh.md` §四 改口径 + `core/04` 六条三线索检验 + `"
         },
         {
           "file": "update_plan/README.md",
-          "line": 145,
+          "line": 142,
           "context": "`craft/cult-design-zh.md` 两处指向不存在规范的引用)。"
         },
         {
@@ -265,7 +265,7 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 165,
+          "line": 166,
           "context": "`reference/craft/diagram-conventions-zh.md` 当 **§六**——那份文件 §四 第 69 行已经在"
         },
         {
@@ -410,17 +410,17 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 80,
+          "line": 81,
           "context": "变成\"同一个文件\"**——地图卡直接扩进 P5 阶段 0 产出的 `craft/diagram-conventions-zh.md`"
         },
         {
           "file": "update_plan/README.md",
-          "line": 122,
+          "line": 120,
           "context": "`core/03` 两处接线)→ **阶段 2**(d20 机构表 + `diagram-conventions-zh.md` 扩 §六"
         },
         {
           "file": "update_plan/README.md",
-          "line": 124,
+          "line": 122,
           "context": "**阶段 2 里有一条债优先**:`diagram-conventions-zh.md:69` 的「文字地图卡」是个从未"
         },
         {
@@ -450,7 +450,7 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 158,
+          "line": 159,
           "context": "别拿 `craft/lovecraft-zh.md` 当先例——`og_Norval/` 能全文入库是因为**洛夫克拉夫特是公版**,"
         },
         {
