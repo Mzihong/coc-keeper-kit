@@ -73,8 +73,10 @@ reference/rules/eras/<era>.md           ← 书里覆盖的年代【全部建包
 
 ## 阶段 0 — 转换与勘察
 
-- [x] 源件移出 `reference/rules/` → `reference/_source/`(与 P10 同一个目录,整目录 gitignore)
-      —— **2026-08-04 已做**
+- [x] 源件移出 `reference/rules/` → `reference/_source/`(与 P10 同一个目录)
+      —— **2026-08-04 已做**。当时该目录是整目录 gitignore;**同日晚改为只挡
+      `.pdf`/`.docx` 原件**,所以这份 52 页 PDF 仍是本地件、结论不变,
+      但目录里 P10 那批 `.md` 与图已经入库了(见 `reference/_source/README.md`)
 - [x] PDF → 文本,**按年代章节切分**落到 scratchpad(`pdfplumber` 逐页提取,52 页全文,
       按英文分章标题定位章节边界)—— **2026-08-04 已做**
 - [x] **只读目录 + 每个年代章节的首页**,产出:覆盖哪几个年代、每个年代给了哪几类规则

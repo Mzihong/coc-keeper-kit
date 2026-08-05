@@ -22,7 +22,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 221,
+          "line": 231,
           "context": "- P7 魔法速查阻塞解除(转换稿已归档为 `grand-grimoire-zh.md`)。"
         },
         {
@@ -57,7 +57,7 @@
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 416,
+          "line": 440,
           "context": "6. **不做的事**:`grand-grimoire-zh.md`、`malleus-monstrorum-zh.md` 两份**不动**。"
         },
         {
@@ -112,18 +112,23 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 94,
+          "line": 95,
           "context": "- **`reference/sourcebooks/keeper-rulebook-7e-zh.md`(规则书全文重译,17470 行)已确认"
         },
         {
           "file": "WORKLOG.md",
-          "line": 135,
-          "context": "`keeper-rulebook-7e-zh.md` 又变成本地若有——**正解是照 P12 计划把 `core/02` 那段整体"
+          "line": 136,
+          "context": "`keeper-rulebook-7e-zh.md` 又变成本地若有~~ —— **这个坑 2026-08-04 晚随 P12 已定案 ②"
         },
         {
           "file": "WORKLOG.md",
-          "line": 149,
+          "line": 152,
           "context": "便宜,`keeper-rulebook-7e-zh.md` 那笔\"单文件只能 grep\"的教训不适用;"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 291,
+          "context": "1. **`sourcebooks/keeper-rulebook-7e-zh.md` 与 `malleus-monstrorum-zh.md` 本来就在库里**"
         },
         {
           "file": "core/02-rules-reference.md",
@@ -157,47 +162,52 @@
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 9,
+          "line": 20,
           "context": "> 资料:`reference/sourcebooks/keeper-rulebook-7e-zh.md`(17,377 行 / 1.4 MB,已在本地)"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 16,
+          "line": 27,
           "context": "今天查一条战斗规则的代价是:`core/02` 说速查表说不清就回 `keeper-rulebook-7e-zh.md`"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 28,
+          "line": 39,
           "context": "| `keeper-rulebook-7e-zh.md` | 17,377 行 / 1.4 MB | 无标题结构,grep 命中后按行号硬读上下文,一次几千到几万 token |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 96,
+          "line": 107,
           "context": "`reference/sourcebooks/keeper-rulebook-7e-zh.md`,行号为 2026-08-04 实测。"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 217,
+          "line": 228,
           "context": "`reference/sourcebooks/keeper-rulebook-7e-zh.md` 于 **2026-08-02 12:26(39d1625)**"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 354,
-          "context": "- [ ] `git rm --cached reference/sourcebooks/keeper-rulebook-7e-zh.md`"
+          "line": 367,
+          "context": "- ~~`git rm --cached reference/sourcebooks/keeper-rulebook-7e-zh.md`~~ —— **取消,文件保留入库**"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 355,
-          "context": "- [ ] `.gitignore` 加 `/reference/sourcebooks/keeper-rulebook-7e-zh.md`"
+          "line": 368,
+          "context": "- ~~`.gitignore` 加 `/reference/sourcebooks/keeper-rulebook-7e-zh.md`~~ —— **取消**"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 448,
+          "context": "**`keeper-rulebook-7e-zh.md` 就是一份普通的入库归档件,原地不动。**"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 83,
+          "line": 85,
           "context": "§0;`keeper-rulebook-7e-zh.md` 那笔教训不适用于本文档"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 92,
+          "line": 94,
           "context": "`sourcebooks/keeper-rulebook-7e-zh.md` 17,469 行只能靠 grep 定位,是因为它**没有可预测"
         },
         {
@@ -226,7 +236,7 @@
           "context": "| P7 | [magic-quickref](2026-08-02-magic-quickref.md) | 魔法速查 `reference/rules/magic.md`:施法通则(消耗记法、施法用时、POW 对抗)、按 `grand-grimoire-zh.md` 抽样得出的四档消耗区间(小术/中术/大术/仪式级"
         }
       ],
-      "reference_count": 23,
+      "reference_count": 25,
       "cited": true,
       "provenance": {
         "work": "《克苏鲁的呼唤》第七版规则书(Call of Cthulhu 7th Edition Keeper Rulebook)",
@@ -252,8 +262,13 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 148,
+          "line": 158,
           "context": "- **怪物图鉴换了一份干净得多的转录稿。** `reference/sourcebooks/malleus-monstrorum-zh.md`"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 291,
+          "context": "1. **`sourcebooks/keeper-rulebook-7e-zh.md` 与 `malleus-monstrorum-zh.md` 本来就在库里**"
         },
         {
           "file": "core/04-design-scenario.md",
@@ -1467,13 +1482,18 @@
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 380,
+          "line": 402,
           "context": "- [ ] `monster-scale.md`(149 行)← 第十四章 10030 起(与 `malleus-monstrorum-zh.md` 分工:"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 416,
+          "line": 440,
           "context": "6. **不做的事**:`grand-grimoire-zh.md`、`malleus-monstrorum-zh.md` 两份**不动**。"
+        },
+        {
+          "file": "update_plan/2026-08-04-core-spec-audit.md",
+          "line": 43,
+          "context": "`git ls-files reference/sourcebooks/` 确认 `malleus-monstrorum-zh.md` 在版本控制里;"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -1501,7 +1521,7 @@
           "context": "Keeper 交付了 `reference/sourcebooks/malleus-monstrorum-zh.md` 的重排版转录稿"
         }
       ],
-      "reference_count": 250,
+      "reference_count": 252,
       "cited": true,
       "provenance": {
         "work": "《怪物之锤》(Malleus Monstrorum)",

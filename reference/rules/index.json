@@ -22,32 +22,32 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 55,
+          "line": 65,
           "context": "- **kit 不再只服务 1920s 了。** `reference/rules/character-creation.md` 头部第一次"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 210,
+          "line": 220,
           "context": "- `character-creation.md` 补齐年龄补正、Build/伤害加值、技能基础值等建卡数据,可用来审核他人交的卡。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 224,
+          "line": 234,
           "context": "- `character-creation.md` 各小节补上数据来源指路(标明取自哪个源文件/章节)。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 100,
+          "line": 101,
           "context": "补全全部缺失字段,加了硬性算术+阈值型双层自校验;`core/13`/`character-creation.md`/"
         },
         {
           "file": "WORKLOG.md",
-          "line": 177,
+          "line": 180,
           "context": "`character-creation.md`、不经 `core/02`,所以年代加载顺序对全 kit 最吃职业表/货币的那个"
         },
         {
           "file": "WORKLOG.md",
-          "line": 183,
+          "line": 186,
           "context": "写成了纯中文正文,后来对照 `character-creation.md`/`magic.md` 才发现 kit 的既有惯例"
         },
         {
@@ -242,38 +242,43 @@
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 205,
+          "line": 216,
           "context": "| 表XVII 武器列表 | **新建 `reference/tables/weapons-index.md`**,单列索引 | 用途不是\"查伤害\",是**给人类反派做强度预算**:一把武器等于多少战力,才好和 `character-creation.md` §11 的反派基线对齐。所以它要按**威胁量级**可排序,不"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 227,
+          "line": 238,
           "context": "| `character-creation.md` | 2026-08-02 01:28(同上) | 之前 | ✅ **但 08-04 回头对着规则书订正过** |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 231,
+          "line": 242,
           "context": "**没有一份例外。** `character-creation.md` 尤其说明问题:它和 `chases.md` 是**同一个"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 268,
+          "line": 279,
           "context": "`reference/rules/character-creation.md` 的 `来源` 惯例)"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 346,
+          "line": 356,
           "context": "接线到 `reference/rules/character-creation.md` §11(人类反派基线)与 `core/06-create-npc.md`"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 377,
+          "line": 399,
           "context": "- [ ] `character-creation.md`(307 行,已最厚)← 第三章 683–1595 + 第四章 技能 1596–2664"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 407,
+          "line": 431,
           "context": "3. **和 P11 年代包的耦合。** `eras/*.md` 是对 `character-creation.md` 的差集。阶段 2 动那份"
+        },
+        {
+          "file": "update_plan/2026-08-04-core-spec-audit.md",
+          "line": 179,
+          "context": "`reference/rules/character-creation.md` §2 正常扣完年龄惩罚、"
         },
         {
           "file": "update_plan/2026-08-04-era-rule-packs.md",
@@ -287,38 +292,33 @@
         },
         {
           "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 133,
+          "line": 135,
           "context": "- [x] `reference/rules/character-creation.md` 头部加一句:**本文是 1920s 基准**。"
         },
         {
           "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 151,
+          "line": 153,
           "context": "`character-creation.md`/`magic.md` 的既有体例,不是纯中文——初稿写成纯中文后"
         },
         {
           "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 170,
+          "line": 172,
           "context": "`reference/rules/character-creation.md`」(`core/13:8`),不经 `core/02`——而"
         },
         {
           "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 230,
+          "line": 232,
           "context": "- **阶段 1 在任何情况下都要做**——即使一个年代包都不建,给 `character-creation.md`"
         },
         {
           "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 247,
+          "line": 249,
           "context": "- 阶段 1 的三处标注都在:`character-creation.md:3-6`(基准声明)、`chases.md:29-32`"
         },
         {
           "file": "update_plan/README.md",
-          "line": 37,
+          "line": 41,
           "context": "P12 -. 阶段 2 动 character-creation.md 前须扫 eras/ 差集 .-> P11"
-        },
-        {
-          "file": "update_plan/README.md",
-          "line": 64,
-          "context": "1. ~~**P11 阶段 1**(给 `character-creation.md` 标上\"这是 1920s 基准\")~~ —— **已完成"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -519,52 +519,52 @@
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 40,
+          "line": 51,
           "context": "**`chases.md`(55 行)—— 整份机制是错的。**"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 123,
+          "line": 134,
           "context": "| 表V 载具速度表 | 4801 | MOV/体格/乘客护甲/载员 + 载具受损规则 | ❌ 现有 `chases.md` 是自造的错表 |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 226,
+          "line": 237,
           "context": "| `chases.md` | 2026-08-02 01:28(e0d026b) | **之前 11 小时** | ❌ 整份机制是错的 |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 231,
+          "line": 242,
           "context": "**没有一份例外。** `character-creation.md` 尤其说明问题:它和 `chases.md` 是**同一个"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 244,
+          "line": 255,
           "context": "这条比本计划本身更值钱:它防的是**下一次**再造出一份 `chases.md`。"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 253,
+          "line": 264,
           "context": "reference/rules/chases.md         ← 同上,7.1–7.5 + 表V/表VI(推倒重写)"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 335,
+          "line": 345,
           "context": "- [ ] `reference/rules/chases.md` — 按 7.1–7.5 **推倒重写**(现有版本机制是错的,不是补);"
         },
         {
           "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 136,
+          "line": 138,
           "context": "`chases.md`(载具)最可疑,有则同样标注。**结果:`combat.md` 本身不含武器/装备表"
         },
         {
           "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 137,
+          "line": 139,
           "context": "(伤害加值、耐久值、DEX 排序等都是跨年代通用力学),不需要标注;`chases.md` 的"
         },
         {
           "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 247,
+          "line": 249,
           "context": "- 阶段 1 的三处标注都在:`character-creation.md:3-6`(基准声明)、`chases.md:29-32`"
         },
         {
@@ -574,12 +574,12 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 89,
-          "context": "(`chases.md` 的载具 MOV 差一个数量级、`madness.md` 掷 4 号是另一件事),"
+          "line": 107,
+          "context": "它修的是**已经在牌桌上出错的数值**(`chases.md` 的载具 MOV 差一个数量级、"
         },
         {
           "file": "update_plan/README.md",
-          "line": 106,
+          "line": 160,
           "context": "| 4 | **P12** 速查表自足化 | ★★★☆☆ | 源材料 2,402 行 / 21.3 万字符(第六、七、八章)+ 其余四章;4 份重写 + 2 份新建(恐惧症/躁狂症 d100、武器强度索引)+ 8 处引用改写 + 1 处脚本改动 + `.gitignore` + 索引重建 | **实现不难,难在刹车**"
         },
         {
@@ -624,47 +624,47 @@
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 29,
+          "line": 40,
           "context": "| `reference/rules/combat.md` | 47 行 | 整份读完还不到 1K token |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 79,
+          "line": 90,
           "context": "**`combat.md`(47 行 vs 规则书第六章 934 行)—— 不是错,是缺。**"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 120,
+          "line": 131,
           "context": "| 表I 伤害加值和体格表 | 901 | STR+SIZ → DB/体格 | ✅ 已在 `combat.md` |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 222,
+          "line": 233,
           "context": "| `combat.md` | 2026-07-29(339a89b 初始提交) | 之前 | ❌ 大面积缺 |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 252,
+          "line": 263,
           "context": "reference/rules/combat.md         ← 中文正文,按规则书 6.1–6.7,含全部表格"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 334,
+          "line": 344,
           "context": "- [ ] `reference/rules/combat.md` — 按 6.1–6.7 重写;含表I(保留)、表III、表IV、护甲表"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 401,
+          "line": 425,
           "context": "\"速查表\"三个字仍然是——一份 1,500 行的 `combat.md` 在牌桌上翻不动。挡法是阶段 0 的"
         },
         {
           "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 135,
+          "line": 137,
           "context": "- [x] 抽查其余 `reference/rules/*.md` 有没有隐性年代假设——`combat.md`(武器表)与"
         },
         {
           "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 136,
+          "line": 138,
           "context": "`chases.md`(载具)最可疑,有则同样标注。**结果:`combat.md` 本身不含武器/装备表"
         },
         {
@@ -841,22 +841,22 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 118,
+          "line": 128,
           "context": "- **法术、仪式、魔法书终于有了数值标尺。** 新增 `reference/rules/magic.md`:施法消耗"
         },
         {
           "file": "WORKLOG.md",
-          "line": 92,
+          "line": 93,
           "context": "`reference/rules/magic.md`,`core/02`/`core/07`/`reference/mythos/README.md` 已接线。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 96,
+          "line": 97,
           "context": "三值、泛读/精读两阶段、重复精读耗时翻倍),`magic.md` 的魔法书章节改成从这份规则书"
         },
         {
           "file": "WORKLOG.md",
-          "line": 183,
+          "line": 186,
           "context": "写成了纯中文正文,后来对照 `character-creation.md`/`magic.md` 才发现 kit 的既有惯例"
         },
         {
@@ -881,32 +881,32 @@
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 228,
+          "line": 239,
           "context": "| `magic.md` | 2026-08-03(84dba55) | 之后 | ✅ 明确记着照 CMI/CMF/MR 改写过估算值 |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 284,
+          "line": 295,
           "context": "| `reference/rules/magic.md:5` | 指规则书为 last word | 同上改写 |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 286,
+          "line": 297,
           "context": "| `reference/mythos/spells/call-father-dagon-and-mother-hydra.md:4` | 指规则书的请神/送神框架 | 改指 `reference/rules/magic.md` |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 287,
+          "line": 298,
           "context": "| `reference/tables/cultist-archetypes.md:265` | 指规则书查召唤/束缚数值 | 改指 `reference/rules/magic.md` |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 379,
+          "line": 401,
           "context": "- [ ] `magic.md`(113 行)← 第九章 5770–6191 + 第十一章 典籍 7745 + 第十二章 法术 8393"
         },
         {
           "file": "update_plan/2026-08-04-era-rule-packs.md",
-          "line": 151,
+          "line": 153,
           "context": "`character-creation.md`/`magic.md` 的既有体例,不是纯中文——初稿写成纯中文后"
         },
         {
@@ -1004,17 +1004,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 152,
+          "line": 162,
           "context": "`reference/rules/monster-scale.md`:五级强度阶梯(独立种族 → 仆从种族 → 唯一存在 →"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 161,
+          "line": 171,
           "context": "- **挑怪物强度时先看书上的「上级/下级」标签,它比自己估更准。** `monster-scale.md`"
         },
         {
           "file": "WORKLOG.md",
-          "line": 105,
+          "line": 106,
           "context": "- **阶段 A**(标尺与词条,2026-08-03):`reference/rules/monster-scale.md` + 五级强度阶梯 +"
         },
         {
@@ -1139,12 +1139,12 @@
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 229,
+          "line": 240,
           "context": "| `monster-scale.md` | 2026-08-03(819971e) | 之后 | ✅ |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 380,
+          "line": 402,
           "context": "- [ ] `monster-scale.md`(149 行)← 第十四章 10030 起(与 `malleus-monstrorum-zh.md` 分工:"
         },
         {
@@ -1269,27 +1269,27 @@
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 65,
+          "line": 76,
           "context": "**`sanity.md`(56 行)—— 缺了整个第二阶段。**"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 204,
+          "line": 215,
           "context": "| 表IX 恐惧症(约 100 条)+ 表X 躁狂症(约 100 条) | **新建 `reference/tables/phobias-manias.md`**,一张 **d100** 掷,两个表分列 | 它是**掷骰表**不是速查文,和 `tables/` 里现有那批同类;`sanity.md` 的疯狂发作 9/1"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 223,
+          "line": 234,
           "context": "| `sanity.md` | 2026-07-29(同上) | 之前 | ❌ 缺整个第二阶段 |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 254,
+          "line": 265,
           "context": "reference/rules/sanity.md         ← 同上,8.1–8.6"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 337,
+          "line": 347,
           "context": "- [ ] `reference/rules/sanity.md` — 按 8.1–8.6 重写;补永久性疯狂、疯狂三阶段、"
         },
         {
@@ -1329,17 +1329,17 @@
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 224,
+          "line": 235,
           "context": "| `skill-checks.md` | 2026-07-29(同上) | 之前 | ⚠️ 未核(阶段 2 查) |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 285,
+          "line": 296,
           "context": "| `reference/mythos/artifacts-zh.md:18` | 指规则书查孤注一掷失败规则 | 改指 `reference/rules/skill-checks.md` |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 375,
+          "line": 397,
           "context": "- [ ] `skill-checks.md`(51 行)← 第五章 游戏系统 2665–3367:孤注一掷、奖惩骰、"
         }
       ],

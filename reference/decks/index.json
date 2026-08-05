@@ -21,7 +21,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 223,
+          "line": 233,
           "context": "- 新增 `reference/decks/` 与首份收录件 `busybodies-zh.md`(官方好事者卡组,47 张 NPC 卡)。"
         },
         {
@@ -158,17 +158,17 @@
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 127,
+          "line": 138,
           "context": "| 表IX 恐惧症状表 | 5288–5430 | 约 100 条 D100 | ⚠️ 只在 `decks/phobias-and-manias-zh.md`(第三方,**不进 bundle**) |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 207,
+          "line": 218,
           "context": "**注意 `decks/` 里已有的三份不删**——`phobias-and-manias-zh.md`、`weapons-and-artifacts-zh.md`"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 343,
+          "line": 353,
           "context": "`decks/phobias-and-manias-zh.md` 互相指路,写清\"这份是规则书表、那份是卡组\""
         },
         {
@@ -229,12 +229,12 @@
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 129,
+          "line": 140,
           "context": "| 表XVII 武器列表 | 15858 起 | 武器伤害/射程/装弹 | ⚠️ 只在 `decks/weapons-and-artifacts-zh.md`(同上) |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 207,
+          "line": 218,
           "context": "**注意 `decks/` 里已有的三份不删**——`phobias-and-manias-zh.md`、`weapons-and-artifacts-zh.md`"
         },
         {

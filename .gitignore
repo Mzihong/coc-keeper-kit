@@ -7,9 +7,10 @@
 *.docx
 *.tmp
 
-# 第三方原件与从中抽出的素材:只在本地查阅,永不入库
-# (转录成 .md 后按 core/14-archive-reference.md 归档,入库的是文本不是原件)
-/reference/_source/
+# reference/_source/ —— 第三方原件与从中抽出的素材。
+# 2026-08-04 改:**原件不入库,抽出的文本与图入库**(此前是整目录忽略)。
+# 原件(.pdf / .docx)已被上面两条挡住,这里不再需要整目录规则;
+# 边界与理由见 reference/_source/README.md。
 
 # OS noise
 Thumbs.db

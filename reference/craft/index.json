@@ -21,17 +21,22 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 92,
+          "line": 102,
           "context": "`dist/bundle.md`,走 ChatGPT 的 KP 连点都点不进去。`reference/craft/cult-design-zh.md`"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 227,
+          "line": 237,
           "context": "- 新增邪教设计方法论 `craft/cult-design-zh.md`,配四张骰表与 `templates/cult.md` 模板。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 206,
+          "line": 200,
+          "context": "(`craft/cult-design-zh.md` §四 的六项财源,而且住在邪教专属文件里,威胁不是邪教时"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 246,
           "context": "**P5 阶段 0 是还债**:`templates/cult.md:42` 与 `reference/craft/cult-design-zh.md:68`"
         },
         {
@@ -171,18 +176,48 @@
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 88,
+          "line": 90,
           "context": "reference/craft/cult-design-zh.md:68  → \"与 P5 的 mermaid 势力图工具合流\""
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 98,
+          "line": 100,
           "context": "- [x] `templates/cult.md` 与 `reference/craft/cult-design-zh.md` 两处引用改指向它"
         },
         {
+          "file": "update_plan/2026-08-04-clue-engines.md",
+          "line": 19,
+          "context": "**线索来源这一维的条目数是 1**——[`cult-design-zh.md` §四](../reference/craft/cult-design-zh.md)"
+        },
+        {
+          "file": "update_plan/2026-08-04-clue-engines.md",
+          "line": 33,
+          "context": "时给素材库,指向 `cult-design-zh.md` §四 的六项财源。后果有两层:"
+        },
+        {
+          "file": "update_plan/2026-08-04-clue-engines.md",
+          "line": 82,
+          "context": "列已经是引擎属性的一半;`cult-design-zh.md` §五「平淡才合理」其实是\"非人证人 /"
+        },
+        {
+          "file": "update_plan/2026-08-04-clue-engines.md",
+          "line": 124,
+          "context": "## 阶段 2 — `cult-design-zh.md` §四 改口径(不删内容)"
+        },
+        {
+          "file": "update_plan/2026-08-04-clue-engines.md",
+          "line": 201,
+          "context": "`cult-design-zh.md` §三/§四/§五**。"
+        },
+        {
           "file": "update_plan/README.md",
-          "line": 83,
-          "context": "`craft/cult-design-zh.md` 两个文件正引用一份不存在的规范,而且指向的是 `update_plan/`。"
+          "line": 18,
+          "context": "| P16 | [clue-engines](2026-08-04-clue-engines.md) | 线索引擎通用化(新表 `tables/clue-engines.md` d10,十台引擎各带一条独占结构属性)+ `cult-design-zh.md` §四 改口径 + `core/04` 六条三线索检验 + `"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 148,
+          "context": "`craft/cult-design-zh.md` 两处指向不存在规范的引用)。"
         },
         {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
@@ -205,7 +240,7 @@
           "context": "**登记情况核对**:`craft/cult-design-zh.md`、四张骰表(`cult-goals`/`cult-leader-positions`/"
         }
       ],
-      "reference_count": 37
+      "reference_count": 44
     },
     {
       "file": "diagram-conventions-zh.md",
@@ -220,17 +255,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 31,
+          "line": 41,
           "context": "- **关系图终于有正式画法了。** 新增 `reference/craft/diagram-conventions-zh.md`,covers"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 93,
+          "line": 103,
           "context": "第 11 步有同样的问题。两处现已改指向新的 `craft/diagram-conventions-zh.md`。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 162,
+          "line": 165,
           "context": "`reference/craft/diagram-conventions-zh.md` 当 **§六**——那份文件 §四 第 69 行已经在"
         },
         {
@@ -275,13 +310,48 @@
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 94,
+          "line": 96,
           "context": "- [x] 新建 `reference/craft/diagram-conventions-zh.md`(87 行,**已进 bundle**):"
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 187,
+          "line": 192,
           "context": "——格式落在 `reference/craft/diagram-conventions-zh.md` **§六**"
+        },
+        {
+          "file": "update_plan/2026-08-04-clue-engines.md",
+          "line": 57,
+          "context": "这和 [`diagram-conventions-zh.md` §三](../reference/craft/diagram-conventions-zh.md)"
+        },
+        {
+          "file": "update_plan/2026-08-04-clue-engines.md",
+          "line": 78,
+          "context": "`diagram-conventions-zh.md` §三。**列出哪几处口径互相不一致**——阶段 3/4 要按同一套"
+        },
+        {
+          "file": "update_plan/2026-08-04-clue-engines.md",
+          "line": 149,
+          "context": "- [ ] **第 5 条与 `diagram-conventions-zh.md` §三 对齐**:线索地图这边写\"指向型\","
+        },
+        {
+          "file": "update_plan/2026-08-04-core-spec-audit.md",
+          "line": 141,
+          "context": "(与 `reference/craft/diagram-conventions-zh.md:58` 一致)。"
+        },
+        {
+          "file": "update_plan/2026-08-04-core-spec-audit.md",
+          "line": 150,
+          "context": "`diagram-conventions-zh.md` 并接到 `core/04` 时,**接线只做了生成侧单向**。"
+        },
+        {
+          "file": "update_plan/2026-08-04-core-spec-audit.md",
+          "line": 260,
+          "context": "**结论(§六 落在 `diagram-conventions-zh.md`)不变**,另外三条理由站得住,"
+        },
+        {
+          "file": "update_plan/2026-08-04-core-spec-audit.md",
+          "line": 298,
+          "context": "`diagram-conventions-zh.md:58` 对齐"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
@@ -300,32 +370,32 @@
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 211,
+          "line": 230,
           "context": "#### 复评修订 A(2026-08-04):格式落在 `diagram-conventions-zh.md` §六,顺手还一笔债"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 215,
+          "line": 234,
           "context": "1. **仓库里已经有人在引用它了。** `craft/diagram-conventions-zh.md:69`(**进 bundle**)写着"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 232,
+          "line": 251,
           "context": "`diagram-conventions-zh.md` 有两处写死**建筑内部布局不归它管**:第 10 行"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 361,
+          "line": 380,
           "context": "**地图卡:扩 `craft/diagram-conventions-zh.md`,不新建文件**(理由见复评修订 A):"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 415,
+          "line": 438,
           "context": "| A | 地图卡格式**没有落盘位置**,三条 checkbox 全悬空;且 `diagram-conventions-zh.md:69` 已在引用一个从未定义过的「文字地图卡」 | 拍板结果 2 复评修订 A + 阶段 2 |"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 416,
+          "line": 439,
           "context": "| B | 建筑级卡与 `diagram-conventions-zh.md` 第 10 行、§五 表格**直接冲突** | 拍板结果 2 复评修订 B + 阶段 2 |"
         },
         {
@@ -340,22 +410,22 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 52,
+          "line": 76,
           "context": "变成\"同一个文件\"**——地图卡直接扩进 P5 阶段 0 产出的 `craft/diagram-conventions-zh.md`"
         },
         {
           "file": "update_plan/README.md",
-          "line": 78,
-          "context": "提炼稿 + `core/03` 两处接线)→ **阶段 2**(d20 机构表 + `diagram-conventions-zh.md`"
+          "line": 125,
+          "context": "`core/03` 两处接线)→ **阶段 2**(d20 机构表 + `diagram-conventions-zh.md` 扩 §六"
         },
         {
           "file": "update_plan/README.md",
-          "line": 80,
+          "line": 127,
           "context": "**阶段 2 里有一条债优先**:`diagram-conventions-zh.md:69` 的「文字地图卡」是个从未"
         },
         {
           "file": "update_plan/README.md",
-          "line": 103,
+          "line": 157,
           "context": "| 1 | **P10** 城镇解剖手法稿 | ★★☆☆☆ | 资料 14 万字符 / 6723 行 / 0 图;采料 10 段 + ≤100 行提炼稿 + `core/03` **两处**接线 + d20 机构表 + `diagram-conventions-zh.md` 扩一节与 3 张样例 | 产出本身小(照 `"
         },
         {
@@ -364,7 +434,7 @@
           "context": "- [x] `reference/craft/diagram-conventions-zh.md:85` —— 那句话是 P5 阶段 0 用来解释"
         }
       ],
-      "reference_count": 29
+      "reference_count": 36
     },
     {
       "file": "lovecraft-zh.md",
@@ -380,8 +450,13 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 155,
+          "line": 158,
           "context": "别拿 `craft/lovecraft-zh.md` 当先例——`og_Norval/` 能全文入库是因为**洛夫克拉夫特是公版**,"
+        },
+        {
+          "file": "core/00-how-to-run.md",
+          "line": 168,
+          "context": "│   ├── og_Norval/           ← Lovecraft's 82 stories (public domain) → craft/lovecraft-zh.md"
         },
         {
           "file": "core/07-create-monster.md",
@@ -460,27 +535,27 @@
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 186,
+          "line": 188,
           "context": "- 别拿 `craft/lovecraft-zh.md` 当先例——它能把 82 篇原文放进 `reference/og_Norval/`,"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 201,
+          "line": 220,
           "context": "- **样例不做成\"一个能直接用的镇\"**,只演示记法(同 `lovecraft-zh.md` 给技法字典"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 312,
+          "line": 331,
           "context": "- [ ] **篇幅上限 100 行**——`lovecraft-zh.md` 用 90 行覆盖 82 篇小说,这份不该更长。"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 374,
+          "line": 393,
           "context": "- [ ] §六 开头写一句反锚定声明,体例照 `craft/lovecraft-zh.md` 开头那段:"
         },
         {
           "file": "update_plan/README.md",
-          "line": 103,
+          "line": 157,
           "context": "| 1 | **P10** 城镇解剖手法稿 | ★★☆☆☆ | 资料 14 万字符 / 6723 行 / 0 图;采料 10 段 + ≤100 行提炼稿 + `core/03` **两处**接线 + d20 机构表 + `diagram-conventions-zh.md` 扩一节与 3 张样例 | 产出本身小(照 `"
         },
         {
@@ -499,7 +574,7 @@
           "context": "`reference/craft/lovecraft-zh.md`."
         }
       ],
-      "reference_count": 25
+      "reference_count": 26
     }
   ]
 }

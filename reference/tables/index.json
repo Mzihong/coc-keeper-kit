@@ -253,6 +253,16 @@
           "context": "- `cult-power-sources.md`(1d4)——邪教声称的超自然背书从哪儿来。"
         },
         {
+          "file": "update_plan/2026-08-04-clue-engines.md",
+          "line": 81,
+          "context": "[`cult-power-sources.md`](../reference/tables/cult-power-sources.md) 的「留下什么证据」"
+        },
+        {
+          "file": "update_plan/2026-08-04-clue-engines.md",
+          "line": 116,
+          "context": "- [ ] **写一节与 `cult-power-sources.md` 的耦合**:哪几台默认通电由上游那一掷决定"
+        },
+        {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
           "line": 137,
           "context": "- [x] `cult-power-sources.md` —— 力量来源(1D4:神话怪物 / 造物 / 科技 / 受赐力量),"
@@ -263,7 +273,7 @@
           "context": "`tables/cult-power-sources.md`、d20 外貌/气质表、`tables/cultist-archetypes.md`"
         }
       ],
-      "reference_count": 9
+      "reference_count": 11
     },
     {
       "file": "cultist-archetypes.md",
@@ -304,12 +314,12 @@
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 179,
+          "line": 190,
           "context": "| **具名角色 + 绑定商业产品** | ❌ 仍不收录 | `cultist-archetypes.md` 里那位\"卡尔·斯坦福\" |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 287,
+          "line": 298,
           "context": "| `reference/tables/cultist-archetypes.md:265` | 指规则书查召唤/束缚数值 | 改指 `reference/rules/magic.md` |"
         },
         {
@@ -403,7 +413,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 77,
+          "line": 87,
           "context": "**\"默认美国不等于默认阿卡姆\"**——默认给的是国家,镇子照样掷 `locations.md` 再自己造,"
         },
         {
@@ -463,42 +473,42 @@
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 198,
+          "line": 217,
           "context": "**多样性不由地图卡提供**——它由掷骰提供(`locations.md` + 下面第 3 条的"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 245,
+          "line": 264,
           "context": "`reference/tables/town-institutions.md`,与 `locations.md` 并列接进 `core/03`。"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 283,
+          "line": 302,
           "context": "**四、表头必须写清与 `locations.md` 的分工**,否则模型会混用两张表:"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 285,
+          "line": 304,
           "context": "- `locations.md` —— **掷 1 次定舞台**(整个战役发生在哪种地方)"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 346,
+          "line": 365,
           "context": "(`locations.md` + `mythos-angles.md`):那条是战役首次建世界时掷一次,"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 356,
+          "line": 375,
           "context": "- [ ] 该表**表头写清与 `locations.md` 的分工**:`locations.md` 掷 1 次定舞台,"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 375,
+          "line": 394,
           "context": "这是记法不是模板,镇上有什么由 `locations.md` / `town-institutions.md` 掷骰决定"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 393,
+          "line": 414,
           "context": "定太死」)。地图卡**根本不是多样性的来源**——多样性由掷骰产生(`locations.md` +"
         },
         {
@@ -535,37 +545,37 @@
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 52,
+          "line": 63,
           "context": "**`reference/tables/madness.md`(23 行)—— d10 表和书上不是同一张表。**"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 57,
+          "line": 68,
           "context": "现有 madness.md 的十条是:失忆 / 心因性失能 / 暴力 / 僵直昏厥 / 逃跑 / 歇斯底里 /"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 125,
+          "line": 136,
           "context": "| 表VII 疯狂发作-即时症状 | 5154(附录 16450) | 1D10 | ⚠️ `tables/madness.md` 是另一张表 |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 163,
+          "line": 174,
           "context": "| ① | 速查表正文用什么语言 | **中文正文 + 英文术语括注**。规则原文就是中文,直接落表不经翻译损耗;stat 记法仍保持英文(`STR 60`、`1D6/2D10`、`Fighting (Brawl) 45%`)。**这是对 `rules/` 现有六份英文正文体例的一次有意偏离**——理由是这三份是规则条"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 225,
+          "line": 236,
           "context": "| `tables/madness.md` | 2026-07-29(同上) | 之前 | ❌ 和书上不是同一张表 |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 255,
+          "line": 266,
           "context": "reference/tables/madness.md       ← 表VII 即时症状 + 表VIII 总结症状(照原表重排)"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 339,
+          "line": 349,
           "context": "- [ ] `reference/tables/madness.md` — 表VII 照原表重排(**十条对应关系全部改**),"
         },
         {
@@ -575,12 +585,12 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 89,
-          "context": "(`chases.md` 的载具 MOV 差一个数量级、`madness.md` 掷 4 号是另一件事),"
+          "line": 108,
+          "context": "`madness.md` 掷 4 号是另一件事),其余计划做的是新功能。"
         },
         {
           "file": "update_plan/README.md",
-          "line": 106,
+          "line": 160,
           "context": "| 4 | **P12** 速查表自足化 | ★★★☆☆ | 源材料 2,402 行 / 21.3 万字符(第六、七、八章)+ 其余四章;4 份重写 + 2 份新建(恐惧症/躁狂症 d100、武器强度索引)+ 8 处引用改写 + 1 处脚本改动 + `.gitignore` + 索引重建 | **实现不难,难在刹车**"
         }
       ],
@@ -600,37 +610,37 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 28,
+          "line": 38,
           "context": "接入了 `reference/tables/monster-index.md` 的 `Serves` 检索——之前这张表能查到怪物,"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 69,
+          "line": 79,
           "context": "文件名、`1D10`/`STR 60` 这类记法保持英文);`monster-index.md` 的表头与说明段随生成"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 168,
+          "line": 178,
           "context": "新增 `reference/tables/monster-index.md`,覆盖怪物图鉴全部 223 个条目 + 现有 9 只"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 182,
+          "line": 192,
           "context": "`reference/tables/monster-index.md` 再动手写,不用翻原文猜。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 111,
+          "line": 112,
           "context": "`reference/tables/monster-index.md`。校验和缺引用出处同级——"
         },
         {
           "file": "WORKLOG.md",
-          "line": 122,
+          "line": 123,
           "context": "曾在 `monster-index.md` 里产生重复行(同一生物一行来自转录稿脚手架、一行来自新写的"
         },
         {
           "file": "WORKLOG.md",
-          "line": 219,
+          "line": 259,
           "context": "- **`monster-index.md` 与 malleus 转录稿的关系已不再是「对外通道」。** P13 之后所有"
         },
         {
@@ -750,13 +760,28 @@
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 381,
+          "line": 403,
           "context": "标尺进 `rules/`,条目仍走 `tables/monster-index.md`)"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 418,
+          "line": 442,
           "context": "而且 `monster-index.md` 已经是它对外的通道。Keeper 只点名了规则书。"
+        },
+        {
+          "file": "update_plan/2026-08-04-core-spec-audit.md",
+          "line": 100,
+          "context": "`reference/tables/monster-index.md`,那份索引由 `build-reference-index.py` 从"
+        },
+        {
+          "file": "update_plan/2026-08-04-core-spec-audit.md",
+          "line": 228,
+          "context": "| **a. 扩索引** | 改 `build_monster_index()`,把 `reference/mythos/great-old-ones/*.md` 也并进 `monster-index.md` | 改脚本 + 全表回归;好处是**现有入口不变**,`core/07`/`core/04` 一个字不用改,以"
+        },
+        {
+          "file": "update_plan/2026-08-04-core-spec-audit.md",
+          "line": 348,
+          "context": "必须 clean,且 `monster-index.md` 行数变化要能解释清楚"
         },
         {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
@@ -804,7 +829,7 @@
           "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺,三阶段。**阶段 A**(标尺与词条):`reference/rules/monster-scale.md` 五级阶梯(human/creature/s"
         }
       ],
-      "reference_count": 41
+      "reference_count": 44
     },
     {
       "file": "monster-traits.md",
@@ -817,17 +842,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 70,
+          "line": 80,
           "context": "脚本一起改中文,`monster-traits.md` 的引言段同。加新表的写法见"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 157,
+          "line": 167,
           "context": "`reference/tables/monster-traits.md`:18 条可挂载的数值词条(再生、分裂、免疫常规"
         },
         {
           "file": "WORKLOG.md",
-          "line": 106,
+          "line": 107,
           "context": "`reference/tables/monster-traits.md` 的 18 条数值词条,`core/07` 的 X 已回填。"
         },
         {
@@ -995,7 +1020,7 @@
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 346,
+          "line": 365,
           "context": "(`locations.md` + `mythos-angles.md`):那条是战役首次建世界时掷一次,"
         },
         {

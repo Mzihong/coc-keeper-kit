@@ -1,4 +1,4 @@
-# Update Plan — 速查表自足化:把规则搬进 `rules/`,让规则书退役
+# Update Plan — 速查表自足化:把规则搬进 `rules/`,让规则书退出查询链路
 
 > 日期:2026-08-04
 > 状态:待执行(**三个拍板问题已于 2026-08-04 全部定案**,勘察与错误清单已核实;
@@ -6,6 +6,17 @@
 > 来源:Keeper 2026-08-04 会话——「追逐、疯狂、战斗等规则需要非常详细、一字不落地写入
 > Cheat Sheet;`reference/sourcebooks/keeper-rulebook-7e-zh.md` 不再放入库,这会导致
 > 查询规则时硬读导致大量 token 耗费」
+>
+> **⚠️ 2026-08-04 晚修订:「不再放入库」那半句已被 Keeper 撤回。** 新指示是
+> 「可以 gitignore pdf,但是 md 一定要有」,理由是 **fresh clone 出来的 kit 不能是残的**。
+> **本计划的目标一个字没改**——速查表仍要自足、`core/02` 仍要停止回落原文、那 8 处
+> 引用仍要改干净。变的只有**手段**:「退役」= **退出查询链路**,不是退出版本库。
+> `git rm --cached` 与配套的 `.gitignore`、索引脚本忽略名单三项**整体取消**(见阶段 1.2)。
+>
+> 拆开看,Keeper 原话里其实是两件事被绑在了一起:**贵**(每次查规则硬读几万 token)
+> 和**在不在库里**。真正治「贵」的是速查表自足 + `core/02` 不再指过去;
+> 文件脱不脱离跟踪对 token 成本**零影响**——它照样躺在磁盘上、照样能被 grep 命中。
+> 所以撤回这一半不损失任何本计划想要的东西。
 > 资料:`reference/sourcebooks/keeper-rulebook-7e-zh.md`(17,377 行 / 1.4 MB,已在本地)
 > 前置:无。与 P5 / P10 / P11 无依赖,可并行
 
@@ -161,7 +172,7 @@
 | # | 问题 | 结论 |
 |---|---|---|
 | ① | 速查表正文用什么语言 | **中文正文 + 英文术语括注**。规则原文就是中文,直接落表不经翻译损耗;stat 记法仍保持英文(`STR 60`、`1D6/2D10`、`Fighting (Brawl) 45%`)。**这是对 `rules/` 现有六份英文正文体例的一次有意偏离**——理由是这三份是规则条文转录,不是 kit 原创脚手架;`tables/madness.md`、`decks/` 已经是中文,不是孤例 |
-| ② | 规则书怎么处置 | **`git rm --cached`,文件原地留在 `reference/sourcebooks/`,加 `.gitignore` 规则**。出版本库、出 clone;本地仍可读,阶段 2 补其余四份时不必重新转录 PDF |
+| ② | 规则书怎么处置 | ~~**`git rm --cached`,文件原地留在 `reference/sourcebooks/`,加 `.gitignore` 规则**。出版本库、出 clone~~ → **2026-08-04 晚 Keeper 撤回,改为「保留入库」**:`.md` 留在版本库,只有同名 `.pdf` 继续被 `*.pdf` 挡住。**退役改成只退查询链路**——`core/02` 不再指过去、8 处引用改干净,但 clone 下来文件还在。理由:「可以 gitignore pdf,但是 md 一定要有」,fresh clone 出来的 kit 不能是残的 |
 | ③ | 覆盖范围 | **七份速查表全部补齐**,但**战斗 / 追逐 / 理智三份先做**(Keeper 当场追加确认)。其余四份(skill-checks、character-creation、magic、monster-scale)在阶段 2 |
 
 ## 拍板结果(Keeper,2026-08-04,三问全定)
@@ -285,20 +296,19 @@ commit** 落地的,同样生于原文入库之前,区别只在于**它后来被�
 | `reference/mythos/artifacts-zh.md:18` | 指规则书查孤注一掷失败规则 | 改指 `reference/rules/skill-checks.md` |
 | `reference/mythos/spells/call-father-dagon-and-mother-hydra.md:4` | 指规则书的请神/送神框架 | 改指 `reference/rules/magic.md` |
 | `reference/tables/cultist-archetypes.md:265` | 指规则书查召唤/束缚数值 | 改指 `reference/rules/magic.md` |
-| `reference/sourcebooks/README.md:15` | 表格里一行 | 整行删除,另加一段说明该书为何退役 |
-| `reference/sourcebooks/index.json` | 脚本生成 | 重跑脚本 |
+| `reference/sourcebooks/README.md:15` | 表格里一行 | ~~整行删除~~ → **行保留**(文件还在库里),改描述:说明它已退出查询链路,只作对账底本 |
+| `reference/sourcebooks/index.json` | 脚本生成 | **不用动**(条目不变);其余改动引起的重跑照常 |
 | `WORKLOG.md:96 / 141 / 219` | 三处提到该文件 | 更新为退役后的事实 |
 
-**⚠️ 索引脚本有个坑必须一起解决。** `scripts/build-reference-index.py:487` 用
-`os.listdir()` 扫目录,**不认 `.gitignore`**。文件原地留档(已定案 ②)的话,脚本仍会
-把它写进 `reference/sourcebooks/index.json`——而那份 index.json **是进版本库的**。
-结果是 clone 下来的仓库有一份索引,指着一个不存在的文件。两条修法:
-
-- **修脚本**:加一个 `LOCAL_ONLY` 忽略名单,或让它读 `.gitignore`
-- **或**:index.json 里保留条目但加 `"local_only": true` 字段,并在 `sourcebooks/README.md`
-  写明这意味着什么
-
-**倾向修脚本 + 忽略名单**(更小、更明确;读 `.gitignore` 要引依赖)。此项在阶段 1 内。
+> **~~⚠️ 索引脚本有个坑必须一起解决~~ —— 这个坑随已定案 ② 的撤回一起消失了。**
+> 原文记的是:`scripts/build-reference-index.py:487` 用 `os.listdir()` 扫目录、**不认
+> `.gitignore`**,所以文件一旦 `git rm --cached` 而原地留档,脚本仍会把它写进
+> **进版本库的** `reference/sourcebooks/index.json`,导致 clone 下来的索引指着一个不存在
+> 的文件。**既然文件不再脱离跟踪,索引指的就是真实存在的文件,`LOCAL_ONLY` 忽略名单
+> 与 `"local_only": true` 字段两条修法都不必做了**——阶段 1.2 少一项,脚本零改动。
+>
+> 记在这里而不是删掉:**这个坑是「原地留档 + gitignore」这个组合本身带来的**,
+> 以后谁再想让某份归档件「留在磁盘但出版本库」,会原样撞上它。
 
 ## 阶段 0 — 体例定稿(不改任何既有文件)
 
@@ -349,20 +359,30 @@ commit** 落地的,同样生于原文入库之前,区别只在于**它后来被�
 > 射击 60% 的打手,和一把猎枪配一个 30% 的农夫,谁更危险——这份索引答不出来就白做。
 > 排序维度先按 §11 的反派基线定,别先排版。
 
-### 1.2 退役
+### 1.2 退役(**只退查询链路,不退版本库**)
 
-- [ ] `git rm --cached reference/sourcebooks/keeper-rulebook-7e-zh.md`
-- [ ] `.gitignore` 加 `/reference/sourcebooks/keeper-rulebook-7e-zh.md`
-      (同名 `.pdf` 已被现有 `*.pdf` 规则挡住,不用另加)
-- [ ] 改 `scripts/build-reference-index.py` 的忽略名单(见「方案 → 索引脚本的坑」)
-- [ ] 上面那张表里的 8 处引用逐个改掉
-- [ ] `git status` 确认该文件确实脱离跟踪且**没有被误删**
+原先这一步有五项,前三项是把文件请出版本库的。**Keeper 2026-08-04 晚撤回了那半个决定
+(见文件头修订说明),三项整体取消**,划掉留痕而不是删除:
+
+- ~~`git rm --cached reference/sourcebooks/keeper-rulebook-7e-zh.md`~~ —— **取消,文件保留入库**
+- ~~`.gitignore` 加 `/reference/sourcebooks/keeper-rulebook-7e-zh.md`~~ —— **取消**
+      (同名 `.pdf` 仍由现有 `*.pdf` 规则挡住,这条本来就不用改)
+- ~~改 `scripts/build-reference-index.py` 的忽略名单~~ —— **取消,脚本零改动**
+      (那个坑随之消失,见「方案 → 索引脚本的坑」)
+
+**剩下的才是这一步的实质,一项都不能少:**
+
+- [ ] 上面那张表里的 8 处引用逐个改掉 —— **这一步现在是 1.2 的全部**。
+      文件既然还在库里,模型就仍然看得见、仍然可能硬读;**引用不删干净,退役等于没做。**
+      原先还有「出了版本库,读不到也就硬读不了」这层被动兜底,现在没有了。
+- [ ] `grep -rn "keeper-rulebook" --include="*.md" .` 复查:**除本计划与
+      `sourcebooks/README.md`、`WORKLOG.md` 的说明性提及外,不应再有任何「回它查原文」的指路**
 
 ### 1.3 校验
 
 - [ ] `python scripts/build-reference-index.py` → **必须报 no problems**,
-      且 `sourcebooks/index.json` 的 `entry_count` 从 3 变 2;
-      `tables/index.json` 多出 phobias-manias 与 weapons-index 两条
+      且 `sourcebooks/index.json` 的 `entry_count` **仍为 3**(已定案 ② 撤回后规则书不出库,
+      原先写的「从 3 变 2」作废);`tables/index.json` 多出 phobias-manias 与 weapons-index 两条
 - [ ] **抽查三条数值**是否与规则书一致:载具 MOV(表V)、疯狂发作 4 号条目(表VII)、
       重伤阈值(6.6)——三条正是本次改掉的错误,回归检查就查它们
 - [ ] `reference/glossary-zh.md` 补新术语:行动点、险境、障碍、潜在疯狂、习惯恐惧、
@@ -370,7 +390,9 @@ commit** 落地的,同样生于原文入库之前,区别只在于**它后来被�
 
 ## 阶段 2 — 其余四份速查表
 
-规则书本地留档仍在,阶段 2 照样读得到——**这就是"原地留档"而不是"删除"的理由**。
+规则书仍在库里,阶段 2 照样读得到——**这就是"退查询链路"而不是"删文件"的理由**。
+(已定案 ② 撤回后,连"本地留档"这层折衷都不需要了:它就是一份正常的入库归档件,
+只是没有任何 spec 再把它当"最后一句话"。)
 
 - [ ] `skill-checks.md`(51 行)← 第五章 游戏系统 2665–3367:孤注一掷、奖惩骰、
       大成功大失败、对抗检定、社交技能难度、信用评级与开支、熟人、训练、老化
@@ -390,7 +412,9 @@ commit** 落地的,同样生于原文入库之前,区别只在于**它后来被�
 - [ ] **把「根因」那条新硬约定写进 `core/02` 与 `WORKLOG.md`**——速查表只能对着原文写、
       每节留行号锚点、首稿后逐节对账。这一条是本计划最该留下的产物
 - [ ] `reference/rules/` 若无 README 则补一份;有则更新
-- [ ] `WORKLOG.md` 更新:规则书退役这件事属于「硬约定/结构改动」,必须写进去
+- [ ] `WORKLOG.md` 更新:规则书退役这件事属于「硬约定/结构改动」,必须写进去。
+      **写的时候点明退的是查询链路不是版本库**——「退役」两个字最容易被下一个会话读成
+      「文件没了」,而 2026-08-04 那条「`.md` 一定要入库」的约定正好相反
 - [ ] `CHANGELOG.md` 写面向 Keeper 的变化:「查规则不再需要规则书全文;
       追逐/疯狂两处规则此前是错的,已按书订正」
 - [ ] 走 `update_plan/README.md` 的完结清单七项
@@ -417,12 +441,19 @@ commit** 落地的,同样生于原文入库之前,区别只在于**它后来被�
    它们是条目型资料(法术、怪物),按条查、不需要通读,没有规则书那种"无结构硬读"的病;
    而且 `monster-index.md` 已经是它对外的通道。Keeper 只点名了规则书。
 
-## 备忘:为什么"原地留档"而不是"移进 `reference/_source/`"
+## 备忘:为什么规则书**留在 `sourcebooks/`**,既不 gitignore 也不移进 `reference/_source/`
 
-Keeper 选的是原地留档 + gitignore(已定案 ②),不是移进 `_source/`。两点后果记在这里,
-免得下一个会话按 P10/P11 的先例自作主张搬走:
+这一节原本记的是"原地留档 + gitignore"(已定案 ②)相对"移进 `_source/`"的取舍。
+**2026-08-04 晚 Keeper 撤回 gitignore 那半边之后,两个候选方案都不成立了**,结论反而更简单:
+**`keeper-rulebook-7e-zh.md` 就是一份普通的入库归档件,原地不动。**
 
-- **好处**:目录结构不变,`sourcebooks/` 三本书的并列关系还在(md 与同名 pdf 相邻,
-  便于对账);阶段 2 找文件不用改路径。
-- **代价**:模型仍会在 `reference/sourcebooks/` 里看见它,仍可能硬读。**所以阶段 1.2
-  改掉那 8 处引用是必做项,不是收尾项**——引用不删干净,退役只退了一半。
+- **不 gitignore**:「可以 gitignore pdf,但是 md 一定要有」。同名 `.pdf`(14.8 MB)
+  由现有 `*.pdf` 规则挡着,这本来就够了。
+- **不移进 `_source/`**:`_source/` 是**料场**,放的是还没走 `core/14` 归档流程的原始素材;
+  规则书早在 39d1625 就走完流程进了 `sourcebooks/`,有头部块也有 `## 引用出处`,
+  往回搬是降级,而且会白白打断 8 处引用之外的路径。
+  (`_source/` 自 2026-08-04 起也不再是"永不入库"的目录了,见 `reference/_source/README.md`
+  ——所以"搬去 `_source/` 就等于出库"这个前提本身也已经不成立。)
+- **保留的那条代价没变**:模型仍会在 `reference/sourcebooks/` 里看见它,仍可能硬读。
+  **所以阶段 1.2 改掉那 8 处引用是必做项,不是收尾项**——现在它更是 1.2 的**全部内容**,
+  因为再没有"出了版本库就读不到"这层被动兜底了。

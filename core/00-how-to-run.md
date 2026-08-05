@@ -117,10 +117,16 @@ writing any stat block, difficulty, or Sanity cost.
 
   Archives live **in the repo**, so a spec may point at one and depend on it. What the
   archive/kit-original line actually governs is whether text may reach a `campaigns/` folder
-  — stated once, with its reasoning, in `reference/README.md` → 原创 vs 第三方. The one
-  exception is `reference/_source/`, which is gitignored and genuinely local: references to
-  it stay optional. To file new material, follow `core/14-archive-reference.md`;
-  `reference/index.json` maps what is archived and who reads it.
+  — stated once, with its reasoning, in `reference/README.md` → 原创 vs 第三方. Since
+  2026-08-04 that now holds for `reference/_source/` too: its **converted text and extracted
+  images are in the repo** and may be pointed at directly; only the **originals** (`.pdf`,
+  `.docx`) stay local, and a reference to one of those keeps the "if present locally" hedge.
+  See `reference/_source/README.md`. To file new material, follow
+  `core/14-archive-reference.md`; `reference/index.json` maps what is archived and who reads it.
+
+  **Being in the repo says nothing about whether its text may be copied.** The three-way split
+  above is the only rule for that, and it does not bend for `_source/`: the Arkham setting book
+  sitting there is category ② published fiction — read it, take the technique, never the text.
 
 ## Conventions
 
@@ -157,6 +163,9 @@ coc-keeper-kit/
 │   ├── craft/               ← how to *write* it (rules/ is what the numbers are)
 │   ├── decks/               ← official card decks — cited, not kit canon
 │   ├── sourcebooks/         ← official books, transcribed — same rule, bigger
+│   ├── _source/             ← raw material not (yet) filed: converted text + extracted
+│   │                          images are tracked; the .pdf/.docx originals are local only
+│   ├── og_Norval/           ← Lovecraft's 82 stories (public domain) → craft/lovecraft-zh.md
 │   ├── index.json           ← reverse index over both (build-reference-index.py)
 │   └── glossary-zh.md       ← EN ↔ 简体中文 term lock
 ├── templates/               ← the blank shapes each spec fills in

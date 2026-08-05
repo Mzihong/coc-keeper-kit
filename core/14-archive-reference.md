@@ -102,8 +102,16 @@ which section or which kind of entry to read; "see also X" is not wiring. The on
 spec still cannot do is have the archive's *text* reach a `campaigns/` folder
 (`reference/README.md` → 原创 vs 第三方).
 
-The exception is anything under `reference/_source/` — that directory is gitignored and
-really is local-only, so references to it keep the "if present locally" hedge.
+The one thing still genuinely local is a **`.pdf` / `.docx` original** — those stay gitignored
+wherever they sit, so a reference to one keeps the "if present locally" hedge. Everything else
+under `reference/_source/` (converted `.md`, extracted images) has been in the repo since
+2026-08-04 and may be pointed at directly; see `reference/_source/README.md`.
+
+**But `_source/` is not an archive.** It is raw material that has not been through this
+checklist — no header block, no `## 引用出处`, not in the reverse index, and
+`build-reference-index.py` does not scan it. If a spec is going to depend on a piece of it
+for real, that is the signal to run it through the steps above and move it into
+`sourcebooks/` or `decks/` — not to leave it as raw material and link deeper into it.
 
 ### 6. Rebuild the index
 

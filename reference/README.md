@@ -81,7 +81,7 @@ in `campaigns/<slug>/`, not here.
 | `rules/` `craft/` `tables/` `bestiary/` `mythos/` `glossary-zh.md` `README.md`(本文件) | `decks/` `sourcebooks/` `og_Norval/` `external/` `_source/` |
 
 **这条线管的是「能不能搬进 `campaigns/`」,不是「能不能读」。** 右列的东西 spec 可以
-直接读、直接依赖——它们就在仓库里(`_source/` 除外,那是本地原件,见下)。区别在产出:
+直接读、直接依赖——它们就在仓库里。区别在产出:
 
 - **版权。** kit 的定位是「面向持有正版的 KP、不盈利、不用于传播」。右列是别人的作品,
   我们转录来查、标明出处;**规则内容**(数值、机制、法术耗费、武器伤害)可以直接引用,
@@ -94,8 +94,15 @@ in `campaigns/<slug>/`, not here.
 `sourcebooks/malleus-monstrorum-zh.md` 223 条 → `tables/monster-index.md`。提炼稿是
 kit 自己的话,可以随便进 `campaigns/`;原文留在右列供对账。
 
-**唯一真正拿不到的是 `_source/`** —— 那是整目录 gitignore 的本地原件(PDF、docx 与从中
-抽出的图),clone 下来没有。指向它的引用必须写成可选;指向其余第三方目录的不必。
+**唯一真正拿不到的是 `.pdf` / `.docx` 原件本身** —— 它们由根 `.gitignore` 挡住,
+clone 下来没有,指向原件的引用要写成可选。**2026-08-04 起 `_source/` 不再整目录忽略**:
+转出的 `.md` 与抽出的图都入库了,理由是**料不在库里,依赖它的计划(P5/P10)在
+fresh clone 上就无法复核**。指向那些文件的引用不必写成可选。
+
+⚠️ **`_source/` 拿得到 ≠ 可以抄。** 它是**料场**不是归档区——没走 `core/14` 流程、
+没有各自的 `## 引用出处`、不进反向索引。里面多数是三分法第 ② 类**虚构散文**
+(如 Chaosium《阿卡姆》设定书中译),**只取手法永不取文字**这条对它一字未改。
+细则见 `reference/_source/README.md`。
 
 **Filing new third-party material** — a deck, a book, a converted PDF — goes through
 `core/14-archive-reference.md` (skill: `archive-reference`). It covers classification, naming,
