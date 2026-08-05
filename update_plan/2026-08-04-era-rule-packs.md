@@ -202,11 +202,11 @@ reference/rules/eras/<era>.md           ← 书里覆盖的年代【全部建包
 - [ ] **CHANGELOG 那句"年代口味漏检还没接上"同步改掉**(2026-08-04 条目内,现写在
       「更新内容」里)。按 changelog 惯例补进当天条目,不新开日期
 
-## bundle 取舍 —— 已无取舍
+## bundle 取舍 —— 整条问题已消失
 
-`reference/rules/eras/` 是 kit 原创,按 `reference/README.md` → 什么进 bundle 的通则
-**整个目录自动进**,`scripts/build-bundle.sh` 的 `reference/rules/*/*.md` 已经收得到,
-不需要改脚本、也不需要按行数逐份权衡。无仓库的 ChatGPT 链路 KP 同样跑得了别的年代。
+原本要权衡的是「年代包会不会把 bundle 撑爆」。**P13(2026-08-04)把整条 bundle 链路
+退役了**,`scripts/build-bundle.sh` 与 `dist/` 都已删除,体积不再是任何计划的约束。
+`reference/rules/eras/` 就在仓库里,agent 直接读。
 
 ## 收尾(部分完成 2026-08-04;整体收尾留到阶段 3 结束后一次走完)
 
@@ -240,8 +240,8 @@ reference/rules/eras/<era>.md           ← 书里覆盖的年代【全部建包
 
 **核对通过、不必再动的**:
 
-- `scripts/build-bundle.sh:44` 的 `reference/rules/*/*.md` 确实收得到 `eras/`,
-  「bundle 取舍已无取舍」一节属实
+- ~~`scripts/build-bundle.sh:44` 的 `reference/rules/*/*.md` 确实收得到 `eras/`~~
+  —— 复评当时属实;该脚本已随 **P13** 删除,这一条不再需要核对
 - `python scripts/build-reference-index.py --check` 复跑报 no problems,
   `reference/rules/index.json` 有 55 处 `eras/` 引用
 - 阶段 1 的三处标注都在:`character-creation.md:3-6`(基准声明)、`chases.md:29-32`

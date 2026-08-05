@@ -5,8 +5,7 @@ points to the cheat-sheets in `reference/rules/`; read the relevant one before y
 numbers. It references mechanics — it does not reproduce the rulebook.
 
 When a cheat-sheet doesn't settle it, `reference/sourcebooks/keeper-rulebook-7e-zh.md` is the
-7e rulebook itself, transcribed (local file, so treat it as optional). It is the last
-word on any number here — and it is a *transcription*, so cross-check anything surprising
+7e rulebook itself, transcribed. It is the last word on any number here — and it is a *transcription*, so cross-check anything surprising
 before you commit it. **If it contradicts a cheat-sheet, fix the cheat-sheet.**
 
 **Default era: 1920s.** Every cheat-sheet below — `character-creation.md` most of all — is

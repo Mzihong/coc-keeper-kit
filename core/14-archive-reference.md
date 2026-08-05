@@ -39,9 +39,9 @@ rather than a dumping ground.
 | **the kit's own writing** distilled from any of the above | `reference/rules/`, `bestiary/`, `mythos/`, `tables/` — **not here** |
 
 If it fits none of these, propose a new sibling directory and give it a README stating its
-role and its citation rule. Whether it enters `dist/bundle.md` is not a per-directory
-decision — third-party archives never do, see `reference/README.md` → 什么进 bundle.
-Don't quietly widen the meaning of an existing directory.
+role and its citation rule. Whether its text may reach a `campaigns/` folder is not a
+per-directory decision — third-party material never may, see `reference/README.md` →
+原创 vs 第三方. Don't quietly widen the meaning of an existing directory.
 
 ### 2. Name and normalise
 
@@ -97,9 +97,13 @@ An archived file nothing points at is invisible; the index reports it as **orpha
 is a failure, not a warning. For each spec that can use it, add a pointer saying *what to take
 from it*, not just that it exists.
 
-Every pointer must be phrased as **optional** — archives are local files and never ship
-(`reference/README.md` → 什么进 bundle). A Keeper without the repo has to be able to follow
-the spec without them. "If present locally" is the standard hedge.
+Point at it **directly** — archives are committed files, so a spec may depend on one. Say
+which section or which kind of entry to read; "see also X" is not wiring. The one thing a
+spec still cannot do is have the archive's *text* reach a `campaigns/` folder
+(`reference/README.md` → 原创 vs 第三方).
+
+The exception is anything under `reference/_source/` — that directory is gitignored and
+really is local-only, so references to it keep the "if present locally" hedge.
 
 ### 6. Rebuild the index
 
@@ -129,6 +133,6 @@ run said.
 - Filed in the right directory, ASCII `kebab-case.md`, LF endings.
 - Header block states what it is, what reads it, and its known defects.
 - `## 引用出处` complete, with unknowns marked as unknown rather than guessed.
-- At least one spec points at it, phrased as optional.
+- At least one spec points at it, naming what to take from it.
 - `python scripts/build-reference-index.py` reports **no problems**.
 - `CHANGELOG.md` appended; any unblocked `update_plan/` entry updated.

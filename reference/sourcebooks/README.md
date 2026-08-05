@@ -39,9 +39,11 @@
 提炼出来的速查表写进 `reference/rules/`,并在每节标注 `来源` 指路——指到本目录的哪份书、
 哪一章。这条惯例的样板见 `reference/rules/character-creation.md`。
 
-本目录是第三方资料,**不进 bundle**(通则见 [`../README.md`](../README.md) → 什么进 bundle):
-**任何 spec 都不得把这里当前置依赖**。要让 bundle 链路用上这三份书,做法是给它写一份
-原创提炼稿——`reference/rules/` 的速查表、`reference/tables/monster-index.md` 都是这么来的。
+本目录是第三方资料(通则见 [`../README.md`](../README.md) → 原创 vs 第三方),但**就在仓库里**
+——spec 可以直接读、直接依赖。那条线管的是**能不能搬进 `campaigns/`**,不是能不能读。
+仍然值得写提炼稿的理由变成了**体量**:三份书合计几百万字符,没人每次都整份读——
+`reference/rules/` 的速查表、`reference/tables/monster-index.md` 都是这么来的,
+原文留在这里供对账。
 
 ## 新增条目
 

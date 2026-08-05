@@ -5,7 +5,6 @@
   "governed_by": "reference/tables/README.md",
   "citation_rule": null,
   "usage_rule": "authored by this kit — read and used directly, no citation required",
-  "in_bundle": true,
   "generated_by": "scripts/build-reference-index.py — do not edit by hand",
   "entry_count": 13,
   "entries": [
@@ -50,32 +49,22 @@
           "context": "- `complications.md`(1d20)——这一场会出什么岔子;备课时掷两次。"
         },
         {
-          "file": "campaigns/beidaihe-winter/references.md",
-          "line": 11,
-          "context": "路條都是日常摩擦，適合當作 `complications.md` 2 的燃料。"
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 47,
+          "context": "| `complications.md` | 1d20 / 20 条 | 这一场会出什么岔子 | ❌ 备课表 | **待议**——岔子的种类有限,50 条可能就到顶 |"
         },
         {
-          "file": "campaigns/beidaihe-winter/sessions/01-the-guest-who-came-back.md",
-          "line": 42,
-          "context": "6. **金山嘴**（若他們往那走）— 趙德海的禁令；`complications.md` 2 最好在這裡引爆。"
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 133,
+          "context": "不是 intake;`complications.md` 另有 [`core/04-design-scenario.md:62`](../core/04-design-scenario.md)"
         },
         {
-          "file": "campaigns/beidaihe-winter/sessions/01-the-guest-who-came-back.md",
-          "line": 48,
-          "context": "- **`complications.md` 2 — 身分被查而站不住**：山海關的稽查員本月正好來巡。外國人／外地人冬天"
-        },
-        {
-          "file": "campaigns/beidaihe-winter/sessions/01-the-guest-who-came-back.md",
-          "line": 50,
-          "context": "- **`complications.md` 16 — 兩條線同時到期**：費太太只在下午見客（她晚上不開門），而退大潮在"
-        },
-        {
-          "file": "campaigns/beidaihe-winter/world/event-clock.md",
-          "line": 63,
-          "context": "| T6 | 外人不信：調查員被當成冬天關瘋了的一種，`complications.md` 2 直接觸發 |"
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 181,
+          "context": "- [ ] `complications.md`"
         }
       ],
-      "reference_count": 11
+      "reference_count": 9
     },
     {
       "file": "cult-goals.md",
@@ -149,6 +138,21 @@
           "context": "- `cult-goals.md`(1D10 × 1D8)——邪教的愿望 × 手段;两张都掷,相乘才成立。见"
         },
         {
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 49,
+          "context": "| `cult-goals.md` | 1D10 愿望 × 1D8 手段 | 邪教目标 | ❌ | **已经是 80 组合**——见下面「另一条路」 |"
+        },
+        {
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 56,
+          "context": "`cult-goals.md` 已经示范了一种更便宜的做法:**1D10 愿望 × 1D8 手段 = 80 种目标,"
+        },
+        {
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 82,
+          "context": "掷骰纪律去换。`cult-goals.md` 能用乘法,是因为「愿望 × 手段」真正正交"
+        },
+        {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
           "line": 132,
           "context": "- [x] `cult-goals.md` —— 愿望(1D10)× 手段(1D8)。**两表相乘才是本章的生成引擎**,"
@@ -169,7 +173,7 @@
           "context": "`tables/cult-goals.md`、`tables/cult-leader-positions.md`、"
         }
       ],
-      "reference_count": 16
+      "reference_count": 19
     },
     {
       "file": "cult-leader-positions.md",
@@ -188,7 +192,7 @@
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 42,
+          "line": 43,
           "context": "tired-looking.\" For a cult leader specifically, `reference/tables/cult-leader-positions.md`"
         },
         {
@@ -200,6 +204,16 @@
           "file": "reference/tables/README.md",
           "line": 30,
           "context": "- `cult-leader-positions.md`(1d10)——邪教首领的社会门面,以及这个位置换来的便利。"
+        },
+        {
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 50,
+          "context": "| `cult-leader-positions.md` | 1d10 / 10 条 | 首领的社会门面 | ❌ | 扩到 d20 即可,d100 明显过头 |"
+        },
+        {
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 183,
+          "context": "- [ ] `cult-leader-positions.md`"
         },
         {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
@@ -222,7 +236,7 @@
           "context": "`tables/cult-goals.md`、`tables/cult-leader-positions.md`、"
         }
       ],
-      "reference_count": 8
+      "reference_count": 10
     },
     {
       "file": "cult-power-sources.md",
@@ -269,6 +283,11 @@
           "context": "- `cult-power-sources.md`(1d4)——邪教声称的超自然背书从哪儿来。"
         },
         {
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 51,
+          "context": "| `cult-power-sources.md` | 1d4 / 4 条 | 力量来源 | ❌ | **不动**——4 条是分类学不是骰表 |"
+        },
+        {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
           "line": 137,
           "context": "- [x] `cult-power-sources.md` —— 力量来源(1D4:神话怪物 / 造物 / 科技 / 受赐力量),"
@@ -279,7 +298,7 @@
           "context": "`tables/cult-power-sources.md`、d20 外貌/气质表、`tables/cultist-archetypes.md`"
         }
       ],
-      "reference_count": 9
+      "reference_count": 10
     },
     {
       "file": "cultist-archetypes.md",
@@ -300,12 +319,12 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 79,
+          "line": 76,
           "context": "**③ 具名角色 + 绑定商业产品**(如 `cultist-archetypes.md` 里那位\"卡尔·斯坦福\")"
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 46,
+          "line": 47,
           "context": "**Rank-and-file cultists** — `reference/tables/cultist-archetypes.md` has twelve ready-to-use"
         },
         {
@@ -317,6 +336,16 @@
           "file": "reference/tables/README.md",
           "line": 32,
           "context": "- `cultist-archetypes.md`——12 组现成的低阶邪教徒数值(按角色分组,不是骰表),外加一套"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 179,
+          "context": "| **具名角色 + 绑定商业产品** | ❌ 仍不收录 | `cultist-archetypes.md` 里那位\"卡尔·斯坦福\" |"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 287,
+          "context": "| `reference/tables/cultist-archetypes.md:265` | 指规则书查召唤/束缚数值 | 改指 `reference/rules/magic.md` |"
         },
         {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
@@ -354,7 +383,7 @@
           "context": "> 且 `reference/tables/` 已有中文表(`cultist-archetypes.md`)。"
         }
       ],
-      "reference_count": 11
+      "reference_count": 13
     },
     {
       "file": "hooks.md",
@@ -381,14 +410,24 @@
           "context": "- `hooks.md`(1d20)——调查员是怎么被卷进来的。"
         },
         {
-          "file": "campaigns/beidaihe-winter/CLAUDE.md",
-          "line": 72,
-          "context": "| Premise / hook | 舊病人回來了 `[auto]` | 擲出 `hooks.md` 18「調查員的舊案主／病人再度出現，但變了」 |"
-        },
-        {
           "file": "campaigns/_template-campaign/CLAUDE.md",
           "line": 110,
           "context": "| <field> | <value> `[auto]` | <rolled hooks.md 14 / inferred from era> |"
+        },
+        {
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 43,
+          "context": "| `hooks.md` | 1d20 / 20 条 | 调查员怎么被卷进来 | ✅ 是 | **值**——卷入方式的真实空间远大于 20 |"
+        },
+        {
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 63,
+          "context": "| `hooks.md` | 100 条 | 10 条「谁把你卷进来」× 10 条「用什么方式」 | 100 |"
+        },
+        {
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 172,
+          "context": "- [ ] `hooks.md`"
         },
         {
           "file": ".claude/skills-eval-workspace/benchmark.json",
@@ -396,7 +435,7 @@
           "context": "\"evidence\": \"Premise centers on Camas Dubh, a storm-locked Skye fishing hamlet bound to a mistranslated century-old rite ('Tàmh na Mara') that unknowingly feeds"
         }
       ],
-      "reference_count": 6
+      "reference_count": 8
     },
     {
       "file": "locations.md",
@@ -409,13 +448,8 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 70,
+          "line": 77,
           "context": "**\"默认美国不等于默认阿卡姆\"**——默认给的是国家,镇子照样掷 `locations.md` 再自己造,"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 246,
-          "context": "一条:**默认美国不等于默认阿卡姆**,默认给的是国家,镇子仍要掷 `locations.md` 后自造。"
         },
         {
           "file": "core/01-intake.md",
@@ -448,9 +482,24 @@
           "context": "- `locations.md`(1d20)——事情发生在哪儿;打断默认往小渔村滑的引力。"
         },
         {
-          "file": "campaigns/beidaihe-winter/CLAUDE.md",
-          "line": 71,
-          "context": "| Region | 北戴河海濱 `[auto]` | 擲出 `locations.md` 13「過季的渡假地，有人看守而空無一人」；因輸出語言為繁體中文，取民國時期真實的中式海濱避暑地而非新英格蘭漁村 |"
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 44,
+          "context": "| `locations.md` | 1d20 / 20 条 | 事情发生在哪儿 | ✅ 是 | **值**——地点是最不容易撞车的维度 |"
+        },
+        {
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 65,
+          "context": "| `locations.md` | 100 条 | **不适合**——地点是整体意象,拆成\"建筑类型 × 异常\"会把具体性拆没 | — |"
+        },
+        {
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 163,
+          "context": "结论写回本文件。`locations.md` 已预判为\"不适合\",要么证伪要么照结论走"
+        },
+        {
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 171,
+          "context": "- [ ] `locations.md`"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
@@ -508,7 +557,7 @@
           "context": "\"evidence\": \"Premise centers on Camas Dubh, a storm-locked Skye fishing hamlet bound to a mistranslated century-old rite ('Tàmh na Mara') that unknowingly feeds"
         }
       ],
-      "reference_count": 20
+      "reference_count": 22
     },
     {
       "file": "madness.md",
@@ -533,9 +582,64 @@
           "file": "reference/tables/README.md",
           "line": 25,
           "context": "- `madness.md`(1D10)——疯狂发作的即时症状。"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 52,
+          "context": "**`reference/tables/madness.md`(23 行)—— d10 表和书上不是同一张表。**"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 57,
+          "context": "现有 madness.md 的十条是:失忆 / 心因性失能 / 暴力 / 僵直昏厥 / 逃跑 / 歇斯底里 /"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 125,
+          "context": "| 表VII 疯狂发作-即时症状 | 5154(附录 16450) | 1D10 | ⚠️ `tables/madness.md` 是另一张表 |"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 163,
+          "context": "| ① | 速查表正文用什么语言 | **中文正文 + 英文术语括注**。规则原文就是中文,直接落表不经翻译损耗;stat 记法仍保持英文(`STR 60`、`1D6/2D10`、`Fighting (Brawl) 45%`)。**这是对 `rules/` 现有六份英文正文体例的一次有意偏离**——理由是这三份是规则条"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 225,
+          "context": "| `tables/madness.md` | 2026-07-29(同上) | 之前 | ❌ 和书上不是同一张表 |"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 255,
+          "context": "reference/tables/madness.md       ← 表VII 即时症状 + 表VIII 总结症状(照原表重排)"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 339,
+          "context": "- [ ] `reference/tables/madness.md` — 表VII 照原表重排(**十条对应关系全部改**),"
+        },
+        {
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 52,
+          "context": "| `madness.md` | 1D10 | 疯狂发作 | ❌ | **不动**,归 P12 —— 它是规则书表VII 的转录,长度由书决定 |"
+        },
+        {
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 203,
+          "context": "4. **和 P12 的边界:`madness.md` 不归本计划。** 它是规则书表VII 的转录,长度由书决定,"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 88,
+          "context": "(`chases.md` 的载具 MOV 差一个数量级、`madness.md` 掷 4 号是另一件事),"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 103,
+          "context": "| 3 | **P12** 速查表自足化 | ★★★☆☆ | 源材料 2,402 行 / 21.3 万字符(第六、七、八章)+ 其余四章;4 份重写 + 2 份新建(恐惧症/躁狂症 d100、武器强度索引)+ 8 处引用改写 + 1 处脚本改动 + `.gitignore` + 索引重建 | **实现不难,难在刹车**"
         }
       ],
-      "reference_count": 3
+      "reference_count": 14
     },
     {
       "file": "monster-index.md",
@@ -556,43 +660,33 @@
         },
         {
           "file": "CHANGELOG.md",
-          "line": 37,
-          "context": "(神格档案、邪教卷宗、法术),此前只能从 `monster-index.md` 看到一行摘要。bundle 从"
-        },
-        {
-          "file": "CHANGELOG.md",
-          "line": 62,
+          "line": 69,
           "context": "文件名、`1D10`/`STR 60` 这类记法保持英文);`monster-index.md` 的表头与说明段随生成"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 161,
+          "line": 168,
           "context": "新增 `reference/tables/monster-index.md`,覆盖怪物图鉴全部 223 个条目 + 现有 9 只"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 175,
+          "line": 182,
           "context": "`reference/tables/monster-index.md` 再动手写,不用翻原文猜。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 113,
-          "context": "`reference/tables/monster-index.md`(进 bundle)。校验和缺引用出处同级——"
+          "line": 111,
+          "context": "`reference/tables/monster-index.md`。校验和缺引用出处同级——"
         },
         {
           "file": "WORKLOG.md",
-          "line": 124,
+          "line": 122,
           "context": "曾在 `monster-index.md` 里产生重复行(同一生物一行来自转录稿脚手架、一行来自新写的"
         },
         {
           "file": "WORKLOG.md",
-          "line": 213,
-          "context": "`monster-index.md` 那一行摘要。仍然拿不到的是 223 条 malleus 转录稿本体——那是"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 214,
-          "context": "第三方资料,`monster-index.md` 就是它唯一的对外通道,这一条是设计如此。"
+          "line": 219,
+          "context": "- **`monster-index.md` 与 malleus 转录稿的关系已不再是「对外通道」。** P13 之后所有"
         },
         {
           "file": "core/04-design-scenario.md",
@@ -611,8 +705,8 @@
         },
         {
           "file": "reference/README.md",
-          "line": 93,
-          "context": "`sourcebooks/malleus-monstrorum-zh.md` 223 条 → `tables/monster-index.md`。要让 bundle 链路"
+          "line": 94,
+          "context": "`sourcebooks/malleus-monstrorum-zh.md` 223 条 → `tables/monster-index.md`。提炼稿是"
         },
         {
           "file": "reference/bestiary/README.md",
@@ -686,28 +780,38 @@
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 222,
+          "line": 217,
           "context": "MONSTER_INDEX_OUT_PATH = os.path.join(REF, \"tables\", \"monster-index.md\")"
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 378,
+          "line": 373,
           "context": "\"\"\"Generate reference/tables/monster-index.md — the navigation table over all 223 malleus"
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 421,
+          "line": 416,
           "context": "problems.append(\"reference/tables/monster-index.md: idx %d (%s) missing %s\" % ("
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 426,
+          "line": 421,
           "context": "problems.append(\"reference/bestiary/%s: missing %s (needed by monster-index.md)\" % ("
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 434,
+          "line": 429,
           "context": "\"# monster-index.md — 神话生物导航表\","
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 381,
+          "context": "标尺进 `rules/`,条目仍走 `tables/monster-index.md`)"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 418,
+          "context": "而且 `monster-index.md` 已经是它对外的通道。Keeper 只点名了规则书。"
         },
         {
           "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
@@ -746,7 +850,7 @@
         },
         {
           "file": "update_plan/Archived/README.md",
-          "line": 20,
+          "line": 21,
           "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺,三阶段。**阶段 A**(标尺与词条):`reference/rules/monster-scale.md` 五级阶梯(human/creature/s"
         }
       ],
@@ -763,22 +867,22 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 63,
+          "line": 70,
           "context": "脚本一起改中文,`monster-traits.md` 的引言段同。加新表的写法见"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 150,
+          "line": 157,
           "context": "`reference/tables/monster-traits.md`:18 条可挂载的数值词条(再生、分裂、免疫常规"
         },
         {
           "file": "WORKLOG.md",
-          "line": 108,
+          "line": 106,
           "context": "`reference/tables/monster-traits.md` 的 18 条数值词条,`core/07` 的 X 已回填。"
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 48,
+          "line": 47,
           "context": "threat band, and the trait load ceiling that caps `reference/tables/monster-traits.md`."
         },
         {
@@ -873,7 +977,7 @@
         },
         {
           "file": "update_plan/Archived/README.md",
-          "line": 20,
+          "line": 21,
           "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺,三阶段。**阶段 A**(标尺与词条):`reference/rules/monster-scale.md` 五级阶梯(human/creature/s"
         }
       ],
@@ -925,24 +1029,24 @@
           "context": "- `mythos-angles.md`(1d20)——那份\"不对劲\"到底是什么。四张里最要紧的一张。"
         },
         {
-          "file": "campaigns/beidaihe-winter/CLAUDE.md",
-          "line": 53,
-          "context": "> - **The rolled angle:** `mythos-angles.md` 14 —「這東西按自己的邏輯是善意的，傷害只是附帶」。"
-        },
-        {
-          "file": "campaigns/beidaihe-winter/CLAUDE.md",
-          "line": 73,
-          "context": "| Mythos angle | 善意的存在，傷害是附帶 `[auto]` | 擲出 `mythos-angles.md` 14 |"
-        },
-        {
-          "file": "campaigns/beidaihe-winter/references.md",
-          "line": 27,
-          "context": "- 教團、祭壇、召喚儀式。這個戰役沒有教徒（`mythos-angles.md` 14）。"
-        },
-        {
           "file": "campaigns/_template-campaign/CLAUDE.md",
           "line": 92,
           "context": "> - **The rolled angle:** <which `mythos-angles.md` result this came from, if any>"
+        },
+        {
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 45,
+          "context": "| `mythos-angles.md` | 1d20 / 20 条 | 那份\"不对劲\"是什么 | ✅ 是(四张里最要紧) | **值**,但**最难**——神话角度写到后面极易滑成同义反复 |"
+        },
+        {
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 74,
+          "context": "> Roll `mythos-angles.md` and **take what you get**. If the result is not obviously compatible"
+        },
+        {
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 169,
+          "context": "- [ ] `mythos-angles.md` —— **先做这张**。它是四张里最要紧、也最容易滑成同义反复的,"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
@@ -973,13 +1077,23 @@
       "referenced_by": [
         {
           "file": "core/06-create-npc.md",
-          "line": 40,
+          "line": 41,
           "context": "`reference/tables/npc-appearance.md` for the first physical impression. A rolled tic beats"
         },
         {
           "file": "reference/tables/README.md",
           "line": 26,
           "context": "- `npc-appearance.md`(1d20)——第一眼的外形加脾性;`npc-quirks.md` 的姊妹表(外形对"
+        },
+        {
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 48,
+          "context": "| `npc-appearance.md` | 1d20 / 20 条 | 第一眼外形 + 脾性 | ❌ 备课表 | **待议**,同上 |"
+        },
+        {
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 182,
+          "context": "- [ ] `npc-appearance.md`"
         },
         {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
@@ -992,7 +1106,7 @@
           "context": "- [x] `core/06-create-npc.md` —— 指向新的 `npc-appearance.md`(d20 外貌/气质),"
         }
       ],
-      "reference_count": 4
+      "reference_count": 6
     },
     {
       "file": "npc-quirks.md",
@@ -1005,7 +1119,7 @@
       "referenced_by": [
         {
           "file": "core/06-create-npc.md",
-          "line": 39,
+          "line": 40,
           "context": "Roll `reference/tables/npc-quirks.md` for at least the mannerism, and"
         },
         {
@@ -1034,14 +1148,24 @@
           "context": "- `npc-appearance.md`(1d20)——第一眼的外形加脾性;`npc-quirks.md` 的姊妹表(外形对"
         },
         {
-          "file": "campaigns/beidaihe-winter/npcs/li-shuchun.md",
-          "line": 19,
-          "context": "- **習慣**（`npc-quirks.md` 8）：**不停解釋自己有多在行**。「這房子潮不潮我一摸牆就知道，你們"
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 46,
+          "context": "| `npc-quirks.md` | 1d20 / 20 条 | NPC 的小动作 | ✅ 是 | **值**——小动作的空间几乎无限 |"
         },
         {
-          "file": "campaigns/beidaihe-winter/npcs/mrs-fee.md",
-          "line": 19,
-          "context": "- **習慣**（`npc-quirks.md` 9）：**對不在場的人說話**。「Henrik，我們有客人了。」——她一邊倒茶"
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 64,
+          "context": "| `npc-quirks.md` | 100 条 | 10 条「身体上的」× 10 条「说话上的」 | 100 |"
+        },
+        {
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 132,
+          "context": "`npc-quirks.md` 的真正消费者是 [`core/06-create-npc.md:39`](../core/06-create-npc.md),"
+        },
+        {
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 173,
+          "context": "- [ ] `npc-quirks.md`"
         },
         {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
@@ -1049,7 +1173,7 @@
           "context": "`core/06-create-npc.md`;与 `npc-quirks.md` 分工:quirks 是**怎么演**,这张是"
         }
       ],
-      "reference_count": 9
+      "reference_count": 11
     }
   ]
 }

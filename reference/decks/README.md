@@ -60,5 +60,5 @@ kit 自己的 `reference/` 文件里引用或转录也可以,标明出处就行�
 - `core/06-create-npc.md` —— 建 NPC 前查一遍同职业的卡,校准数值刻度与技能选取。
 - `core/13-create-investigator.md` —— 预生成卡 / 替补调查员的现成骨架。
 
-本目录是第三方资料,**不进 bundle**(通则见 [`../README.md`](../README.md) → 什么进 bundle):
-把卡组当**加分项,不是前置依赖**,引用它的 spec 一律写成可选。
+本目录是第三方资料(通则见 [`../README.md`](../README.md) → 原创 vs 第三方),但**就在仓库里**
+——spec 可以直接读、直接依赖。那条线管的是**能不能搬进 `campaigns/`**,不是能不能读。

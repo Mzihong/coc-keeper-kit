@@ -115,11 +115,12 @@ writing any stat block, difficulty, or Sanity cost.
   legitimate owner can prep faster, never as a substitute for buying anything. Rights holders
   can open an issue and any file will be taken down.
 
-  Archives are **local files**: every spec that points at one says "if present", and nothing
-  may depend on them. That optionality is the same rule as what does and doesn't enter
-  `dist/bundle.md` — stated once, with its reasoning, in `reference/README.md` → 什么进 bundle.
-  To file new material, follow `core/14-archive-reference.md`; `reference/index.json` maps
-  what is archived and who reads it.
+  Archives live **in the repo**, so a spec may point at one and depend on it. What the
+  archive/kit-original line actually governs is whether text may reach a `campaigns/` folder
+  — stated once, with its reasoning, in `reference/README.md` → 原创 vs 第三方. The one
+  exception is `reference/_source/`, which is gitignored and genuinely local: references to
+  it stay optional. To file new material, follow `core/14-archive-reference.md`;
+  `reference/index.json` maps what is archived and who reads it.
 
 ## Conventions
 
@@ -154,7 +155,7 @@ coc-keeper-kit/
 │   ├── mythos/              ← Great Old Ones, tomes, spells, cults
 │   ├── tables/              ← roll tables, incl. the seed tables intake uses
 │   ├── craft/               ← how to *write* it (rules/ is what the numbers are)
-│   ├── decks/               ← official card decks — cited, local only, not kit canon
+│   ├── decks/               ← official card decks — cited, not kit canon
 │   ├── sourcebooks/         ← official books, transcribed — same rule, bigger
 │   ├── index.json           ← reverse index over both (build-reference-index.py)
 │   └── glossary-zh.md       ← EN ↔ 简体中文 term lock
@@ -166,7 +167,9 @@ coc-keeper-kit/
 │       ├── investigators/   ← <name>.json (source of truth) + <name>.md (rendered card)
 │       └── world/archive/   ← closed arcs' event-clocks; live clock never moves
 │                               (see campaigns/README.md → multi-arc & branching)
-├── .claude/skills/          ← Claude Code wrappers (thin; body lives in core/)
-└── dist/bundle.md           ← build artifact, gitignored: the whole kit minus the
-                                third-party archives, concatenated for upload
+└── .claude/skills/          ← Claude Code wrappers (thin; body lives in core/)
 ```
+
+The kit is read **in place, by an agent with filesystem access** (Claude Code, codex,
+gemini CLI). There is no build step and no single-file export — every path above is meant
+to be opened directly.

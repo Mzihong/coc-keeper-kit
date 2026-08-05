@@ -101,7 +101,7 @@ reference/craft/cult-design-zh.md:68  → "与 P5 的 mermaid 势力图工具合
 - [x] `reference/craft/README.md` 加条目行,并写明本目录**有两类条目**:提炼稿(受
       「取手法不取文字」管)与惯例规范(kit 自订、无源材料)。`reference/README.md` 同步登记
 - [x] 重跑 `build-reference-index.py` → **no problems**,新文件 8 refs / 3 declared
-      consumers,不孤儿;重跑 `build-bundle.sh` → 5400 行 / 60 文件
+      consumers,不孤儿(当时还顺手重跑了 `build-bundle.sh`;该脚本已随 **P13** 删除)
 - [x] `CHANGELOG.md` 追加(更新内容 + 修复问题各一条,并入当天已有的 2026-08-04 条目)
 
 > **阶段 0 于 2026-08-04 完成。** commit hash 待提交后回填到本文件头与
@@ -197,9 +197,9 @@ reference/craft/cult-design-zh.md:68  → "与 P5 的 mermaid 势力图工具合
 ## 收尾
 
 - [x] ~~动过 `core/` / `templates/` / `reference/` → 重跑 `scripts/build-bundle.sh`,同 commit~~
-      —— **该硬约定已于 2026-08-04 作废**(`dist/` 已 gitignore,bundle 是上传前现跑的构建
-      产物,不必与源文件同 commit)。理由见 `reference/README.md`「什么进 `dist/bundle.md`」。
-      **2026-08-04 复评时发现本条是漏改的残留**
+      —— **该硬约定已作废,脚本本身也已删除**(2026-08-04:先是 `dist/` 退出版本控制,
+      随后 **P13** 把整条 bundle 链路退役)。kit 现在没有构建步骤,见
+      `reference/README.md` → 原创 vs 第三方
 - [ ] `render-map.py` 与 `render-investigator.py` 一样,本机可直接跑验证(见备忘)
 - [ ] `CHANGELOG.md` 追加(面向 Keeper:现在场景能带图了,以及玩家版图要主动要)
 - [ ] 走完 `update_plan/README.md` 的完结清单

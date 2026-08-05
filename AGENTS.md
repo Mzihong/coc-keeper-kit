@@ -6,6 +6,9 @@ A preparation workbench for a Call of Cthulhu **Keeper**, for **CoC 7th Edition*
 > Read **`core/00-how-to-run.md`** before doing anything else — it holds the pipeline, the
 > routing table, the ground rules, and the layout. If this file ever disagrees with `core/`,
 > `core/` wins.
+>
+> **The kit is read from disk, in place.** No bundle, no build step, no single-file export —
+> if you cannot open `core/00-how-to-run.md`, say so instead of improvising from this file.
 
 ## Routing — read the spec that matches the request, then follow it
 
@@ -29,20 +32,12 @@ Open the file and follow it to the letter, including its Quality bar.
 | a deck/book/PDF to file, "归档这份资料", loose files in `reference/` | `core/14-archive-reference.md` |
 | closing out a maintenance session on the kit itself, "write a work log", "收尾" | `core/15-close-session.md` |
 
-## Using this in ChatGPT (no repo access)
+## Where the session was started
 
-If you are running as a ChatGPT Project or GPT without the repository mounted, the Keeper
-generates **`dist/bundle.md`** with `bash scripts/build-bundle.sh` and uploads it — the whole
-kit minus the third-party archives, concatenated into one file (`reference/README.md` → 什么进
-bundle). It is not committed, so build it fresh right before uploading. Inside the bundle,
-each file is delimited by:
-
-```
-=== FILE: core/04-design-scenario.md ===
-```
-
-Treat those sections exactly as if they were separate files, and use the same paths when
-telling the Keeper where to save output.
+codex loads only the `AGENTS.md` files at or above its working directory. Started from a
+parent folder, this file never enters context and neither does anything in `core/`. If the
+Keeper's requests read as though the kit isn't loaded, ask which directory they started in
+before improvising.
 
 ## Non-negotiables
 
@@ -87,6 +82,6 @@ Never downgrade an artifact to a summary of an artifact.
 
 ## Portability
 
-This kit is read by Claude, Gemini, and ChatGPT. `CLAUDE.md`, `GEMINI.md`, and `AGENTS.md`
-are three thin adapters over the same `core/`. **When changing how the kit behaves, change
+This kit is read by Claude Code, the Gemini CLI, and codex. `CLAUDE.md`, `GEMINI.md`, and
+`AGENTS.md` are three thin adapters over the same `core/`. **When changing how the kit behaves, change
 `core/` — never a root adapter.**

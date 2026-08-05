@@ -4,8 +4,8 @@ kit 里**所有关系类图示**的画法惯例,供 `core/03-build-world.md`(§�
 §四 区域关系图)、`core/04-design-scenario.md`(§三 场景网)、`templates/cult.md`
 (§二)共用。**一律用 mermaid**,不用 ASCII 拼图、不用生成位图。
 
-**为什么是 mermaid:** GitHub 与 Artifact 原生渲染,三个模型(Claude / Gemini / ChatGPT)
-都会写,改一个节点的 diff 只有那一行——生成位图或手写精细 SVG 三条都做不到。
+**为什么是 mermaid:** GitHub 与 Artifact 原生渲染,三条链路(Claude Code / Gemini CLI /
+codex)都会写,改一个节点的 diff 只有那一行——生成位图或手写精细 SVG 三条都做不到。
 
 建筑内部与野外站点的**平面图**不在本文范围,那是 `scripts/render-map.py` 的活。
 
@@ -66,8 +66,8 @@ graph LR
 
 - 边标签写 **怎么过去 + 花多久**:「步行 20 分钟」「渡船,每日两班」「涨潮时断路」。
   时间和阻断条件是跑团时真正会被问到的东西。
-- 这也是**没有渲染器的环境**(ChatGPT 网页链路)下的地图替代品:出这张图 + 文字地图卡,
-  不要承诺一张画不出来的平面图。
+- 这也是**跑不了 `scripts/render-map.py` 时**(没有 Python、或 Keeper 不想为一张草图开一次
+  渲染)的地图替代品:出这张图 + 文字地图卡,不要承诺一张画不出来的平面图。
 
 ## 五、不要画图的情况
 
@@ -82,5 +82,5 @@ graph LR
 
 **出处:** 本惯例由 P1(邪教文档整合,关系图那一步)与 P5(低成本地图)两个计划合并定案。
 在此之前 `templates/cult.md` 与 `reference/craft/cult-design-zh.md` 曾指向 P5 的计划文件
-当规范,但那是一份 bundle 链路拿不到的 `update_plan/` 文档——**本文件就是来替掉那个
-指向的**。
+当规范,但计划完结后会移进 `update_plan/Archived/`,那个指向当场就烂;何况计划写的是
+**打算怎么做**,不是**现在的规范是什么**——**本文件就是来替掉那个指向的**。

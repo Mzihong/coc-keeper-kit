@@ -6,26 +6,24 @@ Answer as many or as few questions as you like — down to none at all — and g
 world, an event clock, a cast, and then session scenarios generated against them that stay
 consistent from session 1 to session 20.
 
-Works with **Claude**, **Gemini**, and **ChatGPT**: all the instructions live in `core/`, and
-`CLAUDE.md` / `GEMINI.md` / `AGENTS.md` are thin adapters over the same content.
+**Open this repo with an agent that can read files** — Claude Code, codex, or the Gemini CLI.
+All the instructions live in `core/`; `CLAUDE.md` / `GEMINI.md` / `AGENTS.md` are thin
+adapters over the same content, one per tool. There is no build step and nothing to upload.
 
 ## Quick start
 
-### Claude Code
-Open this folder and say what you want. Skills load automatically.
+Open this folder and say what you want. The adapter routes the request to the right `core/`
+spec; under Claude Code the matching skill loads automatically.
+
 ```
 "I want to start a new campaign"        → start-campaign
 "design a one-shot about a missing lighthouse keeper"
 "we finished session 3, here's what happened"
 ```
 
-### Gemini CLI
-Open this folder. `GEMINI.md` routes each request to the right `core/` spec.
-
-### ChatGPT (Projects / custom GPT)
-Run `bash scripts/build-bundle.sh`, upload the **`dist/bundle.md`** it writes — the whole kit
-in one file — and paste `AGENTS.md` into the project instructions. Ask for output, then save
-what it prints into the paths it names.
+**Start the agent in this folder, not in a parent directory** — codex only loads the
+`AGENTS.md` files at or above its working directory, so starting one level up leaves the kit
+out of context entirely.
 
 ## The flow
 
@@ -72,7 +70,6 @@ start-campaign  →  world  →  event clock  →  cast
 | `reference/` | Shared canon: 7e cheat-sheets, bestiary, Mythos lore, roll tables, `glossary-zh.md`. Third-party material you supply is filed and cited in `decks/` and `sourcebooks/`, indexed by `reference/index.json`. |
 | `templates/` | The blank shapes each spec fills in. |
 | `campaigns/` | One folder per game, plus `_template-campaign/` to copy. |
-| `dist/bundle.md` | Build artifact, gitignored — generate it with `scripts/build-bundle.sh` when you need to upload the kit somewhere. |
 
 ## Language
 
@@ -93,15 +90,12 @@ is; foreign names get transliterated by a fixed rule, not routed around — see
 **Change `core/`, never a root adapter.** The adapters exist so three models read one source;
 an instruction added to only `CLAUDE.md` is a bug the other two won't follow.
 
-`dist/bundle.md` needs no maintenance — it isn't committed. Generate it fresh whenever you
-are about to upload the kit:
+There is nothing to build. Every file is read in place, so editing a spec takes effect the
+next time an agent opens the folder.
 
-```bash
-bash scripts/build-bundle.sh
-```
-
-What it packs and what it deliberately leaves out is one rule, in `reference/README.md`
-→ 什么进 bundle: the kit's own work ships, third-party archives never do.
+Official material you file under `reference/decks/` and `reference/sourcebooks/` is cited
+source material, not kit canon: a spec may read it freely, but what reaches a `campaigns/`
+folder is written fresh — one rule, in `reference/README.md` → 原创 vs 第三方.
 
 ## Notes
 

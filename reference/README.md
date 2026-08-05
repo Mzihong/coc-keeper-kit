@@ -72,30 +72,30 @@ in `campaigns/<slug>/`, not here.
   the text. Treat it the same way you'd treat a physical bookshelf: read it, then write
   original content informed by it.
 
-## 什么进 `dist/bundle.md`
+## 原创 vs 第三方
 
-**一条线,不用逐目录记:kit 自己写的进,第三方转录的不进。**
+**一条线,不用逐目录记:kit 自己写的,和别人写的、我们转录来查的。**
 
-| 进 bundle | 不进 |
+| kit 原创 | 第三方 |
 |---|---|
 | `rules/` `craft/` `tables/` `bestiary/` `mythos/` `glossary-zh.md` `README.md`(本文件) | `decks/` `sourcebooks/` `og_Norval/` `external/` `_source/` |
 
-理由是同一条,不是体量:bundle 是给**没有仓库**的 ChatGPT/Gemini Keeper 上传用的副本,
-把第三方原文放进去就是再分发,撞 `core/00-how-to-run.md` 的「非商用、不再分发」。
-体量只是附带结果——`sourcebooks/` + `og_Norval/` 合计七百多万字符,本来也塞不进去。
+**这条线管的是「能不能搬进 `campaigns/`」,不是「能不能读」。** 右列的东西 spec 可以
+直接读、直接依赖——它们就在仓库里(`_source/` 除外,那是本地原件,见下)。区别在产出:
 
-由此得出**写 spec 时唯一要记的那条**:
+- **版权。** kit 的定位是「面向持有正版的 KP、不盈利、不用于传播」。右列是别人的作品,
+  我们转录来查、标明出处;**规则内容**(数值、机制、法术耗费、武器伤害)可以直接引用,
+  **虚构散文**(小说、战役文本、具名角色)只取手法不取文字——见
+  `core/00-how-to-run.md` → ground rules。
+- **牌桌。** 更实际的一条:搬来的 NPC 是**别人都知道底牌的人**。玩家读过那本书,
+  你的悬念就没了。所以进 `campaigns/` 的内容一律自己写。
 
-> 指向右列任何目录的引用,一律写成可选(“if present locally”)。任何 spec 都不得把它
-> 当前置依赖,否则 bundle 链路的 Keeper 会被指去读一份他拿不到的文件。
+对应的正解是**写一层原创提炼稿**:`og_Norval/` 82 篇 → `craft/lovecraft-zh.md`,
+`sourcebooks/malleus-monstrorum-zh.md` 223 条 → `tables/monster-index.md`。提炼稿是
+kit 自己的话,可以随便进 `campaigns/`;原文留在右列供对账。
 
-对应的正解是**提炼层进 bundle、本体留本地**:`og_Norval/` 82 篇 → `craft/lovecraft-zh.md`,
-`sourcebooks/malleus-monstrorum-zh.md` 223 条 → `tables/monster-index.md`。要让 bundle 链路
-用上一份第三方资料,做法是给它写一份原创提炼稿,而不是把原文塞进 bundle。
-
-`dist/` **不入库**(见 `.gitignore`)。bundle 是构建产物,上传前跑一次
-`bash scripts/build-bundle.sh` 现生成即可——所以改完 `core/`/`templates/`/`reference/`
-**不需要**重建它,也不需要把它和源文件放进同一个 commit。
+**唯一真正拿不到的是 `_source/`** —— 那是整目录 gitignore 的本地原件(PDF、docx 与从中
+抽出的图),clone 下来没有。指向它的引用必须写成可选;指向其余第三方目录的不必。
 
 **Filing new third-party material** — a deck, a book, a converted PDF — goes through
 `core/14-archive-reference.md` (skill: `archive-reference`). It covers classification, naming,

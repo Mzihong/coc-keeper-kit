@@ -41,29 +41,26 @@ reference/          跨战役共享
   ├ bestiary/ mythos/ tables/   原创可复用素材
   ├ decks/          官方卡组转录(第三方、带引用出处)
   ├ sourcebooks/    官方书籍全文转录(同上,体量更大)
-      ↑ 上面五个原创目录进 bundle,下面两个第三方目录不进——通则见 reference/README.md
+      ↑ 上面五个是 kit 原创,下面两个是第三方转录——通则见 reference/README.md
   ├ index.json      七个目录的反向索引 + 校验(脚本生成,各目录另有一份)
   ├ og_Norval/      洛夫克拉夫特全集 82 篇 → 提炼稿 craft/lovecraft-zh.md
   └ glossary-zh.md  中文术语锁,写中文必查(脊梁文件,故意留在根目录)
 campaigns/          一战役一目录,_template-campaign/ 是模板
-update_plan/        P1–P9 改动计划 + 完结清单;README.md 是状态索引
-scripts/            build-bundle.sh · render-investigator.py · build-reference-index.py
-dist/               构建产物,**已 gitignore**。要上传给 ChatGPT/Gemini 时现跑
-                    build-bundle.sh 生成 bundle.md,不提交、不需要跟源文件同步
+update_plan/        P1–P14 改动计划 + 完结清单;README.md 是状态索引
+scripts/            render-investigator.py · build-reference-index.py
 ```
+
+**没有构建产物,也没有构建步骤。** kit 由能读文件的 agent 就地读取(Claude Code /
+codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-04 退役(P13)。
 
 ## 硬约定(踩了就是 bug)
 
 1. **改行为改 `core/`,不改根适配器**;但 `CLAUDE.md`/`GEMINI.md`/`AGENTS.md` 三份必须一致,
    只存在于一份里的指令本身就是 bug。
-2. **`dist/` 不入库,改完源文件不需要重建 bundle。** bundle 是上传前现跑的构建产物,
-   不是要跟 `core/` 同步的仓库文件。**什么进 bundle 只有一条线——kit 自己写的进,
-   第三方转录的不进**,理由与推论写在 `reference/README.md` → 什么进 bundle,
-   别在各目录 README 里重述。
-3. **每次改动在 `CHANGELOG.md` 追加**;同一天合并进同一条,不新开。
-4. **文件名一律英文 ASCII `kebab-case.md`**,哪怕内容是中文。
-5. **输出语言按战役声明**,kit 脚手架和文件名保持英文;写中文查 `reference/glossary-zh.md`。
-6. **转载规则(2026-08-02 立,2026-08-03 二次放宽)**:官方资料**可以收录**进
+2. **每次改动在 `CHANGELOG.md` 追加**;同一天合并进同一条,不新开。
+3. **文件名一律英文 ASCII `kebab-case.md`**,哪怕内容是中文。
+4. **输出语言按战役声明**,kit 脚手架和文件名保持英文;写中文查 `reference/glossary-zh.md`。
+5. **转载规则(2026-08-02 立,2026-08-03 二次放宽)**:官方资料**可以收录**进
    `reference/decks/`、`sourcebooks/`,文件末尾必须有 `## 引用出处` 表。
    **2026-08-03 改动**:原来那条"只取结构和数值刻度,不取文字"**已作废**——
    kit 自己的 `reference/` 文件**可以引用或转录官方规则内容**(属性行、法术耗费、
@@ -78,12 +75,13 @@ dist/               构建产物,**已 gitignore**。要上传给 ChatGPT/Gemini
    → 仍然**取手法不取文字**,`craft/README.md` 与 `reference/README.md` 已写明放宽不适用;
    **③ 具名角色 + 绑定商业产品**(如 `cultist-archetypes.md` 里那位"卡尔·斯坦福")
    → 仍不收录。
-7. **归档件不进 bundle**(硬约定 2 的推论),所以任何 spec 引用它们都必须写成可选
-   ("if present locally"),不得当前置依赖。
+   **这条线管的是「能不能搬进 `campaigns/`」,不是「能不能读」**——归档件就在仓库里,
+   spec 可以直接读、直接依赖(2026-08-04 P13 改)。唯一真正拿不到的是整目录 gitignore 的
+   `reference/_source/`,指向它的引用仍写成可选。
 
 ## 当前状态(2026-08-04)
 
-计划 P1–P9 的权威状态在 `update_plan/README.md` 的状态索引表,**不要在这里读状态**,
+各计划的权威状态在 `update_plan/README.md` 的状态索引表,**不要在这里读状态**,
 只记几条容易漏的:
 
 - **P1/P2/P3/P4/P6 均已归档**(P1 的阶段 0-2 与阶段 3 收尾两份计划都已进 `Archived/`)。
@@ -110,7 +108,7 @@ dist/               构建产物,**已 gitignore**。要上传给 ChatGPT/Gemini
     `parse_malleus_entries()`(从转录稿抽取全部 223 条的名称/tier/SAN/锚点)+
     `build_monster_index()`(合并 `reference/tables/monster-index-data.json` 里人写的
     223 条 `Serves`/摘要,再被匹配到的 `reference/bestiary/*.md` 条目覆盖),生成
-    `reference/tables/monster-index.md`(进 bundle)。校验和缺引用出处同级——
+    `reference/tables/monster-index.md`。校验和缺引用出处同级——
     `Serves`/摘要留空就报错。现有 9 只 bestiary 条目已按新标尺重标,`cthulhu.md`
     补了反向的眷族/仆从小节,`core/07`/`core/04` 已接线检索入口。
   - **阶段 C**(神格铺设,2026-08-04):新增 5 个神格页(`reference/mythos/great-old-ones/`
@@ -126,12 +124,22 @@ dist/               构建产物,**已 gitignore**。要上传给 ChatGPT/Gemini
     Star-Steeds` / `Deep One, Gilled Humanoid`)绕开阈值,没有改动共享的匹配算法本身——
     若以后再遇到同类短名字(如未来给"修格斯"单独立档),同一手法可以复用,也可以考虑
     把算法的阈值本身放宽,但那需要针对全部 223 条重新跑一遍回归检查,本轮范围内没做。
+- **P13(bundle 退役)已完成并归档(2026-08-04)。** 这条改的是 kit 的分发形态,接手时
+  必须知道三件事:①**没有构建步骤了**——`scripts/build-bundle.sh` 与 `dist/` 已删,
+  `.gitignore` 的 `/dist/` 一行也删了;②**硬约定重新编号**,旧 2(什么进 bundle)与
+  旧 7(归档件不进 bundle)整条删除,原 3–6 上移成 2–5,**按号引用时先数一遍**;
+  ③**归档件可以被 spec 直接依赖了**——全仓 10 处 `if present locally` / `local only`
+  已回收,唯一仍写成可选的是整目录 gitignore 的 `reference/_source/`。
+  计划文件与执行记录在 `update_plan/Archived/2026-08-04-retire-bundle.md`。
+  **一处留给 P12 的坑**:P12 阶段 1.2 要 `git rm --cached` 规则书,那之后
+  `keeper-rulebook-7e-zh.md` 又变成本地若有——**正解是照 P12 计划把 `core/02` 那段整体
+  降级,不是把刚拿掉的 hedge 加回去**。
 - **活动计划现在是三条:P5 + 新立的 P10、P11(2026-08-04)。** P10 = 阿卡姆资料提炼成
   `craft/town-anatomy-zh.md` 城镇解剖手法稿;**P11 = 年代开放**——目标是「KP 报哪个年代
   都能开团」这项能力,不是预挑几个年代建包:`reference/rules/eras/<era>.md` 只写与
   1920s 基准的差集(书里覆盖的全建)、战役声明式加载,**外加书里没覆盖的年代按差集写法
   现场推导的兜底路径**(路径 B,`core/01` 要当场告诉 KP 走的是哪条)。
-  两份都**不是**"把资料原样收进来":P10 的源材料是虚构内容,受硬约定 6 的三分法 ②③ 管,
+  两份都**不是**"把资料原样收进来":P10 的源材料是虚构内容,受硬约定 5 的三分法 ②③ 管,
   只能取手法;P11 的源材料是规则内容,可转录标出处。**两个计划的阶段 0 都是"转换+勘察",
   不需要 Keeper 拍板就能动。**
 - **P10 阶段 0 已完成(2026-08-04,13821ac),复杂度降到三条计划里最低。** docx 已转
@@ -160,8 +168,8 @@ dist/               构建产物,**已 gitignore**。要上传给 ChatGPT/Gemini
   且原 §三/§四 是在重复 `core/03` 已有的 Layered secrets 与 3–5 notable NPCs,已换定义。
 - **新硬约定(2026-08-04,由上面那处悬空引用倒逼出来):`reference/craft/README.md`
   「写一份新的」第 5 步「术语自足」**——写 `craft/` 下的新文件时,**每个加粗术语落盘前
-  确认仓库里有定义**,没有就当场定义或删掉那句,**不许指向 `update_plan/`**(计划文档不进
-  bundle)。两类条目都管。**为什么需要它:`build-reference-index.py` 与完结清单查的都是
+  确认仓库里有定义**,没有就当场定义或删掉那句,**不许指向 `update_plan/`**(计划完结后
+  会移进 `Archived/`,链接当场就烂)。两类条目都管。**为什么需要它:`build-reference-index.py` 与完结清单查的都是
   文件级引用与孤儿,一个没有路径的裸名词对两者都不可见**,踩了照样报 no problems。
 - **P11 阶段 0–2 已完成(2026-08-04,13821ac)——年代开放从计划变成了实际能用的六个年代
   包。** 文件清单见 `git show 13821ac`。**同日复评又发现阶段 2 的接线漏了三处**,已单列成
@@ -196,8 +204,8 @@ dist/               构建产物,**已 gitignore**。要上传给 ChatGPT/Gemini
   ③ **室外站点图复用同一渲染器**(房间数组为空、只有图元层),只新增折线与指北针约 20 行,
   **不另造文字格式**——省的不只是代码,是不用再教模型第三种写法。
   **P5 阶段 0 是还债**:`templates/cult.md:42` 与 `reference/craft/cult-design-zh.md:68`
-  两个进 bundle 的文件把 P5 计划文件当 mermaid 规范引用,但那份规范不存在,且
-  `update_plan/` 不进 bundle——ChatGPT 链路的 KP 被指去查一份拿不到的空文件。
+  两个生产文件把 P5 计划文件当 mermaid 规范引用,但那份规范不存在,而且计划完结后会
+  移进 `Archived/`,链接当场就烂。
 - **`reference/bestiary/` 现有条目的实测分布(P9 阶段 A 的主要依据,2026-08-03 复查时
   仅有 9 只)**:threat 当时 8/9 都是 `deadly`(`trivial`/`mythic` 从未用过),
   type 六类里 `beast`/`undead`/`great-old-one`/`human` 从未被单独用过。阶段 C 新增
@@ -208,10 +216,9 @@ dist/               构建产物,**已 gitignore**。要上传给 ChatGPT/Gemini
   奈亚拉托提普、莎布-尼古拉斯、犹格-索托斯五位主要外神现在都有独立的 `great-old-ones/`
   页面与至少一只眷族/化身的完整 bestiary 条目。伊格等仍缺文件——kit 仍以克苏鲁系为主,
   但不再是"只有克苏鲁一个入口"。
-- **`bestiary/` 与 `mythos/` 已于 2026-08-04 收进 bundle**(此前不收,是白名单漏项而非
-  设计)。走 ChatGPT 链路的 KP 现在拿得到完整 stat block 与神格档案,不再只有
-  `monster-index.md` 那一行摘要。仍然拿不到的是 223 条 malleus 转录稿本体——那是
-  第三方资料,`monster-index.md` 就是它唯一的对外通道,这一条是设计如此。
+- **`monster-index.md` 与 malleus 转录稿的关系已不再是「对外通道」。** P13 之后所有
+  归档件都在仓库里、spec 可以直接读,索引的作用回归本职:**223 条几百万字符的书没人
+  每次整份读**,索引是那份体量的检索层,不是分发替代品。
 - **三份 sourcebook 的手动重译已提交落地**(9c47d98);误建的空文件
   `reference/sourcebooks/新建 Text Document.txt` 已核实不存在(已清理或从未提交)。
   仍未清的账:P7 计划第 5 行的行数(写 13731,现为 5365)、`sourcebooks/index.json`
@@ -236,33 +243,14 @@ dist/               构建产物,**已 gitignore**。要上传给 ChatGPT/Gemini
 
 ## 会话记录
 
-### 2026-08-04 — 默认舞台改为美国(次选日本),外文专名译写落表【未提交】
+本节**只保留未提交的工作**。当前无未提交条目——P13(bundle 退役)已随 014ffe6 落地,
+「默认舞台改为美国」已随 d481713 落地,两条记录按 `core/15-close-session.md` 的
+"Prune before you add" 删除。
 
-**做了什么**(7 个文件,全部未提交):
+同理,P9 阶段 A+B 的落地细节(索引脚本怎么解析转录稿、踩过的名称解析坑、9 只 bestiary
+条目的改判理由)已随 commit 059ba63 落地,理由本身也直接写在了改动的文件里(各 bestiary
+条目的 header、脚本的函数注释),不在这里重复背一份——要看当时怎么想的,
+`git show 059ba63` 或翻对应文件即可。
 
-- `core/01-intake.md` — Auto-fill 默认值表的「Era & place」行重写:原来的规则是
-  **地点跟输出语言走**(简体中文 → 北戴河/香港/上海/厦门),现在改成**地点跟类型走**——
-  首选美国,次选日本,中国与其他地方一律要 Keeper 点名。同一份文件的「反套路」一节加了
-  一条:**默认美国不等于默认阿卡姆**,默认给的是国家,镇子仍要掷 `locations.md` 后自造。
-- `reference/glossary-zh.md` — 新增 `## 外文专名的译写(人名 · 地名 · 机构名)`(在
-  「常用法术」与「年代包专属术语」之间),四条:表内已锁的照抄 / 通行译名优先 /
-  首次出现括注原文 / 日本名写汉字不经英文音译。
-- `core/03`(地名)、`core/06`(人名)的 Output 节、`core/11` 的 Language 检查表各接一条
-  指向该节。`README.md` 的 Language 节与 `reference/README.md` 的 glossary 条目同步。
-- `CHANGELOG.md` 补进 2026-08-04 条目的「更新内容」。
-
-**为什么这么分**:原默认值那句话是**带理由的**——「简体中文战役默认新英格兰会让每个 NPC
-名字都变成翻译问题」。只删默认不答那个理由,等于把问题丢给每次生成现场即兴翻译,正是
-`glossary-zh.md` 存在要防的事。所以译写规则必须同批落表,否则这次改动是半件。
-
-**留下的判断**:`core/09:94`(1920s 上海 vs 当代香港的语域对比)和 `core/10:31`(1930s
-上海报纸剪报的直排/民国纪年)两处仍以中国为例——它们是**举例**不是默认值,举例本身没错,
-故未改。真要举美国例子的话,`core/10` 那条第四点(「作者本来就不会用输出语言写作」的
-挪威寡妇日记)已经覆盖了美国背景+中文战役这个现在最常见的组合,不缺路径。
-
-提交后按 `core/15-close-session.md` 的 "Prune before you add" 删掉本条。P9 阶段 A+B 的落地细节
-(索引脚本怎么解析转录稿、踩过的名称解析坑、9 只 bestiary 条目的改判理由)已随
-commit 059ba63 落地,理由本身也直接写在了改动的文件里(各 bestiary 条目的 header、
-脚本的函数注释),不在这里重复背一份——要看当时怎么想的,`git show 059ba63` 或翻
-对应文件即可。开一段新的维护会话、做了还没提交的改动时,在这里加一条(格式参考
+开一段新的维护会话、做了还没提交的改动时,在这里加一条(格式参考
 `core/15-close-session.md`);一旦对应 commit 落地,收尾时把这条记录删掉,不留存档。

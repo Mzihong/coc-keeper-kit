@@ -67,11 +67,6 @@ ORIGINAL_DIRS = [
     ("tables", "roll tables for prep and live improv, including the four seed tables"),
 ]
 
-# Every kit-original directory ships in dist/bundle.md; the third-party archives (decks/,
-# sourcebooks/) never do. One rule, stated in reference/README.md → 什么进 bundle.
-ORIGINAL_IN_BUNDLE = {"rules": True, "craft": True, "bestiary": True,
-                      "mythos": True, "tables": True}
-
 # Whether "nothing references this file" is a defect. For rules/ and tables/ it is — a
 # cheat-sheet or table no spec reads is dead weight the generators will never load. For
 # bestiary/ and mythos/ it is not: those are content libraries the Keeper draws from by
@@ -499,7 +494,6 @@ def build():
             "governed_by": "reference/%s/README.md" % dirname,
             "citation_rule": "every file ends with a `## 引用出处` block; no citation, no file",
             "usage_rule": "take structure and scale, never text (core/00-how-to-run.md)",
-            "in_bundle": False,
             "generated_by": "scripts/build-reference-index.py — do not edit by hand",
             "entry_count": len(entries),
             "entries": entries,
@@ -527,7 +521,6 @@ def build():
             "governed_by": "reference/%s/README.md" % dirname,
             "citation_rule": None,
             "usage_rule": "authored by this kit — read and used directly, no citation required",
-            "in_bundle": ORIGINAL_IN_BUNDLE.get(dirname, False),
             "generated_by": "scripts/build-reference-index.py — do not edit by hand",
             "entry_count": len(entries),
             "entries": entries,
@@ -572,7 +565,6 @@ def build():
                 "directory": d["directory"],
                 "role": d["role"],
                 "kind": d["kind"],
-                "in_bundle": d["in_bundle"],
                 "entry_count": d["entry_count"],
                 "index": "%s/index.json" % d["directory"],
                 "files": [e["path"] for e in d["entries"]],

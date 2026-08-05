@@ -5,7 +5,6 @@
   "governed_by": "reference/sourcebooks/README.md",
   "citation_rule": "every file ends with a `## 引用出处` block; no citation, no file",
   "usage_rule": "take structure and scale, never text (core/00-how-to-run.md)",
-  "in_bundle": false,
   "generated_by": "scripts/build-reference-index.py — do not edit by hand",
   "entry_count": 3,
   "entries": [
@@ -23,13 +22,13 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 214,
+          "line": 221,
           "context": "- P7 魔法速查阻塞解除(转换稿已归档为 `grand-grimoire-zh.md`)。"
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 70,
-          "context": "`reference/sourcebooks/grand-grimoire-zh.md` is the official grimoire, if you have it locally."
+          "line": 71,
+          "context": "`reference/sourcebooks/grand-grimoire-zh.md`, the official grimoire."
         },
         {
           "file": "core/07-create-monster.md",
@@ -39,12 +38,12 @@
         {
           "file": "reference/mythos/README.md",
           "line": 23,
-          "context": "`reference/sourcebooks/grand-grimoire-zh.md` (the official grimoire, 550+ spells) — local"
+          "context": "`reference/sourcebooks/grand-grimoire-zh.md` (the official grimoire, 550+ spells). Take the"
         },
         {
           "file": "reference/rules/character-creation.md",
           "line": 276,
-          "context": "| **法术型**(施法、通神类首领) | 按资历掷 `1D4+1`(年轻)/ `1D6+1D4+2`(标准)/ `3D6+4`(成熟)/ `4D6+10`(古老)条法术;法术本身的 MP/SAN 成本查 `reference/sourcebooks/grand-grimoire-zh.md`(若本地存在) | 法术数"
+          "context": "| **法术型**(施法、通神类首领) | 按资历掷 `1D4+1`(年轻)/ `1D6+1D4+2`(标准)/ `3D6+4`(成熟)/ `4D6+10`(古老)条法术;法术本身的 MP/SAN 成本查 `reference/sourcebooks/grand-grimoire-zh.md` | 法术数量 + 随之水"
         },
         {
           "file": "reference/rules/magic.md",
@@ -55,6 +54,11 @@
           "file": "reference/tables/cultist-archetypes.md",
           "line": 266,
           "context": "`reference/sourcebooks/grand-grimoire-zh.md`;请神术的父神达贡/母神海德拉版本是本轮"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 416,
+          "context": "6. **不做的事**:`grand-grimoire-zh.md`、`malleus-monstrorum-zh.md` 两份**不动**。"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -82,7 +86,7 @@
           "context": "| P7 | [magic-quickref](2026-08-02-magic-quickref.md) | 魔法速查 `reference/rules/magic.md`:施法通则(消耗记法、施法用时、POW 对抗)、按 `grand-grimoire-zh.md` 抽样得出的四档消耗区间(小术/中术/大术/仪式级"
         }
       ],
-      "reference_count": 12,
+      "reference_count": 13,
       "cited": true,
       "provenance": {
         "work": "《克苏鲁神话魔法大典》(The Grand Grimoire of Cthulhu Mythos Magic)",
@@ -98,7 +102,7 @@
       "file": "keeper-rulebook-7e-zh.md",
       "path": "reference/sourcebooks/keeper-rulebook-7e-zh.md",
       "title": "克苏鲁的呼唤 第七版规则书 — 官方规则书全文(中译收录)",
-      "lines": 17470,
+      "lines": 17378,
       "declared_consumers": [
         "core/02-rules-reference.md",
         "reference/rules/character-creation.md",
@@ -108,12 +112,17 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 96,
+          "line": 94,
           "context": "- **`reference/sourcebooks/keeper-rulebook-7e-zh.md`(规则书全文重译,17470 行)已确认"
         },
         {
           "file": "WORKLOG.md",
-          "line": 141,
+          "line": 135,
+          "context": "`keeper-rulebook-7e-zh.md` 又变成本地若有——**正解是照 P12 计划把 `core/02` 那段整体"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 149,
           "context": "便宜,`keeper-rulebook-7e-zh.md` 那笔\"单文件只能 grep\"的教训不适用;"
         },
         {
@@ -142,6 +151,46 @@
           "context": "深潜者召唤/束缚术。数值查 `reference/sourcebooks/keeper-rulebook-7e-zh.md` /"
         },
         {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 7,
+          "context": "> Cheat Sheet;`reference/sourcebooks/keeper-rulebook-7e-zh.md` 不再放入库,这会导致"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 9,
+          "context": "> 资料:`reference/sourcebooks/keeper-rulebook-7e-zh.md`(17,377 行 / 1.4 MB,已在本地)"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 16,
+          "context": "今天查一条战斗规则的代价是:`core/02` 说速查表说不清就回 `keeper-rulebook-7e-zh.md`"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 28,
+          "context": "| `keeper-rulebook-7e-zh.md` | 17,377 行 / 1.4 MB | 无标题结构,grep 命中后按行号硬读上下文,一次几千到几万 token |"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 96,
+          "context": "`reference/sourcebooks/keeper-rulebook-7e-zh.md`,行号为 2026-08-04 实测。"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 217,
+          "context": "`reference/sourcebooks/keeper-rulebook-7e-zh.md` 于 **2026-08-02 12:26(39d1625)**"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 354,
+          "context": "- [ ] `git rm --cached reference/sourcebooks/keeper-rulebook-7e-zh.md`"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 355,
+          "context": "- [ ] `.gitignore` 加 `/reference/sourcebooks/keeper-rulebook-7e-zh.md`"
+        },
+        {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
           "line": 83,
           "context": "§0;`keeper-rulebook-7e-zh.md` 那笔教训不适用于本文档"
@@ -167,12 +216,17 @@
           "context": "`reference/sourcebooks/keeper-rulebook-7e-zh.md`(规则书原文转录)已在本地存在,"
         },
         {
+          "file": "update_plan/Archived/2026-08-04-retire-bundle.md",
+          "line": 161,
+          "context": "`keeper-rulebook-7e-zh.md`,那之后规则书**又变成本地若有**。P12 计划的引用表已经写着"
+        },
+        {
           "file": "update_plan/Archived/README.md",
           "line": 18,
           "context": "| P7 | [magic-quickref](2026-08-02-magic-quickref.md) | 魔法速查 `reference/rules/magic.md`:施法通则(消耗记法、施法用时、POW 对抗)、按 `grand-grimoire-zh.md` 抽样得出的四档消耗区间(小术/中术/大术/仪式级"
         }
       ],
-      "reference_count": 13,
+      "reference_count": 23,
       "cited": true,
       "provenance": {
         "work": "《克苏鲁的呼唤》第七版规则书(Call of Cthulhu 7th Edition Keeper Rulebook)",
@@ -198,7 +252,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 141,
+          "line": 148,
           "context": "- **怪物图鉴换了一份干净得多的转录稿。** `reference/sourcebooks/malleus-monstrorum-zh.md`"
         },
         {
@@ -218,8 +272,8 @@
         },
         {
           "file": "reference/README.md",
-          "line": 93,
-          "context": "`sourcebooks/malleus-monstrorum-zh.md` 223 条 → `tables/monster-index.md`。要让 bundle 链路"
+          "line": 94,
+          "context": "`sourcebooks/malleus-monstrorum-zh.md` 223 条 → `tables/monster-index.md`。提炼稿是"
         },
         {
           "file": "reference/bestiary/black-pharaoh.md",
@@ -254,7 +308,7 @@
         {
           "file": "reference/bestiary/README.md",
           "line": 23,
-          "context": "Work from `reference/sourcebooks/malleus-monstrorum-zh.md` (the official creature compendium,"
+          "context": "Work from `reference/sourcebooks/malleus-monstrorum-zh.md` (the official creature compendium)"
         },
         {
           "file": "reference/mythos/great-old-ones/cthulhu.md",
@@ -299,7 +353,7 @@
         {
           "file": "reference/rules/monster-scale.md",
           "line": 4,
-          "context": "> Distilled by sampling `reference/sourcebooks/malleus-monstrorum-zh.md` (local only)"
+          "context": "> Distilled by sampling `reference/sourcebooks/malleus-monstrorum-zh.md`"
         },
         {
           "file": "reference/tables/monster-index-data.json",
@@ -1393,23 +1447,33 @@
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 220,
+          "line": 215,
           "context": "MALLEUS_PATH = os.path.join(REF, \"sourcebooks\", \"malleus-monstrorum-zh.md\")"
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 268,
+          "line": 263,
           "context": "\"\"\"Scaffold the 223 stat-block entries in malleus-monstrorum-zh.md: name (CN/EN), the"
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 399,
+          "line": 394,
           "context": "source=\"`reference/sourcebooks/malleus-monstrorum-zh.md`:%d\" % e[\"line\"])"
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 437,
+          "line": 432,
           "context": "\"`reference/sourcebooks/malleus-monstrorum-zh.md`(223 条)生成,外加 \""
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 380,
+          "context": "- [ ] `monster-scale.md`(149 行)← 第十四章 10030 起(与 `malleus-monstrorum-zh.md` 分工:"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 416,
+          "context": "6. **不做的事**:`grand-grimoire-zh.md`、`malleus-monstrorum-zh.md` 两份**不动**。"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -1437,7 +1501,7 @@
           "context": "Keeper 交付了 `reference/sourcebooks/malleus-monstrorum-zh.md` 的重排版转录稿"
         }
       ],
-      "reference_count": 248,
+      "reference_count": 250,
       "cited": true,
       "provenance": {
         "work": "《怪物之锤》(Malleus Monstrorum)",

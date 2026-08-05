@@ -10,10 +10,11 @@ tell — mechanically correct for 7e.
 - Read the campaign `CLAUDE.md` for era/tone/output language; match name, dress, speech, and
   job to the era and the place. Check `canon-log.md` — this person may already exist.
 - Use `templates/npc.md`.
-- **If `reference/decks/busybodies-zh.md` is present, skim the card closest to this NPC's
-  job before writing the stat block.** 47 official 1920s NPC cards — use them to calibrate:
-  what EDU an antiquarian actually carries, where a zealot's Intimidate sits, which six or
-  seven skills a card bothers to list. Optional, not a dependency: the deck is a local file.
+- **Skim the card closest to this NPC's job in `reference/decks/busybodies-zh.md` before
+  writing the stat block.** 47 official 1920s NPC cards — use them to calibrate: what EDU an
+  antiquarian actually carries, where a zealot's Intimidate sits, which six or seven skills a
+  card bothers to list. The names, backstories, and secrets stay in the deck; only the scale
+  comes across.
 
 ## Ask (or infer sensibly)
 
@@ -66,8 +67,8 @@ backstory, and backstory doesn't survive contact with a table.
 - List **only skills likely to matter** at 7e values (e.g. Persuade 60, Spot Hidden 45,
   Fighting (Brawl) 45, Firearms (Handgun) 35). Non-combatants: note it and skip the weapons.
 - Villains/cultists: consider Cthulhu Mythos %, spells (cross-link `reference/mythos/`), and
-  the SAN implications of what they've done. For actual spell numbers,
-  `reference/sourcebooks/grand-grimoire-zh.md` is the official grimoire, if you have it locally.
+  the SAN implications of what they've done. For actual spell numbers, look them up in
+  `reference/sourcebooks/grand-grimoire-zh.md`, the official grimoire.
 - **A cult leader or other human antagonist meant to be stronger than an ordinary person**
   is not a separate power tier — it's `reference/rules/character-creation.md` §11: the same
   baseline (busybodies deck) plus one increment (spell count for a spellcaster, gear price

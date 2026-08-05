@@ -7,6 +7,9 @@ A preparation workbench for a Call of Cthulhu **Keeper**, for **CoC 7th Edition*
 > routing table, the ground rules, and the layout. If this file ever disagrees with `core/`,
 > `core/` wins.
 >
+> **The kit is read from disk, in place.** No bundle, no build step, no single-file export —
+> if you cannot open `core/00-how-to-run.md`, say so instead of improvising from this file.
+>
 > **Working *on* the kit rather than with it?** Read `WORKLOG.md` too — structure, hard
 > conventions, where the plans currently stand. It exists so you don't have to re-derive the
 > layout by walking the tree. It's a digest, not authority: `core/` still wins.
@@ -77,7 +80,7 @@ the skill, read the spec it names, follow the spec. Never generate from the wrap
 
 ## Portability
 
-This kit is read by Claude, Gemini, and ChatGPT. `CLAUDE.md`, `GEMINI.md`, and `AGENTS.md`
-are three thin adapters over the same `core/`. **When changing how the kit behaves, change
+This kit is read by Claude Code, the Gemini CLI, and codex. `CLAUDE.md`, `GEMINI.md`, and
+`AGENTS.md` are three thin adapters over the same `core/`. **When changing how the kit behaves, change
 `core/` — never a root adapter.** An instruction that exists in only one adapter is a bug:
 the other two models will not follow it.

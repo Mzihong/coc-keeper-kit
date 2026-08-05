@@ -38,7 +38,7 @@ live through it. In CoC the monster is usually an obstacle to survive, not a bos
   villain is built with `reference/rules/character-creation.md` §11 (baseline + increment),
   not this spec's type/threat scale.
 - Use `templates/monster.md`.
-- **Source material, if present locally** (neither is a dependency):
+- **Source material — read the relevant one before inventing numbers:**
   `reference/sourcebooks/malleus-monstrorum-zh.md` is the official creature
   compendium — read the nearest published entry to calibrate stat scale, armour, and SAN cost
   before inventing your own; its stat tables are clean, but check its own header for the

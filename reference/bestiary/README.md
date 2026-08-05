@@ -20,8 +20,8 @@ what's been built).
 conditions, signs, how a cult worships it), not a stat card. Those live in
 `reference/mythos/great-old-ones/`, per `core/07-create-monster.md`.
 
-Work from `reference/sourcebooks/malleus-monstrorum-zh.md` (the official creature compendium,
-local only) — read the nearest published entry for stat scale and SAN cost. **The published
+Work from `reference/sourcebooks/malleus-monstrorum-zh.md` (the official creature compendium)
+— read the nearest published entry for stat scale and SAN cost. **The published
 numbers may be taken directly into an entry** as long as the file names the book and chapter;
 the reveal, lore, and behaviour prose is written fresh (`core/00-how-to-run.md` → ground
 rules). Its stat tables are clean; check the file's own header for the current list of small

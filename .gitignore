@@ -1,9 +1,6 @@
 # Local Claude Code state (skills here are shared on disk; commit intentionally if wanted)
 .claude/settings.local.json
 
-# 构建产物:要上传给 ChatGPT/Gemini 时现跑 scripts/build-bundle.sh 生成
-/dist/
-
 # Scratch / exports
 /exports/
 *.pdf

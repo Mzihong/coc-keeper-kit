@@ -6,6 +6,9 @@ A preparation workbench for a Call of Cthulhu **Keeper**, for **CoC 7th Edition*
 > Read **`core/00-how-to-run.md`** before doing anything else — it holds the pipeline, the
 > routing table, the ground rules, and the layout. If this file ever disagrees with `core/`,
 > `core/` wins.
+>
+> **The kit is read from disk, in place.** No bundle, no build step, no single-file export —
+> if you cannot open `core/00-how-to-run.md`, say so instead of improvising from this file.
 
 ## Routing — read the spec that matches the request, then follow it
 
@@ -73,6 +76,6 @@ Never downgrade an artifact to a summary of an artifact.
 
 ## Portability
 
-This kit is read by Claude, Gemini, and ChatGPT. `CLAUDE.md`, `GEMINI.md`, and `AGENTS.md`
-are three thin adapters over the same `core/`. **When changing how the kit behaves, change
+This kit is read by Claude Code, the Gemini CLI, and codex. `CLAUDE.md`, `GEMINI.md`, and
+`AGENTS.md` are three thin adapters over the same `core/`. **When changing how the kit behaves, change
 `core/` — never a root adapter.**

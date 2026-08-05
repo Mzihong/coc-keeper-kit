@@ -5,7 +5,6 @@
   "governed_by": "reference/decks/README.md",
   "citation_rule": "every file ends with a `## 引用出处` block; no citation, no file",
   "usage_rule": "take structure and scale, never text (core/00-how-to-run.md)",
-  "in_bundle": false,
   "generated_by": "scripts/build-reference-index.py — do not edit by hand",
   "entry_count": 4,
   "entries": [
@@ -22,18 +21,18 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 216,
+          "line": 223,
           "context": "- 新增 `reference/decks/` 与首份收录件 `busybodies-zh.md`(官方好事者卡组,47 张 NPC 卡)。"
         },
         {
           "file": "core/06-create-npc.md",
           "line": 13,
-          "context": "- **If `reference/decks/busybodies-zh.md` is present, skim the card closest to this NPC's"
+          "context": "- **Skim the card closest to this NPC's job in `reference/decks/busybodies-zh.md` before"
         },
         {
           "file": "core/13-create-investigator.md",
           "line": 15,
-          "context": "- **`reference/decks/busybodies-zh.md`, if present, is 47 worked examples of a finished 1920s"
+          "context": "- **`reference/decks/busybodies-zh.md` is 47 worked examples of a finished 1920s"
         },
         {
           "file": "reference/README.md",
@@ -144,8 +143,8 @@
       "referenced_by": [
         {
           "file": "core/13-create-investigator.md",
-          "line": 24,
-          "context": "- Two more local-only decks feed specific fields: `reference/decks/phobias-and-manias-zh.md`"
+          "line": 23,
+          "context": "- Two more decks feed specific fields: `reference/decks/phobias-and-manias-zh.md`"
         },
         {
           "file": "reference/decks/README.md",
@@ -158,12 +157,32 @@
           "context": "`reference/decks/phobias-and-manias-zh.md`(仅本地),官方 *Phobias* 卡组:9 条即时症状、"
         },
         {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 127,
+          "context": "| 表IX 恐惧症状表 | 5288–5430 | 约 100 条 D100 | ⚠️ 只在 `decks/phobias-and-manias-zh.md`(第三方,**不进 bundle**) |"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 207,
+          "context": "**注意 `decks/` 里已有的三份不删**——`phobias-and-manias-zh.md`、`weapons-and-artifacts-zh.md`"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 343,
+          "context": "`decks/phobias-and-manias-zh.md` 互相指路,写清\"这份是规则书表、那份是卡组\""
+        },
+        {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
           "line": 282,
           "context": ">    `phobias-and-manias-zh.md`、`weapons-and-artifacts-zh.md`)均 `cited: true`"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-retire-bundle.md",
+          "line": 39,
+          "context": "直接说\"去读 `reference/decks/phobias-and-manias-zh.md`\",因为读得到就是读得到。"
         }
       ],
-      "reference_count": 4,
+      "reference_count": 8,
       "cited": true,
       "provenance": {
         "work": "《克苏鲁的呼唤》守秘人卡组 —— 恐惧症卡组(Call of Cthulhu Keeper Deck: Phobias)",
@@ -190,12 +209,12 @@
       "referenced_by": [
         {
           "file": "core/06-create-npc.md",
-          "line": 76,
+          "line": 77,
           "context": "- Arming someone: `reference/decks/weapons-and-artifacts-zh.md` gives skill, base chance,"
         },
         {
           "file": "core/13-create-investigator.md",
-          "line": 26,
+          "line": 25,
           "context": "name), and `reference/decks/weapons-and-artifacts-zh.md` for anything in the gear list."
         },
         {
@@ -207,6 +226,16 @@
           "file": "reference/rules/character-creation.md",
           "line": 277,
           "context": "| **非法术型**(帮派头目、雇佣兵、纯世俗势力) | 装备总价定强度,直接对接 `reference/decks/weapons-and-artifacts-zh.md` 的价格栏 | 武器/防具/载具的档次 |"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 129,
+          "context": "| 表XVII 武器列表 | 15858 起 | 武器伤害/射程/装弹 | ⚠️ 只在 `decks/weapons-and-artifacts-zh.md`(同上) |"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 207,
+          "context": "**注意 `decks/` 里已有的三份不删**——`phobias-and-manias-zh.md`、`weapons-and-artifacts-zh.md`"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -224,7 +253,7 @@
           "context": ">    `reference/tables/` 速查,反向索引脚本没有报 orphan。`weapons-and-artifacts-zh.md`"
         }
       ],
-      "reference_count": 7,
+      "reference_count": 9,
       "cited": true,
       "provenance": {
         "work": "《克苏鲁的呼唤》守秘人卡组 —— 武器与造物卡组(Call of Cthulhu Keeper Deck: Weapons & Artifacts)",

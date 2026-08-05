@@ -5,7 +5,6 @@
   "governed_by": "reference/mythos/README.md",
   "citation_rule": null,
   "usage_rule": "authored by this kit — read and used directly, no citation required",
-  "in_bundle": true,
   "generated_by": "scripts/build-reference-index.py — do not edit by hand",
   "entry_count": 20,
   "entries": [
@@ -25,17 +24,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 102,
+          "line": 109,
           "context": "- 怪物图鉴 `fellrock.md` 的\"沉默之油\"反查链接指向了 `artifacts-zh.md`,但那份文件里"
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 76,
+          "line": 77,
           "context": "- Arming someone: `reference/decks/weapons-and-artifacts-zh.md` gives skill, base chance,"
         },
         {
           "file": "core/13-create-investigator.md",
-          "line": 26,
+          "line": 25,
           "context": "name), and `reference/decks/weapons-and-artifacts-zh.md` for anything in the gear list."
         },
         {
@@ -62,6 +61,21 @@
           "file": "reference/rules/character-creation.md",
           "line": 277,
           "context": "| **非法术型**(帮派头目、雇佣兵、纯世俗势力) | 装备总价定强度,直接对接 `reference/decks/weapons-and-artifacts-zh.md` 的价格栏 | 武器/防具/载具的档次 |"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 129,
+          "context": "| 表XVII 武器列表 | 15858 起 | 武器伤害/射程/装弹 | ⚠️ 只在 `decks/weapons-and-artifacts-zh.md`(同上) |"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 207,
+          "context": "**注意 `decks/` 里已有的三份不删**——`phobias-and-manias-zh.md`、`weapons-and-artifacts-zh.md`"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 285,
+          "context": "| `reference/mythos/artifacts-zh.md:18` | 指规则书查孤注一掷失败规则 | 改指 `reference/rules/skill-checks.md` |"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -99,7 +113,7 @@
           "context": "- [x] `reference/mythos/` 现状 —— **不是只有 README**:有 `artifacts-zh.md`、"
         }
       ],
-      "reference_count": 15
+      "reference_count": 18
     },
     {
       "file": "cthulhu-cult-history-zh.md",
@@ -380,27 +394,27 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 167,
+          "line": 174,
           "context": "从 deadly 改成 mythic(体型与耐久数值早已过 deadly 上限)、`thrall-of-cthulhu.md`"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 170,
+          "line": 177,
           "context": "- **神格文件现在要反向列出自己的眷族与仆从。** `cthulhu.md` 补了这一节(哪些怪物服侍"
         },
         {
           "file": "WORKLOG.md",
-          "line": 114,
+          "line": 112,
           "context": "`Serves`/摘要留空就报错。现有 9 只 bestiary 条目已按新标尺重标,`cthulhu.md`"
         },
         {
           "file": "WORKLOG.md",
-          "line": 118,
+          "line": 116,
           "context": "`yog-sothoth.md`,体例照 `cthulhu.md`,均含「眷族与仆从」反链)+ 7 个新眷族/化身"
         },
         {
           "file": "WORKLOG.md",
-          "line": 205,
+          "line": 213,
           "context": "- **古神级条目住在 `reference/mythos/great-old-ones/`(现有 6 份:`cthulhu.md` +"
         },
         {
@@ -420,12 +434,12 @@
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 178,
+          "line": 173,
           "context": "\"\"\"Sorted relative paths (posix-style, e.g. 'great-old-ones/cthulhu.md') of every .md"
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 193,
+          "line": 188,
           "context": "relative path (e.g. 'great-old-ones/cthulhu.md'); references also match the bare"
         },
         {
@@ -485,7 +499,7 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 117,
+          "line": 115,
           "context": "下的 `dagon-and-hydra.md`/`hastur.md`/`nyarlathotep.md`/`shub-niggurath.md`/"
         },
         {
@@ -516,12 +530,12 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 117,
+          "line": 115,
           "context": "下的 `dagon-and-hydra.md`/`hastur.md`/`nyarlathotep.md`/`shub-niggurath.md`/"
         },
         {
           "file": "WORKLOG.md",
-          "line": 119,
+          "line": 117,
           "context": "bestiary 条目(`deep-one.md`/`byakhee.md`/`spawn-of-hastur.md`/`hunting-horrors.md`/"
         },
         {
@@ -558,7 +572,7 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 117,
+          "line": 115,
           "context": "下的 `dagon-and-hydra.md`/`hastur.md`/`nyarlathotep.md`/`shub-niggurath.md`/"
         },
         {
@@ -599,7 +613,7 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 117,
+          "line": 115,
           "context": "下的 `dagon-and-hydra.md`/`hastur.md`/`nyarlathotep.md`/`shub-niggurath.md`/"
         },
         {
@@ -629,12 +643,12 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 118,
+          "line": 116,
           "context": "`yog-sothoth.md`,体例照 `cthulhu.md`,均含「眷族与仆从」反链)+ 7 个新眷族/化身"
         },
         {
           "file": "WORKLOG.md",
-          "line": 120,
+          "line": 118,
           "context": "`black-pharaoh.md`/`dark-young.md`/`sons-of-yog-sothoth.md`)。执行时用 5 个并行"
         },
         {
@@ -688,9 +702,14 @@
           "file": "reference/mythos/great-old-ones/dagon-and-hydra.md",
           "line": 76,
           "context": "- 请神/送神的具体法术 → [`../spells/call-father-dagon-and-mother-hydra.md`](../spells/call-father-dagon-and-mother-hydra.md)"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 286,
+          "context": "| `reference/mythos/spells/call-father-dagon-and-mother-hydra.md:4` | 指规则书的请神/送神框架 | 改指 `reference/rules/magic.md` |"
         }
       ],
-      "reference_count": 1
+      "reference_count": 2
     },
     {
       "file": "spells/fellrock-call-bind.md",
@@ -723,7 +742,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 103,
+          "line": 110,
           "context": "根本没有这一条——沉默之油实际是 `reference/mythos/spells/oil-of-silence.md` 的法术,"
         },
         {

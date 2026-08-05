@@ -5,7 +5,6 @@
   "governed_by": "reference/craft/README.md",
   "citation_rule": null,
   "usage_rule": "authored by this kit — read and used directly, no citation required",
-  "in_bundle": true,
   "generated_by": "scripts/build-reference-index.py — do not edit by hand",
   "entry_count": 3,
   "entries": [
@@ -22,17 +21,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 85,
+          "line": 92,
           "context": "`dist/bundle.md`,走 ChatGPT 的 KP 连点都点不进去。`reference/craft/cult-design-zh.md`"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 220,
+          "line": 227,
           "context": "- 新增邪教设计方法论 `craft/cult-design-zh.md`,配四张骰表与 `templates/cult.md` 模板。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 198,
+          "line": 206,
           "context": "**P5 阶段 0 是还债**:`templates/cult.md:42` 与 `reference/craft/cult-design-zh.md:68`"
         },
         {
@@ -181,9 +180,14 @@
           "context": "- [x] `templates/cult.md` 与 `reference/craft/cult-design-zh.md` 两处引用改指向它"
         },
         {
+          "file": "update_plan/2026-08-04-tables-d20-to-d100.md",
+          "line": 189,
+          "context": "- [ ] `reference/craft/cult-design-zh.md` §三:若动了 cult 系列表,同步"
+        },
+        {
           "file": "update_plan/README.md",
-          "line": 74,
-          "context": "`craft/cult-design-zh.md` 两个进 bundle 的文件正引用一份不存在的规范,而且指向的是"
+          "line": 82,
+          "context": "`craft/cult-design-zh.md` 两个文件正引用一份不存在的规范,而且指向的是 `update_plan/`。"
         },
         {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
@@ -206,7 +210,7 @@
           "context": "**登记情况核对**:`craft/cult-design-zh.md`、四张骰表(`cult-goals`/`cult-leader-positions`/"
         }
       ],
-      "reference_count": 37
+      "reference_count": 38
     },
     {
       "file": "diagram-conventions-zh.md",
@@ -226,12 +230,12 @@
         },
         {
           "file": "CHANGELOG.md",
-          "line": 86,
+          "line": 93,
           "context": "第 11 步有同样的问题。两处现已改指向新的 `craft/diagram-conventions-zh.md`。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 154,
+          "line": 162,
           "context": "`reference/craft/diagram-conventions-zh.md` 当 **§六**——那份文件 §四 第 69 行已经在"
         },
         {
@@ -271,7 +275,7 @@
         },
         {
           "file": "reference/craft/README.md",
-          "line": 39,
+          "line": 40,
           "context": "> **为什么单列一步:** `diagram-conventions-zh.md` §四 曾写下「出这张图 + **文字地图卡**」,"
         },
         {
@@ -341,26 +345,31 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 43,
+          "line": 51,
           "context": "变成\"同一个文件\"**——地图卡直接扩进 P5 阶段 0 产出的 `craft/diagram-conventions-zh.md`"
         },
         {
           "file": "update_plan/README.md",
-          "line": 69,
+          "line": 77,
           "context": "提炼稿 + `core/03` 两处接线)→ **阶段 2**(d20 机构表 + `diagram-conventions-zh.md`"
         },
         {
           "file": "update_plan/README.md",
-          "line": 71,
+          "line": 79,
           "context": "**阶段 2 里有一条债优先**:`diagram-conventions-zh.md:69` 的「文字地图卡」是个从未"
         },
         {
           "file": "update_plan/README.md",
-          "line": 82,
+          "line": 101,
           "context": "| 1 | **P10** 城镇解剖手法稿 | ★★☆☆☆ | 资料 14 万字符 / 6723 行 / 0 图;采料 10 段 + ≤100 行提炼稿 + `core/03` **两处**接线 + d20 机构表 + `diagram-conventions-zh.md` 扩一节与 3 张样例 | 产出本身小(照 `"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-retire-bundle.md",
+          "line": 109,
+          "context": "- [x] `reference/craft/diagram-conventions-zh.md:85` —— 那句话是 P5 阶段 0 用来解释"
         }
       ],
-      "reference_count": 28
+      "reference_count": 29
     },
     {
       "file": "lovecraft-zh.md",
@@ -376,7 +385,7 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 147,
+          "line": 155,
           "context": "别拿 `craft/lovecraft-zh.md` 当先例——`og_Norval/` 能全文入库是因为**洛夫克拉夫特是公版**,"
         },
         {
@@ -416,8 +425,8 @@
         },
         {
           "file": "reference/README.md",
-          "line": 92,
-          "context": "对应的正解是**提炼层进 bundle、本体留本地**:`og_Norval/` 82 篇 → `craft/lovecraft-zh.md`,"
+          "line": 93,
+          "context": "对应的正解是**写一层原创提炼稿**:`og_Norval/` 82 篇 → `craft/lovecraft-zh.md`,"
         },
         {
           "file": "reference/craft/README.md",
@@ -441,7 +450,7 @@
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 567,
+          "line": 560,
           "context": "\"research only; distilled into reference/craft/lovecraft-zh.md\","
         },
         {
@@ -476,7 +485,7 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 82,
+          "line": 101,
           "context": "| 1 | **P10** 城镇解剖手法稿 | ★★☆☆☆ | 资料 14 万字符 / 6723 行 / 0 图;采料 10 段 + ≤100 行提炼稿 + `core/03` **两处**接线 + d20 机构表 + `diagram-conventions-zh.md` 扩一节与 3 张样例 | 产出本身小(照 `"
         },
         {
