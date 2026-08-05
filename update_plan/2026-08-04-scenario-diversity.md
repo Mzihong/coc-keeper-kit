@@ -1,7 +1,8 @@
 # Update Plan — 模组多样性:掷骰走脚本 + 补缺表 + 提高掷骰频率
 
 > 日期:2026-08-04
-> 状态:待执行(方向已于 2026-08-04 二次会话定案)
+> 状态:阶段 1(`scripts/roll.py` + 硬约定接线)已完成,2026-08-05,**尚未提交**;
+> 阶段 2–6 待执行
 > 来源:Keeper 2026-08-04 会话——先问「1d20 会不会太少了,能不能拓展 1d100」,
 > 同日重述为「**想要 100 条的根本原因是希望做出来的模组具有多样性,否则每个模组都发生在
 > 类似场景中战斗未免太枯燥无味**」,并追加一条硬要求:**掷骰必须用 `.py` 取伪随机,
@@ -81,52 +82,60 @@ clue / choice / shock / breather,**战斗连一个节点类别都不是**;`table
 
 ### 1.1 脚本
 
-- [ ] 新建 `scripts/roll.py`。用 `random.SystemRandom()`,**不接受模型给定的点数**。
+- [x] 新建 `scripts/roll.py`。用 `random.SystemRandom()`,**不接受模型给定的点数**。
 
 ```
 python scripts/roll.py <table> [<table> ...] [--times N] [--campaign <slug>] [--fresh]
 ```
 
-- [ ] **解析表文件自己声明的骰面**:开头的 `掷 **1dN**`,或小节标题里的 `(1D10)`,
-      以及 markdown 表格第一列的 `dN` 表头。骰面不是从参数里传的,免得传错。
-- [ ] **两维表原生支持**:`cult-goals.md` 的 `## 愿望(1D10)` / `## 手段(1D8)`
-      各掷一次,一并输出——它本来就规定"两张必须成对使用"。
-- [ ] **输出是可原样粘贴的整行条目,不只是点数**:
+- [x] **解析表文件自己声明的骰面**:实现取的是 markdown 表格本身的 `dN` 表头
+      (多维表另外核对小节标题的 `(1DN)` 与表头是否一致,不一致直接报错)——比只认开头那句
+      `掷 **1dN**` 更稳,骰面终归是从表结构读出来的,不是从参数传的。
+- [x] **两维表原生支持**:`cult-goals.md` 的 `## 愿望(1D10)` / `## 手段(1D8)`
+      各掷一次,一并输出;已用真实文件测试通过。
+- [x] **输出是可原样粘贴的整行条目,不只是点数**(格式与本节示例一致,已实测)。
+- [x] **`--campaign <slug>` 记账**:追加到 `campaigns/<slug>/rolls.log`(tab 分隔:表名 /
+      维度 / 骰面 / 点数 / 条目 / spec / 时间戳)。新增 `--spec <name>` 可选参数供调用方标注
+      是哪个 spec 掷的;campaign 目录不存在时脚本会自己建一个空文件夹再记账,不强制先跑完
+      intake 的六项产物(解了风险 3 的一半——见下)。
+- [x] **同一战役内不放回**(给了 `--campaign` 即默认开启)。实现是集合差(可用点数 = 全部
+      点数 − 已用点数)而不是字面的"重掷循环"——效果等价且不会浪费尝试次数,表掷空时
+      落回全范围随机并在输出行末尾注明。已用 `--times 20` 实测:20 次不重复,第 21 次准确
+      提示"已掷空,允许重复"。
+- [x] **`--fresh` 跨战役查重**:同样用集合差实现(而不是"最多重试 20 次"的循环),
+      跨 `campaigns/*/rolls.log` 收集已用点数再排除。已用两个测试战役实测:另一战役已把
+      20 条全部掷完时,`--fresh` 立刻精确报告"已掷空",不需要真的retry 20 次去撞。
+- [x] **非骰表要报错不要硬掷**:`cultist-archetypes.md` / `monster-traits.md` /
+      `monster-index.md` 三个走显式排除名单(`NOT_DICE_TABLES`),各自带一句不掷骰的理由。
+- [x] **自检:每张表的实际行数必须等于骰面数**,不齐就非零退出——且是"先全部校验、
+      一个不过就整体不掷",不会出现掷了一半才报错的半成品记账。额外加了
+      `--check-all`(不在原清单内的加项):不掷骰,只把 `reference/tables/*.md` 全部过一遍
+      自检,真正补上 `build-reference-index.py` 的那个盲区,而不是等某张表被掷到才发现
+      行数不对。已跑通:10 张骰表通过、3 张非骰表正确跳过。
+- [x] `--seed` 仅供测试,**不写进任何 spec**——用时脚本自己在 stderr 打一行警告提醒。
 
-```
-$ python scripts/roll.py locations mythos-angles --campaign dagon-bay
-locations.md      1d20 → 13   一处过季的度假地,人手齐全,客房全空
-mythos-angles.md  1d20 →  8   某个存在正在死去,它的衰亡本身就是灾难
-```
-
-- [ ] **`--campaign <slug>` 记账**:追加到 `campaigns/<slug>/rolls.log`(表名 / 点数 /
-      条目 / 掷它的 spec)。这份记账是后两个功能的数据源,也让守秘人能回看本战役掷过什么。
-- [ ] **同一战役内不放回**(给了 `--campaign` 即默认开启):掷到本战役已用过的条目就重掷。
-      **这一条直接把上面那个 93.5% 打到 0**,而且不用写一条新条目。表掷空时放行并注明
-      "本表已掷空,开始重复"。
-- [ ] **`--fresh` 跨战役查重**:掷出的条目若在其他 `campaigns/*/rolls.log` 里出现过就重掷
-      (上限 20 次,仍撞就放行并注明)。**这才是"摸熟"的正解**,在 d20 上就成立。
-- [ ] **非骰表要报错不要硬掷**:`cultist-archetypes.md` / `monster-traits.md` /
-      `monster-index.md` 走显式排除名单,给出"这不是骰表"的提示。
-- [ ] **自检:每张表的实际行数必须等于骰面数**,不齐就非零退出。
-      顺带补上一个现有校验的盲区——`build-reference-index.py` 查的是文件级引用与孤儿,
-      **表里少一行、多一行它看不见**(同一族失败在 `WORKLOG.md` 里已经记过两次)。
-- [ ] `--seed` 仅供测试,**不写进任何 spec**。
+**顺带修的一个平台坑**:Windows 终端默认代码页不是 UTF-8,脚本打印中文会变成乱码
+(不影响 `--campaign` 写文件,`rolls.log` 一直是显式 `encoding="utf-8"`,只影响屏幕
+显示)。加了三行 `sys.stdout.reconfigure(encoding="utf-8")` 处理,非 Windows 环境是空操作。
 
 ### 1.2 硬约定与接线
 
-- [ ] `core/00-how-to-run.md` → ground rules 增一条(与 "Fair play" 同级):
+- [x] `core/00-how-to-run.md` → ground rules 增一条(与 "Fair play" 同级)。
+- [x] `CLAUDE.md` / `GEMINI.md` / `AGENTS.md` **三份同步**(硬约定 1:只在一份里就是 bug)。
+- [x] 逐处改掷骰点的措辞:`core/01-intake.md` auto-fill 与反套路节、`core/04` 的
+      complications、`core/06-create-npc.md` 的 npc-quirks(顺带同段的 npc-appearance /
+      cult-leader-positions 一并改了措辞)、`core/03` 的 cult-goals(顺带同段的
+      cult-leader-positions)。
+- [x] `reference/tables/README.md` 顶部加一句"怎么掷"。
+- [x] `core/11-review.md` 增一条审查项:**战役里找不到 `rolls.log`,或产物里的种子对不上
+      日志,判 fail**。
 
-> **掷骰走脚本,不许自己报点数。** 任何一处 "roll X" 都执行
-> `python scripts/roll.py X --campaign <slug>`,并把命令与原始输出附进产物。
-> 跑不了 python 就明说,并请守秘人手掷——**不许自己编一个数**,也不许"挑一个更合适的"。
-
-- [ ] `CLAUDE.md` / `GEMINI.md` / `AGENTS.md` **三份同步**(硬约定 1:只在一份里就是 bug)。
-- [ ] 逐处改掷骰点的措辞:`core/01-intake.md` auto-fill 与反套路节、`core/04` 的
-      complications、`core/06-create-npc.md:39` 的 npc-quirks、`core/03` 的 cult-goals。
-- [ ] `reference/tables/README.md` 顶部加一句"怎么掷"。
-- [ ] `core/11-review.md` 增一条审查项:**战役里找不到 `rolls.log`,或产物里的种子对不上
-      日志,判 fail**。没有这一条,前面全是自觉条款。
+**风险 3 留下的另一半**(`_template-campaign/` 要不要预置空 `rolls.log`、要不要进
+`core/01` 的 Output 六项清单)本轮定案:**都不做。** 空文件本身没有信息,`roll.py`
+在第一次真正掷骰时会自己创建 `rolls.log`(连同 `campaigns/<slug>/` 文件夹一起,如果还不
+存在),这就绕开了 intake 里"掷种子表在先、建文件夹在后"的时序问题,不需要模板预置或
+清单强制。六项清单也不动——一个完全靠 Keeper 手填、零随机的 intake 合法但不会产生
+`rolls.log`,把它列为必需项会让这种(允许的)路径被清单误判成不完整。
 
 ## 阶段 2 — 零条目的接线(先修 bug)
 

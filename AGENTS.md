@@ -55,6 +55,9 @@ before improvising.
   it. Never contradict established canon.
 - **Fair play.** Three independent clues per must-know fact; no single roll can hard-stop the
   game.
+- **Roll through the script, never in your head.** Any table roll runs
+  `python scripts/roll.py <table> --campaign <slug>` — never a model-reported number. No
+  python available → say so and have the Keeper roll physical dice; don't invent a result.
 - **Spoiler hygiene.** Keeper-only content goes in `> **KEEPER ONLY**` blocks and never in
   player-facing files.
 - **Safety.** Respect the campaign's declared lines and veils. Never auto-fill them.

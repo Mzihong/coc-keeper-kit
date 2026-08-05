@@ -40,6 +40,10 @@ model's output. Assume the material is wrong until each line checks out.
 - [ ] Nothing contradicts `world/event-clock.md`'s current stage or fired triggers.
 - [ ] Names, dates, and place-names match their earlier spellings exactly.
 - [ ] Cross-links resolve — every relative link points at a file that exists.
+- [ ] **Rolled content traces back to `campaigns/<slug>/rolls.log`.** If the material rolled
+      anything (a seed table, an NPC quirk, a complication), the campaign has a `rolls.log`
+      and its entries match what the material claims was rolled — a fail here usually means a
+      result was reported from memory instead of `python scripts/roll.py`.
 
 ### Craft
 

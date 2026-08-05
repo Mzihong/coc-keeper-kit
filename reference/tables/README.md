@@ -8,6 +8,11 @@
 
 格式:开头两行短引言(掷什么、什么时候掷),然后一张带 `dN` 列的表。
 
+**怎么掷**:一律走 `python scripts/roll.py <table> --campaign <slug>`,不许模型自己报点数。
+脚本自己解析每张表声明的骰面,战役内不放回、跨战役查重(`--fresh`)都由它管;两维表
+(如 `cult-goals.md`)一次调用就把两张都掷了。细节见 `scripts/roll.py` 的文件头注释,
+硬约定见 `core/00-how-to-run.md` → ground rules。
+
 ## 种子表——反套路的那一层
 
 这四张**不是可选的调味**。守秘人给的输入很少或没有时,`core/01-intake.md` 强制要求掷这

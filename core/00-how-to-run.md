@@ -82,6 +82,12 @@ writing any stat block, difficulty, or Sanity cost.
     language for verisimilitude, and don't pretend the original was written in it.
 - **Fair play.** Every mystery must be solvable. Follow the three-clue rule; never gate
   forward progress behind a single die roll.
+- **Roll through the script, never in your head.** Any "roll `X.md`" instruction in this kit
+  means running `python scripts/roll.py X --campaign <slug>` and taking what it prints —
+  attach the command and its raw output to what you produce. If python isn't available, say
+  so and have the Keeper roll physical dice instead; don't invent a number and don't pick
+  "the one that fits better." See `scripts/roll.py`'s own docstring for `--times`, `--fresh`,
+  and how it handles two-dimensional tables like `cult-goals.md`.
 - **Spoiler hygiene.** Keeper-only secrets stay in Keeper files, marked with a
   `> **KEEPER ONLY**` blockquote. Player-facing material (handouts, boxed text) is clearly
   marked and self-contained — safe to print or hand over without leaking the solution.

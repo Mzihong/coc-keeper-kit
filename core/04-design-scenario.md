@@ -59,8 +59,9 @@ now?"* In that case:
 - Read `CLAUDE.md`, `canon-log.md`, and `world/event-clock.md`.
 - Advance the clock by the elapsed in-fiction time and check which triggers have fired.
 - Build **one session's worth**: an opening beat that answers where they left off, 3–5 scenes,
-  the clues reachable this session, two complications (roll
-  `reference/tables/complications.md`), and likely stopping points.
+  the clues reachable this session, two complications
+  (`python scripts/roll.py complications --times 2 --campaign <slug>`), and likely stopping
+  points.
 - Do **not** resolve the campaign's central truth early because the session needs a climax.
   A session can end on a partial revelation.
 - Save to `campaigns/<slug>/sessions/<n>-<slug>.md` using `templates/session-prep.md`.

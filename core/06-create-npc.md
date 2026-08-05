@@ -37,12 +37,12 @@ tell — mechanically correct for 7e.
   (e.g. "stranger") and leave the log empty. `core/12-canon-update.md` is what appends to it
   after play — this spec never backfills sessions that haven't happened yet.
 
-Roll `reference/tables/npc-quirks.md` for at least the mannerism, and
-`reference/tables/npc-appearance.md` for the first physical impression. A rolled tic beats
-the model's default "nervous, wrings hands," and a rolled appearance beats "middle-aged,
-tired-looking." For a cult leader specifically, `reference/tables/cult-leader-positions.md`
-rolls their social front and what access it buys — read
-`reference/rules/character-creation.md` §11 for how strong to make them.
+Run `python scripts/roll.py npc-quirks npc-appearance --campaign <slug>` for at least the
+mannerism and the first physical impression. A rolled tic beats the model's default "nervous,
+wrings hands," and a rolled appearance beats "middle-aged, tired-looking." For a cult leader
+specifically, `python scripts/roll.py cult-leader-positions --campaign <slug>` rolls their
+social front and what access it buys — read `reference/rules/character-creation.md` §11 for
+how strong to make them.
 
 **Rank-and-file cultists** — `reference/tables/cultist-archetypes.md` has twelve ready-to-use
 statted archetypes (academic, blue-collar, criminal, law-enforcement, medical, military,

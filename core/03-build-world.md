@@ -12,8 +12,9 @@ for **usable texture**, not an encyclopedia: enough for the Keeper to improvise 
 - Decide the scope requested: **region**, **town/locale**, **faction/organisation**, or
   **timeline**.
 - Use `templates/location.md` for a place; for a region or faction, adapt its headings.
-- If this is the campaign's first world-building pass, roll `reference/tables/locations.md`
-  and `reference/tables/mythos-angles.md` before writing. Take what you roll.
+- If this is the campaign's first world-building pass, run
+  `python scripts/roll.py locations mythos-angles --campaign <slug>` before writing. Take
+  what you roll.
 
 ## Principles
 
@@ -44,9 +45,10 @@ vs the true agenda.
 build order. Read `reference/craft/cult-design-zh.md` §一–§三 first (why a cult works as a
 villain, what makes a *Cthulhu* cult specific, then the ordered build: concept → leader →
 goal → structure → membership → induction → funding → Mythos-exposure tiers → weaknesses →
-enemies → relationship diagram). Roll `reference/tables/cult-goals.md` (want × means) and
-`reference/tables/cult-leader-positions.md` (the leader's social front) rather than inventing
-either. Use `templates/cult.md`, which mirrors this same faction structure with the cult
+enemies → relationship diagram). Run
+`python scripts/roll.py cult-goals cult-leader-positions --campaign <slug>` (want × means, and
+the leader's social front) rather than inventing either. Use `templates/cult.md`, which
+mirrors this same faction structure with the cult
 build order folded in. `reference/mythos/cults/` also has five fully-worked cult dossiers
 (same shape as this template) — reskin one directly (era/place/name) rather than building
 from zero when one fits the campaign's needs.

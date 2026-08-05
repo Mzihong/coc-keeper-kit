@@ -53,6 +53,9 @@ the skill, read the spec it names, follow the spec. Never generate from the wrap
   `reference/glossary-zh.md`.
 - **Continuity is not optional.** Read the campaign's `CLAUDE.md` and `canon-log.md` before
   generating into it.
+- **Roll through the script, never in your head.** Any table roll runs
+  `python scripts/roll.py <table> --campaign <slug>` — never a model-reported number. See
+  `core/00-how-to-run.md` → ground rules.
 
 ## What this is / isn't
 

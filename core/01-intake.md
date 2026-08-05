@@ -70,12 +70,13 @@ Ask all of these. They are the ones that actually change downstream output.
 8. **Register for boxed text** — sparse and cold / lush and gothic.
 9. **The threat** — what's actually standing behind the wrongness? A cult or organisation /
    a lone sorcerer or family / an independent monster / the place itself / a natural or
-   cosmic phenomenon with no human antagonist at all. *Default: auto — roll
-   `reference/tables/mythos-angles.md` and infer the category the rolled angle implies; don't
-   default to "cult" out of habit.* If the answer is a cult, `reference/craft/cult-design-zh.md`
-   and `reference/mythos/cults/` are where world-building picks it up (see `core/03`); the
-   cult's concrete goal is still rolled from `reference/tables/cult-goals.md`, not invented,
-   answering "cult" here is not permission to write a generic one.
+   cosmic phenomenon with no human antagonist at all. *Default: auto — run
+   `python scripts/roll.py mythos-angles --campaign <slug>` and infer the category the rolled
+   angle implies; don't default to "cult" out of habit.* If the answer is a cult,
+   `reference/craft/cult-design-zh.md` and `reference/mythos/cults/` are where world-building
+   picks it up (see `core/03`); the cult's concrete goal is still rolled via
+   `python scripts/roll.py cult-goals --campaign <slug>`, not invented, answering "cult" here
+   is not permission to write a generic one.
 10. **Human antagonist strength** — if question 9 produces a named human antagonist (a cult
     leader and the like), should they default to combat-emphasised skills, or to the
     background-first split in `reference/rules/character-creation.md` §11? *Default: not
@@ -121,9 +122,9 @@ When a question is unanswered, resolve it in this order:
 
 1. **Infer from what they did say.** "1930s Shanghai" implies era, currency, transport,
    name conventions, and a plausible mood. Use it. Consistency beats novelty.
-2. **Roll the seed tables** in `reference/tables/` — `hooks.md`, `locations.md`,
-   `mythos-angles.md`, `complications.md`. Roll; don't pick the first plausible thing you
-   think of.
+2. **Roll the seed tables** — run
+   `python scripts/roll.py hooks locations mythos-angles complications --campaign <slug>`.
+   Take what the script prints; don't pick the first plausible thing you think of.
 3. **Apply the defaults** for anything the tables don't cover:
 
 | Field | Default |
@@ -135,7 +136,7 @@ When a question is unanswered, resolve it in this order:
 | Lethality | standard 7e |
 | Combat frequency | rare and lethal |
 | Register | sparse and cold |
-| The threat | roll `mythos-angles.md`, infer the category (see question 9) |
+| The threat | run `python scripts/roll.py mythos-angles --campaign <slug>`, infer the category (see question 9) |
 | Human antagonist strength | not combat-emphasised |
 | Length | short arc, 3–5 sessions |
 | Party size | 4 |
@@ -148,12 +149,16 @@ Left to itself, every model writes the same campaign: Arkham, a cult, a Great Ol
 stirring. **You must roll**, and the roll must survive into the output.
 
 - **Defaulting to America is not permission to write Arkham.** The default names a country,
-  not a town: roll `locations.md`, then invent the town. Lovecraft's own places (阿卡姆,
-  印斯茅斯, 敦威治, 金斯波特) are for a Keeper who asks for them by name.
-- Roll `mythos-angles.md` and take what you get. If the result is not obviously compatible
-  with the era and premise, that friction *is* the campaign — make it work.
-- Roll `locations.md` for at least one place that isn't the obvious one.
-- Roll `hooks.md` for the way the investigators are pulled in.
+  not a town: run `python scripts/roll.py locations --campaign <slug>`, then invent the town.
+  Lovecraft's own places (阿卡姆, 印斯茅斯, 敦威治, 金斯波特) are for a Keeper who asks for them
+  by name.
+- Run `python scripts/roll.py mythos-angles --campaign <slug>` and take what you get. If the
+  result is not obviously compatible with the era and premise, that friction *is* the
+  campaign — make it work.
+- Run `python scripts/roll.py locations --campaign <slug>` for at least one place that isn't
+  the obvious one.
+- Run `python scripts/roll.py hooks --campaign <slug>` for the way the investigators are
+  pulled in.
 - Before finishing, check: **would this be different if I'd rolled again?** If the rolled
   results left no fingerprint on the result, you ignored them. Redo it.
 
