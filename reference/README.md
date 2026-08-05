@@ -55,8 +55,10 @@ in `campaigns/<slug>/`, not here.
   citation block on third-party material, or a file nothing points at, is an error — except in
   `bestiary/` and `mythos/`, which are content libraries where being unreferenced is normal.
 - **`glossary-zh.md`** — the EN ↔ 简体中文 term lock. One translation per game term, for the
-  whole kit. Every generator writing Chinese follows it; new terms get added *here* first,
-  never invented inside a campaign. Built on top of the community
+  whole kit, plus the rule for writing foreign people/place/institution names in Chinese
+  (外文专名的译写 — the default setting is American, so that section carries weight). Every
+  generator writing Chinese follows it; new terms get added *here* first, never invented
+  inside a campaign. Built on top of the community
   [大译名表](https://www.goddessfantasy.net/bbs/index.php?topic=95256.0) term set.
 - **`og_Norval/`** — H. P. Lovecraft's original stories (82 works), kept for craft research
   only, same non-reproduction rule as `external/` below. Its distilled output lives in

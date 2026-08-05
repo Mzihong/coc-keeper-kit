@@ -20,18 +20,8 @@
       ],
       "referenced_by": [
         {
-          "file": "WORKLOG.md",
-          "line": 230,
-          "context": "`mythos-angles.md`、`npc-quirks.md`(四张种子表)、`complications.md`、`madness.md`、"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 243,
-          "context": "`core/06`、`reference/rules/sanity.md`、两份 deck README、战役文件里的「`complications.md`"
-        },
-        {
           "file": "core/01-intake.md",
-          "line": 105,
+          "line": 125,
           "context": "`mythos-angles.md`, `complications.md`. Roll; don't pick the first plausible thing you"
         },
         {
@@ -85,7 +75,7 @@
           "context": "| T6 | 外人不信：調查員被當成冬天關瘋了的一種，`complications.md` 2 直接觸發 |"
         }
       ],
-      "reference_count": 13
+      "reference_count": 11
     },
     {
       "file": "cult-goals.md",
@@ -100,7 +90,7 @@
       "referenced_by": [
         {
           "file": "core/01-intake.md",
-          "line": 57,
+          "line": 77,
           "context": "cult's concrete goal is still rolled from `reference/tables/cult-goals.md`, not invented,"
         },
         {
@@ -376,18 +366,13 @@
       ],
       "referenced_by": [
         {
-          "file": "WORKLOG.md",
-          "line": 229,
-          "context": "改写的七张表 + 一份 README(原先 CJK 占比 0%):`hooks.md`、`locations.md`、"
-        },
-        {
           "file": "core/01-intake.md",
-          "line": 104,
+          "line": 124,
           "context": "2. **Roll the seed tables** in `reference/tables/` — `hooks.md`, `locations.md`,"
         },
         {
           "file": "core/01-intake.md",
-          "line": 133,
+          "line": 156,
           "context": "- Roll `hooks.md` for the way the investigators are pulled in."
         },
         {
@@ -411,7 +396,7 @@
           "context": "\"evidence\": \"Premise centers on Camas Dubh, a storm-locked Skye fishing hamlet bound to a mistranslated century-old rite ('Tàmh na Mara') that unknowingly feeds"
         }
       ],
-      "reference_count": 7
+      "reference_count": 6
     },
     {
       "file": "locations.md",
@@ -423,18 +408,28 @@
       ],
       "referenced_by": [
         {
+          "file": "CHANGELOG.md",
+          "line": 70,
+          "context": "**\"默认美国不等于默认阿卡姆\"**——默认给的是国家,镇子照样掷 `locations.md` 再自己造,"
+        },
+        {
           "file": "WORKLOG.md",
-          "line": 229,
-          "context": "改写的七张表 + 一份 README(原先 CJK 占比 0%):`hooks.md`、`locations.md`、"
+          "line": 246,
+          "context": "一条:**默认美国不等于默认阿卡姆**,默认给的是国家,镇子仍要掷 `locations.md` 后自造。"
         },
         {
           "file": "core/01-intake.md",
-          "line": 104,
+          "line": 124,
           "context": "2. **Roll the seed tables** in `reference/tables/` — `hooks.md`, `locations.md`,"
         },
         {
           "file": "core/01-intake.md",
-          "line": 132,
+          "line": 151,
+          "context": "not a town: roll `locations.md`, then invent the town. Lovecraft's own places (阿卡姆,"
+        },
+        {
+          "file": "core/01-intake.md",
+          "line": 155,
           "context": "- Roll `locations.md` for at least one place that isn't the obvious one."
         },
         {
@@ -513,7 +508,7 @@
           "context": "\"evidence\": \"Premise centers on Camas Dubh, a storm-locked Skye fishing hamlet bound to a mistranslated century-old rite ('Tàmh na Mara') that unknowingly feeds"
         }
       ],
-      "reference_count": 18
+      "reference_count": 20
     },
     {
       "file": "madness.md",
@@ -524,21 +519,6 @@
         "reference/decks/phobias-and-manias-zh.md"
       ],
       "referenced_by": [
-        {
-          "file": "WORKLOG.md",
-          "line": 230,
-          "context": "`mythos-angles.md`、`npc-quirks.md`(四张种子表)、`complications.md`、`madness.md`、"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 244,
-          "context": "2 号」这种编号引用),没有任何地方引的是表内英文原文,所以正文改写不牵连别处。`madness.md`"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 245,
-          "context": "的一级标题从 `# Table — Bout of Madness (real-time)` 改成了 `# madness.md — 疯狂发作"
-        },
         {
           "file": "reference/decks/phobias-and-manias-zh.md",
           "line": 8,
@@ -555,7 +535,7 @@
           "context": "- `madness.md`(1D10)——疯狂发作的即时症状。"
         }
       ],
-      "reference_count": 6
+      "reference_count": 3
     },
     {
       "file": "monster-index.md",
@@ -586,12 +566,12 @@
         },
         {
           "file": "CHANGELOG.md",
-          "line": 146,
+          "line": 161,
           "context": "新增 `reference/tables/monster-index.md`,覆盖怪物图鉴全部 223 个条目 + 现有 9 只"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 160,
+          "line": 175,
           "context": "`reference/tables/monster-index.md` 再动手写,不用翻原文猜。"
         },
         {
@@ -606,23 +586,13 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 207,
+          "line": 213,
           "context": "`monster-index.md` 那一行摘要。仍然拿不到的是 223 条 malleus 转录稿本体——那是"
         },
         {
           "file": "WORKLOG.md",
-          "line": 208,
+          "line": 214,
           "context": "第三方资料,`monster-index.md` 就是它唯一的对外通道,这一条是设计如此。"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 232,
-          "context": "`monster-index.md` 的标题/说明/表头(**这份是生成的,改的是"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 238,
-          "context": "**刻意没改的一处:** `monster-index.md` 的分级标题仍是 `## L2 — creature (独立种族 /"
         },
         {
           "file": "core/04-design-scenario.md",
@@ -641,7 +611,7 @@
         },
         {
           "file": "reference/README.md",
-          "line": 91,
+          "line": 93,
           "context": "`sourcebooks/malleus-monstrorum-zh.md` 223 条 → `tables/monster-index.md`。要让 bundle 链路"
         },
         {
@@ -780,7 +750,7 @@
           "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺,三阶段。**阶段 A**(标尺与词条):`reference/rules/monster-scale.md` 五级阶梯(human/creature/s"
         }
       ],
-      "reference_count": 42
+      "reference_count": 40
     },
     {
       "file": "monster-traits.md",
@@ -798,23 +768,13 @@
         },
         {
           "file": "CHANGELOG.md",
-          "line": 135,
+          "line": 150,
           "context": "`reference/tables/monster-traits.md`:18 条可挂载的数值词条(再生、分裂、免疫常规"
         },
         {
           "file": "WORKLOG.md",
           "line": 108,
           "context": "`reference/tables/monster-traits.md` 的 18 条数值词条,`core/07` 的 X 已回填。"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 231,
-          "context": "`npc-appearance.md`、`README.md`。另外三处是残留英文的收尾:`monster-traits.md` 引言段、"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 234,
-          "context": "以及 `monster-traits.md` 里一个繁体字「額」→「额」。目录里原本就是中文的六份没动"
         },
         {
           "file": "core/02-rules-reference.md",
@@ -917,7 +877,7 @@
           "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺,三阶段。**阶段 A**(标尺与词条):`reference/rules/monster-scale.md` 五级阶梯(human/creature/s"
         }
       ],
-      "reference_count": 25
+      "reference_count": 23
     },
     {
       "file": "mythos-angles.md",
@@ -930,28 +890,23 @@
       ],
       "referenced_by": [
         {
-          "file": "WORKLOG.md",
-          "line": 230,
-          "context": "`mythos-angles.md`、`npc-quirks.md`(四张种子表)、`complications.md`、`madness.md`、"
-        },
-        {
           "file": "core/01-intake.md",
-          "line": 54,
+          "line": 74,
           "context": "`reference/tables/mythos-angles.md` and infer the category the rolled angle implies; don't"
         },
         {
           "file": "core/01-intake.md",
-          "line": 105,
+          "line": 125,
           "context": "`mythos-angles.md`, `complications.md`. Roll; don't pick the first plausible thing you"
         },
         {
           "file": "core/01-intake.md",
-          "line": 118,
+          "line": 138,
           "context": "| The threat | roll `mythos-angles.md`, infer the category (see question 9) |"
         },
         {
           "file": "core/01-intake.md",
-          "line": 130,
+          "line": 153,
           "context": "- Roll `mythos-angles.md` and take what you get. If the result is not obviously compatible"
         },
         {
@@ -1005,7 +960,7 @@
           "context": "\"evidence\": \"Premise centers on Camas Dubh, a storm-locked Skye fishing hamlet bound to a mistranslated century-old rite ('Tàmh na Mara') that unknowingly feeds"
         }
       ],
-      "reference_count": 15
+      "reference_count": 14
     },
     {
       "file": "npc-appearance.md",
@@ -1016,11 +971,6 @@
         "core/06-create-npc.md"
       ],
       "referenced_by": [
-        {
-          "file": "WORKLOG.md",
-          "line": 231,
-          "context": "`npc-appearance.md`、`README.md`。另外三处是残留英文的收尾:`monster-traits.md` 引言段、"
-        },
         {
           "file": "core/06-create-npc.md",
           "line": 40,
@@ -1042,7 +992,7 @@
           "context": "- [x] `core/06-create-npc.md` —— 指向新的 `npc-appearance.md`(d20 外貌/气质),"
         }
       ],
-      "reference_count": 5
+      "reference_count": 4
     },
     {
       "file": "npc-quirks.md",
@@ -1053,11 +1003,6 @@
         "core/06-create-npc.md"
       ],
       "referenced_by": [
-        {
-          "file": "WORKLOG.md",
-          "line": 230,
-          "context": "`mythos-angles.md`、`npc-quirks.md`(四张种子表)、`complications.md`、`madness.md`、"
-        },
         {
           "file": "core/06-create-npc.md",
           "line": 39,
@@ -1104,7 +1049,7 @@
           "context": "`core/06-create-npc.md`;与 `npc-quirks.md` 分工:quirks 是**怎么演**,这张是"
         }
       ],
-      "reference_count": 10
+      "reference_count": 9
     }
   ]
 }

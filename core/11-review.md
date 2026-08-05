@@ -90,6 +90,11 @@ model's output. Assume the material is wrong until each line checks out.
       paragraphs.
 - [ ] 简体中文 material uses `reference/glossary-zh.md` terms consistently; no 繁体 characters;
       no two translations of the same game term.
+- [ ] **Proper nouns follow the setting, not the output language.** A 简体中文 campaign set
+      abroad (the default is American — `core/01-intake.md`) transliterates people, places,
+      and institutions per `reference/glossary-zh.md` → 外文专名的译写: one spelling per name
+      campaign-wide, original in parentheses on first appearance, Japanese names in 汉字
+      rather than re-transliterated through English.
 - [ ] Filenames are English `kebab-case.md`.
 - [ ] Any cipher or wordplay actually works in the script it's written in.
 

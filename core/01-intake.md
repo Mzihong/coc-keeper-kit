@@ -128,7 +128,7 @@ When a question is unanswered, resolve it in this order:
 
 | Field | Default |
 |---|---|
-| Era & place | 1920s, a small coastal town — the genre's home ground. **Site the town somewhere the output language is actually spoken**, unless the Keeper asked otherwise: a 简体中文 campaign defaulting to New England makes every NPC name a translation problem. 1920s 北戴河, 香港, 上海, 厦门 are all the genre's home ground too. |
+| Era & place | 1920s, a small coastal town — the genre's home ground, and the baseline `reference/rules/character-creation.md` is written against. **Place follows the genre, not the output language.** First choice **the United States** (New England and its coast, a Massachusetts harbour town, a Rhode Island mill town); second choice **Japan** (1920s 东京 / 横滨, a 东北 or 三陆 fishing village) when the rolled seeds suit it better. A 简体中文 campaign is still set in America by default — the output language is what the *table* speaks, not where the story happens; foreign names are a solved problem, not a reason to relocate (`reference/glossary-zh.md` → 外文专名的译写). Anywhere else — China included — is a Keeper's call, never the default. |
 | Output language | 简体中文 |
 | Mood | slow dread |
 | Horror dial | creeping and psychological |
@@ -147,6 +147,9 @@ When a question is unanswered, resolve it in this order:
 Left to itself, every model writes the same campaign: Arkham, a cult, a Great Old One
 stirring. **You must roll**, and the roll must survive into the output.
 
+- **Defaulting to America is not permission to write Arkham.** The default names a country,
+  not a town: roll `locations.md`, then invent the town. Lovecraft's own places (阿卡姆,
+  印斯茅斯, 敦威治, 金斯波特) are for a Keeper who asks for them by name.
 - Roll `mythos-angles.md` and take what you get. If the result is not obviously compatible
   with the era and premise, that friction *is* the campaign — make it work.
 - Roll `locations.md` for at least one place that isn't the obvious one.

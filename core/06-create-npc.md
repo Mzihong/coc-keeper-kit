@@ -82,6 +82,10 @@ backstory, and backstory doesn't survive contact with a table.
 - Save to `campaigns/<slug>/npcs/<name>.md`, `kebab-case.md` in English, one NPC per file.
 - Write the content in the campaign's declared **output language**. Stat block notation stays
   English (`STR 60`, `Dodge 35%`); use `reference/glossary-zh.md` for skill names in Chinese.
+- **The NPC's name belongs to the setting, not to the output language.** A 简体中文 campaign
+  set in 1920s Massachusetts (the default — `core/01-intake.md`) is full of people called
+  Kirkland and Whateley; write those names per `reference/glossary-zh.md` →
+  外文专名的译写 (音译 + 首次出现括注原文), and keep one spelling per person campaign-wide.
 - Cross-link the scenes they appear in and any faction they belong to.
 
 ## Quality bar

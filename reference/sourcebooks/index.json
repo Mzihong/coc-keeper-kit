@@ -23,7 +23,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 199,
+          "line": 214,
           "context": "- P7 魔法速查阻塞解除(转换稿已归档为 `grand-grimoire-zh.md`)。"
         },
         {
@@ -198,7 +198,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 126,
+          "line": 141,
           "context": "- **怪物图鉴换了一份干净得多的转录稿。** `reference/sourcebooks/malleus-monstrorum-zh.md`"
         },
         {
@@ -218,7 +218,7 @@
         },
         {
           "file": "reference/README.md",
-          "line": 91,
+          "line": 93,
           "context": "`sourcebooks/malleus-monstrorum-zh.md` 223 条 → `tables/monster-index.md`。要让 bundle 链路"
         },
         {

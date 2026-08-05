@@ -61,7 +61,10 @@ freely to fit the campaign's era and place.
 
 - Save to `campaigns/<slug>/world/<name>.md`. One place/faction per file; `kebab-case.md`
   in English, even when the content is Chinese.
-- Write the content in the campaign's declared **output language**.
+- Write the content in the campaign's declared **output language**. Place, street, and
+  institution names follow the *setting* — a 简体中文 campaign defaults to an American one
+  (`core/01-intake.md`), so write its towns and roads per `reference/glossary-zh.md` →
+  外文专名的译写, not as if the map were Chinese.
 - Cross-link related places, factions, and NPCs with relative links.
 - **Add a mermaid diagram when the structure is the point** — a faction with more than a
   handful of moving parts, or a region whose settlements need travel times. Follow

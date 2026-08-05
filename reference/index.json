@@ -166,7 +166,7 @@
         "title": "好事者卡组 Busybodies — 官方 NPC 卡组(中译收录)",
         "rights_holder": "Chaosium Inc.",
         "referenced_by": [
-          "CHANGELOG.md:201",
+          "CHANGELOG.md:216",
           "core/06-create-npc.md:13",
           "core/13-create-investigator.md:15",
           "reference/README.md:38",
@@ -216,7 +216,7 @@
         "title": "克苏鲁神话魔法大典 — 官方法术全书(中译收录)",
         "rights_holder": "Chaosium Inc.",
         "referenced_by": [
-          "CHANGELOG.md:199",
+          "CHANGELOG.md:214",
           "core/06-create-npc.md:70",
           "core/07-create-monster.md:46",
           "reference/mythos/README.md:23",
@@ -253,11 +253,11 @@
         "title": "怪物之锤 Malleus Monstrorum — 官方怪物图鉴(中译收录)",
         "rights_holder": "Chaosium Inc.",
         "referenced_by": [
-          "CHANGELOG.md:126",
+          "CHANGELOG.md:141",
           "core/04-design-scenario.md:47",
           "core/07-create-monster.md:42",
           "core/14-archive-reference.md:50",
-          "reference/README.md:91",
+          "reference/README.md:93",
           "reference/bestiary/black-pharaoh.md:31",
           "reference/bestiary/deep-one-hybrid.md:64",
           "reference/bestiary/deep-one.md:13",
@@ -508,14 +508,14 @@
         "rights_holder": null,
         "referenced_by": [
           "CHANGELOG.md:48",
-          "CHANGELOG.md:188",
-          "CHANGELOG.md:202",
+          "CHANGELOG.md:203",
+          "CHANGELOG.md:217",
           "WORKLOG.md:102",
           "WORKLOG.md:169",
-          "WORKLOG.md:348",
-          "WORKLOG.md:364",
-          "core/01-intake.md:61",
-          "core/01-intake.md:80",
+          "WORKLOG.md:175",
+          "core/01-intake.md:81",
+          "core/01-intake.md:100",
+          "core/01-intake.md:131",
           "core/02-rules-reference.md:12",
           "core/02-rules-reference.md:26",
           "core/02-rules-reference.md:40",
@@ -598,7 +598,6 @@
         "title": "7e Chases — cheat-sheet",
         "rights_holder": null,
         "referenced_by": [
-          "WORKLOG.md:349",
           "core/02-rules-reference.md:38",
           "core/04-design-scenario.md:42",
           "reference/rules/eras/README.md:10",
@@ -613,7 +612,6 @@
         "title": "7e Combat — cheat-sheet",
         "rights_holder": null,
         "referenced_by": [
-          "WORKLOG.md:350",
           "core/02-rules-reference.md:36",
           "core/07-create-monster.md:16",
           "reference/decks/weapons-and-artifacts-zh.md:12",
@@ -628,7 +626,6 @@
         "title": "Era Pack — Cthulhu Invictus (克苏鲁不败)",
         "rights_holder": null,
         "referenced_by": [
-          "WORKLOG.md:354",
           "reference/rules/eras/dark-ages.md:31",
           "reference/rules/eras/mystic-iceland.md:38",
           "reference/rules/eras/README.md:32",
@@ -639,7 +636,6 @@
         "title": "Era Pack — Cthulhu Dark Age (克苏鲁黑暗时代)",
         "rights_holder": null,
         "referenced_by": [
-          "WORKLOG.md:354",
           "reference/rules/eras/README.md:33",
           "reference/rules/eras/README.md:45"
         ]
@@ -648,7 +644,6 @@
         "title": "Era Pack — Cthulhu End Times: The Reaping (克苏鲁末日之收割)",
         "rights_holder": null,
         "referenced_by": [
-          "WORKLOG.md:355",
           "reference/rules/eras/icarus.md:77",
           "reference/rules/eras/README.md:37"
         ]
@@ -657,7 +652,6 @@
         "title": "Era Pack — Cthulhu Gaslight (克苏鲁煤气灯)",
         "rights_holder": null,
         "referenced_by": [
-          "WORKLOG.md:355",
           "reference/rules/eras/README.md:35"
         ]
       },
@@ -665,7 +659,6 @@
         "title": "Era Pack — Cthulhu Icarus (克苏鲁伊卡洛斯)",
         "rights_holder": null,
         "referenced_by": [
-          "WORKLOG.md:355",
           "reference/rules/eras/end-times.md:37",
           "reference/rules/eras/end-times.md:42",
           "reference/rules/eras/README.md:36"
@@ -675,7 +668,6 @@
         "title": "Era Pack — Mystic Iceland (神秘冰岛)",
         "rights_holder": null,
         "referenced_by": [
-          "WORKLOG.md:354",
           "reference/rules/eras/README.md:34",
           "reference/rules/eras/README.md:45"
         ]
@@ -684,11 +676,10 @@
         "title": "7e Magic — cheat-sheet",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:96",
+          "CHANGELOG.md:111",
           "WORKLOG.md:94",
           "WORKLOG.md:98",
-          "WORKLOG.md:169",
-          "WORKLOG.md:364",
+          "WORKLOG.md:175",
           "core/02-rules-reference.md:27",
           "core/02-rules-reference.md:43",
           "core/07-create-monster.md:101",
@@ -715,11 +706,9 @@
         "title": "Monster Scale — cheat-sheet",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:130",
-          "CHANGELOG.md:139",
+          "CHANGELOG.md:145",
+          "CHANGELOG.md:154",
           "WORKLOG.md:107",
-          "WORKLOG.md:239",
-          "WORKLOG.md:240",
           "core/02-rules-reference.md:22",
           "core/02-rules-reference.md:46",
           "core/07-create-monster.md:19",
@@ -764,7 +753,6 @@
         "title": "7e Sanity — cheat-sheet",
         "rights_holder": null,
         "referenced_by": [
-          "WORKLOG.md:243",
           "core/02-rules-reference.md:34",
           "core/04-design-scenario.md:50",
           "core/07-create-monster.md:17",
@@ -789,11 +777,10 @@
         "title": "邪教设计手法笔记 — 简体中文",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:70",
-          "CHANGELOG.md:205",
-          "WORKLOG.md:192",
-          "WORKLOG.md:420",
-          "core/01-intake.md:55",
+          "CHANGELOG.md:85",
+          "CHANGELOG.md:220",
+          "WORKLOG.md:198",
+          "core/01-intake.md:75",
           "core/03-build-world.md:44",
           "core/04-design-scenario.md:35",
           "reference/README.md:19",
@@ -834,12 +821,9 @@
         "rights_holder": null,
         "referenced_by": [
           "CHANGELOG.md:31",
-          "CHANGELOG.md:71",
+          "CHANGELOG.md:86",
           "WORKLOG.md:154",
-          "WORKLOG.md:261",
-          "WORKLOG.md:280",
-          "WORKLOG.md:418",
-          "core/03-build-world.md:68",
+          "core/03-build-world.md:71",
           "core/04-design-scenario.md:31",
           "templates/cult.md:42",
           "reference/README.md:20",
@@ -878,8 +862,8 @@
           "core/09-description.md:55",
           "core/09-description.md:71",
           "reference/README.md:18",
-          "reference/README.md:63",
-          "reference/README.md:90",
+          "reference/README.md:65",
+          "reference/README.md:92",
           "reference/craft/README.md:14",
           "reference/craft/README.md:34",
           "reference/mythos/great-old-ones/nyarlathotep.md:75",
@@ -951,7 +935,7 @@
         "title": "Deep One Hybrid (混种深潜者)",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:150",
+          "CHANGELOG.md:165",
           "reference/bestiary/cthulhu-blessed.md:54",
           "reference/bestiary/deep-one.md:84",
           "reference/mythos/great-old-ones/dagon-and-hydra.md:62",
@@ -976,8 +960,8 @@
         "title": "Fellrock (费尔罗克)",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:87",
-          "CHANGELOG.md:151",
+          "CHANGELOG.md:102",
+          "CHANGELOG.md:166",
           "reference/mythos/great-old-ones/cthulhu.md:66",
           "reference/mythos/spells/fellrock-call-bind.md:11",
           "reference/mythos/spells/oil-of-silence.md:10",
@@ -1046,7 +1030,7 @@
         "title": "Thrall of Cthulhu (克苏鲁之隶)",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:152",
+          "CHANGELOG.md:167",
           "reference/mythos/great-old-ones/cthulhu.md:64",
           "reference/tables/monster-index.md:81",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:666"
@@ -1065,7 +1049,7 @@
         "title": "造物与神器 — 速查",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:87",
+          "CHANGELOG.md:102",
           "core/06-create-npc.md:76",
           "core/13-create-investigator.md:26",
           "reference/README.md:29",
@@ -1157,11 +1141,11 @@
         "title": "Cthulhu（克苏鲁）",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:152",
-          "CHANGELOG.md:155",
+          "CHANGELOG.md:167",
+          "CHANGELOG.md:170",
           "WORKLOG.md:114",
           "WORKLOG.md:118",
-          "WORKLOG.md:199",
+          "WORKLOG.md:205",
           "reference/mythos/README.md:12",
           "reference/mythos/great-old-ones/dagon-and-hydra.md:67",
           "reference/tables/monster-index.md:81",
@@ -1253,7 +1237,7 @@
         "title": "Oil of Silence (沉默之油)",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:88",
+          "CHANGELOG.md:103",
           "reference/bestiary/fellrock.md:60",
           "reference/mythos/spells/fellrock-call-bind.md:17",
           "update_plan/Archived/2026-08-02-cult-doc-wrapup.md:48"
@@ -1282,9 +1266,7 @@
         "title": "complications.md — 这一场会出什么岔子",
         "rights_holder": null,
         "referenced_by": [
-          "WORKLOG.md:230",
-          "WORKLOG.md:243",
-          "core/01-intake.md:105",
+          "core/01-intake.md:125",
           "core/04-design-scenario.md:63",
           "reference/decks/miseries-zh.md:9",
           "reference/decks/miseries-zh.md:414",
@@ -1301,7 +1283,7 @@
         "title": "cult-goals.md — 邪教目标:愿望 × 手段",
         "rights_holder": null,
         "referenced_by": [
-          "core/01-intake.md:57",
+          "core/01-intake.md:77",
           "core/03-build-world.md:47",
           "templates/cult.md:8",
           "reference/craft/cult-design-zh.md:53",
@@ -1369,9 +1351,8 @@
         "title": "hooks.md — 调查员是怎么被卷进来的",
         "rights_holder": null,
         "referenced_by": [
-          "WORKLOG.md:229",
-          "core/01-intake.md:104",
-          "core/01-intake.md:133",
+          "core/01-intake.md:124",
+          "core/01-intake.md:156",
           "reference/tables/README.md:17",
           "campaigns/beidaihe-winter/CLAUDE.md:72",
           "campaigns/_template-campaign/CLAUDE.md:110",
@@ -1382,9 +1363,11 @@
         "title": "locations.md — 事情发生在哪儿",
         "rights_holder": null,
         "referenced_by": [
-          "WORKLOG.md:229",
-          "core/01-intake.md:104",
-          "core/01-intake.md:132",
+          "CHANGELOG.md:70",
+          "WORKLOG.md:246",
+          "core/01-intake.md:124",
+          "core/01-intake.md:151",
+          "core/01-intake.md:155",
           "core/03-build-world.md:15",
           "reference/tables/hooks.md:6",
           "reference/tables/README.md:18",
@@ -1406,9 +1389,6 @@
         "title": "madness.md — 疯狂发作(即时症状)",
         "rights_holder": null,
         "referenced_by": [
-          "WORKLOG.md:230",
-          "WORKLOG.md:244",
-          "WORKLOG.md:245",
           "reference/decks/phobias-and-manias-zh.md:8",
           "reference/rules/sanity.md:25",
           "reference/tables/README.md:25"
@@ -1421,18 +1401,16 @@
           "CHANGELOG.md:28",
           "CHANGELOG.md:37",
           "CHANGELOG.md:62",
-          "CHANGELOG.md:146",
-          "CHANGELOG.md:160",
+          "CHANGELOG.md:161",
+          "CHANGELOG.md:175",
           "WORKLOG.md:113",
           "WORKLOG.md:124",
-          "WORKLOG.md:207",
-          "WORKLOG.md:208",
-          "WORKLOG.md:232",
-          "WORKLOG.md:238",
+          "WORKLOG.md:213",
+          "WORKLOG.md:214",
           "core/04-design-scenario.md:46",
           "core/07-create-monster.md:9",
           "templates/monster.md:11",
-          "reference/README.md:91",
+          "reference/README.md:93",
           "reference/bestiary/README.md:5",
           "reference/bestiary/README.md:16",
           "reference/bestiary/README.md:40",
@@ -1467,10 +1445,8 @@
         "rights_holder": null,
         "referenced_by": [
           "CHANGELOG.md:63",
-          "CHANGELOG.md:135",
+          "CHANGELOG.md:150",
           "WORKLOG.md:108",
-          "WORKLOG.md:231",
-          "WORKLOG.md:234",
           "core/02-rules-reference.md:48",
           "core/11-review.md:72",
           "templates/monster.md:36",
@@ -1497,11 +1473,10 @@
         "title": "mythos-angles.md — 那份\"不对劲\"到底是什么",
         "rights_holder": null,
         "referenced_by": [
-          "WORKLOG.md:230",
-          "core/01-intake.md:54",
-          "core/01-intake.md:105",
-          "core/01-intake.md:118",
-          "core/01-intake.md:130",
+          "core/01-intake.md:74",
+          "core/01-intake.md:125",
+          "core/01-intake.md:138",
+          "core/01-intake.md:153",
           "core/03-build-world.md:16",
           "reference/tables/hooks.md:6",
           "reference/tables/README.md:19",
@@ -1518,7 +1493,6 @@
         "title": "npc-appearance.md — 他看上去是什么样",
         "rights_holder": null,
         "referenced_by": [
-          "WORKLOG.md:231",
           "core/06-create-npc.md:40",
           "reference/tables/README.md:26",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:140",
@@ -1529,7 +1503,6 @@
         "title": "npc-quirks.md — 让 NPC 能被演出来的那个小动作",
         "rights_holder": null,
         "referenced_by": [
-          "WORKLOG.md:230",
           "core/06-create-npc.md:39",
           "reference/decks/README.md:15",
           "reference/tables/npc-appearance.md:3",
@@ -1568,6 +1541,7 @@
         "reference/rules/monster-scale.md",
         "reference/sourcebooks/grand-grimoire-zh.md",
         "reference/sourcebooks/malleus-monstrorum-zh.md",
+        "reference/tables/locations.md",
         "reference/tables/monster-index.md",
         "reference/tables/monster-traits.md"
       ],
@@ -1589,28 +1563,13 @@
         "reference/mythos/great-old-ones/shub-niggurath.md",
         "reference/mythos/great-old-ones/yog-sothoth.md",
         "reference/rules/character-creation.md",
-        "reference/rules/chases.md",
-        "reference/rules/combat.md",
-        "reference/rules/eras/cthulhu-invictus.md",
-        "reference/rules/eras/dark-ages.md",
-        "reference/rules/eras/end-times.md",
-        "reference/rules/eras/gaslight.md",
-        "reference/rules/eras/icarus.md",
-        "reference/rules/eras/mystic-iceland.md",
         "reference/rules/magic.md",
         "reference/rules/monster-scale.md",
-        "reference/rules/sanity.md",
         "reference/sourcebooks/keeper-rulebook-7e-zh.md",
-        "reference/tables/complications.md",
         "reference/tables/cultist-archetypes.md",
-        "reference/tables/hooks.md",
         "reference/tables/locations.md",
-        "reference/tables/madness.md",
         "reference/tables/monster-index.md",
-        "reference/tables/monster-traits.md",
-        "reference/tables/mythos-angles.md",
-        "reference/tables/npc-appearance.md",
-        "reference/tables/npc-quirks.md"
+        "reference/tables/monster-traits.md"
       ],
       "campaigns/_template-campaign/CLAUDE.md": [
         "reference/rules/character-creation.md",

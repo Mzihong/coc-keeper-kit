@@ -22,27 +22,22 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 70,
+          "line": 85,
           "context": "`dist/bundle.md`,走 ChatGPT 的 KP 连点都点不进去。`reference/craft/cult-design-zh.md`"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 205,
+          "line": 220,
           "context": "- 新增邪教设计方法论 `craft/cult-design-zh.md`,配四张骰表与 `templates/cult.md` 模板。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 192,
+          "line": 198,
           "context": "**P5 阶段 0 是还债**:`templates/cult.md:42` 与 `reference/craft/cult-design-zh.md:68`"
         },
         {
-          "file": "WORKLOG.md",
-          "line": 420,
-          "context": "`templates/cult.md` 与 `reference/craft/cult-design-zh.md` 两处指向不存在规范的引用已改;"
-        },
-        {
           "file": "core/01-intake.md",
-          "line": 55,
+          "line": 75,
           "context": "default to \"cult\" out of habit.* If the answer is a cult, `reference/craft/cult-design-zh.md`"
         },
         {
@@ -211,7 +206,7 @@
           "context": "**登记情况核对**:`craft/cult-design-zh.md`、四张骰表(`cult-goals`/`cult-leader-positions`/"
         }
       ],
-      "reference_count": 38
+      "reference_count": 37
     },
     {
       "file": "diagram-conventions-zh.md",
@@ -231,7 +226,7 @@
         },
         {
           "file": "CHANGELOG.md",
-          "line": 71,
+          "line": 86,
           "context": "第 11 步有同样的问题。两处现已改指向新的 `craft/diagram-conventions-zh.md`。"
         },
         {
@@ -240,23 +235,8 @@
           "context": "`reference/craft/diagram-conventions-zh.md` 当 **§六**——那份文件 §四 第 69 行已经在"
         },
         {
-          "file": "WORKLOG.md",
-          "line": 261,
-          "context": "`reference/craft/diagram-conventions-zh.md:69`(**进 bundle**)写着「出这张图 + **文字地图卡**」,"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 280,
-          "context": "改落点;拍板结果 2 增复评修订 A/B(地图卡落 `diagram-conventions-zh.md` §六、建筑卡与"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 418,
-          "context": "**P5 阶段 0(还债)已完成** —— 新增 `reference/craft/diagram-conventions-zh.md`(87 行,"
-        },
-        {
           "file": "core/03-build-world.md",
-          "line": 68,
+          "line": 71,
           "context": "`reference/craft/diagram-conventions-zh.md`: §一 (general rules — every edge carries a"
         },
         {
@@ -380,7 +360,7 @@
           "context": "| 1 | **P10** 城镇解剖手法稿 | ★★☆☆☆ | 资料 14 万字符 / 6723 行 / 0 图;采料 10 段 + ≤100 行提炼稿 + `core/03` **两处**接线 + d20 机构表 + `diagram-conventions-zh.md` 扩一节与 3 张样例 | 产出本身小(照 `"
         }
       ],
-      "reference_count": 31
+      "reference_count": 28
     },
     {
       "file": "lovecraft-zh.md",
@@ -431,12 +411,12 @@
         },
         {
           "file": "reference/README.md",
-          "line": 63,
+          "line": 65,
           "context": "`craft/lovecraft-zh.md` (above) — the corpus is the raw material, the craft note is what"
         },
         {
           "file": "reference/README.md",
-          "line": 90,
+          "line": 92,
           "context": "对应的正解是**提炼层进 bundle、本体留本地**:`og_Norval/` 82 篇 → `craft/lovecraft-zh.md`,"
         },
         {

@@ -83,6 +83,11 @@ filenames stay English so the repo stays navigable.
 When generating 简体中文, everything follows `reference/glossary-zh.md` — one locked
 translation per game term, so 理智 doesn't become 精神值 three sessions later.
 
+**The language your table speaks doesn't decide where the game is set.** Unless you say
+otherwise, a campaign defaults to 1920s America (Japan second) whatever the output language
+is; foreign names get transliterated by a fixed rule, not routed around — see
+`reference/glossary-zh.md` → 外文专名的译写. Name a place at intake and that wins.
+
 ## Editing the kit
 
 **Change `core/`, never a root adapter.** The adapters exist so three models read one source;

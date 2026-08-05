@@ -28,12 +28,12 @@
         },
         {
           "file": "CHANGELOG.md",
-          "line": 188,
+          "line": 203,
           "context": "- `character-creation.md` 补齐年龄补正、Build/伤害加值、技能基础值等建卡数据,可用来审核他人交的卡。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 202,
+          "line": 217,
           "context": "- `character-creation.md` 各小节补上数据来源指路(标明取自哪个源文件/章节)。"
         },
         {
@@ -44,27 +44,27 @@
         {
           "file": "WORKLOG.md",
           "line": 169,
+          "context": "`character-creation.md`、不经 `core/02`,所以年代加载顺序对全 kit 最吃职业表/货币的那个"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 175,
           "context": "写成了纯中文正文,后来对照 `character-creation.md`/`magic.md` 才发现 kit 的既有惯例"
         },
         {
-          "file": "WORKLOG.md",
-          "line": 348,
-          "context": "**阶段 1 — 声明基准:**`character-creation.md` 头部加了「本文是 1920s 基准」;"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 364,
-          "context": "`character-creation.md`/`magic.md` 才发现违反 kit 既有惯例(英文正文 + 中文术语括注,"
-        },
-        {
           "file": "core/01-intake.md",
-          "line": 61,
+          "line": 81,
           "context": "background-first split in `reference/rules/character-creation.md` §11? *Default: not"
         },
         {
           "file": "core/01-intake.md",
-          "line": 80,
+          "line": 100,
           "context": "`reference/rules/character-creation.md` §1 and §5. *Default: accept as shown.* These"
+        },
+        {
+          "file": "core/01-intake.md",
+          "line": 131,
+          "context": "| Era & place | 1920s, a small coastal town — the genre's home ground, and the baseline `reference/rules/character-creation.md` is written against. **Place foll"
         },
         {
           "file": "core/02-rules-reference.md",
@@ -459,11 +459,6 @@
       ],
       "referenced_by": [
         {
-          "file": "WORKLOG.md",
-          "line": 349,
-          "context": "`chases.md` 的 Move 速率表(机动车/摩托车两行隐含机械时代假设)加了指向"
-        },
-        {
           "file": "core/02-rules-reference.md",
           "line": 38,
           "context": "- `reference/rules/chases.md` — round structure; Move rates; obstacles & mishaps; ending a"
@@ -504,7 +499,7 @@
           "context": "- [x] `reference/rules/chases.md` — 从 7e 规则提炼:速度对比、行动点、"
         }
       ],
-      "reference_count": 9
+      "reference_count": 8
     },
     {
       "file": "combat.md",
@@ -513,11 +508,6 @@
       "lines": 48,
       "declared_consumers": [],
       "referenced_by": [
-        {
-          "file": "WORKLOG.md",
-          "line": 350,
-          "context": "`eras/README.md` 的提示;`combat.md` 抽查后确认不含武器表(战斗力学本身跨年代通用),"
-        },
         {
           "file": "core/02-rules-reference.md",
           "line": 36,
@@ -559,7 +549,7 @@
           "context": "\"evidence\": \"The entire answer is paraphrased summary/table lookups in the assistant's own words (short dice-notation fragments and derived numbers only), with "
         }
       ],
-      "reference_count": 9
+      "reference_count": 8
     },
     {
       "file": "eras/cthulhu-invictus.md",
@@ -571,11 +561,6 @@
         "reference/rules/eras/README.md"
       ],
       "referenced_by": [
-        {
-          "file": "WORKLOG.md",
-          "line": 354,
-          "context": "A/B/C 判定表 + 六个年代文件:`cthulhu-invictus.md`/`dark-ages.md`/`mystic-iceland.md`/"
-        },
         {
           "file": "reference/rules/eras/dark-ages.md",
           "line": 31,
@@ -597,7 +582,7 @@
           "context": "settings above. Its content is folded into `cthulhu-invictus.md`,"
         }
       ],
-      "reference_count": 5
+      "reference_count": 4
     },
     {
       "file": "eras/dark-ages.md",
@@ -610,11 +595,6 @@
       ],
       "referenced_by": [
         {
-          "file": "WORKLOG.md",
-          "line": 354,
-          "context": "A/B/C 判定表 + 六个年代文件:`cthulhu-invictus.md`/`dark-ages.md`/`mystic-iceland.md`/"
-        },
-        {
           "file": "reference/rules/eras/README.md",
           "line": 33,
           "context": "| `dark-ages.md` | 克苏鲁黑暗时代 | 欧洲 10–11 世纪 | ✅ 官方 |"
@@ -625,7 +605,7 @@
           "context": "`dark-ages.md`, and `mystic-iceland.md`'s own **装备与武器** / **可选机制** sections"
         }
       ],
-      "reference_count": 3
+      "reference_count": 2
     },
     {
       "file": "eras/end-times.md",
@@ -638,11 +618,6 @@
       ],
       "referenced_by": [
         {
-          "file": "WORKLOG.md",
-          "line": 355,
-          "context": "`gaslight.md`/`icarus.md`/`end-times.md`,每条改动都标了原书页码出处)。`core/02`"
-        },
-        {
           "file": "reference/rules/eras/icarus.md",
           "line": 77,
           "context": "- The **Ranged (Energy)** skill is listed as optional in the `eras/end-times.md` era file"
@@ -653,7 +628,7 @@
           "context": "| `end-times.md` | 克苏鲁末日之收割 | 旧日支配者苏醒后的后启示录未来(时间点 KP 自定) | ✅ 官方 |"
         }
       ],
-      "reference_count": 3
+      "reference_count": 2
     },
     {
       "file": "eras/gaslight.md",
@@ -666,17 +641,12 @@
       ],
       "referenced_by": [
         {
-          "file": "WORKLOG.md",
-          "line": 355,
-          "context": "`gaslight.md`/`icarus.md`/`end-times.md`,每条改动都标了原书页码出处)。`core/02`"
-        },
-        {
           "file": "reference/rules/eras/README.md",
           "line": 35,
           "context": "| `gaslight.md` | 克苏鲁煤气灯 | 维多利亚伦敦,约 1890 年代 | ✅ 官方 |"
         }
       ],
-      "reference_count": 2
+      "reference_count": 1
     },
     {
       "file": "eras/icarus.md",
@@ -688,11 +658,6 @@
         "reference/rules/eras/README.md"
       ],
       "referenced_by": [
-        {
-          "file": "WORKLOG.md",
-          "line": 355,
-          "context": "`gaslight.md`/`icarus.md`/`end-times.md`,每条改动都标了原书页码出处)。`core/02`"
-        },
         {
           "file": "reference/rules/eras/end-times.md",
           "line": 37,
@@ -709,7 +674,7 @@
           "context": "| `icarus.md` | 克苏鲁伊卡洛斯 | 近未来星际探索 | ✅ 官方 |"
         }
       ],
-      "reference_count": 4
+      "reference_count": 3
     },
     {
       "file": "eras/mystic-iceland.md",
@@ -722,11 +687,6 @@
       ],
       "referenced_by": [
         {
-          "file": "WORKLOG.md",
-          "line": 354,
-          "context": "A/B/C 判定表 + 六个年代文件:`cthulhu-invictus.md`/`dark-ages.md`/`mystic-iceland.md`/"
-        },
-        {
           "file": "reference/rules/eras/README.md",
           "line": 34,
           "context": "| `mystic-iceland.md` | 神秘冰岛 | 冰岛萨迦时代(约 930 年前后) | ✅ 官方 |"
@@ -737,7 +697,7 @@
           "context": "`dark-ages.md`, and `mystic-iceland.md`'s own **装备与武器** / **可选机制** sections"
         }
       ],
-      "reference_count": 3
+      "reference_count": 2
     },
     {
       "file": "magic.md",
@@ -752,7 +712,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 96,
+          "line": 111,
           "context": "- **法术、仪式、魔法书终于有了数值标尺。** 新增 `reference/rules/magic.md`:施法消耗"
         },
         {
@@ -767,13 +727,8 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 169,
+          "line": 175,
           "context": "写成了纯中文正文,后来对照 `character-creation.md`/`magic.md` 才发现 kit 的既有惯例"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 364,
-          "context": "`character-creation.md`/`magic.md` 才发现违反 kit 既有惯例(英文正文 + 中文术语括注,"
         },
         {
           "file": "core/02-rules-reference.md",
@@ -876,7 +831,7 @@
           "context": "| P7 | [magic-quickref](2026-08-02-magic-quickref.md) | 魔法速查 `reference/rules/magic.md`:施法通则(消耗记法、施法用时、POW 对抗)、按 `grand-grimoire-zh.md` 抽样得出的四档消耗区间(小术/中术/大术/仪式级"
         }
       ],
-      "reference_count": 25
+      "reference_count": 24
     },
     {
       "file": "monster-scale.md",
@@ -890,28 +845,18 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 130,
+          "line": 145,
           "context": "`reference/rules/monster-scale.md`:五级强度阶梯(独立种族 → 仆从种族 → 唯一存在 →"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 139,
+          "line": 154,
           "context": "- **挑怪物强度时先看书上的「上级/下级」标签,它比自己估更准。** `monster-scale.md`"
         },
         {
           "file": "WORKLOG.md",
           "line": 107,
           "context": "- **阶段 A**(标尺与词条,2026-08-03):`reference/rules/monster-scale.md` + 五级强度阶梯 +"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 239,
-          "context": "传说生物)`。那四行是照抄 `reference/rules/monster-scale.md` 的分级名,`rules/` 目前整体"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 240,
-          "context": "是英文;单方面改这边会让两份文件对不上号,要改得连 `monster-scale.md` 一起改。"
         },
         {
           "file": "core/02-rules-reference.md",
@@ -1104,7 +1049,7 @@
           "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺,三阶段。**阶段 A**(标尺与词条):`reference/rules/monster-scale.md` 五级阶梯(human/creature/s"
         }
       ],
-      "reference_count": 43
+      "reference_count": 41
     },
     {
       "file": "sanity.md",
@@ -1113,11 +1058,6 @@
       "lines": 57,
       "declared_consumers": [],
       "referenced_by": [
-        {
-          "file": "WORKLOG.md",
-          "line": 243,
-          "context": "`core/06`、`reference/rules/sanity.md`、两份 deck README、战役文件里的「`complications.md`"
-        },
         {
           "file": "core/02-rules-reference.md",
           "line": 34,
@@ -1169,7 +1109,7 @@
           "context": "\"evidence\": \"The entire answer is paraphrased summary/table lookups in the assistant's own words (short dice-notation fragments and derived numbers only), with "
         }
       ],
-      "reference_count": 11
+      "reference_count": 10
     },
     {
       "file": "skill-checks.md",
