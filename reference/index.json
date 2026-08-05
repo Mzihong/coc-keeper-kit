@@ -578,7 +578,7 @@
           "update_plan/2026-08-04-era-rule-packs.md:230",
           "update_plan/2026-08-04-era-rule-packs.md:247",
           "update_plan/README.md:37",
-          "update_plan/README.md:63",
+          "update_plan/README.md:64",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:11",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:117",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:118",
@@ -632,8 +632,9 @@
           "update_plan/2026-08-04-era-rule-packs.md:136",
           "update_plan/2026-08-04-era-rule-packs.md:137",
           "update_plan/2026-08-04-era-rule-packs.md:247",
-          "update_plan/README.md:88",
-          "update_plan/README.md:103",
+          "update_plan/2026-08-04-scenario-diversity.md:156",
+          "update_plan/README.md:89",
+          "update_plan/README.md:106",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:117",
           "update_plan/Archived/2026-08-02-conventions-gaps.md:75"
         ]
@@ -792,7 +793,7 @@
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:622",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:665",
           "update_plan/Archived/2026-08-04-retire-bundle.md:157",
-          "update_plan/Archived/README.md:21"
+          "update_plan/Archived/README.md:20"
         ]
       },
       "reference/rules/sanity.md": {
@@ -863,8 +864,7 @@
           "reference/tables/README.md:29",
           "update_plan/2026-08-02-low-cost-maps.md:88",
           "update_plan/2026-08-02-low-cost-maps.md:98",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:189",
-          "update_plan/README.md:82",
+          "update_plan/README.md:83",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:110",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:219",
           "update_plan/Archived/2026-08-02-cult-doc-wrapup.md:18",
@@ -899,10 +899,10 @@
           "update_plan/2026-08-04-town-anatomy-from-arkham.md:416",
           "update_plan/README.md:12",
           "update_plan/README.md:13",
-          "update_plan/README.md:51",
-          "update_plan/README.md:77",
-          "update_plan/README.md:79",
-          "update_plan/README.md:101",
+          "update_plan/README.md:52",
+          "update_plan/README.md:78",
+          "update_plan/README.md:80",
+          "update_plan/README.md:103",
           "update_plan/Archived/2026-08-04-retire-bundle.md:109"
         ]
       },
@@ -931,7 +931,7 @@
           "update_plan/2026-08-04-town-anatomy-from-arkham.md:201",
           "update_plan/2026-08-04-town-anatomy-from-arkham.md:312",
           "update_plan/2026-08-04-town-anatomy-from-arkham.md:374",
-          "update_plan/README.md:101",
+          "update_plan/README.md:103",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:111",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:256",
           ".claude/skills/description/SKILL.md:12"
@@ -1332,9 +1332,7 @@
           "reference/decks/miseries-zh.md:414",
           "reference/decks/README.md:17",
           "reference/tables/README.md:24",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:47",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:133",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:181"
+          "update_plan/2026-08-04-scenario-diversity.md:174"
         ]
       },
       "reference/tables/cult-goals.md": {
@@ -1353,9 +1351,7 @@
           "reference/mythos/cults/society-of-the-divine-children.md:18",
           "reference/tables/cult-power-sources.md:5",
           "reference/tables/README.md:28",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:49",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:56",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:82",
+          "update_plan/2026-08-04-scenario-diversity.md:92",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:132",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:166",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:220",
@@ -1370,8 +1366,6 @@
           "core/06-create-npc.md:43",
           "templates/cult.md:11",
           "reference/tables/README.md:30",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:50",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:183",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:134",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:166",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:171",
@@ -1389,7 +1383,6 @@
           "reference/mythos/cults/order-of-morpheus.md:12",
           "reference/mythos/cults/society-of-the-divine-children.md:15",
           "reference/tables/README.md:31",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:51",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:137",
           "update_plan/Archived/2026-08-02-cult-doc-wrapup.md:20"
         ]
@@ -1404,6 +1397,7 @@
           "reference/tables/README.md:32",
           "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:179",
           "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:287",
+          "update_plan/2026-08-04-scenario-diversity.md:109",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:185",
           "update_plan/Archived/2026-08-02-cult-doc-wrapup.md:20",
           "update_plan/Archived/2026-08-02-cult-doc-wrapup.md:37",
@@ -1421,9 +1415,6 @@
           "core/01-intake.md:156",
           "reference/tables/README.md:17",
           "campaigns/_template-campaign/CLAUDE.md:110",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:43",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:63",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:172",
           ".claude/skills-eval-workspace/benchmark.json:59"
         ]
       },
@@ -1438,10 +1429,9 @@
           "core/03-build-world.md:15",
           "reference/tables/hooks.md:6",
           "reference/tables/README.md:18",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:44",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:65",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:163",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:171",
+          "update_plan/2026-08-04-scenario-diversity.md:68",
+          "update_plan/2026-08-04-scenario-diversity.md:98",
+          "update_plan/2026-08-04-scenario-diversity.md:142",
           "update_plan/2026-08-04-town-anatomy-from-arkham.md:24",
           "update_plan/2026-08-04-town-anatomy-from-arkham.md:26",
           "update_plan/2026-08-04-town-anatomy-from-arkham.md:198",
@@ -1469,10 +1459,9 @@
           "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:225",
           "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:255",
           "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:339",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:52",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:203",
-          "update_plan/README.md:88",
-          "update_plan/README.md:103"
+          "update_plan/2026-08-04-scenario-diversity.md:197",
+          "update_plan/README.md:89",
+          "update_plan/README.md:106"
         ]
       },
       "reference/tables/monster-index.md": {
@@ -1511,6 +1500,7 @@
           "scripts/build-reference-index.py:429",
           "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:381",
           "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:418",
+          "update_plan/2026-08-04-scenario-diversity.md:110",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:9",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:362",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:429",
@@ -1518,7 +1508,7 @@
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:660",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:673",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:703",
-          "update_plan/Archived/README.md:21"
+          "update_plan/Archived/README.md:20"
         ]
       },
       "reference/tables/monster-traits.md": {
@@ -1542,12 +1532,13 @@
           "reference/rules/monster-scale.md:139",
           "reference/rules/monster-scale.md:147",
           "reference/tables/README.md:34",
+          "update_plan/2026-08-04-scenario-diversity.md:109",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:6",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:246",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:259",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:513",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:614",
-          "update_plan/Archived/README.md:21"
+          "update_plan/Archived/README.md:20"
         ]
       },
       "reference/tables/mythos-angles.md": {
@@ -1562,9 +1553,7 @@
           "reference/tables/hooks.md:6",
           "reference/tables/README.md:19",
           "campaigns/_template-campaign/CLAUDE.md:92",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:45",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:74",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:169",
+          "update_plan/2026-08-04-scenario-diversity.md:99",
           "update_plan/2026-08-04-town-anatomy-from-arkham.md:346",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:215",
           ".claude/skills-eval-workspace/benchmark.json:59"
@@ -1576,8 +1565,6 @@
         "referenced_by": [
           "core/06-create-npc.md:41",
           "reference/tables/README.md:26",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:48",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:182",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:140",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:170"
         ]
@@ -1592,10 +1579,7 @@
           "reference/tables/npc-appearance.md:36",
           "reference/tables/README.md:20",
           "reference/tables/README.md:26",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:46",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:64",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:132",
-          "update_plan/2026-08-04-tables-d20-to-d100.md:173",
+          "update_plan/2026-08-04-scenario-diversity.md:173",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:141"
         ]
       }
@@ -2164,17 +2148,16 @@
         "reference/rules/combat.md",
         "reference/rules/magic.md"
       ],
-      "update_plan/2026-08-04-tables-d20-to-d100.md": [
-        "reference/craft/cult-design-zh.md",
+      "update_plan/2026-08-04-scenario-diversity.md": [
+        "reference/rules/chases.md",
         "reference/tables/complications.md",
         "reference/tables/cult-goals.md",
-        "reference/tables/cult-leader-positions.md",
-        "reference/tables/cult-power-sources.md",
-        "reference/tables/hooks.md",
+        "reference/tables/cultist-archetypes.md",
         "reference/tables/locations.md",
         "reference/tables/madness.md",
+        "reference/tables/monster-index.md",
+        "reference/tables/monster-traits.md",
         "reference/tables/mythos-angles.md",
-        "reference/tables/npc-appearance.md",
         "reference/tables/npc-quirks.md"
       ],
       "update_plan/2026-08-04-town-anatomy-from-arkham.md": [

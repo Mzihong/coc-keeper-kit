@@ -317,7 +317,7 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 63,
+          "line": 64,
           "context": "1. ~~**P11 阶段 1**(给 `character-creation.md` 标上\"这是 1920s 基准\")~~ —— **已完成"
         },
         {
@@ -568,14 +568,19 @@
           "context": "- 阶段 1 的三处标注都在:`character-creation.md:3-6`(基准声明)、`chases.md:29-32`"
         },
         {
+          "file": "update_plan/2026-08-04-scenario-diversity.md",
+          "line": 156,
+          "context": "- [ ] 与 `reference/rules/chases.md` 划清边界:那份是**追逐的机制**,这张是**场面的选材**。"
+        },
+        {
           "file": "update_plan/README.md",
-          "line": 88,
+          "line": 89,
           "context": "(`chases.md` 的载具 MOV 差一个数量级、`madness.md` 掷 4 号是另一件事),"
         },
         {
           "file": "update_plan/README.md",
-          "line": 103,
-          "context": "| 3 | **P12** 速查表自足化 | ★★★☆☆ | 源材料 2,402 行 / 21.3 万字符(第六、七、八章)+ 其余四章;4 份重写 + 2 份新建(恐惧症/躁狂症 d100、武器强度索引)+ 8 处引用改写 + 1 处脚本改动 + `.gitignore` + 索引重建 | **实现不难,难在刹车**"
+          "line": 106,
+          "context": "| 4 | **P12** 速查表自足化 | ★★★☆☆ | 源材料 2,402 行 / 21.3 万字符(第六、七、八章)+ 其余四章;4 份重写 + 2 份新建(恐惧症/躁狂症 d100、武器强度索引)+ 8 处引用改写 + 1 处脚本改动 + `.gitignore` + 索引重建 | **实现不难,难在刹车**"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -588,7 +593,7 @@
           "context": "- [x] `reference/rules/chases.md` — 从 7e 规则提炼:速度对比、行动点、"
         }
       ],
-      "reference_count": 17
+      "reference_count": 18
     },
     {
       "file": "combat.md",
@@ -1214,7 +1219,7 @@
         },
         {
           "file": "update_plan/Archived/README.md",
-          "line": 21,
+          "line": 20,
           "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺,三阶段。**阶段 A**(标尺与词条):`reference/rules/monster-scale.md` 五级阶梯(human/creature/s"
         }
       ],
