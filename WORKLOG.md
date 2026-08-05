@@ -195,9 +195,12 @@ codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-0
   查重 + 表行数自检)+ 两张缺表(对抗场面 / 模组形状)+ `locations` 接到场景级,扩容降为
   条件执行。**副作用:`tables/README.md`「宁可 20 条具体的」那句约定不再需要推翻,原样保留。**
   接手时注意本条记的是**方向**,`update_plan/README.md` 才是状态权威。
-- **P14 阶段 1(`scripts/roll.py` 本体 + 硬约定接线)已于 2026-08-05 落地,尚未提交**——
-  见下面「会话记录」的完整清单;接手时先看那条,别重新读一遍 diff。阶段 2–6(种子表口径
-  不一致的 bug、两张缺表、`locations` 接到场景级)仍待执行。
+- **P14 阶段 1(`scripts/roll.py` 本体 + 硬约定接线)已于 2026-08-05 随 148bb91 落地**。
+  两处偏离计划字面描述,接手时留意:①不放回/`--fresh` 用集合差实现,不是计划原文写的
+  "重掷循环"——效果等价,池子精确报告耗尽而不是假装重试 20 次;②在计划清单之外加了
+  `--check-all`(全表自检,不掷骰)和 `--spec`(标注哪个 spec 在掷)两个参数。种子表口径
+  不一致的 bug、两张缺表(对抗场面/模组形状)、`locations` 接到场景级仍是阶段 2–4,
+  没做。想看当时怎么想的,`git show 148bb91` 或翻 `scripts/roll.py` 的文件头注释。
 - **P16(线索引擎 + 三线索检验)于 2026-08-04 新立,方向已定案。** 它和 P14 是同族诊断——
   P14 发现「模组形状」「对抗场面」两维**条目数为 0**,P16 发现**「线索来源」这一维条目数是 1**
   (`craft/cult-design-zh.md` §四 的六项财源,而且住在邪教专属文件里,威胁不是邪教时
@@ -286,52 +289,6 @@ codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-0
 
 ## 会话记录
 
-### 未提交:P14 阶段 1——`scripts/roll.py` + "不许口头掷骰"硬约定(2026-08-05)
-
-按计划 [`2026-08-04-scenario-diversity.md`](update_plan/2026-08-04-scenario-diversity.md)
-「阶段 1」逐条落地,checkbox 已在计划文件里勾完。接手时只需要这几条,不用重新读一遍 diff:
-
-- **`scripts/roll.py` 新建**。骰面从表格自己的 `dN` 表头读(多维表另外核对小节标题
-  `(1DN)` 是否一致,不一致直接报错),不是从命令行参数传——传错骰面这类问题结构性地
-  不会发生。两维表(`cult-goals.md`)一次调用自动掷两维并一并输出。
-- **不放回 / `--fresh` 跨战役查重都是集合差实现,不是计划原文写的"重掷循环"**——
-  效果等价(排除已用点数后随机取,池子空了就落回全范围随机并注明),但不会像重试循环
-  那样浪费尝试次数,且能在跨战役已完全撞满时立刻精确报告,不用假装重试 20 次。
-  这是唯一一处**故意**偏离计划字面描述的实现细节,记一笔免得以后被当成没做。
-- **`rolls.log` 记账加了计划里没写的 `--spec <name>` 可选参数**,用来标注是哪个 spec
-  掷的(计划的记账字段本来就要求这一栏,但没给出怎么传进来)。调用方不传就记 `-`。
-  日志格式是 tab 分隔(表名/维度/骰面/点数/条目/spec/时间戳),不是计划示例里的斜杠。
-- **`campaigns/<slug>/` 目录不存在时 `roll.py --campaign` 会自己创建**(仅这一个空文件夹,
-  不会伪造整套战役骨架)。这解决了阶段 1 风险清单第 3 条的一半时序问题:intake 第 3 步
-  auto-fill 掷种子表时,战役文件夹要到第 4 步才正式建;有了这条,模型可以在文件夹诞生前
-  就先掷骰,`rolls.log` 会在那一刻被创建。**另一半决定**(`_template-campaign/` 要不要
-  预置空 `rolls.log`、要不要进 `core/01` 的 Output 六项清单)本轮定案**都不做**——理由见
-  计划文件阶段 1.2 末尾那一段,不在这里重复。
-- **额外加了 `--check-all`**(计划清单里没有的加项):不掷骰,把 `reference/tables/*.md`
-  全部过一遍自检,真正补上计划诊断里点名的那个盲区——`build-reference-index.py` 查的是
-  引用关系,查不出"表里少一行"这种坏法,而这种坏法之前已经在这份 WORKLOG 里被记过两次。
-  跑了一次:10 张骰表通过,3 张非骰表(`cultist-archetypes.md` / `monster-traits.md` /
-  `monster-index.md`)正确跳过。
-- **顺带修的平台坑**:Windows 终端默认代码页不是 UTF-8,脚本打印中文本会花掉(不影响
-  `rolls.log` 落盘,那处一直是显式 `encoding="utf-8"`,只影响屏幕显示)。加了
-  `sys.stdout.reconfigure(encoding="utf-8")`,非 Windows 环境是空操作。
-- **接线覆盖 5 处掷骰点**:`core/01-intake.md`(auto-fill 主流程、defaults 表、反套路节)、
-  `core/03-build-world.md`(首次建世界、邪教子路径)、`core/04-design-scenario.md`
-  (complications)、`core/06-create-npc.md`(npc-quirks/npc-appearance/cult-leader-positions
-  合并在同一段一起改)。`core/00-how-to-run.md` ground rules 新增一条(与 "Fair play" 同级)
-  并同步进 `CLAUDE.md`/`GEMINI.md`/`AGENTS.md` 三份(硬约定 1)。`reference/tables/README.md`
-  顶部加了「怎么掷」一段。`core/11-review.md` 新增一条审查项:找不到 `rolls.log` 或产物里
-  的种子对不上日志,判 fail。
-- **没动的东西,别以为是漏了**:`tables/README.md` 那处种子表四张口径不一致的 bug
-  (README 写 npc-quirks,`core/01` 写 complications)**故意没修**——那是计划阶段 2 的活,
-  这次只改了措辞、没碰哪四张。两张新表(对抗场面 / 模组形状)与 `locations` 接到场景级
-  同样是阶段 2–4,没做。
-- **测试方式**:用真实 `reference/tables/` 文件跑过——单维表、两维表(`cult-goals`)、
-  排除名单报错、找不到的表名报错、`--times`、连续 `--times 20` 验证不放回精确不重复且
-  第 21 次准确报告"已掷空"、`--fresh` 在另一战役已掷满 20/20 时精确报告已掷空。
-  测试用的 campaign 目录(`roll-test-a` 等)已清理,`git status` 干净,只剩 `scripts/roll.py`
-  一个新文件未提交,其余全是对已有文件的修改。
-
 ### 未提交:`_source/` 入库边界改判(2026-08-04 晚)
 
 **起因**:Keeper 问「不入库的话现有 kit 功能是否会不完整」,并给了新规则
@@ -362,7 +319,9 @@ codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-0
 ---
 
 其余已提交条目已按 `core/15-close-session.md` 的 "Prune before you add" 删除:
-P13(bundle 退役)随 7f85d9b 落地,「默认舞台改为美国」随 d481713 落地。
+P13(bundle 退役)随 7f85d9b 落地,「默认舞台改为美国」随 d481713 落地,
+P14 阶段 1(`scripts/roll.py`)随 148bb91 落地——两处偏离计划字面描述的实现细节已经
+折进「当前状态」那条摘要,不在这里重复背一份。
 
 同理,P9 阶段 A+B 的落地细节(索引脚本怎么解析转录稿、踩过的名称解析坑、9 只 bestiary
 条目的改判理由)已随 commit 059ba63 落地,理由本身也直接写在了改动的文件里(各 bestiary
