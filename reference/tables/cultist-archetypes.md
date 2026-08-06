@@ -262,7 +262,7 @@ Build 1 · MP 18 · Luck 90 · Move 9
 **常见法术**(除上述异能关联的长寿/旅行法术外,几乎所有永生大师都可能懂):
 请神术(父神达贡/母神海德拉)、记忆模糊术、克苏鲁通神术、深潜者联络术、
 克苏鲁的星之眷族联络术、拉莱耶造雾术、伤害偏转术、支配术、恐惧植入术、
-深潜者召唤/束缚术。数值查 `reference/sourcebooks/keeper-rulebook-7e-zh.md` /
+深潜者召唤/束缚术。数值查 `reference/rules/magic.md` /
 `reference/sourcebooks/grand-grimoire-zh.md`;请神术的父神达贡/母神海德拉版本是本轮
 新法术,见下方"新法术"一节。
 

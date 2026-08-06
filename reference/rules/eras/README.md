@@ -1,34 +1,29 @@
-# Era Packs — index, delta convention, loading order, fallback paths
+# 年代包 — 索引、差集体例、加载顺序、兜底路径
 
-This is the hub file for running Call of Cthulhu 7e outside the kit's 1920s baseline
-(`reference/rules/character-creation.md`). Read this before reading any file in this
-directory — an era file on its own is a **diff**, not a standalone rules document, and
-reading one without the baseline behind it will misread it.
+本文件是在 kit 的 1920s 基准本（`reference/rules/character-creation.md`）之外跑 CoC 7e
+的枢纽文件。进入本目录任何一份文件之前先读这一份——**年代文件单独拿出来是一份差集,
+不是独立的规则文档**,不先读基准本就读年代文件会读错。
 
-## Why a diff and not a full rewrite
+## 为什么是差集,不是整份重写
 
-The baseline (`character-creation.md`, `combat.md`, `chases.md`, etc.) already covers
-everything that doesn't change between eras — the check math, Sanity, HP, the shape of a
-character sheet. What changes across eras is a small, specific set of things: which
-occupations exist, what skills are period-appropriate, what technology and equipment are
-available, what money looks like. Writing each era as a full character-creation document
-would repeat the unchanging 80% every time, and the copies would drift out of sync with the
-baseline. Writing each era as a **delta against the baseline** keeps every file small and
-keeps the baseline the single source of truth for everything that isn't era-specific.
+基准本（`character-creation.md`、`combat.md`、`chases.md` 等）已经覆盖了跨年代不变的
+一切——检定的数学、理智、生命值、角色卡的形状。年代之间真正变化的是一小撮具体的东西：
+存在哪些职业、哪些技能符合时代背景、能用什么科技和装备、钱长什么样。把每个年代都写成一
+份完整的角色创建文档，会每次都重复那不变的 80%，而且各份拷贝迟早会和基准本走样。把每
+个年代写成**对基准本的差集**，能让每份文件都很薄，也让基准本继续是所有非年代专属内容
+的唯一权威来源。
 
-The cost: a delta file is unreadable alone. `core/02-rules-reference.md`'s loading order
-below exists to make sure nothing ever reads one alone.
+代价是：差集文件单独读不懂。下面 `core/02-rules-reference.md` 的加载顺序，就是为了保证
+没有人会单独读一份。
 
-## Index — eras covered by the source material
+## 索引 —— 源材料覆盖的年代
 
-Source: *Cthulhu Through the Ages* (官方设定合集,七宫涟个人汉化版,52 页,收录于
-`update_plan/Archived/2026-08-04-era-rule-packs.md` 的勘察结果一节, archived after the plan
-completed). Every era the book covers is
-built here — **no filtering**; the source material is only 52 pages, so building all of them
-costs less than making a Keeper wait on a future ad-hoc request. See that plan file for full
-survey detail.
+来源：《Cthulhu Through the Ages》（官方设定合集，七宫涟个人汉化版，52 页，收录于
+`update_plan/Archived/2026-08-04-era-rule-packs.md` 的勘察结果一节，计划完结后归档）。
+书里覆盖的每个年代**都在这里建了档**——不做筛选；源材料只有 52 页，全部建完的成本比让
+守秘人以后临时等一份新文件更低。完整的勘察细节见该计划文件。
 
-| Era file | 中文名 | 年代 | 书本背书 |
+| 年代文件 | 中文名 | 年代 | 书本背书 |
 |---|---|---|---|
 | `cthulhu-invictus.md` | 克苏鲁不败 | 罗马帝国(约 1–2 世纪) | ✅ 官方 |
 | `dark-ages.md` | 克苏鲁黑暗时代 | 欧洲 10–11 世纪 | ✅ 官方 |
@@ -38,96 +33,83 @@ survey detail.
 | `end-times.md` | 克苏鲁末日之收割 | 旧日支配者苏醒后的后启示录未来(时间点 KP 自定) | ✅ 官方 |
 | *(未声明 = 1920s)* | 经典 1920s | 1920s | ✅ `character-creation.md` 本身 |
 
-**Two things in the source are deliberately not built as era files here:**
+**源材料里有两样东西刻意没有做成年代文件：**
 
-- **剑见箭 Swords and Arrows** is not an era — it's a shared melee-combat supplement
-  (shields, ancient/medieval weapon tables) the book uses for the three pre-gunpowder
-  settings above. Its content is folded into `cthulhu-invictus.md`,
-  `dark-ages.md`, and `mystic-iceland.md`'s own **装备与武器** / **可选机制** sections
-  instead of living in a fourth file nobody would declare an era.
-- **幻梦境 Dreamlands** is not an era either — it's an alternate plane reachable from
-  *any* era (a Roman-era investigator and a 1920s one can both fall asleep into it). It
-  doesn't fit the delta-against-a-timeline model this directory uses. If a campaign needs
-  it, it's a scene/location built with `core/03-build-world.md` and
-  `core/09-description.md`, not an era declaration — the campaign's actual era (1920s,
-  Gaslight, whatever) still governs character creation.
+- **「剑见箭 Swords and Arrows」**不是一个年代——它是给上面三个前火药时代设定共享的
+  近战补充规则（盾牌、古代/中世纪武器表）。它的内容已经并进
+  `cthulhu-invictus.md`、`dark-ages.md`、`mystic-iceland.md` 各自的**装备与武器**/
+  **可选机制**小节，而不是单独立第四份没人会去声明的"年代"。
+- **「幻梦境 Dreamlands」**同样不是一个年代——它是从*任意*年代都能抵达的一个位面
+  （一个罗马时代的调查员和一个 1920s 的调查员都能在睡梦中坠入其中）。它不符合本目录
+  "对时间线做差集"的模型。若战役需要它，应该用 `core/03-build-world.md` 与
+  `core/09-description.md` 建成一个场景/地点，而不是一次年代声明——战役实际的年代
+  （1920s、煤气灯、随便什么）仍然管辖角色创建。
 
-## The five-section delta convention
+## 五节差集体例
 
-Every era file in this directory uses exactly these five sections, in this order. **Only
-write what changes.** If an era doesn't touch a section (e.g. Mystic Iceland has no fixed
-occupation table), say so in one line rather than omitting the heading — an era file with a
-missing section reads as "not yet written," not "nothing changed here."
+本目录每份年代文件都用完全相同的这五节，顺序也一致。**只写发生了变化的部分。** 若某个
+年代在某一节上没有变化（例如神秘冰岛没有固定职业表），用一句话说明，而不是直接省掉这个
+标题——缺了小节的年代文件读起来像"还没写完"，而不是"这里没有变化"。
 
-Section headings follow kit convention (English scaffolding, Chinese term in parentheses) and
-must match these five exactly — this is what every existing era file already uses:
+小节标题遵循 kit 惯例（中文正文，英文术语括注），必须与下面这五个完全一致——这是现有
+每份年代文件都在用的标题：
 
-1. **Skill table changes**(技能表增减) — new skills the era adds, existing skills it drops or
-   renames, and any skill whose *base value* or *use* changes (e.g. Gaslight's Electrical
-   Repair starting at 01% instead of the baseline value, because household electricity barely
-   exists yet).
-2. **Equipment & weapons**(装备与武器) — period weapons, armour, and everyday equipment, with
-   damage/price where the source gives it. This is where the three ancient eras carry their
-   剑见箭 shield and weapon tables.
-3. **Technology & common knowledge**(技术与常识水平) — what an investigator of this era would
-   and wouldn't know or expect: available technology, common knowledge, travel speed,
-   communication lag. This is the section a Keeper reads to avoid anachronism in prose, not
-   just in stat blocks.
-4. **Occupation table**(职业表) — period occupation templates (skills, skill-point formula,
-   status/credit range). Note explicitly if the era uses free skill-point allocation instead
-   (Mystic Iceland does).
-5. **Optional rules**(可选机制) — era-specific optional rules that don't fit the other four
-   sections (Dark Ages' clan/feud system, Iceland's Luck-never-recovers rule, End Times'
-   Strong Sanity trait).
+1. **技能表增减（Skill table changes）**——本年代新增的技能、去掉或改名的既有技能，
+   以及任何**基础值**或**用法**发生变化的技能（例如煤气灯年代的电气维修起始值是
+   01% 而不是基准值，因为家用电力这时几乎不存在）。
+2. **装备与武器（Equipment & weapons）**——本年代的武器、护甲与日常装备，源材料给出
+   伤害/价格的一并列出。三个古代年代在这一节里带着「剑见箭」的盾牌与武器表。
+3. **技术与常识水平（Technology & common knowledge）**——这个年代的调查员会/不会知道
+   或预期什么：可得的科技、常识、出行速度、通讯延迟。这是守秘人为避免叙事中出现时代
+   错误而读的一节，不只是为了兜数值。
+4. **职业表（Occupation table）**——本年代的职业模板（技能、技能点公式、地位/信用
+   评级区间）。若该年代用自由技能点分配代替固定职业表（神秘冰岛就是这样），要明说。
+5. **可选机制（Optional rules）**——不属于前四节、本年代专属的可选规则（黑暗时代的
+   氏族/世仇系统、冰岛"幸运永不回复"规则、末日之收割的坚韧心智特质）。
 
-Every entry cites where it came from — a chapter name and page number in the source, the
-same **来源** convention `character-creation.md` already uses. Nothing here is invented; if
-the source doesn't give a number, the era file says so rather than filling one in.
+每条都标出它出自哪里——源材料里的章名与页码，和 `character-creation.md` 已经在用的
+**来源**惯例一致。这里没有一处是编造的；源材料没给数字，年代文件就照实说没有，不会替它
+填一个。
 
-## Loading order and the Era field — authority is `core/02-rules-reference.md`
+## 加载顺序与 Era 字段 —— 权威在 `core/02-rules-reference.md`
 
-**`core/02-rules-reference.md` defines the Era field's legal values and the exact order it
-resolves in — this section only restates the shape for a reader who lands in this directory
-first.** If this ever reads differently from `core/02`, `core/02` wins; fix the drift here,
-don't treat this copy as a second source.
+**`core/02-rules-reference.md` 定义了 Era 字段的合法取值与它解析的确切顺序——本节只是
+给先落到这个目录的读者复述一遍形状。** 若这里的说法和 `core/02` 不一致，以 `core/02`
+为准；发现漂了就来这里改，不要把这份拷贝当成第二个信源。
 
-In short: the field is always a short slug-like label, never a file path. It resolves to
-**path A** (baseline + an indexed era file) when it matches this index, to **path B**
-(baseline + `campaigns/<slug>/rules-era.md`) when it doesn't match the index but that file
-exists, to **path C** (mechanical skeleton only) when neither matches, and to the baseline
-alone when the field is unset or `1920s`. An era file (indexed or path-B) is never read
-without the baseline loaded first — it's a diff, and reading one alone silently drops
-everything the era didn't bother to restate.
+简单说：这个字段永远是一个短的、slug 式的标签，从不是文件路径。它命中本索引时解析成
+**路径 A**（基准本 + 一份索引内的年代文件）；不命中索引但
+`campaigns/<slug>/rules-era.md` 存在时解析成**路径 B**（基准本 + 该文件）；两者都不
+命中时解析成**路径 C**（只保留机械骨架）；字段未声明或写的是 `1920s` 时就只用基准本。
+年代文件（无论是索引内的还是路径 B 的）**永远不会脱离基准本单独被读**——它是一份差集，
+单独读会悄悄漏掉这个年代懒得重复声明的一切。
 
-## How a campaign declares its era
+## 战役如何声明自己的年代
 
-`campaigns/_template-campaign/CLAUDE.md` → **Setting → Era** takes that same short slug-like
-label, not free text — `1920s` (baseline, the default), one of the file-name stems in the
-index table above (`cthulhu-invictus`, `dark-ages`, `mystic-iceland`, `gaslight`, `icarus`,
-`end-times`), or a path-B/C label the Keeper approved during intake (see below) — any of
-those resolve automatically per `core/02`, so the field never needs to say *which* path it
-is. Free-text descriptions ("1890s Gaslight London") still belong in the surrounding prose —
-the slug is what `core/02` matches against this index, so it has to be exact.
+`campaigns/_template-campaign/CLAUDE.md` → **Setting → Era** 用的是同一个短 slug 式
+标签，不是自由文本——`1920s`（基准，默认值）、上表里任意一个文件名词干（`cthulhu-
+invictus`、`dark-ages`、`mystic-iceland`、`gaslight`、`icarus`、`end-times`），或是
+intake 时守秘人拍板的一个路径 B/C 标签（见下）——以上任何一种都会按 `core/02` 自动
+解析，所以字段本身永远不需要说明*走的是哪条路径*。自由文本描述（"1890 年代煤气灯伦
+敦"）仍然写在周围的散文里——slug 是 `core/02` 拿去比对这份索引的东西，必须精确匹配。
 
-## The three paths — what `core/01-intake.md` does when a Keeper names an era
+## 三条路径 —— 守秘人报出一个年代时 `core/01-intake.md` 做什么
 
-| Path | Trigger | What happens | What the Keeper is told |
+| 路径 | 触发条件 | 发生什么 | 告诉守秘人什么 |
 |---|---|---|---|
-| **A — book-backed** | Era slug matches a file in the index above | Write that slug into the campaign `CLAUDE.md`'s Era field; `core/02` layers the delta per the loading order | Play proceeds; numbers carry the book's backing |
-| **B — derivable** | Not in the index, but within the same technological lineage as a covered era (a Keeper says "1970s" or "1990s" — close enough to 1920s/modern that the delta can be reasoned out) | Construct a delta **on the spot**, following the same five-section convention, and save it to `campaigns/<slug>/rules-era.md` (not into this directory — it's campaign-specific, not reusable, and never book-backed); write a short label (e.g. `1970s`) into the Era field — **never the file path**, `core/02` finds the file automatically | **Explicitly told this is derived, not sourced** — show the Keeper the constructed delta before play starts, and say plainly that Chaosium never published these numbers |
-| **C — out of scope** | Future/alien/fully invented setting with no real technological lineage to reason from | Keep only the mechanical skeleton (checks, Sanity, combat) — no equipment or occupation numbers invented to look authoritative; write a short label into the Era field for the record — it won't match the index or any `rules-era.md`, so `core/02` resolves it as path C without further marking | **Explicitly told the kit does not back these numbers at all** — the Keeper is on their own for anything era-specific |
+| **A —书本背书** | 年代 slug 命中上面索引里的文件 | 把这个 slug 写进战役 `CLAUDE.md` 的 Era 字段；`core/02` 按加载顺序叠加差集 | 直接开团；数字有书本背书 |
+| **B — 可推导** | 不在索引里，但与某个已覆盖年代处于同一科技谱系（守秘人说"1970s"或"1990s"——离 1920s/现代足够近，差集能推导出来） | **当场**构造一份差集，遵循同样的五节体例，存进 `campaigns/<slug>/rules-era.md`（不进本目录——它是战役专属的，不可复用，也没有书本背书）；在 Era 字段写一个短标签（如 `1970s`）——**绝不写文件路径**，`core/02` 会自动找到这份文件 | **明确告知这是推导出来的，不是有出处的**——开团前把构造出的差集给守秘人看一遍，并明说 Chaosium 从未发布过这些数字 |
+| **C — 超出范围** | 未来/外星/完全架空的设定，没有真实的科技谱系可供推导 | 只保留机械骨架（检定、理智、战斗）——不为了显得权威而编造装备或职业数值；在 Era 字段写一个短标签留档——它不会命中索引或任何 `rules-era.md`，`core/02` 因此会照常把它解析成路径 C，不需要额外标记 | **明确告知 kit 完全不为这些数字背书**——年代专属的一切都要守秘人自己拿主意 |
 
-Path B is the actual point of "era is open," not a fallback bolted onto path A — building
-only the six book-backed files above would just be a bigger closed set. When constructing a
-path B delta, follow the five-section convention above and reason from the nearest covered
-era (a Keeper's "1970s" campaign reasons forward from `character-creation.md`'s 1920s
-baseline the same way Gaslight's 1890s reasons backward from it — technology, social
-structure, and money all move by degree, not by starting over).
+路径 B 才是"年代开放"真正的落点，不是挂在路径 A 上的一个补丁——如果只建上面六份书本
+背书的文件，那只是一个更大一点的封闭集合。构造一份路径 B 差集时，遵循上面的五节体例，
+从最近的已覆盖年代推导（守秘人报"1970s"的战役，从 `character-creation.md` 的 1920s
+基准往前推导，就像煤气灯的 1890s 从它往后推导一样——科技、社会结构、金钱都是渐变的，
+不是重新起炉灶）。
 
-## Where this gets checked
+## 这里会被查的地方
 
-Technology, equipment, or common knowledge leaking in from the wrong period (a path-B delta's
-assumptions going unflagged, a 1920s-trained model defaulting to cars in a Dark Ages scene) is
-exactly the failure mode this directory exists to prevent. `core/11-review.md`'s Mechanics
-checklist has a **Content matches the campaign's declared Era** item for it — run material
-through that review before it reaches the table, the same as any other checklist item.
+科技、装备或常识知识串错年代（一份路径 B 差集的假设没被标出来、一个按 1920s 训练的模型
+在黑暗时代场景里想当然地写出汽车）——正是本目录存在的目的就是防这个。`core/11-review.md`
+的机制清单里有一条**内容符合战役声明的年代**，专门查这个——材料上桌前照这条清单走一遍，
+和清单里其它项一样。

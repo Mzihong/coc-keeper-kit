@@ -1,149 +1,231 @@
-# Monster Scale — cheat-sheet
+# 怪物强度标尺（Monster Scale）
 
-> The strength ladder for non-human threats, and the numeric baseline each rung sits at.
-> Distilled by sampling `reference/sourcebooks/malleus-monstrorum-zh.md`
-> — **all 223 stat blocks** in it (129 dice-notation species entries +
-> 94 fixed-value deity/unique entries; the count is stated in that file's own header), matched
-> to the book's own classification label and bucketed per tier. Coverage of the sampled fields:
-> HP 87%, Sanity loss 92%, attack skill 88%, armour ~68% of the entries that state one.
-> This sheet keeps the mechanics and number ranges, never the source text.
-> **Human antagonists don't use this ladder** — `reference/rules/character-creation.md` §11.
+本文覆盖两类内容：**第十四章的通用怪物机制框架**（属性惯例、体格比较表、怪物战斗与战技、
+不死的旧日支配者/外神、人类打得过的神话生物、怪物法术）——这部分对照规则书逐条核实；
+以及**五级强度阶梯与各阶梯数值区间**——这部分是抽样 `reference/sourcebooks/
+malleus-monstrorum-zh.md` 全部 223 条数值条目（129 条骰值物种词条 + 94 条固定值神格/
+唯一实体词条，数目见该文件自己的头部）得出的统计校准，按书本自己的分类标签归档到各阶
+梯。抽样字段覆盖率：HP 87%、理智损失 92%、攻击技能 88%、护甲约 68%（有给出护甲值的
+条目中）。**本文件只留机制与数值区间，不留原文措辞。**
+**人类反派不走这套阶梯**——见 `reference/rules/character-creation.md` §11。
 
-## The five-tier ladder
+> 来源:《守秘人规则书》第十四章 怪物、野兽和异界诸神(通用框架部分);五级阶梯与数值区间另
+> 抽样自 `reference/sourcebooks/malleus-monstrorum-zh.md`(见上)
 
-Five rungs, ordered by what a Keeper can throw at a table and how badly it goes:
+## 14.0 属性与数值惯例（Attribute Conventions）
 
-| Tier | Malleus category | What it looks like at the table |
+- 多数怪物与神格带 STR/CON/SIZ/POW/INT/DEX 六项个体数值；**许多生物没有外貌（APP）或
+  教育（EDU）**——这两项属性对外星生物或恐怖怪物往往没有意义。
+- 洛夫克拉夫特本人从未系统化过他笔下怪物的数值，同一物种的不同个体完全可以有各自的数
+  值——**书上给出的是取样平均值**。守秘人可以直接照抄，也可以把书上的骰值当参考范围，
+  自行骰出个体差异更大（或更小）的样本。
+- **怪物数值只记整数，不记半值和五分之一值**——NPC 与怪物的个体数值主要用来给玩家的
+  技能检定设难度等级；守秘人偶尔需要临时算一次半值/五分之一值，但这种情况很少见。
+
+<!-- 规则书 9840–9848 -->
+
+## 14.0b 体格比较表（表XV：Build Comparison）
+
+体格（Build）由 STR+SIZ 决定（见 `reference/rules/combat.md` 表I），除了体格数值本身，
+还能直接横向比较人类、载具与神话生物——**人类平均体格是 0，范围从 −2（儿童、小体型人）
+到 2（重量级拳击手这类）**。体格是非线性的：五辆摩托车拼起来不会变成一辆卡车。
+
+| 体格 | 真实世界 | 神话生物 | 非生物 |
+|---|---|---|---|
+| −2 | 儿童、果蝠 | 炎之精 | — |
+| −1 | 大狗 | — | — |
+| 0 | 平均成年人类、狼 | 格拉基之仆 | — |
+| 1 | — | 深潜者 | 轻摩托 |
+| 2 | 大体型人、狮子 | 拜亚基 | — |
+| 3 | 黑熊、大猩猩 | 无形之眷族 | 重摩托 |
+| 4 | 非洲野牛、马 | 古老者 | 经济型轿车 |
+| 5 | — | 黑山羊幼崽 | 标准轿车 |
+| 6 | — | 成年钻地魔虫 | 皮卡车 |
+| 7 | 非洲象 | 达贡 | 六吨卡车 |
+| 9 | — | 修格斯 | 18 轮卡车 |
+| 11 | — | 克苏鲁的星之眷族 | — |
+| 22 | 蓝鲸 | 伟大的克苏鲁 | — |
+| 65 | — | 巨噬蠕虫 | 战舰 |
+
+**快速比较规则**（以体格 0 的普通人类为基准）：目标比自己**小 2 体格**——可以被投掷；
+**小 1 体格**——可以轻松举起；**体格相同**——可以扛一段时间；**大 1 体格**——很难举
+起；**大 2 体格**——举不起来，但可能使其失去平衡或缴械。
+
+<!-- 规则书 9856–9896 -->
+
+## 14.0c 怪物战斗与战技（Monster Combat & Maneuvers）
+
+- **默认每个怪物只有一个笼统的"攻击技能"**，覆盖它所有种类的打、踢、爪击、撕咬、触手
+  缠绕、肘击、头槌等——同一个技能值和同一个伤害骰，**无论怎么narrate这次攻击，伤害数
+  值都一样**；怪物若能用近战武器，武器上也套用同一战斗技能。守秘人可以自由发挥描述，
+  想加环境细节（把调查员挤在大象和树之间、把调查员的头往墓碑上撞）都可以，怎么描述不
+  影响骰出来的伤害。
+- **怪物战技**：体格判定与人类相同——**对手体格比发动方大 3 点或以上，战技无效**；
+  **体格 2 或以上的怪物对人类使用战技不用掷惩罚骰**。人类能对付的最大体格上限是体格
+  4（如马、古老者），且即使是体格上限（2）的人类，面对体格 4 的目标也要为体格差掷
+  **两个**惩罚骰。战技成功后可以：击倒目标（下次攻击获得奖励骰）、把目标推下悬崖/推出
+  窗外、缴械、用触手卷起目标（下次攻击获奖励骰，可以直接造成挤压伤害或把目标砸向墙
+  面）、够大的怪物甚至可以直接抓着目标离场（飞走、钻地等）。被抓/被缠住的目标只能靠
+  一次成功的**力量对抗检定**或自己发动战技才能挣脱。
+- **反击 vs 闪避**：除非怪物想逃跑或特别狡猾，通常应该用**反击**（用基础攻击技能）而不
+  是闪避来应对调查员的攻击。一轮内能攻击多次的怪物，在对方获得"寡不敌众"奖励骰之前，
+  可以反击同样多的次数（例如一轮攻击 3 次的食尸鬼，能反击 3 次才会让攻击者吃到奖励
+  骰）——**面对某些神话生物，调查员永远得不到寡不敌众加成**。
+- **不死的旧日支配者/外神**：外神与旧日支配者这类多维度存在，生命值被打到 0 或以下时
+  **不会被杀死或击昏，只会被驱散/放逐回来源之处**——单纯造成伤害不会摧毁或削弱它们的
+  力量，被逼走或劝走之后它们还能回来。
+- **杀死怪物的模糊性**：比起直接宣布"怪物死了"，更建议描述调查员看到的现象（停止动
+  作、开始融化、伤口渗出绿色浓稠液体等）——某些怪物在被打到失去意识或 0 HP 后可能只
+  是看起来死了，几分钟到几小时后又会爬起来找攻击者复仇。**只有成功的急救或医学检定
+  才能确认一个生物是死是活**。
+
+**人类打得过的神话生物**（书里点名，"人类多少能匹敌的对手"）：深潜者、拜亚基、空
+鬼、炎之精、妖鬼、食尸鬼、格拉基之仆、米-戈、月兽、夜魔、人面鼠、潜沙怪、蛇人、夏盖虫
+族、乔乔人，当然还有人类邪教徒——它们的弱点与相对体型都和人类接近，这也是为什么很多
+模组把邪教徒/深潜者/米-戈/食尸鬼当反派：调查员打得过。**人性化这些生物时仍要留神**：
+它们的目标、知识与技能即使不是完全不可理解，也往往难以捉摸。
+
+<!-- 规则书 9897–9973, 10009–10017 -->
+
+## 14.0d 怪物法术（Monster Spells）
+
+意志（POW）和智力（INT）越高的怪物越可能会法术——**POW 与 INT 都在 50–100 之间的怪
+物，参考起点是拥有 1D6 个法术**，具体选哪些法术应该贴合这个生物的目的与特性。**怪物
+第一次施放法术不需要做施法检定**；魔法值消耗和法术本身要求的一样，但**无视法术本应造
+成的理智消耗与理智检定**（这条只对怪物自己生效，不影响目击者的理智检定）。很多神话生
+物崇拜某位外神/旧日支配者，因此通常应该假定它们至少认识一个联络/呼唤/召唤主神的法
+术；鼓励守秘人放手调整、甚至给出加强版法术——这些生物不是笨拙摸索魔法的人类巫师，而
+是恐惧本身的化身。
+
+<!-- 规则书 10018–10029 -->
+
+## 五级强度阶梯
+
+五级阶梯，按"守秘人能往桌上扔什么、后果有多惨烈"排序：
+
+| 阶梯 | Malleus 分类 | 牌桌上长什么样 |
 |---|---|---|
-| **L1 — human** | *(not covered here)* | A cult leader, a hired gun, an obsessed academic. `character-creation.md` §11. |
-| **L2 — creature** | 独立种族 (independent race) / 传说生物 (fabulous creature) | The baseline monster: dangerous on its own, doesn't answer to anything. Most "one scary thing in the basement" encounters live here. |
-| **L3 — servitor** | 仆从种族 (servitor race) | A god's guard dog, kidnapper, or messenger. Similar raw power to L2 — the difference is *purpose*, not necessarily strength — so **L2 and L3 overlap heavily**; a tough independent race can out-threat a weak servitor. |
-| **L4 — unique** | 唯一存在 (unique entity) | A named individual, not a species — a particularly powerful cult idol, a rogue member of a race, a rising demigod. Clear step up from L2/L3. |
-| **L5 — deity** | 旧神 / 旧日支配者 / 梦境诸神 / 外神 / 化身 (all five deity classes, one tier) | Cthulhu-scale. Encountering it directly is rarely a fair fight — see `core/07-create-monster.md`'s "the fair out". |
+| **L1 — 人类** | *(本尺不收)* | 邪教头目、雇佣打手、走火入魔的学者。见 `character-creation.md` §11。 |
+| **L2 — 生物** | 独立种族 / 传说生物 | 基线怪物：自己就很危险，不听命于任何人。大多数"地下室里那个可怕的东西"都住在这一档。 |
+| **L3 — 仆从** | 仆从种族 | 某位神的看门狗、绑架者或信使。原始力量和 L2 相近——区别在于*用途*而非必然更强——所以 **L2 与 L3 大量重叠**，一只强悍的独立种族个体完全可能比一只弱的仆从更能打。 |
+| **L4 — 唯一存在** | 唯一存在 | 具名的个体，不是一个物种——一位格外强大的邪教偶像、某个种族里的异类、一位崛起中的半神。明显强于 L2/L3。 |
+| **L5 — 神格** | 旧神 / 旧日支配者 / 梦境诸神 / 外神 / 化身(五类神格并作一档) | 克苏鲁级别。正面遭遇它通常算不上公平的战斗——见 `core/07-create-monster.md` 的"公平出路"。 |
 
-**Overlap rule:** adjacent tiers may overlap (a mythic-threat L2 can rival a trivial-threat L3
-or L4) — **non-adjacent tiers may never overlap** (an L2 creature, however built up, does not
-reach L4 unique-entity numbers). This is what makes the ladder a ladder and not a suggestion.
+**重叠规则：** 相邻阶梯可以重叠（一个骇人档的 L2 可以比得上一个不起眼档的 L3 或 L4）——
+**非相邻阶梯永远不能重叠**（一个 L2 生物无论怎么强化，都够不到 L4 唯一存在的数值）。这
+条规则才是"阶梯"和"随便建议"的区别。
 
-## Threat bands within a tier
+## 阶梯内的威胁档位
 
-The existing four-band `threat` field (trivial / moderate / deadly / mythic) still applies —
-it's the **± inside a tier**, not a replacement for it. Within each tier below, `trivial` sits
-at the low end of the range and `mythic` at the high end; `moderate` and `deadly` split the
-middle. A tier's `trivial` can land inside the tier below it's `mythic` — that's the overlap
-rule above, working as intended.
+既有的四档 `threat` 字段（trivial / moderate / deadly / mythic）照常适用——它是**阶梯
+内部**的加减号，不是阶梯本身的替代品。每个阶梯下面，`trivial` 落在区间低端，`mythic`
+落在高端；`moderate` 和 `deadly` 分列中间。某一阶梯的 `trivial` 完全可能落进下一阶梯
+的 `mythic` 区间——这正是上面的重叠规则在起作用。
 
-**At L2 and L3, check the source's 上级/下级 label first** — see the sub-tier section below.
-It picks the half of the band range for you, and it's more reliable than eyeballing.
+**在 L2 与 L3 先查源书的"上级/下级"标签**——见下面的子阶梯一节，它替你选好了该用区间
+的哪一半，比凭感觉估准得多。
 
-## Baseline ranges per tier
+## 各阶梯基准数值区间
 
-Ranges below come from the sampled distribution's rough quartiles, then rounded to numbers a
-Keeper would actually write down. **Sanity loss** is X/Y notation (success/failure); the
-X-side (success) is usually 0–1 at L2/L3 and climbs at L4/L5 — even *surviving* the sight of
-something that size costs a little. **HP** for Mythos entities is usually stated directly
-rather than derived from CON+SIZ (many have no CON, or an N/A SIZ) — treat the HP figure as
-canon for the tier, not something to recompute.
+区间来自抽样分布的粗略四分位，再取整到守秘人真会写下来的数字。**理智损失**是 X/Y 记法
+（成功/失败）；成功一侧（X）在 L2/L3 通常是 0–1，到 L4/L5 才明显升高——哪怕只是"看见
+而活下来"，在这个档位也要付点代价。神话生物的 **HP** 通常直接写死，而不是从 CON+SIZ 推
+出来的（很多没有 CON，或者 SIZ 写的是"不适用"）——把书上的 HP 数字当这个阶梯的既定
+值，不要试图重新反推。
 
-### L2 — creature (独立种族 / 传说生物)
+### L2 — 生物（独立种族 / 传说生物）
 
-| Threat | Sanity loss (typical) | HP | Armour | Attack skill |
+| 威胁 | 理智损失(典型) | HP | 护甲 | 攻击技能 |
 |---|---|---|---|---|
-| trivial | 0/1D3 – 0/1D4 | 8–15 | 0–3, often none | 25–40% |
+| trivial | 0/1D3 – 0/1D4 | 8–15 | 0–3，常无 | 25–40% |
 | moderate | 0/1D6 | 15–20 | 2–5 | 40–55% |
 | deadly | 0/1D6 – 0/1D8 | 20–30 | 4–10 | 50–70% |
-| mythic | 1D3/1D20 – 1D6/2D20 | 30–60 (rare outliers past 300 — a handful of huge, ancient members of a race) | 8–30, or a named immunity clause | 65–90% |
+| mythic | 1D3/1D20 – 1D6/2D20 | 30–60(个别异常值可到 300+——极少数体型巨大的年长个体) | 8–30，或写一条具名免疫条款 | 65–90% |
 
-### L3 — servitor (仆从种族)
+### L3 — 仆从（仆从种族）
 
-| Threat | Sanity loss (typical) | HP | Armour | Attack skill |
+| 威胁 | 理智损失(典型) | HP | 护甲 | 攻击技能 |
 |---|---|---|---|---|
-| trivial | 0/1 – 0/1D2 | 8–12 | 0–2, often none | 15–30% |
+| trivial | 0/1 – 0/1D2 | 8–12 | 0–2，常无 | 15–30% |
 | moderate | 0/1D4 – 0/1D6 | 12–16 | 2–4 | 30–45% |
 | deadly | 0/1D6 – 1/1D6 | 16–25 | 3–7 | 45–65% |
-| mythic | 1D3/1D20 – 1D6/1D20 | 25–60 | 5–10, or an immunity clause | 60–100% |
+| mythic | 1D3/1D20 – 1D6/1D20 | 25–60 | 5–10，或一条免疫条款 | 60–100% |
 
-### 上级 / 下级 — the book's own free calibration (L2 and L3 only)
+### 上级 / 下级 —— 书本自带的免费校准（仅 L2、L3）
 
-**Read this before picking a threat band at L2 or L3.** Malleus labels most species entries
-**上级** (greater) or **下级** (lesser), and that label separates them harder than the threat
-band does. Sampling the two groups apart:
+**在 L2 或 L3 选威胁档之前先读这一节。** Malleus 给大多数物种词条标了**上级**或**下
+级**，这个标签比威胁档分得更狠。把两组分开抽样：
 
-| Sub-tier | n | HP (median) | Attack skill (median) | Sanity loss (typical) |
+| 子阶梯 | n | HP(中位数) | 攻击技能(中位数) | 理智损失(典型) |
 |---|---|---|---|---|
-| 下级独立种族 — lesser independent | 43 | **14** | **35%** | 0/1D3 – 0/1D8 (0/1D6 is by far the most common) |
-| 上级独立种族 — greater independent | 10 | **36** | **80%** | 1D3/1D20 – 1D6/1D20 |
-| 下级仆从种族 — lesser servitor | 56 | **14** | **35%** | 0/1D2 – 0/1D6 |
-| 上级仆从种族 — greater servitor | 15 | **27** | **75%** | 1/1D8 – 1D6/1D20 |
+| 下级独立种族 | 43 | **14** | **35%** | 0/1D3 – 0/1D8(0/1D6 最常见) |
+| 上级独立种族 | 10 | **36** | **80%** | 1D3/1D20 – 1D6/1D20 |
+| 下级仆从种族 | 56 | **14** | **35%** | 0/1D2 – 0/1D6 |
+| 上级仆从种族 | 15 | **27** | **75%** | 1/1D8 – 1D6/1D20 |
 
-**How to use it:** if the entry you're calibrating against is labelled **下级**, take the
-`trivial`/`moderate` rows of its tier below; if **上级**, take `deadly`/`mythic`. The greater
-group runs **2–2.6× the lesser group's HP and roughly double its attack skill** — a wider gap
-than the whole four-band spread within a pooled tier, which is why the pooled ranges below read
-broad in the middle. When the book gives you the label, it beats your judgement; use it.
+**用法：** 若要校准的词条标了**下级**，取所在阶梯的 `trivial`/`moderate` 行；标了**上
+级**，取 `deadly`/`mythic` 行。上级组的 HP 是下级组的 **2–2.6 倍，攻击技能大致翻倍**
+——比同一阶梯内四档威胁的整体跨度还要大，这也是为什么下面的合并区间中段读起来偏宽。
+书上给了标签就按标签走，比凭感觉估更可靠。
 
-**Not split by sub-tier:** armour (too few entries state a value to split the sample honestly)
-and L4/L5 (no 上级/下级 labels there). Those stay pooled below.
+**没有按子阶梯拆分的：** 护甲（有护甲值的词条太少，拆开算不出可信的样本）以及 L4/L5
+（那里没有上级/下级标签）。这两处仍用下面的合并区间。
 
-### L4 — unique (唯一存在)
+### L4 — 唯一存在（唯一存在）
 
-Thin sample in the source (8 named individuals) — treat these as a shape to calibrate against,
-not a tight statistical range.
+源材料样本单薄（仅 8 个具名个体）——把下表当校准的形状参考，不要当成严谨的统计区间。
 
-| Threat | Sanity loss (typical) | HP | Armour | Attack skill |
+| 威胁 | 理智损失(典型) | HP | 护甲 | 攻击技能 |
 |---|---|---|---|---|
-| trivial | 0/1D4 – 1/1D8 | 13–25 | usually a narrative immunity, not a point value | 20–40% |
-| moderate | 1/1D8 – 0/1D10 | 25–45 | same | 35–55% |
-| deadly | 1/1D10 – 1D6/1D20 | 45–61 | 6+ or immunity | 55–80% |
-| mythic | 1D10/1D100 | 55–65+ | immunity to most conventional weapons | 75–100% |
+| trivial | 0/1D4 – 1/1D8 | 13–25 | 通常是叙事免疫,不写点数 | 20–40% |
+| moderate | 1/1D8 – 0/1D10 | 25–45 | 同上 | 35–55% |
+| deadly | 1/1D10 – 1D6/1D20 | 45–61 | 6+ 或免疫 | 55–80% |
+| mythic | 1D10/1D100 | 55–65+ | 对大部分常规武器免疫 | 75–100% |
 
-### L5 — deity (神格, all five deity classes)
+### L5 — 神格（神格，五类神格并作一档）
 
-| Threat | Sanity loss (typical) | HP | Armour | Attack skill |
+| 威胁 | 理智损失(典型) | HP | 护甲 | 攻击技能 |
 |---|---|---|---|---|
-| trivial | 0/1 – 0/1D3 | 15–35 | 0–5, or a narrative immunity | 40–60% |
+| trivial | 0/1 – 0/1D3 | 15–35 | 0–5，或叙事免疫 | 40–60% |
 | moderate | 1/1D10 – 1D4/1D10 | 35–60 | 5–10 | 55–75% |
-| deadly | 1D3/1D20 – 1D8/1D20 | 60–110 | 8–20, or "only magic/enchanted weapons harm it" | 70–90% |
-| mythic | 1D10/1D100 – 1D20/1D100 | 100–420+ | usually a full immunity clause, not a point value | 85–100% |
+| deadly | 1D3/1D20 – 1D8/1D20 | 60–110 | 8–20，或"只有魔法/附魔武器能伤到它" | 70–90% |
+| mythic | 1D10/1D100 – 1D20/1D100 | 100–420+ | 通常是完整免疫条款，不写点数 | 85–100% |
 
-## Attacks per round
+## 每轮攻击次数
 
-Most entries carry **1–3 distinct attack forms** (a grab, a bite, a special effect) regardless
-of tier — tier changes how dangerous each one is, not how many there are. A single form used
-repeatedly (e.g. one crushing attack at a flat skill %) is normal at L2/L3; L4/L5 entries are
-more likely to have 2–3 forms with distinct effects (physical + a mind/POW-draining option).
+大多数词条不分阶梯都带**1–3 种不同的攻击形式**（一次抓取、一次撕咬、一个特殊效果）——
+阶梯变化影响每种攻击有多危险，不影响攻击形式的数量。反复使用同一种攻击形式（例如固定
+技能百分比的一次碾压攻击）在 L2/L3 很常见；L4/L5 词条更可能带 2–3 种效果各异的攻击形
+式（物理攻击 + 一个吸取精神/意志的选项）。
 
-## Armour convention
+## 护甲惯例
 
-Roughly **28% of sampled entries carry no armour at all** — raw HP and a high attack skill do
-the work instead. Where armour is stated, it's overwhelmingly either (a) a flat point value
-(sampled median 8, most entries 2–10, deity-tier outliers up to 50) subtracted from damage like
-a human's armour, or (b) a **narrative immunity clause** ("only fire and enchanted weapons
-harm it", "impaling weapons do minimum damage") rather than a number. Prefer (b) for anything
-L4 or above — a point value implies conventional weapons can grind it down, which undercuts
-"the fair out" being something other than a bigger gun.
+抽样条目里大约 **28% 完全没有护甲**——靠高生命值和高攻击技能顶替。有护甲的条目里，绝
+大多数要么是（a）一个固定点数（抽样中位数 8，大多数条目落在 2–10，神格级偶有到 50 的
+异常值），像人类护甲一样直接从伤害里扣；要么是（b）一条**叙事免疫条款**（"只有火焰和
+附魔武器能伤到它""贯穿武器只造成最小伤害"），而不是一个数字。**L4 及以上优先用
+(b)**——写一个点数就暗示常规武器能磨死它，削弱了"公平出路"本该不只是"一把更大的枪"
+这件事。
 
-## Trait load budget (feeds `reference/tables/monster-traits.md`)
+## 词条负载预算（供 `reference/tables/monster-traits.md` 使用）
 
-Each tier has a rough ceiling on how many numeric traits (from the traits table) a single
-entry should carry before it stops reading as "this tier, pumped up" and starts reading as
-"the wrong tier with a costume on":
+每个阶梯对"一个词条能背多少数值型特质（词条表里的那种）"有一个大致上限，超过这个数，
+一个词条读起来就不再像"这个阶梯，加强版"，而像"阶梯用错了，穿了件戏服"：
 
-| Tier | Load ceiling | Why |
+| 阶梯 | 负载上限 | 为什么 |
 |---|---|---|
-| L2 creature | 2 traits | Base monsters stay simple — texture comes from the attack/reveal, not a trait stack. |
-| L3 servitor | 2 traits | Same budget as L2 (the tiers overlap; the budget should too). |
-| L4 unique | 3 traits | A named individual earns one extra trait over its base race/tier — that's *why* it's unique. |
-| L5 deity | 4 traits | Gods can stack the most, but even here more than 4 usually means the entry needs a rewrite, not another trait. |
+| L2 生物 | 2 个特质 | 基础怪物保持简单——质感应该来自攻击方式/揭示方式,而不是堆特质。 |
+| L3 仆从 | 2 个特质 | 和 L2 同一预算(两个阶梯本来就重叠,预算也该一致)。 |
+| L4 唯一存在 | 3 个特质 | 具名个体比它所属的种族/阶梯多赚一个特质——这正是它"唯一"的原因。 |
+| L5 神格 | 4 个特质 | 神能堆得最多,但即使在这里,超过 4 个通常说明这个词条需要重写,而不是再加一个特质。 |
 
-A trait's load cost is defined per-trait in `monster-traits.md`; **sum the loads, don't just
-count traits** — a cheap trait and an expensive one both count as "1 trait" for flavour
-purposes but not for budget purposes.
+一个特质的负载成本在 `monster-traits.md` 里逐条定义；**要把负载值加总，不能只数个
+数**——一个便宜的特质和一个昂贵的特质，论"添了几分风味"都算 1 个，但论预算不是。
 
-## `core/07`'s strength formula, in full
+## `core/07` 的强度公式，完整版
 
-`core/07-create-monster.md` used to leave this as a placeholder. The full answer:
+`core/07-create-monster.md` 曾经把这里留成占位符。完整答案是：
 
-**Monster strength = tier baseline (this sheet) + trait load (`monster-traits.md`), capped by
-the tier's load ceiling above.** Pick the tier, pick the threat band inside it, read the
-baseline ranges, then layer on traits until the entry feels right — never past the ceiling.
+**怪物强度 = 阶梯基准值(本文件) + 特质负载(`monster-traits.md`)，并被阶梯的负载上限封
+顶。** 先选阶梯，再选阶梯内的威胁档，读基准区间，然后叠加特质直到这个词条感觉对了——
+永远不要超过负载上限。

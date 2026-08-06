@@ -6,7 +6,7 @@
   "citation_rule": null,
   "usage_rule": "authored by this kit — read and used directly, no citation required",
   "generated_by": "scripts/build-reference-index.py — do not edit by hand",
-  "entry_count": 13,
+  "entry_count": 17,
   "entries": [
     {
       "file": "complications.md",
@@ -114,7 +114,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 33,
+          "line": 39,
           "context": "- `cult-goals.md`(1D10 × 1D8)——邪教的愿望 × 手段;两张都掷,相乘才成立。见"
         },
         {
@@ -167,7 +167,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 35,
+          "line": 41,
           "context": "- `cult-leader-positions.md`(1d10)——邪教首领的社会门面,以及这个位置换来的便利。"
         },
         {
@@ -234,7 +234,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 36,
+          "line": 42,
           "context": "- `cult-power-sources.md`(1d4)——邪教声称的超自然背书从哪儿来。"
         },
         {
@@ -273,14 +273,24 @@
         "reference/mythos/cthulhu-cult-history-zh.md",
         "reference/mythos/cults/louisiana-swamp-cult.md",
         "reference/rules/character-creation.md",
-        "reference/sourcebooks/grand-grimoire-zh.md",
-        "reference/sourcebooks/keeper-rulebook-7e-zh.md"
+        "reference/rules/magic.md",
+        "reference/sourcebooks/grand-grimoire-zh.md"
       ],
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 76,
+          "line": 77,
           "context": "**③ 具名角色 + 绑定商业产品**(如 `cultist-archetypes.md` 里那位\"卡尔·斯坦福\")"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 144,
+          "context": "`cultist-archetypes.md`、`sourcebooks/README.md` 等)已改指对应速查表。**转载规则的边界"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 165,
+          "context": "`campaigns/_template-campaign/CLAUDE.md`、`reference/tables/cultist-archetypes.md`、"
         },
         {
           "file": "core/06-create-npc.md",
@@ -289,12 +299,12 @@
         },
         {
           "file": "reference/mythos/spells/call-father-dagon-and-mother-hydra.md",
-          "line": 23,
+          "line": 24,
           "context": "`reference/tables/cultist-archetypes.md` 的\"永生大师\"常见法术之一。"
         },
         {
           "file": "reference/tables/README.md",
-          "line": 37,
+          "line": 43,
           "context": "- `cultist-archetypes.md`——12 组现成的低阶邪教徒数值(按角色分组,不是骰表),外加一套"
         },
         {
@@ -304,13 +314,23 @@
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 190,
+          "line": 205,
           "context": "| **具名角色 + 绑定商业产品** | ❌ 仍不收录 | `cultist-archetypes.md` 里那位\"卡尔·斯坦福\" |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 298,
+          "line": 316,
           "context": "| `reference/tables/cultist-archetypes.md:265` | 指规则书查召唤/束缚数值 | 改指 `reference/rules/magic.md` |"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 420,
+          "context": "`reference/tables/cultist-archetypes.md`、`reference/sourcebooks/README.md`"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 477,
+          "context": "`campaigns/_template-campaign/CLAUDE.md`、`reference/tables/cultist-archetypes.md`、"
         },
         {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
@@ -353,7 +373,7 @@
           "context": "> 且 `reference/tables/` 已有中文表(`cultist-archetypes.md`)。"
         }
       ],
-      "reference_count": 15
+      "reference_count": 19
     },
     {
       "file": "hooks.md",
@@ -393,7 +413,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 96,
+          "line": 167,
           "context": "**\"默认美国不等于默认阿卡姆\"**——默认给的是国家,镇子照样掷 `locations.md` 再自己造,"
         },
         {
@@ -475,81 +495,187 @@
       "reference_count": 16
     },
     {
-      "file": "madness.md",
-      "path": "reference/tables/madness.md",
-      "title": "madness.md — 疯狂发作(即时症状)",
-      "lines": 24,
-      "declared_consumers": [
-        "reference/decks/phobias-and-manias-zh.md"
-      ],
+      "file": "madness-instant.md",
+      "path": "reference/tables/madness-instant.md",
+      "title": "madness-instant.md — 疯狂发作:即时症状(Bout of Madness, Real-time)",
+      "lines": 30,
+      "declared_consumers": [],
       "referenced_by": [
         {
+          "file": "CHANGELOG.md",
+          "line": 71,
+          "context": "时判断\"这把枪多危险\"用,不是按品类查数值。`madness.md` 拆成了 `madness-instant.md`"
+        },
+        {
           "file": "reference/decks/phobias-and-manias-zh.md",
-          "line": 8,
-          "context": "> - `core/02-rules-reference.md` —— 判定疯狂结果时的症状取材,补 `reference/tables/madness.md` 的粗粒度。"
+          "line": 9,
+          "context": ">   `reference/tables/madness-instant.md`(表VII)/`madness-summary.md`(表VIII)的粗粒度。"
         },
         {
           "file": "reference/rules/sanity.md",
-          "line": 25,
-          "context": "summary ~1D10 hours). Roll or choose an effect (see `reference/tables/madness.md`)."
+          "line": 98,
+          "context": "- **即时症状（逐轮处理）**：投骰或由守秘人选定一项症状，具体症状表见 `reference/tables/madness-instant.md`（表VII：疯狂发作-即时症状，投 1D10）。"
+        },
+        {
+          "file": "reference/tables/madness-summary.md",
+          "line": 10,
+          "context": "若发作发生在此刻的场景里、需要逐轮处理,改查 `madness-instant.md`(表VII)。掷出的"
+        },
+        {
+          "file": "reference/tables/manias.md",
+          "line": 13,
+          "context": "新获得的躁狂症属于疯狂发作的一部分,见 `madness-instant.md`(表VII 10 号)/"
+        },
+        {
+          "file": "reference/tables/phobias.md",
+          "line": 13,
+          "context": "新获得的恐惧症属于疯狂发作的一部分,见 `madness-instant.md`(表VII 9 号)/"
         },
         {
           "file": "reference/tables/README.md",
           "line": 30,
-          "context": "- `madness.md`(1D10)——疯狂发作的即时症状。"
+          "context": "- `madness-instant.md`(1D10)——疯狂发作·即时症状(逐轮处理时用,表VII)。"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 63,
-          "context": "**`reference/tables/madness.md`(23 行)—— d10 表和书上不是同一张表。**"
-        },
-        {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 68,
-          "context": "现有 madness.md 的十条是:失忆 / 心因性失能 / 暴力 / 僵直昏厥 / 逃跑 / 歇斯底里 /"
-        },
-        {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 136,
-          "context": "| 表VII 疯狂发作-即时症状 | 5154(附录 16450) | 1D10 | ⚠️ `tables/madness.md` 是另一张表 |"
-        },
-        {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 174,
-          "context": "| ① | 速查表正文用什么语言 | **中文正文 + 英文术语括注**。规则原文就是中文,直接落表不经翻译损耗;stat 记法仍保持英文(`STR 60`、`1D6/2D10`、`Fighting (Brawl) 45%`)。**这是对 `rules/` 现有六份英文正文体例的一次有意偏离**——理由是这三份是规则条"
-        },
-        {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 236,
-          "context": "| `tables/madness.md` | 2026-07-29(同上) | 之前 | ❌ 和书上不是同一张表 |"
-        },
-        {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 266,
-          "context": "reference/tables/madness.md       ← 表VII 即时症状 + 表VIII 总结症状(照原表重排)"
-        },
-        {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 349,
-          "context": "- [ ] `reference/tables/madness.md` — 表VII 照原表重排(**十条对应关系全部改**),"
-        },
-        {
-          "file": "update_plan/2026-08-04-scenario-diversity.md",
-          "line": 206,
-          "context": "5. **和 P12 的边界:`madness.md` 不归本计划**,它是规则书表VII 的转录,长度由书决定。"
+          "line": 381,
+          "context": "`madness-instant.md`(表VII)+ `madness-summary.md`(表VIII)两个文件**,见下方"
         },
         {
           "file": "update_plan/README.md",
-          "line": 101,
-          "context": "`madness.md` 掷 4 号是另一件事),其余计划做的是新功能。"
-        },
-        {
-          "file": "update_plan/README.md",
-          "line": 159,
-          "context": "| 3 | **P12** 速查表自足化 | ★★★☆☆ | 源材料 2,402 行 / 21.3 万字符(第六、七、八章)+ 其余四章;4 份重写 + 2 份新建(恐惧症/躁狂症 d100、武器强度索引)+ 8 处引用改写 + 1 处脚本改动 + `.gitignore` + 索引重建 | **实现不难,难在刹车**"
+          "line": 14,
+          "context": "| P12 | [cheatsheet-self-sufficiency](2026-08-04-cheatsheet-self-sufficiency.md) | 速查表自足化:战斗/追逐/理智三份按规则书第六、七、八章重写(**现有版本有实证错误**)+ 新建恐惧症/躁狂症 d100 表与武器强度索引 + 其余四份"
         }
       ],
-      "reference_count": 13
+      "reference_count": 9
+    },
+    {
+      "file": "madness-summary.md",
+      "path": "reference/tables/madness-summary.md",
+      "title": "madness-summary.md — 疯狂发作:概括症状(Bout of Madness, Summary)",
+      "lines": 32,
+      "declared_consumers": [],
+      "referenced_by": [
+        {
+          "file": "CHANGELOG.md",
+          "line": 72,
+          "context": "(即时症状)与 `madness-summary.md`(概括症状)两个文件——同一个文件塞两张同骰面的"
+        },
+        {
+          "file": "reference/decks/phobias-and-manias-zh.md",
+          "line": 9,
+          "context": ">   `reference/tables/madness-instant.md`(表VII)/`madness-summary.md`(表VIII)的粗粒度。"
+        },
+        {
+          "file": "reference/rules/sanity.md",
+          "line": 99,
+          "context": "- **总结症状**：当发作发生在调查员独处，或全体调查员同时发作时，守秘人可以快进并直接描述结果，调查员会在疯狂中迷失自身、脱离玩家控制数小时（通常 1D10 小时，或由守秘人自定）；调查员本人不会记得这段时间的行为，只会在恢复后发现自己所处的陌生场景。若有其他在场调查员目睹或听到发作者的动静，应给予其干涉的机会；若"
+        },
+        {
+          "file": "reference/tables/madness-instant.md",
+          "line": 8,
+          "context": "若发作跳到之后概括处理,改查 `madness-summary.md`(表VIII)。掷出的结果和当下剧情不搭"
+        },
+        {
+          "file": "reference/tables/manias.md",
+          "line": 14,
+          "context": "`madness-summary.md`(表VIII 10 号);会随场次**习惯化**,见 `reference/rules/sanity.md`"
+        },
+        {
+          "file": "reference/tables/phobias.md",
+          "line": 14,
+          "context": "`madness-summary.md`(表VIII 9 号);会随场次**习惯化**,见 `reference/rules/sanity.md`"
+        },
+        {
+          "file": "reference/tables/README.md",
+          "line": 31,
+          "context": "- `madness-summary.md`(1D10)——疯狂发作·概括症状(跳到之后概括推进时用,表VIII);"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 381,
+          "context": "`madness-instant.md`(表VII)+ `madness-summary.md`(表VIII)两个文件**,见下方"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 14,
+          "context": "| P12 | [cheatsheet-self-sufficiency](2026-08-04-cheatsheet-self-sufficiency.md) | 速查表自足化:战斗/追逐/理智三份按规则书第六、七、八章重写(**现有版本有实证错误**)+ 新建恐惧症/躁狂症 d100 表与武器强度索引 + 其余四份"
+        }
+      ],
+      "reference_count": 9
+    },
+    {
+      "file": "manias.md",
+      "path": "reference/tables/manias.md",
+      "title": "manias.md — 躁狂症状表(Manias)",
+      "lines": 123,
+      "declared_consumers": [
+        "reference/decks/phobias-and-manias-zh.md",
+        "reference/rules/sanity.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "CHANGELOG.md",
+          "line": 69,
+          "context": "(表IX,100 条)、`manias.md`(表X,100 条)是规则书原表的全量转录,不是精选摘要;"
+        },
+        {
+          "file": "reference/decks/phobias-and-manias-zh.md",
+          "line": 12,
+          "context": "> **与 `reference/tables/phobias.md`、`manias.md` 的关系**:那两份是规则书表IX/表X的"
+        },
+        {
+          "file": "reference/rules/sanity.md",
+          "line": 138,
+          "context": "`reference/tables/manias.md`（表X：躁狂症状表）。"
+        },
+        {
+          "file": "reference/tables/madness-instant.md",
+          "line": 24,
+          "context": "| 10 | 躁狂(Mania onset) | 投 D100(或由守秘人指定)从 `manias.md` 表X **躁狂症状表**选一个诱因,接下来的时间内调查员渴望沉溺其中。 |"
+        },
+        {
+          "file": "reference/tables/madness-summary.md",
+          "line": 26,
+          "context": "| 10 | 躁狂(New mania) | 患上新躁狂症:在 `manias.md` 表X **躁狂症状表**投 D100 决定,或由守秘人指定;发作期间完全沉浸于新躁狂,是否被旁人察觉由守秘人与玩家决定。 |"
+        },
+        {
+          "file": "reference/tables/README.md",
+          "line": 36,
+          "context": "- `manias.md`(1D100)——躁狂症状表(表X),同上,与 `phobias.md` 同一原因拆成独立文件。"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 230,
+          "context": "| 表IX 恐惧症(约 100 条)+ 表X 躁狂症(约 100 条) | **新建 `reference/tables/phobias-manias.md`**,一张 **d100** 掷,两个表分列 | 它是**掷骰表**不是速查文,和 `tables/` 里现有那批同类;`sanity.md` 的疯狂发作 9/1"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 284,
+          "context": "reference/tables/phobias-manias.md ← 表IX 恐惧症 + 表X 躁狂症,各约 100 条,d100"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 383,
+          "context": "- [x] ~~新建 `reference/tables/phobias-manias.md`~~ → **拆成 `phobias.md`(表IX)+"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 384,
+          "context": "`manias.md`(表X)两个文件**,原因同上。表IX 恐惧症 + 表X 躁狂症**各 100 条全收,"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 397,
+          "context": "> 塞了表VII+表VIII 两张 d10 表、原计划的 `phobias-manias.md` 塞了表IX+表X 两张"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 14,
+          "context": "| P12 | [cheatsheet-self-sufficiency](2026-08-04-cheatsheet-self-sufficiency.md) | 速查表自足化:战斗/追逐/理智三份按规则书第六、七、八章重写(**现有版本有实证错误**)+ 新建恐惧症/躁狂症 d100 表与武器强度索引 + 其余四份"
+        }
+      ],
+      "reference_count": 12
     },
     {
       "file": "monster-index.md",
@@ -565,37 +691,37 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 47,
+          "line": 118,
           "context": "接入了 `reference/tables/monster-index.md` 的 `Serves` 检索——之前这张表能查到怪物,"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 88,
+          "line": 159,
           "context": "文件名、`1D10`/`STR 60` 这类记法保持英文);`monster-index.md` 的表头与说明段随生成"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 187,
+          "line": 258,
           "context": "新增 `reference/tables/monster-index.md`,覆盖怪物图鉴全部 223 个条目 + 现有 9 只"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 201,
+          "line": 272,
           "context": "`reference/tables/monster-index.md` 再动手写,不用翻原文猜。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 112,
+          "line": 113,
           "context": "`reference/tables/monster-index.md`。校验和缺引用出处同级——"
         },
         {
           "file": "WORKLOG.md",
-          "line": 123,
+          "line": 124,
           "context": "曾在 `monster-index.md` 里产生重复行(同一生物一行来自转录稿脚手架、一行来自新写的"
         },
         {
           "file": "WORKLOG.md",
-          "line": 266,
+          "line": 297,
           "context": "- **`monster-index.md` 与 malleus 转录稿的关系已不再是「对外通道」。** P13 之后所有"
         },
         {
@@ -615,7 +741,7 @@
         },
         {
           "file": "reference/README.md",
-          "line": 94,
+          "line": 95,
           "context": "`sourcebooks/malleus-monstrorum-zh.md` 223 条 → `tables/monster-index.md`。提炼稿是"
         },
         {
@@ -670,7 +796,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 41,
+          "line": 47,
           "context": "- `monster-index.md`——223 条神话生物的导航表,**脚本生成,不要手改**;数据源是"
         },
         {
@@ -720,27 +846,22 @@
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 403,
-          "context": "标尺进 `rules/`,条目仍走 `tables/monster-index.md`)"
-        },
-        {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 442,
+          "line": 556,
           "context": "而且 `monster-index.md` 已经是它对外的通道。Keeper 只点名了规则书。"
         },
         {
           "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 100,
+          "line": 106,
           "context": "`reference/tables/monster-index.md`,那份索引由 `build-reference-index.py` 从"
         },
         {
           "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 228,
+          "line": 234,
           "context": "| **a. 扩索引** | 改 `build_monster_index()`,把 `reference/mythos/great-old-ones/*.md` 也并进 `monster-index.md` | 改脚本 + 全表回归;好处是**现有入口不变**,`core/07`/`core/04` 一个字不用改,以"
         },
         {
           "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 348,
+          "line": 354,
           "context": "必须 clean,且 `monster-index.md` 行数变化要能解释清楚"
         },
         {
@@ -789,7 +910,7 @@
           "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺,三阶段。**阶段 A**(标尺与词条):`reference/rules/monster-scale.md` 五级阶梯(human/creature/s"
         }
       ],
-      "reference_count": 45
+      "reference_count": 44
     },
     {
       "file": "monster-traits.md",
@@ -802,23 +923,23 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 89,
+          "line": 160,
           "context": "脚本一起改中文,`monster-traits.md` 的引言段同。加新表的写法见"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 176,
+          "line": 247,
           "context": "`reference/tables/monster-traits.md`:18 条可挂载的数值词条(再生、分裂、免疫常规"
         },
         {
           "file": "WORKLOG.md",
-          "line": 107,
+          "line": 108,
           "context": "`reference/tables/monster-traits.md` 的 18 条数值词条,`core/07` 的 X 已回填。"
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 72,
-          "context": "threat band, and the trait load ceiling that caps `reference/tables/monster-traits.md`."
+          "line": 100,
+          "context": "and threat band, and the trait load ceiling that caps `reference/tables/monster-traits.md`."
         },
         {
           "file": "core/11-review.md",
@@ -867,22 +988,22 @@
         },
         {
           "file": "reference/rules/monster-scale.md",
-          "line": 126,
-          "context": "## Trait load budget (feeds `reference/tables/monster-traits.md`)"
+          "line": 210,
+          "context": "## 词条负载预算（供 `reference/tables/monster-traits.md` 使用）"
         },
         {
           "file": "reference/rules/monster-scale.md",
-          "line": 139,
-          "context": "A trait's load cost is defined per-trait in `monster-traits.md`; **sum the loads, don't just"
+          "line": 222,
+          "context": "一个特质的负载成本在 `monster-traits.md` 里逐条定义；**要把负载值加总，不能只数个"
         },
         {
           "file": "reference/rules/monster-scale.md",
-          "line": 147,
-          "context": "**Monster strength = tier baseline (this sheet) + trait load (`monster-traits.md`), capped by"
+          "line": 229,
+          "context": "**怪物强度 = 阶梯基准值(本文件) + 特质负载(`monster-traits.md`)，并被阶梯的负载上限封"
         },
         {
           "file": "reference/tables/README.md",
-          "line": 39,
+          "line": 45,
           "context": "- `monster-traits.md`——给怪物条目加挂的数值词条菜单(带负载点与破解口),配"
         },
         {
@@ -982,7 +1103,7 @@
       "referenced_by": [
         {
           "file": "reference/tables/README.md",
-          "line": 31,
+          "line": 37,
           "context": "- `npc-appearance.md`(1d20)——第一眼的外形加脾性;`npc-quirks.md` 的姊妹表(外形对"
         },
         {
@@ -1029,7 +1150,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 31,
+          "line": 37,
           "context": "- `npc-appearance.md`(1d20)——第一眼的外形加脾性;`npc-quirks.md` 的姊妹表(外形对"
         },
         {
@@ -1044,6 +1165,162 @@
         }
       ],
       "reference_count": 7
+    },
+    {
+      "file": "phobias.md",
+      "path": "reference/tables/phobias.md",
+      "title": "phobias.md — 恐惧症状表(Phobias)",
+      "lines": 127,
+      "declared_consumers": [
+        "reference/decks/phobias-and-manias-zh.md",
+        "reference/rules/sanity.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "CHANGELOG.md",
+          "line": 68,
+          "context": "- **恐惧症、躁狂症、武器强度三张新表可以直接掷了。** `reference/tables/phobias.md`"
+        },
+        {
+          "file": "reference/decks/phobias-and-manias-zh.md",
+          "line": 12,
+          "context": "> **与 `reference/tables/phobias.md`、`manias.md` 的关系**:那两份是规则书表IX/表X的"
+        },
+        {
+          "file": "reference/rules/sanity.md",
+          "line": 137,
+          "context": "恐惧症状表与躁狂症状表见 `reference/tables/phobias.md`（表IX：恐惧症状表）与"
+        },
+        {
+          "file": "reference/tables/madness-instant.md",
+          "line": 23,
+          "context": "| 9 | 恐惧(Phobia onset) | 投 D100(或由守秘人指定)从 `phobias.md` 表IX **恐惧症状表**选一个恐惧源;即使该恐惧源实际不存在,调查员也会在接下来的时间内认定它存在。 |"
+        },
+        {
+          "file": "reference/tables/madness-summary.md",
+          "line": 25,
+          "context": "| 9 | 恐惧(New phobia) | 患上新恐惧症:在 `phobias.md` 表IX **恐惧症状表**投 D100 决定,或由守秘人指定;开始不计代价避开恐惧源。 |"
+        },
+        {
+          "file": "reference/tables/README.md",
+          "line": 34,
+          "context": "- `phobias.md`(1D100)——恐惧症状表(表IX),规则书表格全量转录,和"
+        },
+        {
+          "file": "reference/tables/README.md",
+          "line": 36,
+          "context": "- `manias.md`(1D100)——躁狂症状表(表X),同上,与 `phobias.md` 同一原因拆成独立文件。"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 383,
+          "context": "- [x] ~~新建 `reference/tables/phobias-manias.md`~~ → **拆成 `phobias.md`(表IX)+"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 14,
+          "context": "| P12 | [cheatsheet-self-sufficiency](2026-08-04-cheatsheet-self-sufficiency.md) | 速查表自足化:战斗/追逐/理智三份按规则书第六、七、八章重写(**现有版本有实证错误**)+ 新建恐惧症/躁狂症 d100 表与武器强度索引 + 其余四份"
+        }
+      ],
+      "reference_count": 9
+    },
+    {
+      "file": "weapons-index.md",
+      "path": "reference/tables/weapons-index.md",
+      "title": "武器强度索引：反派战力配置用",
+      "lines": 270,
+      "declared_consumers": [
+        "reference/decks/weapons-and-artifacts-zh.md",
+        "reference/rules/character-creation.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "CHANGELOG.md",
+          "line": 70,
+          "context": "`reference/tables/weapons-index.md` 把全部武器按威胁强度重新分了四档,给反派配装备"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "line": 81,
+          "context": "它在哪(现在指向 `reference/tables/weapons-index.md`);追逐速查表 2 处让你查\"表III\""
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 166,
+          "context": "`reference/tables/weapons-index.md`、`reference/rules/monster-scale.md` 等多处活文件"
+        },
+        {
+          "file": "reference/decks/weapons-and-artifacts-zh.md",
+          "line": 14,
+          "context": "> **与 `reference/tables/weapons-index.md` 的关系**:那份是规则书表XVII的全量转录,"
+        },
+        {
+          "file": "reference/rules/combat.md",
+          "line": 29,
+          "context": "- 一次攻击造成的伤害骰见 `reference/tables/weapons-index.md`（表XVII 武器列表全量转录，含技能专攻、伤害、每轮攻击次数、装弹量、故障值，并标出是否可贯穿）；徒手格斗（拳打脚踢）的伤害骰固定为 **1D3**。"
+        },
+        {
+          "file": "reference/rules/combat.md",
+          "line": 35,
+          "context": "- 若攻击武器为**贯穿**武器（刀刃、子弹）：造成**贯穿**（impale）——伤害骰与伤害加值同样取最大值，并额外多加一次武器伤害骰的结果。武器是否可贯穿见 `reference/tables/weapons-index.md` 各表的「威胁指标」栏（逐件标注「贯穿」/「无贯穿」）。"
+        },
+        {
+          "file": "reference/rules/combat.md",
+          "line": 39,
+          "context": "- 任何可被拿来打人或刺人的物品都可作为近战武器。简单棍棒、刀具等**基础武器**，任何人都可使用格斗（斗殴）技能；更复杂难用的武器则需要对应的格斗专攻项技能（如格斗（剑）），没有相关专攻只能使用其基础值。武器所属的技能专攻与造成的伤害见 `reference/tables/weapons-index.md` 的「技能"
+        },
+        {
+          "file": "reference/rules/combat.md",
+          "line": 43,
+          "context": "- 台球杆、剪刀、酒瓶、石头，乃至一台电报机，都可作为临时武器造成伤害。守秘人应将临时武器与 `reference/tables/weapons-index.md` 中的武器类比来判定伤害：与匕首、棍棒等基础近战武器类似的，使用格斗（斗殴）；否则由守秘人裁定其所属专攻项。鼓励玩家利用战斗场景中的环境即兴创作临时武器，若"
+        },
+        {
+          "file": "reference/rules/combat.md",
+          "line": 148,
+          "context": "难度等级永远由目标距离决定；相较武器的**基础射程**，目标距离每翻倍，难度提高 1 级。（`reference/tables/weapons-index.md` 有意不收基础射程栏——它排的是威胁强度；逐件查基础射程见 `reference/decks/weapons-and-artifacts-zh.md`。）"
+        },
+        {
+          "file": "reference/rules/combat.md",
+          "line": 182,
+          "context": "- 若任一攻击检定结果**大于等于**该武器的故障值（见 `reference/tables/weapons-index.md` 的「故障值」栏），这次射击不仅未命中——枪械根本没有开火。转轮式、中折式或手动枪机武器遇到的问题仅是哑弹；杠杆式等武器的故障则是卡壳，修理需花费 1D6 战斗轮，以及一次成功的机械维修或射击"
+        },
+        {
+          "file": "reference/tables/README.md",
+          "line": 49,
+          "context": "- `weapons-index.md`——表XVII 全部武器按威胁强度重排(不是骰表),给反派配装备时手选;"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 231,
+          "context": "| 表XVII 武器列表 | **新建 `reference/tables/weapons-index.md`**,单列索引 | 用途不是\"查伤害\",是**给人类反派做强度预算**:一把武器等于多少战力,才好和 `character-creation.md` §11 的反派基线对齐。所以它要按**威胁量级**可排序,不"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 285,
+          "context": "reference/tables/weapons-index.md  ← 表XVII 武器,按威胁量级排的强度预算索引"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 387,
+          "context": "- [x] **新建** `reference/tables/weapons-index.md` — 表XVII 武器,**不照书页顺序照抄**,"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 478,
+          "context": "`reference/tables/weapons-index.md`、`reference/rules/monster-scale.md` 等多处硬编码"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 517,
+          "context": "裸「表XVII」改指 `reference/tables/weapons-index.md`(基础射程该表有意不收,"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 14,
+          "context": "| P12 | [cheatsheet-self-sufficiency](2026-08-04-cheatsheet-self-sufficiency.md) | 速查表自足化:战斗/追逐/理智三份按规则书第六、七、八章重写(**现有版本有实证错误**)+ 新建恐惧症/躁狂症 d100 表与武器强度索引 + 其余四份"
+        }
+      ],
+      "reference_count": 17
     }
   ]
 }

@@ -1,113 +1,149 @@
-# 7e Magic — cheat-sheet
+# 魔法（Magic）
 
-> Casting mechanics, tome conventions, and spell-design cost scaling — not a spell list.
-> Distilled from two archived sources: the tome/study rules
-> in `reference/sourcebooks/keeper-rulebook-7e-zh.md` (the 7e core rulebook — last word on any
-> number here), and the spell cost/casting-time patterns sampled across
-> `reference/sourcebooks/grand-grimoire-zh.md` (550+ spells, official supplement). This sheet
-> keeps the mechanics and number ranges, never the source text.
+本文覆盖魔法值机制、施法检定与孤注一掷后果、学习法术的三条途径、神话典籍研读（泛读/精读、CMI/CMF/MR）、成为相信者、深层魔法、法术变体设计准则，以及自发使用克苏鲁神话技能的可选规则。**这不是法术列表**——具体法术条目见 `reference/mythos/spells/`。
 
-## Casting a spell
+> 来源:《守秘人规则书》第九章 魔法、第十一章 可怖传说书籍、第十二章 法术
 
-- **Cost is written `X 点魔法值；Y 点理智值`** (MP, then SAN), with **POW** added as a third
-  cost only when the spell demands a permanent sacrifice. `可变`(variable) means the caster
-  chooses how much MP/POW to invest — more investment buys a bigger or more likely effect.
-- **Casting time sets initiative.** 即时 (instant) resolves at the caster's DEX**+50** this
-  round (like a readied gun). **1 轮** resolves at the caster's own DEX this round; **N 轮**
-  resolves at DEX on the caster's Nth round from now. Ritual spells instead run
-  minutes/hours/days, and the caster is exposed and interruptible for the whole span.
-- **Resisted effects use an opposed POW roll** — POW vs. the target's POW, or (for wards,
-  barriers, and thresholds) POW vs. **5× the MP invested** — never a skill check. Cthulhu
-  Mythos/Occult only gate *learning* or *diagnosing* a spell, never casting it.
-- **SAN loss on a cast is a flat number**, not the X/Y success/failure notation used for
-  witnessing something (`reference/rules/sanity.md`) — it's paid whether or not the spell
-  succeeds. Casters at SAN 0 are conventionally written as ignoring it.
+## 9.1 魔法值（Magic Points）
 
-## Cost tiers (calibration ladder, sampled across the grand-grimoire)
+- **魔法值（MP）= 意志（POW）÷ 5**，创建时的起始值；邪教徒与强大的巫师往往拥有更多可消耗的魔法值。
+- 施放法术、给造物充能、给魔法通道充能都要消耗魔法值。**魔法值耗尽后仍要继续支付的部分，一比一从生命值（耐久值）里扣**——这类损失应描述成守秘人指定的某种物理伤害（剧痛、伤口、皮肤起泡、七窍流血等）。
+- **回复速度**：每小时自然回复 1 点（意志 100 以上每小时回复 2 点，200 以上回复 3 点，以此类推）；自然回复**不能**超过意志五分之一这个上限——但角色若靠其他手段获得了超过这个上限的魔法值，超出部分可以消耗，只是消耗掉就不会再自然回复回来。魔法值回复与生命值恢复可以同时进行。
+- 有些魔法攻击会强行榨取目标的魔法值或**意志**本身——被迫损失意志比损失同等数量魔法值感受强烈得多；魔法值耗尽后再被夺取，一样从生命值里扣。
+- **意志的永久提升**：当角色成功施放了需要"意志对抗检定"来影响他人的法术且胜出，或任意一次幸运检定骰出 01，都可以之后找机会做一次意志增强检定——骰 D100，结果大于当前意志值（或 ≥96）则意志永久 **+1D10**。提升意志**不会**连带提升当前理智值。
 
-Pick the tier matching the effect's reach when inventing a spell or a caster's known list,
-then round to a number that feels earned — don't default to the cheapest end. Four tiers,
-**小术/中术/大术/仪式级**, so any future spell-strength tooling (indexing, tagging) has one
-shared vocabulary instead of a second incompatible ladder:
+<!-- 规则书 5949–5969, 6112–6123 -->
 
-| Tier | MP | SAN | POW | Casting time | Example |
-|---|---|---|---|---|---|
-| 小术 (minor) | 1–6 | 0–1D4 | — | rounds–minutes | detect, ward an object, small curse |
-| 中术 (moderate) | 变 or 5–15 | 1D4–1D8 | — | 即时–1 轮 | direct harm, mind-affecting, most Bind/Summon (creature) |
-| 大术 (major) | 10–25 | 1D6–2D10 | 5–15 (often permanent) | hours–1 天 | shapechange, life-extension, a curse that sticks |
-| 仪式级 (ritual-tier) | 20–100+ | 1D10–3D6 | 15–350 | hours–days, always ritual | Call/Summon (Great Old One) |
+## 9.2 学习法术
 
-## Spell design — the cost-conversion convention
+学习神话魔法本身不消耗理智值，但**施放**会。任何人都能学，但没人应该学——克苏鲁神话知识的增长总是把角色推向疯狂。三条途径：
 
-- **Power and cost move together.** Doubling an effect (damage, duration, range) should
-  roughly double its MP/SAN — a cheap-and-strong spell breaks the action economy.
-- **Permanent effects cost permanent POW, not MP.** MP recovers overnight; a bound servitor
-  or a curse that never lifts shouldn't be payable in something the caster gets back by
-  sleeping.
-- **God-taught spells break the curve on purpose** — lower MP for the same effect, but
-  usually a steeper SAN cost, a POW sacrifice, or a string attached (the deity remembers).
-  That difference is what makes a Nyarlathotep-taught spell feel unlike one reverse-engineered
-  from a stolen page.
-- **Investigators get the weak end of every curve.** A PC-only discount on a spell's cost
-  quietly turns them into a superhero — an NPC casting the same effect should pay the same.
-- **Flavour is free.** The description (sound, smell, visual) can be reskinned at no
-  mechanical cost; only the cost and effect are the levers that matter for balance.
-- **A counter-spell must cost at least one tier less than the spell it counters.** This is a
-  hard design law, not a guideline: a ward or banishing that costs as much (or more) than the
-  attack it stops is a fair-out in name only — see `core/07-create-monster.md`'s "the fair
-  out" and `core/08-create-puzzle.md`. A 大术-tier curse needs a 中术-or-cheaper counter
-  somewhere in the world, discoverable through play.
+- **从神话典籍中学**：调查员必须至少对该书完成过一次泛读，才能从中选一个法术学习。学习耗时可长可短（一般 2D6 周，守秘人可自行裁定），可以像典籍研读一样分次进行。通常要求一次**困难**难度的智力检定；检定失败学不会法术，可以孤注一掷但要给出合理理由（例如闭关不学会不出关），下次重试的时机由守秘人裁量（可以是每两周一次）。守秘人也可以裁定某个法术自动学会，不必检定。
+- **由他人传授**：一对一教学比看书快，通常 **1D8 天**以内就能学会，检定规则与看书相同。
+- **由神话生物传授**：神话生物可能直接给一本详细记载法术的书或卷轴，也可能通过梦境/幻象反复"啃食"角色的理智与意志来传授——过程长短由剧情需要决定，**建议至少损失 1D6 点理智值**；也可能靠心灵感应直接把完整法术灌进角色脑子里，这种强效体验本身可能就足以把角色直接送进疯人院。传授结束后可要求一次智力检定来保住这份记忆，失败则须重新传授一遍。调查员极少以这种方式学到法术；邪教徒则很常见。
 
-## Tomes / grimoires
+<!-- 规则书 5970–6004 -->
 
-Every tome carries five fixed values, decided once when the tome is written and never
-changed by who reads it: **SAN loss** (a flat die roll, not X/Y), **CMI** (Cthulhu Mythos
-Initial — the % gained on skimming), **CMF** (Cthulhu Mythos Full — the % gained on full
-study), **MR** (Mythos Rating — see below), and **study time** in weeks.
+## 9.3 施放法术
 
-- **泛读 (skim) first, always.** Cover, script, and a read of the language tell the reader
-  whether they can read it at all. A **reading check** (the relevant Language skill, or the
-  reader's Occult/CM if no check is called for) may be required — difficulty scales with the
-  tome's condition: **Regular** for a clean modern print, **Hard** for a handwritten or old
-  copy, **Extreme** for a decayed original with mixed marginalia. Failure costs nothing (no
-  SAN, no Mythos) — just a wasted attempt. Success grants **CMI immediately**, the flat SAN
-  roll (believers only — a declared non-believer's *max* SAN drops but current SAN doesn't),
-  a sense of what spells the tome holds, and how long full study will take.
-- **精读 (full study) is the real gate** — commonly weeks for a minor text, months to over a
-  year for a dense one; a *Necronomicon*-class tome runs 30–70 weeks. No reading check (it
-  was already resolved at the skim). On completion, roll the SAN loss again, then compare the
-  reader's current Cthulhu Mythos skill to the tome's **MR**: below MR → the reader gains the
-  full **CMF**; at or above MR → only **CMI** again (diminishing returns once the reader has
-  outgrown the tome). Re-studying the same tome is allowed — each subsequent pass **doubles
-  the previous study time** but pays the same SAN/CM rules, so a tome keeps paying out (worse
-  and worse per hour) until the reader's CM skill clears its MR.
-- **A translated/abridged copy** of the same work typically has a **lower MR, faster study
-  time, and a smaller CMI/CMF** than the original manuscript, and usually teaches fewer of the
-  spells — the trade-off that makes collecting multiple editions of one tome worthwhile.
-- Only **one tome can be under active study at a time** per reader.
+- 使用克苏鲁神话力量本身就会损失理智值，具体数量因法术而异；若法术唤来的东西被亲眼目睹，还要为"目击"额外付一次理智值。**没有理智值不会阻止施法**——理智值只会更快归零。
+- 几乎所有法术都要消耗魔法值，否则法术根本不会发生；部分法术还要消耗物理材料（可重复使用的，如召唤仪式用的巨石；或一次性消耗的，如喝掉的药酒）。施法用时可变：即时、几秒、几分钟，乃至游戏中的几周。施法者必须知晓法术、清晰背诵仪轨，通常还需要完全的行动自由来配合手势。
+- **首次施放检定**：角色第一次尝试施放一个刚学会的法术时，需要做一次**困难难度的意志（POW）检定**。这次检定只在首次施放时做一次——只要曾经成功过（哪怕是靠孤注一掷成功），以后使用同一法术**永远不再需要施法检定**；NPC 与怪物从不需要施法检定。
+  - **检定成功**：法术按描述生效。
+  - **检定失败**：什么都不发生（消耗仍照常支付）。角色可以选择立即或以后**孤注一掷**再试一次（同样要重付一次消耗）。
+  - **法术最终总会成功**——这个检定衡量的是施法者在过程中受了多少伤，不是法术会不会生效。唯一的例外（除了从此不再尝试这个法术）是回到学习来源处从头重新学一遍，通常还要再花 2D6 周和一次困难智力检定，学成后可以再获得一次施法检定的机会——这比孤注一掷谨慎得多。
 
-| Weight | Study time | SAN loss | CMI / CMF | MR |
+### 施法孤注一掷失败的代价
+
+- **施法者必须额外支付这次消耗（魔法值、理智值、意志）的 1D6 倍**，溢出的魔法值损失照常从生命值里扣——对强力法术孤注一掷失败可能造成重伤甚至死亡。
+- 对较弱的法术，守秘人从下表选一项或多项副作用（可选或骰 1D8）：视野模糊/暂时目盲、凭空出现的尖叫或异响、狂风等大气异象、流血（施法者/在场者/环境）、诡异幻觉、周围小动物爆毙、硫磺臭气，或意外召来一只神话怪物。
+- 对更强的法术（例如请神类、消耗意志的法术），后果更重：大地震动/墙体开裂、雷鸣闪电、天降鲜血、施法者的手枯萎烧毁、施法者不自然地骤然老化（**+2D10 岁**，套用年龄修正）、强大或成群的神话生物现身攻击在场所有人（施法者首当其冲）、在场所有人被吸往遥远时空，或意外把神祇本尊请了出来。
+
+### 施法被打断
+
+若施法者在吟诵/仪轨过程中受到明显的干扰（例如中弹、被物理冲击），法术会中断——参考上面"孤注一掷失败"的后果表来决定发生什么；施法失败的施法者仍要照常支付理智值与魔法值的消耗。
+
+<!-- 规则书 6005–6077 -->
+
+## 9.4 成为相信者（Believer）
+
+- 阅读神话典籍或学习法术得到的克苏鲁神话技能点数**照常获得**，与阅读者信不信书中内容无关；但**理智值损失与信不信直接挂钩**：
+  - **不信者**：克苏鲁神话技能正常增长，最大理智值同步下降，但**当前理智值不损失**——调查员可以借此攒下可观的神话知识而不掉血。不信者可以阅读典籍、学习法术，**但不能施放法术**。
+  - **变为相信者**：首次遭遇神话的直接证据（例如目睹神话生物）时，照常做一次理智检定，只要有损失就会被迫转为相信者——此时角色要**立即额外扣减一次等于当前克苏鲁神话技能值的理智值**（一次性代价，不是持续效果）。
+  - 有些不信者即使经历了直接接触也未必被说服：例如遭遇深潜者若理智检定通过、没有损失理智值，调查员仍可以选择继续做不信者，把经历合理化。但目睹明显的异界生物或神祇化身，通常足以击碎不信者的立场。
+  - 玩家随时可以主动选择让调查员转为相信者（并执行上述额外理智值损失）。
+
+<!-- 规则书 6083–6111 -->
+
+## 9.5 深层魔法（Deeper Magic）
+
+当一名**处于疯狂中**（临时性或不定性）的调查员成功施放了一个法术，骰 1D100 与该角色的**克苏鲁神话技能**比较：结果 ≤ 技能值，就解锁这个法术的深层版本，此后这个深层效果一直可用（这个法术以后还能不能挖出更深的版本，由守秘人自行决定）。所有神话生物与理智值为 0 的邪教徒，只要认识某个法术，就默认也认识它的深层版本；其他敌人是否认识，守秘人自行裁定。深层魔法的设计目标是让法术**变得更刺激、更恐怖**，而不是给一个平淡的机制便宜（例如单纯减少魔法值消耗）。
+
+<!-- 规则书 8407–8432 -->
+
+## 9.6 非神话魔法（可选）
+
+若守秘人想让世俗魔法/宗教狂热在游戏中产生实际效果，机制与流程应当**与神话魔法一致**（消耗、检定、效果三件套），是真是假由守秘人（可以和玩家商量）决定；建议把这类魔法与「神秘学」技能挂钩，恐怖的仪式行为仍然要消耗理智值。
+
+<!-- 规则书 6124–6128 -->
+
+## 9.7 可选规则：自发使用克苏鲁神话技能
+
+克苏鲁神话技能除了理解和施放法术，还能**即兴**做出类似法术的效果，按常规技能检定流程处理（玩家先声明目的，守秘人评估是否可接受，默认用**普通难度**）。若目标会抵抗，改为**施法者的克苏鲁神话技能 vs 目标的意志（POW）**对抗检定（不是意志对意志）。守秘人自行裁定这次即兴效果的魔法值/理智值消耗，参照类似法术定价；孤注一掷失败的代价与后果和 §9.3 的施法孤注一掷相同。与正式法术不同的是：**这不保证最终成功**——孤注一掷失败后守秘人可以让目标依然达成，但没有法术那种"总会成功"的兜底；而且每次达成同一目标都要重新检定，不像法术学会一次就免检。
+
+<!-- 规则书 6129–6187 -->
+
+## 10. 神话典籍（Tomes / Grimoires）
+
+每本典籍都带五个固定值，写书时一次性定死，不因读者而变：**理智损失**（一次性骰值，不是 X/Y 记法）、**CMI**（Cthulhu Mythos Initial，泛读值）、**CMF**（Cthulhu Mythos Full，精读值）、**MR**（Mythos Rating，神话等级）、**精读所需周数**。
+
+- **永远先泛读。** 封面、文字、装帧品相决定读者能不能读懂它；可能需要一次**阅读检定**（对应的语言技能，若没有对应检定则用神秘学/克苏鲁神话），难度按典籍的年代、形式与保存状况定：**普通**——近代印刷、品相良好；**困难**——手抄本或古书；**极难**——古老朽坏、印刷与手写注解混杂的典籍。检定失败**不付任何代价**（不损失理智，不增长神话）——只是白费一次尝试，可以等下次机会（守秘人裁量，例如每周一次）再试。**检定成功**立即获得 **CMI**、一次性的理智损失骰（**仅相信者**——不信者的最大理智值下降但当前理智值不降，见 §9.4），以及本书大致包含哪些法术、精读要花多久的信息。
+- **精读才是真正的关卡**——次级文本几周，厚重典籍数月到一年以上，*死灵之书*级的典籍要 30–68 周。精读**不需要**阅读检定（该检定在泛读阶段已经做过）。精读完成后再骰一次理智损失，然后比较读者当前的克苏鲁神话技能与该书的 **MR**：**低于 MR** → 获得全额 **CMF**；**达到或超过 MR** → 只能再拿一次 **CMI**（读者已经"读透"了这本书，边际收益递减）。允许反复精读同一本书——**每次重复精读的耗时是上一次的两倍**，但理智/神话规则照旧，因此一本书能被反复榨取很多年，只是回报（每小时）越来越薄。
+- **同一时段只能精读一本典籍。**
+- 精读完成时会自动获得该书所用语言的一次**技能成长标记**（下次幕间成长正常判定）；守秘人还可以额外给历史/考古学/人类学/神秘学，或天文学等科学分项 1D6–1D10 的技能提升，或直接给成长标记留到幕间成长时判定。
+- **用作神话知识参考**：精读完成后，若要查阅该书里的某条具体知识，消耗游戏内 **1D4 小时**通读全书，骰 1D100，结果 **≤ 该书 MR** 即可查到（信息清晰或含糊由守秘人定）；失败代表书里没写这条，或角色没能找到。
+- **神秘学书籍**沿用相同框架，但读完只增长神秘学技能，**不含任何克苏鲁神话增长**（否则就该分类成神话典籍了）；是否损失理智值取决于书的具体内容。
+
+**范例区间**（抽样自表XI 全部约 90 条书目条目，来源页 8259–8384；数字是校准用的粗分档，不是硬边界）：
+
+| 分量 | 精读周数 | 理智损失 | CMI / CMF | MR |
 |---|---|---|---|---|
-| Minor / cult pamphlet | 1–14 weeks | 1D3–1D6 | +1/+2 – +4/+9 | 9–18 |
-| Standard grimoire | 6–36 weeks | 1D6–2D6 | +2/+4 – +4/+8 | 18–36 |
-| Major tome (*Necronomicon*-class) | 32–68 weeks | 2D8–2D10 | +4/+8 – +5/+12 | 36–51 |
+| 残页/小册子（如《纳卡尔之钥》《夜之魍魉》） | 1–10 | 1D2–1D4 | +0/+1 – +1/+3 | 3–12 |
+| 次级典籍 | 10–20 | 1D6–1D8 | +1/+2 – +2/+5 | 12–21 |
+| 标准魔法书 | 20–40 | 1D8–2D6 | +2/+3 – +3/+8 | 21–36 |
+| 大典（《死灵之书》级） | 40–68 | 2D6–2D10 | +3/+5 – +5/+12 | 36–54 |
 
-## Spell entry format & categories (for `reference/mythos/spells/`)
+- **译本/节本**通常比原稿 MR 更低、精读更快、CMI/CMF 更小，往往也教不全原书法术——这正是收藏同一本书多个版本的价值所在。
 
-Each entry: **消耗**(cost) → **施法用时**(casting time) → **效果**(effect) → optional
-**深层魔法**(a stronger variant for SAN-0 casters and Mythos entities) → **别名**(aliases —
-useful so players can't pattern-match a spell by name alone). Tag loosely with the
-sourcebook's own categories, more than one where it fits: 驱逐和控制、召唤怪物和神祇、战斗、
-交流、幻梦境、附魔、环境、续命、民俗魔法、加害魔法(战斗外)、支配他人、制造怪物、其他、保护、
-时间相关、变形、旅行和交通。
+<!-- 规则书 5819–5943, 8248–8384 -->
 
-## Quality bar
+## 11. 法术设计（Spell Design）
 
-- Cost (MP/SAN, +POW if the effect is permanent) matches the tier table for what the spell
-  actually does — no MP-only immortality, no discount spells for PCs.
-- Casting time is stated in 即时/N 轮/duration notation, never "takes a while".
-- A tome states all five values together — SAN loss, CMI, CMF, MR, study time — not just a
-  single "Mythos gain" number.
-- A resisted effect names exactly what it's opposed against (POW vs. POW, or vs. 5× MP).
-- Any spell written as "the fair out" for another spell costs at least one tier less than
-  the spell it counters.
+### 消耗与效果
+
+- 消耗通常记作 **X 点魔法值；Y 点理智值**，只有效果是**永久性**或**显著持续**的法术才额外收取意志（POW）作为第三种代价——意志消耗是永久的，魔法值会自然回复。`可变`（variable）代表施法者自选投入多少魔法值/意志，投入越多效果越强/越可能成功。
+- **效果越强，消耗应越高**；没有固定的换算比例，但**来源越纯正，法术就越划算**——劣质来源（拙劣译本、残篇断章）应该是弱化版：消耗更高、效果更弱；由旧日支配者直接口授的法术则相反：消耗大幅降低、效果大幅增强。
+- **施法用时决定行动顺序**：**即时**在施法者本轮 DEX+50 生效（如同已准备好的枪械）；**1 轮**在施法者本轮自己的 DEX 生效；**N 轮**在施法者第 N 轮的 DEX 生效。仪式类法术改用分钟/小时/天为单位，施法者在整个过程中都暴露、可被打断。
+- **对抗效果用意志对抗检定**——施法者意志 vs 目标意志，或（结界、屏障、封锁类）施法者意志 vs **5 倍投入的魔法值**，从不用技能检定。平局时意志更高的一方获胜；仍平局则守秘人可裁定双方都受到某种符合法术性质的不利影响；**若施法者的意志比目标高出 100 点以上，施法者自动获胜**，不必掷骰。
+- **法术的作用范围**通常是三选一：**接触、100 码、肉眼视野范围内**——更大的范围是工程学问题,不是恐怖故事该有的样子。
+- 克苏鲁神话/神秘学只决定能不能**学会**或**诊断**一个法术，从不决定能不能**施放**它。
+
+<!-- 规则书 8393–8474 -->
+
+### 成本档位（校准梯度，抽样自 grand-grimoire）
+
+⚠️ 下表**不是**从本规则书第十二章逐条统计出来的——它是抽样 `reference/sourcebooks/grand-grimoire-zh.md`（550+ 条法术的官方补充资料）里的消耗/施法时间模式得出的校准梯度,本次核对没有覆盖这份文件,仍按既有数据保留。挑选新法术或反派已知法术清单时,按效果影响面选档,再取一个"感觉配得上"的数字——不要默认取最低档。四档:**小术/中术/大术/仪式级**,让以后任何法术强度相关的索引/标签工具都能共用一套词汇。
+
+| 档位 | 魔法值 | 理智值 | 意志 | 施法用时 | 范例 |
+|---|---|---|---|---|---|
+| 小术（minor） | 1–6 | 0–1D4 | — | 轮–分钟 | 侦测、给物品下结界、小型诅咒 |
+| 中术（moderate） | 可变 或 5–15 | 1D4–1D8 | — | 即时–1 轮 | 直接伤害、精神干扰、多数束缚/召唤（生物） |
+| 大术（major） | 10–25 | 1D6–2D10 | 5–15（常为永久） | 小时–1 天 | 变形、续命、附骨的诅咒 |
+| 仪式级（ritual-tier） | 20–100+ | 1D10–3D6 | 15–350 | 小时–天，恒为仪式 | 召唤/请神（旧日支配者） |
+
+### 法术变体设计准则
+
+- **威力与消耗同步移动。** 让效果（伤害、持续时间、范围）翻倍，大致也要让魔法值/理智值消耗翻倍——便宜又强大的法术会打垮行动经济。
+- **永久效果花永久的意志，不花魔法值。** 魔法值一觉醒来就回来了，一个永不解除的诅咒或束缚仆从不该用睡一觉就能还上的东西支付。
+- **神授法术理应打破曲线**——同样效果魔法值更低，但通常理智代价更陡、要献祭意志，或者留一个把柄（神明会记得）。这种差异正是"奈亚拉托提普亲授的法术"和"从偷来的残页上现学现卖"读起来不一样的原因。
+- **调查员不该吃到任何折扣。** 给玩家专属的成本优惠，会悄悄把他们变成超级英雄——NPC 施放同样效果应该付同样代价。
+- **描述是免费的。** 声音、气味、画面这类装饰可以随便重新包装，不花机制成本；只有消耗和效果才是真正影响平衡的杠杆。
+- **克制系法术至少要比它克制的法术低一档，这是硬性设计法则，不是建议**：一个和它所阻挡的攻击同样贵（甚至更贵）的结界或驱逐术，只是名义上的"公平出路"——见 `core/07-create-monster.md` 的"公平出路"与 `core/08-create-puzzle.md`。大术级的诅咒，世界上某处就该藏着一个中术或更便宜的破解法，能在游戏过程中被发现。
+
+<!-- 规则书 8434–8508 -->
+
+## 12. 法术条目格式与分类（供 `reference/mythos/spells/` 使用）
+
+每条法术:**消耗**(cost) → **施法用时**(casting time) → **效果**(effect) → 可选的
+**深层魔法**(为理智值 0 的施法者与神话生物准备的加强版) → **别名**(aliases——让玩家不能单
+凭名字模式匹配出法术)。按规则书自带的分类粗略打标签,可以不止一个:驱逐和控制、召唤怪
+物和神祇、战斗、交流、幻梦境、附魔、环境、续命、民俗魔法、加害魔法(战斗外)、支配他人、
+制造怪物、其他、保护、时间相关、变形、旅行和交通。
+
+## 质量红线
+
+- 消耗（魔法值/理智值，效果永久时另加意志）与该法术实际效果相符，对照上面的成本档位表——不能有只花魔法值的永生术，也不能给 PC 开法术折扣。
+- 施法用时写成即时/N 轮/持续时间的记法，不写"过一会儿"这种模糊说法。
+- 一本典籍要一次性给全五个值——理智损失、CMI、CMF、MR、精读周数——不能只给一个笼统的"神话获得量"。
+- 对抗效果要点名具体对抗的是什么（意志 vs 意志，或 vs 5 倍投入魔法值）。
+- 任何写成"某法术的公平出路"的法术，消耗至少比它克制的法术低一档。

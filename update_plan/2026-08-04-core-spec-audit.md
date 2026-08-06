@@ -8,6 +8,12 @@
 > 见下方「已并出去的部分」。
 > 范围:主体在 `core/`;溢出到 `.gitmodules`、`scripts/render-investigator.py`、
 > `update_plan/README.md` 的完结清单、`reference/craft/README.md` 的作用域各一处。
+>
+> ⚠️ **本文件里的 `core/NN:行号` 会漂,开工前先重新定位。** 2026-08-06 已重锚过一次:
+> P12 阶段 1.0 改了 `core/00-how-to-run.md`(`:107`→`:114`、`:173`→`:189`)、P11 阶段 2b
+> 改了 `core/13`(`:83`→`:92`)。**别拿本文件的数字直接 `sed`**,按引号里的原文
+> `grep` 定位。另注:`core/00:103` 引的那句「数值随便转,描述性文字保持原创」
+> **已被 P12 阶段 1.0 整句删除**,问题 2 的语义半边就此消失,只剩死链半边(见问题 2)。
 
 ## 这份计划要治什么
 
@@ -50,7 +56,7 @@ bundle 退役后也不存在"没有仓库的 Keeper"。索引的定位应回到�
 **根因是扫尾用字符串模式,而失效的是语义。**
 
 **这一处不是孤例。** 同一批未清账至少还有三处(见阶段 0 的 P13 余波扫描):
-`core/00:107`、**P5 阶段 3** 整节假设存在一条"无文件系统的 ChatGPT 网页链路"、
+`core/00:114`、**P5 阶段 3** 整节假设存在一条"无文件系统的 ChatGPT 网页链路"、
 **P10 复评修订 A 的第一条理由**同样建立在"不进 bundle 等于目标用户拿不到"之上。
 后两处在计划文件里,不改生产文件,但会误导执行——**P5 阶段 3 的存废影响 P10 建筑卡
 那张的存废理由**,值得一次扫完再决定。
@@ -76,7 +82,7 @@ P9 已于 2026-08-04 完结归档,文件移进了 `Archived/`——**链接当�
 
 ### 3. `reference/external/` 不存在,两份 spec 指着它
 
-- `core/00:107` —— "`reference/craft/` 和 `reference/external/` say so directly",
+- `core/00:114` —— "`reference/craft/` 和 `reference/external/` say so directly",
   后半句无从验证(那个目录没有 README,因为没有那个目录)。
 - `core/14:38` —— 分类表把「第三方 git repo」**整类**路由到那里。
 
@@ -172,7 +178,7 @@ A/B 之间也已经不一致(core/01 说写路径,模板说保持 slug)。
 
 ### 8. `--strict` 会在一个自称误报的检查上硬失败(溢出到 `scripts/`)
 
-`core/13:83` 说 `--strict` 把 any violation 变成 hard failure;
+`core/13:92` 说 `--strict` 把 any violation 变成 hard failure;
 `scripts/render-investigator.py:518` 是 `if (errors or warnings) and strict: sys.exit(1)`。
 而属性区间那条 warning **自己的文案**就是
 `(fine if point-buy or an aged/scaled NPC)`。于是一个按
@@ -251,9 +257,9 @@ A 类尤其:P9 一个计划就同时踩了 1(前提失效未回扫)、2(临时�
       **人工读每一处命中**,不看计数。已知至少四处:
       - [ ] `core/07:14-15` —— 删掉「only channel / never ships / does ship」整段框架,
             改写成索引的真实定位(检索层)
-      - [ ] `core/00:107` —— 见下面 `external/` 那条
+      - [ ] `core/00:114` —— 见下面 `external/` 那条
       - [ ] **P5 阶段 3** —— 整节假设存在"无文件系统的 ChatGPT 网页链路",
-            而 `core/00:173` 已写死 kit 由**有文件系统的 agent 就地读**。
+            而 `core/00:189` 已写死 kit 由**有文件系统的 agent 就地读**。
             **这一条不在本计划范围内改,但要把结论报给 P5**:该链路若已不存在,
             阶段 3 连同"写进 `core/00` 的链路差异说明"可能整块不必做
       - [ ] **P10 复评修订 A 的第一条理由** —— "不进 bundle 等于目标用户拿不到"已失效。
@@ -271,7 +277,7 @@ A 类尤其:P9 一个计划就同时踩了 1(前提失效未回扫)、2(临时�
       - [ ] 删 `.gitmodules` 里 `reference/external/coc-zh` 段落
       - [ ] 删 `core/14:38` 分类表那一行(或改成"第三方 git repo:当前不收,
             要收先新建目录并给 README")
-      - [ ] 改 `core/00:107`,只保留 `reference/craft/`
+      - [ ] 改 `core/00:114`,只保留 `reference/craft/`
 - [ ] `core/07` Output 段补 L5 例外(→ `reference/mythos/great-old-ones/`),
       与同文件 First 段的 Filing by tier 对齐
 - [x] `core/00` Layout 树补 `reference/_source/`(**2026-08-04 晚已做**;注文改成
@@ -321,7 +327,7 @@ A 类尤其:P9 一个计划就同时踩了 1(前提失效未回扫)、2(临时�
 - [ ] **C 类 / 问题 9**:`core/15` 第 2 步的 fact-check 从「数字」扩到
       「**数字与结构清单**」,`core/00` 的 Layout 树明确点名为要核的对象之一
 - [ ] **问题 8**:`render-investigator.py` 只让 errors 触发 `sys.exit(1)`
-      (或给属性区间检查一个 post-age 豁免),`core/13:83` 同步改措辞
+      (或给属性区间检查一个 post-age 豁免),`core/13:92` 同步改措辞
 
 ---
 

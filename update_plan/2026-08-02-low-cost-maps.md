@@ -1,7 +1,7 @@
 # Update Plan — 低成本地图方案
 
 > 日期:2026-08-02
-> 状态:进行中(阶段 0 已完成,待提交回填 hash;下一步阶段 1 原型)
+> 状态:进行中(阶段 0 已完成并提交,`13821ac`;下一步阶段 1 原型)
 > 来源:从 `Archived/2026-08-02-conventions-gaps.md` §4 拆出独立跟踪(2026-08-02)
 > 关联:P1 第三章邪教关系图(阶段 0 要还的债);
 > `2026-08-04-town-anatomy-from-arkham.md`(P10)阶段 2 的文字地图卡是本计划的输入格式
@@ -106,7 +106,9 @@ reference/craft/cult-design-zh.md:68  → "与 P5 的 mermaid 势力图工具合
       consumers,不孤儿(当时还顺手重跑了 `build-bundle.sh`;该脚本已随 **P13** 删除)
 - [x] `CHANGELOG.md` 追加(更新内容 + 修复问题各一条,并入当天已有的 2026-08-04 条目)
 
-> **阶段 0 于 2026-08-04 完成。** commit hash 待提交后回填到本文件头与
+> **阶段 0 于 2026-08-04 完成,随 `13821ac` 提交**(该 commit 是当天六股工作的合并落地,
+> 阶段 0 的三个文件——`craft/diagram-conventions-zh.md` 新建、`templates/cult.md` 与
+> `craft/cult-design-zh.md` 两处还债——都在其中)。hash 已于 2026-08-06 回填到本文件头与
 > `update_plan/README.md` 状态表。
 
 ## 阶段 1 — 功能一:场景定位图(A 档)

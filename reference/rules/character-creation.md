@@ -1,307 +1,247 @@
-# 7e Character Creation — cheat-sheet
+# 调查员创建（Character Creation）
 
-> **Era baseline: 1920s.** Every default below (occupations, skill assumptions, currency,
-> technology level) is the "classic" 1920s Call of Cthulhu setting. Running a different era?
-> Read `reference/rules/eras/README.md` first — it explains how to layer that era's delta on
-> top of this file rather than reading this file as if it were era-neutral.
+本文覆盖属性生成、年龄调整、衍生值、职业、技能点与技能基础值、信用评级与生活水平、背景、幕间体验包、创建调查员的其它可选方法，以及人类反派的生成方法。**本文是机制速查,不是职业总表**——具体某个职业该给什么技能、某条技能的完整战术描述,仍留在规则书里;这里只记数字与公式。
+
+> **年代基准:1920s。** 下面每一条默认值(职业、技能设定、货币、科技水平)都是"经典" 1920s 背景。跑别的年代时先读 `reference/rules/eras/README.md`——它解释如何把年代差集叠加在本文件之上,而不是把本文件当成年代中立的通用规则来读。
 >
-> Quick-fire pregen/investigator reference. **Mechanics only** — formulas, bands, and the
-> shape of each field. It is not a rules reproduction: the occupation list, the skill
-> descriptions, and the phobia/mania tables stay in the *Keeper Rulebook* and
-> *Investigator Handbook*. Look them up there; record the *numbers* here.
->
-> The data model that holds all of this is `templates/investigator.schema.json`.
-> The build order is `core/13-create-investigator.md`.
->
-> **Sourcing convention:** every section below carries a **来源** line — a pointer to where
-> the numbers came from, never a quote. Precision is capped at what's actually been verified:
-> - Where a rulebook chapter/appendix number is cited, it's because the source material
->   itself named it explicitly (traced, not guessed).
->   Nothing here is invented as fact.
-> - Everything else cites the traceable intermediate source — which sheet of the reference
->   character sheet workbook it was extracted from — and is marked **章节号未核实**
->   (rulebook chapter number not yet confirmed). Filling those in requires an actual read of
->   the *Keeper Rulebook*'s character-creation chapters, which hasn't happened yet — tracked
->   in `update_plan/2026-08-02-investigator-cards.md`. Until then, treat the sheet-level
->   citation as the honest ceiling of what's confirmed.
+> 承载这些数据的 schema 是 `templates/investigator.schema.json`；构建流程见 `core/13-create-investigator.md`。
 
-## 1. Characteristics
+> 来源:《守秘人规则书》第三章 创建调查员、第四章 技能
 
-- **3D6 × 5** — STR, CON, DEX, APP, POW, and **Luck**.
-- **(2D6+6) × 5** — SIZ, INT, EDU.
-- Point-buy is a valid alternative when a table wants control over randomness.
-- Reading the scale: 15 = feeble, 50 = average adult, 90 = the best you have ever met,
-  99 = human ceiling. **SIZ and POW are the only two that may exceed 99**; EDU caps at 99.
-- Luck is rolled, not derived. It is a resource in play — see
-  `reference/rules/skill-checks.md`.
+## 1. 属性（Characteristics）
 
-来源:`COC apolo.xlsx`『属性注释』sheet(章节号未核实)。
+- **3D6 × 5** —— 力量（STR）、体质（CON）、敏捷（DEX）、外貌（APP）、意志（POW）、**幸运（Luck）**。
+- **(2D6+6) × 5** —— 体型（SIZ）、智力（INT）、教育（EDU）。
+- 掷出的属性会落在 15%–90% 之间；**只有体型（SIZ）和意志（POW）可以超过 99**，教育（EDU）上限固定为 99。
+- 幸运是掷出来的,不是推算出来的——它是场上会被消耗、会回复的资源，见 `reference/rules/skill-checks.md` §5.16。
 
-## 2. Age — pick the age first, then pay for it
+**数值参考（各属性同一个数字在不同属性上的含义不同，速查用）：**
 
-Age is not flavour; it moves characteristics before anything is derived.
+| 数值 | 力量 STR | 体质 CON | 体型 SIZ | 敏捷 DEX | 外貌 APP | 智力 INT | 意志 POW | 教育 EDU |
+|---|---|---|---|---|---|---|---|---|
+| 0 | 站不起来 | 死亡 | — | 无助行动不能 | 极度丑陋 | 无法理解世界 | 无意志/无魔法潜能 | 新生儿 |
+| 15 | 虚弱 | 体弱多病 | 孩童/矮小 | 迟钝笨拙 | 有明显缺陷 | 学得很慢 | 意志力弱 | 完全未受教育 |
+| 50 | 普通人 | 普通人 | 普通体型 | 普通人 | 普通人 | 普通人 | 普通人 | 高中毕业(60) |
+| 90 | 见过最强壮的人 | 不惧寒冷 | 非常高大/胖 | 世界级运动员 | 见过最漂亮的人 | 博士/教授级 | 沟通不可视之物的高潜质 | 博士学位 |
+| 99 | 人类极限(举重冠军) | 人类极限 | 已知最重人类以下 | 人类极限 | 人类极限,无法再高 | 人类极限(爱因斯坦级) | 人类极限(特例可超) | 人类极限 |
+| 140+ | 超越人类(猩猩、马) | 超越人类(大象) | 200+ 见怪物(昌格纳·方庚) | 超越人类(虎) | — | 超越人类(远古者) | 超越人类(依格) | — |
 
-| Age | Physical deduction | APP | EDU | Move |
-|-----|--------------------|-----|-----|------|
-| 15–19 | −5 split across STR **and SIZ** | — | −5, and roll Luck **twice, keep the better** | — |
-| 20–39 | — | — | 1 EDU improvement check | — |
-| 40–49 | −5 split across STR/CON/DEX | −5 | 2 checks | −1 |
-| 50–59 | −10 | −10 | 3 checks | −2 |
-| 60–69 | −20 | −15 | 4 checks | −3 |
-| 70–79 | −40 | −20 | 4 checks | −4 |
-| 80–89 | −80 | −25 | 4 checks | −5 |
+<!-- 规则书 700–853 -->
 
-- **EDU improvement check:** roll D100. Over current EDU → EDU gains 1D10 (cap 99).
-  Under or equal → no change. Do this *before* computing occupation skill points, since
-  most occupations pay out of EDU.
-- Record what was applied in `age_modifiers` — a reviewer must be able to re-derive the
-  final characteristics from the rolls.
+## 2. 年龄（Age）—— 先定年龄,再承受它的代价
 
-来源:`COC apolo.xlsx`『附表』sheet 的年龄补正区(隐藏 sheet;章节号未核实)。
+年龄不是背景装饰,它在任何衍生值计算之前先调整属性。调查员年龄通常在 15–90 之间；超出范围找守秘人裁定。**不同年龄段的调整不叠加**——只套用调查员实际年龄所在的那一档。
 
-## 3. Derived stats
+| 年龄 | 体质类调整 | 外貌(APP) | 教育(EDU) | 移动(MOV) |
+|---|---|---|---|---|
+| 15–19 | STR **与** SIZ 合计 −5(自选分配) | — | −5；幸运骰 2 次取较高 | — |
+| 20–39 | — | — | 增强检定 × 1 | — |
+| 40–49 | STR/CON/DEX 合计 −5(自选一项、两项或三项分配) | −5 | 增强检定 × 2 | −1 |
+| 50–59 | 合计 −10 | −10 | 增强检定 × 3 | −2 |
+| 60–69 | 合计 −20 | −15 | 增强检定 × 4 | −3 |
+| 70–79 | 合计 −40 | −20 | 增强检定 × 4 | −4 |
+| 80–89 | 合计 −80 | −25 | 增强检定 × 4 | −5 |
 
-| Stat | Formula |
-|------|---------|
-| **HP** | (CON + SIZ) ÷ 10, round down |
-| **Major wound** | half maximum HP — a single hit at or above it is a major wound |
-| **MP** | POW ÷ 5, round down |
-| **SAN (start)** | = POW |
-| **SAN (max)** | 99 − Cthulhu Mythos% |
-| **Move** | 8 base; **7** if STR *and* DEX are both below SIZ; **9** if both are above; then apply the age penalty |
-| **Dodge** | DEX ÷ 2 (a skill — it can be raised with points like any other) |
-| **Own Language** | = EDU |
-| **Build / Damage Bonus** | from STR + SIZ, below |
+- **教育增强检定**：骰 D100，结果 **大于**当前 EDU 则 EDU **+1D10**（上限 99）；这一步应在计算职业技能点**之前**完成，因为大多数职业按 EDU 支付点数。
+- 把实际扣减的分配方式记进 `age_modifiers`——复核者要能从掷骰结果反推出最终属性。
+- 这是**创建调查员时**一次性的年龄调整；调查员在战役进行中老去（跳过数年、或因法术/魔法门骤然老化）用的是另一张里程碑表，见 `reference/rules/skill-checks.md` §5.15，两者不是同一套数字。
 
-| STR+SIZ | Damage Bonus | Build |
-|---------|--------------|-------|
+<!-- 规则书 858–880, 1479–1490 -->
+
+## 3. 衍生值（Derived Stats）
+
+| 数值 | 公式 |
+|---|---|
+| **生命值 HP** | (体质 CON + 体型 SIZ) ÷ 10，向下取整 |
+| **重伤阈值 Major Wound** | 生命值上限的一半——单次命中达到或超过这个数就是重伤 |
+| **魔法值 MP** | 意志 POW ÷ 5，向下取整 |
+| **理智值 SAN（初始）** | = 意志 POW |
+| **理智值 SAN（上限）** | 99 − 克苏鲁神话技能% |
+| **移动 MOV** | DEX 与 STR **都小于** SIZ → 7；DEX 或 STR **有一项 ≥ SIZ（或三者相等）** → 8；DEX 与 STR **都大于** SIZ → 9；再叠加年龄惩罚 |
+| **闪避 Dodge** | DEX ÷ 2（是一项技能，可以像其他技能一样花点提升） |
+| **母语 Own Language** | = 教育 EDU |
+| **体格 / 伤害加值 Build / DB** | 由 STR + SIZ 决定，见下表 |
+
+| STR+SIZ | 伤害加值 DB | 体格 Build |
+|---|---|---|
 | 2–64 | −2 | −2 |
 | 65–84 | −1 | −1 |
-| 85–124 | none | 0 |
+| 85–124 | 无 | 0 |
 | 125–164 | +1D4 | 1 |
 | 165–204 | +1D6 | 2 |
 | 205–284 | +2D6 | 3 |
 | 285–364 | +3D6 | 4 |
 | 365–444 | +4D6 | 5 |
 
-Above 444, every further 80 points adds +1D6 and +1 Build.
+超过 444 后，每再多 80 点（不足 80 按 80 算）再 +1D6 伤害加值、+1 体格。伤害加值不用于枪械。
 
-来源:`COC apolo.xlsx`『属性注释』sheet(HP/MP/SAN/Move/Build/DB 各公式区;章节号未核实)。
+<!-- 规则书 892–924, 1492–1525 -->
 
-## 4. Occupation — three things, always
+## 4. 职业（Occupation）—— 始终提供三样东西
 
-An occupation is not a job title. It supplies exactly three mechanical things; if you invent
-one, invent all three and get the Keeper's sign-off before the numbers are spent.
+职业不是一个头衔，它精确地提供三件机制上的东西；若要自创职业，三件都要造齐并经守秘人拍板才能花点。
 
-1. **A skill-point formula.** The families in play:
-   - `EDU × 4` — the academic/professional default.
-   - `EDU × 2 + X × 2` where X is the characteristic the job leans on — DEX for
-     acrobats and thieves, STR for brawlers and labourers, APP for performers and
-     confidence artists, POW for the devout.
-   - The formula is a *ceiling*, not a target: 78 EDU on `EDU × 4` = 312 points.
-2. **A Credit Rating band**, e.g. 30–60. Occupation points must bring Credit Rating to at
-   least the band's **lower bound** before anything else is bought. Sitting outside the band
-   is allowed when the concept demands it — a broke doctor, a rich drifter — but it is a
-   deliberate call, not an accident.
-3. **A skill list.** Occupation points may only be spent on this list. Most lists carry one
-   or more **free-choice slots** ("any one other skill", "two personal or era specialities") —
-   name them explicitly on the sheet so the Keeper can audit the card at a glance.
+1. **技能点公式**（上限，不是目标——78 教育配 `EDU×4` 就是 312 点）。规则书范例职业里出现的公式族：
+   - `EDU × 4` —— 学术/专业类默认公式（古文物学家、作家、神职人员、记者、传教士、超心理学家、教授、律师、图书馆管理员、黑客等）。
+   - `EDU × 2 + X × 2`，X 是该职业倚重的属性——常见搭配：DEX 或 STR 给运动型/体力型职业（运动员、罪犯、农民、军官、警探、警察、私家侦探、士兵、部落成员），APP 给外貌相关职业（业余艺术爱好者），DEX 给技术型职业（飞行员）。
+   - 部分职业在 `+X×2` 上给玩家**二选一甚至三选一**（例如艺术家是 POW×2 或 DEX×2；流浪者是 APP×2、DEX×2 或 STR×2；音乐家是 DEX×2 或 POW×2；狂热者是 APP×2 或 POW×2）——这不是公式抄错，是同一职业允许按角色概念选属性。
+2. **信用评级区间**，例如 30–70。职业点数须先把信用评级填到区间**下限**，再花在别处；概念需要时可以刻意落在区间之外（潦倒的医生、阔绰的流浪者），但那是有意为之，不是失误。
+3. **技能列表**。职业点数只能花在这份清单上。大多数清单带一个或多个**自选栏**（"自选一技能"、"自选二至三项个人或年代专长"）——把它们在卡面上明确点出来，方便守秘人一眼审核。
 
-The occupation also implies **contacts** — the professional circle the job puts them in
-touch with. That is the cheapest hook source on the whole sheet; harvest it in step 4.
+职业同时暗示了**熟人**——这份工作会带来的专业圈子，是整张卡上最便宜的钩子来源，第 7 节写背景时一并收割。
 
-来源:`COC apolo.xlsx`『职业列表』sheet(230 个职业行,含信用区间/职业属性/技能点/
-本职技能/推荐关系人各列;章节号未核实)。
+来源:《守秘人规则书》第三章「范例职业」一节列出的约 30 个范例职业(古文物学家/艺术家/运动员/作家/神职人员/罪犯/业余艺术爱好者/医生/流浪者/工程师/艺人/农民/黑客/记者/律师/图书馆管理员/军官/传教士/音乐家/超心理学家/飞行员/警探/警察/私家侦探/教授/士兵/部落成员/狂热者等)。**完整的 230 个职业列表仍留在规则书与《调查员手册》里**，本文件只收公式族，不逐条转录。
 
-## 5. Skill points
+<!-- 规则书 925–1108 -->
 
-- **Occupation points:** per the formula above. Occupation-list skills only.
-- **Personal interest points:** **INT × 2**. Any skill.
-- **Cap:** no skill exceeds **90%** at creation. Many tables announce a tighter cap up front
-  (e.g. "70 occupation / 60 interest") — if the campaign declares one, put it in
-  `skill_points.cap`.
-- **Cthulhu Mythos** starts at **0** and is never bought at creation. Raising it lowers
-  maximum Sanity permanently.
-- **Credit Rating** is bought with occupation points like any other skill, from a base of 0.
+## 5. 技能点（Skill Points）
 
-**Base values.** A skill's `base` is where it starts before a single point is spent — the
-ledger check in §10 needs it, so record it.
+- **职业技能点**：按上面的公式计算，只能花在职业列表内的技能（含信用评级）。
+- **兴趣技能点**：**智力（INT）× 2**，可以自由分配给除克苏鲁神话外的任意技能。
+- **上限**：创建时任何技能不超过 **90%**。不少团会公开一个更紧的上限（如"职业 70 / 兴趣 60"）——若战役声明了这条,写进 `skill_points.cap`。
+- **克苏鲁神话**从 **0** 开始，创建时**永远不能加点**；技能值升高会永久降低理智上限。
+- **信用评级**和其他技能一样用职业点数购买，起点是 0。
+- **格斗与射击的专攻子项**：若职业本职技能里包含"格斗"或"射击"，在玩家选定具体专攻之前不能分配技能点——必须先定专攻(如格斗(斗殴)、射击(手枪))再花点。
 
-| Base | Skills |
-|------|--------|
-| **1%** | Anthropology · Archaeology · Artillery · Demolitions · Diving · Electronics · Hypnosis · Lip Reading · Locksmith · Medicine · Operate Heavy Machinery · Psychoanalysis · Pilot (any) · Language (Other) · Science (any) · Lore (any) |
-| **5%** | Accounting · Animal Handling · Appraise · Art/Craft (any) · Computer Use · Disguise · Fast Talk · History · Law · Occult · Ride |
-| **10%** | Electrical Repair · Mechanical Repair · Natural World · Navigate · Persuade · Psychology · Sleight of Hand · Survival (any) · Track |
-| **15%** | Charm · Intimidate · Fighting (Axe) |
-| **20%** | Climb · Drive Auto · Firearms (Handgun) · Jump · Library Use · Listen · Stealth · Swim · Throw |
-| **25%** | Fighting (Brawl) · Firearms (Rifle/Shotgun) · Spot Hidden |
-| **30%** | First Aid |
-| **special** | Dodge = DEX ÷ 2 · Own Language = EDU · Credit Rating = 0 · Cthulhu Mythos = 0 |
+**基础值**——技能的 `base` 是一分未花时的起点，第 10 节的账目核对需要它，务必记录。
 
-来源:`COC apolo.xlsx`『技能注释』sheet,逐项技能的"基础成功率"列。这个 sheet 自己的
-表头写明"详见规则书**第四章:技能**"——是源材料自带的章节引用,直接沿用,非推测。
+| 基础值 | 技能 |
+|---|---|
+| **1%** | 人类学 · 考古学 · 炮术[非常规] · 爆破[非常规] · 潜水[非常规] · 电子学[现代] · 催眠[非常规] · 读唇[非常规] · 锁匠 · 医学 · 操作重型机械 · 精神分析 · 驾驶(其他载具/Pilot) · 语言(其他) · 科学(任一，**数学除外，见下**) · 学识(任一) |
+| **5%** | 会计 · 动物驯养[非常规] · 估价 · 艺术与手艺(任一) · 计算机使用[现代] · 乔装 · 话术 · 历史 · 法律 · 神秘学 · 骑术 |
+| **10%** | 电气维修 · 机械维修 · 博物学 · 导航 · 说服 · 心理学 · 妙手 · 生存(任一) · 追踪 · **数学**(科学的例外——其余科学专攻都是 1%) |
+| **15%** | 取悦 · 恐吓 · 格斗(斧) |
+| **20%** | 攀爬 · 汽车驾驶 · 射击(手枪) · 跳跃 · 图书馆使用 · 聆听 · 潜行 · 游泳 · 投掷 · 格斗(剑) · 射击/投掷(矛) |
+| **25%** | 格斗(斗殴) · 射击(步枪/霰弹枪) · 侦查 |
+| **30%** | 急救 |
+| **特殊** | 闪避 = DEX ÷ 2 · 母语 = EDU · 信用评级 = 0 · 克苏鲁神话 = 0 |
 
-### Umbrella skills
+**格斗(Fighting)专攻子项基础值**：斗殴 25% · 斧 15% · 剑 20% · 绞索 15% · 链锯 10% · 连枷 10% · 鞭 5%。
+**射击(Firearms)专攻子项基础值**：手枪 20% · 步枪/霰弹枪 25% · 矛(投掷) 20% · 弓 15% · 冲锋枪 15% · 机枪 10% · 重武器 10% · 火焰喷射器 10%。
+**科学(Science)专攻子项**：默认基础值 1%，**唯一的例外是数学 10%**——天文学/生物学/植物学/化学/密码学/工程学/司法科学/地质学/气象学/药学/物理/动物学均为 1%。
 
-Art/Craft, Science, Survival, Fighting, Firearms, Pilot, Language (Other), and Lore are
-**never bought generically**. Buy a named specialisation — `Science (Physics)`,
-`Fighting (Brawl)`, `Language (Russian)` — and each one carries its own base value and grows
-on its own.
+来源:第四章 4.6 技能列表的字母序总表(逐条列出每个技能名与括号内基础值)。
 
-In the JSON, put the **family** in `name` and the **specific** in `specialization`
-(`name: "Science"`, `specialization: "Physics"`). Don't repeat the specialisation inside
-`name`; the card renderer composes the two.
+### 伞形技能（Umbrella Skills）
 
-Two optional spillovers a table may run (settle before cards are built):
+艺术与手艺、科学、生存、格斗、射击、驾驶(Pilot)、语言(其他)、学识**永远不能作为总类购买**。必须买一个具名的专攻——`科学(物理学)`、`格斗(斗殴)`、`语言(俄语)`——每个专攻各自有自己的基础值、各自成长。
 
-- **Art/Craft and Science:** taking one specialisation to 50% raises sibling specialisations
-  by +10 (never past 50); at 90% they rise +10 again (never past 90).
-- **Language:** the same, applied across languages in the same family.
+在 JSON 里，**族名**放进 `name`，**具体专攻**放进 `specialization`（`name: "科学"`, `specialization: "物理学"`）；不要把专攻名字重复写进 `name`，卡面渲染器会自动组合两者。
 
-来源:`COC apolo.xlsx`『技能注释』sheet「技能可选规则」区(专业技能可转移的优势;
-章节号未核实——同一 sheet 的第四章引用是针对技能主表,不确定是否覆盖这条可选规则)。
+两种可选的溢出规则（团里若要用，先说清楚再建卡）：
+- **艺术与手艺、科学**：把一个专攻练到 50% 会带动同族其他专攻 +10（不超过 50）；到 90% 再 +10（不超过 90）。
+- **语言**：同一族语言之间同理。
 
-## 6. Credit Rating → what they can actually afford
+<!-- 规则书 1109–1131, 1618–1641, 1681–1805 -->
 
-Credit Rating is the only economic stat. It converts to a lifestyle, not to a budget
-spreadsheet. **1920s USD**:
+## 6. 信用评级 → 实际买得起什么
 
-| Lifestyle | CR | Cash | Assets | Casual spending |
-|-----------|-----|------|--------|-----------------|
-| Penniless | 0 | $0.50 | none | $0.50 |
-| Poor | 1–9 | CR × 1 | CR × 10 | $2 |
-| Average | 10–49 | CR × 2 | CR × 50 | $10 |
-| Wealthy | 50–89 | CR × 5 | CR × 500 | $50 |
-| Rich | 90–98 | CR × 20 | CR × 2,000 | $250 |
-| Super rich | 99 | $50,000 | $5,000,000+ | $5,000 |
+信用评级（CR）是唯一的经济数值，换算出生活方式而不是记账本。**表格已对照规则书表II 逐格核实一致**：
 
-Other eras keep the same bands and rescale the multipliers — a modern-USD game runs roughly
-20× the 1920s figures. Set the campaign's currency and scale once in
-`campaigns/<slug>/CLAUDE.md`, then record the resulting numbers in `credit_rating`.
+| 生活水平 | CR | 现金 | 其他资产 | 消费水平 |
+|---|---|---|---|---|
+| 身无分文 | 0（或更低） | $0.5 | 无 | $0.5 |
+| 贫穷 | 1–9 | CR × 1 | CR × 10 | $2 |
+| 标准 | 10–49 | CR × 2 | CR × 50 | $10 |
+| 小康 | 50–89 | CR × 5 | CR × 500 | $50 |
+| 富裕 | 90–98 | CR × 20 | CR × 2,000 | $250 |
+| 豪富 | 99 | $50,000 | $5,000,000+ | $5,000 |
 
-Below "casual spending", don't roll and don't itemise. Above it, the purchase is a scene.
+这是**1920s 美元**。其他年代沿用同一套档位，只改倍率（例如现代美元约是 1920s 数字的 20 倍——现代对照表见规则书同一页，本文件不重复转录）。战役自己的货币与倍率写进 `campaigns/<slug>/CLAUDE.md`，算出的具体数字记进 `credit_rating`。
 
-来源:`COC apolo.xlsx`『资产及物价参考』sheet「资产参考表」区(CR→生活水平/现金/
-其他资产/消费水平换算,含 1920s 美元/现代美元/2010s 人民币等多套换算;此表本身
-章节号未核实。**注意区分**:同一 sheet 里另有一张「现代物价参考表」(单品价格,
-本文件未收录)明确标注来源为『守秘人规则书:附录Ⅲ:物价表』——那条引用属于那张
-单品价表,不属于这里的 CR 换算表,不要混用)。
+**消费水平以下**不掷骰、不记账；超过消费水平的支出，玩家全额扣减现金，现金不够就动用其他资产（变现要花时间，多久由守秘人定）。
 
-## 7. Backstory — eight prompts, then a cut
+<!-- 规则书 1132–1140, 1362–1414 -->
 
-Fill **all eight**, then keep only what this campaign can pull on:
+## 7. 背景 —— 六到八项，然后取舍
 
-Personal description · Ideology/beliefs · Significant people · Meaningful locations ·
-Treasured possessions · Traits · Injuries & scars · Phobias & manias
+规则书列出六项（形象描述 / 思想与信念 / 重要之人 / 意义非凡之地 / 宝贵之物 / 特质），本 kit 的模板额外加了两项（伤痕、恐惧与躁狂——通常留到游戏中再填）：
 
-Two rules that make them worth the ink:
+形象描述 · 思想/信念 · 重要之人 · 意义非凡之地 · 宝贵之物 · 特质 · 伤痕 · 恐惧与躁狂
 
-- **Mark the key entries.** One or two entries are the ones the investigator *is* — record
-  them in `backstory_keys`. Honouring a key bond restores Sanity; losing it costs Sanity for
-  good. An unmarked backstory is decoration.
-- **Every surviving entry names something in the campaign** — an NPC, a faction, a location,
-  the central mystery. "His wife" is not a hook. "His wife, who works the switchboard at the
-  cannery" is.
+每项建议**特质化(具名)、感情化(带态度词)、着重化(强调语气)**三步——"我的妻子"没有信息量,"我挚爱的妻子安娜贝尔，我不能没有她"才是可用的钩子。规则书为每一项各带一张 1D10 随机表（对象是谁/为什么重要/关联地点等），找不到灵感时可以骰，但不要被骰出的结果捆住——不合角色概念就丢掉重骰或直接改。
 
-Insanity feeds directly off this list: madness episodes reach for significant people,
-ideology, and treasured possessions by name. A thin backstory makes a thin breakdown.
+两条让背景真正值钱的规则：
 
-来源:`COC apolo.xlsx`『人物卡』sheet「背景故事」栏(八项 + 每项旁的"关键"勾选框);
-章节号未核实。
+- **标记关键连接**（一到两条,写进 `backstory_keys`）：这是调查员"之所以是他自己"的条目。荣耀它能恢复理智,失去它会永久损失理智,且**只有玩家能修改**关键连接,守秘人不能未经允许就摧毁或移除它——除非给了玩家一次掷骰机会去挽救。
+- **每条留存的背景都要点名战役里的具体事物**——一个 NPC、一个阵营、一个地点、核心谜团本身。"他的妻子"不算钩子，"他的妻子，在罐头厂总机房工作"才算。
 
-## 8. Optional pre-play history ("experience packages")
+理智损失直接从这份清单取材：疯狂发作会指名重要之人、思想信念、宝贵之物。背景写得单薄，崩溃也会单薄。
 
-Some tables let an investigator buy a slice of history with starting Sanity — a war, a beat,
-a stretch inside, a hospital ward, a Mythos brush. The shape is always the same:
+<!-- 规则书 1190–1345 -->
 
-**pay Sanity → gain a mechanical edge → accept a constraint and a mandated backstory entry.**
+## 8. 幕间体验包（Optional Pre-play History）
 
-Typical trade: 1D10 Sanity for immunity to Sanity loss from corpses, plus a minimum starting
-age and a mandatory war/job-related scar, phobia, or mania. A Mythos brush instead grants
-Cthulhu Mythos points and mandates two backstory entries.
+部分团允许用起始理智值买一段"履历"——一场战争、一段警务经历、一段牢狱、一段病房、一次神话接触。形状都一样：
 
-This is a house option, not core 7e. If the campaign uses it, declare it in the campaign's
-`CLAUDE.md` and record each package in `experience_packages` — including the constraint, so a
-reviewer can check the age and backstory actually honour it.
+**付理智值 → 换一项机制优势 → 接受一条限制与一条强制背景条目。**
 
-来源:`COC apolo.xlsx`『附表』sheet「经历包」表(战场/警务/罪犯/医务/神话经历包五种)。
-源材料自己把这张表标成"**可选规则**:有故事的调查员"——「house option, not core 7e」
-这个定性直接取自源材料的标签,不是我加的判断。规则书对应章节未核实。
+典型交易：1D10 理智值换取对尸体理智损失免疫，附带最低起始年龄与一条强制的战争/职业相关伤痕、恐惧症或躁狂症。神话接触型换的是克苏鲁神话点数，代价是两条强制背景条目。
 
-## 9. Pregens vs. elite NPCs
+这是团规而非核心 7e 规则；若战役采用，在 `campaigns/<slug>/CLAUDE.md` 声明，并把每个体验包记进 `experience_packages`（含限制条款，方便复核者检查年龄与背景确实兑现了代价）。
 
-- A **pregen** built for a specific scenario has Credit Rating, skills, and backstory hooks
-  tuned to the plot. See `core/13-create-investigator.md`.
-- An **elite NPC** (a named cultist, a rival investigator) reuses the same schema and sets
-  `"type": "elite-npc"`. It may legitimately carry `spells`, `cthulhu_mythos`, and
-  `mythos_encounters`, which a starting pregen may not. The rendered card is KP-facing for
-  both types — nothing is skipped by `type`; see `core/13-create-investigator.md`.
+来源:`COC apolo.xlsx`『附表』sheet「经历包」表(战场/警务/罪犯/医务/神话经历包五种)；**未在本次核对的规则书第三、四章正文中找到对应章节**，源表自身也把这张表标成"可选规则"，因此暂不补规则书行号锚点——这条和其余各节不同，仍待确认它出自《调查员手册》还是其他补充资料。
 
-## 10. Quality bar — the ledger has to balance
+## 9. Pregen 与精英 NPC
 
-- **Point ledger:** occupation points spent = the formula's total; interest points spent =
-  INT × 2. Recompute; don't eyeball. Record both in `skill_points`.
-- **Per skill:** `value` = base + occupation + interest + growth. If one skill doesn't add
-  up, the card is wrong.
-- **Every derived stat** traces back to the final characteristics — after age modifiers, not
-  before.
-- **Credit Rating** sits inside the occupation's band, or the deviation is deliberate and
-  noted.
-- **Occupation points** touched only occupation-list skills, and free-choice slots are named.
-- **No skill over the declared cap**; Cthulhu Mythos is 0 on a pregen.
-- **Umbrella skills** all carry a specialisation.
+- **Pregen**（为特定模组准备的角色）：信用评级、技能、背景钩子都对着剧情调好，见 `core/13-create-investigator.md`。
+- **精英 NPC**（具名邪教徒、对手调查员）：复用同一套 schema，`"type": "elite-npc"`。可以合法携带 `spells`、`cthulhu_mythos`、`mythos_encounters`——这些起始 pregen 不该有。渲染出的卡面对守秘人两者一视同仁，`type` 不会隐藏任何字段，见 `core/13-create-investigator.md`。
 
-## 11. Human antagonists — baseline + increment, no separate budget table
+## 10. 质量红线 —— 账必须对得上
 
-kit 里"这个反派该多强"曾经差点长出一套独立的技能点预算带(300–1000)和四组预设属性/
-技能数组。**这条路已被否决**:反派(邪教徒、邪教首领、其他人类反派)走**和调查员完全
-相同的创建流程**(上面 §1–§5)——3D6×5 / (2D6+6)×5 属性、标准池公式
-(`EDU×4 + INT×2 + 200`,或按概念替换成对应属性组合的等价公式)、§5 的 base value 表、
-90% 硬上限。不给反派开小灶,也不从一张数字表里直接抄数。
+- **技能点账本**：职业点数花掉的总额 = 公式算出的总数；兴趣点数花掉的总额 = INT × 2。重新算一遍，不要凭眼估。两个数都记进 `skill_points`。
+- **单项技能**：`value` = 基础值 + 职业点 + 兴趣点 + 成长。哪项加不上，卡就是错的。
+- **每个衍生值**都要能回溯到最终属性——是年龄调整**之后**的属性，不是调整前的。
+- **信用评级**落在职业区间内，或者偏离是刻意的且写明了理由。
+- **职业点数**只花在了职业清单内的技能上，自选栏点名清楚。
+- **没有技能超过声明的上限**；克苏鲁神话在 pregen 上是 0。
+- **伞形技能**都带着具体专攻。
 
-### 基线:普通人类 = busybodies 卡组
+## 11. 人类反派 —— 基线 + 增量，不另立预算表
 
-`reference/decks/busybodies-zh.md` 的 47 张已配平数值 NPC 卡就是"普通人类"的数值
-参照——不必另造一张抽象的"均值 50"占位表。造一个非首领级的人类反派(普通成员、
-打手、路人)时,直接照最接近职业的那张卡校准属性与技能刻度,和
-`core/06-create-npc.md` 现有做法一致。
+kit 里"这个反派该多强"曾经差点长出一套独立的技能点预算带（300–1000）和四组预设属性/技能数组。**这条路已被否决**：反派（邪教徒、邪教首领、其他人类反派）走**和调查员完全相同的创建流程**（上面 §1–§5）——3D6×5 / (2D6+6)×5 属性、标准池公式（`EDU×4 + INT×2 + 200`，或按概念替换成对应属性组合的等价公式）、§5 的基础值表、90% 硬上限。不给反派开小灶，也不从一张数字表里直接抄数。
 
-### 首领 = 基线 + 增量,增量按类型二选一
+### 基线：普通人类 = busybodies 卡组
 
-首领(以及其他"明显强于普通人"的人类反派)= 上面的基线创建流程,**再叠加一层
-增量**。增量的形式由首领类型决定,二选一,不混用:
+`reference/decks/busybodies-zh.md` 的 47 张已配平数值 NPC 卡就是"普通人类"的数值参照——不必另造一张抽象的"均值 50"占位表。造一个非首领级的人类反派（普通成员、打手、路人）时，直接照最接近职业的那张卡校准属性与技能刻度，和 `core/06-create-npc.md` 现有做法一致。
+
+### 首领 = 基线 + 增量，增量按类型二选一
+
+首领（以及其他"明显强于普通人"的人类反派）= 上面的基线创建流程，**再叠加一层增量**。增量的形式由首领类型决定，二选一，不混用：
 
 | 类型 | 增量来源 | 增量形式 |
 |---|---|---|
-| **法术型**(施法、通神类首领) | 按资历掷 `1D4+1`(年轻)/ `1D6+1D4+2`(标准)/ `3D6+4`(成熟)/ `4D6+10`(古老)条法术;法术本身的 MP/SAN 成本查 `reference/sourcebooks/grand-grimoire-zh.md` | 法术数量 + 随之水涨船高的克苏鲁神话技能值 |
-| **非法术型**(帮派头目、雇佣兵、纯世俗势力) | 装备总价定强度,直接对接 `reference/decks/weapons-and-artifacts-zh.md` 的价格栏 | 武器/防具/载具的档次 |
+| **法术型**(施法、通神类首领) | 按资历掷 `1D4+1`(年轻)/ `1D6+1D4+2`(标准)/ `3D6+4`(成熟)/ `4D6+10`(古老)条法术；法术本身的 MP/SAN 成本查 `reference/sourcebooks/grand-grimoire-zh.md` | 法术数量 + 随之水涨船高的克苏鲁神话技能值 |
+| **非法术型**(帮派头目、雇佣兵、纯世俗势力) | 装备总价定强度，直接对接 `reference/decks/weapons-and-artifacts-zh.md` 的价格栏 | 武器/防具/载具的档次 |
 
-原始文档给出的"技能点预算带 300–1000"表、四组预设属性数组(A 平均/B 高于平均/
-C 强大/D 长者)、五组预设技能点数组(A–E)**整段不落盘、不重建**——它们的历史记录
-留在 [`update_plan/2026-08-02-antagonist-budget.md`](../../update_plan/2026-08-02-antagonist-budget.md),
-本节是唯一落盘的生成方法。
+原始文档给出的"技能点预算带 300–1000"表、四组预设属性数组（A 平均/B 高于平均/C 强大/D 长者）、五组预设技能点数组（A–E）**整段不落盘、不重建**——它们的历史记录留在 [`update_plan/2026-08-02-antagonist-budget.md`](../../update_plan/2026-08-02-antagonist-budget.md)，本节是唯一落盘的生成方法。
 
-### 技能怎么选,数值怎么定:背景选技能,致命性定数值
+### 技能怎么选，数值怎么定：背景选技能，致命性定数值
 
-首领的技能列表**按故事背景分配**——当过军医的首领有 Medicine / First Aid /
-Firearms,学者首领没有。但同一个技能给多高,**不由背景正推,由致命性倒推**:同样
-是 Firearms,给 45% 还是 85%,取决于这个数值一旦命中调查员会造成什么后果,不是
-"他当过兵所以应该很高"。背景在数值定完后**反向追加解释力**即可(例如"boss 是
-老兵,但身负不可治愈的创伤"),不改变数值本身的来源。这条分工的审计口径见
-`core/11-review.md`。
+首领的技能列表**按故事背景分配**——当过军医的首领有 Medicine / First Aid / Firearms，学者首领没有。但同一个技能给多高，**不由背景正推，由致命性倒推**：同样是 Firearms，给 45% 还是 85%，取决于这个数值一旦命中调查员会造成什么后果，不是"他当过兵所以应该很高"。背景在数值定完后**反向追加解释力**即可（例如"boss 是老兵，但身负不可治愈的创伤"），不改变数值本身的来源。这条分工的审计口径见 `core/11-review.md`。
 
 ### 生成时是否强化战斗能力
 
-生成首领(或同级人类反派)时,**默认不强化战斗方面能力**——技能分配走上面"背景
-选技能"的路子就够。是否强化是 Keeper 的开关,但这个开关**不在这里问**:落点是
-intake,一次性问、写进 campaign `CLAUDE.md` 当默认,随
-`update_plan/2026-08-02-cult-doc-integration.md` 阶段 2("敌对势力问题")一起接线。
+生成首领（或同级人类反派）时，**默认不强化战斗方面能力**——技能分配走上面"背景选技能"的路子就够。是否强化是 Keeper 的开关，但这个开关**不在这里问**：落点是 intake，一次性问、写进 campaign `CLAUDE.md` 当默认，随 `update_plan/2026-08-02-cult-doc-integration.md` 阶段 2("敌对势力问题")一起接线。
 
-### 与人数缩放(P3 Scaling)的关系
+### 与人数缩放（P3 Scaling）的关系
 
-不给换算公式。人数低于基准时优先降**数量**;数量已经降到 1 还嫌重,才去动**单体
-强度**——这是判断口径,不是公式。上面"是否强化战斗"那个开关就是这条口径在生成
-时的落点。
+不给换算公式。人数低于基准时优先降**数量**；数量已经降到 1 还嫌重，才去动**单体强度**——这是判断口径，不是公式。上面"是否强化战斗"那个开关就是这条口径在生成时的落点。
 
-来源:kit 原创综合,定案过程见 `update_plan/2026-08-02-antagonist-budget.md`
-(非规则书转录,原始素材已按上面的说明弃用)。
+来源:kit 原创综合，定案过程见 `update_plan/2026-08-02-antagonist-budget.md`（非规则书转录，原始素材已按上面的说明弃用）。
+
+## 12. 创建调查员的其它方法（可选规则）
+
+规则书在第三章末尾给出六套替代属性生成法，外加一条技能上限的安全阀，供守秘人和团自行选用：
+
+| 方案 | 做法 |
+|---|---|
+| **重复开始** | 三项或更多属性低于 50 时，允许推翻全部重骰。 |
+| **修改低骰子** | 掷属性时若三个或更多骰子结果 ≤ 10，额外骰 1D6，把点数分配到这些小骰子上（在 ×5 之前操作）。 |
+| **自由分配** | 骰 5 次 3D6、3 次 (2D6+6)，全部 ×5，再自由分配给 8 项属性（INT、SIZ 不低于 40，除非守秘人另有允许）。 |
+| **购点制** | **460 点**分配在 8 项属性上，每项限 15–90；除非守秘人允许，INT、SIZ 不低于 40，任何属性不低于 15。 |
+| **快速开桌** | 把 40/50/50/50/60/60/70/80 分配给 8 项属性；职业技能与信用评级共 8 项，直接指定为 1 项 70%、2 项 60%、3 项 50%、3 项 40%（忽略基础值）；再选 4 项非本职技能各 +20%；背景直接骰、细节留到游戏中补。 |
+| **触摸人类极限** | 额外骰 1D10，自由分配给任意属性（可与其它方案叠加）——用来把某项属性从 90 顶到接近 99。 |
+| **技能上限安全阀**(可选) | 高技能值本身有半值/五分之一值的高难度挑战兜底,不算破坏平衡；若团里仍担心,建卡时给技能定一个统一上限,常见取 **75%**。 |
+
+<!-- 规则书 1553–1589 -->

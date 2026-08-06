@@ -56,6 +56,7 @@ NOT_DICE_TABLES = {
     "cultist-archetypes": "12 组按角色分组的现成邪教徒数值,外加法力加持菜单——不是骰表。",
     "monster-traits": "数值词条菜单,按怪物等级手选叠加,不掷骰。",
     "monster-index": "build-reference-index.py 生成的检索表,不要手改,也不掷骰。",
+    "weapons-index": "按威胁强度排序的武器索引,给反派配装备手选用,不掷骰。",
 }
 
 HEADER_DIE_RE = re.compile(r"^\|\s*[dD](\d+)\s*\|")

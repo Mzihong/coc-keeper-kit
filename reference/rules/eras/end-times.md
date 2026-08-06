@@ -1,94 +1,78 @@
-# Era Pack — Cthulhu End Times: The Reaping (克苏鲁末日之收割)
+# 年代包 — 克苏鲁末日之收割（Cthulhu End Times: The Reaping）
 
-> **This is a delta, not a standalone document.** Read `reference/rules/eras/README.md` first
-> for the loading order — read `reference/rules/character-creation.md` (the 1920s baseline)
-> in full, then apply the five sections below as overrides. A section not listed here means
-> "unchanged from baseline."
+> **这是一份差集，不是独立文档。** 先读 `reference/rules/eras/README.md` 了解加载顺序——
+> 再把 `reference/rules/character-creation.md`（1920s 基准本）通读一遍，然后把下面五节当
+> 覆盖项应用。本文件没提到的小节，一律视为"与基准本一致，未改变"。
 
-**Era:** a post-apocalyptic future — after the Great Old Ones have woken and the stars have
-come right. **The Keeper sets the exact timeframe.** The source suggests, by default, "a few
-years after our own present" (roughly early-21st-century collapse), but it can also follow
-an established published campaign's ending (e.g. after *Shadows of Yog-Sothoth*'s 1928/9
-date, or *Masks of Nyarlathotep*'s 1926 date) or sit in the far future (来源页 57–58).
-**This is the only one of the three "far future/unfixed" eras where the starting date is
-genuinely undetermined — when declaring this era, the campaign `CLAUDE.md` must additionally
-state the specific collapse year, or the Technology & common knowledge section below has
-nothing to anchor to.**
-**来源:** *Cthulhu Through the Ages* 中文版,「克苏鲁末日之收割」章,原书页 57–61(本
-PDF 第 46–52 页)。
+**年代：** 后启示录未来——旧日支配者苏醒、群星归位之后。**具体时间点由守秘人自定。**
+源材料默认建议"距我们当下几年后"（大致对应 21 世纪初的崩溃），但也可以接续某个已出版
+战役的结局（例如《犹格·索托斯的阴影》1928/9 年的结局，或《奈亚拉托提普的假面》1926
+年的结局），也可以设在遥远未来（来源页 57–58）。**这是三个"远未来/时间不定"年代包中
+唯一一个开局年份真正未定的——声明本年代时，战役 `CLAUDE.md` 必须额外写明具体的崩溃
+年份，否则下方「技术与常识水平」一节没有锚点可依。**
+**来源：** 《Cthulhu Through the Ages》中文版，「克苏鲁末日之收割」章，原书页 57–61
+（本 PDF 第 46–52 页）。
 
-## Skill table changes
+## 技能表增减（Skill table changes）
 
-- **Appraise 估价** — unchanged definition, but its use expands to judging whether
-  scavenged post-collapse goods and equipment are "worth" anything, and spotting a bad
-  trade.
-- **Credit Rating 信用评级** — **redefined.** Currency has collapsed, so this skill's
-  rating now stands for a more abstract "assets" (good clothing, working equipment, charged
-  batteries, fuel), read against the barter-assets table below rather than the baseline's
-  cash/income formula.
-- **Scavenging 拾荒** (base 15%) — the instinct and knack for finding useful items and
-  valuables in the ruins of civilisation; can substitute for Spot Hidden when hunting a
-  specific item, or for Luck when checking whether anything useful (e.g. a makeshift
-  weapon) is nearby. Optional: on a success level higher than required, the scavenger finds
-  higher-quality or rarer goods.
-- **Technical Repair 技术维修** (base 01%) — maintaining and repairing complex machinery,
-  diagnosing hardware faults, building/repairing computers and communication gear (given a
-  power source). Shares its definition and values with the identically-named skill in
-  `eras/icarus.md`.
-- **Optional: starting Cthulhu Mythos** — the Keeper may let every survivor begin play with
-  1D10% in Cthulhu Mythos (and an equal reduction to current Sanity), reflecting that most
-  survivors have picked up some Mythos knowledge first- or second-hand.
-- **Optional: Ranged (Energy)** — if this "End Times" campaign is set in the far future,
-  this skill (and its example weapons) can be enabled by referencing `eras/icarus.md`
-  directly rather than redefining it here.
+- **估价 Appraise**——定义不变，但用途扩展到判断崩溃后的拾荒物品与设备"值不值钱"，
+  以及识别一笔亏本交易。
+- **信用评级 Credit Rating**——**重新定义。** 货币体系已经崩溃，这项技能的评级现在
+  代表更抽象的"资产"（好衣物、能用的装备、充好电的电池、燃料），对照下方的以物易物
+  资产表判定，而不是基准本的现金/收入公式。
+- **拾荒 Scavenging**（基础 15%）——在文明废墟中找到有用物品和贵重品的直觉与技巧；
+  在寻找特定物品时可替代侦查，在检查附近有没有能用的东西（例如临时武器）时可替代
+  幸运检定。可选：若成功等级高于所需，拾荒者能找到品质更好或更稀有的物资。
+- **技术维修 Technical Repair**（基础 01%）——维护并修理复杂机械，诊断硬件故障，
+  在有电源的情况下组装/修理计算机与通讯设备。定义与数值与 `eras/icarus.md` 中同名
+  技能共享。
+- **可选：起始克苏鲁神话**——守秘人可以让每位幸存者以 1D10% 的克苏鲁神话开局（当前
+  理智值同步减少相同点数），代表大多数幸存者都或多或少接触过神话知识。
+- **可选：射击〔能量武器〕**——若这场"末日之收割"战役设定在更遥远的未来，可以直接
+  引用 `eras/icarus.md` 来启用这项技能（及其范例武器），不必在本文件重新定义。
 
-## Equipment & weapons
+## 装备与武器（Equipment & weapons）
 
-No fixed currency — use the **Credit Rating barter-assets table** (来源页 61) to determine
-what a survivor starts with: destitute (CR0) — nothing but the clothes worn; poor (CR1–9) —
-a few outfits, 1D4 low-value items; standard (CR10–49) — a decent bag, 1D3 melee weapons,
-1 ranged weapon with limited ammunition, 1D6+2 low/mid-value items; comfortable (CR50–89) —
-a stocked hideout, 1D6 melee weapons, 1D4 ranged weapons (more ammunition), 1D10+10 items;
-wealthy (CR90–98) — multiple hideouts, 1D10+10 melee weapons, 1D10+10 ranged weapons,
-3D10+30 items; rich (CR99) — "whatever you want" (an armoury, vehicles, a fuel depot,
-high-tech weapons, tanks).
+没有固定货币——用**信用评级以物易物资产表**（来源页 61）决定幸存者的起始装备：一贫如
+洗（CR0）——除身上衣物外一无所有；贫穷（CR1–9）——几套衣物、1D4 件低价值物品；标准
+（CR10–49）——一个像样的背包、1D3 件近战武器、1 件弹药有限的远程武器、1D6+2 件中低
+价值物品；小康（CR50–89）——一处有存货的藏身处、1D6 件近战武器、1D4 件远程武器（弹药
+更充足）、1D10+10 件物品；富裕（CR90–98）——多处藏身处、1D10+10 件近战武器、1D10+10
+件远程武器、3D10+30 件物品；豪富（CR99）——"想要什么有什么"（一整个军械库、载具、
+燃料库、高科技武器、坦克）。
 
-## Technology & common knowledge
+## 技术与常识水平（Technology & common knowledge）
 
-**Depends entirely on the collapse year the campaign declares** (see Era above) — this era
-file deliberately doesn't fix a tech level, only a frame: the world has settled into a
-survival-first wasteland; isolated "outposts" (pockets of sanity) communicate through
-"Linkers/couriers"; the Great Old Ones and their servitor races are already active on the
-surface, and cults claim to be "the chosen," demanding human submission (来源页 58–59).
+**完全取决于战役声明的崩溃年份**（见上方「年代」一节）——本年代包刻意不固定科技水平，
+只给一个框架：世界已经沉淀为一片以生存为先的废土；孤立的"据点"（理智的孤岛）之间靠
+"信使/跑腿人"通讯；旧日支配者及其仆从种族已经在地表活动，各路邪教自称"天选之民"，
+要求人类臣服（来源页 58–59）。
 
-## Occupation table
+## 职业表（Occupation table）
 
-Every standard occupation from the *Keeper Rulebook* and *Investigator Handbook* is
-theoretically usable — before the collapse, everyone had a "normal" life. **Six optional
-occupations unique to this era** (来源页 59–60, all with no fixed Credit Rating — use the
-barter-assets table above instead):
+《守秘人规则书》与《调查员手册》里的每个标准职业理论上都可以使用——崩溃之前，每个人
+都过着"正常"生活。**六个本年代专属的可选职业**（来源页 59–60，均没有固定信用评级——
+改用上方的以物易物资产表）：
 
-- **Linker (Runner/Courier)** (EDU×2+DEX or INT×2) — Climb, Disguise, Fighting or Ranged
-  Weapons (any), Library Use, Natural World, Scavenging, Stealth, Survival.
-- **Meatgrinder (Boxer)** (EDU×2+STR×2) — Dodge, Fighting (Brawl), Fighting (any weapon),
-  Ranged Weapons (any), Intimidate, Scavenging, Sleight of Hand, Survival.
-- **Scavenger (Ash Sifter)** (EDU×2+DEX or APP×2) — Appraise, Climb, Disguise, Listen,
-  Locksmith, Scavenging, Spot Hidden, one social skill.
-- **Tracker (Hunter)** (EDU×2+DEX or STR×2) — Animal Handling, Appraise, Climb, Fighting
-  or Ranged Weapons (any), Listen or Spot Hidden, Natural World, Stealth, Track.
-- **Healer (Cunning Man/Woman)** (EDU×4 or POW×4) — First Aid, History, Medicine, Natural
-  World, Psychoanalysis, Scavenging, Survival, one social skill.
-- **Seeker (Literate One)** (EDU×4) — Cthulhu Mythos※, History, Language (any), Library
-  Use, Medicine, Occult, Science (any), Spot Hidden. ※may invest up to 40 points
-  (reducing current Sanity by the same amount).
+- **信使（跑腿人/快递员）Linker**（EDU×2+DEX 或 INT×2）——攀爬、乔装、格斗或射击
+  （任一）、图书馆使用、博物学、拾荒、潜行、生存。
+- **绞肉机（拳手）Meatgrinder**（EDU×2+STR×2）——闪避、格斗（斗殴）、格斗（任一
+  武器）、射击（任一）、恐吓、拾荒、妙手、生存。
+- **拾荒者（灰烬筛检者）Scavenger**（EDU×2+DEX 或 APP×2）——估价、攀爬、乔装、聆
+  听、锁匠、拾荒、侦查、一项社交技能。
+- **追踪者（猎人）Tracker**（EDU×2+DEX 或 STR×2）——动物驯养、估价、攀爬、格斗或
+  射击（任一）、聆听或侦查、博物学、潜行、追踪。
+- **医者（智者）Healer**（EDU×4 或 POW×4）——急救、历史、医学、博物学、精神分析、
+  拾荒、生存、一项社交技能。
+- **求知者（识字者）Seeker**（EDU×4）——克苏鲁神话※、历史、语言（任一）、图书馆
+  使用、医学、神秘学、科学（任一）、侦查。※最多可投入 40 点（当前理智值同步减少相同
+  点数）。
 
-## Optional rules
+## 可选机制（Optional rules）
 
-- **Strong Sanity** (trait): Sanity loss is halved; ignore Sanity loss from witnessing
-  human/animal corpses; when a survivor gains permanent immunity to a specific Mythos
-  creature (per the *Habituation* rule, RB169), skip the usual "immunity decreases by 1
-  each Development Phase" rule — the immunity is permanent, no further loss from that
-  creature (来源页 61).
-- **The Credit Rating / barter-assets table** is detailed under Equipment & weapons above —
-  it's this era's single most important optional rule, replacing the entire baseline cash
-  economy.
+- **坚韧心智（Strong Sanity，特质）：** 理智损失减半；目睹人类/动物尸体不损失理智；
+  幸存者对某个特定神话生物获得永久免疫后（依据《习惯恐惧》规则，规则书 169 页），跳过
+  通常"每次幕间成长免疫效果 −1"的规则——该免疫永久生效，不再因该生物而进一步衰减
+  （来源页 61）。
+- **信用评级/以物易物资产表**已在上方「装备与武器」详述——这是本年代包最重要的一条
+  可选规则，取代了整套基准本的现金经济。

@@ -12,7 +12,7 @@
 
 | 文件 | 是什么 | 谁在用 |
 |---|---|---|
-| `keeper-rulebook-7e-zh.md` | 《克苏鲁的呼唤》第七版规则书全文 | `core/02-rules-reference.md`、`reference/rules/*` 的溯源 |
+| `keeper-rulebook-7e-zh.md` | 《克苏鲁的呼唤》第七版规则书全文。**P12(2026-08-06)已退出查询链路**——`reference/rules/*`、`reference/tables/*` 现在直接对着它写、每节留行号锚点,不再有 spec 指它做"最后一句话";它留在库里只作**本地对账底本**,查规则请走速查表 | 对账用(本地) |
 | `grand-grimoire-zh.md` | 《克苏鲁神话魔法大典》,550+ 法术 | `core/07-create-monster.md`、`core/06-create-npc.md`、`reference/mythos/` |
 | `malleus-monstrorum-zh.md` | 《怪物之锤》神话生物图鉴 | `core/07-create-monster.md`、`reference/bestiary/` |
 
@@ -31,9 +31,11 @@
 
 和 `decks/` 一样(`core/00-how-to-run.md` → ground rules):
 
-- **kit 自己的 `reference/` 文件可以引用或转录官方规则内容**——属性行、法术耗费、
-  武器伤害这些**就是规则本身**,KP 要的是书上的数而不是转述。**在文件里标明是哪本书、
-  哪一章。** 过渡期边界(等 P9 定案):**数值随便转,描述性文字保持原创。**
+- **kit 自己的 `reference/` 文件可以引用或转录官方规则内容,含条文本身的措辞**——
+  属性行、法术耗费、武器伤害、定义险境的那句话、掷骰后果的判定流程,这些**就是规则
+  本身**,KP 要的是书上原话而不是转述。**在文件里标明是哪本书、哪一章(或节)。**
+  边界是**规则条文 vs 虚构散文**,不是"数值 vs 描述性文字"——虚构散文(小说引文、
+  战役文本、具名角色)仍然只取手法,永不取文字。
 - **进 `campaigns/` 的内容仍然自己写。** 这条不是版权规则,是牌桌规则。
 
 提炼出来的速查表写进 `reference/rules/`,并在每节标注 `来源` 指路——指到本目录的哪份书、

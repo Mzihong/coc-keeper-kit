@@ -21,7 +21,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 242,
+          "line": 313,
           "context": "- 新增 `reference/decks/` 与首份收录件 `busybodies-zh.md`(官方好事者卡组,47 张 NPC 卡)。"
         },
         {
@@ -46,8 +46,8 @@
         },
         {
           "file": "reference/rules/character-creation.md",
-          "line": 264,
-          "context": "`reference/decks/busybodies-zh.md` 的 47 张已配平数值 NPC 卡就是\"普通人类\"的数值"
+          "line": 206,
+          "context": "`reference/decks/busybodies-zh.md` 的 47 张已配平数值 NPC 卡就是\"普通人类\"的数值参照——不必另造一张抽象的\"均值 50\"占位表。造一个非首领级的人类反派（普通成员、打手、路人）时，直接照最接近职业的那张卡校准属性与技能刻度，和 `core/06-create-npc.md`"
         },
         {
           "file": "reference/tables/npc-appearance.md",
@@ -133,12 +133,13 @@
       "file": "phobias-and-manias-zh.md",
       "path": "reference/decks/phobias-and-manias-zh.md",
       "title": "恐惧症卡组 Phobias — 官方疯狂/恐惧症卡组(中译收录)",
-      "lines": 599,
+      "lines": 604,
       "declared_consumers": [
         "core/02-rules-reference.md",
         "core/13-create-investigator.md",
         "reference/decks/README.md",
-        "reference/tables/madness.md"
+        "reference/tables/madness-instant.md",
+        "reference/tables/phobias.md"
       ],
       "referenced_by": [
         {
@@ -152,24 +153,34 @@
           "context": "| `phobias-and-manias-zh.md` | 恐惧症 *Phobias* | 47 张疯狂结果卡:即时症状 9、总结症状 6、恐惧症 16、躁狂症 16 | `core/02-rules-reference.md`、`core/13-create-investigator.md` |"
         },
         {
-          "file": "reference/tables/madness.md",
-          "line": 7,
-          "context": "`reference/decks/phobias-and-manias-zh.md`(仅本地),官方 *Phobias* 卡组:9 条即时症状、"
+          "file": "reference/tables/manias.md",
+          "line": 6,
+          "context": "`reference/decks/phobias-and-manias-zh.md` 不是同一份材料、不互相重复**:那份文件是"
+        },
+        {
+          "file": "reference/tables/phobias.md",
+          "line": 6,
+          "context": "`reference/decks/phobias-and-manias-zh.md` 不是同一份材料、不互相重复**:那份文件是"
+        },
+        {
+          "file": "reference/tables/README.md",
+          "line": 35,
+          "context": "`reference/decks/phobias-and-manias-zh.md` 的精选卡组是两回事。"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 138,
+          "line": 144,
           "context": "| 表IX 恐惧症状表 | 5288–5430 | 约 100 条 D100 | ⚠️ 只在 `decks/phobias-and-manias-zh.md`(第三方,**不进 bundle**) |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 218,
+          "line": 233,
           "context": "**注意 `decks/` 里已有的三份不删**——`phobias-and-manias-zh.md`、`weapons-and-artifacts-zh.md`"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 353,
-          "context": "`decks/phobias-and-manias-zh.md` 互相指路,写清\"这份是规则书表、那份是卡组\""
+          "line": 385,
+          "context": "d100 掷**(拍板 ③:要全表不要摘要)。头部与 `decks/phobias-and-manias-zh.md`"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -182,7 +193,7 @@
           "context": "直接说\"去读 `reference/decks/phobias-and-manias-zh.md`\",因为读得到就是读得到。"
         }
       ],
-      "reference_count": 8,
+      "reference_count": 10,
       "cited": true,
       "provenance": {
         "work": "《克苏鲁的呼唤》守秘人卡组 —— 恐惧症卡组(Call of Cthulhu Keeper Deck: Phobias)",
@@ -198,13 +209,14 @@
       "file": "weapons-and-artifacts-zh.md",
       "path": "reference/decks/weapons-and-artifacts-zh.md",
       "title": "武器与造物卡组 Weapons & Artifacts — 官方装备卡组(中译收录)",
-      "lines": 674,
+      "lines": 678,
       "declared_consumers": [
         "core/06-create-npc.md",
         "core/10-create-handout.md",
         "core/13-create-investigator.md",
         "reference/decks/README.md",
-        "reference/rules/combat.md"
+        "reference/rules/combat.md",
+        "reference/tables/weapons-index.md"
       ],
       "referenced_by": [
         {
@@ -224,18 +236,43 @@
         },
         {
           "file": "reference/rules/character-creation.md",
-          "line": 277,
-          "context": "| **非法术型**(帮派头目、雇佣兵、纯世俗势力) | 装备总价定强度,直接对接 `reference/decks/weapons-and-artifacts-zh.md` 的价格栏 | 武器/防具/载具的档次 |"
+          "line": 215,
+          "context": "| **非法术型**(帮派头目、雇佣兵、纯世俗势力) | 装备总价定强度，直接对接 `reference/decks/weapons-and-artifacts-zh.md` 的价格栏 | 武器/防具/载具的档次 |"
+        },
+        {
+          "file": "reference/rules/combat.md",
+          "line": 148,
+          "context": "难度等级永远由目标距离决定；相较武器的**基础射程**，目标距离每翻倍，难度提高 1 级。（`reference/tables/weapons-index.md` 有意不收基础射程栏——它排的是威胁强度；逐件查基础射程见 `reference/decks/weapons-and-artifacts-zh.md`。）"
+        },
+        {
+          "file": "reference/tables/README.md",
+          "line": 50,
+          "context": "和 `reference/decks/weapons-and-artifacts-zh.md` 的按品类原表分工不同,见该文件头部。"
+        },
+        {
+          "file": "reference/tables/weapons-index.md",
+          "line": 9,
+          "context": "> **与 `reference/decks/weapons-and-artifacts-zh.md` 的关系**：那份是官方卡组的逐张"
+        },
+        {
+          "file": "reference/tables/weapons-index.md",
+          "line": 17,
+          "context": "> 多疼\"；需要基础射程时查 `reference/decks/weapons-and-artifacts-zh.md` 或规则书表XVII 原表。"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 140,
+          "line": 146,
           "context": "| 表XVII 武器列表 | 15858 起 | 武器伤害/射程/装弹 | ⚠️ 只在 `decks/weapons-and-artifacts-zh.md`(同上) |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 218,
+          "line": 233,
           "context": "**注意 `decks/` 里已有的三份不删**——`phobias-and-manias-zh.md`、`weapons-and-artifacts-zh.md`"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 518,
+          "context": "另指 `decks/weapons-and-artifacts-zh.md`);`chases.md` 2 处裸「表III」改指"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -253,7 +290,7 @@
           "context": ">    `reference/tables/` 速查,反向索引脚本没有报 orphan。`weapons-and-artifacts-zh.md`"
         }
       ],
-      "reference_count": 9,
+      "reference_count": 14,
       "cited": true,
       "provenance": {
         "work": "《克苏鲁的呼唤》守秘人卡组 —— 武器与造物卡组(Call of Cthulhu Keeper Deck: Weapons & Artifacts)",

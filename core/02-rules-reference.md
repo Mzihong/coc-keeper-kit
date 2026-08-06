@@ -4,9 +4,21 @@ Keep generated content mechanically correct for **Call of Cthulhu 7th Edition**.
 points to the cheat-sheets in `reference/rules/`; read the relevant one before you commit
 numbers. It references mechanics — it does not reproduce the rulebook.
 
-When a cheat-sheet doesn't settle it, `reference/sourcebooks/keeper-rulebook-7e-zh.md` is the
-7e rulebook itself, transcribed. It is the last word on any number here — and it is a *transcription*, so cross-check anything surprising
-before you commit it. **If it contradicts a cheat-sheet, fix the cheat-sheet.**
+**The cheat-sheets are the last word.** As of P12 (2026-08-06, stage 2 完成) all seven files
+in `reference/rules/` are written directly against the rulebook, section by section, with
+line-anchor comments for local fact-checking — there should be nothing left that "isn't
+settled" by one. `reference/sourcebooks/keeper-rulebook-7e-zh.md` is still in the repo as an
+audit trail (if a local copy is present, it's the thing to diff a cheat-sheet against when
+something looks wrong), not a place to fall back to for an answer. **If a cheat-sheet is
+wrong, fix the cheat-sheet — don't read past it.**
+
+**Cheat-sheets are only ever written by reading the source, never from memory of how CoC
+"usually" works.** Every section keeps a `<!-- 规则书 <起>–<止> -->` line-anchor; a section
+without one is unverified and should be treated as an error on review. The first draft of a
+sheet is never the last step — a follow-up pass that checks **every individual number and
+every stated relationship** against the source (not a handful of spot-checked values) is
+mandatory before calling a sheet done. See `reference/rules/README.md` for the full
+convention and the incident that established it.
 
 **Default era: 1920s.** Every cheat-sheet below — `character-creation.md` most of all — is
 written against the 1920s baseline unless a campaign declares otherwise.
@@ -53,27 +65,49 @@ read it whenever step 2 or 3 fires.
 
 ## Cheat-sheets (source of truth)
 
-- `reference/rules/skill-checks.md` — d100 under target; Regular/Hard/Extreme; fumbles;
-  bonus/penalty dice; pushing; Luck; opposed rolls; base skill values.
+- `reference/rules/skill-checks.md` — d100 under target; Regular/Hard/Extreme; pushing (and
+  what can't be pushed); fumbles/criticals; group checks & Human Limits; Luck/Idea/Know
+  checks; opposed rolls; bonus/penalty dice; combined checks; social-skill difficulty;
+  Improvement checks; Credit Rating & expenses; Contacts; Training; Aging (mid-campaign
+  milestones, distinct from creation-time age mods); optional Luck-spend rules. Covers all of
+  chapter 5, not just the difficulty-band basics.
 - `reference/rules/sanity.md` — SAN = POW; X/Y loss notation; typical loss table; bout of
   madness; temporary vs indefinite insanity; recovery.
 - `reference/rules/combat.md` — DEX order; dodge vs fight back; Build & Damage Bonus table;
   HP = (CON+SIZ)/10; major wounds; manoeuvres.
 - `reference/rules/chases.md` — round structure; Move rates; obstacles & mishaps; ending a
   chase. Read before writing any pursuit or escape scene.
-- `reference/rules/character-creation.md` — attribute rolls, the standard-pool skill-point
-  formula, base skill values; §11 is human antagonist strength (baseline + increment — no
-  separate power-budget table). Read it whenever the antagonist is a person, not a monster.
-- `reference/rules/magic.md` — MP/SAN/POW cost notation, casting time, opposed POW rolls,
-  spell cost-tier ladder, tome study time/SAN/Cthulhu Mythos conventions, and the
-  cost-conversion rule for designing a new spell.
-- `reference/rules/monster-scale.md` — the five-tier non-human threat ladder (creature /
-  servitor / unique entity / deity), baseline SAN/HP/armour/attack-skill ranges per tier and
-  threat band, and the trait load ceiling that caps `reference/tables/monster-traits.md`.
+- `reference/rules/character-creation.md` — characteristic rolls (with the full per-attribute
+  "what does this number mean" reference table), creation-time age mods, derived stats,
+  occupation formula families, the full verified base-skill-value table (including Fighting/
+  Firearms/Science sub-specialisations), Credit Rating/lifestyle table, backstory, the six
+  alternate character-creation methods (point-buy, quick-start, etc.), Pregen vs elite-NPC,
+  and §11 human antagonist strength (baseline + increment — no separate power-budget table).
+  Read it whenever the antagonist is a person, not a monster. **1920s baseline for
+  `reference/rules/eras/`** — that directory's five-section deltas assume this file's
+  structure and numbering; don't renumber a section here without checking what points at it.
+- `reference/rules/magic.md` — MP mechanics and recovery, the three ways to learn a spell,
+  the casting check (first-cast only) and its push-fail consequence tables, becoming a
+  Believer, Deeper Magic, tome skim/full-study mechanics (CMI/CMF/MR) with a sampled
+  study-time/SAN/MR calibration table, the spell cost-tier ladder (sampled from
+  grand-grimoire, not this rulebook — flagged in the file), and the cost-conversion rule for
+  designing a new spell.
+- `reference/rules/monster-scale.md` — chapter 14's general monster framework (attribute
+  conventions, the Build comparison table, monster combat/manoeuvre rules, undying Great Old
+  Ones/Outer Gods, which Mythos creatures a human can realistically fight, monster spells)
+  plus the five-tier non-human threat ladder (creature / servitor / unique entity / deity)
+  sampled from `malleus-monstrorum-zh.md`, baseline SAN/HP/armour/attack-skill ranges per tier
+  and threat band, and the trait load ceiling that caps `reference/tables/monster-traits.md`.
 - `reference/rules/eras/README.md` — **read only when the campaign declares an Era other
   than 1920s.** Index of book-backed era packs, the delta convention each one follows, the
   load order (baseline first, then the era file as an override), and the path A/B/C fallback
   for eras the source material doesn't cover.
+
+**Language note on `reference/rules/` itself (P12, 2026-08-06):** all seven files above are
+written **中文正文 + 英文术语括注** (Chinese prose, English terms in parentheses) — this is a
+deliberate reversal of the rest of the kit's "English scaffolding" convention, because these
+files are rule-text transcriptions/distillations, not kit-original scaffolding. Don't
+"correct" a cheat-sheet back to English; don't write a new one in English either.
 
 ## Fast facts (verify against the sheets)
 

@@ -65,9 +65,10 @@ the skill, read the spec it names, follow the spec. Never generate from the wrap
   them**. Non-commercial, not for redistribution.
 - **Official material filed under `reference/decks/` and `reference/sourcebooks/`** is source
   material, not kit canon. It must carry a `## 引用出处` block. **Kit reference files may
-  quote or transcribe official rules content with the source named**; what reaches a
-  `campaigns/` folder is written fresh — see `core/00-how-to-run.md` → ground rules and
-  `reference/decks/README.md`.
+  quote or transcribe official rule text directly, with the source named** — the line is rule
+  text vs. fictional prose, not numbers vs. prose; published fiction still gets technique
+  only, never text. What reaches a `campaigns/` folder is written fresh — see
+  `core/00-how-to-run.md` → ground rules and `reference/decks/README.md`.
 
 ## Maintenance
 

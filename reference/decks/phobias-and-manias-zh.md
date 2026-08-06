@@ -5,8 +5,13 @@
 > 每张给出可直接交到玩家手里的症状描述与持续时间。
 >
 > **本 kit 怎么用它**(详见 `reference/decks/README.md`):
-> - `core/02-rules-reference.md` —— 判定疯狂结果时的症状取材,补 `reference/tables/madness.md` 的粗粒度。
+> - `core/02-rules-reference.md` —— 判定疯狂结果时的症状取材,补
+>   `reference/tables/madness-instant.md`(表VII)/`madness-summary.md`(表VIII)的粗粒度。
 > - `core/13-create-investigator.md` —— 背景故事里 phobias/manias 字段的实例来源。
+>
+> **与 `reference/tables/phobias.md`、`manias.md` 的关系**:那两份是规则书表IX/表X的
+> 全量 D100 转录(各约 100 条,给真随机掷骰用);本文件是官方卡组的精选 16+16 条,
+> 带更长的症状描写,可直接读给玩家。两者不重复,按场景选用。
 >
 > **卡面页码是英文原版规则书页码**(157/158/159),与中译本页码不一致,引用时注明。
 

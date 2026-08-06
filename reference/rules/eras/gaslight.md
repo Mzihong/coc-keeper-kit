@@ -1,71 +1,60 @@
-# Era Pack — Cthulhu Gaslight (克苏鲁煤气灯)
+# 年代包 — 克苏鲁煤气灯（Cthulhu Gaslight）
 
-> **This is a delta, not a standalone document.** Read `reference/rules/eras/README.md` first
-> for the loading order — read `reference/rules/character-creation.md` (the 1920s baseline)
-> in full, then apply the five sections below as overrides. A section not listed here means
-> "unchanged from baseline."
+> **这是一份差集，不是独立文档。** 先读 `reference/rules/eras/README.md` 了解加载顺序——
+> 再把 `reference/rules/character-creation.md`（1920s 基准本）通读一遍，然后把下面五节当
+> 覆盖项应用。本文件没提到的小节，一律视为"与基准本一致，未改变"。
 
-**Era:** Victorian London, roughly the 1890s — the consulting-detective backdrop
-(Jack the Ripper, Darwin, Dickens's London, the same period as Sherlock Holmes).
-**来源:** *Cthulhu Through the Ages* 中文版,「克苏鲁煤气灯」章,原书页 35–39(本 PDF
-第 29–32 页起)。
+**年代：** 维多利亚时代伦敦，约 1890 年代——顾问侦探式的背景（开膛手杰克、达尔文、
+狄更斯笔下的伦敦，与福尔摩斯同一时期）。
+**来源：** 《Cthulhu Through the Ages》中文版，「克苏鲁煤气灯」章，原书页 35–39（本
+PDF 第 29–32 页起）。
 
-## Skill table changes
+## 技能表增减（Skill table changes）
 
-- **Electrical Repair 电气维修** (unusual, base **01%** — lower than the baseline's
-  regular starting value) — electrical work is still rare in this era (the London
-  Underground only started running electric trains around 1890), so the base value drops
-  accordingly.
-- **Operate Heavy Machinery 操作重机械** (base 01%) — starting, stopping, and
-  changing speed on locomotives, underground trains (steam or electric), and similar large
-  complex machines.
+- **电气维修 Electrical Repair**（特殊，基础 **01%**——低于基准本的常规起始值）——
+  这个年代电气作业仍然罕见（伦敦地铁大约到 1890 年前后才开始运行电力列车），基础值
+  因此下调。
+- **操作重型机械 Operate Heavy Machinery**（基础 01%）——启动、停止并调整机车、地铁
+  列车（蒸汽或电力）等大型复杂机械的速度。
 
-All other skills follow the 1920s baseline and aren't repeated here.
+其余技能沿用 1920s 基准本，不在此重复。
 
-## Equipment & weapons
+## 装备与武器（Equipment & weapons）
 
-Everyday Victorian equipment (revolvers, shotguns, sword-canes, and the like) is largely
-interchangeable with the baseline's weapon table — the source gives no era-specific weapon
-table of its own. Use `character-creation.md`'s weapon values, adjusted for availability:
-fully-automatic and military-grade gear is scarcer in civilian settings here than in the
-1920s.
+日常维多利亚时代装备（左轮手枪、猎枪、剑鞘手杖之类）与基准本的武器表大体可以互通——
+源材料本身没有给出专属武器表。使用 `character-creation.md` 的武器数值，只需按可得性
+调整：全自动与军用级装备在这个年代的民用场合比 1920s 更罕见。
 
-**Currency:** pounds/shillings/pence (£/s/d) — 1 pound = 5 (baseline-era) US dollars for
-cross-era comparison; 12 pence = 1 shilling, 20 shillings = 1 pound. Credit Rating /
-cash / assets / spending-level table (来源页 37): destitute (CR0 or lower) 5 shillings;
-poor (CR1–9) CR×1 pound cash; average (CR10–49) CR×10 pounds; comfortable (CR50–89)
-CR×12 pounds; wealthy (CR90–98) CR×50 pounds; rich (CR99) £150,000 — **this table replaces
-the baseline's dollar cash/asset table**; the two don't convert directly across eras.
+**货币：** 英镑/先令/便士（£/s/d）——1 英镑 = 5（基准年代）美元，用于跨年代比较；12
+便士 = 1 先令，20 先令 = 1 英镑。信用评级/现金/资产/消费水平表（来源页 37）：一贫如洗
+（CR0 或更低）5 先令；贫穷（CR1–9）CR×1 英镑现金；标准（CR10–49）CR×10 英镑；小康
+（CR50–89）CR×12 英镑；富裕（CR90–98）CR×50 英镑；豪富（CR99）15 万英镑——**这张表
+取代基准本的美元现金/资产表**，两者不能跨年代直接换算。
 
-## Technology & common knowledge
+## 技术与常识水平（Technology & common knowledge）
 
-London's population exploded from roughly 1 million to over 6 million across the 19th
-century; coal smoke and fog sit alongside grand new landmarks in near proximity to real
-poverty (来源页 35). **Social class** shapes how a character is treated in ways the 1920s
-baseline doesn't model (see Optional rules). Technology: steam locomotives alongside early
-electrification, no mass-market automobiles, no radio, no antibiotics; communication runs
-by telegraph and letter, on the order of days.
+19 世纪，伦敦人口从约 100 万暴涨到超过 600 万；煤烟与浓雾和宏伟的新地标共存，紧邻着
+真实的贫困（来源页 35）。**社会阶级**塑造了一个角色被对待的方式，这一点基准本没有建模
+（见「可选机制」）。科技方面：蒸汽机车与早期电气化并存，没有大众化的汽车，没有无线电，
+没有抗生素；通讯靠电报与信件，以天为单位。
 
-## Occupation table
+## 职业表（Occupation table）
 
-Example occupations (来源页 36, 5 total): Consulting Detective (EDU×2+INT×2, Credit
-20–50, upper class); Private Detective (EDU×2+INT×2, Credit 10–40, working to middle
-class); Lady Adventuress (EDU×2+APP or INT×2, Credit 20–70, middle to upper class); Spy
-(EDU×2+APP×2, Credit 10–80, middle to upper class); Aristocrat (EDU×2+APP or INT×2, Credit
-50–99). Each occupation additionally lists a **Social Class** — a field the baseline
-occupation model doesn't have (see Optional rules).
+范例职业（来源页 36，共 5 个）：顾问侦探 Consulting Detective（EDU×2+INT×2，信用评
+级 20–50，上层阶级）；私家侦探 Private Detective（EDU×2+INT×2，信用评级 10–40，中
+下层至中层阶级）；女冒险家 Lady Adventuress（EDU×2+APP 或 INT×2，信用评级 20–70，
+中层至上层阶级）；间谍 Spy（EDU×2+APP×2，信用评级 10–80，中层至上层阶级）；贵族
+Aristocrat（EDU×2+APP 或 INT×2，信用评级 50–99）。每个职业额外带一个**社会阶级**
+字段——这是基准本职业模型没有的（见「可选机制」）。
 
-## Optional rules
+## 可选机制（Optional rules）
 
-- **Three social classes:** Upper (nobility, gentry, senior officials, the very rich —
-  keep large domestic staffs), Middle (professionals, merchants, skilled tradesmen — may
-  keep one or more servants), Working (ordinary labourers, including beggars and
-  criminals — keep no servants). Determined by occupation (来源页 36).
-- **Social class modifies social-skill difficulty:** using a social skill against a lower
-  class grants a bonus die; against a higher class, a penalty die. Upper class acting on
-  middle/working class lowers the difficulty by one step; working class trying to win over
-  middle/upper class raises it by one step (来源页 36). **This stacks on top of the
-  baseline's Regular/Hard/Extreme difficulty judgment** — it doesn't replace it.
-- **Example investigator organisation:** the Mainwaring Society for the Advancement of
-  Mankind (founded 1867 by a self-made millionaire, drawing mostly working-class members) —
-  usable directly, or as a template for a bespoke campaign society (来源页 37).
+- **三个社会阶级：** 上层（贵族、乡绅、高级官员、极富之人——蓄养庞大的家仆）、中层
+  （专业人士、商人、熟练工匠——可能雇一两个仆人）、劳工层（普通劳动者，包括乞丐与罪
+  犯——不雇仆人）。由职业决定（来源页 36）。
+- **社会阶级影响社交技能难度：** 对低阶层使用社交技能获得一个奖励骰；对高阶层使用则
+  是惩罚骰。上层对中/劳工层行动时难度降低一级；劳工层试图打动中/上层时难度提高一级
+  （来源页 36）。**这是叠加在基准本常规/困难/极难难度判断之上的**，不是取而代之。
+- **调查员组织范例：** 曼纳林促进人类进步协会（Mainwaring Society for the
+  Advancement of Mankind，由一位白手起家的百万富翁于 1867 年创立，成员多为劳工阶层）
+  ——可直接使用，也可以作为自定战役专属社团的模板（来源页 37）。

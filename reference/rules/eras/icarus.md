@@ -1,79 +1,65 @@
-# Era Pack — Cthulhu Icarus (克苏鲁伊卡洛斯)
+# 年代包 — 克苏鲁伊卡洛斯（Cthulhu Icarus）
 
-> **This is a delta, not a standalone document.** Read `reference/rules/eras/README.md` first
-> for the loading order — read `reference/rules/character-creation.md` (the 1920s baseline)
-> in full, then apply the five sections below as overrides. A section not listed here means
-> "unchanged from baseline."
+> **这是一份差集，不是独立文档。** 先读 `reference/rules/eras/README.md` 了解加载顺序——
+> 再把 `reference/rules/character-creation.md`（1920s 基准本）通读一遍，然后把下面五节当
+> 覆盖项应用。本文件没提到的小节，一律视为"与基准本一致，未改变"。
 
-**Era:** the near future ("far enough that the impossible has become possible, not so far
-that our own time is forgotten" — the source gives no fixed year; the Keeper sets one). A
-space-exploration micro-setting centred on the starship *Icarus*, running Daedalus Mission
-III.
-**来源:** *Cthulhu Through the Ages* 中文版,「克苏鲁伊卡洛斯」章,原书页 47–55(本
-PDF 第 39–45 页)。
+**年代：** 近未来（"足够远让不可能变成可能，但又不至于让我们这个时代被遗忘"——源材料
+未给固定年份，由守秘人自定）。一个围绕星舰"伊卡洛斯号"、执行"代达罗斯三号任务"的太空
+探索微型设定。
+**来源：** 《Cthulhu Through the Ages》中文版，「克苏鲁伊卡洛斯」章，原书页 47–55（本
+PDF 第 39–45 页）。
 
-## Skill table changes
+## 技能表增减（Skill table changes）
 
-- **Computer Maintenance 计算机维护** (specialisation, base 05%) — detecting and
-  repairing computer systems and networks, writing/rewriting/debugging code. Fills the slot
-  the 1920s baseline has no equivalent for; retrieving stored information still uses
-  Library Use, not this skill.
-- **Electronics 电子学** (base 01%) — installing or disabling electronic locks, assembling
-  and repairing scanners and communication gear.
-- **Ranged (Energy) 射击〔能量武器〕** (specialisation, base 25%) — the umbrella skill
-  for hand-held pulse, plasma, and particle-beam weapons; invest separately in pistol or
-  rifle sub-specialisations.
-- **Systems Operation 系统操作** (base 10%) — operating, diagnosing, and repairing a
-  starship's systems (life support, engines, safety systems).
-- **Technical Repair 技术维修** (base 01%) — maintaining and repairing machinery beyond
-  what Mechanical Repair or Electrical Repair can handle — computers, pulse weapons, and
-  ship hardware.
-- **Zero-G 零重力** (base 05%) — training in survival, movement, and operation in a
-  zero-gravity environment, including suit maintenance; replaces Fighting (Brawl) for
-  hand-to-hand combat in zero-G.
+- **计算机维护 Computer Maintenance**（专攻，基础 05%）——侦测并修复计算机系统与
+  网络，编写/改写/调试代码。填补 1920s 基准本没有对应槽位的空缺；调取已存储信息仍然用
+  图书馆使用，不用这项技能。
+- **电子学 Electronics**（基础 01%）——安装或解除电子锁，组装与维修扫描仪和通讯设备。
+- **射击〔能量武器〕Ranged (Energy)**（专攻，基础 25%）——手持脉冲、等离子、粒子束
+  武器的总称技能；手枪、步枪子专攻分别投点。
+- **系统操作 Systems Operation**（基础 10%）——操作、诊断并维修星舰系统（生命维持、
+  引擎、安全系统）。
+- **技术维修 Technical Repair**（基础 01%）——维护并修理机械维修或电气维修处理不了
+  的设备——计算机、脉冲武器与舰船硬件。
+- **零重力 Zero-G**（基础 05%）——零重力环境下的生存、移动与作业训练，含太空服维护；
+  在零重力中替代格斗（斗殴）作为徒手格斗手段。
 
-## Equipment & weapons
+## 装备与武器（Equipment & weapons）
 
-**Example energy weapons** (来源页 45): pulse-burst pistol (2D6 damage, range 15 yards, 1
-shot/round, 10-round magazine, malfunction 93); pulse-burst rifle (3D6+2 damage, range 30
-yards, 1 shot/round, 10-round magazine, malfunction 93). Whether *Icarus* carries weapons at
-all is the Keeper's call — the mission's purpose is exploration, and weapon counts should
-stay scarce (来源页 45).
+**能量武器范例**（来源页 45）：脉冲手枪（伤害 2D6，射程 15 码，每轮 1 发，弹匣 10
+发，故障值 93）；脉冲步枪（伤害 3D6+2，射程 30 码，每轮 1 发，弹匣 10 发，故障值 93）。
+伊卡洛斯号上是否携带武器由守秘人裁定——任务本身以探索为目的，武器数量应保持稀少
+（来源页 45）。
 
-## Technology & common knowledge
+## 技术与常识水平（Technology & common knowledge）
 
-The setting deliberately keeps its science "loose" — neither players nor Keeper need real
-engineering or physics knowledge to use it, and the source openly admits some content is
-"unrealistic, impossible, or fantastical" in service of a usable, fun setting rather than
-hard-SF accuracy (来源页 49). Nuclear-powered ships, artificial gravity (via rotating
-sections), and deep-space exploration are mature technologies, but the mission itself is
-funded through a contested multi-party arrangement (corporations, nations, a foundation),
-not a single national program.
+本设定刻意把科学设定写得"松"——玩家与守秘人都不需要真实的工程或物理知识就能使用它，
+源材料也坦承部分内容"不现实、不可能或带有幻想色彩"，为的是可用、好玩，而不是硬科幻式
+的精确（来源页 49）。核动力飞船、（靠旋转舱段实现的）人造重力，以及深空探索都已是成熟
+技术，但任务本身由多方势力（企业、国家、一个基金会）共同出资、存在争议，而非单一国家
+项目。
 
-## Occupation table
+## 职业表（Occupation table）
 
-Example occupations (来源页 53, 4 total, each also carries a shipboard "rank" — every
-crew member is cross-trained across multiple skills to keep the mission's payload lean):
-**Engineer** (EDU×3+DEX×2: Electrical Repair, Electronics, Mechanical Repair, Science
-(Engineering), Spot Hidden, Systems Operation, Technical Repair, Zero-G). **Medic**
-(EDU×4+INT×1: First Aid, Medicine, Psychology, Science (Biology), Systems Operation,
-Zero-G, plus two more from a list). **Navigator** (EDU×4+INT×1: Computer Use, Navigate,
-Pilot (Icarus), Science (Astronomy), Science (Physics), Systems Operation, Zero-G, plus one
-more). **Scientist** (EDU×4+INT×1: Computer Use, Electronics, Science (Mathematics), Spot
-Hidden, Systems Operation, Zero-G, plus two more).
+范例职业（来源页 53，共 4 个，每个都额外带一个舰上"职级"——为保持任务载荷精简，每位
+船员都跨多项技能交叉训练）：**工程师 Engineer**（EDU×3+DEX×2：电气维修、电子学、
+机械维修、科学（工程学）、侦查、系统操作、技术维修、零重力）。**医疗官 Medic**
+（EDU×4+INT×1：急救、医学、心理学、科学（生物学）、系统操作、零重力，外加清单中
+另选两项）。**领航员 Navigator**（EDU×4+INT×1：计算机使用、导航、驾驶（伊卡洛斯
+号）、科学（天文学）、科学（物理学）、系统操作、零重力，外加另选一项）。**科学家
+Scientist**（EDU×4+INT×1：计算机使用、电子学、科学（数学）、侦查、系统操作、零重力，
+外加另选两项）。
 
-## Optional rules
+## 可选机制（Optional rules）
 
-- **The *Icarus* setting:** the ship carries 18 crew, is nuclear-powered, and uses three
-  rotating sections for artificial gravity; the Daedalus Foundation is funded by rival
-  factions (Zaidan Stellar Tech, European Space, the Dietrich-Muller Endowment, and various
-  national interests) with genuine political friction — crew can belong to different
-  factions, and loyalty is an optional roleplaying element (来源页 48–50).
-- **Three plot-hook templates** (usable as-is or adapted): "Ghost Ships in the Dark"
-  (encountering 12 empty sister ships), "In the Crowded Silence" (something unseen stalking
-  the ship), and "From Here to the End of Everything" (reality-distortion/temporal-breakdown
-  survival horror) — each draws on a different horror source (unknown intelligence,
-  vulnerable isolation, epistemic collapse); see 来源页 51–52.
-- The **Ranged (Energy)** skill is listed as optional in the `eras/end-times.md` era file
-  and points back to this file's weapon values — the two era files share one set of energy
-  weapon numbers rather than defining them twice.
+- **"伊卡洛斯号"设定：** 该舰载员 18 人，核动力驱动，用三个旋转舱段制造人造重力；
+  代达罗斯基金会由多个相互竞争的势力出资（宰丹星际科技、欧洲空间局、迪特里希-穆勒基金
+  会，以及多个国家利益方），存在真实的政治摩擦——船员可以分属不同派系，忠诚度是一项
+  可选的角色扮演元素（来源页 48–50）。
+- **三个剧情钩子模板**（可直接使用或改编）：「黑暗中的幽灵船」（遭遇 12 艘一模一样的
+  空船）、「拥挤的寂静」（船上潜伏着看不见的东西）、「从此处到万物尽头」（现实扭曲/
+  时间崩解生存恐怖）——分别取材于不同的恐怖来源（未知智能、脆弱的孤立感、认知崩塌），
+  见来源页 51–52。
+- **射击〔能量武器〕**技能在 `eras/end-times.md` 年代包中被列为可选项，并指回本文件的
+  武器数值——两个年代包共享同一套能量武器数字，不重复定义。

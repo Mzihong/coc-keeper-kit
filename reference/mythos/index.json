@@ -19,13 +19,18 @@
         "reference/mythos/cults/church-of-perfect-science.md",
         "reference/mythos/cults/louisiana-swamp-cult.md",
         "reference/rules/sanity.md",
-        "reference/sourcebooks/keeper-rulebook-7e-zh.md"
+        "reference/rules/skill-checks.md"
       ],
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 128,
+          "line": 199,
           "context": "- 怪物图鉴 `fellrock.md` 的\"沉默之油\"反查链接指向了 `artifacts-zh.md`,但那份文件里"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 143,
+          "context": "8 处引用(`magic.md`、`artifacts-zh.md`、`call-father-dagon-and-mother-hydra.md`、"
         },
         {
           "file": "core/06-create-npc.md",
@@ -59,23 +64,53 @@
         },
         {
           "file": "reference/rules/character-creation.md",
-          "line": 277,
-          "context": "| **非法术型**(帮派头目、雇佣兵、纯世俗势力) | 装备总价定强度,直接对接 `reference/decks/weapons-and-artifacts-zh.md` 的价格栏 | 武器/防具/载具的档次 |"
+          "line": 215,
+          "context": "| **非法术型**(帮派头目、雇佣兵、纯世俗势力) | 装备总价定强度，直接对接 `reference/decks/weapons-and-artifacts-zh.md` 的价格栏 | 武器/防具/载具的档次 |"
+        },
+        {
+          "file": "reference/rules/combat.md",
+          "line": 148,
+          "context": "难度等级永远由目标距离决定；相较武器的**基础射程**，目标距离每翻倍，难度提高 1 级。（`reference/tables/weapons-index.md` 有意不收基础射程栏——它排的是威胁强度；逐件查基础射程见 `reference/decks/weapons-and-artifacts-zh.md`。）"
+        },
+        {
+          "file": "reference/tables/README.md",
+          "line": 50,
+          "context": "和 `reference/decks/weapons-and-artifacts-zh.md` 的按品类原表分工不同,见该文件头部。"
+        },
+        {
+          "file": "reference/tables/weapons-index.md",
+          "line": 9,
+          "context": "> **与 `reference/decks/weapons-and-artifacts-zh.md` 的关系**：那份是官方卡组的逐张"
+        },
+        {
+          "file": "reference/tables/weapons-index.md",
+          "line": 17,
+          "context": "> 多疼\"；需要基础射程时查 `reference/decks/weapons-and-artifacts-zh.md` 或规则书表XVII 原表。"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 140,
+          "line": 146,
           "context": "| 表XVII 武器列表 | 15858 起 | 武器伤害/射程/装弹 | ⚠️ 只在 `decks/weapons-and-artifacts-zh.md`(同上) |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 218,
+          "line": 233,
           "context": "**注意 `decks/` 里已有的三份不删**——`phobias-and-manias-zh.md`、`weapons-and-artifacts-zh.md`"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 296,
+          "line": 314,
           "context": "| `reference/mythos/artifacts-zh.md:18` | 指规则书查孤注一掷失败规则 | 改指 `reference/rules/skill-checks.md` |"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 418,
+          "context": "`reference/rules/magic.md`、`reference/mythos/artifacts-zh.md`、"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 518,
+          "context": "另指 `decks/weapons-and-artifacts-zh.md`);`chases.md` 2 处裸「表III」改指"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -113,7 +148,7 @@
           "context": "- [x] `reference/mythos/` 现状 —— **不是只有 README**:有 `artifacts-zh.md`、"
         }
       ],
-      "reference_count": 18
+      "reference_count": 25
     },
     {
       "file": "cthulhu-cult-history-zh.md",
@@ -262,7 +297,7 @@
         },
         {
           "file": "reference/mythos/spells/call-father-dagon-and-mother-hydra.md",
-          "line": 22,
+          "line": 23,
           "context": "`reference/mythos/cults/esoteric-order-of-dagon.md` 的大祭司仪式核心法术;"
         },
         {
@@ -394,27 +429,27 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 193,
+          "line": 264,
           "context": "从 deadly 改成 mythic(体型与耐久数值早已过 deadly 上限)、`thrall-of-cthulhu.md`"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 196,
+          "line": 267,
           "context": "- **神格文件现在要反向列出自己的眷族与仆从。** `cthulhu.md` 补了这一节(哪些怪物服侍"
         },
         {
           "file": "WORKLOG.md",
-          "line": 113,
+          "line": 114,
           "context": "`Serves`/摘要留空就报错。现有 9 只 bestiary 条目已按新标尺重标,`cthulhu.md`"
         },
         {
           "file": "WORKLOG.md",
-          "line": 117,
+          "line": 118,
           "context": "`yog-sothoth.md`,体例照 `cthulhu.md`,均含「眷族与仆从」反链)+ 7 个新眷族/化身"
         },
         {
           "file": "WORKLOG.md",
-          "line": 260,
+          "line": 291,
           "context": "- **古神级条目住在 `reference/mythos/great-old-ones/`(现有 6 份:`cthulhu.md` +"
         },
         {
@@ -444,22 +479,22 @@
         },
         {
           "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 95,
+          "line": 101,
           "context": "`reference/mythos/great-old-ones/`(`cthulhu.md` + P9 阶段 C 2026-08-04 新增 5 份)"
         },
         {
           "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 125,
+          "line": 131,
           "context": "而 `templates/` 下**没有这个形状的模板**(现有 6 份照 `cthulhu.md` 抄,"
         },
         {
           "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 237,
+          "line": 243,
           "context": "| **b. 在 `core/07` 指名 `reference/mythos/great-old-ones/cthulhu.md` 当体例** | 零新增文件;但\"拿一份内容当模板\"和 `core/00` 的 \"Templates in `templates/` define the shape\" 打架 |"
         },
         {
           "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 287,
+          "line": 293,
           "context": "- [ ] 按 Q2 定案落 L5 体例(建模板 或 在 `core/07` 指名 `cthulhu.md`)"
         },
         {
@@ -519,7 +554,7 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 116,
+          "line": 117,
           "context": "下的 `dagon-and-hydra.md`/`hastur.md`/`nyarlathotep.md`/`shub-niggurath.md`/"
         },
         {
@@ -550,12 +585,12 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 116,
+          "line": 117,
           "context": "下的 `dagon-and-hydra.md`/`hastur.md`/`nyarlathotep.md`/`shub-niggurath.md`/"
         },
         {
           "file": "WORKLOG.md",
-          "line": 118,
+          "line": 119,
           "context": "bestiary 条目(`deep-one.md`/`byakhee.md`/`spawn-of-hastur.md`/`hunting-horrors.md`/"
         },
         {
@@ -592,7 +627,7 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 116,
+          "line": 117,
           "context": "下的 `dagon-and-hydra.md`/`hastur.md`/`nyarlathotep.md`/`shub-niggurath.md`/"
         },
         {
@@ -633,7 +668,7 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 116,
+          "line": 117,
           "context": "下的 `dagon-and-hydra.md`/`hastur.md`/`nyarlathotep.md`/`shub-niggurath.md`/"
         },
         {
@@ -663,12 +698,12 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 117,
+          "line": 118,
           "context": "`yog-sothoth.md`,体例照 `cthulhu.md`,均含「眷族与仆从」反链)+ 7 个新眷族/化身"
         },
         {
           "file": "WORKLOG.md",
-          "line": 119,
+          "line": 120,
           "context": "`black-pharaoh.md`/`dark-young.md`/`sons-of-yog-sothoth.md`)。执行时用 5 个并行"
         },
         {
@@ -711,13 +746,18 @@
       "file": "spells/call-father-dagon-and-mother-hydra.md",
       "path": "reference/mythos/spells/call-father-dagon-and-mother-hydra.md",
       "title": "Call Father Dagon and Mother Hydra (请神术:父神达贡和母神海德拉)",
-      "lines": 24,
+      "lines": 25,
       "declared_consumers": [
         "reference/mythos/cults/esoteric-order-of-dagon.md",
-        "reference/sourcebooks/keeper-rulebook-7e-zh.md",
+        "reference/rules/magic.md",
         "reference/tables/cultist-archetypes.md"
       ],
       "referenced_by": [
+        {
+          "file": "WORKLOG.md",
+          "line": 143,
+          "context": "8 处引用(`magic.md`、`artifacts-zh.md`、`call-father-dagon-and-mother-hydra.md`、"
+        },
         {
           "file": "reference/mythos/great-old-ones/dagon-and-hydra.md",
           "line": 76,
@@ -725,11 +765,16 @@
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 297,
+          "line": 315,
           "context": "| `reference/mythos/spells/call-father-dagon-and-mother-hydra.md:4` | 指规则书的请神/送神框架 | 改指 `reference/rules/magic.md` |"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 419,
+          "context": "`reference/mythos/spells/call-father-dagon-and-mother-hydra.md`、"
         }
       ],
-      "reference_count": 2
+      "reference_count": 4
     },
     {
       "file": "spells/fellrock-call-bind.md",
@@ -762,7 +807,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 129,
+          "line": 200,
           "context": "根本没有这一条——沉默之油实际是 `reference/mythos/spells/oil-of-silence.md` 的法术,"
         },
         {

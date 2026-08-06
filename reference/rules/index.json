@@ -11,39 +11,63 @@
     {
       "file": "character-creation.md",
       "path": "reference/rules/character-creation.md",
-      "title": "7e Character Creation — cheat-sheet",
-      "lines": 308,
+      "title": "调查员创建（Character Creation）",
+      "lines": 248,
       "declared_consumers": [
         "core/13-create-investigator.md",
         "reference/rules/eras/README.md",
-        "reference/rules/skill-checks.md",
-        "update_plan/2026-08-02-investigator-cards.md"
+        "reference/rules/skill-checks.md"
       ],
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 74,
+          "line": 145,
           "context": "- **kit 不再只服务 1920s 了。** `reference/rules/character-creation.md` 头部第一次"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 229,
+          "line": 300,
           "context": "- `character-creation.md` 补齐年龄补正、Build/伤害加值、技能基础值等建卡数据,可用来审核他人交的卡。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 243,
+          "line": 314,
           "context": "- `character-creation.md` 各小节补上数据来源指路(标明取自哪个源文件/章节)。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 101,
+          "line": 102,
           "context": "补全全部缺失字段,加了硬性算术+阈值型双层自校验;`core/13`/`character-creation.md`/"
         },
         {
           "file": "WORKLOG.md",
-          "line": 186,
+          "line": 149,
+          "context": "①`skill-checks.md`/`character-creation.md`/`magic.md`/`monster-scale.md` 四份现在都"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 151,
+          "context": "未核\"的状态;`character-creation.md` 的技能基础值表逐条核对第四章原文全部通过,新增"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 162,
+          "context": "③**`character-creation.md` 内部小节编号改动时刻意避开了 §11**——新增的\"创建调查员"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 167,
+          "context": "都硬编码引用着\"`character-creation.md` §11 = 人类反派基线\"——插在中间会让这些引用"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 217,
           "context": "写成了纯中文正文,后来对照 `character-creation.md`/`magic.md` 才发现 kit 的既有惯例"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 326,
+          "context": "阶段 2 四份速查表(`skill-checks.md`/`character-creation.md`/`magic.md`/"
         },
         {
           "file": "core/01-intake.md",
@@ -62,23 +86,23 @@
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 11,
+          "line": 23,
           "context": "**Default era: 1920s.** Every cheat-sheet below — `character-creation.md` most of all — is"
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 23,
+          "line": 35,
           "context": "`character-creation.md` (and any other baseline sheet the era's sections touch) in full,"
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 50,
+          "line": 62,
           "context": "→ read `reference/rules/character-creation.md` §11 before assigning skills or gear."
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 64,
-          "context": "- `reference/rules/character-creation.md` — attribute rolls, the standard-pool skill-point"
+          "line": 80,
+          "context": "- `reference/rules/character-creation.md` — characteristic rolls (with the full per-attribute"
         },
         {
           "file": "core/06-create-npc.md",
@@ -138,72 +162,87 @@
         {
           "file": "reference/rules/monster-scale.md",
           "line": 10,
-          "context": "> **Human antagonists don't use this ladder** — `reference/rules/character-creation.md` §11."
+          "context": "**人类反派不走这套阶梯**——见 `reference/rules/character-creation.md` §11。"
         },
         {
           "file": "reference/rules/monster-scale.md",
-          "line": 18,
-          "context": "| **L1 — human** | *(not covered here)* | A cult leader, a hired gun, an obsessed academic. `character-creation.md` §11. |"
+          "line": 108,
+          "context": "| **L1 — 人类** | *(本尺不收)* | 邪教头目、雇佣打手、走火入魔的学者。见 `character-creation.md` §11。 |"
+        },
+        {
+          "file": "reference/rules/README.md",
+          "line": 16,
+          "context": "| `character-creation.md` | 属性、年龄调整、衍生值、职业、技能点(含完整基础值表)、信用评级、背景、其它创建方法、人类反派;**同时是 P11 年代包的 1920s 基准本** | 第三、四章 |"
+        },
+        {
+          "file": "reference/rules/skill-checks.md",
+          "line": 134,
+          "context": "- 信用评级（CR）在角色建立时依据职业决定，转换出生活标准与购买力（现金 / 其他资产 / 消费水平三档，见 `reference/rules/character-creation.md` §6 的表——该表已对照本章表II 核实一致）。"
+        },
+        {
+          "file": "reference/rules/skill-checks.md",
+          "line": 178,
+          "context": "在建立调查员时已经按年龄做过一次性调整（见 `reference/rules/character-creation.md` §2）；本节是**战役进行中**跳过数年/数十年、或调查员因法术/魔法门等原因突然老化时，额外叠加的效果。**效果按跨过的每个里程碑累加**——例如从 30 多岁老化到 50 多岁，要同时应用达到"
         },
         {
           "file": "reference/rules/eras/cthulhu-invictus.md",
           "line": 4,
-          "context": "> for the loading order — read `reference/rules/character-creation.md` (the 1920s baseline)"
+          "context": "> 再把 `reference/rules/character-creation.md`（1920s 基准本）通读一遍，然后把下面五节当"
         },
         {
           "file": "reference/rules/eras/dark-ages.md",
           "line": 4,
-          "context": "> for the loading order — read `reference/rules/character-creation.md` (the 1920s baseline)"
+          "context": "> 再把 `reference/rules/character-creation.md`（1920s 基准本）通读一遍，然后把下面五节当"
         },
         {
           "file": "reference/rules/eras/end-times.md",
           "line": 4,
-          "context": "> for the loading order — read `reference/rules/character-creation.md` (the 1920s baseline)"
+          "context": "> 再把 `reference/rules/character-creation.md`（1920s 基准本）通读一遍，然后把下面五节当"
         },
         {
           "file": "reference/rules/eras/gaslight.md",
           "line": 4,
-          "context": "> for the loading order — read `reference/rules/character-creation.md` (the 1920s baseline)"
+          "context": "> 再把 `reference/rules/character-creation.md`（1920s 基准本）通读一遍，然后把下面五节当"
         },
         {
           "file": "reference/rules/eras/gaslight.md",
-          "line": 29,
-          "context": "table of its own. Use `character-creation.md`'s weapon values, adjusted for availability:"
+          "line": 25,
+          "context": "源材料本身没有给出专属武器表。使用 `character-creation.md` 的武器数值，只需按可得性"
         },
         {
           "file": "reference/rules/eras/icarus.md",
           "line": 4,
-          "context": "> for the loading order — read `reference/rules/character-creation.md` (the 1920s baseline)"
+          "context": "> 再把 `reference/rules/character-creation.md`（1920s 基准本）通读一遍，然后把下面五节当"
         },
         {
           "file": "reference/rules/eras/mystic-iceland.md",
           "line": 4,
-          "context": "> for the loading order — read `reference/rules/character-creation.md` (the 1920s baseline)"
+          "context": "> 再把 `reference/rules/character-creation.md`（1920s 基准本）通读一遍，然后把下面五节当"
         },
         {
           "file": "reference/rules/eras/README.md",
-          "line": 4,
-          "context": "(`reference/rules/character-creation.md`). Read this before reading any file in this"
+          "line": 3,
+          "context": "本文件是在 kit 的 1920s 基准本（`reference/rules/character-creation.md`）之外跑 CoC 7e"
         },
         {
           "file": "reference/rules/eras/README.md",
-          "line": 10,
-          "context": "The baseline (`character-creation.md`, `combat.md`, `chases.md`, etc.) already covers"
+          "line": 9,
+          "context": "基准本（`character-creation.md`、`combat.md`、`chases.md` 等）已经覆盖了跨年代不变的"
         },
         {
           "file": "reference/rules/eras/README.md",
-          "line": 39,
+          "line": 34,
           "context": "| *(未声明 = 1920s)* | 经典 1920s | 1920s | ✅ `character-creation.md` 本身 |"
         },
         {
           "file": "reference/rules/eras/README.md",
-          "line": 84,
-          "context": "same **来源** convention `character-creation.md` already uses. Nothing here is invented; if"
+          "line": 70,
+          "context": "每条都标出它出自哪里——源材料里的章名与页码，和 `character-creation.md` 已经在用的"
         },
         {
           "file": "reference/rules/eras/README.md",
-          "line": 123,
-          "context": "era (a Keeper's \"1970s\" campaign reasons forward from `character-creation.md`'s 1920s"
+          "line": 106,
+          "context": "从最近的已覆盖年代推导（守秘人报\"1970s\"的战役，从 `character-creation.md` 的 1920s"
         },
         {
           "file": "reference/tables/cult-leader-positions.md",
@@ -219,6 +258,16 @@
           "file": "reference/tables/cultist-archetypes.md",
           "line": 185,
           "context": "`reference/rules/character-creation.md` §11 塑造成独一无二的角色,而不是原样照用。"
+        },
+        {
+          "file": "reference/tables/weapons-index.md",
+          "line": 15,
+          "context": "> 伤害加值（DB）如何决定反派强度，见 `reference/rules/character-creation.md` §11。"
+        },
+        {
+          "file": "reference/tables/weapons-index.md",
+          "line": 40,
+          "context": "价格栏直接对接 `reference/rules/character-creation.md` §11 的\"非法术型首领 = 基线 +"
         },
         {
           "file": "campaigns/_template-campaign/CLAUDE.md",
@@ -242,47 +291,57 @@
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 216,
+          "line": 231,
           "context": "| 表XVII 武器列表 | **新建 `reference/tables/weapons-index.md`**,单列索引 | 用途不是\"查伤害\",是**给人类反派做强度预算**:一把武器等于多少战力,才好和 `character-creation.md` §11 的反派基线对齐。所以它要按**威胁量级**可排序,不"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 238,
+          "line": 253,
           "context": "| `character-creation.md` | 2026-08-02 01:28(同上) | 之前 | ✅ **但 08-04 回头对着规则书订正过** |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 242,
+          "line": 257,
           "context": "**没有一份例外。** `character-creation.md` 尤其说明问题:它和 `chases.md` 是**同一个"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 279,
+          "line": 294,
           "context": "`reference/rules/character-creation.md` 的 `来源` 惯例)"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 356,
-          "context": "接线到 `reference/rules/character-creation.md` §11(人类反派基线)与 `core/06-create-npc.md`"
+          "line": 389,
+          "context": "接线到 `reference/rules/character-creation.md` §11(人类反派基线)与 `core/06-create-npc.md`——"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 399,
-          "context": "- [ ] `character-creation.md`(307 行,已最厚)← 第三章 683–1595 + 第四章 技能 1596–2664"
+          "line": 471,
+          "context": "- [x] `character-creation.md`(307 → 248 行)← 第三章 683–1595 + 第四章 技能 1596–2664:"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 431,
+          "line": 476,
+          "context": "为 §12,不插进中间——`character-creation.md` §11(人类反派)被 `core/06/07/11`、"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 545,
           "context": "3. **和 P11 年代包的耦合。** `eras/*.md` 是对 `character-creation.md` 的差集。阶段 2 动那份"
         },
         {
           "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 179,
+          "line": 185,
           "context": "`reference/rules/character-creation.md` §2 正常扣完年龄惩罚、"
         },
         {
           "file": "update_plan/README.md",
-          "line": 47,
+          "line": 14,
+          "context": "| P12 | [cheatsheet-self-sufficiency](2026-08-04-cheatsheet-self-sufficiency.md) | 速查表自足化:战斗/追逐/理智三份按规则书第六、七、八章重写(**现有版本有实证错误**)+ 新建恐惧症/躁狂症 d100 表与武器强度索引 + 其余四份"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 51,
           "context": "`P12 阶段 2 动 character-creation.md 前须扫 eras/ 差集` 那条耦合已随之解除警戒:`eras/`"
         },
         {
@@ -491,20 +550,40 @@
           "context": "| P8 | [investigator-render-gaps](2026-08-02-investigator-render-gaps.md) | 投资者卡渲染缺口:`spells`/`cthulhu_mythos`/`notes`/P6 重建后新增字段(`occupation_detail`/`age_modif"
         }
       ],
-      "reference_count": 94
+      "reference_count": 106
     },
     {
       "file": "chases.md",
       "path": "reference/rules/chases.md",
-      "title": "7e Chases — cheat-sheet",
-      "lines": 56,
+      "title": "追逐（Chases）",
+      "lines": 346,
       "declared_consumers": [
-        "reference/rules/eras/README.md"
+        "reference/rules/combat.md"
       ],
       "referenced_by": [
         {
+          "file": "CHANGELOG.md",
+          "line": 37,
+          "context": "- **追逐规则算错了。** `chases.md` 此前把追逐当成抽象距离数字比 MOV 高低,和规则书的"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "line": 63,
+          "context": "`chases.md` `sanity.md`)已按《守秘人规则书》第六、七、八章逐节重写,补齐了此前完全"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 359,
+          "context": "`combat.md` 5 处裸「表XVII」、`chases.md` 2 处裸「表III」、6 处规则书页码/章节指路,"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 360,
+          "context": "已分别改指仓库对应物或把规则本身写进来。`chases.md` 7.5 的锚点重叠也拆了。"
+        },
+        {
           "file": "core/02-rules-reference.md",
-          "line": 62,
+          "line": 78,
           "context": "- `reference/rules/chases.md` — round structure; Move rates; obstacles & mishaps; ending a"
         },
         {
@@ -513,44 +592,69 @@
           "context": "If a scene is a pursuit or an escape, read `reference/rules/chases.md` before writing it."
         },
         {
+          "file": "reference/rules/README.md",
+          "line": 18,
+          "context": "| `chases.md` | 建立/切入追逐、地点与行动点、险境与障碍、冲突、可选规则;含表V/表VI | 第七章 |"
+        },
+        {
+          "file": "reference/rules/README.md",
+          "line": 45,
+          "context": "这条是 P12 的诊断结论倒逼出来的:出过错的四份速查表(`chases.md` 整份机制错、"
+        },
+        {
           "file": "reference/rules/eras/README.md",
-          "line": 10,
-          "context": "The baseline (`character-creation.md`, `combat.md`, `chases.md`, etc.) already covers"
+          "line": 9,
+          "context": "基准本（`character-creation.md`、`combat.md`、`chases.md` 等）已经覆盖了跨年代不变的"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 51,
+          "line": 57,
           "context": "**`chases.md`(55 行)—— 整份机制是错的。**"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 134,
+          "line": 140,
           "context": "| 表V 载具速度表 | 4801 | MOV/体格/乘客护甲/载员 + 载具受损规则 | ❌ 现有 `chases.md` 是自造的错表 |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 237,
+          "line": 252,
           "context": "| `chases.md` | 2026-08-02 01:28(e0d026b) | **之前 11 小时** | ❌ 整份机制是错的 |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 242,
+          "line": 257,
           "context": "**没有一份例外。** `character-creation.md` 尤其说明问题:它和 `chases.md` 是**同一个"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 255,
+          "line": 270,
           "context": "这条比本计划本身更值钱:它防的是**下一次**再造出一份 `chases.md`。"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 264,
+          "line": 279,
           "context": "reference/rules/chases.md         ← 同上,7.1–7.5 + 表V/表VI(推倒重写)"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 345,
-          "context": "- [ ] `reference/rules/chases.md` — 按 7.1–7.5 **推倒重写**(现有版本机制是错的,不是补);"
+          "line": 372,
+          "context": "- [x] `reference/rules/chases.md` — 按 7.1–7.5 **推倒重写**(现有版本机制是错的,不是补);"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 518,
+          "context": "另指 `decks/weapons-and-artifacts-zh.md`);`chases.md` 2 处裸「表III」改指"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 519,
+          "context": "`combat.md` §6.6;6 处规则书页码/章节指路(`chases.md` 33/105/92 页、`sanity.md`"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 523,
+          "context": "- [x] `chases.md` 7.5 的行号锚点重叠已拆(2026-08-06):原写 `4610–4980`,把另有自己"
         },
         {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
@@ -559,13 +663,13 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 100,
-          "context": "它修的是**已经在牌桌上出错的数值**(`chases.md` 的载具 MOV 差一个数量级、"
+          "line": 14,
+          "context": "| P12 | [cheatsheet-self-sufficiency](2026-08-04-cheatsheet-self-sufficiency.md) | 速查表自足化:战斗/追逐/理智三份按规则书第六、七、八章重写(**现有版本有实证错误**)+ 新建恐惧症/躁狂症 d100 表与武器强度索引 + 其余四份"
         },
         {
           "file": "update_plan/README.md",
-          "line": 159,
-          "context": "| 3 | **P12** 速查表自足化 | ★★★☆☆ | 源材料 2,402 行 / 21.3 万字符(第六、七、八章)+ 其余四章;4 份重写 + 2 份新建(恐惧症/躁狂症 d100、武器强度索引)+ 8 处引用改写 + 1 处脚本改动 + `.gitignore` + 索引重建 | **实现不难,难在刹车**"
+          "line": 158,
+          "context": "| 3 | **P12** 速查表自足化 | ★★★☆☆ | 源材料 2,402 行 / 21.3 万字符(第六、七、八章)+ 其余四章;4 份重写(实际拆成 6 份)+ 2 份新建(恐惧症/躁狂症 d100、武器强度索引)+ 8 处引用改写 + 索引重建(~~1 处脚本改动 + `.gitignore`~~ 已随「已"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -593,18 +697,55 @@
           "context": "- 阶段 1 的三处标注都在:`character-creation.md:3-6`(基准声明)、`chases.md:29-32`"
         }
       ],
-      "reference_count": 18
+      "reference_count": 27
     },
     {
       "file": "combat.md",
       "path": "reference/rules/combat.md",
-      "title": "7e Combat — cheat-sheet",
-      "lines": 48,
-      "declared_consumers": [],
+      "title": "战斗（Combat）",
+      "lines": 375,
+      "declared_consumers": [
+        "reference/tables/weapons-index.md"
+      ],
       "referenced_by": [
         {
+          "file": "CHANGELOG.md",
+          "line": 44,
+          "context": "- **重伤的判定阈值原本没写清楚。** `combat.md` 现在明确写出\"造成的伤害大于等于角色"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "line": 49,
+          "context": "- **全自动射击的难度阶梯多算了三级。** `combat.md` 把规则书的四组难度对应关系串成了"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "line": 54,
+          "context": "缺的三条:对抗检定不适用难度等级、不能孤注一掷、近战有自己的平手裁法(见 `combat.md`"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "line": 62,
+          "context": "- **查战斗、追逐、理智规则不用再翻规则书原文了。** 三份速查表(`reference/rules/combat.md`"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "line": 82,
+          "context": "(现在指向 `combat.md` §6.6);另有 6 处直接给规则书页码/章节的指路(如\"见规则书"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 349,
+          "context": "`combat.md` 全自动难度阶梯(四组对应关系被 `→` 串成七级链)、`skill-checks.md` 对抗"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 359,
+          "context": "`combat.md` 5 处裸「表XVII」、`chases.md` 2 处裸「表III」、6 处规则书页码/章节指路,"
+        },
+        {
           "file": "core/02-rules-reference.md",
-          "line": 60,
+          "line": 76,
           "context": "- `reference/rules/combat.md` — DEX order; dodge vs fight back; Build & Damage Bonus table;"
         },
         {
@@ -618,44 +759,114 @@
           "context": "> **数值以英文原版为准**;取用前对照 `reference/rules/combat.md` 确认与 7e 一致。"
         },
         {
+          "file": "reference/rules/chases.md",
+          "line": 84,
+          "context": "- 技能检定**失败**:守秘人判定是否受伤及伤害多少（角色参照**表III:其他类型的伤害**，见 `reference/rules/combat.md` §6.6；载具参照本文末尾的**表VI:交通事故**），并额外投 **1D3** 损失等量行动点。"
+        },
+        {
+          "file": "reference/rules/chases.md",
+          "line": 119,
+          "context": "巨大的怪物或生物可能以载具为攻击目标，造成伤害或使用战技(maneuver)将其撞飞、掀翻甚至举起丢出(体格 Build 的算法见 `reference/rules/combat.md` §6.2 表I)。载具可依常规战斗规则加入战斗，但用**汽车驾驶(Drive Auto)**技能取代格斗与闪避。"
+        },
+        {
+          "file": "reference/rules/chases.md",
+          "line": 125,
+          "context": "**在追逐中使用战技**：角色或载具若想推翻、冲撞对手或使其失控，视为一次战技(maneuver)。战技成功会使目标如同在险境上检定失败一般：损失 **1D3** 点行动点，并视情况受到伤害——角色参照**表III:其他类型的伤害**(见 `reference/rules/combat.md` §6.6)，载具参照本文"
+        },
+        {
+          "file": "reference/rules/monster-scale.md",
+          "line": 29,
+          "context": "体格（Build）由 STR+SIZ 决定（见 `reference/rules/combat.md` 表I），除了体格数值本身，"
+        },
+        {
+          "file": "reference/rules/README.md",
+          "line": 17,
+          "context": "| `combat.md` | 战斗轮、近战、战技、突袭、射击、伤害与治疗、可选规则;含表I/表III/表IV/护甲表 | 第六章 |"
+        },
+        {
+          "file": "reference/rules/README.md",
+          "line": 46,
+          "context": "`sanity.md` 缺半章、旧 `tables/madness.md` 和书上不是同一张表、`combat.md` 大面积缺),"
+        },
+        {
+          "file": "reference/rules/README.md",
+          "line": 51,
+          "context": "仍查出三处错(`sanity.md` 疯狂发作时长写成定值 10 轮而非 1D10 轮、`combat.md` 全自动难度"
+        },
+        {
+          "file": "reference/rules/README.md",
+          "line": 59,
+          "context": "- 指别的速查表用**仓库相对路径 + 小节号**(`reference/rules/combat.md` §6.6),不要只写"
+        },
+        {
+          "file": "reference/rules/skill-checks.md",
+          "line": 85,
+          "context": "- 战斗（近战）是标准的对抗检定，但有自己的平手裁决规则——见 `reference/rules/combat.md` §6.2（反击平手判给发动攻击的一方；闪避平手判给闪避方）。**这些覆盖上面的通用平手规则，战斗中不要套用\"技能更高者获胜\"。**"
+        },
+        {
+          "file": "reference/rules/skill-checks.md",
+          "line": 199,
+          "context": "- **不能花费幸运值改变**：幸运检定本身、伤害骰、理智检定，以及决定理智损失量的掷骰。大成功、大失败与武器故障（见 `reference/rules/combat.md` §6.5）**总是**照常生效，不能被幸运值改变。"
+        },
+        {
           "file": "reference/rules/eras/README.md",
-          "line": 10,
-          "context": "The baseline (`character-creation.md`, `combat.md`, `chases.md`, etc.) already covers"
+          "line": 9,
+          "context": "基准本（`character-creation.md`、`combat.md`、`chases.md` 等）已经覆盖了跨年代不变的"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 40,
+          "line": 46,
           "context": "| `reference/rules/combat.md` | 47 行 | 整份读完还不到 1K token |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 90,
+          "line": 96,
           "context": "**`combat.md`(47 行 vs 规则书第六章 934 行)—— 不是错,是缺。**"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 131,
+          "line": 137,
           "context": "| 表I 伤害加值和体格表 | 901 | STR+SIZ → DB/体格 | ✅ 已在 `combat.md` |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 233,
+          "line": 248,
           "context": "| `combat.md` | 2026-07-29(339a89b 初始提交) | 之前 | ❌ 大面积缺 |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 263,
+          "line": 278,
           "context": "reference/rules/combat.md         ← 中文正文,按规则书 6.1–6.7,含全部表格"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 344,
-          "context": "- [ ] `reference/rules/combat.md` — 按 6.1–6.7 重写;含表I(保留)、表III、表IV、护甲表"
+          "line": 370,
+          "context": "- [x] `reference/rules/combat.md` — 按 6.1–6.7 重写;含表I(保留)、表III、表IV、护甲表——"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 425,
+          "line": 440,
+          "context": "> \"有其他调查员在场\");②`combat.md` 全自动难度阶梯把原文 3812 的四组**对应关系**"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 516,
+          "context": "- [x] **自足性回收:13 处指不到东西的引用**(2026-08-06,复审发现)——`combat.md` 5 处"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 519,
+          "context": "`combat.md` §6.6;6 处规则书页码/章节指路(`chases.md` 33/105/92 页、`sanity.md`"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 539,
           "context": "\"速查表\"三个字仍然是——一份 1,500 行的 `combat.md` 在牌桌上翻不动。挡法是阶段 0 的"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 14,
+          "context": "| P12 | [cheatsheet-self-sufficiency](2026-08-04-cheatsheet-self-sufficiency.md) | 速查表自足化:战斗/追逐/理智三份按规则书第六、七、八章重写(**现有版本有实证错误**)+ 新建恐惧症/躁狂症 d100 表与武器强度索引 + 其余四份"
         },
         {
           "file": "update_plan/Archived/2026-08-04-era-rule-packs.md",
@@ -678,13 +889,13 @@
           "context": "\"evidence\": \"The entire answer is paraphrased summary/table lookups in the assistant's own words (short dice-notation fragments and derived numbers only), with "
         }
       ],
-      "reference_count": 15
+      "reference_count": 36
     },
     {
       "file": "eras/cthulhu-invictus.md",
       "path": "reference/rules/eras/cthulhu-invictus.md",
-      "title": "Era Pack — Cthulhu Invictus (克苏鲁不败)",
-      "lines": 90,
+      "title": "年代包 — 克苏鲁不败（Cthulhu Invictus）",
+      "lines": 77,
       "declared_consumers": [
         "reference/rules/character-creation.md",
         "reference/rules/eras/README.md"
@@ -692,23 +903,23 @@
       "referenced_by": [
         {
           "file": "reference/rules/eras/dark-ages.md",
-          "line": 31,
-          "context": "`eras/cthulhu-invictus.md` and not repeated here — they're common to all three ancient"
+          "line": 28,
+          "context": "`eras/cthulhu-invictus.md` 中，此处不重复——三个古代年代包通用）。"
         },
         {
           "file": "reference/rules/eras/mystic-iceland.md",
-          "line": 38,
-          "context": "(values listed in `eras/cthulhu-invictus.md`, common to all three ancient eras). Armour"
+          "line": 35,
+          "context": "与克苏鲁不败、黑暗时代共享「剑见箭」的护甲/盾牌机制（数值列在 `eras/cthulhu-invictus.md`"
         },
         {
           "file": "reference/rules/eras/README.md",
-          "line": 33,
+          "line": 28,
           "context": "| `cthulhu-invictus.md` | 克苏鲁不败 | 罗马帝国(约 1–2 世纪) | ✅ 官方 |"
         },
         {
           "file": "reference/rules/eras/README.md",
-          "line": 45,
-          "context": "settings above. Its content is folded into `cthulhu-invictus.md`,"
+          "line": 40,
+          "context": "`cthulhu-invictus.md`、`dark-ages.md`、`mystic-iceland.md` 各自的**装备与武器**/"
         }
       ],
       "reference_count": 4
@@ -716,8 +927,8 @@
     {
       "file": "eras/dark-ages.md",
       "path": "reference/rules/eras/dark-ages.md",
-      "title": "Era Pack — Cthulhu Dark Age (克苏鲁黑暗时代)",
-      "lines": 76,
+      "title": "年代包 — 克苏鲁黑暗时代（Cthulhu Dark Age）",
+      "lines": 64,
       "declared_consumers": [
         "reference/rules/character-creation.md",
         "reference/rules/eras/README.md"
@@ -725,13 +936,13 @@
       "referenced_by": [
         {
           "file": "reference/rules/eras/README.md",
-          "line": 34,
+          "line": 29,
           "context": "| `dark-ages.md` | 克苏鲁黑暗时代 | 欧洲 10–11 世纪 | ✅ 官方 |"
         },
         {
           "file": "reference/rules/eras/README.md",
-          "line": 46,
-          "context": "`dark-ages.md`, and `mystic-iceland.md`'s own **装备与武器** / **可选机制** sections"
+          "line": 40,
+          "context": "`cthulhu-invictus.md`、`dark-ages.md`、`mystic-iceland.md` 各自的**装备与武器**/"
         }
       ],
       "reference_count": 2
@@ -739,8 +950,8 @@
     {
       "file": "eras/end-times.md",
       "path": "reference/rules/eras/end-times.md",
-      "title": "Era Pack — Cthulhu End Times: The Reaping (克苏鲁末日之收割)",
-      "lines": 95,
+      "title": "年代包 — 克苏鲁末日之收割（Cthulhu End Times: The Reaping）",
+      "lines": 79,
       "declared_consumers": [
         "reference/rules/character-creation.md",
         "reference/rules/eras/README.md"
@@ -748,12 +959,12 @@
       "referenced_by": [
         {
           "file": "reference/rules/eras/icarus.md",
-          "line": 77,
-          "context": "- The **Ranged (Energy)** skill is listed as optional in the `eras/end-times.md` era file"
+          "line": 64,
+          "context": "- **射击〔能量武器〕**技能在 `eras/end-times.md` 年代包中被列为可选项，并指回本文件的"
         },
         {
           "file": "reference/rules/eras/README.md",
-          "line": 38,
+          "line": 33,
           "context": "| `end-times.md` | 克苏鲁末日之收割 | 旧日支配者苏醒后的后启示录未来(时间点 KP 自定) | ✅ 官方 |"
         }
       ],
@@ -762,8 +973,8 @@
     {
       "file": "eras/gaslight.md",
       "path": "reference/rules/eras/gaslight.md",
-      "title": "Era Pack — Cthulhu Gaslight (克苏鲁煤气灯)",
-      "lines": 72,
+      "title": "年代包 — 克苏鲁煤气灯（Cthulhu Gaslight）",
+      "lines": 61,
       "declared_consumers": [
         "reference/rules/character-creation.md",
         "reference/rules/eras/README.md"
@@ -771,7 +982,7 @@
       "referenced_by": [
         {
           "file": "reference/rules/eras/README.md",
-          "line": 36,
+          "line": 31,
           "context": "| `gaslight.md` | 克苏鲁煤气灯 | 维多利亚伦敦,约 1890 年代 | ✅ 官方 |"
         }
       ],
@@ -780,8 +991,8 @@
     {
       "file": "eras/icarus.md",
       "path": "reference/rules/eras/icarus.md",
-      "title": "Era Pack — Cthulhu Icarus (克苏鲁伊卡洛斯)",
-      "lines": 80,
+      "title": "年代包 — 克苏鲁伊卡洛斯（Cthulhu Icarus）",
+      "lines": 66,
       "declared_consumers": [
         "reference/rules/character-creation.md",
         "reference/rules/eras/README.md"
@@ -789,17 +1000,17 @@
       "referenced_by": [
         {
           "file": "reference/rules/eras/end-times.md",
-          "line": 37,
-          "context": "`eras/icarus.md`."
+          "line": 27,
+          "context": "在有电源的情况下组装/修理计算机与通讯设备。定义与数值与 `eras/icarus.md` 中同名"
         },
         {
           "file": "reference/rules/eras/end-times.md",
-          "line": 42,
-          "context": "this skill (and its example weapons) can be enabled by referencing `eras/icarus.md`"
+          "line": 32,
+          "context": "引用 `eras/icarus.md` 来启用这项技能（及其范例武器），不必在本文件重新定义。"
         },
         {
           "file": "reference/rules/eras/README.md",
-          "line": 37,
+          "line": 32,
           "context": "| `icarus.md` | 克苏鲁伊卡洛斯 | 近未来星际探索 | ✅ 官方 |"
         }
       ],
@@ -808,8 +1019,8 @@
     {
       "file": "eras/mystic-iceland.md",
       "path": "reference/rules/eras/mystic-iceland.md",
-      "title": "Era Pack — Mystic Iceland (神秘冰岛)",
-      "lines": 91,
+      "title": "年代包 — 神秘冰岛（Mystic Iceland）",
+      "lines": 82,
       "declared_consumers": [
         "reference/rules/character-creation.md",
         "reference/rules/eras/README.md"
@@ -817,13 +1028,13 @@
       "referenced_by": [
         {
           "file": "reference/rules/eras/README.md",
-          "line": 35,
+          "line": 30,
           "context": "| `mystic-iceland.md` | 神秘冰岛 | 冰岛萨迦时代(约 930 年前后) | ✅ 官方 |"
         },
         {
           "file": "reference/rules/eras/README.md",
-          "line": 46,
-          "context": "`dark-ages.md`, and `mystic-iceland.md`'s own **装备与武器** / **可选机制** sections"
+          "line": 40,
+          "context": "`cthulhu-invictus.md`、`dark-ages.md`、`mystic-iceland.md` 各自的**装备与武器**/"
         }
       ],
       "reference_count": 2
@@ -831,43 +1042,64 @@
     {
       "file": "magic.md",
       "path": "reference/rules/magic.md",
-      "title": "7e Magic — cheat-sheet",
-      "lines": 114,
-      "declared_consumers": [
-        "reference/rules/sanity.md",
-        "reference/sourcebooks/grand-grimoire-zh.md",
-        "reference/sourcebooks/keeper-rulebook-7e-zh.md"
-      ],
+      "title": "魔法（Magic）",
+      "lines": 150,
+      "declared_consumers": [],
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 137,
+          "line": 25,
+          "context": "(购点制 460 点、快速开桌等)和一张各属性数值含义速查表;`magic.md` 补齐了施法检定、"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "line": 208,
           "context": "- **法术、仪式、魔法书终于有了数值标尺。** 新增 `reference/rules/magic.md`:施法消耗"
         },
         {
           "file": "WORKLOG.md",
-          "line": 93,
+          "line": 94,
           "context": "`reference/rules/magic.md`,`core/02`/`core/07`/`reference/mythos/README.md` 已接线。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 97,
+          "line": 98,
           "context": "三值、泛读/精读两阶段、重复精读耗时翻倍),`magic.md` 的魔法书章节改成从这份规则书"
         },
         {
           "file": "WORKLOG.md",
-          "line": 186,
+          "line": 143,
+          "context": "8 处引用(`magic.md`、`artifacts-zh.md`、`call-father-dagon-and-mother-hydra.md`、"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 149,
+          "context": "①`skill-checks.md`/`character-creation.md`/`magic.md`/`monster-scale.md` 四份现在都"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 152,
+          "context": "了官方六套替代建卡法;`magic.md` 补了施法检定/孤注一掷失败代价表/成为相信者/深层"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 217,
           "context": "写成了纯中文正文,后来对照 `character-creation.md`/`magic.md` 才发现 kit 的既有惯例"
         },
         {
+          "file": "WORKLOG.md",
+          "line": 326,
+          "context": "阶段 2 四份速查表(`skill-checks.md`/`character-creation.md`/`magic.md`/"
+        },
+        {
           "file": "core/02-rules-reference.md",
-          "line": 51,
+          "line": 63,
           "context": "- Write any **spell, ritual, or magic book/tome** → read `reference/rules/magic.md` before"
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 67,
-          "context": "- `reference/rules/magic.md` — MP/SAN/POW cost notation, casting time, opposed POW rolls,"
+          "line": 89,
+          "context": "- `reference/rules/magic.md` — MP mechanics and recovery, the three ways to learn a spell,"
         },
         {
           "file": "core/07-create-monster.md",
@@ -880,29 +1112,59 @@
           "context": "**Read `reference/rules/magic.md` first** — it's the distilled cost-tier ladder, casting-time"
         },
         {
+          "file": "reference/mythos/spells/call-father-dagon-and-mother-hydra.md",
+          "line": 4,
+          "context": "> `reference/rules/magic.md` 既有\"请神/送神术\"框架下的新变体"
+        },
+        {
+          "file": "reference/mythos/spells/call-father-dagon-and-mother-hydra.md",
+          "line": 6,
+          "context": "> **注:请神/送神术的通用框架待 P12 阶段 2 补进 `magic.md`,目前该文件尚无对应小节。**"
+        },
+        {
+          "file": "reference/rules/README.md",
+          "line": 20,
+          "context": "| `magic.md` | 魔法值机制、学习/施放法术、成为相信者、深层魔法、典籍研读(泛读/精读、CMI/CMF/MR)、法术设计与成本档位 | 第九、十一、十二章 |"
+        },
+        {
+          "file": "reference/tables/cultist-archetypes.md",
+          "line": 265,
+          "context": "深潜者召唤/束缚术。数值查 `reference/rules/magic.md` /"
+        },
+        {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 239,
+          "line": 254,
           "context": "| `magic.md` | 2026-08-03(84dba55) | 之后 | ✅ 明确记着照 CMI/CMF/MR 改写过估算值 |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 295,
+          "line": 313,
           "context": "| `reference/rules/magic.md:5` | 指规则书为 last word | 同上改写 |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 297,
+          "line": 315,
           "context": "| `reference/mythos/spells/call-father-dagon-and-mother-hydra.md:4` | 指规则书的请神/送神框架 | 改指 `reference/rules/magic.md` |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 298,
+          "line": 316,
           "context": "| `reference/tables/cultist-archetypes.md:265` | 指规则书查召唤/束缚数值 | 改指 `reference/rules/magic.md` |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 401,
-          "context": "- [ ] `magic.md`(113 行)← 第九章 5770–6191 + 第十一章 典籍 7745 + 第十二章 法术 8393"
+          "line": 418,
+          "context": "`reference/rules/magic.md`、`reference/mythos/artifacts-zh.md`、"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 480,
+          "context": "- [x] `magic.md`(113 → 150 行)← 第九章 5770–6191 + 第十一章 典籍 7736–8384 + 第十二章"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 14,
+          "context": "| P12 | [cheatsheet-self-sufficiency](2026-08-04-cheatsheet-self-sufficiency.md) | 速查表自足化:战斗/追逐/理智三份按规则书第六、七、八章重写(**现有版本有实证错误**)+ 新建恐惧症/躁狂症 d100 表与武器强度索引 + 其余四份"
         },
         {
           "file": "update_plan/Archived/2026-08-02-conventions-gaps.md",
@@ -990,42 +1252,69 @@
           "context": "| P7 | [magic-quickref](2026-08-02-magic-quickref.md) | 魔法速查 `reference/rules/magic.md`:施法通则(消耗记法、施法用时、POW 对抗)、按 `grand-grimoire-zh.md` 抽样得出的四档消耗区间(小术/中术/大术/仪式级"
         }
       ],
-      "reference_count": 30
+      "reference_count": 41
     },
     {
       "file": "monster-scale.md",
       "path": "reference/rules/monster-scale.md",
-      "title": "Monster Scale — cheat-sheet",
-      "lines": 150,
+      "title": "怪物强度标尺（Monster Scale）",
+      "lines": 232,
       "declared_consumers": [
         "reference/rules/character-creation.md",
+        "reference/rules/combat.md",
+        "reference/sourcebooks/\nmalleus-monstrorum-zh.md",
         "reference/sourcebooks/malleus-monstrorum-zh.md"
       ],
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 171,
+          "line": 27,
+          "context": "分档区间也按表XI 约 90 条书目实测重新校准;`monster-scale.md` 新增了规则书第十四章"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "line": 242,
           "context": "`reference/rules/monster-scale.md`:五级强度阶梯(独立种族 → 仆从种族 → 唯一存在 →"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 180,
+          "line": 251,
           "context": "- **挑怪物强度时先看书上的「上级/下级」标签,它比自己估更准。** `monster-scale.md`"
         },
         {
           "file": "WORKLOG.md",
-          "line": 106,
+          "line": 107,
           "context": "- **阶段 A**(标尺与词条,2026-08-03):`reference/rules/monster-scale.md` + 五级强度阶梯 +"
         },
         {
+          "file": "WORKLOG.md",
+          "line": 149,
+          "context": "①`skill-checks.md`/`character-creation.md`/`magic.md`/`monster-scale.md` 四份现在都"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 153,
+          "context": "魔法这几块此前完全没有的机制;`monster-scale.md` 新增了第十四章的通用怪物框架(体格"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 166,
+          "context": "`reference/tables/weapons-index.md`、`reference/rules/monster-scale.md` 等多处活文件"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 327,
+          "context": "`monster-scale.md`)整份重写,细节见 `update_plan/2026-08-04-cheatsheet-self-sufficiency.md`"
+        },
+        {
           "file": "core/02-rules-reference.md",
-          "line": 46,
+          "line": 58,
           "context": "`reference/rules/monster-scale.md` before picking a tier or a threat band."
         },
         {
           "file": "core/02-rules-reference.md",
-          "line": 70,
-          "context": "- `reference/rules/monster-scale.md` — the five-tier non-human threat ladder (creature /"
+          "line": 95,
+          "context": "- `reference/rules/monster-scale.md` — chapter 14's general monster framework (attribute"
         },
         {
           "file": "core/07-create-monster.md",
@@ -1113,6 +1402,11 @@
           "context": "下级仆从种族 (lesser servitor race); per `reference/rules/monster-scale.md`'s 上级/下级"
         },
         {
+          "file": "reference/rules/README.md",
+          "line": 21,
+          "context": "| `monster-scale.md` | 第十四章通用怪物框架(属性惯例、体格比较表、怪物战斗/战技、不死神格、怪物法术) + 五级强度阶梯(抽样 malleus) | 第十四章 |"
+        },
+        {
           "file": "reference/tables/monster-traits.md",
           "line": 4,
           "context": "(`reference/rules/monster-scale.md`)变成一只具体生物的那一层,不必每次都手搓一条新机制。"
@@ -1129,7 +1423,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 40,
+          "line": 46,
           "context": "`reference/rules/monster-scale.md`。"
         },
         {
@@ -1139,13 +1433,23 @@
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 240,
+          "line": 255,
           "context": "| `monster-scale.md` | 2026-08-03(819971e) | 之后 | ✅ |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 402,
-          "context": "- [ ] `monster-scale.md`(149 行)← 第十四章 10030 起(与 `malleus-monstrorum-zh.md` 分工:"
+          "line": 478,
+          "context": "`reference/tables/weapons-index.md`、`reference/rules/monster-scale.md` 等多处硬编码"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 486,
+          "context": "- [x] `monster-scale.md`(149 → 232 行)← 第十四章 9832–10029(通用框架部分,原文件完全"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 14,
+          "context": "| P12 | [cheatsheet-self-sufficiency](2026-08-04-cheatsheet-self-sufficiency.md) | 速查表自足化:战斗/追逐/理智三份按规则书第六、七、八章重写(**现有版本有实证错误**)+ 新建恐惧症/躁狂症 d100 表与武器强度索引 + 其余四份"
         },
         {
           "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
@@ -1223,18 +1527,33 @@
           "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺,三阶段。**阶段 A**(标尺与词条):`reference/rules/monster-scale.md` 五级阶梯(human/creature/s"
         }
       ],
-      "reference_count": 44
+      "reference_count": 52
     },
     {
       "file": "sanity.md",
       "path": "reference/rules/sanity.md",
-      "title": "7e Sanity — cheat-sheet",
-      "lines": 57,
+      "title": "理智（Sanity）",
+      "lines": 216,
       "declared_consumers": [],
       "referenced_by": [
         {
+          "file": "CHANGELOG.md",
+          "line": 46,
+          "context": "- **疯狂发作的时长被写成了定值。** `sanity.md` 原写\"只持续 10 个战斗轮\",实际是"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "line": 63,
+          "context": "`chases.md` `sanity.md`)已按《守秘人规则书》第六、七、八章逐节重写,补齐了此前完全"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 348,
+          "context": "回原文核完之后又查出 5 处错:`sanity.md` 疯狂发作时长(定值 `10 轮` → `1D10 轮`)、"
+        },
+        {
           "file": "core/02-rules-reference.md",
-          "line": 58,
+          "line": 74,
           "context": "- `reference/rules/sanity.md` — SAN = POW; X/Y loss notation; typical loss table; bout of"
         },
         {
@@ -1263,34 +1582,84 @@
           "context": "`reference/rules/sanity.md` 里\"治疗性对话恢复理智\"的机制,守秘人可另立替代规则)。"
         },
         {
-          "file": "reference/rules/magic.md",
-          "line": 23,
-          "context": "witnessing something (`reference/rules/sanity.md`) — it's paid whether or not the spell"
+          "file": "reference/rules/README.md",
+          "line": 19,
+          "context": "| `sanity.md` | 理智检定与损失、疯狂三状态两阶段、治疗与恢复、习惯恐惧 | 第八章 |"
+        },
+        {
+          "file": "reference/rules/README.md",
+          "line": 46,
+          "context": "`sanity.md` 缺半章、旧 `tables/madness.md` 和书上不是同一张表、`combat.md` 大面积缺),"
+        },
+        {
+          "file": "reference/rules/README.md",
+          "line": 51,
+          "context": "仍查出三处错(`sanity.md` 疯狂发作时长写成定值 10 轮而非 1D10 轮、`combat.md` 全自动难度"
+        },
+        {
+          "file": "reference/rules/skill-checks.md",
+          "line": 128,
+          "context": "- **幕间成长中的其他活动**：花时间处理与自身背景相关的事以恢复理智（见 `reference/rules/sanity.md` 的自救机制）；检视信用评级与经济状况变化（见 §5.12）；减少 1 点理智值上限（习惯恐惧，见 `reference/rules/sanity.md` §8.5）；在玩家同意、守秘人允"
+        },
+        {
+          "file": "reference/tables/madness-instant.md",
+          "line": 28,
+          "context": "新获得的恐惧症/躁狂症要记在调查员卡上——它会**习惯化**(见 `reference/rules/sanity.md`"
+        },
+        {
+          "file": "reference/tables/madness-summary.md",
+          "line": 30,
+          "context": "新获得的恐惧症/躁狂症要记在调查员卡上——它会**习惯化**(见 `reference/rules/sanity.md`"
+        },
+        {
+          "file": "reference/tables/manias.md",
+          "line": 14,
+          "context": "`madness-summary.md`(表VIII 10 号);会随场次**习惯化**,见 `reference/rules/sanity.md`"
+        },
+        {
+          "file": "reference/tables/phobias.md",
+          "line": 14,
+          "context": "`madness-summary.md`(表VIII 9 号);会随场次**习惯化**,见 `reference/rules/sanity.md`"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 76,
+          "line": 82,
           "context": "**`sanity.md`(56 行)—— 缺了整个第二阶段。**"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 215,
+          "line": 230,
           "context": "| 表IX 恐惧症(约 100 条)+ 表X 躁狂症(约 100 条) | **新建 `reference/tables/phobias-manias.md`**,一张 **d100** 掷,两个表分列 | 它是**掷骰表**不是速查文,和 `tables/` 里现有那批同类;`sanity.md` 的疯狂发作 9/1"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 234,
+          "line": 249,
           "context": "| `sanity.md` | 2026-07-29(同上) | 之前 | ❌ 缺整个第二阶段 |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 265,
+          "line": 280,
           "context": "reference/rules/sanity.md         ← 同上,8.1–8.6"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 347,
-          "context": "- [ ] `reference/rules/sanity.md` — 按 8.1–8.6 重写;补永久性疯狂、疯狂三阶段、"
+          "line": 375,
+          "context": "- [x] `reference/rules/sanity.md` — 按 8.1–8.6 重写;补永久性疯狂、疯狂三阶段、"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 439,
+          "context": "> 查出:①`sanity.md` 疯狂发作时长写成定值 `10 轮`(原文 5148 是 `1D10 轮`,且条件是"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 519,
+          "context": "`combat.md` §6.6;6 处规则书页码/章节指路(`chases.md` 33/105/92 页、`sanity.md`"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 14,
+          "context": "| P12 | [cheatsheet-self-sufficiency](2026-08-04-cheatsheet-self-sufficiency.md) | 速查表自足化:战斗/追逐/理智三份按规则书第六、七、八章重写(**现有版本有实证错误**)+ 新建恐惧症/躁狂症 d100 表与武器强度索引 + 其余四份"
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -1308,42 +1677,102 @@
           "context": "\"evidence\": \"The entire answer is paraphrased summary/table lookups in the assistant's own words (short dice-notation fragments and derived numbers only), with "
         }
       ],
-      "reference_count": 15
+      "reference_count": 28
     },
     {
       "file": "skill-checks.md",
       "path": "reference/rules/skill-checks.md",
-      "title": "7e Skill Checks — cheat-sheet",
-      "lines": 52,
+      "title": "判定基本盘（Skill Checks）",
+      "lines": 204,
       "declared_consumers": [],
       "referenced_by": [
         {
+          "file": "CHANGELOG.md",
+          "line": 21,
+          "context": "- **其余四份速查表补齐了,和三份主表一样直接对着规则书写。** `skill-checks.md` 现在"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "line": 52,
+          "context": "- **对抗检定的平手规则整条是错的。** `skill-checks.md` 原写\"平手比骰值、防守方赢\","
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 149,
+          "context": "①`skill-checks.md`/`character-creation.md`/`magic.md`/`monster-scale.md` 四份现在都"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 326,
+          "context": "阶段 2 四份速查表(`skill-checks.md`/`character-creation.md`/`magic.md`/"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 349,
+          "context": "`combat.md` 全自动难度阶梯(四组对应关系被 `→` 串成七级链)、`skill-checks.md` 对抗"
+        },
+        {
           "file": "core/02-rules-reference.md",
-          "line": 56,
-          "context": "- `reference/rules/skill-checks.md` — d100 under target; Regular/Hard/Extreme; fumbles;"
+          "line": 68,
+          "context": "- `reference/rules/skill-checks.md` — d100 under target; Regular/Hard/Extreme; pushing (and"
+        },
+        {
+          "file": "reference/mythos/artifacts-zh.md",
+          "line": 17,
+          "context": "POW,打碎它可能引发不可预知的魔法效果(参照 `reference/rules/skill-checks.md`"
         },
         {
           "file": "reference/rules/character-creation.md",
-          "line": 36,
-          "context": "`reference/rules/skill-checks.md`."
+          "line": 16,
+          "context": "- 幸运是掷出来的,不是推算出来的——它是场上会被消耗、会回复的资源，见 `reference/rules/skill-checks.md` §5.16。"
+        },
+        {
+          "file": "reference/rules/character-creation.md",
+          "line": 47,
+          "context": "- 这是**创建调查员时**一次性的年龄调整；调查员在战役进行中老去（跳过数年、或因法术/魔法门骤然老化）用的是另一张里程碑表，见 `reference/rules/skill-checks.md` §5.15，两者不是同一套数字。"
+        },
+        {
+          "file": "reference/rules/README.md",
+          "line": 15,
+          "context": "| `skill-checks.md` | 判定基本盘:难度等级、孤注一掷、大成功/大失败、多人协作与人体极限、其它检定(幸运/灵感/知识)、对抗检定、奖惩骰、组合检定、社交技能难度、幕间成长、信用评级与开支、熟人、训练、老化、花费幸运值 | 第五章(全) |"
+        },
+        {
+          "file": "reference/rules/README.md",
+          "line": 52,
+          "context": "阶梯把四组对应关系串成了七级链、`skill-checks.md` 对抗检定平手规则整条是编的)——"
+        },
+        {
+          "file": "reference/rules/sanity.md",
+          "line": 205,
+          "context": "但调查员并未真正习惯这些外来的污秽：经过一段时间（通常是调查员进行了某种程度的日常生活）后，对这些存在的恐惧感会重新累积。玩家应记录各神话存在造成的理智值损失总和；每次**幕间成长**（经验奖励结算，规则书 5.11，本 kit 待阶段 2 补入 `reference/rules/skill-checks.md`）时，"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 235,
+          "line": 250,
           "context": "| `skill-checks.md` | 2026-07-29(同上) | 之前 | ⚠️ 未核(阶段 2 查) |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 296,
+          "line": 314,
           "context": "| `reference/mythos/artifacts-zh.md:18` | 指规则书查孤注一掷失败规则 | 改指 `reference/rules/skill-checks.md` |"
         },
         {
           "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 397,
-          "context": "- [ ] `skill-checks.md`(51 行)← 第五章 游戏系统 2665–3367:孤注一掷、奖惩骰、"
+          "line": 442,
+          "context": "> 七级链;③`skill-checks.md` 对抗检定平手规则两半都是编的(原文 3013:技能值高者胜,"
+        },
+        {
+          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 466,
+          "context": "- [x] `skill-checks.md`(51 → 204 行)← 第五章 游戏系统 2665–3367(全章,不止最初点名的"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 14,
+          "context": "| P12 | [cheatsheet-self-sufficiency](2026-08-04-cheatsheet-self-sufficiency.md) | 速查表自足化:战斗/追逐/理智三份按规则书第六、七、八章重写(**现有版本有实证错误**)+ 新建恐惧症/躁狂症 d100 表与武器强度索引 + 其余四份"
         }
       ],
-      "reference_count": 5
+      "reference_count": 17
     }
   ]
 }

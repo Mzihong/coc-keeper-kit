@@ -1,75 +1,63 @@
-# Era Pack — Cthulhu Dark Age (克苏鲁黑暗时代)
+# 年代包 — 克苏鲁黑暗时代（Cthulhu Dark Age）
 
-> **This is a delta, not a standalone document.** Read `reference/rules/eras/README.md` first
-> for the loading order — read `reference/rules/character-creation.md` (the 1920s baseline)
-> in full, then apply the five sections below as overrides. A section not listed here means
-> "unchanged from baseline."
+> **这是一份差集，不是独立文档。** 先读 `reference/rules/eras/README.md` 了解加载顺序——
+> 再把 `reference/rules/character-creation.md`（1920s 基准本）通读一遍，然后把下面五节当
+> 覆盖项应用。本文件没提到的小节，一律视为"与基准本一致，未改变"。
 
-**Era:** Europe, roughly the 10th–11th century (the source keeps it a generic "Dark Ages" —
-the Keeper picks the specific region).
-**来源:** *Cthulhu Through the Ages* 中文版,「克苏鲁黑暗时代」章,原书页 15–21(本 PDF
-第 11–16 页)。装备一节另外引用共享附录「剑见箭 Swords and Arrows」(原书页 31–33,本
-PDF 第 25–28 页)。
+**年代：** 欧洲，约 10–11 世纪（源材料保持泛用的"黑暗时代"设定——具体地区由守秘人选定）。
+**来源：** 《Cthulhu Through the Ages》中文版，「克苏鲁黑暗时代」章，原书页 15–21（本
+PDF 第 11–16 页）。装备一节另外引用共享附录「剑见箭 Swords and Arrows」（原书页
+31–33，本 PDF 第 25–28 页）。
 
-## Skill table changes
+## 技能表增减（Skill table changes）
 
-- **Own Land Lore 本国知识** (base 20%) — knowledge of one's own people, land, and
-  legends; replaces the baseline's Own Country content with Dark Ages-appropriate entries.
-- **Outsider Lore 外邦知识** (specialisation, base 20%) — same as the Cthulhu Invictus
-  entry, invested per region/nation.
-- **Religion 宗教** (base 20%) — knowledge of one's own faith (usually Christianity) or
-  others; identifies feast days, saints, and pagan charms or ritual sites.
-- **Fighting (Shield) 格斗〔盾〕** (base 15%) — same as the Cthulhu Invictus entry,
-  shared with the 「剑见箭」 supplement.
-- **Ranged Weapons 射击** (specialisation, variable%) — bow 10% (Welsh longbow/short bow),
-  crossbow 20%, sling 15%.
+- **本国知识 Own Land Lore**（基础 20%）——本族、本地与传说知识；用黑暗时代的条目替换
+  基准本「本国知识」的内容。
+- **外邦知识 Outsider Lore**（专攻，基础 20%）——与克苏鲁不败年代包同一条目，按地区/
+  民族分别投点。
+- **宗教 Religion**（基础 20%）——本教（通常是基督教）或他教知识；能辨认节日、圣徒，
+  以及异教符咒或祭祀场所。
+- **格斗〔盾〕Fighting (Shield)**（基础 15%）——与克苏鲁不败年代包同一条目，共享
+  「剑见箭」补充规则。
+- **射击 Ranged Weapons**（专攻，基础值不定）——弓 10%（威尔士长弓/短弓）、弩 20%、
+  投石索 15%。
 
-## Equipment & weapons
+## 装备与武器（Equipment & weapons）
 
-Shares the 「剑见箭」 armour/shield mechanics with Cthulhu Invictus and Mystic Iceland
-(来源页 31–33; the armour-die values themselves are listed in
-`eras/cthulhu-invictus.md` and not repeated here — they're common to all three ancient
-eras).
+与克苏鲁不败、神秘冰岛共享「剑见箭」的护甲/盾牌机制（来源页 31–33；护甲骰数值本身列在
+`eras/cthulhu-invictus.md` 中，此处不重复——三个古代年代包通用）。
 
-**Example Dark Ages weapons** (来源页 33,货币单位 pence/p): great axe (Fighting (Axe),
-15%, 2D6, two-handed, 100p); flail (Fighting (Flail), 10%, 1D6, one-handed, 80p); short
-spear (Fighting (Spear), 15%, 1D6, one- or two-handed, 40p); long sword (Fighting (Sword),
-20%, 1D8, two-handed, 210p).
+**黑暗时代武器范例**（来源页 33，货币单位 pence/p）：巨斧 great axe（格斗（斧），15%，
+2D6，双手，100p）；连枷 flail（格斗（连枷），10%，1D6，单手，80p）；短矛 short spear
+（格斗（矛），15%，1D6，单手或双手，40p）；长剑 long sword（格斗（剑），20%，1D8，
+双手，210p）。
 
-**Currency:** most trade is barter; coin (pence / deniers) matters mostly for cross-region
-trade (来源页 21).
+**货币：** 大部分交易靠以物易物；硬币（便士/迪纳厄）主要用于跨地区贸易（来源页 21）。
 
-## Technology & common knowledge
+## 技术与常识水平（Technology & common knowledge）
 
-Roman infrastructure and literacy have decayed sharply; education is concentrated in
-monasteries and cathedral schools. The worldview runs on religious order rather than
-"eternal scientific law" — a character who witnesses a Mythos entity is more likely to
-frame it as a demon, angel, or ghost than as something alien (来源页 21). Travel is on foot
-or horseback; news travels on the order of weeks to months.
+罗马时代的基础设施与识字率已大幅衰退；教育集中在修道院和座堂学校。世界观建立在宗教秩序
+而非"永恒的科学法则"之上——目睹神话生物的角色更可能把它理解为恶魔、天使或鬼魂，而不是
+外星异物（来源页 21）。出行靠步行或骑马；消息传递以周到月为单位。
 
-## Occupation table
+## 职业表（Occupation table）
 
-Example occupations (来源页 13–15, 13 total): beggar, courtesan, farmer, seer, priest,
-guard, healer, hermit/pagan, merchant, woodsman/fisherman, monk/nun, scholar,
-(freelance) warrior. Each carries a fixed skill list, point formula, and Status range,
-structurally identical to the baseline occupation model. See Optional rules for the Status
-scale.
+范例职业（来源页 13–15，共 13 个）：乞丐、名妓、农民、先知、神职人员、护卫、医者、隐士
+/异教徒、商人、樵夫/渔夫、修士/修女、学者、（雇佣）战士。每个职业都带固定技能列表、点
+数公式与地位区间，结构上与基准本的职业模型完全一致。地位量表见下方「可选机制」。
 
-## Optional rules
+## 可选机制（Optional rules）
 
-- **Milestones table** (1D10, 来源页 12) replaces the Birth Omen table used by Cthulhu
-  Invictus — roll once at character creation for a life-shaping event (e.g. "born with a
-  caul: +10 Luck"; "enslaved as a youth: +5 STR").
-- **Ideology/Beliefs**, **Meaningful Locations**, **Treasured Possessions**, and
-  **Significant People** tables (all 1D10, 来源页 12–13) rewritten for the Dark Ages.
-- **Clan & Feud**: the clan (a single family, or a whole village/lord's household) is the
-  basic social and economic support unit of the Dark Ages. The feud lets a family, house, or
-  clan demand vengeance after a member is hurt or killed — feuds can run for generations
-  (来源页 20). Treat it as a source of plot tension the Keeper can draw on, not a mandatory
-  hard rule.
-- **Status**: structurally the same as Cthulhu Invictus's Status — a Credit Rating analogue
-  standing for social connection and standing rather than raw purchasing power. It cannot be
-  ticked up; it moves only through deeds and scandal (来源页 19).
-- **Optional rule: Multiple Status scores** — investigators can hold different Status
-  scores in different groups, organisations, or settlements; recommended only for long
-  campaigns spanning several major factions, since it adds bookkeeping (来源页 19).
+- **人生节点表（Milestones table）**（1D10，来源页 12）取代克苏鲁不败年代包使用的诞生
+  征兆表——创建调查员时骰一次，代表一件塑造人生的事件（例如"生而带膜：幸运 +10"；
+  "少年时曾为奴：力量 +5"）。
+- **思想/信念、意义非凡之地、宝贵之物、重要之人**表（均为 1D10，来源页 12–13）已按黑暗
+  时代重写。
+- **氏族与世仇（Clan & Feud）**：氏族（可以是一个单独家庭，也可以是整座村庄/领主的家户）
+  是黑暗时代最基本的社会与经济支持单位。世仇允许一个家庭、家族或氏族在成员受伤或被杀后
+  要求复仇——世仇可能持续数代（来源页 20）。把它当作守秘人可以借用的剧情张力来源，而不
+  是强制的硬规则。
+- **地位（Status）**：结构上与克苏鲁不败的地位相同——是信用评级的等价物，代表社会
+  关系与地位而非纯粹购买力。不能靠点数往上加，只能靠事迹或丑闻升降（来源页 19）。
+- **可选规则：多重地位分数**——调查员可以在不同团体、组织或聚落中持有不同的地位分数；
+  只建议在跨越多个主要阵营的长战役中使用，因为它会增加记账负担（来源页 19）。

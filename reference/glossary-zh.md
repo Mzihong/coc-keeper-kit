@@ -58,7 +58,6 @@ Rules:
 | Damage Bonus | 伤害加值 |
 | Move Rate | 移动力 |
 | Armour | 护甲 |
-| Major wound | 重伤值 |
 
 ## 人物创建
 
@@ -109,6 +108,19 @@ Rules:
 | Luck spend | 消费幸运 |
 | Difficulty level | 难度 |
 
+## 检定补充（P12 阶段 2）
+
+| English | 简体中文 |
+|---|---|
+| Combined skill check | 组合技能检定 |
+| Human limits (group check) | 人体极限 |
+| Inspiration roll | 灵感检定 |
+| Know roll | 知识检定 |
+| Dark roll (hidden from the player) | 暗骰 |
+| Contact (NPC) | 熟人 |
+| Training (between-session study) | 训练 |
+| Aging (mid-campaign) | 老化 |
+
 ## 理智
 
 | English | 简体中文 |
@@ -117,12 +129,14 @@ Rules:
 | Sanity loss | 理智损失 |
 | Bout of madness | 疯狂发作 |
 | Temporary insanity | 临时疯狂 |
-| Indefinite insanity | 不定期疯狂 |
+| Indefinite insanity | 不定性疯狂 |
 | Underlying insanity | 潜在疯狂 |
 | Phobia | 恐惧症 |
 | Mania | 狂躁症 |
 | Delusion | 妄想 |
 | Reality check | 现实检定 |
+| Permanent insanity | 永久性疯狂 |
+| Habituation (to fear) | 习惯恐惧 |
 
 ## 战斗
 
@@ -132,6 +146,7 @@ Rules:
 | Fighting back | 反击 |
 | Dodge | 闪避 |
 | Manoeuvre | 战技 |
+| Minor wound | 轻伤 |
 | Major wound | 重伤 |
 | Dying | 濒死 |
 | Unconscious | 昏迷 |
@@ -139,6 +154,16 @@ Rules:
 | Chase | 追逐 |
 | Impale | 贯穿 |
 | Surprise | 突袭 |
+| Point-blank | 抵近射击 |
+
+## 追逐
+
+| English | 简体中文 |
+|---|---|
+| Location | 地点 |
+| Action point | 行动点 |
+| Hazard | 险境 |
+| Obstacle | 障碍 |
 
 ## 技能
 
@@ -251,6 +276,13 @@ Rules:
 
 | English | 简体中文 |
 |---|---|
+| Skim (a tome) | 泛读 |
+| Full study (a tome) | 精读 |
+| CMI (Cthulhu Mythos Initial) | 克苏鲁神话泛读值 |
+| CMF (Cthulhu Mythos Full) | 克苏鲁神话精读值 |
+| MR (Mythos Rating) | 神话等级 |
+| Deeper Magic | 深层魔法 |
+| Believer / non-believer | 相信者／不信者 |
 | Cthulhu Mythos | 克苏鲁神话 |
 | Great Old One | 旧日支配者 |
 | Outer God | 外神 |

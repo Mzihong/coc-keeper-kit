@@ -1,90 +1,81 @@
-# Era Pack — Mystic Iceland (神秘冰岛)
+# 年代包 — 神秘冰岛（Mystic Iceland）
 
-> **This is a delta, not a standalone document.** Read `reference/rules/eras/README.md` first
-> for the loading order — read `reference/rules/character-creation.md` (the 1920s baseline)
-> in full, then apply the five sections below as overrides. A section not listed here means
-> "unchanged from baseline."
+> **这是一份差集，不是独立文档。** 先读 `reference/rules/eras/README.md` 了解加载顺序——
+> 再把 `reference/rules/character-creation.md`（1920s 基准本）通读一遍，然后把下面五节当
+> 覆盖项应用。本文件没提到的小节，一律视为"与基准本一致，未改变"。
 
-**Era:** the Icelandic saga age, roughly 930 CE onward (the source sets its opening at the
-founding of the Althing, 60 years after first settlement).
-**来源:** *Cthulhu Through the Ages* 中文版,「神秘冰岛」章,原书页 23–29(本 PDF 第
-17–24 页)。装备一节另外引用共享附录「剑见箭 Swords and Arrows」(原书页 31–33,本
-PDF 第 25–28 页)。
+**年代：** 冰岛萨迦时代，约公元 930 年起（源材料把开局定在阿尔庭建立时，即首批定居者
+到来后 60 年）。
+**来源：** 《Cthulhu Through the Ages》中文版，「神秘冰岛」章，原书页 23–29（本 PDF 第
+17–24 页）。装备一节另外引用共享附录「剑见箭 Swords and Arrows」（原书页 31–33，本
+PDF 第 25–28 页）。
 
-## Skill table changes
+## 技能表增减（Skill table changes）
 
-- **Art/Craft (Farming) 艺术/工艺〔耕作〕** (base 05%) — running a farm: livestock,
-  crops, fishing. A Regular roll is required at the end of each season (Iceland has two:
-  summer and winter); success gains 2 Status, failure loses 2 Status (来源页 27).
-- **Art/Craft (Poetry) 艺术/工艺〔诗歌〕** (base 05%) — reciting verse to shift attitudes
-  or hold a feast hall's/duel's social floor.
-- **Fighting (Shield) 格斗〔盾〕** (base 15%) — same as the Cthulhu Invictus entry.
-- **Second Sight 灵视力** (base 01%) — perceiving the spirit world, communing with fylgjur
-  (guardian spirits), seeing elves who don't want to be seen.
-- **Local Lore 本地知识** (base 1/2 INT%) — knowledge of local people and geography,
-  usually limited to one's home district.
-- **Prophesy 预言** (base 00%) — divining the future via entrails, runes, or natural
-  omens. **Only characters with POW 80 or higher may invest points in this skill.** The
-  Keeper should roll this secretly; it can never be pushed.
-- **Skiing 滑雪** (base 25%) — movement over snow and ice, a common skill.
-- **Read/Write 读写** (base 01%, specialisation) — Latin, Viking runes, etc., invested
-  per language.
-- **Ranged Weapons 射击** (specialisation, variable%) — bow 10% (yew/ash/elm Viking bow),
-  spear-throwing 05%, sling 15%.
+- **艺术/工艺〔耕作〕Art/Craft (Farming)**（基础 05%）——经营一座农场：牲畜、作物、
+  捕鱼。每季结束（冰岛只有夏、冬两季）须进行一次常规检定：成功获得 2 点地位，失败失去
+  2 点地位（来源页 27）。
+- **艺术/工艺〔诗歌〕Art/Craft (Poetry)**（基础 05%）——吟诵诗句以扭转态度，或在宴
+  会厅/决斗场上占据社交上风。
+- **格斗〔盾〕Fighting (Shield)**（基础 15%）——与克苏鲁不败年代包同一条目。
+- **灵视力 Second Sight**（基础 01%）——感知灵界、与守护灵沟通、看见不愿被看见的
+  精灵。
+- **本地知识 Local Lore**（基础为智力（INT）的一半 %）——本地人物与地理知识，通常
+  局限于自己的家乡地区。
+- **预言 Prophesy**（基础 00%）——通过内脏、符文或自然征兆占卜未来。**只有意志
+  （POW）达到 80 或以上的角色才能在这项技能上投点。** 守秘人应暗骰这项检定；它永远
+  不能孤注一掷。
+- **滑雪 Skiing**（基础 25%）——在冰雪地形上的移动，是本年代的常见技能。
+- **读写 Read/Write**（基础 01%，专攻）——拉丁文、维京如尼文等，按语言分别投点。
+- **射击 Ranged Weapons**（专攻，基础值不定）——弓 10%（紫杉/白蜡/榆木维京弓）、
+  投矛 05%、投石索 15%。
 
-## Equipment & weapons
+## 装备与武器（Equipment & weapons）
 
-Shares the 「剑见箭」 armour/shield mechanics with Cthulhu Invictus and Dark Ages
-(values listed in `eras/cthulhu-invictus.md`, common to all three ancient eras). Armour
-beyond soft leather is rare; only wealthy farmers and chieftains can afford a mail shirt
-(来源页 24).
+与克苏鲁不败、黑暗时代共享「剑见箭」的护甲/盾牌机制（数值列在 `eras/cthulhu-invictus.md`
+中，三个古代年代包通用）。软皮革以上的护甲很罕见，只有富裕的农场主与酋长才买得起锁子甲
+衫（来源页 24）。
 
-**Example Mystic Iceland weapons** (来源页 28, no fixed prices given in the source):
-battle axe (Fighting (Axe), 15%, 1D8, two-handed); two-handed axe (Fighting (Axe), 15%,
-2D6, two-handed); broadsword (Fighting (Sword), 15%, 1D8, two-handed); seax (Fighting
-(Sword), 15%, 1D6+1, two-handed); long spear (Fighting (Spear) or Throw, 15%, 2D6,
-two-handed); Viking halberd (Fighting (Polearm), 15%, 3D6, two-handed); bow (Ranged (Bow),
-10%, 1D6+half db, two-handed).
+**神秘冰岛武器范例**（来源页 28，源材料未给出固定价格）：战斧 battle axe（格斗（斧），
+15%，1D8，双手）；双手斧 two-handed axe（格斗（斧），15%，2D6，双手）；阔剑
+broadsword（格斗（剑），15%，1D8，双手）；单刃剑 seax（格斗（剑），15%，1D6+1，双
+手）；长矛 long spear（格斗（矛）或投掷，15%，2D6，双手）；维京戟 Viking halberd
+（格斗（长柄武器），15%，3D6，双手）；弓 bow（射击（弓），10%，1D6+半个伤害加值，
+双手）。
 
-**Currency:** no coinage in regular use — trade is by livestock and dairy goods, with the
-base unit an "ell" (an ell of wadmal wool cloth, elbow to second knuckle, ≈ 50 cm). Example
-exchange table at 来源页 24 (a horse ≈ 80 ells; an 18-oar longship ≈ 16,000 ells).
+**货币：** 没有常规流通的硬币——交易靠牲畜与乳制品，基本单位是"腕尺"（一腕尺瓦德毛
+呢布，从肘部到中指第二关节的长度，约 50 厘米）。范例兑换表见来源页 24（一匹马约 80
+腕尺；一艘 18 桨长船约 16,000 腕尺）。
 
-## Technology & common knowledge
+## 技术与常识水平（Technology & common knowledge）
 
-Society is small and dispersed — no towns or villages, and no economic base to support
-dedicated craft specialists (来源页 25). Iceland has no asylums, dedicated healers, or
-shamans — insane investigators receive essentially no treatment, and anyone behaving
-strangely is more likely to be thought cursed than ill (来源页 24). Iceland's conversion to
-Christianity comes late by Norse standards (official adoption in 1000 CE; the first bishop
-not until 1056), so pagan and Christian belief coexist through this era (来源页 24).
+社会规模小且分散——没有城镇或村庄，也没有支撑专职工匠的经济基础（来源页 25）。冰岛没
+有收容所、专职医者或萨满——精神失常的调查员基本得不到任何治疗，行为古怪的人更可能被
+认为中了诅咒而不是生病（来源页 24）。按北欧标准，冰岛皈依基督教的时间较晚（公元 1000
+年正式采纳，首位主教直到 1056 年才出现），因此本年代异教信仰与基督教信仰长期并存
+（来源页 24）。
 
-## Occupation table
+## 职业表（Occupation table）
 
-**This era has no fixed occupation table.** Icelandic society is too dispersed to support
-an economic basis for named professions, so **every investigator built for this era skips
-the occupation template entirely** and instead gets a free pool of EDU×4+INT×2 skill points
-to spend on any skills (来源页 25). See Optional rules for the Status scale.
+**本年代没有固定的职业表。** 冰岛社会过于分散，不足以支撑具名职业的经济基础，因此
+**为本年代建卡时完全跳过职业模板**，改为给一个自由技能点池（EDU×4+INT×2），可以花在
+任意技能上（来源页 25）。地位量表见下方「可选机制」。
 
-## Optional rules
+## 可选机制（Optional rules）
 
-- **Status scale (00–100):** 00 outlaw/vagrant, 01–05 slave, 06–10 freedman, 11–20
-  tenant, 21–80 farmer, 80–99 chieftain, 100 Lawspeaker (来源页 28). It does not rise
-  automatically during Investigator Development — only through completed adventures, deeds,
-  or accumulated wealth; an unatoned disgrace can cost 1D4–1D10 points.
-- **Luck never recovers:** Viking-age belief held that a person's total Luck is fixed at
-  birth and can only be spent, never replenished — use the standard Luck-spend rules, but
-  **spent Luck points never come back**. A character who has exhausted their Luck is
-  considered "unlucky," close to death, and others tend to avoid them (来源页 29).
-- **Naming convention:** patronymic — a man's name takes his father's name + "-sson"
-  (replacing an -ur ending); a woman's takes her father's name + "-sdóttir." Sample male/
-  female names and nicknames at 来源页 25–26 are usable for quick NPC generation.
-- **Background tables** (Ideology/Which God Do You Follow, Significant People, Meaningful
-  Locations, Treasured Possessions, all 1D10) at 来源页 25–26, rewritten for Norse
-  cosmology and Icelandic society.
-- **Example monster: Útburður (乌特比聚儿), the animate spirit of an abandoned infant:**
-  STR 105, CON 80, SIZ 65, INT 50, POW 5, DEX 50; HP 14; average damage bonus +1D6; average
-  Build 2; MP 10; MOV 9. Attacks — Fighting 60% (30/12), damage 1D4+db; Dodge 25% (12/5);
-  no armour. Sanity loss: witnessing its true form 0/1D6 (1/1D8 for family members);
-  hearing its wail from beyond 0/1D4 (来源页 29). Usable directly as an era-specific sample
-  monster alongside `reference/bestiary/`, without redesigning it from scratch.
+- **地位量表（00–100）：** 00 亡命之徒/流浪者、01–05 奴隶、06–10 自由民、11–20
+  佃农、21–80 农场主、80–99 酋长、100 法律宣讲人（Lawspeaker）（来源页 28）。它不会
+  在幕间成长时自动上升——只能通过完成的历险、事迹或积累的财富提升；未赎清的耻辱可能
+  损失 1D4–1D10 点。
+- **幸运永不回复：** 维京时代的信念认为一个人的幸运总量在出生时就已固定，只能消耗，
+  不能补充——照常套用标准的花费幸运规则，但**花掉的幸运点永远不会回来**。幸运耗尽的
+  角色被视为"倒霉鬼"、命不久矣，旁人也倾向于回避他们（来源页 29）。
+- **命名惯例：** 父名制——男性姓名取父名 + "-sson"（替换掉 -ur 词尾）；女性姓名取父
+  名 + "-sdóttir"。来源页 25–26 给出的男女姓名与绰号范例可直接用于快速生成 NPC。
+- **背景表**（思想/信念〔信奉哪位神〕、重要之人、意义非凡之地、宝贵之物，均为
+  1D10）见来源页 25–26，已按北欧宇宙观与冰岛社会重写。
+- **范例怪物：Útburður（乌特比聚儿），被遗弃婴儿的复生幽灵：** STR 105、CON 80、
+  SIZ 65、INT 50、POW 5、DEX 50；HP 14；平均伤害加值 +1D6；平均体格 2；MP 10；MOV
+  9。攻击——格斗 60%（30/12），伤害 1D4+伤害加值；闪避 25%（12/5）；无护甲。理智损
+  失：目睹其真身 0/1D6（家人为 1/1D8）；听见其来自彼岸的哀嚎 0/1D4（来源页 29）。可
+  直接作为本年代的范例怪物，与 `reference/bestiary/` 并用，不必从零设计。

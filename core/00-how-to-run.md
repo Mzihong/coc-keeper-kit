@@ -102,15 +102,16 @@ writing any stat block, difficulty, or Sanity cost.
   1. **Any official material filed in this repo carries a `## 引用出处` section at the end of
      the file** — work, rights holder, edition, where this text came from, scope, and what
      it's filed for. See `reference/decks/README.md` for the table. No citation, no file.
-  2. **Kit reference files may quote or transcribe official rules content, with the source
-     named.** A creature's stat line, a spell's cost, a weapon's damage — those *are* the
-     rules, and a Keeper needs the published numbers, not a paraphrase of them. Name the book
-     and chapter in the file.
-     *Interim boundary, until P9 lands* (`update_plan/2026-08-02-monster-templates-traits.md`):
-     **transcribe numbers freely, keep descriptive prose original.**
+  2. **The line is rule text vs. fictional prose, not numbers vs. prose.** Kit reference files
+     may quote or transcribe official *rule text* directly — the wording of the rule itself,
+     not just the numbers in it — with the source named: a creature's stat line, a spell's
+     cost, a weapon's damage, the sentence that defines what a hazard is, the paragraph that
+     says what a failed Intelligence roll means. A Keeper needs the rule as written, not a
+     paraphrase of it. Name the book and chapter (or section) in the file.
      **This covers rules content only.** Published *fiction* — novels, scenario text, a named
-     character out of a commercial campaign — stays under the older, stricter rule: take the
-     technique, never the text. `reference/craft/` and `reference/external/` say so directly.
+     character out of a commercial campaign, a sourcebook's scene-setting prose — stays under
+     the stricter rule: take the technique, never the text. `reference/craft/` and
+     `reference/external/` say so directly.
   3. **What reaches a `campaigns/` folder is written fresh.** This one is not a copyright
      rule — it's a table rule. A published NPC pasted into a campaign is a character every
      other Keeper already knows the twist to, and generating that person is the entire reason

@@ -1,89 +1,76 @@
-# Era Pack — Cthulhu Invictus (克苏鲁不败)
+# 年代包 — 克苏鲁不败（Cthulhu Invictus）
 
-> **This is a delta, not a standalone document.** Read `reference/rules/eras/README.md` first
-> for the loading order — read `reference/rules/character-creation.md` (the 1920s baseline)
-> in full, then apply the five sections below as overrides. A section not listed here means
-> "unchanged from baseline."
+> **这是一份差集，不是独立文档。** 先读 `reference/rules/eras/README.md` 了解加载顺序——
+> 再把 `reference/rules/character-creation.md`（1920s 基准本）通读一遍，然后把下面五节当
+> 覆盖项应用。本文件没提到的小节，一律视为"与基准本一致，未改变"。
 
-**Era:** the Roman Empire, roughly 1st–2nd century CE (the source gives no fixed year — the
-Keeper can place it anywhere from the late Republic to the height of the Empire).
-**来源:** *Cthulhu Through the Ages* 中文版(七宫涟个人汉化),「克苏鲁不败」章,原书页
-7–13(本 PDF 第 4–10 页)。装备一节另外引用共享附录「剑见箭 Swords and Arrows」
-(原书页 31–33,本 PDF 第 25–28 页)。
+**年代：** 罗马帝国，约公元 1–2 世纪（源材料未给出固定年份——守秘人可以把它放在从共和国
+晚期到帝国鼎盛期之间的任意一点）。
+**来源：** 《Cthulhu Through the Ages》中文版（七宫涟个人汉化），「克苏鲁不败」章，原书页
+7–13（本 PDF 第 4–10 页）。装备一节另外引用共享附录「剑见箭 Swords and Arrows」（原书页
+31–33，本 PDF 第 25–28 页）。
 
-## Skill table changes
+## 技能表增减（Skill table changes）
 
-New/changed skills versus the 1920s baseline (来源同上):
+相对 1920s 基准新增/改变的技能（来源同上）：
 
-- **Art/Craft (Potion) 艺术/工艺〔药剂〕** (base 05%) — identify, mix, and compound
-  infusions, potions, antidotes, and hallucinogens.
-- **Citizen 公民** (base 10%) — knowledge of Roman law and government; untangles political
-  favours and judges whether an act is legal.
-- **Drive Cart 驱车〔驾驭马车/牛车〕** (base 20%) — handling a one- or two-animal cart.
-  This is this era's equivalent slot to the baseline's Drive Auto.
-- **Empire Lore 帝国知识** (base 25%) — knowledge of imperial history, custom, and current
-  affairs; the era's equivalent of the baseline's Own Country skill.
-- **Fighting (Shield) 格斗〔盾〕** (base 15%) — using a shield offensively; can also
-  substitute for Dodge in combat (see Optional rules below).
-- **Outsider Lore 外邦知识** (specialisation, base 20%) — knowledge of peoples, places, and
-  legends outside the Empire; invested per region/nation, never as a general "Outsider Lore."
-- **Ranged Weapons 射击** (specialisation, variable%) — covers bow, crossbow, and sling;
-  invested per weapon: bow 10%, crossbow 20%, sling 15%. Replaces the baseline's firearms
-  specialisations for this era.
-- **Mend/Mender 修造〔修理/制造〕** (base 20%) — repairs or builds simple equipment, sets
-  traps; cannot repair shields or weapons.
+- **艺术/工艺〔药剂〕Art/Craft (Potion)**（基础 05%）——鉴别、调配汤剂、药水、解毒剂与致
+  幻剂。
+- **公民 Citizen**（基础 10%）——罗马法律与政务知识；能理清政治人情，判断一项行为是否
+  合法。
+- **驱车〔驾驭马车/牛车〕Drive Cart**（基础 20%）——驾驭单畜或双畜拖车，是本年代对应
+  基准本「汽车驾驶」的技能槽。
+- **帝国知识 Empire Lore**（基础 25%）——帝国历史、习俗与时事知识，是本年代对应基准本
+  「本国知识」的技能。
+- **格斗〔盾〕Fighting (Shield)**（基础 15%）——用盾牌进攻；也可以在战斗中替代闪避（见
+  下方「可选机制」）。
+- **外邦知识 Outsider Lore**（专攻，基础 20%）——帝国之外的民族、地方与传说知识；按
+  地区/民族分别投点，不存在笼统的"外邦知识"总类。
+- **射击 Ranged Weapons**（专攻，基础值不定）——弓、弩、投石索的总称技能；分别投点：
+  弓 10%、弩 20%、投石索 15%。本年代用它替换基准本的枪械专攻。
+- **修造〔修理/制造〕Mend/Mender**（基础 20%）——修理或制作简单器具、设置陷阱；不能
+  修理盾牌或武器。
 
-## Equipment & weapons
+## 装备与武器（Equipment & weapons）
 
-The three ancient-era files (Cthulhu Invictus, Dark Ages, Mystic Iceland) share the
-「剑见箭 Swords and Arrows」 combat supplement's armour/shield mechanics (来源页 31–33):
+三个古代年代包（克苏鲁不败、黑暗时代、神秘冰岛）共享「剑见箭 Swords and Arrows」补充
+规则的护甲/盾牌机制（来源页 31–33）：
 
-- **Armour** is variable, not a flat reduction — roll the armour die on every successful
-  hit taken: plain clothing 0, heavy clothing 1D2−1, padded soft leather 1D2, padded heavy
-  leather 1D3, soft leather 1D6, ring mail 1D6+1, scale mail 1D6+1, chainmail 1D8.
-- **Shields** provide extra armour (see 「剑见箭」表 2). A shield-user who Dodges uses
-  Fighting (Shield) instead of Dodge; on a tie or a defender's win the shield's armour still
-  applies, but on a full attacker win the shield is bypassed entirely.
-- **Example Cthulhu Invictus weapons** (来源页 33,货币单位 sestertii/SE): cestus
-  (Fighting (Brawl), 25%, 1D6, one-handed, 50 SE); pilum (Fighting (Spear) or Throw, 15%,
-  1D8, one-handed, 45 SE); gladius (Fighting (Sword), 20%, 1D6+1, one-handed, 175 SE);
-  trident (Fighting (Spear) or Throw, 10%, 1D6, one-handed, 75 SE).
-- **Ranged weapons cannot be dodged** — the target can only seek cover or block with a
-  shield (a penalty die to the attacker, but the defender loses their next action). A
-  target must be within one-fifth of the attacker's DEX to fight back against a ranged or
-  thrown attack.
-- **Currency:** sestertii (SE); example prices at 来源页 11 (a longsword ≈ 1200 SE, a
-  chainmail shirt ≈ 2400 SE).
+- **护甲值是浮动的，不是固定减伤**——每次被命中都要骰一次护甲骰：普通衣物 0、厚重衣物
+  1D2−1、软皮革衬垫 1D2、厚皮革衬垫 1D3、软皮革 1D6、环甲 1D6+1、鳞甲 1D6+1、锁子甲 1D8。
+- **盾牌**提供额外护甲（见「剑见箭」表 2）。持盾者选择闪避时改用格斗〔盾〕技能；打平或
+  防御方获胜时盾牌护甲照常生效，但若进攻方完全获胜，盾牌被彻底绕过。
+- **克苏鲁不败武器范例**（来源页 33，货币单位 sestertii/SE）：短剑指虎 cestus（格斗（斗
+  殴），25%，1D6，单手，50 SE）；标枪 pilum（格斗（矛）或投掷，15%，1D8，单手，45 SE）；
+  短剑 gladius（格斗（剑），20%，1D6+1，单手，175 SE）；三叉戟 trident（格斗（矛）或投
+  掷，10%，1D6，单手，75 SE）。
+- **远程武器不能被闪避**——目标只能寻找掩体或用盾牌格挡（攻击者获得一个惩罚骰，但防御
+  方失去下一次行动）。要对远程/投掷攻击进行反击，目标须处于攻击者敏捷值五分之一码之内。
+- **货币：** sestertii（SE）；范例价格见来源页 11（一把长剑约 1200 SE，一件锁子甲衫约
+  2400 SE）。
 
-## Technology & common knowledge
+## 技术与常识水平（Technology & common knowledge）
 
-Iron Age / Roman engineering level — roads, aqueducts, public baths, and legionary
-logistics are mature, but there is no gunpowder, printing, or mechanical power. Information
-travels by land courier and sea, on the order of weeks rather than days. Religion is part of
-the state's order; worshipping an unofficial god — Mythos entities most of all — is
-legally a betrayal of Roman order, not just a moral lapse (来源页 13).
+铁器时代/罗马工程水平——道路、引水渠、公共浴场与军团后勤已经成熟，但没有火药、印刷术
+或机械动力。信息靠陆路信使与海运传递，以周为单位而非天。宗教是国家秩序的一部分；信奉
+非官方的神——尤其是神话生物——在法律上是背叛罗马秩序，不只是道德失范（来源页 13）。
 
-## Occupation table
+## 职业表（Occupation table）
 
-Example occupations (skill-point formula and Status range per 来源页 8–10; Status stands
-in for Credit Rating, scale at 来源页 10): slinger, spy, gladiator, legionary, merchant,
-scout, army physician (7 examples; three more — soothsayer, courtesan, farmer — at
-来源页 6–7). Each occupation lists a fixed skill list, a point formula, and a Status range,
-structurally identical to the baseline occupation model and directly usable in
-`templates/investigator.schema.json`'s occupation field. Status is the numeric equivalent
-of Credit Rating, but **it cannot be ticked up like an ordinary skill** — it only rises or
-falls through deeds and scandal (来源页 9、11).
+范例职业（技能点公式与「地位」区间见来源页 8–10；地位是信用评级的等价物，量表见来源页
+10）：投石手、间谍、角斗士、军团士兵、商人、斥候、军医（7 个范例；另有占卜师、名妓、
+农民 3 个见来源页 6–7）。每个职业都带固定技能列表、点数公式与地位区间，结构上与基准本
+的职业模型完全一致，可以直接填进 `templates/investigator.schema.json` 的职业字段。地位
+是信用评级的数值等价物，但**不能像普通技能那样用点数往上加**——只能靠事迹或丑闻升降
+（来源页 9、11）。
 
-## Optional rules
+## 可选机制（Optional rules）
 
-- **Birth Omen table** (1D10, 来源页 5) replaces part of the baseline's background-generation
-  flow — Romans believed the events around a child's birth shaped their whole life; roll
-  once at character creation and adjust characteristics/skills per the result (e.g. "the
-  temple caught fire: −10 Luck"; "parents saw a blessing on the mother: +5 STR").
-- **Ideology/Beliefs (Patron God)**, **Significant People**, **Meaningful Locations**, and
-  **Treasured Possessions** tables (all 1D10, 来源页 5–6) follow the baseline's table
-  structure with Roman-specific entries (e.g. "Jupiter, King of the Gods"; "the Roman
-  Pantheon"; "jewellery").
-- Full rules for **Fighting (Shield) replacing Dodge** are under Equipment & weapons above;
-  a shield-user who declares full defence for the round gets a bonus die on every
-  Fighting (Shield) roll that round (来源页 26).
+- **诞生征兆表（Birth Omen table）**（1D10，来源页 5）取代了基准本背景生成流程的一部分
+  ——罗马人相信孩子出生时发生的事会决定其一生；创建调查员时骰一次，按结果调整属性/技
+  能（例如"神庙失火：幸运 −10"；"父母目睹祝福降临母亲：力量 +5"）。
+- **思想/信念（守护神）、重要之人、意义非凡之地、宝贵之物**表（均为 1D10，来源页
+  5–6）沿用基准本的表格结构，换成罗马特色条目（例如"朱庇特，众神之王"；"罗马万神殿"；
+  "珠宝"）。
+- **格斗〔盾〕替代闪避**的完整规则见上方「装备与武器」；持盾者若本轮声明全力防御，则该
+  轮所有格斗〔盾〕检定获得一个奖励骰（来源页 26）。

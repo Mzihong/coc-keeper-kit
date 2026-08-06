@@ -27,7 +27,13 @@
 ## 备课与临场表
 
 - `complications.md`(1d20)——这一场会出什么岔子;备课时掷两次。
-- `madness.md`(1D10)——疯狂发作的即时症状。
+- `madness-instant.md`(1D10)——疯狂发作·即时症状(逐轮处理时用,表VII)。
+- `madness-summary.md`(1D10)——疯狂发作·概括症状(跳到之后概括推进时用,表VIII);
+  与上一张同源(8.3 疯狂发作)但骰面用途不同,拆成两个文件是因为 `roll.py` 单维度
+  解析一份文件只认第一张表,同一文件塞两张 1D10 就只有前一张摇得到。
+- `phobias.md`(1D100)——恐惧症状表(表IX),规则书表格全量转录,和
+  `reference/decks/phobias-and-manias-zh.md` 的精选卡组是两回事。
+- `manias.md`(1D100)——躁狂症状表(表X),同上,与 `phobias.md` 同一原因拆成独立文件。
 - `npc-appearance.md`(1d20)——第一眼的外形加脾性;`npc-quirks.md` 的姊妹表(外形对
   举止)。
 - `cult-goals.md`(1D10 × 1D8)——邪教的愿望 × 手段;两张都掷,相乘才成立。见
@@ -40,6 +46,8 @@
   `reference/rules/monster-scale.md`。
 - `monster-index.md`——223 条神话生物的导航表,**脚本生成,不要手改**;数据源是
   `monster-index-data.json`。
+- `weapons-index.md`——表XVII 全部武器按威胁强度重排(不是骰表),给反派配装备时手选;
+  和 `reference/decks/weapons-and-artifacts-zh.md` 的按品类原表分工不同,见该文件头部。
 
 ## 加新表
 
