@@ -195,10 +195,10 @@
           "reference/tables/manias.md:6",
           "reference/tables/phobias.md:6",
           "reference/tables/README.md:35",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:144",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:233",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:385",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:282",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:141",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:230",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:382",
           "update_plan/Archived/2026-08-04-retire-bundle.md:39"
         ]
       },
@@ -214,12 +214,12 @@
           "reference/tables/README.md:50",
           "reference/tables/weapons-index.md:9",
           "reference/tables/weapons-index.md:17",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:146",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:233",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:518",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:98",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:282",
-          "update_plan/Archived/2026-08-02-antagonist-budget.md:284"
+          "update_plan/Archived/2026-08-02-antagonist-budget.md:284",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:143",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:230",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:515"
         ]
       },
       "reference/sourcebooks/grand-grimoire-zh.md": {
@@ -233,10 +233,10 @@
           "reference/rules/character-creation.md:214",
           "reference/rules/magic.md:115",
           "reference/tables/cultist-archetypes.md:266",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:554",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:292",
           "update_plan/Archived/2026-08-02-magic-quickref.md:32",
           "update_plan/Archived/2026-08-02-magic-quickref.md:37",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:551",
           "update_plan/Archived/README.md:16",
           "update_plan/Archived/README.md:18"
         ]
@@ -251,20 +251,20 @@
           "WORKLOG.md:184",
           "core/02-rules-reference.md:10",
           "reference/rules/README.md:7",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:13",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:26",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:33",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:45",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:113",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:243",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:409",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:410",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:562",
           "update_plan/2026-08-04-town-anatomy-from-arkham.md:85",
           "update_plan/2026-08-04-town-anatomy-from-arkham.md:94",
           "update_plan/Archived/2026-08-02-investigator-cards.md:104",
           "update_plan/Archived/2026-08-02-investigator-cards.md:108",
           "update_plan/Archived/2026-08-02-magic-quickref.md:41",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:10",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:23",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:30",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:42",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:110",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:240",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:406",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:407",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:559",
           "update_plan/Archived/2026-08-04-retire-bundle.md:161",
           "update_plan/Archived/README.md:18"
         ]
@@ -518,14 +518,14 @@
           "scripts/build-reference-index.py:263",
           "scripts/build-reference-index.py:394",
           "scripts/build-reference-index.py:432",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:490",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:554",
           "update_plan/2026-08-04-core-spec-audit.md:49",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:251",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:68",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:428",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:477",
-          "update_plan/Archived/2026-08-02-monster-templates-traits.md:520"
+          "update_plan/Archived/2026-08-02-monster-templates-traits.md:520",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:487",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:551"
         ]
       },
       "reference/rules/character-creation.md": {
@@ -541,7 +541,6 @@
           "WORKLOG.md:162",
           "WORKLOG.md:167",
           "WORKLOG.md:217",
-          "WORKLOG.md:326",
           "core/01-intake.md:87",
           "core/01-intake.md:106",
           "core/01-intake.md:137",
@@ -586,17 +585,7 @@
           "scripts/render-investigator.py:20",
           "scripts/render-investigator.py:58",
           "scripts/render-investigator.py:429",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:231",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:253",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:257",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:294",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:389",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:471",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:476",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:545",
           "update_plan/2026-08-04-core-spec-audit.md:185",
-          "update_plan/README.md:14",
-          "update_plan/README.md:51",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:11",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:117",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:118",
@@ -628,6 +617,14 @@
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:258",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:263",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:280",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:228",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:250",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:254",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:291",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:386",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:468",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:473",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:542",
           "update_plan/Archived/2026-08-04-era-rule-packs.md:29",
           "update_plan/Archived/2026-08-04-era-rule-packs.md:42",
           "update_plan/Archived/2026-08-04-era-rule-packs.md:134",
@@ -637,7 +634,8 @@
           "update_plan/Archived/2026-08-04-era-rule-packs.md:240",
           "update_plan/Archived/2026-08-04-retire-bundle.md:158",
           "update_plan/Archived/README.md:16",
-          "update_plan/Archived/README.md:19"
+          "update_plan/Archived/README.md:19",
+          "update_plan/Archived/README.md:22"
         ]
       },
       "reference/rules/chases.md": {
@@ -646,31 +644,28 @@
         "referenced_by": [
           "CHANGELOG.md:37",
           "CHANGELOG.md:63",
-          "WORKLOG.md:359",
-          "WORKLOG.md:360",
           "core/02-rules-reference.md:78",
           "core/04-design-scenario.md:42",
           "reference/rules/README.md:18",
           "reference/rules/README.md:45",
           "reference/rules/eras/README.md:9",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:57",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:140",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:252",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:257",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:270",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:279",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:372",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:518",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:519",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:523",
           "update_plan/2026-08-04-scenario-diversity.md:165",
-          "update_plan/README.md:14",
-          "update_plan/README.md:158",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:117",
           "update_plan/Archived/2026-08-02-conventions-gaps.md:75",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:54",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:137",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:249",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:254",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:267",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:276",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:369",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:515",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:516",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:520",
           "update_plan/Archived/2026-08-04-era-rule-packs.md:137",
           "update_plan/Archived/2026-08-04-era-rule-packs.md:138",
-          "update_plan/Archived/2026-08-04-era-rule-packs.md:240"
+          "update_plan/Archived/2026-08-04-era-rule-packs.md:240",
+          "update_plan/Archived/README.md:22"
         ]
       },
       "reference/rules/combat.md": {
@@ -682,8 +677,6 @@
           "CHANGELOG.md:54",
           "CHANGELOG.md:62",
           "CHANGELOG.md:82",
-          "WORKLOG.md:349",
-          "WORKLOG.md:359",
           "core/02-rules-reference.md:76",
           "core/07-create-monster.md:16",
           "reference/decks/weapons-and-artifacts-zh.md:12",
@@ -698,19 +691,19 @@
           "reference/rules/skill-checks.md:85",
           "reference/rules/skill-checks.md:199",
           "reference/rules/eras/README.md:9",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:46",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:96",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:137",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:248",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:278",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:370",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:440",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:516",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:519",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:539",
-          "update_plan/README.md:14",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:43",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:93",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:134",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:245",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:275",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:367",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:437",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:513",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:516",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:536",
           "update_plan/Archived/2026-08-04-era-rule-packs.md:136",
           "update_plan/Archived/2026-08-04-era-rule-packs.md:137",
+          "update_plan/Archived/README.md:22",
           ".claude/skills-eval-workspace/benchmark.json:144",
           ".claude/skills-eval-workspace/benchmark.json:154"
         ]
@@ -777,7 +770,6 @@
           "WORKLOG.md:149",
           "WORKLOG.md:152",
           "WORKLOG.md:217",
-          "WORKLOG.md:326",
           "core/02-rules-reference.md:63",
           "core/02-rules-reference.md:89",
           "core/07-create-monster.md:101",
@@ -786,13 +778,6 @@
           "reference/mythos/spells/call-father-dagon-and-mother-hydra.md:6",
           "reference/rules/README.md:20",
           "reference/tables/cultist-archetypes.md:265",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:254",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:313",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:315",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:316",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:418",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:480",
-          "update_plan/README.md:14",
           "update_plan/Archived/2026-08-02-conventions-gaps.md:16",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:9",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:174",
@@ -807,9 +792,16 @@
           "update_plan/Archived/2026-08-02-magic-quickref.md:52",
           "update_plan/Archived/2026-08-02-magic-quickref.md:56",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:74",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:251",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:310",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:312",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:313",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:415",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:477",
           "update_plan/Archived/2026-08-04-era-rule-packs.md:152",
           "update_plan/Archived/2026-08-04-retire-bundle.md:157",
-          "update_plan/Archived/README.md:18"
+          "update_plan/Archived/README.md:18",
+          "update_plan/Archived/README.md:22"
         ]
       },
       "reference/rules/monster-scale.md": {
@@ -823,7 +815,6 @@
           "WORKLOG.md:149",
           "WORKLOG.md:153",
           "WORKLOG.md:166",
-          "WORKLOG.md:327",
           "core/02-rules-reference.md:58",
           "core/02-rules-reference.md:95",
           "core/07-create-monster.md:19",
@@ -849,10 +840,6 @@
           "reference/tables/monster-traits.md:20",
           "reference/tables/README.md:46",
           "scripts/build-reference-index.py:236",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:255",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:478",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:486",
-          "update_plan/README.md:14",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:6",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:247",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:258",
@@ -866,8 +853,12 @@
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:609",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:622",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:665",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:252",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:475",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:483",
           "update_plan/Archived/2026-08-04-retire-bundle.md:157",
-          "update_plan/Archived/README.md:20"
+          "update_plan/Archived/README.md:20",
+          "update_plan/Archived/README.md:22"
         ]
       },
       "reference/rules/sanity.md": {
@@ -876,7 +867,6 @@
         "referenced_by": [
           "CHANGELOG.md:46",
           "CHANGELOG.md:63",
-          "WORKLOG.md:348",
           "core/02-rules-reference.md:74",
           "core/04-design-scenario.md:50",
           "core/07-create-monster.md:17",
@@ -891,16 +881,16 @@
           "reference/tables/madness-summary.md:30",
           "reference/tables/manias.md:14",
           "reference/tables/phobias.md:14",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:82",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:230",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:249",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:280",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:375",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:439",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:519",
-          "update_plan/README.md:14",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:117",
           "update_plan/Archived/2026-08-02-conventions-gaps.md:42",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:79",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:227",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:246",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:277",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:372",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:436",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:516",
+          "update_plan/Archived/README.md:22",
           ".claude/skills-eval-workspace/benchmark.json:154"
         ]
       },
@@ -911,8 +901,6 @@
           "CHANGELOG.md:21",
           "CHANGELOG.md:52",
           "WORKLOG.md:149",
-          "WORKLOG.md:326",
-          "WORKLOG.md:349",
           "core/02-rules-reference.md:68",
           "reference/mythos/artifacts-zh.md:17",
           "reference/rules/character-creation.md:16",
@@ -920,11 +908,11 @@
           "reference/rules/README.md:15",
           "reference/rules/README.md:52",
           "reference/rules/sanity.md:205",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:250",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:314",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:442",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:466",
-          "update_plan/README.md:14"
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:247",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:311",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:439",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:463",
+          "update_plan/Archived/README.md:22"
         ]
       },
       "reference/craft/cult-design-zh.md": {
@@ -971,7 +959,7 @@
           "update_plan/2026-08-04-clue-engines.md:124",
           "update_plan/2026-08-04-clue-engines.md:201",
           "update_plan/README.md:12",
-          "update_plan/README.md:17",
+          "update_plan/README.md:16",
           "update_plan/README.md:136",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:110",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:219",
@@ -1235,18 +1223,18 @@
           "reference/tables/README.md:50",
           "reference/tables/weapons-index.md:9",
           "reference/tables/weapons-index.md:17",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:146",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:233",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:314",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:418",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:518",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:98",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:282",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:284",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:195",
           "update_plan/Archived/2026-08-02-cult-doc-wrapup.md:39",
           "update_plan/Archived/2026-08-02-cult-doc-wrapup.md:47",
-          "update_plan/Archived/2026-08-02-monster-templates-traits.md:484"
+          "update_plan/Archived/2026-08-02-monster-templates-traits.md:484",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:143",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:230",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:311",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:415",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:515"
         ]
       },
       "reference/mythos/cthulhu-cult-history-zh.md": {
@@ -1412,8 +1400,8 @@
         "referenced_by": [
           "WORKLOG.md:143",
           "reference/mythos/great-old-ones/dagon-and-hydra.md:76",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:315",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:419"
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:312",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:416"
         ]
       },
       "reference/mythos/spells/fellrock-call-bind.md": {
@@ -1527,10 +1515,6 @@
           "reference/mythos/spells/call-father-dagon-and-mother-hydra.md:24",
           "reference/tables/README.md:43",
           "scripts/roll.py:30",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:205",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:316",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:420",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:477",
           "update_plan/2026-08-04-scenario-diversity.md:108",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:185",
           "update_plan/Archived/2026-08-02-cult-doc-wrapup.md:20",
@@ -1538,7 +1522,11 @@
           "update_plan/Archived/2026-08-02-cult-doc-wrapup.md:45",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:125",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:136",
-          "update_plan/Archived/2026-08-02-monster-templates-traits.md:388"
+          "update_plan/Archived/2026-08-02-monster-templates-traits.md:388",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:202",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:313",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:417",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:474"
         ]
       },
       "reference/tables/hooks.md": {
@@ -1583,8 +1571,8 @@
           "reference/tables/manias.md:13",
           "reference/tables/phobias.md:13",
           "reference/tables/README.md:30",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:381",
-          "update_plan/README.md:14"
+          "update_plan/README.md:51",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:378"
         ]
       },
       "reference/tables/madness-summary.md": {
@@ -1598,8 +1586,8 @@
           "reference/tables/manias.md:14",
           "reference/tables/phobias.md:14",
           "reference/tables/README.md:31",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:381",
-          "update_plan/README.md:14"
+          "update_plan/README.md:51",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:378"
         ]
       },
       "reference/tables/manias.md": {
@@ -1612,12 +1600,13 @@
           "reference/tables/madness-instant.md:24",
           "reference/tables/madness-summary.md:26",
           "reference/tables/README.md:36",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:230",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:284",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:383",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:384",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:397",
-          "update_plan/README.md:14"
+          "update_plan/README.md:51",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:227",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:281",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:380",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:381",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:394",
+          "update_plan/Archived/README.md:22"
         ]
       },
       "reference/tables/monster-index.md": {
@@ -1655,7 +1644,6 @@
           "scripts/build-reference-index.py:421",
           "scripts/build-reference-index.py:429",
           "scripts/roll.py:31",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:556",
           "update_plan/2026-08-04-core-spec-audit.md:106",
           "update_plan/2026-08-04-core-spec-audit.md:234",
           "update_plan/2026-08-04-core-spec-audit.md:354",
@@ -1667,6 +1655,7 @@
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:660",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:673",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:703",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:553",
           "update_plan/Archived/README.md:20"
         ]
       },
@@ -1746,8 +1735,9 @@
           "reference/tables/madness-summary.md:25",
           "reference/tables/README.md:34",
           "reference/tables/README.md:36",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:383",
-          "update_plan/README.md:14"
+          "update_plan/README.md:51",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:380",
+          "update_plan/Archived/README.md:22"
         ]
       },
       "reference/tables/weapons-index.md": {
@@ -1765,12 +1755,13 @@
           "reference/rules/combat.md:148",
           "reference/rules/combat.md:182",
           "reference/tables/README.md:49",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:231",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:285",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:387",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:478",
-          "update_plan/2026-08-04-cheatsheet-self-sufficiency.md:517",
-          "update_plan/README.md:14"
+          "update_plan/README.md:52",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:228",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:282",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:384",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:475",
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:514",
+          "update_plan/Archived/README.md:22"
         ]
       }
     },
@@ -1833,11 +1824,8 @@
         "reference/mythos/great-old-ones/yog-sothoth.md",
         "reference/mythos/spells/call-father-dagon-and-mother-hydra.md",
         "reference/rules/character-creation.md",
-        "reference/rules/chases.md",
-        "reference/rules/combat.md",
         "reference/rules/magic.md",
         "reference/rules/monster-scale.md",
-        "reference/rules/sanity.md",
         "reference/rules/skill-checks.md",
         "reference/sourcebooks/keeper-rulebook-7e-zh.md",
         "reference/tables/cultist-archetypes.md",
@@ -2390,29 +2378,6 @@
         "reference/craft/cult-design-zh.md",
         "reference/craft/diagram-conventions-zh.md"
       ],
-      "update_plan/2026-08-04-cheatsheet-self-sufficiency.md": [
-        "reference/decks/phobias-and-manias-zh.md",
-        "reference/decks/weapons-and-artifacts-zh.md",
-        "reference/mythos/artifacts-zh.md",
-        "reference/mythos/spells/call-father-dagon-and-mother-hydra.md",
-        "reference/rules/character-creation.md",
-        "reference/rules/chases.md",
-        "reference/rules/combat.md",
-        "reference/rules/magic.md",
-        "reference/rules/monster-scale.md",
-        "reference/rules/sanity.md",
-        "reference/rules/skill-checks.md",
-        "reference/sourcebooks/grand-grimoire-zh.md",
-        "reference/sourcebooks/keeper-rulebook-7e-zh.md",
-        "reference/sourcebooks/malleus-monstrorum-zh.md",
-        "reference/tables/cultist-archetypes.md",
-        "reference/tables/madness-instant.md",
-        "reference/tables/madness-summary.md",
-        "reference/tables/manias.md",
-        "reference/tables/monster-index.md",
-        "reference/tables/phobias.md",
-        "reference/tables/weapons-index.md"
-      ],
       "update_plan/2026-08-04-clue-engines.md": [
         "reference/craft/cult-design-zh.md",
         "reference/craft/diagram-conventions-zh.md",
@@ -2528,6 +2493,29 @@
         "reference/tables/monster-index.md",
         "reference/tables/monster-traits.md"
       ],
+      "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md": [
+        "reference/decks/phobias-and-manias-zh.md",
+        "reference/decks/weapons-and-artifacts-zh.md",
+        "reference/mythos/artifacts-zh.md",
+        "reference/mythos/spells/call-father-dagon-and-mother-hydra.md",
+        "reference/rules/character-creation.md",
+        "reference/rules/chases.md",
+        "reference/rules/combat.md",
+        "reference/rules/magic.md",
+        "reference/rules/monster-scale.md",
+        "reference/rules/sanity.md",
+        "reference/rules/skill-checks.md",
+        "reference/sourcebooks/grand-grimoire-zh.md",
+        "reference/sourcebooks/keeper-rulebook-7e-zh.md",
+        "reference/sourcebooks/malleus-monstrorum-zh.md",
+        "reference/tables/cultist-archetypes.md",
+        "reference/tables/madness-instant.md",
+        "reference/tables/madness-summary.md",
+        "reference/tables/manias.md",
+        "reference/tables/monster-index.md",
+        "reference/tables/phobias.md",
+        "reference/tables/weapons-index.md"
+      ],
       "update_plan/Archived/2026-08-04-era-rule-packs.md": [
         "reference/rules/character-creation.md",
         "reference/rules/chases.md",
@@ -2545,24 +2533,24 @@
       "update_plan/Archived/README.md": [
         "reference/decks/busybodies-zh.md",
         "reference/rules/character-creation.md",
-        "reference/rules/magic.md",
-        "reference/rules/monster-scale.md",
-        "reference/sourcebooks/grand-grimoire-zh.md",
-        "reference/sourcebooks/keeper-rulebook-7e-zh.md",
-        "reference/tables/monster-index.md",
-        "reference/tables/monster-traits.md"
-      ],
-      "update_plan/README.md": [
-        "reference/craft/cult-design-zh.md",
-        "reference/craft/diagram-conventions-zh.md",
-        "reference/craft/lovecraft-zh.md",
-        "reference/rules/character-creation.md",
         "reference/rules/chases.md",
         "reference/rules/combat.md",
         "reference/rules/magic.md",
         "reference/rules/monster-scale.md",
         "reference/rules/sanity.md",
         "reference/rules/skill-checks.md",
+        "reference/sourcebooks/grand-grimoire-zh.md",
+        "reference/sourcebooks/keeper-rulebook-7e-zh.md",
+        "reference/tables/manias.md",
+        "reference/tables/monster-index.md",
+        "reference/tables/monster-traits.md",
+        "reference/tables/phobias.md",
+        "reference/tables/weapons-index.md"
+      ],
+      "update_plan/README.md": [
+        "reference/craft/cult-design-zh.md",
+        "reference/craft/diagram-conventions-zh.md",
+        "reference/craft/lovecraft-zh.md",
         "reference/tables/madness-instant.md",
         "reference/tables/madness-summary.md",
         "reference/tables/manias.md",

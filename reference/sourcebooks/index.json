@@ -56,11 +56,6 @@
           "context": "`reference/sourcebooks/grand-grimoire-zh.md`;请神术的父神达贡/母神海德拉版本是本轮"
         },
         {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 554,
-          "context": "6. **不做的事**:`grand-grimoire-zh.md`、`malleus-monstrorum-zh.md` 两份**不动**。"
-        },
-        {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
           "line": 292,
           "context": "> - **法术型敌人的模板更详细的来源是 `reference/sourcebooks/grand-grimoire-zh.md`**"
@@ -74,6 +69,11 @@
           "file": "update_plan/Archived/2026-08-02-magic-quickref.md",
           "line": 37,
           "context": "- [x] ~~等 Keeper 提供转换后的文档~~ —— 已归档为 `reference/sourcebooks/grand-grimoire-zh.md`"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 551,
+          "context": "6. **不做的事**:`grand-grimoire-zh.md`、`malleus-monstrorum-zh.md` 两份**不动**。"
         },
         {
           "file": "update_plan/Archived/README.md",
@@ -141,51 +141,6 @@
           "context": "**\"最后一句话\"就在本目录。** `reference/sourcebooks/keeper-rulebook-7e-zh.md` 仍在版本库"
         },
         {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 13,
-          "context": "> Cheat Sheet;`reference/sourcebooks/keeper-rulebook-7e-zh.md` 不再放入库,这会导致"
-        },
-        {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 26,
-          "context": "> 资料:`reference/sourcebooks/keeper-rulebook-7e-zh.md`(17,377 行 / 1.4 MB,已在本地)"
-        },
-        {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 33,
-          "context": "今天查一条战斗规则的代价是:`core/02` 说速查表说不清就回 `keeper-rulebook-7e-zh.md`"
-        },
-        {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 45,
-          "context": "| `keeper-rulebook-7e-zh.md` | 17,377 行 / 1.4 MB | 无标题结构,grep 命中后按行号硬读上下文,一次几千到几万 token |"
-        },
-        {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 113,
-          "context": "`reference/sourcebooks/keeper-rulebook-7e-zh.md`,行号为 2026-08-04 实测。"
-        },
-        {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 243,
-          "context": "`reference/sourcebooks/keeper-rulebook-7e-zh.md` 于 **2026-08-02 12:26(39d1625)**"
-        },
-        {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 409,
-          "context": "- ~~`git rm --cached reference/sourcebooks/keeper-rulebook-7e-zh.md`~~ —— **取消,文件保留入库**"
-        },
-        {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 410,
-          "context": "- ~~`.gitignore` 加 `/reference/sourcebooks/keeper-rulebook-7e-zh.md`~~ —— **取消**"
-        },
-        {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 562,
-          "context": "**`keeper-rulebook-7e-zh.md` 就是一份普通的入库归档件,原地不动。**"
-        },
-        {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
           "line": 85,
           "context": "§0;`keeper-rulebook-7e-zh.md` 那笔教训不适用于本文档"
@@ -209,6 +164,51 @@
           "file": "update_plan/Archived/2026-08-02-magic-quickref.md",
           "line": 41,
           "context": "`reference/sourcebooks/keeper-rulebook-7e-zh.md`(规则书原文转录)已在本地存在,"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 10,
+          "context": "> Cheat Sheet;`reference/sourcebooks/keeper-rulebook-7e-zh.md` 不再放入库,这会导致"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 23,
+          "context": "> 资料:`reference/sourcebooks/keeper-rulebook-7e-zh.md`(17,377 行 / 1.4 MB,已在本地)"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 30,
+          "context": "今天查一条战斗规则的代价是:`core/02` 说速查表说不清就回 `keeper-rulebook-7e-zh.md`"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 42,
+          "context": "| `keeper-rulebook-7e-zh.md` | 17,377 行 / 1.4 MB | 无标题结构,grep 命中后按行号硬读上下文,一次几千到几万 token |"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 110,
+          "context": "`reference/sourcebooks/keeper-rulebook-7e-zh.md`,行号为 2026-08-04 实测。"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 240,
+          "context": "`reference/sourcebooks/keeper-rulebook-7e-zh.md` 于 **2026-08-02 12:26(39d1625)**"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 406,
+          "context": "- ~~`git rm --cached reference/sourcebooks/keeper-rulebook-7e-zh.md`~~ —— **取消,文件保留入库**"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 407,
+          "context": "- ~~`.gitignore` 加 `/reference/sourcebooks/keeper-rulebook-7e-zh.md`~~ —— **取消**"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 559,
+          "context": "**`keeper-rulebook-7e-zh.md` 就是一份普通的入库归档件,原地不动。**"
         },
         {
           "file": "update_plan/Archived/2026-08-04-retire-bundle.md",
@@ -1471,16 +1471,6 @@
           "context": "\"`reference/sourcebooks/malleus-monstrorum-zh.md`(223 条)生成,外加 \""
         },
         {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 490,
-          "context": "的五级阶梯与数值区间(抽样自 `malleus-monstrorum-zh.md`,与本次核对的源不是同一"
-        },
-        {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 554,
-          "context": "6. **不做的事**:`grand-grimoire-zh.md`、`malleus-monstrorum-zh.md` 两份**不动**。"
-        },
-        {
           "file": "update_plan/2026-08-04-core-spec-audit.md",
           "line": 49,
           "context": "`git ls-files reference/sourcebooks/` 确认 `malleus-monstrorum-zh.md` 在版本控制里;"
@@ -1509,6 +1499,16 @@
           "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
           "line": 520,
           "context": "Keeper 交付了 `reference/sourcebooks/malleus-monstrorum-zh.md` 的重排版转录稿"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 487,
+          "context": "的五级阶梯与数值区间(抽样自 `malleus-monstrorum-zh.md`,与本次核对的源不是同一"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 551,
+          "context": "6. **不做的事**:`grand-grimoire-zh.md`、`malleus-monstrorum-zh.md` 两份**不动**。"
         }
       ],
       "reference_count": 253,

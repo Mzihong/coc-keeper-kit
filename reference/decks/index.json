@@ -168,24 +168,24 @@
           "context": "`reference/decks/phobias-and-manias-zh.md` 的精选卡组是两回事。"
         },
         {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 144,
-          "context": "| 表IX 恐惧症状表 | 5288–5430 | 约 100 条 D100 | ⚠️ 只在 `decks/phobias-and-manias-zh.md`(第三方,**不进 bundle**) |"
-        },
-        {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 233,
-          "context": "**注意 `decks/` 里已有的三份不删**——`phobias-and-manias-zh.md`、`weapons-and-artifacts-zh.md`"
-        },
-        {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 385,
-          "context": "d100 掷**(拍板 ③:要全表不要摘要)。头部与 `decks/phobias-and-manias-zh.md`"
-        },
-        {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
           "line": 282,
           "context": ">    `phobias-and-manias-zh.md`、`weapons-and-artifacts-zh.md`)均 `cited: true`"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 141,
+          "context": "| 表IX 恐惧症状表 | 5288–5430 | 约 100 条 D100 | ⚠️ 只在 `decks/phobias-and-manias-zh.md`(第三方,**不进 bundle**) |"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 230,
+          "context": "**注意 `decks/` 里已有的三份不删**——`phobias-and-manias-zh.md`、`weapons-and-artifacts-zh.md`"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 382,
+          "context": "d100 掷**(拍板 ③:要全表不要摘要)。头部与 `decks/phobias-and-manias-zh.md`"
         },
         {
           "file": "update_plan/Archived/2026-08-04-retire-bundle.md",
@@ -260,21 +260,6 @@
           "context": "> 多疼\"；需要基础射程时查 `reference/decks/weapons-and-artifacts-zh.md` 或规则书表XVII 原表。"
         },
         {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 146,
-          "context": "| 表XVII 武器列表 | 15858 起 | 武器伤害/射程/装弹 | ⚠️ 只在 `decks/weapons-and-artifacts-zh.md`(同上) |"
-        },
-        {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 233,
-          "context": "**注意 `decks/` 里已有的三份不删**——`phobias-and-manias-zh.md`、`weapons-and-artifacts-zh.md`"
-        },
-        {
-          "file": "update_plan/2026-08-04-cheatsheet-self-sufficiency.md",
-          "line": 518,
-          "context": "另指 `decks/weapons-and-artifacts-zh.md`);`chases.md` 2 处裸「表III」改指"
-        },
-        {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
           "line": 98,
           "context": ">   `reference/decks/weapons-and-artifacts-zh.md`(已接入 `core/06`)——该卡组本身"
@@ -288,6 +273,21 @@
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
           "line": 284,
           "context": ">    `reference/tables/` 速查,反向索引脚本没有报 orphan。`weapons-and-artifacts-zh.md`"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 143,
+          "context": "| 表XVII 武器列表 | 15858 起 | 武器伤害/射程/装弹 | ⚠️ 只在 `decks/weapons-and-artifacts-zh.md`(同上) |"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 230,
+          "context": "**注意 `decks/` 里已有的三份不删**——`phobias-and-manias-zh.md`、`weapons-and-artifacts-zh.md`"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
+          "line": 515,
+          "context": "另指 `decks/weapons-and-artifacts-zh.md`);`chases.md` 2 处裸「表III」改指"
         }
       ],
       "reference_count": 14,
