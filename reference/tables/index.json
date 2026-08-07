@@ -6,8 +6,125 @@
   "citation_rule": null,
   "usage_rule": "authored by this kit — read and used directly, no citation required",
   "generated_by": "scripts/build-reference-index.py — do not edit by hand",
-  "entry_count": 17,
+  "entry_count": 18,
   "entries": [
+    {
+      "file": "clue-engines.md",
+      "path": "reference/tables/clue-engines.md",
+      "title": "clue-engines.md — 线索引擎:痕迹从哪来",
+      "lines": 49,
+      "declared_consumers": [
+        "core/04-design-scenario.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "CHANGELOG.md",
+          "line": 51,
+          "context": "- **线索来源现在要掷,不许一次全开。** 新表 `reference/tables/clue-engines.md`"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 248,
+          "context": "新表 `reference/tables/clue-engines.md`(d10,十条各带一条别的引擎给不了的结构属性,"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 258,
+          "context": "按 P11→P15→P16 顺序做完,无冲突。详见 `update_plan/2026-08-04-clue-engines.md`。"
+        },
+        {
+          "file": "core/04-design-scenario.md",
+          "line": 34,
+          "context": "- **Sourcing:** roll `reference/tables/clue-engines.md` (2–3 engines \"live,\" never all"
+        },
+        {
+          "file": "core/04-design-scenario.md",
+          "line": 51,
+          "context": "| 6 | From three engines | Not three branches of one `clue-engines.md` roll. |"
+        },
+        {
+          "file": "reference/craft/cult-design-zh.md",
+          "line": 63,
+          "context": "通用线索引擎([`clue-engines.md`](../tables/clue-engines.md))里的一台,别止步于此。"
+        },
+        {
+          "file": "reference/craft/cult-design-zh.md",
+          "line": 75,
+          "context": "[`reference/tables/clue-engines.md`](../tables/clue-engines.md)(引擎 1·财源)——本节留"
+        },
+        {
+          "file": "reference/craft/cult-design-zh.md",
+          "line": 77,
+          "context": "`clue-engines.md` 决定 2–3 条通电的引擎,若掷到财源,再来读本节挑具体来源。"
+        },
+        {
+          "file": "reference/craft/cult-design-zh.md",
+          "line": 104,
+          "context": "[`clue-engines.md`](../tables/clue-engines.md) 引擎 7(制度摩擦)的天然产地——投诉、"
+        },
+        {
+          "file": "reference/craft/cult-design-zh.md",
+          "line": 114,
+          "context": "`reference/tables/clue-engines.md` 定 2–3 条通电的引擎,掷到财源再读本文件 §四;"
+        },
+        {
+          "file": "reference/tables/cult-power-sources.md",
+          "line": 18,
+          "context": "这张表也决定了 [`clue-engines.md`](clue-engines.md) 十台通用线索引擎里哪几台默认通电:"
+        },
+        {
+          "file": "reference/tables/README.md",
+          "line": 43,
+          "context": "- `clue-engines.md`(1d10)——威胁反复做的哪件事会留下可查的痕迹;一次只掷 2–3 条,"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 49,
+          "context": "`clue-engines.md` 已在落地时直接接了 `roll.py` 并通过 `--check-all` 自检,这条耦合"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 50,
+          "context": "描述的风险(新表先脱离脚本被用熟,回头要改接线)没有发生。**遗留欠账**:`clue-engines.md`"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 162,
+          "context": "`reference/tables/clue-engines.md` 落地并接 `roll.py`、`cult-design-zh.md` §四/§五改口径、"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-clue-engines.md",
+          "line": 7,
+          "context": "> 前置:**P14 阶段 1**(`scripts/roll.py`)已于 2026-08-05 落地,`clue-engines.md` 落地时"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-clue-engines.md",
+          "line": 100,
+          "context": "## 阶段 1 — 新表 `reference/tables/clue-engines.md`(d10)"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-clue-engines.md",
+          "line": 106,
+          "context": "当场砍掉。**已落地为 `reference/tables/clue-engines.md`**,内容与结构属性照下表"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-clue-engines.md",
+          "line": 129,
+          "context": "`clue-engines.md` 里新增耦合小节,`cult-power-sources.md` 也回补一句指过去,"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-clue-engines.md",
+          "line": 139,
+          "context": "`tables/clue-engines.md`;六项财源原样留下当那一台的展开。**不搬走、不复制**——"
+        },
+        {
+          "file": "update_plan/Archived/README.md",
+          "line": 24,
+          "context": "| P16 | [clue-engines](2026-08-04-clue-engines.md) | 线索引擎通用化 + 三线索规则可执行化。新表 `reference/tables/clue-engines.md`(d10,十条线索引擎各带一条别的引擎给不了的结构属性,表头写死\"一次只掷 2–3 条,不许全开\")"
+        }
+      ],
+      "reference_count": 21
+    },
     {
       "file": "complications.md",
       "path": "reference/tables/complications.md",
@@ -74,12 +191,12 @@
         },
         {
           "file": "reference/craft/cult-design-zh.md",
-          "line": 104,
+          "line": 112,
           "context": "的流程顺序;`reference/tables/cult-goals.md` 是 §三 第 3 步的掷表配套。"
         },
         {
           "file": "reference/craft/cult-design-zh.md",
-          "line": 108,
+          "line": 117,
           "context": "并掷 `reference/tables/cult-goals.md`——不允许落地一个从未掷过的泛用邪教。"
         },
         {
@@ -197,11 +314,16 @@
       "file": "cult-power-sources.md",
       "path": "reference/tables/cult-power-sources.md",
       "title": "cult-power-sources.md — 力量来源",
-      "lines": 17,
+      "lines": 21,
       "declared_consumers": [
         "reference/tables/cult-goals.md"
       ],
       "referenced_by": [
+        {
+          "file": "WORKLOG.md",
+          "line": 250,
+          "context": "`cult-power-sources.md` 与它双向互指(造物→工艺与制造、受赐力量→身体代价默认通电)。"
+        },
         {
           "file": "templates/cult.md",
           "line": 7,
@@ -233,19 +355,19 @@
           "context": "包装为\"神子\"——见 `reference/tables/cult-power-sources.md`"
         },
         {
+          "file": "reference/tables/clue-engines.md",
+          "line": 25,
+          "context": "## 与 `cult-power-sources.md` 的耦合"
+        },
+        {
+          "file": "reference/tables/clue-engines.md",
+          "line": 27,
+          "context": "邪教的力量来源(`reference/tables/cult-power-sources.md`,1d4)决定了哪几台引擎默认通电:"
+        },
+        {
           "file": "reference/tables/README.md",
           "line": 42,
           "context": "- `cult-power-sources.md`(1d4)——邪教声称的超自然背书从哪儿来。"
-        },
-        {
-          "file": "update_plan/2026-08-04-clue-engines.md",
-          "line": 81,
-          "context": "[`cult-power-sources.md`](../reference/tables/cult-power-sources.md) 的「留下什么证据」"
-        },
-        {
-          "file": "update_plan/2026-08-04-clue-engines.md",
-          "line": 116,
-          "context": "- [ ] **写一节与 `cult-power-sources.md` 的耦合**:哪几台默认通电由上游那一掷决定"
         },
         {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
@@ -256,9 +378,29 @@
           "file": "update_plan/Archived/2026-08-02-cult-doc-wrapup.md",
           "line": 20,
           "context": "`tables/cult-power-sources.md`、d20 外貌/气质表、`tables/cultist-archetypes.md`"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-clue-engines.md",
+          "line": 88,
+          "context": "[`cult-power-sources.md`](../../reference/tables/cult-power-sources.md) 的「留下什么证据」"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-clue-engines.md",
+          "line": 125,
+          "context": "- [x] **写一节与 `cult-power-sources.md` 的耦合**:哪几台默认通电由上游那一掷决定"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-clue-engines.md",
+          "line": 129,
+          "context": "`clue-engines.md` 里新增耦合小节,`cult-power-sources.md` 也回补一句指过去,"
+        },
+        {
+          "file": "update_plan/Archived/README.md",
+          "line": 24,
+          "context": "| P16 | [clue-engines](2026-08-04-clue-engines.md) | 线索引擎通用化 + 三线索规则可执行化。新表 `reference/tables/clue-engines.md`(d10,十条线索引擎各带一条别的引擎给不了的结构属性,表头写死\"一次只掷 2–3 条,不许全开\")"
         }
       ],
-      "reference_count": 11
+      "reference_count": 16
     },
     {
       "file": "cultist-archetypes.md",
@@ -304,7 +446,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 43,
+          "line": 46,
           "context": "- `cultist-archetypes.md`——12 组现成的低阶邪教徒数值(按角色分组,不是骰表),外加一套"
         },
         {
@@ -413,7 +555,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 187,
+          "line": 218,
           "context": "**\"默认美国不等于默认阿卡姆\"**——默认给的是国家,镇子照样掷 `locations.md` 再自己造,"
         },
         {
@@ -503,7 +645,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 91,
+          "line": 122,
           "context": "时判断\"这把枪多危险\"用,不是按品类查数值。`madness.md` 拆成了 `madness-instant.md`"
         },
         {
@@ -538,7 +680,7 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 51,
+          "line": 56,
           "context": "P12 新建的 `phobias.md`/`manias.md`/`madness-instant.md`/`madness-summary.md`/"
         },
         {
@@ -558,7 +700,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 92,
+          "line": 123,
           "context": "(即时症状)与 `madness-summary.md`(概括症状)两个文件——同一个文件塞两张同骰面的"
         },
         {
@@ -593,7 +735,7 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 51,
+          "line": 56,
           "context": "P12 新建的 `phobias.md`/`manias.md`/`madness-instant.md`/`madness-summary.md`/"
         },
         {
@@ -616,7 +758,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 89,
+          "line": 120,
           "context": "(表IX,100 条)、`manias.md`(表X,100 条)是规则书原表的全量转录,不是精选摘要;"
         },
         {
@@ -646,7 +788,7 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 51,
+          "line": 56,
           "context": "P12 新建的 `phobias.md`/`manias.md`/`madness-instant.md`/`madness-summary.md`/"
         },
         {
@@ -686,7 +828,7 @@
       "file": "monster-index.md",
       "path": "reference/tables/monster-index.md",
       "title": "monster-index.md — 神话生物导航表",
-      "lines": 262,
+      "lines": 275,
       "declared_consumers": [
         "core/04-design-scenario.md",
         "core/07-create-monster.md",
@@ -696,22 +838,27 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 138,
+          "line": 37,
+          "context": "以前只能被写进去,没有任何流程会读它们。** 现在 `monster-index.md` 新增专门一节收录"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "line": 169,
           "context": "接入了 `reference/tables/monster-index.md` 的 `Serves` 检索——之前这张表能查到怪物,"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 179,
+          "line": 210,
           "context": "文件名、`1D10`/`STR 60` 这类记法保持英文);`monster-index.md` 的表头与说明段随生成"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 278,
+          "line": 309,
           "context": "新增 `reference/tables/monster-index.md`,覆盖怪物图鉴全部 223 个条目 + 现有 9 只"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 292,
+          "line": 323,
           "context": "`reference/tables/monster-index.md` 再动手写,不用翻原文猜。"
         },
         {
@@ -726,18 +873,33 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 297,
+          "line": 236,
+          "context": "两个待定点:神格页读路径**两者都做**(扩 `monster-index.md` + 四处直接读路径),L5"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 310,
           "context": "- **`monster-index.md` 与 malleus 转录稿的关系已不再是「对外通道」。** P13 之后所有"
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 46,
+          "line": 63,
           "context": "`reference/tables/monster-index.md` before inventing one from scratch; it indexes all 223"
         },
         {
           "file": "core/07-create-monster.md",
           "line": 9,
           "context": "a fitting elite guard/servitor?\") — read `reference/tables/monster-index.md` first. It covers"
+        },
+        {
+          "file": "templates/great-old-one.md",
+          "line": 4,
+          "context": "This is what `reference/tables/monster-index.md` shows in its L5 listing; see"
+        },
+        {
+          "file": "templates/great-old-one.md",
+          "line": 39,
+          "context": "[`reference/tables/monster-index.md`](../../tables/monster-index.md)(`Serves` 一列全文可搜)——"
         },
         {
           "file": "templates/monster.md",
@@ -771,37 +933,37 @@
         },
         {
           "file": "reference/mythos/great-old-ones/cthulhu.md",
-          "line": 52,
+          "line": 54,
           "context": "[`reference/tables/monster-index.md`](../../tables/monster-index.md)(`Serves` 一列全文可搜)——"
         },
         {
           "file": "reference/mythos/great-old-ones/dagon-and-hydra.md",
-          "line": 57,
+          "line": 59,
           "context": "[`reference/tables/monster-index.md`](../../tables/monster-index.md)(`Serves` 一列全文可搜)——"
         },
         {
           "file": "reference/mythos/great-old-ones/hastur.md",
-          "line": 73,
+          "line": 75,
           "context": "[`reference/tables/monster-index.md`](../../tables/monster-index.md)（`Serves` 一列全文可"
         },
         {
           "file": "reference/mythos/great-old-ones/nyarlathotep.md",
-          "line": 80,
+          "line": 82,
           "context": "[`reference/tables/monster-index.md`](../../tables/monster-index.md)(`Serves` 一列全文可搜)——"
         },
         {
           "file": "reference/mythos/great-old-ones/shub-niggurath.md",
-          "line": 64,
+          "line": 66,
           "context": "[`reference/tables/monster-index.md`](../../tables/monster-index.md)(`Serves` 一列全文可"
         },
         {
           "file": "reference/mythos/great-old-ones/yog-sothoth.md",
-          "line": 68,
+          "line": 70,
           "context": "[`reference/tables/monster-index.md`](../../tables/monster-index.md)(`Serves` 一列全文可搜)——"
         },
         {
           "file": "reference/tables/README.md",
-          "line": 47,
+          "line": 50,
           "context": "- `monster-index.md`——223 条神话生物的导航表,**脚本生成,不要手改**;数据源是"
         },
         {
@@ -816,53 +978,48 @@
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 42,
+          "line": 44,
           "context": "- every row in `monster-index.md` has a non-empty `Serves` and index summary — a half-filled"
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 217,
+          "line": 219,
           "context": "MONSTER_INDEX_OUT_PATH = os.path.join(REF, \"tables\", \"monster-index.md\")"
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 373,
+          "line": 382,
+          "context": "monster-index.md gets a section built straight from these files instead of depending on the"
+        },
+        {
+          "file": "scripts/build-reference-index.py",
+          "line": 398,
           "context": "\"\"\"Generate reference/tables/monster-index.md — the navigation table over all 223 malleus"
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 416,
+          "line": 441,
           "context": "problems.append(\"reference/tables/monster-index.md: idx %d (%s) missing %s\" % ("
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 421,
+          "line": 446,
           "context": "problems.append(\"reference/bestiary/%s: missing %s (needed by monster-index.md)\" % ("
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 429,
+          "line": 454,
           "context": "\"# monster-index.md — 神话生物导航表\","
+        },
+        {
+          "file": "scripts/build-reference-index.py",
+          "line": 497,
+          "context": "\"(needed by monster-index.md)\" % g[\"file\"])"
         },
         {
           "file": "scripts/roll.py",
           "line": 31,
           "context": "monster-traits.md, monster-index.md) — asking to roll one of those is a hard error naming why,"
-        },
-        {
-          "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 107,
-          "context": "`reference/tables/monster-index.md`,那份索引由 `build-reference-index.py` 从"
-        },
-        {
-          "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 235,
-          "context": "| **a. 扩索引** | 改 `build_monster_index()`,把 `reference/mythos/great-old-ones/*.md` 也并进 `monster-index.md` | 改脚本 + 全表回归;好处是**现有入口不变**,`core/07`/`core/04` 一个字不用改,以"
-        },
-        {
-          "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 361,
-          "context": "必须 clean,且 `monster-index.md` 行数变化要能解释清楚"
         },
         {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
@@ -910,12 +1067,37 @@
           "context": "而且 `monster-index.md` 已经是它对外的通道。Keeper 只点名了规则书。"
         },
         {
+          "file": "update_plan/Archived/2026-08-04-core-spec-audit.md",
+          "line": 107,
+          "context": "`reference/tables/monster-index.md`,那份索引由 `build-reference-index.py` 从"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-core-spec-audit.md",
+          "line": 235,
+          "context": "| **a. 扩索引** | 改 `build_monster_index()`,把 `reference/mythos/great-old-ones/*.md` 也并进 `monster-index.md` | 改脚本 + 全表回归;好处是**现有入口不变**,`core/07`/`core/04` 一个字不用改,以"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-core-spec-audit.md",
+          "line": 309,
+          "context": "`great-old-ones/`,`monster-index.md` 新增的「神格详注」一节也是独立可达的检索点"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-core-spec-audit.md",
+          "line": 373,
+          "context": "必须 clean,且 `monster-index.md` 行数变化要能解释清楚"
+        },
+        {
           "file": "update_plan/Archived/README.md",
           "line": 20,
           "context": "| P9 | [monster-templates-traits](2026-08-02-monster-templates-traits.md) | 怪物侧强度标尺,三阶段。**阶段 A**(标尺与词条):`reference/rules/monster-scale.md` 五级阶梯(human/creature/s"
+        },
+        {
+          "file": "update_plan/Archived/README.md",
+          "line": 23,
+          "context": "| P15 | [core-spec-audit](2026-08-04-core-spec-audit.md) | `core/` 复查勘误:九条问题归三类根因。**阶段 0**(2026-08-07,`11f90b0`)P13 余波扫描(`core/07` 索引段落改写、`reference/external/` "
         }
       ],
-      "reference_count": 44
+      "reference_count": 52
     },
     {
       "file": "monster-traits.md",
@@ -928,12 +1110,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 180,
+          "line": 211,
           "context": "脚本一起改中文,`monster-traits.md` 的引言段同。加新表的写法见"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 267,
+          "line": 298,
           "context": "`reference/tables/monster-traits.md`:18 条可挂载的数值词条(再生、分裂、免疫常规"
         },
         {
@@ -948,7 +1130,7 @@
         },
         {
           "file": "core/11-review.md",
-          "line": 83,
+          "line": 104,
           "context": "only in `reference/tables/monster-traits.md` and never reaches the table doesn't count."
         },
         {
@@ -1008,7 +1190,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 45,
+          "line": 48,
           "context": "- `monster-traits.md`——给怪物条目加挂的数值词条菜单(带负载点与破解口),配"
         },
         {
@@ -1183,7 +1365,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 88,
+          "line": 119,
           "context": "- **恐惧症、躁狂症、武器强度三张新表可以直接掷了。** `reference/tables/phobias.md`"
         },
         {
@@ -1218,7 +1400,7 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 51,
+          "line": 56,
           "context": "P12 新建的 `phobias.md`/`manias.md`/`madness-instant.md`/`madness-summary.md`/"
         },
         {
@@ -1246,12 +1428,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 90,
+          "line": 121,
           "context": "`reference/tables/weapons-index.md` 把全部武器按威胁强度重新分了四档,给反派配装备"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 101,
+          "line": 132,
           "context": "它在哪(现在指向 `reference/tables/weapons-index.md`);追逐速查表 2 处让你查\"表III\""
         },
         {
@@ -1296,12 +1478,12 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 49,
+          "line": 52,
           "context": "- `weapons-index.md`——表XVII 全部武器按威胁强度重排(不是骰表),给反派配装备时手选;"
         },
         {
           "file": "update_plan/README.md",
-          "line": 52,
+          "line": 57,
           "context": "`weapons-index.md` 五张表已经和 P14 阶段 1 的 `scripts/roll.py` 改动分开提交过,"
         },
         {

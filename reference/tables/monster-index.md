@@ -259,3 +259,16 @@
 | The Bell-Keeper | L3 servitor | 1D4/1D10 | Independent — serves no god (bound to its lighthouse, not a cult or deity) | Undead lighthouse keeper; banished by matching his true bell pattern | `reference/bestiary/the-bell-keeper.md` |
 | Vermisyn Worm (弗米森蠕虫) | L2 creature | 1D2/1D8 | Cthulhu (indirectly — serves his other servants more often than him directly; see Lore) | Sewer worm with 6m reach; shares memory, feeds on Mythos knowledge | `reference/bestiary/vermisyn-worm.md` |
 
+## 神格详注(reference/mythos/great-old-ones/)
+
+上面几个等级表里，这几位可能没有独立行——`malleus-monstrorum-zh.md` 对它们要么用旧式散文格式记录数值（本脚本的表格解析器读不出来），要么根本没写战斗数值（它们很少直接现身战斗）。**它们不是索引的空白，是有专门讲义的**，讲义比战斗数值更常用得上：苏醒条件、征兆、邪教怎么崇拜它。
+
+| 名称 | 一句话概要 | 详注 |
+|---|---|---|
+| Cthulhu（克苏鲁） | 拉莱耶之主，梦中降下意象与命令，深潜者与星之眷族服侍。 | `reference/mythos/great-old-ones/cthulhu.md` |
+| 达贡与许德拉（Father Dagon & Mother Hydra） | 深潜者的统治者，率众崇拜克苏鲁，几乎从不同时现身。 | `reference/mythos/great-old-ones/dagon-and-hydra.md` |
+| Hastur（哈斯塔） | 毕宿五外神，黄衣之王等化身现身人间，催眠与凝视杀人。 | `reference/mythos/great-old-ones/hastur.md` |
+| Nyarlathotep（奈亚拉托提普） | 外神信使与执行者，千面化身各有教团，唯一自由往来现实的外神。 | `reference/mythos/great-old-ones/nyarlathotep.md` |
+| Shub-Niggurath（莎布·尼古拉丝） | 森林黑山羊，携万千子嗣，弥漫荒野与生育的增殖力量。 | `reference/mythos/great-old-ones/shub-niggurath.md` |
+| Yog-Sothoth（犹格·索托斯） | 万物归一者，与时空共存无固定形体，掌管终极之门与知识。 | `reference/mythos/great-old-ones/yog-sothoth.md` |
+

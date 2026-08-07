@@ -21,7 +21,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 333,
+          "line": 364,
           "context": "- 新增 `reference/decks/` 与首份收录件 `busybodies-zh.md`(官方好事者卡组,47 张 NPC 卡)。"
         },
         {
@@ -246,7 +246,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 50,
+          "line": 53,
           "context": "和 `reference/decks/weapons-and-artifacts-zh.md` 的按品类原表分工不同,见该文件头部。"
         },
         {

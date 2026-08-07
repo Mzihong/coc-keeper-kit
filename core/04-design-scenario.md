@@ -18,7 +18,10 @@ fill in the pieces.
    from the horror and work backwards to how a normal person would first brush against it.
    If the campaign `CLAUDE.md` declares a **Threat** (category, and for a cult/organisation
    or named antagonist, a link to its `world/` file), the truth must be built consistent with
-   it — read that field first; this spec doesn't re-ask what the threat is.
+   it — read that field first; this spec doesn't re-ask what the threat is. If the truth
+   traces back to a **named Great Old One or Outer God**, read its page in
+   `reference/mythos/great-old-ones/` before inventing awakening conditions or signs — it's
+   pre-written there.
 2. **The clock.** Decide what the antagonist achieves if the investigators do nothing, and
    when. Pressure, not railroad — the world moves whether they act or not. For a campaign
    this is a standing artifact: build or update `world/event-clock.md` per
@@ -28,18 +31,32 @@ fill in the pieces.
 5. **The clue map (three-clue rule).** For **every** fact the players *must* realise, provide
    **three independent** clues from different sources. If any one is missed or a roll fails,
    two remain. Lay this out as a table — it's the anti-stall guarantee.
-   - **Then draw it as a scene web** — `reference/craft/diagram-conventions-zh.md` §三.
-     Nodes are scenes, each edge labelled with *the clue that gets you there*. Any
-     must-reach scene with fewer than three inbound edges is a stall point, and counting
-     edges on the diagram is cheaper than catching it in review.
-   - **When the threat is a cult**, `reference/craft/cult-design-zh.md` §四 gives six ready-made
-     independent sources — property, tomes & artefacts, illicit supply, legal/business front,
-     bribery, security — each ending in "who pays, who sees, what trace it leaves." Three
-     clues for a cult-related fact usually come from three different funding lines, not three
-     variations on the same one.
-6. **The scenes as a web.** Key each node by *purpose* (clue / choice / shock / breather).
-   Most scenes should be reachable in more than one order — avoid a single required sequence.
-   If a scene is a pursuit or an escape, read `reference/rules/chases.md` before writing it.
+   - **Sourcing:** roll `reference/tables/clue-engines.md` (2–3 engines "live," never all
+     ten) instead of inventing from habit. Cult threats: `cult-design-zh.md` §四 is engine 1
+     (funding) expanded; others read the engine table directly. Three clues for one fact
+     should come from **three different engines**.
+   - **Draw it as a scene web** — `reference/craft/diagram-conventions-zh.md` §三. Nodes are
+     scenes, edges labelled with the clue that gets you there. A must-reach scene with fewer
+     than three inbound edges is a stall point.
+   - **Six checks** (check 1 is also "independent"'s working definition;
+     `core/11-review.md`'s audit reads off these six):
+
+     | # | Check | Test |
+     |---|---|---|
+     | 1 | Tonight-discovery | If the threat learns tonight it's made, how many of the three can it kill by morning? **≥2 killable = not independent.** |
+     | 2 | Threshold types differ | roll / presence / relationship / timing / cost / handed-over — the three land in three different types. |
+     | 3 | ≥1 roll-free | Lands just from showing up, no check gates it. |
+     | 4 | ≥1 permanent | Filed or fixed in the landscape — doesn't decay with the clock (engines 7, 10 fit naturally). |
+     | 5 | ≥1 points somewhere | Names the next place/person; "this is wrong" ×3 still stalls — the clue-map side of the web's inbound-edge count. |
+     | 6 | From three engines | Not three branches of one `clue-engines.md` roll. |
+6. **The scenes as a web.** Key each node by *purpose* (clue / choice / shock / breather). This
+   step is about the rest of the web, not the must-reach scenes step 5 already constrains
+   (≥3 inbound edges each) — of the remaining scenes, most should be reachable in more than one
+   order, avoiding a single required sequence. If a scene is a pursuit or an escape, read
+   `reference/rules/chases.md` before writing it. **Once the web is drawn, count inbound edges
+   on every must-reach node** (`diagram-conventions-zh.md` §三 already requires this on the
+   diagram itself; this is the reminder to actually do it before moving on) — a clue with
+   nowhere to point at is a ghost clue, and it doesn't show up just from counting to three.
 7. **Cast & threats.** Name the NPCs and creatures (hand to `core/06` / `core/07`); ensure
    each monster has its fair "out." **Choosing which Mythos creature fits a given role**
    (especially "the boss is deity X — what's a fitting elite/servitor?") — check

@@ -16,12 +16,17 @@
 3. <the revelation>
 
 ## Clue map (three-clue rule)
-For each thing the players must learn, list **three** independent ways to learn it, so no
-single failed roll or missed scene can stall the game.
+For each thing the players must learn, list **three** independent ways to learn it (one row
+per clue), so no single failed roll or missed scene can stall the game. **Threshold type**
+and **shelf life** let you self-check the six independence tests
+(`core/04-design-scenario.md` step 5 — threshold types must differ across the three; at
+least one should be permanent) while writing, instead of waiting for review to catch it.
 
-| Must realise | Clue A | Clue B | Clue C |
-|--------------|--------|--------|--------|
-| <fact> | <source> | <source> | <source> |
+| Must realise | Clue | Threshold type | Shelf life |
+|--------------|------|-----------------|------------|
+| <fact> | <source A> | <roll / presence / relationship / timing / cost / handed-over> | <permanent, or decays by session N> |
+| <fact> | <source B> | <…> | <…> |
+| <fact> | <source C> | <…> | <…> |
 
 ## Scenes / nodes
 - **<Scene 1>** — <purpose> → leads to …

@@ -29,7 +29,7 @@
         },
         {
           "file": "reference/mythos/great-old-ones/nyarlathotep.md",
-          "line": 92,
+          "line": 94,
           "context": "[Black Pharaoh](../../bestiary/black-pharaoh.md)"
         },
         {
@@ -54,7 +54,7 @@
       "referenced_by": [
         {
           "file": "reference/mythos/great-old-ones/cthulhu.md",
-          "line": 68,
+          "line": 70,
           "context": "[Black Wing](../../bestiary/black-wing.md)(起源存疑,三种裁定之一即效忠克苏鲁)"
         },
         {
@@ -91,7 +91,7 @@
         },
         {
           "file": "reference/mythos/great-old-ones/hastur.md",
-          "line": 85,
+          "line": 87,
           "context": "[Byakhee](../../bestiary/byakhee.md)、"
         },
         {
@@ -116,7 +116,7 @@
       "referenced_by": [
         {
           "file": "reference/mythos/great-old-ones/cthulhu.md",
-          "line": 65,
+          "line": 67,
           "context": "[Cthulhu-Blessed](../../bestiary/cthulhu-blessed.md)、"
         },
         {
@@ -143,12 +143,12 @@
         },
         {
           "file": "reference/mythos/great-old-ones/shub-niggurath.md",
-          "line": 73,
+          "line": 75,
           "context": "[Dark Young](../../bestiary/dark-young.md)"
         },
         {
           "file": "reference/mythos/great-old-ones/shub-niggurath.md",
-          "line": 84,
+          "line": 86,
           "context": "- 已立档的仆从条目 → [`reference/bestiary/dark-young.md`](../../bestiary/dark-young.md)"
         },
         {
@@ -173,7 +173,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 282,
+          "line": 313,
           "context": "- **`reference/bestiary/` 现有 9 只按新标尺重新核过一遍。** `deep-one-hybrid.md` 的"
         },
         {
@@ -188,7 +188,7 @@
         },
         {
           "file": "reference/mythos/great-old-ones/dagon-and-hydra.md",
-          "line": 62,
+          "line": 64,
           "context": "(同样已写成完整条目,见 [`../../bestiary/deep-one-hybrid.md`](../../bestiary/deep-one-hybrid.md),"
         },
         {
@@ -236,7 +236,7 @@
         },
         {
           "file": "reference/mythos/great-old-ones/dagon-and-hydra.md",
-          "line": 61,
+          "line": 63,
           "context": "[`../../bestiary/deep-one.md`](../../bestiary/deep-one.md))、混血深潜者 Deep One Hybrids"
         },
         {
@@ -263,17 +263,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 219,
+          "line": 250,
           "context": "- 怪物图鉴 `fellrock.md` 的\"沉默之油\"反查链接指向了 `artifacts-zh.md`,但那份文件里"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 283,
+          "line": 314,
           "context": "type 从独立种族改成仆从种族(malleus 原文就是这么分类的);`fellrock.md` 的 threat"
         },
         {
           "file": "reference/mythos/great-old-ones/cthulhu.md",
-          "line": 66,
+          "line": 68,
           "context": "[Fellrock](../../bestiary/fellrock.md)(多数群体,非全部确认)、"
         },
         {
@@ -323,7 +323,7 @@
         },
         {
           "file": "reference/mythos/great-old-ones/nyarlathotep.md",
-          "line": 91,
+          "line": 93,
           "context": "[Hunting Horrors](../../bestiary/hunting-horrors.md)、"
         },
         {
@@ -400,7 +400,7 @@
         },
         {
           "file": "reference/mythos/great-old-ones/yog-sothoth.md",
-          "line": 79,
+          "line": 81,
           "context": "[Sons of Yog-Sothoth](../../bestiary/sons-of-yog-sothoth.md)"
         },
         {
@@ -432,7 +432,7 @@
         },
         {
           "file": "reference/mythos/great-old-ones/hastur.md",
-          "line": 86,
+          "line": 88,
           "context": "[Spawn of Hastur](../../bestiary/spawn-of-hastur.md)"
         },
         {
@@ -479,12 +479,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 284,
+          "line": 315,
           "context": "从 deadly 改成 mythic(体型与耐久数值早已过 deadly 上限)、`thrall-of-cthulhu.md`"
         },
         {
           "file": "reference/mythos/great-old-ones/cthulhu.md",
-          "line": 64,
+          "line": 66,
           "context": "[Thrall of Cthulhu](../../bestiary/thrall-of-cthulhu.md)、"
         },
         {
@@ -509,7 +509,7 @@
       "referenced_by": [
         {
           "file": "reference/mythos/great-old-ones/cthulhu.md",
-          "line": 67,
+          "line": 69,
           "context": "[Vermisyn Worm](../../bestiary/vermisyn-worm.md)(间接,服侍其他仆从更常见)、"
         },
         {

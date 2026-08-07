@@ -33,6 +33,9 @@ not scenes; they are *changes to the world state* that any later scene must refl
    - the players finding a core piece of evidence
    - the players doing nothing for a stretch
    - the players trying to leave, or to bring in outside authority
+   - **the players stalling on a must-know fact for N sessions** — what the threat does in
+     response is itself the next clue (see Principles below); this is the stall-recovery
+     trigger `core/11-review.md`'s three-clue audit checks for
 4. **Give every trigger both branches.** What if they succeed at it, and what if they fail
    or half-succeed? A trigger with one outcome is a railroad tie.
 5. **Note reversibility.** Which stages can the players push *back*? A clock with no rewind
@@ -52,7 +55,12 @@ one row and know what is different.
 ## Principles
 
 - **Pressure, not punishment.** The clock exists to make choices cost something, not to
-  defeat the players on schedule.
+  defeat the players on schedule. The stall-recovery trigger above follows this same rule:
+  when the players stall on a must-know fact, the threat acting on its own initiative is
+  pressure, not a penalty — and the action itself doubles as a new clue, so a genuinely
+  stalled table always has a way back in without the Keeper inventing a fourth clue on the
+  spot (`core/04-design-scenario.md` step 5's six checks are what should have caught this
+  before play; this trigger is the table-side backstop for when they didn't).
 - **Signs before consequences.** Every stage should be foreshadowed by the previous stage's
   visible sign. Players who read the world get to act early; that's the reward.
 - **The clock is public, the mechanism is secret.** Players should be able to feel time

@@ -22,7 +22,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 331,
+          "line": 362,
           "context": "- P7 魔法速查阻塞解除(转换稿已归档为 `grand-grimoire-zh.md`)。"
         },
         {
@@ -32,7 +32,7 @@
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 46,
+          "line": 47,
           "context": "`reference/sourcebooks/grand-grimoire-zh.md` covers spells for anything that casts and is"
         },
         {
@@ -247,7 +247,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 258,
+          "line": 289,
           "context": "- **怪物图鉴换了一份干净得多的转录稿。** `reference/sourcebooks/malleus-monstrorum-zh.md`"
         },
         {
@@ -257,7 +257,7 @@
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 47,
+          "line": 64,
           "context": "`malleus-monstrorum-zh.md` entries by tier and `Serves` (who they answer to), so the search"
         },
         {
@@ -267,7 +267,7 @@
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 42,
+          "line": 43,
           "context": "`reference/sourcebooks/malleus-monstrorum-zh.md` is the official creature"
         },
         {
@@ -317,42 +317,42 @@
         },
         {
           "file": "reference/mythos/great-old-ones/cthulhu.md",
-          "line": 58,
+          "line": 60,
           "context": "均见 `reference/sourcebooks/malleus-monstrorum-zh.md`"
         },
         {
           "file": "reference/mythos/great-old-ones/dagon-and-hydra.md",
-          "line": 64,
+          "line": 66,
           "context": "Depths——均见 `reference/sourcebooks/malleus-monstrorum-zh.md`"
         },
         {
           "file": "reference/mythos/great-old-ones/hastur.md",
-          "line": 80,
+          "line": 82,
           "context": "`reference/sourcebooks/malleus-monstrorum-zh.md`"
         },
         {
           "file": "reference/mythos/great-old-ones/nyarlathotep.md",
-          "line": 85,
+          "line": 87,
           "context": "`reference/sourcebooks/malleus-monstrorum-zh.md`。他也常把某个化身专属的仆从一并"
         },
         {
           "file": "reference/mythos/great-old-ones/shub-niggurath.md",
-          "line": 71,
+          "line": 73,
           "context": "均见 `reference/sourcebooks/malleus-monstrorum-zh.md`"
         },
         {
           "file": "reference/mythos/great-old-ones/shub-niggurath.md",
-          "line": 85,
+          "line": 87,
           "context": "- 其余仆从/血亲的原始数据 → `reference/sourcebooks/malleus-monstrorum-zh.md`"
         },
         {
           "file": "reference/mythos/great-old-ones/yog-sothoth.md",
-          "line": 73,
+          "line": 75,
           "context": "驱使,经特制雕像降临本位面)——均见 `reference/sourcebooks/malleus-monstrorum-zh.md`"
         },
         {
           "file": "reference/mythos/great-old-ones/yog-sothoth.md",
-          "line": 87,
+          "line": 89,
           "context": "`reference/sourcebooks/malleus-monstrorum-zh.md` 中廷达罗斯词条,可作为反制或搅局的"
         },
         {
@@ -1451,34 +1451,44 @@
           "context": "| 佐斯·奥摩格，旧日支配者(ZOTH-OMMOG, Great Old One) | 1D6/1D20 | — 自成一系的神格 | 封印于拉莱耶，深潜者暗中崇拜，以伪足绞杀及撕咬攻击 | `reference/sourcebooks/malleus-monstrorum-zh.md`:10125 |"
         },
         {
+          "file": "reference/tables/monster-index.md",
+          "line": 264,
+          "context": "上面几个等级表里，这几位可能没有独立行——`malleus-monstrorum-zh.md` 对它们要么用旧式散文格式记录数值（本脚本的表格解析器读不出来），要么根本没写战斗数值（它们很少直接现身战斗）。**它们不是索引的空白，是有专门讲义的**，讲义比战斗数值更常用得上：苏醒条件、征兆、邪教怎么崇拜它。"
+        },
+        {
           "file": "scripts/build-reference-index.py",
           "line": 30,
           "context": "source file, it's assembled from `reference/sourcebooks/malleus-monstrorum-zh.md` (parsed fresh"
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 215,
+          "line": 217,
           "context": "MALLEUS_PATH = os.path.join(REF, \"sourcebooks\", \"malleus-monstrorum-zh.md\")"
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 263,
+          "line": 267,
           "context": "\"\"\"Scaffold the 223 stat-block entries in malleus-monstrorum-zh.md: name (CN/EN), the"
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 394,
+          "line": 380,
+          "context": "malleus-monstrorum-zh.md (old prose format, or no combat stat block at all since they rarely"
+        },
+        {
+          "file": "scripts/build-reference-index.py",
+          "line": 419,
           "context": "source=\"`reference/sourcebooks/malleus-monstrorum-zh.md`:%d\" % e[\"line\"])"
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 432,
+          "line": 457,
           "context": "\"`reference/sourcebooks/malleus-monstrorum-zh.md`(223 条)生成,外加 \""
         },
         {
-          "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 50,
-          "context": "`git ls-files reference/sourcebooks/` 确认 `malleus-monstrorum-zh.md` 在版本控制里;"
+          "file": "scripts/build-reference-index.py",
+          "line": 501,
+          "context": "lines.append(\"上面几个等级表里，这几位可能没有独立行——`malleus-monstrorum-zh.md` \""
         },
         {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
@@ -1514,9 +1524,14 @@
           "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
           "line": 551,
           "context": "6. **不做的事**:`grand-grimoire-zh.md`、`malleus-monstrorum-zh.md` 两份**不动**。"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-core-spec-audit.md",
+          "line": 50,
+          "context": "`git ls-files reference/sourcebooks/` 确认 `malleus-monstrorum-zh.md` 在版本控制里;"
         }
       ],
-      "reference_count": 254,
+      "reference_count": 257,
       "cited": true,
       "provenance": {
         "work": "《怪物之锤》(Malleus Monstrorum)",

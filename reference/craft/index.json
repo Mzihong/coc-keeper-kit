@@ -12,7 +12,7 @@
       "file": "cult-design-zh.md",
       "path": "reference/craft/cult-design-zh.md",
       "title": "邪教设计手法笔记 — 简体中文",
-      "lines": 112,
+      "lines": 121,
       "declared_consumers": [
         "core/01-intake.md",
         "core/03-build-world.md",
@@ -21,22 +21,27 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 202,
+          "line": 54,
+          "context": "每次都收敛成\"查账 + 查地产 + 找目击者\"。邪教的财源仍然是 `cult-design-zh.md` §四"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "line": 233,
           "context": "`dist/bundle.md`,走 ChatGPT 的 KP 连点都点不进去。`reference/craft/cult-design-zh.md`"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 337,
+          "line": 368,
           "context": "- 新增邪教设计方法论 `craft/cult-design-zh.md`,配四张骰表与 `templates/cult.md` 模板。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 237,
-          "context": "(`craft/cult-design-zh.md` §四 的六项财源,而且住在邪教专属文件里,威胁不是邪教时"
+          "line": 251,
+          "context": "`cult-design-zh.md` §四 改口径为\"财源是十台里写得最细的一台\",§五 的\"平淡才合理\""
         },
         {
           "file": "WORKLOG.md",
-          "line": 284,
+          "line": 297,
           "context": "**P5 阶段 0 是还债**:`templates/cult.md:42` 与 `reference/craft/cult-design-zh.md:68`"
         },
         {
@@ -46,13 +51,13 @@
         },
         {
           "file": "core/03-build-world.md",
-          "line": 45,
+          "line": 48,
           "context": "build order. Read `reference/craft/cult-design-zh.md` §一–§三 first (why a cult works as a"
         },
         {
           "file": "core/04-design-scenario.md",
           "line": 35,
-          "context": "- **When the threat is a cult**, `reference/craft/cult-design-zh.md` §四 gives six ready-made"
+          "context": "ten) instead of inventing from habit. Cult threats: `cult-design-zh.md` §四 is engine 1"
         },
         {
           "file": "reference/README.md",
@@ -106,43 +111,48 @@
         },
         {
           "file": "reference/mythos/great-old-ones/cthulhu.md",
-          "line": 37,
+          "line": 39,
           "context": "`reference/craft/cult-design-zh.md` §二\"预言可自由解释\"这个手法"
         },
         {
           "file": "reference/mythos/great-old-ones/cthulhu.md",
-          "line": 74,
+          "line": 76,
           "context": "- 教团设计方法论 → `reference/craft/cult-design-zh.md`"
         },
         {
           "file": "reference/mythos/great-old-ones/dagon-and-hydra.md",
-          "line": 77,
+          "line": 79,
           "context": "- 教团设计方法论 → `reference/craft/cult-design-zh.md`"
         },
         {
           "file": "reference/mythos/great-old-ones/hastur.md",
-          "line": 92,
+          "line": 94,
           "context": "- 教团设计方法论 → `reference/craft/cult-design-zh.md`"
         },
         {
           "file": "reference/mythos/great-old-ones/nyarlathotep.md",
-          "line": 63,
+          "line": 65,
           "context": "- 参见 `reference/craft/cult-design-zh.md` 关于\"教团如何组织\"的通用方法论"
         },
         {
           "file": "reference/mythos/great-old-ones/nyarlathotep.md",
-          "line": 98,
+          "line": 100,
           "context": "- 教团设计方法论 → `reference/craft/cult-design-zh.md`"
         },
         {
           "file": "reference/mythos/great-old-ones/shub-niggurath.md",
-          "line": 83,
+          "line": 85,
           "context": "- 教团设计方法论 → `reference/craft/cult-design-zh.md`"
         },
         {
           "file": "reference/mythos/great-old-ones/yog-sothoth.md",
-          "line": 85,
+          "line": 87,
           "context": "- 教团设计方法论 → `reference/craft/cult-design-zh.md`"
+        },
+        {
+          "file": "reference/tables/clue-engines.md",
+          "line": 41,
+          "context": "`reference/craft/cult-design-zh.md` §四(财源即线索引擎)的分工所在——§四 是十条里"
         },
         {
           "file": "reference/tables/cult-goals.md",
@@ -175,6 +185,11 @@
           "context": "`reference/craft/cult-design-zh.md` §三。"
         },
         {
+          "file": "reference/tables/README.md",
+          "line": 44,
+          "context": "不许全开。见 `core/04-design-scenario.md` 第 5 步、`reference/craft/cult-design-zh.md`"
+        },
+        {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
           "line": 90,
           "context": "reference/craft/cult-design-zh.md:68  → \"与 P5 的 mermaid 势力图工具合流\""
@@ -190,44 +205,19 @@
           "context": "> `craft/cult-design-zh.md` 两处还债——都在其中)。hash 已于 2026-08-06 回填到本文件头与"
         },
         {
-          "file": "update_plan/2026-08-04-clue-engines.md",
-          "line": 19,
-          "context": "**线索来源这一维的条目数是 1**——[`cult-design-zh.md` §四](../reference/craft/cult-design-zh.md)"
-        },
-        {
-          "file": "update_plan/2026-08-04-clue-engines.md",
-          "line": 33,
-          "context": "时给素材库,指向 `cult-design-zh.md` §四 的六项财源。后果有两层:"
-        },
-        {
-          "file": "update_plan/2026-08-04-clue-engines.md",
-          "line": 82,
-          "context": "列已经是引擎属性的一半;`cult-design-zh.md` §五「平淡才合理」其实是\"非人证人 /"
-        },
-        {
-          "file": "update_plan/2026-08-04-clue-engines.md",
-          "line": 124,
-          "context": "## 阶段 2 — `cult-design-zh.md` §四 改口径(不删内容)"
-        },
-        {
-          "file": "update_plan/2026-08-04-clue-engines.md",
-          "line": 201,
-          "context": "`cult-design-zh.md` §三/§四/§五**。"
-        },
-        {
           "file": "update_plan/README.md",
           "line": 12,
           "context": "| P5 | [low-cost-maps](2026-08-02-low-cost-maps.md) | 低成本地图:mermaid 惯例(还债)+ DSL→SVG 渲染器,两个功能——KP 定位图(A 档)与 PL 可互动场景图(A+B 家具层) | 进行中(阶段 0 已完成并提交,13821ac) | **202"
         },
         {
           "file": "update_plan/README.md",
-          "line": 16,
-          "context": "| P16 | [clue-engines](2026-08-04-clue-engines.md) | 线索引擎通用化(新表 `tables/clue-engines.md` d10,十台引擎各带一条独占结构属性)+ `cult-design-zh.md` §四 改口径 + `core/04` 六条三线索检验 + `"
+          "line": 125,
+          "context": "`craft/cult-design-zh.md` 两处指向不存在规范的引用)。"
         },
         {
           "file": "update_plan/README.md",
-          "line": 136,
-          "context": "`craft/cult-design-zh.md` 两处指向不存在规范的引用)。"
+          "line": 162,
+          "context": "`reference/tables/clue-engines.md` 落地并接 `roll.py`、`cult-design-zh.md` §四/§五改口径、"
         },
         {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
@@ -248,9 +238,39 @@
           "file": "update_plan/Archived/2026-08-02-cult-doc-wrapup.md",
           "line": 33,
           "context": "**登记情况核对**:`craft/cult-design-zh.md`、四张骰表(`cult-goals`/`cult-leader-positions`/"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-clue-engines.md",
+          "line": 20,
+          "context": "**线索来源这一维的条目数是 1**——[`cult-design-zh.md` §四](../../reference/craft/cult-design-zh.md)"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-clue-engines.md",
+          "line": 34,
+          "context": "时给素材库,指向 `cult-design-zh.md` §四 的六项财源。后果有两层:"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-clue-engines.md",
+          "line": 90,
+          "context": "直接对应引擎 5,结果 2「造物」直接对应引擎 6;`cult-design-zh.md` §五「敌人往往平淡"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-clue-engines.md",
+          "line": 136,
+          "context": "## 阶段 2 — `cult-design-zh.md` §四 改口径(不删内容)"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-clue-engines.md",
+          "line": 218,
+          "context": "`cult-design-zh.md` §三/§四/§五**。"
+        },
+        {
+          "file": "update_plan/Archived/README.md",
+          "line": 24,
+          "context": "| P16 | [clue-engines](2026-08-04-clue-engines.md) | 线索引擎通用化 + 三线索规则可执行化。新表 `reference/tables/clue-engines.md`(d10,十条线索引擎各带一条别的引擎给不了的结构属性,表头写死\"一次只掷 2–3 条,不许全开\")"
         }
       ],
-      "reference_count": 46
+      "reference_count": 50
     },
     {
       "file": "diagram-conventions-zh.md",
@@ -265,12 +285,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 141,
+          "line": 172,
           "context": "- **关系图终于有正式画法了。** 新增 `reference/craft/diagram-conventions-zh.md`,covers"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 203,
+          "line": 234,
           "context": "第 11 步有同样的问题。两处现已改指向新的 `craft/diagram-conventions-zh.md`。"
         },
         {
@@ -280,13 +300,23 @@
         },
         {
           "file": "core/03-build-world.md",
-          "line": 73,
+          "line": 76,
           "context": "`reference/craft/diagram-conventions-zh.md`: §一 (general rules — every edge carries a"
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 31,
-          "context": "- **Then draw it as a scene web** — `reference/craft/diagram-conventions-zh.md` §三."
+          "line": 38,
+          "context": "- **Draw it as a scene web** — `reference/craft/diagram-conventions-zh.md` §三. Nodes are"
+        },
+        {
+          "file": "core/04-design-scenario.md",
+          "line": 57,
+          "context": "on every must-reach node** (`diagram-conventions-zh.md` §三 already requires this on the"
+        },
+        {
+          "file": "core/11-review.md",
+          "line": 64,
+          "context": "`core/04-design-scenario.md` step 5 and `reference/craft/diagram-conventions-zh.md` §三"
         },
         {
           "file": "templates/cult.md",
@@ -300,7 +330,7 @@
         },
         {
           "file": "reference/craft/cult-design-zh.md",
-          "line": 68,
+          "line": 69,
           "context": "孤立的圈没有用。画法照 `reference/craft/diagram-conventions-zh.md` §一(通用规则)"
         },
         {
@@ -315,7 +345,7 @@
         },
         {
           "file": "reference/craft/README.md",
-          "line": 43,
+          "line": 45,
           "context": "> **为什么单列一步:** `diagram-conventions-zh.md` §四 曾写下「出这张图 + **文字地图卡**」,"
         },
         {
@@ -332,41 +362,6 @@
           "file": "update_plan/2026-08-02-low-cost-maps.md",
           "line": 201,
           "context": "——格式落在 `reference/craft/diagram-conventions-zh.md` **§六**"
-        },
-        {
-          "file": "update_plan/2026-08-04-clue-engines.md",
-          "line": 57,
-          "context": "这和 [`diagram-conventions-zh.md` §三](../reference/craft/diagram-conventions-zh.md)"
-        },
-        {
-          "file": "update_plan/2026-08-04-clue-engines.md",
-          "line": 78,
-          "context": "`diagram-conventions-zh.md` §三。**列出哪几处口径互相不一致**——阶段 3/4 要按同一套"
-        },
-        {
-          "file": "update_plan/2026-08-04-clue-engines.md",
-          "line": 149,
-          "context": "- [ ] **第 5 条与 `diagram-conventions-zh.md` §三 对齐**:线索地图这边写\"指向型\","
-        },
-        {
-          "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 148,
-          "context": "(与 `reference/craft/diagram-conventions-zh.md:58` 一致)。"
-        },
-        {
-          "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 157,
-          "context": "`diagram-conventions-zh.md` 并接到 `core/04` 时,**接线只做了生成侧单向**。"
-        },
-        {
-          "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 268,
-          "context": "**结论(§六 落在 `diagram-conventions-zh.md`)不变**,另外三条理由站得住,"
-        },
-        {
-          "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 311,
-          "context": "`diagram-conventions-zh.md:58` 对齐"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
@@ -425,23 +420,63 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 85,
+          "line": 84,
           "context": "变成\"同一个文件\"**——地图卡直接扩进 P5 阶段 0 产出的 `craft/diagram-conventions-zh.md`"
         },
         {
           "file": "update_plan/README.md",
-          "line": 114,
+          "line": 103,
           "context": "`core/03` 两处接线)→ **阶段 2**(d20 机构表 + `diagram-conventions-zh.md` 扩 §六"
         },
         {
           "file": "update_plan/README.md",
-          "line": 116,
+          "line": 105,
           "context": "**阶段 2 里有一条债优先**:`diagram-conventions-zh.md:69` 的「文字地图卡」是个从未"
         },
         {
           "file": "update_plan/README.md",
-          "line": 156,
+          "line": 145,
           "context": "| 1 | **P10** 城镇解剖手法稿 | ★★☆☆☆ | 资料 14 万字符 / 6723 行 / 0 图;采料 10 段 + ≤100 行提炼稿 + `core/03` **两处**接线 + d20 机构表 + `diagram-conventions-zh.md` 扩一节与 3 张样例 | 产出本身小(照 `"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-clue-engines.md",
+          "line": 58,
+          "context": "这和 [`diagram-conventions-zh.md` §三](../../reference/craft/diagram-conventions-zh.md)"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-clue-engines.md",
+          "line": 79,
+          "context": "`diagram-conventions-zh.md` §三。"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-clue-engines.md",
+          "line": 86,
+          "context": "`diagram-conventions-zh.md` §三的\"入边\"说法(阶段 3 第 5 条检验已处理)。"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-clue-engines.md",
+          "line": 162,
+          "context": "- [x] **第 5 条与 `diagram-conventions-zh.md` §三 对齐**:线索地图这边写\"指向型\","
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-core-spec-audit.md",
+          "line": 148,
+          "context": "(与 `reference/craft/diagram-conventions-zh.md:58` 一致)。"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-core-spec-audit.md",
+          "line": 157,
+          "context": "`diagram-conventions-zh.md` 并接到 `core/04` 时,**接线只做了生成侧单向**。"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-core-spec-audit.md",
+          "line": 268,
+          "context": "**结论(§六 落在 `diagram-conventions-zh.md`)不变**,另外三条理由站得住,"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-core-spec-audit.md",
+          "line": 318,
+          "context": "`diagram-conventions-zh.md:58` 对齐"
         },
         {
           "file": "update_plan/Archived/2026-08-04-retire-bundle.md",
@@ -449,7 +484,7 @@
           "context": "- [x] `reference/craft/diagram-conventions-zh.md:85` —— 那句话是 P5 阶段 0 用来解释"
         }
       ],
-      "reference_count": 37
+      "reference_count": 40
     },
     {
       "file": "lovecraft-zh.md",
@@ -470,12 +505,12 @@
         },
         {
           "file": "core/00-how-to-run.md",
-          "line": 176,
+          "line": 183,
           "context": "│   ├── og_Norval/           ← Lovecraft's 82 stories (public domain) → craft/lovecraft-zh.md"
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 69,
+          "line": 70,
           "context": "`reference/craft/lovecraft-zh.md` §三 distills how H. P. Lovecraft's own monsters and"
         },
         {
@@ -525,17 +560,17 @@
         },
         {
           "file": "reference/mythos/great-old-ones/nyarlathotep.md",
-          "line": 75,
+          "line": 77,
           "context": "`reference/craft/lovecraft-zh.md` §三\"礼貌而有条不紊\"那条设计手法"
         },
         {
           "file": "reference/mythos/great-old-ones/nyarlathotep.md",
-          "line": 100,
+          "line": 102,
           "context": "高智能存在) → `reference/craft/lovecraft-zh.md`"
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 560,
+          "line": 618,
           "context": "\"research only; distilled into reference/craft/lovecraft-zh.md\","
         },
         {
@@ -570,7 +605,7 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 156,
+          "line": 145,
           "context": "| 1 | **P10** 城镇解剖手法稿 | ★★☆☆☆ | 资料 14 万字符 / 6723 行 / 0 图;采料 10 段 + ≤100 行提炼稿 + `core/03` **两处**接线 + d20 机构表 + `diagram-conventions-zh.md` 扩一节与 3 张样例 | 产出本身小(照 `"
         },
         {

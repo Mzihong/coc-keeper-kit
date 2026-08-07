@@ -37,7 +37,8 @@ live through it. In CoC the monster is usually an obstacle to survive, not a bos
 - **Human antagonists don't use this spec.** A cultist, a cult leader, or any other human
   villain is built with `reference/rules/character-creation.md` §11 (baseline + increment),
   not this spec's type/threat scale.
-- Use `templates/monster.md`.
+- Use `templates/monster.md` — except L5, which uses `templates/great-old-one.md` (lore-shaped,
+  not a stat card; see "Filing by tier" above).
 - **Source material — read the relevant one before inventing numbers:**
   `reference/sourcebooks/malleus-monstrorum-zh.md` is the official creature
   compendium — read the nearest published entry to calibrate stat scale, armour, and SAN cost

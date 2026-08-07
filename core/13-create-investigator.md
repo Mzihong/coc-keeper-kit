@@ -89,15 +89,19 @@ a pre-built card actually handed to a player, that's decided once at intake
 ## Self-validation
 
 `scripts/render-investigator.py` checks the record on every run and reports to stderr —
-default is **warn but still render**; `--strict` turns any violation into a hard failure:
+default is **warn but still render**; `--strict` turns any **error** (not warning) into a
+hard failure: nothing is written.
 
-- **Arithmetic (unconditional):** derived-stat formulas, the skill-point ledger balancing,
-  each skill's `value = base + occupation + interest + growth`, Credit Rating sitting in the
-  occupation's band.
-- **Thresholds (configurable):** the creation-time skill cap and characteristic ranges, read
-  from `campaigns/<slug>/investigators/validation.json` if present (intake writes this file
-  with the campaign's declared numbers; falls back to `reference/rules/character-creation.md`
-  defaults otherwise — see the script's `DEFAULT_VALIDATION`).
+- **Errors, unconditional — these are the ones `--strict` aborts on:** derived-stat formulas,
+  the skill-point ledger balancing, each skill's
+  `value = base + occupation + interest + growth`.
+- **Warnings, threshold-type with known legitimate exceptions — `--strict` never aborts on
+  these:** the creation-time skill cap and characteristic ranges (read from
+  `campaigns/<slug>/investigators/validation.json` if present — intake writes this file with
+  the campaign's declared numbers; falls back to `reference/rules/character-creation.md`
+  defaults otherwise, see the script's `DEFAULT_VALIDATION`), and Credit Rating sitting in the
+  occupation's band. An aged/scaled NPC or a deliberate point-buy choice can trip any of these
+  honestly, which is why they stay warnings even under `--strict`.
 
 This doesn't replace `core/11-review.md` — it catches the mechanical typos a reviewer would
 otherwise have to recompute by hand; continuity, three-clue coverage, and spoiler hygiene are

@@ -133,9 +133,10 @@
       "directory": "reference/tables",
       "role": "roll tables for prep and live improv, including the four seed tables",
       "kind": "kit-original-content",
-      "entry_count": 17,
+      "entry_count": 18,
       "index": "reference/tables/index.json",
       "files": [
+        "reference/tables/clue-engines.md",
         "reference/tables/complications.md",
         "reference/tables/cult-goals.md",
         "reference/tables/cult-leader-positions.md",
@@ -163,7 +164,7 @@
         "title": "好事者卡组 Busybodies — 官方 NPC 卡组(中译收录)",
         "rights_holder": "Chaosium Inc.",
         "referenced_by": [
-          "CHANGELOG.md:333",
+          "CHANGELOG.md:364",
           "core/06-create-npc.md:13",
           "core/13-create-investigator.md:20",
           "reference/README.md:38",
@@ -211,7 +212,7 @@
           "reference/decks/README.md:18",
           "reference/rules/character-creation.md:215",
           "reference/rules/combat.md:148",
-          "reference/tables/README.md:50",
+          "reference/tables/README.md:53",
           "reference/tables/weapons-index.md:9",
           "reference/tables/weapons-index.md:17",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:98",
@@ -226,9 +227,9 @@
         "title": "克苏鲁神话魔法大典 — 官方法术全书(中译收录)",
         "rights_holder": "Chaosium Inc.",
         "referenced_by": [
-          "CHANGELOG.md:331",
+          "CHANGELOG.md:362",
           "core/06-create-npc.md:73",
-          "core/07-create-monster.md:46",
+          "core/07-create-monster.md:47",
           "reference/mythos/README.md:23",
           "reference/rules/character-creation.md:214",
           "reference/rules/magic.md:115",
@@ -273,11 +274,11 @@
         "title": "怪物之锤 Malleus Monstrorum — 官方怪物图鉴(中译收录)",
         "rights_holder": "Chaosium Inc.",
         "referenced_by": [
-          "CHANGELOG.md:258",
+          "CHANGELOG.md:289",
           "core/02-rules-reference.md:99",
-          "core/04-design-scenario.md:47",
+          "core/04-design-scenario.md:64",
           "core/07-create-monster.md:14",
-          "core/07-create-monster.md:42",
+          "core/07-create-monster.md:43",
           "core/14-archive-reference.md:50",
           "reference/README.md:95",
           "reference/bestiary/black-pharaoh.md:31",
@@ -287,14 +288,14 @@
           "reference/bestiary/hunting-horrors.md:28",
           "reference/bestiary/README.md:4",
           "reference/bestiary/README.md:23",
-          "reference/mythos/great-old-ones/cthulhu.md:58",
-          "reference/mythos/great-old-ones/dagon-and-hydra.md:64",
-          "reference/mythos/great-old-ones/hastur.md:80",
-          "reference/mythos/great-old-ones/nyarlathotep.md:85",
-          "reference/mythos/great-old-ones/shub-niggurath.md:71",
-          "reference/mythos/great-old-ones/shub-niggurath.md:85",
-          "reference/mythos/great-old-ones/yog-sothoth.md:73",
-          "reference/mythos/great-old-ones/yog-sothoth.md:87",
+          "reference/mythos/great-old-ones/cthulhu.md:60",
+          "reference/mythos/great-old-ones/dagon-and-hydra.md:66",
+          "reference/mythos/great-old-ones/hastur.md:82",
+          "reference/mythos/great-old-ones/nyarlathotep.md:87",
+          "reference/mythos/great-old-ones/shub-niggurath.md:73",
+          "reference/mythos/great-old-ones/shub-niggurath.md:87",
+          "reference/mythos/great-old-ones/yog-sothoth.md:75",
+          "reference/mythos/great-old-ones/yog-sothoth.md:89",
           "reference/rules/monster-scale.md:6",
           "reference/rules/monster-scale.md:13",
           "reference/tables/monster-index-data.json:4",
@@ -514,37 +515,40 @@
           "reference/tables/monster-index.md:246",
           "reference/tables/monster-index.md:247",
           "reference/tables/monster-index.md:248",
+          "reference/tables/monster-index.md:264",
           "scripts/build-reference-index.py:30",
-          "scripts/build-reference-index.py:215",
-          "scripts/build-reference-index.py:263",
-          "scripts/build-reference-index.py:394",
-          "scripts/build-reference-index.py:432",
-          "update_plan/2026-08-04-core-spec-audit.md:50",
+          "scripts/build-reference-index.py:217",
+          "scripts/build-reference-index.py:267",
+          "scripts/build-reference-index.py:380",
+          "scripts/build-reference-index.py:419",
+          "scripts/build-reference-index.py:457",
+          "scripts/build-reference-index.py:501",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:251",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:68",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:428",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:477",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:520",
           "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:487",
-          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:551"
+          "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:551",
+          "update_plan/Archived/2026-08-04-core-spec-audit.md:50"
         ]
       },
       "reference/rules/character-creation.md": {
         "title": "调查员创建（Character Creation）",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:165",
-          "CHANGELOG.md:320",
-          "CHANGELOG.md:334",
+          "CHANGELOG.md:196",
+          "CHANGELOG.md:351",
+          "CHANGELOG.md:365",
           "WORKLOG.md:102",
           "WORKLOG.md:149",
           "WORKLOG.md:151",
           "WORKLOG.md:162",
           "WORKLOG.md:167",
           "WORKLOG.md:217",
-          "core/01-intake.md:87",
-          "core/01-intake.md:106",
-          "core/01-intake.md:137",
+          "core/01-intake.md:90",
+          "core/01-intake.md:109",
+          "core/01-intake.md:140",
           "core/02-rules-reference.md:23",
           "core/02-rules-reference.md:35",
           "core/02-rules-reference.md:62",
@@ -552,11 +556,11 @@
           "core/06-create-npc.md:46",
           "core/06-create-npc.md:75",
           "core/07-create-monster.md:38",
-          "core/11-review.md:66",
+          "core/11-review.md:87",
           "core/13-create-investigator.md:11",
           "core/13-create-investigator.md:13",
-          "core/13-create-investigator.md:99",
-          "core/13-create-investigator.md:115",
+          "core/13-create-investigator.md:101",
+          "core/13-create-investigator.md:119",
           "templates/investigator.schema.json:5",
           "templates/investigator.schema.json:99",
           "templates/investigator.schema.json:194",
@@ -584,9 +588,8 @@
           "reference/tables/weapons-index.md:40",
           "campaigns/_template-campaign/CLAUDE.md:59",
           "scripts/render-investigator.py:20",
-          "scripts/render-investigator.py:58",
-          "scripts/render-investigator.py:429",
-          "update_plan/2026-08-04-core-spec-audit.md:186",
+          "scripts/render-investigator.py:61",
+          "scripts/render-investigator.py:432",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:11",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:117",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:118",
@@ -626,6 +629,7 @@
           "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:468",
           "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:473",
           "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:542",
+          "update_plan/Archived/2026-08-04-core-spec-audit.md:186",
           "update_plan/Archived/2026-08-04-era-rule-packs.md:29",
           "update_plan/Archived/2026-08-04-era-rule-packs.md:42",
           "update_plan/Archived/2026-08-04-era-rule-packs.md:134",
@@ -643,10 +647,10 @@
         "title": "追逐（Chases）",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:57",
-          "CHANGELOG.md:83",
+          "CHANGELOG.md:88",
+          "CHANGELOG.md:114",
           "core/02-rules-reference.md:78",
-          "core/04-design-scenario.md:42",
+          "core/04-design-scenario.md:56",
           "reference/rules/README.md:18",
           "reference/rules/README.md:45",
           "reference/rules/eras/README.md:9",
@@ -673,11 +677,11 @@
         "title": "战斗（Combat）",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:64",
-          "CHANGELOG.md:69",
-          "CHANGELOG.md:74",
-          "CHANGELOG.md:82",
-          "CHANGELOG.md:102",
+          "CHANGELOG.md:95",
+          "CHANGELOG.md:100",
+          "CHANGELOG.md:105",
+          "CHANGELOG.md:113",
+          "CHANGELOG.md:133",
           "core/02-rules-reference.md:76",
           "core/07-create-monster.md:16",
           "reference/decks/weapons-and-artifacts-zh.md:12",
@@ -763,8 +767,8 @@
         "title": "魔法（Magic）",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:45",
-          "CHANGELOG.md:228",
+          "CHANGELOG.md:76",
+          "CHANGELOG.md:259",
           "WORKLOG.md:94",
           "WORKLOG.md:98",
           "WORKLOG.md:143",
@@ -773,7 +777,7 @@
           "WORKLOG.md:217",
           "core/02-rules-reference.md:63",
           "core/02-rules-reference.md:89",
-          "core/07-create-monster.md:101",
+          "core/07-create-monster.md:102",
           "reference/mythos/README.md:20",
           "reference/mythos/spells/call-father-dagon-and-mother-hydra.md:4",
           "reference/mythos/spells/call-father-dagon-and-mother-hydra.md:6",
@@ -809,9 +813,9 @@
         "title": "怪物强度标尺（Monster Scale）",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:47",
-          "CHANGELOG.md:262",
-          "CHANGELOG.md:271",
+          "CHANGELOG.md:78",
+          "CHANGELOG.md:293",
+          "CHANGELOG.md:302",
           "WORKLOG.md:107",
           "WORKLOG.md:149",
           "WORKLOG.md:153",
@@ -820,7 +824,7 @@
           "core/02-rules-reference.md:95",
           "core/07-create-monster.md:19",
           "core/07-create-monster.md:32",
-          "core/11-review.md:86",
+          "core/11-review.md:107",
           "templates/monster.md:7",
           "templates/monster.md:38",
           "reference/bestiary/byakhee.md:9",
@@ -839,8 +843,8 @@
           "reference/tables/monster-traits.md:4",
           "reference/tables/monster-traits.md:12",
           "reference/tables/monster-traits.md:20",
-          "reference/tables/README.md:46",
-          "scripts/build-reference-index.py:236",
+          "reference/tables/README.md:49",
+          "scripts/build-reference-index.py:240",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:6",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:247",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:258",
@@ -866,13 +870,13 @@
         "title": "理智（Sanity）",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:66",
-          "CHANGELOG.md:83",
+          "CHANGELOG.md:97",
+          "CHANGELOG.md:114",
           "core/02-rules-reference.md:74",
-          "core/04-design-scenario.md:50",
+          "core/04-design-scenario.md:67",
           "core/07-create-monster.md:17",
           "core/12-canon-update.md:67",
-          "templates/scenario.md:44",
+          "templates/scenario.md:49",
           "reference/mythos/artifacts-zh.md:67",
           "reference/rules/README.md:19",
           "reference/rules/README.md:46",
@@ -899,8 +903,8 @@
         "title": "判定基本盘（Skill Checks）",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:41",
           "CHANGELOG.md:72",
+          "CHANGELOG.md:103",
           "WORKLOG.md:149",
           "core/02-rules-reference.md:68",
           "reference/mythos/artifacts-zh.md:17",
@@ -920,12 +924,13 @@
         "title": "邪教设计手法笔记 — 简体中文",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:202",
-          "CHANGELOG.md:337",
-          "WORKLOG.md:237",
-          "WORKLOG.md:284",
+          "CHANGELOG.md:54",
+          "CHANGELOG.md:233",
+          "CHANGELOG.md:368",
+          "WORKLOG.md:251",
+          "WORKLOG.md:297",
           "core/01-intake.md:81",
-          "core/03-build-world.md:45",
+          "core/03-build-world.md:48",
           "core/04-design-scenario.md:35",
           "reference/README.md:19",
           "reference/craft/diagram-conventions-zh.md:84",
@@ -937,62 +942,60 @@
           "reference/mythos/cults/louisiana-swamp-cult.md:4",
           "reference/mythos/cults/order-of-morpheus.md:4",
           "reference/mythos/cults/society-of-the-divine-children.md:4",
-          "reference/mythos/great-old-ones/cthulhu.md:37",
-          "reference/mythos/great-old-ones/cthulhu.md:74",
-          "reference/mythos/great-old-ones/dagon-and-hydra.md:77",
-          "reference/mythos/great-old-ones/hastur.md:92",
-          "reference/mythos/great-old-ones/nyarlathotep.md:63",
-          "reference/mythos/great-old-ones/nyarlathotep.md:98",
-          "reference/mythos/great-old-ones/shub-niggurath.md:83",
-          "reference/mythos/great-old-ones/yog-sothoth.md:85",
+          "reference/mythos/great-old-ones/cthulhu.md:39",
+          "reference/mythos/great-old-ones/cthulhu.md:76",
+          "reference/mythos/great-old-ones/dagon-and-hydra.md:79",
+          "reference/mythos/great-old-ones/hastur.md:94",
+          "reference/mythos/great-old-ones/nyarlathotep.md:65",
+          "reference/mythos/great-old-ones/nyarlathotep.md:100",
+          "reference/mythos/great-old-ones/shub-niggurath.md:85",
+          "reference/mythos/great-old-ones/yog-sothoth.md:87",
+          "reference/tables/clue-engines.md:41",
           "reference/tables/cult-goals.md:6",
           "reference/tables/cult-goals.md:41",
           "reference/tables/cult-leader-positions.md:22",
           "reference/tables/cultist-archetypes.md:9",
           "reference/tables/cultist-archetypes.md:184",
           "reference/tables/README.md:40",
+          "reference/tables/README.md:44",
           "update_plan/2026-08-02-low-cost-maps.md:90",
           "update_plan/2026-08-02-low-cost-maps.md:100",
           "update_plan/2026-08-02-low-cost-maps.md:111",
-          "update_plan/2026-08-04-clue-engines.md:19",
-          "update_plan/2026-08-04-clue-engines.md:33",
-          "update_plan/2026-08-04-clue-engines.md:82",
-          "update_plan/2026-08-04-clue-engines.md:124",
-          "update_plan/2026-08-04-clue-engines.md:201",
           "update_plan/README.md:12",
-          "update_plan/README.md:16",
-          "update_plan/README.md:136",
+          "update_plan/README.md:125",
+          "update_plan/README.md:162",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:110",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:219",
           "update_plan/Archived/2026-08-02-cult-doc-wrapup.md:18",
-          "update_plan/Archived/2026-08-02-cult-doc-wrapup.md:33"
+          "update_plan/Archived/2026-08-02-cult-doc-wrapup.md:33",
+          "update_plan/Archived/2026-08-04-clue-engines.md:20",
+          "update_plan/Archived/2026-08-04-clue-engines.md:34",
+          "update_plan/Archived/2026-08-04-clue-engines.md:90",
+          "update_plan/Archived/2026-08-04-clue-engines.md:136",
+          "update_plan/Archived/2026-08-04-clue-engines.md:218",
+          "update_plan/Archived/README.md:24"
         ]
       },
       "reference/craft/diagram-conventions-zh.md": {
         "title": "图示惯例 — 简体中文",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:141",
-          "CHANGELOG.md:203",
+          "CHANGELOG.md:172",
+          "CHANGELOG.md:234",
           "WORKLOG.md:197",
-          "core/03-build-world.md:73",
-          "core/04-design-scenario.md:31",
+          "core/03-build-world.md:76",
+          "core/04-design-scenario.md:38",
+          "core/04-design-scenario.md:57",
+          "core/11-review.md:64",
           "templates/cult.md:42",
           "reference/README.md:20",
-          "reference/craft/cult-design-zh.md:68",
+          "reference/craft/cult-design-zh.md:69",
           "reference/craft/README.md:16",
           "reference/craft/README.md:19",
-          "reference/craft/README.md:43",
+          "reference/craft/README.md:45",
           "update_plan/2026-08-02-low-cost-maps.md:96",
           "update_plan/2026-08-02-low-cost-maps.md:110",
           "update_plan/2026-08-02-low-cost-maps.md:201",
-          "update_plan/2026-08-04-clue-engines.md:57",
-          "update_plan/2026-08-04-clue-engines.md:78",
-          "update_plan/2026-08-04-clue-engines.md:149",
-          "update_plan/2026-08-04-core-spec-audit.md:148",
-          "update_plan/2026-08-04-core-spec-audit.md:157",
-          "update_plan/2026-08-04-core-spec-audit.md:268",
-          "update_plan/2026-08-04-core-spec-audit.md:311",
           "update_plan/2026-08-04-town-anatomy-from-arkham.md:12",
           "update_plan/2026-08-04-town-anatomy-from-arkham.md:43",
           "update_plan/2026-08-04-town-anatomy-from-arkham.md:50",
@@ -1004,10 +1007,18 @@
           "update_plan/2026-08-04-town-anatomy-from-arkham.md:446",
           "update_plan/README.md:12",
           "update_plan/README.md:13",
-          "update_plan/README.md:85",
-          "update_plan/README.md:114",
-          "update_plan/README.md:116",
-          "update_plan/README.md:156",
+          "update_plan/README.md:84",
+          "update_plan/README.md:103",
+          "update_plan/README.md:105",
+          "update_plan/README.md:145",
+          "update_plan/Archived/2026-08-04-clue-engines.md:58",
+          "update_plan/Archived/2026-08-04-clue-engines.md:79",
+          "update_plan/Archived/2026-08-04-clue-engines.md:86",
+          "update_plan/Archived/2026-08-04-clue-engines.md:162",
+          "update_plan/Archived/2026-08-04-core-spec-audit.md:148",
+          "update_plan/Archived/2026-08-04-core-spec-audit.md:157",
+          "update_plan/Archived/2026-08-04-core-spec-audit.md:268",
+          "update_plan/Archived/2026-08-04-core-spec-audit.md:318",
           "update_plan/Archived/2026-08-04-retire-bundle.md:109"
         ]
       },
@@ -1017,8 +1028,8 @@
         "referenced_by": [
           "WORKLOG.md:46",
           "WORKLOG.md:190",
-          "core/00-how-to-run.md:176",
-          "core/07-create-monster.md:69",
+          "core/00-how-to-run.md:183",
+          "core/07-create-monster.md:70",
           "core/09-description.md:14",
           "core/09-description.md:32",
           "core/09-description.md:55",
@@ -1028,16 +1039,16 @@
           "reference/README.md:94",
           "reference/craft/README.md:14",
           "reference/craft/README.md:37",
-          "reference/mythos/great-old-ones/nyarlathotep.md:75",
-          "reference/mythos/great-old-ones/nyarlathotep.md:100",
-          "scripts/build-reference-index.py:560",
+          "reference/mythos/great-old-ones/nyarlathotep.md:77",
+          "reference/mythos/great-old-ones/nyarlathotep.md:102",
+          "scripts/build-reference-index.py:618",
           "update_plan/2026-08-04-town-anatomy-from-arkham.md:33",
           "update_plan/2026-08-04-town-anatomy-from-arkham.md:36",
           "update_plan/2026-08-04-town-anatomy-from-arkham.md:195",
           "update_plan/2026-08-04-town-anatomy-from-arkham.md:227",
           "update_plan/2026-08-04-town-anatomy-from-arkham.md:338",
           "update_plan/2026-08-04-town-anatomy-from-arkham.md:400",
-          "update_plan/README.md:156",
+          "update_plan/README.md:145",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:111",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:256",
           ".claude/skills/description/SKILL.md:12"
@@ -1049,7 +1060,7 @@
         "referenced_by": [
           "WORKLOG.md:120",
           "reference/bestiary/hunting-horrors.md:88",
-          "reference/mythos/great-old-ones/nyarlathotep.md:92",
+          "reference/mythos/great-old-ones/nyarlathotep.md:94",
           "reference/tables/monster-index.md:148",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:697"
         ]
@@ -1058,7 +1069,7 @@
         "title": "Black Wing (黑翼者)",
         "rights_holder": null,
         "referenced_by": [
-          "reference/mythos/great-old-ones/cthulhu.md:68",
+          "reference/mythos/great-old-ones/cthulhu.md:70",
           "reference/mythos/spells/black-wing-call.md:11",
           "reference/tables/monster-index.md:254",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:334"
@@ -1069,7 +1080,7 @@
         "rights_holder": null,
         "referenced_by": [
           "WORKLOG.md:119",
-          "reference/mythos/great-old-ones/hastur.md:85",
+          "reference/mythos/great-old-ones/hastur.md:87",
           "reference/tables/monster-index.md:73",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:694"
         ]
@@ -1078,7 +1089,7 @@
         "title": "Cthulhu-Blessed (克苏鲁受祝者)",
         "rights_holder": null,
         "referenced_by": [
-          "reference/mythos/great-old-ones/cthulhu.md:65",
+          "reference/mythos/great-old-ones/cthulhu.md:67",
           "reference/tables/monster-index.md:255"
         ]
       },
@@ -1087,8 +1098,8 @@
         "rights_holder": null,
         "referenced_by": [
           "WORKLOG.md:120",
-          "reference/mythos/great-old-ones/shub-niggurath.md:73",
-          "reference/mythos/great-old-ones/shub-niggurath.md:84",
+          "reference/mythos/great-old-ones/shub-niggurath.md:75",
+          "reference/mythos/great-old-ones/shub-niggurath.md:86",
           "reference/tables/monster-index.md:117",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:699"
         ]
@@ -1097,10 +1108,10 @@
         "title": "Deep One Hybrid (混种深潜者)",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:282",
+          "CHANGELOG.md:313",
           "reference/bestiary/cthulhu-blessed.md:54",
           "reference/bestiary/deep-one.md:84",
-          "reference/mythos/great-old-ones/dagon-and-hydra.md:62",
+          "reference/mythos/great-old-ones/dagon-and-hydra.md:64",
           "reference/tables/monster-index.md:85",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:83",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:537",
@@ -1113,7 +1124,7 @@
         "rights_holder": null,
         "referenced_by": [
           "WORKLOG.md:119",
-          "reference/mythos/great-old-ones/dagon-and-hydra.md:61",
+          "reference/mythos/great-old-ones/dagon-and-hydra.md:63",
           "reference/tables/monster-index.md:84",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:693"
         ]
@@ -1122,9 +1133,9 @@
         "title": "Fellrock (费尔罗克)",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:219",
-          "CHANGELOG.md:283",
-          "reference/mythos/great-old-ones/cthulhu.md:66",
+          "CHANGELOG.md:250",
+          "CHANGELOG.md:314",
+          "reference/mythos/great-old-ones/cthulhu.md:68",
           "reference/mythos/spells/fellrock-call-bind.md:11",
           "reference/mythos/spells/oil-of-silence.md:10",
           "reference/tables/monster-index.md:256",
@@ -1138,7 +1149,7 @@
         "referenced_by": [
           "WORKLOG.md:119",
           "reference/bestiary/black-pharaoh.md:61",
-          "reference/mythos/great-old-ones/nyarlathotep.md:91",
+          "reference/mythos/great-old-ones/nyarlathotep.md:93",
           "reference/tables/monster-index.md:99",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:696"
         ]
@@ -1165,7 +1176,7 @@
         "rights_holder": null,
         "referenced_by": [
           "WORKLOG.md:120",
-          "reference/mythos/great-old-ones/yog-sothoth.md:79",
+          "reference/mythos/great-old-ones/yog-sothoth.md:81",
           "reference/tables/monster-index.md:136",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:700"
         ]
@@ -1175,7 +1186,7 @@
         "rights_holder": null,
         "referenced_by": [
           "WORKLOG.md:119",
-          "reference/mythos/great-old-ones/hastur.md:86",
+          "reference/mythos/great-old-ones/hastur.md:88",
           "reference/tables/monster-index.md:97",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:695"
         ]
@@ -1192,8 +1203,8 @@
         "title": "Thrall of Cthulhu (克苏鲁之隶)",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:284",
-          "reference/mythos/great-old-ones/cthulhu.md:64",
+          "CHANGELOG.md:315",
+          "reference/mythos/great-old-ones/cthulhu.md:66",
           "reference/tables/monster-index.md:81",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:666"
         ]
@@ -1202,7 +1213,7 @@
         "title": "Vermisyn Worm (弗米森蠕虫)",
         "rights_holder": null,
         "referenced_by": [
-          "reference/mythos/great-old-ones/cthulhu.md:67",
+          "reference/mythos/great-old-ones/cthulhu.md:69",
           "reference/mythos/spells/vermisyn-worm-call-bind.md:11",
           "reference/tables/monster-index.md:260"
         ]
@@ -1211,7 +1222,7 @@
         "title": "造物与神器 — 速查",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:219",
+          "CHANGELOG.md:250",
           "WORKLOG.md:143",
           "core/06-create-npc.md:79",
           "core/13-create-investigator.md:34",
@@ -1221,7 +1232,7 @@
           "reference/decks/README.md:18",
           "reference/rules/character-creation.md:215",
           "reference/rules/combat.md:148",
-          "reference/tables/README.md:50",
+          "reference/tables/README.md:53",
           "reference/tables/weapons-index.md:9",
           "reference/tables/weapons-index.md:17",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:98",
@@ -1242,14 +1253,14 @@
         "title": "克苏鲁邪教史 — 可复用历史条目表",
         "rights_holder": null,
         "referenced_by": [
-          "core/03-build-world.md:57",
+          "core/03-build-world.md:60",
           "reference/bestiary/black-wing.md:71",
           "reference/mythos/cults/church-of-perfect-science.md:38",
           "reference/mythos/cults/louisiana-swamp-cult.md:20",
           "reference/mythos/cults/louisiana-swamp-cult.md:71",
           "reference/mythos/cults/order-of-morpheus.md:99",
-          "reference/mythos/great-old-ones/cthulhu.md:43",
-          "reference/mythos/great-old-ones/cthulhu.md:75",
+          "reference/mythos/great-old-ones/cthulhu.md:45",
+          "reference/mythos/great-old-ones/cthulhu.md:77",
           "reference/tables/cultist-archetypes.md:235",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:90",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:485"
@@ -1273,8 +1284,8 @@
           "reference/bestiary/deep-one-hybrid.md:57",
           "reference/bestiary/deep-one.md:88",
           "reference/mythos/cthulhu-cult-history-zh.md:24",
-          "reference/mythos/great-old-ones/dagon-and-hydra.md:35",
-          "reference/mythos/great-old-ones/dagon-and-hydra.md:75",
+          "reference/mythos/great-old-ones/dagon-and-hydra.md:37",
+          "reference/mythos/great-old-ones/dagon-and-hydra.md:77",
           "reference/mythos/spells/call-father-dagon-and-mother-hydra.md:23",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:350"
         ]
@@ -1313,20 +1324,17 @@
         "title": "Cthulhu（克苏鲁）",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:284",
-          "CHANGELOG.md:287",
+          "CHANGELOG.md:315",
+          "CHANGELOG.md:318",
           "WORKLOG.md:114",
           "WORKLOG.md:118",
-          "WORKLOG.md:291",
+          "WORKLOG.md:304",
           "reference/mythos/README.md:12",
-          "reference/mythos/great-old-ones/dagon-and-hydra.md:67",
+          "reference/mythos/great-old-ones/dagon-and-hydra.md:69",
           "reference/tables/monster-index.md:81",
-          "scripts/build-reference-index.py:173",
-          "scripts/build-reference-index.py:188",
-          "update_plan/2026-08-04-core-spec-audit.md:102",
-          "update_plan/2026-08-04-core-spec-audit.md:132",
-          "update_plan/2026-08-04-core-spec-audit.md:244",
-          "update_plan/2026-08-04-core-spec-audit.md:300",
+          "reference/tables/monster-index.md:268",
+          "scripts/build-reference-index.py:175",
+          "scripts/build-reference-index.py:190",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:89",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:11",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:334",
@@ -1334,7 +1342,11 @@
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:486",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:666",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:670",
-          "update_plan/Archived/2026-08-02-monster-templates-traits.md:678"
+          "update_plan/Archived/2026-08-02-monster-templates-traits.md:678",
+          "update_plan/Archived/2026-08-04-core-spec-audit.md:102",
+          "update_plan/Archived/2026-08-04-core-spec-audit.md:132",
+          "update_plan/Archived/2026-08-04-core-spec-audit.md:244",
+          "update_plan/Archived/2026-08-04-core-spec-audit.md:306"
         ]
       },
       "reference/mythos/great-old-ones/dagon-and-hydra.md": {
@@ -1343,6 +1355,7 @@
         "referenced_by": [
           "WORKLOG.md:117",
           "reference/bestiary/deep-one.md:86",
+          "reference/tables/monster-index.md:269",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:680"
         ]
       },
@@ -1353,6 +1366,7 @@
           "WORKLOG.md:117",
           "WORKLOG.md:119",
           "reference/tables/monster-index.md:97",
+          "reference/tables/monster-index.md:270",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:682",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:695"
         ]
@@ -1365,6 +1379,7 @@
           "reference/bestiary/black-pharaoh.md:17",
           "reference/bestiary/black-pharaoh.md:89",
           "reference/bestiary/hunting-horrors.md:85",
+          "reference/tables/monster-index.md:271",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:684"
         ]
       },
@@ -1374,6 +1389,7 @@
         "referenced_by": [
           "WORKLOG.md:117",
           "reference/bestiary/dark-young.md:84",
+          "reference/tables/monster-index.md:272",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:686"
         ]
       },
@@ -1384,6 +1400,7 @@
           "WORKLOG.md:118",
           "WORKLOG.md:120",
           "reference/tables/monster-index.md:136",
+          "reference/tables/monster-index.md:273",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:688",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:700"
         ]
@@ -1400,7 +1417,7 @@
         "rights_holder": null,
         "referenced_by": [
           "WORKLOG.md:143",
-          "reference/mythos/great-old-ones/dagon-and-hydra.md:76",
+          "reference/mythos/great-old-ones/dagon-and-hydra.md:78",
           "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:312",
           "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:416"
         ]
@@ -1416,7 +1433,7 @@
         "title": "Oil of Silence (沉默之油)",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:220",
+          "CHANGELOG.md:251",
           "reference/bestiary/fellrock.md:60",
           "reference/mythos/spells/fellrock-call-bind.md:17",
           "update_plan/Archived/2026-08-02-cult-doc-wrapup.md:48"
@@ -1441,6 +1458,33 @@
           "reference/bestiary/vermisyn-worm.md:72"
         ]
       },
+      "reference/tables/clue-engines.md": {
+        "title": "clue-engines.md — 线索引擎:痕迹从哪来",
+        "rights_holder": null,
+        "referenced_by": [
+          "CHANGELOG.md:51",
+          "WORKLOG.md:248",
+          "WORKLOG.md:258",
+          "core/04-design-scenario.md:34",
+          "core/04-design-scenario.md:51",
+          "reference/craft/cult-design-zh.md:63",
+          "reference/craft/cult-design-zh.md:75",
+          "reference/craft/cult-design-zh.md:77",
+          "reference/craft/cult-design-zh.md:104",
+          "reference/craft/cult-design-zh.md:114",
+          "reference/tables/cult-power-sources.md:18",
+          "reference/tables/README.md:43",
+          "update_plan/README.md:49",
+          "update_plan/README.md:50",
+          "update_plan/README.md:162",
+          "update_plan/Archived/2026-08-04-clue-engines.md:7",
+          "update_plan/Archived/2026-08-04-clue-engines.md:100",
+          "update_plan/Archived/2026-08-04-clue-engines.md:106",
+          "update_plan/Archived/2026-08-04-clue-engines.md:129",
+          "update_plan/Archived/2026-08-04-clue-engines.md:139",
+          "update_plan/Archived/README.md:24"
+        ]
+      },
       "reference/tables/complications.md": {
         "title": "complications.md — 这一场会出什么岔子",
         "rights_holder": null,
@@ -1459,8 +1503,8 @@
           "core/00-how-to-run.md:90",
           "templates/cult.md:8",
           "reference/craft/cult-design-zh.md:53",
-          "reference/craft/cult-design-zh.md:104",
-          "reference/craft/cult-design-zh.md:108",
+          "reference/craft/cult-design-zh.md:112",
+          "reference/craft/cult-design-zh.md:117",
           "reference/mythos/cults/church-of-perfect-science.md:18",
           "reference/mythos/cults/esoteric-order-of-dagon.md:18",
           "reference/mythos/cults/order-of-morpheus.md:15",
@@ -1492,17 +1536,22 @@
         "title": "cult-power-sources.md — 力量来源",
         "rights_holder": null,
         "referenced_by": [
+          "WORKLOG.md:250",
           "templates/cult.md:7",
           "reference/mythos/cults/church-of-perfect-science.md:15",
           "reference/mythos/cults/esoteric-order-of-dagon.md:15",
           "reference/mythos/cults/louisiana-swamp-cult.md:12",
           "reference/mythos/cults/order-of-morpheus.md:12",
           "reference/mythos/cults/society-of-the-divine-children.md:15",
+          "reference/tables/clue-engines.md:25",
+          "reference/tables/clue-engines.md:27",
           "reference/tables/README.md:42",
-          "update_plan/2026-08-04-clue-engines.md:81",
-          "update_plan/2026-08-04-clue-engines.md:116",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:137",
-          "update_plan/Archived/2026-08-02-cult-doc-wrapup.md:20"
+          "update_plan/Archived/2026-08-02-cult-doc-wrapup.md:20",
+          "update_plan/Archived/2026-08-04-clue-engines.md:88",
+          "update_plan/Archived/2026-08-04-clue-engines.md:125",
+          "update_plan/Archived/2026-08-04-clue-engines.md:129",
+          "update_plan/Archived/README.md:24"
         ]
       },
       "reference/tables/cultist-archetypes.md": {
@@ -1514,7 +1563,7 @@
           "WORKLOG.md:165",
           "core/06-create-npc.md:49",
           "reference/mythos/spells/call-father-dagon-and-mother-hydra.md:24",
-          "reference/tables/README.md:43",
+          "reference/tables/README.md:46",
           "scripts/roll.py:30",
           "update_plan/2026-08-04-scenario-diversity.md:108",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:185",
@@ -1543,7 +1592,7 @@
         "title": "locations.md — 事情发生在哪儿",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:187",
+          "CHANGELOG.md:218",
           "reference/tables/hooks.md:6",
           "reference/tables/README.md:23",
           "update_plan/2026-08-04-scenario-diversity.md:69",
@@ -1565,14 +1614,14 @@
         "title": "madness-instant.md — 疯狂发作:即时症状(Bout of Madness, Real-time)",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:91",
+          "CHANGELOG.md:122",
           "reference/decks/phobias-and-manias-zh.md:9",
           "reference/rules/sanity.md:98",
           "reference/tables/madness-summary.md:10",
           "reference/tables/manias.md:13",
           "reference/tables/phobias.md:13",
           "reference/tables/README.md:30",
-          "update_plan/README.md:51",
+          "update_plan/README.md:56",
           "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:378"
         ]
       },
@@ -1580,14 +1629,14 @@
         "title": "madness-summary.md — 疯狂发作:概括症状(Bout of Madness, Summary)",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:92",
+          "CHANGELOG.md:123",
           "reference/decks/phobias-and-manias-zh.md:9",
           "reference/rules/sanity.md:99",
           "reference/tables/madness-instant.md:8",
           "reference/tables/manias.md:14",
           "reference/tables/phobias.md:14",
           "reference/tables/README.md:31",
-          "update_plan/README.md:51",
+          "update_plan/README.md:56",
           "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:378"
         ]
       },
@@ -1595,13 +1644,13 @@
         "title": "manias.md — 躁狂症状表(Manias)",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:89",
+          "CHANGELOG.md:120",
           "reference/decks/phobias-and-manias-zh.md:12",
           "reference/rules/sanity.md:138",
           "reference/tables/madness-instant.md:24",
           "reference/tables/madness-summary.md:26",
           "reference/tables/README.md:36",
-          "update_plan/README.md:51",
+          "update_plan/README.md:56",
           "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:227",
           "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:281",
           "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:380",
@@ -1614,40 +1663,43 @@
         "title": "monster-index.md — 神话生物导航表",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:138",
-          "CHANGELOG.md:179",
-          "CHANGELOG.md:278",
-          "CHANGELOG.md:292",
+          "CHANGELOG.md:37",
+          "CHANGELOG.md:169",
+          "CHANGELOG.md:210",
+          "CHANGELOG.md:309",
+          "CHANGELOG.md:323",
           "WORKLOG.md:113",
           "WORKLOG.md:124",
-          "WORKLOG.md:297",
-          "core/04-design-scenario.md:46",
+          "WORKLOG.md:236",
+          "WORKLOG.md:310",
+          "core/04-design-scenario.md:63",
           "core/07-create-monster.md:9",
+          "templates/great-old-one.md:4",
+          "templates/great-old-one.md:39",
           "templates/monster.md:11",
           "reference/README.md:95",
           "reference/bestiary/README.md:5",
           "reference/bestiary/README.md:16",
           "reference/bestiary/README.md:40",
           "reference/mythos/README.md:13",
-          "reference/mythos/great-old-ones/cthulhu.md:52",
-          "reference/mythos/great-old-ones/dagon-and-hydra.md:57",
-          "reference/mythos/great-old-ones/hastur.md:73",
-          "reference/mythos/great-old-ones/nyarlathotep.md:80",
-          "reference/mythos/great-old-ones/shub-niggurath.md:64",
-          "reference/mythos/great-old-ones/yog-sothoth.md:68",
-          "reference/tables/README.md:47",
+          "reference/mythos/great-old-ones/cthulhu.md:54",
+          "reference/mythos/great-old-ones/dagon-and-hydra.md:59",
+          "reference/mythos/great-old-ones/hastur.md:75",
+          "reference/mythos/great-old-ones/nyarlathotep.md:82",
+          "reference/mythos/great-old-ones/shub-niggurath.md:66",
+          "reference/mythos/great-old-ones/yog-sothoth.md:70",
+          "reference/tables/README.md:50",
           "scripts/build-reference-index.py:18",
           "scripts/build-reference-index.py:29",
-          "scripts/build-reference-index.py:42",
-          "scripts/build-reference-index.py:217",
-          "scripts/build-reference-index.py:373",
-          "scripts/build-reference-index.py:416",
-          "scripts/build-reference-index.py:421",
-          "scripts/build-reference-index.py:429",
+          "scripts/build-reference-index.py:44",
+          "scripts/build-reference-index.py:219",
+          "scripts/build-reference-index.py:382",
+          "scripts/build-reference-index.py:398",
+          "scripts/build-reference-index.py:441",
+          "scripts/build-reference-index.py:446",
+          "scripts/build-reference-index.py:454",
+          "scripts/build-reference-index.py:497",
           "scripts/roll.py:31",
-          "update_plan/2026-08-04-core-spec-audit.md:107",
-          "update_plan/2026-08-04-core-spec-audit.md:235",
-          "update_plan/2026-08-04-core-spec-audit.md:361",
           "update_plan/2026-08-04-scenario-diversity.md:109",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:9",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:362",
@@ -1657,18 +1709,23 @@
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:673",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:703",
           "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:553",
-          "update_plan/Archived/README.md:20"
+          "update_plan/Archived/2026-08-04-core-spec-audit.md:107",
+          "update_plan/Archived/2026-08-04-core-spec-audit.md:235",
+          "update_plan/Archived/2026-08-04-core-spec-audit.md:309",
+          "update_plan/Archived/2026-08-04-core-spec-audit.md:373",
+          "update_plan/Archived/README.md:20",
+          "update_plan/Archived/README.md:23"
         ]
       },
       "reference/tables/monster-traits.md": {
         "title": "monster-traits.md — 数值词条菜单",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:180",
-          "CHANGELOG.md:267",
+          "CHANGELOG.md:211",
+          "CHANGELOG.md:298",
           "WORKLOG.md:108",
           "core/02-rules-reference.md:100",
-          "core/11-review.md:83",
+          "core/11-review.md:104",
           "templates/monster.md:36",
           "reference/bestiary/black-pharaoh.md:56",
           "reference/bestiary/dark-young.md:54",
@@ -1680,7 +1737,7 @@
           "reference/rules/monster-scale.md:210",
           "reference/rules/monster-scale.md:222",
           "reference/rules/monster-scale.md:229",
-          "reference/tables/README.md:45",
+          "reference/tables/README.md:48",
           "scripts/roll.py:31",
           "update_plan/2026-08-04-scenario-diversity.md:108",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:6",
@@ -1729,14 +1786,14 @@
         "title": "phobias.md — 恐惧症状表(Phobias)",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:88",
+          "CHANGELOG.md:119",
           "reference/decks/phobias-and-manias-zh.md:12",
           "reference/rules/sanity.md:137",
           "reference/tables/madness-instant.md:23",
           "reference/tables/madness-summary.md:25",
           "reference/tables/README.md:34",
           "reference/tables/README.md:36",
-          "update_plan/README.md:51",
+          "update_plan/README.md:56",
           "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:380",
           "update_plan/Archived/README.md:22"
         ]
@@ -1745,8 +1802,8 @@
         "title": "武器强度索引：反派战力配置用",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:90",
-          "CHANGELOG.md:101",
+          "CHANGELOG.md:121",
+          "CHANGELOG.md:132",
           "WORKLOG.md:166",
           "reference/decks/weapons-and-artifacts-zh.md:14",
           "reference/rules/combat.md:29",
@@ -1755,8 +1812,8 @@
           "reference/rules/combat.md:43",
           "reference/rules/combat.md:148",
           "reference/rules/combat.md:182",
-          "reference/tables/README.md:49",
-          "update_plan/README.md:52",
+          "reference/tables/README.md:52",
+          "update_plan/README.md:57",
           "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:228",
           "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:282",
           "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:384",
@@ -1796,6 +1853,7 @@
         "reference/rules/skill-checks.md",
         "reference/sourcebooks/grand-grimoire-zh.md",
         "reference/sourcebooks/malleus-monstrorum-zh.md",
+        "reference/tables/clue-engines.md",
         "reference/tables/locations.md",
         "reference/tables/madness-instant.md",
         "reference/tables/madness-summary.md",
@@ -1829,6 +1887,8 @@
         "reference/rules/monster-scale.md",
         "reference/rules/skill-checks.md",
         "reference/sourcebooks/keeper-rulebook-7e-zh.md",
+        "reference/tables/clue-engines.md",
+        "reference/tables/cult-power-sources.md",
         "reference/tables/cultist-archetypes.md",
         "reference/tables/monster-index.md",
         "reference/tables/monster-traits.md",
@@ -1870,6 +1930,7 @@
         "reference/rules/chases.md",
         "reference/rules/sanity.md",
         "reference/sourcebooks/malleus-monstrorum-zh.md",
+        "reference/tables/clue-engines.md",
         "reference/tables/monster-index.md"
       ],
       "core/06-create-npc.md": [
@@ -1895,6 +1956,7 @@
         "reference/craft/lovecraft-zh.md"
       ],
       "core/11-review.md": [
+        "reference/craft/diagram-conventions-zh.md",
         "reference/rules/character-creation.md",
         "reference/rules/monster-scale.md",
         "reference/tables/monster-traits.md"
@@ -2002,6 +2064,7 @@
       ],
       "reference/craft/cult-design-zh.md": [
         "reference/craft/diagram-conventions-zh.md",
+        "reference/tables/clue-engines.md",
         "reference/tables/cult-goals.md"
       ],
       "reference/craft/diagram-conventions-zh.md": [
@@ -2235,6 +2298,7 @@
         "reference/decks/weapons-and-artifacts-zh.md",
         "reference/mythos/artifacts-zh.md",
         "reference/rules/monster-scale.md",
+        "reference/tables/clue-engines.md",
         "reference/tables/complications.md",
         "reference/tables/cult-goals.md",
         "reference/tables/cult-leader-positions.md",
@@ -2253,6 +2317,10 @@
         "reference/tables/phobias.md",
         "reference/tables/weapons-index.md"
       ],
+      "reference/tables/clue-engines.md": [
+        "reference/craft/cult-design-zh.md",
+        "reference/tables/cult-power-sources.md"
+      ],
       "reference/tables/complications.md": [
         "reference/decks/miseries-zh.md"
       ],
@@ -2264,6 +2332,7 @@
         "reference/rules/character-creation.md"
       ],
       "reference/tables/cult-power-sources.md": [
+        "reference/tables/clue-engines.md",
         "reference/tables/cult-goals.md"
       ],
       "reference/tables/cultist-archetypes.md": [
@@ -2317,7 +2386,10 @@
         "reference/bestiary/thrall-of-cthulhu.md",
         "reference/bestiary/vermisyn-worm.md",
         "reference/mythos/great-old-ones/cthulhu.md",
+        "reference/mythos/great-old-ones/dagon-and-hydra.md",
         "reference/mythos/great-old-ones/hastur.md",
+        "reference/mythos/great-old-ones/nyarlathotep.md",
+        "reference/mythos/great-old-ones/shub-niggurath.md",
         "reference/mythos/great-old-ones/yog-sothoth.md",
         "reference/sourcebooks/malleus-monstrorum-zh.md"
       ],
@@ -2364,6 +2436,9 @@
         "reference/tables/cult-leader-positions.md",
         "reference/tables/cult-power-sources.md"
       ],
+      "templates/great-old-one.md": [
+        "reference/tables/monster-index.md"
+      ],
       "templates/investigator.schema.json": [
         "reference/rules/character-creation.md"
       ],
@@ -2378,18 +2453,6 @@
       "update_plan/2026-08-02-low-cost-maps.md": [
         "reference/craft/cult-design-zh.md",
         "reference/craft/diagram-conventions-zh.md"
-      ],
-      "update_plan/2026-08-04-clue-engines.md": [
-        "reference/craft/cult-design-zh.md",
-        "reference/craft/diagram-conventions-zh.md",
-        "reference/tables/cult-power-sources.md"
-      ],
-      "update_plan/2026-08-04-core-spec-audit.md": [
-        "reference/craft/diagram-conventions-zh.md",
-        "reference/mythos/great-old-ones/cthulhu.md",
-        "reference/rules/character-creation.md",
-        "reference/sourcebooks/malleus-monstrorum-zh.md",
-        "reference/tables/monster-index.md"
       ],
       "update_plan/2026-08-04-scenario-diversity.md": [
         "reference/rules/chases.md",
@@ -2517,6 +2580,19 @@
         "reference/tables/phobias.md",
         "reference/tables/weapons-index.md"
       ],
+      "update_plan/Archived/2026-08-04-clue-engines.md": [
+        "reference/craft/cult-design-zh.md",
+        "reference/craft/diagram-conventions-zh.md",
+        "reference/tables/clue-engines.md",
+        "reference/tables/cult-power-sources.md"
+      ],
+      "update_plan/Archived/2026-08-04-core-spec-audit.md": [
+        "reference/craft/diagram-conventions-zh.md",
+        "reference/mythos/great-old-ones/cthulhu.md",
+        "reference/rules/character-creation.md",
+        "reference/sourcebooks/malleus-monstrorum-zh.md",
+        "reference/tables/monster-index.md"
+      ],
       "update_plan/Archived/2026-08-04-era-rule-packs.md": [
         "reference/rules/character-creation.md",
         "reference/rules/chases.md",
@@ -2532,6 +2608,7 @@
         "reference/sourcebooks/keeper-rulebook-7e-zh.md"
       ],
       "update_plan/Archived/README.md": [
+        "reference/craft/cult-design-zh.md",
         "reference/decks/busybodies-zh.md",
         "reference/rules/character-creation.md",
         "reference/rules/chases.md",
@@ -2542,6 +2619,8 @@
         "reference/rules/skill-checks.md",
         "reference/sourcebooks/grand-grimoire-zh.md",
         "reference/sourcebooks/keeper-rulebook-7e-zh.md",
+        "reference/tables/clue-engines.md",
+        "reference/tables/cult-power-sources.md",
         "reference/tables/manias.md",
         "reference/tables/monster-index.md",
         "reference/tables/monster-traits.md",
@@ -2552,6 +2631,7 @@
         "reference/craft/cult-design-zh.md",
         "reference/craft/diagram-conventions-zh.md",
         "reference/craft/lovecraft-zh.md",
+        "reference/tables/clue-engines.md",
         "reference/tables/madness-instant.md",
         "reference/tables/madness-summary.md",
         "reference/tables/manias.md",

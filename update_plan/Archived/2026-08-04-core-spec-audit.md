@@ -1,8 +1,8 @@
 # Update Plan — `core/` 复查:失效陈述、孤儿内容与缺失的镜像
 
 > 日期:2026-08-04
-> 状态:进行中(阶段 0 已完成并提交,`11f90b0`;**两个拍板点仍未定**,见「待拍板」,
-> 阶段 1 开工前需要)
+> 状态:**已完成(commit 待回填)**——阶段 0-3 全部完成;两个拍板点已由 Keeper 于
+> 2026-08-07 定案(Q1 两者都做,Q2 建模板),见「待拍板」
 > 来源:Keeper 要求复查 `core/` 是否有设计不合理或 bug(2026-08-04 会话)。
 > 逐条核对了 16 份 spec 的全部路径引用、跨文件一致性,以及它们对仓库实际状态的断言。
 > **同日按跨计划复评瘦身一次**:原阶段 0 的一半并进 P12,原阶段 3 整块并进 P11,
@@ -227,7 +227,7 @@ A 类尤其:P9 一个计划就同时踩了 1(前提失效未回扫)、2(临时�
 
 ---
 
-## 待拍板(阶段 1 开工前需要)
+## 待拍板(阶段 1 开工前需要)—— **2026-08-07 已定案:Q1 选 c(两者都做),Q2 选 a(建模板)**
 
 **Q1 — 神格页的读路径怎么接?** 三选一或组合:
 | 选项 | 做什么 | 代价 / 好处 |
@@ -294,47 +294,59 @@ A 类尤其:P9 一个计划就同时踩了 1(前提失效未回扫)、2(临时�
 
 ## 阶段 1 — 神格页读路径 + L5 模板(需要 Q1、Q2)
 
-- [ ] 按 Q1 定案接读路径。若含选项 a:改 `build_monster_index()`,
-      **跑全表回归**(223 条 + bestiary + 新并入的 6 份,确认没有重复行
-      ——`mi_match_bestiary` 的短标题盲区见 `WORKLOG.md` P9 阶段 C 那条)
-- [ ] 按 Q2 定案落 L5 体例(建模板 或 在 `core/07` 指名 `cthulhu.md`)
-- [ ] 验收:从 `core/01`/`core/03`/`core/04`/`core/07` 任一入口出发,
-      **能在不读 WORKLOG 的前提下找到 `great-old-ones/` 并知道该拿它干什么**
+- [x] 按 Q1 定案接读路径(**Keeper 拍板:两者都做**)。改 `build_monster_index()`
+      新增 `parse_great_old_one_pages()`,读 `reference/mythos/great-old-ones/*.md` 的
+      `Index summary` 字段,产出独立的「神格详注」表——**跑全表回归确认**:
+      Cthulhu/Nyarlathotep/Yog-Sothoth/Shub-Niggurath 在 malleus 转录稿里要么是旧式散文
+      格式、要么根本没有战斗数值,原解析器读不出来,新表直接补上这四位(Hastur 与
+      Dagon-and-Hydra 本来就在既有分级表里,新表仍收录全部六份保持一致)。
+      同时在 `core/01` 问题 9、`core/03`「Layered secrets」、`core/04` 步骤 1、
+      `core/07` First 段各加一条直接读路径指向 `great-old-ones/`。`--check` 报 no problems
+- [x] 按 Q2 定案落 L5 体例(**Keeper 拍板:建模板**)。新建 `templates/great-old-one.md`,
+      照 `cthulhu.md` 的实际形状(是什么/苏醒条件/征兆/邪教如何崇拜它/裁定空间/
+      眷族与仆从/挂钩)定型,`core/07` 补一句「L5 用这份模板,不是 `monster.md`」
+- [x] 验收:`core/01`/`core/03`/`core/04`/`core/07` 四个入口都有直接读路径指向
+      `great-old-ones/`,`monster-index.md` 新增的「神格详注」一节也是独立可达的检索点
+      ——不读 WORKLOG 就能找到这份目录并知道拿它做什么
 
 ## 阶段 2 — `core/11` 补齐镜像审查项
 
-> ⚠️ **与 P11 阶段 3 撞同一个文件**(那边要给 `core/11` 加一条年代串味审查项)。
-> **谁先做谁负责不打架**;建议 P11 先做,本阶段跟在它后面追加。
+> P11 阶段 3 已于 2026-08-05 先落地(年代串味审查项),本阶段跟在它后面追加,未打架。
 
-- [ ] Craft 清单里把「至少有一个场景可按多于一种顺序到达」升级为
+- [x] Craft 清单里把「至少有一个场景可按多于一种顺序到达」升级为
       **「每个必达场景 ≥3 条入边」**,与 `core/04` 步骤 5 和
       `diagram-conventions-zh.md:58` 对齐
-- [ ] 同时把 `core/04` 步骤 6 的 "most scenes ... more than one order" 措辞
+- [x] 同时把 `core/04` 步骤 6 的 "most scenes ... more than one order" 措辞
       调成不与步骤 5 冲突(步骤 5 管必达场景,步骤 6 管其余)
-- [ ] **回扫一遍**:`core/03`–`core/10` 里还有哪些生成要求在 `core/11` 没有镜像项
-      (这一步是 C 类病的存量清理,不只补这一条)
+- [x] **回扫一遍**:`core/03`–`core/10` 里还有哪些生成要求在 `core/11` 没有镜像项
+      ——新增两条镜像项:puzzle 的三级提示阶梯(`core/08`)、event clock 的双分支 +
+      可逆阶段(`core/05`)。其余检查过一遍,已有对应项(NPC want/secret/lie、
+      handout 的 spoiler 洁净、cipher 可用性等)
 
 ## 阶段 3 — 制度化(本计划的主要价值)
 
-- [ ] **A 类**:`update_plan/README.md` 完结清单加第 8 项**反向扫描**——
+- [x] **A 类**:`update_plan/README.md` 完结清单加第 8 项**反向扫描**——
       grep 本计划的编号、计划文件名、`until PN`/`等 PN 定案` 字样,
       以及被本计划推翻的前提的名词;每一处命中人工读,不看 grep 计数
-- [ ] **A 类**:`reference/craft/README.md` 那条「不许指向 `update_plan/`」
+- [x] **A 类**:`reference/craft/README.md` 那条「不许指向 `update_plan/`」
       **作用域从 `craft/` 扩到 `core/` + `templates/` + `reference/`**,
-      落到一个所有生产文件都会读到的地方(建议 `core/00` 的 Conventions 一节)
-- [ ] **B 类**:`build-reference-index.py` 的孤儿检查区分
+      落到 `core/00` 的 Conventions 一节
+- [x] **B 类**:`build-reference-index.py` 的孤儿检查区分
       **条目孤儿**(`ORPHAN_IS_ERROR` 现有语义,可豁免)与
-      **目录孤儿**(整个目录没有任何 spec 指向,**任何目录都不豁免**)
-- [ ] **B 类**:接线要求从「只管第三方归档件」扩到「原创内容也要有读路径」
-      ——`core/14` 步骤 5 那条判据搬一份进 `core/15` 的清单
+      **目录孤儿**(整个目录没有任何 spec 指向,**任何目录都不豁免**)——
+      lenient 目录(bestiary/mythos)现在会在"全部条目零引用"时报目录孤儿错误
+- [x] **B 类**:接线要求从「只管第三方归档件」扩到「原创内容也要有读路径」
+      ——`core/14` 步骤 5 那条判据搬进 `core/15` 新增的第 5 步
       (kit 原创内容走的是 `core/15`,不走 `core/14`)
-- [ ] **C 类**:`core/15` 加一步——改一份 spec 的任何一条约束时,
+- [x] **C 类**:`core/15` 加一步(新第 6 步)——改一份 spec 的任何一条约束时,
       检查同一文件的 **First / Output / Quality bar 三处**是否重复了这条约束,
       以及 `core/11` 是否需要一条镜像项
-- [ ] **C 类 / 问题 9**:`core/15` 第 2 步的 fact-check 从「数字」扩到
+- [x] **C 类 / 问题 9**:`core/15` 第 2 步的 fact-check 从「数字」扩到
       「**数字与结构清单**」,`core/00` 的 Layout 树明确点名为要核的对象之一
-- [ ] **问题 8**:`render-investigator.py` 只让 errors 触发 `sys.exit(1)`
-      (或给属性区间检查一个 post-age 豁免),`core/13:92` 同步改措辞
+- [x] **问题 8**:`render-investigator.py` 只让 errors 触发 `sys.exit(1)`
+      (warnings 不再触发 `--strict` 失败),`core/13:92` 同步改措辞,并顺带纠正了
+      文档里把 Credit Rating 检查错误归到"unconditional 算术"的错误分类
+      (代码里它一直是 warning)
 
 ---
 

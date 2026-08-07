@@ -143,6 +143,13 @@ writing any stat block, difficulty, or Sanity cost.
 - Templates in `templates/` define the shape of each artifact. Fill the template; don't
   invent a new structure.
 - Every spec in `core/` ends with a **Quality bar**. Meet it before calling the work done.
+- **Never point a production file at `update_plan/`** for what a term means or what a
+  convention is. A plan file describes what's *planned*, not what *is* — it moves to
+  `Archived/` once the plan closes and the link rots at that moment. Define new terminology
+  in place, or in the file it actually belongs to (`reference/glossary-zh.md` for rules
+  terms). This applies to every file under `core/`, `templates/`, and `reference/` — the
+  convention was first written down scoped to `reference/craft/README.md` alone, which is
+  too narrow: it doesn't stop a `core/00:103`-style dangling reference from happening again.
 
 ## If you cannot write files
 

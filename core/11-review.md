@@ -22,8 +22,19 @@ model's output. Assume the material is wrong until each line checks out.
 
 ### Blocking — the session breaks without these
 
-- [ ] **Three clues per must-know fact.** Every fact the players *must* realise has three
-      independent sources. Count them; don't trust the clue map's own claim.
+- [ ] **Three clues per must-know fact — three checks, not a count.** Don't trust the clue
+      map's own claim; trace each of the following (`core/04-design-scenario.md` step 5 is
+      the generation-side spec these mirror):
+      1. **Forward trace (ghost clues).** Walk from the investigators' starting point through
+         the scene web. Does the scene holding each clue actually have an inbound edge? A
+         clue sitting in an unreachable scene doesn't count as a source.
+      2. **Tonight-discovery test (independence).** If the threat learned tonight it's been
+         made, how many of the three could it destroy or silence by morning? Two or more
+         killable means they aren't independent, whatever the clue map claims.
+      3. **Shelf life (decay).** Are all three clues perishable on the same clock? If none is
+         marked permanent and the event clock has advanced past them, the "guarantee" may
+         already be gone — check `world/event-clock.md`'s current stage, not the scenario
+         file's static claim.
 - [ ] **No single-roll gates.** No failed check anywhere can end the investigation. Trace each
       required clue back: if the only route is one roll, it fails.
 - [ ] **Every lock has ≥2 keys.** Puzzles, locked doors, and uncooperative NPCs all have an
@@ -49,11 +60,21 @@ model's output. Assume the material is wrong until each line checks out.
 
 - [ ] Every NPC has a **want**, a **secret**, and a **prepared lie**.
 - [ ] Every scene is keyed by purpose (clue / choice / shock / breather).
-- [ ] Scenes form a web — at least one scene is reachable in more than one order.
+- [ ] **Every must-reach scene has ≥3 inbound edges** on the scene web (mirrors
+      `core/04-design-scenario.md` step 5 and `reference/craft/diagram-conventions-zh.md` §三
+      — a scene the players *must* hit with fewer than 3 clues pointing to it is a stall point).
+      Trace it from the investigators' starting point; don't trust the diagram's own claim.
+- [ ] Scenes **other than** the must-reach ones form a web too — most of them reachable in
+      more than one order, not a single required sequence (`core/04` step 6).
 - [ ] Boxed text: 3–6 sentences, ≥2 senses, one wrong detail, ends on a hook.
 - [ ] SAN hits are spaced, not stacked; the biggest lands at the reveal.
 - [ ] Scenario-level material: each ending carries a suggested SAN reward (or explicitly none
       for muddled/grim), and a Scaling sidebar exists if the table's size differs from baseline.
+- [ ] **Puzzles: the 3-rung hint ladder (nudge / lead / gift) is written out**, not merely
+      implied — `core/08-create-puzzle.md`.
+- [ ] **Event clock: every trigger has both a fires-branch and a fails/half-succeeds branch**,
+      and at least two doom stages are marked reversible — `core/05-event-clock.md`'s quality
+      bar. A trigger with one outcome is a railroad tie.
 
 ### Mechanics
 

@@ -1,5 +1,7 @@
 # Shub-Niggurath（莎布·尼古拉丝）
 
+- **Index summary:** 森林黑山羊，携万千子嗣，弥漫荒野与生育的增殖力量。
+
 ## 是什么
 
 外神之一，别号"森林中的黑山羊，携万千子嗣"（The Black Goat of the Woods with a Thousand

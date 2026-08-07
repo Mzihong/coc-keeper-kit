@@ -24,7 +24,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 219,
+          "line": 250,
           "context": "- 怪物图鉴 `fellrock.md` 的\"沉默之油\"反查链接指向了 `artifacts-zh.md`,但那份文件里"
         },
         {
@@ -74,7 +74,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 50,
+          "line": 53,
           "context": "和 `reference/decks/weapons-and-artifacts-zh.md` 的按品类原表分工不同,见该文件头部。"
         },
         {
@@ -161,7 +161,7 @@
       "referenced_by": [
         {
           "file": "core/03-build-world.md",
-          "line": 57,
+          "line": 60,
           "context": "the throughline is Cthulhu-cult history, `reference/mythos/cthulhu-cult-history-zh.md` has"
         },
         {
@@ -191,12 +191,12 @@
         },
         {
           "file": "reference/mythos/great-old-ones/cthulhu.md",
-          "line": 43,
+          "line": 45,
           "context": "只是被外人统称。相关记录见 `reference/mythos/cthulhu-cult-history-zh.md` 的"
         },
         {
           "file": "reference/mythos/great-old-ones/cthulhu.md",
-          "line": 75,
+          "line": 77,
           "context": "- 历史上记录过的克苏鲁邪教事件 → `reference/mythos/cthulhu-cult-history-zh.md`"
         },
         {
@@ -287,12 +287,12 @@
         },
         {
           "file": "reference/mythos/great-old-ones/dagon-and-hydra.md",
-          "line": 35,
+          "line": 37,
           "context": "`../cults/esoteric-order-of-dagon.md`"
         },
         {
           "file": "reference/mythos/great-old-ones/dagon-and-hydra.md",
-          "line": 75,
+          "line": 77,
           "context": "- 已立档的具体教团 → [`../cults/esoteric-order-of-dagon.md`](../cults/esoteric-order-of-dagon.md)"
         },
         {
@@ -418,7 +418,7 @@
       "file": "great-old-ones/cthulhu.md",
       "path": "reference/mythos/great-old-ones/cthulhu.md",
       "title": "Cthulhu（克苏鲁）",
-      "lines": 77,
+      "lines": 79,
       "declared_consumers": [
         "core/02-rules-reference.md",
         "reference/craft/cult-design-zh.md",
@@ -429,12 +429,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 284,
+          "line": 315,
           "context": "从 deadly 改成 mythic(体型与耐久数值早已过 deadly 上限)、`thrall-of-cthulhu.md`"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 287,
+          "line": 318,
           "context": "- **神格文件现在要反向列出自己的眷族与仆从。** `cthulhu.md` 补了这一节(哪些怪物服侍"
         },
         {
@@ -449,7 +449,7 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 291,
+          "line": 304,
           "context": "- **古神级条目住在 `reference/mythos/great-old-ones/`(现有 6 份:`cthulhu.md` +"
         },
         {
@@ -459,7 +459,7 @@
         },
         {
           "file": "reference/mythos/great-old-ones/dagon-and-hydra.md",
-          "line": 67,
+          "line": 69,
           "context": "[`cthulhu.md`](cthulhu.md) 的\"眷族与仆从\"一节"
         },
         {
@@ -468,34 +468,19 @@
           "context": "| 克苏鲁的仆役，伺奉克苏鲁的仆从（THRALLS OF CTHULHU, Servants of Cthulhu） | 1/1D8 (malleus's own figure for this entry — kept as-is; see Threat note above for why the label mo"
         },
         {
+          "file": "reference/tables/monster-index.md",
+          "line": 268,
+          "context": "| Cthulhu（克苏鲁） | 拉莱耶之主，梦中降下意象与命令，深潜者与星之眷族服侍。 | `reference/mythos/great-old-ones/cthulhu.md` |"
+        },
+        {
           "file": "scripts/build-reference-index.py",
-          "line": 173,
+          "line": 175,
           "context": "\"\"\"Sorted relative paths (posix-style, e.g. 'great-old-ones/cthulhu.md') of every .md"
         },
         {
           "file": "scripts/build-reference-index.py",
-          "line": 188,
+          "line": 190,
           "context": "relative path (e.g. 'great-old-ones/cthulhu.md'); references also match the bare"
-        },
-        {
-          "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 102,
-          "context": "`reference/mythos/great-old-ones/`(`cthulhu.md` + P9 阶段 C 2026-08-04 新增 5 份)"
-        },
-        {
-          "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 132,
-          "context": "而 `templates/` 下**没有这个形状的模板**(现有 6 份照 `cthulhu.md` 抄,"
-        },
-        {
-          "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 244,
-          "context": "| **b. 在 `core/07` 指名 `reference/mythos/great-old-ones/cthulhu.md` 当体例** | 零新增文件;但\"拿一份内容当模板\"和 `core/00` 的 \"Templates in `templates/` define the shape\" 打架 |"
-        },
-        {
-          "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 300,
-          "context": "- [ ] 按 Q2 定案落 L5 体例(建模板 或 在 `core/07` 指名 `cthulhu.md`)"
         },
         {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
@@ -536,15 +521,35 @@
           "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
           "line": 678,
           "context": "`great-old-ones/cthulhu.md`(是什么 / 苏醒条件(或对应改写)/ 征兆 / 邪教如何崇拜 /"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-core-spec-audit.md",
+          "line": 102,
+          "context": "`reference/mythos/great-old-ones/`(`cthulhu.md` + P9 阶段 C 2026-08-04 新增 5 份)"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-core-spec-audit.md",
+          "line": 132,
+          "context": "而 `templates/` 下**没有这个形状的模板**(现有 6 份照 `cthulhu.md` 抄,"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-core-spec-audit.md",
+          "line": 244,
+          "context": "| **b. 在 `core/07` 指名 `reference/mythos/great-old-ones/cthulhu.md` 当体例** | 零新增文件;但\"拿一份内容当模板\"和 `core/00` 的 \"Templates in `templates/` define the shape\" 打架 |"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-core-spec-audit.md",
+          "line": 306,
+          "context": "照 `cthulhu.md` 的实际形状(是什么/苏醒条件/征兆/邪教如何崇拜它/裁定空间/"
         }
       ],
-      "reference_count": 22
+      "reference_count": 23
     },
     {
       "file": "great-old-ones/dagon-and-hydra.md",
       "path": "reference/mythos/great-old-ones/dagon-and-hydra.md",
       "title": "达贡与许德拉（Father Dagon & Mother Hydra）",
-      "lines": 78,
+      "lines": 80,
       "declared_consumers": [
         "core/02-rules-reference.md",
         "reference/craft/cult-design-zh.md",
@@ -563,18 +568,23 @@
           "context": "> [Father Dagon & Mother Hydra](../mythos/great-old-ones/dagon-and-hydra.md), who rule them and"
         },
         {
+          "file": "reference/tables/monster-index.md",
+          "line": 269,
+          "context": "| 达贡与许德拉（Father Dagon & Mother Hydra） | 深潜者的统治者，率众崇拜克苏鲁，几乎从不同时现身。 | `reference/mythos/great-old-ones/dagon-and-hydra.md` |"
+        },
+        {
           "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
           "line": 680,
           "context": "[`dagon-and-hydra.md`](../reference/mythos/great-old-ones/dagon-and-hydra.md)(唯一存在级,"
         }
       ],
-      "reference_count": 3
+      "reference_count": 4
     },
     {
       "file": "great-old-ones/hastur.md",
       "path": "reference/mythos/great-old-ones/hastur.md",
       "title": "Hastur（哈斯塔）",
-      "lines": 94,
+      "lines": 96,
       "declared_consumers": [
         "core/02-rules-reference.md",
         "reference/craft/cult-design-zh.md",
@@ -599,6 +609,11 @@
           "context": "| 哈斯塔之眷族，不可名状者生于星辰之间的子嗣（SPAWN OF HASTUR, Star-Born Progeny of the Unspeakable One） | 1D6/1D20 (malleus's own figure for this entry) | Hastur | Amphibious grappl"
         },
         {
+          "file": "reference/tables/monster-index.md",
+          "line": 270,
+          "context": "| Hastur（哈斯塔） | 毕宿五外神，黄衣之王等化身现身人间，催眠与凝视杀人。 | `reference/mythos/great-old-ones/hastur.md` |"
+        },
+        {
           "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
           "line": 682,
           "context": "[`hastur.md`](../reference/mythos/great-old-ones/hastur.md)(外神,黄衣之王作为化身写入"
@@ -609,13 +624,13 @@
           "context": "[Spawn of Hastur](../reference/bestiary/spawn-of-hastur.md)(均哈斯塔)、"
         }
       ],
-      "reference_count": 5
+      "reference_count": 6
     },
     {
       "file": "great-old-ones/nyarlathotep.md",
       "path": "reference/mythos/great-old-ones/nyarlathotep.md",
       "title": "Nyarlathotep（奈亚拉托提普）",
-      "lines": 101,
+      "lines": 103,
       "declared_consumers": [
         "core/02-rules-reference.md",
         "core/07-create-monster.md",
@@ -646,18 +661,23 @@
           "context": "> `reference/mythos/great-old-ones/nyarlathotep.md`). They also turn up loose in Dreamlands"
         },
         {
+          "file": "reference/tables/monster-index.md",
+          "line": 271,
+          "context": "| Nyarlathotep（奈亚拉托提普） | 外神信使与执行者，千面化身各有教团，唯一自由往来现实的外神。 | `reference/mythos/great-old-ones/nyarlathotep.md` |"
+        },
+        {
           "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
           "line": 684,
           "context": "[`nyarlathotep.md`](../reference/mythos/great-old-ones/nyarlathotep.md)(外神,举例"
         }
       ],
-      "reference_count": 5
+      "reference_count": 6
     },
     {
       "file": "great-old-ones/shub-niggurath.md",
       "path": "reference/mythos/great-old-ones/shub-niggurath.md",
       "title": "Shub-Niggurath（莎布·尼古拉丝）",
-      "lines": 86,
+      "lines": 88,
       "declared_consumers": [
         "core/02-rules-reference.md",
         "reference/bestiary/dark-young.md",
@@ -677,18 +697,23 @@
           "context": "> **KEEPER ONLY** — See `reference/mythos/great-old-ones/shub-niggurath.md` for the deity this"
         },
         {
+          "file": "reference/tables/monster-index.md",
+          "line": 272,
+          "context": "| Shub-Niggurath（莎布·尼古拉丝） | 森林黑山羊，携万千子嗣，弥漫荒野与生育的增殖力量。 | `reference/mythos/great-old-ones/shub-niggurath.md` |"
+        },
+        {
           "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
           "line": 686,
           "context": "[`shub-niggurath.md`](../reference/mythos/great-old-ones/shub-niggurath.md)(外神,"
         }
       ],
-      "reference_count": 3
+      "reference_count": 4
     },
     {
       "file": "great-old-ones/yog-sothoth.md",
       "path": "reference/mythos/great-old-ones/yog-sothoth.md",
       "title": "Yog-Sothoth（犹格·索托斯）",
-      "lines": 89,
+      "lines": 91,
       "declared_consumers": [
         "core/02-rules-reference.md",
         "reference/craft/cult-design-zh.md",
@@ -712,6 +737,11 @@
           "context": "| 尤格·索托斯之子，外神的子嗣（SONS OF YOG-SOTHOTH, Progeny of an Outer Gods） | 1/1D8 (sensing the unseen monstrous form) — see Stat block for the full | Yog-Sothoth | Yog-So"
         },
         {
+          "file": "reference/tables/monster-index.md",
+          "line": 273,
+          "context": "| Yog-Sothoth（犹格·索托斯） | 万物归一者，与时空共存无固定形体，掌管终极之门与知识。 | `reference/mythos/great-old-ones/yog-sothoth.md` |"
+        },
+        {
           "file": "update_plan/Archived/2026-08-02-monster-templates-traits.md",
           "line": 688,
           "context": "[`yog-sothoth.md`](../reference/mythos/great-old-ones/yog-sothoth.md)(外神,\"现身/召唤"
@@ -722,7 +752,7 @@
           "context": "[Sons of Yog-Sothoth](../reference/bestiary/sons-of-yog-sothoth.md)(犹格·索托斯)。"
         }
       ],
-      "reference_count": 5
+      "reference_count": 6
     },
     {
       "file": "spells/black-wing-call.md",
@@ -760,7 +790,7 @@
         },
         {
           "file": "reference/mythos/great-old-ones/dagon-and-hydra.md",
-          "line": 76,
+          "line": 78,
           "context": "- 请神/送神的具体法术 → [`../spells/call-father-dagon-and-mother-hydra.md`](../spells/call-father-dagon-and-mother-hydra.md)"
         },
         {
@@ -807,7 +837,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 220,
+          "line": 251,
           "context": "根本没有这一条——沉默之油实际是 `reference/mythos/spells/oil-of-silence.md` 的法术,"
         },
         {

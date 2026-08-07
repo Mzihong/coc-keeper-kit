@@ -40,6 +40,9 @@
   `reference/craft/cult-design-zh.md` §三。
 - `cult-leader-positions.md`(1d10)——邪教首领的社会门面,以及这个位置换来的便利。
 - `cult-power-sources.md`(1d4)——邪教声称的超自然背书从哪儿来。
+- `clue-engines.md`(1d10)——威胁反复做的哪件事会留下可查的痕迹;一次只掷 2–3 条,
+  不许全开。见 `core/04-design-scenario.md` 第 5 步、`reference/craft/cult-design-zh.md`
+  §四(财源即十条里的一条)。
 - `cultist-archetypes.md`——12 组现成的低阶邪教徒数值(按角色分组,不是骰表),外加一套
   永生大师工具箱。`create-npc` 的配套件,见 `core/06-create-npc.md`。
 - `monster-traits.md`——给怪物条目加挂的数值词条菜单(带负载点与破解口),配

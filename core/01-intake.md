@@ -81,7 +81,10 @@ Ask all of these. They are the ones that actually change downstream output.
    `reference/craft/cult-design-zh.md` and `reference/mythos/cults/` are where world-building
    picks it up (see `core/03`); the cult's concrete goal is still rolled via
    `python scripts/roll.py cult-goals --campaign <slug>`, not invented, answering "cult" here
-   is not permission to write a generic one.
+   is not permission to write a generic one. If the threat traces back to a **named Great Old
+   One or Outer God**, read its page in `reference/mythos/great-old-ones/` before writing
+   anything about it — awakening conditions, signs, and cult-worship patterns are pre-written
+   there, not invented per campaign.
 10. **Human antagonist strength** — if question 9 produces a named human antagonist (a cult
     leader and the like), should they default to combat-emphasised skills, or to the
     background-first split in `reference/rules/character-creation.md` §11? *Default: not

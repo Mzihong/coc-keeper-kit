@@ -78,7 +78,35 @@ In short, for a change touching `core/`, `templates/`, or `reference/`:
   (new skill, new spec, new top-level convention).
 - New rules terminology goes into `reference/glossary-zh.md`.
 
-### 5. Report
+### 5. Wire in any new original content
+
+`core/14-archive-reference.md` step 5 ("Wire it in") only covers third-party archives — its own
+opening line says so: "material the kit writes itself... does not come through here." That left
+a gap: kit-original content (a new `reference/mythos/` page, a new `reference/tables/` table, a
+new `reference/craft/` note) had no equivalent requirement, and it's exactly how six
+`great-old-ones/` pages sat write-only for a whole session (see P15 problem 4). The same
+judgement, restated for original content:
+
+- For anything new added under `reference/rules/`, `craft/`, `bestiary/`, `mythos/`, or
+  `tables/` this session: does at least one spec in `core/` actually point at it and say what
+  to take from it? "It exists in the repo" is not wiring; a spec has to name it.
+- Run `python scripts/build-reference-index.py --check` — a `rules/`/`craft/`/`tables/` orphan
+  fails the check outright; a `bestiary/`/`mythos/` orphan is only waived per-entry, never for
+  a whole directory (see the script's directory-orphan check). Fix what it reports.
+- If nothing points at the new content yet, that's not done — either add the pointer now or
+  say plainly that it's staged for a later session, don't let it read as finished.
+
+### 6. Check for undetected duplicate constraints
+
+If this session changed any constraint in a `core/` spec (a requirement, a threshold, a
+mandatory field), check the **same file's** First / Output / Quality bar sections for the same
+constraint restated — specs grow by accretion and the same rule tends to get written twice,
+once near where it's generated and once near where it's filed (see P15 problem 5: `core/07`
+said "L5 → `mythos/`" in one section and "L5 → `bestiary/`" in another, because Output was never
+touched when First was). Also check whether `core/11-review.md` needs a mirroring checklist
+item — a new generation requirement with no matching review item is a rule nothing ever audits.
+
+### 7. Report
 
 Tell the Keeper/collaborator: what changed, what got fact-checked in step 2 (and what it caught,
 if anything), what's still open, and whether anything needs sign-off before a commit. Don't
@@ -91,7 +119,15 @@ commit unless asked — this spec closes out the working tree, not the git histo
   pruned, since `git log` already carries them.
 - Every count, enumeration, or path written this session has been grep-verified against actual
   repo state or generated output — not asserted from memory or copied from an earlier entry.
+  This includes **structural claims, not just counts** — most concretely `core/00-how-to-run.md`'s
+  Layout tree, plus any other directory listing or enumerated file list — if this session added,
+  removed, or renamed a directory, diff it against the Layout tree; don't trust what you
+  remember seeing there.
 - `CHANGELOG.md` has an entry (or an addition to today's).
 - Every `README.md` describing the changed structure matches it.
 - `python scripts/build-reference-index.py --check` clean if `reference/`'s archives changed.
+- Any new kit-original content added this session is wired into at least one `core/` spec, or
+  its unwired state is called out explicitly rather than left silent.
+- Any constraint changed this session was checked against the same file's First / Output /
+  Quality bar sections, and against whether `core/11-review.md` needs a mirroring item.
 - The three root adapters still agree with each other and with `core/`.

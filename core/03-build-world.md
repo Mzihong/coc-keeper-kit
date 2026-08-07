@@ -28,6 +28,9 @@ for **usable texture**, not an encyclopedia: enough for the Keeper to improvise 
   (transport, tech, money, news) for the campaign's era.
 - **Layered secrets.** Surface (what anyone sees) → local knowledge (a check or a chat) →
   Keeper truth (the Mythos underneath). Mark the deepest layer `> **KEEPER ONLY**`.
+- **A named Great Old One or Outer God is lore, not a blank slate.** If the Keeper-truth layer
+  traces back to one, read its page in `reference/mythos/great-old-ones/` first — awakening
+  conditions, signs, and how a cult worships it are already written there.
 
 ## Produce
 

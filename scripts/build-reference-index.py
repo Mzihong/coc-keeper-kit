@@ -29,10 +29,12 @@ add, rename, or retire a file in any of these seven directories — see
 `reference/tables/monster-index.md` is a special case within `tables/`: instead of citing one
 source file, it's assembled from `reference/sourcebooks/malleus-monstrorum-zh.md` (parsed fresh
 every run — name/tier/SAN/anchor for all 223 entries), `reference/tables/monster-index-data.json`
-(hand-written `Serves`/summary, the two fields the parser can't derive), and any matching
-`reference/bestiary/*.md` entry (overrides the row once a creature is actually written up). See
-`parse_malleus_entries()` / `build_monster_index()` below and
-`update_plan/2026-08-02-monster-templates-traits.md` stage B for why.
+(hand-written `Serves`/summary, the two fields the parser can't derive), any matching
+`reference/bestiary/*.md` entry (overrides the row once a creature is actually written up), and
+`reference/mythos/great-old-ones/*.md` (a separate section — several apex entities have no
+machine-parseable stat block in the malleus transcript at all, see `parse_great_old_one_pages()`).
+See `parse_malleus_entries()` / `build_monster_index()` below and P9 stage B
+(`update_plan/Archived/2026-08-02-monster-templates-traits.md`, archived) for why.
 
 Validation (always on, and the whole point of --check):
   - every .md in a third-party dir (`decks/`, `sourcebooks/`) carries a `## 引用出处` section
@@ -215,6 +217,8 @@ def build_entry(dirname, name, path, targets, require_citation):
 MALLEUS_PATH = os.path.join(REF, "sourcebooks", "malleus-monstrorum-zh.md")
 MONSTER_INDEX_DATA_PATH = os.path.join(REF, "tables", "monster-index-data.json")
 MONSTER_INDEX_OUT_PATH = os.path.join(REF, "tables", "monster-index.md")
+GREAT_OLD_ONES_DIR = os.path.join(REF, "mythos", "great-old-ones")
+GOO_SUMMARY_RE = re.compile(r'-\s*\*\*Index summary:\*\*\s*(.+)')
 
 MI_CLASS_TOKENS = ["独立种族", "仆从种族", "唯一存在", "传说生物",
                     "旧神", "旧日支配者", "梦境诸神", "外神", "化身"]
@@ -264,8 +268,8 @@ def parse_malleus_entries():
     book's own classification label mapped to this kit's tier ladder, SAN loss, and the source
     line to anchor back to. Best-effort — verified against the file's own '223 属性块' header
     count; SAN is occasionally left blank where the source states none inline near the table
-    (checked by hand during the stage-B content pass, see update_plan/2026-08-02-
-    monster-templates-traits.md)."""
+    (checked by hand during the P9 stage-B content pass, see
+    update_plan/Archived/2026-08-02-monster-templates-traits.md, archived)."""
     if not os.path.isfile(MALLEUS_PATH):
         return []
     with open(MALLEUS_PATH, encoding="utf-8") as fh:
@@ -369,6 +373,27 @@ def mi_match_bestiary(entry, b):
     return sum(1 for wb in words_b if word_hit(wb)) == len(words_b)
 
 
+def parse_great_old_one_pages():
+    """reference/mythos/great-old-ones/*.md: title + hand-written `Index summary` line. These
+    are lore pages (core/07's 'Filing by tier'), not malleus stat-block scaffolds — Cthulhu,
+    Nyarlathotep, Yog-Sothoth, and Shub-Niggurath all have no machine-parseable stat table in
+    malleus-monstrorum-zh.md (old prose format, or no combat stat block at all since they rarely
+    manifest directly), so parse_malleus_entries() never finds them. This is the direct fix:
+    monster-index.md gets a section built straight from these files instead of depending on the
+    transcript's formatting for every apex entity."""
+    out = []
+    if not os.path.isdir(GREAT_OLD_ONES_DIR):
+        return out
+    for name in sorted(os.listdir(GREAT_OLD_ONES_DIR)):
+        if not name.endswith(".md") or name == "README.md":
+            continue
+        text = read(os.path.join(GREAT_OLD_ONES_DIR, name))
+        m = GOO_SUMMARY_RE.search(text.split("## ", 1)[0])
+        out.append({"file": name, "title": parse_title(text),
+                     "summary": m.group(1).strip() if m else None})
+    return out
+
+
 def build_monster_index():
     """Generate reference/tables/monster-index.md — the navigation table over all 223 malleus
     entries (name/tier/SAN from the transcript, Serves/summary hand-written in
@@ -465,6 +490,26 @@ def build_monster_index():
                 b.get("serves") or "**MISSING**", b.get("summary") or "**MISSING**", b["file"]))
         lines.append("")
 
+    goo_pages = parse_great_old_one_pages()
+    for g in goo_pages:
+        if not g.get("summary"):
+            problems.append("reference/mythos/great-old-ones/%s: missing Index summary "
+                             "(needed by monster-index.md)" % g["file"])
+    if goo_pages:
+        lines.append("## 神格详注(reference/mythos/great-old-ones/)")
+        lines.append("")
+        lines.append("上面几个等级表里，这几位可能没有独立行——`malleus-monstrorum-zh.md` "
+                      "对它们要么用旧式散文格式记录数值（本脚本的表格解析器读不出来），要么"
+                      "根本没写战斗数值（它们很少直接现身战斗）。**它们不是索引的空白，是有"
+                      "专门讲义的**，讲义比战斗数值更常用得上：苏醒条件、征兆、邪教怎么崇拜它。")
+        lines.append("")
+        lines.append("| 名称 | 一句话概要 | 详注 |")
+        lines.append("|---|---|---|")
+        for g in goo_pages:
+            lines.append("| %s | %s | `reference/mythos/great-old-ones/%s` |" % (
+                g.get("title") or g["file"], g.get("summary") or "**MISSING**", g["file"]))
+        lines.append("")
+
     with open(MONSTER_INDEX_OUT_PATH, "w", encoding="utf-8", newline="\n") as fh:
         fh.write("\n".join(lines) + "\n")
     return problems
@@ -514,6 +559,19 @@ def build():
             entry, file_problems = build_entry(dirname, name, path, targets, require_citation=False)
             problems.extend("%s: %s" % (entry["path"], p) for p in file_problems)
             entries.append(entry)
+        # A lenient dir (ORPHAN_IS_ERROR False, e.g. bestiary/mythos) waives the *per-entry*
+        # orphan check — most individual entries are legitimately never referenced by a spec,
+        # the Keeper draws from them by hand. It does NOT waive the case where every single
+        # entry in the directory has zero references: that's not "some entries are content-
+        # library items," that's "nothing in core/ has ever heard of this directory" — the
+        # exact failure mode P15 problem 4 found in reference/mythos/great-old-ones/ before
+        # this directory was wired in. A directory orphan is always an error, regardless of
+        # the per-entry leniency setting.
+        if entries and not ORPHAN_IS_ERROR.get(dirname, True) and \
+                all(e["reference_count"] == 0 for e in entries):
+            problems.append("reference/%s/: directory orphan — every entry has zero "
+                             "references; nothing in core/ points into this directory at all"
+                             % dirname)
         index = {
             "directory": "reference/%s" % dirname,
             "role": role,

@@ -19,8 +19,11 @@ Self-validation runs on every render and reports to stderr:
   campaign via campaigns/<slug>/investigators/validation.json (falls back to the defaults
   below, which mirror reference/rules/character-creation.md, if that file is absent).
 
-By default, violations are warned but the card still renders. `--strict` turns any
-violation into a hard failure (nothing is written).
+By default, violations are warned but the card still renders. `--strict` turns any hard
+*error* into a hard failure (nothing is written) — warnings never abort the render, even
+under `--strict`, because several of them (e.g. the characteristic-range check) are
+threshold checks with known legitimate exceptions (point-buy, an aged/scaled NPC) rather
+than unconditional 7e maths.
 
 stdlib only, no dependencies.
 """
@@ -481,8 +484,8 @@ def main():
     for e in errors:
         print(f"Error: {e}", file=sys.stderr)
 
-    if (errors or warnings) and strict:
-        print("Aborting render (--strict, violations above).", file=sys.stderr)
+    if errors and strict:
+        print("Aborting render (--strict, errors above).", file=sys.stderr)
         sys.exit(1)
 
     out = src.with_suffix(".md")
