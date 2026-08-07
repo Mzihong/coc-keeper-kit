@@ -6,7 +6,7 @@
   "citation_rule": null,
   "usage_rule": "authored by this kit — read and used directly, no citation required",
   "generated_by": "scripts/build-reference-index.py — do not edit by hand",
-  "entry_count": 3,
+  "entry_count": 4,
   "entries": [
     {
       "file": "cult-design-zh.md",
@@ -36,12 +36,12 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 251,
+          "line": 257,
           "context": "`cult-design-zh.md` §四 改口径为\"财源是十台里写得最细的一台\",§五 的\"平淡才合理\""
         },
         {
           "file": "WORKLOG.md",
-          "line": 297,
+          "line": 303,
           "context": "**P5 阶段 0 是还债**:`templates/cult.md:42` 与 `reference/craft/cult-design-zh.md:68`"
         },
         {
@@ -51,7 +51,7 @@
         },
         {
           "file": "core/03-build-world.md",
-          "line": 48,
+          "line": 57,
           "context": "build order. Read `reference/craft/cult-design-zh.md` §一–§三 first (why a cult works as a"
         },
         {
@@ -66,7 +66,7 @@
         },
         {
           "file": "reference/craft/diagram-conventions-zh.md",
-          "line": 84,
+          "line": 134,
           "context": "在此之前 `templates/cult.md` 与 `reference/craft/cult-design-zh.md` 曾指向 P5 的计划文件"
         },
         {
@@ -215,11 +215,6 @@
           "context": "`craft/cult-design-zh.md` 两处指向不存在规范的引用)。"
         },
         {
-          "file": "update_plan/README.md",
-          "line": 162,
-          "context": "`reference/tables/clue-engines.md` 落地并接 `roll.py`、`cult-design-zh.md` §四/§五改口径、"
-        },
-        {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
           "line": 110,
           "context": "**A. 手法散文 → `reference/craft/cult-design-zh.md`**(2026-08-02 落盘)"
@@ -270,13 +265,13 @@
           "context": "| P16 | [clue-engines](2026-08-04-clue-engines.md) | 线索引擎通用化 + 三线索规则可执行化。新表 `reference/tables/clue-engines.md`(d10,十条线索引擎各带一条别的引擎给不了的结构属性,表头写死\"一次只掷 2–3 条,不许全开\")"
         }
       ],
-      "reference_count": 50
+      "reference_count": 49
     },
     {
       "file": "diagram-conventions-zh.md",
       "path": "reference/craft/diagram-conventions-zh.md",
       "title": "图示惯例 — 简体中文",
-      "lines": 87,
+      "lines": 137,
       "declared_consumers": [
         "core/03-build-world.md",
         "core/04-design-scenario.md",
@@ -300,7 +295,7 @@
         },
         {
           "file": "core/03-build-world.md",
-          "line": 76,
+          "line": 85,
           "context": "`reference/craft/diagram-conventions-zh.md`: §一 (general rules — every edge carries a"
         },
         {
@@ -335,17 +330,17 @@
         },
         {
           "file": "reference/craft/README.md",
-          "line": 16,
+          "line": 17,
           "context": "| `diagram-conventions-zh.md` | **kit 自订**(P1 关系图 + P5 低成本地图两个计划合并定案),非提炼稿 | `core/03-build-world.md`(§二 势力图、§四 区域图)、`core/04-design-scenario.md`(§三 场景网)、`templ"
         },
         {
           "file": "reference/craft/README.md",
-          "line": 19,
+          "line": 20,
           "context": "> 不取文字」那条管);`diagram-conventions-zh.md` 是**惯例规范**——没有源材料,是 kit 自己"
         },
         {
           "file": "reference/craft/README.md",
-          "line": 45,
+          "line": 46,
           "context": "> **为什么单列一步:** `diagram-conventions-zh.md` §四 曾写下「出这张图 + **文字地图卡**」,"
         },
         {
@@ -555,7 +550,7 @@
         },
         {
           "file": "reference/craft/README.md",
-          "line": 37,
+          "line": 38,
           "context": "4. **篇幅克制。** `lovecraft-zh.md` 90 行覆盖了 82 篇小说。生成时模型要整份读进上下文,"
         },
         {
@@ -625,6 +620,95 @@
         }
       ],
       "reference_count": 26
+    },
+    {
+      "file": "town-anatomy-zh.md",
+      "path": "reference/craft/town-anatomy-zh.md",
+      "title": "城镇解剖手法稿 — 简体中文",
+      "lines": 93,
+      "declared_consumers": [
+        "core/00-how-to-run.md",
+        "core/03-build-world.md",
+        "reference/_source/arkham-zh.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "WORKLOG.md",
+          "line": 172,
+          "context": "`craft/town-anatomy-zh.md` 城镇解剖手法稿;**P11 = 年代开放**——目标是「KP 报哪个年代"
+        },
+        {
+          "file": "core/03-build-world.md",
+          "line": 41,
+          "context": "**Town/locale build order.** Read `reference/craft/town-anatomy-zh.md` §一 (the four"
+        },
+        {
+          "file": "reference/craft/diagram-conventions-zh.md",
+          "line": 92,
+          "context": "`reference/craft/town-anatomy-zh.md` §一 的四维)。约 20 行一张。"
+        },
+        {
+          "file": "reference/craft/README.md",
+          "line": 16,
+          "context": "| `town-anatomy-zh.md` | `reference/_source/arkham-zh.md`(阿卡姆城市资料,9 段区导言 + 门牌法则 + 反查名录,采料后提炼) | `core/03-build-world.md`(town/locale 路径:§一 区域四维、§二 地点字段体例、§三 神话层"
+        },
+        {
+          "file": "reference/tables/README.md",
+          "line": 47,
+          "context": "与 `locations.md`(掷 1 次定舞台)分工不同。见 `reference/craft/town-anatomy-zh.md`"
+        },
+        {
+          "file": "reference/tables/town-institutions.md",
+          "line": 6,
+          "context": "`reference/craft/town-anatomy-zh.md` §一、§二。"
+        },
+        {
+          "file": "reference/tables/town-institutions.md",
+          "line": 9,
+          "context": "普通条目中,不单开分区,见 `town-anatomy-zh.md` §三。1–12 行是「各行各业与专业人员」"
+        },
+        {
+          "file": "reference/_source/README.md",
+          "line": 28,
+          "context": "`reference/craft/town-anatomy-zh.md`(kit 自己的话),不是把这份文本搬过去。"
+        },
+        {
+          "file": "reference/_source/README.md",
+          "line": 86,
+          "context": "| 收录用途 | P10(`craft/town-anatomy-zh.md` 的源材料)、P5(地图记法参照)。**均为「读它、写自己的」,不作转录来源** |"
+        },
+        {
+          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 41,
+          "context": "| `town-anatomy-zh.md` 手法提炼稿 | `reference/craft/` | ✅ | kit 原创 | ✅ 核心产出 |"
+        },
+        {
+          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 49,
+          "context": "> 且按 `craft/README.md`,它是**惯例规范**不是提炼稿,混进 `town-anatomy-zh.md` 会让那份文件"
+        },
+        {
+          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 249,
+          "context": "与 §一–§五 同类;`town-anatomy-zh.md` 是**提炼稿**,受「取手法不取文字」管,两者不能混。"
+        },
+        {
+          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 333,
+          "context": "- [ ] `reference/craft/town-anatomy-zh.md` — **按消费方分节**(`craft/README.md` 第 1 条),"
+        },
+        {
+          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 369,
+          "context": "- **Produce 段的 town/locale 那条** —— 指名读 `town-anatomy-zh.md` 哪几节"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 13,
+          "context": "| P10 | [town-anatomy-from-arkham](2026-08-04-town-anatomy-from-arkham.md) | 阿卡姆资料 → `craft/town-anatomy-zh.md` 城镇解剖手法稿 + `tables/town-institutions.md` d20 机构表 "
+        }
+      ],
+      "reference_count": 15
     }
   ]
 }

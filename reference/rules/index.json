@@ -65,6 +65,11 @@
           "context": "写成了纯中文正文,后来对照 `character-creation.md`/`magic.md` 才发现 kit 的既有惯例"
         },
         {
+          "file": "WORKLOG.md",
+          "line": 249,
+          "context": "`reference/rules/character-creation.md`、`reference/sourcebooks/keeper-rulebook-7e-zh.md`、"
+        },
+        {
           "file": "core/01-intake.md",
           "line": 90,
           "context": "background-first split in `reference/rules/character-creation.md` §11? *Default: not"
@@ -540,7 +545,7 @@
           "context": "| P12 | [cheatsheet-self-sufficiency](2026-08-04-cheatsheet-self-sufficiency.md) | 速查表自足化:让 `reference/rules/` 单独就能回答规则问题,规则书退出查询链路(仍留在版本库里当对账底本)。**阶段 0–1**:`co"
         }
       ],
-      "reference_count": 104
+      "reference_count": 105
     },
     {
       "file": "chases.md",
@@ -1378,7 +1383,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 49,
+          "line": 52,
           "context": "`reference/rules/monster-scale.md`。"
         },
         {

@@ -38,6 +38,15 @@ For a **town/locale**: identity & mood; a handful of keyed areas each with an in
 detail; 3–5 notable NPCs (name + one-line hook — hand to `core/06-create-npc.md` for full
 stats); local rumours (mark which are true); the buried wrongness; open hooks.
 
+**Town/locale build order.** Read `reference/craft/town-anatomy-zh.md` §一 (the four
+dimensions that give an area its identity) and §四 (NPCs cluster on a minority of entries,
+not spread evenly) before keying areas. Then run
+`python scripts/roll.py town-institutions --times N --campaign <slug>` (N scales with the
+town's size — the table header says how) — this is a per-town-build roll, not part of the
+first-pass seed roll above — and read §二 (entry field shape, house-numbering rule) to write
+up what it returns. If the buried wrongness needs a Mythos item or book placed in the town,
+read §三 first: it goes inside an ordinary-looking entry, never a flagged one.
+
 For a **region**: geography & mood; the settlements and how they relate; powers/factions and
 their tensions; a short timeline of what led here; the Mythos undercurrent.
 

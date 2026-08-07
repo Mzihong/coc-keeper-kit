@@ -43,6 +43,9 @@
 - `clue-engines.md`(1d10)——威胁反复做的哪件事会留下可查的痕迹;一次只掷 2–3 条,
   不许全开。见 `core/04-design-scenario.md` 第 5 步、`reference/craft/cult-design-zh.md`
   §四(财源即十条里的一条)。
+- `town-institutions.md`(1d20)——这个镇里有哪些机构;掷 N 次填清单,N 随镇的规模走,
+  与 `locations.md`(掷 1 次定舞台)分工不同。见 `reference/craft/town-anatomy-zh.md`
+  §一、§二。
 - `cultist-archetypes.md`——12 组现成的低阶邪教徒数值(按角色分组,不是骰表),外加一套
   永生大师工具箱。`create-npc` 的配套件,见 `core/06-create-npc.md`。
 - `monster-traits.md`——给怪物条目加挂的数值词条菜单(带负载点与破解口),配

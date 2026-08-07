@@ -67,12 +67,13 @@
       "directory": "reference/craft",
       "role": "distilled craft knowledge — how to write it, as opposed to what the numbers are",
       "kind": "kit-original-content",
-      "entry_count": 3,
+      "entry_count": 4,
       "index": "reference/craft/index.json",
       "files": [
         "reference/craft/cult-design-zh.md",
         "reference/craft/diagram-conventions-zh.md",
-        "reference/craft/lovecraft-zh.md"
+        "reference/craft/lovecraft-zh.md",
+        "reference/craft/town-anatomy-zh.md"
       ]
     },
     {
@@ -133,7 +134,7 @@
       "directory": "reference/tables",
       "role": "roll tables for prep and live improv, including the four seed tables",
       "kind": "kit-original-content",
-      "entry_count": 18,
+      "entry_count": 19,
       "index": "reference/tables/index.json",
       "files": [
         "reference/tables/clue-engines.md",
@@ -153,6 +154,7 @@
         "reference/tables/npc-appearance.md",
         "reference/tables/npc-quirks.md",
         "reference/tables/phobias.md",
+        "reference/tables/town-institutions.md",
         "reference/tables/weapons-index.md"
       ]
     }
@@ -212,7 +214,7 @@
           "reference/decks/README.md:18",
           "reference/rules/character-creation.md:215",
           "reference/rules/combat.md:148",
-          "reference/tables/README.md:53",
+          "reference/tables/README.md:56",
           "reference/tables/weapons-index.md:9",
           "reference/tables/weapons-index.md:17",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:98",
@@ -228,6 +230,7 @@
         "rights_holder": "Chaosium Inc.",
         "referenced_by": [
           "CHANGELOG.md:362",
+          "WORKLOG.md:250",
           "core/06-create-npc.md:73",
           "core/07-create-monster.md:47",
           "reference/mythos/README.md:23",
@@ -250,6 +253,7 @@
           "WORKLOG.md:137",
           "WORKLOG.md:140",
           "WORKLOG.md:184",
+          "WORKLOG.md:249",
           "core/02-rules-reference.md:10",
           "reference/rules/README.md:7",
           "update_plan/2026-08-04-town-anatomy-from-arkham.md:92",
@@ -546,6 +550,7 @@
           "WORKLOG.md:162",
           "WORKLOG.md:167",
           "WORKLOG.md:217",
+          "WORKLOG.md:249",
           "core/01-intake.md:90",
           "core/01-intake.md:109",
           "core/01-intake.md:140",
@@ -843,7 +848,7 @@
           "reference/tables/monster-traits.md:4",
           "reference/tables/monster-traits.md:12",
           "reference/tables/monster-traits.md:20",
-          "reference/tables/README.md:49",
+          "reference/tables/README.md:52",
           "scripts/build-reference-index.py:240",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:6",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:247",
@@ -927,13 +932,13 @@
           "CHANGELOG.md:54",
           "CHANGELOG.md:233",
           "CHANGELOG.md:368",
-          "WORKLOG.md:251",
-          "WORKLOG.md:297",
+          "WORKLOG.md:257",
+          "WORKLOG.md:303",
           "core/01-intake.md:81",
-          "core/03-build-world.md:48",
+          "core/03-build-world.md:57",
           "core/04-design-scenario.md:35",
           "reference/README.md:19",
-          "reference/craft/diagram-conventions-zh.md:84",
+          "reference/craft/diagram-conventions-zh.md:134",
           "reference/craft/README.md:15",
           "reference/mythos/artifacts-zh.md:4",
           "reference/mythos/artifacts-zh.md:46",
@@ -963,7 +968,6 @@
           "update_plan/2026-08-02-low-cost-maps.md:111",
           "update_plan/README.md:12",
           "update_plan/README.md:125",
-          "update_plan/README.md:162",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:110",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:219",
           "update_plan/Archived/2026-08-02-cult-doc-wrapup.md:18",
@@ -983,16 +987,16 @@
           "CHANGELOG.md:172",
           "CHANGELOG.md:234",
           "WORKLOG.md:197",
-          "core/03-build-world.md:76",
+          "core/03-build-world.md:85",
           "core/04-design-scenario.md:38",
           "core/04-design-scenario.md:57",
           "core/11-review.md:64",
           "templates/cult.md:42",
           "reference/README.md:20",
           "reference/craft/cult-design-zh.md:69",
-          "reference/craft/README.md:16",
-          "reference/craft/README.md:19",
-          "reference/craft/README.md:45",
+          "reference/craft/README.md:17",
+          "reference/craft/README.md:20",
+          "reference/craft/README.md:46",
           "update_plan/2026-08-02-low-cost-maps.md:96",
           "update_plan/2026-08-02-low-cost-maps.md:110",
           "update_plan/2026-08-02-low-cost-maps.md:201",
@@ -1038,7 +1042,7 @@
           "reference/README.md:65",
           "reference/README.md:94",
           "reference/craft/README.md:14",
-          "reference/craft/README.md:37",
+          "reference/craft/README.md:38",
           "reference/mythos/great-old-ones/nyarlathotep.md:77",
           "reference/mythos/great-old-ones/nyarlathotep.md:102",
           "scripts/build-reference-index.py:618",
@@ -1052,6 +1056,27 @@
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:111",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:256",
           ".claude/skills/description/SKILL.md:12"
+        ]
+      },
+      "reference/craft/town-anatomy-zh.md": {
+        "title": "城镇解剖手法稿 — 简体中文",
+        "rights_holder": null,
+        "referenced_by": [
+          "WORKLOG.md:172",
+          "core/03-build-world.md:41",
+          "reference/craft/diagram-conventions-zh.md:92",
+          "reference/craft/README.md:16",
+          "reference/tables/README.md:47",
+          "reference/tables/town-institutions.md:6",
+          "reference/tables/town-institutions.md:9",
+          "reference/_source/README.md:28",
+          "reference/_source/README.md:86",
+          "update_plan/2026-08-04-town-anatomy-from-arkham.md:41",
+          "update_plan/2026-08-04-town-anatomy-from-arkham.md:49",
+          "update_plan/2026-08-04-town-anatomy-from-arkham.md:249",
+          "update_plan/2026-08-04-town-anatomy-from-arkham.md:333",
+          "update_plan/2026-08-04-town-anatomy-from-arkham.md:369",
+          "update_plan/README.md:13"
         ]
       },
       "reference/bestiary/black-pharaoh.md": {
@@ -1232,7 +1257,7 @@
           "reference/decks/README.md:18",
           "reference/rules/character-creation.md:215",
           "reference/rules/combat.md:148",
-          "reference/tables/README.md:53",
+          "reference/tables/README.md:56",
           "reference/tables/weapons-index.md:9",
           "reference/tables/weapons-index.md:17",
           "update_plan/Archived/2026-08-02-antagonist-budget.md:98",
@@ -1253,7 +1278,7 @@
         "title": "克苏鲁邪教史 — 可复用历史条目表",
         "rights_holder": null,
         "referenced_by": [
-          "core/03-build-world.md:60",
+          "core/03-build-world.md:69",
           "reference/bestiary/black-wing.md:71",
           "reference/mythos/cults/church-of-perfect-science.md:38",
           "reference/mythos/cults/louisiana-swamp-cult.md:20",
@@ -1328,7 +1353,7 @@
           "CHANGELOG.md:318",
           "WORKLOG.md:114",
           "WORKLOG.md:118",
-          "WORKLOG.md:304",
+          "WORKLOG.md:310",
           "reference/mythos/README.md:12",
           "reference/mythos/great-old-ones/dagon-and-hydra.md:69",
           "reference/tables/monster-index.md:81",
@@ -1463,8 +1488,9 @@
         "rights_holder": null,
         "referenced_by": [
           "CHANGELOG.md:51",
-          "WORKLOG.md:248",
-          "WORKLOG.md:258",
+          "WORKLOG.md:253",
+          "WORKLOG.md:254",
+          "WORKLOG.md:264",
           "core/04-design-scenario.md:34",
           "core/04-design-scenario.md:51",
           "reference/craft/cult-design-zh.md:63",
@@ -1476,7 +1502,6 @@
           "reference/tables/README.md:43",
           "update_plan/README.md:49",
           "update_plan/README.md:50",
-          "update_plan/README.md:162",
           "update_plan/Archived/2026-08-04-clue-engines.md:7",
           "update_plan/Archived/2026-08-04-clue-engines.md:100",
           "update_plan/Archived/2026-08-04-clue-engines.md:106",
@@ -1536,7 +1561,7 @@
         "title": "cult-power-sources.md — 力量来源",
         "rights_holder": null,
         "referenced_by": [
-          "WORKLOG.md:250",
+          "WORKLOG.md:256",
           "templates/cult.md:7",
           "reference/mythos/cults/church-of-perfect-science.md:15",
           "reference/mythos/cults/esoteric-order-of-dagon.md:15",
@@ -1563,7 +1588,7 @@
           "WORKLOG.md:165",
           "core/06-create-npc.md:49",
           "reference/mythos/spells/call-father-dagon-and-mother-hydra.md:24",
-          "reference/tables/README.md:46",
+          "reference/tables/README.md:49",
           "scripts/roll.py:30",
           "update_plan/2026-08-04-scenario-diversity.md:108",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:185",
@@ -1593,8 +1618,13 @@
         "rights_holder": null,
         "referenced_by": [
           "CHANGELOG.md:218",
+          "reference/craft/diagram-conventions-zh.md:83",
+          "reference/craft/town-anatomy-zh.md:87",
           "reference/tables/hooks.md:6",
           "reference/tables/README.md:23",
+          "reference/tables/README.md:47",
+          "reference/tables/town-institutions.md:3",
+          "reference/tables/town-institutions.md:4",
           "update_plan/2026-08-04-scenario-diversity.md:69",
           "update_plan/2026-08-04-scenario-diversity.md:151",
           "update_plan/2026-08-04-town-anatomy-from-arkham.md:24",
@@ -1670,8 +1700,8 @@
           "CHANGELOG.md:323",
           "WORKLOG.md:113",
           "WORKLOG.md:124",
-          "WORKLOG.md:236",
-          "WORKLOG.md:310",
+          "WORKLOG.md:237",
+          "WORKLOG.md:316",
           "core/04-design-scenario.md:63",
           "core/07-create-monster.md:9",
           "templates/great-old-one.md:4",
@@ -1688,7 +1718,7 @@
           "reference/mythos/great-old-ones/nyarlathotep.md:82",
           "reference/mythos/great-old-ones/shub-niggurath.md:66",
           "reference/mythos/great-old-ones/yog-sothoth.md:70",
-          "reference/tables/README.md:50",
+          "reference/tables/README.md:53",
           "scripts/build-reference-index.py:18",
           "scripts/build-reference-index.py:29",
           "scripts/build-reference-index.py:44",
@@ -1737,7 +1767,7 @@
           "reference/rules/monster-scale.md:210",
           "reference/rules/monster-scale.md:222",
           "reference/rules/monster-scale.md:229",
-          "reference/tables/README.md:48",
+          "reference/tables/README.md:51",
           "scripts/roll.py:31",
           "update_plan/2026-08-04-scenario-diversity.md:108",
           "update_plan/Archived/2026-08-02-monster-templates-traits.md:6",
@@ -1798,6 +1828,29 @@
           "update_plan/Archived/README.md:22"
         ]
       },
+      "reference/tables/town-institutions.md": {
+        "title": "town-institutions.md — 这个镇里有哪些机构",
+        "rights_holder": null,
+        "referenced_by": [
+          "WORKLOG.md:191",
+          "reference/craft/diagram-conventions-zh.md:84",
+          "reference/craft/town-anatomy-zh.md:49",
+          "reference/craft/town-anatomy-zh.md:58",
+          "reference/craft/town-anatomy-zh.md:88",
+          "reference/tables/README.md:46",
+          "update_plan/2026-08-04-town-anatomy-from-arkham.md:42",
+          "update_plan/2026-08-04-town-anatomy-from-arkham.md:225",
+          "update_plan/2026-08-04-town-anatomy-from-arkham.md:271",
+          "update_plan/2026-08-04-town-anatomy-from-arkham.md:312",
+          "update_plan/2026-08-04-town-anatomy-from-arkham.md:370",
+          "update_plan/2026-08-04-town-anatomy-from-arkham.md:378",
+          "update_plan/2026-08-04-town-anatomy-from-arkham.md:401",
+          "update_plan/2026-08-04-town-anatomy-from-arkham.md:410",
+          "update_plan/2026-08-04-town-anatomy-from-arkham.md:422",
+          "update_plan/README.md:13",
+          "update_plan/README.md:67"
+        ]
+      },
       "reference/tables/weapons-index.md": {
         "title": "武器强度索引：反派战力配置用",
         "rights_holder": null,
@@ -1812,7 +1865,7 @@
           "reference/rules/combat.md:43",
           "reference/rules/combat.md:148",
           "reference/rules/combat.md:182",
-          "reference/tables/README.md:52",
+          "reference/tables/README.md:55",
           "update_plan/README.md:57",
           "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:228",
           "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md:282",
@@ -1874,6 +1927,7 @@
         "reference/craft/cult-design-zh.md",
         "reference/craft/diagram-conventions-zh.md",
         "reference/craft/lovecraft-zh.md",
+        "reference/craft/town-anatomy-zh.md",
         "reference/mythos/artifacts-zh.md",
         "reference/mythos/great-old-ones/cthulhu.md",
         "reference/mythos/great-old-ones/dagon-and-hydra.md",
@@ -1886,12 +1940,14 @@
         "reference/rules/magic.md",
         "reference/rules/monster-scale.md",
         "reference/rules/skill-checks.md",
+        "reference/sourcebooks/grand-grimoire-zh.md",
         "reference/sourcebooks/keeper-rulebook-7e-zh.md",
         "reference/tables/clue-engines.md",
         "reference/tables/cult-power-sources.md",
         "reference/tables/cultist-archetypes.md",
         "reference/tables/monster-index.md",
         "reference/tables/monster-traits.md",
+        "reference/tables/town-institutions.md",
         "reference/tables/weapons-index.md"
       ],
       "campaigns/_template-campaign/CLAUDE.md": [
@@ -1922,6 +1978,7 @@
       "core/03-build-world.md": [
         "reference/craft/cult-design-zh.md",
         "reference/craft/diagram-conventions-zh.md",
+        "reference/craft/town-anatomy-zh.md",
         "reference/mythos/cthulhu-cult-history-zh.md"
       ],
       "core/04-design-scenario.md": [
@@ -1982,6 +2039,9 @@
         "reference/mythos/artifacts-zh.md",
         "reference/sourcebooks/malleus-monstrorum-zh.md",
         "reference/tables/monster-index.md"
+      ],
+      "reference/_source/README.md": [
+        "reference/craft/town-anatomy-zh.md"
       ],
       "reference/bestiary/README.md": [
         "reference/rules/monster-scale.md",
@@ -2060,7 +2120,8 @@
       "reference/craft/README.md": [
         "reference/craft/cult-design-zh.md",
         "reference/craft/diagram-conventions-zh.md",
-        "reference/craft/lovecraft-zh.md"
+        "reference/craft/lovecraft-zh.md",
+        "reference/craft/town-anatomy-zh.md"
       ],
       "reference/craft/cult-design-zh.md": [
         "reference/craft/diagram-conventions-zh.md",
@@ -2068,7 +2129,14 @@
         "reference/tables/cult-goals.md"
       ],
       "reference/craft/diagram-conventions-zh.md": [
-        "reference/craft/cult-design-zh.md"
+        "reference/craft/cult-design-zh.md",
+        "reference/craft/town-anatomy-zh.md",
+        "reference/tables/locations.md",
+        "reference/tables/town-institutions.md"
+      ],
+      "reference/craft/town-anatomy-zh.md": [
+        "reference/tables/locations.md",
+        "reference/tables/town-institutions.md"
       ],
       "reference/decks/README.md": [
         "reference/decks/busybodies-zh.md",
@@ -2294,6 +2362,7 @@
       ],
       "reference/tables/README.md": [
         "reference/craft/cult-design-zh.md",
+        "reference/craft/town-anatomy-zh.md",
         "reference/decks/phobias-and-manias-zh.md",
         "reference/decks/weapons-and-artifacts-zh.md",
         "reference/mythos/artifacts-zh.md",
@@ -2315,6 +2384,7 @@
         "reference/tables/npc-appearance.md",
         "reference/tables/npc-quirks.md",
         "reference/tables/phobias.md",
+        "reference/tables/town-institutions.md",
         "reference/tables/weapons-index.md"
       ],
       "reference/tables/clue-engines.md": [
@@ -2409,6 +2479,10 @@
         "reference/tables/madness-instant.md",
         "reference/tables/madness-summary.md"
       ],
+      "reference/tables/town-institutions.md": [
+        "reference/craft/town-anatomy-zh.md",
+        "reference/tables/locations.md"
+      ],
       "reference/tables/weapons-index.md": [
         "reference/decks/weapons-and-artifacts-zh.md",
         "reference/mythos/artifacts-zh.md",
@@ -2467,9 +2541,11 @@
       "update_plan/2026-08-04-town-anatomy-from-arkham.md": [
         "reference/craft/diagram-conventions-zh.md",
         "reference/craft/lovecraft-zh.md",
+        "reference/craft/town-anatomy-zh.md",
         "reference/sourcebooks/keeper-rulebook-7e-zh.md",
         "reference/tables/locations.md",
-        "reference/tables/mythos-angles.md"
+        "reference/tables/mythos-angles.md",
+        "reference/tables/town-institutions.md"
       ],
       "update_plan/Archived/2026-08-02-antagonist-budget.md": [
         "reference/decks/busybodies-zh.md",
@@ -2631,11 +2707,13 @@
         "reference/craft/cult-design-zh.md",
         "reference/craft/diagram-conventions-zh.md",
         "reference/craft/lovecraft-zh.md",
+        "reference/craft/town-anatomy-zh.md",
         "reference/tables/clue-engines.md",
         "reference/tables/madness-instant.md",
         "reference/tables/madness-summary.md",
         "reference/tables/manias.md",
         "reference/tables/phobias.md",
+        "reference/tables/town-institutions.md",
         "reference/tables/weapons-index.md"
       ]
     }

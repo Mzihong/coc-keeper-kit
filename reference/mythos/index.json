@@ -74,7 +74,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 53,
+          "line": 56,
           "context": "和 `reference/decks/weapons-and-artifacts-zh.md` 的按品类原表分工不同,见该文件头部。"
         },
         {
@@ -161,7 +161,7 @@
       "referenced_by": [
         {
           "file": "core/03-build-world.md",
-          "line": 60,
+          "line": 69,
           "context": "the throughline is Cthulhu-cult history, `reference/mythos/cthulhu-cult-history-zh.md` has"
         },
         {
@@ -449,7 +449,7 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 304,
+          "line": 310,
           "context": "- **古神级条目住在 `reference/mythos/great-old-ones/`(现有 6 份:`cthulhu.md` +"
         },
         {

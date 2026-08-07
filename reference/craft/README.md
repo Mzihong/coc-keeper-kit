@@ -13,6 +13,7 @@
 |---|---|---|
 | `lovecraft-zh.md` | `reference/og_Norval/`(洛夫克拉夫特原著 82 篇通读) | `core/09-description.md`(§一 基调、§二 场景/行动)、`core/07-create-monster.md`(§三 怪物设计) |
 | `cult-design-zh.md` | 克苏鲁邪教设计指南第三章(网络汇编,158 页,通读后提炼) | `core/03-build-world.md`(邪教 faction 子路径)、`core/04-design-scenario.md`(§四 财源线索引擎、§五 弱点/敌人)、`core/01-intake.md`(auto-fill 答"邪教"时) |
+| `town-anatomy-zh.md` | `reference/_source/arkham-zh.md`(阿卡姆城市资料,9 段区导言 + 门牌法则 + 反查名录,采料后提炼) | `core/03-build-world.md`(town/locale 路径:§一 区域四维、§二 地点字段体例、§三 神话层混排手法、§四 NPC 密度分布) |
 | `diagram-conventions-zh.md` | **kit 自订**(P1 关系图 + P5 低成本地图两个计划合并定案),非提炼稿 | `core/03-build-world.md`(§二 势力图、§四 区域图)、`core/04-design-scenario.md`(§三 场景网)、`templates/cult.md`(§二) |
 
 > **本目录有两类条目,别混。** 多数是**提炼稿**(从大部头蒸馏「怎么写」,受下面「取手法
