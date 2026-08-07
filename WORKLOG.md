@@ -232,6 +232,17 @@ codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-0
   `--check-all`(全表自检,不掷骰)和 `--spec`(标注哪个 spec 在掷)两个参数。种子表口径
   不一致的 bug、两张缺表(对抗场面/模组形状)、`locations` 接到场景级仍是阶段 2–4,
   没做。想看当时怎么想的,`git show 148bb91` 或翻 `scripts/roll.py` 的文件头注释。
+- **P15(`core/` 复查勘误)阶段 0 已于 2026-08-07 完成并提交(`11f90b0`)。** `core/07`
+  索引段落改写(不再是 bundle 时代"没有仓库的 Keeper 唯一能看到 223 条的渠道"那套说法,
+  索引现在是检索层)、`core/07` Output 段补 L5 例外(→ `reference/mythos/great-old-ones/`,
+  和同文件 First 段的分级规则对齐)、`core/00`/`core/14`/`.gitmodules` 三处
+  `reference/external/` 引用清理(子模块早被摘掉,目录本就不存在,只剩配置残留,不是
+  需要 Keeper 拍板的取舍)、`core/00` Layout 树补 `mythos/spells/`。`core/00:103` 死链与
+  硬约定 5 的"过渡期边界"两条复查后确认**已随 P12 阶段 1.0 自动消失**,不需要再改。
+  P5 阶段 3 与 P10 复评修订 A 的两条失效前提(都建立在"不进 bundle 等于拿不到"上,
+  bundle 已随 P13 退役)**只报不改**,已作为提示框写进对应计划文件。**阶段 1(神格页
+  读路径 + L5 模板)仍卡在 Q1/Q2 两个拍板点未定**,阶段 2、3 也都未动,详见
+  `update_plan/2026-08-04-core-spec-audit.md`。
 - **P16(线索引擎 + 三线索检验)于 2026-08-04 新立,方向已定案。** 它和 P14 是同族诊断——
   P14 发现「模组形状」「对抗场面」两维**条目数为 0**,P16 发现**「线索来源」这一维条目数是 1**
   (`craft/cult-design-zh.md` §四 的六项财源,而且住在邪教专属文件里,威胁不是邪教时
@@ -325,18 +336,6 @@ codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-0
 提交并归档到 `update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md`,原本记在
 这里的三条会话记录已按 `core/15-close-session.md` 的 "Prune before you add" 删除——
 细节要么已经折进上面"当前状态"里 P12 那条摘要,要么直接 `git show c368b90` 看。
-
-- **P15(`core/` 复查勘误)阶段 0 已完成,尚未提交(2026-08-07)。** 六项纯勘误 + P13
-  余波扫描全部走完:`core/07` 索引段落改写(不再是"没有仓库的 Keeper 唯一能看到 223
-  条的渠道",索引现在是检索层)、`core/07` Output 段补 L5 例外(→
-  `reference/mythos/great-old-ones/`)、`core/00`/`core/14`/`.gitmodules` 三处
-  `reference/external/` 引用清理(子模块早被摘掉,目录不存在,只剩配置残留——`git ls-files
-  -s | grep 160000` 与 `git submodule status` 均确认过是空的,不是需要 Keeper 拍板的取舍)、
-  `core/00` Layout 树补 `mythos/spells/`。`core/00:103` 死链与 `WORKLOG.md` 硬约定 5
-  的"过渡期边界"两条复查后确认**已随 P12 阶段 1.0 自动消失**,不需要再改。P5 阶段 3
-  与 P10 复评修订 A 的两条失效前提(都建立在"不进 bundle 等于拿不到"上,bundle 已随
-  P13 退役)按计划**只报不改**,已作为提示框写进对应计划文件。**阶段 1(神格页读路径 +
-  L5 模板)仍卡在 Q1/Q2 两个拍板点未定**,阶段 2、3 也都未动。
 
 ---
 
