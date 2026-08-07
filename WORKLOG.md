@@ -232,7 +232,8 @@ codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-0
   `--check-all`(全表自检,不掷骰)和 `--spec`(标注哪个 spec 在掷)两个参数。种子表口径
   不一致的 bug、两张缺表(对抗场面/模组形状)、`locations` 接到场景级仍是阶段 2–4,
   没做。想看当时怎么想的,`git show 148bb91` 或翻 `scripts/roll.py` 的文件头注释。
-- **P15(`core/` 复查勘误)已于 2026-08-07 全部完成(阶段 0–3),待提交。** Keeper 拍板
+- **P15(`core/` 复查勘误)已于 2026-08-07 全部完成并提交(阶段 0 `11f90b0`,阶段 1-3
+  `86f1335`),归档见 `update_plan/Archived/2026-08-04-core-spec-audit.md`。** Keeper 拍板
   两个待定点:神格页读路径**两者都做**(扩 `monster-index.md` + 四处直接读路径),L5
   模板**新建** `templates/great-old-one.md`。`build_monster_index()` 新增
   `parse_great_old_one_pages()`——Cthulhu/Nyarlathotep/Yog-Sothoth/Shub-Niggurath 在
@@ -242,9 +243,14 @@ codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-0
   场景 ≥3 条入边"。阶段 3 的六项制度动作(完结清单加反向扫描第 8 项、`update_plan/`
   引用禁令作用域扩到 `core/`+`templates/`+`reference/`、孤儿检查区分条目/目录孤儿、
   `core/14`→`core/15` 补原创内容接线要求、`core/15` 加 First/Output/Quality bar 三处对齐
-  步骤、`render-investigator.py --strict` 只让 errors 中止)全部落地,详见
-  `update_plan/2026-08-04-core-spec-audit.md`。
-- **P16(线索引擎 + 三线索检验)已于 2026-08-07 全部完成(阶段 0–5),待提交。**
+  步骤、`render-investigator.py --strict` 只让 errors 中止)全部落地。**顺带修了一处同类
+  死链**:`scripts/build-reference-index.py` 两处指着 P9 计划文件的旧路径(该文件已归档到
+  `Archived/`),已改成点名 `Archived/` 下的实际路径。**未处理的同类发现**:扫描时还看到
+  `reference/rules/character-creation.md`、`reference/sourcebooks/keeper-rulebook-7e-zh.md`、
+  `reference/sourcebooks/grand-grimoire-zh.md`、`reference/bestiary/README.md` 各一处
+  同样指着已归档计划的旧路径,不在本计划范围内,留给下一个计划处理。
+- **P16(线索引擎 + 三线索检验)已于 2026-08-07 全部完成并提交(`86f1335`),归档见
+  `update_plan/Archived/2026-08-04-clue-engines.md`。**
   新表 `reference/tables/clue-engines.md`(d10,十条各带一条别的引擎给不了的结构属性,
   表头写死"一次只掷 2–3 条,不许全开")已接 `roll.py` 并通过 `--check-all` 自检;
   `cult-power-sources.md` 与它双向互指(造物→工艺与制造、受赐力量→身体代价默认通电)。
@@ -255,7 +261,7 @@ codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-0
   两列,而不是把原表撑成 9 列宽表。`core/05` 加了"卡关够久→反派动手,那个动作本身是
   线索"的 trigger;`core/11` 的三线索审查换成三项追溯(正向查幽灵线索、今夜察觉测试查
   独立性、保质期查易腐)。`core/11` 三方撞车(本计划阶段 4 / P11 阶段 3 / P15 阶段 2)
-  按 P11→P15→P16 顺序做完,无冲突。详见 `update_plan/2026-08-04-clue-engines.md`。
+  按 P11→P15→P16 顺序做完,无冲突。详见 `update_plan/Archived/2026-08-04-clue-engines.md`。
 - **`reference/_source/` = 第三方**料场**(2026-08-04 建立)。入库边界当日晚被 Keeper
   改过一次,接手时按新的记:** ~~整目录 gitignore,永不入库~~ →
   **原件(`.pdf`/`.docx`)不入库,从原件转出的 `.md` 与抽出的图入库。**
