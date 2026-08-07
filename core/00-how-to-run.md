@@ -110,8 +110,8 @@ writing any stat block, difficulty, or Sanity cost.
      paraphrase of it. Name the book and chapter (or section) in the file.
      **This covers rules content only.** Published *fiction* — novels, scenario text, a named
      character out of a commercial campaign, a sourcebook's scene-setting prose — stays under
-     the stricter rule: take the technique, never the text. `reference/craft/` and
-     `reference/external/` say so directly.
+     the stricter rule: take the technique, never the text. `reference/craft/` says so
+     directly.
   3. **What reaches a `campaigns/` folder is written fresh.** This one is not a copyright
      rule — it's a table rule. A published NPC pasted into a campaign is a character every
      other Keeper already knows the twist to, and generating that person is the entire reason
@@ -166,6 +166,7 @@ coc-keeper-kit/
 │   ├── rules/               ← 7e mechanics cheat-sheets
 │   ├── bestiary/            ← reusable monsters & Mythos entities
 │   ├── mythos/              ← Great Old Ones, tomes, spells, cults
+│   │   └── spells/          ← spell write-ups, one file per spell
 │   ├── tables/              ← roll tables, incl. the seed tables intake uses
 │   ├── craft/               ← how to *write* it (rules/ is what the numbers are)
 │   ├── decks/               ← official card decks — cited, not kit canon

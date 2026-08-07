@@ -9,10 +9,10 @@ live through it. In CoC the monster is usually an obstacle to survive, not a bos
   a fitting elite guard/servitor?") — read `reference/tables/monster-index.md` first. It covers
   all 223 malleus entries plus this kit's own `reference/bestiary/`, each with a `Serves` field
   (who it answers to) and a short index summary, so you don't have to read the full 10k-line
-  transcript to find a candidate. It's generated (see `scripts/build-reference-index.py`), and
-  it is the **only** channel a Keeper without the repo has into the 223 malleus entries — the
-  transcript itself never ships. `reference/bestiary/` does ship, so its creatures can be read
-  in full rather than through the index.
+  transcript to find a candidate. It's generated (see `scripts/build-reference-index.py`) and
+  is a **retrieval layer over the 223-entry transcript**, not a substitute for it — both the
+  index and the full transcript (`reference/sourcebooks/malleus-monstrorum-zh.md`) are in the
+  repo, so read the transcript entry directly once the index has pointed you at a candidate.
 - **Read `core/02-rules-reference.md`** — especially `reference/rules/combat.md` (Build,
   Damage Bonus, HP) and `reference/rules/sanity.md` (X/Y loss). Numbers must be 7e-correct.
 - **Decide the tier**, then the threat band inside it — read
@@ -103,8 +103,11 @@ checklist.
 
 ## Output
 
-- **Reusable, campaign-neutral** → `reference/bestiary/<name>.md` (no plot). Write these in
-  **English** — they are shared across campaigns with different output languages.
+- **L5 (great-old-one tier), reusable** → `reference/mythos/great-old-ones/<name>.md`, not
+  `bestiary/` — lore-shaped (origin, signs, how a cult worships it), not a stat card. See
+  "Filing by tier" above.
+- **L2/L3/L4, reusable, campaign-neutral** → `reference/bestiary/<name>.md` (no plot). Write
+  these in **English** — they are shared across campaigns with different output languages.
 - **Plot-bound** (its origin *is* the mystery) → `campaigns/<slug>/world/` or `scenes/`, in
   that campaign's output language, with secrets in a `> **KEEPER ONLY**` block.
 - One creature per file, `kebab-case.md`.

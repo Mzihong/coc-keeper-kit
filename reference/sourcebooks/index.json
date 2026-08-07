@@ -22,7 +22,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 311,
+          "line": 331,
           "context": "- P7 魔法速查阻塞解除(转换稿已归档为 `grand-grimoire-zh.md`)。"
         },
         {
@@ -142,12 +142,12 @@
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 85,
+          "line": 92,
           "context": "§0;`keeper-rulebook-7e-zh.md` 那笔教训不适用于本文档"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 94,
+          "line": 101,
           "context": "`sourcebooks/keeper-rulebook-7e-zh.md` 17,469 行只能靠 grep 定位,是因为它**没有可预测"
         },
         {
@@ -247,7 +247,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 238,
+          "line": 258,
           "context": "- **怪物图鉴换了一份干净得多的转录稿。** `reference/sourcebooks/malleus-monstrorum-zh.md`"
         },
         {
@@ -259,6 +259,11 @@
           "file": "core/04-design-scenario.md",
           "line": 47,
           "context": "`malleus-monstrorum-zh.md` entries by tier and `Serves` (who they answer to), so the search"
+        },
+        {
+          "file": "core/07-create-monster.md",
+          "line": 14,
+          "context": "index and the full transcript (`reference/sourcebooks/malleus-monstrorum-zh.md`) are in the"
         },
         {
           "file": "core/07-create-monster.md",
@@ -1472,7 +1477,7 @@
         },
         {
           "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 49,
+          "line": 50,
           "context": "`git ls-files reference/sourcebooks/` 确认 `malleus-monstrorum-zh.md` 在版本控制里;"
         },
         {
@@ -1511,7 +1516,7 @@
           "context": "6. **不做的事**:`grand-grimoire-zh.md`、`malleus-monstrorum-zh.md` 两份**不动**。"
         }
       ],
-      "reference_count": 253,
+      "reference_count": 254,
       "cited": true,
       "provenance": {
         "work": "《怪物之锤》(Malleus Monstrorum)",

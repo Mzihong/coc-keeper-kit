@@ -24,7 +24,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 199,
+          "line": 219,
           "context": "- 怪物图鉴 `fellrock.md` 的\"沉默之油\"反查链接指向了 `artifacts-zh.md`,但那份文件里"
         },
         {
@@ -429,12 +429,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 264,
+          "line": 284,
           "context": "从 deadly 改成 mythic(体型与耐久数值早已过 deadly 上限)、`thrall-of-cthulhu.md`"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 267,
+          "line": 287,
           "context": "- **神格文件现在要反向列出自己的眷族与仆从。** `cthulhu.md` 补了这一节(哪些怪物服侍"
         },
         {
@@ -479,22 +479,22 @@
         },
         {
           "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 101,
+          "line": 102,
           "context": "`reference/mythos/great-old-ones/`(`cthulhu.md` + P9 阶段 C 2026-08-04 新增 5 份)"
         },
         {
           "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 131,
+          "line": 132,
           "context": "而 `templates/` 下**没有这个形状的模板**(现有 6 份照 `cthulhu.md` 抄,"
         },
         {
           "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 243,
+          "line": 244,
           "context": "| **b. 在 `core/07` 指名 `reference/mythos/great-old-ones/cthulhu.md` 当体例** | 零新增文件;但\"拿一份内容当模板\"和 `core/00` 的 \"Templates in `templates/` define the shape\" 打架 |"
         },
         {
           "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 293,
+          "line": 300,
           "context": "- [ ] 按 Q2 定案落 L5 体例(建模板 或 在 `core/07` 指名 `cthulhu.md`)"
         },
         {
@@ -807,7 +807,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 200,
+          "line": 220,
           "context": "根本没有这一条——沉默之油实际是 `reference/mythos/spells/oil-of-silence.md` 的法术,"
         },
         {

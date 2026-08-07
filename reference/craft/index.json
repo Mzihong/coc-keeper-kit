@@ -21,12 +21,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 182,
+          "line": 202,
           "context": "`dist/bundle.md`,走 ChatGPT 的 KP 连点都点不进去。`reference/craft/cult-design-zh.md`"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 317,
+          "line": 337,
           "context": "- 新增邪教设计方法论 `craft/cult-design-zh.md`,配四张骰表与 `templates/cult.md` 模板。"
         },
         {
@@ -265,12 +265,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 121,
+          "line": 141,
           "context": "- **关系图终于有正式画法了。** 新增 `reference/craft/diagram-conventions-zh.md`,covers"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 183,
+          "line": 203,
           "context": "第 11 步有同样的问题。两处现已改指向新的 `craft/diagram-conventions-zh.md`。"
         },
         {
@@ -330,7 +330,7 @@
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 194,
+          "line": 201,
           "context": "——格式落在 `reference/craft/diagram-conventions-zh.md` **§六**"
         },
         {
@@ -350,22 +350,22 @@
         },
         {
           "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 147,
+          "line": 148,
           "context": "(与 `reference/craft/diagram-conventions-zh.md:58` 一致)。"
         },
         {
           "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 156,
+          "line": 157,
           "context": "`diagram-conventions-zh.md` 并接到 `core/04` 时,**接线只做了生成侧单向**。"
         },
         {
           "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 266,
+          "line": 268,
           "context": "**结论(§六 落在 `diagram-conventions-zh.md`)不变**,另外三条理由站得住,"
         },
         {
           "file": "update_plan/2026-08-04-core-spec-audit.md",
-          "line": 304,
+          "line": 311,
           "context": "`diagram-conventions-zh.md:58` 对齐"
         },
         {
@@ -385,32 +385,32 @@
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 230,
+          "line": 237,
           "context": "#### 复评修订 A(2026-08-04):格式落在 `diagram-conventions-zh.md` §六,顺手还一笔债"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 234,
+          "line": 241,
           "context": "1. **仓库里已经有人在引用它了。** `craft/diagram-conventions-zh.md:69`(**进 bundle**)写着"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 251,
+          "line": 258,
           "context": "`diagram-conventions-zh.md` 有两处写死**建筑内部布局不归它管**:第 10 行"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 380,
+          "line": 387,
           "context": "**地图卡:扩 `craft/diagram-conventions-zh.md`,不新建文件**(理由见复评修订 A):"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 438,
+          "line": 445,
           "context": "| A | 地图卡格式**没有落盘位置**,三条 checkbox 全悬空;且 `diagram-conventions-zh.md:69` 已在引用一个从未定义过的「文字地图卡」 | 拍板结果 2 复评修订 A + 阶段 2 |"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 439,
+          "line": 446,
           "context": "| B | 建筑级卡与 `diagram-conventions-zh.md` 第 10 行、§五 表格**直接冲突** | 拍板结果 2 复评修订 B + 阶段 2 |"
         },
         {
@@ -470,7 +470,7 @@
         },
         {
           "file": "core/00-how-to-run.md",
-          "line": 175,
+          "line": 176,
           "context": "│   ├── og_Norval/           ← Lovecraft's 82 stories (public domain) → craft/lovecraft-zh.md"
         },
         {
@@ -550,22 +550,22 @@
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 188,
+          "line": 195,
           "context": "- 别拿 `craft/lovecraft-zh.md` 当先例——它能把 82 篇原文放进 `reference/og_Norval/`,"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 220,
+          "line": 227,
           "context": "- **样例不做成\"一个能直接用的镇\"**,只演示记法(同 `lovecraft-zh.md` 给技法字典"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 331,
+          "line": 338,
           "context": "- [ ] **篇幅上限 100 行**——`lovecraft-zh.md` 用 90 行覆盖 82 篇小说,这份不该更长。"
         },
         {
           "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 393,
+          "line": 400,
           "context": "- [ ] §六 开头写一句反锚定声明,体例照 `craft/lovecraft-zh.md` 开头那段:"
         },
         {

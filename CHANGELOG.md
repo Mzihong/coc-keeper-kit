@@ -14,6 +14,26 @@
 
 ---
 
+## 2026-08-07 (P15 阶段 0,hash 待回填)
+
+### 修复问题
+
+- **神格(L5)有时会被存进错的目录。** `core/07-create-monster.md` 的 Output 段此前没写
+  神格级的例外,只读那一段的模型会把它按"可复用"规则写进 `reference/bestiary/`,和同文件
+  前面"神格页是 lore 而不是 stat card,归 `reference/mythos/great-old-ones/`"的规则打架。
+  已给 Output 段补上例外。
+- **怪物索引的说明写着一句已经不成立的话。** `core/07-create-monster.md` 曾说索引是
+  "没有仓库的 Keeper唯一能看到 223 条魔穴异录的渠道",这是退役已久的单文件分发链路
+  (bundle)时代的说法——现在归档转录稿本来就在仓库里,可以直接读。已改写成索引真实的
+  定位:223 条的检索层,不是替代阅读的东西。
+- **两处指着一个已经不存在的子模块目录。** `core/00-how-to-run.md`(转载规则那条)与
+  `core/14-archive-reference.md`(第三方资料分类表)都提到 `reference/external/`,但那个
+  git 子模块早就被摘掉了,目录不存在,`.gitmodules` 里也只剩一段没人用的残留配置。三处
+  一并清理——以后如果真要收第三方 git 仓库,`core/14` 现在写清楚了要先新建目录、给
+  README。
+- **目录树漏了一个已经在用的子目录。** `core/00-how-to-run.md` 的 Layout 树没列
+  `reference/mythos/spells/`,接手会话对着目录树核目录结构时会漏看。已补上。
+
 ## 2026-08-06 (c368b90)
 
 ### 更新内容(P12 阶段 2)

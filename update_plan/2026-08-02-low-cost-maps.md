@@ -190,6 +190,13 @@ reference/craft/cult-design-zh.md:68  → "与 P5 的 mermaid 势力图工具合
 
 ## 阶段 3 — 降级路径
 
+> **P15 阶段 0 P13 余波扫描(2026-08-06)结论,只报不改:** 本节整节假设存在一条
+> "无文件系统的 ChatGPT 网页链路",而 `core/00-how-to-run.md` → "If you cannot write files"
+> 与 Layout 一节已写死 kit 由**有文件系统的 agent 就地读**(Claude Code / codex /
+> gemini CLI)。该假设若已不成立,本阶段(连同下面"链路差异说明要写进 `core/00`"那句)
+> 可能整块不必做——**这同时决定 P10 建筑卡那张的存废理由**(P10 修订 B:"砍掉它
+> ChatGPT 链路就彻底没有室内地图")。**两者要一起确认,开工前先答这个,不要分两次答。**
+
 - [ ] 无文件系统的环境(ChatGPT 网页)跑不了渲染器:**只出 mermaid 与文字地图卡**
       ——格式落在 `reference/craft/diagram-conventions-zh.md` **§六**
       (必填只有区名与相邻关系,每区地点数是建议区间 3–5,约 20 行一张),

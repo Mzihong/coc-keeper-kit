@@ -35,7 +35,7 @@ rather than a dumping ground.
 |---|---|
 | an official card deck — discrete, ready-to-use entries | `reference/decks/` |
 | a whole book — read a chapter at a time | `reference/sourcebooks/` |
-| a third-party git repo | `reference/external/` as a submodule |
+| a third-party git repo | not currently collected — no `reference/external/` submodule exists; to add one, create the directory and give it a README first |
 | **the kit's own writing** distilled from any of the above | `reference/rules/`, `bestiary/`, `mythos/`, `tables/` — **not here** |
 
 If it fits none of these, propose a new sibling directory and give it a README stating its
