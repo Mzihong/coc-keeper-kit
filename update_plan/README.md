@@ -9,7 +9,7 @@
 
 | # | 计划 | 范围 | 状态 | 阻塞/等待 |
 |---|---|---|---|---|
-| P5 | [low-cost-maps](2026-08-02-low-cost-maps.md) | 低成本地图:mermaid 惯例(还债)+ DSL→SVG 渲染器,两个功能——KP 定位图(A 档,已完成)与 PL 可互动场景图(A+B 家具层,待做) | 进行中(阶段 0-1 已完成,阶段 1 commit 待回填) | **无阻塞**。阶段 0(mermaid 惯例)、阶段 1(`scripts/render-map.py` + DSL 定型 + `templates/location.md`/`scene.md` 接线 + `core/03`/`core/09` 接线)均已完成,原型经结构自查 + Keeper 目测确认「达标」。**阶段 3(ChatGPT 降级路径)2026-08-07 已拍板砍掉,不做**——`core/00` 已写死 kit 只支持有文件系统的 agent。下一步阶段 2(家具层,可选)/ 阶段 2b(室外站点图,可选),两者都不阻塞计划完结,做不做由 Keeper 后续决定 |
+| P5 | [low-cost-maps](2026-08-02-low-cost-maps.md) | 低成本地图:mermaid 惯例(还债)+ DSL→SVG 渲染器,两个功能——KP 定位图(A 档,已完成)与 PL 可互动场景图(A+B 家具层,待做) | 进行中(阶段 0-1 已完成,阶段 1 `090cd3c`) | **无阻塞**。阶段 0(mermaid 惯例)、阶段 1(`scripts/render-map.py` + DSL 定型 + `templates/location.md`/`scene.md` 接线 + `core/03`/`core/09` 接线)均已完成,原型经结构自查 + Keeper 目测确认「达标」。**阶段 3(ChatGPT 降级路径)2026-08-07 已拍板砍掉,不做**——`core/00` 已写死 kit 只支持有文件系统的 agent。下一步阶段 2(家具层,可选)/ 阶段 2b(室外站点图,可选),两者都不阻塞计划完结,做不做由 Keeper 后续决定 |
 | P14 | [scenario-diversity](2026-08-04-scenario-diversity.md) | 模组多样性:`scripts/roll.py` 真伪随机掷骰(不放回 + 跨战役查重)+ 补两张缺表(对抗场面 / 模组形状)+ locations 接到场景级;扩容降为条件执行 | 进行中(阶段 1 已完成并提交,148bb91) | **无阻塞**。阶段 1 已落地:`scripts/roll.py`(两维表、不放回、`--fresh`、非骰表排除名单、自检 + `--check-all`)+ ground rules 新增一条并三适配器同步 + `core/01/03/04/06`、`tables/README.md`、`core/11` 全部改完掷骰点措辞。下一步阶段 2(种子表口径不一致的 bug 修复 + locations 接到场景级) |
 
 **状态取值:** `待讨论(<待定什么>)` / `待执行` / `进行中(<当前所在步骤>)` / `阻塞(<等什么>)` /
@@ -104,7 +104,7 @@ P5 的三个待拍板问题当日全部定案(C/D 档完全否决);P11 从来没
 **已完成的历史条目**(2026-08-04,不再占编号):P5 阶段 0(mermaid 惯例落地,还掉
 `templates/cult.md` 与 `craft/cult-design-zh.md` 两处指向不存在规范的引用)。
 
-**P5 阶段 1**(2026-08-07,commit 待回填):`scripts/render-map.py`(DSL→SVG,stdlib,
+**P5 阶段 1**(2026-08-07,`090cd3c`):`scripts/render-map.py`(DSL→SVG,stdlib,
 纯确定性)+ DSL 定型(房间用 `edge`+`pos` 定位门窗,不用绝对坐标)+
 `templates/location.md`/`scene.md` 接线 + `core/03`/`core/09` 各加一条何时附图。原型
 (scratchpad 原创样本,验证完即弃)经结构自查与 Keeper 目测确认「达标,按此定稿」。
