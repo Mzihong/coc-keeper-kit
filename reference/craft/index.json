@@ -21,27 +21,27 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 58,
+          "line": 75,
           "context": "每次都收敛成\"查账 + 查地产 + 找目击者\"。邪教的财源仍然是 `cult-design-zh.md` §四"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 263,
+          "line": 287,
           "context": "`dist/bundle.md`,走 ChatGPT 的 KP 连点都点不进去。`reference/craft/cult-design-zh.md`"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 398,
+          "line": 422,
           "context": "- 新增邪教设计方法论 `craft/cult-design-zh.md`,配四张骰表与 `templates/cult.md` 模板。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 263,
+          "line": 270,
           "context": "`cult-design-zh.md` §四 改口径为\"财源是十台里写得最细的一台\",§五 的\"平淡才合理\""
         },
         {
           "file": "WORKLOG.md",
-          "line": 365,
+          "line": 397,
           "context": "**P5 阶段 0 是还债**:`templates/cult.md:42` 与 `reference/craft/cult-design-zh.md:68`"
         },
         {
@@ -191,17 +191,17 @@
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 91,
+          "line": 93,
           "context": "reference/craft/cult-design-zh.md:68  → \"与 P5 的 mermaid 势力图工具合流\""
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 101,
+          "line": 103,
           "context": "- [x] `templates/cult.md` 与 `reference/craft/cult-design-zh.md` 两处引用改指向它"
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 112,
+          "line": 114,
           "context": "> `craft/cult-design-zh.md` 两处还债——都在其中)。hash 已于 2026-08-06 回填到本文件头与"
         },
         {
@@ -270,17 +270,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 77,
+          "line": 94,
           "context": "- **没有渲染器时,地图也有格式可依了。** `reference/craft/diagram-conventions-zh.md`"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 202,
+          "line": 226,
           "context": "- **关系图终于有正式画法了。** 新增 `reference/craft/diagram-conventions-zh.md`,covers"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 264,
+          "line": 288,
           "context": "第 11 步有同样的问题。两处现已改指向新的 `craft/diagram-conventions-zh.md`。"
         },
         {
@@ -290,12 +290,12 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 292,
+          "line": 299,
           "context": "`reference/craft/diagram-conventions-zh.md` 新增 §六 文字地图卡(无渲染器环境的兜底"
         },
         {
           "file": "WORKLOG.md",
-          "line": 305,
+          "line": 313,
           "context": "修订 B 的存废理由:`diagram-conventions-zh.md` §六 建筑卡不追溯撤销(它现在是\"跑不了"
         },
         {
@@ -360,17 +360,17 @@
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 97,
+          "line": 99,
           "context": "- [x] 新建 `reference/craft/diagram-conventions-zh.md`(87 行,**已进 bundle**):"
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 111,
+          "line": 113,
           "context": "> 阶段 0 的三个文件——`craft/diagram-conventions-zh.md` 新建、`templates/cult.md` 与"
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 221,
+          "line": 250,
           "context": "**这也回答了 P10 修订 B 的存废理由。** `diagram-conventions-zh.md` §六 建筑卡已经在"
         },
         {
@@ -619,7 +619,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 71,
+          "line": 88,
           "context": "- **造镇现在有专门的手法指南了。** 新增 `reference/craft/town-anatomy-zh.md`,建"
         },
         {
@@ -629,7 +629,7 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 273,
+          "line": 280,
           "context": "新增 `reference/craft/town-anatomy-zh.md`(92 行,四节:§一 城镇部件清单——地势/建筑"
         },
         {
@@ -674,7 +674,7 @@
         },
         {
           "file": "scripts/render-map.py",
-          "line": 12,
+          "line": 14,
           "context": "Markdown, not one file with nested floors — see `reference/craft/town-anatomy-zh.md`-adjacent"
         },
         {

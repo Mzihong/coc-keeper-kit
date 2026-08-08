@@ -22,12 +22,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 392,
+          "line": 416,
           "context": "- P7 魔法速查阻塞解除(转换稿已归档为 `grand-grimoire-zh.md`)。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 256,
+          "line": 263,
           "context": "`reference/sourcebooks/grand-grimoire-zh.md`、`reference/bestiary/README.md` 各一处"
         },
         {
@@ -137,7 +137,7 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 255,
+          "line": 262,
           "context": "`reference/rules/character-creation.md`、`reference/sourcebooks/keeper-rulebook-7e-zh.md`、"
         },
         {
@@ -257,7 +257,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 319,
+          "line": 343,
           "context": "- **怪物图鉴换了一份干净得多的转录稿。** `reference/sourcebooks/malleus-monstrorum-zh.md`"
         },
         {

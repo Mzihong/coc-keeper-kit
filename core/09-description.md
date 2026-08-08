@@ -105,7 +105,21 @@ like.
 - **Add a floor-plan map when connectivity or sightlines matter to how the scene plays**
   (which room the sound came from, whether the window is reachable) — use `templates/scene.md`'s
   optional Map section and `python scripts/render-map.py`. Skip it when the boxed text alone
-  already tells the Keeper everything they'd need to adjudicate movement.
+  already tells the Keeper everything they'd need to adjudicate movement. This is the
+  **Keeper-only** version — render it plain, no `--player` flag; it can carry secrets inline
+  (a locked door, a hidden room).
+- **A player-facing interactive version (furniture layer + `--player` render) is a separate,
+  opt-in artifact — never generate it by default, even when a Keeper map already exists.** It
+  costs roughly **3–5× the token spend** of the Keeper-only map — mostly the model's cost of
+  reading the room and placing/labelling furniture, not the renderer. **Before generating it,
+  state the estimated cost and wait for the Keeper to confirm.** Once confirmed: mark anything
+  the table must not learn with `secret: true` on the affected room/door/furniture item
+  (`player_name`/`player_label` to swap in a cover story instead of hiding it outright — see
+  `scripts/render-map.py`'s docstring for the full `--player` filtering rules), then render
+  twice — the plain file stays the Keeper's working copy, `--player` produces the handout.
+  Save the handout SVG plus a short `campaigns/<slug>/handouts/<name>.md` wrapper (what it is,
+  where players get it, per `core/10-create-handout.md`'s Output shape) — it goes through
+  `core/11-review.md`'s spoiler check like any other handout before it reaches the table.
 - **Mode B:** usually returned inline, not saved — it's a live-play beat, not a standing
   artifact. If it belongs to a specific prepared scene (e.g. what happens when they try the
   risky thing), fold it into that scene file's "If the players…" branch instead of creating a

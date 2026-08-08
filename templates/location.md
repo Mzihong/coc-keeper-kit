@@ -23,6 +23,12 @@
 > and conventions in that script's docstring, wall/door/window elements per
 > `reference/craft/diagram-conventions-zh.md`. One DSL file = one floor; a multi-storey
 > building gets one block per floor, stacked in reading order.
+>
+> **An outdoor site** (manor grounds, a farmstead, a churchyard) uses the same renderer with an
+> empty `rooms` array — leave out `"rooms"` entirely and use `features` (labelled shapes at
+> map scale, not nested in a room), `paths` (a lane/stream as a polyline), and `compass: true`
+> instead. Keep it to **5–9 elements**; more than that, split into two diagrams or fall back to
+> prose — see the script's docstring for the full site-diagram section.
 
 ```json
 {"title": "<floor label>", "rooms": [{"id": "…", "name": "…", "x": 0, "y": 0, "w": 3, "h": 3,

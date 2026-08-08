@@ -22,7 +22,10 @@ clue is inside, the solution is not. A good handout is evidence the players get 
   name — hooks that invite a Library Use or a follow-up, not a spoon-fed answer.
 - **Form fits function:** newspaper clipping for public events; private letter for secrets and
   emotion; journal for a slow descent into the Mythos; telegram for urgency and clipped dread;
-  police/medical report for cold official detail.
+  police/medical report for cold official detail. **An interactive scene map** (a floor plan
+  the table looks at together, furniture and all) is also a handout by this same test — it's
+  generated per `core/09-description.md`'s Output section, not this file, but it lands here and
+  gets the same player-safe discipline and review below.
 
 ## In-period, in-language
 
