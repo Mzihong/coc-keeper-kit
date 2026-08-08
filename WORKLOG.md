@@ -46,8 +46,8 @@ reference/          跨战役共享
   ├ og_Norval/      洛夫克拉夫特全集 82 篇 → 提炼稿 craft/lovecraft-zh.md
   └ glossary-zh.md  中文术语锁,写中文必查(脊梁文件,故意留在根目录)
 campaigns/          一战役一目录,_template-campaign/ 是模板
-update_plan/        P1–P14 改动计划 + 完结清单;README.md 是状态索引
-scripts/            render-investigator.py · build-reference-index.py
+update_plan/        P1–P16 改动计划 + 完结清单;README.md 是状态索引
+scripts/            render-investigator.py · build-reference-index.py · roll.py · render-map.py
 ```
 
 **没有构建产物,也没有构建步骤。** kit 由能读文件的 agent 就地读取(Claude Code /
@@ -81,7 +81,7 @@ codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-0
    原件本身**,指向原件的引用仍写成可选;`reference/_source/` 自 2026-08-04 晚起
    **不再整目录 gitignore**(见下面「`_source/` 的入库边界」一条)。
 
-## 当前状态(2026-08-04)
+## 当前状态(最后更新 2026-08-08)
 
 各计划的权威状态在 `update_plan/README.md` 的状态索引表,**不要在这里读状态**,
 只记几条容易漏的:
