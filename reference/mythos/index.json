@@ -74,7 +74,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 66,
+          "line": 70,
           "context": "和 `reference/decks/weapons-and-artifacts-zh.md` 的按品类原表分工不同,见该文件头部。"
         },
         {
@@ -449,7 +449,7 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 368,
+          "line": 372,
           "context": "- **古神级条目住在 `reference/mythos/great-old-ones/`(现有 6 份:`cthulhu.md` +"
         },
         {

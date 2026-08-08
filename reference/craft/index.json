@@ -36,12 +36,12 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 259,
+          "line": 263,
           "context": "`cult-design-zh.md` §四 改口径为\"财源是十台里写得最细的一台\",§五 的\"平淡才合理\""
         },
         {
           "file": "WORKLOG.md",
-          "line": 361,
+          "line": 365,
           "context": "**P5 阶段 0 是还债**:`templates/cult.md:42` 与 `reference/craft/cult-design-zh.md:68`"
         },
         {
@@ -56,7 +56,7 @@
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 35,
+          "line": 44,
           "context": "ten) instead of inventing from habit. Cult threats: `cult-design-zh.md` §四 is engine 1"
         },
         {
@@ -290,12 +290,12 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 288,
+          "line": 292,
           "context": "`reference/craft/diagram-conventions-zh.md` 新增 §六 文字地图卡(无渲染器环境的兜底"
         },
         {
           "file": "WORKLOG.md",
-          "line": 301,
+          "line": 305,
           "context": "修订 B 的存废理由:`diagram-conventions-zh.md` §六 建筑卡不追溯撤销(它现在是\"跑不了"
         },
         {
@@ -305,12 +305,12 @@
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 38,
+          "line": 47,
           "context": "- **Draw it as a scene web** — `reference/craft/diagram-conventions-zh.md` §三. Nodes are"
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 66,
+          "line": 75,
           "context": "on every must-reach node** (`diagram-conventions-zh.md` §三 already requires this on the"
         },
         {
@@ -629,7 +629,7 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 269,
+          "line": 273,
           "context": "新增 `reference/craft/town-anatomy-zh.md`(92 行,四节:§一 城镇部件清单——地势/建筑"
         },
         {
@@ -649,7 +649,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 57,
+          "line": 61,
           "context": "与 `locations.md`(掷 1 次定舞台)分工不同。见 `reference/craft/town-anatomy-zh.md`"
         },
         {

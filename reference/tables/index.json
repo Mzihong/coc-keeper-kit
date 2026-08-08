@@ -6,7 +6,7 @@
   "citation_rule": null,
   "usage_rule": "authored by this kit — read and used directly, no citation required",
   "generated_by": "scripts/build-reference-index.py — do not edit by hand",
-  "entry_count": 20,
+  "entry_count": 21,
   "entries": [
     {
       "file": "clue-engines.md",
@@ -24,32 +24,32 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 255,
+          "line": 236,
+          "context": "落地并提交。** 阶段 3 格式仿照 `clue-engines.md` 的多列结构(场地│地形与限制│场上能用"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 259,
           "context": "`update_plan/Archived/2026-08-04-clue-engines.md`。**"
         },
         {
           "file": "WORKLOG.md",
-          "line": 256,
+          "line": 260,
           "context": "新表 `reference/tables/clue-engines.md`(d10,十条各带一条别的引擎给不了的结构属性,"
         },
         {
           "file": "WORKLOG.md",
-          "line": 266,
+          "line": 270,
           "context": "按 P11→P15→P16 顺序做完,无冲突。详见 `update_plan/Archived/2026-08-04-clue-engines.md`。"
         },
         {
-          "file": "WORKLOG.md",
-          "line": 417,
-          "context": "(d20,对抗场面成立的条件)。格式没照单格长句写,仿照 `clue-engines.md` 的多列结构"
-        },
-        {
           "file": "core/04-design-scenario.md",
-          "line": 34,
+          "line": 43,
           "context": "- **Sourcing:** roll `reference/tables/clue-engines.md` (2–3 engines \"live,\" never all"
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 51,
+          "line": 60,
           "context": "| 6 | From three engines | Not three branches of one `clue-engines.md` roll. |"
         },
         {
@@ -151,11 +151,6 @@
           "context": "`npc-quirks.md`,但 `core/01-intake.md` 的 auto-fill 实际掷的是 `complications.md`"
         },
         {
-          "file": "WORKLOG.md",
-          "line": 409,
-          "context": "`complications.md` 从该节并入种子表节;②`core/04-design-scenario.md` 第 6 步新增"
-        },
-        {
           "file": "reference/decks/miseries-zh.md",
           "line": 9,
           "context": "> - `reference/tables/complications.md` —— 扩充「一场里出什么岔子」的样本池。"
@@ -186,7 +181,7 @@
           "context": "- [ ] `complications.md` → d50"
         }
       ],
-      "reference_count": 8
+      "reference_count": 7
     },
     {
       "file": "confrontation-grounds.md",
@@ -206,12 +201,17 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 416,
-          "context": "- **同日:P14 阶段 3,未提交。** 新增 `reference/tables/confrontation-grounds.md`"
+          "line": 235,
+          "context": "`reference/tables/confrontation-grounds.md`,对抗场面)已于 2026-08-07 随 `e40071a`"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 418,
+          "context": "P14 阶段 2(种子表口径 bug + locations 接线)+ 阶段 3(`confrontation-grounds.md`)+"
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 71,
+          "line": 80,
           "context": "confrontation, ground the \"out\" in the scene's rolled `confrontation-grounds.md` result"
         },
         {
@@ -227,7 +227,7 @@
         {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
           "line": 5,
-          "context": "> 阶段 2 种子表 bug 修复 + locations 接线、阶段 3 `confrontation-grounds.md` 新表均已完成,"
+          "context": "> 阶段 2 种子表 bug 修复 + locations 接线、阶段 3 `confrontation-grounds.md` 新表均已完成并"
         },
         {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
@@ -240,7 +240,7 @@
           "context": "| P14 | [scenario-diversity](2026-08-04-scenario-diversity.md) | 模组多样性:`scripts/roll.py` 真伪随机掷骰(不放回 + 跨战役查重)+ 补两张缺表(对抗场面 / 模组形状)+ locations 接到场景级;扩容降为条件执行 | 进行中"
         }
       ],
-      "reference_count": 8
+      "reference_count": 9
     },
     {
       "file": "cult-goals.md",
@@ -400,7 +400,7 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 258,
+          "line": 262,
           "context": "`cult-power-sources.md` 与它双向互指(造物→工艺与制造、受赐力量→身体代价默认通电)。"
         },
         {
@@ -525,7 +525,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 59,
+          "line": 63,
           "context": "- `cultist-archetypes.md`——12 组现成的低阶邪教徒数值(按角色分组,不是骰表),外加一套"
         },
         {
@@ -606,9 +606,29 @@
       ],
       "referenced_by": [
         {
+          "file": "core/04-design-scenario.md",
+          "line": 21,
+          "context": "below produce, not what the mystery is about (`hooks.md`) or what's actually wrong"
+        },
+        {
           "file": "reference/tables/README.md",
           "line": 23,
           "context": "- `hooks.md`(1d20)——调查员是怎么被卷进来的。"
+        },
+        {
+          "file": "reference/tables/README.md",
+          "line": 57,
+          "context": "怎么来、结束形态。设计新模组或新支线**之前**掷,形状先于骨架;和 `hooks.md`(为什么"
+        },
+        {
+          "file": "reference/tables/scenario-shapes.md",
+          "line": 4,
+          "context": "(`hooks.md` 管这个),是整个模组按什么节奏、什么结构展开——时间跨度、调查员在事件里站"
+        },
+        {
+          "file": "reference/tables/scenario-shapes.md",
+          "line": 26,
+          "context": "> 这一维和 `hooks.md`/`mythos-angles.md` 不是同一件事,可以同时掷、互相组合:"
         },
         {
           "file": "campaigns/_template-campaign/CLAUDE.md",
@@ -621,7 +641,7 @@
           "context": "\"evidence\": \"Premise centers on Camas Dubh, a storm-locked Skye fishing hamlet bound to a mistranslated century-old rite ('Tàmh na Mara') that unknowingly feeds"
         }
       ],
-      "reference_count": 3
+      "reference_count": 7
     },
     {
       "file": "locations.md",
@@ -649,18 +669,13 @@
           "context": "**\"默认美国不等于默认阿卡姆\"**——默认给的是国家,镇子照样掷 `locations.md` 再自己造,"
         },
         {
-          "file": "WORKLOG.md",
-          "line": 411,
-          "context": "--campaign <slug>`;③`reference/tables/locations.md` 说明行补上指向 `core/04` 第 6"
-        },
-        {
           "file": "core/04-design-scenario.md",
-          "line": 63,
+          "line": 72,
           "context": "`locations.md` isn't a once-per-campaign roll: the intake roll only sets the campaign's"
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 64,
+          "line": 73,
           "context": "stage, every new scene's setting gets its own roll (`reference/tables/locations.md:6`"
         },
         {
@@ -685,7 +700,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 57,
+          "line": 61,
           "context": "与 `locations.md`(掷 1 次定舞台)分工不同。见 `reference/craft/town-anatomy-zh.md`"
         },
         {
@@ -784,7 +799,7 @@
           "context": "\"evidence\": \"Premise centers on Camas Dubh, a storm-locked Skye fishing hamlet bound to a mistranslated century-old rite ('Tàmh na Mara') that unknowingly feeds"
         }
       ],
-      "reference_count": 30
+      "reference_count": 29
     },
     {
       "file": "madness-instant.md",
@@ -1008,17 +1023,17 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 239,
+          "line": 243,
           "context": "两个待定点:神格页读路径**两者都做**(扩 `monster-index.md` + 四处直接读路径),L5"
         },
         {
           "file": "WORKLOG.md",
-          "line": 374,
+          "line": 378,
           "context": "- **`monster-index.md` 与 malleus 转录稿的关系已不再是「对外通道」。** P13 之后所有"
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 75,
+          "line": 84,
           "context": "`reference/tables/monster-index.md` before inventing one from scratch; it indexes all 223"
         },
         {
@@ -1098,7 +1113,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 63,
+          "line": 67,
           "context": "- `monster-index.md`——223 条神话生物的导航表,**脚本生成,不要手改**;数据源是"
         },
         {
@@ -1325,7 +1340,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 61,
+          "line": 65,
           "context": "- `monster-traits.md`——给怪物条目加挂的数值词条菜单(带负载点与破解口),配"
         },
         {
@@ -1382,6 +1397,11 @@
       ],
       "referenced_by": [
         {
+          "file": "core/04-design-scenario.md",
+          "line": 22,
+          "context": "(`mythos-angles.md`). Skip only when prepping a single session against an already-designed"
+        },
+        {
           "file": "reference/tables/hooks.md",
           "line": 6,
           "context": "intake 时与 `locations.md`、`mythos-angles.md` 配套使用。见 `core/01-intake.md`。"
@@ -1390,6 +1410,21 @@
           "file": "reference/tables/README.md",
           "line": 27,
           "context": "- `mythos-angles.md`(1d20)——那份\"不对劲\"到底是什么。四张里最要紧的一张。"
+        },
+        {
+          "file": "reference/tables/README.md",
+          "line": 58,
+          "context": "是现在)、`mythos-angles.md`(到底是什么)分工不同,三者互相组合不互相替代。见"
+        },
+        {
+          "file": "reference/tables/scenario-shapes.md",
+          "line": 3,
+          "context": "掷 **1d10**。定的不是模组里发生了什么(`mythos-angles.md` 管这个)或调查员怎么被卷进来"
+        },
+        {
+          "file": "reference/tables/scenario-shapes.md",
+          "line": 26,
+          "context": "> 这一维和 `hooks.md`/`mythos-angles.md` 不是同一件事,可以同时掷、互相组合:"
         },
         {
           "file": "campaigns/_template-campaign/CLAUDE.md",
@@ -1412,7 +1447,7 @@
           "context": "\"evidence\": \"Premise centers on Camas Dubh, a storm-locked Skye fishing hamlet bound to a mistranslated century-old rite ('Tàmh na Mara') that unknowingly feeds"
         }
       ],
-      "reference_count": 6
+      "reference_count": 10
     },
     {
       "file": "npc-appearance.md",
@@ -1423,11 +1458,6 @@
         "core/06-create-npc.md"
       ],
       "referenced_by": [
-        {
-          "file": "WORKLOG.md",
-          "line": 408,
-          "context": "`npc-quirks.md`),`npc-quirks.md` 挪去「备课与临场表」节紧邻 `npc-appearance.md`,"
-        },
         {
           "file": "reference/tables/README.md",
           "line": 36,
@@ -1449,7 +1479,7 @@
           "context": "- [x] `core/06-create-npc.md` —— 指向新的 `npc-appearance.md`(d20 外貌/气质),"
         }
       ],
-      "reference_count": 5
+      "reference_count": 4
     },
     {
       "file": "npc-quirks.md",
@@ -1464,11 +1494,6 @@
           "file": "CHANGELOG.md",
           "line": 46,
           "context": "`npc-quirks.md`,但 `core/01-intake.md` 的 auto-fill 实际掷的是 `complications.md`"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 408,
-          "context": "`npc-quirks.md`),`npc-quirks.md` 挪去「备课与临场表」节紧邻 `npc-appearance.md`,"
         },
         {
           "file": "reference/decks/README.md",
@@ -1511,7 +1536,7 @@
           "context": "`core/06-create-npc.md`;与 `npc-quirks.md` 分工:quirks 是**怎么演**,这张是"
         }
       ],
-      "reference_count": 10
+      "reference_count": 9
     },
     {
       "file": "phobias.md",
@@ -1572,6 +1597,38 @@
       "reference_count": 9
     },
     {
+      "file": "scenario-shapes.md",
+      "path": "reference/tables/scenario-shapes.md",
+      "title": "scenario-shapes.md — 模组的形状,不是骨架",
+      "lines": 30,
+      "declared_consumers": [
+        "core/04-design-scenario.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "WORKLOG.md",
+          "line": 239,
+          "context": "挑国家。剩 `scenario-shapes.md`(阶段 4,先写 5 条试水,写不出区分度就砍掉)与条件执行"
+        },
+        {
+          "file": "reference/tables/README.md",
+          "line": 56,
+          "context": "- `scenario-shapes.md`(1d10)——整个模组按什么节奏展开:时间跨度、调查员的位置、信息"
+        },
+        {
+          "file": "update_plan/2026-08-04-scenario-diversity.md",
+          "line": 195,
+          "context": "## 阶段 4 — 新表 `scenario-shapes.md`(d10–d20)"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 13,
+          "context": "| P14 | [scenario-diversity](2026-08-04-scenario-diversity.md) | 模组多样性:`scripts/roll.py` 真伪随机掷骰(不放回 + 跨战役查重)+ 补两张缺表(对抗场面 / 模组形状)+ locations 接到场景级;扩容降为条件执行 | 进行中"
+        }
+      ],
+      "reference_count": 4
+    },
+    {
       "file": "town-institutions.md",
       "path": "reference/tables/town-institutions.md",
       "title": "town-institutions.md — 这个镇里有哪些机构",
@@ -1592,12 +1649,12 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 276,
+          "line": 280,
           "context": "`town-institutions.md`,后者的调用**不并入** \"First, orient\" 的首次建世界掷骰行,"
         },
         {
           "file": "WORKLOG.md",
-          "line": 278,
+          "line": 282,
           "context": "新增 `reference/tables/town-institutions.md`(1d20,原创抽象,名字全部自拟):"
         },
         {
@@ -1622,7 +1679,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 56,
+          "line": 60,
           "context": "- `town-institutions.md`(1d20)——这个镇里有哪些机构;掷 N 次填清单,N 随镇的规模走,"
         },
         {
@@ -1740,7 +1797,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 65,
+          "line": 69,
           "context": "- `weapons-index.md`——表XVII 全部武器按威胁强度重排(不是骰表),给反派配装备时手选;"
         },
         {

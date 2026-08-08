@@ -66,7 +66,7 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 251,
+          "line": 255,
           "context": "`reference/rules/character-creation.md`、`reference/sourcebooks/keeper-rulebook-7e-zh.md`、"
         },
         {
@@ -572,23 +572,18 @@
           "context": "`chases.md` `sanity.md`)已按《守秘人规则书》第六、七、八章逐节重写,补齐了此前完全"
         },
         {
-          "file": "WORKLOG.md",
-          "line": 421,
-          "context": "与 `chases.md` 划清\"选材 vs 机制\"边界)、第 7 步(怪物的 fair out 接到掷出的结束"
-        },
-        {
           "file": "core/02-rules-reference.md",
           "line": 78,
           "context": "- `reference/rules/chases.md` — round structure; Move rates; obstacles & mishaps; ending a"
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 56,
+          "line": 65,
           "context": "`reference/rules/chases.md` before writing it. If a scene is a physical confrontation (a"
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 60,
+          "line": 69,
           "context": "`chases.md` still owns the running/AP mechanics if the confrontation turns into one."
         },
         {
@@ -707,7 +702,7 @@
           "context": "| P12 | [cheatsheet-self-sufficiency](2026-08-04-cheatsheet-self-sufficiency.md) | 速查表自足化:让 `reference/rules/` 单独就能回答规则问题,规则书退出查询链路(仍留在版本库里当对账底本)。**阶段 0–1**:`co"
         }
       ],
-      "reference_count": 30
+      "reference_count": 29
     },
     {
       "file": "combat.md",
@@ -1413,7 +1408,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 62,
+          "line": 66,
           "context": "`reference/rules/monster-scale.md`。"
         },
         {
@@ -1543,7 +1538,7 @@
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 79,
+          "line": 88,
           "context": "each ending with a **suggested SAN reward** per `reference/rules/sanity.md`'s scenario-end"
         },
         {

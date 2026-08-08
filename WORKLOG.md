@@ -236,8 +236,13 @@ codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-0
   落地并提交。** 阶段 3 格式仿照 `clue-engines.md` 的多列结构(场地│地形与限制│场上能用
   的│结束于),不是单格长句——`roll.py` 的表格解析支持任意列数按 `— ` 拼接输出;已接线
   `core/04` 第 6/7 步与 `core/09-description.md`。自检:20 条里 2 条假设工业化年代,0 条
-  挑国家。剩 `scenario-shapes.md`(阶段 4,先写 5 条试水,写不出区分度就砍掉)与条件执行
-  的扩容(阶段 5)、收尾(阶段 6)未做。
+  挑国家。
+- **P14 阶段 4(新表 `reference/tables/scenario-shapes.md`,模组形状)已于 2026-08-07
+  完成,待提交**——见下面「会话记录」。试水的 5 条直接取自计划诊断②里 Keeper 原话点过
+  的例子(一夜之间/通信往来/围城/旅途/倒计时仪式/追缉一人,选五个),核对与
+  `hooks.md`/`mythos-angles.md` 不重叠后通过,补满到 10 条,定 **1d10** 不是 d20(模组
+  形状比场景选材更宏观,10 个互斥的形状比硬凑 20 个更站得住)。接线到 `core/04`
+  「Build in this order」第一步之前。剩条件执行的扩容(阶段 5)与收尾(阶段 6)未做。
 - **P15(`core/` 复查勘误)已于 2026-08-07 全部完成并提交(阶段 0 `11f90b0`,阶段 1-3
   `86f1335`),归档见 `update_plan/Archived/2026-08-04-core-spec-audit.md`。** Keeper 拍板
   两个待定点:神格页读路径**两者都做**(扩 `monster-index.md` + 四处直接读路径),L5
@@ -407,7 +412,18 @@ codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-0
 这里的三条会话记录已按 `core/15-close-session.md` 的 "Prune before you add" 删除——
 细节要么已经折进上面"当前状态"里 P12 那条摘要,要么直接 `git show c368b90` 看。
 
-本节当前没有未提交的工作。
+- **2026-08-07:P14 阶段 4,未提交。** 新增 `reference/tables/scenario-shapes.md`
+  (1d10,模组的形状)。格式沿用 `confrontation-grounds.md` 的多列结构(`形状 | 时间跨度
+  | 调查员的位置 | 信息怎么来 | 结束形态`)。5 条试水直接取自计划诊断②引用的 Keeper
+  原话例子,判定与 `hooks.md`(触发这件事的具体导火索)、`mythos-angles.md`(那份
+  "不对劲"的本质)不重叠通过后,补满到 10 条(追加潜伏卧底/事后回访/分头汇合/循环
+  复现)。骰面定 1d10 不是计划标题写的 d10–d20 区间上限——10 个真正互斥的形状比硬凑
+  20 个更站得住,判断依据同 `clue-engines.md` 当初选 1d10 的理由。接线:
+  `core/04-design-scenario.md`「Build in this order」标题后、步骤 1 之前新增一段(设计
+  新模组/新支线前掷;给现成模组备场次不必重掷)、`tables/README.md` 表清单加一行。已
+  通过 `--check-all` 与 `--seed` 抽样验证,`build-reference-index.py` 重跑确认零孤儿。
+  `update_plan/2026-08-04-scenario-diversity.md` 阶段 4 全部打勾、`update_plan/README.md`
+  状态表、`CHANGELOG.md` 同步补进当天条目。**没做**:提交。
 
 ---
 

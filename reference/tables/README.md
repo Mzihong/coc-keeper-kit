@@ -53,6 +53,10 @@
   场面怎么结束(不是"打死",是"什么发生了这场就收场")。单场备课按需掷,管选材不管
   流程——追逐机制见 `reference/rules/chases.md`。见 `core/04-design-scenario.md` 第 6/7
   步、`core/09-description.md`。
+- `scenario-shapes.md`(1d10)——整个模组按什么节奏展开:时间跨度、调查员的位置、信息
+  怎么来、结束形态。设计新模组或新支线**之前**掷,形状先于骨架;和 `hooks.md`(为什么
+  是现在)、`mythos-angles.md`(到底是什么)分工不同,三者互相组合不互相替代。见
+  `core/04-design-scenario.md`「Build in this order」前一句。
 - `town-institutions.md`(1d20)——这个镇里有哪些机构;掷 N 次填清单,N 随镇的规模走,
   与 `locations.md`(掷 1 次定舞台)分工不同。见 `reference/craft/town-anatomy-zh.md`
   §一、§二。

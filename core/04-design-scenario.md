@@ -14,6 +14,15 @@ fill in the pieces.
 
 ## Build in this order
 
+**Before step 1, roll the scenario's shape** —
+`python scripts/roll.py scenario-shapes --campaign <slug>`: time span, where the investigators
+sit structurally relative to events, how information reaches them over play, and what the
+ending looks like. This is upstream of the truth — it decides what kind of skeleton the steps
+below produce, not what the mystery is about (`hooks.md`) or what's actually wrong
+(`mythos-angles.md`). Skip only when prepping a single session against an already-designed
+scenario ("Generating one session against an existing campaign" below) — its shape was set
+when the scenario itself was built.
+
 1. **The truth.** Write what's *really* happening — the situation the mystery conceals. Start
    from the horror and work backwards to how a normal person would first brush against it.
    If the campaign `CLAUDE.md` declares a **Threat** (category, and for a cult/organisation
