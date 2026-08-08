@@ -238,11 +238,13 @@ codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-0
   `core/04` 第 6/7 步与 `core/09-description.md`。自检:20 条里 2 条假设工业化年代,0 条
   挑国家。
 - **P14 阶段 4(新表 `reference/tables/scenario-shapes.md`,模组形状)已于 2026-08-07
-  完成,待提交**——见下面「会话记录」。试水的 5 条直接取自计划诊断②里 Keeper 原话点过
-  的例子(一夜之间/通信往来/围城/旅途/倒计时仪式/追缉一人,选五个),核对与
+  随 `c80530f` 落地并提交。** 试水的 5 条直接取自计划诊断②里 Keeper 原话点过的例子
+  (一夜之间/通信往来/围城/旅途/倒计时仪式/追缉一人,选五个),核对与
   `hooks.md`/`mythos-angles.md` 不重叠后通过,补满到 10 条,定 **1d10** 不是 d20(模组
   形状比场景选材更宏观,10 个互斥的形状比硬凑 20 个更站得住)。接线到 `core/04`
-  「Build in this order」第一步之前。剩条件执行的扩容(阶段 5)与收尾(阶段 6)未做。
+  「Build in this order」第一步之前。**P14 阶段 1–4 现已全部完成并提交**,剩条件执行的
+  扩容(阶段 5,判据是先跑一场真战役再看不放回是否接近掷空)与收尾(阶段 6)未做,
+  两者都不阻塞计划完结之外的任何事。
 - **P15(`core/` 复查勘误)已于 2026-08-07 全部完成并提交(阶段 0 `11f90b0`,阶段 1-3
   `86f1335`),归档见 `update_plan/Archived/2026-08-04-core-spec-audit.md`。** Keeper 拍板
   两个待定点:神格页读路径**两者都做**(扩 `monster-index.md` + 四处直接读路径),L5
@@ -412,18 +414,7 @@ codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-0
 这里的三条会话记录已按 `core/15-close-session.md` 的 "Prune before you add" 删除——
 细节要么已经折进上面"当前状态"里 P12 那条摘要,要么直接 `git show c368b90` 看。
 
-- **2026-08-07:P14 阶段 4,未提交。** 新增 `reference/tables/scenario-shapes.md`
-  (1d10,模组的形状)。格式沿用 `confrontation-grounds.md` 的多列结构(`形状 | 时间跨度
-  | 调查员的位置 | 信息怎么来 | 结束形态`)。5 条试水直接取自计划诊断②引用的 Keeper
-  原话例子,判定与 `hooks.md`(触发这件事的具体导火索)、`mythos-angles.md`(那份
-  "不对劲"的本质)不重叠通过后,补满到 10 条(追加潜伏卧底/事后回访/分头汇合/循环
-  复现)。骰面定 1d10 不是计划标题写的 d10–d20 区间上限——10 个真正互斥的形状比硬凑
-  20 个更站得住,判断依据同 `clue-engines.md` 当初选 1d10 的理由。接线:
-  `core/04-design-scenario.md`「Build in this order」标题后、步骤 1 之前新增一段(设计
-  新模组/新支线前掷;给现成模组备场次不必重掷)、`tables/README.md` 表清单加一行。已
-  通过 `--check-all` 与 `--seed` 抽样验证,`build-reference-index.py` 重跑确认零孤儿。
-  `update_plan/2026-08-04-scenario-diversity.md` 阶段 4 全部打勾、`update_plan/README.md`
-  状态表、`CHANGELOG.md` 同步补进当天条目。**没做**:提交。
+本节当前没有未提交的工作。
 
 ---
 
@@ -432,8 +423,9 @@ P13(bundle 退役)随 7f85d9b 落地,「默认舞台改为美国」随 d481713 �
 P14 阶段 1(`scripts/roll.py`)随 148bb91 落地,`_source/` 入库边界改判随 9666499 落地
 (该条此前漏剪,已清掉),P11 阶段 2b + 阶段 3(年代开放收尾)随 3f937f6 落地,
 P14 阶段 2(种子表口径 bug + locations 接线)+ 阶段 3(`confrontation-grounds.md`)+
-`update_plan/README.md` 瘦身随 `e40071a` 落地——偏离计划字面描述的实现细节已经折进
-「当前状态」那条摘要,不在这里重复背一份。
+`update_plan/README.md` 瘦身随 `e40071a` 落地,P14 阶段 4(`scenario-shapes.md`)随
+`c80530f` 落地——偏离计划字面描述的实现细节已经折进「当前状态」那条摘要,不在这里
+重复背一份。
 
 同理,P9 阶段 A+B 的落地细节(索引脚本怎么解析转录稿、踩过的名称解析坑、9 只 bestiary
 条目的改判理由)已随 commit 059ba63 落地,理由本身也直接写在了改动的文件里(各 bestiary
