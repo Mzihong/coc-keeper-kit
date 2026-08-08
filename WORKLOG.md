@@ -231,9 +231,13 @@ codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-0
   "重掷循环"——效果等价,池子精确报告耗尽而不是假装重试 20 次;②在计划清单之外加了
   `--check-all`(全表自检,不掷骰)和 `--spec`(标注哪个 spec 在掷)两个参数。想看当时
   怎么想的,`git show 148bb91` 或翻 `scripts/roll.py` 的文件头注释。
-- **P14 阶段 2(种子表口径 bug + locations 接到场景级)已于 2026-08-07 完成,待提交**
-  ——见下面「会话记录」。两张缺表(对抗场面/模组形状,阶段 3–4)与条件执行的扩容
-  (阶段 5)仍没做。
+- **P14 阶段 2(种子表口径 bug + locations 接到场景级)与阶段 3(新表
+  `reference/tables/confrontation-grounds.md`,对抗场面)已于 2026-08-07 随 `e40071a`
+  落地并提交。** 阶段 3 格式仿照 `clue-engines.md` 的多列结构(场地│地形与限制│场上能用
+  的│结束于),不是单格长句——`roll.py` 的表格解析支持任意列数按 `— ` 拼接输出;已接线
+  `core/04` 第 6/7 步与 `core/09-description.md`。自检:20 条里 2 条假设工业化年代,0 条
+  挑国家。剩 `scenario-shapes.md`(阶段 4,先写 5 条试水,写不出区分度就砍掉)与条件执行
+  的扩容(阶段 5)、收尾(阶段 6)未做。
 - **P15(`core/` 复查勘误)已于 2026-08-07 全部完成并提交(阶段 0 `11f90b0`,阶段 1-3
   `86f1335`),归档见 `update_plan/Archived/2026-08-04-core-spec-audit.md`。** Keeper 拍板
   两个待定点:神格页读路径**两者都做**(扩 `monster-index.md` + 四处直接读路径),L5
@@ -403,46 +407,17 @@ codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-0
 这里的三条会话记录已按 `core/15-close-session.md` 的 "Prune before you add" 删除——
 细节要么已经折进上面"当前状态"里 P12 那条摘要,要么直接 `git show c368b90` 看。
 
-- **2026-08-07:P14 阶段 2,未提交。** 改了五个文件:①`reference/tables/README.md`
-  种子表节四张改成 hooks/locations/mythos-angles/complications(原来错写
-  `npc-quirks.md`),`npc-quirks.md` 挪去「备课与临场表」节紧邻 `npc-appearance.md`,
-  `complications.md` 从该节并入种子表节;②`core/04-design-scenario.md` 第 6 步新增
-  一句:场景需要的地点若 `world/` 里没有,当场跑 `python scripts/roll.py locations
-  --campaign <slug>`;③`reference/tables/locations.md` 说明行补上指向 `core/04` 第 6
-  步的交叉引用;④`update_plan/2026-08-04-scenario-diversity.md` 阶段 2 两项打勾;
-  ⑤`update_plan/README.md` 状态表 P14 行同步、`CHANGELOG.md` 补进当天(2026-08-07)
-  条目。**没做**:提交、commit hash 回填(状态表与计划文件头当前写"待提交",等 Keeper
-  决定要不要提交)。
-- **同日:P14 阶段 3,未提交。** 新增 `reference/tables/confrontation-grounds.md`
-  (d20,对抗场面成立的条件)。格式没照单格长句写,仿照 `clue-engines.md` 的多列结构
-  (`场地 | 地形与限制 | 场上能用的 | 结束于`)——`roll.py` 的表格解析本就支持任意列数
-  按 `— ` 拼接输出,四维分列比塞一句话里更好读也更好维护,已通过 `--check-all` 与
-  `--seed` 抽样验证。接线三处:`core/04-design-scenario.md` 第 6 步(物理对抗掷这张表,
-  与 `chases.md` 划清"选材 vs 机制"边界)、第 7 步(怪物的 fair out 接到掷出的结束
-  条件上)、`core/09-description.md`(Mode A 场景描写照掷出的地形/可用物写);
-  `reference/tables/README.md` 表清单加一行。自检结果:20 条里 2 条(卷筒机印刷厂、
-  钢架施工楼顶)预设工业化年代,0 条挑国家,比例不影响可用性,不砍。`update_plan/
-  2026-08-04-scenario-diversity.md` 阶段 3 全部打勾、`update_plan/README.md` 状态表、
-  `CHANGELOG.md` 同步补进当天条目。**没做**:提交。
-- **同一会话,同日:`update_plan/README.md` 瘦身,242 行降到约 150 行,未提交。**
-  「依赖图」一节此前塞了近 70 行已归档计划(P9–P16)的历史耦合说明,「建议执行顺序」
-  一节尾部也挂着同类已完成条目的详细复述——两者都和 `Archived/README.md` 重复,那份
-  文件才是归档计划的权威详情记录。删法:依赖图只留活跃计划(P5/P14)的图 + 一行指路;
-  「建议执行顺序」尾部同理压成一行指路;「复杂度排序」尾部三条纯指针的删除线条目
-  (P10/P15/P16)直接删,`Archived/README.md` 本来就有。**唯一一条不是纯历史、被顺手
-  搬家而不是删除的**:P16 落地时给 `core/04` 第 5 步留下的 clue-engines 掷骰点措辞债
-  (原来挂在依赖图 P16 节),挪进了 `2026-08-04-scenario-diversity.md` 阶段 2 末尾,
-  因为它是 P14 还没还的活账,不是已归档计划的历史。**新增一条执行守则**(本文件
-  `update_plan/README.md` 内)防复发:依赖边解决/阶段完成时只删不留说明段落,细节权威
-  在 `Archived/README.md` 或对应计划文件自己的 `- [ ]`。**没做**:提交。
+本节当前没有未提交的工作。
 
 ---
 
 其余已提交条目已按 `core/15-close-session.md` 的 "Prune before you add" 删除:
 P13(bundle 退役)随 7f85d9b 落地,「默认舞台改为美国」随 d481713 落地,
 P14 阶段 1(`scripts/roll.py`)随 148bb91 落地,`_source/` 入库边界改判随 9666499 落地
-(该条此前漏剪,已清掉),P11 阶段 2b + 阶段 3(年代开放收尾)随 3f937f6 落地——
-偏离计划字面描述的实现细节已经折进「当前状态」那条摘要,不在这里重复背一份。
+(该条此前漏剪,已清掉),P11 阶段 2b + 阶段 3(年代开放收尾)随 3f937f6 落地,
+P14 阶段 2(种子表口径 bug + locations 接线)+ 阶段 3(`confrontation-grounds.md`)+
+`update_plan/README.md` 瘦身随 `e40071a` 落地——偏离计划字面描述的实现细节已经折进
+「当前状态」那条摘要,不在这里重复背一份。
 
 同理,P9 阶段 A+B 的落地细节(索引脚本怎么解析转录稿、踩过的名称解析坑、9 只 bestiary
 条目的改判理由)已随 commit 059ba63 落地,理由本身也直接写在了改动的文件里(各 bestiary
