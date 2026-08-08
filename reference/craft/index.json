@@ -21,27 +21,27 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 54,
+          "line": 58,
           "context": "每次都收敛成\"查账 + 查地产 + 找目击者\"。邪教的财源仍然是 `cult-design-zh.md` §四"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 242,
+          "line": 263,
           "context": "`dist/bundle.md`,走 ChatGPT 的 KP 连点都点不进去。`reference/craft/cult-design-zh.md`"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 377,
+          "line": 398,
           "context": "- 新增邪教设计方法论 `craft/cult-design-zh.md`,配四张骰表与 `templates/cult.md` 模板。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 257,
+          "line": 259,
           "context": "`cult-design-zh.md` §四 改口径为\"财源是十台里写得最细的一台\",§五 的\"平淡才合理\""
         },
         {
           "file": "WORKLOG.md",
-          "line": 331,
+          "line": 361,
           "context": "**P5 阶段 0 是还债**:`templates/cult.md:42` 与 `reference/craft/cult-design-zh.md:68`"
         },
         {
@@ -181,38 +181,28 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 40,
+          "line": 46,
           "context": "`reference/craft/cult-design-zh.md` §三。"
         },
         {
           "file": "reference/tables/README.md",
-          "line": 44,
+          "line": 50,
           "context": "不许全开。见 `core/04-design-scenario.md` 第 5 步、`reference/craft/cult-design-zh.md`"
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 90,
+          "line": 91,
           "context": "reference/craft/cult-design-zh.md:68  → \"与 P5 的 mermaid 势力图工具合流\""
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 100,
+          "line": 101,
           "context": "- [x] `templates/cult.md` 与 `reference/craft/cult-design-zh.md` 两处引用改指向它"
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 111,
-          "context": "> `craft/cult-design-zh.md` 两处还债——都在其中)。hash 已于 2026-08-06 回填到本文件头与"
-        },
-        {
-          "file": "update_plan/README.md",
-          "line": 12,
-          "context": "| P5 | [low-cost-maps](2026-08-02-low-cost-maps.md) | 低成本地图:mermaid 惯例(还债)+ DSL→SVG 渲染器,两个功能——KP 定位图(A 档)与 PL 可互动场景图(A+B 家具层) | 进行中(阶段 0 已完成并提交,13821ac) | **202"
-        },
-        {
-          "file": "update_plan/README.md",
           "line": 112,
-          "context": "`templates/cult.md` 与 `craft/cult-design-zh.md` 两处指向不存在规范的引用)。"
+          "context": "> `craft/cult-design-zh.md` 两处还债——都在其中)。hash 已于 2026-08-06 回填到本文件头与"
         },
         {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
@@ -265,7 +255,7 @@
           "context": "| P16 | [clue-engines](2026-08-04-clue-engines.md) | 线索引擎通用化 + 三线索规则可执行化。新表 `reference/tables/clue-engines.md`(d10,十条线索引擎各带一条别的引擎给不了的结构属性,表头写死\"一次只掷 2–3 条,不许全开\")"
         }
       ],
-      "reference_count": 49
+      "reference_count": 47
     },
     {
       "file": "diagram-conventions-zh.md",
@@ -280,17 +270,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 73,
+          "line": 77,
           "context": "- **没有渲染器时,地图也有格式可依了。** `reference/craft/diagram-conventions-zh.md`"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 181,
+          "line": 202,
           "context": "- **关系图终于有正式画法了。** 新增 `reference/craft/diagram-conventions-zh.md`,covers"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 243,
+          "line": 264,
           "context": "第 11 步有同样的问题。两处现已改指向新的 `craft/diagram-conventions-zh.md`。"
         },
         {
@@ -300,8 +290,13 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 286,
+          "line": 288,
           "context": "`reference/craft/diagram-conventions-zh.md` 新增 §六 文字地图卡(无渲染器环境的兜底"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 301,
+          "context": "修订 B 的存废理由:`diagram-conventions-zh.md` §六 建筑卡不追溯撤销(它现在是\"跑不了"
         },
         {
           "file": "core/03-build-world.md",
@@ -315,7 +310,7 @@
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 57,
+          "line": 66,
           "context": "on every must-reach node** (`diagram-conventions-zh.md` §三 already requires this on the"
         },
         {
@@ -365,38 +360,18 @@
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 96,
+          "line": 97,
           "context": "- [x] 新建 `reference/craft/diagram-conventions-zh.md`(87 行,**已进 bundle**):"
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 110,
+          "line": 111,
           "context": "> 阶段 0 的三个文件——`craft/diagram-conventions-zh.md` 新建、`templates/cult.md` 与"
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 205,
+          "line": 221,
           "context": "**这也回答了 P10 修订 B 的存废理由。** `diagram-conventions-zh.md` §六 建筑卡已经在"
-        },
-        {
-          "file": "update_plan/README.md",
-          "line": 12,
-          "context": "| P5 | [low-cost-maps](2026-08-02-low-cost-maps.md) | 低成本地图:mermaid 惯例(还债)+ DSL→SVG 渲染器,两个功能——KP 定位图(A 档)与 PL 可互动场景图(A+B 家具层) | 进行中(阶段 0 已完成并提交,13821ac) | **202"
-        },
-        {
-          "file": "update_plan/README.md",
-          "line": 56,
-          "context": "已扩进 `diagram-conventions-zh.md` §六,P5 阶段 3 要用时同一文件直接读得到,不必再跨计划"
-        },
-        {
-          "file": "update_plan/README.md",
-          "line": 81,
-          "context": "变成\"同一个文件\"**——地图卡直接扩进 P5 阶段 0 产出的 `craft/diagram-conventions-zh.md`"
-        },
-        {
-          "file": "update_plan/README.md",
-          "line": 108,
-          "context": "> `diagram-conventions-zh.md` §六 建筑卡本身已随 P10 落地,这里待答的是**另一件事**:"
         },
         {
           "file": "update_plan/Archived/2026-08-04-clue-engines.md",
@@ -494,7 +469,7 @@
           "context": "| P10 | [town-anatomy-from-arkham](2026-08-04-town-anatomy-from-arkham.md) | 阿卡姆城市资料(仅入库不归档,取手法不取文字)→ `reference/craft/town-anatomy-zh.md` 城镇解剖手法稿(四节:区域四维、地点字段体"
         }
       ],
-      "reference_count": 43
+      "reference_count": 40
     },
     {
       "file": "lovecraft-zh.md",
@@ -535,12 +510,12 @@
         },
         {
           "file": "core/09-description.md",
-          "line": 55,
+          "line": 58,
           "context": "`reference/craft/lovecraft-zh.md` §三 for how HPL stages a reveal before this handoff."
         },
         {
           "file": "core/09-description.md",
-          "line": 71,
+          "line": 74,
           "context": "anchor for the character and for the reader — `reference/craft/lovecraft-zh.md` §二's"
         },
         {
@@ -644,7 +619,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 67,
+          "line": 71,
           "context": "- **造镇现在有专门的手法指南了。** 新增 `reference/craft/town-anatomy-zh.md`,建"
         },
         {
@@ -654,7 +629,7 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 267,
+          "line": 269,
           "context": "新增 `reference/craft/town-anatomy-zh.md`(92 行,四节:§一 城镇部件清单——地势/建筑"
         },
         {
@@ -674,7 +649,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 47,
+          "line": 57,
           "context": "与 `locations.md`(掷 1 次定舞台)分工不同。见 `reference/craft/town-anatomy-zh.md`"
         },
         {

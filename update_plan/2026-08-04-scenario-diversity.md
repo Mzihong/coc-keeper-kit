@@ -2,7 +2,8 @@
 
 > 日期:2026-08-04
 > 状态:进行中(阶段 1 `scripts/roll.py` + 硬约定接线已完成并提交,148bb91,2026-08-05;
-> 阶段 2–6 待执行)
+> 阶段 2 种子表 bug 修复 + locations 接线、阶段 3 `confrontation-grounds.md` 新表均已完成,
+> 2026-08-07,待提交;阶段 4–6 待执行)
 > 来源:Keeper 2026-08-04 会话——先问「1d20 会不会太少了,能不能拓展 1d100」,
 > 同日重述为「**想要 100 条的根本原因是希望做出来的模组具有多样性,否则每个模组都发生在
 > 类似场景中战斗未免太枯燥无味**」,并追加一条硬要求:**掷骰必须用 `.py` 取伪随机,
@@ -137,9 +138,9 @@ python scripts/roll.py <table> [<table> ...] [--times N] [--campaign <slug>] [--
 清单强制。六项清单也不动——一个完全靠 Keeper 手填、零随机的 intake 合法但不会产生
 `rolls.log`,把它列为必需项会让这种(允许的)路径被清单误判成不完整。
 
-## 阶段 2 — 零条目的接线(先修 bug)
+## 阶段 2 — 零条目的接线(先修 bug,已完成 2026-08-07)
 
-- [ ] **修:种子表到底是哪四张,两份文件不一致。**
+- [x] **修:种子表到底是哪四张,两份文件不一致。**
       `reference/tables/README.md` § 种子表说是 hooks / locations / mythos-angles /
       **npc-quirks**,并断言「`core/01-intake.md` 强制要求掷这四张」;
       而 [`core/01-intake.md:124`](../core/01-intake.md) 实际写的是 hooks / locations /
@@ -147,11 +148,26 @@ python scripts/roll.py <table> [<table> ...] [--times N] [--campaign <slug>] [--
       两份从同一个 commit(`d213f2e`)一起出生就不一致,各按一套心智模型分类
       (README 按「什么让战役具体」,intake 按「auto-fill 当场需要什么」),`13821ac`
       同时改过两份仍没对上。**按硬约定 `core/` 压过一切 → 以 intake 那版为准**,
-      改 README,并把那句失实的断言一起改掉。
-- [ ] **接线:`locations.md` 掷到场景级。** `core/04` 第 6 步建 scene web 时,每个新地点
+      改 README,并把那句失实的断言一起改掉。**实际落地**:种子表四张改成
+      hooks/locations/mythos-angles/complications;`npc-quirks.md` 从种子表节移到
+      「备课与临场表」节(它本就不在 intake 的四张之列,只是高频表——见 P14 诊断③),
+      并顺手挪到紧邻它的姊妹表 `npc-appearance.md` 前面。`complications.md` 的条目从
+      「备课与临场表」并入种子表节(它现在两处都掷:intake 定基调 + 单场备课再掷),
+      不重复列两遍。
+- [x] **接线:`locations.md` 掷到场景级。** `core/04` 第 6 步建 scene web 时,每个新地点
       掷一次(表自己第 6 行早就这么写了,只是没人读它)。**零新条目,掷骰次数 ×8。**
+      **实际落地**:`core/04-design-scenario.md` 第 6 步新增一句——场景需要的地点若
+      `world/` 里没有,当场跑 `python scripts/roll.py locations --campaign <slug>`。
+      `reference/tables/locations.md` 自身的说明行同步补了 `core/04` 第 6 步的指路
+      (原来只指到 `core/03`,读者看不到场景级这一半)。
+- [ ] **遗留欠账(来自 P16,2026-08-07 发现,未修):** `clue-engines.md` 落地时给
+      `core/04-design-scenario.md` 第 5 步新增了一处掷骰点,但阶段 1.2「逐处改掷骰点的
+      措辞」的清单当时没有这张表(还没造出来),那处措辞至今仍是 "roll
+      `reference/tables/clue-engines.md`"——不是本计划别处已统一的
+      `python scripts/roll.py <table> --campaign <slug>` 可执行形式。下次改 `core/04` 第 5
+      步时顺手补上;不阻塞阶段 3–6。
 
-## 阶段 3 — 新表 `confrontation-grounds.md`(d20)
+## 阶段 3 — 新表 `confrontation-grounds.md`(d20)(已完成,2026-08-07)
 
 **直击 Keeper 点名的那件事。** 掷的是**对抗场面成立的条件**,不是"打不打得起来":
 
@@ -160,10 +176,21 @@ python scripts/roll.py <table> [<table> ...] [--times N] [--campaign <slug>] [--
 - **为什么跑不掉**,或者跑掉的代价是什么
 - 场面结束的条件——不是"打死",是"什么发生了这一场就结束"
 
-- [ ] 写 20 条,一条 1–2 行,年代无关(约 30 行)。
-- [ ] 接线:`core/04` 第 6/7 步、`core/09-description.md`;`tables/README.md` 表清单加一行。
-- [ ] 与 `reference/rules/chases.md` 划清边界:那份是**追逐的机制**,这张是**场面的选材**。
-- [ ] 自检:有多少条只在一个年代/一个国家成立。
+- [x] 写 20 条,一条 1–2 行,年代无关(约 30 行)。**实际落地**:格式仿照 `clue-engines.md`
+      的多列结构(`d20 | 场地 | 地形与限制 | 场上能用的 | 结束于`),不是单格长句——
+      `scripts/roll.py` 的表格解析本就支持任意列数按 `— ` 拼接输出,四个维度分列比塞进一句
+      话更好读也更好维护。已通过 `--check-all`(20 行对 d20)与 `--seed` 实测三次抽样。
+- [x] 接线:`core/04` 第 6/7 步(第 6 步加物理对抗掷这张表、与 `chases.md` 的边界一句话;
+      第 7 步把怪物的"fair out"接到掷出的结束条件上)、`core/09-description.md`(Mode A
+      "Everything above" 后加一条:对抗场面的空间描写要照掷出的地形/可用物写,不凭空造)、
+      `tables/README.md` 表清单加一行。
+- [x] 与 `reference/rules/chases.md` 划清边界:那份是**追逐的机制**,这张是**场面的选材**
+      ——文件头与 `core/04` 接线处各写了一句。
+- [x] 自检:有多少条只在一个年代/一个国家成立。**结果**:20 条里 2 条(#3 卷筒机印刷厂、
+      #19 钢架施工楼顶)预设工业化之后的年代,其余 18 条(谷仓/礁石滩/太平间/灯塔/市集/
+      矿井/墓地/磨坊/温室……)不挑年代;**0 条挑国家**,没有任何条目点名具体国名或只在
+      单一地域成立。两条工业化条目保留不砍——`locations.md` 本身也收了"铁路枢纽"这类
+      同等级的条目,且比例(10%)不影响表的可用性。
 
 ## 阶段 4 — 新表 `scenario-shapes.md`(d10–d20)
 

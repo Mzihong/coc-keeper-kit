@@ -15,18 +15,26 @@
 
 ## 种子表——反套路的那一层
 
-这四张**不是可选的调味**。守秘人给的输入很少或没有时,`core/01-intake.md` 强制要求掷这
-四张。不掷,任何模型都会收敛到同一个战役:阿卡姆、一个邪教、一位旧日支配者正在苏醒。
-掷了、**并且保留掷出的结果**,才是低信息量战役变具体的原因。
+这四张**不是可选的调味**。守秘人给的输入很少或没有时,`core/01-intake.md` 的 auto-fill
+强制要求掷这四张(见该文件「Auto-fill」步骤 2)。不掷,任何模型都会收敛到同一个战役:
+阿卡姆、一个邪教、一位旧日支配者正在苏醒。掷了、**并且保留掷出的结果**,才是低信息量
+战役变具体的原因。
 
 - `hooks.md`(1d20)——调查员是怎么被卷进来的。
-- `locations.md`(1d20)——事情发生在哪儿;打断默认往小渔村滑的引力。
+- `locations.md`(1d20)——事情发生在哪儿;打断默认往小渔村滑的引力。战役开局至少掷
+  1 次定舞台(`core/03-build-world.md`),**之后每个新场景需要新地点时再掷一次**
+  (`core/04-design-scenario.md` 第 6 步)——不是只在开局用一次。
 - `mythos-angles.md`(1d20)——那份"不对劲"到底是什么。四张里最要紧的一张。
-- `npc-quirks.md`(1d20)——让 NPC 能被演出来的那个小动作。
+- `complications.md`(1d20)——这一场会出什么岔子。intake 时随另外三张一起掷定基调;
+  单场备课时按需再掷(通常两次),见 `core/04-design-scenario.md` →「Generating one
+  session against an existing campaign」。
 
 ## 备课与临场表
 
-- `complications.md`(1d20)——这一场会出什么岔子;备课时掷两次。
+- `npc-quirks.md`(1d20)——让 NPC 能被演出来的那个小动作;每造一个 NPC 掷一次,见
+  `core/06-create-npc.md`。
+- `npc-appearance.md`(1d20)——第一眼的外形加脾性;`npc-quirks.md` 的姊妹表(外形对
+  举止)。
 - `madness-instant.md`(1D10)——疯狂发作·即时症状(逐轮处理时用,表VII)。
 - `madness-summary.md`(1D10)——疯狂发作·概括症状(跳到之后概括推进时用,表VIII);
   与上一张同源(8.3 疯狂发作)但骰面用途不同,拆成两个文件是因为 `roll.py` 单维度
@@ -34,8 +42,6 @@
 - `phobias.md`(1D100)——恐惧症状表(表IX),规则书表格全量转录,和
   `reference/decks/phobias-and-manias-zh.md` 的精选卡组是两回事。
 - `manias.md`(1D100)——躁狂症状表(表X),同上,与 `phobias.md` 同一原因拆成独立文件。
-- `npc-appearance.md`(1d20)——第一眼的外形加脾性;`npc-quirks.md` 的姊妹表(外形对
-  举止)。
 - `cult-goals.md`(1D10 × 1D8)——邪教的愿望 × 手段;两张都掷,相乘才成立。见
   `reference/craft/cult-design-zh.md` §三。
 - `cult-leader-positions.md`(1d10)——邪教首领的社会门面,以及这个位置换来的便利。
@@ -43,6 +49,10 @@
 - `clue-engines.md`(1d10)——威胁反复做的哪件事会留下可查的痕迹;一次只掷 2–3 条,
   不许全开。见 `core/04-design-scenario.md` 第 5 步、`reference/craft/cult-design-zh.md`
   §四(财源即十条里的一条)。
+- `confrontation-grounds.md`(1d20)——对抗场面成立的条件:地形与限制、场上能用的东西、
+  场面怎么结束(不是"打死",是"什么发生了这场就收场")。单场备课按需掷,管选材不管
+  流程——追逐机制见 `reference/rules/chases.md`。见 `core/04-design-scenario.md` 第 6/7
+  步、`core/09-description.md`。
 - `town-institutions.md`(1d20)——这个镇里有哪些机构;掷 N 次填清单,N 随镇的规模走,
   与 `locations.md`(掷 1 次定舞台)分工不同。见 `reference/craft/town-anatomy-zh.md`
   §一、§二。

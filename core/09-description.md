@@ -49,6 +49,9 @@ this file.
 
 - Everything above, aimed at a place. If it's a full scene, assemble it (see below); if it's
   just the boxed text, draft that alone.
+- **For a physical confrontation**, ground the space in its `confrontation-grounds.md` roll
+  (`core/04-design-scenario.md` step 6) rather than inventing the room from habit — let the
+  terrain and what's usable there pick which senses and which "wrong detail" you write.
 - **For a horror reveal**, lead with the **image and motion**, then hand off the Sanity roll
   to the monster's entry (`core/07-create-monster.md`). Describe wrongness through effect
   (what it does to the light, the smell it brings) rather than a full anatomy dump — see

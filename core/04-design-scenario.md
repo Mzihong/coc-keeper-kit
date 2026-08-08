@@ -53,12 +53,24 @@ fill in the pieces.
    step is about the rest of the web, not the must-reach scenes step 5 already constrains
    (≥3 inbound edges each) — of the remaining scenes, most should be reachable in more than one
    order, avoiding a single required sequence. If a scene is a pursuit or an escape, read
-   `reference/rules/chases.md` before writing it. **Once the web is drawn, count inbound edges
+   `reference/rules/chases.md` before writing it. If a scene is a physical confrontation (a
+   fight, an ambush, a forced standoff), roll the ground it happens on instead of defaulting to
+   a warehouse — `python scripts/roll.py confrontation-grounds --campaign <slug>` gives the
+   terrain, what's usable, why it can't just be walked away from, and what actually ends it;
+   `chases.md` still owns the running/AP mechanics if the confrontation turns into one.
+   **If a scene needs a place not already
+   established in `world/`, roll it** — `python scripts/roll.py locations --campaign <slug>`.
+   `locations.md` isn't a once-per-campaign roll: the intake roll only sets the campaign's
+   stage, every new scene's setting gets its own roll (`reference/tables/locations.md:6`
+   already says so). **Once the web is drawn, count inbound edges
    on every must-reach node** (`diagram-conventions-zh.md` §三 already requires this on the
    diagram itself; this is the reminder to actually do it before moving on) — a clue with
    nowhere to point at is a ghost clue, and it doesn't show up just from counting to three.
 7. **Cast & threats.** Name the NPCs and creatures (hand to `core/06` / `core/07`); ensure
-   each monster has its fair "out." **Choosing which Mythos creature fits a given role**
+   each monster has its fair "out." If a creature's role means a decisive physical
+   confrontation, ground the "out" in the scene's rolled `confrontation-grounds.md` result
+   (see step 6) rather than narrating an escape route on the spot — the terrain's escape cost
+   and end condition *are* the out. **Choosing which Mythos creature fits a given role**
    (especially "the boss is deity X — what's a fitting elite/servitor?") — check
    `reference/tables/monster-index.md` before inventing one from scratch; it indexes all 223
    `malleus-monstrorum-zh.md` entries by tier and `Serves` (who they answer to), so the search

@@ -24,7 +24,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 259,
+          "line": 280,
           "context": "- 怪物图鉴 `fellrock.md` 的\"沉默之油\"反查链接指向了 `artifacts-zh.md`,但那份文件里"
         },
         {
@@ -74,7 +74,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 56,
+          "line": 66,
           "context": "和 `reference/decks/weapons-and-artifacts-zh.md` 的按品类原表分工不同,见该文件头部。"
         },
         {
@@ -429,12 +429,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 324,
+          "line": 345,
           "context": "从 deadly 改成 mythic(体型与耐久数值早已过 deadly 上限)、`thrall-of-cthulhu.md`"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 327,
+          "line": 348,
           "context": "- **神格文件现在要反向列出自己的眷族与仆从。** `cthulhu.md` 补了这一节(哪些怪物服侍"
         },
         {
@@ -449,7 +449,7 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 338,
+          "line": 368,
           "context": "- **古神级条目住在 `reference/mythos/great-old-ones/`(现有 6 份:`cthulhu.md` +"
         },
         {
@@ -837,7 +837,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 260,
+          "line": 281,
           "context": "根本没有这一条——沉默之油实际是 `reference/mythos/spells/oil-of-silence.md` 的法术,"
         },
         {

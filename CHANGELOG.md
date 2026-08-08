@@ -42,6 +42,10 @@
 - **三线索规则以前只数"有没有三条",数不出线索会不会同时被灭口、会不会随时钟一起过期、
   会不会指向一个玩家根本走不到的场景。** `core/11-review.md` 的复查现在换成三项真正的
   追溯(能不能被一次性灭口、会不会同一时钟腐坏、场景有没有入边),不再是数行数。
+- **随机表 README 说错了种子表是哪四张。** `reference/tables/README.md` 断言种子表含
+  `npc-quirks.md`,但 `core/01-intake.md` 的 auto-fill 实际掷的是 `complications.md`
+  ——两份文件从同一个 commit 起就没对上。已按"`core/` 压过一切"的硬约定改 README,
+  四张改成 hooks/locations/mythos-angles/complications。
 
 ### 更新内容
 
@@ -79,6 +83,17 @@
   小节;`build-world`/`description` 会在房间布局对判断连通与视线有意义时主动提议画一张,
   大多数场景仍然不需要图。给玩家看的可互动版本(带家具、剧透过滤)还没做,现在出的图
   一律只给 Keeper 自己看。
+- **场景需要新地点时,现在真的会掷骰了。** `locations.md` 自己写着"之后场景需要新地点
+  时再掷",但没有任何 spec 接这条线——一个战役过去只在 intake 开局掷一次,剩下 8–10
+  个场景的地点全靠自由创作。`core/04-design-scenario.md` 第 6 步现在接上了这条线:
+  场景需要的地点若 `world/` 里没有,当场跑 `python scripts/roll.py locations
+  --campaign <slug>`。
+- **对抗场面(打斗、伏击、被逼上绝路)现在也有专门的骰表了,不会再每次都收敛成同一个
+  仓库或深夜码头。** 新表 `reference/tables/confrontation-grounds.md`(1d20)给出地形与
+  限制、场上能用能烧能挡的东西、为什么打不过也走不掉,以及场面怎么才算结束(不是
+  "打死",是"什么发生了这场就收场")。设计剧本(`core/04-design-scenario.md` 第 6/7
+  步)与写读白(`core/09-description.md`)都已接线;和 `reference/rules/chases.md` 分工
+  清楚——那份管追逐的机制,这张管场面的选材。
 
 ## 2026-08-06 (c368b90)
 

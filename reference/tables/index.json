@@ -6,7 +6,7 @@
   "citation_rule": null,
   "usage_rule": "authored by this kit — read and used directly, no citation required",
   "generated_by": "scripts/build-reference-index.py — do not edit by hand",
-  "entry_count": 19,
+  "entry_count": 20,
   "entries": [
     {
       "file": "clue-engines.md",
@@ -19,23 +19,28 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 51,
+          "line": 55,
           "context": "- **线索来源现在要掷,不许一次全开。** 新表 `reference/tables/clue-engines.md`"
         },
         {
           "file": "WORKLOG.md",
-          "line": 253,
+          "line": 255,
           "context": "`update_plan/Archived/2026-08-04-clue-engines.md`。**"
         },
         {
           "file": "WORKLOG.md",
-          "line": 254,
+          "line": 256,
           "context": "新表 `reference/tables/clue-engines.md`(d10,十条各带一条别的引擎给不了的结构属性,"
         },
         {
           "file": "WORKLOG.md",
-          "line": 264,
+          "line": 266,
           "context": "按 P11→P15→P16 顺序做完,无冲突。详见 `update_plan/Archived/2026-08-04-clue-engines.md`。"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 417,
+          "context": "(d20,对抗场面成立的条件)。格式没照单格长句写,仿照 `clue-engines.md` 的多列结构"
         },
         {
           "file": "core/04-design-scenario.md",
@@ -79,23 +84,23 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 43,
+          "line": 49,
           "context": "- `clue-engines.md`(1d10)——威胁反复做的哪件事会留下可查的痕迹;一次只掷 2–3 条,"
         },
         {
-          "file": "update_plan/README.md",
-          "line": 44,
-          "context": "`clue-engines.md` 已在落地时直接接了 `roll.py` 并通过 `--check-all` 自检,这条耦合"
+          "file": "update_plan/2026-08-04-scenario-diversity.md",
+          "line": 163,
+          "context": "- [ ] **遗留欠账(来自 P16,2026-08-07 发现,未修):** `clue-engines.md` 落地时给"
         },
         {
-          "file": "update_plan/README.md",
-          "line": 45,
-          "context": "描述的风险(新表先脱离脚本被用熟,回头要改接线)没有发生。**遗留欠账**:`clue-engines.md`"
+          "file": "update_plan/2026-08-04-scenario-diversity.md",
+          "line": 166,
+          "context": "`reference/tables/clue-engines.md`\"——不是本计划别处已统一的"
         },
         {
-          "file": "update_plan/README.md",
-          "line": 53,
-          "context": "没有发生,**也没有给 `P14` 阶段 1.2 留下待补的掷骰点措辞**——上面 `clue-engines.md` 那笔"
+          "file": "update_plan/2026-08-04-scenario-diversity.md",
+          "line": 179,
+          "context": "- [x] 写 20 条,一条 1–2 行,年代无关(约 30 行)。**实际落地**:格式仿照 `clue-engines.md`"
         },
         {
           "file": "update_plan/Archived/2026-08-04-clue-engines.md",
@@ -128,7 +133,7 @@
           "context": "| P16 | [clue-engines](2026-08-04-clue-engines.md) | 线索引擎通用化 + 三线索规则可执行化。新表 `reference/tables/clue-engines.md`(d10,十条线索引擎各带一条别的引擎给不了的结构属性,表头写死\"一次只掷 2–3 条,不许全开\")"
         }
       ],
-      "reference_count": 22
+      "reference_count": 23
     },
     {
       "file": "complications.md",
@@ -140,6 +145,16 @@
         "reference/decks/miseries-zh.md"
       ],
       "referenced_by": [
+        {
+          "file": "CHANGELOG.md",
+          "line": 46,
+          "context": "`npc-quirks.md`,但 `core/01-intake.md` 的 auto-fill 实际掷的是 `complications.md`"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 409,
+          "context": "`complications.md` 从该节并入种子表节;②`core/04-design-scenario.md` 第 6 步新增"
+        },
         {
           "file": "reference/decks/miseries-zh.md",
           "line": 9,
@@ -157,16 +172,75 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 29,
-          "context": "- `complications.md`(1d20)——这一场会出什么岔子;备课时掷两次。"
+          "line": 28,
+          "context": "- `complications.md`(1d20)——这一场会出什么岔子。intake 时随另外三张一起掷定基调;"
         },
         {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
-          "line": 183,
+          "line": 154,
+          "context": "并顺手挪到紧邻它的姊妹表 `npc-appearance.md` 前面。`complications.md` 的条目从"
+        },
+        {
+          "file": "update_plan/2026-08-04-scenario-diversity.md",
+          "line": 210,
           "context": "- [ ] `complications.md` → d50"
         }
       ],
-      "reference_count": 5
+      "reference_count": 8
+    },
+    {
+      "file": "confrontation-grounds.md",
+      "path": "reference/tables/confrontation-grounds.md",
+      "title": "confrontation-grounds.md — 对抗场面成立的条件",
+      "lines": 36,
+      "declared_consumers": [
+        "core/04-design-scenario.md",
+        "core/09-description.md",
+        "reference/rules/chases.md"
+      ],
+      "referenced_by": [
+        {
+          "file": "CHANGELOG.md",
+          "line": 92,
+          "context": "仓库或深夜码头。** 新表 `reference/tables/confrontation-grounds.md`(1d20)给出地形与"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 416,
+          "context": "- **同日:P14 阶段 3,未提交。** 新增 `reference/tables/confrontation-grounds.md`"
+        },
+        {
+          "file": "core/04-design-scenario.md",
+          "line": 71,
+          "context": "confrontation, ground the \"out\" in the scene's rolled `confrontation-grounds.md` result"
+        },
+        {
+          "file": "core/09-description.md",
+          "line": 52,
+          "context": "- **For a physical confrontation**, ground the space in its `confrontation-grounds.md` roll"
+        },
+        {
+          "file": "reference/tables/README.md",
+          "line": 52,
+          "context": "- `confrontation-grounds.md`(1d20)——对抗场面成立的条件:地形与限制、场上能用的东西、"
+        },
+        {
+          "file": "update_plan/2026-08-04-scenario-diversity.md",
+          "line": 5,
+          "context": "> 阶段 2 种子表 bug 修复 + locations 接线、阶段 3 `confrontation-grounds.md` 新表均已完成,"
+        },
+        {
+          "file": "update_plan/2026-08-04-scenario-diversity.md",
+          "line": 170,
+          "context": "## 阶段 3 — 新表 `confrontation-grounds.md`(d20)(已完成,2026-08-07)"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 13,
+          "context": "| P14 | [scenario-diversity](2026-08-04-scenario-diversity.md) | 模组多样性:`scripts/roll.py` 真伪随机掷骰(不放回 + 跨战役查重)+ 补两张缺表(对抗场面 / 模组形状)+ locations 接到场景级;扩容降为条件执行 | 进行中"
+        }
+      ],
+      "reference_count": 8
     },
     {
       "file": "cult-goals.md",
@@ -236,7 +310,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 39,
+          "line": 45,
           "context": "- `cult-goals.md`(1D10 × 1D8)——邪教的愿望 × 手段;两张都掷,相乘才成立。见"
         },
         {
@@ -246,7 +320,7 @@
         },
         {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
-          "line": 94,
+          "line": 95,
           "context": "- [x] **两维表原生支持**:`cult-goals.md` 的 `## 愿望(1D10)` / `## 手段(1D8)`"
         },
         {
@@ -289,7 +363,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 41,
+          "line": 47,
           "context": "- `cult-leader-positions.md`(1d10)——邪教首领的社会门面,以及这个位置换来的便利。"
         },
         {
@@ -326,7 +400,7 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 256,
+          "line": 258,
           "context": "`cult-power-sources.md` 与它双向互指(造物→工艺与制造、受赐力量→身体代价默认通电)。"
         },
         {
@@ -371,7 +445,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 42,
+          "line": 48,
           "context": "- `cult-power-sources.md`(1d4)——邪教声称的超自然背书从哪儿来。"
         },
         {
@@ -451,7 +525,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 49,
+          "line": 59,
           "context": "- `cultist-archetypes.md`——12 组现成的低阶邪教徒数值(按角色分组,不是骰表),外加一套"
         },
         {
@@ -461,7 +535,7 @@
         },
         {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
-          "line": 108,
+          "line": 109,
           "context": "- [x] **非骰表要报错不要硬掷**:`cultist-archetypes.md` / `monster-traits.md` /"
         },
         {
@@ -533,7 +607,7 @@
       "referenced_by": [
         {
           "file": "reference/tables/README.md",
-          "line": 22,
+          "line": 23,
           "context": "- `hooks.md`(1d20)——调查员是怎么被卷进来的。"
         },
         {
@@ -553,20 +627,41 @@
       "file": "locations.md",
       "path": "reference/tables/locations.md",
       "title": "locations.md — 事情发生在哪儿",
-      "lines": 31,
+      "lines": 32,
       "declared_consumers": [
-        "core/03-build-world.md"
+        "core/03-build-world.md",
+        "core/04-design-scenario.md"
       ],
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 71,
+          "line": 75,
           "context": "(1d20)——与 `locations.md`(定整场战役的舞台,掷一次)不同,这张表掷 N 次填一个"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 227,
+          "line": 86,
+          "context": "- **场景需要新地点时,现在真的会掷骰了。** `locations.md` 自己写着\"之后场景需要新地点"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "line": 248,
           "context": "**\"默认美国不等于默认阿卡姆\"**——默认给的是国家,镇子照样掷 `locations.md` 再自己造,"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 411,
+          "context": "--campaign <slug>`;③`reference/tables/locations.md` 说明行补上指向 `core/04` 第 6"
+        },
+        {
+          "file": "core/04-design-scenario.md",
+          "line": 63,
+          "context": "`locations.md` isn't a once-per-campaign roll: the intake roll only sets the campaign's"
+        },
+        {
+          "file": "core/04-design-scenario.md",
+          "line": 64,
+          "context": "stage, every new scene's setting gets its own roll (`reference/tables/locations.md:6`"
         },
         {
           "file": "reference/craft/diagram-conventions-zh.md",
@@ -585,12 +680,12 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 23,
-          "context": "- `locations.md`(1d20)——事情发生在哪儿;打断默认往小渔村滑的引力。"
+          "line": 24,
+          "context": "- `locations.md`(1d20)——事情发生在哪儿;打断默认往小渔村滑的引力。战役开局至少掷"
         },
         {
           "file": "reference/tables/README.md",
-          "line": 47,
+          "line": 57,
           "context": "与 `locations.md`(掷 1 次定舞台)分工不同。见 `reference/craft/town-anatomy-zh.md`"
         },
         {
@@ -605,13 +700,28 @@
         },
         {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
-          "line": 69,
+          "line": 70,
           "context": "[`locations.md:6`](../reference/tables/locations.md) 自己写着\"之后场景需要新地点时再掷\","
         },
         {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
-          "line": 151,
-          "context": "- [ ] **接线:`locations.md` 掷到场景级。** `core/04` 第 6 步建 scene web 时,每个新地点"
+          "line": 157,
+          "context": "- [x] **接线:`locations.md` 掷到场景级。** `core/04` 第 6 步建 scene web 时,每个新地点"
+        },
+        {
+          "file": "update_plan/2026-08-04-scenario-diversity.md",
+          "line": 161,
+          "context": "`reference/tables/locations.md` 自身的说明行同步补了 `core/04` 第 6 步的指路"
+        },
+        {
+          "file": "update_plan/2026-08-04-scenario-diversity.md",
+          "line": 192,
+          "context": "单一地域成立。两条工业化条目保留不砍——`locations.md` 本身也收了\"铁路枢纽\"这类"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 13,
+          "context": "| P14 | [scenario-diversity](2026-08-04-scenario-diversity.md) | 模组多样性:`scripts/roll.py` 真伪随机掷骰(不放回 + 跨战役查重)+ 补两张缺表(对抗场面 / 模组形状)+ locations 接到场景级;扩容降为条件执行 | 进行中"
         },
         {
           "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
@@ -674,7 +784,7 @@
           "context": "\"evidence\": \"Premise centers on Camas Dubh, a storm-locked Skye fishing hamlet bound to a mistranslated century-old rite ('Tàmh na Mara') that unknowingly feeds"
         }
       ],
-      "reference_count": 23
+      "reference_count": 30
     },
     {
       "file": "madness-instant.md",
@@ -685,7 +795,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 131,
+          "line": 152,
           "context": "时判断\"这把枪多危险\"用,不是按品类查数值。`madness.md` 拆成了 `madness-instant.md`"
         },
         {
@@ -715,13 +825,8 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 30,
+          "line": 38,
           "context": "- `madness-instant.md`(1D10)——疯狂发作·即时症状(逐轮处理时用,表VII)。"
-        },
-        {
-          "file": "update_plan/README.md",
-          "line": 61,
-          "context": "P12 新建的 `phobias.md`/`manias.md`/`madness-instant.md`/`madness-summary.md`/"
         },
         {
           "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
@@ -729,7 +834,7 @@
           "context": "`madness-instant.md`(表VII)+ `madness-summary.md`(表VIII)两个文件**,见下方"
         }
       ],
-      "reference_count": 9
+      "reference_count": 8
     },
     {
       "file": "madness-summary.md",
@@ -740,7 +845,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 132,
+          "line": 153,
           "context": "(即时症状)与 `madness-summary.md`(概括症状)两个文件——同一个文件塞两张同骰面的"
         },
         {
@@ -770,13 +875,8 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 31,
+          "line": 39,
           "context": "- `madness-summary.md`(1D10)——疯狂发作·概括症状(跳到之后概括推进时用,表VIII);"
-        },
-        {
-          "file": "update_plan/README.md",
-          "line": 61,
-          "context": "P12 新建的 `phobias.md`/`manias.md`/`madness-instant.md`/`madness-summary.md`/"
         },
         {
           "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
@@ -784,7 +884,7 @@
           "context": "`madness-instant.md`(表VII)+ `madness-summary.md`(表VIII)两个文件**,见下方"
         }
       ],
-      "reference_count": 9
+      "reference_count": 8
     },
     {
       "file": "manias.md",
@@ -798,7 +898,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 129,
+          "line": 150,
           "context": "(表IX,100 条)、`manias.md`(表X,100 条)是规则书原表的全量转录,不是精选摘要;"
         },
         {
@@ -823,13 +923,8 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 36,
+          "line": 44,
           "context": "- `manias.md`(1D100)——躁狂症状表(表X),同上,与 `phobias.md` 同一原因拆成独立文件。"
-        },
-        {
-          "file": "update_plan/README.md",
-          "line": 61,
-          "context": "P12 新建的 `phobias.md`/`manias.md`/`madness-instant.md`/`madness-summary.md`/"
         },
         {
           "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
@@ -862,7 +957,7 @@
           "context": "| P12 | [cheatsheet-self-sufficiency](2026-08-04-cheatsheet-self-sufficiency.md) | 速查表自足化:让 `reference/rules/` 单独就能回答规则问题,规则书退出查询链路(仍留在版本库里当对账底本)。**阶段 0–1**:`co"
         }
       ],
-      "reference_count": 13
+      "reference_count": 12
     },
     {
       "file": "monster-index.md",
@@ -883,22 +978,22 @@
         },
         {
           "file": "CHANGELOG.md",
-          "line": 178,
+          "line": 199,
           "context": "接入了 `reference/tables/monster-index.md` 的 `Serves` 检索——之前这张表能查到怪物,"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 219,
+          "line": 240,
           "context": "文件名、`1D10`/`STR 60` 这类记法保持英文);`monster-index.md` 的表头与说明段随生成"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 318,
+          "line": 339,
           "context": "新增 `reference/tables/monster-index.md`,覆盖怪物图鉴全部 223 个条目 + 现有 9 只"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 332,
+          "line": 353,
           "context": "`reference/tables/monster-index.md` 再动手写,不用翻原文猜。"
         },
         {
@@ -913,17 +1008,17 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 237,
+          "line": 239,
           "context": "两个待定点:神格页读路径**两者都做**(扩 `monster-index.md` + 四处直接读路径),L5"
         },
         {
           "file": "WORKLOG.md",
-          "line": 344,
+          "line": 374,
           "context": "- **`monster-index.md` 与 malleus 转录稿的关系已不再是「对外通道」。** P13 之后所有"
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 63,
+          "line": 75,
           "context": "`reference/tables/monster-index.md` before inventing one from scratch; it indexes all 223"
         },
         {
@@ -1003,7 +1098,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 53,
+          "line": 63,
           "context": "- `monster-index.md`——223 条神话生物的导航表,**脚本生成,不要手改**;数据源是"
         },
         {
@@ -1063,7 +1158,7 @@
         },
         {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
-          "line": 109,
+          "line": 110,
           "context": "`monster-index.md` 三个走显式排除名单(`NOT_DICE_TABLES`),各自带一句不掷骰的理由。"
         },
         {
@@ -1150,12 +1245,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 220,
+          "line": 241,
           "context": "脚本一起改中文,`monster-traits.md` 的引言段同。加新表的写法见"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 307,
+          "line": 328,
           "context": "`reference/tables/monster-traits.md`:18 条可挂载的数值词条(再生、分裂、免疫常规"
         },
         {
@@ -1230,7 +1325,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 51,
+          "line": 61,
           "context": "- `monster-traits.md`——给怪物条目加挂的数值词条菜单(带负载点与破解口),配"
         },
         {
@@ -1240,7 +1335,7 @@
         },
         {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
-          "line": 108,
+          "line": 109,
           "context": "- [x] **非骰表要报错不要硬掷**:`cultist-archetypes.md` / `monster-traits.md` /"
         },
         {
@@ -1293,7 +1388,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 24,
+          "line": 27,
           "context": "- `mythos-angles.md`(1d20)——那份\"不对劲\"到底是什么。四张里最要紧的一张。"
         },
         {
@@ -1329,9 +1424,19 @@
       ],
       "referenced_by": [
         {
+          "file": "WORKLOG.md",
+          "line": 408,
+          "context": "`npc-quirks.md`),`npc-quirks.md` 挪去「备课与临场表」节紧邻 `npc-appearance.md`,"
+        },
+        {
           "file": "reference/tables/README.md",
-          "line": 37,
+          "line": 36,
           "context": "- `npc-appearance.md`(1d20)——第一眼的外形加脾性;`npc-quirks.md` 的姊妹表(外形对"
+        },
+        {
+          "file": "update_plan/2026-08-04-scenario-diversity.md",
+          "line": 154,
+          "context": "并顺手挪到紧邻它的姊妹表 `npc-appearance.md` 前面。`complications.md` 的条目从"
         },
         {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
@@ -1344,7 +1449,7 @@
           "context": "- [x] `core/06-create-npc.md` —— 指向新的 `npc-appearance.md`(d20 外貌/气质),"
         }
       ],
-      "reference_count": 3
+      "reference_count": 5
     },
     {
       "file": "npc-quirks.md",
@@ -1355,6 +1460,16 @@
         "core/06-create-npc.md"
       ],
       "referenced_by": [
+        {
+          "file": "CHANGELOG.md",
+          "line": 46,
+          "context": "`npc-quirks.md`,但 `core/01-intake.md` 的 auto-fill 实际掷的是 `complications.md`"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 408,
+          "context": "`npc-quirks.md`),`npc-quirks.md` 挪去「备课与临场表」节紧邻 `npc-appearance.md`,"
+        },
         {
           "file": "reference/decks/README.md",
           "line": 15,
@@ -1372,17 +1487,22 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 25,
-          "context": "- `npc-quirks.md`(1d20)——让 NPC 能被演出来的那个小动作。"
+          "line": 34,
+          "context": "- `npc-quirks.md`(1d20)——让 NPC 能被演出来的那个小动作;每造一个 NPC 掷一次,见"
         },
         {
           "file": "reference/tables/README.md",
-          "line": 37,
+          "line": 36,
           "context": "- `npc-appearance.md`(1d20)——第一眼的外形加脾性;`npc-quirks.md` 的姊妹表(外形对"
         },
         {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
-          "line": 182,
+          "line": 152,
+          "context": "hooks/locations/mythos-angles/complications;`npc-quirks.md` 从种子表节移到"
+        },
+        {
+          "file": "update_plan/2026-08-04-scenario-diversity.md",
+          "line": 209,
           "context": "- [ ] `npc-quirks.md` → d50(按上面的口径,一个战役 8–15 个 NPC,最可能触发)"
         },
         {
@@ -1391,7 +1511,7 @@
           "context": "`core/06-create-npc.md`;与 `npc-quirks.md` 分工:quirks 是**怎么演**,这张是"
         }
       ],
-      "reference_count": 7
+      "reference_count": 10
     },
     {
       "file": "phobias.md",
@@ -1405,7 +1525,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 128,
+          "line": 149,
           "context": "- **恐惧症、躁狂症、武器强度三张新表可以直接掷了。** `reference/tables/phobias.md`"
         },
         {
@@ -1430,18 +1550,13 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 34,
+          "line": 42,
           "context": "- `phobias.md`(1D100)——恐惧症状表(表IX),规则书表格全量转录,和"
         },
         {
           "file": "reference/tables/README.md",
-          "line": 36,
+          "line": 44,
           "context": "- `manias.md`(1D100)——躁狂症状表(表X),同上,与 `phobias.md` 同一原因拆成独立文件。"
-        },
-        {
-          "file": "update_plan/README.md",
-          "line": 61,
-          "context": "P12 新建的 `phobias.md`/`manias.md`/`madness-instant.md`/`madness-summary.md`/"
         },
         {
           "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
@@ -1454,7 +1569,7 @@
           "context": "| P12 | [cheatsheet-self-sufficiency](2026-08-04-cheatsheet-self-sufficiency.md) | 速查表自足化:让 `reference/rules/` 单独就能回答规则问题,规则书退出查询链路(仍留在版本库里当对账底本)。**阶段 0–1**:`co"
         }
       ],
-      "reference_count": 10
+      "reference_count": 9
     },
     {
       "file": "town-institutions.md",
@@ -1467,7 +1582,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 70,
+          "line": 74,
           "context": "- **建镇现在有专门的骰表了。** 新增 `reference/tables/town-institutions.md`"
         },
         {
@@ -1477,12 +1592,12 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 274,
+          "line": 276,
           "context": "`town-institutions.md`,后者的调用**不并入** \"First, orient\" 的首次建世界掷骰行,"
         },
         {
           "file": "WORKLOG.md",
-          "line": 276,
+          "line": 278,
           "context": "新增 `reference/tables/town-institutions.md`(1d20,原创抽象,名字全部自拟):"
         },
         {
@@ -1507,18 +1622,8 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 46,
+          "line": 56,
           "context": "- `town-institutions.md`(1d20)——这个镇里有哪些机构;掷 N 次填清单,N 随镇的规模走,"
-        },
-        {
-          "file": "update_plan/README.md",
-          "line": 51,
-          "context": "`town-institutions.md` 落地时已直接写成 `python scripts/roll.py town-institutions ...`"
-        },
-        {
-          "file": "update_plan/README.md",
-          "line": 66,
-          "context": "这批计划里唯一一条实线耦合(P10 新建的 `tables/town-institutions.md` 是「掷 N 次填清单」"
         },
         {
           "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
@@ -1571,7 +1676,7 @@
           "context": "| P10 | [town-anatomy-from-arkham](2026-08-04-town-anatomy-from-arkham.md) | 阿卡姆城市资料(仅入库不归档,取手法不取文字)→ `reference/craft/town-anatomy-zh.md` 城镇解剖手法稿(四节:区域四维、地点字段体"
         }
       ],
-      "reference_count": 21
+      "reference_count": 19
     },
     {
       "file": "weapons-index.md",
@@ -1585,12 +1690,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 130,
+          "line": 151,
           "context": "`reference/tables/weapons-index.md` 把全部武器按威胁强度重新分了四档,给反派配装备"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 141,
+          "line": 162,
           "context": "它在哪(现在指向 `reference/tables/weapons-index.md`);追逐速查表 2 处让你查\"表III\""
         },
         {
@@ -1635,13 +1740,8 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 55,
+          "line": 65,
           "context": "- `weapons-index.md`——表XVII 全部武器按威胁强度重排(不是骰表),给反派配装备时手选;"
-        },
-        {
-          "file": "update_plan/README.md",
-          "line": 62,
-          "context": "`weapons-index.md` 五张表已经和 P14 阶段 1 的 `scripts/roll.py` 改动分开提交过,"
         },
         {
           "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
@@ -1674,7 +1774,7 @@
           "context": "| P12 | [cheatsheet-self-sufficiency](2026-08-04-cheatsheet-self-sufficiency.md) | 速查表自足化:让 `reference/rules/` 单独就能回答规则问题,规则书退出查询链路(仍留在版本库里当对账底本)。**阶段 0–1**:`co"
         }
       ],
-      "reference_count": 18
+      "reference_count": 17
     }
   ]
 }

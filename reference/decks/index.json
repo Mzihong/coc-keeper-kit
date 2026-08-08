@@ -21,7 +21,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 373,
+          "line": 394,
           "context": "- 新增 `reference/decks/` 与首份收录件 `busybodies-zh.md`(官方好事者卡组,47 张 NPC 卡)。"
         },
         {
@@ -164,7 +164,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 35,
+          "line": 43,
           "context": "`reference/decks/phobias-and-manias-zh.md` 的精选卡组是两回事。"
         },
         {
@@ -246,7 +246,7 @@
         },
         {
           "file": "reference/tables/README.md",
-          "line": 56,
+          "line": 66,
           "context": "和 `reference/decks/weapons-and-artifacts-zh.md` 的按品类原表分工不同,见该文件头部。"
         },
         {
