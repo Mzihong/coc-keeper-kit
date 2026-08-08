@@ -7,10 +7,17 @@ elsewhere can stay lean.
 - <Keeper Rulebook / supplement / published scenario — edition and page refs you rely on>
 
 ## Kit reference used
-- Rules: `../../reference/rules/`
+- Rules: `../../reference/rules/` — <cheat-sheets leaned on; the era pack, if this isn't 1920s>
+- Craft: `../../reference/craft/` — <cult-design / town-anatomy / diagram-conventions /
+  lovecraft — how the writing was pitched, as opposed to what the numbers are>
 - Bestiary: `../../reference/bestiary/` — <creatures pulled in>
 - Mythos: `../../reference/mythos/` — <entities/tomes/cults referenced>
-- Tables: `../../reference/tables/`
+- Tables: `../../reference/tables/` — <which tables were rolled; the rolls themselves are
+  logged in this campaign's `rolls.log`, written by `scripts/roll.py`>
+- Decks & sourcebooks: `../../reference/decks/`, `../../reference/sourcebooks/` —
+  <third-party material consulted>. **The numbers may be taken, the people may not** — note
+  what calibrated a stat block, but never carry a published NPC's name, backstory, or secret
+  into this campaign.
 
 ## Real-world background
 - <history, places, professions, period detail you researched — with sources/links>
@@ -20,3 +27,6 @@ elsewhere can stay lean.
 
 ## Maps & assets
 - <links or file paths to maps, floor plans, images, printable props>
+- Maps rendered by `scripts/render-map.py` live beside the scene or place they belong to
+  (`scenes/`, `world/`), and player-facing ones in `handouts/` — index them here only if the
+  campaign has enough of them to be worth a list.

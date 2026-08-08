@@ -28,7 +28,7 @@ DSL shape (all coordinates in grid units, not pixels — `unit` controls the pix
         {"id": "tower", "name": "塔楼", "shape": "circle", "cx": 6, "cy": 1.5, "r": 1}
       ],
       "stairs":   [{"x": 4.2, "y": 0.5, "w": 1, "h": 2, "direction": "up", "label": "通往二楼"}],
-      "callouts": [{"x": 1, "y": 0.2, "text": "上锁的门 ?", "secret": true}],
+      "callouts": [{"x": 1, "y": 0.2, "text": "上锁的门 ?", "secret": true}],   // ① + side note
       "features": [{"s": "rect", "x": 8, "y": 1, "w": 3, "h": 2, "label": "果园"}],
       "paths":    [{"pts": [[0, 3], [2, 4], [5, 4]], "label": "小路,步行 5 分钟", "style": "dashed"}],
       "compass":  true,
@@ -60,6 +60,38 @@ The renderer rejects (non-zero exit, no SVG written) any furniture item that fal
 room's own `w`/`h`, or that overlaps another furniture item in the same room — silently
 rendering a sofa through a wall or on top of a desk is worse than refusing to draw it.
 
+## Callouts: a numbered circle on the map, the note itself beside it
+
+A `callout` is `{x, y, text, secret}` — an anchor point plus a sentence about what sits there.
+It renders as **two separate things**: a small numbered circle (white fill, black rim, no leader
+line) at the anchor, and a matching numbered entry in a fixed-width **note column down the right
+side of the canvas**. The prose never touches the map surface.
+
+This is the book's city/region-plate device (`district-*`, where dozens of sites can't fit their
+own names) pulled down to room and site scale, and it applies **only to `callouts`**: room names
+still sit inside their room, furniture and feature labels still sit on their shape — those are
+short words. The one departure from the source plates is that the notes live inside the SVG
+rather than in surrounding body text, because a `--player` render is a handout: the table has the
+picture and nothing else.
+
+The renderer cannot measure text (no font metrics, and reading system fonts would destroy
+determinism), so `wrap_text()` estimates width from a frozen per-character table — CJK and other
+fullwidth codepoints count 1.0 em, everything else 0.55 em — and breaks greedily, backing up to
+the last space when it would otherwise split an ASCII word. It is an approximation that errs
+toward extra whitespace; the goal is "not clipped, reads fine", not typesetting. The canvas is
+`map width + note column`, and its height is `max(map, note column)` — a floor with more note
+than picture makes the page taller, and nothing ever falls outside the `viewBox`.
+
+Numbering is **declaration order in the DSL**, not sorted by position, so editing the JSON has a
+predictable effect on which note is which number. **Restraint rule (not enforced by the
+script):** one floor should carry **at most 8 callouts**. Past that you are pasting the location
+text into the picture — split the diagram or send the detail back to the prose.
+
+Placing an anchor is still the author's job: the disc is opaque, so an `(x, y)` on top of a room
+name or a stair label punches a hole in it. Keep anchors off the room's centre line (that's where
+the name sits) and a disc's width apart from each other; the check is cheap to eyeball once the
+SVG exists.
+
 ## Site diagrams (B-tier reused at map scale — manor grounds, a farmstead, a churchyard)
 
 An outdoor site is not a new diagram type: it is a floor plan with an **empty `rooms` array**
@@ -90,16 +122,19 @@ single working copy. Passing `--player` produces the second, filtered file:
   entirely — the default for something the table has no business perceiving at all (a hidden
   safe), while a `player_label` covers the "visible but its true nature is secret" case (a
   painting hiding a safe).
-- **Secret callout** → dropped entirely, rather than the KP file's italicised-but-visible
-  treatment.
+- **Secret callout** → dropped entirely from both the circle layer and the note column, rather
+  than the KP file's italicised-but-visible treatment. Because the dropped ones leave holes in
+  the numbering, **the player render renumbers its callouts consecutively** — a gap (①③④) would
+  itself announce "there is a note here you aren't being shown". The two files therefore disagree
+  about which number is which note, so the **KP note column carries a grey `(PL n)` cross-
+  reference** on every non-secret callout: the Keeper's copy is its own translation table and can
+  answer "look at ③" at the table without opening the handout.
 
 A single DSL file renders both versions; never hand-author two files for the same room — they
 would drift.
 
-`stairs`, `windows`, `legend`, and numbered index circles (the city/region-scale device from the
-book's plates) have no `secret` handling — the first three carry no KP-only information by
-construction, and numbered circles are a city-scale plate type this renderer does not draw yet
-(only the room/site scale from stage 1–2 is implemented).
+`stairs`, `windows`, and `legend` have no `secret` handling — none of the three can carry
+KP-only information by construction.
 
 stdlib only, no dependencies.
 """
@@ -116,7 +151,96 @@ ROOM_FILL = "#ffffff"
 PAGE_BG = "#f2f2f0"
 INK = "#1a1a1a"
 FURNITURE_INK = "#3a3a3a"
+NOTE_MUTED = "#8a8a85"
+NOTE_RULE = "#c9c9c4"
 EPS = 1e-6
+
+CALLOUT_R = 11          # px radius of the numbered circle sitting on the anchor
+NOTE_COL = 260          # px text width of the note column down the right side
+NOTE_FONT = 12
+NOTE_LINE_H = 17        # px baseline-to-baseline inside one wrapped note
+NOTE_GAP = 8            # px between two notes
+LEGEND_FONT = 11
+LEGEND_LINE_H = 15
+
+# Frozen character-width table for `wrap_text`. Reading real font metrics would make the
+# renderer non-deterministic (the hard constraint of the whole map plan), so width is estimated
+# from the codepoint alone: anything in these ranges counts as one em, everything else as
+# EM_NARROW. Deliberately generous — over-estimating costs whitespace, under-estimating costs a
+# clipped line.
+EM_WIDE = 1.0
+EM_NARROW = 0.55
+WIDE_RANGES = (
+    (0x1100, 0x115F),   # Hangul Jamo
+    (0x2013, 0x2014),   # en/em dash — set full-width in CJK text
+    (0x2026, 0x2026),   # horizontal ellipsis, likewise
+    (0x2460, 0x24FF),   # enclosed alphanumerics — the ① note markers themselves
+    (0x2E80, 0xA4CF),   # CJK radicals through Yi: kana, CJK punctuation, CJK Unified
+    (0xAC00, 0xD7A3),   # Hangul syllables
+    (0xF900, 0xFAFF),   # CJK compatibility ideographs
+    (0xFE30, 0xFE4F),   # CJK compatibility forms
+    (0xFF00, 0xFF60),   # fullwidth forms
+    (0xFFE0, 0xFFE6),   # fullwidth signs
+)
+
+def char_em(ch):
+    o = ord(ch)
+    for lo, hi in WIDE_RANGES:
+        if lo <= o <= hi:
+            return EM_WIDE
+    return EM_NARROW
+
+
+def text_px(s, font_size):
+    """Estimated rendered width of `s`. See WIDE_RANGES — an approximation, on purpose."""
+    return sum(char_em(c) for c in s) * font_size
+
+
+def _is_word_char(ch):
+    return ch.isascii() and (ch.isalnum() or ch in "-'")
+
+
+def wrap_text(s, budget, font_size, first_budget=None):
+    """Greedy, deterministic line breaking to a pixel budget, using the frozen width table.
+
+    CJK breaks at any character (correct for Chinese); a run of ASCII word characters backs up
+    to the last space on the line rather than splitting mid-word. `first_budget` narrows the
+    first line only — the note column uses it to leave room for the `①` and `(PL n)` prefixes.
+    A space that lands on a break is swallowed, so no line carries edge whitespace. Returns at
+    least one (possibly empty) line."""
+    lines, cur, cur_w = [], "", 0.0
+    limit = budget if first_budget is None else first_budget
+    for ch in s:
+        if ch == "\n":
+            lines.append(cur.rstrip())
+            cur, cur_w, limit = "", 0.0, budget
+            continue
+        if ch == " " and not cur:
+            continue
+        w = char_em(ch) * font_size
+        if cur and cur_w + w > limit:
+            cut = cur.rfind(" ") if _is_word_char(ch) and _is_word_char(cur[-1]) else -1
+            if cut > 0:
+                lines.append(cur[:cut])
+                cur = cur[cut + 1:]
+            else:
+                lines.append(cur.rstrip())
+                cur = ""
+            cur_w = text_px(cur, font_size)
+            limit = budget
+            if ch == " " and not cur:
+                continue
+        cur += ch
+        cur_w += w
+    if cur.rstrip():
+        lines.append(cur.rstrip())
+    return lines or [""]
+
+
+def circled(n):
+    """① … ⑳ for 1–20, plain (21) past that — the note column's number glyph."""
+    return chr(0x2460 + n - 1) if 1 <= n <= 20 else f"({n})"
+
 
 EDGE_ENDPOINTS = {
     # (dx1, dy1, dx2, dy2) as fractions of (w, h) from the room's (x, y) corner —
@@ -375,16 +499,77 @@ def render_stairs(stairs, to_px, unit):
     return out
 
 
-def render_callouts(callouts, to_px, player):
+def number_callouts(callouts, player):
+    """Assign each callout the number it wears in this render, in DSL declaration order.
+
+    Returns `(n, pl, callout)` triples for the callouts this version shows. On the KP render
+    `n` is the declaration index and `pl` is the number the same callout will carry in the
+    player render (`None` for secret ones, which the player file drops). On the player render
+    the secrets are gone and `n` is the resequenced, gap-free number — a hole in the numbering
+    would advertise the note it hides."""
+    out, pl = [], 0
+    for i, c in enumerate(callouts, start=1):
+        secret = bool(c.get("secret"))
+        if not secret:
+            pl += 1
+        if player:
+            if not secret:
+                out.append((pl, None, c))
+        else:
+            out.append((i, None if secret else pl, c))
+    return out
+
+
+def render_callout_circles(numbered, to_px):
+    """The on-map half: a numbered disc at the anchor, no leader line (the book's plates have
+    none — the circle already sits on the thing it annotates). Drawn after the walls so the
+    white fill punches through anything underneath."""
     out = []
-    for c in callouts:
-        if player and c.get("secret"):
-            continue
-        ax, ay = to_px((c["x"], c["y"]))
-        tx, ty = ax + 24, ay - 20
-        out.append(svg_line((ax, ay), (tx, ty), 1))
-        style = ' font-style="italic"' if c.get("secret") else ""
-        out.append(f'<text x="{tx + 4:.2f}" y="{ty:.2f}" font-size="12"{style}>{c["text"]}</text>')
+    for n, _pl, c in numbered:
+        cx, cy = to_px((c["x"], c["y"]))
+        out.append(f'<circle cx="{cx:.2f}" cy="{cy:.2f}" r="{CALLOUT_R}" fill="{ROOM_FILL}" '
+                    f'stroke="{INK}" stroke-width="1.5"/>')
+        out.append(f'<text x="{cx:.2f}" y="{cy:.2f}" text-anchor="middle" '
+                    f'dominant-baseline="middle" font-size="12" font-weight="bold">{n}</text>')
+    return out
+
+
+def layout_notes(numbered):
+    """Wrap every visible callout to the note column's fixed width. One function does the
+    wrapping for both the height calculation and the drawing, so the canvas can never be sized
+    for a different number of lines than get drawn. Returns (blocks, total_px_height)."""
+    blocks = []
+    for n, pl, c in numbered:
+        num = circled(n)
+        num_w = text_px(num + " ", NOTE_FONT)
+        marker = f"(PL {circled(pl)})" if pl is not None else ""
+        marker_w = text_px(marker + " ", NOTE_FONT) if marker else 0.0
+        lines = wrap_text(c["text"], NOTE_COL - num_w, NOTE_FONT,
+                          first_budget=NOTE_COL - num_w - marker_w)
+        blocks.append({"num": num, "num_w": num_w, "marker": marker, "marker_w": marker_w,
+                       "lines": lines, "secret": bool(c.get("secret"))})
+    height = sum(len(b["lines"]) * NOTE_LINE_H + NOTE_GAP for b in blocks)
+    return blocks, height
+
+
+def render_notes(blocks, x0, y0):
+    """The beside-the-map half: `① (PL ②) 注释…`, hanging-indented under the number, wrapped.
+    Secret notes stay italic here, the same treatment stage 1 gave them on the map surface."""
+    out = []
+    y = y0
+    for b in blocks:
+        style = ' font-style="italic"' if b["secret"] else ""
+        first = y + NOTE_LINE_H - 4
+        out.append(f'<text x="{x0:.2f}" y="{first:.2f}" font-size="{NOTE_FONT}" '
+                    f'font-weight="bold">{b["num"]}</text>')
+        if b["marker"]:
+            out.append(f'<text x="{x0 + b["num_w"]:.2f}" y="{first:.2f}" font-size="{NOTE_FONT}" '
+                        f'fill="{NOTE_MUTED}">{b["marker"]}</text>')
+        for i, line in enumerate(b["lines"]):
+            lx = x0 + b["num_w"] + (b["marker_w"] if i == 0 else 0.0)
+            out.append(f'<text x="{lx:.2f}" y="{first + i * NOTE_LINE_H:.2f}" '
+                        f'font-size="{NOTE_FONT}"{style}>{line}</text>')
+        y += len(b["lines"]) * NOTE_LINE_H + NOTE_GAP
     return out
 
 
@@ -401,10 +586,11 @@ def render_paths(paths, to_px):
     return out
 
 
-def render_compass(width):
-    """Fixed north arrow, top-right corner, drawn in pixel space — doesn't participate in the
-    grid-unit coordinate system since it isn't part of the place, just a page fixture."""
-    cx, cy = width - PAD - 6, PAD + 26
+def render_compass(map_w):
+    """Fixed north arrow, top-right corner *of the map area* (not of the whole canvas — the note
+    column is page furniture, the compass belongs to the picture), drawn in pixel space: it
+    doesn't participate in the grid-unit coordinate system since it isn't part of the place."""
+    cx, cy = map_w - PAD - 6, PAD + 26
     return [
         f'<line x1="{cx:.2f}" y1="{cy + 12:.2f}" x2="{cx:.2f}" y2="{cy - 10:.2f}" '
         f'stroke="{INK}" stroke-width="1.5"/>',
@@ -414,12 +600,11 @@ def render_compass(width):
     ]
 
 
-def render_legend(legend, width, height):
-    if not legend:
-        return []
-    out = [f'<text x="{PAD}" y="{height - 8}" font-size="11" fill="#444">'
-           f'{" · ".join(legend)}</text>']
-    return out
+def render_legend(lines, top):
+    """Footer strip under everything else. Wrapped by the caller with the same `wrap_text()` the
+    note column uses — a single unwrapped `<text>` used to run off the right edge here too."""
+    return [f'<text x="{PAD}" y="{top + 12 + i * LEGEND_LINE_H:.2f}" font-size="{LEGEND_FONT}" '
+            f'fill="#444">{line}</text>' for i, line in enumerate(lines)]
 
 
 def render(dsl, player=False):
@@ -432,23 +617,38 @@ def render(dsl, player=False):
     legend = dsl.get("legend", [])
 
     validate_furniture(rooms)
+    numbered = number_callouts(callouts, player)
 
+    # A callout occupies exactly its circle — the old `c["x"] + 1` reserved a grid unit of fake
+    # room for text that is no longer drawn on the map at all.
+    callout_pad = CALLOUT_R / unit
     path_pts = [pt for p in paths for pt in p["pts"]]
     max_x = max([r["x"] + r["w"] for r in rooms if r.get("shape") != "circle"] +
                 [r["cx"] + r["r"] for r in rooms if r.get("shape") == "circle"] +
-                [s["x"] + s["w"] for s in stairs] + [c["x"] + 1 for c in callouts] +
+                [s["x"] + s["w"] for s in stairs] +
+                [c["x"] + callout_pad for _n, _pl, c in numbered] +
                 [f["x"] + f.get("w", f.get("r", 0)) for f in features] +
                 [pt[0] for pt in path_pts] + [1])
     max_y = max([r["y"] + r["h"] for r in rooms if r.get("shape") != "circle"] +
                 [r["cy"] + r["r"] for r in rooms if r.get("shape") == "circle"] +
-                [s["y"] + s["h"] for s in stairs] + [c["y"] + 1 for c in callouts] +
+                [s["y"] + s["h"] for s in stairs] +
+                [c["y"] + callout_pad for _n, _pl, c in numbered] +
                 [f["y"] + f.get("h", f.get("r", 0)) for f in features] +
                 [pt[1] for pt in path_pts] + [1])
 
     title_h = 28 if dsl.get("title") else 0
-    legend_h = 20 if legend else 0
-    width = max_x * unit + PAD * 2
-    height = max_y * unit + PAD * 2 + title_h + legend_h
+    map_w = max_x * unit + PAD * 2
+    map_h = max_y * unit + PAD * 2 + title_h
+
+    # Canvas = map + note column side by side; its height is whichever of the two is taller, so
+    # a floor with more note than picture grows the page instead of clipping the notes.
+    note_blocks, notes_h = layout_notes(numbered)
+    notes_top = PAD + title_h
+    width = map_w + NOTE_COL + PAD if note_blocks else map_w
+    body_h = max(map_h, notes_top + notes_h + PAD) if note_blocks else map_h
+    legend_lines = wrap_text(" · ".join(legend), width - PAD * 2, LEGEND_FONT) if legend else []
+    legend_h = len(legend_lines) * LEGEND_LINE_H + 8 if legend_lines else 0
+    height = body_h + legend_h
 
     def to_px(p):
         return (p[0] * unit + PAD, p[1] * unit + PAD + title_h)
@@ -466,10 +666,15 @@ def render(dsl, player=False):
     parts += render_features(features, to_px, unit, player)
     parts += render_paths(paths, to_px)
     parts += render_stairs(stairs, to_px, unit)
-    parts += render_callouts(callouts, to_px, player)
+    parts += render_callout_circles(numbered, to_px)
     if dsl.get("compass"):
-        parts += render_compass(width)
-    parts += render_legend(legend, width, height)
+        parts += render_compass(map_w)
+    if note_blocks:
+        rule_x = map_w - PAD / 2
+        parts.append(f'<line x1="{rule_x:.2f}" y1="{notes_top:.2f}" x2="{rule_x:.2f}" '
+                     f'y2="{body_h - PAD:.2f}" stroke="{NOTE_RULE}" stroke-width="1"/>')
+        parts += render_notes(note_blocks, map_w, notes_top)
+    parts += render_legend(legend_lines, body_h)
     parts.append("</svg>")
     return "\n".join(parts)
 

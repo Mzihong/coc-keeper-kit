@@ -344,9 +344,9 @@ codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-0
   地物→`player_name`/`player_label` 顶替,没给就留空(形状仍画,不是整个消失);秘密
   家具→有 `player_label` 就顶替,没有就整件从 player 版里消失(默认"完全藏起来");
   秘密引线标注→player 版直接丢弃。KP 版(不加 `--player`)永远画全部内容,只做斜体标记,
-  从不过滤——保持它是唯一的工作底稿;④**"编号"(书里城区图的数字圆圈)没有实现**——
-  render-map.py 至今只做到室内/站点尺度,城区尺度的图种还没写,docstring 里点名了这一条
-  范围,不是本阶段漏做;⑤**站点图新增 `paths`(折线,小路/溪流)与顶层 `compass: true`**
+  从不过滤——保持它是唯一的工作底稿;④~~**"编号"(书里城区图的数字圆圈)没有实现**~~
+  ——**这条已被下一条的阶段 4 推翻**:编号圆圈现在实现了,但只接管 `callouts`,城区尺度
+  的**图种**(斜视鸟瞰、街名斜排)仍然没写;⑤**站点图新增 `paths`(折线,小路/溪流)与顶层 `compass: true`**
   (固定画在画布右上角,用像素坐标不进网格单位系统),`rooms` 留空即为站点模式,不新增
   DSL 顶层图种;⑥**唯一没做的一项**:功能一/二的实际 token 差没有回填 3–5× 的估算——
   本轮只有 scratchpad 合成样本可测,没有真实生成可比对,留给 Keeper 下次真正生成互动
@@ -356,6 +356,30 @@ codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-0
   验证方式与阶段 1 一致:scratchpad 造合成样本(两室书房+暗门+秘密祭坛;庭院+秘密车库+
   小路+指北针)+ 坏样本(越界家具、重叠家具)逐元素核对坐标与报错行为,验证完即弃,
   仓库里没有留下任何痕迹。
+- **P5 阶段 4(编号圆圈 + 图旁注释栏)2026-08-08 提出并同日完成,提交 `144d05f`
+  (该 commit 同时含模板对齐与整个 `beyond-the-treeline` 战役骨架,Keeper 拍板一起提),
+  它部分推翻上一条的第 ④ 点。至此 P5 只剩一项等真实数据的收尾(token 成本回填),
+  没有可动阶段了。**
+  起因是 `campaigns/beyond-the-treeline/world/stone-watch-1f/2f` 这批**第一次
+  用真实数据**跑出来的图:阶段 1-2b 的验收样本全是「上锁的门 ?」这种短标签,真实战役写出来的
+  引线标注是几十个汉字的整句,而 `render_callouts()` 把整段话当一个 `<text>` 画在锚点旁、
+  版面计算只给它留一格余量——**结果 10 条注释里 8 条冲出 `viewBox` 被裁掉,渲染出来根本
+  看不见**,少数没越界的又压在房间名上。落地照 `arkham-maps/district-*` 的做法:图上只留
+  编号圆圈,注释挪到图右侧一栏(**与书唯一的差别是注释栏画进 SVG 自己**,因为功能二的
+  handout 递到玩家手里时没有 `location.md` 可配)。要记的五条:①**编号圆圈从"只用于城区
+  尺度"下放到室内/站点尺度,但只接管 `callouts`**——房间名仍写在房间里、家具标签仍写在
+  图元上,那两条没变;②**SVG 没有排版引擎,折行必须自己算**,`wrap_text()` 用写死的字符
+  估宽表(`WIDE_RANGES` 内 1.0 em / 其余 0.55 em)贪心断行,**不许读系统字体**,否则破坏
+  "纯确定性"这条硬约束;它只吞掉断点上的那一个空格,英文单词不劈开;③**`--player` 版重排
+  连续编号**(留空号等于告诉玩家这里藏了东西),KP 版旁注栏为每条非秘密标注附一个灰色
+  `(PL n)` 对照,免得 KP 说"看 ③"时两版对不上;④**画布 = 地图宽 + `NOTE_COL`(260 px),
+  高取 `max(地图, 注释栏)`**——注释比图长时图不动、画布长高(石哨二层因此从 402×292 变成
+  702×434);`layout_notes()` 的一份折行结果同时供量高与绘制,画布不可能按另一个行数排版;
+  ⑤**圆圈不透明,锚点压在房间名上会挖掉几个字**——脚本不硬校验(同站点图 5–9 元素那条的
+  口径),写进 docstring 与两份模板,石哨那两份 JSON 因此微调过三处锚点。另新增克制规则
+  **一张图注释 ≤ 8 条**。**DSL 四个字段一个不改**,旧 JSON 重渲一次就拿到新版面。教训值得
+  记:**验收样本太干净会漏掉结构性缺陷**——以后给渲染器加元素,样本里至少放一条真实长度的
+  中文长句。
 - **`reference/_source/` = 第三方**料场**(2026-08-04 建立)。入库边界当日晚被 Keeper
   改过一次,接手时按新的记:** ~~整目录 gitignore,永不入库~~ →
   **原件(`.pdf`/`.docx`)不入库,从原件转出的 `.md` 与抽出的图入库。**
@@ -439,7 +463,61 @@ codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-0
 这里的三条会话记录已按 `core/15-close-session.md` 的 "Prune before you add" 删除——
 细节要么已经折进上面"当前状态"里 P12 那条摘要,要么直接 `git show c368b90` 看。
 
-本节当前没有未提交的工作。
+### 2026-08-08 — 模板战役对齐 `core/`(未提交)
+
+**做了什么。** 起因是一个问题:`campaigns/_template-campaign/` 是很久以前的创建物,
+按 `CHANGELOG.md` 和 `update_plan/` 看还需不需要更新。逐文件核过 `git log` 之后答案是
+「需要,但范围很窄」——四份根文件是新的(`CLAUDE.md` 停在 `3f937f6`/P11 收口 Era 字段,
+`canon-log.md` 与 `overview.md` 停在 `e0d026b`/多线分支,`investigators/README.md` 停在
+`d9e1fef`/P8),**而 `handouts/ npcs/ puzzles/ sessions/ world/` 五份子目录 README
+加 `references.md` 自 `339a89b`(2026-07-29 初始 commit)起一字未动。** 改了其中 6 份
+(模板共 12 个文件),外加 `core/01-intake.md` 一处:
+
+- `sessions/README.md` —— **唯一一条真矛盾**:模板教 `session-01.md`,`core/04:105` 与
+  `core/12:57` 都是 `sessions/<n>-<slug>.md`。按 `core/` 压过一切改模板;顺带补上
+  「场次编号全局连续、开新幕不重置」(原本只写在 `campaigns/README.md`)。
+- `world/README.md` —— 补 `event-clock.md`(三份必读文件之一,`core/05:76` 写进去的)
+  与 `archive/event-clock-<arc-slug>.md`;补地图。
+- `scenes/README.md` / `handouts/README.md` —— 补 P5 的地图能力:`.json` 挨着 `.md`、
+  渲出 `.svg`,Keeper 版带秘密不能给玩家,`--player` 版贵 3–5×、要先报价、落
+  `handouts/`(依据 `core/09` Output)。
+- `npcs/README.md` —— 补 interaction history 每场必追一行(`core/12` 里写死是 required)。
+- `references.md` —— 「Kit reference used」补 `craft/` 与 `decks/`+`sourcebooks/`
+  (含「数值可取、人不可取」那条线),并给 `rolls.log` 一个被文档提到的位置。
+- `core/01-intake.md:183` —— 子目录清单补 `investigators/`,并写明各子目录 README 要从
+  模板复制(那才是惯例的存放处)。
+
+**留下的判断。**
+
+- **不给模板预置空 `rolls.log`。** 这不是漏项,是 P14 阶段 1.1 已定案的「都不做」
+  (`update_plan/2026-08-04-scenario-diversity.md:134`)——空文件没信息,`roll.py` 首次
+  掷骰时自建;且存在「零随机、纯手填」的合法 intake 路径,列为必需项会误判成不完整。
+  这次只在 `references.md` 里提了它一句,没有把它变成必需件。
+- **`puzzles/README.md` 与 `investigators/README.md` 没动**——逐条比过 `core/08` Output
+  和 P8 之后的现状,内容仍然准确。
+- **本次没改 `core/11-review.md`。** 这次全是把既有约定写进文档,没有新增生成要求,
+  所以没有需要镜像的审查项。
+
+**顺带发现、本次没改的两处**(不在「模板要不要更新」的范围里,留给下次或按需处理):
+
+1. `reference/README.md` 有**三处**还指着 `external/`(第 64 行 `og_Norval/` 条目里
+   「same non-reproduction rule as `external/` below」、第 67 行整条目录条目、第 81 行
+   原创/第三方对照表)——但该子模块早已摘除(`reference/` 下无此目录,`.gitmodules`
+   不存在)。P15(`11f90b0`)清过 `core/00` 与 `core/14` 的同类引用,漏了这一份;
+   WORKLOG 本文件「硬约定」第 5 条也还提着它。
+2. `reference/README.md:31-32` 说四张种子表是 hooks/locations/mythos-angles/**npc-quirks**
+   ——P14 阶段 2 已按 `core/01` 把 `reference/tables/README.md` 改成 **complications**,
+   但同一个说法在父目录 README 里还有一份没跟着改。**这两处都属于完结清单第 8 项
+   (反向扫描)本该抓到而没抓到的那一类**,不是新问题。
+3. `campaigns/beyond-the-treeline/`(未入库)是**本次改动落地前几分钟**由另一个会话
+   scaffold 出来的,六份子目录 README 拿到的是旧版。要不要把改好的六份同步过去,
+   等 Keeper 定——那是活跃战役目录,本会话没动它。
+4. **`build-reference-index.py --check` 并不是「只校验」。** 脚本第 7 行的用法注释写着
+   `# validate only, exit 1 on problems`,但 `main()` 无条件先跑 `build()`,而 `build()`
+   总是写盘;`--check` 只改退出码。本次按完结清单跑一次校验,连带把四份 `index.json`
+   重写了(绝大部分是 `CHANGELOG.md` 本次新增 19 行造成的行号位移,属于应该更新的;
+   但 `update_plan/2026-08-02-low-cost-maps.md` 那几处 +1 位移是**上一次提交就已经存在
+   的陈旧**,不是本次造成的)。注释与行为对不上,这条本身值得单独修。
 
 ---
 

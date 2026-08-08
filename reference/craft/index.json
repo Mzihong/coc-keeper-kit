@@ -21,17 +21,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 75,
+          "line": 105,
           "context": "每次都收敛成\"查账 + 查地产 + 找目击者\"。邪教的财源仍然是 `cult-design-zh.md` §四"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 287,
+          "line": 317,
           "context": "`dist/bundle.md`,走 ChatGPT 的 KP 连点都点不进去。`reference/craft/cult-design-zh.md`"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 422,
+          "line": 452,
           "context": "- 新增邪教设计方法论 `craft/cult-design-zh.md`,配四张骰表与 `templates/cult.md` 模板。"
         },
         {
@@ -41,7 +41,7 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 397,
+          "line": 421,
           "context": "**P5 阶段 0 是还债**:`templates/cult.md:42` 与 `reference/craft/cult-design-zh.md:68`"
         },
         {
@@ -191,17 +191,17 @@
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 93,
+          "line": 97,
           "context": "reference/craft/cult-design-zh.md:68  → \"与 P5 的 mermaid 势力图工具合流\""
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 103,
+          "line": 107,
           "context": "- [x] `templates/cult.md` 与 `reference/craft/cult-design-zh.md` 两处引用改指向它"
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 114,
+          "line": 118,
           "context": "> `craft/cult-design-zh.md` 两处还债——都在其中)。hash 已于 2026-08-06 回填到本文件头与"
         },
         {
@@ -270,17 +270,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 94,
+          "line": 124,
           "context": "- **没有渲染器时,地图也有格式可依了。** `reference/craft/diagram-conventions-zh.md`"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 226,
+          "line": 256,
           "context": "- **关系图终于有正式画法了。** 新增 `reference/craft/diagram-conventions-zh.md`,covers"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 288,
+          "line": 318,
           "context": "第 11 步有同样的问题。两处现已改指向新的 `craft/diagram-conventions-zh.md`。"
         },
         {
@@ -360,17 +360,17 @@
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 99,
+          "line": 103,
           "context": "- [x] 新建 `reference/craft/diagram-conventions-zh.md`(87 行,**已进 bundle**):"
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 113,
+          "line": 117,
           "context": "> 阶段 0 的三个文件——`craft/diagram-conventions-zh.md` 新建、`templates/cult.md` 与"
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 250,
+          "line": 254,
           "context": "**这也回答了 P10 修订 B 的存废理由。** `diagram-conventions-zh.md` §六 建筑卡已经在"
         },
         {
@@ -619,7 +619,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 88,
+          "line": 118,
           "context": "- **造镇现在有专门的手法指南了。** 新增 `reference/craft/town-anatomy-zh.md`,建"
         },
         {

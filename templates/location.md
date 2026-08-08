@@ -24,6 +24,12 @@
 > `reference/craft/diagram-conventions-zh.md`. One DSL file = one floor; a multi-storey
 > building gets one block per floor, stacked in reading order.
 >
+> **A `callout` renders as a numbered circle on the map plus its note in a column beside the
+> map** — the prose never sits on the picture. Keep it to **≤ 8 callouts per floor**; past that
+> you are pasting the location text into the diagram, so split it or send the detail back to the
+> sections above. Keep an anchor off the room's centre (the room name is there) — the circle is
+> opaque.
+>
 > **An outdoor site** (manor grounds, a farmstead, a churchyard) uses the same renderer with an
 > empty `rooms` array — leave out `"rooms"` entirely and use `features` (labelled shapes at
 > map scale, not nested in a room), `paths` (a lane/stream as a polyline), and `compass: true`
