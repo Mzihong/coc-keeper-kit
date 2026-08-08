@@ -22,7 +22,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 362,
+          "line": 371,
           "context": "- P7 魔法速查阻塞解除(转换稿已归档为 `grand-grimoire-zh.md`)。"
         },
         {
@@ -151,16 +151,6 @@
           "context": "**\"最后一句话\"就在本目录。** `reference/sourcebooks/keeper-rulebook-7e-zh.md` 仍在版本库"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 92,
-          "context": "§0;`keeper-rulebook-7e-zh.md` 那笔教训不适用于本文档"
-        },
-        {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 101,
-          "context": "`sourcebooks/keeper-rulebook-7e-zh.md` 17,469 行只能靠 grep 定位,是因为它**没有可预测"
-        },
-        {
           "file": "update_plan/Archived/2026-08-02-investigator-cards.md",
           "line": 104,
           "context": "`reference/sourcebooks/keeper-rulebook-7e-zh.md`(28443 行中译转录),不必再从 PDF 里翻——"
@@ -226,6 +216,16 @@
           "context": "`keeper-rulebook-7e-zh.md`,那之后规则书**又变成本地若有**。P12 计划的引用表已经写着"
         },
         {
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 91,
+          "context": "§0;`keeper-rulebook-7e-zh.md` 那笔教训不适用于本文档"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 100,
+          "context": "`sourcebooks/keeper-rulebook-7e-zh.md` 17,469 行只能靠 grep 定位,是因为它**没有可预测"
+        },
+        {
           "file": "update_plan/Archived/README.md",
           "line": 18,
           "context": "| P7 | [magic-quickref](2026-08-02-magic-quickref.md) | 魔法速查 `reference/rules/magic.md`:施法通则(消耗记法、施法用时、POW 对抗)、按 `grand-grimoire-zh.md` 抽样得出的四档消耗区间(小术/中术/大术/仪式级"
@@ -257,7 +257,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 289,
+          "line": 298,
           "context": "- **怪物图鉴换了一份干净得多的转录稿。** `reference/sourcebooks/malleus-monstrorum-zh.md`"
         },
         {

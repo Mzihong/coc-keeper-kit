@@ -26,12 +26,12 @@
         },
         {
           "file": "CHANGELOG.md",
-          "line": 233,
+          "line": 242,
           "context": "`dist/bundle.md`,走 ChatGPT 的 KP 连点都点不进去。`reference/craft/cult-design-zh.md`"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 368,
+          "line": 377,
           "context": "- 新增邪教设计方法论 `craft/cult-design-zh.md`,配四张骰表与 `templates/cult.md` 模板。"
         },
         {
@@ -41,7 +41,7 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 303,
+          "line": 331,
           "context": "**P5 阶段 0 是还债**:`templates/cult.md:42` 与 `reference/craft/cult-design-zh.md:68`"
         },
         {
@@ -211,8 +211,8 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 125,
-          "context": "`craft/cult-design-zh.md` 两处指向不存在规范的引用)。"
+          "line": 112,
+          "context": "`templates/cult.md` 与 `craft/cult-design-zh.md` 两处指向不存在规范的引用)。"
         },
         {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
@@ -280,18 +280,28 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 172,
+          "line": 73,
+          "context": "- **没有渲染器时,地图也有格式可依了。** `reference/craft/diagram-conventions-zh.md`"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "line": 181,
           "context": "- **关系图终于有正式画法了。** 新增 `reference/craft/diagram-conventions-zh.md`,covers"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 234,
+          "line": 243,
           "context": "第 11 步有同样的问题。两处现已改指向新的 `craft/diagram-conventions-zh.md`。"
         },
         {
           "file": "WORKLOG.md",
           "line": 197,
           "context": "`reference/craft/diagram-conventions-zh.md` 当 **§六**——那份文件 §四 第 69 行已经在"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 286,
+          "context": "`reference/craft/diagram-conventions-zh.md` 新增 §六 文字地图卡(无渲染器环境的兜底"
         },
         {
           "file": "core/03-build-world.md",
@@ -317,6 +327,16 @@
           "file": "templates/cult.md",
           "line": 42,
           "context": "> Build with the mermaid faction-map convention — `reference/craft/diagram-conventions-zh.md`"
+        },
+        {
+          "file": "templates/location.md",
+          "line": 24,
+          "context": "> `reference/craft/diagram-conventions-zh.md`. One DSL file = one floor; a multi-storey"
+        },
+        {
+          "file": "templates/scene.md",
+          "line": 15,
+          "context": "> conventions in that script's docstring and `reference/craft/diagram-conventions-zh.md`."
         },
         {
           "file": "reference/README.md",
@@ -355,53 +375,8 @@
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 201,
-          "context": "——格式落在 `reference/craft/diagram-conventions-zh.md` **§六**"
-        },
-        {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 12,
-          "context": "> `reference/craft/diagram-conventions-zh.md` 里当 §六,并顺手还掉该文件 §四 的一处悬空引用"
-        },
-        {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 43,
-          "context": "| 文字地图卡格式 + 3 张样例 | `craft/diagram-conventions-zh.md` **§六(扩节,不新建文件)** | ✅ | kit 自订**惯例规范** | ✅ **做**,镇级 2 + 建筑级 1 |"
-        },
-        {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 50,
-          "context": "> 同时受两套规矩管。落点定为 `diagram-conventions-zh.md` §六——详见拍板结果 2。"
-        },
-        {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 237,
-          "context": "#### 复评修订 A(2026-08-04):格式落在 `diagram-conventions-zh.md` §六,顺手还一笔债"
-        },
-        {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 241,
-          "context": "1. **仓库里已经有人在引用它了。** `craft/diagram-conventions-zh.md:69`(**进 bundle**)写着"
-        },
-        {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 258,
-          "context": "`diagram-conventions-zh.md` 有两处写死**建筑内部布局不归它管**:第 10 行"
-        },
-        {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 387,
-          "context": "**地图卡:扩 `craft/diagram-conventions-zh.md`,不新建文件**(理由见复评修订 A):"
-        },
-        {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 445,
-          "context": "| A | 地图卡格式**没有落盘位置**,三条 checkbox 全悬空;且 `diagram-conventions-zh.md:69` 已在引用一个从未定义过的「文字地图卡」 | 拍板结果 2 复评修订 A + 阶段 2 |"
-        },
-        {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 446,
-          "context": "| B | 建筑级卡与 `diagram-conventions-zh.md` 第 10 行、§五 表格**直接冲突** | 拍板结果 2 复评修订 B + 阶段 2 |"
+          "line": 205,
+          "context": "**这也回答了 P10 修订 B 的存废理由。** `diagram-conventions-zh.md` §六 建筑卡已经在"
         },
         {
           "file": "update_plan/README.md",
@@ -410,28 +385,18 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 13,
-          "context": "| P10 | [town-anatomy-from-arkham](2026-08-04-town-anatomy-from-arkham.md) | 阿卡姆资料 → `craft/town-anatomy-zh.md` 城镇解剖手法稿 + `tables/town-institutions.md` d20 机构表 "
+          "line": 56,
+          "context": "已扩进 `diagram-conventions-zh.md` §六,P5 阶段 3 要用时同一文件直接读得到,不必再跨计划"
         },
         {
           "file": "update_plan/README.md",
-          "line": 84,
+          "line": 81,
           "context": "变成\"同一个文件\"**——地图卡直接扩进 P5 阶段 0 产出的 `craft/diagram-conventions-zh.md`"
         },
         {
           "file": "update_plan/README.md",
-          "line": 103,
-          "context": "`core/03` 两处接线)→ **阶段 2**(d20 机构表 + `diagram-conventions-zh.md` 扩 §六"
-        },
-        {
-          "file": "update_plan/README.md",
-          "line": 105,
-          "context": "**阶段 2 里有一条债优先**:`diagram-conventions-zh.md:69` 的「文字地图卡」是个从未"
-        },
-        {
-          "file": "update_plan/README.md",
-          "line": 145,
-          "context": "| 1 | **P10** 城镇解剖手法稿 | ★★☆☆☆ | 资料 14 万字符 / 6723 行 / 0 图;采料 10 段 + ≤100 行提炼稿 + `core/03` **两处**接线 + d20 机构表 + `diagram-conventions-zh.md` 扩一节与 3 张样例 | 产出本身小(照 `"
+          "line": 108,
+          "context": "> `diagram-conventions-zh.md` §六 建筑卡本身已随 P10 落地,这里待答的是**另一件事**:"
         },
         {
           "file": "update_plan/Archived/2026-08-04-clue-engines.md",
@@ -477,9 +442,59 @@
           "file": "update_plan/Archived/2026-08-04-retire-bundle.md",
           "line": 109,
           "context": "- [x] `reference/craft/diagram-conventions-zh.md:85` —— 那句话是 P5 阶段 0 用来解释"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 11,
+          "context": "> `reference/craft/diagram-conventions-zh.md` 里当 §六,并顺手还掉该文件 §四 的一处悬空引用"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 42,
+          "context": "| 文字地图卡格式 + 3 张样例 | `craft/diagram-conventions-zh.md` **§六(扩节,不新建文件)** | ✅ | kit 自订**惯例规范** | ✅ **做**,镇级 2 + 建筑级 1 |"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 49,
+          "context": "> 同时受两套规矩管。落点定为 `diagram-conventions-zh.md` §六——详见拍板结果 2。"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 236,
+          "context": "#### 复评修订 A(2026-08-04):格式落在 `diagram-conventions-zh.md` §六,顺手还一笔债"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 240,
+          "context": "1. **仓库里已经有人在引用它了。** `craft/diagram-conventions-zh.md:69`(**进 bundle**)写着"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 257,
+          "context": "`diagram-conventions-zh.md` 有两处写死**建筑内部布局不归它管**:第 10 行"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 389,
+          "context": "**地图卡:扩 `craft/diagram-conventions-zh.md`,不新建文件**(理由见复评修订 A):"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 448,
+          "context": "| A | 地图卡格式**没有落盘位置**,三条 checkbox 全悬空;且 `diagram-conventions-zh.md:69` 已在引用一个从未定义过的「文字地图卡」 | 拍板结果 2 复评修订 A + 阶段 2 |"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 449,
+          "context": "| B | 建筑级卡与 `diagram-conventions-zh.md` 第 10 行、§五 表格**直接冲突** | 拍板结果 2 复评修订 B + 阶段 2 |"
+        },
+        {
+          "file": "update_plan/Archived/README.md",
+          "line": 25,
+          "context": "| P10 | [town-anatomy-from-arkham](2026-08-04-town-anatomy-from-arkham.md) | 阿卡姆城市资料(仅入库不归档,取手法不取文字)→ `reference/craft/town-anatomy-zh.md` 城镇解剖手法稿(四节:区域四维、地点字段体"
         }
       ],
-      "reference_count": 40
+      "reference_count": 43
     },
     {
       "file": "lovecraft-zh.md",
@@ -569,41 +584,6 @@
           "context": "\"research only; distilled into reference/craft/lovecraft-zh.md\","
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 33,
-          "context": "## 方案:照 `lovecraft-zh.md` 的先例走"
-        },
-        {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 36,
-          "context": "`reference/craft/lovecraft-zh.md`。同一套模式套过来:"
-        },
-        {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 195,
-          "context": "- 别拿 `craft/lovecraft-zh.md` 当先例——它能把 82 篇原文放进 `reference/og_Norval/`,"
-        },
-        {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 227,
-          "context": "- **样例不做成\"一个能直接用的镇\"**,只演示记法(同 `lovecraft-zh.md` 给技法字典"
-        },
-        {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 338,
-          "context": "- [ ] **篇幅上限 100 行**——`lovecraft-zh.md` 用 90 行覆盖 82 篇小说,这份不该更长。"
-        },
-        {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 400,
-          "context": "- [ ] §六 开头写一句反锚定声明,体例照 `craft/lovecraft-zh.md` 开头那段:"
-        },
-        {
-          "file": "update_plan/README.md",
-          "line": 145,
-          "context": "| 1 | **P10** 城镇解剖手法稿 | ★★☆☆☆ | 资料 14 万字符 / 6723 行 / 0 图;采料 10 段 + ≤100 行提炼稿 + `core/03` **两处**接线 + d20 机构表 + `diagram-conventions-zh.md` 扩一节与 3 张样例 | 产出本身小(照 `"
-        },
-        {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
           "line": 111,
           "context": "定位对标 `reference/craft/lovecraft-zh.md`(90 行,按\"哪个 spec 读哪一节\"分节)。"
@@ -614,12 +594,42 @@
           "context": "1. skill 是动词,这两章是知识;kit 已有先例(`craft/lovecraft-zh.md`"
         },
         {
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 32,
+          "context": "## 方案:照 `lovecraft-zh.md` 的先例走"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 35,
+          "context": "`reference/craft/lovecraft-zh.md`。同一套模式套过来:"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 194,
+          "context": "- 别拿 `craft/lovecraft-zh.md` 当先例——它能把 82 篇原文放进 `reference/og_Norval/`,"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 226,
+          "context": "- **样例不做成\"一个能直接用的镇\"**,只演示记法(同 `lovecraft-zh.md` 给技法字典"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 340,
+          "context": "- [x] **篇幅上限 100 行**——`lovecraft-zh.md` 用 90 行覆盖 82 篇小说,这份不该更长。"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 402,
+          "context": "- [x] §六 开头写一句反锚定声明,体例照 `craft/lovecraft-zh.md` 开头那段:"
+        },
+        {
           "file": ".claude/skills/description/SKILL.md",
           "line": 12,
           "context": "`reference/craft/lovecraft-zh.md`."
         }
       ],
-      "reference_count": 26
+      "reference_count": 25
     },
     {
       "file": "town-anatomy-zh.md",
@@ -633,9 +643,19 @@
       ],
       "referenced_by": [
         {
+          "file": "CHANGELOG.md",
+          "line": 67,
+          "context": "- **造镇现在有专门的手法指南了。** 新增 `reference/craft/town-anatomy-zh.md`,建"
+        },
+        {
           "file": "WORKLOG.md",
           "line": 172,
           "context": "`craft/town-anatomy-zh.md` 城镇解剖手法稿;**P11 = 年代开放**——目标是「KP 报哪个年代"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 267,
+          "context": "新增 `reference/craft/town-anatomy-zh.md`(92 行,四节:§一 城镇部件清单——地势/建筑"
         },
         {
           "file": "core/03-build-world.md",
@@ -678,37 +698,42 @@
           "context": "| 收录用途 | P10(`craft/town-anatomy-zh.md` 的源材料)、P5(地图记法参照)。**均为「读它、写自己的」,不作转录来源** |"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 41,
+          "file": "scripts/render-map.py",
+          "line": 12,
+          "context": "Markdown, not one file with nested floors — see `reference/craft/town-anatomy-zh.md`-adjacent"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 40,
           "context": "| `town-anatomy-zh.md` 手法提炼稿 | `reference/craft/` | ✅ | kit 原创 | ✅ 核心产出 |"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 49,
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 48,
           "context": "> 且按 `craft/README.md`,它是**惯例规范**不是提炼稿,混进 `town-anatomy-zh.md` 会让那份文件"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 249,
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 248,
           "context": "与 §一–§五 同类;`town-anatomy-zh.md` 是**提炼稿**,受「取手法不取文字」管,两者不能混。"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 333,
-          "context": "- [ ] `reference/craft/town-anatomy-zh.md` — **按消费方分节**(`craft/README.md` 第 1 条),"
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 335,
+          "context": "- [x] `reference/craft/town-anatomy-zh.md` — **按消费方分节**(`craft/README.md` 第 1 条),"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 369,
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 371,
           "context": "- **Produce 段的 town/locale 那条** —— 指名读 `town-anatomy-zh.md` 哪几节"
         },
         {
-          "file": "update_plan/README.md",
-          "line": 13,
-          "context": "| P10 | [town-anatomy-from-arkham](2026-08-04-town-anatomy-from-arkham.md) | 阿卡姆资料 → `craft/town-anatomy-zh.md` 城镇解剖手法稿 + `tables/town-institutions.md` d20 机构表 "
+          "file": "update_plan/Archived/README.md",
+          "line": 25,
+          "context": "| P10 | [town-anatomy-from-arkham](2026-08-04-town-anatomy-from-arkham.md) | 阿卡姆城市资料(仅入库不归档,取手法不取文字)→ `reference/craft/town-anatomy-zh.md` 城镇解剖手法稿(四节:区域四维、地点字段体"
         }
       ],
-      "reference_count": 15
+      "reference_count": 18
     }
   ]
 }

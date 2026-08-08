@@ -84,13 +84,18 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 49,
+          "line": 44,
           "context": "`clue-engines.md` 已在落地时直接接了 `roll.py` 并通过 `--check-all` 自检,这条耦合"
         },
         {
           "file": "update_plan/README.md",
-          "line": 50,
+          "line": 45,
           "context": "描述的风险(新表先脱离脚本被用熟,回头要改接线)没有发生。**遗留欠账**:`clue-engines.md`"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 53,
+          "context": "没有发生,**也没有给 `P14` 阶段 1.2 留下待补的掷骰点措辞**——上面 `clue-engines.md` 那笔"
         },
         {
           "file": "update_plan/Archived/2026-08-04-clue-engines.md",
@@ -123,7 +128,7 @@
           "context": "| P16 | [clue-engines](2026-08-04-clue-engines.md) | 线索引擎通用化 + 三线索规则可执行化。新表 `reference/tables/clue-engines.md`(d10,十条线索引擎各带一条别的引擎给不了的结构属性,表头写死\"一次只掷 2–3 条,不许全开\")"
         }
       ],
-      "reference_count": 21
+      "reference_count": 22
     },
     {
       "file": "complications.md",
@@ -555,7 +560,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 218,
+          "line": 71,
+          "context": "(1d20)——与 `locations.md`(定整场战役的舞台,掷一次)不同,这张表掷 N 次填一个"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "line": 227,
           "context": "**\"默认美国不等于默认阿卡姆\"**——默认给的是国家,镇子照样掷 `locations.md` 再自己造,"
         },
         {
@@ -604,54 +614,59 @@
           "context": "- [ ] **接线:`locations.md` 掷到场景级。** `core/04` 第 6 步建 scene web 时,每个新地点"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 24,
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 23,
           "context": "与 `reference/tables/locations.md` 开头都在**主动对抗**「默认新英格兰小镇」的引力"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 26,
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 25,
           "context": "引力从\"模型的默认倾向\"升级成\"仓库里有现成文件的最省力路径\",`locations.md` 那张"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 224,
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 223,
           "context": "**多样性不由地图卡提供**——它由掷骰提供(`locations.md` + 下面第 3 条的"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 271,
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 270,
           "context": "`reference/tables/town-institutions.md`,与 `locations.md` 并列接进 `core/03`。"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 309,
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 308,
           "context": "**四、表头必须写清与 `locations.md` 的分工**,否则模型会混用两张表:"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 311,
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 310,
           "context": "- `locations.md` —— **掷 1 次定舞台**(整个战役发生在哪种地方)"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 372,
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 374,
           "context": "(`locations.md` + `mythos-angles.md`):那条是战役首次建世界时掷一次,"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 382,
-          "context": "- [ ] 该表**表头写清与 `locations.md` 的分工**:`locations.md` 掷 1 次定舞台,"
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 384,
+          "context": "- [x] 该表**表头写清与 `locations.md` 的分工**:`locations.md` 掷 1 次定舞台,"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 401,
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 403,
           "context": "这是记法不是模板,镇上有什么由 `locations.md` / `town-institutions.md` 掷骰决定"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 421,
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 424,
           "context": "定太死」)。地图卡**根本不是多样性的来源**——多样性由掷骰产生(`locations.md` +"
+        },
+        {
+          "file": "update_plan/Archived/README.md",
+          "line": 25,
+          "context": "| P10 | [town-anatomy-from-arkham](2026-08-04-town-anatomy-from-arkham.md) | 阿卡姆城市资料(仅入库不归档,取手法不取文字)→ `reference/craft/town-anatomy-zh.md` 城镇解剖手法稿(四节:区域四维、地点字段体"
         },
         {
           "file": ".claude/skills-eval-workspace/benchmark.json",
@@ -659,7 +674,7 @@
           "context": "\"evidence\": \"Premise centers on Camas Dubh, a storm-locked Skye fishing hamlet bound to a mistranslated century-old rite ('Tàmh na Mara') that unknowingly feeds"
         }
       ],
-      "reference_count": 21
+      "reference_count": 23
     },
     {
       "file": "madness-instant.md",
@@ -670,7 +685,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 122,
+          "line": 131,
           "context": "时判断\"这把枪多危险\"用,不是按品类查数值。`madness.md` 拆成了 `madness-instant.md`"
         },
         {
@@ -705,7 +720,7 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 56,
+          "line": 61,
           "context": "P12 新建的 `phobias.md`/`manias.md`/`madness-instant.md`/`madness-summary.md`/"
         },
         {
@@ -725,7 +740,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 123,
+          "line": 132,
           "context": "(即时症状)与 `madness-summary.md`(概括症状)两个文件——同一个文件塞两张同骰面的"
         },
         {
@@ -760,7 +775,7 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 56,
+          "line": 61,
           "context": "P12 新建的 `phobias.md`/`manias.md`/`madness-instant.md`/`madness-summary.md`/"
         },
         {
@@ -783,7 +798,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 120,
+          "line": 129,
           "context": "(表IX,100 条)、`manias.md`(表X,100 条)是规则书原表的全量转录,不是精选摘要;"
         },
         {
@@ -813,7 +828,7 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 56,
+          "line": 61,
           "context": "P12 新建的 `phobias.md`/`manias.md`/`madness-instant.md`/`madness-summary.md`/"
         },
         {
@@ -868,22 +883,22 @@
         },
         {
           "file": "CHANGELOG.md",
-          "line": 169,
+          "line": 178,
           "context": "接入了 `reference/tables/monster-index.md` 的 `Serves` 检索——之前这张表能查到怪物,"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 210,
+          "line": 219,
           "context": "文件名、`1D10`/`STR 60` 这类记法保持英文);`monster-index.md` 的表头与说明段随生成"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 309,
+          "line": 318,
           "context": "新增 `reference/tables/monster-index.md`,覆盖怪物图鉴全部 223 个条目 + 现有 9 只"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 323,
+          "line": 332,
           "context": "`reference/tables/monster-index.md` 再动手写,不用翻原文猜。"
         },
         {
@@ -903,7 +918,7 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 316,
+          "line": 344,
           "context": "- **`monster-index.md` 与 malleus 转录稿的关系已不再是「对外通道」。** P13 之后所有"
         },
         {
@@ -1135,12 +1150,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 211,
+          "line": 220,
           "context": "脚本一起改中文,`monster-traits.md` 的引言段同。加新表的写法见"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 298,
+          "line": 307,
           "context": "`reference/tables/monster-traits.md`:18 条可挂载的数值词条(再生、分裂、免疫常规"
         },
         {
@@ -1287,14 +1302,14 @@
           "context": "> - **The rolled angle:** <which `mythos-angles.md` result this came from, if any>"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 372,
-          "context": "(`locations.md` + `mythos-angles.md`):那条是战役首次建世界时掷一次,"
-        },
-        {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
           "line": 215,
           "context": "(无人类反派)、auto。**默认 auto = 掷 `reference/tables/mythos-angles.md`,"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 374,
+          "context": "(`locations.md` + `mythos-angles.md`):那条是战役首次建世界时掷一次,"
         },
         {
           "file": ".claude/skills-eval-workspace/benchmark.json",
@@ -1390,7 +1405,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 119,
+          "line": 128,
           "context": "- **恐惧症、躁狂症、武器强度三张新表可以直接掷了。** `reference/tables/phobias.md`"
         },
         {
@@ -1425,7 +1440,7 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 56,
+          "line": 61,
           "context": "P12 新建的 `phobias.md`/`manias.md`/`madness-instant.md`/`madness-summary.md`/"
         },
         {
@@ -1451,9 +1466,24 @@
       ],
       "referenced_by": [
         {
+          "file": "CHANGELOG.md",
+          "line": 70,
+          "context": "- **建镇现在有专门的骰表了。** 新增 `reference/tables/town-institutions.md`"
+        },
+        {
           "file": "WORKLOG.md",
           "line": 191,
           "context": "阿卡姆是 Chaosium 商业设定书。②**d20 机构表做**,单独立 `tables/town-institutions.md`。"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 274,
+          "context": "`town-institutions.md`,后者的调用**不并入** \"First, orient\" 的首次建世界掷骰行,"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 276,
+          "context": "新增 `reference/tables/town-institutions.md`(1d20,原创抽象,名字全部自拟):"
         },
         {
           "file": "reference/craft/diagram-conventions-zh.md",
@@ -1481,62 +1511,67 @@
           "context": "- `town-institutions.md`(1d20)——这个镇里有哪些机构;掷 N 次填清单,N 随镇的规模走,"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 42,
+          "file": "update_plan/README.md",
+          "line": 51,
+          "context": "`town-institutions.md` 落地时已直接写成 `python scripts/roll.py town-institutions ...`"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 66,
+          "context": "这批计划里唯一一条实线耦合(P10 新建的 `tables/town-institutions.md` 是「掷 N 次填清单」"
+        },
+        {
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 41,
           "context": "| `town-institutions.md` d20 机构表 | `reference/tables/` | ✅ | kit 原创抽象 | ✅ **做**,骨架取自勘察 §4 的**世俗 9 类** |"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 225,
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 224,
           "context": "`town-institutions.md`)。骰子决定这镇有什么,卡只决定怎么写下来。据此三条挡法:"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 271,
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 270,
           "context": "`reference/tables/town-institutions.md`,与 `locations.md` 并列接进 `core/03`。"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 312,
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 311,
           "context": "- `town-institutions.md` —— **掷 N 次填清单**(这个镇里有哪些机构),"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 370,
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 372,
           "context": "- **另加一条掷骰指令** —— 建镇时掷 `tables/town-institutions.md`。"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 378,
-          "context": "- [ ] `reference/tables/town-institutions.md` — d20 机构表。**原创抽象**,不是阿卡姆"
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 380,
+          "context": "- [x] `reference/tables/town-institutions.md` — d20 机构表。**原创抽象**,不是阿卡姆"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 401,
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 403,
           "context": "这是记法不是模板,镇上有什么由 `locations.md` / `town-institutions.md` 掷骰决定"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 410,
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 412,
           "context": "(拍板结果第 1 条)。但阶段 2 新增 `tables/town-institutions.md` 仍要重跑一次索引"
         },
         {
-          "file": "update_plan/2026-08-04-town-anatomy-from-arkham.md",
-          "line": 422,
+          "file": "update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md",
+          "line": 425,
           "context": "`town-institutions.md`),卡只是掷完之后的记法。**锁死创意的风险不在\"有没有格式\","
         },
         {
-          "file": "update_plan/README.md",
-          "line": 13,
-          "context": "| P10 | [town-anatomy-from-arkham](2026-08-04-town-anatomy-from-arkham.md) | 阿卡姆资料 → `craft/town-anatomy-zh.md` 城镇解剖手法稿 + `tables/town-institutions.md` d20 机构表 "
-        },
-        {
-          "file": "update_plan/README.md",
-          "line": 67,
-          "context": "查重**。而 P10 新建的 `tables/town-institutions.md` 自己写着「掷 N 次填清单,N 随镇的规模"
+          "file": "update_plan/Archived/README.md",
+          "line": 25,
+          "context": "| P10 | [town-anatomy-from-arkham](2026-08-04-town-anatomy-from-arkham.md) | 阿卡姆城市资料(仅入库不归档,取手法不取文字)→ `reference/craft/town-anatomy-zh.md` 城镇解剖手法稿(四节:区域四维、地点字段体"
         }
       ],
-      "reference_count": 17
+      "reference_count": 21
     },
     {
       "file": "weapons-index.md",
@@ -1550,12 +1585,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 121,
+          "line": 130,
           "context": "`reference/tables/weapons-index.md` 把全部武器按威胁强度重新分了四档,给反派配装备"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 132,
+          "line": 141,
           "context": "它在哪(现在指向 `reference/tables/weapons-index.md`);追逐速查表 2 处让你查\"表III\""
         },
         {
@@ -1605,7 +1640,7 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 57,
+          "line": 62,
           "context": "`weapons-index.md` 五张表已经和 P14 阶段 1 的 `scripts/roll.py` 改动分开提交过,"
         },
         {

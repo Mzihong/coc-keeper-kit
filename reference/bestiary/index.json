@@ -173,7 +173,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 313,
+          "line": 322,
           "context": "- **`reference/bestiary/` 现有 9 只按新标尺重新核过一遍。** `deep-one-hybrid.md` 的"
         },
         {
@@ -263,12 +263,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 250,
+          "line": 259,
           "context": "- 怪物图鉴 `fellrock.md` 的\"沉默之油\"反查链接指向了 `artifacts-zh.md`,但那份文件里"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 314,
+          "line": 323,
           "context": "type 从独立种族改成仆从种族(malleus 原文就是这么分类的);`fellrock.md` 的 threat"
         },
         {
@@ -479,7 +479,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 315,
+          "line": 324,
           "context": "从 deadly 改成 mythic(体型与耐久数值早已过 deadly 上限)、`thrall-of-cthulhu.md`"
         },
         {

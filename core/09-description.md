@@ -99,6 +99,10 @@ like.
 - **Mode A:** save to `campaigns/<slug>/scenes/<name>.md`, `kebab-case.md` in English. Boxed
   text goes in a `>` blockquote so it's obvious what to read aloud. Cross-link NPCs, monsters,
   puzzles, and handouts present.
+- **Add a floor-plan map when connectivity or sightlines matter to how the scene plays**
+  (which room the sound came from, whether the window is reachable) — use `templates/scene.md`'s
+  optional Map section and `python scripts/render-map.py`. Skip it when the boxed text alone
+  already tells the Keeper everything they'd need to adjudicate movement.
 - **Mode B:** usually returned inline, not saved — it's a live-play beat, not a standing
   artifact. If it belongs to a specific prepared scene (e.g. what happens when they try the
   risky thing), fold it into that scene file's "If the players…" branch instead of creating a

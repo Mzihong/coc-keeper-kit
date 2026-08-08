@@ -73,6 +73,12 @@
 - **没有渲染器时,地图也有格式可依了。** `reference/craft/diagram-conventions-zh.md`
   新增 §六 文字地图卡——跑不了 `scripts/render-map.py` 时,用纯文字表格写清区与区的
   相邻关系,或一栋建筑内部的房间与连通,附三个原创样例(两个形状迥异的镇 + 一栋建筑)。
+- **场景与地点现在能带一张真的地图了。** 新增 `scripts/render-map.py`——写一份 JSON
+  (房间、门、窗、楼梯、圆形塔楼、引线标注),一行命令渲出 SVG 平面图,纯几何线框、
+  跑多少次结果都一样。`templates/location.md`/`templates/scene.md` 新增可选的 Map
+  小节;`build-world`/`description` 会在房间布局对判断连通与视线有意义时主动提议画一张,
+  大多数场景仍然不需要图。给玩家看的可互动版本(带家具、剧透过滤)还没做,现在出的图
+  一律只给 Keeper 自己看。
 
 ## 2026-08-06 (c368b90)
 

@@ -85,6 +85,10 @@ freely to fit the campaign's era and place.
   `reference/craft/diagram-conventions-zh.md`: §一 (general rules — every edge carries a
   label naming what actually connects the two), §二 (faction diagrams), §四 (region
   diagrams). Skip the diagram for 2–3 nodes; a sentence is faster.
+- **Add a floor-plan map when a place's interior layout matters** (a multi-room building the
+  investigators will move through) — use `templates/location.md`'s optional Map section and
+  `python scripts/render-map.py`. Most locations don't need one; a keyed-area list is usually
+  enough.
 - End with **3–5 open hooks** a scenario could grab.
 
 ## Quality bar

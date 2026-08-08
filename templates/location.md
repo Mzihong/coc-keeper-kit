@@ -17,6 +17,18 @@
 ## People
 - <NPC link> — <why they're here>
 
+## Map *(optional)*
+> Only for a place worth drawing (a multi-room interior, a site with real layout) — most
+> locations don't need one. Render with `python scripts/render-map.py <path>.json`; DSL shape
+> and conventions in that script's docstring, wall/door/window elements per
+> `reference/craft/diagram-conventions-zh.md`. One DSL file = one floor; a multi-storey
+> building gets one block per floor, stacked in reading order.
+
+```json
+{"title": "<floor label>", "rooms": [{"id": "…", "name": "…", "x": 0, "y": 0, "w": 3, "h": 3,
+  "doors": [{"edge": "bottom", "pos": 0.5}]}]}
+```
+
 ## Rumours & hooks
 - <what locals say; which is true, which is a red herring>
 
