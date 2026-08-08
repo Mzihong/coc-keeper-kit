@@ -24,7 +24,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 304,
+          "line": 334,
           "context": "- 怪物图鉴 `fellrock.md` 的\"沉默之油\"反查链接指向了 `artifacts-zh.md`,但那份文件里"
         },
         {
@@ -205,6 +205,11 @@
           "context": "见 `reference/mythos/cthulhu-cult-history-zh.md` 的\"永生大师线\"了解这个概念在本 kit"
         },
         {
+          "file": "campaigns/beyond-the-treeline/references.md",
+          "line": 27,
+          "context": "`cthulhu-cult-history-zh.md` 同理不用于本战役的时间线"
+        },
+        {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
           "line": 90,
           "context": "`reference/mythos/cthulhu-cult-history-zh.md`(27 条历史条目表,不逐条散文重述)"
@@ -215,7 +220,7 @@
           "context": "`cthulhu-cult-history-zh.md`、`cults/`(5 份)、`spells/`、"
         }
       ],
-      "reference_count": 11
+      "reference_count": 12
     },
     {
       "file": "cults/church-of-perfect-science.md",
@@ -429,12 +434,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 369,
+          "line": 399,
           "context": "从 deadly 改成 mythic(体型与耐久数值早已过 deadly 上限)、`thrall-of-cthulhu.md`"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 372,
+          "line": 402,
           "context": "- **神格文件现在要反向列出自己的眷族与仆从。** `cthulhu.md` 补了这一节(哪些怪物服侍"
         },
         {
@@ -449,7 +454,7 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 404,
+          "line": 426,
           "context": "- **古神级条目住在 `reference/mythos/great-old-ones/`(现有 6 份:`cthulhu.md` +"
         },
         {
@@ -837,7 +842,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 305,
+          "line": 335,
           "context": "根本没有这一条——沉默之油实际是 `reference/mythos/spells/oil-of-silence.md` 的法术,"
         },
         {

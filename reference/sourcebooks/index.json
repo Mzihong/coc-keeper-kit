@@ -22,7 +22,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 416,
+          "line": 446,
           "context": "- P7 魔法速查阻塞解除(转换稿已归档为 `grand-grimoire-zh.md`)。"
         },
         {
@@ -151,6 +151,11 @@
           "context": "**\"最后一句话\"就在本目录。** `reference/sourcebooks/keeper-rulebook-7e-zh.md` 仍在版本库"
         },
         {
+          "file": "campaigns/beyond-the-treeline/references.md",
+          "line": 33,
+          "context": "`sourcebooks/keeper-rulebook-7e-zh.md`。**数字可以拿，人不可以拿**——不把任何已出版"
+        },
+        {
           "file": "update_plan/Archived/2026-08-02-investigator-cards.md",
           "line": 104,
           "context": "`reference/sourcebooks/keeper-rulebook-7e-zh.md`(28443 行中译转录),不必再从 PDF 里翻——"
@@ -231,7 +236,7 @@
           "context": "| P7 | [magic-quickref](2026-08-02-magic-quickref.md) | 魔法速查 `reference/rules/magic.md`:施法通则(消耗记法、施法用时、POW 对抗)、按 `grand-grimoire-zh.md` 抽样得出的四档消耗区间(小术/中术/大术/仪式级"
         }
       ],
-      "reference_count": 23,
+      "reference_count": 24,
       "cited": true,
       "provenance": {
         "work": "《克苏鲁的呼唤》第七版规则书(Call of Cthulhu 7th Edition Keeper Rulebook)",
@@ -257,7 +262,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 343,
+          "line": 373,
           "context": "- **怪物图鉴换了一份干净得多的转录稿。** `reference/sourcebooks/malleus-monstrorum-zh.md`"
         },
         {

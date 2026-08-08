@@ -13,7 +13,10 @@
 > Only when the room layout itself matters (connectivity, sightlines, where to hide) — most
 > scenes don't need one. Render with `python scripts/render-map.py <path>.json`; DSL shape and
 > conventions in that script's docstring and `reference/craft/diagram-conventions-zh.md`.
-> This map is **Keeper-facing** — it can carry secrets (a locked door, a hidden room) inline.
+> A `callout` renders as a numbered circle on the map plus its note in a column beside the map;
+> keep it to **≤ 8 callouts** per diagram and keep anchors off the room names (the circle is
+> opaque). This map is **Keeper-facing** — it can carry secrets (a locked door, a hidden room)
+> inline.
 > **Don't hand it straight to players.** A player-facing version is a separate, opt-in artifact
 > (furniture layer + `python scripts/render-map.py <path>.json --player`) — see
 > `core/09-description.md` → Output for the cost-disclosure step that must happen before

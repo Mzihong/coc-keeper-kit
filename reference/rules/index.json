@@ -21,17 +21,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 250,
+          "line": 280,
           "context": "- **kit 不再只服务 1920s 了。** `reference/rules/character-creation.md` 头部第一次"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 405,
+          "line": 435,
           "context": "- `character-creation.md` 补齐年龄补正、Build/伤害加值、技能基础值等建卡数据,可用来审核他人交的卡。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 419,
+          "line": 449,
           "context": "- `character-creation.md` 各小节补上数据来源指路(标明取自哪个源文件/章节)。"
         },
         {
@@ -268,6 +268,11 @@
           "file": "reference/tables/weapons-index.md",
           "line": 40,
           "context": "价格栏直接对接 `reference/rules/character-creation.md` §11 的\"非法术型首领 = 基线 +"
+        },
+        {
+          "file": "campaigns/beyond-the-treeline/references.md",
+          "line": 17,
+          "context": "- Rules: `../../reference/rules/` —— 基准本 `character-creation.md`、`combat.md`；"
         },
         {
           "file": "campaigns/_template-campaign/CLAUDE.md",
@@ -545,7 +550,7 @@
           "context": "| P12 | [cheatsheet-self-sufficiency](2026-08-04-cheatsheet-self-sufficiency.md) | 速查表自足化:让 `reference/rules/` 单独就能回答规则问题,规则书退出查询链路(仍留在版本库里当对账底本)。**阶段 0–1**:`co"
         }
       ],
-      "reference_count": 105
+      "reference_count": 106
     },
     {
       "file": "chases.md",
@@ -558,17 +563,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 112,
+          "line": 142,
           "context": "步)与写读白(`core/09-description.md`)都已接线;和 `reference/rules/chases.md` 分工"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 142,
+          "line": 172,
           "context": "- **追逐规则算错了。** `chases.md` 此前把追逐当成抽象距离数字比 MOV 高低,和规则书的"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 168,
+          "line": 198,
           "context": "`chases.md` `sanity.md`)已按《守秘人规则书》第六、七、八章逐节重写,补齐了此前完全"
         },
         {
@@ -715,27 +720,27 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 149,
+          "line": 179,
           "context": "- **重伤的判定阈值原本没写清楚。** `combat.md` 现在明确写出\"造成的伤害大于等于角色"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 154,
+          "line": 184,
           "context": "- **全自动射击的难度阶梯多算了三级。** `combat.md` 把规则书的四组难度对应关系串成了"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 159,
+          "line": 189,
           "context": "缺的三条:对抗检定不适用难度等级、不能孤注一掷、近战有自己的平手裁法(见 `combat.md`"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 167,
+          "line": 197,
           "context": "- **查战斗、追逐、理智规则不用再翻规则书原文了。** 三份速查表(`reference/rules/combat.md`"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 187,
+          "line": 217,
           "context": "(现在指向 `combat.md` §6.6);另有 6 处直接给规则书页码/章节的指路(如\"见规则书"
         },
         {
@@ -807,6 +812,11 @@
           "file": "reference/rules/eras/README.md",
           "line": 9,
           "context": "基准本（`character-creation.md`、`combat.md`、`chases.md` 等）已经覆盖了跨年代不变的"
+        },
+        {
+          "file": "campaigns/beyond-the-treeline/references.md",
+          "line": 17,
+          "context": "- Rules: `../../reference/rules/` —— 基准本 `character-creation.md`、`combat.md`；"
         },
         {
           "file": "update_plan/Archived/2026-08-04-cheatsheet-self-sufficiency.md",
@@ -884,7 +894,7 @@
           "context": "\"evidence\": \"The entire answer is paraphrased summary/table lookups in the assistant's own words (short dice-notation fragments and derived numbers only), with "
         }
       ],
-      "reference_count": 34
+      "reference_count": 35
     },
     {
       "file": "eras/cthulhu-invictus.md",
@@ -938,9 +948,54 @@
           "file": "reference/rules/eras/README.md",
           "line": 40,
           "context": "`cthulhu-invictus.md`、`dark-ages.md`、`mystic-iceland.md` 各自的**装备与武器**/"
+        },
+        {
+          "file": "campaigns/beyond-the-treeline/canon-log.md",
+          "line": 45,
+          "context": "- **识纹所** —— 谷里认先民纹的一脉。机制上套 `eras/dark-ages.md` 的隐士/异教徒或神职人员"
+        },
+        {
+          "file": "campaigns/beyond-the-treeline/CLAUDE.md",
+          "line": 139,
+          "context": "这些**不是**桌规，是年代包本身；见 `reference/rules/eras/dark-ages.md`。"
+        },
+        {
+          "file": "campaigns/beyond-the-treeline/references.md",
+          "line": 11,
+          "context": "`../../reference/rules/eras/dark-ages.md` 使用。**路径 A，书本背书**：数字有出处，"
+        },
+        {
+          "file": "campaigns/beyond-the-treeline/references.md",
+          "line": 18,
+          "context": "年代差集 `eras/dark-ages.md`（先读 `eras/README.md` 的加载顺序，差集不单独读）"
+        },
+        {
+          "file": "campaigns/beyond-the-treeline/references.md",
+          "line": 41,
+          "context": "- **10–11 世纪欧洲的技术与常识水平**（经 `eras/dark-ages.md`「技术与常识水平」一节）："
+        },
+        {
+          "file": "campaigns/beyond-the-treeline/references.md",
+          "line": 45,
+          "context": "- 铁在前工业社会的稀缺性 —— 谷里的铁主要靠从遗迹里剜骨铁重锻，这把 `dark-ages.md` 的武器"
+        },
+        {
+          "file": "campaigns/beyond-the-treeline/world/timeline.md",
+          "line": 13,
+          "context": "的常态,见 `reference/rules/eras/dark-ages.md`)。谷里记年靠一根立在小圣所墙边的刻痕木"
+        },
+        {
+          "file": "campaigns/beyond-the-treeline/world/velga-region.md",
+          "line": 8,
+          "context": "`reference/rules/eras/dark-ages.md`)"
+        },
+        {
+          "file": "campaigns/beyond-the-treeline/world/velga.md",
+          "line": 89,
+          "context": "> **KEEPER ONLY** —— 识纹人机制上照 `dark-ages.md` 的隐士/异教徒或神职人员职业模板套用；"
         }
       ],
-      "reference_count": 2
+      "reference_count": 11
     },
     {
       "file": "eras/end-times.md",
@@ -1043,12 +1098,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 130,
+          "line": 160,
           "context": "(购点制 460 点、快速开桌等)和一张各属性数值含义速查表;`magic.md` 补齐了施法检定、"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 313,
+          "line": 343,
           "context": "- **法术、仪式、魔法书终于有了数值标尺。** 新增 `reference/rules/magic.md`:施法消耗"
         },
         {
@@ -1258,17 +1313,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 132,
+          "line": 162,
           "context": "分档区间也按表XI 约 90 条书目实测重新校准;`monster-scale.md` 新增了规则书第十四章"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 347,
+          "line": 377,
           "context": "`reference/rules/monster-scale.md`:五级强度阶梯(独立种族 → 仆从种族 → 唯一存在 →"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 356,
+          "line": 386,
           "context": "- **挑怪物强度时先看书上的「上级/下级」标签,它比自己估更准。** `monster-scale.md`"
         },
         {
@@ -1523,12 +1578,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 151,
+          "line": 181,
           "context": "- **疯狂发作的时长被写成了定值。** `sanity.md` 原写\"只持续 10 个战斗轮\",实际是"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 168,
+          "line": 198,
           "context": "`chases.md` `sanity.md`)已按《守秘人规则书》第六、七、八章逐节重写,补齐了此前完全"
         },
         {
@@ -1668,12 +1723,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 126,
+          "line": 156,
           "context": "- **其余四份速查表补齐了,和三份主表一样直接对着规则书写。** `skill-checks.md` 现在"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 157,
+          "line": 187,
           "context": "- **对抗检定的平手规则整条是错的。** `skill-checks.md` 原写\"平手比骰值、防守方赢\","
         },
         {

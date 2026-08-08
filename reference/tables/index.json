@@ -19,7 +19,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 72,
+          "line": 102,
           "context": "- **线索来源现在要掷,不许一次全开。** 新表 `reference/tables/clue-engines.md`"
         },
         {
@@ -152,7 +152,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 63,
+          "line": 93,
           "context": "`npc-quirks.md`,但 `core/01-intake.md` 的 auto-fill 实际掷的是 `complications.md`"
         },
         {
@@ -176,6 +176,21 @@
           "context": "- `complications.md`(1d20)——这一场会出什么岔子。intake 时随另外三张一起掷定基调;"
         },
         {
+          "file": "campaigns/beyond-the-treeline/canon-log.md",
+          "line": 98,
+          "context": "- [ ] 「在一个不该被认出来的地方被认了出来」—— 变数伏笔，等一场合适的戏（`complications.md`"
+        },
+        {
+          "file": "campaigns/beyond-the-treeline/CLAUDE.md",
+          "line": 129,
+          "context": ">   `complications.md` **11**（在一个不该被认出来的地方被认了出来，留作伏笔）。原始输出见"
+        },
+        {
+          "file": "campaigns/beyond-the-treeline/overview.md",
+          "line": 61,
+          "context": "- [ ] 「在一个不该被认出来的地方被认了出来」—— `complications.md` 掷 11。已埋两个接口："
+        },
+        {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
           "line": 154,
           "context": "并顺手挪到紧邻它的姊妹表 `npc-appearance.md` 前面。`complications.md` 的条目从"
@@ -186,7 +201,7 @@
           "context": "- [ ] `complications.md` → d50"
         }
       ],
-      "reference_count": 7
+      "reference_count": 10
     },
     {
       "file": "confrontation-grounds.md",
@@ -201,7 +216,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 109,
+          "line": 139,
           "context": "仓库或深夜码头。** 新表 `reference/tables/confrontation-grounds.md`(1d20)给出地形与"
         },
         {
@@ -211,7 +226,7 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 450,
+          "line": 526,
           "context": "P14 阶段 2(种子表口径 bug + locations 接线)+ 阶段 3(`confrontation-grounds.md`)+"
         },
         {
@@ -238,9 +253,14 @@
           "file": "update_plan/2026-08-04-scenario-diversity.md",
           "line": 209,
           "context": "判断依据同 `clue-engines.md` 当初选 d10 的理由。格式沿用 `confrontation-grounds.md`"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 57,
+          "context": "| 1 | **P14** 模组多样性 | ★★☆☆☆ | `scripts/roll.py`(**实测 310 行**,估时写的是 ~200:表解析 + 不放回 + 跨战役查重 + 行数自检,外加计划清单之外追加的 `--check-all` 与 `--spec`)+ 两张新表**实测共 30 条原创条目**(`co"
         }
       ],
-      "reference_count": 8
+      "reference_count": 9
     },
     {
       "file": "cult-goals.md",
@@ -607,7 +627,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 118,
+          "line": 148,
           "context": "到达、结束是什么形态。和 `hooks.md`(为什么是现在)、`mythos-angles.md`(到底是什么)"
         },
         {
@@ -641,6 +661,11 @@
           "context": "> 这一维和 `hooks.md`/`mythos-angles.md` 不是同一件事,可以同时掷、互相组合:"
         },
         {
+          "file": "campaigns/beyond-the-treeline/CLAUDE.md",
+          "line": 127,
+          "context": ">   这里，是因为它原来的地方待不下去了」。配套：`hooks.md` **5**（继承一处不知道存在的房产，"
+        },
+        {
           "file": "campaigns/_template-campaign/CLAUDE.md",
           "line": 111,
           "context": "| <field> | <value> `[auto]` | <rolled hooks.md 14 / inferred from era> |"
@@ -656,7 +681,7 @@
           "context": "\"evidence\": \"Premise centers on Camas Dubh, a storm-locked Skye fishing hamlet bound to a mistranslated century-old rite ('Tàmh na Mara') that unknowingly feeds"
         }
       ],
-      "reference_count": 10
+      "reference_count": 11
     },
     {
       "file": "locations.md",
@@ -670,17 +695,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 92,
+          "line": 122,
           "context": "(1d20)——与 `locations.md`(定整场战役的舞台,掷一次)不同,这张表掷 N 次填一个"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 103,
+          "line": 133,
           "context": "- **场景需要新地点时,现在真的会掷骰了。** `locations.md` 自己写着\"之后场景需要新地点"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 272,
+          "line": 302,
           "context": "**\"默认美国不等于默认阿卡姆\"**——默认给的是国家,镇子照样掷 `locations.md` 再自己造,"
         },
         {
@@ -727,6 +752,11 @@
           "file": "reference/tables/town-institutions.md",
           "line": 4,
           "context": "`locations.md` 掷 1 次定整个战役的舞台;本表掷 **N** 次填清单,N 随镇的规模走——2 区的"
+        },
+        {
+          "file": "campaigns/beyond-the-treeline/CLAUDE.md",
+          "line": 128,
+          "context": ">   附带条件）、`locations.md` **15**（勘测站/灯塔/中继站，两人一组轮班驻守）、"
         },
         {
           "file": "update_plan/2026-08-04-scenario-diversity.md",
@@ -809,7 +839,7 @@
           "context": "\"evidence\": \"Premise centers on Camas Dubh, a storm-locked Skye fishing hamlet bound to a mistranslated century-old rite ('Tàmh na Mara') that unknowingly feeds"
         }
       ],
-      "reference_count": 28
+      "reference_count": 29
     },
     {
       "file": "madness-instant.md",
@@ -820,7 +850,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 176,
+          "line": 206,
           "context": "时判断\"这把枪多危险\"用,不是按品类查数值。`madness.md` 拆成了 `madness-instant.md`"
         },
         {
@@ -870,7 +900,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 177,
+          "line": 207,
           "context": "(即时症状)与 `madness-summary.md`(概括症状)两个文件——同一个文件塞两张同骰面的"
         },
         {
@@ -923,7 +953,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 174,
+          "line": 204,
           "context": "(表IX,100 条)、`manias.md`(表X,100 条)是规则书原表的全量转录,不是精选摘要;"
         },
         {
@@ -998,27 +1028,27 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 54,
+          "line": 84,
           "context": "以前只能被写进去,没有任何流程会读它们。** 现在 `monster-index.md` 新增专门一节收录"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 223,
+          "line": 253,
           "context": "接入了 `reference/tables/monster-index.md` 的 `Serves` 检索——之前这张表能查到怪物,"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 264,
+          "line": 294,
           "context": "文件名、`1D10`/`STR 60` 这类记法保持英文);`monster-index.md` 的表头与说明段随生成"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 363,
+          "line": 393,
           "context": "新增 `reference/tables/monster-index.md`,覆盖怪物图鉴全部 223 个条目 + 现有 9 只"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 377,
+          "line": 407,
           "context": "`reference/tables/monster-index.md` 再动手写,不用翻原文猜。"
         },
         {
@@ -1038,7 +1068,7 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 410,
+          "line": 432,
           "context": "- **`monster-index.md` 与 malleus 转录稿的关系已不再是「对外通道」。** P13 之后所有"
         },
         {
@@ -1270,12 +1300,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 265,
+          "line": 295,
           "context": "脚本一起改中文,`monster-traits.md` 的引言段同。加新表的写法见"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 352,
+          "line": 382,
           "context": "`reference/tables/monster-traits.md`:18 条可挂载的数值词条(再生、分裂、免疫常规"
         },
         {
@@ -1408,7 +1438,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 118,
+          "line": 148,
           "context": "到达、结束是什么形态。和 `hooks.md`(为什么是现在)、`mythos-angles.md`(到底是什么)"
         },
         {
@@ -1447,6 +1477,21 @@
           "context": "> 这一维和 `hooks.md`/`mythos-angles.md` 不是同一件事,可以同时掷、互相组合:"
         },
         {
+          "file": "campaigns/beyond-the-treeline/CLAUDE.md",
+          "line": 126,
+          "context": "> - **The rolled angle:** `mythos-angles.md` 掷 **18** ——「迁徙：某个来自别处的东西之所以在"
+        },
+        {
+          "file": "campaigns/beyond-the-treeline/overview.md",
+          "line": 28,
+          "context": "> 3. **迁徙**（`mythos-angles.md` 掷 18）：某个东西之所以到了这里，是因为它原来的地方待不下"
+        },
+        {
+          "file": "campaigns/beyond-the-treeline/world/velga-region.md",
+          "line": 161,
+          "context": "> `core/07-create-monster.md` 会落定具体形态与升级路径。(角度来源:`mythos-angles.md` 掷"
+        },
+        {
           "file": "campaigns/_template-campaign/CLAUDE.md",
           "line": 93,
           "context": "> - **The rolled angle:** <which `mythos-angles.md` result this came from, if any>"
@@ -1472,7 +1517,7 @@
           "context": "\"evidence\": \"Premise centers on Camas Dubh, a storm-locked Skye fishing hamlet bound to a mistranslated century-old rite ('Tàmh na Mara') that unknowingly feeds"
         }
       ],
-      "reference_count": 13
+      "reference_count": 16
     },
     {
       "file": "npc-appearance.md",
@@ -1517,7 +1562,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 63,
+          "line": 93,
           "context": "`npc-quirks.md`,但 `core/01-intake.md` 的 auto-fill 实际掷的是 `complications.md`"
         },
         {
@@ -1575,7 +1620,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 173,
+          "line": 203,
           "context": "- **恐惧症、躁狂症、武器强度三张新表可以直接掷了。** `reference/tables/phobias.md`"
         },
         {
@@ -1632,7 +1677,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 115,
+          "line": 145,
           "context": "(调查 → 对峙 → 解决)。** 新表 `reference/tables/scenario-shapes.md`(1d10):一夜之间、"
         },
         {
@@ -1642,7 +1687,7 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 451,
+          "line": 527,
           "context": "`update_plan/README.md` 瘦身随 `e40071a` 落地,P14 阶段 4(`scenario-shapes.md`)随"
         },
         {
@@ -1664,9 +1709,14 @@
           "file": "update_plan/README.md",
           "line": 13,
           "context": "| P14 | [scenario-diversity](2026-08-04-scenario-diversity.md) | 模组多样性:`scripts/roll.py` 真伪随机掷骰(不放回 + 跨战役查重)+ 补两张缺表(对抗场面 / 模组形状)+ locations 接到场景级;扩容降为条件执行 | 进行中"
+        },
+        {
+          "file": "update_plan/README.md",
+          "line": 57,
+          "context": "| 1 | **P14** 模组多样性 | ★★☆☆☆ | `scripts/roll.py`(**实测 310 行**,估时写的是 ~200:表解析 + 不放回 + 跨战役查重 + 行数自检,外加计划清单之外追加的 `--check-all` 与 `--spec`)+ 两张新表**实测共 30 条原创条目**(`co"
         }
       ],
-      "reference_count": 7
+      "reference_count": 8
     },
     {
       "file": "town-institutions.md",
@@ -1679,7 +1729,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 91,
+          "line": 121,
           "context": "- **建镇现在有专门的骰表了。** 新增 `reference/tables/town-institutions.md`"
         },
         {
@@ -1787,12 +1837,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 175,
+          "line": 205,
           "context": "`reference/tables/weapons-index.md` 把全部武器按威胁强度重新分了四档,给反派配装备"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 186,
+          "line": 216,
           "context": "它在哪(现在指向 `reference/tables/weapons-index.md`);追逐速查表 2 处让你查\"表III\""
         },
         {

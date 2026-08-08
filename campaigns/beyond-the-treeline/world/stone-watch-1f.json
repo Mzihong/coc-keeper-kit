@@ -1,0 +1,35 @@
+{
+  "title": "石哨 · 一层 基座层",
+  "unit": 46,
+  "rooms": [
+    {"id": "hall", "name": "哨堂", "x": 0, "y": 0, "w": 4, "h": 3,
+      "doors": [
+        {"edge": "left", "pos": 0.45, "width": 0.8},
+        {"edge": "right", "pos": 0.5},
+        {"edge": "bottom", "pos": 0.3}
+      ],
+      "windows": [{"edge": "top", "pos": 0.7}]
+    },
+    {"id": "bunks", "name": "双铺舍", "x": 4, "y": 0, "w": 3, "h": 3,
+      "doors": [{"edge": "bottom", "pos": 0.5}],
+      "windows": [{"edge": "top", "pos": 0.3}]
+    },
+    {"id": "storage", "name": "灶房", "x": 0, "y": 3, "w": 4, "h": 2,
+      "doors": [
+        {"edge": "right", "pos": 0.5},
+        {"edge": "bottom", "pos": 0.7}
+      ]
+    },
+    {"id": "well", "name": "井室", "x": 4, "y": 3, "w": 3, "h": 2}
+  ],
+  "stairs": [
+    {"x": 2.9, "y": 0.3, "w": 0.9, "h": 1.8, "direction": "up", "label": "直洞 · 通往望层"}
+  ],
+  "callouts": [
+    {"x": 1.4, "y": 0.35, "text": "门楣先民纹,谁也认不得"},
+    {"x": 5.6, "y": 0.6, "text": "墙角一小块刻痕断在半路,笔法和满墙其余的不是一路——像是谁刻到一半没再刻下去(见 timeline.md 「The blank eight hundred years」)", "secret": true},
+    {"x": 0.6, "y": 4.5, "text": "刻痕全在后来砌的灰石头上,没一道刻在灰砂石原墙上——凿不动", "secret": true},
+    {"x": 4.5, "y": 4.5, "text": "水位四百年没变过,冬天也不结冰——井壁深处常年渗着细流,没人查过通向哪里", "secret": true}
+  ],
+  "legend": ["哨堂西门 = 唯一正门;灶房南门只通柴垛,常年闩死"]
+}

@@ -21,7 +21,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 418,
+          "line": 448,
           "context": "- 新增 `reference/decks/` 与首份收录件 `busybodies-zh.md`(官方好事者卡组,47 张 NPC 卡)。"
         },
         {
@@ -113,12 +113,17 @@
           "context": "20 条不够用?`reference/decks/miseries-zh.md`(仅本地)是官方 *Miseries* 卡组——干的是同"
         },
         {
+          "file": "campaigns/beyond-the-treeline/references.md",
+          "line": 34,
+          "context": "NPC 的姓名、身世或秘密带进本战役。`decks/` 本轮未取用（`miseries-zh.md` 是后续备课时"
+        },
+        {
           "file": "update_plan/Archived/2026-08-02-antagonist-budget.md",
           "line": 281,
           "context": ">    `reference/decks/index.json`,四份收录件(`busybodies-zh.md`、`miseries-zh.md`、"
         }
       ],
-      "reference_count": 3,
+      "reference_count": 4,
       "cited": true,
       "provenance": {
         "work": "《克苏鲁的呼唤》守秘人卡组 —— 惨事卡组(Call of Cthulhu Keeper Deck: Miseries)",

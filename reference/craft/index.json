@@ -21,17 +21,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 75,
+          "line": 105,
           "context": "每次都收敛成\"查账 + 查地产 + 找目击者\"。邪教的财源仍然是 `cult-design-zh.md` §四"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 287,
+          "line": 317,
           "context": "`dist/bundle.md`,走 ChatGPT 的 KP 连点都点不进去。`reference/craft/cult-design-zh.md`"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 422,
+          "line": 452,
           "context": "- 新增邪教设计方法论 `craft/cult-design-zh.md`,配四张骰表与 `templates/cult.md` 模板。"
         },
         {
@@ -41,7 +41,7 @@
         },
         {
           "file": "WORKLOG.md",
-          "line": 397,
+          "line": 419,
           "context": "**P5 阶段 0 是还债**:`templates/cult.md:42` 与 `reference/craft/cult-design-zh.md:68`"
         },
         {
@@ -190,18 +190,23 @@
           "context": "不许全开。见 `core/04-design-scenario.md` 第 5 步、`reference/craft/cult-design-zh.md`"
         },
         {
+          "file": "campaigns/beyond-the-treeline/references.md",
+          "line": 22,
+          "context": "**`cult-design-zh.md` 刻意未取用**——本战役没有邪教。"
+        },
+        {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 93,
+          "line": 97,
           "context": "reference/craft/cult-design-zh.md:68  → \"与 P5 的 mermaid 势力图工具合流\""
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 103,
+          "line": 107,
           "context": "- [x] `templates/cult.md` 与 `reference/craft/cult-design-zh.md` 两处引用改指向它"
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 114,
+          "line": 118,
           "context": "> `craft/cult-design-zh.md` 两处还债——都在其中)。hash 已于 2026-08-06 回填到本文件头与"
         },
         {
@@ -255,7 +260,7 @@
           "context": "| P16 | [clue-engines](2026-08-04-clue-engines.md) | 线索引擎通用化 + 三线索规则可执行化。新表 `reference/tables/clue-engines.md`(d10,十条线索引擎各带一条别的引擎给不了的结构属性,表头写死\"一次只掷 2–3 条,不许全开\")"
         }
       ],
-      "reference_count": 47
+      "reference_count": 48
     },
     {
       "file": "diagram-conventions-zh.md",
@@ -270,17 +275,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 94,
+          "line": 124,
           "context": "- **没有渲染器时,地图也有格式可依了。** `reference/craft/diagram-conventions-zh.md`"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 226,
+          "line": 256,
           "context": "- **关系图终于有正式画法了。** 新增 `reference/craft/diagram-conventions-zh.md`,covers"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 288,
+          "line": 318,
           "context": "第 11 步有同样的问题。两处现已改指向新的 `craft/diagram-conventions-zh.md`。"
         },
         {
@@ -359,18 +364,23 @@
           "context": "> **为什么单列一步:** `diagram-conventions-zh.md` §四 曾写下「出这张图 + **文字地图卡**」,"
         },
         {
+          "file": "campaigns/beyond-the-treeline/references.md",
+          "line": 21,
+          "context": "`diagram-conventions-zh.md`（区域 mermaid 图与地图的墙/门/窗体例）。"
+        },
+        {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 99,
+          "line": 103,
           "context": "- [x] 新建 `reference/craft/diagram-conventions-zh.md`(87 行,**已进 bundle**):"
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 113,
+          "line": 117,
           "context": "> 阶段 0 的三个文件——`craft/diagram-conventions-zh.md` 新建、`templates/cult.md` 与"
         },
         {
           "file": "update_plan/2026-08-02-low-cost-maps.md",
-          "line": 250,
+          "line": 254,
           "context": "**这也回答了 P10 修订 B 的存废理由。** `diagram-conventions-zh.md` §六 建筑卡已经在"
         },
         {
@@ -469,7 +479,7 @@
           "context": "| P10 | [town-anatomy-from-arkham](2026-08-04-town-anatomy-from-arkham.md) | 阿卡姆城市资料(仅入库不归档,取手法不取文字)→ `reference/craft/town-anatomy-zh.md` 城镇解剖手法稿(四节:区域四维、地点字段体"
         }
       ],
-      "reference_count": 40
+      "reference_count": 41
     },
     {
       "file": "lovecraft-zh.md",
@@ -619,7 +629,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 88,
+          "line": 118,
           "context": "- **造镇现在有专门的手法指南了。** 新增 `reference/craft/town-anatomy-zh.md`,建"
         },
         {
@@ -673,6 +683,11 @@
           "context": "| 收录用途 | P10(`craft/town-anatomy-zh.md` 的源材料)、P5(地图记法参照)。**均为「读它、写自己的」,不作转录来源** |"
         },
         {
+          "file": "campaigns/beyond-the-treeline/references.md",
+          "line": 19,
+          "context": "- Craft: `../../reference/craft/` —— `town-anatomy-zh.md`（韦尔加谷的建镇顺序：§一 分区四维、"
+        },
+        {
           "file": "scripts/render-map.py",
           "line": 14,
           "context": "Markdown, not one file with nested floors — see `reference/craft/town-anatomy-zh.md`-adjacent"
@@ -708,7 +723,7 @@
           "context": "| P10 | [town-anatomy-from-arkham](2026-08-04-town-anatomy-from-arkham.md) | 阿卡姆城市资料(仅入库不归档,取手法不取文字)→ `reference/craft/town-anatomy-zh.md` 城镇解剖手法稿(四节:区域四维、地点字段体"
         }
       ],
-      "reference_count": 18
+      "reference_count": 19
     }
   ]
 }

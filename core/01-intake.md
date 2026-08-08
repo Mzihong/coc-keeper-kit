@@ -180,7 +180,9 @@ stirring. **You must roll**, and the roll must survive into the output.
 - [ ] `campaigns/<slug>/canon-log.md` — copied from the template, empty of sessions
 - [ ] `campaigns/<slug>/overview.md` — the arc at a glance (skip only for a one-shot)
 - [ ] `campaigns/<slug>/references.md` — touchstones, or a stub saying none were given
-- [ ] `campaigns/<slug>/` subfolders: `world/ npcs/ scenes/ puzzles/ handouts/ sessions/`
+- [ ] `campaigns/<slug>/` subfolders: `world/ npcs/ scenes/ puzzles/ handouts/ sessions/
+      investigators/` — each with its README copied from `campaigns/_template-campaign/`,
+      which is where the per-folder conventions (file naming, maps, keeper-only blocks) live
 - [ ] `campaigns/<slug>/investigators/validation.json` — copied from
       `campaigns/_template-campaign/investigators/validation.json` (already carries the
       defaults quoted in question 14), edited to match any overrides the Keeper gave, so
