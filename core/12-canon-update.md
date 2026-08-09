@@ -38,21 +38,37 @@ Your job is to turn that into durable campaign state that every later generation
 - Advance the **current stage** by elapsed in-fiction time.
 - Mark fired triggers with the session number and record the branch that actually resolved.
 - Add any new trigger the session created.
+- **If play is about to reach a doom stage that doesn't exist yet** (the clock defaults to
+  only the first 3 stages — `core/05-event-clock.md` → "Build it" step 2), write the next
+  stage now, before the session that needs it.
 
 **`CLAUDE.md`** (campaign):
 - Update the *Canon so far* keeper block only when something structural changed — a central
   secret is now known, a main antagonist is dead, the premise has shifted.
 - Update the investigator list for deaths, replacements, and SAN state worth remembering.
 
-**`npcs/<name>.md`** — for every NPC the party actually interacted with this session (not
-every NPC mentioned): overwrite that NPC's **current attitude** to reflect where things now
-stand, and append one line to the **interaction history log** (`> **KEEPER ONLY —
-Interaction history**` block in `templates/npc.md`) — facts and relationship changes only, no
-narration; the narration already lives in this session's `canon-log.md` entry, cross-link the
-session number instead of repeating it. **This is a required step, not an optional one** — the
-whole point of the log is that "does this NPC know/trust the party" stays answerable from that
-NPC's own file without rereading the campaign's full canon-log, and it silently rots the first
-time a session update skips it.
+**NPCs the party actually interacted with this session** (not every NPC mentioned) — the
+update differs by tier (`core/06-create-npc.md` → Two tiers), check `npcs/roster.md` for
+which one before writing anything:
+
+- **Card** (`npcs/<name>.md`): overwrite the NPC's **current attitude** to reflect where
+  things now stand, and append one line to the **interaction history log**
+  (`> **KEEPER ONLY — Interaction history**` block in `templates/npc.md`) — facts and
+  relationship changes only, no narration; the narration already lives in this session's
+  `canon-log.md` entry, cross-link the session number instead of repeating it.
+- **Stub** (`npcs/roster.md` row, no file): overwrite that row's **Status** column to reflect
+  where things now stand. There is no file to hold an interaction-history log, so don't try to
+  write one — a stub's history lives in `canon-log.md` like any other session detail. If the
+  interaction met one of `core/06`'s upgrade criteria (a check landed on them, they fought, a
+  real dialogue happened), **upgrade the stub to a card now** — run `core/06-create-npc.md`,
+  delete the roster row, and record the new file's interaction history going forward.
+
+**This is a required step, not an optional one** — the whole point of the log (for cards) and
+the Status column (for stubs) is that "does this NPC know/trust the party" stays answerable
+without rereading the campaign's full canon-log, and it silently rots the first time a session
+update skips it. **Never write an interaction-history block for a name that has no file** —
+`npcs/<name>.md` not existing means the NPC is a stub; writing to a path that doesn't exist is
+the single most common way this step breaks.
 
 **`sessions/<n>-<slug>.md`**:
 - Fill in the template's "After the session" block.
@@ -117,8 +133,10 @@ Offer the obvious next step: *"Prep session `<n+1>`?"* — which runs
 - Every improvised detail the Keeper mentioned is now written down somewhere findable.
 - True-vs-known is separated, not merged.
 - The event clock's current stage is correct and fired triggers are marked.
-- Every NPC who actually interacted with the party this session has an updated attitude and a
-  new interaction-history log line — not just the ones with plot-critical secrets.
+- Every NPC who actually interacted with the party this session has an updated attitude — a
+  new interaction-history log line for a card, an updated Status cell for a stub — not just
+  the ones with plot-critical secrets. No interaction-history block was written for a name
+  that has no file.
 - No existing entry was edited or deleted; contradictions are marked, not resolved silently.
 - A model reading only `canon-log.md` could generate the next session without contradicting
   anything that happened.

@@ -5,6 +5,8 @@ for **usable texture**, not an encyclopedia: enough for the Keeper to improvise 
 
 ## First, orient
 
+- **Preview before you expand** — `core/00-how-to-run.md` → ground rules: a ≤15-line list of
+  what you're about to write, confirmed by the Keeper, before any file goes to disk.
 - Read the campaign's `CLAUDE.md` for **era, tone, output language, and content lines** —
   match them. Read `canon-log.md` if the campaign has been played.
 - If the campaign already declares a **Threat** (category + name), building that faction
@@ -75,6 +77,10 @@ freely to fit the campaign's era and place.
 
 - Save to `campaigns/<slug>/world/<name>.md`. One place/faction per file; `kebab-case.md`
   in English, even when the content is Chinese.
+- **Add a row to `world/README.md`'s routing table** naming when this file needs opening (a
+  scene reaching this place, a faction becoming relevant) — see `core/00-how-to-run.md` →
+  "What to read by default each session". A file with no routing-table row is a file nobody
+  knows when to read, which quietly reverts the whole campaign back to "read all of `world/`."
 - Write the content in the campaign's declared **output language**. Place, street, and
   institution names follow the *setting* — a 简体中文 campaign defaults to an American one
   (`core/01-intake.md`), so write its towns and roads per `reference/glossary-zh.md` →

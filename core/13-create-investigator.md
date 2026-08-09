@@ -6,6 +6,8 @@ The JSON record is the source of truth; the Markdown card is a rendered view for
 
 ## First
 
+- **Preview before you expand** — `core/00-how-to-run.md` → ground rules: a ≤15-line list of
+  what you're about to write, confirmed by the Keeper, before any file goes to disk.
 - Read the campaign `CLAUDE.md` for era, tone, and premise — every surviving backstory hook
   must tie into it; a hook that connects to nothing in the campaign is decoration, not prep.
 - **Don't read `reference/rules/character-creation.md` in isolation.** Follow

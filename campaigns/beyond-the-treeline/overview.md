@@ -33,8 +33,10 @@
 
 ## Recurring cast
 
-建 world 定下了名字与钩子；**完整数值还没做**——`core/06-create-npc.md` 尚未跑。全部落在
-[`world/velga.md`](world/velga.md)，人名锁在 [`canon-log.md`](canon-log.md) → Standing canon。
+建 world 定下了名字与钩子；按两级制（`core/06-create-npc.md` → Two tiers）已全部落成 stub，
+登记在 [`npcs/roster.md`](npcs/roster.md)。**完整数值还没做**——满足升级判据（检定点名 /
+战斗追逐 / 实质对话 / KP 或玩家点名）才开卡。原始描述见 [`world/velga.md`](world/velga.md)，
+人名锁在 [`canon-log.md`](canon-log.md) → Standing canon。
 
 - **图沃** —— 掌契人。手上那份没人来签收的继承契就是整个战役的门。**优先级最高，第一场必出。**
 - **卡蕤** —— 锻坊匠人。炉里那盏不添油、吹不灭的灯，问不出是哪来的。
@@ -75,6 +77,7 @@
   [`inherited-holding.md`](world/inherited-holding.md)（守井宅）
 - **Maps:** `world/stone-watch-1f.svg`、`world/stone-watch-2f.svg` —— **守秘人版，带秘密，
   不要给玩家。** 玩家版（家具层 + `--player`）是需要先报价的单独产物，见 `references.md`
-- **其余：** `npcs/` · `scenes/` · `puzzles/` · `handouts/` · `sessions/` —— 均为空
+- **其余：** `npcs/roster.md` 已有 8 行 stub（5 位在场 + 3 位不在场）；`npcs/*.md` 卡面 ·
+  `scenes/` · `puzzles/` · `handouts/` · `sessions/` —— 均为空
 - **未建：** `world/event-clock.md`（`core/05` 的活，本轮刻意没跑）
 - **Rolls:** `rolls.log`（intake + 建 world 全部掷骰的原始记录，`scripts/roll.py` 自动追加）

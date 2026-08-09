@@ -5,6 +5,8 @@ clue is inside, the solution is not. A good handout is evidence the players get 
 
 ## First
 
+- **Preview before you expand** — `core/00-how-to-run.md` → ground rules: a ≤15-line list of
+  what you're about to write, confirmed by the Keeper, before any file goes to disk.
 - Read the campaign `CLAUDE.md` for **era, locale, and output language** — dates, prices,
   place-names, idiom, and technology must be period-true (a telegram not an email; a shilling
   not a dollar).

@@ -25,8 +25,13 @@ not scenes; they are *changes to the world state* that any later scene must refl
 
 1. **Name the goal.** What is the threat trying to accomplish, concretely, and by when?
    Vague dread has no clock. "Open the gate at the spring tide, eleven days out" has one.
-2. **Write 4–6 doom stages** from now to the goal. Each gets: a stage label, the in-fiction
-   timing, the visible sign, and the keeper-only hidden progress.
+2. **Write doom stages from now to the goal — default to the first 3, not the full 4–6.**
+   Each gets: a stage label, the in-fiction timing, the visible sign, and the keeper-only
+   hidden progress. Building all 4–6 stages up front prepays branches play may never reach.
+   Write stage 4 onward **when play is about to reach it**, not at clock-creation time;
+   `core/12-canon-update.md` is what extends the track as sessions advance. Skip straight to
+   the full 4–6 only when the Keeper says so (`core/00` → "preview, then confirm, then
+   expand").
 3. **Write 6–10 triggers.** Cover, at minimum:
    - the players making the threat aware of them
    - the players killing, arresting, or exposing a key NPC
@@ -93,7 +98,9 @@ archive happened. This step belongs to `core/12-canon-update.md`'s arc-close che
 
 - The threat's goal is concrete and dated. Someone could ask "what day is it and what's
   happened?" and get an answer from this file alone.
-- 4–6 doom stages, each with a visible sign *and* hidden progress.
+- **At least 3 doom stages exist at any time**, each with a visible sign *and* hidden
+  progress; the track grows to the full 4–6 as play approaches the goal, not all at once at
+  creation (see "Build it" step 2) — unless the Keeper asked for the full track up front.
 - 6–10 triggers, each with a fires-branch, a fails-branch, and a concrete world-state change.
 - At least two stages are marked reversible, with what it would take to push them back.
 - Nothing here duplicates a scenario's scene list — this file is world state, not plot.

@@ -17,16 +17,25 @@ To do it by hand instead:
 3. **Build the standing state:** `world/`, then `world/event-clock.md`, then the cast.
 4. **Then generate per session** into `sessions/`, `scenes/`, `npcs/`, `puzzles/`, `handouts/`.
 
-## The three files every generator reads
+## The four files every generator reads
 
 | File | Holds | Updated by |
 |---|---|---|
 | `CLAUDE.md` | Era, language, tone, safety, structural canon | you, at intake |
 | `canon-log.md` | What has actually happened; true vs. player-known | `core/12-canon-update.md`, after each session |
 | `world/event-clock.md` | Where the threat currently stands; fired triggers | `core/05-event-clock.md`, then each session |
+| `npcs/roster.md` | Every named NPC not yet a full card, and their status | `core/06-create-npc.md`, then each session |
 
 Keep these current. Everything downstream — scenarios, NPCs, handouts — is generated against
 them, so a stale canon log produces contradictions at the table.
+
+**Target: these four together stay ≤400 lines.** They're the fixed cost paid on *every* prep
+pass, not just the first — `world/`'s remaining files are read on demand, keyed by
+`world/README.md`'s routing table, not swept in wholesale each session (see
+`core/00-how-to-run.md` → "What to read by default each session"). `canon-log.md` specifically
+means its **Standing canon** section plus the tail of recent sessions, not the full
+session-by-session history once a campaign runs long — read further back only when a specific
+question needs it.
 
 ## Conventions
 

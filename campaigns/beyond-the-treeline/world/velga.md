@@ -285,4 +285,5 @@
 - 谷外地形、石哨、不生原、继承来的宅邸、时间线——分别见（与本文件同批建立，不由本文件维
   护）`world/velga-region.md`、`world/stone-watch.md`、`world/the-barrens.md`、
   `world/inherited-holding.md`、`world/timeline.md`
-- 本文件涉及的 5 位 notable NPC 尚无独立 NPC 文件——完整数值走 `core/06-create-npc.md`
+- 本文件涉及的 5 位 notable NPC 均已落成 stub,见 [`../npcs/roster.md`](../npcs/roster.md)——
+  完整数值走 `core/06-create-npc.md`,满足升级判据再开卡

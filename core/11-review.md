@@ -44,6 +44,26 @@ model's output. Assume the material is wrong until each line checks out.
 - [ ] **At least one non-combat resolution** to the central threat exists.
 - [ ] **No unwinnable state.** Is there any sequence of reasonable player choices that leaves
       the scenario with no path forward? Name it if so.
+- [ ] **A reference to an ungenerated NPC or handout is two different findings — tell them
+      apart before reporting either.** The demand-driven default (`core/00-how-to-run.md` →
+      "preview, then confirm, then expand"; `core/06-create-npc.md` → Two tiers) means most
+      named NPCs are *supposed* to not have a card yet, so "the file doesn't exist" alone is
+      not a finding:
+      1. **Stub, registered — pass.** The name appears as a row in `npcs/roster.md`. Not yet
+         generated is the intended state; don't flag it.
+      2. **Broken link — fail.** The name appears in a scene, clue map, or scenario file but
+         is **absent from `npcs/roster.md` entirely** — no stub, no card. That's not "not yet
+         generated," that's a dangling reference nothing will resolve at the table.
+      Same logic for handouts: a handout named in the clue matrix but absent from
+      `handouts/` — **pass** if it's honestly not built yet and nothing downstream assumed it
+      existed; **fail** only if something (a scene's "if the players…" branch, a puzzle) reads
+      as though the handout is already in hand.
+- [ ] **Three-clue coverage audits the clue *matrix*, not the file count.** All three clues for
+      a must-know fact must be **registered** in the scenario's clue map — but an individual
+      clue is allowed to route through an NPC who's still a stub, or a scene that's still
+      gist-only (`core/09-description.md` → Output). Don't fail a clue for pointing at
+      ungenerated prose; fail it only if it's missing from the matrix altogether or the check
+      above already flagged its source as a broken link.
 
 ### Continuity
 

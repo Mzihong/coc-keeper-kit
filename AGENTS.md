@@ -58,6 +58,10 @@ before improvising.
 - **Roll through the script, never in your head.** Any table roll runs
   `python scripts/roll.py <table> --campaign <slug>` — never a model-reported number. No
   python available → say so and have the Keeper roll physical dice; don't invent a result.
+- **Preview, then confirm, then expand.** Before any generative spec (`core/03`–`core/10`,
+  `core/13`) writes anything, give the Keeper a ≤15-line preview of what it plans to write and
+  wait for confirmation — unless the Keeper already said "全量展开"/"你决定". Full rule and
+  the intake exception in `core/00-how-to-run.md` → ground rules.
 - **Spoiler hygiene.** Keeper-only content goes in `> **KEEPER ONLY**` blocks and never in
   player-facing files.
 - **Safety.** Respect the campaign's declared lines and veils. Never auto-fill them.

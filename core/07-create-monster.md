@@ -5,6 +5,8 @@ live through it. In CoC the monster is usually an obstacle to survive, not a bos
 
 ## First
 
+- **Preview before you expand** — `core/00-how-to-run.md` → ground rules: a ≤15-line list of
+  what you're about to write, confirmed by the Keeper, before any file goes to disk.
 - **Picking WHICH creature, not just how strong** (e.g. "the campaign's boss is Hastur — what's
   a fitting elite guard/servitor?") — read `reference/tables/monster-index.md` first. It covers
   all 223 malleus entries plus this kit's own `reference/bestiary/`, each with a `Serves` field
