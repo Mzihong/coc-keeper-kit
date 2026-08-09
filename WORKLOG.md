@@ -458,67 +458,19 @@ codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-0
 
 ## 会话记录
 
-本节只留**未提交**的工作。上一条(2026-08-08「模板战役对齐 `core/`」)已随 `2075e88`
-提交,按 `core/15-close-session.md` 的 "Prune before you add" 删除——细节 `git show 2075e88`。
-**它留下的三条"顺带发现、本次没改"仍然有效,已原样移到下面的「继承的未处理发现」**;
-原第 3 条(`beyond-the-treeline` 六份子目录 README 是旧版)**已失效**——本次逐份 `diff`
-过,六份与模板完全一致,不必再跟。
+本节只留**未提交**的工作。上两条(2026-08-08「模板战役对齐 `core/`」、「P17 按需生成」)
+已分别随 `2075e88`、`dcc82c2` 提交并归档到
+[`update_plan/Archived/2026-08-08-demand-driven-pipeline.md`](update_plan/Archived/2026-08-08-demand-driven-pipeline.md),
+按 `core/15-close-session.md` 的 "Prune before you add" 删除——细节 `git show dcc82c2` 或
+读归档文件。**P17 会话遗留的"下一步已写进 P18 拍板"那部分留在下面的 P18 条目里,不重复。**
 
-### 2026-08-08 — P17(按需生成)阶段 1–5 与阶段 6 前三项已执行,未提交
+### 2026-08-08 — P18 新计划落盘,阶段 1 待动(未提交)
 
-**做了什么。** 执行 [`update_plan/2026-08-08-demand-driven-pipeline.md`](update_plan/2026-08-08-demand-driven-pipeline.md)
-的全部五个阶段:
-
-1. **预览—确认—展开**:`core/00-how-to-run.md` 新增同级 ground rule(与 "Fair play" 同级),
-   注明预览是过程不是产物、`core/11` 审不了;三份适配器同步;`core/01-intake.md` 补一句说明
-   自己是这条通则的加强特例;`core/03/04/06/07/08/09/10/13` 八处 `## First` 各加一句指路。
-2. **NPC 两级制**:`core/06-create-npc.md` 新增 **Two tiers** 一节(stub 默认 / 成卡按需)+
-   写死四条升级判据;新建 `templates/npc-roster.md`(表本身有模板,stub 没有,按拍板②);
-   `campaigns/_template-campaign/npcs/roster.md` 预置空表;`core/04` 第 7 步、`core/00` 管线表
-   第 4 行、`campaigns/_template-campaign/npcs/README.md` 三处同步。**`core/12-canon-update.md`
-   的硬冲突已修**——interaction history 按等级分流:成卡追自己文件,stub 改花名册状态列,
-   不再可能写到不存在的文件。`beyond-the-treeline/npcs/roster.md` 新建,把 `world/velga.md`
-   名录里已有的五人(图沃/卡蕤/恩珊/佐仑/维珂)与三位不在场者(塔恩/梧岑/凯佛伦)按纯搬运
-   落成 stub;`velga.md`、`overview.md` 两处过时的"完整数值还没做,`core/06` 尚未跑"式表述
-   同步更新为指向新花名册。
-3. **散文默认不落盘**:`core/09-description.md` Mode A 的 Output 改成默认对话内返回,与
-   Mode B 对齐;`templates/scene.md` 的 Read-aloud 允许 `<pending>` 占位,注明要点版才是场景
-   文件的必需部分;`core/04` 第 6 步注明场景网络节点默认只出要点版。
-4. **压每场读取成本**:`campaigns/README.md`「三份文件」改「四份」(加 `npcs/roster.md`,目标
-   ≤400 行);`core/00` 新增「What to read by default each session」小节;
-   `campaigns/_template-campaign/world/README.md` 从"这是什么目录"改成路由表(一行一文件+
-   何时打开);`campaigns/beyond-the-treeline/world/README.md` 照新格式重写(含尚未建立的
-   `event-clock.md`);`core/03` Output 加一句"新建 world 文件要在路由表里补一行";
-   `core/05-event-clock.md` 改默认只建前 3 刻,后续随打随补,`core/12` 补一句"快打到没建的
-   那一刻时先补上"。
-5. **审查适配**:`core/11-review.md` → Blocking 新增一条,区分「roster 里有 stub」(pass)与
-   「哪儿都没登记的断链」(fail),同一逻辑覆盖讲义与场景;三线索规则改口径为"审矩阵完整性,
-   不审文件数"。
-
-**顺带修的一处硬约定违规(自查发现,已改):** 写 `core/05` 时最初提到了 `update_plan/` 的
-P18,违反 `core/00-how-to-run.md` → Conventions 的"不许指向 `update_plan/`"——已改成不点名
-任何计划编号,只描述"时钟是会被引用两次的产物"这一事实本身。
-
-**还没做的(commit 依赖,按 `update_plan/README.md` 完结清单的说明,这两项必然是二次提交):**
-①计划文件头与状态索引表的 `<commit>` 回填;②计划归档进 `Archived/`。CHANGELOG 已并入当天
-既有条目(标题 commit 位暂写 `<待提交>`);根 `README.md` 补了"Generation is demand-driven"
-一节与「Standing state」措辞;`update_plan/README.md` 状态索引表 P17 行已同步成"进行中"。
-**本次没有提交任何改动**——遵照会话准则,提交需要 Keeper 明确要求。
-
-### 2026-08-08 — P17/P18 两份新计划落盘(未提交)
-
-**做了什么。** Keeper 提出两件事,拍板后各立一份计划:
-
-1. **P18 编译模组文本**(先提出)——把战役的拼图整合成"类似官方模组、可读、线性"的
-   文本,体例照 `reference/sourcebooks/keeper-rulebook-7e-zh.md` 第十五章
-   (《古茂密林之中》,**13186–14729 行**)。拍板 **「正文线性、网状收进表」**。
-2. **P17 按需生成**(由第 1 件引出)——Keeper 指出 intake 后不该级联铺完 NPC 与场景,
-   订阅制用户负担太大,角色和场景要"和 KP 商量着一步一步落实"。
-
-新增 `update_plan/2026-08-08-compile-module.md`、
-`update_plan/2026-08-08-demand-driven-pipeline.md`,并更新 `update_plan/README.md`
-(状态索引两行、依赖图 P17 -.-> P18 软依赖、建议执行顺序、复杂度排序两行)。
-**两份都是 `待执行`,尚未动任何 `core/` 文件。**
+**做了什么。** Keeper 提出把战役的拼图整合成"类似官方模组、可读、线性"的文本,体例照
+`reference/sourcebooks/keeper-rulebook-7e-zh.md` 第十五章(《古茂密林之中》,
+**13186–14729 行**)。拍板 **「正文线性、网状收进表」**。新增
+`update_plan/2026-08-08-compile-module.md`,`update_plan/README.md` 已同步(状态索引、
+建议执行顺序、复杂度排序表 P18 行改到当前顺位)。**`待执行`,尚未动任何 `core/` 文件。**
 
 **留下的判断(定案,不要在执行时重新讨论)。**
 
@@ -528,14 +480,6 @@ P18,违反 `core/00-how-to-run.md` → Conventions 的"不许指向 `update_plan
 - **P18 编译时机 = 这一幕跑完之后**(整理稿,不是预言稿);跑之前的备课稿仍归
   `templates/session-prep.md`,两者边界必须各写一句在两份文件里。
 - **P18 源文件权威、单向**,模组文本带 source manifest;不写编译脚本,只可能写漂移检查。
-- **P17 不加预算档位字段**(省/标准/全量三档)——每个 spec 分支三次,维护成本高收益低;
-  只要一条默认「按需」+ 显式逃生阀。
-- **P17 不给 stub 单独模板文件**——stub 的价值就在于它是表里的一行,给它模板等于鼓励开
-  文件。但 `templates/npc-roster.md`(表本身)要做。
-
-**执行时最容易漏的一处(已写进 P17 阶段 2,这里再点一次):** `core/12-canon-update.md`
-与 `npcs/README.md` 现在要求每场给**每个交手过的 NPC 文件**追一行 interaction history,
-而 stub **没有文件**。两级制不同步改这一条,canon 更新就会去写不存在的路径。
 
 ### 继承的未处理发现(自 2075e88 之前的会话,均已复核仍然成立)
 
