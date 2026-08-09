@@ -458,34 +458,14 @@ codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-0
 
 ## 会话记录
 
-本节只留**未提交**的工作。上两条(2026-08-08「模板战役对齐 `core/`」、「P17 按需生成」)
-已分别随 `2075e88`、`dcc82c2` 提交并归档到
-[`update_plan/Archived/2026-08-08-demand-driven-pipeline.md`](update_plan/Archived/2026-08-08-demand-driven-pipeline.md),
-按 `core/15-close-session.md` 的 "Prune before you add" 删除——细节 `git show dcc82c2` 或
-读归档文件。**P17 会话遗留的"下一步已写进 P18 拍板"那部分留在下面的 P18 条目里,不重复。**
-
-### 2026-08-08 — P18 编译模组,阶段 1–3 已执行(未提交)
-
-**做了什么。** 执行 [`update_plan/2026-08-08-compile-module.md`](update_plan/2026-08-08-compile-module.md)
-阶段 1–3:
-
-1. **阶段 1**:新建 `templates/module.md`——11 节骨架照规则书第十五章体例(标题/介绍/背景/
-   近期事件/登场人物简介/时间线/调查员导入/**如何跑这一幕**〔kit 独有,网状线索与场景表收在
-   这里〕/场景章节/结局与奖励/附录),顶部带来源清单 + 编译映射表。
-2. **阶段 2**:新建 `core/16-compile-module.md`——gap report(读 `npcs/roster.md` 状态列)→
-   转写规则(时间线按天改写、数值首次出场内联、讲义统一编号、表/里两层通用化处理不点名具体
-   战役)→ 硬规则"编译不许新造事实"→ 1200 行上限拆 part → 输出到 `campaigns/<slug>/module/`。
-   `templates/module.md`/`templates/session-prep.md` 顶部互相加了一句边界说明(定案③)。
-3. **阶段 3 接线**:`core/00` 管线表加第 9 步(一幕一次、可选)+ 路由表一行;三份适配器同步
-   (`CLAUDE.md` 技能表 / `GEMINI.md`、`AGENTS.md` 路由表各加一行);新建
-   `.claude/skills/compile-module/SKILL.md`;`campaigns/README.md` 补第 5 步 +
-   `campaigns/_template-campaign/module/README.md`;`core/11-review.md` Blocking 新增
-   "`module/` 文件每条事实必须溯源"一项(`n/a` 当审查不涉及 `module/`)。
-
-**还没做的:** 阶段 4(漂移检查脚本,条件执行——先手工编译一份真实模组再决定要不要写)、
-阶段 5(样张验证,**阻塞**——等 `beyond-the-treeline` 第一幕真的存在并跑过)。阶段 6 收尾
-(CHANGELOG/README/WORKLOG/完结清单)留到阶段 5 之后一次性做,不是漏项。
-**本次没有提交任何改动**——提交需要 Keeper 明确要求。
+本节只留**未提交**的工作。前三条(2026-08-08「模板战役对齐 `core/`」、「P17 按需生成」、
+「P18 编译模组阶段 1–3」)已分别随 `2075e88`、`dcc82c2`、`e46bfd8` 提交,按
+`core/15-close-session.md` 的 "Prune before you add" 删除——P17 已归档到
+[`update_plan/Archived/2026-08-08-demand-driven-pipeline.md`](update_plan/Archived/2026-08-08-demand-driven-pipeline.md);
+P18 **计划未完结,仍在** [`update_plan/2026-08-08-compile-module.md`](update_plan/2026-08-08-compile-module.md),
+阶段 1–3 的落地细节看该文件里已勾掉的 `- [ ]` 小节,或 `git show e46bfd8`。**P18 阶段 4
+条件执行、阶段 5 阻塞——都等 `beyond-the-treeline` 真的跑出第一幕才能继续,不是本会话的
+遗漏。**
 
 ### 继承的未处理发现(自 2075e88 之前的会话,均已复核仍然成立)
 
