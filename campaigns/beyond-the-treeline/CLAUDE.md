@@ -1,11 +1,7 @@
 # CLAUDE.md — 树线之外（Beyond the Treeline）
 
 > Every generator reads this file to match your game's voice. 与 `canon-log.md`（实际发生过
-> 什么）、`world/event-clock.md`（威胁走到哪一步）合读。
->
-> ⚠️ **2026-08-08 整份重写，`world/` 六份尚未跟上。** 与本文件冲突的一律以本文件为准，
-> 不要从那些文件里取事实。待改清单与搬出去的世界细节见
-> [`REWRITE-QUEUE.md`](REWRITE-QUEUE.md)（临时文件，改完就删）。
+> 什么）、`world/event-clock.md`（威胁走到哪一步）合读。冲突时本文件永远赢。
 
 ## Premise (one paragraph)
 
@@ -171,11 +167,14 @@
 >
 > **三个刻意留白的问号（交给 `core/05` 与 `core/04`）：**
 > **①** 那样东西现在到哪了、还有多久到（事件钟的主刻度）· **②** 涓滴什么时候不够——谁来挑
-> 第一个交出整份的人，怎么挑 · **③** 外面还有没有别的阵亮着；凯佛伦一队从哪来、怎么知道该
-> 怎么喂（**这条是承重的，不是装饰**，建议的解见 `REWRITE-QUEUE.md` ③）
+> 第一个交出整份的人，怎么挑 · **③** 外面还有没有别的阵亮着，凯佛伦一队从哪来
 >
-> **为什么没人起疑（五层）、谷里为什么走不出去（七层）** —— 细节在 `REWRITE-QUEUE.md` ②，
-> 重写完成后落进 `world/velga.md` 与 `world/velga-region.md`。
+> **两条曾经的问号已经封死，别再当悬念用：**「把它赶出老家的是什么」= **飞天水螅**（因果链
+> 第 ② 环）；「凯佛伦一队怎么知道该怎么喂」= 仪轨靠**做**而不是靠**讲**传下来，肌肉记忆不是
+> 叙述（`world/inherited-holding.md`）。上面那三条才是现在还敞着的。
+>
+> **为什么没人起疑（五层）** 见 `world/velga.md`；**谷里为什么走不出去（七层）** 见
+> `world/velga-region.md`。
 
 ## Sources & inspiration
 

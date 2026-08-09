@@ -27,10 +27,8 @@ to read by default each session"). Everything else below is read **on demand**.
 | File | What it holds | Open it when… |
 |---|---|---|
 | `event-clock.md` | Doom track, trigger table — **not yet built** | Every session, once `core/05-event-clock.md` has run |
-| `velga.md` | 韦尔加谷 — the home base: 谷心/坡上/林缘三片布局、五位 notable NPC 所在 | A scene is set in the village, or the party interacts with a roster stub keyed to a house here (图沃/卡蕤/恩珊/佐仑/维珂) |
-| `velga-region.md` | Geography, travel times between all four places, 沃辛/科瓦两家的排班世仇, 骨铁贸易的三方分账张力, treeline rule (public story + KEEPER ONLY real reason) | A scene involves travel between locations, or either faction tension (排班表 / 贡额分账) becomes live |
-| `stone-watch.md` | 石哨 — the relay-station tower, its two floors, the "must be two people" mechanism, 桑塔/沃尔克两位瞭望员 | The on-duty pair (the investigators, by default) are at or heading to the tower |
-| `stone-watch-1f.json` / `.svg`, `stone-watch-2f.json` / `.svg` | Keeper-facing floor plans for the tower's two levels | Running a scene inside the tower and room layout/sightlines matter |
-| `the-barrens.md` | 不生原 — the ruin field past the tower: 断阵/卧城/新垒/径痕四个区,结构性危险清单 | The party pushes past Stone Watch toward the ruins |
-| `inherited-holding.md` | 守井宅 — the inherited property, its full-moon condition and consequences ladder, the ledger's two mismatched clues | The inheritance hook is engaged, or a full-moon deadline is approaching |
-| `timeline.md` | Watch-Year public chronicle + the KEEPER ONLY hidden timeline (the Collapse, the blank 800 years, Kaivren's team) | A historical or chronology question comes up that the standing canon doesn't already answer |
+| `velga.md` | 韦尔加谷 — the home base: 谷心/坡上/林缘三片布局、教堂、六位 notable NPC 所在 | A scene is set in the village, or the party interacts with a roster stub keyed to a house here (图沃/卡蕤/恩珊/佐仑/维珂/沃尔克·班宁) |
+| `velga-region.md` | Geography, travel times between all three places, 沃辛/科瓦两家的排班世仇, 骨铁贸易的三方分账张力, treeline rule (public story + KEEPER ONLY seven-layer real reason) | A scene involves travel between locations, or either faction tension (排班表 / 贡额分账) becomes live |
+| `inherited-holding.md` | 守井宅 — 法阵锚点：满月条件、POW 代价（涓滴→整份）三级递进 = doom track、造册清单、桑塔·雅罗的引路传统 | The inheritance hook is engaged, a full-moon deadline is approaching, or the on-duty pair are at or heading to the holding |
+| `the-barrens.md` | 不生原 — the ruin field past the holding: 列桩/卧城/新垒/径痕四个区（1999 年小镇废墟），结构性危险清单 | The party pushes past the holding toward the ruins |
+| `timeline.md` | Watch-Year public chronicle + the KEEPER ONLY hidden timeline (1999 Collapse, the blank 800 years, Kaivren's team, the church and the order behind it) | A historical or chronology question comes up that the standing canon doesn't already answer |
