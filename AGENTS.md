@@ -54,6 +54,14 @@ before improvising.
   简体中文, follow `reference/glossary-zh.md` and never mix 繁体.
 - **Continuity.** Read the campaign's `CLAUDE.md` and `canon-log.md` before generating into
   it. Never contradict established canon.
+- **A conflict you find is reported, never resolved on your own.** Two existing files
+  disagreeing about the same fact is the Keeper's call: say where it is, what each side says,
+  which is newer and on what evidence. **A precedence rule is not permission to apply it
+  silently** — the Keeper may decide the authoritative file is the wrong one.
+- **A rewrite gets audited by something repeatable.** Changed three or more files in a
+  campaign, or changed a declared convention? Run
+  `python scripts/check-campaign-consistency.py --campaign <slug>` **and** `core/11-review.md`,
+  and write the result down. A hand-written to-do list is not a substitute.
 - **Fair play.** Three independent clues per must-know fact; no single roll can hard-stop the
   game.
 - **Roll through the script, never in your head.** Any table roll runs

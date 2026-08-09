@@ -54,6 +54,15 @@ the skill, read the spec it names, follow the spec. Never generate from the wrap
   `reference/glossary-zh.md`.
 - **Continuity is not optional.** Read the campaign's `CLAUDE.md` and `canon-log.md` before
   generating into it.
+- **A conflict you find is reported, never resolved on your own.** Two existing files
+  disagreeing about the same fact is the Keeper's call: say where it is, what each side says,
+  and which side is newer with your evidence. **A precedence rule is not permission to apply
+  it silently** — the Keeper may decide the authoritative file is the wrong one. Full rule in
+  `core/00-how-to-run.md` → ground rules.
+- **A rewrite gets audited by something repeatable.** Changed three or more files in a
+  campaign, or changed a declared convention? Run
+  `python scripts/check-campaign-consistency.py --campaign <slug>` **and** `review-material`,
+  and write the result down. A hand-written to-do list is not a substitute.
 - **Roll through the script, never in your head.** Any table roll runs
   `python scripts/roll.py <table> --campaign <slug>` — never a model-reported number. See
   `core/00-how-to-run.md` → ground rules.
