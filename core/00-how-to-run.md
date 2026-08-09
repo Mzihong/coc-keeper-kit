@@ -58,7 +58,8 @@ writing any stat block, difficulty, or Sanity cost.
 | a whole mystery, one-shot, session, arc | `core/04-design-scenario.md` |
 | what happens if the players do nothing; triggers | `core/05-event-clock.md` |
 | a person — ally, witness, villain, contact | `core/06-create-npc.md` |
-| a non-human threat, creature, Mythos entity | `core/07-create-monster.md` |
+| a non-human threat, creature, Mythos entity — **writing one up** | `core/07-create-monster.md` |
+| **picking** one — "what creatures are available", "which monster fits", a creature's official stats | `reference/tables/monster-index.md` — 223 entries, one line each, with a line-number anchor into `reference/sourcebooks/malleus-monstrorum-zh.md`. **Never `ls reference/bestiary/` for this** — that folder holds only what has already been written up (see its README), not the catalogue |
 | a pregen, ready-to-play investigator, elite NPC with full stats | `core/13-create-investigator.md` |
 | a puzzle, cipher, code, lock, riddle | `core/08-create-puzzle.md` |
 | read-aloud / boxed text, atmosphere, a reveal, or an investigator's action narrated | `core/09-description.md` |

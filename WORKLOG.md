@@ -8,14 +8,22 @@
 | 文件 | 写给谁 | 内容 |
 |---|---|---|
 | `CHANGELOG.md` | **Keeper(用户)** | 每次改动后"你现在能做什么" |
-| `WORKLOG.md`(本文件) | **接手的模型/协作者** | 结构在哪、约定是什么、现在卡在哪、上次做了什么 |
+| `WORKLOG.md`(本文件) | **接手的模型/协作者** | 结构在哪、约定是什么、**哪里有坑** |
 | `update_plan/README.md` | 两者 | 计划级状态索引与完结清单 |
 
-> 本文件**手工维护**。改了结构、约定或计划状态就顺手更新这里;它过期比不存在更糟。
+> **本文件手工维护,而且刻意保持短——硬上限 ~180 行。** 它是**活知识**的清单,不是历史档案。
 >
-> **`会话记录`只保留未提交的工作。** 一旦对应改动 commit 落地,那条记录就该删掉——
-> `git log`/`git show` 才是权威历史,不用在这里重复背一份。收尾流程见
-> `core/15-close-session.md`("Prune before you add")。
+> **组织轴:按「接手的人会踩什么坑」分节,不按「我们做过什么」分节。** 没有人带着
+> 「P9 做了什么」这个问题来,他们带着「什么会咬我」来。
+>
+> **三条剪枝规则(第 2、3 条 2026-08-08 补立):**
+> 1. **`会话记录` 只留未提交的工作。** 改动一旦 commit,那条就删——`git log`/`git show` 才是
+>    权威历史。收尾流程见 `core/15-close-session.md`("Prune before you add")。
+> 2. **已归档计划的执行史不留在这里。** P1–P18 怎么做的、当时怎么权衡的,权威在
+>    `update_plan/Archived/<计划文件>` 与 `git log`。本文件只留**还在生效的结论**。
+> 3. **不要照着上一条的样子写,照着本节的规则写。** 这是 2026-08-08 诊断 `CHANGELOG.md`
+>    体例膨胀时找到的病因,本文件得的是同一种病:每个会话在末尾追加自己的执行叙述,从不删,
+>    于是涨到 502 行,然后没人读。同日剪回约 180 行。
 
 ---
 
@@ -27,456 +35,152 @@ CoC 7e 守秘人备课工作台。**所有指令都在 `core/`**,根目录三个
 ## 结构速览
 
 ```
-core/00 … 15        指令本体。00=入口/管线/路由/铁律/布局,02=规则查询(写数前必读)
+core/00 … 16        指令本体。00=入口/管线/路由/铁律/布局,02=规则查询(写数前必读)
                     01 intake · 03 world · 04 scenario · 05 clock · 06 npc · 07 monster
                     08 puzzle · 09 description · 10 handout · 11 review · 12 canon
-                    13 investigator · 14 archive-reference(归档第三方资料)
-                    15 close-session(收尾无计划文件的临时维护会话)
+                    13 investigator · 14 archive-reference · 15 close-session
+                    16 compile-module(一幕演完后编成可读模组)
 CLAUDE/GEMINI/AGENTS.md   三份薄适配器。改行为改 core,不改这三份;但三份必须彼此一致
 .claude/skills/<name>/    Claude Code 技能壳,只有一句"读 core/NN"
 templates/          每种产物的空壳。investigator 是 JSON schema + md 卡面双件
 reference/          跨战役共享
-  ├ rules/          kit 自己写的 7e 速查:**数字**
+  ├ rules/          kit 自己写的 7e 速查:**数字**(含 eras/ 六个年代包)
   ├ craft/          kit 自己写的手法提炼稿:**写法**
   ├ bestiary/ mythos/ tables/   原创可复用素材
   ├ decks/          官方卡组转录(第三方、带引用出处)
   ├ sourcebooks/    官方书籍全文转录(同上,体量更大)
       ↑ 上面五个是 kit 原创,下面两个是第三方转录——通则见 reference/README.md
   ├ index.json      七个目录的反向索引 + 校验(脚本生成,各目录另有一份)
+  ├ _source/        第三方料场(不是归档区,详见下)
   ├ og_Norval/      洛夫克拉夫特全集 82 篇 → 提炼稿 craft/lovecraft-zh.md
   └ glossary-zh.md  中文术语锁,写中文必查(脊梁文件,故意留在根目录)
 campaigns/          一战役一目录,_template-campaign/ 是模板
-update_plan/        P1–P16 改动计划 + 完结清单;README.md 是状态索引
+update_plan/        改动计划 + 完结清单;README.md 是状态索引,Archived/ 是已完结的
 scripts/            render-investigator.py · build-reference-index.py · roll.py · render-map.py
 ```
 
-**没有构建产物,也没有构建步骤。** kit 由能读文件的 agent 就地读取(Claude Code /
-codex / gemini CLI),`dist/bundle.md` 那条单文件上传链路已于 2026-08-04 退役(P13)。
+**没有构建产物,也没有构建步骤。** kit 由能读文件的 agent 就地读取(Claude Code / codex /
+gemini CLI),`dist/bundle.md` 单文件链路已于 2026-08-04 退役(P13)。
 
 ## 硬约定(踩了就是 bug)
 
 1. **改行为改 `core/`,不改根适配器**;但 `CLAUDE.md`/`GEMINI.md`/`AGENTS.md` 三份必须一致,
    只存在于一份里的指令本身就是 bug。
-2. **每次改动在 `CHANGELOG.md` 追加**;同一天合并进同一条,不新开。
+2. **每次改动在 `CHANGELOG.md` 追加**;同一天合并进同一条,不新开。**每条 ≤2 行**
+   (2026-08-08 补的硬上限,见该文件顶部)。
 3. **文件名一律英文 ASCII `kebab-case.md`**,哪怕内容是中文。
 4. **输出语言按战役声明**,kit 脚手架和文件名保持英文;写中文查 `reference/glossary-zh.md`。
-5. **转载规则(2026-08-02 立,2026-08-03 二次放宽,2026-08-06 P12 三次改边界)**:
-   官方资料**可以收录**进 `reference/decks/`、`sourcebooks/`,文件末尾必须有
-   `## 引用出处` 表。**2026-08-06 改动(P12)**:边界从"数值 vs 描述性文字"改成
-   **"规则条文 vs 虚构散文"**——kit 自己的 `reference/` 文件可以引用或转录官方**规则
-   条文本身的措辞**,不再局限于数值(属性行、法术耗费、武器伤害,以及定义险境/判定
-   流程的整句话都可以直接引用),标明是哪本书哪一章(或节)即可;这条不再是"等 P9
-   定案"的过渡期状态,P9 早已完成,现在是永久边界。**进 `campaigns/` 的内容仍然自己
-   写**——这条留下来了,理由是"牌桌"(搬来的 NPC 是别人都知道底牌的人),不是版权。
-   kit 的定位同时写实为:**面向持有正版的 KP、不盈利、不用于传播**。
-   规则本体在 `core/00-how-to-run.md` → ground rules。
-   **⚠️ 放宽只覆盖「规则条文」,不覆盖「虚构内容」。** 改完之后仓库里是三分法,别混:
-   **① 规则条文**(数值、机制、条文措辞)→ 可转录,标出处;
-   **② 虚构散文**(小说、战役文本、`reference/craft/` 的源材料、`external/` 的子模块)
-   → 仍然**取手法不取文字**,`craft/README.md` 与 `reference/README.md` 已写明放宽不适用;
-   **③ 具名角色 + 绑定商业产品**(如 `cultist-archetypes.md` 里那位"卡尔·斯坦福")
-   → 仍不收录。
-   **这条线管的是「能不能搬进 `campaigns/`」,不是「能不能读」**——归档件就在仓库里,
-   spec 可以直接读、直接依赖(2026-08-04 P13 改)。**唯一真正拿不到的是 `.pdf`/`.docx`
-   原件本身**,指向原件的引用仍写成可选;`reference/_source/` 自 2026-08-04 晚起
-   **不再整目录 gitignore**(见下面「`_source/` 的入库边界」一条)。
+5. **转载三分法**——边界是**规则条文 vs 虚构散文**,不是"数值 vs 描述性文字":
+   - **① 规则条文**(数值、机制、条文本身的措辞)→ **可转录**,文件末尾必须有 `## 引用出处`。
+   - **② 虚构散文**(小说、战役文本、`craft/` 源材料、`_source/` 里的设定书)→ **只取手法,
+     永不取文字**。
+   - **③ 具名角色 + 绑定商业产品** → **不收录**。
+   - **这条线管的是「能不能搬进 `campaigns/`」,不是「能不能读」**——归档件就在仓库里,spec
+     可以直接读、直接依赖。进 `campaigns/` 的一律自己写,理由是**牌桌**(搬来的 NPC 是别人
+     都知道底牌的人),不是版权。唯一真正拿不到的是 `.pdf`/`.docx` **原件**。
+   - 规则本体在 `core/00-how-to-run.md` → ground rules。
 
-## 当前状态(最后更新 2026-08-08)
+## 反直觉的约定(想当然会写错)
 
-各计划的权威状态在 `update_plan/README.md` 的状态索引表,**不要在这里读状态**,
-只记几条容易漏的:
+- **`reference/rules/` 全目录是「中文正文 + 英文术语括注」。** 2026-08-06(P12 阶段 2)定的,
+  **推翻了此前"英文正文 + 中文术语括注"的旧惯例**,`eras/` 六个年代包同批改成中文。看到旧
+  提交里的英文正文,别以为那是现行体例。
+- **`reference/bestiary/` 不是怪物目录。** 目录是 `sourcebooks/malleus-monstrorum-zh.md`
+  (223 条 / 10159 行),检索层是 `tables/monster-index.md`(274 行,每条带行号锚点)。
+  bestiary/ 只放**已经写过揭示文与公平出路**的 17 条 + 无处安放的原创生物。
+  **`ls reference/bestiary/` 当可用怪物清单是已观测到的真实翻车**(2026-08-08),
+  已在 `core/00` 路由表与 `reference/README.md` 两处写死指路。
+- **神格级(L5)条目住在 `reference/mythos/great-old-ones/`,不在 `bestiary/`。** 现有 6 份。
+- **`reference/_source/` 是料场,不是归档区。** 没走 `core/14`、没有各自的 `## 引用出处`、
+  不进反向索引(`build-reference-index.py` 的 `ARCHIVE_DIRS`/`ORIGINAL_DIRS` 都不含它)。
+  入库边界:**原件(`.pdf`/`.docx`)不入库,转出的 `.md` 与抽出的图入库**——理由是 fresh
+  clone 出来的 kit 不能是残的。**拿得到 ≠ 可以抄**,里面多数是三分法第 ② 类。
+- **`keeper-rulebook-7e-zh.md` 已退出查询链路,但仍在版本库里。** 查规则去 `reference/rules/*`
+  速查表;规则书只用来对账(P12 阶段 1)。
 
-- **P1/P2/P3/P4/P6 均已归档**(P1 的阶段 0-2 与阶段 3 收尾两份计划都已进 `Archived/`)。
-  2026-08-02 那批 16 个 commit(P1-P4 相关全部内容)与 2026-08-03 的收尾 commit
-  均已提交,`git status` 干净。**不存在"待提交"的改动**——下一个会话不用再找
-  scratchpad 或未提交的工作区改动。
-- **P1 第四章的两个硬前置(P4、P7)现在都已解除,且 P7 本身也已完成**——新增
-  `reference/rules/magic.md`,`core/02`/`core/07`/`reference/mythos/README.md` 已接线。
-  P1 阶段 0-2 与阶段 3 收尾均已归档,该计划全部完结。
-- **`reference/sourcebooks/keeper-rulebook-7e-zh.md`(规则书全文重译,17470 行)已确认
-  可读**——P7 落盘时发现它比 grand-grimoire 更权威地给出了魔法书研读机制(CMI/CMF/MR
-  三值、泛读/精读两阶段、重复精读耗时翻倍),`magic.md` 的魔法书章节改成从这份规则书
-  抽样 20+ 本典籍算出的真实区间,而不是估算。之前"当前状态"没点名这份文件,接手时
-  别漏看。
-- **P8 投资者卡渲染缺口也已完成**——`scripts/render-investigator.py`/`templates/investigator.md`
-  补全全部缺失字段,加了硬性算术+阈值型双层自校验;`core/13`/`character-creation.md`/
-  `core/01`(新增问题 14)已接线。**P1–P8 现已全部完成并归档**。
-- **P9(怪物强度标尺 + 索引层 + 神格铺设)三阶段已全部完成并归档(2026-08-04)**,
-  见 `update_plan/Archived/README.md` 对应条目;计划文件本体在
-  `update_plan/Archived/2026-08-02-monster-templates-traits.md`。
-  - **阶段 A**(标尺与词条,2026-08-03):`reference/rules/monster-scale.md` + 五级强度阶梯 +
-    `reference/tables/monster-traits.md` 的 18 条数值词条,`core/07` 的 X 已回填。
-  - **阶段 B**(索引层,2026-08-03):扩了 `scripts/build-reference-index.py`,新增
-    `parse_malleus_entries()`(从转录稿抽取全部 223 条的名称/tier/SAN/锚点)+
-    `build_monster_index()`(合并 `reference/tables/monster-index-data.json` 里人写的
-    223 条 `Serves`/摘要,再被匹配到的 `reference/bestiary/*.md` 条目覆盖),生成
-    `reference/tables/monster-index.md`。校验和缺引用出处同级——
-    `Serves`/摘要留空就报错。现有 9 只 bestiary 条目已按新标尺重标,`cthulhu.md`
-    补了反向的眷族/仆从小节,`core/07`/`core/04` 已接线检索入口。
-  - **阶段 C**(神格铺设,2026-08-04):新增 5 个神格页(`reference/mythos/great-old-ones/`
-    下的 `dagon-and-hydra.md`/`hastur.md`/`nyarlathotep.md`/`shub-niggurath.md`/
-    `yog-sothoth.md`,体例照 `cthulhu.md`,均含「眷族与仆从」反链)+ 7 个新眷族/化身
-    bestiary 条目(`deep-one.md`/`byakhee.md`/`spawn-of-hastur.md`/`hunting-horrors.md`/
-    `black-pharaoh.md`/`dark-young.md`/`sons-of-yog-sothoth.md`)。执行时用 5 个并行
-    subagent 分神格研究转录稿并起草——落地时发现并修正了 `mi_match_bestiary`
-    (`build-reference-index.py`)的一处匹配盲区:算法要求英文标题里有 2 个以上 4 字母+
-    单词才判定匹配转录稿原行,`Byakhee`/`Deep One` 这类短标题因此覆盖不到自己的转录稿行,
-    曾在 `monster-index.md` 里产生重复行(同一生物一行来自转录稿脚手架、一行来自新写的
-    bestiary 条目)。修法是把这两个文件的标题改成书本原名的完整形式(`Byakhee, the
-    Star-Steeds` / `Deep One, Gilled Humanoid`)绕开阈值,没有改动共享的匹配算法本身——
-    若以后再遇到同类短名字(如未来给"修格斯"单独立档),同一手法可以复用,也可以考虑
-    把算法的阈值本身放宽,但那需要针对全部 223 条重新跑一遍回归检查,本轮范围内没做。
-- **P13(bundle 退役)已完成并归档(2026-08-04)。** 这条改的是 kit 的分发形态,接手时
-  必须知道三件事:①**没有构建步骤了**——`scripts/build-bundle.sh` 与 `dist/` 已删,
-  `.gitignore` 的 `/dist/` 一行也删了;②**硬约定重新编号**,旧 2(什么进 bundle)与
-  旧 7(归档件不进 bundle)整条删除,原 3–6 上移成 2–5,**按号引用时先数一遍**;
-  ③**归档件可以被 spec 直接依赖了**——全仓 10 处 `if present locally` / `local only`
-  已回收,现在仍写成可选的只有指向 `.pdf`/`.docx` **原件**的引用。
-  计划文件与执行记录在 `update_plan/Archived/2026-08-04-retire-bundle.md`。
-  ~~**一处留给 P12 的坑**:P12 阶段 1.2 要 `git rm --cached` 规则书,那之后
-  `keeper-rulebook-7e-zh.md` 又变成本地若有~~ —— **这个坑 2026-08-04 晚随 P12 已定案 ②
-  被撤回而消失**:规则书不再脱离跟踪,没有任何 hedge 需要加回去。
-- **P12(速查表自足化)阶段 1.0–1.2 已于 2026-08-06 落地(接手时须知)**:
-  `keeper-rulebook-7e-zh.md` 已**退出查询链路,但仍在版本库里**——`core/02-rules-reference.md`
-  不再说它是"最后一句话",改成"本地若有可对账,不是拿来读的";`reference/rules/*`、
-  `reference/tables/*` 现在直接对着它写,每节标行号锚点方便本地核对。仓库里指它查具体规则的
-  8 处引用(`magic.md`、`artifacts-zh.md`、`call-father-dagon-and-mother-hydra.md`、
-  `cultist-archetypes.md`、`sourcebooks/README.md` 等)已改指对应速查表。**转载规则的边界
-  同时改了**:从「数值 vs 描述性文字」改成「规则条文 vs 虚构散文」——规则条文(含条文
-  本身的措辞)可直接引用/转录,虚构散文仍然只取手法不取文字,`core/00-how-to-run.md`
-  → ground rules 与三份适配器已同步。
-- **P12 阶段 2(其余四份速查表)已于 2026-08-06 完成,接手时须知三件事**:
-  ①`skill-checks.md`/`character-creation.md`/`magic.md`/`monster-scale.md` 四份现在都
-  对着规则书第三/四/五/九/十一/十二/十四章逐节核过,不再是阶段 1 之前那种"部分内容
-  未核"的状态;`character-creation.md` 的技能基础值表逐条核对第四章原文全部通过,新增
-  了官方六套替代建卡法;`magic.md` 补了施法检定/孤注一掷失败代价表/成为相信者/深层
-  魔法这几块此前完全没有的机制;`monster-scale.md` 新增了第十四章的通用怪物框架(体格
-  比较表、怪物战斗与战技规则、不死的神格、人类打得过哪些神话生物),原有的五级阶梯
-  (抽样自 malleus)不变。
-  ②**语言体例统一成中文正文**——这四份此前是英文正文(kit 其余脚手架的既有惯例),
-  现在按阶段 1 定的新体例(中文正文 + 英文术语括注)改写,`reference/rules/` 全目录
-  现在体例一致,不再是"三份中文、四份英文"的混搭。**这条连带改了 `character-
-  creation.md`**——它是 P11 六个年代包的 1920s 基准本,换语言前先扫过 `eras/` 六份
-  差集确认没有硬编码的英文小节标题依赖(五节体例本身是通用的,不受基准本语言影响),
-  `eras/` 六份年代包与其 `README.md` 同批翻译成中文,保持整个目录体例一致。
-  ③**`character-creation.md` 内部小节编号改动时刻意避开了 §11**——新增的"创建调查员
-  其它方法"一节没有插在中间,而是追加成新的 §12,因为 `core/`(`06-create-npc.md`、
-  `07-create-monster.md`、`11-review.md`、`02-rules-reference.md`、`01-intake.md`)、
-  `campaigns/_template-campaign/CLAUDE.md`、`reference/tables/cultist-archetypes.md`、
-  `reference/tables/weapons-index.md`、`reference/rules/monster-scale.md` 等多处活文件
-  都硬编码引用着"`character-creation.md` §11 = 人类反派基线"——插在中间会让这些引用
-  全部指错地方。**以后再动这份文件的小节顺序,先 grep 一遍 `character-creation\.md.*§`
-  确认没有撞车,再动手**,这个坑本身也值得记一笔。
-- **2026-08-04 当时活动计划是三条:P5 + 新立的 P10、P11。**(P11 已于 2026-08-05
-  完成并归档,见上面单独一条;这里保留是当天决策背景。)P10 = 阿卡姆资料提炼成
-  `craft/town-anatomy-zh.md` 城镇解剖手法稿;**P11 = 年代开放**——目标是「KP 报哪个年代
-  都能开团」这项能力,不是预挑几个年代建包:`reference/rules/eras/<era>.md` 只写与
-  1920s 基准的差集(书里覆盖的全建)、战役声明式加载,**外加书里没覆盖的年代按差集写法
-  现场推导的兜底路径**(路径 B,`core/01` 要当场告诉 KP 走的是哪条)。
-  两份都**不是**"把资料原样收进来":P10 的源材料是虚构内容,受硬约定 5 的三分法 ②③ 管,
-  只能取手法;P11 的源材料是规则内容,可转录标出处。**两个计划的阶段 0 都是"转换+勘察",
-  不需要 Keeper 拍板就能动。**
-- **P10 阶段 0 已完成(2026-08-04,13821ac),复杂度降到三条计划里最低。** docx 已转
-  `reference/_source/arkham-zh.md`(同日晚入库时由 `阿卡姆.md` 改名);勘察结论
-  (章节行号表、地点条目字段体例、门牌编号法则、
-  文末 299 条 11 分类的反查名录)写进了计划的「勘察结果」一节。两条对接手会话有用的结论:
-  **一是决定不切分**——该文档标题体系规整(`## <编号>` 首位即区号),按行号跳读比切文件
-  便宜,`keeper-rulebook-7e-zh.md` 那笔"单文件只能 grep"的教训不适用;
-  **二是提炼 §一只需读 9 段区导言,不必碰 300 个地点条目**——条目里具名 NPC 密度高,
-  顺着通读必然漏进提炼稿。
-- **P10 三个拍板问题同日全部定案,该计划现在零阻塞。** ①**全文不归档**——这条不是取舍,
-  是 `core/00` 硬约定已经答了:2026-08-03 的转载放宽**只覆盖规则内容**,已出版的虚构内容
-  仍归"取手法永不取文字";`sourcebooks/` 现有三份全是规则内容;
-  别拿 `craft/lovecraft-zh.md` 当先例——`og_Norval/` 能全文入库是因为**洛夫克拉夫特是公版**,
-  阿卡姆是 Chaosium 商业设定书。②**d20 机构表做**,单独立 `tables/town-institutions.md`。
-  ③**文字地图卡 3 张,内容全部原创小镇**(镇级 2 张形状迥异 + 建筑级 1 张)。
-  Keeper 对③提了「想规范化但不想定太死」,答法记在计划备忘:**地图卡不是多样性的来源**,
-  多样性由掷骰产生,卡只是记法;风险不在"有没有格式"而在"格式里混进了内容"。
-- **P10 同日又做了一次整份复评,拍板结论全部维持,执行层改了六处**(逐条见计划文末
-  「复评记录」表)。接手时只需记三条改变了动作的:①**地图卡不新建文件**,格式扩进
-  `reference/craft/diagram-conventions-zh.md` 当 **§六**——那份文件 §四 第 69 行已经在
-  引用一个从未定义过的「文字地图卡」,§六 落地即还清,同时要改 §五 表格那行,
-  否则建筑卡与该文件第 10 行的范围声明冲突;②**d20 机构表只收世俗 9 类**,神话典籍 33 +
-  恐怖生物 5 那 38 条(12.7%)不是"镇上有什么"而是"藏在镇里的东西",混进同一张表会违反
-  `core/03` 的 "Ordinary first, then the crack",这 12.7% 改去当提炼稿 §三 的料;
-  ③**阶段 1 前面多了个 1.0 采料步**——9 段区导言其实还没读(阶段 0 明写"未通读全文"),
-  且原 §三/§四 是在重复 `core/03` 已有的 Layered secrets 与 3–5 notable NPCs,已换定义。
-- **新硬约定(2026-08-04,由上面那处悬空引用倒逼出来):`reference/craft/README.md`
-  「写一份新的」第 5 步「术语自足」**——写 `craft/` 下的新文件时,**每个加粗术语落盘前
-  确认仓库里有定义**,没有就当场定义或删掉那句,**不许指向 `update_plan/`**(计划完结后
-  会移进 `Archived/`,链接当场就烂)。两类条目都管。**为什么需要它:`build-reference-index.py` 与完结清单查的都是
-  文件级引用与孤儿,一个没有路径的裸名词对两者都不可见**,踩了照样报 no problems。
-- **P11(年代开放)已全部完成并归档(13821ac 阶段 0–2 + 2026-08-05 阶段 2b/3,
-  3f937f6)**,见 `update_plan/Archived/README.md`。年代开放从计划变成了实际能用的
-  六个年代包,加上 Era 字段的解析算法(未声明/`1920s` → 基准;匹配 `eras/README.md`
-  索引 → 路径 A;不匹配但 `campaigns/<slug>/rules-era.md` 存在 → 路径 B;都不是 →
-  路径 C)——**这份算法权威在 `core/02-rules-reference.md`,不在 `eras/README.md`**,
-  后者与 `_template-campaign/CLAUDE.md` 只复述,这一条同时解掉了 P15 问题 7(路径 C
-  无合法值、A/B 的 slug-vs-路径不一致)。`core/13` 不再绕过加载顺序,busybodies 卡组
-  非 1920s 限定已加,`core/11` 有了年代串味审查项。踩过一次坑值得记一笔:年代文件初稿
-  写成了纯中文正文,后来对照 `character-creation.md`/`magic.md` 才发现 kit 的既有惯例
-  是**英文正文 + 中文术语括注**,纯中文正文违反"kit 脚手架保持英文"——已重写六份,
-  接手后续年代相关改动时留意这条,别重蹈同一个错。
-- **P14 于 2026-08-04 换过一次方向,文件名也换了**:原
-  `2026-08-04-tables-d20-to-d100.md`(随机表 d20 → d100,约 390 条)已整份重写为
-  [`2026-08-04-scenario-diversity.md`](update_plan/2026-08-04-scenario-diversity.md)。
-  **推翻理由是原前提不成立**:四张种子表已是 20⁴ = 16 万种组合,"空间被 20 条封顶"是假的;
-  它真正想治的"摸熟"是**采样问题**——模型口头报点数不均匀。Keeper 因此追加一条硬要求:
-  **掷骰必须走 `scripts/roll.py`,不许模型自己决定点数**。新方案 = 脚本(不放回 + 跨战役
-  查重 + 表行数自检)+ 两张缺表(对抗场面 / 模组形状)+ `locations` 接到场景级,扩容降为
-  条件执行。**副作用:`tables/README.md`「宁可 20 条具体的」那句约定不再需要推翻,原样保留。**
-  接手时注意本条记的是**方向**,`update_plan/README.md` 才是状态权威。
-- **P14 阶段 1(`scripts/roll.py` 本体 + 硬约定接线)已于 2026-08-05 随 148bb91 落地**。
-  两处偏离计划字面描述,接手时留意:①不放回/`--fresh` 用集合差实现,不是计划原文写的
-  "重掷循环"——效果等价,池子精确报告耗尽而不是假装重试 20 次;②在计划清单之外加了
-  `--check-all`(全表自检,不掷骰)和 `--spec`(标注哪个 spec 在掷)两个参数。想看当时
-  怎么想的,`git show 148bb91` 或翻 `scripts/roll.py` 的文件头注释。
-- **P14 阶段 2(种子表口径 bug + locations 接到场景级)与阶段 3(新表
-  `reference/tables/confrontation-grounds.md`,对抗场面)已于 2026-08-07 随 `e40071a`
-  落地并提交。** 阶段 3 格式仿照 `clue-engines.md` 的多列结构(场地│地形与限制│场上能用
-  的│结束于),不是单格长句——`roll.py` 的表格解析支持任意列数按 `— ` 拼接输出;已接线
-  `core/04` 第 6/7 步与 `core/09-description.md`。自检:20 条里 2 条假设工业化年代,0 条
-  挑国家。
-- **P14 阶段 4(新表 `reference/tables/scenario-shapes.md`,模组形状)已于 2026-08-07
-  随 `c80530f` 落地并提交。** 试水的 5 条直接取自计划诊断②里 Keeper 原话点过的例子
-  (一夜之间/通信往来/围城/旅途/倒计时仪式/追缉一人,选五个),核对与
-  `hooks.md`/`mythos-angles.md` 不重叠后通过,补满到 10 条,定 **1d10** 不是 d20(模组
-  形状比场景选材更宏观,10 个互斥的形状比硬凑 20 个更站得住)。接线到 `core/04`
-  「Build in this order」第一步之前。**P14 阶段 1–4 现已全部完成并提交**,剩条件执行的
-  扩容(阶段 5,判据是先跑一场真战役再看不放回是否接近掷空)与收尾(阶段 6)未做,
-  两者都不阻塞计划完结之外的任何事。
-- **P15(`core/` 复查勘误)已于 2026-08-07 全部完成并提交(阶段 0 `11f90b0`,阶段 1-3
-  `86f1335`),归档见 `update_plan/Archived/2026-08-04-core-spec-audit.md`。** Keeper 拍板
-  两个待定点:神格页读路径**两者都做**(扩 `monster-index.md` + 四处直接读路径),L5
-  模板**新建** `templates/great-old-one.md`。`build_monster_index()` 新增
-  `parse_great_old_one_pages()`——Cthulhu/Nyarlathotep/Yog-Sothoth/Shub-Niggurath 在
-  malleus 转录稿里要么是旧式散文格式、要么根本没有战斗数值,原解析器读不出来,新表直接
-  从六份神格页的 `Index summary` 字段生成一节「神格详注」。`core/11` 补了两条镜像审查项
-  (puzzle 提示阶梯、event clock 双分支)并把入边审查从"至少一个场景"升级成"每个必达
-  场景 ≥3 条入边"。阶段 3 的六项制度动作(完结清单加反向扫描第 8 项、`update_plan/`
-  引用禁令作用域扩到 `core/`+`templates/`+`reference/`、孤儿检查区分条目/目录孤儿、
-  `core/14`→`core/15` 补原创内容接线要求、`core/15` 加 First/Output/Quality bar 三处对齐
-  步骤、`render-investigator.py --strict` 只让 errors 中止)全部落地。**顺带修了一处同类
-  死链**:`scripts/build-reference-index.py` 两处指着 P9 计划文件的旧路径(该文件已归档到
-  `Archived/`),已改成点名 `Archived/` 下的实际路径。**未处理的同类发现**:扫描时还看到
-  `reference/rules/character-creation.md`、`reference/sourcebooks/keeper-rulebook-7e-zh.md`、
-  `reference/sourcebooks/grand-grimoire-zh.md`、`reference/bestiary/README.md` 各一处
-  同样指着已归档计划的旧路径,不在本计划范围内,留给下一个计划处理。
-- **P16(线索引擎 + 三线索检验)已于 2026-08-07 全部完成并提交(`86f1335`),归档见
-  `update_plan/Archived/2026-08-04-clue-engines.md`。**
-  新表 `reference/tables/clue-engines.md`(d10,十条各带一条别的引擎给不了的结构属性,
-  表头写死"一次只掷 2–3 条,不许全开")已接 `roll.py` 并通过 `--check-all` 自检;
-  `cult-power-sources.md` 与它双向互指(造物→工艺与制造、受赐力量→身体代价默认通电)。
-  `cult-design-zh.md` §四 改口径为"财源是十台里写得最细的一台",§五 的"平淡才合理"
-  指回引擎 7(制度摩擦,**不是**原计划草稿设想的引擎 8/10——阶段 0 查重后更正)。
-  `core/04` 第 5 步加六条检验(表格形式,压到 22 行,守住判据 B 的 25 行阈值);
-  `templates/scenario.md` 的线索地图表改成"一条线索一行"以容纳新增的门槛类型/保质期
-  两列,而不是把原表撑成 9 列宽表。`core/05` 加了"卡关够久→反派动手,那个动作本身是
-  线索"的 trigger;`core/11` 的三线索审查换成三项追溯(正向查幽灵线索、今夜察觉测试查
-  独立性、保质期查易腐)。`core/11` 三方撞车(本计划阶段 4 / P11 阶段 3 / P15 阶段 2)
-  按 P11→P15→P16 顺序做完,无冲突。详见 `update_plan/Archived/2026-08-04-clue-engines.md`。
-- **P10(城镇解剖手法稿)已于 2026-08-07 全部完成并提交,归档见
-  `update_plan/Archived/2026-08-04-town-anatomy-from-arkham.md`。**
-  新增 `reference/craft/town-anatomy-zh.md`(92 行,四节:§一 城镇部件清单——地势/建筑
-  年代与样式/族裔与阶层/经济角色四维,从 9 段区导言实读出的公约数,非凭空设计;§二 地点
-  条目字段体例含门牌编号法则;§三 神话层怎么不留标记地混进世俗名录——禁书类条目挂靠在
-  私宅书房、大学/公共图书馆、旧书店、公寓房客私藏、神秘学社团这些**完全世俗的地点类型**
-  上,反查索引也不给它们单独归类,是可执行的写法约束不是态度;§四 地点密度分三档,实测
-  103/104/116 所在区段 25 条样本比例约 4:13:8,NPC 集中在密度最高的一档,不是均匀撒的)。
-  `core/03-build-world.md` 的 town/locale 路径接线两处(读提炼稿哪几节 + 建镇时掷
-  `town-institutions.md`,后者的调用**不并入** "First, orient" 的首次建世界掷骰行,
-  是每次建镇都掷的独立指令)。
-  新增 `reference/tables/town-institutions.md`(1d20,原创抽象,名字全部自拟):
-  勘察阶段发现反查名录里「各行各业与专业人员」163 条占世俗层六成,分类学本身免费但这
-  163 条要重新子分类才有用——已拆成 12 个互不重叠的行当(法律文书/医疗心理/治安阴影/
-  学术文墨/传统匠人/店铺经纪/技术建筑/艺文表演/另类边缘知识/公职行政/日常服务/运输
-  劳力),占表的 1–12 行;其余八个世俗机构类别(餐饮娱乐/旅馆公寓/教堂/俱乐部与组织/
-  工厂与商业设施/杂项/殡葬墓地/医疗机构)各占一行,13–20。**神话典籍与恐怖生物两类
-  (38 条/12.7%)被剔除在外**——那是「藏在镇里的东西」不是「镇上有什么」,混进同一张表
-  会违反 `core/03` 的 "Ordinary first, then the crack"。落地时直接写成
-  `python scripts/roll.py town-institutions ...` 最终措辞并通过 `--check-all` 自检,
-  没有给 `P14` 阶段 1.2 留下待补的掷骰点措辞。
-  `reference/craft/diagram-conventions-zh.md` 新增 §六 文字地图卡(无渲染器环境的兜底
-  格式,跑不了 `scripts/render-map.py` 时用),3 个原创样例:4 区海港镇「黑鸥湾」+ 2 区
-  矿村「铁哨谷」(故意做成不同规模,防止被当模板抄)+ 建筑级「县立档案馆」(房间/连通/
-  出入口)。顺带还清该文件 §四 第 69 行一处从未被定义过的裸名词「文字地图卡」(与 P5
-  阶段 0 还的是同一类债),并改 §五 表格行避免建筑卡与「建筑内部布局不归本文件管」那句
-  范围声明冲突。**P5 阶段 3(降级路径)2026-08-07 已拍板砍掉不做**(见下一条),
-  §六 因此不再有"P5 阶段 3 待读"这层期待,现在就是最终态,不必再跨计划指路。**
-- **P5 阶段 1(功能一:场景定位图 A 档)与阶段 3 的取舍已于 2026-08-07 一并定案,
-  `090cd3c`,详情见 `update_plan/2026-08-02-low-cost-maps.md`(阶段 2/2b 已于
-  2026-08-08 落地,见下一条;计划仍未整份归档,唯一留白是需要真实生成才能测的
-  token 成本回填)。**
-  **阶段 3 拍板结果:砍掉,不做。** 理由是 `core/00-how-to-run.md` 现在写死"kit 由有
-  文件系统的 agent 就地读……没有构建步骤,也没有单文件导出"(P13 退役 bundle 后的措辞),
-  全文再没有任何地方提"ChatGPT 网页链路"——那个使用场景已经不存在。这同时回答了 P10
-  修订 B 的存废理由:`diagram-conventions-zh.md` §六 建筑卡不追溯撤销(它现在是"跑不了
-  `render-map.py` 时的通用兜底格式",不依赖 ChatGPT 链路是否存在),但不必再为它扩展内容。
-  **阶段 1 落地:** 新增 `scripts/render-map.py`(stdlib、纯确定性,同一份 DSL 渲染两次
-  输出字节完全一致)。DSL 定型为「房间数组 `{id,name,x,y,w,h,doors[],windows[]}`,门窗按
-  `edge`(top/right/bottom/left)+ `pos`(0–1 分数)定位,不用绝对坐标」——共享墙靠两个
-  房间的边**端点完全重合**去重(不是邻近匹配),重合则判定内墙(细线),否则外墙(粗线),
-  这条约束写进了脚本文档字符串,模型写 DSL 时要让相邻房间的墙边完全对齐。门画成 "∧" 折线
-  楔子(3 点 polyline,不是 SVG 弧线);窗是外墙外侧的短虚线段;楼梯是矩形 + 等距斜线阴影
-  + 方向箭头;圆形房间(塔楼)直接画 `<circle>`,不接入矩形墙体系统;引线标注(`callouts`)
-  支持 `secret` 字段(斜体渲染),但**阶段 1 不做过滤**——`--player` 开关是阶段 2 的活。
-  **验证方式:** 原定用已删除的 `beidaihe-winter` 战役样本,Keeper 拍板改成临时 scratchpad
-  (100% 原创两层楼样本「灰烬庄园」,验证完即弃、不入库、不进 `campaigns/`)。模型没有
-  可视化能力,验收分两层:逐元素核对渲染出的 SVG 坐标与预期几何是否吻合(墙粗细分类、
-  门缺口区间、窗位置全部用算式核对,不是目测);再发布成 Artifact 页面请 Keeper 目测确认
-  视觉可读性,**Keeper 确认「达标,按此定稿」**。事后又对照
-  `reference/_source/arkham-maps/interior-1.jpeg` 复核一遍,渲染要素基本吻合,**唯一没有
-  复刻的是原图部分内墙用的"撕纸边缘"锯齿线**——判定属于 C/D 档已否决的手绘感装饰,
-  不追加。`templates/location.md`/`templates/scene.md` 新增可选 Map 小节(内嵌 DSL JSON
-  示例);`core/03-build-world.md`/`core/09-description.md` 各加一条:仅当室内布局本身
-  影响判定(连通、视线)时才附图,大多数地点/场景不需要。**一份 DSL = 一层楼**,多层
-  建筑写多份文件、在 location.md 里按楼层顺序连续放多个 Map 小节——"纵向堆叠"发生在
-  文档阅读顺序,不要求渲染器把多层拼进同一张 SVG。
-- **P5 阶段 2(家具层)与阶段 2b(室外站点图)已于 2026-08-08 一并落地并提交 `d56c0dc`,均在
-  `scripts/render-map.py` 内实现,未新增文件、未另起渲染器。** 接手时要记的几件事:
-  ①**家具与站点"地物"共用同一个渲染函数**(`render_shape_layer()`)——房间内的
-  `furniture`(坐标相对房间自己的 x/y 原点)与顶层的 `features`(坐标是全图绝对坐标,
-  站点图专用,`rooms` 留空时的图元层)只是原点不同,矩形/圆形+标签这套图元和
-  `secret`/`player_label` 的过滤逻辑完全共享,没有另起一套写法;②**新增
-  `validate_furniture()`**——家具越界(超出所在房间自己的 w/h)或同房间内两件家具互相
-  重叠,直接 `ValueError` 非零退出、不写文件,这是阶段 2 清单里"最容易翻车的地方"那条
-  要求;③**`--player` 的过滤口径**:秘密门→那段墙渲染成实墙(缺口消失);秘密房间/
-  地物→`player_name`/`player_label` 顶替,没给就留空(形状仍画,不是整个消失);秘密
-  家具→有 `player_label` 就顶替,没有就整件从 player 版里消失(默认"完全藏起来");
-  秘密引线标注→player 版直接丢弃。KP 版(不加 `--player`)永远画全部内容,只做斜体标记,
-  从不过滤——保持它是唯一的工作底稿;④~~**"编号"(书里城区图的数字圆圈)没有实现**~~
-  ——**这条已被下一条的阶段 4 推翻**:编号圆圈现在实现了,但只接管 `callouts`,城区尺度
-  的**图种**(斜视鸟瞰、街名斜排)仍然没写;⑤**站点图新增 `paths`(折线,小路/溪流)与顶层 `compass: true`**
-  (固定画在画布右上角,用像素坐标不进网格单位系统),`rooms` 留空即为站点模式,不新增
-  DSL 顶层图种;⑥**唯一没做的一项**:功能一/二的实际 token 差没有回填 3–5× 的估算——
-  本轮只有 scratchpad 合成样本可测,没有真实生成可比对,留给 Keeper 下次真正生成互动
-  场景图时回填,不阻塞其它任何事;`core/09-description.md` → Output 补了生成前必须告知
-  预估成本并等确认这条,`core/10-create-handout.md` 补一句指路(互动地图算 handout,走
-  同一套 player-safe 纪律);`templates/scene.md`/`location.md` 的 Map 小节同步更新。
-  验证方式与阶段 1 一致:scratchpad 造合成样本(两室书房+暗门+秘密祭坛;庭院+秘密车库+
-  小路+指北针)+ 坏样本(越界家具、重叠家具)逐元素核对坐标与报错行为,验证完即弃,
-  仓库里没有留下任何痕迹。
-- **P5 阶段 4(编号圆圈 + 图旁注释栏)2026-08-08 提出并同日完成,提交 `144d05f`
-  (该 commit 同时含模板对齐与整个 `beyond-the-treeline` 战役骨架,Keeper 拍板一起提),
-  它部分推翻上一条的第 ④ 点。至此 P5 只剩一项等真实数据的收尾(token 成本回填),
-  没有可动阶段了。**
-  起因是 `campaigns/beyond-the-treeline/world/stone-watch-1f/2f` 这批**第一次
-  用真实数据**跑出来的图:阶段 1-2b 的验收样本全是「上锁的门 ?」这种短标签,真实战役写出来的
-  引线标注是几十个汉字的整句,而 `render_callouts()` 把整段话当一个 `<text>` 画在锚点旁、
-  版面计算只给它留一格余量——**结果 10 条注释里 8 条冲出 `viewBox` 被裁掉,渲染出来根本
-  看不见**,少数没越界的又压在房间名上。落地照 `arkham-maps/district-*` 的做法:图上只留
-  编号圆圈,注释挪到图右侧一栏(**与书唯一的差别是注释栏画进 SVG 自己**,因为功能二的
-  handout 递到玩家手里时没有 `location.md` 可配)。要记的五条:①**编号圆圈从"只用于城区
-  尺度"下放到室内/站点尺度,但只接管 `callouts`**——房间名仍写在房间里、家具标签仍写在
-  图元上,那两条没变;②**SVG 没有排版引擎,折行必须自己算**,`wrap_text()` 用写死的字符
-  估宽表(`WIDE_RANGES` 内 1.0 em / 其余 0.55 em)贪心断行,**不许读系统字体**,否则破坏
-  "纯确定性"这条硬约束;它只吞掉断点上的那一个空格,英文单词不劈开;③**`--player` 版重排
-  连续编号**(留空号等于告诉玩家这里藏了东西),KP 版旁注栏为每条非秘密标注附一个灰色
-  `(PL n)` 对照,免得 KP 说"看 ③"时两版对不上;④**画布 = 地图宽 + `NOTE_COL`(260 px),
-  高取 `max(地图, 注释栏)`**——注释比图长时图不动、画布长高(石哨二层因此从 402×292 变成
-  702×434);`layout_notes()` 的一份折行结果同时供量高与绘制,画布不可能按另一个行数排版;
-  ⑤**圆圈不透明,锚点压在房间名上会挖掉几个字**——脚本不硬校验(同站点图 5–9 元素那条的
-  口径),写进 docstring 与两份模板,石哨那两份 JSON 因此微调过三处锚点。另新增克制规则
-  **一张图注释 ≤ 8 条**。**DSL 四个字段一个不改**,旧 JSON 重渲一次就拿到新版面。教训值得
-  记:**验收样本太干净会漏掉结构性缺陷**——以后给渲染器加元素,样本里至少放一条真实长度的
-  中文长句。
-- **`reference/_source/` = 第三方**料场**(2026-08-04 建立)。入库边界当日晚被 Keeper
-  改过一次,接手时按新的记:** ~~整目录 gitignore,永不入库~~ →
-  **原件(`.pdf`/`.docx`)不入库,从原件转出的 `.md` 与抽出的图入库。**
-  Keeper 原话:「可以 gitignore pdf,但是 md 一定要有」,担心的是 **fresh clone 出来的
-  kit 是残的**。目录 README 在 `reference/_source/README.md`,细则以它为准。
+## 会连锁爆炸的地方(动之前先 grep)
 
-  | 现有内容 | 入库? |
-  |---|---|
-  | `arkham-zh.md`(6723 行 / 14 万字符 / 0 图;原名 `阿卡姆.md`) | ✅ |
-  | `arkham-maps/`(从**同一份 docx** 抽的 20 张,8.2 MB,P5 的视觉参照) | ✅ |
-  | `阿卡姆.docx`(12 MB,上面两项的共同原件,归档时算**一个**出处) | ❌ 本地 |
-  | `克苏鲁时空穿梭6.pdf`(3.9 MB,已提炼成 `rules/eras/` 六个年代包) | ❌ 本地 |
+- **`reference/rules/character-creation.md` 的小节编号。** `core/` 五处 +
+  `_template-campaign/CLAUDE.md` + `tables/cultist-archetypes.md` + `tables/weapons-index.md`
+  + `rules/monster-scale.md` 都硬编码引用着 **§11 = 人类反派基线**。
+  **改小节顺序前先 `grep -r 'character-creation\.md.*§'`。** 2026-08-06 新增"其它建卡方法"时
+  就是靠追加成 §12 绕开的,没敢插中间。
+- **`build-reference-index.py` 的 `mi_match_bestiary()` 有匹配盲区。** 算法要求英文标题里有
+  ≥2 个 4 字母以上单词才判定匹配转录稿原行,`Byakhee`/`Deep One` 这类短标题因此覆盖不到自己
+  的转录稿行,会在 `monster-index.md` 里产生**重复行**。现有绕法是把标题改成书本原名全式
+  (`Byakhee, the Star-Steeds`),**没有改共享算法本身**——以后遇到短名字可复用这一手,也可以
+  放宽阈值,但那要对全部 223 条重跑回归。
 
-  **入库的 5 份文件名同批 ASCII 化**(硬约定 3;此前全仓 `git ls-files` 非 ASCII 文件名
-  为 0,这批是第一个会破例的)——地图改成 `district-*` / `region-*` / `city-*` /
-  `interior-1..4` / `exterior-1..2` / `site-crowninshield-manor`,**新旧对照表在目录
-  README 里**。两份不入库的原件保留原中文名。
+## 还没还的债(接手可以直接捡)
 
-  **⚠️ 拿得到 ≠ 可以抄。** 这次动的是**分发面**,不是转载边界:`core/00` 的三分法
-  一个字没改,`arkham-zh.md` 仍是第 ② 类虚构散文,**取手法永不取文字**;
-  它也**不是归档件**(没走 `core/14`、没有自己的 `## 引用出处`、不进反向索引,
-  `build-reference-index.py` 的 `ARCHIVE_DIRS`/`ORIGINAL_DIRS` 都不含 `_source/`)。
-  要正式收录仍走 `core/14-archive-reference.md` 搬进 `sourcebooks/`/`decks/`。
-  `.gitignore` 里 `*.docx` 那条(2026-08-04 补,此前只挡 `*.pdf`)保留——正是它在挡原件。
-- **P5 三个待拍板问题已于 2026-08-04 全部定案,不再阻塞**:纯几何线框(不做仿手绘)、
-  A 档先落地 / B 家具层可选 / **C 材质阴影与 D 手绘抖动完全否决**、且**拆成两个功能**
-  ——功能一给 KP 的场景定位图(A 档,~400 token),功能二给 PL 的可互动场景图
-  (A+B,约 3–5×,**必须 KP 主动要且生成前先告知成本**,还要过剧透审查出 player-safe 版)。
-  否决理由写在计划的「已定案」一节,以后想重开 C/D 要先推翻那里的理由。
-  **同日据阿卡姆地图样本又定了三件事**(样本在 `reference/_source/arkham-maps/`,
-  Keeper 已筛到 20 张并按内容重命名,**当日晚入库并改成 ASCII 名**):① 书里有**三种图**
-  ——城市图(斜视 + 编号圆圈)、
-  室内平面图(正投影 + 粗实心黑墙 + **房间名写在房间里**)、站点/庄园图(自由轮廓 + 留白),
-  阶段 1 的渲染要素逐条对着 `interior-1/2/4` 定,**不是凭空写的**;② **不建图标库**
-  ——`interior-4`(密大图书馆)家具密度很高但全是几何图元 + 标签文字(书架=细长矩形、
-  桌=圆),所以家具 DSL 用 `{s,x,y,w,h,label}` 而不是类型枚举,B 档少掉一半代码;
-  ③ **室外站点图复用同一渲染器**(房间数组为空、只有图元层),只新增折线与指北针约 20 行,
-  **不另造文字格式**——省的不只是代码,是不用再教模型第三种写法。
-  **P5 阶段 0 是还债**:`templates/cult.md:42` 与 `reference/craft/cult-design-zh.md:68`
-  两个生产文件把 P5 计划文件当 mermaid 规范引用,但那份规范不存在,而且计划完结后会
-  移进 `Archived/`,链接当场就烂。
-- **`reference/bestiary/` 现有条目的实测分布(P9 阶段 A 的主要依据,2026-08-03 复查时
-  仅有 9 只)**:threat 当时 8/9 都是 `deadly`(`trivial`/`mythic` 从未用过),
-  type 六类里 `beast`/`undead`/`great-old-one`/`human` 从未被单独用过。阶段 C 新增
-  7 只之后 threat/type 分布已明显更均衡(见新条目自身 header),不必再假设"全是 deadly"。
-- **古神级条目住在 `reference/mythos/great-old-ones/`(现有 6 份:`cthulhu.md` +
-  阶段 C 新增的 5 份),不在 `bestiary/`。**
-- **kit 的神格覆盖面(2026-08-04,阶段 C 完成后)**:除克苏鲁外,达贡与许德拉、哈斯塔、
-  奈亚拉托提普、莎布-尼古拉斯、犹格-索托斯五位主要外神现在都有独立的 `great-old-ones/`
-  页面与至少一只眷族/化身的完整 bestiary 条目。伊格等仍缺文件——kit 仍以克苏鲁系为主,
-  但不再是"只有克苏鲁一个入口"。
-- **`monster-index.md` 与 malleus 转录稿的关系已不再是「对外通道」。** P13 之后所有
-  归档件都在仓库里、spec 可以直接读,索引的作用回归本职:**223 条几百万字符的书没人
-  每次整份读**,索引是那份体量的检索层,不是分发替代品。
-- **三份 sourcebook 的手动重译已提交落地**(9c47d98);误建的空文件
-  `reference/sourcebooks/新建 Text Document.txt` 已核实不存在(已清理或从未提交)。
-  仍未清的账:P7 计划第 5 行的行数(写 13731,现为 5365)、`sourcebooks/index.json`
-  的行数字段。malleus 头部的"转录质量"警示已随换稿重写,不再欠账;
-  grand-grimoire/keeper-rulebook 两份头部警示仍未复核。
+| # | 债 | 在哪 |
+|---|---|---|
+| 1 | 三处指着**已摘除的 `external/` 子模块**(目录条目 + `og_Norval/` 那句"same rule as external" + 原创/第三方对照表)。`.gitmodules` 不存在 | `reference/README.md` |
+| 2 | 种子表写成 `npc-quirks`,P14 阶段 2 已改名 **`complications`**,父目录 README 没跟着改 | `reference/README.md:31-32` |
+| 3 | `--check` **不是只校验**:注释写 `validate only`,但 `main()` 无条件先跑 `build()`,而 `build()` 总是写盘;`--check` 只改退出码 | `scripts/build-reference-index.py:7, 655-657` |
+| 4 | P7 计划第 5 行行数写 13731,实际 5365;`sourcebooks/index.json` 行数字段同样没清 | `update_plan/Archived/` |
+| 5 | `grand-grimoire-zh.md` / `keeper-rulebook-7e-zh.md` 两份头部的"转录质量"警示未复核(malleus 那份已随换稿重写) | `reference/sourcebooks/` |
+| 6 | **`core/03` 允许地点文件越权收紧 intake。** 实例:`beyond-the-treeline` 的 `stone-watch.md` 把 intake 写明的 `<party-agnostic>` 硬化成"调查员就是当值的那一对"。`core/11` 现在查不出这类越权 | `core/03` / `core/11` |
+| 7 | **codex 到底读没读 `core/01-intake.md`** 从未确认。若它压根没打开 `core/` 任何文件,那是另一种病(codex 只加载 cwd 及祖先的 `AGENTS.md`),`95dfdf2` 的硬门禁治不了 | — |
 
-- **intake 现在有一条硬门禁:问完就停,Keeper 回复前不建任何文件(95dfdf2)。** 起因是
-  Keeper 用 codex 测「创建新团」,模型一题没问就开建。**根因不在路由,在 `core/01-intake.md`
-  的写法**:全文只有一句要求提问,而「never require an answer」「you will decide it well」、
-  整节 Auto-fill + 默认值表、以及 Quality bar 那句「answered as few as zero questions and
-  still has a complete campaign」四处合起来把零提问描述成合格结果,唯一的硬停还在写完文件
-  之后。同一条 non-negotiable 已同步进三份适配器——**这一层才是关键**,codex 只自动加载
-  适配器,不保证会打开 spec。**还没确认的一件事**:codex 当时到底读没读 `core/01-intake.md`。
-  若它压根没打开 `core/` 任何文件,那是另一种病(工作目录:codex 只加载 cwd 及祖先的
-  `AGENTS.md`,从 `Git Repositories/` 根起会话则本仓库的 `AGENTS.md` 不进上下文),
-  95dfdf2 治不了,得先问 Keeper 的启动目录。
+**1、2 同属完结清单第 8 项(反向扫描)本该抓到的类型。**
 
-`update_plan/README.md` 末尾还有一张**按可动性排序的表**(哪个计划现在能动、卡在等谁),
-接手时先看那张。
+## 活着的计划(状态权威在 `update_plan/README.md`,这里只记阻塞点)
+
+- **P5(低成本地图)** —— 只剩一项:功能一/二的**实际 token 差没有回填**那个 3–5× 的估算。
+  要真实生成一次互动场景图才测得出,不阻塞任何别的事。
+- **P18(编译模组)** —— 阶段 1–3 已落地提交,计划仍在
+  [`update_plan/2026-08-08-compile-module.md`](update_plan/2026-08-08-compile-module.md)。
+  **阶段 4 条件执行、阶段 5 阻塞,都等 `beyond-the-treeline` 真的跑出第一幕。**
+
+**其余 P1–P17 全部完成并归档。** 怎么做的、当时怎么权衡的,看 `update_plan/Archived/<对应文件>`
+与 `git log`——**不要在本文件里找**(剪枝规则 2)。
+
+## 两条治过的病,值得记住
+
+- **intake 硬门禁:问完就停,Keeper 回复前不建任何文件(`95dfdf2`)。** 起因是 Keeper 用 codex
+  测「创建新团」,模型一题没问就开建。**根因不在路由,在 `core/01-intake.md` 的写法**:全文只有
+  一句要求提问,却有四处把零提问描述成合格结果。
+  **可复用的教训:一条规则如果只写一次,而反例在同一份文件里写了四次,那条规则不存在。**
+- **`CHANGELOG.md` 与本文件的体例膨胀(2026-08-08)。** 规则一直在顶部,没人改过;drift 的机制
+  是**每个会话照着文件里前一条的样子写,而不是照着顶部的规则写**,自我强化。
+  **药是可量化的硬约束**(changelog「每条 ≤2 行」、本文件「~180 行」)+ 显式写明「不要照上一条写」。
 
 ---
 
 ## 会话记录
 
-本节只留**未提交**的工作。前三条(2026-08-08「模板战役对齐 `core/`」、「P17 按需生成」、
-「P18 编译模组阶段 1–3」)已分别随 `2075e88`、`dcc82c2`、`e46bfd8` 提交,按
-`core/15-close-session.md` 的 "Prune before you add" 删除——P17 已归档到
-[`update_plan/Archived/2026-08-08-demand-driven-pipeline.md`](update_plan/Archived/2026-08-08-demand-driven-pipeline.md);
-P18 **计划未完结,仍在** [`update_plan/2026-08-08-compile-module.md`](update_plan/2026-08-08-compile-module.md),
-阶段 1–3 的落地细节看该文件里已勾掉的 `- [ ]` 小节,或 `git show e46bfd8`。**P18 阶段 4
-条件执行、阶段 5 阻塞——都等 `beyond-the-treeline` 真的跑出第一幕才能继续,不是本会话的
-遗漏。**
+本节只留**未提交**的工作(剪枝规则 1)。
 
-### 继承的未处理发现(自 2075e88 之前的会话,均已复核仍然成立)
+### 2026-08-08 · changelog 体例回归(未提交)
 
-1. **`reference/README.md` 有三处还指着已摘除的 `external/` 子模块** —— 第 64 行
-   (`og_Norval/` 条目里「same non-reproduction rule as `external/` below」)、第 67 行整条
-   目录条目、第 81 行原创/第三方对照表。`reference/` 下无此目录,`.gitmodules` 不存在。
-   P15(`11f90b0`)清过 `core/00` 与 `core/14` 的同类引用,漏了这一份;本文件「硬约定」
-   第 5 条也还提着它。
-2. **`reference/README.md:31-32` 说四张种子表是 hooks/locations/mythos-angles/`npc-quirks`**
-   —— P14 阶段 2 已按 `core/01` 把 `reference/tables/README.md` 改成 **complications**,
-   父目录 README 这一份没跟着改。**与第 1 条同属完结清单第 8 项(反向扫描)本该抓到的类型。**
-3. **`build-reference-index.py --check` 并不是「只校验」。** 脚本第 7 行注释写
-   `# validate only, exit 1 on problems`,但 `main()`(第 655 行)无条件先跑 `build()`
-   (第 657 行),而 `build()` 总是写盘;`--check` 只改退出码。注释与行为对不上,值得单独修。
+`CHANGELOG.md` 的 08-05/08-06/08-07/08-08 四条压回一条一句的写法(414 → 133 行,条目数
+86 → 90:压的是篇幅不是内容);合并重复的 `### 更新内容` 小节、补齐条目间缺的 `---` 与四条
+标题漏掉的 commit(`e40071a` `c80530f` / `22aaf78` `2075e88` `e46bfd8`),并补记了 **P18
+`compile-module` 这条此前完全没进 changelog 的用户可见变化**。三处各加了「**每条 ≤2 行**」
+的硬约束并写明「不要照上一条写」:`CHANGELOG.md` 顶部、`update_plan/README.md` 第 2 节、
+`core/15-close-session.md` 的 Quality bar。历史条目里的数字按**当时状态**保留,没有改写成
+今天的值——changelog 是历史,不是现状快照。
+
+### 2026-08-08 · 怪物索引路由修复 + 本文件瘦身(未提交)
+
+- **`core/00-how-to-run.md` 路由表**:原「a non-human threat, creature, Mythos entity」一行
+  拆成 **造(`core/07`)** 与 **挑(`monster-index.md`)** 两行。缺的一直是后者——一个只是在
+  挑怪、没有在造怪的会话不会加载 `core/07`,也就看不到索引层存在。
+- **`reference/README.md`** 的 `bestiary/` 条目改写成「**not the monster catalogue**」,写明
+  正确入口与这是**已观测到的**失败模式(本会话自己踩的:`ls reference/bestiary/` 后误报
+  "kit 里没有飞天水螅条目",而它就在 `malleus-monstrorum-zh.md:1536`,索引里有)。
+- **本文件从 502 行剪到当前长度**,补立剪枝规则 2、3 与 ~180 行硬上限,并把「当前状态」那
+  350 行按计划编号排的执行史,换成按读者用途分的四节(反直觉的约定 / 会连锁爆炸的地方 /
+  还没还的债 / 活着的计划)。
+
+### 2026-08-08 · `beyond-the-treeline` 战役重构(未提交,**不进 CHANGELOG**——战役内容不是 kit 改动)
+
+`campaigns/beyond-the-treeline/CLAUDE.md` **整份重写**。守秘人推翻了 intake 的多项自动填充:
+崩溃定在**公元 1999**(战役当下 ≈ 3200)、教会改成**真实基督教退化版**(推翻旧版"不许填入
+真实世界宗教内容")、幕后具名存在定为**飞天水螅**(推翻旧版"无具名旧日支配者")、代价机制
+定为**意志 POW 永久流失**、**石哨删除并入守井宅**作为法阵锚点、**调查员改成镇上人**。
+
+**`world/` 六份文件尚未跟上,与新 `CLAUDE.md` 冲突**;待改清单在新 `CLAUDE.md` 的
+「Rewrite queue」一节,`module/00-campaign-primer.md` 同样过期。顺带发现的 `core/03` 越权
+缺陷已记进上面「还没还的债」第 6 条。

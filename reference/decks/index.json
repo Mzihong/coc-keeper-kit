@@ -21,22 +21,22 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 448,
+          "line": 199,
           "context": "- 新增 `reference/decks/` 与首份收录件 `busybodies-zh.md`(官方好事者卡组,47 张 NPC 卡)。"
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 13,
+          "line": 16,
           "context": "- **Skim the card closest to this NPC's job in `reference/decks/busybodies-zh.md` before"
         },
         {
           "file": "core/13-create-investigator.md",
-          "line": 20,
+          "line": 22,
           "context": "- **`reference/decks/busybodies-zh.md` is 47 worked examples of a finished 1920s"
         },
         {
           "file": "reference/README.md",
-          "line": 38,
+          "line": 44,
           "context": "for the generators (`busybodies-zh.md` is Chaosium's *Busybodies* NPC deck, 47 cards)."
         },
         {
@@ -149,7 +149,7 @@
       "referenced_by": [
         {
           "file": "core/13-create-investigator.md",
-          "line": 32,
+          "line": 34,
           "context": "- Two more decks feed specific fields: `reference/decks/phobias-and-manias-zh.md`"
         },
         {
@@ -226,12 +226,12 @@
       "referenced_by": [
         {
           "file": "core/06-create-npc.md",
-          "line": 79,
+          "line": 110,
           "context": "- Arming someone: `reference/decks/weapons-and-artifacts-zh.md` gives skill, base chance,"
         },
         {
           "file": "core/13-create-investigator.md",
-          "line": 34,
+          "line": 36,
           "context": "name), and `reference/decks/weapons-and-artifacts-zh.md` for anything in the gear list."
         },
         {

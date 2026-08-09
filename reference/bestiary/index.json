@@ -18,11 +18,6 @@
       ],
       "referenced_by": [
         {
-          "file": "WORKLOG.md",
-          "line": 120,
-          "context": "`black-pharaoh.md`/`dark-young.md`/`sons-of-yog-sothoth.md`)。执行时用 5 个并行"
-        },
-        {
           "file": "reference/bestiary/hunting-horrors.md",
           "line": 88,
           "context": "> [Black Pharaoh](black-pharaoh.md)) — invisible until their master orders them to show"
@@ -43,7 +38,7 @@
           "context": "[Black Pharaoh](../reference/bestiary/black-pharaoh.md)(均奈亚拉托提普,后者是化身本体"
         }
       ],
-      "reference_count": 5
+      "reference_count": 4
     },
     {
       "file": "black-wing.md",
@@ -85,11 +80,6 @@
       ],
       "referenced_by": [
         {
-          "file": "WORKLOG.md",
-          "line": 119,
-          "context": "bestiary 条目(`deep-one.md`/`byakhee.md`/`spawn-of-hastur.md`/`hunting-horrors.md`/"
-        },
-        {
           "file": "reference/mythos/great-old-ones/hastur.md",
           "line": 87,
           "context": "[Byakhee](../../bestiary/byakhee.md)、"
@@ -105,7 +95,7 @@
           "context": "[Byakhee](../reference/bestiary/byakhee.md)、"
         }
       ],
-      "reference_count": 4
+      "reference_count": 3
     },
     {
       "file": "cthulhu-blessed.md",
@@ -137,11 +127,6 @@
       ],
       "referenced_by": [
         {
-          "file": "WORKLOG.md",
-          "line": 120,
-          "context": "`black-pharaoh.md`/`dark-young.md`/`sons-of-yog-sothoth.md`)。执行时用 5 个并行"
-        },
-        {
           "file": "reference/mythos/great-old-ones/shub-niggurath.md",
           "line": 75,
           "context": "[Dark Young](../../bestiary/dark-young.md)"
@@ -162,7 +147,7 @@
           "context": "[Dark Young](../reference/bestiary/dark-young.md)(莎布·尼古拉斯)、"
         }
       ],
-      "reference_count": 5
+      "reference_count": 4
     },
     {
       "file": "deep-one-hybrid.md",
@@ -171,11 +156,6 @@
       "lines": 69,
       "declared_consumers": [],
       "referenced_by": [
-        {
-          "file": "CHANGELOG.md",
-          "line": 397,
-          "context": "- **`reference/bestiary/` 现有 9 只按新标尺重新核过一遍。** `deep-one-hybrid.md` 的"
-        },
         {
           "file": "reference/bestiary/cthulhu-blessed.md",
           "line": 54,
@@ -217,7 +197,7 @@
           "context": "达贡与许德拉的眷族小节同时反链已有的 `deep-one-hybrid.md`,凑齐两条而不重复造轮子。"
         }
       ],
-      "reference_count": 9
+      "reference_count": 8
     },
     {
       "file": "deep-one.md",
@@ -229,11 +209,6 @@
         "reference/sourcebooks/malleus-monstrorum-zh.md"
       ],
       "referenced_by": [
-        {
-          "file": "WORKLOG.md",
-          "line": 119,
-          "context": "bestiary 条目(`deep-one.md`/`byakhee.md`/`spawn-of-hastur.md`/`hunting-horrors.md`/"
-        },
         {
           "file": "reference/mythos/great-old-ones/dagon-and-hydra.md",
           "line": 63,
@@ -250,7 +225,7 @@
           "context": "[Deep One](../reference/bestiary/deep-one.md)(达贡与许德拉)、"
         }
       ],
-      "reference_count": 4
+      "reference_count": 3
     },
     {
       "file": "fellrock.md",
@@ -263,13 +238,8 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 334,
-          "context": "- 怪物图鉴 `fellrock.md` 的\"沉默之油\"反查链接指向了 `artifacts-zh.md`,但那份文件里"
-        },
-        {
-          "file": "CHANGELOG.md",
-          "line": 398,
-          "context": "type 从独立种族改成仆从种族(malleus 原文就是这么分类的);`fellrock.md` 的 threat"
+          "line": 123,
+          "context": "- `fellrock.md` 的「沉默之油」反查链接指向不含该条目的 `artifacts-zh.md`,已改指 `mythos/spells/oil-of-silence.md`。"
         },
         {
           "file": "reference/mythos/great-old-ones/cthulhu.md",
@@ -302,7 +272,7 @@
           "context": "`servitor-race`(malleus 归类,已知必改项)。threat 改判两处:`fellrock.md`"
         }
       ],
-      "reference_count": 8
+      "reference_count": 7
     },
     {
       "file": "hunting-horrors.md",
@@ -311,11 +281,6 @@
       "lines": 93,
       "declared_consumers": [],
       "referenced_by": [
-        {
-          "file": "WORKLOG.md",
-          "line": 119,
-          "context": "bestiary 条目(`deep-one.md`/`byakhee.md`/`spawn-of-hastur.md`/`hunting-horrors.md`/"
-        },
         {
           "file": "reference/bestiary/black-pharaoh.md",
           "line": 61,
@@ -337,7 +302,7 @@
           "context": "[Hunting Horrors](../reference/bestiary/hunting-horrors.md)、"
         }
       ],
-      "reference_count": 5
+      "reference_count": 4
     },
     {
       "file": "scarlet-orb.md",
@@ -394,11 +359,6 @@
       ],
       "referenced_by": [
         {
-          "file": "WORKLOG.md",
-          "line": 120,
-          "context": "`black-pharaoh.md`/`dark-young.md`/`sons-of-yog-sothoth.md`)。执行时用 5 个并行"
-        },
-        {
           "file": "reference/mythos/great-old-ones/yog-sothoth.md",
           "line": 81,
           "context": "[Sons of Yog-Sothoth](../../bestiary/sons-of-yog-sothoth.md)"
@@ -414,7 +374,7 @@
           "context": "[Sons of Yog-Sothoth](../reference/bestiary/sons-of-yog-sothoth.md)(犹格·索托斯)。"
         }
       ],
-      "reference_count": 4
+      "reference_count": 3
     },
     {
       "file": "spawn-of-hastur.md",
@@ -425,11 +385,6 @@
         "reference/rules/monster-scale.md"
       ],
       "referenced_by": [
-        {
-          "file": "WORKLOG.md",
-          "line": 119,
-          "context": "bestiary 条目(`deep-one.md`/`byakhee.md`/`spawn-of-hastur.md`/`hunting-horrors.md`/"
-        },
         {
           "file": "reference/mythos/great-old-ones/hastur.md",
           "line": 88,
@@ -446,7 +401,7 @@
           "context": "[Spawn of Hastur](../reference/bestiary/spawn-of-hastur.md)(均哈斯塔)、"
         }
       ],
-      "reference_count": 4
+      "reference_count": 3
     },
     {
       "file": "the-bell-keeper.md",
@@ -478,11 +433,6 @@
       ],
       "referenced_by": [
         {
-          "file": "CHANGELOG.md",
-          "line": 399,
-          "context": "从 deadly 改成 mythic(体型与耐久数值早已过 deadly 上限)、`thrall-of-cthulhu.md`"
-        },
-        {
           "file": "reference/mythos/great-old-ones/cthulhu.md",
           "line": 66,
           "context": "[Thrall of Cthulhu](../../bestiary/thrall-of-cthulhu.md)、"
@@ -498,7 +448,7 @@
           "context": "且设计本就是\"劝退不劝打\");`thrall-of-cthulhu.md` deadly → moderate(malleus"
         }
       ],
-      "reference_count": 4
+      "reference_count": 3
     },
     {
       "file": "vermisyn-worm.md",

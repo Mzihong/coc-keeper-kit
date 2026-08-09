@@ -21,67 +21,37 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 280,
-          "context": "- **kit 不再只服务 1920s 了。** `reference/rules/character-creation.md` 头部第一次"
+          "line": 139,
+          "context": "- 新增 `reference/rules/eras/` 六个年代包(只写与基准的差集),`character-creation.md` 首次明说自己是 1920s 基准。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 435,
+          "line": 186,
           "context": "- `character-creation.md` 补齐年龄补正、Build/伤害加值、技能基础值等建卡数据,可用来审核他人交的卡。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 449,
+          "line": 200,
           "context": "- `character-creation.md` 各小节补上数据来源指路(标明取自哪个源文件/章节)。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 102,
-          "context": "补全全部缺失字段,加了硬性算术+阈值型双层自校验;`core/13`/`character-creation.md`/"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 149,
-          "context": "①`skill-checks.md`/`character-creation.md`/`magic.md`/`monster-scale.md` 四份现在都"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 151,
-          "context": "未核\"的状态;`character-creation.md` 的技能基础值表逐条核对第四章原文全部通过,新增"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 162,
-          "context": "③**`character-creation.md` 内部小节编号改动时刻意避开了 §11**——新增的\"创建调查员"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 167,
-          "context": "都硬编码引用着\"`character-creation.md` §11 = 人类反派基线\"——插在中间会让这些引用"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 217,
-          "context": "写成了纯中文正文,后来对照 `character-creation.md`/`magic.md` 才发现 kit 的既有惯例"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 262,
-          "context": "`reference/rules/character-creation.md`、`reference/sourcebooks/keeper-rulebook-7e-zh.md`、"
+          "line": 103,
+          "context": "- **`reference/rules/character-creation.md` 的小节编号。** `core/` 五处 +"
         },
         {
           "file": "core/01-intake.md",
-          "line": 90,
+          "line": 95,
           "context": "background-first split in `reference/rules/character-creation.md` §11? *Default: not"
         },
         {
           "file": "core/01-intake.md",
-          "line": 109,
+          "line": 114,
           "context": "`reference/rules/character-creation.md` §1 and §5. *Default: accept as shown.* These"
         },
         {
           "file": "core/01-intake.md",
-          "line": 140,
+          "line": 145,
           "context": "| Era & place | 1920s, a small coastal town — the genre's home ground, and the baseline `reference/rules/character-creation.md` is written against. **Place foll"
         },
         {
@@ -106,42 +76,42 @@
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 46,
+          "line": 77,
           "context": "social front and what access it buys — read `reference/rules/character-creation.md` §11 for"
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 75,
+          "line": 106,
           "context": "is not a separate power tier — it's `reference/rules/character-creation.md` §11: the same"
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 38,
+          "line": 40,
           "context": "villain is built with `reference/rules/character-creation.md` §11 (baseline + increment),"
         },
         {
           "file": "core/11-review.md",
-          "line": 87,
+          "line": 113,
           "context": "(`reference/rules/character-creation.md` §11). Cross-check against the campaign"
         },
         {
           "file": "core/13-create-investigator.md",
-          "line": 11,
+          "line": 13,
           "context": "- **Don't read `reference/rules/character-creation.md` in isolation.** Follow"
         },
         {
           "file": "core/13-create-investigator.md",
-          "line": 13,
+          "line": 15,
           "context": "reading `character-creation.md` in full, but a campaign that declared a non-1920s Era also"
         },
         {
           "file": "core/13-create-investigator.md",
-          "line": 101,
+          "line": 103,
           "context": "the campaign's declared numbers; falls back to `reference/rules/character-creation.md`"
         },
         {
           "file": "core/13-create-investigator.md",
-          "line": 119,
+          "line": 121,
           "context": "(`reference/rules/character-creation.md`) — recompute, don't eyeball."
         },
         {
@@ -550,7 +520,7 @@
           "context": "| P12 | [cheatsheet-self-sufficiency](2026-08-04-cheatsheet-self-sufficiency.md) | 速查表自足化:让 `reference/rules/` 单独就能回答规则问题,规则书退出查询链路(仍留在版本库里当对账底本)。**阶段 0–1**:`co"
         }
       ],
-      "reference_count": 106
+      "reference_count": 100
     },
     {
       "file": "chases.md",
@@ -563,18 +533,8 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 142,
-          "context": "步)与写读白(`core/09-description.md`)都已接线;和 `reference/rules/chases.md` 分工"
-        },
-        {
-          "file": "CHANGELOG.md",
-          "line": 172,
-          "context": "- **追逐规则算错了。** `chases.md` 此前把追逐当成抽象距离数字比 MOV 高低,和规则书的"
-        },
-        {
-          "file": "CHANGELOG.md",
-          "line": 198,
-          "context": "`chases.md` `sanity.md`)已按《守秘人规则书》第六、七、八章逐节重写,补齐了此前完全"
+          "line": 90,
+          "context": "- `chases.md` 把追逐当抽象距离比 MOV 高低,与规则书的地点+行动点体系完全不是一回事,载具速度表也是自造的,已按第七章重写。"
         },
         {
           "file": "core/02-rules-reference.md",
@@ -583,12 +543,12 @@
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 65,
+          "line": 70,
           "context": "`reference/rules/chases.md` before writing it. If a scene is a physical confrontation (a"
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 69,
+          "line": 74,
           "context": "`chases.md` still owns the running/AP mechanics if the confrontation turns into one."
         },
         {
@@ -707,7 +667,7 @@
           "context": "| P12 | [cheatsheet-self-sufficiency](2026-08-04-cheatsheet-self-sufficiency.md) | 速查表自足化:让 `reference/rules/` 单独就能回答规则问题,规则书退出查询链路(仍留在版本库里当对账底本)。**阶段 0–1**:`co"
         }
       ],
-      "reference_count": 29
+      "reference_count": 27
     },
     {
       "file": "combat.md",
@@ -720,28 +680,13 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 179,
-          "context": "- **重伤的判定阈值原本没写清楚。** `combat.md` 现在明确写出\"造成的伤害大于等于角色"
+          "line": 92,
+          "context": "- `combat.md` 的重伤阈值没写清,现明确为「伤害 ≥ 角色最大生命值的一半」。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 184,
-          "context": "- **全自动射击的难度阶梯多算了三级。** `combat.md` 把规则书的四组难度对应关系串成了"
-        },
-        {
-          "file": "CHANGELOG.md",
-          "line": 189,
-          "context": "缺的三条:对抗检定不适用难度等级、不能孤注一掷、近战有自己的平手裁法(见 `combat.md`"
-        },
-        {
-          "file": "CHANGELOG.md",
-          "line": 197,
-          "context": "- **查战斗、追逐、理智规则不用再翻规则书原文了。** 三份速查表(`reference/rules/combat.md`"
-        },
-        {
-          "file": "CHANGELOG.md",
-          "line": 217,
-          "context": "(现在指向 `combat.md` §6.6);另有 6 处直接给规则书页码/章节的指路(如\"见规则书"
+          "line": 94,
+          "context": "- `combat.md` 把全自动射击的四级难度阶梯串成了七级链,已改回普通→困难→极难→大成功→不可能。"
         },
         {
           "file": "core/02-rules-reference.md",
@@ -750,7 +695,7 @@
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 16,
+          "line": 18,
           "context": "- **Read `core/02-rules-reference.md`** — especially `reference/rules/combat.md` (Build,"
         },
         {
@@ -894,7 +839,7 @@
           "context": "\"evidence\": \"The entire answer is paraphrased summary/table lookups in the assistant's own words (short dice-notation fragments and derived numbers only), with "
         }
       ],
-      "reference_count": 35
+      "reference_count": 32
     },
     {
       "file": "eras/cthulhu-invictus.md",
@@ -956,7 +901,12 @@
         },
         {
           "file": "campaigns/beyond-the-treeline/CLAUDE.md",
-          "line": 139,
+          "line": 26,
+          "context": "- **Era（规则）:** `dark-ages` —— 按 `reference/rules/eras/dark-ages.md` 加载（路径 A）。"
+        },
+        {
+          "file": "campaigns/beyond-the-treeline/CLAUDE.md",
+          "line": 159,
           "context": "这些**不是**桌规，是年代包本身；见 `reference/rules/eras/dark-ages.md`。"
         },
         {
@@ -995,7 +945,7 @@
           "context": "> **KEEPER ONLY** —— 识纹人机制上照 `dark-ages.md` 的隐士/异教徒或神职人员职业模板套用；"
         }
       ],
-      "reference_count": 11
+      "reference_count": 12
     },
     {
       "file": "eras/end-times.md",
@@ -1098,43 +1048,8 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 160,
-          "context": "(购点制 460 点、快速开桌等)和一张各属性数值含义速查表;`magic.md` 补齐了施法检定、"
-        },
-        {
-          "file": "CHANGELOG.md",
-          "line": 343,
-          "context": "- **法术、仪式、魔法书终于有了数值标尺。** 新增 `reference/rules/magic.md`:施法消耗"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 94,
-          "context": "`reference/rules/magic.md`,`core/02`/`core/07`/`reference/mythos/README.md` 已接线。"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 98,
-          "context": "三值、泛读/精读两阶段、重复精读耗时翻倍),`magic.md` 的魔法书章节改成从这份规则书"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 143,
-          "context": "8 处引用(`magic.md`、`artifacts-zh.md`、`call-father-dagon-and-mother-hydra.md`、"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 149,
-          "context": "①`skill-checks.md`/`character-creation.md`/`magic.md`/`monster-scale.md` 四份现在都"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 152,
-          "context": "了官方六套替代建卡法;`magic.md` 补了施法检定/孤注一掷失败代价表/成为相信者/深层"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 217,
-          "context": "写成了纯中文正文,后来对照 `character-creation.md`/`magic.md` 才发现 kit 的既有惯例"
+          "line": 144,
+          "context": "- 新增 `reference/rules/magic.md`:施法消耗与用时、对抗判定、新法术定价,以及魔法书研读两阶段与 CMI/CMF/MR 三值。"
         },
         {
           "file": "core/02-rules-reference.md",
@@ -1148,7 +1063,7 @@
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 102,
+          "line": 104,
           "context": "- Spellcasters: list spells and their MP/SAN costs — read `reference/rules/magic.md` for the"
         },
         {
@@ -1175,6 +1090,21 @@
           "file": "reference/tables/cultist-archetypes.md",
           "line": 265,
           "context": "深潜者召唤/束缚术。数值查 `reference/rules/magic.md` /"
+        },
+        {
+          "file": "campaigns/beyond-the-treeline/CLAUDE.md",
+          "line": 161,
+          "context": "规则依据见 `reference/rules/magic.md` §11「永久效果花永久的意志，不花魔法值」。"
+        },
+        {
+          "file": "campaigns/beyond-the-treeline/CLAUDE.md",
+          "line": 174,
+          "context": "> 5. **1999 年，各分堂在同一个时辰同时发动。** 这**不是**一道笼罩全球的阵——`magic.md` §11"
+        },
+        {
+          "file": "campaigns/beyond-the-treeline/CLAUDE.md",
+          "line": 296,
+          "context": "| **代价 = 意志（POW）** | 涓滴 1D3/次 → 整份 | **守秘人（2026-08-08）** | `magic.md` §11「永久效果花永久的意志」；恩珊与科瓦宗族两条 canon 早就为它铺好了落点 |"
         },
         {
           "file": "update_plan/Archived/2026-08-02-conventions-gaps.md",
@@ -1297,7 +1227,7 @@
           "context": "| P12 | [cheatsheet-self-sufficiency](2026-08-04-cheatsheet-self-sufficiency.md) | 速查表自足化:让 `reference/rules/` 单独就能回答规则问题,规则书退出查询链路(仍留在版本库里当对账底本)。**阶段 0–1**:`co"
         }
       ],
-      "reference_count": 40
+      "reference_count": 36
     },
     {
       "file": "monster-scale.md",
@@ -1313,38 +1243,18 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 162,
-          "context": "分档区间也按表XI 约 90 条书目实测重新校准;`monster-scale.md` 新增了规则书第十四章"
+          "line": 151,
+          "context": "- 新增 `reference/rules/monster-scale.md`:五级强度阶梯 × 四档 threat 的 SAN/HP/护甲/攻击区间,数据来自全书统计而非估算。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 377,
-          "context": "`reference/rules/monster-scale.md`:五级强度阶梯(独立种族 → 仆从种族 → 唯一存在 →"
-        },
-        {
-          "file": "CHANGELOG.md",
-          "line": 386,
-          "context": "- **挑怪物强度时先看书上的「上级/下级」标签,它比自己估更准。** `monster-scale.md`"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 107,
-          "context": "- **阶段 A**(标尺与词条,2026-08-03):`reference/rules/monster-scale.md` + 五级强度阶梯 +"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 149,
-          "context": "①`skill-checks.md`/`character-creation.md`/`magic.md`/`monster-scale.md` 四份现在都"
-        },
-        {
-          "file": "WORKLOG.md",
           "line": 153,
-          "context": "魔法这几块此前完全没有的机制;`monster-scale.md` 新增了第十四章的通用怪物框架(体格"
+          "context": "- `monster-scale.md` 新增一节:书上的上级/下级标签分开强度的力度大于 threat 四档的整个跨度(耐久 2–2.6 倍),取样声明改成真数 223 个属性块。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 166,
-          "context": "`reference/tables/weapons-index.md`、`reference/rules/monster-scale.md` 等多处活文件"
+          "line": 105,
+          "context": "+ `rules/monster-scale.md` 都硬编码引用着 **§11 = 人类反派基线**。"
         },
         {
           "file": "core/02-rules-reference.md",
@@ -1358,17 +1268,17 @@
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 19,
+          "line": 21,
           "context": "`reference/rules/monster-scale.md` before assigning any number. Five tiers, ordered by power:"
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 32,
+          "line": 34,
           "context": "that sets fine-grained stat scale and SAN **inside** a tier — `monster-scale.md` has the"
         },
         {
           "file": "core/11-review.md",
-          "line": 107,
+          "line": 133,
           "context": "\"Trait load total\" against `reference/rules/monster-scale.md`'s ceiling for that tier"
         },
         {
@@ -1567,7 +1477,7 @@
           "context": "| P12 | [cheatsheet-self-sufficiency](2026-08-04-cheatsheet-self-sufficiency.md) | 速查表自足化:让 `reference/rules/` 单独就能回答规则问题,规则书退出查询链路(仍留在版本库里当对账底本)。**阶段 0–1**:`co"
         }
       ],
-      "reference_count": 51
+      "reference_count": 47
     },
     {
       "file": "sanity.md",
@@ -1578,13 +1488,8 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 181,
-          "context": "- **疯狂发作的时长被写成了定值。** `sanity.md` 原写\"只持续 10 个战斗轮\",实际是"
-        },
-        {
-          "file": "CHANGELOG.md",
-          "line": 198,
-          "context": "`chases.md` `sanity.md`)已按《守秘人规则书》第六、七、八章逐节重写,补齐了此前完全"
+          "line": 93,
+          "context": "- `sanity.md` 把疯狂发作时长写成定值 10 轮,实际是 1D10 轮且只在发作时有其他调查员在场时成立。"
         },
         {
           "file": "core/02-rules-reference.md",
@@ -1593,17 +1498,17 @@
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 88,
+          "line": 100,
           "context": "each ending with a **suggested SAN reward** per `reference/rules/sanity.md`'s scenario-end"
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 17,
+          "line": 19,
           "context": "Damage Bonus, HP) and `reference/rules/sanity.md` (X/Y loss). Numbers must be 7e-correct."
         },
         {
           "file": "core/12-canon-update.md",
-          "line": 67,
+          "line": 83,
           "context": "`reference/rules/sanity.md`'s scenario-end table instead)."
         },
         {
@@ -1712,7 +1617,7 @@
           "context": "\"evidence\": \"The entire answer is paraphrased summary/table lookups in the assistant's own words (short dice-notation fragments and derived numbers only), with "
         }
       ],
-      "reference_count": 27
+      "reference_count": 26
     },
     {
       "file": "skill-checks.md",
@@ -1723,18 +1628,8 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 156,
-          "context": "- **其余四份速查表补齐了,和三份主表一样直接对着规则书写。** `skill-checks.md` 现在"
-        },
-        {
-          "file": "CHANGELOG.md",
-          "line": 187,
-          "context": "- **对抗检定的平手规则整条是错的。** `skill-checks.md` 原写\"平手比骰值、防守方赢\","
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 149,
-          "context": "①`skill-checks.md`/`character-creation.md`/`magic.md`/`monster-scale.md` 四份现在都"
+          "line": 95,
+          "context": "- `skill-checks.md` 的对抗检定平手规则整条是错的(实为技能值高者胜),并补上不适用难度等级、不能孤注一掷等三条。"
         },
         {
           "file": "core/02-rules-reference.md",
@@ -1797,7 +1692,7 @@
           "context": "| P12 | [cheatsheet-self-sufficiency](2026-08-04-cheatsheet-self-sufficiency.md) | 速查表自足化:让 `reference/rules/` 单独就能回答规则问题,规则书退出查询链路(仍留在版本库里当对账底本)。**阶段 0–1**:`co"
         }
       ],
-      "reference_count": 15
+      "reference_count": 13
     }
   ]
 }
