@@ -61,8 +61,23 @@ Compiling is authorship, not concatenation. These four are mandatory, not stylis
   surface-only, and the mechanism goes in the `> **KEEPER ONLY**` blockquote immediately after
   it. The surface layer must never contain a word from the secret layer — compiling doesn't get
   an exception to a campaign's own rule just because it's reorganising text.
+  **A translation glossary declared in `CLAUDE.md` is transcribed row for row.** Don't add
+  entries, don't drop them, don't merge a category the campaign deliberately kept separate,
+  don't reword a surface term. The glossary is a convention, not prose to be improved — and a
+  reworded row is invisible drift, because the compiled copy still *reads* correct.
+- **Open questions are reconciled against the source, not carried forward.** Walk the module's
+  "still open" section item by item against the campaign `CLAUDE.md`'s Keeper block.
+  **Answers are one-directional — questions only ever get fewer, never more.** A question that
+  has since been answered reads *exactly* like one still open; nothing about its formatting
+  says it expired.
+  - An answered one moves out of the open list and is **marked answered — not deleted**.
+    Delete it and the next compile puts it back, because nothing records that it was ever
+    settled.
+  - A question present in the module but **absent from `CLAUDE.md`** is drift in the other
+    direction: the compile grew a question the campaign never declared. Report it; don't
+    quietly keep it and don't quietly drop it.
 
-## Step 3 — Hard rule: compiling never invents a fact
+## Step 3 — Hard rule: compiling never invents a fact, and never picks a side
 
 If transcription turns up a gap the gap report missed — a scene references a clue that doesn't
 exist anywhere, a timeline day has no corresponding scene — **stop and fix the source file**,
@@ -71,6 +86,18 @@ artifact: a fact that exists only in it is invisible to every other spec in this
 next compile silently drops it the moment someone regenerates from source. This rule mirrors
 into `core/11-review.md`'s Blocking section — a reviewer finding a fact in a module text with no
 source-file backing fails the review outright.
+
+**The same rule, mirrored: when two source files disagree, the compile stops.** The manifest
+lists several sources; they are not guaranteed to agree. If `CLAUDE.md` and a `world/` file
+say different things about the same fact, **report the conflict to the Keeper** — where it is,
+what each side says, and which side is newer with the evidence for that — then fix the source
+and recompile. Do not pick the one that reads better, and **do not apply the campaign's own
+precedence rule on your own**: `CLAUDE.md` winning is a tie-breaker for the Keeper to invoke,
+and the Keeper may decide the authoritative file is the one that needs changing. A compile
+that silently resolves a disagreement launders a decision nobody made into the record.
+
+Step 3's two halves cover the two ways a module can gain a fact nobody chose: **inventing one**
+(the rule above) and **selecting one** (this rule).
 
 ## Length & splitting
 
@@ -94,6 +121,23 @@ top of `templates/module.md` carries this — rather than duplicating anything n
 rewritten. **The module text is entirely Keeper-facing.** Nothing in it is safe to hand a
 player as-is; what players get is still the arc's own `handouts/` and any `--player` map
 render, unchanged by this spec.
+
+**`00-campaign-primer.md` has no template — so its compiler map lives here.** `templates/module.md`
+covers `<arc>-<slug>.md` only; without the table below, the primer's sections have no declared
+source and drift silently (a glossary row reworded during a compile still *reads* correct):
+
+| Primer section | Source | Transcription |
+|---|---|---|
+| Introduction (era, weight, party size, content lines, campaign-wide hard conventions) | `CLAUDE.md` + `overview.md` | condensed; content lines quoted, not paraphrased |
+| Worldview (premise, geography, time structure, factions, threat) | `overview.md` + `world/*.md` | summarised — the primer is an index, `world/` keeps the detail |
+| **Translation glossary** | **`CLAUDE.md` only** | **row for row, verbatim** — see Step 2. Not merged, not extended, not reworded |
+| Cast index | `npcs/roster.md` (+ card files' first line) | one line each |
+| Map index | `world/*.svg` and what's still unrendered | as-is |
+| Open questions | `CLAUDE.md`'s Keeper block | reconciled per Step 2 — answered ones marked answered, not deleted |
+
+The primer is the half of the output that **doesn't wait for an arc to finish** — worldview,
+glossary, cast and maps are true before the first session. That's what makes it compilable
+early, and also what makes it the piece most likely to outlive the state it was compiled from.
 
 **Boundary with `templates/session-prep.md`:** the module is written *after* an arc closes, as
 a rereadable record for the Keeper (or another Keeper); session prep is written *before* each

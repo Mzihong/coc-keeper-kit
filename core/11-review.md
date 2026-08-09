@@ -58,12 +58,20 @@ model's output. Assume the material is wrong until each line checks out.
       `handouts/` — **pass** if it's honestly not built yet and nothing downstream assumed it
       existed; **fail** only if something (a scene's "if the players…" branch, a puzzle) reads
       as though the handout is already in hand.
-- [ ] **`campaigns/<slug>/module/` files: every stated fact traces to a source file** — mirrors
-      `core/16-compile-module.md` step 3. Spot-check a sample of claims (a timeline beat, an
-      NPC's stated want, a clue's location) against `world/`, `npcs/`, `scenes/`, or the
-      scenario file it was supposedly compiled from. A fact that exists only in the module text
-      is a fail regardless of how plausible it reads — compiling never invents. **n/a** if
-      nothing under `module/` is in scope for this review.
+- [ ] **`campaigns/<slug>/module/` files: trace it both ways** — mirrors
+      `core/16-compile-module.md` step 3. **n/a** if nothing under `module/` is in scope.
+      1. **Forward (catches invented facts).** Spot-check a sample of claims (a timeline beat,
+         an NPC's stated want, a clue's location) against `world/`, `npcs/`, `scenes/`, or the
+         scenario file it was compiled from. A fact that exists only in the module text is a
+         fail regardless of how plausible it reads — compiling never invents.
+      2. **Backward (catches withdrawn facts).** Forward tracing cannot see the failure that
+         actually happens most: the module says something the sources **used to** say and have
+         since changed. Walk the module's open questions, glossary rows, and location
+         descriptions back against the current `CLAUDE.md` and `world/` — anything the sources
+         no longer support is a fail even though it traced fine when it was written.
+         **Open questions are the worst offender: an answered one looks exactly like a live
+         one.** Nothing in its formatting expired. A recompile does not fix this by itself —
+         a section can be regenerated and still carry the old question forward.
 - [ ] **Three-clue coverage audits the clue *matrix*, not the file count.** All three clues for
       a must-know fact must be **registered** in the scenario's clue map — but an individual
       clue is allowed to route through an NPC who's still a stub, or a scene that's still
@@ -75,6 +83,22 @@ model's output. Assume the material is wrong until each line checks out.
 
 - [ ] Nothing contradicts `canon-log.md` — dead NPCs stay dead, revealed facts stay revealed.
 - [ ] Nothing contradicts `world/event-clock.md`'s current stage or fired triggers.
+- [ ] **The campaign's own files agree with each other.** The two checks above read
+      `CLAUDE.md` and `canon-log.md` as the *standard* the material is measured against; this
+      one puts them **on the table as material too**. Take each fact the campaign states more
+      than once — what an object actually is, which questions are still open, what a place is
+      called, when something happened — and compare `CLAUDE.md` against `world/`, `overview.md`,
+      `canon-log.md`, and `module/`. **A disagreement is a fail, and the report says which side
+      is newer with the evidence for it (git history, dated markers, the Auto-filled table's
+      rulings) — but the report does not pick a winner.** The Keeper rules; a review that
+      resolves conflicts on its own is how the divergence got there.
+      Two cautions, both from real misfires:
+      - **A precedence rule doesn't make this check unnecessary.** "`CLAUDE.md` always wins"
+        decides *how a conflict is settled once raised*; it does not mean the conflict may go
+        unmentioned, and the Keeper may rule that the authoritative file is the wrong one.
+      - **Confirm both sources are counting the same thing before calling it a contradiction.**
+        Two lists of different lengths conflict only if they index the same set — a
+        proper-noun lock and a demand-driven NPC roster are meant to differ.
 - [ ] Names, dates, and place-names match their earlier spellings exactly.
 - [ ] Cross-links resolve — every relative link points at a file that exists.
 - [ ] **Rolled content traces back to `campaigns/<slug>/rolls.log`.** If the material rolled

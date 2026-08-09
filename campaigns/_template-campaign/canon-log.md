@@ -14,6 +14,13 @@ below so nothing has to be reconstructed by reading the whole log.
 **Established facts (true in the world):**
 - <fact>
 
+> Campaigns that grow past a handful of names usually add a table here locking every proper
+> noun's spelling and recording which file each person was written into. **That table is not a
+> copy of `npcs/roster.md` and is not meant to match its length** — the roster only holds NPCs
+> the campaign has actually needed a stub for, so a locked name with no roster row is the
+> normal case, not drift. Say so in the table's own header when you add one; a later reader
+> comparing the two counts will otherwise report a contradiction that isn't there.
+
 **Player knowledge (what the investigators have actually learned):**
 - <fact the players know>
 

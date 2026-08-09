@@ -8,9 +8,11 @@ skill from `templates/location.md`. One place/faction per file, `kebab-case.md`.
 generator reads by default (`campaigns/README.md`), so the live path never moves: when an arc
 closes, its settled clock is archived to `archive/event-clock-<arc-slug>.md` and a fresh one
 is built at `event-clock.md` for the next arc's threat. **Not yet built for this campaign** —
-`core/05-event-clock.md` hasn't run yet; the two open questions it needs to resolve (what the
-migrating thing is, whether the relay station is still transmitting) are flagged
-`> **KEEPER ONLY**` in `timeline.md` and `CLAUDE.md`.
+`core/05-event-clock.md` hasn't run yet. The three open questions it inherits are flagged
+`> **KEEPER ONLY**` in `timeline.md` and `CLAUDE.md`: ① where the migrating thing has got to
+and how long until it arrives (the clock's main scale), ② who picks the first person to hand
+over a whole POW pool once the drip stops covering it, ③ whether any other ward is still lit.
+**Question ③ is for later arcs — the first one has no outsiders in it.**
 
 A place may carry a **map** — a `<name>.json` map DSL beside its `<name>.md`, rendered to
 `<name>.svg` by `python scripts/render-map.py`. Most locations don't need one; see the

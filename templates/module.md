@@ -8,6 +8,13 @@ session. For that, use `templates/session-prep.md`.*
 > **Source manifest** — compiled <date> from the files below. **Facts live in the source
 > files, not here.** If something in this document is wrong, fix the source and recompile;
 > never hand-edit a fact into the module text itself.
+>
+> **These sources are not guaranteed to agree, and this compile never breaks a tie.** If two
+> of them say different things about the same fact, the compile stops and reports it to the
+> Keeper — where, what each side says, which is newer and why you think so — then the *source*
+> is fixed and the module recompiled. Applying the campaign's own precedence rule on your own
+> counts as breaking the tie: it may be the authoritative file that's wrong.
+> See `core/16-compile-module.md` step 3.
 > - `overview.md` — premise
 > - `world/` (`timeline.md`, faction/location files, `event-clock.md`) — background, recent
 >   events, timeline

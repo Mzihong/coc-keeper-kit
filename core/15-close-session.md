@@ -30,6 +30,24 @@ describes are now committed (`git status` clean for them). If so, delete that en
 needs to carry current state plus whatever is still sitting uncommitted in the working tree.
 Keep an entry only while part of what it describes hasn't been committed yet.
 
+**Re-verify the debt table.** `WORKLOG.md`'s `还没还的债` table is the one section step 2's
+fact-check can never reach — step 2 covers what *this* session wrote, and the debt table is
+inherited from earlier sessions, so nothing audits it unless this step does. Walk it entry by
+entry and grep each path, line number, and premise against actual repo state:
+
+- Debt already paid → **delete the row**. A stale row costs more than a missing one: whoever
+  picks it up spends the effort before discovering there's nothing to fix.
+- Line numbers drifted, or a file the row names as evidence has since been renamed or deleted
+  → fix the reference, or mark the example as historical. A reader who greps the cited path
+  and finds nothing concludes the whole row is bogus.
+- Premise no longer true (the thing it describes changed shape) → rewrite the row to what's
+  actually wrong now, don't just re-file the old wording.
+
+Observed failure: the table was written in one commit and went four commits untouched — and
+that very commit deleted the file its own entry 6 cited as the example. Two of seven rows had
+already been paid off. If nothing changed after your pass, still stamp the table with the date
+you verified it, so the next session knows how old the claims are.
+
 ## The checklist
 
 ### 1. Append a `WORKLOG.md` session entry
@@ -64,10 +82,21 @@ stale count; check both together.
 
 ### 4. Run the applicable parts of `update_plan/README.md`'s 完结清单
 
-Sections **2 (Changelog)**, **3 (产物重建)**, **4 (三适配器一致性)**, and **5 (术语与语言)**
-apply to any structural change regardless of whether a plan file exists. Skip section 1
-(状态同步) and section 6 (计划间关系) — those are plan-specific; if this session actually is
-closing a plan, go use the full checklist there instead of this one.
+Sections **2 (Changelog)**, **3 (产物重建)**, **4 (三适配器一致性)**, **5 (术语与语言)**, and
+**8 (反向扫描)** apply to any structural change regardless of whether a plan file exists. Skip
+section 1 (状态同步) and section 6 (计划间关系) — those are plan-specific; if this session
+actually is closing a plan, go use the full checklist there instead of this one.
+
+**Section 8 is on this list as of 2026-08-09, and it is the one most worth not skipping.** It
+was added to the 完结清单 by P15 and this enumeration was never updated to match — so for a
+year of ad-hoc sessions the reverse scan simply never ran, and an ad-hoc session is exactly
+where it bites: a rewrite with no plan file behind it still invalidates statements all over the
+repo. (That omission is itself the failure it guards against — a rule landed in one place and
+the list pointing at it didn't follow.) In practice: **grep the key nouns of every premise this
+session overturned** — a deleted location, a superseded mechanism, a renamed thing — and
+**read every hit rather than counting them**. Names alone won't catch everything: a paragraph
+that *describes* the deleted thing without naming it survives the grep, which is why
+`core/11-review.md`'s cross-file agreement check exists alongside this one.
 
 In short, for a change touching `core/`, `templates/`, or `reference/`:
 
@@ -77,6 +106,17 @@ In short, for a change touching `core/`, `templates/`, or `reference/`:
 - `CLAUDE.md` / `GEMINI.md` / `AGENTS.md` stay consistent if any adapter-visible routing changed
   (new skill, new spec, new top-level convention).
 - New rules terminology goes into `reference/glossary-zh.md`.
+
+And if the session touched a campaign at all:
+
+- **The rewrite audit left its artifact.** When this session changed three or more files inside
+  a `campaigns/<slug>/`, or changed a declared convention or setting, `core/00-how-to-run.md`
+  requires both `python scripts/check-campaign-consistency.py --campaign <slug>` and
+  `core/11-review.md` to have run, **and their result recorded** in the `CHANGELOG.md` entry or
+  work log — what was checked, and whether it passed. Confirm that record exists and names
+  actual findings. "I ran it" with nothing written down is the failure mode this requirement
+  was written to close: an obligation with no artifact cannot be audited afterwards, which is
+  precisely why the preview rule in `core/00` has no fallback and this one does.
 
 ### 5. Wire in any new original content
 
@@ -117,6 +157,9 @@ commit unless asked — this spec closes out the working tree, not the git histo
 - `WORKLOG.md` has a dated session entry for this session, appended not overwritten.
 - `WORKLOG.md`'s `会话记录` holds no entries for work that's already committed — those are
   pruned, since `git log` already carries them.
+- `WORKLOG.md`'s `还没还的债` was walked entry by entry this session and each row grep-verified
+  against real repo state — paid debts deleted, drifted paths and line numbers corrected — and
+  the table carries today's verification date even if nothing changed.
 - Every count, enumeration, or path written this session has been grep-verified against actual
   repo state or generated output — not asserted from memory or copied from an earlier entry.
   This includes **structural claims, not just counts** — most concretely `core/00-how-to-run.md`'s

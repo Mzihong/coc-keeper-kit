@@ -7,6 +7,13 @@
 >
 > **Status values (English, for grep):** `stub` · `card` (shouldn't linger — delete the row)
 > · `on-table` · `off-stage` (moved to the section below, not deleted).
+>
+> **If `canon-log.md` also keeps a table of named people, that one is a different list.** It
+> locks spellings and records which file each person was written into; this one tracks the NPCs
+> the campaign has actually needed a stub for. A name can sit in the lock without earning a row
+> here, so **the two lists holding different numbers is not a contradiction** — confirm both are
+> counting the same thing before treating either as drift
+> (`core/00-how-to-run.md` → Ground rules).
 
 ## Active
 

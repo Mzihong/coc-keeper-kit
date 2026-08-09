@@ -7,10 +7,17 @@
 > **Status values (English, for grep):** `stub` · `card` (shouldn't linger — delete the row)
 > · `on-table` · `off-stage` (moved to the section below, not deleted).
 >
+> **Not the same list as `canon-log.md`'s 人 table, and not meant to be the same length.**
+> That one is a proper-noun lock plus an index of who was written where; this one tracks NPCs
+> the campaign has actually needed a stub for. A name can sit in the lock without ever earning
+> a row here. **A length mismatch between the two is not a contradiction** — check the two
+> lists are counting the same thing before treating one as drift
+> (`core/00-how-to-run.md` → Ground rules).
+>
 > 本表是纯搬运:以下人物此前只存在于 `world/velga.md`、`world/inherited-holding.md`、
 > `world/timeline.md` 的正文里,尚无一份独立 NPC 文件——按
 > P17 两级制,先落成 stub,不生成任何新内容。**2026-08-08 战役重构**（详见
-> `../CLAUDE.md`）后：删除石哨与其两位瞭望员的旧条目；老塔恩的背景改系到守井宅满月仪
+> `../CLAUDE.md`）后：删除石哨与其两位瞭望员的旧条目；塔恩的背景改系到守井宅满月仪
 > 轨；新增沃尔克·班宁（教堂神父）、桑塔·雅罗（守井宅引路人）两条 stub。
 
 ## Active
@@ -32,6 +39,6 @@
 
 | Name | Role / found at | Wants | Hides | Status | File |
 |---|---|---|---|---|---|
-| 老塔恩 | 下落不明(数十年未归)· 曾是坡上人,替一位守井宅继承人跑满月夜的差,某次没有按点下山 | （历史）完成那一夜的差事,回家收摊 | 那一晚阵吃紧，向他要走了"整份"意志——身体没有留在原处，也没有死，只是再没人真正见过他;谷里把这记成了"没下来",没人愿意说出"交了整份"这个说法 | off-stage | — |
+| 塔恩 | 下落不明(数十年未归)· 曾是坡上人,替一位守井宅继承人跑满月夜的差,某次没有按点下山 | （历史）完成那一夜的差事,回家收摊 | 那一晚阵吃紧，向他要走了"整份"意志——身体没有留在原处，也没有死，只是再没人真正见过他;谷里把这记成了"没下来",没人愿意说出"交了整份"这个说法 | off-stage | — |
 | 梧岑 | 下落不明 · 守井宅前任继承人 | （历史）按满月夜的条件定期下山换盐油 | 某年满月没能按时下山,只留下一间空房子和一本没写完的历书 | off-stage | — |
 | 凯佛伦 | 已故 · 四百一十二年前重新点起守井宅值守的那队人的带头者 | （历史）重新压实守井宅地窖里被遗忘的排水轮 | 这队人从哪儿来、为什么认得先民纹,谷里的口传从未留下答案——大概率是那个"遍布世界的修会"末代还在行走的人 | off-stage | — |

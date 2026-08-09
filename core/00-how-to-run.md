@@ -129,6 +129,32 @@ All seventeen are reachable from the routing table below.
 - **Continuity.** Before generating into an existing campaign, read its `CLAUDE.md` and
   `canon-log.md`. Never contradict established canon. If you must, say so explicitly and
   offer the retcon as a choice rather than writing it in.
+- **A conflict you *find* is reported, never resolved on your own.** The rule above covers
+  what you are about to write. This one covers what is already on disk: the moment you notice
+  **two existing files saying different things about the same fact**, stop and tell the Keeper
+  — where the conflict is, what each side says, **which side is newer and on what evidence**
+  (git history, a dated marker in the file, a ruling recorded in the campaign's Auto-filled
+  table). Then let the Keeper rule.
+  - **A precedence rule is not permission to apply it silently.** A campaign's `CLAUDE.md`
+    winning over `world/` is a *tie-breaker for the Keeper to invoke*, not a licence to
+    quietly overwrite the other side — the Keeper may well decide the authoritative file is
+    the one that's wrong. Silently aligning and silently deriving are the same mistake wearing
+    two faces, and the second one is how a whole campaign drifts: an executor meets an
+    inconsistency, picks a side that reads sensible, and nobody ever learns a decision was
+    made.
+  - **Before calling it a conflict, check the two sources are counting the same thing.** Two
+    lists of different lengths are only a contradiction if they are indexes of the same set —
+    a proper-noun lock and a demand-driven NPC roster are *supposed* to differ.
+- **A rewrite has to be audited by something repeatable.** When one pass changes **three or
+  more files inside a `campaigns/<slug>/`**, or changes any declared convention or setting,
+  finish by running **both** `python scripts/check-campaign-consistency.py --campaign <slug>`
+  and `core/11-review.md`.
+  - **A hand-written "what still needs changing" list does not substitute.** It only ever
+    covers what someone thought of; whatever it omits gets no second net.
+  - **Record the result** — the script's output plus the review's verdict go into that
+    session's `CHANGELOG.md` entry or work log, naming what was checked and whether it passed.
+    Unlike the preview rule below, this one leaves an artifact on purpose, so
+    `core/15-close-session.md` and the next session can verify it actually happened.
 - **Citing official material.** Files under `reference/decks/` and `reference/sourcebooks/`
   are transcriptions of published Chaosium products, kept as source material. Three rules,
   all hard:
