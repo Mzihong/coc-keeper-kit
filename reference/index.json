@@ -168,7 +168,7 @@
         "title": "好事者卡组 Busybodies — 官方 NPC 卡组(中译收录)",
         "rights_holder": "Chaosium Inc.",
         "referenced_by": [
-          "CHANGELOG.md:199",
+          "CHANGELOG.md:225",
           "core/06-create-npc.md:16",
           "core/13-create-investigator.md:22",
           "reference/README.md:44",
@@ -232,8 +232,8 @@
         "title": "克苏鲁神话魔法大典 — 官方法术全书(中译收录)",
         "rights_holder": "Chaosium Inc.",
         "referenced_by": [
-          "CHANGELOG.md:197",
-          "WORKLOG.md:122",
+          "CHANGELOG.md:223",
+          "WORKLOG.md:130",
           "core/06-create-npc.md:104",
           "core/07-create-monster.md:49",
           "reference/mythos/README.md:23",
@@ -252,13 +252,13 @@
         "title": "克苏鲁的呼唤 第七版规则书 — 官方规则书全文(中译收录)",
         "rights_holder": "Chaosium Inc. — Call of Cthulhu © 1981–2014 Chaosium Inc.,Call of Cthulhu® 为 Chaosium 注册商标",
         "referenced_by": [
-          "WORKLOG.md:98",
-          "WORKLOG.md:122",
+          "WORKLOG.md:107",
+          "WORKLOG.md:130",
           "core/02-rules-reference.md:10",
           "reference/rules/README.md:7",
           "campaigns/beyond-the-treeline/references.md:33",
-          "update_plan/2026-08-08-compile-module.md:7",
-          "update_plan/2026-08-08-compile-module.md:38",
+          "update_plan/2026-08-08-compile-module.md:9",
+          "update_plan/2026-08-08-compile-module.md:40",
           "update_plan/Archived/2026-08-02-investigator-cards.md:104",
           "update_plan/Archived/2026-08-02-investigator-cards.md:108",
           "update_plan/Archived/2026-08-02-magic-quickref.md:41",
@@ -281,10 +281,9 @@
         "title": "怪物之锤 Malleus Monstrorum — 官方怪物图鉴(中译收录)",
         "rights_holder": "Chaosium Inc.",
         "referenced_by": [
-          "CHANGELOG.md:150",
-          "WORKLOG.md:88",
-          "WORKLOG.md:172",
-          "core/00-how-to-run.md:62",
+          "CHANGELOG.md:176",
+          "WORKLOG.md:97",
+          "core/00-how-to-run.md:72",
           "core/02-rules-reference.md:99",
           "core/04-design-scenario.md:97",
           "core/07-create-monster.md:16",
@@ -527,7 +526,8 @@
           "reference/tables/monster-index.md:247",
           "reference/tables/monster-index.md:248",
           "reference/tables/monster-index.md:264",
-          "campaigns/beyond-the-treeline/CLAUDE.md:114",
+          "campaigns/beyond-the-treeline/CLAUDE.md:96",
+          "campaigns/beyond-the-treeline/module/00-campaign-primer.md:116",
           "scripts/build-reference-index.py:30",
           "scripts/build-reference-index.py:217",
           "scripts/build-reference-index.py:267",
@@ -549,10 +549,10 @@
         "title": "调查员创建（Character Creation）",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:139",
-          "CHANGELOG.md:186",
-          "CHANGELOG.md:200",
-          "WORKLOG.md:103",
+          "CHANGELOG.md:165",
+          "CHANGELOG.md:212",
+          "CHANGELOG.md:226",
+          "WORKLOG.md:112",
           "core/01-intake.md:95",
           "core/01-intake.md:114",
           "core/01-intake.md:145",
@@ -563,7 +563,7 @@
           "core/06-create-npc.md:77",
           "core/06-create-npc.md:106",
           "core/07-create-monster.md:40",
-          "core/11-review.md:113",
+          "core/11-review.md:137",
           "core/13-create-investigator.md:13",
           "core/13-create-investigator.md:15",
           "core/13-create-investigator.md:103",
@@ -655,7 +655,7 @@
         "title": "追逐（Chases）",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:90",
+          "CHANGELOG.md:116",
           "core/02-rules-reference.md:78",
           "core/04-design-scenario.md:70",
           "core/04-design-scenario.md:74",
@@ -688,8 +688,8 @@
         "title": "战斗（Combat）",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:92",
-          "CHANGELOG.md:94",
+          "CHANGELOG.md:118",
+          "CHANGELOG.md:120",
           "core/02-rules-reference.md:76",
           "core/07-create-monster.md:18",
           "reference/decks/weapons-and-artifacts-zh.md:12",
@@ -738,16 +738,13 @@
         "referenced_by": [
           "reference/rules/eras/README.md:29",
           "reference/rules/eras/README.md:40",
-          "campaigns/beyond-the-treeline/canon-log.md:45",
-          "campaigns/beyond-the-treeline/CLAUDE.md:26",
-          "campaigns/beyond-the-treeline/CLAUDE.md:159",
+          "campaigns/beyond-the-treeline/CLAUDE.md:18",
           "campaigns/beyond-the-treeline/references.md:11",
           "campaigns/beyond-the-treeline/references.md:18",
           "campaigns/beyond-the-treeline/references.md:41",
           "campaigns/beyond-the-treeline/references.md:45",
           "campaigns/beyond-the-treeline/world/timeline.md:13",
-          "campaigns/beyond-the-treeline/world/velga-region.md:8",
-          "campaigns/beyond-the-treeline/world/velga.md:89"
+          "campaigns/beyond-the-treeline/world/velga-region.md:8"
         ]
       },
       "reference/rules/eras/end-times.md": {
@@ -786,7 +783,7 @@
         "title": "魔法（Magic）",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:144",
+          "CHANGELOG.md:170",
           "core/02-rules-reference.md:63",
           "core/02-rules-reference.md:89",
           "core/07-create-monster.md:104",
@@ -795,9 +792,8 @@
           "reference/mythos/spells/call-father-dagon-and-mother-hydra.md:6",
           "reference/rules/README.md:20",
           "reference/tables/cultist-archetypes.md:265",
-          "campaigns/beyond-the-treeline/CLAUDE.md:161",
-          "campaigns/beyond-the-treeline/CLAUDE.md:174",
-          "campaigns/beyond-the-treeline/CLAUDE.md:296",
+          "campaigns/beyond-the-treeline/CLAUDE.md:136",
+          "campaigns/beyond-the-treeline/CLAUDE.md:149",
           "update_plan/Archived/2026-08-02-conventions-gaps.md:16",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:9",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:174",
@@ -828,14 +824,14 @@
         "title": "怪物强度标尺（Monster Scale）",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:151",
-          "CHANGELOG.md:153",
-          "WORKLOG.md:105",
+          "CHANGELOG.md:177",
+          "CHANGELOG.md:179",
+          "WORKLOG.md:114",
           "core/02-rules-reference.md:58",
           "core/02-rules-reference.md:95",
           "core/07-create-monster.md:21",
           "core/07-create-monster.md:34",
-          "core/11-review.md:133",
+          "core/11-review.md:157",
           "templates/monster.md:7",
           "templates/monster.md:38",
           "reference/bestiary/byakhee.md:9",
@@ -881,7 +877,7 @@
         "title": "理智（Sanity）",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:93",
+          "CHANGELOG.md:119",
           "core/02-rules-reference.md:74",
           "core/04-design-scenario.md:100",
           "core/07-create-monster.md:19",
@@ -913,7 +909,7 @@
         "title": "判定基本盘（Skill Checks）",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:95",
+          "CHANGELOG.md:121",
           "core/02-rules-reference.md:68",
           "reference/mythos/artifacts-zh.md:17",
           "reference/rules/character-creation.md:16",
@@ -932,8 +928,8 @@
         "title": "邪教设计手法笔记 — 简体中文",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:117",
-          "CHANGELOG.md:203",
+          "CHANGELOG.md:143",
+          "CHANGELOG.md:229",
           "core/01-intake.md:86",
           "core/03-build-world.md:59",
           "core/04-design-scenario.md:46",
@@ -983,13 +979,13 @@
         "title": "图示惯例 — 简体中文",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:78",
-          "CHANGELOG.md:117",
-          "CHANGELOG.md:134",
+          "CHANGELOG.md:104",
+          "CHANGELOG.md:143",
+          "CHANGELOG.md:160",
           "core/03-build-world.md:91",
           "core/04-design-scenario.md:49",
           "core/04-design-scenario.md:80",
-          "core/11-review.md:90",
+          "core/11-review.md:114",
           "templates/cult.md:42",
           "templates/location.md:24",
           "templates/scene.md:22",
@@ -1028,7 +1024,7 @@
         "rights_holder": null,
         "referenced_by": [
           "WORKLOG.md:55",
-          "core/00-how-to-run.md:218",
+          "core/00-how-to-run.md:254",
           "core/07-create-monster.md:72",
           "core/09-description.md:14",
           "core/09-description.md:36",
@@ -1057,7 +1053,7 @@
         "title": "城镇解剖手法稿 — 简体中文",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:76",
+          "CHANGELOG.md:102",
           "core/03-build-world.md:43",
           "reference/craft/diagram-conventions-zh.md:92",
           "reference/craft/README.md:16",
@@ -1150,7 +1146,7 @@
         "title": "Fellrock (费尔罗克)",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:123",
+          "CHANGELOG.md:149",
           "reference/mythos/great-old-ones/cthulhu.md:68",
           "reference/mythos/spells/fellrock-call-bind.md:11",
           "reference/mythos/spells/oil-of-silence.md:10",
@@ -1234,7 +1230,7 @@
         "title": "造物与神器 — 速查",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:123",
+          "CHANGELOG.md:149",
           "core/06-create-npc.md:110",
           "core/13-create-investigator.md:36",
           "reference/README.md:35",
@@ -1432,7 +1428,7 @@
         "title": "Oil of Silence (沉默之油)",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:123",
+          "CHANGELOG.md:149",
           "reference/bestiary/fellrock.md:60",
           "reference/mythos/spells/fellrock-call-bind.md:17",
           "update_plan/Archived/2026-08-02-cult-doc-wrapup.md:48"
@@ -1461,7 +1457,7 @@
         "title": "clue-engines.md — 线索引擎:痕迹从哪来",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:72",
+          "CHANGELOG.md:98",
           "core/04-design-scenario.md:45",
           "core/04-design-scenario.md:62",
           "reference/craft/cult-design-zh.md:63",
@@ -1487,14 +1483,14 @@
         "title": "complications.md — 这一场会出什么岔子",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:67",
+          "CHANGELOG.md:93",
           "reference/decks/miseries-zh.md:9",
           "reference/decks/miseries-zh.md:414",
           "reference/decks/README.md:17",
           "reference/tables/README.md:28",
-          "campaigns/beyond-the-treeline/canon-log.md:98",
-          "campaigns/beyond-the-treeline/overview.md:63",
-          "campaigns/beyond-the-treeline/module/00-campaign-primer.md:206",
+          "campaigns/beyond-the-treeline/canon-log.md:122",
+          "campaigns/beyond-the-treeline/overview.md:82",
+          "campaigns/beyond-the-treeline/module/00-campaign-primer.md:236",
           "update_plan/2026-08-04-scenario-diversity.md:154",
           "update_plan/2026-08-04-scenario-diversity.md:221"
         ]
@@ -1503,20 +1499,20 @@
         "title": "confrontation-grounds.md — 对抗场面成立的条件",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:81",
+          "CHANGELOG.md:107",
           "core/04-design-scenario.md:92",
           "core/09-description.md:56",
           "reference/tables/README.md:52",
           "update_plan/2026-08-04-scenario-diversity.md:170",
           "update_plan/2026-08-04-scenario-diversity.md:209",
-          "update_plan/README.md:60"
+          "update_plan/README.md:70"
         ]
       },
       "reference/tables/cult-goals.md": {
         "title": "cult-goals.md — 邪教目标:愿望 × 手段",
         "rights_holder": null,
         "referenced_by": [
-          "core/00-how-to-run.md:113",
+          "core/00-how-to-run.md:123",
           "templates/cult.md:8",
           "reference/craft/cult-design-zh.md:53",
           "reference/craft/cult-design-zh.md:112",
@@ -1573,7 +1569,7 @@
         "title": "cultist-archetypes.md — 邪教徒范型速查",
         "rights_holder": null,
         "referenced_by": [
-          "WORKLOG.md:104",
+          "WORKLOG.md:113",
           "core/06-create-npc.md:80",
           "reference/mythos/spells/call-father-dagon-and-mother-hydra.md:24",
           "reference/tables/README.md:63",
@@ -1667,7 +1663,7 @@
         "title": "manias.md — 躁狂症状表(Manias)",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:103",
+          "CHANGELOG.md:129",
           "reference/decks/phobias-and-manias-zh.md:12",
           "reference/rules/sanity.md:138",
           "reference/tables/madness-instant.md:24",
@@ -1685,15 +1681,14 @@
         "title": "monster-index.md — 神话生物导航表",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:35",
-          "CHANGELOG.md:64",
-          "CHANGELOG.md:133",
-          "CHANGELOG.md:154",
-          "CHANGELOG.md:157",
-          "WORKLOG.md:89",
-          "WORKLOG.md:110",
-          "WORKLOG.md:168",
-          "core/00-how-to-run.md:62",
+          "CHANGELOG.md:59",
+          "CHANGELOG.md:90",
+          "CHANGELOG.md:159",
+          "CHANGELOG.md:180",
+          "CHANGELOG.md:183",
+          "WORKLOG.md:98",
+          "WORKLOG.md:119",
+          "core/00-how-to-run.md:72",
           "core/04-design-scenario.md:96",
           "core/07-create-monster.md:11",
           "templates/great-old-one.md:4",
@@ -1712,8 +1707,7 @@
           "reference/mythos/great-old-ones/shub-niggurath.md:66",
           "reference/mythos/great-old-ones/yog-sothoth.md:70",
           "reference/tables/README.md:67",
-          "campaigns/beyond-the-treeline/CLAUDE.md:113",
-          "campaigns/beyond-the-treeline/CLAUDE.md:117",
+          "campaigns/beyond-the-treeline/CLAUDE.md:100",
           "scripts/build-reference-index.py:18",
           "scripts/build-reference-index.py:29",
           "scripts/build-reference-index.py:44",
@@ -1746,9 +1740,9 @@
         "title": "monster-traits.md — 数值词条菜单",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:152",
+          "CHANGELOG.md:178",
           "core/02-rules-reference.md:100",
-          "core/11-review.md:130",
+          "core/11-review.md:154",
           "templates/monster.md:36",
           "reference/bestiary/black-pharaoh.md:56",
           "reference/bestiary/dark-young.md:54",
@@ -1781,8 +1775,8 @@
           "reference/tables/README.md:58",
           "reference/tables/scenario-shapes.md:3",
           "reference/tables/scenario-shapes.md:26",
-          "campaigns/beyond-the-treeline/overview.md:28",
-          "campaigns/beyond-the-treeline/world/velga-region.md:161",
+          "campaigns/beyond-the-treeline/overview.md:38",
+          "campaigns/beyond-the-treeline/world/velga-region.md:185",
           "campaigns/_template-campaign/CLAUDE.md:93",
           "update_plan/2026-08-04-scenario-diversity.md:204",
           "update_plan/Archived/2026-08-02-cult-doc-integration.md:215",
@@ -1804,7 +1798,8 @@
         "title": "npc-quirks.md — 让 NPC 能被演出来的那个小动作",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:67",
+          "CHANGELOG.md:93",
+          "WORKLOG.md:128",
           "reference/decks/README.md:15",
           "reference/tables/npc-appearance.md:3",
           "reference/tables/npc-appearance.md:36",
@@ -1819,7 +1814,7 @@
         "title": "phobias.md — 恐惧症状表(Phobias)",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:103",
+          "CHANGELOG.md:129",
           "reference/decks/phobias-and-manias-zh.md:12",
           "reference/rules/sanity.md:137",
           "reference/tables/madness-instant.md:23",
@@ -1834,19 +1829,19 @@
         "title": "scenario-shapes.md — 模组的形状,不是骨架",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:82",
+          "CHANGELOG.md:108",
           "reference/tables/README.md:56",
           "update_plan/2026-08-04-scenario-diversity.md:5",
           "update_plan/2026-08-04-scenario-diversity.md:195",
           "update_plan/README.md:13",
-          "update_plan/README.md:60"
+          "update_plan/README.md:70"
         ]
       },
       "reference/tables/town-institutions.md": {
         "title": "town-institutions.md — 这个镇里有哪些机构",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:77",
+          "CHANGELOG.md:103",
           "reference/craft/diagram-conventions-zh.md:84",
           "reference/craft/town-anatomy-zh.md:49",
           "reference/craft/town-anatomy-zh.md:58",
@@ -1868,8 +1863,8 @@
         "title": "武器强度索引：反派战力配置用",
         "rights_holder": null,
         "referenced_by": [
-          "CHANGELOG.md:103",
-          "WORKLOG.md:104",
+          "CHANGELOG.md:129",
+          "WORKLOG.md:113",
           "reference/decks/weapons-and-artifacts-zh.md:14",
           "reference/rules/combat.md:29",
           "reference/rules/combat.md:35",
@@ -1936,6 +1931,7 @@
         "reference/sourcebooks/malleus-monstrorum-zh.md",
         "reference/tables/cultist-archetypes.md",
         "reference/tables/monster-index.md",
+        "reference/tables/npc-quirks.md",
         "reference/tables/weapons-index.md"
       ],
       "campaigns/_template-campaign/CLAUDE.md": [
@@ -1950,10 +1946,10 @@
         "reference/tables/monster-index.md"
       ],
       "campaigns/beyond-the-treeline/canon-log.md": [
-        "reference/rules/eras/dark-ages.md",
         "reference/tables/complications.md"
       ],
       "campaigns/beyond-the-treeline/module/00-campaign-primer.md": [
+        "reference/sourcebooks/malleus-monstrorum-zh.md",
         "reference/tables/complications.md"
       ],
       "campaigns/beyond-the-treeline/overview.md": [
@@ -1977,9 +1973,6 @@
       "campaigns/beyond-the-treeline/world/velga-region.md": [
         "reference/rules/eras/dark-ages.md",
         "reference/tables/mythos-angles.md"
-      ],
-      "campaigns/beyond-the-treeline/world/velga.md": [
-        "reference/rules/eras/dark-ages.md"
       ],
       "core/00-how-to-run.md": [
         "reference/craft/lovecraft-zh.md",

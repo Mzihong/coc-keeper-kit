@@ -24,7 +24,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 123,
+          "line": 149,
           "context": "- `fellrock.md` 的「沉默之油」反查链接指向不含该条目的 `artifacts-zh.md`,已改指 `mythos/spells/oil-of-silence.md`。"
         },
         {
@@ -772,7 +772,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 123,
+          "line": 149,
           "context": "- `fellrock.md` 的「沉默之油」反查链接指向不含该条目的 `artifacts-zh.md`,已改指 `mythos/spells/oil-of-silence.md`。"
         },
         {

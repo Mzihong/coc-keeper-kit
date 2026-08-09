@@ -57,6 +57,8 @@ reference/          跨战役共享
 campaigns/          一战役一目录,_template-campaign/ 是模板
 update_plan/        改动计划 + 完结清单;README.md 是状态索引,Archived/ 是已完结的
 scripts/            render-investigator.py · build-reference-index.py · roll.py · render-map.py
+                    check-campaign-consistency.py(战役一致性机械检查,--check 有问题退 1、
+                    SKIPPED 退 2;SKIPPED 不等于通过)
 ```
 
 **没有构建产物,也没有构建步骤。** kit 由能读文件的 agent 就地读取(Claude Code / codex /
@@ -68,9 +70,16 @@ gemini CLI),`dist/bundle.md` 单文件链路已于 2026-08-04 退役(P13)。
    只存在于一份里的指令本身就是 bug。
 2. **每次改动在 `CHANGELOG.md` 追加**;同一天合并进同一条,不新开。**每条 ≤2 行**
    (2026-08-08 补的硬上限,见该文件顶部)。
-3. **文件名一律英文 ASCII `kebab-case.md`**,哪怕内容是中文。
-4. **输出语言按战役声明**,kit 脚手架和文件名保持英文;写中文查 `reference/glossary-zh.md`。
-5. **转载三分法**——边界是**规则条文 vs 虚构散文**,不是"数值 vs 描述性文字":
+3. **发现两份已有文件对同一事实说法不同 → 报给守秘人,不自己解决。** 说清哪边更新、依据是
+   什么(git 记录 / 文件内日期 / Auto-filled 的裁决记录)。**优先级规则不是静默套用的许可**
+   ——战役 `CLAUDE.md` 赢是给守秘人裁决用的判据,而守秘人完全可能裁定权威那一边才是错的
+   (2026-08-09 就发生过,方向还相反的两次)。判之前先确认两边在数同一样东西。
+4. **改动 ≥3 份战役文件、或动了任何已声明的规约设定 → 收尾必须跑
+   `python scripts/check-campaign-consistency.py --campaign <slug>` + `core/11-review.md`,
+   并把结论写进当天 changelog 或会话日志。** 手写待办清单不算替代——它只覆盖想得到的项。
+5. **文件名一律英文 ASCII `kebab-case.md`**,哪怕内容是中文。
+6. **输出语言按战役声明**,kit 脚手架和文件名保持英文;写中文查 `reference/glossary-zh.md`。
+7. **转载三分法**——边界是**规则条文 vs 虚构散文**,不是"数值 vs 描述性文字":
    - **① 规则条文**(数值、机制、条文本身的措辞)→ **可转录**,文件末尾必须有 `## 引用出处`。
    - **② 虚构散文**(小说、战役文本、`craft/` 源材料、`_source/` 里的设定书)→ **只取手法,
      永不取文字**。
@@ -115,15 +124,19 @@ gemini CLI),`dist/bundle.md` 单文件链路已于 2026-08-04 退役(P13)。
 
 | # | 债 | 在哪 |
 |---|---|---|
-| 1 | 三处指着**已摘除的 `external/` 子模块**(目录条目 + `og_Norval/` 那句"same rule as external" + 原创/第三方对照表)。`.gitmodules` 不存在 | `reference/README.md` |
-| 2 | 种子表写成 `npc-quirks`,P14 阶段 2 已改名 **`complications`**,父目录 README 没跟着改 | `reference/README.md:31-32` |
+| 1 | 三处指着**已摘除的 `external/` 子模块**(`og_Norval/` 那句 "same rule as `external/` below" + `external/` 条目本身 + 原创/第三方对照表)。`.gitmodules` 与 `reference/external/` 都不存在 | `reference/README.md:70, 73-79, 87` |
+| 2 | 仍把 `npc-quirks` 列为第四张**种子表**。实际种子表是 **`complications`**(`core/01-intake.md:139`);`npc-quirks.md` **没被改名**——只是移出种子表集,仍由 `core/06-create-npc.md:73` 掷。`tables/README.md` 已修,父目录没跟着改 | `reference/README.md:37-38` |
 | 3 | `--check` **不是只校验**:注释写 `validate only`,但 `main()` 无条件先跑 `build()`,而 `build()` 总是写盘;`--check` 只改退出码 | `scripts/build-reference-index.py:7, 655-657` |
-| 4 | P7 计划第 5 行行数写 13731,实际 5365;`sourcebooks/index.json` 行数字段同样没清 | `update_plan/Archived/` |
-| 5 | `grand-grimoire-zh.md` / `keeper-rulebook-7e-zh.md` 两份头部的"转录质量"警示未复核(malleus 那份已随换稿重写) | `reference/sourcebooks/` |
-| 6 | **`core/03` 允许地点文件越权收紧 intake。** 实例:`beyond-the-treeline` 的 `stone-watch.md` 把 intake 写明的 `<party-agnostic>` 硬化成"调查员就是当值的那一对"。`core/11` 现在查不出这类越权 | `core/03` / `core/11` |
-| 7 | **codex 到底读没读 `core/01-intake.md`** 从未确认。若它压根没打开 `core/` 任何文件,那是另一种病(codex 只加载 cwd 及祖先的 `AGENTS.md`),`95dfdf2` 的硬门禁治不了 | — |
+| 4 | `grand-grimoire-zh.md` 是**唯一还在查询链路上**的转录稿,头部却**没有转录质量声明**(malleus 有,见其第 14 行)。`keeper-rulebook-7e-zh.md` 头部那句"部分章节尚未系统校对"从未复核,但它已退出查询链路(见上一节),优先级低 | `reference/sourcebooks/` |
+| 5 | **`core/03` 允许地点文件越权收紧 intake,而 `core/11` 查不出这类越权。** 原始实例 `stone-watch.md` 已随 `b511607` 删除、守秘人已在 `campaigns/beyond-the-treeline/CLAUDE.md:199` 手工推翻——**但两份 spec 至今没有护栏,下一个战役会再犯** | `core/03` / `core/11` |
+| 6 | **codex 到底读没读 `core/01-intake.md`** 从未确认。若它压根没打开 `core/` 任何文件,那是另一种病(codex 只加载 cwd 及祖先的 `AGENTS.md`),`95dfdf2` 的硬门禁治不了 | — |
 
 **1、2 同属完结清单第 8 项(反向扫描)本该抓到的类型。**
+
+> **本表逐条 grep 核验于 2026-08-09**(上次核验:写下它的 `b511607`)。核验删掉一条已还清的债,
+> 重写了三条(前提失效 / 行号漂了 / 引的例证文件已被删)——**行号是本表最先烂掉的部分**,
+> 捡之前自己再复核一遍。
+> 复核义务写在 `core/15-close-session.md` 的 "Re-verify the debt table"。
 
 ## 活着的计划(状态权威在 `update_plan/README.md`,这里只记阻塞点)
 
@@ -142,7 +155,7 @@ gemini CLI),`dist/bundle.md` 单文件链路已于 2026-08-04 退役(P13)。
 **其余 P1–P17 全部完成并归档。** 怎么做的、当时怎么权衡的,看 `update_plan/Archived/<对应文件>`
 与 `git log`——**不要在本文件里找**(剪枝规则 2)。
 
-## 两条治过的病,值得记住
+## 三条治过的病,值得记住
 
 - **intake 硬门禁:问完就停,Keeper 回复前不建任何文件(`95dfdf2`)。** 起因是 Keeper 用 codex
   测「创建新团」,模型一题没问就开建。**根因不在路由,在 `core/01-intake.md` 的写法**:全文只有
@@ -151,6 +164,12 @@ gemini CLI),`dist/bundle.md` 单文件链路已于 2026-08-04 退役(P13)。
 - **`CHANGELOG.md` 与本文件的体例膨胀(2026-08-08)。** 规则一直在顶部,没人改过;drift 的机制
   是**每个会话照着文件里前一条的样子写,而不是照着顶部的规则写**,自我强化。
   **药是可量化的硬约束**(changelog「每条 ≤2 行」、本文件「~180 行」)+ 显式写明「不要照上一条写」。
+- **没有人负责回头查的东西一定会烂(2026-08-09,两个会话同一天独立撞上)。** 债表烂了四个提交
+  没人发现——`core/15` 步骤 2 的 fact-check 只覆盖**本次会话写下的**内容;同日战役全面冲突,
+  因为完结清单第 8 项「反向扫描」本该抓到它,而 `core/15` 列举 ad-hoc 适用哪几项时**漏了第 8
+  项**(P15 后加的,这份枚举从没跟上)。**两层教训:① 加规则时把所有指向它的清单一并改;
+  ② 只靠"记得做"的义务等于不存在——要么留下能被事后核的产物,要么写成脚本。** 手写待办清单
+  两次都不管用:它只覆盖想得到的项。
 
 ---
 
@@ -158,6 +177,5 @@ gemini CLI),`dist/bundle.md` 单文件链路已于 2026-08-04 退役(P13)。
 
 本节只留**未提交**的工作(剪枝规则 1)。
 
-**当前:无。** 2026-08-08 的三批工作(changelog 体例回归、怪物索引路由修复 + 本文件瘦身、
-`beyond-the-treeline` 战役重构与 primer 对齐)均已随 `b511607` / `149612e` / `3e4babf` 提交,
-按规则删除——细节看 `git show`,别在这里重复背一份。
+*(空 —— 2026-08-09 的两轮工作已随 `deb48b9` / `8ea31e0` / `ea1865a` 提交;结论进了上面的
+「三条治过的病」与硬约定 3、4,执行叙述在 `git log` 与 `update_plan/2026-08-09-conflict-reporting.md`。)*

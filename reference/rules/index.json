@@ -21,22 +21,22 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 139,
+          "line": 165,
           "context": "- 新增 `reference/rules/eras/` 六个年代包(只写与基准的差集),`character-creation.md` 首次明说自己是 1920s 基准。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 186,
+          "line": 212,
           "context": "- `character-creation.md` 补齐年龄补正、Build/伤害加值、技能基础值等建卡数据,可用来审核他人交的卡。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 200,
+          "line": 226,
           "context": "- `character-creation.md` 各小节补上数据来源指路(标明取自哪个源文件/章节)。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 103,
+          "line": 112,
           "context": "- **`reference/rules/character-creation.md` 的小节编号。** `core/` 五处 +"
         },
         {
@@ -91,7 +91,7 @@
         },
         {
           "file": "core/11-review.md",
-          "line": 113,
+          "line": 137,
           "context": "(`reference/rules/character-creation.md` §11). Cross-check against the campaign"
         },
         {
@@ -533,7 +533,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 90,
+          "line": 116,
           "context": "- `chases.md` 把追逐当抽象距离比 MOV 高低,与规则书的地点+行动点体系完全不是一回事,载具速度表也是自造的,已按第七章重写。"
         },
         {
@@ -680,12 +680,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 92,
+          "line": 118,
           "context": "- `combat.md` 的重伤阈值没写清,现明确为「伤害 ≥ 角色最大生命值的一半」。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 94,
+          "line": 120,
           "context": "- `combat.md` 把全自动射击的四级难度阶梯串成了七级链,已改回普通→困难→极难→大成功→不可能。"
         },
         {
@@ -895,19 +895,9 @@
           "context": "`cthulhu-invictus.md`、`dark-ages.md`、`mystic-iceland.md` 各自的**装备与武器**/"
         },
         {
-          "file": "campaigns/beyond-the-treeline/canon-log.md",
-          "line": 45,
-          "context": "- **识纹所** —— 谷里认先民纹的一脉。机制上套 `eras/dark-ages.md` 的隐士/异教徒或神职人员"
-        },
-        {
           "file": "campaigns/beyond-the-treeline/CLAUDE.md",
-          "line": 26,
+          "line": 18,
           "context": "- **Era（规则）:** `dark-ages` —— 按 `reference/rules/eras/dark-ages.md` 加载（路径 A）。"
-        },
-        {
-          "file": "campaigns/beyond-the-treeline/CLAUDE.md",
-          "line": 159,
-          "context": "这些**不是**桌规，是年代包本身；见 `reference/rules/eras/dark-ages.md`。"
         },
         {
           "file": "campaigns/beyond-the-treeline/references.md",
@@ -932,20 +922,15 @@
         {
           "file": "campaigns/beyond-the-treeline/world/timeline.md",
           "line": 13,
-          "context": "的常态,见 `reference/rules/eras/dark-ages.md`)。谷里记年靠一根立在小圣所墙边的刻痕木"
+          "context": "的常态,见 `reference/rules/eras/dark-ages.md`)。谷里记年靠一根立在教堂墙边的刻痕木"
         },
         {
           "file": "campaigns/beyond-the-treeline/world/velga-region.md",
           "line": 8,
           "context": "`reference/rules/eras/dark-ages.md`)"
-        },
-        {
-          "file": "campaigns/beyond-the-treeline/world/velga.md",
-          "line": 89,
-          "context": "> **KEEPER ONLY** —— 识纹人机制上照 `dark-ages.md` 的隐士/异教徒或神职人员职业模板套用；"
         }
       ],
-      "reference_count": 12
+      "reference_count": 9
     },
     {
       "file": "eras/end-times.md",
@@ -1048,7 +1033,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 144,
+          "line": 170,
           "context": "- 新增 `reference/rules/magic.md`:施法消耗与用时、对抗判定、新法术定价,以及魔法书研读两阶段与 CMI/CMF/MR 三值。"
         },
         {
@@ -1093,18 +1078,13 @@
         },
         {
           "file": "campaigns/beyond-the-treeline/CLAUDE.md",
-          "line": 161,
-          "context": "规则依据见 `reference/rules/magic.md` §11「永久效果花永久的意志，不花魔法值」。"
+          "line": 136,
+          "context": "- **意志（POW）的永久流失在本战役是活跃机制**，见下。规则依据：`reference/rules/magic.md`"
         },
         {
           "file": "campaigns/beyond-the-treeline/CLAUDE.md",
-          "line": 174,
-          "context": "> 5. **1999 年，各分堂在同一个时辰同时发动。** 这**不是**一道笼罩全球的阵——`magic.md` §11"
-        },
-        {
-          "file": "campaigns/beyond-the-treeline/CLAUDE.md",
-          "line": 296,
-          "context": "| **代价 = 意志（POW）** | 涓滴 1D3/次 → 整份 | **守秘人（2026-08-08）** | `magic.md` §11「永久效果花永久的意志」；恩珊与科瓦宗族两条 canon 早就为它铺好了落点 |"
+          "line": 149,
+          "context": "> ⑤ **1999 年，各分堂在同一个时辰同时发动。** 不是一道笼罩全球的阵（`magic.md` §11："
         },
         {
           "file": "update_plan/Archived/2026-08-02-conventions-gaps.md",
@@ -1227,7 +1207,7 @@
           "context": "| P12 | [cheatsheet-self-sufficiency](2026-08-04-cheatsheet-self-sufficiency.md) | 速查表自足化:让 `reference/rules/` 单独就能回答规则问题,规则书退出查询链路(仍留在版本库里当对账底本)。**阶段 0–1**:`co"
         }
       ],
-      "reference_count": 36
+      "reference_count": 35
     },
     {
       "file": "monster-scale.md",
@@ -1243,17 +1223,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 151,
+          "line": 177,
           "context": "- 新增 `reference/rules/monster-scale.md`:五级强度阶梯 × 四档 threat 的 SAN/HP/护甲/攻击区间,数据来自全书统计而非估算。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 153,
+          "line": 179,
           "context": "- `monster-scale.md` 新增一节:书上的上级/下级标签分开强度的力度大于 threat 四档的整个跨度(耐久 2–2.6 倍),取样声明改成真数 223 个属性块。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 105,
+          "line": 114,
           "context": "+ `rules/monster-scale.md` 都硬编码引用着 **§11 = 人类反派基线**。"
         },
         {
@@ -1278,7 +1258,7 @@
         },
         {
           "file": "core/11-review.md",
-          "line": 133,
+          "line": 157,
           "context": "\"Trait load total\" against `reference/rules/monster-scale.md`'s ceiling for that tier"
         },
         {
@@ -1488,7 +1468,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 93,
+          "line": 119,
           "context": "- `sanity.md` 把疯狂发作时长写成定值 10 轮,实际是 1D10 轮且只在发作时有其他调查员在场时成立。"
         },
         {
@@ -1628,7 +1608,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 95,
+          "line": 121,
           "context": "- `skill-checks.md` 的对抗检定平手规则整条是错的(实为技能值高者胜),并补上不适用难度等级、不能孤注一掷等三条。"
         },
         {

@@ -22,13 +22,13 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 197,
+          "line": 223,
           "context": "- P7 魔法速查阻塞解除(转换稿已归档为 `grand-grimoire-zh.md`)。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 122,
-          "context": "| 5 | `grand-grimoire-zh.md` / `keeper-rulebook-7e-zh.md` 两份头部的\"转录质量\"警示未复核(malleus 那份已随换稿重写) | `reference/sourcebooks/` |"
+          "line": 130,
+          "context": "| 4 | `grand-grimoire-zh.md` 是**唯一还在查询链路上**的转录稿,头部却**没有转录质量声明**(malleus 有,见其第 14 行)。`keeper-rulebook-7e-zh.md` 头部那句\"部分章节尚未系统校对\"从未复核,但它已退出查询链路(见上一节),优先级低 | `refe"
         },
         {
           "file": "core/06-create-npc.md",
@@ -117,13 +117,13 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 98,
+          "line": 107,
           "context": "- **`keeper-rulebook-7e-zh.md` 已退出查询链路,但仍在版本库里。** 查规则去 `reference/rules/*`"
         },
         {
           "file": "WORKLOG.md",
-          "line": 122,
-          "context": "| 5 | `grand-grimoire-zh.md` / `keeper-rulebook-7e-zh.md` 两份头部的\"转录质量\"警示未复核(malleus 那份已随换稿重写) | `reference/sourcebooks/` |"
+          "line": 130,
+          "context": "| 4 | `grand-grimoire-zh.md` 是**唯一还在查询链路上**的转录稿,头部却**没有转录质量声明**(malleus 有,见其第 14 行)。`keeper-rulebook-7e-zh.md` 头部那句\"部分章节尚未系统校对\"从未复核,但它已退出查询链路(见上一节),优先级低 | `refe"
         },
         {
           "file": "core/02-rules-reference.md",
@@ -142,12 +142,12 @@
         },
         {
           "file": "update_plan/2026-08-08-compile-module.md",
-          "line": 7,
+          "line": 9,
           "context": "> `reference/sourcebooks/keeper-rulebook-7e-zh.md` 第十五章)」;同日拍板"
         },
         {
           "file": "update_plan/2026-08-08-compile-module.md",
-          "line": 38,
+          "line": 40,
           "context": "`reference/sourcebooks/keeper-rulebook-7e-zh.md` 第十五章《古茂密林之中》"
         },
         {
@@ -257,22 +257,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 150,
+          "line": 176,
           "context": "- `malleus-monstrorum-zh.md` 换成 Keeper 手工重排的转录稿,属性数值可以直接读,不用再逐条判读修复。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 88,
+          "line": 97,
           "context": "- **`reference/bestiary/` 不是怪物目录。** 目录是 `sourcebooks/malleus-monstrorum-zh.md`"
         },
         {
-          "file": "WORKLOG.md",
-          "line": 172,
-          "context": "\"kit 里没有飞天水螅条目\",而它就在 `malleus-monstrorum-zh.md:1536`,索引里有)。"
-        },
-        {
           "file": "core/00-how-to-run.md",
-          "line": 62,
+          "line": 72,
           "context": "| **picking** one — \"what creatures are available\", \"which monster fits\", a creature's official stats | `reference/tables/monster-index.md` — 223 entries, one l"
         },
         {
@@ -1487,8 +1482,13 @@
         },
         {
           "file": "campaigns/beyond-the-treeline/CLAUDE.md",
-          "line": 114,
-          "context": "`reference/sourcebooks/malleus-monstrorum-zh.md:1536`，SAN 1d3/1d20，独立、不服侍任何"
+          "line": 96,
+          "context": "- **幕后（永不上场）：飞天水螅**——`reference/sourcebooks/malleus-monstrorum-zh.md:1536`"
+        },
+        {
+          "file": "campaigns/beyond-the-treeline/module/00-campaign-primer.md",
+          "line": 116,
+          "context": "> （`reference/sourcebooks/malleus-monstrorum-zh.md:1536`，SAN 1d3/1d20，独立、不服侍任何"
         },
         {
           "file": "scripts/build-reference-index.py",

@@ -19,7 +19,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 72,
+          "line": 98,
           "context": "- 新增 `reference/tables/clue-engines.md`(十台线索引擎),设计剧本时先掷 2–3 条决定线索从哪来,不再总收敛成查账+查地产+找目击者。"
         },
         {
@@ -132,7 +132,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 67,
+          "line": 93,
           "context": "- `reference/tables/README.md` 把种子表说成含 `npc-quirks.md`,实际掷的是 `complications.md`,已按 `core/` 改正。"
         },
         {
@@ -157,17 +157,17 @@
         },
         {
           "file": "campaigns/beyond-the-treeline/canon-log.md",
-          "line": 98,
+          "line": 122,
           "context": "- [ ] 「在一个不该被认出来的地方被认了出来」—— 变数伏笔，等一场合适的戏（`complications.md`"
         },
         {
           "file": "campaigns/beyond-the-treeline/overview.md",
-          "line": 63,
+          "line": 82,
           "context": "- [ ] 「在一个不该被认出来的地方被认了出来」—— `complications.md` 掷 11。已埋两个接口："
         },
         {
           "file": "campaigns/beyond-the-treeline/module/00-campaign-primer.md",
-          "line": 206,
+          "line": 236,
           "context": "- [ ] 「在一个不该被认出来的地方被认了出来」——`complications.md` 掷 11 埋下的伏笔，接口"
         },
         {
@@ -196,7 +196,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 81,
+          "line": 107,
           "context": "- 新增 `reference/tables/confrontation-grounds.md`(1d20):对抗场面的地形与限制、场上能用什么、为何走不掉、怎么才算收场。"
         },
         {
@@ -226,7 +226,7 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 60,
+          "line": 70,
           "context": "| 1 | **P14** 模组多样性 | ★★☆☆☆ | `scripts/roll.py`(**实测 310 行**,估时写的是 ~200:表解析 + 不放回 + 跨战役查重 + 行数自检,外加计划清单之外追加的 `--check-all` 与 `--spec`)+ 两张新表**实测共 30 条原创条目**(`co"
         }
       ],
@@ -245,7 +245,7 @@
       "referenced_by": [
         {
           "file": "core/00-how-to-run.md",
-          "line": 113,
+          "line": 123,
           "context": "and how it handles two-dimensional tables like `cult-goals.md`."
         },
         {
@@ -485,7 +485,7 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 104,
+          "line": 113,
           "context": "`_template-campaign/CLAUDE.md` + `tables/cultist-archetypes.md` + `tables/weapons-index.md`"
         },
         {
@@ -863,7 +863,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 103,
+          "line": 129,
           "context": "- 新增 `phobias.md`(表IX,100 条)、`manias.md`(表X,100 条)与 `weapons-index.md`(按威胁强度四档);"
         },
         {
@@ -938,47 +938,42 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 35,
+          "line": 59,
           "context": "`core/00` 路由表把「挑」与「造」分成两行,挑怪指向 `monster-index.md` 的 223 条。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 64,
+          "line": 90,
           "context": "- 六份神格页此前只能被写进去、没有流程会读它们,现已收进 `monster-index.md` 一节,起草世界观与威胁类型时会被指到。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 133,
+          "line": 159,
           "context": "- 上述条目全部接入 `monster-index.md` 的 `Serves` 检索,「哈斯塔的精英怪是什么」不再返回空集(P9 三阶段完成并归档)。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 154,
+          "line": 180,
           "context": "- 新增 `reference/tables/monster-index.md`,覆盖怪物图鉴全部 223 条 + 当时 9 只 bestiary 条目,每条标 `Serves` 与一句区分摘要。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 157,
+          "line": 183,
           "context": "- `core/07` 与 `core/04` 接线:挑怪物先查 `monster-index.md` 再动手写,不用翻原文猜。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 89,
+          "line": 98,
           "context": "(223 条 / 10159 行),检索层是 `tables/monster-index.md`(274 行,每条带行号锚点)。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 110,
+          "line": 119,
           "context": "的转录稿行,会在 `monster-index.md` 里产生**重复行**。现有绕法是把标题改成书本原名全式"
         },
         {
-          "file": "WORKLOG.md",
-          "line": 168,
-          "context": "拆成 **造(`core/07`)** 与 **挑(`monster-index.md`)** 两行。缺的一直是后者——一个只是在"
-        },
-        {
           "file": "core/00-how-to-run.md",
-          "line": 62,
+          "line": 72,
           "context": "| **picking** one — \"what creatures are available\", \"which monster fits\", a creature's official stats | `reference/tables/monster-index.md` — 223 entries, one l"
         },
         {
@@ -1073,13 +1068,8 @@
         },
         {
           "file": "campaigns/beyond-the-treeline/CLAUDE.md",
-          "line": 113,
-          "context": "- **幕后（永不上场）：飞天水螅**（`reference/tables/monster-index.md` →"
-        },
-        {
-          "file": "campaigns/beyond-the-treeline/CLAUDE.md",
-          "line": 117,
-          "context": "一律先读 `reference/tables/monster-index.md`（274 行索引），按行号锚点跳进转录稿，"
+          "line": 100,
+          "context": "`reference/tables/monster-index.md`**（223 条索引，按行号跳进转录稿），不要拿"
         },
         {
           "file": "scripts/build-reference-index.py",
@@ -1212,7 +1202,7 @@
           "context": "| P15 | [core-spec-audit](2026-08-04-core-spec-audit.md) | `core/` 复查勘误:九条问题归三类根因。**阶段 0**(2026-08-07,`11f90b0`)P13 余波扫描(`core/07` 索引段落改写、`reference/external/` "
         }
       ],
-      "reference_count": 55
+      "reference_count": 53
     },
     {
       "file": "monster-traits.md",
@@ -1225,7 +1215,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 152,
+          "line": 178,
           "context": "- 新增 `reference/tables/monster-traits.md`:18 条数值词条,每条强制带一个可被发现的破解口并按等级设负载上限;`core/11` 新增两条审计题。"
         },
         {
@@ -1235,7 +1225,7 @@
         },
         {
           "file": "core/11-review.md",
-          "line": 130,
+          "line": 154,
           "context": "only in `reference/tables/monster-traits.md` and never reaches the table doesn't count."
         },
         {
@@ -1383,12 +1373,12 @@
         },
         {
           "file": "campaigns/beyond-the-treeline/overview.md",
-          "line": 28,
+          "line": 38,
           "context": "> 3. **迁徙**（`mythos-angles.md` 掷 18）：某个东西之所以到了这里，是因为它原来的地方待不下"
         },
         {
           "file": "campaigns/beyond-the-treeline/world/velga-region.md",
-          "line": 161,
+          "line": 185,
           "context": "> `core/07-create-monster.md` 会落定具体形态与升级路径。(角度来源:`mythos-angles.md` 掷"
         },
         {
@@ -1462,8 +1452,13 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 67,
+          "line": 93,
           "context": "- `reference/tables/README.md` 把种子表说成含 `npc-quirks.md`,实际掷的是 `complications.md`,已按 `core/` 改正。"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 128,
+          "context": "| 2 | 仍把 `npc-quirks` 列为第四张**种子表**。实际种子表是 **`complications`**(`core/01-intake.md:139`);`npc-quirks.md` **没被改名**——只是移出种子表集,仍由 `core/06-create-npc.md:73` 掷。`table"
         },
         {
           "file": "reference/decks/README.md",
@@ -1506,7 +1501,7 @@
           "context": "`core/06-create-npc.md`;与 `npc-quirks.md` 分工:quirks 是**怎么演**,这张是"
         }
       ],
-      "reference_count": 9
+      "reference_count": 10
     },
     {
       "file": "phobias.md",
@@ -1520,7 +1515,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 103,
+          "line": 129,
           "context": "- 新增 `phobias.md`(表IX,100 条)、`manias.md`(表X,100 条)与 `weapons-index.md`(按威胁强度四档);"
         },
         {
@@ -1577,7 +1572,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 82,
+          "line": 108,
           "context": "- 新增 `reference/tables/scenario-shapes.md`(1d10,十种互斥结构),`core/04` 的第一步之前先掷模组形状。"
         },
         {
@@ -1602,7 +1597,7 @@
         },
         {
           "file": "update_plan/README.md",
-          "line": 60,
+          "line": 70,
           "context": "| 1 | **P14** 模组多样性 | ★★☆☆☆ | `scripts/roll.py`(**实测 310 行**,估时写的是 ~200:表解析 + 不放回 + 跨战役查重 + 行数自检,外加计划清单之外追加的 `--check-all` 与 `--spec`)+ 两张新表**实测共 30 条原创条目**(`co"
         }
       ],
@@ -1619,7 +1614,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 77,
+          "line": 103,
           "context": "- 新增 `reference/tables/town-institutions.md`(1d20),掷 N 次填一个镇或一个区的机构清单,N 随规模走。"
         },
         {
@@ -1712,12 +1707,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 103,
+          "line": 129,
           "context": "- 新增 `phobias.md`(表IX,100 条)、`manias.md`(表X,100 条)与 `weapons-index.md`(按威胁强度四档);"
         },
         {
           "file": "WORKLOG.md",
-          "line": 104,
+          "line": 113,
           "context": "`_template-campaign/CLAUDE.md` + `tables/cultist-archetypes.md` + `tables/weapons-index.md`"
         },
         {

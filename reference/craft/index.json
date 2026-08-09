@@ -21,12 +21,12 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 117,
+          "line": 143,
           "context": "- `templates/cult.md` 与 `cult-design-zh.md` 让你照一份根本不存在的 mermaid 势力图惯例画,两处已改指 `craft/diagram-conventions-zh.md`。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 203,
+          "line": 229,
           "context": "- 新增邪教设计方法论 `craft/cult-design-zh.md`,配四张骰表与 `templates/cult.md` 模板。"
         },
         {
@@ -260,17 +260,17 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 78,
+          "line": 104,
           "context": "- `reference/craft/diagram-conventions-zh.md` 新增 §六 文字地图卡,跑不了渲染器时用纯文字表格写相邻关系,附三个样例。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 117,
+          "line": 143,
           "context": "- `templates/cult.md` 与 `cult-design-zh.md` 让你照一份根本不存在的 mermaid 势力图惯例画,两处已改指 `craft/diagram-conventions-zh.md`。"
         },
         {
           "file": "CHANGELOG.md",
-          "line": 134,
+          "line": 160,
           "context": "- 新增 `reference/craft/diagram-conventions-zh.md`(势力图/场景网/区域图 + 何时不该画),硬约定是每条连线必须写清连接二者的是什么。"
         },
         {
@@ -290,7 +290,7 @@
         },
         {
           "file": "core/11-review.md",
-          "line": 90,
+          "line": 114,
           "context": "`core/04-design-scenario.md` step 5 and `reference/craft/diagram-conventions-zh.md` §三"
         },
         {
@@ -465,7 +465,7 @@
         },
         {
           "file": "core/00-how-to-run.md",
-          "line": 218,
+          "line": 254,
           "context": "│   ├── og_Norval/           ← Lovecraft's 82 stories (public domain) → craft/lovecraft-zh.md"
         },
         {
@@ -594,7 +594,7 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 76,
+          "line": 102,
           "context": "- 新增 `reference/craft/town-anatomy-zh.md`,建 town/locale 前先读:一个区靠哪四维立住、地点条目怎么写、NPC 该挂在哪。"
         },
         {
