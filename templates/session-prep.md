@@ -1,5 +1,8 @@
 # Session <n> — <date>
 
+*A disposable working document for the next few hours of play — not a rereadable record of an
+arc once it's over. For that, use `templates/module.md` (`core/16-compile-module.md`).*
+
 ## Last time (recap to read)
 <2–4 sentences to open the session and re-immerse the table.>
 

@@ -29,6 +29,7 @@ Open the file and follow it to the letter, including its Quality bar.
 | a prop the players physically receive | `core/10-create-handout.md` |
 | "check this", "is this ready" | `core/11-review.md` |
 | "here's what happened last session" | `core/12-canon-update.md` |
+| "turn this arc into something readable", "compile the module", "整理成一份能读的模组" | `core/16-compile-module.md` |
 | a deck/book/PDF to file, "归档这份资料", loose files in `reference/` | `core/14-archive-reference.md` |
 | closing out a maintenance session on the kit itself, "write a work log", "收尾" | `core/15-close-session.md` |
 

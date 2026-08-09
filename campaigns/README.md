@@ -16,6 +16,9 @@ To do it by hand instead:
    never auto-filled.
 3. **Build the standing state:** `world/`, then `world/event-clock.md`, then the cast.
 4. **Then generate per session** into `sessions/`, `scenes/`, `npcs/`, `puzzles/`, `handouts/`.
+5. **Once an arc closes**, optionally compile it into a single readable text with
+   `compile-module` (`core/16-compile-module.md`) → `module/`. This is a keepsake and
+   rereadable record, not something you generate before playing.
 
 ## The four files every generator reads
 

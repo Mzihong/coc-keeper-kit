@@ -58,6 +58,12 @@ model's output. Assume the material is wrong until each line checks out.
       `handouts/` — **pass** if it's honestly not built yet and nothing downstream assumed it
       existed; **fail** only if something (a scene's "if the players…" branch, a puzzle) reads
       as though the handout is already in hand.
+- [ ] **`campaigns/<slug>/module/` files: every stated fact traces to a source file** — mirrors
+      `core/16-compile-module.md` step 3. Spot-check a sample of claims (a timeline beat, an
+      NPC's stated want, a clue's location) against `world/`, `npcs/`, `scenes/`, or the
+      scenario file it was supposedly compiled from. A fact that exists only in the module text
+      is a fail regardless of how plausible it reads — compiling never invents. **n/a** if
+      nothing under `module/` is in scope for this review.
 - [ ] **Three-clue coverage audits the clue *matrix*, not the file count.** All three clues for
       a must-know fact must be **registered** in the scenario's clue map — but an individual
       clue is allowed to route through an NPC who's still a stub, or a scene that's still

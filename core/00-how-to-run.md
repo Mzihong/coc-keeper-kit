@@ -33,6 +33,7 @@ Generate in this order. Each step reads what came before.
 | 6 | **Props** — puzzles, descriptions, handouts | `core/08`, `core/09`, `core/10` | `puzzles/`, `scenes/`, `handouts/` |
 | 7 | **Review** — check it before the table | `core/11-review.md` | fixes |
 | 8 | **Canon update** — after play | `core/12-canon-update.md` | `canon-log.md` |
+| 9 | **Compile module** — once an arc closes, optional | `core/16-compile-module.md` | `campaigns/<slug>/module/` |
 
 Steps 1–3 happen once per campaign. **Step 4 opens once per campaign but never closes** — it
 seeds `npcs/roster.md` with an initial pass of stubs, then keeps growing every session as
@@ -64,6 +65,7 @@ writing any stat block, difficulty, or Sanity cost.
 | a prop the players physically receive | `core/10-create-handout.md` |
 | "check this", "is this ready", before a session | `core/11-review.md` |
 | "here's what happened last session" | `core/12-canon-update.md` |
+| "turn this arc into something readable", "compile the module", "整理成一份能读的模组" | `core/16-compile-module.md` |
 | a deck/book/PDF to file, "归档这份资料", loose files in `reference/` | `core/14-archive-reference.md` |
 | closing out a maintenance session on the kit itself, "write a work log", "收尾" | `core/15-close-session.md` |
 

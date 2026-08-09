@@ -34,6 +34,7 @@ the skill, read the spec it names, follow the spec. Never generate from the wrap
 | `create-handout`      | `core/10-create-handout.md`   | Write player-facing props — letters, clippings, reports. |
 | `review-material`     | `core/11-review.md`           | Audit material before the table. |
 | `update-canon`        | `core/12-canon-update.md`     | Record what happened and update campaign state. |
+| `compile-module`      | `core/16-compile-module.md`   | Turn a closed arc into a single readable module text, official-book style. |
 | `archive-reference`   | `core/14-archive-reference.md` | File third-party material (a deck, a rulebook) into `reference/` — classify, cite, wire in, reindex. |
 | `close-session`       | `core/15-close-session.md`    | Close out an ad-hoc kit-maintenance session — WORKLOG entry, fact-checked counts, README/changelog/index sync. |
 
