@@ -45,8 +45,18 @@ A Keeper who says
 *"上次他們去了碼頭，這次呢"* is asking for step 5 against an existing campaign — read the
 campaign's `CLAUDE.md` and `canon-log.md`, then generate one session's worth of material.
 
-`core/02-rules-reference.md` is not a pipeline step — it is a lookup you load **before**
-writing any stat block, difficulty, or Sanity cost.
+**The `#` column is execution order; the `NN-` in a spec's filename is only when that spec
+joined the kit.** The two deliberately don't line up — `04` runs at step 5, `13` belongs to
+step 4, `16` is step 9. Nine steps cover thirteen specs; the other four sit outside the
+pipeline entirely:
+
+- this file — the entry point;
+- `core/02-rules-reference.md` — a lookup you load **before** writing any stat block,
+  difficulty, or Sanity cost, not a step you pass through;
+- `core/14-archive-reference.md` and `core/15-close-session.md` — maintenance of the kit
+  itself, not generation into a campaign.
+
+All seventeen are reachable from the routing table below.
 
 ## Routing — which spec for which request
 
