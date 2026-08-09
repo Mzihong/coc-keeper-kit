@@ -5,6 +5,9 @@ tell — mechanically correct for 7e.
 
 ## First
 
+- **Preview before you expand** — `core/00-how-to-run.md` → ground rules: a ≤15-line list of
+  what you're about to write, confirmed by the Keeper, before any file goes to disk. For an
+  NPC specifically, the default preview answer is usually **stub** — see Two tiers below.
 - **Read `core/02-rules-reference.md`** before writing the stat block (characteristics, HP,
   Build, Damage Bonus, Dodge, skill values must be 7e-correct).
 - Read the campaign `CLAUDE.md` for era/tone/output language; match name, dress, speech, and
@@ -17,6 +20,32 @@ tell — mechanically correct for 7e.
   comes across. **In a campaign with a different declared Era, that calibration is still
   1920s** — borrow only the scale (how many skills, what value range), never the occupation,
   gear, or skill choices; those follow the era's own delta.
+
+## Two tiers
+
+Most NPCs a scenario names don't need a full card yet — see `core/00-how-to-run.md` →
+"write what gets read before what gets narrated". Default to **stub**; upgrade only when a
+concrete need shows up.
+
+- **Stub (default).** Name / role & where they're found / what they want / what they're
+  hiding / one line of voice. Four or five lines, **no file** — one row in
+  `campaigns/<slug>/npcs/roster.md` (`templates/npc-roster.md`). There is no stub template
+  file — the row *is* the artifact; a separate template would just invite opening a file for
+  something that doesn't need one.
+- **Card.** The full output below: independent file, `templates/npc.md`.
+
+**Upgrade a stub to a card when any one of these is true** — otherwise leave it a stub:
+
+1. The next session will definitely put a skill check on them (Persuade, Psychology, Spot
+   Hidden… against this specific NPC).
+2. They'll fight or be chased (needs HP, Damage Bonus, Dodge, a weapon).
+3. They'll carry more than one exchange of real dialogue (needs a secret, a lie, something to
+   give up).
+4. The Keeper names them specifically, or the players have already latched onto them.
+
+Upgrading is just running the rest of this spec for that one NPC and deleting their roster
+row once the file exists (the roster stays the index of who's stub vs. who's carded — a name
+shouldn't live in both places).
 
 ## Ask (or infer sensibly)
 
@@ -35,9 +64,11 @@ tell — mechanically correct for 7e.
   never make one NPC the *only* source of a key clue).
 - **The lie they tell.** What do they say when asked directly? Every NPC with a secret needs
   a prepared cover story, or the Keeper has to invent one mid-scene.
-- **Interaction history block:** on a brand-new NPC, set current attitude to a neutral default
-  (e.g. "stranger") and leave the log empty. `core/12-canon-update.md` is what appends to it
-  after play — this spec never backfills sessions that haven't happened yet.
+- **Interaction history block (cards only):** on a brand-new card, set current attitude to a
+  neutral default (e.g. "stranger") and leave the log empty. `core/12-canon-update.md` is what
+  appends to it after play — this spec never backfills sessions that haven't happened yet. A
+  stub has no file to hold this block; its roster row's **Status** column is the only
+  "current attitude" a stub carries, and `core/12` updates that row directly instead.
 
 Run `python scripts/roll.py npc-quirks npc-appearance --campaign <slug>` for at least the
 mannerism and the first physical impression. A rolled tic beats the model's default "nervous,
@@ -82,7 +113,9 @@ backstory, and backstory doesn't survive contact with a table.
 
 ## Output
 
-- Save to `campaigns/<slug>/npcs/<name>.md`, `kebab-case.md` in English, one NPC per file.
+- **Stub:** one row appended to `campaigns/<slug>/npcs/roster.md` — no file of its own.
+- **Card:** save to `campaigns/<slug>/npcs/<name>.md`, `kebab-case.md` in English, one NPC per
+  file.
 - Write the content in the campaign's declared **output language**. Stat block notation stays
   English (`STR 60`, `Dodge 35%`); use `reference/glossary-zh.md` for skill names in Chinese.
 - **The NPC's name belongs to the setting, not to the output language.** A 简体中文 campaign
@@ -93,8 +126,14 @@ backstory, and backstory doesn't survive contact with a table.
 
 ## Quality bar
 
+**Card:**
 - Playable from the file in ten seconds: concept, voice, want, secret, one clue.
 - Has a want **and** a secret **and** a prepared lie.
 - Stat block is internally consistent and era-appropriate.
 - Secret and clues sit in keeper-only blocks; nothing here would spoil the mystery if glanced
   at.
+
+**Stub:**
+- Playable from the roster row alone for one improvised exchange — a Keeper reading only the
+  row can voice this NPC without inventing their want or secret on the spot.
+- Doesn't say more than a stub needs to; if it does, it should have been a card.

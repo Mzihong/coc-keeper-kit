@@ -123,7 +123,10 @@ commit unless asked — this spec closes out the working tree, not the git histo
   Layout tree, plus any other directory listing or enumerated file list — if this session added,
   removed, or renamed a directory, diff it against the Layout tree; don't trust what you
   remember seeing there.
-- `CHANGELOG.md` has an entry (or an addition to today's).
+- `CHANGELOG.md` has an entry (or an addition to today's), and **every bullet in it is ≤2 lines**.
+  Background, evidence, and the reasoning behind a trade-off belong in `WORKLOG.md` and the commit
+  message, not there. Write to that rule, **not to the shape of the entry above yours** — copying
+  the previous entry is exactly how the file drifted from ~1 line per bullet to ~5.
 - Every `README.md` describing the changed structure matches it.
 - `python scripts/build-reference-index.py --check` clean if `reference/`'s archives changed.
 - Any new kit-original content added this session is wired into at least one `core/` spec, or

@@ -7,6 +7,8 @@ fill in the pieces.
 
 ## First
 
+- **Preview before you expand** — `core/00-how-to-run.md` → ground rules: a ≤15-line list of
+  what you're about to write, confirmed by the Keeper, before any file goes to disk.
 - Read the campaign `CLAUDE.md` for **era, tone, output language, content lines, length** —
   scope to fit. Read `canon-log.md` and never contradict what has already happened at the
   table.
@@ -58,8 +60,11 @@ when the scenario itself was built.
      | 4 | ≥1 permanent | Filed or fixed in the landscape — doesn't decay with the clock (engines 7, 10 fit naturally). |
      | 5 | ≥1 points somewhere | Names the next place/person; "this is wrong" ×3 still stalls — the clue-map side of the web's inbound-edge count. |
      | 6 | From three engines | Not three branches of one `clue-engines.md` roll. |
-6. **The scenes as a web.** Key each node by *purpose* (clue / choice / shock / breather). This
-   step is about the rest of the web, not the must-reach scenes step 5 already constrains
+6. **The scenes as a web.** Key each node by *purpose* (clue / choice / shock / breather).
+   **Nodes default to a gist** — what's here, what points where, the checks that might come
+   up — not full read-aloud prose; `core/09-description.md`'s Mode A writes the boxed text
+   itself closer to when a scene is actually about to be read, per that spec's Output section.
+   This step is about the rest of the web, not the must-reach scenes step 5 already constrains
    (≥3 inbound edges each) — of the remaining scenes, most should be reachable in more than one
    order, avoiding a single required sequence. If a scene is a pursuit or an escape, read
    `reference/rules/chases.md` before writing it. If a scene is a physical confrontation (a
@@ -75,8 +80,15 @@ when the scenario itself was built.
    on every must-reach node** (`diagram-conventions-zh.md` §三 already requires this on the
    diagram itself; this is the reminder to actually do it before moving on) — a clue with
    nowhere to point at is a ghost clue, and it doesn't show up just from counting to three.
-7. **Cast & threats.** Name the NPCs and creatures (hand to `core/06` / `core/07`); ensure
-   each monster has its fair "out." If a creature's role means a decisive physical
+7. **Cast & threats.** Name the NPCs and creatures. **Every name lands in
+   `campaigns/<slug>/npcs/roster.md` as a stub first** (`core/06` → Two tiers) — hand a name to
+   the full `core/06` write-up only when it already meets one of that section's upgrade
+   criteria (a check will target them, they fight or get chased, they carry a real dialogue
+   exchange, or the Keeper/players have already fixed on them). A name with no scene yet
+   pointing a check at it stays a stub; don't pre-build cards for cast the session might not
+   reach. Creatures follow the same rule via `core/07`, minus the roster (monsters don't get
+   stubs — they're either needed this session, in which case build them, or not named yet).
+   Ensure each monster has its fair "out." If a creature's role means a decisive physical
    confrontation, ground the "out" in the scene's rolled `confrontation-grounds.md` result
    (see step 6) rather than narrating an escape route on the spot — the terrain's escape cost
    and end condition *are* the out. **Choosing which Mythos creature fits a given role**

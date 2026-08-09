@@ -17,6 +17,10 @@ this file.
 
 ## First
 
+- **Preview before you expand** — `core/00-how-to-run.md` → ground rules: a ≤15-line list of
+  what you're about to write, confirmed by the Keeper, before any file goes to disk. For Mode
+  A specifically, the default preview answer is usually **returned inline, not saved** — see
+  Output below.
 - Read the campaign `CLAUDE.md` for **era, tone, register, output language, content lines** —
   period-true detail only.
 - Decide which mode is being asked for, and the passage's **purpose**: a clue, a choice, a
@@ -99,9 +103,19 @@ like.
 
 ## Output
 
-- **Mode A:** save to `campaigns/<slug>/scenes/<name>.md`, `kebab-case.md` in English. Boxed
-  text goes in a `>` blockquote so it's obvious what to read aloud. Cross-link NPCs, monsters,
-  puzzles, and handouts present.
+- **Mode A default: return the boxed text and beats in the conversation, not a file.** Most
+  requests for a scene's prose are asked for right before or during play — the Keeper reads it
+  once and the moment passes. Save to `campaigns/<slug>/scenes/<name>.md`
+  (`kebab-case.md` in English) only when the Keeper says to keep it, or when it's part of
+  assembling a full prepared scene (see "Assemble the scene" above, which is a standing
+  artifact by nature — a scene web node other scenes link to). This aligns Mode A with Mode
+  B's existing "usually returned inline" rule instead of leaving the two inconsistent within
+  one spec. When a scene file is saved, its Read-aloud section may still start as a
+  `<pending>` placeholder plus a bare-bones gist (what's here, what can be asked, where the
+  exits are) — see `templates/scene.md`; the full prose gets written closer to when it'll
+  actually be read, not pre-generated on spec.
+- When saved, boxed text goes in a `>` blockquote so it's obvious what to read aloud.
+  Cross-link NPCs, monsters, puzzles, and handouts present.
 - **Add a floor-plan map when connectivity or sightlines matter to how the scene plays**
   (which room the sound came from, whether the window is reachable) — use `templates/scene.md`'s
   optional Map section and `python scripts/render-map.py`. Skip it when the boxed text alone

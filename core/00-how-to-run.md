@@ -28,18 +28,35 @@ Generate in this order. Each step reads what came before.
 | 1 | **Intake** — establish the campaign | `core/01-intake.md` | the whole `campaigns/<slug>/` folder |
 | 2 | **World** — region, places, factions | `core/03-build-world.md` | `world/` |
 | 3 | **Event clock** — the threat and its timeline | `core/05-event-clock.md` | `world/event-clock.md` |
-| 4 | **Cast** — the people and the things | `core/06-create-npc.md`, `core/07-create-monster.md`, `core/13-create-investigator.md` | `npcs/`, `reference/bestiary/`, `investigators/` |
+| 4 | **Cast** — the people and the things | `core/06-create-npc.md`, `core/07-create-monster.md`, `core/13-create-investigator.md` | `npcs/roster.md` (default — stub rows), `npcs/*.md` (only for NPCs meeting an upgrade criterion), `reference/bestiary/`, `investigators/` |
 | 5 | **Scenario** — one session at a time, on demand | `core/04-design-scenario.md` | `<scenario-slug>.md`, `scenes/` |
 | 6 | **Props** — puzzles, descriptions, handouts | `core/08`, `core/09`, `core/10` | `puzzles/`, `scenes/`, `handouts/` |
 | 7 | **Review** — check it before the table | `core/11-review.md` | fixes |
 | 8 | **Canon update** — after play | `core/12-canon-update.md` | `canon-log.md` |
+| 9 | **Compile module** — once an arc closes, optional | `core/16-compile-module.md` | `campaigns/<slug>/module/` |
 
-Steps 1–4 happen once per campaign. Steps 5–8 repeat every session. A Keeper who says
+Steps 1–3 happen once per campaign. **Step 4 opens once per campaign but never closes** — it
+seeds `npcs/roster.md` with an initial pass of stubs, then keeps growing every session as
+step 5 names new cast (`core/04-design-scenario.md` step 7) and individual stubs upgrade to
+full cards on demand (`core/06-create-npc.md` → Two tiers). Reading this table as "build every
+NPC before the first player arrives" is exactly the over-generation this pipeline no longer
+does — see `core/00` → "preview, then confirm, then expand". Steps 5–8 repeat every session.
+A Keeper who says
 *"上次他們去了碼頭，這次呢"* is asking for step 5 against an existing campaign — read the
 campaign's `CLAUDE.md` and `canon-log.md`, then generate one session's worth of material.
 
-`core/02-rules-reference.md` is not a pipeline step — it is a lookup you load **before**
-writing any stat block, difficulty, or Sanity cost.
+**The `#` column is execution order; the `NN-` in a spec's filename is only when that spec
+joined the kit.** The two deliberately don't line up — `04` runs at step 5, `13` belongs to
+step 4, `16` is step 9. Nine steps cover thirteen specs; the other four sit outside the
+pipeline entirely:
+
+- this file — the entry point;
+- `core/02-rules-reference.md` — a lookup you load **before** writing any stat block,
+  difficulty, or Sanity cost, not a step you pass through;
+- `core/14-archive-reference.md` and `core/15-close-session.md` — maintenance of the kit
+  itself, not generation into a campaign.
+
+All seventeen are reachable from the routing table below.
 
 ## Routing — which spec for which request
 
@@ -51,13 +68,15 @@ writing any stat block, difficulty, or Sanity cost.
 | a whole mystery, one-shot, session, arc | `core/04-design-scenario.md` |
 | what happens if the players do nothing; triggers | `core/05-event-clock.md` |
 | a person — ally, witness, villain, contact | `core/06-create-npc.md` |
-| a non-human threat, creature, Mythos entity | `core/07-create-monster.md` |
+| a non-human threat, creature, Mythos entity — **writing one up** | `core/07-create-monster.md` |
+| **picking** one — "what creatures are available", "which monster fits", a creature's official stats | `reference/tables/monster-index.md` — 223 entries, one line each, with a line-number anchor into `reference/sourcebooks/malleus-monstrorum-zh.md`. **Never `ls reference/bestiary/` for this** — that folder holds only what has already been written up (see its README), not the catalogue |
 | a pregen, ready-to-play investigator, elite NPC with full stats | `core/13-create-investigator.md` |
 | a puzzle, cipher, code, lock, riddle | `core/08-create-puzzle.md` |
 | read-aloud / boxed text, atmosphere, a reveal, or an investigator's action narrated | `core/09-description.md` |
 | a prop the players physically receive | `core/10-create-handout.md` |
 | "check this", "is this ready", before a session | `core/11-review.md` |
 | "here's what happened last session" | `core/12-canon-update.md` |
+| "turn this arc into something readable", "compile the module", "整理成一份能读的模组" | `core/16-compile-module.md` |
 | a deck/book/PDF to file, "归档这份资料", loose files in `reference/` | `core/14-archive-reference.md` |
 | closing out a maintenance session on the kit itself, "write a work log", "收尾" | `core/15-close-session.md` |
 
@@ -82,6 +101,20 @@ writing any stat block, difficulty, or Sanity cost.
     language for verisimilitude, and don't pretend the original was written in it.
 - **Fair play.** Every mystery must be solvable. Follow the three-clue rule; never gate
   forward progress behind a single die roll.
+- **Preview, then confirm, then expand.** Before any generative spec (`core/03`–`core/10`,
+  `core/13`) starts writing, produce a **≤15-line preview**: which files it plans to write,
+  what goes in each, roughly how long. Wait for the Keeper to confirm or trim before expanding
+  any of it — don't write the files in the same turn as the preview. Skip the preview only
+  when the Keeper has already said "全量展开" / "你决定" / an equivalent blanket go-ahead.
+  This has no fallback: the preview is a conversation step, not an artifact, so
+  `core/11-review.md` cannot audit after the fact whether one happened. `core/01-intake.md`'s
+  own "ask first, then stop" is a stricter special case of this rule, not weakened by it — see
+  that spec for why it doesn't just inherit this one.
+- **Write what gets read before what gets narrated.** Numbers and the clue matrix always reach
+  disk — the table needs to look them up, and nobody improvises them well live. Read-aloud
+  prose defaults to *not* being saved — it can be improvised live, and most of it, generated
+  ahead, never gets used. This ordering governs NPCs, scenes, and handouts alike; see
+  `core/06`'s two-tier NPCs and `core/09`'s Mode A output for where it bites concretely.
 - **Roll through the script, never in your head.** Any "roll `X.md`" instruction in this kit
   means running `python scripts/roll.py X --campaign <slug>` and taking what it prints —
   attach the command and its raw output to what you produce. If python isn't available, say
@@ -134,6 +167,18 @@ writing any stat block, difficulty, or Sanity cost.
   **Being in the repo says nothing about whether its text may be copied.** The three-way split
   above is the only rule for that, and it does not bend for `_source/`: the Arkham setting book
   sitting there is category ② published fiction — read it, take the technique, never the text.
+
+## What to read by default each session
+
+Prepping a session pays this cost every time, not just once — it's the read-side twin of
+"preview, then confirm, then expand" above. Default to reading only
+`campaigns/README.md` → "The four files every generator reads" (`CLAUDE.md`, `canon-log.md`'s
+standing canon plus recent sessions, `world/event-clock.md`, `npcs/roster.md`) — target
+**≤400 lines** total. Everything else in `world/` (locations, factions, timelines, maps) is
+read **on demand**, keyed by that campaign's `world/README.md`, which is a routing table —
+one line per file plus *when* it's actually needed ("read `the-barrens.md` once the party
+crosses into it") — not a "what this folder is" blurb. Open a `world/` file when a scene
+actually needs it, not preemptively on the chance it might.
 
 ## Conventions
 

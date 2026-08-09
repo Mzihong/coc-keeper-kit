@@ -29,6 +29,7 @@ Open the file and follow it to the letter, including its Quality bar.
 | a prop the players physically receive | `core/10-create-handout.md` |
 | "check this", "is this ready" | `core/11-review.md` |
 | "here's what happened last session" | `core/12-canon-update.md` |
+| "turn this arc into something readable", "compile the module", "整理成一份能读的模组" | `core/16-compile-module.md` |
 | a deck/book/PDF to file, "归档这份资料", loose files in `reference/` | `core/14-archive-reference.md` |
 | closing out a maintenance session on the kit itself, "write a work log", "收尾" | `core/15-close-session.md` |
 
@@ -58,6 +59,10 @@ before improvising.
 - **Roll through the script, never in your head.** Any table roll runs
   `python scripts/roll.py <table> --campaign <slug>` — never a model-reported number. No
   python available → say so and have the Keeper roll physical dice; don't invent a result.
+- **Preview, then confirm, then expand.** Before any generative spec (`core/03`–`core/10`,
+  `core/13`) writes anything, give the Keeper a ≤15-line preview of what it plans to write and
+  wait for confirmation — unless the Keeper already said "全量展开"/"你决定". Full rule and
+  the intake exception in `core/00-how-to-run.md` → ground rules.
 - **Spoiler hygiene.** Keeper-only content goes in `> **KEEPER ONLY**` blocks and never in
   player-facing files.
 - **Safety.** Respect the campaign's declared lines and veils. Never auto-fill them.

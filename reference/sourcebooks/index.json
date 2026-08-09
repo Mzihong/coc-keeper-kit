@@ -22,22 +22,22 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 446,
+          "line": 197,
           "context": "- P7 魔法速查阻塞解除(转换稿已归档为 `grand-grimoire-zh.md`)。"
         },
         {
           "file": "WORKLOG.md",
-          "line": 263,
-          "context": "`reference/sourcebooks/grand-grimoire-zh.md`、`reference/bestiary/README.md` 各一处"
+          "line": 122,
+          "context": "| 5 | `grand-grimoire-zh.md` / `keeper-rulebook-7e-zh.md` 两份头部的\"转录质量\"警示未复核(malleus 那份已随换稿重写) | `reference/sourcebooks/` |"
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 73,
+          "line": 104,
           "context": "`reference/sourcebooks/grand-grimoire-zh.md`, the official grimoire."
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 47,
+          "line": 49,
           "context": "`reference/sourcebooks/grand-grimoire-zh.md` covers spells for anything that casts and is"
         },
         {
@@ -117,28 +117,13 @@
       "referenced_by": [
         {
           "file": "WORKLOG.md",
-          "line": 96,
-          "context": "- **`reference/sourcebooks/keeper-rulebook-7e-zh.md`(规则书全文重译,17470 行)已确认"
+          "line": 98,
+          "context": "- **`keeper-rulebook-7e-zh.md` 已退出查询链路,但仍在版本库里。** 查规则去 `reference/rules/*`"
         },
         {
           "file": "WORKLOG.md",
-          "line": 137,
-          "context": "`keeper-rulebook-7e-zh.md` 又变成本地若有~~ —— **这个坑 2026-08-04 晚随 P12 已定案 ②"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 140,
-          "context": "`keeper-rulebook-7e-zh.md` 已**退出查询链路,但仍在版本库里**——`core/02-rules-reference.md`"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 184,
-          "context": "便宜,`keeper-rulebook-7e-zh.md` 那笔\"单文件只能 grep\"的教训不适用;"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 262,
-          "context": "`reference/rules/character-creation.md`、`reference/sourcebooks/keeper-rulebook-7e-zh.md`、"
+          "line": 122,
+          "context": "| 5 | `grand-grimoire-zh.md` / `keeper-rulebook-7e-zh.md` 两份头部的\"转录质量\"警示未复核(malleus 那份已随换稿重写) | `reference/sourcebooks/` |"
         },
         {
           "file": "core/02-rules-reference.md",
@@ -149,6 +134,21 @@
           "file": "reference/rules/README.md",
           "line": 7,
           "context": "**\"最后一句话\"就在本目录。** `reference/sourcebooks/keeper-rulebook-7e-zh.md` 仍在版本库"
+        },
+        {
+          "file": "campaigns/beyond-the-treeline/references.md",
+          "line": 33,
+          "context": "`sourcebooks/keeper-rulebook-7e-zh.md`。**数字可以拿，人不可以拿**——不把任何已出版"
+        },
+        {
+          "file": "update_plan/2026-08-08-compile-module.md",
+          "line": 7,
+          "context": "> `reference/sourcebooks/keeper-rulebook-7e-zh.md` 第十五章)」;同日拍板"
+        },
+        {
+          "file": "update_plan/2026-08-08-compile-module.md",
+          "line": 38,
+          "context": "`reference/sourcebooks/keeper-rulebook-7e-zh.md` 第十五章《古茂密林之中》"
         },
         {
           "file": "update_plan/Archived/2026-08-02-investigator-cards.md",
@@ -257,8 +257,23 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 373,
-          "context": "- **怪物图鉴换了一份干净得多的转录稿。** `reference/sourcebooks/malleus-monstrorum-zh.md`"
+          "line": 150,
+          "context": "- `malleus-monstrorum-zh.md` 换成 Keeper 手工重排的转录稿,属性数值可以直接读,不用再逐条判读修复。"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 88,
+          "context": "- **`reference/bestiary/` 不是怪物目录。** 目录是 `sourcebooks/malleus-monstrorum-zh.md`"
+        },
+        {
+          "file": "WORKLOG.md",
+          "line": 172,
+          "context": "\"kit 里没有飞天水螅条目\",而它就在 `malleus-monstrorum-zh.md:1536`,索引里有)。"
+        },
+        {
+          "file": "core/00-how-to-run.md",
+          "line": 62,
+          "context": "| **picking** one — \"what creatures are available\", \"which monster fits\", a creature's official stats | `reference/tables/monster-index.md` — 223 entries, one l"
         },
         {
           "file": "core/02-rules-reference.md",
@@ -267,17 +282,17 @@
         },
         {
           "file": "core/04-design-scenario.md",
-          "line": 85,
+          "line": 97,
           "context": "`malleus-monstrorum-zh.md` entries by tier and `Serves` (who they answer to), so the search"
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 14,
+          "line": 16,
           "context": "index and the full transcript (`reference/sourcebooks/malleus-monstrorum-zh.md`) are in the"
         },
         {
           "file": "core/07-create-monster.md",
-          "line": 43,
+          "line": 45,
           "context": "`reference/sourcebooks/malleus-monstrorum-zh.md` is the official creature"
         },
         {
@@ -287,7 +302,12 @@
         },
         {
           "file": "reference/README.md",
-          "line": 95,
+          "line": 30,
+          "context": "`reference/sourcebooks/malleus-monstrorum-zh.md` (223 entries) and the cheap way in is"
+        },
+        {
+          "file": "reference/README.md",
+          "line": 101,
           "context": "`sourcebooks/malleus-monstrorum-zh.md` 223 条 → `tables/monster-index.md`。提炼稿是"
         },
         {
@@ -1466,6 +1486,11 @@
           "context": "上面几个等级表里，这几位可能没有独立行——`malleus-monstrorum-zh.md` 对它们要么用旧式散文格式记录数值（本脚本的表格解析器读不出来），要么根本没写战斗数值（它们很少直接现身战斗）。**它们不是索引的空白，是有专门讲义的**，讲义比战斗数值更常用得上：苏醒条件、征兆、邪教怎么崇拜它。"
         },
         {
+          "file": "campaigns/beyond-the-treeline/CLAUDE.md",
+          "line": 114,
+          "context": "`reference/sourcebooks/malleus-monstrorum-zh.md:1536`，SAN 1d3/1d20，独立、不服侍任何"
+        },
+        {
           "file": "scripts/build-reference-index.py",
           "line": 30,
           "context": "source file, it's assembled from `reference/sourcebooks/malleus-monstrorum-zh.md` (parsed fresh"
@@ -1541,7 +1566,7 @@
           "context": "`git ls-files reference/sourcebooks/` 确认 `malleus-monstrorum-zh.md` 在版本控制里;"
         }
       ],
-      "reference_count": 257,
+      "reference_count": 262,
       "cited": true,
       "provenance": {
         "work": "《怪物之锤》(Malleus Monstrorum)",

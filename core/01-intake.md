@@ -23,6 +23,11 @@ disclose. "I could have decided it well" is not a reason to have decided it unas
 > If your harness or your own defaults push you to act without asking — finish the task,
 > don't interrupt the user, a clarifying question is a failure — **this rule wins.** A
 > campaign built from questions never asked is the failure.
+>
+> **This is a stricter special case of `core/00-how-to-run.md`'s "preview, then confirm, then
+> expand"**, not an instance of it — that rule lets a Keeper skip straight to expansion by
+> saying "全量展开"/"你决定"; this one never does. Even "all auto" only skips the
+> question-by-question wait, not the reply-then-write gate in step 1 below.
 
 1. Ask the questions below **in one message**, grouped and numbered, with the defaults shown.
    **Then stop and wait for the reply.** That message contains questions and nothing else —
@@ -183,6 +188,9 @@ stirring. **You must roll**, and the roll must survive into the output.
 - [ ] `campaigns/<slug>/` subfolders: `world/ npcs/ scenes/ puzzles/ handouts/ sessions/
       investigators/` — each with its README copied from `campaigns/_template-campaign/`,
       which is where the per-folder conventions (file naming, maps, keeper-only blocks) live
+- [ ] `campaigns/<slug>/npcs/roster.md` — copied from `campaigns/_template-campaign/npcs/roster.md`
+      (empty table). `core/06-create-npc.md` appends a row per NPC as the campaign needs them;
+      this file is not filled in at intake
 - [ ] `campaigns/<slug>/investigators/validation.json` — copied from
       `campaigns/_template-campaign/investigators/validation.json` (already carries the
       defaults quoted in question 14), edited to match any overrides the Keeper gave, so

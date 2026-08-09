@@ -5,6 +5,8 @@ investigation game a stuck puzzle is a dead session — build in redundancy and 
 
 ## First
 
+- **Preview before you expand** — `core/00-how-to-run.md` → ground rules: a ≤15-line list of
+  what you're about to write, confirmed by the Keeper, before any file goes to disk.
 - Read the campaign `CLAUDE.md` for era/tone/output language (a cipher's form should fit the
   period *and* the language it's written in).
 - Decide the **type**: cipher/code, logic, physical mechanism, social deduction, or ritual

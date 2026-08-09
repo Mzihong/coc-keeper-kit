@@ -1,5 +1,9 @@
 # <NPC Name>
 
+> This is the **card** tier (`core/06-create-npc.md` → Two tiers). Most named NPCs start as a
+> one-line **stub** in `npcs/roster.md` instead — reach for this template only once an NPC
+> meets an upgrade criterion.
+
 *<one-line concept — who they are at a glance>*
 
 - **Role in play:** <ally / obstacle / red herring / victim / villain / source>

@@ -24,27 +24,22 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 334,
-          "context": "- 怪物图鉴 `fellrock.md` 的\"沉默之油\"反查链接指向了 `artifacts-zh.md`,但那份文件里"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 143,
-          "context": "8 处引用(`magic.md`、`artifacts-zh.md`、`call-father-dagon-and-mother-hydra.md`、"
+          "line": 123,
+          "context": "- `fellrock.md` 的「沉默之油」反查链接指向不含该条目的 `artifacts-zh.md`,已改指 `mythos/spells/oil-of-silence.md`。"
         },
         {
           "file": "core/06-create-npc.md",
-          "line": 79,
+          "line": 110,
           "context": "- Arming someone: `reference/decks/weapons-and-artifacts-zh.md` gives skill, base chance,"
         },
         {
           "file": "core/13-create-investigator.md",
-          "line": 34,
+          "line": 36,
           "context": "name), and `reference/decks/weapons-and-artifacts-zh.md` for anything in the gear list."
         },
         {
           "file": "reference/README.md",
-          "line": 29,
+          "line": 35,
           "context": "file (origin, leadership, funding, weakness); `artifacts-zh.md` covers Mythos objects and"
         },
         {
@@ -148,7 +143,7 @@
           "context": "另指 `decks/weapons-and-artifacts-zh.md`);`chases.md` 2 处裸「表III」改指"
         }
       ],
-      "reference_count": 25
+      "reference_count": 24
     },
     {
       "file": "cthulhu-cult-history-zh.md",
@@ -161,7 +156,7 @@
       "referenced_by": [
         {
           "file": "core/03-build-world.md",
-          "line": 69,
+          "line": 71,
           "context": "the throughline is Cthulhu-cult history, `reference/mythos/cthulhu-cult-history-zh.md` has"
         },
         {
@@ -205,6 +200,11 @@
           "context": "见 `reference/mythos/cthulhu-cult-history-zh.md` 的\"永生大师线\"了解这个概念在本 kit"
         },
         {
+          "file": "campaigns/beyond-the-treeline/references.md",
+          "line": 27,
+          "context": "`cthulhu-cult-history-zh.md` 同理不用于本战役的时间线"
+        },
+        {
           "file": "update_plan/Archived/2026-08-02-cult-doc-integration.md",
           "line": 90,
           "context": "`reference/mythos/cthulhu-cult-history-zh.md`(27 条历史条目表,不逐条散文重述)"
@@ -215,7 +215,7 @@
           "context": "`cthulhu-cult-history-zh.md`、`cults/`(5 份)、`spells/`、"
         }
       ],
-      "reference_count": 11
+      "reference_count": 12
     },
     {
       "file": "cults/church-of-perfect-science.md",
@@ -428,31 +428,6 @@
       ],
       "referenced_by": [
         {
-          "file": "CHANGELOG.md",
-          "line": 399,
-          "context": "从 deadly 改成 mythic(体型与耐久数值早已过 deadly 上限)、`thrall-of-cthulhu.md`"
-        },
-        {
-          "file": "CHANGELOG.md",
-          "line": 402,
-          "context": "- **神格文件现在要反向列出自己的眷族与仆从。** `cthulhu.md` 补了这一节(哪些怪物服侍"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 114,
-          "context": "`Serves`/摘要留空就报错。现有 9 只 bestiary 条目已按新标尺重标,`cthulhu.md`"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 118,
-          "context": "`yog-sothoth.md`,体例照 `cthulhu.md`,均含「眷族与仆从」反链)+ 7 个新眷族/化身"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 428,
-          "context": "- **古神级条目住在 `reference/mythos/great-old-ones/`(现有 6 份:`cthulhu.md` +"
-        },
-        {
           "file": "reference/mythos/README.md",
           "line": 12,
           "context": "`## 眷族与仆从 (Servitors & kin)` section** (see `cthulhu.md` for the shape) — a few named"
@@ -543,7 +518,7 @@
           "context": "照 `cthulhu.md` 的实际形状(是什么/苏醒条件/征兆/邪教如何崇拜它/裁定空间/"
         }
       ],
-      "reference_count": 23
+      "reference_count": 18
     },
     {
       "file": "great-old-ones/dagon-and-hydra.md",
@@ -557,11 +532,6 @@
         "reference/tables/monster-index.md"
       ],
       "referenced_by": [
-        {
-          "file": "WORKLOG.md",
-          "line": 117,
-          "context": "下的 `dagon-and-hydra.md`/`hastur.md`/`nyarlathotep.md`/`shub-niggurath.md`/"
-        },
         {
           "file": "reference/bestiary/deep-one.md",
           "line": 86,
@@ -578,7 +548,7 @@
           "context": "[`dagon-and-hydra.md`](../reference/mythos/great-old-ones/dagon-and-hydra.md)(唯一存在级,"
         }
       ],
-      "reference_count": 4
+      "reference_count": 3
     },
     {
       "file": "great-old-ones/hastur.md",
@@ -593,16 +563,6 @@
         "reference/tables/monster-index.md"
       ],
       "referenced_by": [
-        {
-          "file": "WORKLOG.md",
-          "line": 117,
-          "context": "下的 `dagon-and-hydra.md`/`hastur.md`/`nyarlathotep.md`/`shub-niggurath.md`/"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 119,
-          "context": "bestiary 条目(`deep-one.md`/`byakhee.md`/`spawn-of-hastur.md`/`hunting-horrors.md`/"
-        },
         {
           "file": "reference/tables/monster-index.md",
           "line": 97,
@@ -624,7 +584,7 @@
           "context": "[Spawn of Hastur](../reference/bestiary/spawn-of-hastur.md)(均哈斯塔)、"
         }
       ],
-      "reference_count": 6
+      "reference_count": 4
     },
     {
       "file": "great-old-ones/nyarlathotep.md",
@@ -640,11 +600,6 @@
         "reference/tables/monster-index.md"
       ],
       "referenced_by": [
-        {
-          "file": "WORKLOG.md",
-          "line": 117,
-          "context": "下的 `dagon-and-hydra.md`/`hastur.md`/`nyarlathotep.md`/`shub-niggurath.md`/"
-        },
         {
           "file": "reference/bestiary/black-pharaoh.md",
           "line": 17,
@@ -671,7 +626,7 @@
           "context": "[`nyarlathotep.md`](../reference/mythos/great-old-ones/nyarlathotep.md)(外神,举例"
         }
       ],
-      "reference_count": 6
+      "reference_count": 5
     },
     {
       "file": "great-old-ones/shub-niggurath.md",
@@ -686,11 +641,6 @@
         "reference/tables/monster-index.md"
       ],
       "referenced_by": [
-        {
-          "file": "WORKLOG.md",
-          "line": 117,
-          "context": "下的 `dagon-and-hydra.md`/`hastur.md`/`nyarlathotep.md`/`shub-niggurath.md`/"
-        },
         {
           "file": "reference/bestiary/dark-young.md",
           "line": 84,
@@ -707,7 +657,7 @@
           "context": "[`shub-niggurath.md`](../reference/mythos/great-old-ones/shub-niggurath.md)(外神,"
         }
       ],
-      "reference_count": 4
+      "reference_count": 3
     },
     {
       "file": "great-old-ones/yog-sothoth.md",
@@ -721,16 +671,6 @@
         "reference/tables/monster-index.md"
       ],
       "referenced_by": [
-        {
-          "file": "WORKLOG.md",
-          "line": 118,
-          "context": "`yog-sothoth.md`,体例照 `cthulhu.md`,均含「眷族与仆从」反链)+ 7 个新眷族/化身"
-        },
-        {
-          "file": "WORKLOG.md",
-          "line": 120,
-          "context": "`black-pharaoh.md`/`dark-young.md`/`sons-of-yog-sothoth.md`)。执行时用 5 个并行"
-        },
         {
           "file": "reference/tables/monster-index.md",
           "line": 136,
@@ -752,7 +692,7 @@
           "context": "[Sons of Yog-Sothoth](../reference/bestiary/sons-of-yog-sothoth.md)(犹格·索托斯)。"
         }
       ],
-      "reference_count": 6
+      "reference_count": 4
     },
     {
       "file": "spells/black-wing-call.md",
@@ -784,11 +724,6 @@
       ],
       "referenced_by": [
         {
-          "file": "WORKLOG.md",
-          "line": 143,
-          "context": "8 处引用(`magic.md`、`artifacts-zh.md`、`call-father-dagon-and-mother-hydra.md`、"
-        },
-        {
           "file": "reference/mythos/great-old-ones/dagon-and-hydra.md",
           "line": 78,
           "context": "- 请神/送神的具体法术 → [`../spells/call-father-dagon-and-mother-hydra.md`](../spells/call-father-dagon-and-mother-hydra.md)"
@@ -804,7 +739,7 @@
           "context": "`reference/mythos/spells/call-father-dagon-and-mother-hydra.md`、"
         }
       ],
-      "reference_count": 4
+      "reference_count": 3
     },
     {
       "file": "spells/fellrock-call-bind.md",
@@ -837,8 +772,8 @@
       "referenced_by": [
         {
           "file": "CHANGELOG.md",
-          "line": 335,
-          "context": "根本没有这一条——沉默之油实际是 `reference/mythos/spells/oil-of-silence.md` 的法术,"
+          "line": 123,
+          "context": "- `fellrock.md` 的「沉默之油」反查链接指向不含该条目的 `artifacts-zh.md`,已改指 `mythos/spells/oil-of-silence.md`。"
         },
         {
           "file": "reference/bestiary/fellrock.md",

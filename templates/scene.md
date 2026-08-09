@@ -5,9 +5,16 @@
 - **Leads in from / out to:** <previous → next scenes>
 
 ## Read-aloud (boxed text)
-> <The players' first impression — 3–6 sentences. Two or three senses beyond sight (sound,
-> smell, temperature, the feel of the air). One concrete, slightly wrong detail. End on
-> something that invites action, not a full stop.>
+> Full prose is optional until it's about to be read at the table — see
+> `core/09-description.md` → Output. What's **required** even before then is the gist: what's
+> here, what the investigators can ask about or interact with, and where the exits/next scenes
+> are — everything below this blockquote already covers that, so a `<pending>` boxed text
+> doesn't leave the scene unusable.
+>
+> <Either `<pending>` — draft this closer to when it'll actually be read — or the full
+> prose: the players' first impression, 3–6 sentences, two or three senses beyond sight
+> (sound, smell, temperature, the feel of the air), one concrete slightly wrong detail, ending
+> on something that invites action rather than a full stop.>
 
 ## Map *(optional)*
 > Only when the room layout itself matters (connectivity, sightlines, where to hide) — most

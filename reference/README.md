@@ -21,9 +21,15 @@ in `campaigns/<slug>/`, not here.
   (the mermaid conventions for faction diagrams, scene webs, and region maps — a
   kit-authored convention rather than a distillation) is read by `core/03-build-world.md`,
   `core/04-design-scenario.md`, and `templates/cult.md`.
-- **`bestiary/`** — reusable monsters and Mythos entities you can drop into any game.
-  Produced by `core/07-create-monster.md`. One creature per file. Written in **English**,
-  since they're shared across campaigns that may output in different languages.
+- **`bestiary/`** — **not the monster catalogue.** It holds only the creatures that have
+  actually been *written up* for table use — an authored Reveal, a fair out, kit tier/threat
+  tags — plus the kit's own original creatures that exist nowhere else. Produced by
+  `core/07-create-monster.md`. One creature per file, in **English** (shared across campaigns
+  that may output in different languages).
+  **To pick a creature, do not list this folder** — the catalogue is
+  `reference/sourcebooks/malleus-monstrorum-zh.md` (223 entries) and the cheap way in is
+  `reference/tables/monster-index.md`. Listing `bestiary/` and treating it as the available
+  set is a real, observed failure mode: it under-reports by an order of magnitude.
 - **`mythos/`** — Great Old Ones, tomes, spells, cults, and factions. Slow-growing lore
   you reference from multiple campaigns. `cults/<name>.md` holds one full cult dossier per
   file (origin, leadership, funding, weakness); `artifacts-zh.md` covers Mythos objects and

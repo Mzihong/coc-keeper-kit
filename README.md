@@ -41,12 +41,24 @@ start-campaign  →  world  →  event clock  →  cast
    party, content lines. Answer what you care about; reply `auto` to any question or
    `all auto` to the whole thing. Everything auto-filled is rolled from the seed tables and
    shown to you, marked `[auto]`, to accept or reroll.
-2. **Standing state.** The world, the event clock (what the threat achieves if you do
-   nothing, plus what fires when players act), and the cast. Built once.
+2. **Standing state.** The world and the event clock (what the threat achieves if you do
+   nothing, plus what fires when players act) — built once. The cast starts as a **roster of
+   named stubs** (name, want, secret, one line of voice) and only grows into full character
+   sheets for the NPCs a session actually needs — see "Generation is demand-driven" below.
 3. **Per session.** *"Last time they went to the docks — what now?"* generates one session
    against the current state. Review it, run it, then log what actually happened.
 4. **Continuity.** `canon-log.md` keeps what's true separate from what the players know, so
    session 8 never contradicts session 1.
+
+## Generation is demand-driven
+
+Nothing writes a pile of files you didn't ask for. Before any skill that would write into
+`campaigns/` starts, it shows you a short preview — which files, roughly how long — and waits
+for you to confirm or trim before expanding it (say "全量展开" / "you decide" to skip the
+wait). NPCs default to a one-line roster entry, not a full character sheet, until one is
+actually about to be checked, fought, or talked to at length. Read-aloud prose is written when
+it's about to be read, not pre-generated on spec. This keeps token spend proportional to what
+a session actually needs, especially on a subscription plan.
 
 ## Examples
 
