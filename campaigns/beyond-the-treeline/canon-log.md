@@ -74,8 +74,13 @@ below so nothing has to be reconstructed by reading the whole log.
 
 **转译规约**
 
-- 谷里对旧世界的词汇（灰砂石 / 骨铁 / 凝水 / 死镜 / 石中筋 / 不腐皮 / 先民纹 / 不灭的火 /
-  山在念 / 直洞）—— 完整对照见 `CLAUDE.md` → Tone & style。**表层不许出现里层的任何一个词。**
+- 谷里对旧世界的词汇（灰砂石 / 骨铁 / 凝水 / 死镜 / 石中筋 / 不腐皮 / 先民纹 / 列桩 /
+  黑石道 / 铁兽 / 直洞）—— 完整对照见 `CLAUDE.md` → Tone & style。**表层不许出现里层的
+  任何一个词。**
+- **山在念** 不是转译词，是谷里给「法阵在运转」这个真实现象起的名字。
+- **不灭的火** 是谷里对一类先民灯具的叫法，**它们现在全是暗的**——词还在用，指的是"据说
+  曾经亮过"的东西。**旧世界的器物一律不工作**，要让某一件还在动必须先有站得住的理由，
+  见 `CLAUDE.md` → 旧世界的东西一律不工作。
 
 **Player knowledge (what the investigators have actually learned):**
 
